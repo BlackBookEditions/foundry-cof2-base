@@ -6,7 +6,16 @@ export default class CofActor extends CoActor {
   }
 
   /**
-   * @description Porter une armure pour laquelle on n’est pas formé impose également un malus de -3 en initiative, en attaque et à tous les tests de FOR et de DEX.
+   * @description Retourne le malus à l'initiative lié à l'armure
+   * @override
+   * @returns Pas de malus dans COF
+   */
+  getOverloadMalusToInitiative() {
+    return 0;
+  }
+  
+  /**
+   * @description Retourne le malus à l'initiative lié à l'incompétence armes/armures
    * @override
    * @returns 
    */
