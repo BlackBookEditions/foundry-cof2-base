@@ -10,22 +10,22 @@ Hooks.once("init", () => {
     game.system.CONST.martialTrainingsWeapons.push({ key: "staff", label: "COF.config.martialTrainingWeapon.staff" })
 
     // Bâton ferré
-    game.system.CONST.martialTrainingsWeapons.push({ key: "ironStaff", label: "COF.config.martialTrainingWeapon.ironstaff" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "ironStaff", label: "COF.config.martialTrainingWeapon.ironStaff" })
 
     // Dague
     game.system.CONST.martialTrainingsWeapons.push({ key: "dagger", label: "COF.config.martialTrainingWeapon.dagger" })
 
     // Épée à deux mains
-    game.system.CONST.martialTrainingsWeapons.push({ key: "greatSword", label: "COF.config.martialTrainingWeapon.greatsword" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "greatSword", label: "COF.config.martialTrainingWeapon.greatSword" })
 
     // Épée bâtarde
-    game.system.CONST.martialTrainingsWeapons.push({ key: "bastardSword", label: "COF.config.martialTrainingWeapon.bastardsword" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "bastardSword", label: "COF.config.martialTrainingWeapon.bastardSword" })
 
     // Épée courte
-    game.system.CONST.martialTrainingsWeapons.push({ key: "shortSword", label: "COF.config.martialTrainingWeapon.shortsword" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "shortSword", label: "COF.config.martialTrainingWeapon.shortSword" })
 
     // Épée longue
-    game.system.CONST.martialTrainingsWeapons.push({ key: "longSword", label: "COF.config.martialTrainingWeapon.longsword" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "longSword", label: "COF.config.martialTrainingWeapon.longSword" })
 
     // Épieu
     game.system.CONST.martialTrainingsWeapons.push({ key: "spear", label: "COF.config.martialTrainingWeapon.spear" })
@@ -34,7 +34,7 @@ Hooks.once("init", () => {
     game.system.CONST.martialTrainingsWeapons.push({ key: "flail", label: "COF.config.martialTrainingWeapon.flail" })
 
     // Fléau à deux mains
-    game.system.CONST.martialTrainingsWeapons.push({ key: "greatFlail", label: "COF.config.martialTrainingWeapon.greatflail" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "greatFlail", label: "COF.config.martialTrainingWeapon.greatFlail" })
 
     // Gourdin
     game.system.CONST.martialTrainingsWeapons.push({ key: "club", label: "COF.config.martialTrainingWeapon.club" })
@@ -43,13 +43,13 @@ Hooks.once("init", () => {
     game.system.CONST.martialTrainingsWeapons.push({ key: "axe", label: "COF.config.martialTrainingWeapon.axe" })
 
     // Hache à deux mains
-    game.system.CONST.martialTrainingsWeapons.push({ key: "greatAxe", label: "COF.config.martialTrainingWeapon.greataxe" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "greatAxe", label: "COF.config.martialTrainingWeapon.greatAxe" })
 
     // Lance
     game.system.CONST.martialTrainingsWeapons.push({ key: "lance", label: "COF.config.martialTrainingWeapon.lance" })
 
     // Lance de cavalerie
-    game.system.CONST.martialTrainingsWeapons.push({ key: "cavalryLance", label: "COF.config.martialTrainingWeapon.cavalrylance" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "cavalryLance", label: "COF.config.martialTrainingWeapon.cavalryLance" })
 
     // Marteau
     game.system.CONST.martialTrainingsWeapons.push({ key: "hammer", label: "COF.config.martialTrainingWeapon.hammer" })
@@ -85,7 +85,7 @@ Hooks.once("init", () => {
     game.system.CONST.martialTrainingsWeapons.push({ key: "longBow", label: "COF.config.martialTrainingWeapon.longBow" })
 
     // Couteau de lancer
-    game.system.CONST.martialTrainingsWeapons.push({ key: "throwingKnife", label: "COF.config.martialTrainingWeapon.throwingKnives" })
+    game.system.CONST.martialTrainingsWeapons.push({ key: "throwingKnife", label: "COF.config.martialTrainingWeapon.throwingKnife" })
 
     // Dague (version jet)
     game.system.CONST.martialTrainingsWeapons.push({ key: "throwingDagger", label: "COF.config.martialTrainingWeapon.throwingDagger" })
@@ -134,10 +134,10 @@ Hooks.once("init", () => {
 
   if (game.system.CONST.martialTrainingsShields.length == 0) {
     // Petit bouclier
-    game.system.CONST.martialTrainingsArmors.push({ key: "smallShield", label: "COF.config.martialTrainingArmor.smallShield" })
+    game.system.CONST.martialTrainingsShields.push({ key: "smallShield", label: "COF.config.martialTrainingShield.smallShield" })
 
     // Grand bouclier
-    game.system.CONST.martialTrainingsArmors.push({ key: "largeShield", label: "COF.config.martialTrainingArmor.largeShield" })
+    game.system.CONST.martialTrainingsShields.push({ key: "largeShield", label: "COF.config.martialTrainingShield.largeShield" })
   }
 })
 
