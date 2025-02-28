@@ -28,17 +28,19 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.wkaBPYkeoCHdQoyC
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.wkaBPYkeoCHdQoyC
       indice: 0
       label: Tir de grenaille
       chatFlavor: Tir de grenaille
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       resolvers:
         - type: ranged
           skill:
@@ -51,9 +53,8 @@ system:
             type: none
             number: 0
             scope: all
-      conditions: []
       modifiers: []
-    - source: Item.wkaBPYkeoCHdQoyC
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.wkaBPYkeoCHdQoyC
       indice: 1
       label: artificier
       chatFlavor: artificier
@@ -66,12 +67,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.wkaBPYkeoCHdQoyC
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: int
           value: '2'
         - type: capacity
-          source: Item.wkaBPYkeoCHdQoyC
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: agi
           value: '2'
@@ -94,7 +95,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740773828309
+  lastModifiedBy: eB70hIW5CxiKgFZL
 _key: '!items!wkaBPYkeoCHdQoyC'
 

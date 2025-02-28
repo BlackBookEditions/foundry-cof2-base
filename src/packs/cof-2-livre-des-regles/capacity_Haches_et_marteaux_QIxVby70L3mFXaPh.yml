@@ -10,7 +10,7 @@ system:
     profil.</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: haches-et-marteaux
   tags: []
   subtype: ''
   actionType: none
@@ -23,33 +23,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.QIxVby70L3mFXaPh
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.QIxVby70L3mFXaPh
       indice: 0
-      label: Haches et marteaux
-      chatFlavor: Haches et marteaux
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.QIxVby70L3mFXaPh
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.QIxVby70L3mFXaPh
           subtype: combat
           target: melee
           value: '1'
         - type: capacity
-          source: Item.QIxVby70L3mFXaPh
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.QIxVby70L3mFXaPh
           subtype: combat
           target: dam
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -64,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821165726
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!QIxVby70L3mFXaPh'
 

@@ -24,7 +24,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.aiuQDWY57AAHUl0c
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.aiuQDWY57AAHUl0c
       indice: 0
       label: Souplesse du félin
       chatFlavor: Souplesse du félin
@@ -37,12 +37,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.aiuQDWY57AAHUl0c
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.aiuQDWY57AAHUl0c
           subtype: combat
           target: init
           value: 2 + (@rang % 5)
         - type: capacity
-          source: Item.aiuQDWY57AAHUl0c
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.aiuQDWY57AAHUl0c
           subtype: combat
           target: def
           value: 2 + (@rang % 5)
@@ -50,7 +50,7 @@ system:
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -65,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824904459
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!aiuQDWY57AAHUl0c'
 

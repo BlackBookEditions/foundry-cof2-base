@@ -23,33 +23,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.gDBKM5uV1pjlBryt
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.gDBKM5uV1pjlBryt
       indice: 0
-      label: Charisme héroïque
-      chatFlavor: Charisme héroïque
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.gDBKM5uV1pjlBryt
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.gDBKM5uV1pjlBryt
           subtype: ability
           target: cha
           value: '1'
         - type: capacity
-          source: Item.gDBKM5uV1pjlBryt
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.gDBKM5uV1pjlBryt
           subtype: bonusDice
           target: cha
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 187500
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -64,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821962443
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!gDBKM5uV1pjlBryt'
 

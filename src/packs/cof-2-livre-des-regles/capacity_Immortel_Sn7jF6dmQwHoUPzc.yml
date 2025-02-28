@@ -10,7 +10,7 @@ system:
     effets des poisons et des maladies.</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: immortel
   tags: []
   subtype: ''
   actionType: none
@@ -23,33 +23,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.Sn7jF6dmQwHoUPzc
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.Sn7jF6dmQwHoUPzc
       indice: 0
-      label: 'Immortel : immunité au poison et maladie'
-      chatFlavor: 'Immortel : immunité au poison et maladie'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Sn7jF6dmQwHoUPzc
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.Sn7jF6dmQwHoUPzc
           subtype: state
           target: poisonimmunity
           value: '0'
         - type: capacity
-          source: Item.Sn7jF6dmQwHoUPzc
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.Sn7jF6dmQwHoUPzc
           subtype: state
           target: diseaseimmunity
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -64,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820102421
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!Sn7jF6dmQwHoUPzc'
 

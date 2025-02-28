@@ -23,34 +23,35 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.w3Zb7IkIu6o0SNkK
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.w3Zb7IkIu6o0SNkK
       indice: 0
-      label: Proche de la nature
-      chatFlavor: Proche de la nature
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.w3Zb7IkIu6o0SNkK
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.w3Zb7IkIu6o0SNkK
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Item.w3Zb7IkIu6o0SNkK
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.w3Zb7IkIu6o0SNkK
           subtype: skill
           target: con
           value: 2 + @rang
         - type: capacity
-          source: Item.w3Zb7IkIu6o0SNkK
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.w3Zb7IkIu6o0SNkK
           subtype: attribute
           target: hp
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -69,7 +70,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740825039303
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!w3Zb7IkIu6o0SNkK'
 

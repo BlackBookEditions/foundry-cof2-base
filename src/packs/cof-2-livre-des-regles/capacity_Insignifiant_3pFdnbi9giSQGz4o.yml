@@ -4,10 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 3pFdnbi9giSQGz4o
 system:
-  description: >-
-    <p>Le gnome sait comment échapper aux attaques des grandes créatures comme
-    les géants. Il gagne un bonus de +2 en DEF contre les créatures de taille
-    grande ou supérieure. Ce bonus passe à +3 au rang 5.</p>
+  description: "<p>Le gnome sait comment échapper aux attaques des grandes créatures comme les géants. Il gagne un bonus de +2 en DEF contre les créatures de taille grande ou supérieure.\_<br />Ce bonus passe à +3 au rang 5.</p>"
   source: ''
   origin: ''
   slug: insignifiant
@@ -23,28 +20,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.3pFdnbi9giSQGz4o
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.3pFdnbi9giSQGz4o
       indice: 0
-      label: 'Insignifiant : bonus defense'
-      chatFlavor: 'Insignifiant : bonus defense'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.3pFdnbi9giSQGz4o
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.3pFdnbi9giSQGz4o
           subtype: combat
           target: def
-          value: 2 + (@rang % 5)
-      conditions: []
+          value: '@rank[2,0,0,0,1]'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -59,7 +57,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820445856
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!3pFdnbi9giSQGz4o'
 

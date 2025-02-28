@@ -9,7 +9,7 @@ system:
     Volonté de +1</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: polyvalence
   tags: []
   subtype: ''
   actionType: none
@@ -22,72 +22,59 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.8w2oUIeUIfSxxibH
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
       indice: 0
-      label: 'Polyvalence : volonté'
-      chatFlavor: 'Polyvalence : volonté'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
-        - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
-          subtype: ability
-          target: vol
-          value: '1'
-      conditions: []
-      resolvers: []
-    - source: Item.8w2oUIeUIfSxxibH
-      indice: 1
-      label: 'Polyvalence : Attribut le plus faible'
-      chatFlavor: 'Polyvalence : Attribut le plus faible'
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
         activable: false
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: agi
           value: '1'
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: con
           value: '1'
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: for
           value: '1'
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: per
           value: '1'
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: cha
           value: '1'
         - type: capacity
-          source: Item.8w2oUIeUIfSxxibH
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
           subtype: ability
           target: int
           value: '1'
-      conditions: []
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8w2oUIeUIfSxxibH
+          subtype: ability
+          target: vol
+          value: '1'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -102,7 +89,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820800071
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!8w2oUIeUIfSxxibH'
 

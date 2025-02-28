@@ -26,54 +26,55 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.prwjSpoqGm5VBBKX
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
       indice: 0
-      label: Éclectique
-      chatFlavor: Éclectique
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: agi
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: con
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: for
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: per
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: cha
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: int
           value: 1 + @allrank[4]
         - type: capacity
-          source: Item.prwjSpoqGm5VBBKX
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
           subtype: skill
           target: vol
           value: 1 + @allrank[4]
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -92,7 +93,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740818746900
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!prwjSpoqGm5VBBKX'
 

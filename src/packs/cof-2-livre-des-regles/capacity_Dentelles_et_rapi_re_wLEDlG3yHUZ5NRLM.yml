@@ -6,9 +6,11 @@ _id: wLEDlG3yHUZ5NRLM
 system:
   description: >-
     <p>Le barde ne met pas d’armure, cela ne sied point en société. Sa seule
-    armure est la dentelle, sa seule défense, la rapière. Lorsqu’il ne porte
-    aucune armure, le barde ajoute son CHA en DEF (en plus de son AGI),
-    toutefois ce bonus ne peut pas dépasser le rang atteint dans la voie</p>
+    armure est la dentelle, sa seule défense, la rapière.</p>
+
+    <p>Lorsqu’il ne porte aucune armure, le barde ajoute son CHA en DEF (en plus
+    de son AGI), toutefois ce bonus ne peut pas dépasser le rang atteint dans la
+    voie</p>
   source: ''
   origin: ''
   slug: dentelles-et-rapiere
@@ -24,28 +26,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.wLEDlG3yHUZ5NRLM
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.wLEDlG3yHUZ5NRLM
       indice: 0
-      label: Dentelles et rapière
-      chatFlavor: Dentelles et rapière
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
         visible: false
-      conditions: []
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.wLEDlG3yHUZ5NRLM
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wLEDlG3yHUZ5NRLM
           subtype: combat
           target: def
-          value: min(@cha,@rang)
+          value: '@rang'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 150000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -60,7 +63,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821922810
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!wLEDlG3yHUZ5NRLM'
 

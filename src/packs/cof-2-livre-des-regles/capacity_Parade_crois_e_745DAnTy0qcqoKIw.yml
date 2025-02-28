@@ -6,9 +6,10 @@ _id: 745DAnTy0qcqoKIw
 system:
   description: >-
     <p>Le rôdeur obtient un bonus de +1 en DEF lorsqu’il combat avec une arme
-    dans chaque main. Ce bonus passe à +2 au rang 5 de la voie. Au début de son
-    tour, s’il renonce à<br />toute attaque de la main secondaire, il double ce
-    bonus jusqu’à son prochain tour</p>
+    dans chaque main. Ce bonus passe à +2 au rang 5 de la voie.</p>
+
+    <p>Au début de son tour, s’il renonce à toute attaque de la main secondaire,
+    il double ce bonus jusqu’à son prochain tour</p>
   source: ''
   origin: ''
   slug: parade-croisee
@@ -24,47 +25,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.745DAnTy0qcqoKIw
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.745DAnTy0qcqoKIw
       indice: 0
-      label: Parade croisée
-      chatFlavor: Parade croisée
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
-        - type: capacity
-          source: Item.745DAnTy0qcqoKIw
-          subtype: combat
-          target: def
-          value: 1 + (@rang % 5)
-      conditions: []
-      resolvers: []
-    - source: Item.745DAnTy0qcqoKIw
-      indice: 1
-      label: Parade croisée doublée
-      chatFlavor: Parade croisée doublée
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: true
+        activable: true
+        enabled: false
         temporary: true
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.745DAnTy0qcqoKIw
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.745DAnTy0qcqoKIw
           subtype: combat
           target: def
-          value: 1 + (@rang % 5)
-      conditions: []
+          value: '@rang[1,0,0,0,1]'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -79,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824791938
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!745DAnTy0qcqoKIw'
 

@@ -28,17 +28,19 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.FUfItDTLyDfmSai4
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.FUfItDTLyDfmSai4
       indice: 0
       label: ''
       chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       resolvers:
         - type: ranged
           skill:
@@ -51,11 +53,10 @@ system:
             type: none
             number: 0
             scope: all
-      conditions: []
       modifiers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -70,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740773687675
+  lastModifiedBy: eB70hIW5CxiKgFZL
 _key: '!items!FUfItDTLyDfmSai4'
 

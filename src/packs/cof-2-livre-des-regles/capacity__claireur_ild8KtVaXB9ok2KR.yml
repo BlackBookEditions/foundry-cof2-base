@@ -24,62 +24,30 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.ild8KtVaXB9ok2KR
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.ild8KtVaXB9ok2KR
       indice: 0
-      label: Pistage en milieu naturelle
-      chatFlavor: Pistage en milieu naturelle
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.ild8KtVaXB9ok2KR
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.ild8KtVaXB9ok2KR
           subtype: skill
           target: per
           value: 2 + @rang
-      conditions: []
-      resolvers: []
-    - source: Item.ild8KtVaXB9ok2KR
-      indice: 1
-      label: vigilance en milieu naturel
-      chatFlavor: vigilance en milieu naturel
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
         - type: capacity
-          source: Item.ild8KtVaXB9ok2KR
-          subtype: skill
-          target: per
-          value: 2 + @rang
-      conditions: []
-      resolvers: []
-    - source: Item.ild8KtVaXB9ok2KR
-      indice: 2
-      label: Discrétion en milieu naturel
-      chatFlavor: Discrétion en milieu naturel
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
-        - type: capacity
-          source: Item.ild8KtVaXB9ok2KR
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.ild8KtVaXB9ok2KR
           subtype: skill
           target: agi
           value: 2 + @rang
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -98,7 +66,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824331546
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!ild8KtVaXB9ok2KR'
 

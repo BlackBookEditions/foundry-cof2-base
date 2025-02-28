@@ -23,34 +23,35 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.NshKfOcVeBaQ3Nrc
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.NshKfOcVeBaQ3Nrc
       indice: 0
-      label: Vivacité
-      chatFlavor: Vivacité
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.NshKfOcVeBaQ3Nrc
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.NshKfOcVeBaQ3Nrc
           subtype: combat
           target: init
           value: '3'
         - type: capacity
-          source: Item.NshKfOcVeBaQ3Nrc
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.NshKfOcVeBaQ3Nrc
           subtype: skill
           target: agi
           value: '3'
         - type: capacity
-          source: Item.NshKfOcVeBaQ3Nrc
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.NshKfOcVeBaQ3Nrc
           subtype: skill
           target: for
           value: '3'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -69,7 +70,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740827278379
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!NshKfOcVeBaQ3Nrc'
 

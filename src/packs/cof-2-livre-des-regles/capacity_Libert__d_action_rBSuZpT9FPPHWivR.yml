@@ -23,38 +23,39 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.rBSuZpT9FPPHWivR
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.rBSuZpT9FPPHWivR
       indice: 0
-      label: Liberté d’action
-      chatFlavor: Liberté d’action
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.rBSuZpT9FPPHWivR
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.rBSuZpT9FPPHWivR
           subtype: state
           target: fearimmunity
           value: '0'
         - type: capacity
-          source: Item.rBSuZpT9FPPHWivR
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.rBSuZpT9FPPHWivR
           subtype: state
           target: enslavement
           value: '0'
         - type: capacity
-          source: Item.rBSuZpT9FPPHWivR
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.rBSuZpT9FPPHWivR
           subtype: state
           target: movementImpairment
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 87500
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -69,7 +70,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821666508
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!rBSuZpT9FPPHWivR'
 

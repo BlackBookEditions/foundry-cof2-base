@@ -10,7 +10,7 @@ system:
     tous les tests d’érudition (INT) et artistiques (CHA).</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: lumiere-interieur
   tags: []
   subtype: ''
   actionType: none
@@ -23,62 +23,50 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.PaT2ABkL0McNvBgT
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
       indice: 0
-      label: 'Lumière intérieur : test en érudition'
-      chatFlavor: 'Lumière intérieur : test en érudition'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: int
           value: '3'
-      conditions: []
-      resolvers: []
-    - source: Item.PaT2ABkL0McNvBgT
-      indice: 1
-      label: 'Lumière intérieur : test artistique'
-      chatFlavor: 'Lumière intérieur : test artistique'
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
         - type: capacity
-          source: Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: cha
           value: '3'
-      conditions: []
       resolvers: []
-    - source: Item.PaT2ABkL0McNvBgT
-      indice: 2
-      label: 'Lumière intérieur : vision dans le noir'
-      chatFlavor: 'Lumière intérieur : vision dans le noir'
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+      indice: 1
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
           subtype: state
           target: darkvision
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -97,7 +85,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740819977922
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!PaT2ABkL0McNvBgT'
 

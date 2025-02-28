@@ -4,11 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 5sIcXyGT8uO766kE
 system:
-  description: >-
-    <p>Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA
-    et à ceux<br />de ses alliés au contact pour les tests de négociation, de
-    persuasion ou d’intimidation. Allez<br />savoir pourquoi, sa simple présence
-    donne de la force aux arguments de ses alliés…</p>
+  description: "<p>Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA et à ceux\_de ses alliés au contact pour les tests de négociation, de persuasion ou d’intimidation. Allez\_savoir pourquoi, sa simple présence donne de la force aux arguments de ses alliés…</p>"
   source: ''
   origin: ''
   slug: argument-de-taille
@@ -24,33 +20,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.5sIcXyGT8uO766kE
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.5sIcXyGT8uO766kE
       indice: 0
-      label: Argument de taille
-      chatFlavor: Argument de taille
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.5sIcXyGT8uO766kE
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.5sIcXyGT8uO766kE
           subtype: attribute
           target: hp
           value: '@for'
         - type: capacity
-          source: Item.5sIcXyGT8uO766kE
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.5sIcXyGT8uO766kE
           subtype: skill
           target: for
           value: '@for'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -65,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824981671
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!5sIcXyGT8uO766kE'
 

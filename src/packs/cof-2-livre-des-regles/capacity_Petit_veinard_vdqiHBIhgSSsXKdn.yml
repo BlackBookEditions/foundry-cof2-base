@@ -10,7 +10,7 @@ system:
     DM, mais pas un critique).</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: petit-veinard
   tags: []
   subtype: ''
   actionType: none
@@ -23,28 +23,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.vdqiHBIhgSSsXKdn
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.vdqiHBIhgSSsXKdn
       indice: 0
-      label: Petit veinard
-      chatFlavor: Petit veinard
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.vdqiHBIhgSSsXKdn
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.vdqiHBIhgSSsXKdn
           subtype: resource
           target: fp
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 87500
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -59,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820639471
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!vdqiHBIhgSSsXKdn'
 

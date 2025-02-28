@@ -1,0 +1,76 @@
+folder: WZ70krW97cZ8MiK3
+name: Arme de mana
+type: capacity
+img: icons/svg/combat.svg
+_id: vUoYF6Uz9USrFOhp
+system:
+  description: >-
+    <p style="text-align:justify">Le sort crée une lame d’énergie lumineuse
+    pendant [rang] rounds. Dès le premier round et à chaque round suivant,
+    l’ensorceleur peut lui ordonner d’attaquer une cible de son choix à portée
+    (action gratuite, portée 20 m). La lame doit réussir un test d’attaque
+    magique contre la DEF de l’adversaire. Elle inflige [1d4° + CHA] DM en cas
+    de réussite. L’ensorceleur ne peut maintenir actif qu’un seul sort d’arme de
+    mana à la fois.</p>
+  source: ''
+  origin: ''
+  slug: arme-de-mana
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.vUoYF6Uz9USrFOhp
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 1d4° + @cha
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 75000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740827724823
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!vUoYF6Uz9USrFOhp'
+

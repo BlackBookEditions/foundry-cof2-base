@@ -4,10 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 8sYwesOPqjzSA0yr
 system:
-  description: >-
-    <p>Le barbare ajoute son rang + 2 à tous les tests d’AGI destinés à esquiver
-    (Explosion de<br />feu, souffle, pièges, etc.). De plus, il gagne +3 en
-    Init. et +1 en DEF. Le bonus de DEF passe à +2 au rang 5.</p>
+  description: "<p>Le barbare ajoute son rang + 2 à tous les tests d’AGI destinés à esquiver (Explosion de\_feu, souffle, pièges, etc.). De plus, il gagne +3 en Init. et +1 en DEF. Le bonus de DEF passe à +2 au rang 5.</p>"
   source: ''
   origin: ''
   slug: reflexes-eclair
@@ -23,38 +20,39 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.8sYwesOPqjzSA0yr
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.8sYwesOPqjzSA0yr
       indice: 0
-      label: Réflexes éclair
-      chatFlavor: Réflexes éclair
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8sYwesOPqjzSA0yr
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8sYwesOPqjzSA0yr
           subtype: combat
           target: init
           value: '3'
         - type: capacity
-          source: Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.8sYwesOPqjzSA0yr
           subtype: combat
           target: def
-          value: 1 + (@rang % 5)
-      conditions: []
+          value: '@rang1,0,0,0,1]'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -69,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740825016817
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!8sYwesOPqjzSA0yr'
 

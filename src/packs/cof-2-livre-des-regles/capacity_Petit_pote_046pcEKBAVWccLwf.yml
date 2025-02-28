@@ -4,13 +4,10 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 046pcEKBAVWccLwf
 system:
-  description: >-
-    <p>Le gnome est un compagnon sympathique et difficile à considérer comme
-    dangereux ou malintentionné.<br />Il gagne +3 à tous les tests d’interaction
-    sociale sauf pour intimider. Il gagne aussi 1<br />point de chance.</p>
+  description: "<p>Le gnome est un compagnon sympathique et difficile à considérer comme dangereux ou malintentionné.<br />Il gagne +3 à tous les tests d’interaction sociale sauf pour intimider. Il gagne aussi 1\_point de chance.</p>"
   source: ''
   origin: ''
-  slug: ''
+  slug: petit-pote
   tags: []
   subtype: ''
   actionType: none
@@ -23,47 +20,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.046pcEKBAVWccLwf
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.046pcEKBAVWccLwf
       indice: 0
-      label: 'Petit pote : test interaction sociale'
-      chatFlavor: 'Petit pote : test interaction sociale'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.046pcEKBAVWccLwf
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.046pcEKBAVWccLwf
           subtype: skill
           target: cha
           value: '3'
-      conditions: []
-      resolvers: []
-    - source: Item.046pcEKBAVWccLwf
-      indice: 1
-      label: 'Petit pote : PC'
-      chatFlavor: 'Petit pote : PC'
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
         - type: capacity
-          source: Item.046pcEKBAVWccLwf
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.046pcEKBAVWccLwf
           subtype: resource
           target: fp
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -78,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820511582
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!046pcEKBAVWccLwf'
 

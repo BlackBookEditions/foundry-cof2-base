@@ -4,13 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: GIuYPoQI7vRyWbpL
 system:
-  description: >-
-    <p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que
-    de les esquiver. Il<br />peut choisir de remplacer son AGI par sa CON pour
-    calculer sa DEF (la limitation du bonus maximal en fonction de l’armure
-    portée s’applique toujours, mais cette fois elle s’applique à la CON).<br
-    />Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en
-    DEF et ce bonus passe à +2 au rang 4.</p>
+  description: "<p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que de les esquiver.\_<br />Il peut choisir de remplacer son AGI par sa CON pour calculer sa DEF (la limitation du bonus maximal en fonction de l’armure portée s’applique toujours, mais cette fois elle s’applique à la CON).<br />Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en DEF et ce bonus passe à +2 au rang 4.</p>"
   source: ''
   origin: ''
   slug: peau-de-pierre
@@ -26,28 +20,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.GIuYPoQI7vRyWbpL
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.GIuYPoQI7vRyWbpL
       indice: 0
-      label: Peau de pierre
-      chatFlavor: Peau de pierre
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.GIuYPoQI7vRyWbpL
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.GIuYPoQI7vRyWbpL
           subtype: combat
           target: def
-          value: 1 + (@rang % 4)
-      conditions: []
+          value: '@rang[1,0,0,1,0]'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -62,7 +57,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824990660
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!GIuYPoQI7vRyWbpL'
 

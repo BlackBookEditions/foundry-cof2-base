@@ -25,7 +25,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.OvCIsCZVmFzAtLTQ
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.OvCIsCZVmFzAtLTQ
       indice: 0
       label: Défense au bouclier
       chatFlavor: Défense au bouclier
@@ -38,7 +38,7 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.OvCIsCZVmFzAtLTQ
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.OvCIsCZVmFzAtLTQ
           subtype: combat
           target: def
           value: 1 + (@rank % 5)

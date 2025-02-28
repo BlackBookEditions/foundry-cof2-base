@@ -22,33 +22,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.UhLsiXWMlrbPqKil
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.UhLsiXWMlrbPqKil
       indice: 0
-      label: Constitution héroïque
-      chatFlavor: Constitution héroïque
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.UhLsiXWMlrbPqKil
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.UhLsiXWMlrbPqKil
           subtype: ability
           target: con
           value: '1'
         - type: capacity
-          source: Item.UhLsiXWMlrbPqKil
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.UhLsiXWMlrbPqKil
           subtype: bonusDice
           target: con
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -63,7 +64,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740823903414
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!UhLsiXWMlrbPqKil'
 

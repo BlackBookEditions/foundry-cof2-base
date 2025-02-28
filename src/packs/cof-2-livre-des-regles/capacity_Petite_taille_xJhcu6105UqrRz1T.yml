@@ -15,7 +15,7 @@ system:
     d’arc long ni d’arbalète lourde</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: petite-taille
   tags: []
   subtype: ''
   actionType: none
@@ -28,26 +28,27 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.xJhcu6105UqrRz1T
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.xJhcu6105UqrRz1T
       indice: 0
-      label: 'Petite taille : defense'
-      chatFlavor: 'Petite taille : defense'
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.xJhcu6105UqrRz1T
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.xJhcu6105UqrRz1T
           subtype: combat
           target: def
           value: '1'
-      conditions: []
       resolvers: []
-    - source: Item.xJhcu6105UqrRz1T
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.xJhcu6105UqrRz1T
       indice: 1
       label: 'Petite taille : +3 discrétion et vol'
       chatFlavor: 'Petite taille : +3 discrétion et vol'
@@ -60,7 +61,7 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.xJhcu6105UqrRz1T
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.xJhcu6105UqrRz1T
           subtype: skill
           target: agi
           value: '3'
@@ -83,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820706031
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!xJhcu6105UqrRz1T'
 

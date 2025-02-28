@@ -4,16 +4,10 @@ type: capacity
 img: icons/svg/combat.svg
 _id: SqF5DF1vFnwXA9LP
 system:
-  description: >-
-    <p>Le gnome possède un talent inné pour les sciences, qu’elles soient
-    occultes ou plus ordinaires.<br />Il gagne un bonus de +3 à tous les tests
-    scientifiques (INT) et il choisit une capacité de<br />rang 1 d’ensorceleur.
-    S’il porte une armure, il ne peut pas utiliser ce sort plus d’une fois par
-    jour (il doit payer le coût en PM de façon normale).<br />Dans le noir
-    total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>
+  description: "<p>Le gnome possède un talent inné pour les sciences, qu’elles soient occultes ou plus ordinaires.<br />Il gagne un bonus de +3 à tous les tests scientifiques (INT) et il choisit une capacité de\_rang 1 d’ensorceleur. S’il porte une armure, il ne peut pas utiliser ce sort plus d’une fois par jour (il doit payer le coût en PM de façon normale).<br />Dans le noir total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>"
   source: ''
   origin: ''
-  slug: ''
+  slug: don-etrange
   tags: []
   subtype: ''
   actionType: none
@@ -26,38 +20,30 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.SqF5DF1vFnwXA9LP
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.SqF5DF1vFnwXA9LP
       indice: 0
-      label: vision nocturne
-      chatFlavor: vision nocturne
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
-        activable: false
-        enabled: true
-        temporary: false
-      modifiers:
-        - type: capacity
-          source: Item.SqF5DF1vFnwXA9LP
-          subtype: state
-          target: darkvision
-          value: '3'
-      conditions: []
-      resolvers: []
-    - source: Item.SqF5DF1vFnwXA9LP
-      indice: 1
-      label: Nouvelle Action 2
-      chatFlavor: ''
-      type: melee
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
         activable: false
         enabled: false
         temporary: false
-      modifiers: []
-      conditions: []
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.SqF5DF1vFnwXA9LP
+          subtype: state
+          target: darkvision
+          value: '0'
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.SqF5DF1vFnwXA9LP
+          subtype: skill
+          target: int
+          value: '3'
       resolvers: []
   cost: -1
 effects: []
@@ -76,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820587773
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!SqF5DF1vFnwXA9LP'
 

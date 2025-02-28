@@ -11,7 +11,7 @@ system:
     de +2 en DEF.</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: instinct-de-survie
   tags: []
   subtype: ''
   actionType: none
@@ -24,28 +24,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.ZUYbi52L7F95SdZr
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.ZUYbi52L7F95SdZr
       indice: 0
-      label: Instinct de survie +2 DEF
-      chatFlavor: Instinct de survie +2 DEF
-      type: melee
+      label: ''
+      chatFlavor: ''
+      type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
         activable: true
         enabled: false
         temporary: true
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.ZUYbi52L7F95SdZr
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.ZUYbi52L7F95SdZr
           subtype: combat
           target: def
           value: '2'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 50000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -60,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820827942
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!ZUYbi52L7F95SdZr'
 

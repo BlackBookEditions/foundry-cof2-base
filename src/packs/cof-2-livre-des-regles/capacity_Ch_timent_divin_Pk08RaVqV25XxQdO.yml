@@ -1,0 +1,74 @@
+folder: F7Tt7sG8uNUrJciv
+name: Châtiment divin
+type: capacity
+img: icons/svg/combat.svg
+_id: Pk08RaVqV25XxQdO
+system:
+  description: >-
+    <p style="text-align:justify">Le prêtre effectue une attaque de contact avec
+    un dé bonus et ajoute son CHA aux dommages.<br />De plus, lorsqu’il utilise
+    cette capacité, le prêtre peut dépenser 1 PM pour ajouter +1d4° aux DM d’une
+    attaque au contact qui touche. Au rang 5, il peut dépenser 2 PM pour ajouter
+    +2d4°.</p>
+  source: ''
+  origin: ''
+  slug: chatiment-divin
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.Pk08RaVqV25XxQdO
+      indice: 0
+      label: Châtiment divin (L)
+      chatFlavor: Châtiment divin (L)
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: melee
+          skill:
+            formula: '@atc'
+            crit: '@crit'
+            difficulty: '@target.def'
+          dmg:
+            formula: '@weapon.dmg + @cha'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740829327278
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!Pk08RaVqV25XxQdO'
+

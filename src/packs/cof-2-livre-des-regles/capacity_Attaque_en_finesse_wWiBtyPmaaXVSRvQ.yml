@@ -20,7 +20,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.wWiBtyPmaaXVSRvQ
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.wWiBtyPmaaXVSRvQ
       indice: 0
       label: Attaque en finesse
       chatFlavor: Attaque en finesse
@@ -33,13 +33,13 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: init
           value: '@agi'
       conditions: []
       resolvers: []
-    - source: Item.wWiBtyPmaaXVSRvQ
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.wWiBtyPmaaXVSRvQ
       indice: 1
       label: Intimidation
       chatFlavor: Intimidation
@@ -52,12 +52,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: cha
           value: 2 + @rang
         - type: capacity
-          source: Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: for
           value: 2 + @rang
@@ -80,7 +80,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824959331
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!wWiBtyPmaaXVSRvQ'
 

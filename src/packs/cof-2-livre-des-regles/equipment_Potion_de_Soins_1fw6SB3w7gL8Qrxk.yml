@@ -4,23 +4,17 @@ type: equipment
 img: icons/svg/item-bag.svg
 _id: 1fw6SB3w7gL8Qrxk
 system:
-  description: >-
-    <p>Une potion permettant de récupérer 1d4° PV</p>
-
-    <p>Les potions de soins ne sont pas forcément magiques, ce sont des remèdes
-    à base de<br />plantes ou de composants rares (qui peuvent être magiques).
-    Un personnage ne peut pas profiter des effets de plus d’une potion de soins
-    par récupération rapide (30 min).</p>
+  description: "<p>Une potion permettant de récupérer 1d4° PV</p>\n<p>Les potions de soins ne sont pas forcément magiques, ce sont des remèdes à base de\_plantes ou de composants rares (qui peuvent être magiques). Un personnage ne peut pas profiter des effets de plus d’une potion de soins par récupération rapide (30 min).</p>"
   source: ''
   origin: ''
-  slug: ''
+  slug: potion-de-soins
   tags: []
   subtype: misc
   martialCategory: ''
   damagetype: ''
   quantity:
     current: 1
-    max: 99
+    max: 1
     destroyIfEmpty: true
   charges:
     current: null
@@ -42,7 +36,7 @@ system:
     oneHand: false
     twoHand: false
   actions:
-    - source: Item.1fw6SB3w7gL8Qrxk
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.1fw6SB3w7gL8Qrxk
       indice: 0
       label: Potion de Soins
       chatFlavor: Potion de Soins
@@ -56,21 +50,14 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula:
-              '0':
-                part: ''
-            crit: null
-            difficulty: ''
-          dmg:
-            formula:
-              '0':
-                part: 1d4°
+            formula: 1d4°
           target:
-            type: none
+            type: single
             number: 0
             scope: all
-      modifiers: []
+          dmg: {}
       conditions: []
+      modifiers: []
 effects: []
 sort: 0
 ownership:
@@ -87,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740817403921
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!1fw6SB3w7gL8Qrxk'
 

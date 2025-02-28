@@ -25,22 +25,24 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.qQRRYzPlyq9JHoIq
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.qQRRYzPlyq9JHoIq
       indice: 0
-      label: Dans le mille
-      chatFlavor: Dans le mille
+      label: ''
+      chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isEquipped
       resolvers:
         - type: ranged
           skill:
             formula: '@atd'
-            crit: '@crit'
+            crit: ''
             difficulty: '@target.def'
           dmg:
             formula: '@weapon.dmg + 2d4°'
@@ -49,10 +51,9 @@ system:
             number: 0
             scope: all
       modifiers: []
-      conditions: []
   cost: -1
 effects: []
-sort: 0
+sort: 75000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -67,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740823246131
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!qQRRYzPlyq9JHoIq'
 

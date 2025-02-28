@@ -22,33 +22,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.4mRJJY6rgiEPk1JM
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.4mRJJY6rgiEPk1JM
       indice: 0
       label: Agilité héroique
       chatFlavor: Agilité héroique
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.4mRJJY6rgiEPk1JM
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.4mRJJY6rgiEPk1JM
           subtype: ability
           target: agi
           value: '1'
         - type: capacity
-          source: Item.4mRJJY6rgiEPk1JM
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.4mRJJY6rgiEPk1JM
           subtype: bonusDice
           target: agi
           value: '0'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -63,7 +64,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740774393832
+  lastModifiedBy: eB70hIW5CxiKgFZL
 _key: '!items!4mRJJY6rgiEPk1JM'
 

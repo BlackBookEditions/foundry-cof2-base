@@ -25,28 +25,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.TH21m4awSMlgVc6R
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.TH21m4awSMlgVc6R
       indice: 0
-      label: Tactiques de meute
-      chatFlavor: Tactiques de meute
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.TH21m4awSMlgVc6R
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.TH21m4awSMlgVc6R
           subtype: combat
           target: def
           value: '@allrank[5]'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 400000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -61,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740823736692
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!TH21m4awSMlgVc6R'
 

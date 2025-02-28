@@ -23,7 +23,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.iHKVpIvd5PUiQG7i
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
       indice: 0
       label: Vitesse du félin
       chatFlavor: Vitesse du félin
@@ -36,22 +36,22 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: for
           value: 2 + @rang
         - type: capacity
-          source: Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: init
           value: '3'
         - type: capacity
-          source: Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: def
           value: '@rank[1,0,1,0,1]'
@@ -74,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740828548148
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!iHKVpIvd5PUiQG7i'
 

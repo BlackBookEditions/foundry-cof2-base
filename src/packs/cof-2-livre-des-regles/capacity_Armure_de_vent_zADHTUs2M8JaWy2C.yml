@@ -23,7 +23,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.zADHTUs2M8JaWy2C
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.zADHTUs2M8JaWy2C
       indice: 0
       label: Pas d'armure
       chatFlavor: Pas d'armure
@@ -36,13 +36,13 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.zADHTUs2M8JaWy2C
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
           value: 2 + (@rang % 5)
       conditions: []
       resolvers: []
-    - source: Item.zADHTUs2M8JaWy2C
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.zADHTUs2M8JaWy2C
       indice: 1
       label: avec armure
       chatFlavor: avec armure
@@ -55,7 +55,7 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.zADHTUs2M8JaWy2C
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
           value: '1'
@@ -63,7 +63,7 @@ system:
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 50000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -78,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740825043026
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!zADHTUs2M8JaWy2C'
 

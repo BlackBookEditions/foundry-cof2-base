@@ -24,7 +24,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.myYDQjOuKg3HzcIE
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.myYDQjOuKg3HzcIE
       indice: 0
       label: Sans peur
       chatFlavor: Sans peur
@@ -37,13 +37,13 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.myYDQjOuKg3HzcIE
           subtype: state
           target: fearimmunity
           value: '0'
       conditions: []
       resolvers: []
-    - source: Item.myYDQjOuKg3HzcIE
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.myYDQjOuKg3HzcIE
       indice: 1
       label: Statégie et commandement
       chatFlavor: Statégie et commandement
@@ -56,12 +56,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.myYDQjOuKg3HzcIE
           subtype: skill
           target: int
           value: 2 + @rang
         - type: capacity
-          source: Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.myYDQjOuKg3HzcIE
           subtype: skill
           target: cha
           value: 2 + @rang
@@ -84,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740825194868
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!myYDQjOuKg3HzcIE'
 

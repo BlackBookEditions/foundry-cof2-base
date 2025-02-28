@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.hSGNsiCOiFeGGoyC
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
       indice: 0
       label: 'Pacifisme : Empathie'
       chatFlavor: 'Pacifisme : Empathie'
@@ -39,18 +39,18 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: cha
           value: 2 + @rang
         - type: capacity
-          source: Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: int
           value: 2 + @rang
       conditions: []
       resolvers: []
-    - source: Item.hSGNsiCOiFeGGoyC
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
       indice: 1
       label: 'Pacifisme : defense'
       chatFlavor: 'Pacifisme : defense'
@@ -63,7 +63,7 @@ system:
         temporary: true
       modifiers:
         - type: capacity
-          source: Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
           subtype: combat
           target: def
           value: '5'
@@ -86,7 +86,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740828891574
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!hSGNsiCOiFeGGoyC'
 

@@ -25,34 +25,35 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.dixJOT6lE3nbMDL6
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.dixJOT6lE3nbMDL6
       indice: 0
-      label: Survie
-      chatFlavor: Survie
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: for
           value: '2'
         - type: capacity
-          source: Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: per
           value: '2'
         - type: capacity
-          source: Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: vol
           value: '2'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -71,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740823896991
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!dixJOT6lE3nbMDL6'
 

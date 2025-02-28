@@ -10,7 +10,7 @@ system:
     qu’il inflige avec ces armes</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: merveille-technologique
   tags: []
   subtype: ''
   actionType: f
@@ -23,28 +23,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.Al2Gf1Qahm3EgKnm
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.Al2Gf1Qahm3EgKnm
       indice: 0
-      label: Merveille technologique
-      chatFlavor: Merveille technologique
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.Al2Gf1Qahm3EgKnm
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.Al2Gf1Qahm3EgKnm
           subtype: combat
           target: dam
           value: '@agi'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 250000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -59,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820394682
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!Al2Gf1Qahm3EgKnm'
 

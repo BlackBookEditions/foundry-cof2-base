@@ -26,28 +26,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.rv9yMbuhLF4g4b35
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.rv9yMbuhLF4g4b35
       indice: 0
-      label: Briseur d’os
-      chatFlavor: Briseur d’os
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.rv9yMbuhLF4g4b35
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.rv9yMbuhLF4g4b35
           subtype: combat
           target: crit
-          value: '-1'
-      conditions: []
+          value: '1'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -62,7 +63,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740824981671
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!rv9yMbuhLF4g4b35'
 

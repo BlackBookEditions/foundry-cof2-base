@@ -7,7 +7,7 @@ system:
   description: <p>Le halfelin augmente ses valeurs d’AGI et de CON de +1.</p>
   source: ''
   origin: ''
-  slug: ''
+  slug: vif-et-bien-nourri
   tags: []
   subtype: ''
   actionType: none
@@ -20,33 +20,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.V4exIVX6qkevnfWj
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.V4exIVX6qkevnfWj
       indice: 0
       label: Vif et bien nourri
       chatFlavor: Vif et bien nourri
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.V4exIVX6qkevnfWj
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.V4exIVX6qkevnfWj
           subtype: ability
           target: agi
           value: '1'
         - type: capacity
-          source: Item.V4exIVX6qkevnfWj
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.V4exIVX6qkevnfWj
           subtype: ability
           target: con
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -61,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740820626303
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!V4exIVX6qkevnfWj'
 

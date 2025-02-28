@@ -4,11 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: i3V8eJX0LIWb5JPd
 system:
-  description: >-
-    <p>Le nain réduit tous les DM subis de 2 points (mais il subit toujours au
-    moins 1 DM par attaque reçue). La réduction passe à 3 au niveau 10. Elle est
-    cumulable avec d’autres sources de réduction des DM comme la peau d’acier du
-    barbare.</p>
+  description: "<p>Le nain réduit tous les DM subis de 2 points (mais il subit toujours au moins 1 DM par attaque reçue). <br />La réduction passe à 3 au niveau 10.\_<br />Elle est cumulable avec d’autres sources de réduction des DM comme la peau d’acier du barbare.</p>"
   source: ''
   origin: ''
   slug: fils-du-roc
@@ -24,28 +20,29 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.i3V8eJX0LIWb5JPd
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.i3V8eJX0LIWb5JPd
       indice: 0
-      label: Fils du roc
-      chatFlavor: Fils du roc
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.i3V8eJX0LIWb5JPd
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.i3V8eJX0LIWb5JPd
           subtype: combat
           target: dr
-          value: 2 + (@niv % 5)
-      conditions: []
+          value: '2'
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 275000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -60,7 +57,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821274416
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!i3V8eJX0LIWb5JPd'
 

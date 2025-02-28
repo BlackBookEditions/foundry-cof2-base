@@ -20,33 +20,34 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.c18zF0fLH2ldxqS6
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.c18zF0fLH2ldxqS6
       indice: 0
-      label: Ténacité
-      chatFlavor: Ténacité
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.c18zF0fLH2ldxqS6
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.c18zF0fLH2ldxqS6
           subtype: ability
           target: con
           value: '1'
         - type: capacity
-          source: Item.c18zF0fLH2ldxqS6
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.c18zF0fLH2ldxqS6
           subtype: ability
           target: vol
           value: '1'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -61,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740821314326
+  lastModifiedBy: T8QXSVbafGIxbHWi
 _key: '!items!c18zF0fLH2ldxqS6'
 

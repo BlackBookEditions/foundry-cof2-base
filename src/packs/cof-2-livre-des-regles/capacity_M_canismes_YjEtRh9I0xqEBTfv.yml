@@ -25,26 +25,27 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Item.YjEtRh9I0xqEBTfv
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.YjEtRh9I0xqEBTfv
       indice: 0
       label: Mécanismes
       chatFlavor: Mécanismes
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Item.YjEtRh9I0xqEBTfv
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.YjEtRh9I0xqEBTfv
           subtype: skill
           target: int
           value: '2'
-      conditions: []
       resolvers: []
-    - source: Item.YjEtRh9I0xqEBTfv
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.YjEtRh9I0xqEBTfv
       indice: 1
       label: 'Mécanismes : arme de siege'
       chatFlavor: 'Mécanismes : arme de siege'
@@ -86,7 +87,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1740773648402
+  lastModifiedBy: eB70hIW5CxiKgFZL
 _key: '!items!YjEtRh9I0xqEBTfv'
 
