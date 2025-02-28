@@ -1,0 +1,93 @@
+folder: Um3g0UnqzSidTvlT
+name: Potion de Soins
+type: equipment
+img: icons/svg/item-bag.svg
+_id: 1fw6SB3w7gL8Qrxk
+system:
+  description: >-
+    <p>Une potion permettant de récupérer 1d4° PV</p>
+
+    <p>Les potions de soins ne sont pas forcément magiques, ce sont des remèdes
+    à base de<br />plantes ou de composants rares (qui peuvent être magiques).
+    Un personnage ne peut pas profiter des effets de plus d’une potion de soins
+    par récupération rapide (30 min).</p>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: misc
+  martialCategory: ''
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 99
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 10
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.1fw6SB3w7gL8Qrxk
+      indice: 0
+      label: Potion de Soins
+      chatFlavor: Potion de Soins
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: true
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: heal
+          skill:
+            formula:
+              '0':
+                part: ''
+            crit: null
+            difficulty: ''
+          dmg:
+            formula:
+              '0':
+                part: 1d4°
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+      conditions: []
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!1fw6SB3w7gL8Qrxk'
+

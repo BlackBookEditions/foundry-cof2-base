@@ -1,0 +1,84 @@
+folder: FzeaG6TAmwhJHagA
+name: Petit pote
+type: capacity
+img: icons/svg/combat.svg
+_id: 046pcEKBAVWccLwf
+system:
+  description: >-
+    <p>Le gnome est un compagnon sympathique et difficile à considérer comme
+    dangereux ou malintentionné.<br />Il gagne +3 à tous les tests d’interaction
+    sociale sauf pour intimider. Il gagne aussi 1<br />point de chance.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.046pcEKBAVWccLwf
+      indice: 0
+      label: 'Petit pote : test interaction sociale'
+      chatFlavor: 'Petit pote : test interaction sociale'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.046pcEKBAVWccLwf
+          subtype: skill
+          target: cha
+          value: '3'
+      conditions: []
+      resolvers: []
+    - source: Item.046pcEKBAVWccLwf
+      indice: 1
+      label: 'Petit pote : PC'
+      chatFlavor: 'Petit pote : PC'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.046pcEKBAVWccLwf
+          subtype: resource
+          target: fp
+          value: '1'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!046pcEKBAVWccLwf'
+

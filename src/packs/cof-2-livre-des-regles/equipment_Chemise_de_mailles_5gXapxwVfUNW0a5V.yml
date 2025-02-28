@@ -1,0 +1,77 @@
+folder: vF1ugDhEx97jpuSd
+name: Chemise de mailles
+type: equipment
+img: icons/svg/item-bag.svg
+_id: 5gXapxwVfUNW0a5V
+system:
+  description: ''
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: armor
+  martialCategory: chainShirt
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 15
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.5gXapxwVfUNW0a5V
+      indice: 0
+      label: Chemise de mailles
+      chatFlavor: Chemise de mailles
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: equipment
+          source: Item.5gXapxwVfUNW0a5V
+          subtype: combat
+          target: def
+          value: '4'
+      conditions: []
+      resolvers: []
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!5gXapxwVfUNW0a5V'
+

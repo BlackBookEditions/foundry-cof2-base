@@ -1,0 +1,74 @@
+folder: SEH2YcHcTVIfwxsp
+name: Feindre la mort (G)
+type: capacity
+img: icons/svg/combat.svg
+_id: Vum3dITCN0yYvTQW
+system:
+  description: >-
+    <p style="text-align:justify">Une fois par combat, le voleur peut feindre la
+    mort après avoir reçu une blessure (même à 0 PV).<br />Il peut ainsi passer
+    pour mort aussi longtemps qu’il le souhaite et un test d’INT difficulté 20
+    est nécessaire pour révéler la supercherie. Lorsqu’il décide de se relever
+    (action gratuite), le voleur récupère immédiatement 1d4° PV et s’il est au
+    contact d’un adversaire, celui‑ci est surpris. Un adversaire qui a déjà été
+    victime de cette stratégie du voleur lors d’un précédent combat ne se laisse
+    pas surprendre une seconde fois (sauf si son INT est de ‑4).</p>
+  source: ''
+  origin: ''
+  slug: feindre-la-mort-g
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.Vum3dITCN0yYvTQW
+      indice: 0
+      label: 'Feindre la mort : Soin'
+      chatFlavor: 'Feindre la mort : Soin'
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 1d4°
+          target:
+            type: none
+            number: 0
+            scope: all
+          dmg: {}
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!Vum3dITCN0yYvTQW'
+

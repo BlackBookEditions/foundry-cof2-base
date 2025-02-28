@@ -1,0 +1,74 @@
+folder: xmpS4oiFKtZCJ9hz
+name: Frappe des arcanes (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: TlgYKcSIas51yirK
+system:
+  description: >-
+    <p style="text-align:justify">Le forgesort frappe le sol de son bâton et
+    provoque une onde dévastatrice dans un rayon de 10 m autour de lui. Toutes
+    les créatures dans la zone subissent automatiquement [3d4°+INT] DM et
+    doivent réussir un test de FOR difficulté [10 + INT] pour ne pas être
+    renversées.</p>
+  source: ''
+  origin: ''
+  slug: frappe-des-arcanes-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.TlgYKcSIas51yirK
+      indice: 0
+      label: Frappe des arcanes (A)*
+      chatFlavor: Frappe des arcanes (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '@crit'
+            difficulty: '0'
+          dmg:
+            formula: 3d4° + @int
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!TlgYKcSIas51yirK'
+

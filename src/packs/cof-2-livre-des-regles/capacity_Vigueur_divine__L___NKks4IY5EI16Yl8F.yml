@@ -1,0 +1,67 @@
+folder: 9wusVgZFeiaMY9kN
+name: Vigueur divine (L)*
+type: capacity
+img: icons/svg/combat.svg
+_id: NKks4IY5EI16Yl8F
+system:
+  description: >-
+    <p style="text-align:justify">La cible au contact est guérie d’un poison ou
+    d’une maladie.<br />Si l’infection est surnaturelle, un test d’attaque
+    magique (éventuellement opposé) peut être demandé par le MJ. De plus, le
+    prêtre obtient un bonus égal au rang + 2 aux tests effectués pour résister
+    aux maladies et aux poisons</p>
+  source: ''
+  origin: ''
+  slug: vigueur-divine-l
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.NKks4IY5EI16Yl8F
+      indice: 0
+      label: Resist maladie et poisons
+      chatFlavor: Resist maladie et poisons
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.NKks4IY5EI16Yl8F
+          subtype: skill
+          target: con
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!NKks4IY5EI16Yl8F'
+

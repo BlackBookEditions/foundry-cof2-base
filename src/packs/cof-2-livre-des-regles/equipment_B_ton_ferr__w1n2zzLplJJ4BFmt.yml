@@ -1,0 +1,88 @@
+folder: BHbn2gP9Z2mczP4c
+name: Bâton ferré
+type: equipment
+img: icons/svg/item-bag.svg
+_id: w1n2zzLplJJ4BFmt
+system:
+  description: >-
+    <p>tous les personnages qui savent manier le bâton ferré savent aussi manier
+    le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
+    au combat, plus lourd<br />et généralement couvert de métal aux extrémités
+    (bien que les druides utilisent des bâtons de bois noueux avec le même
+    effet).</p>
+  source: ''
+  origin: ''
+  slug: baton-ferre
+  tags: []
+  subtype: weapon
+  martialCategory: ironStaff
+  damagetype: impact
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 2
+    unit: kg
+  price:
+    value: 2
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Item.w1n2zzLplJJ4BFmt
+      indice: 0
+      label: Bâton ferré
+      chatFlavor: Bâton ferré
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: true
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: melee
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 1d6
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions: []
+      modifiers: []
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!w1n2zzLplJJ4BFmt'
+

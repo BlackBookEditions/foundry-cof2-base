@@ -1,0 +1,76 @@
+folder: F7Tt7sG8uNUrJciv
+name: Marteau de la foi (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: Tcrqztre8hbB5cUx
+system:
+  description: >-
+    <p style="text-align:justify">Le prêtre effectue un test d’attaque magique
+    contre la DEF se sa cible (portée de 30 m). Un projectile d’énergie de la
+    forme de l’arme du prêtre va percuter la cible, lui infligeant [2d4°+CHA] DM
+    en cas de réussite. Si l’arme du prêtre est magique, il peut ajouter son
+    bonus au test d’attaque et aux DM. Les DM du marteau de la foi augmentent de
+    +1 chaque fois que le personnage atteint le rang 4 dans une autre voie de
+    prêtre.</p>
+  source: ''
+  origin: ''
+  slug: marteau-de-la-foi-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.Tcrqztre8hbB5cUx
+      indice: 0
+      label: Marteau de la foi (A)*
+      chatFlavor: Marteau de la foi (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '@crit'
+            difficulty: '@target.def'
+          dmg:
+            formula: 2d4°+@cha + @allrank[4] -1
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!Tcrqztre8hbB5cUx'
+

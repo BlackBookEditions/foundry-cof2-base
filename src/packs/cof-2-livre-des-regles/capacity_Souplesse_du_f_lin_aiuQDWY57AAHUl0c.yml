@@ -1,0 +1,71 @@
+folder: 7pl999isgEbTsXUl
+name: Souplesse du félin
+type: capacity
+img: icons/svg/combat.svg
+_id: aiuQDWY57AAHUl0c
+system:
+  description: >-
+    <p>Le voleur possède une démarche et une façon de se déplacer à la fois
+    élégante, féline et souple.<br />Il ajoute +2 en DEF et en Initiative. Ce
+    bonus passe à +3 au rang 5. Il lui faut seulement une action de mouvement
+    pour se relever.</p>
+  source: ''
+  origin: ''
+  slug: souplesse-du-felin
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.aiuQDWY57AAHUl0c
+      indice: 0
+      label: Souplesse du félin
+      chatFlavor: Souplesse du félin
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.aiuQDWY57AAHUl0c
+          subtype: combat
+          target: init
+          value: 2 + (@rang % 5)
+        - type: capacity
+          source: Item.aiuQDWY57AAHUl0c
+          subtype: combat
+          target: def
+          value: 2 + (@rang % 5)
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!aiuQDWY57AAHUl0c'
+

@@ -1,0 +1,72 @@
+folder: YKa2vxKyAnZmRpKR
+name: Foudre (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: yA3F88CwL36zUmFj
+system:
+  description: >-
+    <p>L’ensorceleur produit un éclair sur une ligne de 10 m. Toutes les
+    créatures sur la trajectoire<br />subissent [4d4°+CHA] DM ou seulement la
+    moitié pour celles qui réussissent un test d’AGI difficulté [10 + CHA].</p>
+  source: ''
+  origin: ''
+  slug: foudre-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.yA3F88CwL36zUmFj
+      indice: 0
+      label: Foudre (A)*
+      chatFlavor: Foudre (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '@crit'
+            difficulty: '0'
+          dmg:
+            formula: 4d4°+@cha
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!yA3F88CwL36zUmFj'
+

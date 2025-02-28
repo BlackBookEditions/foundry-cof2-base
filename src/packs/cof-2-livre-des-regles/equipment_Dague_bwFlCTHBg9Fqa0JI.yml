@@ -1,0 +1,83 @@
+folder: BHbn2gP9Z2mczP4c
+name: Dague
+type: equipment
+img: icons/svg/item-bag.svg
+_id: bwFlCTHBg9Fqa0JI
+system:
+  description: "<p>Une dague <span class=\"BxUVEf ILfuVd\" lang=\"fr\"><span class=\"hgKElc\">est un couteau court à lame pointue utilisé comme arme de perforation.</span></span></p>\n<p><span class=\"BxUVEf ILfuVd\" lang=\"fr\"><span class=\"hgKElc\">Il s'agit d'une amre \"légère\" ce qui permet à certains profils d'utiliser l'agilité à la place e la force pour la manier.</span></span></p>\n<p>\_</p>\n<p><strong><span class=\"BxUVEf ILfuVd\" lang=\"fr\"><span class=\"hgKElc\">Arrme légère</span></span></strong></p>"
+  source: ''
+  origin: ''
+  slug: dague
+  tags: []
+  subtype: weapon
+  martialCategory: dagger
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 3
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Item.bwFlCTHBg9Fqa0JI
+      indice: 0
+      label: Dague
+      chatFlavor: Dague
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: true
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: melee
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 1d4
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions: []
+      modifiers: []
+effects: []
+sort: 150000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!bwFlCTHBg9Fqa0JI'
+

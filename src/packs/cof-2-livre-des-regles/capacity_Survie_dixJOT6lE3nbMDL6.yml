@@ -1,0 +1,77 @@
+folder: ZPVEGtcTyZDsZlHb
+name: Survie
+type: capacity
+img: icons/svg/combat.svg
+_id: dixJOT6lE3nbMDL6
+system:
+  description: >-
+    <p>Le rôdeur ajoute son rang + 2 à tous les tests d’escalade et de survie en
+    milieu naturel (s’orienter, trouver un abri et de la nourriture, etc.) dont
+    les tests de récupération effectués chaque nuit.<br />Lorsqu’il dort en
+    milieu naturel, s’il dépense 1 dé de récupération (DR), il guérit 1d4° PV
+    supplémentaire (en plus de [DR max + ½ niveau]).</p>
+  source: ''
+  origin: ''
+  slug: survie
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.dixJOT6lE3nbMDL6
+      indice: 0
+      label: Survie
+      chatFlavor: Survie
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.dixJOT6lE3nbMDL6
+          subtype: skill
+          target: for
+          value: '2'
+        - type: capacity
+          source: Item.dixJOT6lE3nbMDL6
+          subtype: skill
+          target: per
+          value: '2'
+        - type: capacity
+          source: Item.dixJOT6lE3nbMDL6
+          subtype: skill
+          target: vol
+          value: '2'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!dixJOT6lE3nbMDL6'
+

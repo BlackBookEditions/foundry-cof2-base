@@ -27,7 +27,17 @@
             "path": "lang/fr.json"
         }
     ],
-    "packs": [],
+    "packs": [ {
+        "label": "COF2 Livre des Règles",
+        "type": "Item",
+        "name": "cof-2-livre-des-regles",
+        "path": "packs/cof-2-livre-des-regles",
+        "system": "co",
+        "ownership": {
+          "PLAYER": "NONE",
+          "ASSISTANT": "OWNER"
+        }
+      }],
     "relationships": {
         "systems": [
             {

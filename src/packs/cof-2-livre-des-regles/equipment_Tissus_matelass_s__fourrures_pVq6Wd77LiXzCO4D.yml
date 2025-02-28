@@ -1,0 +1,77 @@
+folder: vF1ugDhEx97jpuSd
+name: Tissus matelassés, fourrures
+type: equipment
+img: icons/svg/item-bag.svg
+_id: pVq6Wd77LiXzCO4D
+system:
+  description: ''
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: armor
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 2
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.pVq6Wd77LiXzCO4D
+      indice: 0
+      label: Tissus matelassés, fourrures
+      chatFlavor: Tissus matelassés, fourrures
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: equipment
+          source: Item.pVq6Wd77LiXzCO4D
+          subtype: combat
+          target: def
+          value: '1'
+      conditions: []
+      resolvers: []
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!pVq6Wd77LiXzCO4D'
+

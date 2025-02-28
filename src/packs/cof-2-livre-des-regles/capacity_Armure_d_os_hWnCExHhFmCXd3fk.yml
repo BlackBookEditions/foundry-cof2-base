@@ -1,0 +1,68 @@
+folder: sldAcvtzn1e5nfOb
+name: Armure d’os
+type: capacity
+img: icons/svg/combat.svg
+_id: hWnCExHhFmCXd3fk
+system:
+  description: >-
+    <p style="text-align:justify">Le sorcier peut désormais porter une armure
+    d’os (souvent camouflée sous une robe) qui lui offre un bonus de +3 en DEF
+    et n’empêche pas l’utilisation des capacités de sorcier. Son bonus de DEF
+    augmente de +1 chaque fois que le personnage atteint le rang 4 dans une voie
+    de sorcier. Le sorcier doit confectionner cette armure lui‑même à partir
+    d’ossements et l’entretenir par magie 10 min chaque jour.</p>
+  source: ''
+  origin: ''
+  slug: armure-dos
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.hWnCExHhFmCXd3fk
+      indice: 0
+      label: Armure d’os
+      chatFlavor: Armure d’os
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: true
+      modifiers:
+        - type: capacity
+          source: Item.hWnCExHhFmCXd3fk
+          subtype: combat
+          target: def
+          value: 3 + @allrank[4]
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!hWnCExHhFmCXd3fk'
+

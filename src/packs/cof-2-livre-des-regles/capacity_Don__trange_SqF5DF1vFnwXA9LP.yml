@@ -1,0 +1,82 @@
+folder: FzeaG6TAmwhJHagA
+name: Don étrange
+type: capacity
+img: icons/svg/combat.svg
+_id: SqF5DF1vFnwXA9LP
+system:
+  description: >-
+    <p>Le gnome possède un talent inné pour les sciences, qu’elles soient
+    occultes ou plus ordinaires.<br />Il gagne un bonus de +3 à tous les tests
+    scientifiques (INT) et il choisit une capacité de<br />rang 1 d’ensorceleur.
+    S’il porte une armure, il ne peut pas utiliser ce sort plus d’une fois par
+    jour (il doit payer le coût en PM de façon normale).<br />Dans le noir
+    total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.SqF5DF1vFnwXA9LP
+      indice: 0
+      label: vision nocturne
+      chatFlavor: vision nocturne
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.SqF5DF1vFnwXA9LP
+          subtype: state
+          target: darkvision
+          value: '3'
+      conditions: []
+      resolvers: []
+    - source: Item.SqF5DF1vFnwXA9LP
+      indice: 1
+      label: Nouvelle Action 2
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers: []
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!SqF5DF1vFnwXA9LP'
+

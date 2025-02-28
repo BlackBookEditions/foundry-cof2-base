@@ -1,0 +1,66 @@
+folder: eRnLMLNnqgpvpmpq
+name: Frappe de golem
+type: attack
+img: icons/svg/sword.svg
+_id: NnNOFHX55z4AEKTN
+system:
+  description: <p>Une frappe de golem (créature crée par un forgesort)</p>
+  source: ''
+  origin: ''
+  slug: frappe-de-golem
+  tags: []
+  subtype: melee
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  actions:
+    - source: Item.NnNOFHX55z4AEKTN
+      indice: 0
+      label: Frappe de golem
+      chatFlavor: Frappe de golem
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: melee
+          skill:
+            formula: '@atc'
+            crit: '20'
+            difficulty: '@target.def'
+          dmg:
+            formula: 1d4° + 1
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!NnNOFHX55z4AEKTN'
+

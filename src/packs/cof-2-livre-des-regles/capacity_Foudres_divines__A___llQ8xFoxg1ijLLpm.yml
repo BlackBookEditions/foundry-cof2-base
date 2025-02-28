@@ -1,0 +1,74 @@
+folder: ZOBCft8sYdHtOpj7
+name: Foudres divines (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: llQ8xFoxg1ijLLpm
+system:
+  description: >-
+    <p style="text-align:justify">La foudre frappe toutes les créatures
+    désignées dans un rayon de 10 m autour du prêtre et leur inflige [2d4°+CHA]
+    DM (pas de test d’attaque requis). Ce sort est gourmand en énergie et son
+    coût augmente de +1 PM à chaque utilisation tant que le prêtre n’a pas
+    terminé une récupération rapide.</p>
+  source: ''
+  origin: ''
+  slug: foudres-divines-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.llQ8xFoxg1ijLLpm
+      indice: 0
+      label: Foudres divines (A)*
+      chatFlavor: Foudres divines (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '0'
+            difficulty: '0'
+          dmg:
+            formula: 2d4°+@cha
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!llQ8xFoxg1ijLLpm'
+

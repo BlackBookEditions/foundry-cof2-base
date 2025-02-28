@@ -1,0 +1,104 @@
+folder: QY4ycL3pNb0q1FSO
+name: Éclaireur
+type: capacity
+img: icons/svg/combat.svg
+_id: ild8KtVaXB9ok2KR
+system:
+  description: >-
+    <p>En milieu naturel, le rôdeur ajoute son rang + 2 à ses tests de
+    discrétion et de vigilance ainsi qu’aux tests pour pister. De plus, le
+    rôdeur peut remplacer le bonus de +1 PC de la famille des aventuriers par un
+    bonus de +1 DR si le joueur le souhaite.</p>
+  source: ''
+  origin: ''
+  slug: eclaireur
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.ild8KtVaXB9ok2KR
+      indice: 0
+      label: Pistage en milieu naturelle
+      chatFlavor: Pistage en milieu naturelle
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.ild8KtVaXB9ok2KR
+          subtype: skill
+          target: per
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+    - source: Item.ild8KtVaXB9ok2KR
+      indice: 1
+      label: vigilance en milieu naturel
+      chatFlavor: vigilance en milieu naturel
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.ild8KtVaXB9ok2KR
+          subtype: skill
+          target: per
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+    - source: Item.ild8KtVaXB9ok2KR
+      indice: 2
+      label: Discrétion en milieu naturel
+      chatFlavor: Discrétion en milieu naturel
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.ild8KtVaXB9ok2KR
+          subtype: skill
+          target: agi
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!ild8KtVaXB9ok2KR'
+

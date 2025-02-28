@@ -1,0 +1,70 @@
+folder: 9wusVgZFeiaMY9kN
+name: Récupération majeure (L)*
+type: capacity
+img: icons/svg/combat.svg
+_id: jWSywIYcwwkiEPAK
+system:
+  description: >-
+    <p style="text-align:justify">Le prêtre peut soigner une cible (ou lui‑même)
+    à une portée de 20 m ; elle récupère immédiatement [3d4°+CHA du prêtre] PV.
+    Le montant des soins prodigués augmente de 1d4° chaque fois que le
+    personnage atteint le rang 5 dans une voie de prêtre</p>
+  source: ''
+  origin: ''
+  slug: recuperation-majeure-l
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.jWSywIYcwwkiEPAK
+      indice: 0
+      label: Récupération majeure (L)*
+      chatFlavor: Récupération majeure (L)*
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 3d4° + @cha + @allrank[5]d4°
+          target:
+            type: multiple
+            number: 4
+            scope: allies
+          dmg: {}
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!jWSywIYcwwkiEPAK'
+

@@ -1,0 +1,66 @@
+folder: KBMdkP3uQGDa1FIm
+name: Plus vite que son ombre
+type: capacity
+img: icons/svg/combat.svg
+_id: DAjPuMPo72cGJTNa
+system:
+  description: >-
+    <p>Si son arme à poudre est chargée et tenue en main, l’arquebusier peut
+    tirer avec un bonus<br />de +5 à son Initiative. De plus, il ne subit plus
+    de dé malus lorsqu’il tire avec une arme à poudre ou une arbalète en étant
+    engagé en combat au contact (sauf avec la couleuvrine).</p>
+  source: ''
+  origin: ''
+  slug: plus-vite-que-son-ombre
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.DAjPuMPo72cGJTNa
+      indice: 0
+      label: Plus vite que son ombre
+      chatFlavor: Plus vite que son ombre
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.DAjPuMPo72cGJTNa
+          subtype: combat
+          target: init
+          value: '5'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!DAjPuMPo72cGJTNa'
+

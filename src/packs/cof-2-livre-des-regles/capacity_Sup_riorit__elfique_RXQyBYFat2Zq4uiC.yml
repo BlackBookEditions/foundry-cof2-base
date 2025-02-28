@@ -1,0 +1,67 @@
+folder: 9G0dBnUx2PoTmJ1p
+name: Supériorité elfique
+type: capacity
+img: icons/svg/combat.svg
+_id: RXQyBYFat2Zq4uiC
+system:
+  description: <p>L’elfe augmente ses valeurs d’AGI et PER de +1.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.RXQyBYFat2Zq4uiC
+      indice: 0
+      label: Supériorité elfique
+      chatFlavor: Supériorité elfique
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.RXQyBYFat2Zq4uiC
+          subtype: ability
+          target: per
+          value: '1'
+        - type: capacity
+          source: Item.RXQyBYFat2Zq4uiC
+          subtype: ability
+          target: agi
+          value: '1'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!RXQyBYFat2Zq4uiC'
+

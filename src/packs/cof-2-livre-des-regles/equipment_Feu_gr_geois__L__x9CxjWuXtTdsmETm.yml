@@ -1,0 +1,84 @@
+folder: SOYIK0bXotWWpr00
+name: Feu grégeois (L)
+type: equipment
+img: icons/svg/item-bag.svg
+_id: x9CxjWuXtTdsmETm
+system:
+  description: "<p>Lance une fiole à une distance maximale de 10 m (réussite automatique). Le contenu explose dans un rayon de 3 m en infligeant des dégats selon le niveau du créateur del'elixir. Un test d’AGI difficulté ${10 + @int}$\_ réussi permet aux victimes de diviser les DM par deux.\_</p>"
+  source: ''
+  origin: ''
+  slug: feu-gregeois-l
+  tags: []
+  subtype: misc
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 200
+    unit: ''
+  rarity: medium
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.x9CxjWuXtTdsmETm
+      indice: 0
+      label: Feu grégeois (L) mineur
+      chatFlavor: Feu grégeois (L) mineur
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: ranged
+          skill:
+            formula: '@atd'
+            crit: '@crit'
+            difficulty: '0'
+          dmg:
+            formula: '@rank[2,0,0,1,1]d4° '
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!x9CxjWuXtTdsmETm'
+

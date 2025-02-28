@@ -1,0 +1,77 @@
+folder: EHc5QZM71eOmDfNT
+name: Domination (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: H8IuYaACTmuQHBCU
+system:
+  description: >-
+    <p style="text-align:justify">En réussissant un test opposé d’attaque
+    magique contre une cible de niveau ou NC inférieur au sien (portée 20 m),
+    l’ensorceleur prend contrôle de sa cible pendant CHA minutes. Son propre
+    corps devient inactif et s’écroule au sol.<br />Si la créature meurt pendant
+    la domination, l’ensorceleur réintègre son corps et subit 1d4° DM.<br />Si
+    la cible est d’un niveau trop élevé, il peut la forcer à faire une seule
+    action de son choix (mouvement ou attaque) ; ensuite, il est éjecté et subit
+    1d4° DM.</p>
+  source: ''
+  origin: ''
+  slug: domination-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.H8IuYaACTmuQHBCU
+      indice: 0
+      label: Domination (A)*
+      chatFlavor: Domination (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '@crit'
+            difficulty: '@opposite.mag'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!H8IuYaACTmuQHBCU'
+

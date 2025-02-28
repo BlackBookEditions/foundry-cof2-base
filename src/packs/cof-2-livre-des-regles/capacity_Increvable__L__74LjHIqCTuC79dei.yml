@@ -1,0 +1,70 @@
+folder: ZPVEGtcTyZDsZlHb
+name: Increvable (L)
+type: capacity
+img: icons/svg/combat.svg
+_id: 74LjHIqCTuC79dei
+system:
+  description: >-
+    <p>Une fois par combat, lorsqu’il tombe à 0PV, le rôdeur peut récupérer
+    [4d4° + CON] PV au<br />début de son prochain tour. Lorsqu’il se relève, il
+    bénéficie d’un bonus de +5 en DEF pendant 1 round et il se débarrasse de
+    tous les états préjudiciables non permanents qui l’affectent</p>
+  source: ''
+  origin: ''
+  slug: increvable-l
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.74LjHIqCTuC79dei
+      indice: 0
+      label: Increvable (L)
+      chatFlavor: Increvable (L)
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 4d4° + @con
+          target:
+            type: none
+            number: 0
+            scope: all
+          dmg: {}
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!74LjHIqCTuC79dei'
+

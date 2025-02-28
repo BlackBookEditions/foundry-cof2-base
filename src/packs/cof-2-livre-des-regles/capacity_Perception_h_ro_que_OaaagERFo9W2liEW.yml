@@ -1,0 +1,70 @@
+folder: bTiXrsHGxRMuP4M5
+name: Perception héroïque
+type: capacity
+img: icons/svg/combat.svg
+_id: OaaagERFo9W2liEW
+system:
+  description: >-
+    <p>L’ensorceleur augmente sa valeur de PER de +1.<br />Désormais, il obtient
+    un dé bonus aux tests de PER, et il ajoute sa PER au nombre de PM dont il
+    bénéficie.</p>
+  source: ''
+  origin: ''
+  slug: perception-heroique
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.OaaagERFo9W2liEW
+      indice: 0
+      label: Perception héroïque
+      chatFlavor: Perception héroïque
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.OaaagERFo9W2liEW
+          subtype: ability
+          target: per
+          value: '1'
+        - type: capacity
+          source: Item.OaaagERFo9W2liEW
+          subtype: bonusDice
+          target: per
+          value: '0'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!OaaagERFo9W2liEW'
+

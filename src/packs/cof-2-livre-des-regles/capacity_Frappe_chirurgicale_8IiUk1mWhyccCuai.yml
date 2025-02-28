@@ -1,0 +1,67 @@
+folder: CW61eewBCGdsT7ac
+name: Frappe chirurgicale
+type: capacity
+img: icons/svg/combat.svg
+_id: 8IiUk1mWhyccCuai
+system:
+  description: >-
+    <p style="text-align:justify">Par sa science de l’escrime (et de la
+    fourberie), le voleur augmente ses chances de faire des coups critiques avec
+    une arme légère de 2 points (ainsi, au lieu de 20, le critique standard est
+    obtenu entre 18 et 20). Toutefois, la valeur minimale requise pour obtenir
+    un critique ne peut être inférieure à 16 (voir page 213).</p>
+  source: ''
+  origin: ''
+  slug: frappe-chirurgicale
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.8IiUk1mWhyccCuai
+      indice: 0
+      label: Frappe chirurgicale
+      chatFlavor: Frappe chirurgicale
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.8IiUk1mWhyccCuai
+          subtype: combat
+          target: crit
+          value: '-2'
+      conditions: []
+      resolvers: []
+  cost: 0
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!8IiUk1mWhyccCuai'
+

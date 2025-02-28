@@ -1,0 +1,67 @@
+folder: 6cwGJXWnartLOyu5
+name: Rumeurs et légendes
+type: capacity
+img: icons/svg/combat.svg
+_id: HBe2UIa5ZZY0gXPO
+system:
+  description: >-
+    <p>À force de voyager, le barde possède une culture générale très vaste, il
+    ajoute son rang + 2<br />aux tests d’INT pour se « souvenir » d’une
+    information historique, politique, géographique ou occulte ou encore pour
+    identifier un objet magique difficulté (25 – (2 x niveau de magie<br />de
+    l’objet)).</p>
+  source: ''
+  origin: ''
+  slug: rumeurs-et-legendes
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.HBe2UIa5ZZY0gXPO
+      indice: 0
+      label: Rumeurs et légendes
+      chatFlavor: Rumeurs et légendes
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.HBe2UIa5ZZY0gXPO
+          subtype: skill
+          target: int
+          value: '2'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!HBe2UIa5ZZY0gXPO'
+

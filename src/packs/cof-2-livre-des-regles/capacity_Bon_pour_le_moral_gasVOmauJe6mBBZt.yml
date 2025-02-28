@@ -1,0 +1,69 @@
+folder: ZOYKWg63eILxvMp4
+name: Bon pour le moral
+type: capacity
+img: icons/svg/combat.svg
+_id: gasVOmauJe6mBBZt
+system:
+  description: >-
+    <p>Un halfelin qui mange bien est un halfelin heureux.<br />À chaque repas
+    (jusqu’à 4 fois par jour, espacés d’au moins 3 h) au cours duquel le
+    personnage boit et mange des mets de qualité et en quantité, il récupère
+    1d4° PV</p>
+  source: ''
+  origin: ''
+  slug: bon-pour-le-moral
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.gasVOmauJe6mBBZt
+      indice: 0
+      label: Bon pour le moral
+      chatFlavor: Bon pour le moral
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: true
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: heal
+          skill:
+            formula: 1d4°
+          target:
+            type: none
+            number: 0
+            scope: all
+          dmg: {}
+      modifiers: []
+      conditions: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!gasVOmauJe6mBBZt'
+

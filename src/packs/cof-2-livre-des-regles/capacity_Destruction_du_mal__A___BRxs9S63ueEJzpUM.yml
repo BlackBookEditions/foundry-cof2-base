@@ -1,0 +1,72 @@
+folder: oZQRgOBUZfjXL2nE
+name: Destruction du mal (A)*
+type: capacity
+img: icons/svg/combat.svg
+_id: BRxs9S63ueEJzpUM
+system:
+  description: >-
+    <p style="text-align:justify">Tous les morts‑vivants et les démons dans un
+    rayon de 10 m autour du prêtre subissent automatiquement [2d4°+CHA] DM. Les
+    DM passent à 3d4° au rang 5.</p>
+  source: ''
+  origin: ''
+  slug: destruction-du-mal-a
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.BRxs9S63ueEJzpUM
+      indice: 0
+      label: Destruction du mal (A)*
+      chatFlavor: Destruction du mal (A)*
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@mag'
+            crit: '0'
+            difficulty: '0'
+          dmg:
+            formula: '@rank[2,0,0,0,1]d4° + @cha'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!BRxs9S63ueEJzpUM'
+

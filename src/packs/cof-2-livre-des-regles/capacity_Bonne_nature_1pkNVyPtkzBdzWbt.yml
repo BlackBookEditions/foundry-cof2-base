@@ -1,0 +1,67 @@
+folder: FzeaG6TAmwhJHagA
+name: Bonne nature
+type: capacity
+img: icons/svg/combat.svg
+_id: 1pkNVyPtkzBdzWbt
+system:
+  description: <p>Le gnome augmente ses valeurs de CON et de CHA de +1.</p>
+  source: ''
+  origin: ''
+  slug: ''
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Item.1pkNVyPtkzBdzWbt
+      indice: 0
+      label: Bonne nature
+      chatFlavor: Bonne nature
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: true
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Item.1pkNVyPtkzBdzWbt
+          subtype: ability
+          target: con
+          value: '1'
+        - type: capacity
+          source: Item.1pkNVyPtkzBdzWbt
+          subtype: ability
+          target: cha
+          value: '1'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!1pkNVyPtkzBdzWbt'
+
