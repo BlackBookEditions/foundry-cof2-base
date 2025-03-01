@@ -43,7 +43,7 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
+        visible: false
         activable: true
         enabled: false
         temporary: false
@@ -54,12 +54,13 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 1d6
+            formula: 1d6 + @for
           target:
             type: none
             number: 0
             scope: all
-      conditions: []
+      conditions: 
+        - predicate: isEquipped
       modifiers: []
 effects: []
 sort: 100782

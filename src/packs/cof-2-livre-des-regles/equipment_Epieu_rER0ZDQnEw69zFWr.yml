@@ -47,7 +47,7 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
+        visible: false
         activable: true
         enabled: false
         temporary: false
@@ -58,12 +58,13 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 1d6
+            formula: 1d6 + @for
           target:
             type: none
             number: 0
             scope: all
-      conditions: []
+      conditions: 
+        - predicate: isEquipped
       modifiers: []
     - source: Compendium.cof-base.cof-2-livre-des-regles.Item.rER0ZDQnEw69zFWr
       indice: 1
@@ -72,7 +73,7 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
+        visible: false
         activable: true
         enabled: false
         temporary: false
@@ -83,12 +84,13 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 1d10
+            formula: 1d10 + @for
           target:
             type: none
             number: 0
             scope: all
-      conditions: []
+      conditions: 
+        - predicate: isEquipped
       modifiers: []
     - source: Compendium.cof-base.cof-2-livre-des-regles.Item.rER0ZDQnEw69zFWr
       indice: 2
@@ -97,7 +99,7 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
+        visible: false
         activable: true
         enabled: false
         temporary: false
@@ -113,7 +115,8 @@ system:
             type: none
             number: 0
             scope: all
-      conditions: []
+      conditions: 
+        - predicate: isEquipped
       modifiers: []
 effects: []
 sort: 101563
