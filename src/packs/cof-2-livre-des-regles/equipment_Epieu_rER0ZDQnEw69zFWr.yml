@@ -58,7 +58,7 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 1d6
+            formula: 1d6 + @for
           target:
             type: none
             number: 0
@@ -83,7 +83,7 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 1d10
+            formula: 1d10 + @for
           target:
             type: none
             number: 0

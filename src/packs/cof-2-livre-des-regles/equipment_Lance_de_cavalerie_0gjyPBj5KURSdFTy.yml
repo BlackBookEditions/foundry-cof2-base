@@ -59,7 +59,7 @@ system:
             crit: ''
             difficulty: '@target.def'
           dmg:
-            formula: 2d6
+            formula: 2d6 + @for
           target:
             type: none
             number: 0
