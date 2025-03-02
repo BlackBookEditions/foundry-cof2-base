@@ -43,7 +43,7 @@ system:
         - type: melee
           skill:
             formula: '@atc + 2 + @rang'
-            crit: '@crit'
+            crit: ''
             difficulty: '@target.def'
           dmg:
             formula: 1d3 + @for

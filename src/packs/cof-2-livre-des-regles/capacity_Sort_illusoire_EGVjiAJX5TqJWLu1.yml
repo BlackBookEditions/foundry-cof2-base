@@ -46,7 +46,7 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@mag'
+            formula: '@atm'
             crit: ''
             difficulty: '@target.def'
           dmg:
@@ -72,8 +72,8 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@mag'
-            crit: '@crit'
+            formula: '@atm'
+            crit: ''
             difficulty: '10'
           dmg:
             formula: 2d4° + @cha

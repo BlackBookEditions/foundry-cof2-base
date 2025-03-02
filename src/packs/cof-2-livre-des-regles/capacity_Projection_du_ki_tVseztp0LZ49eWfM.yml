@@ -39,8 +39,8 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@mag'
-            crit: '@crit'
+            formula: '@atm'
+            crit: ''
             difficulty: '@opposite.mag'
           dmg:
             formula: '@rank[1,0,0,1,0]d4°+ @vol'

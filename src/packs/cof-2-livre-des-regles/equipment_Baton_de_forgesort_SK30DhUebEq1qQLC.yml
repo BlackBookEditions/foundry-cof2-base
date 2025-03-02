@@ -53,7 +53,7 @@ system:
         - type: melee
           skill:
             formula: '@atc'
-            crit: '@crit'
+            crit: ''
             difficulty: '10'
           dmg:
             formula: 1d4° + @int
@@ -78,8 +78,8 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@mag'
-            crit: '@crit'
+            formula: '@atm'
+            crit: ''
             difficulty: '10'
           dmg:
             formula: 2d4° + @int
