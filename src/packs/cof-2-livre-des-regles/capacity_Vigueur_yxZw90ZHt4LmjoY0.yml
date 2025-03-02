@@ -30,10 +30,12 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: false
-        enabled: true
+        enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-livre-des-regles.Item.yxZw90ZHt4LmjoY0
@@ -45,7 +47,6 @@ system:
           subtype: attribute
           target: hp
           value: '@rang'
-      conditions: []
       resolvers: []
   cost: -1
 effects: []
@@ -64,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824992108
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1740910850555
+  lastModifiedBy: kQPXh9lSDRm6wjSZ
 _key: '!items!yxZw90ZHt4LmjoY0'
 
