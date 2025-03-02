@@ -1,56 +1,59 @@
 {
-    "id": "cof-base",
-    "title": "Chroniques Oubliées Fantasy V2",
-    "description": "",
-    "authors": [
-        {
-            "name": "kristov"
-        }
+  "id": "cof-base",
+  "title": "Chroniques Oubliées Fantasy V2 - Livre des règles",
+  "description": "Livre de règles de la deuxième édition de Chroniques Oubliées Fantasy",
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "co",
+        "type": "system"
+      }
     ],
-    "url": "",
-    "flags": {},
-    "version": "1.0.1",
-    "compatibility": {
-        "minimum": "12",
-        "verified": "12"
+    "requires": [],
+    "optional": []
+  },
+  "authors": [
+    {
+      "name": "Carter"
     },
-    "esmodules": [
-        "cof.mjs"
-    ],
-    "styles": [
-        "cof.css"
-    ],
-    "languages": [
-        {
-            "lang": "fr",
-            "name": "French",
-            "path": "lang/fr.json"
-        }
-    ],
-    "packs": [ {
-        "label": "COF2 Livre des Règles",
-        "type": "Item",
-        "name": "cof-2-livre-des-regles",
-        "path": "packs/cof-2-livre-des-regles",
-        "system": "co",
-        "ownership": {
-          "PLAYER": "NONE",
-          "ASSISTANT": "OWNER"
-        }
-      }],
-    "relationships": {
-        "systems": [
-            {
-                "id": "co",
-                "type": "system"
-            }
-        ],
-        "requires": [],
-        "optional": [],
-        "flags": {}
+    {
+      "name": "kristov"
     },
-    "socket": false,
-    "manifest": "",
-    "download": "",
-    "protected": false
+    {
+      "name": "Caloup"
+    }
+  ],
+
+  "esmodules": ["cof.mjs"],
+  "styles": ["cof.css"],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
+  "packs": [
+    {
+      "label": "COF2 Livre des Règles",
+      "type": "Item",
+      "name": "cof-2-livre-des-regles",
+      "path": "packs/cof-2-livre-des-regles",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": false,
+  "manifest": "",
+  "url": "",
+  "download": "",
+  "protected": false
 }
