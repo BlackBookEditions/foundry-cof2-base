@@ -1,0 +1,216 @@
+@font-face {
+	font-family: "Alana";
+	src: url("./fonts/alana.ttf");
+}
+
+@font-face {
+	font-family: "Hypatia";
+	src: url("./fonts/hypatia_sans_pro.otf");
+}
+
+@font-face {
+	font-family: "Matrix";
+	src: url("./fonts/matrix_iiot.ttf");
+}
+
+@font-face {
+	font-family: "Mendel";
+	src: url("./fonts/mendl_serif_dusk.ttf");
+}
+
+@font-face {
+	font-family: "Mendel Medium";
+	src: url("./fonts/mendl_serif_dusk_med.ttf");
+}
+
+@font-face {
+	font-family: "Mendel Semibold";
+	src: url("./fonts/mendl_serif_dusk_semb.ttf");
+}
+
+@font-face {
+	font-family: "Mendel Bold";
+	src: url("./fonts/mendl_serif_dusk_bold.ttf");
+}
+
+@font-face {
+	font-family: "Wingdings2";
+	src: url("./fonts/wingdings2.ttf");
+}
+
+
+:root {
+	--font-size-standard: 16px;
+	--font-normal-style: normal;
+	--font-normal-variant: normal;
+	--font-normal-weight: normal;
+	--line-height-standard: 1.2;
+	--margin-standard: 0;
+	--padding-standard: 10px;
+	--orphans-standard: 1;
+	--page-break-standard: auto;
+	--text-align-standard: justify;
+	--text-align-last-standard: left;
+	--text-decoration-standard: none;
+	--text-indent-standard: 10px;
+	--widows-standard: 1;
+  }
+
+
+/* Surcharge des variables du système ou de Foudry */
+:root {
+	--font-primary: 'Hypatia', serif;
+	--font-secondary: 'Mendel', sans-serif;
+	--background-standard: no-repeat url('/modules/cof-base/assets/artwork/background.webp');
+	--background-image-standard: url('/modules/cof-base/assets/artwork/background.webp');
+	--background-chat-image: url('/modules/cof-base/assets/artwork/background.webp');
+  }
+  .journal-page-cof body,
+  .journal-page-cof div,
+  .journal-page-cof dl,
+  .journal-page-cof dt,
+  .journal-page-cof dd,
+  .journal-page-cof h1,
+  .journal-page-cof h2,
+  .journal-page-cof h3,
+  .journal-page-cof h4,
+  .journal-page-cof p,
+  .journal-page-cof pre,
+  .journal-page-cof code {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	
+  }
+
+
+  .journal-page-header h1 {
+	font-size: calc(var(--font-size-standard) * 3.5);
+	font-family: "Mendel Semibold", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+    font-weight: bold;
+	color : #B99442;
+  }
+
+
+  .journal-page-cof h1 {
+	font-size: calc(var(--font-size-standard) * 3.5);
+	font-family: "Mendel Semibold", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+    font-weight: bold;
+	color : #B99442;
+  }
+
+
+  .journal-page-cof h2 {
+	font-size: calc(var(--font-size-standard) * 2.5);
+	font-family: "Mendel Semibold", sans-serif;
+	text-align: left;
+	text-transform: uppercase;
+    font-weight: bold;
+	color : #555756;
+  }
+
+
+  .journal-page-cof h3 {
+	font-size: calc(var(--font-size-standard) * 2);
+	font-family: "Matrix", sans-serif;
+	text-align: left;
+    font-weight: bold;
+	color : #B99442;
+  }
+
+
+
+.journal-page-cof p,li {
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: justify;
+}
+
+.journal-page-cof .italique {
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: justify;
+	font-style: italic;
+}
+
+.journal-page-cof .gras {
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: justify;
+	font-weight: bold;
+}
+
+.journal-page-cof .droite {
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: right;
+}
+
+
+.journal-page-cof .centre {
+	text-align: center;
+}
+
+
+.journal-page-cof .citation {
+	font-size: calc(var(--font-size-standard) * 2);
+	font-family: "Alana";
+	text-indent: 0.2cm;
+	text-align: center;
+	color : #626362;
+}
+
+
+.journal-page-cof .lettrine {
+	font-size: calc(var(--font-size-standard) * 3.5);
+	font-family: "Mendel Semibold", sans-serif;
+	text-align: center;
+	text-transform: capitalize;
+    font-weight: bold;
+	color : #B99442;
+  }
+
+
+  .journal-page-cof .encart {
+	border: 3px solid #B99442; 
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: justify;
+	padding: 10px 5px 10px 5px; 
+  }
+
+  .journal-page-cof .encart h3 {
+	font-size: calc(var(--font-size-standard) * 2);
+	font-family: "Mendel Semibold", sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+    font-weight: bold;
+	color: #B99442;
+  }
+
+
+
+  .journal-page-cof blockquote {
+	font-size: calc(var(--font-size-standard));
+	font-family: "Hypatia";
+	text-indent: 0.2cm;
+	text-align: justify;
+	color : #A88352;
+	font-style: italic;
+	padding-left: 10px;
+  }
+
+  .journal-page-cof .small {
+	max-width: 75%;
+	object-fit: contain;
+  }  
+
