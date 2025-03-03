@@ -42,7 +42,33 @@ system:
   usage:
     oneHand: false
     twoHand: false
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.5aJ1fM7FYpOnPOYM
+      indice: 0
+      label: Elixir de maitrise des éléments
+      chatFlavor: Elixir de maitrise des éléments
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
 effects: []
 sort: 600000
 ownership:

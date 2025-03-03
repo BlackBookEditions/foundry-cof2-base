@@ -44,7 +44,33 @@ system:
   usage:
     oneHand: false
     twoHand: false
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.W38t9uP1trTq2hY3
+      indice: 0
+      label: Elixir d'accélération
+      chatFlavor: Elixir d'accélération
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
 effects: []
 sort: 0
 ownership:

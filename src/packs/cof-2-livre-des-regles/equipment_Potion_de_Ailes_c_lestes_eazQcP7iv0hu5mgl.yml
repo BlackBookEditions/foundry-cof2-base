@@ -39,7 +39,33 @@ system:
   usage:
     oneHand: false
     twoHand: false
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.eazQcP7iv0hu5mgl
+      indice: 0
+      label: Potion de Ailes célestes
+      chatFlavor: Potion de Ailes célestes
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
 effects: []
 sort: 0
 ownership:

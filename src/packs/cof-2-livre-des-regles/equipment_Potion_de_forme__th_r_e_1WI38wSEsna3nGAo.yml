@@ -42,7 +42,33 @@ system:
   usage:
     oneHand: false
     twoHand: false
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.1WI38wSEsna3nGAo
+      indice: 0
+      label: Potion de forme éthérée
+      chatFlavor: Potion de forme éthérée
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
 effects: []
 sort: 0
 ownership:
