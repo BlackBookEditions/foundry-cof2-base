@@ -9,13 +9,13 @@ system:
   origin: ''
   slug: elixir-dinvisibilite
   tags: []
-  subtype: misc
+  subtype: consumable
   martialCategory: ''
   damagetype: ''
   quantity:
     current: 1
-    max: 1
-    destroyIfEmpty: false
+    max: null
+    destroyIfEmpty: true
   charges:
     current: null
     max: null
@@ -31,11 +31,37 @@ system:
   properties:
     equipable: false
     reloadable: false
-    stackable: false
+    stackable: true
   usage:
     oneHand: false
     twoHand: false
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.KxAzBOx6ujKjHeuo
+      indice: 0
+      label: Elixir d'invisibilité
+      chatFlavor: Elixir d'invisibilité
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
 effects: []
 sort: 0
 ownership:
