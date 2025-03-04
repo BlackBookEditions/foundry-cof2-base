@@ -43,16 +43,18 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isEquipped
       modifiers:
         - type: equipment
           source: Compendium.cof-base.cof-2-livre-des-regles.Item.G5IYsoyGoVsMqqqw
           subtype: combat
           target: crit
-          value: '-1'
+          value: '1'
       resolvers:
         - type: melee
           skill:
@@ -65,8 +67,6 @@ system:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isEquipped
 effects: []
 sort: 0
 ownership:
@@ -83,7 +83,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1741101366998
+  lastModifiedBy: YZRR8ZPUPZs9mIDz
 _key: '!items!G5IYsoyGoVsMqqqw'
 
