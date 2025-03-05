@@ -1,5 +1,5 @@
-folder: SOYIK0bXotWWpr00
-name: Feu grégeois (L)
+folder: Ew9DjYH5ITPhbtLZ
+name: Feu grégeois
 type: equipment
 img: icons/svg/item-bag.svg
 _id: x9CxjWuXtTdsmETm
@@ -7,7 +7,7 @@ system:
   description: "<p>Lance une fiole à une distance maximale de 10 m (réussite automatique). Le contenu explose dans un rayon de 3 m en infligeant des dégats selon le niveau du créateur del'elixir. Un test d’AGI difficulté ${10 + @int}$\_ réussi permet aux victimes de diviser les DM par deux.\_</p>"
   source: ''
   origin: ''
-  slug: feu-gregeois-l
+  slug: feu-gregeois
   tags: []
   subtype: consumable
   martialCategory: paddedClothFur
@@ -38,8 +38,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-livre-des-regles.Item.x9CxjWuXtTdsmETm
       indice: 0
-      label: Feu grégeois (L) mineur
-      chatFlavor: Feu grégeois (L) mineur
+      label: Feu grégeois
+      chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -53,8 +53,8 @@ system:
         - type: ranged
           skill:
             formula: '@atd'
-            crit: ''
-            difficulty: '0'
+            crit: '@crit'
+            difficulty: '@target.def'
           dmg:
             formula: '@rank[2,0,0,1,1]d4° '
           target:
@@ -63,7 +63,7 @@ system:
             scope: all
       modifiers: []
 effects: []
-sort: 300000
+sort: 700000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -78,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1741115805353
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!x9CxjWuXtTdsmETm'
 

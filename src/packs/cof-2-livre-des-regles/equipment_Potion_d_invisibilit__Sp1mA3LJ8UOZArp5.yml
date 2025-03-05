@@ -1,48 +1,49 @@
-folder: SOYIK0bXotWWpr00
-name: Élixir de guérison (L)
+folder: 8DZlr3ptfsd78d8T
+name: Potion d'invisibilité
 type: equipment
 img: icons/svg/item-bag.svg
-_id: YpgmPbfvSDbWxGFt
 system:
   description: >-
-    <p>Un élixir qui soigne ${2d4°+@int}$ PV au bout d’une minute ou guérit un
-    empoisonnement de manière instantanée.</p>
+    <p>L'utilisateur se rend invisible pendant 1d6 minutes. Une fois qu’il est
+    invisible, personne<br />ne peut plus détecter sa présence ou lui porter
+    d’attaque. Si le personnage attaque ou utilise une capacité limitée, il
+    redevient visible.</p>
   source: ''
   origin: ''
-  slug: elixir-de-guerison-l
+  slug: potion-dinvisibilite
   tags: []
-  subtype: misc
+  subtype: consumable
   martialCategory: ''
   damagetype: ''
   quantity:
     current: 1
-    max: 1
-    destroyIfEmpty: false
+    max: null
+    destroyIfEmpty: true
   charges:
     current: null
     max: null
     destroyIfEmpty: false
   weight:
-    value: 1
+    value: 0
     unit: kg
   price:
-    value: 450
+    value: 1250
     unit: ''
   rarity: common
   equipped: false
   properties:
     equipable: false
     reloadable: false
-    stackable: false
+    stackable: true
   usage:
     oneHand: false
     twoHand: false
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.YpgmPbfvSDbWxGFt
+    - source: Item.b1KEfmf9xuw1QPT6
       indice: 0
-      label: ''
+      label: Potion d'invisibilité
       chatFlavor: ''
-      type: heal
+      type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -52,23 +53,20 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: heal
-          skill:
-            formula: 2d4° + @int
+        - type: consumable
+          skill: {}
+          dmg: {}
           target:
             type: none
             number: 0
             scope: all
-          dmg: {}
       modifiers: []
+  defense: null
+  magicalDefense: null
 effects: []
-sort: 400000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -76,8 +74,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!YpgmPbfvSDbWxGFt'
+  createdTime: 1741116268674
+  modifiedTime: 1741116349566
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: Sp1mA3LJ8UOZArp5
+sort: 900000
+_key: '!items!Sp1mA3LJ8UOZArp5'
 

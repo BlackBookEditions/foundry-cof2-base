@@ -1,0 +1,84 @@
+folder: Bj9CdYeY6fs3oPt4
+name: Potion de Clairvoyance
+type: equipment
+img: icons/svg/item-bag.svg
+system:
+  description: >-
+    <p style="text-align:justify">L'utilisateur peut voir et entendre à distance
+    ce qui se passe dans un lieu qu’il connaît (pas de limite de portée) ou
+    juste derrière une porte qu’il touche pendant CHA rounds (action limitée à
+    chaque round). Les créatures présentes ont droit à un test de PER difficulté
+    12 en cas de réussite, elles se sentent observées.</p>
+  source: ''
+  origin: ''
+  slug: potion-de-clairvoyance
+  tags: []
+  subtype: consumable
+  martialCategory: ''
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 450
+    unit: ''
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.Fiqtmxa1s28DV59a
+      indice: 0
+      label: Potion de Clairvoyance
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: consumable
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741116118195
+  modifiedTime: 1741116118195
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: O5WdErXAvXMGDWSu
+sort: 0
+_key: '!items!O5WdErXAvXMGDWSu'
+

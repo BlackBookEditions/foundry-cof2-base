@@ -1,0 +1,83 @@
+folder: Bj9CdYeY6fs3oPt4
+name: Fiole de Feu grégeois
+type: equipment
+img: icons/svg/item-bag.svg
+system:
+  description: "<p>L'utilisateur lance la fiole à une distance maximale de 10 m (réussite automatique). Le contenu explose dans un rayon de 3 m en infligeant 2d4° DM. Un test d’AGI difficulté 10 réussi permet aux victimes de diviser les DM par deux.\_</p>"
+  source: ''
+  origin: ''
+  slug: fiole-de-feu-gregeois
+  tags: []
+  subtype: consumable
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 200
+    unit: ''
+  rarity: rare
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.yAftmZJxkaa8C4PJ
+      indice: 0
+      label: Fiole de Feu grégeois
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: ranged
+          skill:
+            formula: '@atd'
+            crit: '@crit'
+            difficulty: '@target.def'
+          dmg:
+            formula: 2d4°
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741115978737
+  modifiedTime: 1741115986263
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: KHTHcmx8IvY0Bje1
+sort: 0
+_key: '!items!KHTHcmx8IvY0Bje1'
+

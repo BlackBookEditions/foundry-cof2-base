@@ -1,15 +1,14 @@
 folder: eRnLMLNnqgpvpmpq
-name: Attaque de panthère
+name: attaque magique
 type: attack
 img: icons/svg/sword.svg
-_id: K7Cu94FhimkdgWbA
 system:
   description: ''
   source: ''
   origin: ''
-  slug: attaque-de-panthere
+  slug: attaque-magique
   tags: []
-  subtype: melee
+  subtype: magic
   learned: false
   charges:
     current: null
@@ -18,11 +17,11 @@ system:
     spell: false
     chargeable: false
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.K7Cu94FhimkdgWbA
+    - source: Item.G6UydTG623qmFF2z
       indice: 0
-      label: ''
+      label: attaque magique
       chatFlavor: ''
-      type: melee
+      type: magical
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -32,26 +31,22 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: melee
+        - type: magical
           skill:
-            formula: '@atc'
-            crit: ''
+            formula: '10'
+            crit: '20'
             difficulty: '@target.def'
           dmg:
-            formula: 1d4°+2
+            formula: 1d4 + 2
           target:
             type: none
             number: 0
             scope: all
       modifiers: []
 effects: []
-sort: 0
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -59,8 +54,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!K7Cu94FhimkdgWbA'
+  createdTime: 1741115518227
+  modifiedTime: 1741115518258
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: FTO6uP2r3X5xAzSj
+sort: 200000
+_key: '!items!FTO6uP2r3X5xAzSj'
 
