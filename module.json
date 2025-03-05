@@ -29,8 +29,8 @@
     }
   ],
 
-  "esmodules": ["cof.mjs"],
-  "styles": ["css/cof2-base.css"],
+  "esmodules": ["cof-base.mjs"],
+  "styles": ["css/cof-base.css"],
   "languages": [
     {
       "lang": "fr",
@@ -38,12 +38,31 @@
       "path": "lang/fr.json"
     }
   ],
+  "packFolders": [
+    {
+      "name": "COF2 Livre des règles",
+      "sorting": "m",
+      "color": "#3b2524",
+      "packs": ["cof-2-base-items", "cof-2-base-regles"]
+    }
+  ],
   "packs": [
     {
-      "label": "COF2 Livre des Règles",
+      "label": "COF2 Objets",
       "type": "Item",
-      "name": "cof-2-livre-des-regles",
-      "path": "packs/cof-2-livre-des-regles",
+      "name": "cof-2-base-items",
+      "path": "packs/cof-2-base-items",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2 Livre des règles",
+      "type": "JournalEntry",
+      "name": "cof-2-base-regles",
+      "path": "packs/cof-2-base-regles",
       "system": "co",
       "ownership": {
         "PLAYER": "NONE",
@@ -51,6 +70,12 @@
       }
     }
   ],
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json", "mjs"],
+      "path": ["css", "templates", "lang", "module"]
+    }
+  },
   "socket": false,
   "manifest": "",
   "url": "",

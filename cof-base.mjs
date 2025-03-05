@@ -1,5 +1,5 @@
 Hooks.once("init", () => {
-  console.info("COF | Module COF loading...")
+  console.info("COF Livre de base | Début de l'initialisation du module...")
 
   // Load Martial Training
   if (game.system.CONST.martialTrainingsWeapons.length == 0) {
@@ -139,8 +139,20 @@ Hooks.once("init", () => {
     // Grand bouclier
     game.system.CONST.martialTrainingsShields.push({ key: "largeShield", label: "COF.config.martialTrainingShield.largeShield" })
   }
+
+  console.info("COF Livre de base | Fin de l'initialisation du module")
 })
 
 Hooks.once("ready", async () => {
-  console.info("COF | Module COF loaded.")
+  console.info("COF Livre de base | Module prêt")
+})
+
+/*
+/* Render Journal Sheet Hook to style the Journal Entry
+ */
+Hooks.on("renderJournalSheet", (app, html, context) => {
+  if (app.document.getFlag("cof-base", "isJournalCOF") === true) {
+    html = html[0]
+    html.classList.add("journal-cof-base")
+  }
 })

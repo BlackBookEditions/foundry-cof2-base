@@ -1,13 +1,4 @@
-.journal-page-header h1 {
-  font-size: calc(var(--font-size-standard) * 3.5);
-  font-family: "Mendel Semibold", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #b99442;
-}
-
-.journal-page-cof {
+.journal-page-cof-base {
   body,
   div,
   dl,
@@ -23,15 +14,6 @@
     margin: 0;
     padding: 0;
     border-width: 0;
-  }
-
-  h1 {
-    font-size: calc(var(--font-size-standard) * 3.5);
-    font-family: "Mendel Semibold", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #b99442;
   }
 
   h2 {
@@ -53,32 +35,30 @@
 
   p,
   li {
-    font-size: calc(var(--font-size-standard));
+    font-size: 1rem;
     font-family: "Hypatia";
     text-indent: 0.2cm;
     text-align: justify;
   }
 
+  /*
+  p::after {
+    content: "\A\A";
+    white-space: pre;
+  }
+    */
+
   .italique {
-    font-size: calc(var(--font-size-standard));
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
     text-align: justify;
     font-style: italic;
   }
 
   .gras {
-    font-size: calc(var(--font-size-standard));
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
     text-align: justify;
     font-weight: bold;
   }
 
   .droite {
-    font-size: calc(var(--font-size-standard));
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
     text-align: right;
   }
 
@@ -110,15 +90,15 @@
     text-indent: 0.2cm;
     text-align: justify;
     padding: 10px 5px 10px 5px;
-  }
 
-  .encart h3 {
-    font-size: calc(var(--font-size-standard) * 2);
-    font-family: "Mendel Semibold", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #b99442;
+    h3 {
+      font-size: calc(var(--font-size-standard) * 2);
+      font-family: "Mendel Semibold", sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #b99442;
+    }
   }
 
   blockquote {
@@ -134,5 +114,26 @@
   .small {
     max-width: 75%;
     object-fit: contain;
+  }
+
+  .credits-titre {
+    color: #12120d;
+    font-family: "Hypatia Sans Pro", sans-serif;
+    font-size: calc(var(--font-size-standard) * 1.2);
+  }
+
+  .credits-texte {
+    color: #12120d;
+    font-family: "Hypatia Sans Pro", sans-serif;
+    font-size: calc(var(--font-size-standard));
+  }
+
+  .alinea {
+    margin-left: 3px;
+  }
+
+  .exposant {
+    font-size: 58%;
+    vertical-align: super;
   }
 }
