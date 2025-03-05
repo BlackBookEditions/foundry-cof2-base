@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.M6zUxFF9JWU7XNNe
+    - source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
       indice: 0
       label: ''
       chatFlavor: ''
@@ -57,7 +57,7 @@ system:
             number: 0
             scope: all
       modifiers: []
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.M6zUxFF9JWU7XNNe
+    - source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
       indice: 1
       label: ''
       chatFlavor: ''
@@ -70,12 +70,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.M6zUxFF9JWU7XNNe
+          source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: init
           value: '@rank[1,0,1,0,0] + @allrank[5]'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.M6zUxFF9JWU7XNNe
+          source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: def
           value: '@rank[1,0,1,0,0] + @allrank[5]'

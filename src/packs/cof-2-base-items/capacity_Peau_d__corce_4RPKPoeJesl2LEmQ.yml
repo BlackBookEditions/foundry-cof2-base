@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.4RPKPoeJesl2LEmQ
+    - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 0
       label: ''
       chatFlavor: ''
@@ -42,12 +42,12 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.4RPKPoeJesl2LEmQ
+          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: combat
           target: def
           value: '@rank[2,0,1,0,1]'
       resolvers: []
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.4RPKPoeJesl2LEmQ
+    - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 1
       label: ''
       chatFlavor: ''
@@ -60,7 +60,7 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.4RPKPoeJesl2LEmQ
+          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: skill
           target: int
           value: 2 + @rang

@@ -23,7 +23,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
+    - source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
       indice: 0
       label: ''
       chatFlavor: ''
@@ -36,22 +36,22 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: for
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: init
           value: '3'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.iHKVpIvd5PUiQG7i
+          source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: def
           value: '@rank[1,0,1,0,1]'

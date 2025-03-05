@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+    - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 0
       label: 'Pacifisme : Empathie'
       chatFlavor: 'Pacifisme : Empathie'
@@ -39,18 +39,18 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: cha
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: int
           value: 2 + @rang
       conditions: []
       resolvers: []
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+    - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 1
       label: 'Pacifisme : defense'
       chatFlavor: 'Pacifisme : defense'
@@ -63,7 +63,7 @@ system:
         temporary: true
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: combat
           target: def
           value: '5'

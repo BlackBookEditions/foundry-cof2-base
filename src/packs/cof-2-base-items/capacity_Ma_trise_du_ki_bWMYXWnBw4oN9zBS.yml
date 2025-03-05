@@ -23,7 +23,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.bWMYXWnBw4oN9zBS
+    - source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
       indice: 0
       label: ''
       chatFlavor: ''
@@ -36,17 +36,17 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: init
           value: '@vol'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: attribute
           target: hp
           value: '@vol'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: def
           value: '@allrank[2,0,0,0,1]'

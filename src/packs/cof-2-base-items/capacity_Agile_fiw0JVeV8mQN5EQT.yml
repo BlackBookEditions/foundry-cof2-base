@@ -25,7 +25,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.fiw0JVeV8mQN5EQT
+    - source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
       indice: 0
       label: ''
       chatFlavor: ''
@@ -38,17 +38,17 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.fiw0JVeV8mQN5EQT
+          source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.fiw0JVeV8mQN5EQT
+          source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: combat
           target: def
           value: 1 + (@rang % 3) + (@rang % 5)
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.fiw0JVeV8mQN5EQT
+          source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: combat
           target: init
           value: 1 + (@rang % 3) + (@rang % 5)

@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.IyygFzkrTAqjadsL
+    - source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
       indice: 0
       label: ''
       chatFlavor: ''
@@ -39,12 +39,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.IyygFzkrTAqjadsL
+          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: int
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.IyygFzkrTAqjadsL
+          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: per
           value: 2 + @rang

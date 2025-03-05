@@ -24,7 +24,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+    - source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
       indice: 0
       label: ''
       chatFlavor: ''
@@ -39,17 +39,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: skill
           target: agi
           value: '@rank'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: fearimmunity
           value: '0'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: sleepimmunity
           value: '0'

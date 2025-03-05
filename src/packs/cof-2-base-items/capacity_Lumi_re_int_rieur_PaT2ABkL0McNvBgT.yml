@@ -23,7 +23,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+    - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
       indice: 0
       label: ''
       chatFlavor: ''
@@ -38,17 +38,17 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: int
           value: '3'
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: cha
           value: '3'
       resolvers: []
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+    - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
       indice: 1
       label: ''
       chatFlavor: ''
@@ -63,7 +63,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.PaT2ABkL0McNvBgT
+          source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: state
           target: darkvision
           value: '0'

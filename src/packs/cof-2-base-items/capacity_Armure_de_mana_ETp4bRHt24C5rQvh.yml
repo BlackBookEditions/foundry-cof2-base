@@ -28,7 +28,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.ETp4bRHt24C5rQvh
+    - source: Compendium.cof-base.cof-2-base-items.Item.ETp4bRHt24C5rQvh
       indice: 0
       label: ''
       chatFlavor: ''
@@ -43,7 +43,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.ETp4bRHt24C5rQvh
+          source: Compendium.cof-base.cof-2-base-items.Item.ETp4bRHt24C5rQvh
           subtype: combat
           target: def
           value: '@rank[3,0,0,1,0] + @allrank[5]'

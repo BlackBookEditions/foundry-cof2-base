@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.j7pLaQESQ3WxcoPO
+    - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
       indice: 0
       label: ''
       chatFlavor: ''
@@ -50,7 +50,7 @@ system:
             number: 0
           dmg: {}
       modifiers: []
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.j7pLaQESQ3WxcoPO
+    - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
       indice: 1
       label: Vigilance et discrétion en pleine nature
       chatFlavor: Vigilance et discrétion en pleine nature
@@ -63,12 +63,12 @@ system:
         temporary: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.j7pLaQESQ3WxcoPO
+          source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: agi
           value: 2 + @rang
         - type: capacity
-          source: Compendium.cof-base.cof-2-livre-des-regles.Item.j7pLaQESQ3WxcoPO
+          source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: per
           value: 2 + @rang
