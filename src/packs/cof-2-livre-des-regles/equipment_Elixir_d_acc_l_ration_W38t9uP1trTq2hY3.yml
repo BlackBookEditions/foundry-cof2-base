@@ -1,4 +1,4 @@
-folder: SOYIK0bXotWWpr00
+folder: Ew9DjYH5ITPhbtLZ
 name: Elixir d'accélération
 type: equipment
 img: icons/svg/item-bag.svg
@@ -52,27 +52,23 @@ system:
       type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
       resolvers:
         - type: consumable
-          skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
-          dmg:
-            formula: ''
+          skill: {}
+          dmg: {}
           target:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isOwned
       modifiers: []
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -87,7 +83,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1741115685773
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!W38t9uP1trTq2hY3'
 

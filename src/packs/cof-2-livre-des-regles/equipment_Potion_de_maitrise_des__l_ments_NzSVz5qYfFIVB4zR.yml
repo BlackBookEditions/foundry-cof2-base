@@ -1,13 +1,19 @@
-folder: SOYIK0bXotWWpr00
-name: Elixir de chute ralentie
+folder: 8DZlr3ptfsd78d8T
+name: Potion de maitrise des éléments
 type: equipment
 img: icons/svg/item-bag.svg
-_id: nl16Ht6Ik9h3o9XR
 system:
-  description: "<p>L'utilisateur peux chuter de n’importe quelle hauteur sans subir de dommages.\_</p>"
+  description: >-
+    <p>L'utilisateur retranche le Rang + 2 à tous les DM de feu, de froid,
+    d’électricité ou d’acide subis pendant INT minutes.</p>
+
+    <p>De plus, pendant la durée du sort, si l'utilisateur est un magicien,
+    lorsqu’il lance un sort d’un élément, le magicien peut échanger un élément
+    contre un autre (par exemple, une explosion de froid ou une flèche
+    acide).</p>
   source: ''
   origin: ''
-  slug: elixir-de-chute-ralentie
+  slug: potion-de-maitrise-des-elements
   tags: []
   subtype: consumable
   martialCategory: ''
@@ -21,10 +27,10 @@ system:
     max: null
     destroyIfEmpty: false
   weight:
-    value: 1
+    value: 0
     unit: kg
   price:
-    value: 200
+    value: 1250
     unit: ''
   rarity: common
   equipped: false
@@ -36,40 +42,34 @@ system:
     oneHand: false
     twoHand: false
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.nl16Ht6Ik9h3o9XR
+    - source: Item.W0NBkIVE7p6PhLkl
       indice: 0
-      label: ''
+      label: Potion de maitrise des éléments
       chatFlavor: ''
       type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
         enabled: false
         temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
       resolvers:
         - type: consumable
-          skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
-          dmg:
-            formula: ''
+          skill: {}
+          dmg: {}
           target:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isOwned
       modifiers: []
+  defense: null
+  magicalDefense: null
 effects: []
-sort: 700000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -77,8 +77,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!nl16Ht6Ik9h3o9XR'
+  createdTime: 1741116329139
+  modifiedTime: 1741116349566
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: NzSVz5qYfFIVB4zR
+sort: 200000
+_key: '!items!NzSVz5qYfFIVB4zR'
 

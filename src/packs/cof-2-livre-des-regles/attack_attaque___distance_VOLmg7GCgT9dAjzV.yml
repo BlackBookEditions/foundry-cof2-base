@@ -1,15 +1,14 @@
 folder: eRnLMLNnqgpvpmpq
-name: Attaque de Zombie
+name: attaque à distance
 type: attack
 img: icons/svg/sword.svg
-_id: dVHlcnx4wFQOZKGa
 system:
-  description: <p>Grrrrr....</p>
+  description: ''
   source: ''
   origin: ''
-  slug: attaque-de-zombie
+  slug: attaque-a-distance
   tags: []
-  subtype: melee
+  subtype: ranged
   learned: false
   charges:
     current: null
@@ -18,11 +17,11 @@ system:
     spell: false
     chargeable: false
   actions:
-    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.dVHlcnx4wFQOZKGa
+    - source: Item.Kkq7VvDKKjrdECbA
       indice: 0
-      label: ''
+      label: attaque à distance
       chatFlavor: ''
-      type: melee
+      type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -32,26 +31,22 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: melee
+        - type: ranged
           skill:
-            formula: '5'
-            crit: ''
+            formula: '+4'
+            crit: '20'
             difficulty: '@target.def'
           dmg:
-            formula: 1d4° + 2
+            formula: 2d6
           target:
             type: none
             number: 0
             scope: all
       modifiers: []
 effects: []
-sort: 0
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -59,8 +54,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!dVHlcnx4wFQOZKGa'
+  createdTime: 1741115510986
+  modifiedTime: 1741115518258
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: VOLmg7GCgT9dAjzV
+sort: 100000
+_key: '!items!VOLmg7GCgT9dAjzV'
 
