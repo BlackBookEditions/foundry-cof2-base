@@ -15,11 +15,11 @@
   src: url("../fonts/mendl_serif_dusk.ttf");
 }
 @font-face {
-  font-family: "Mendel Medium";
+  font-family: "Mendl Serif Dusk Medium";
   src: url("../fonts/mendl_serif_dusk_med.ttf");
 }
 @font-face {
-  font-family: "Mendel Semibold";
+  font-family: "Mendl Serif Dusk Semibold";
   src: url("../fonts/mendl_serif_dusk_semb.ttf");
 }
 @font-face {
@@ -108,12 +108,19 @@
   font-weight: bold;
   color: #474846;
 }
-.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p,
-.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base li {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p {
   font-size: 1rem;
   font-family: "Hypatia";
   text-indent: 0.2cm;
   text-align: justify;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base li {
+  font-size: 1rem;
+  font-family: "Hypatia";
+  text-align: justify;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::first-letter {
+  text-transform: uppercase;
 }
 .journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::after {
   content: "\A\A";
@@ -231,4 +238,39 @@
 .journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.entete {
   font-weight: bold;
   background-color: #eaddc3;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base span.Emphasis--Technique- {
+  font-family: "Mendl Serif Dusk SemiBold", serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  text-transform: none;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2.voie {
+  color: #555756;
+  font-family: "Mendl Serif Dusk Medium", serif;
+  font-size: calc(var(--font-size-standard) * 1.6);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h3.voie {
+  color: #555756;
+  font-family: "Mendl Serif Dusk Medium", serif;
+  font-size: calc(var(--font-size-standard) * 1.6);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.voie-titre-3 {
+  background-color: #f1e8d6;
+  color: #474847;
+  font-family: "Mendl Serif Dusk SemiBold", serif;
+  font-size: calc(var(--font-size-standard) * 1.2);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
 }

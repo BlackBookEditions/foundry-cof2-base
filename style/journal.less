@@ -70,12 +70,21 @@
             color: #474846;
           }
 
-          p,
-          li {
+          p {
             font-size: 1rem;
             font-family: "Hypatia";
             text-indent: 0.2cm;
             text-align: justify;
+          }
+
+          li {
+            font-size: 1rem;
+            font-family: "Hypatia";
+            text-align: justify;
+          }
+
+          p.alinea::first-letter {
+            text-transform: uppercase;
           }
 
           p.alinea::after {
@@ -190,13 +199,13 @@
             width: 100%;
 
             tr {
-              border-bottom-color:#ba9442;
-	            border-bottom-width:1px;
+              border-bottom-color: #ba9442;
+              border-bottom-width: 1px;
             }
 
             td {
-              text-align: center;      
-              vertical-align: middle;              
+              text-align: center;
+              vertical-align: middle;
             }
 
             tr.tableau-titre {
@@ -204,7 +213,7 @@
               color: #ffffff;
               font-size: 1.1rem;
               td {
-                text-align: left;   
+                text-align: left;
                 padding: 10px;
                 letter-spacing: 2px;
               }
@@ -214,6 +223,47 @@
               font-weight: bold;
               background-color: #eaddc3;
             }
+          }
+
+          span.Emphasis--Technique- {
+            font-family: "Mendl Serif Dusk SemiBold", serif;
+            //font-size:9px;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 600;
+            text-transform: none;
+          }
+
+          // Voies
+          h2.voie {
+            color: #555756;
+            font-family: "Mendl Serif Dusk Medium", serif;
+            font-size: calc(var(--font-size-standard) * 1.6);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          h3.voie {
+            color: #555756;
+            font-family: "Mendl Serif Dusk Medium", serif;
+            font-size: calc(var(--font-size-standard) * 1.6);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          p.voie-titre-3 {
+            background-color:#f1e8d6;
+            color:#474847;
+            font-family:"Mendl Serif Dusk SemiBold", serif;
+            font-size:calc(var(--font-size-standard) * 1.2);
+            font-style:normal;
+            font-variant:normal;
+            font-weight:600;
+            margin-bottom: 10px;
           }
         }
       }
