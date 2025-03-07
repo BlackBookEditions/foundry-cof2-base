@@ -154,7 +154,7 @@
             padding-left: 10px;
           }
 
-          .small {
+          small {
             max-width: 25%;
             object-fit: contain;
           }
@@ -178,6 +178,42 @@
           .exposant {
             font-size: 58%;
             vertical-align: super;
+          }
+
+          table.tableau {
+            font-family: "Hypatia", sans-serif;
+            border-collapse: collapse;
+            border-color: #12120d;
+            border-style: none;
+            border-width: 0px;
+            margin: 20px;
+            width: 100%;
+
+            tr {
+              border-bottom-color:#ba9442;
+	            border-bottom-width:1px;
+            }
+
+            td {
+              text-align: center;      
+              vertical-align: middle;              
+            }
+
+            tr.tableau-titre {
+              background-color: #cbad70;
+              color: #ffffff;
+              font-size: 1.1rem;
+              td {
+                text-align: left;   
+                padding: 10px;
+                letter-spacing: 2px;
+              }
+            }
+
+            tr.entete {
+              font-weight: bold;
+              background-color: #eaddc3;
+            }
           }
         }
       }

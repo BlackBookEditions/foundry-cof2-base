@@ -180,7 +180,7 @@
   font-style: italic;
   padding-left: 10px;
 }
-.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .small {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base small {
   max-width: 25%;
   object-fit: contain;
 }
@@ -200,4 +200,35 @@
 .journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exposant {
   font-size: 58%;
   vertical-align: super;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau {
+  font-family: "Hypatia", sans-serif;
+  border-collapse: collapse;
+  border-color: #12120d;
+  border-style: none;
+  border-width: 0px;
+  margin: 20px;
+  width: 100%;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr {
+  border-bottom-color: #ba9442;
+  border-bottom-width: 1px;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau td {
+  text-align: center;
+  vertical-align: middle;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre {
+  background-color: #cbad70;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre td {
+  text-align: left;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.entete {
+  font-weight: bold;
+  background-color: #eaddc3;
 }
