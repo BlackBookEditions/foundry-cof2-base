@@ -1,158 +1,186 @@
-.journal-page-cof-base {
-  body,
-  div,
-  dl,
-  dt,
-  dd,
-  h1,
-  h2,
-  h3,
-  h4,
-  p,
-  pre,
-  code {
-    margin: 0;
-    padding: 0;
-    border-width: 0;
-  }
-
-  h2 {
-    font-size: calc(var(--font-size-standard) * 2.5);
+// Mise en forme au niveau d'un journal
+.journal-cof-base {
+  .journal-header {
     font-family: "Mendel Semibold", sans-serif;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #555756;
   }
 
-  h3 {
-    font-size: calc(var(--font-size-standard) * 2);
-    font-family: "Matrix", sans-serif;
-    text-align: left;
-    font-weight: bold;
-    color: #b99442;
-  }
+  .journal-entry-pages {
+    background-image: url("../assets/artwork/background.webp");
+    .journal-entry-page {
+      //background-repeat: repeat-y, no-repeat;
+      //background-position: left top, 80px top;
+      //background-size: auto, auto;
 
+      .journal-page-header {
+        h1 {
+          color: #ba9442;
+          font-family: "Mendl Serif Dusk", serif;
+          font-size: calc(var(--font-size-standard) * 2.2);
+          font-style: normal;
+          font-variant: normal;
+          font-weight: bold;
+          text-align: center;
+          text-transform: uppercase;
+          border: none;
+          padding-bottom: 20px;
+        }
+      }
 
-  
-  h4 {
-    font-size: calc(var(--font-size-standard) * 1.5);
-    font-family: "Mendel Semibold", sans-serif;
-    text-align: left;
-    font-weight: bold;
-    color: #474846;
-  }
+      .journal-page-content {
+        .journal-page-cof-base {
+          body,
+          div,
+          dl,
+          dt,
+          dd,
+          h1,
+          h2,
+          h3,
+          h4,
+          p,
+          pre,
+          code {
+            margin: 0;
+            padding: 0;
+            border-width: 0;
+          }
 
-  p,
-  li {
-    font-size: 1rem;
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
-    text-align: justify;
-  }
+          h2 {
+            font-size: calc(var(--font-size-standard) * 2);
+            font-family: "Mendel Semibold", sans-serif;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #555756;
+          }
 
-  /*
-  p::after {
-    content: "\A\A";
-    white-space: pre;
-  }
-    */
+          h3 {
+            font-size: calc(var(--font-size-standard) * 1.8);
+            font-family: "Matrix", sans-serif;
+            text-align: left;
+            font-weight: bold;
+            color: #b99442;
+          }
 
-  .italique {
-    text-align: justify;
-    font-style: italic;
-  }
+          h4 {
+            font-size: calc(var(--font-size-standard) * 1.4);
+            font-family: "Mendel Semibold", sans-serif;
+            text-align: left;
+            font-weight: bold;
+            color: #474846;
+          }
 
-  .gras {
-    text-align: justify;
-    font-weight: bold;
-  }
+          p,
+          li {
+            font-size: 1rem;
+            font-family: "Hypatia";
+            text-indent: 0.2cm;
+            text-align: justify;
+          }
 
-  .droite {
-    text-align: right;
-  }
+          p.alinea::after {
+            content: "\A\A";
+            white-space: pre;
+          }
 
-  .centre {
-    text-align: center;
-  }
+          .italique {
+            text-align: justify;
+            font-style: italic;
+          }
 
-  .citation {
-    font-size: calc(var(--font-size-standard) * 2);
-    font-family: "Alana";
-    text-indent: 0.2cm;
-    text-align: center;
-    color: #626362;
-  }
+          .gras {
+            text-align: justify;
+            font-weight: bold;
+          }
 
-  .titre {
-    font-size: calc(var(--font-size-standard) * 3.5);
-    font-family: "Mendel Semibold", sans-serif;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #b99442;
-  }
+          .droite {
+            text-align: right;
+          }
 
-  .lettrine {
-    font-size: calc(var(--font-size-standard) * 3.5);
-    font-family: "Mendel Semibold", sans-serif;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #b99442;
-  }
+          .centre {
+            text-align: center;
+          }
 
-  .encart {
-    border: 3px solid #b99442;
-    font-size: calc(var(--font-size-standard));
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
-    text-align: justify;
-    padding: 10px 5px 10px 5px;
+          .citation {
+            font-size: calc(var(--font-size-standard) * 2);
+            font-family: Alana, serif;
+            text-align: center;
+            color: #626463;
+          }
 
-    h3 {
-      font-size: calc(var(--font-size-standard) * 2);
-      font-family: "Mendel Semibold", sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #b99442;
+          .titre {
+            font-size: calc(var(--font-size-standard) * 3.5);
+            font-family: "Mendel Semibold", sans-serif;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: #b99442;
+          }
+
+          .lettrine {
+            font-size: calc(var(--font-size-standard) * 3.5);
+            font-family: "Mendel Semibold", sans-serif;
+            text-align: center;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: #b99442;
+          }
+
+          .encart {
+            border: 3px solid #b99442;
+            font-size: calc(var(--font-size-standard));
+            font-family: "Hypatia";
+            text-indent: 0.2cm;
+            text-align: justify;
+            padding: 10px 5px 10px 5px;
+
+            h3 {
+              font-size: calc(var(--font-size-standard) * 2);
+              font-family: "Mendel Semibold", sans-serif;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: #b99442;
+            }
+          }
+
+          blockquote {
+            font-size: calc(var(--font-size-standard));
+            font-family: "Hypatia";
+            text-indent: 0.2cm;
+            text-align: justify;
+            color: #a88352;
+            font-style: italic;
+            padding-left: 10px;
+          }
+
+          .small {
+            max-width: 25%;
+            object-fit: contain;
+          }
+
+          .credits-titre {
+            color: #12120d;
+            font-family: "Hypatia Sans Pro", sans-serif;
+            font-size: calc(var(--font-size-standard) * 1.2);
+          }
+
+          .credits-texte {
+            color: #12120d;
+            font-family: "Hypatia Sans Pro", sans-serif;
+            font-size: calc(var(--font-size-standard));
+          }
+
+          .alinea {
+            margin-left: 3px;
+          }
+
+          .exposant {
+            font-size: 58%;
+            vertical-align: super;
+          }
+        }
+      }
     }
-  }
-
-  blockquote {
-    font-size: calc(var(--font-size-standard));
-    font-family: "Hypatia";
-    text-indent: 0.2cm;
-    text-align: justify;
-    color: #a88352;
-    font-style: italic;
-    padding-left: 10px;
-  }
-
-  .small {
-    max-width: 75%;
-    object-fit: contain;
-  }
-
-  .credits-titre {
-    color: #12120d;
-    font-family: "Hypatia Sans Pro", sans-serif;
-    font-size: calc(var(--font-size-standard) * 1.2);
-  }
-
-  .credits-texte {
-    color: #12120d;
-    font-family: "Hypatia Sans Pro", sans-serif;
-    font-size: calc(var(--font-size-standard));
-  }
-
-  .alinea {
-    margin-left: 3px;
-  }
-
-  .exposant {
-    font-size: 58%;
-    vertical-align: super;
   }
 }

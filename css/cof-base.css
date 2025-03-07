@@ -1,34 +1,34 @@
 @font-face {
   font-family: "Alana";
-  src: url("./fonts/alana.ttf");
+  src: url("../fonts/alana.ttf");
 }
 @font-face {
   font-family: "Hypatia";
-  src: url("./fonts/hypatia_sans_pro.otf");
+  src: url("../fonts/hypatia_sans_pro.otf");
 }
 @font-face {
   font-family: "Matrix";
-  src: url("./fonts/matrix_iiot.ttf");
+  src: url("../fonts/matrix_iiot.ttf");
 }
 @font-face {
   font-family: "Mendel";
-  src: url("./fonts/mendl_serif_dusk.ttf");
+  src: url("../fonts/mendl_serif_dusk.ttf");
 }
 @font-face {
   font-family: "Mendel Medium";
-  src: url("./fonts/mendl_serif_dusk_med.ttf");
+  src: url("../fonts/mendl_serif_dusk_med.ttf");
 }
 @font-face {
   font-family: "Mendel Semibold";
-  src: url("./fonts/mendl_serif_dusk_semb.ttf");
+  src: url("../fonts/mendl_serif_dusk_semb.ttf");
 }
 @font-face {
   font-family: "Mendel Bold";
-  src: url("./fonts/mendl_serif_dusk_bold.ttf");
+  src: url("../fonts/mendl_serif_dusk_bold.ttf");
 }
 @font-face {
   font-family: "Wingdings2";
-  src: url("./fonts/wingdings2.ttf");
+  src: url("../fonts/wingdings2.ttf");
 }
 :root {
   --font-size-standard: 16px;
@@ -52,81 +52,94 @@
   --background-image-standard: url("/modules/cof-base/assets/artwork/background.webp");
   --background-chat-image: url("/modules/cof-base/assets/artwork/background.webp");
 }
-.journal-page-cof-base {
-  /*
-  p::after {
-    content: "\A\A";
-    white-space: pre;
-  }
-    */
+.journal-cof-base .journal-header {
+  font-family: "Mendel Semibold", sans-serif;
 }
-.journal-page-cof-base body,
-.journal-page-cof-base div,
-.journal-page-cof-base dl,
-.journal-page-cof-base dt,
-.journal-page-cof-base dd,
-.journal-page-cof-base h1,
-.journal-page-cof-base h2,
-.journal-page-cof-base h3,
-.journal-page-cof-base h4,
-.journal-page-cof-base p,
-.journal-page-cof-base pre,
-.journal-page-cof-base code {
+.journal-cof-base .journal-entry-pages {
+  background-image: url("../assets/artwork/background.webp");
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-header h1 {
+  color: #ba9442;
+  font-family: "Mendl Serif Dusk", serif;
+  font-size: calc(var(--font-size-standard) * 2.2);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  padding-bottom: 20px;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base body,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base div,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base dl,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base dt,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base dd,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h1,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h3,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h4,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base pre,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base code {
   margin: 0;
   padding: 0;
   border-width: 0;
 }
-.journal-page-cof-base h2 {
-  font-size: calc(var(--font-size-standard) * 2.5);
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2 {
+  font-size: calc(var(--font-size-standard) * 2);
   font-family: "Mendel Semibold", sans-serif;
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
   color: #555756;
 }
-.journal-page-cof-base h3 {
-  font-size: calc(var(--font-size-standard) * 2);
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h3 {
+  font-size: calc(var(--font-size-standard) * 1.8);
   font-family: "Matrix", sans-serif;
   text-align: left;
   font-weight: bold;
   color: #b99442;
 }
-.journal-page-cof-base h4 {
-  font-size: calc(var(--font-size-standard) * 1.5);
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h4 {
+  font-size: calc(var(--font-size-standard) * 1.4);
   font-family: "Mendel Semibold", sans-serif;
   text-align: left;
   font-weight: bold;
   color: #474846;
 }
-.journal-page-cof-base p,
-.journal-page-cof-base li {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p,
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base li {
   font-size: 1rem;
   font-family: "Hypatia";
   text-indent: 0.2cm;
   text-align: justify;
 }
-.journal-page-cof-base .italique {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::after {
+  content: "\A\A";
+  white-space: pre;
+}
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .italique {
   text-align: justify;
   font-style: italic;
 }
-.journal-page-cof-base .gras {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .gras {
   text-align: justify;
   font-weight: bold;
 }
-.journal-page-cof-base .droite {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .droite {
   text-align: right;
 }
-.journal-page-cof-base .centre {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .centre {
   text-align: center;
 }
-.journal-page-cof-base .citation {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .citation {
   font-size: calc(var(--font-size-standard) * 2);
-  font-family: "Alana";
-  text-indent: 0.2cm;
+  font-family: Alana, serif;
   text-align: center;
-  color: #626362;
+  color: #626463;
 }
-.journal-page-cof-base .titre {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .titre {
   font-size: calc(var(--font-size-standard) * 3.5);
   font-family: "Mendel Semibold", sans-serif;
   text-align: center;
@@ -134,7 +147,7 @@
   font-weight: bold;
   color: #b99442;
 }
-.journal-page-cof-base .lettrine {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .lettrine {
   font-size: calc(var(--font-size-standard) * 3.5);
   font-family: "Mendel Semibold", sans-serif;
   text-align: center;
@@ -142,7 +155,7 @@
   font-weight: bold;
   color: #b99442;
 }
-.journal-page-cof-base .encart {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart {
   border: 3px solid #b99442;
   font-size: calc(var(--font-size-standard));
   font-family: "Hypatia";
@@ -150,7 +163,7 @@
   text-align: justify;
   padding: 10px 5px 10px 5px;
 }
-.journal-page-cof-base .encart h3 {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart h3 {
   font-size: calc(var(--font-size-standard) * 2);
   font-family: "Mendel Semibold", sans-serif;
   text-align: center;
@@ -158,7 +171,7 @@
   font-weight: bold;
   color: #b99442;
 }
-.journal-page-cof-base blockquote {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base blockquote {
   font-size: calc(var(--font-size-standard));
   font-family: "Hypatia";
   text-indent: 0.2cm;
@@ -167,24 +180,24 @@
   font-style: italic;
   padding-left: 10px;
 }
-.journal-page-cof-base .small {
-  max-width: 75%;
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .small {
+  max-width: 25%;
   object-fit: contain;
 }
-.journal-page-cof-base .credits-titre {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .credits-titre {
   color: #12120d;
   font-family: "Hypatia Sans Pro", sans-serif;
   font-size: calc(var(--font-size-standard) * 1.2);
 }
-.journal-page-cof-base .credits-texte {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .credits-texte {
   color: #12120d;
   font-family: "Hypatia Sans Pro", sans-serif;
   font-size: calc(var(--font-size-standard));
 }
-.journal-page-cof-base .alinea {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .alinea {
   margin-left: 3px;
 }
-.journal-page-cof-base .exposant {
+.journal-cof-base .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exposant {
   font-size: 58%;
   vertical-align: super;
 }
