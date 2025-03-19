@@ -1,0 +1,65 @@
+folder: Jc9oocmI3B4cVSRG
+name: EAU DE VIE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: <p>L’élémentaire d’eau régénère 5 PV par round (sauf DM de feu).</p>
+  source: ''
+  origin: ''
+  slug: eau-de-vie
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.rchqqHiZR42rXsKI
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: heal
+          skill:
+            formula: '5'
+          target:
+            type: self
+            number: 0
+            scope: all
+          dmg: {}
+      modifiers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742110215550
+  modifiedTime: 1742415427004
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: fuMD0NSXnWNhkvpO
+sort: 700000
+_key: '!items!fuMD0NSXnWNhkvpO'
+

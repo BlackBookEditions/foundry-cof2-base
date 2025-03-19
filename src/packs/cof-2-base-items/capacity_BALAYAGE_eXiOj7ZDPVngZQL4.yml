@@ -1,0 +1,73 @@
+folder: Jc9oocmI3B4cVSRG
+name: BALAYAGE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p style="text-align:justify">La créature utilise sa grande taille pour
+    affecter deux créatures à son contact d’un seul coup<br />de patte/arme.
+    Faites un seul test et comparez‑le à la DEF des deux cibles. Si les deux
+    cibles sont touchées, la cible secondaire (désignée par le MJ) subit la
+    moitié des DM.</p>
+  source: ''
+  origin: ''
+  slug: balayage
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.zCeR5RGGFQeYnQSR
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: melee
+          skill:
+            formula: '+14'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 4d8+16
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742111011337
+  modifiedTime: 1742415427004
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: eXiOj7ZDPVngZQL4
+sort: 300000
+_key: '!items!eXiOj7ZDPVngZQL4'
+

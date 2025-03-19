@@ -1,0 +1,71 @@
+folder: Jc9oocmI3B4cVSRG
+name: COUP DE QUEUE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p>Chaque fois qu’un adversaire attaque le dragon dans le dos, il subit une
+    attaque de queue<br />gratuite équivalant à une attaque avec des DM divisés
+    par deux.</p>
+  source: ''
+  origin: ''
+  slug: coup-de-queue
+  tags: []
+  subtype: ''
+  actionType: f
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.KGGVAYLFnfiqj1R8
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: melee
+          skill:
+            formula: '+14'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: (1d12+8)/2
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742109454559
+  modifiedTime: 1742415427004
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: nEkVCQHTQ65P8yLA
+sort: 3000000
+_key: '!items!nEkVCQHTQ65P8yLA'
+

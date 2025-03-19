@@ -1,0 +1,89 @@
+folder: BHbn2gP9Z2mczP4c
+name: Bâton
+type: equipment
+img: icons/svg/item-bag.svg
+_id: gB34g3RhEaN2Zhr3
+system:
+  description: "<p>tous les personnages qui savent manier le bâton ferré savent aussi manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté au combat, plus lourd<br />et généralement couvert de métal aux extrémités (bien que les druides utilisent des bâtons de bois noueux avec le même effet).</p>\n<p>\_</p>\n<p><strong>DM temporaires possibles</strong></p>"
+  source: ''
+  origin: ''
+  slug: baton
+  tags: []
+  subtype: weapon
+  martialCategory: staff
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: true
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.gB34g3RhEaN2Zhr3
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: melee
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 1d4 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isEquipped
+      modifiers: []
+  damagetype: impact
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags:
+  exportSource:
+    world: cov2-dev
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!gB34g3RhEaN2Zhr3'
+

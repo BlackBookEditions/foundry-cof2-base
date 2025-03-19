@@ -1,0 +1,71 @@
+folder: 59NLi5B64imQxdoO
+name: Régénération*
+type: capacity
+img: icons/svg/combat.svg
+_id: E34m8ZaDLlCis0pU
+system:
+  description: >-
+    <p style="text-align:justify">Une cible touchée par le druide récupère
+    [3d4°+PER] PV par un rituel de 10 min (la cible et le druide doivent rester
+    au calme). À partir du rang 5, ce sort permet aussi de faire repousser les
+    membres ou les parties du corps amputées. Une cible peut bénéficier de ce
+    sort seulement une fois par jour.</p>
+  source: ''
+  origin: ''
+  slug: regeneration
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.E34m8ZaDLlCis0pU
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          skill:
+            formula: 3d4°+@per
+          target:
+            type: single
+            scope: all
+            number: 0
+          dmg: {}
+      modifiers: []
+  cost: -1
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828670128
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!E34m8ZaDLlCis0pU'
+

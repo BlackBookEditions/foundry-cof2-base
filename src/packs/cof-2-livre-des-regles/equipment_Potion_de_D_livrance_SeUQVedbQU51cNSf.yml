@@ -1,0 +1,85 @@
+folder: OuPecPaT0sm4COgQ
+name: Potion de Délivrance
+type: equipment
+img: icons/svg/item-bag.svg
+system:
+  description: >-
+    <p>Annule les pénalités infligées par les sorts, les malédictions et les
+    capacités spéciales (peur, douleur, affaiblissement, poisons, pétrification,
+    etc., et les états étourdi, paralysé, ralenti ou immobilisé), mais pas les
+    mutilations ou les amputations. Si la pénalité était permanente, le MJ peut
+    requérir un test d’attaque magique opposé et imposer un éventuel<br />malus
+    selon la force de l’effet.</p>
+  source: ''
+  origin: ''
+  slug: potion-de-delivrance
+  tags: []
+  subtype: consumable
+  martialCategory: paddedClothFur
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 450
+    unit: ''
+  rarity: medium
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.0VVd2VJ8Gi3AYpz0
+      indice: 0
+      label: Potion de Délivrance
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: consumable
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741116377339
+  modifiedTime: 1741116377339
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: SeUQVedbQU51cNSf
+sort: 0
+_key: '!items!SeUQVedbQU51cNSf'
+
