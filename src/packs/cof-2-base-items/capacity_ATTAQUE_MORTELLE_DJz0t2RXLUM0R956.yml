@@ -1,38 +1,29 @@
 folder: Jc9oocmI3B4cVSRG
-name: SOUFFLE
+name: ATTAQUE MORTELLE
 type: capacity
 img: icons/svg/combat.svg
 system:
-  description: >-
-    <p style="text-align:justify">Le souffle est une attaque de zone affectant
-    toutes les créatures dans un cône de 10 m de<br />long sur 10 m de large.
-    L’attaque inflige automatiquement (pas de test d’attaque) <strong>6d6+9
-    DM</strong>.<br />Les DM sont divisés par deux si la victime réussit un test
-    de <strong>AGI difficulté 15</strong>. La créature doit attendre <strong>2d4
-    rounds</strong> avant d’utiliser à nouveau son souffle après chaque
-    utilisation</p>
+  description: "<p>Une attaque qui doit être exécutée de dos ou par surprise. L’assassin obtient un dé bonus en attaque et ajoute\_<strong>+4d6 aux DM</strong> de sa première attaque (il fait ensuite sa seconde attaque dans des conditions normales).</p>"
   source: ''
   origin: ''
-  slug: souffle
-  tags: []
+  slug: attaque-mortelle
   subtype: ''
-  actionType: l
+  actionType: a
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
-    chargeable: false
   path: null
   cost: -1
   manaCost: -1
   actions:
-    - source: Item.sbyiB9c6VtXllJl6
+    - source: Item.TzuvCXVjLblv60hr
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
+      type: melee
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -43,18 +34,21 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: ranged
+        - type: melee
+          bonusDiceAdd: false
+          malusDiceAdd: true
           skill:
-            formula: '20'
-            crit: '0'
-            difficulty: '0'
+            formula: '+7'
+            crit: ''
+            difficulty: '@target.def'
           dmg:
-            formula: 6d6+9
+            formula: 1d6+3 +4d6
           target:
             type: none
             number: 0
             scope: all
       modifiers: []
+  frequency: none
 effects: []
 ownership:
   default: 0
@@ -66,10 +60,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1742109888495
+  createdTime: 1742450443128
   modifiedTime: 1742450443200
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_id: OTjaM8chKe1Kpch2
-sort: 4200000
-_key: '!items!OTjaM8chKe1Kpch2'
+_id: DJz0t2RXLUM0R956
+sort: 300000
+_key: '!items!DJz0t2RXLUM0R956'
 
