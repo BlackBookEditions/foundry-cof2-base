@@ -1,0 +1,92 @@
+folder: ZScjHcQPyF6P01Rx
+name: Pacifisme
+type: capacity
+img: icons/svg/combat.svg
+_id: hSGNsiCOiFeGGoyC
+system:
+  description: >-
+    <p style="text-align:justify">Tant que le moine n’a réalisé aucune action
+    offensive dans un combat, il bénéficie d’un bonus de +5 en DEF et divise par
+    deux tous les DM subis par des attaques. De plus, il obtient un bonus égal à
+    son rang + 2 à tous les tests d’empathie (pour analyser l’état émotionnel
+    d’un interlocuteur) ou à ceux effectués pour apaiser un auditoire ou le
+    convaincre de ne pas avoir recours à la violence.</p>
+  source: ''
+  origin: ''
+  slug: pacifisme
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+      indice: 0
+      label: 'Pacifisme : Empathie'
+      chatFlavor: 'Pacifisme : Empathie'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          subtype: skill
+          target: cha
+          value: 2 + @rang
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          subtype: skill
+          target: int
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+      indice: 1
+      label: 'Pacifisme : defense'
+      chatFlavor: 'Pacifisme : defense'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: true
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.hSGNsiCOiFeGGoyC
+          subtype: combat
+          target: def
+          value: '5'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828891574
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!hSGNsiCOiFeGGoyC'
+

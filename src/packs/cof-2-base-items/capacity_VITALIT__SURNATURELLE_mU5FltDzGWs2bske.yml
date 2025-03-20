@@ -1,0 +1,69 @@
+folder: Jc9oocmI3B4cVSRG
+name: VITALITÉ SURNATURELLE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p>Un troll récupère <strong>5 PV par tour</strong>, sauf si les DM subis
+    sont de feu ou d’acide. Même à 0 PV, il<br />continue à régénérer les tissus
+    morts à moins qu’on ne brûle son corps ou si un PJ utilise<br />une action
+    limitée pour achever la créature (par exemple, en séparant la tête du
+    corps).</p>
+  source: ''
+  origin: ''
+  slug: vitalite-surnaturelle
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.4imcR1mAgh7znOu7
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: heal
+          skill:
+            formula: '5'
+          target:
+            type: self
+            number: 0
+            scope: all
+          dmg: {}
+      modifiers: []
+  frequency: none
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742416443806
+  modifiedTime: 1742450443200
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: mU5FltDzGWs2bske
+sort: 1300000
+_key: '!items!mU5FltDzGWs2bske'
+

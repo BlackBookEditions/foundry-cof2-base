@@ -1,0 +1,90 @@
+folder: E0IHxlFlZyFSfQGY
+name: Boulet explosif
+type: equipment
+img: icons/svg/item-bag.svg
+_id: dnPlOorWnrfhHcy1
+system:
+  description: >-
+    <p style="text-align:justify">L’arquebusier sait fabriquer et lancer de
+    petites boules de métal garnies de poudre et<br />d’une portée de 20 m qui
+    explosent dans un rayon de 5 m en infligeant ${4d4° + @int}$ DM<br
+    />perforants, divisés par 2 pour les victimes qui réussissent un test d’AGI
+    difficulté 10. Ceux qui ratent le test sont de plus aveuglés un round par le
+    flash lumineux de l’explosion.</p>
+  source: ''
+  origin: ''
+  slug: boulet-explosif
+  tags: []
+  subtype: misc
+  martialCategory: unarmed
+  damagetype: piercing
+  quantity:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 0
+    unit: ''
+  rarity: medium
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: true
+    twoHand: false
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.dnPlOorWnrfhHcy1
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: ranged
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 4d4° + @int
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+sort: -100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1740760974494
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!dnPlOorWnrfhHcy1'
+

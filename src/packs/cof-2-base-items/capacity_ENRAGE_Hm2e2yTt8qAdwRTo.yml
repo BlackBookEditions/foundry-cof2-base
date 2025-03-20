@@ -1,0 +1,71 @@
+folder: Jc9oocmI3B4cVSRG
+name: ENRAGE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée. Elle
+    ignore les pénalités de<br />douleur ou la peur, augmente de +3 sa valeur
+    d’attaque au contact et ses DM de +1d4. Elle<br />peut encore agir un tour
+    complet après avoir atteint 0 PV.</p>
+  source: ''
+  origin: ''
+  slug: enrage
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.bUkLAWID0cvdaYdC
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.bUkLAWID0cvdaYdC
+          subtype: combat
+          target: melee
+          value: '3'
+        - type: capacity
+          source: Item.bUkLAWID0cvdaYdC
+          subtype: combat
+          target: dam
+          value: +1d4
+      resolvers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741677261430
+  modifiedTime: 1742450443200
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: Hm2e2yTt8qAdwRTo
+sort: 5000000
+_key: '!items!Hm2e2yTt8qAdwRTo'
+

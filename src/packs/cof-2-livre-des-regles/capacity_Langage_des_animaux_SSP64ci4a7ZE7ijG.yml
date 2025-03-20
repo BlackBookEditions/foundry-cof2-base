@@ -1,0 +1,62 @@
+folder: k5AmELUzuYNm1Cjd
+name: Langage des animaux
+type: capacity
+img: icons/svg/combat.svg
+_id: SSP64ci4a7ZE7ijG
+system:
+  description: "<p style=\"text-align:justify\">Le druide sait communiquer avec les mammifères.<br />La communication reste primitive et limitée à l’intelligence de l’animal et à son point de vue (prédateur, proie, etc.). De plus, il ajoute son rang + 2 à tous les tests destinés à influencer un animal avec lequel il peut communiquer. Chaque fois que le personnage atteint le rang 4 dans une voie de druide, il apprend à communiquer avec une nouvelle catégorie d’animaux de son choix : les oiseaux, les reptiles (et les amphibiens), les poissons (et les mollusques) ou les arthropodes (insectes, araignées, scorpions, etc.) et\_enfin les animaux fantastiques (griffon, pégase, etc.).</p>"
+  source: ''
+  origin: ''
+  slug: langage-des-animaux
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.SSP64ci4a7ZE7ijG
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.SSP64ci4a7ZE7ijG
+          subtype: skill
+          target: cha
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828519565
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!SSP64ci4a7ZE7ijG'
+

@@ -1,0 +1,72 @@
+folder: Jc9oocmI3B4cVSRG
+name: TOILE
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa cible
+    dans une toile<br />gluante et solide. Elle est <strong>immobilisée
+    </strong>; se libérer nécessite l’usage d’une action limitée et il<br />faut
+    réussir un<strong> test de FOR difficulté 12</strong>.</p>
+  source: ''
+  origin: ''
+  slug: toile
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.mwvF2j6DhchG9LLv
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: ranged
+          skill:
+            formula: '+7'
+            crit: '20'
+            difficulty: '@target.def'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741713486471
+  modifiedTime: 1742450443200
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: KqFxAwUj87NMzlv4
+sort: 4100000
+_key: '!items!KqFxAwUj87NMzlv4'
+

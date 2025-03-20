@@ -1,0 +1,74 @@
+folder: Jc9oocmI3B4cVSRG
+name: DISPARITION
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: >-
+    <p>L’assassin devient invisible (passage dans les ombres, cape magique,
+    sort, etc.) et peut se<br />déplacer de 20 m. Il réapparaît à son prochain
+    tour et s’il emporte un <strong>test opposé d’AGI</strong> (discrétion +5)
+    contre la PER (vigilance) de sa cible, il peut effectuer une Attaque
+    mortelle</p>
+  source: ''
+  origin: ''
+  slug: disparition
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.unaizUgGEhfv3qiz
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: melee
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@agi + 5'
+            crit: ''
+            difficulty: '@opposite.agi'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  frequency: none
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742450766556
+  modifiedTime: 1742450766556
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: E2qDT3Rrhce9VQwN
+sort: 0
+_key: '!items!E2qDT3Rrhce9VQwN'
+

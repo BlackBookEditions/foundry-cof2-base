@@ -1,0 +1,65 @@
+folder: ypKvtKmujazPMFt8
+name: Tir précis
+type: capacity
+img: icons/svg/combat.svg
+_id: xsvWSXanWNIm0JNm
+system:
+  description: >-
+    <p>L’arquebusier inflige des critiques sur 19‑20 sur ses attaques avec une
+    arme à distance. La plage de critique passe à 18‑20 à partir du rang 5.</p>
+  source: ''
+  origin: ''
+  slug: tir-precis
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.xsvWSXanWNIm0JNm
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.xsvWSXanWNIm0JNm
+          subtype: combat
+          target: crit
+          value: '-1'
+      resolvers: []
+  cost: -1
+effects: []
+sort: 75000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740774488887
+  lastModifiedBy: eB70hIW5CxiKgFZL
+_key: '!items!xsvWSXanWNIm0JNm'
+

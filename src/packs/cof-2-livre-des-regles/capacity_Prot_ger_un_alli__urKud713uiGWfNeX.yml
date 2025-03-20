@@ -1,0 +1,66 @@
+folder: yWOb0WkMiE4RTPF2
+name: Protéger un allié
+type: capacity
+img: icons/svg/combat.svg
+_id: urKud713uiGWfNeX
+system:
+  description: >-
+    <p>S’il n’est pas surpris, le guerrier peut accorder un bonus de DEF de +2 à
+    un allié à son contact contre une attaque par round. Il doit annoncer son
+    intention avant de connaître le résultat de l’attaque. De plus, vous ajoutez
+    votre rang + 2 à tous les tests destinés à éviter<br />d’être surpris</p>
+  source: ''
+  origin: ''
+  slug: proteger-un-allie
+  tags: []
+  subtype: ''
+  actionType: f
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.urKud713uiGWfNeX
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.urKud713uiGWfNeX
+          subtype: ability
+          target: per
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740761026318
+  lastModifiedBy: lrkjhQ5x0RUWRHSa
+_key: '!items!urKud713uiGWfNeX'
+
