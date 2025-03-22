@@ -1,272 +1,312 @@
 // Mise en forme au niveau d'un journal
 .journal-cof-base {
-  .journal-header {
-    font-family: "Mendel Semibold", sans-serif;
-  }
+  .journal-entry-content {
+    background: url("../assets/artwork/background.webp");
 
-  .journal-entry-pages {
-    background-image: url("../assets/artwork/background.webp");
-    .journal-entry-page {
-      //background-repeat: repeat-y, no-repeat;
-      //background-position: left top, 80px top;
-      //background-size: auto, auto;
-
-      .journal-page-header {
-        h1 {
-          color: #ba9442;
-          font-family: "Mendl Serif Dusk", serif;
-          font-size: calc(var(--font-size-standard) * 2.2);
-          font-style: normal;
-          font-variant: normal;
-          font-weight: bold;
-          text-align: center;
-          text-transform: uppercase;
-          border: none;
-          padding-bottom: 20px;
-        }
+    .journal-header {
+      font-family: "Mendel Semibold", sans-serif;
+      input {
+        border: none;
+        background-image: url("../assets/artwork/background.webp");
       }
+    }
 
-      .journal-page-content {
-        .journal-page-cof-base {
-          body,
-          div,
-          dl,
-          dt,
-          dd,
-          h1,
-          h2,
-          h3,
-          h4,
-          p,
-          pre,
-          code {
-            margin: 0;
-            padding: 0;
-            border-width: 0;
-          }
+    .journal-entry-pages {
+      background-image: url("../assets/artwork/background.webp");
 
-          h2 {
-            font-size: calc(var(--font-size-standard) * 2);
-            font-family: "Mendel Semibold", sans-serif;
-            text-align: left;
+      .journal-entry-page {
+        //background-repeat: repeat-y, no-repeat;
+        //background-position: left top, 80px top;
+        //background-size: auto, auto;
+
+        .journal-page-header {
+          h1 {
+            color: #ba9442;
+            font-family: "Mendl Serif Dusk", serif;
+            font-size: calc(var(--font-size-standard) * 2.2);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: bold;
+            text-align: center;
             text-transform: uppercase;
-            font-weight: bold;
-            color: #555756;
+            border: none;
+            padding-bottom: 20px;
+            margin-top: 10px;
           }
+        }
 
-          h3 {
-            font-size: calc(var(--font-size-standard) * 1.8);
-            font-family: "Matrix", sans-serif;
-            text-align: left;
-            font-weight: bold;
-            color: #b99442;
-            margin: 0 0 10px 10px;
-          }
+        .journal-page-content {
+          .journal-page-cof-base {
+            body,
+            div,
+            dl,
+            dt,
+            dd,
+            h1,
+            h2,
+            h3,
+            h4,
+            p,
+            pre,
+            code {
+              margin: 0;
+              padding: 0;
+              border-width: 0;
+            }
 
-          h4 {
-            font-size: calc(var(--font-size-standard) * 1.4);
-            font-family: "Mendel Semibold", sans-serif;
-            text-align: left;
-            font-weight: bold;
-            color: #474846;
-          }
-
-          p {
-            font-size: 1rem;
-            font-family: "Hypatia";
-            text-indent: 0.2cm;
-            text-align: justify;
-          }
-
-          li {
-            font-size: 1rem;
-            font-family: "Hypatia";
-            text-align: justify;
-          }
-
-          p.alinea::first-letter {
-            text-transform: uppercase;
-          }
-
-          p.alinea::after {
-            content: "\A\A";
-            white-space: pre;
-          }
-
-          .italique {
-            text-align: justify;
-            font-style: italic;
-          }
-
-          .gras {
-            text-align: justify;
-            font-weight: bold;
-          }
-
-          .droite {
-            text-align: right;
-          }
-
-          .centre {
-            text-align: center;
-          }
-
-          .citation {
-            font-size: calc(var(--font-size-standard) * 2);
-            font-family: Alana, serif;
-            text-align: center;
-            color: #626463;
-          }
-
-          .titre {
-            font-size: calc(var(--font-size-standard) * 3.5);
-            font-family: "Mendel Semibold", sans-serif;
-            text-align: center;
-            text-transform: capitalize;
-            font-weight: bold;
-            color: #b99442;
-          }
-
-          .lettrine {
-            font-size: calc(var(--font-size-standard) * 3.5);
-            font-family: "Mendel Semibold", sans-serif;
-            text-align: center;
-            text-transform: capitalize;
-            font-weight: bold;
-            color: #b99442;
-          }
-
-          .encart {
-            border: 3px solid #b99442;
-            font-size: calc(var(--font-size-standard));
-            font-family: "Hypatia";
-            text-indent: 0.2cm;
-            text-align: justify;
-            padding: 10px 5px 10px 5px;
-
-            h3 {
+            h2 {
               font-size: calc(var(--font-size-standard) * 2);
               font-family: "Mendel Semibold", sans-serif;
-              text-align: center;
+              text-align: left;
               text-transform: uppercase;
+              font-weight: bold;
+              color: #555756;
+              margin: 0 0 10px 10px;
+              padding-top: 10px;
+            }
+
+            h3 {
+              font-size: calc(var(--font-size-standard) * 1.8);
+              font-family: "Matrix", sans-serif;
+              text-align: left;
+              font-weight: bold;
+              color: #b99442;
+              margin: 0 0 10px 10px;
+            }
+
+            h4 {
+              font-size: calc(var(--font-size-standard) * 1.4);
+              font-family: "Mendel Semibold", sans-serif;
+              text-align: left;
+              font-weight: bold;
+              color: #474846;
+              margin: 0 0 10px 10px;
+            }
+
+            h5 {
+              font-size: calc(var(--font-size-standard) * 1.2);
+              font-family: "Mendel Semibold", sans-serif;
+              text-align: left;
+              font-weight: bold;
+              color: #474846;
+              margin: 0 0 10px 10px;
+            }
+
+            p {
+              font-size: 1rem;
+              font-family: "Hypatia";
+              text-indent: 0.2cm;
+              text-align: justify;
+            }
+
+            li {
+              font-size: 1rem;
+              font-family: "Hypatia";
+              text-align: justify;
+            }
+
+            p.alinea::first-letter {
+              text-transform: uppercase;
+            }
+
+            p.alinea::after {
+              content: "\A\A";
+              white-space: pre;
+            }
+
+            .italique {
+              text-align: justify;
+              font-style: italic;
+            }
+
+            .gras {
+              text-align: justify;
+              font-weight: bold;
+            }
+
+            .droite {
+              text-align: right;
+            }
+
+            .centre {
+              text-align: center;
+            }
+
+            .citation {
+              font-size: calc(var(--font-size-standard) * 2);
+              font-family: Alana, serif;
+              text-align: center;
+              color: #626463;
+            }
+
+            .titre {
+              font-size: calc(var(--font-size-standard) * 3.5);
+              font-family: "Mendel Semibold", sans-serif;
+              text-align: center;
+              text-transform: capitalize;
               font-weight: bold;
               color: #b99442;
             }
-          }
 
-          blockquote {
-            font-size: calc(var(--font-size-standard));
-            font-family: "Hypatia";
-            text-indent: 0.2cm;
-            text-align: justify;
-            color: #a88352;
-            font-style: italic;
-            padding-left: 10px;
-          }
-
-          small {
-            max-width: 25%;
-            object-fit: contain;
-          }
-
-          .credits-titre {
-            color: #12120d;
-            font-family: "Hypatia Sans Pro", sans-serif;
-            font-size: calc(var(--font-size-standard) * 1.2);
-          }
-
-          .credits-texte {
-            color: #12120d;
-            font-family: "Hypatia Sans Pro", sans-serif;
-            font-size: calc(var(--font-size-standard));
-          }
-
-          .alinea {
-            margin-left: 3px;
-          }
-
-          .exposant {
-            font-size: 58%;
-            vertical-align: super;
-          }
-
-          table.tableau {
-            font-family: "Hypatia", sans-serif;
-            border-collapse: collapse;
-            border-color: #12120d;
-            border-style: none;
-            border-width: 0px;
-            margin: 20px;
-            width: 100%;
-
-            tr {
-              border-bottom-color: #ba9442;
-              border-bottom-width: 1px;
-            }
-
-            td {
+            .lettrine {
+              font-size: calc(var(--font-size-standard) * 3.5);
+              font-family: "Mendel Semibold", sans-serif;
               text-align: center;
-              vertical-align: middle;
+              text-transform: capitalize;
+              font-weight: bold;
+              color: #b99442;
             }
 
-            tr.tableau-titre {
-              background-color: #cbad70;
-              color: #ffffff;
-              font-size: 1.1rem;
-              td {
-                text-align: left;
-                padding: 10px;
-                letter-spacing: 2px;
+            .encart {
+              border: 3px solid #b99442;
+//              border-bottom: none;
+              font-size: calc(var(--font-size-standard));
+              font-family: "Hypatia";
+              text-indent: 0.2cm;
+              text-align: justify;
+              padding: 10px 5px 10px 5px;
+              margin: 20px;
+              position: relative;
+
+              h3 {
+                font-size: calc(var(--font-size-standard) * 1.5);
+                font-family: "Mendel Semibold", sans-serif;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #b99442;
+              }
+
+              li {
+                margin-bottom: 5px;
+              }
+
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 100%;
+                height: 20px; /* Ajustez cette valeur selon la hauteur de votre image */
+                background: url("../assets/artwork/tableau-bord-inferieur.webp") no-repeat center bottom;
+                background-size: contain; /* Ou "cover" selon le rendu désiré */
               }
             }
 
-            tr.entete {
-              font-weight: bold;
-              background-color: #eaddc3;
+            blockquote {
+              font-size: calc(var(--font-size-standard));
+              font-family: "Hypatia";
+              text-indent: 0.2cm;
+              text-align: justify;
+              color: #a88352;
+              font-style: italic;
+              padding-left: 10px;
             }
-          }
 
-          span.Emphasis--Technique- {
-            font-family: "Mendl Serif Dusk SemiBold", serif;
-            //font-size:9px;
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 600;
-            text-transform: none;
-          }
+            small {
+              max-width: 25%;
+              object-fit: contain;
+            }
 
-          // Voies
-          h2.voie {
-            color: #555756;
-            font-family: "Mendl Serif Dusk Medium", serif;
-            font-size: calc(var(--font-size-standard) * 1.6);
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            text-transform: uppercase;
-          }
+            .credits-titre {
+              color: #12120d;
+              font-family: "Hypatia Sans Pro", sans-serif;
+              font-size: calc(var(--font-size-standard) * 1.2);
+            }
 
-          h3.voie {
-            color: #555756;
-            font-family: "Mendl Serif Dusk Medium", serif;
-            font-size: calc(var(--font-size-standard) * 1.6);
-            font-style: normal;
-            font-variant: normal;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin: 0 0 10px 25px;
-          }
+            .credits-texte {
+              color: #12120d;
+              font-family: "Hypatia Sans Pro", sans-serif;
+              font-size: calc(var(--font-size-standard));
+            }
 
-          p.voie-titre-3 {
-            background-color:#f1e8d6;
-            color:#474847;
-            font-family:"Mendl Serif Dusk SemiBold", serif;
-            font-size:calc(var(--font-size-standard) * 1.2);
-            font-style:normal;
-            font-variant:normal;
-            font-weight:600;
-            margin-bottom: 10px;
-            padding: 5px;
+            .alinea {
+              margin-left: 3px;
+            }
+
+            .exposant {
+              font-size: 58%;
+              vertical-align: super;
+            }
+
+            table.tableau {
+              font-family: "Hypatia", sans-serif;
+              border-collapse: collapse;
+              border-color: #12120d;
+              border-style: none;
+              border-width: 0px;
+              margin: 20px 0 30px 30px;
+              width: 95%;
+
+              tr {
+                border-bottom-color: #ba9442;
+                border-bottom-width: 1px;
+              }
+
+              td {
+                text-align: center;
+                vertical-align: middle;
+              }
+
+              tr.tableau-titre {
+                background-color: #cbad70;
+                color: #ffffff;
+                font-size: 1.1rem;
+                td {
+                  text-align: left;
+                  padding: 10px;
+                  letter-spacing: 2px;
+                }
+              }
+
+              tr.entete {
+                font-weight: bold;
+                background-color: #eaddc3;
+              }
+            }
+
+            span.Emphasis--Technique- {
+              font-family: "Mendl Serif Dusk SemiBold", serif;
+              //font-size:9px;
+              font-style: normal;
+              font-variant: normal;
+              font-weight: 600;
+              text-transform: none;
+            }
+
+            // Voies
+            h2.voie {
+              color: #555756;
+              font-family: "Mendl Serif Dusk Medium", serif;
+              font-size: calc(var(--font-size-standard) * 1.6);
+              font-style: normal;
+              font-variant: normal;
+              font-weight: 500;
+              text-transform: uppercase;
+            }
+
+            h3.voie {
+              color: #555756;
+              font-family: "Mendl Serif Dusk Medium", serif;
+              font-size: calc(var(--font-size-standard) * 1.6);
+              font-style: normal;
+              font-variant: normal;
+              font-weight: 500;
+              text-transform: uppercase;
+              margin: 0 0 10px 25px;
+            }
+
+            p.voie-titre-3 {
+              background-color: #f1e8d6;
+              color: #474847;
+              font-family: "Mendl Serif Dusk SemiBold", serif;
+              font-size: calc(var(--font-size-standard) * 1.2);
+              font-style: normal;
+              font-variant: normal;
+              font-weight: 600;
+              margin-bottom: 10px;
+              padding: 5px;
+            }
           }
         }
       }
