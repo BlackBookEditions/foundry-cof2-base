@@ -1,0 +1,465 @@
+folder: tv4fRs4kcCfhJHyt
+name: Chef orc
+type: encounter
+img: icons/svg/eye.svg
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: true
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 6
+    hp:
+      base: 60
+      value: 60
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  combat:
+    init:
+      base: 13
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 20
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: humanoid
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: >-
+        <p style="text-align: justify;">Les orcs noirs sont une race
+        d&rsquo;orcs d&rsquo;&eacute;lite obtenue par s&eacute;lection et
+        reproduction par de puissants ma&icirc;tres mal&eacute;fiques souhaitant
+        construire l&rsquo;arm&eacute;e ultime. Leur peau est plus sombre et
+        leur musculature plus imposante. Ils manient des armes &agrave; deux
+        mains, mais surtout, ils ne sont plus sensibles &agrave; la
+        lumi&egrave;re du jour</p>
+    languages: []
+    properties: <p>Attaque magique +6</p>
+prototypeToken:
+  name: Orc
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Epée à deux mains (2 attaques)
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: epee-a-deux-mains
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: melee
+              skill:
+                formula: '+10'
+                crit: '20'
+                difficulty: '@target.def'
+              dmg:
+                formula: 2d6+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+          modifiers: []
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: uV83V1zfk1DPF98i
+    sort: 300000
+    _key: '!actors.items!dJIKbW2CWdn7Qct4.uV83V1zfk1DPF98i'
+  - folder: Jc9oocmI3B4cVSRG
+    name: IMPARABLE
+    type: capacity
+    img: icons/svg/combat.svg
+    system:
+      description: >-
+        <p style="text-align:justify">Si la créature obtient 15‑20 au d20 d’un
+        test d’attaque (17 à 20 si la créature possède 2 attaques), elle inflige
+        +2d6 DM supplémentaire et l’attaque est automatiquement réussie (quelle
+        que soit la DEF de son adversaire). Les dés bonus ne sont pas multipliés
+        en cas de critique</p>
+      source: ''
+      origin: ''
+      slug: imparable
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      frequency: none
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: nBHnfc3RzXNzCuY9
+    sort: 2800000
+    _key: '!actors.items!dJIKbW2CWdn7Qct4.nBHnfc3RzXNzCuY9'
+  - folder: Jc9oocmI3B4cVSRG
+    name: BRISE-GENOU
+    type: capacity
+    img: icons/svg/combat.svg
+    system:
+      description: >-
+        <p style="text-align:justify">Si un adversaire au contact tente de
+        s’éloigner de la créature (généralement pour fuir), elle obtient une
+        attaque de contact gratuite contre lui. Si cette attaque est réussie, en
+        plus des DM habituels, la cible doit réussir un test de CON difficulté
+        15 ou diviser par deux tous ses déplacements pour le reste du combat</p>
+      source: ''
+      origin: ''
+      slug: brise-genou
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      frequency: none
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: HBcUaoInF12mSdjg
+    sort: 3400000
+    _key: '!actors.items!dJIKbW2CWdn7Qct4.HBcUaoInF12mSdjg'
+  - folder: Jc9oocmI3B4cVSRG
+    name: CAPITAINE
+    type: capacity
+    img: icons/svg/combat.svg
+    system:
+      description: >-
+        <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
+        à toutes les créatures sous ses ordres à portée de vue.</p>
+      source: ''
+      origin: ''
+      slug: capitaine
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      frequency: none
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: uvMWEZPZKFoLe6Rs
+    sort: 3100000
+    _key: '!actors.items!dJIKbW2CWdn7Qct4.uvMWEZPZKFoLe6Rs'
+  - folder: uVNfyNGbfZsNuFix
+    name: COMMANDANT
+    type: capacity
+    img: icons/svg/combat.svg
+    _id: uJdSwXy168CMIpUF
+    system:
+      description: >-
+        <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20 m du
+        commandant, il ne<br />subit que <strong>la moitié des DM qui lui sont
+        infligés</strong>.</p>
+      source: ''
+      origin: ''
+      slug: commandant
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: none
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.h3hOsBxrvMJ3dVKE
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dJIKbW2CWdn7Qct4.uJdSwXy168CMIpUF'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: Actor.vWXnzxK56xLO4xAv
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742454184539
+  modifiedTime: 1742454184539
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: dJIKbW2CWdn7Qct4
+_key: '!actors!dJIKbW2CWdn7Qct4'
+

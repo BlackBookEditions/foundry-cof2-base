@@ -1,0 +1,338 @@
+folder: Syos99DWKcjiQ4Wn
+name: Cheval de guerre
+type: encounter
+img: icons/svg/eye.svg
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: true
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -4
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    hp:
+      base: 14
+      value: 14
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    nc: 1
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 11
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  pasteData: ''
+  details:
+    category: living
+    size: large
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: ''
+  magic: 0
+prototypeToken:
+  name: Cheval de selle
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 2
+  height: 2
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Ruade
+    type: attack
+    img: icons/svg/sword.svg
+    _id: KOX0Tcf32BT8FVaK
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: ruade
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.QDUQvqfQhJngG1D0
+          indice: 0
+          label: Ruade
+          chatFlavor: Ruade
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            visible: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: melee
+              skill:
+                formula: '+4'
+                crit: '20'
+                difficulty: '@target.def'
+              dmg:
+                formula: 1d4+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+          modifiers: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.QDUQvqfQhJngG1D0
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!trnsJkdF390aUidC.KOX0Tcf32BT8FVaK'
+  - folder: uVNfyNGbfZsNuFix
+    name: MONTURE
+    type: capacity
+    img: icons/svg/combat.svg
+    _id: HheZC5rkNJDhynpq
+    system:
+      description: >-
+        <p style="text-align:justify">La créature double sa FOR pour porter une
+        charge.<br />Un cheval de guerre est apte à porter une barde, un
+        ensemble de protections pour lui.<br />Un caparaçon de maille augmente
+        la DEF du cheval de +2 pour un prix de 100 pa. Une barde de plaques de
+        métal apporte un bonus de +4 en DEF pour un prix de 400 pa. Les bardes
+        font subir au cheval et à son cavalier un malus en Init. égal au bonus
+        de DEF.<br />La DEF de la fidèle monture du chevalier (Voie du cavalier,
+        rang 1), tient déjà compte du bonus de DEF d’une éventuelle barde. En
+        revanche, le MJ peut toujours décider de lui permettre de trouver une
+        barde magique pour améliorer sa DEF.<br />En tant que PNJ, un cheval de
+        guerre lourd pour un cavalier de haut niveau pourrait<br />bénéficier
+        d’un ou plusieurs rangs de boss.</p>
+      source: ''
+      origin: ''
+      slug: monture
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      frequency: none
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.XNJh11OIeX2a6jIb
+      duplicateSource: null
+      coreVersion: '12.331'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!trnsJkdF390aUidC.HheZC5rkNJDhynpq'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: Actor.QforvighOK6Sc4GY
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1742454179561
+  modifiedTime: 1742454179561
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: trnsJkdF390aUidC
+_key: '!actors!trnsJkdF390aUidC'
+

@@ -43,10 +43,21 @@
       "name": "COF2 Livre des règles",
       "sorting": "m",
       "color": "#3b2524",
-      "packs": ["cof-2-base-items", "cof-2-base-regles"]
+      "packs": ["cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter"]
     }
   ],
   "packs": [
+    {
+      "label": "COF2 Livre des règles",
+      "type": "JournalEntry",
+      "name": "cof-2-base-regles",
+      "path": "packs/cof-2-base-regles",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
     {
       "label": "COF2 Objets",
       "type": "Item",
@@ -59,10 +70,10 @@
       }
     },
     {
-      "label": "COF2 Livre des règles",
-      "type": "JournalEntry",
-      "name": "cof-2-base-regles",
-      "path": "packs/cof-2-base-regles",
+      "label": "COF2 Bestiaire",
+      "type": "Actor",
+      "name": "cof-2-base-encounter",
+      "path": "packs/cof-2-base-encounters",
       "system": "co",
       "ownership": {
         "PLAYER": "NONE",
