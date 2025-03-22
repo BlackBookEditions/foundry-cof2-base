@@ -247,7 +247,7 @@ items:
               skill:
                 formula: '+6'
                 crit: '20'
-                difficulty: '@target.def'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d4+1
               target:
@@ -320,7 +320,7 @@ items:
               skill:
                 formula: '@atm'
                 crit: '20'
-                difficulty: '@opposite.atm'
+                difficulty: '@oppose.atm'
               dmg:
                 formula: 2d8
               target:

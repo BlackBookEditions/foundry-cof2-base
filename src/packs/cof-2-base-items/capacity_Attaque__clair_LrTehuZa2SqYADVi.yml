@@ -41,9 +41,9 @@ system:
           skill:
             formula: '@atc + @agi'
             crit: ''
-            difficulty: '@target.def'
+            difficulty: '@cible.def'
           dmg:
-            formula: '@weapon.dmg + @agi'
+            formula: '@arme.dmg + @agi'
           target:
             type: none
             number: 0

@@ -54,7 +54,7 @@ system:
           skill:
             formula: '@atc'
             crit: ''
-            difficulty: '@target.def'
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for
           target:
@@ -80,7 +80,7 @@ system:
           skill:
             formula: '@atc'
             crit: ''
-            difficulty: '@target.def'
+            difficulty: '@cible.def'
           dmg:
             formula: 1d10 + @for
           target:
@@ -106,7 +106,7 @@ system:
           skill:
             formula: '@atd'
             crit: ''
-            difficulty: '@target.def'
+            difficulty: '@cible.def'
           dmg:
             formula: 1d6
           target:

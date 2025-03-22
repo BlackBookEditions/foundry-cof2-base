@@ -242,7 +242,7 @@ items:
               skill:
                 formula: '+6'
                 crit: '20'
-                difficulty: '@target.def'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+3
               target:
@@ -306,7 +306,7 @@ items:
               skill:
                 formula: '+5'
                 crit: '20'
-                difficulty: '@target.def'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -387,7 +387,7 @@ items:
               skill:
                 formula: '@ran'
                 crit: ''
-                difficulty: '@target.def'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d6
               target:
@@ -483,7 +483,7 @@ items:
               skill:
                 formula: '@atc'
                 crit: ''
-                difficulty: '@target.def'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8
               target:
