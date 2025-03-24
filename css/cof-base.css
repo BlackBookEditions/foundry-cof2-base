@@ -95,7 +95,7 @@
   border-width: 0;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2 {
-  font-size: calc(var(--font-size-standard) * 2);
+  font-size: calc(var(--font-size-standard) * 1.8);
   font-family: "Mendel Semibold", sans-serif;
   text-align: left;
   text-transform: uppercase;
@@ -105,7 +105,7 @@
   padding-top: 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h3 {
-  font-size: calc(var(--font-size-standard) * 1.8);
+  font-size: calc(var(--font-size-standard) * 1.6);
   font-family: "Matrix", sans-serif;
   text-align: left;
   font-weight: bold;
@@ -126,7 +126,11 @@
   text-align: left;
   font-weight: bold;
   color: #474846;
-  margin: 0 0 10px 10px;
+  margin: 10px 0 10px 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .image-large {
+  border: none;
+  padding: 20px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p {
   font-size: 1rem;
@@ -188,7 +192,6 @@
   font-family: "Hypatia";
   text-indent: 0.2cm;
   text-align: justify;
-  padding: 10px 5px 10px 5px;
   margin: 20px;
   position: relative;
 }
@@ -198,7 +201,19 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  color: #b99442;
+  color: #ba9442;
+  background-color: #e2d2b0;
+  margin: 0;
+  padding: 5px 0 5px 0;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart p {
+  padding: 0 10px 0 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart p:first-of-type {
+  padding-top: 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart p:last-of-type {
+  padding-bottom: 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart li {
   margin-bottom: 5px;
@@ -240,6 +255,28 @@
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .alinea {
   margin-left: 3px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exemple {
+  font-style: italic;
+  border-left: solid 2px #b99442;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exemple .normal {
+  font-style: normal;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exemple:last-of-type {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul.exemple {
+  font-style: italic;
+  border-left: solid 2px #b99442;
+  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul.exemple li {
+  margin-left: 15px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exposant {
   font-size: 58%;

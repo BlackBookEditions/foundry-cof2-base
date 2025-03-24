@@ -43,7 +43,7 @@
       "name": "COF2 Livre des règles",
       "sorting": "m",
       "color": "#3b2524",
-      "packs": ["cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter"]
+      "packs": ["cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter", "cof-2-guide-du-systeme"]
     }
   ],
   "packs": [
@@ -74,6 +74,17 @@
       "type": "Actor",
       "name": "cof-2-base-encounter",
       "path": "packs/cof-2-base-encounters",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2 Guide du système",
+      "type": "JournalEntry",
+      "name": "cof-2-guide-du-systeme",
+      "path": "packs/cof-2-guide-du-systeme",
       "system": "co",
       "ownership": {
         "PLAYER": "NONE",
