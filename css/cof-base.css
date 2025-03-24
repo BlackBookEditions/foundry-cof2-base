@@ -7,6 +7,10 @@
   src: url("../fonts/hypatia_sans_pro.otf");
 }
 @font-face {
+  font-family: "Calibri";
+  src: url("../fonts/calibri.ttf");
+}
+@font-face {
   font-family: "Matrix";
   src: url("../fonts/matrix_iiot.ttf");
 }
@@ -27,8 +31,28 @@
   src: url("../fonts/mendl_serif_dusk_bold.ttf");
 }
 @font-face {
+  font-family: "Wingdings";
+  src: url("../fonts/wingdings.ttf");
+}
+@font-face {
   font-family: "Wingdings2";
   src: url("../fonts/wingdings2.ttf");
+}
+@font-face {
+  font-family: "Wingdings3";
+  src: url("../fonts/wingdings3.ttf");
+}
+@font-face {
+  font-family: "D6Black";
+  src: url("../fonts/d6_black.otf");
+}
+@font-face {
+  font-family: "BBECOF2ICons";
+  src: url("../fonts/bbe_cof2_icons_v1c.otf");
+}
+@font-face {
+  font-family: "MinionPro";
+  src: url("../fonts/minion-pro-regular.otf");
 }
 :root {
   --font-size-standard: 16px;
@@ -111,6 +135,7 @@
   font-weight: bold;
   color: #b99442;
   margin: 0 0 10px 10px;
+  padding-top: 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h4 {
   font-size: calc(var(--font-size-standard) * 1.4);
@@ -119,6 +144,7 @@
   font-weight: bold;
   color: #474846;
   margin: 0 0 10px 10px;
+  padding-top: 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h5 {
   font-size: calc(var(--font-size-standard) * 1.2);
