@@ -9,7 +9,7 @@ const SIMPLE_LESS = ["style/*.less"];
 function compileLESS() {
   return gulp.src("style/cof-base.less")
       .pipe(less())
-      .pipe(gulp.dest("./css"))
+      .pipe(gulp.dest("."))
 }
 const css = gulp.series(compileLESS);
 
