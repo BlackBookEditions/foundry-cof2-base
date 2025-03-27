@@ -114,20 +114,20 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Ce profil correspond &agrave; tous les oiseaux de proie de grande
-        taille (environ 2 m d&rsquo;envergure).</p>
+        <p>Ce profil correspond à tous les oiseaux de proie de grande
+        taille (environ 2&nbsp;m d’envergure).</p>
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Aigle commun
@@ -147,7 +147,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -212,9 +212,9 @@ items:
     img: icons/svg/sword.svg
     _id: VUA2Qy4loVx61zMU
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: serres
       subtype: melee
       learned: true
@@ -227,8 +227,8 @@ items:
       actions:
         - source: Item.IYc2Vmwy6InFmDTd
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -244,9 +244,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4
               target:
@@ -263,13 +263,13 @@ items:
     _stats:
       compendiumSource: Item.IYc2Vmwy6InFmDTd
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!HLuISHxbd4CUHcdZ.VUA2Qy4loVx61zMU'
+    _key: "!actors.items!HLuISHxbd4CUHcdZ.VUA2Qy4loVx61zMU"
   - folder: uVNfyNGbfZsNuFix
     name: VOL RAPIDE
     type: capacity
@@ -278,13 +278,13 @@ items:
     system:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
-        lorsqu’elle est en<br />vol. Au premier round de combat, la créature
+        lorsqu’elle est en vol. Au premier round de combat, la créature
         obtient un dé bonus en attaque et +1d4 aux DM si elle est en vol et
         attaque une créature au sol.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vol-rapide
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -306,13 +306,13 @@ items:
     _stats:
       compendiumSource: Item.M9PzNcPmRuPbLXQx
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!HLuISHxbd4CUHcdZ.nx6DWRRBh5xflHkc'
+    _key: "!actors.items!HLuISHxbd4CUHcdZ.nx6DWRRBh5xflHkc"
   - folder: uVNfyNGbfZsNuFix
     name: EMPORTER DANS LES AIRS
     type: capacity
@@ -321,13 +321,13 @@ items:
     system:
       description: >-
         <p>La créature peut emporter dans les airs une créature de taille
-        minuscule ou moins. En cas<br />de chute, les créatures de taille
-        minuscule subissent seulement 1 DM par dé de chute (au<br />lieu de
+        minuscule ou moins. En cas de chute, les créatures de taille
+        minuscule subissent seulement 1&nbsp;DM par dé de chute (au lieu de
         1d4°).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: emporter-dans-les-airs
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -349,13 +349,13 @@ items:
     _stats:
       compendiumSource: Item.lHgy3iP1nSdWrzxW
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!HLuISHxbd4CUHcdZ.3Kt0BzBO0lZ703Oq'
+    _key: "!actors.items!HLuISHxbd4CUHcdZ.3Kt0BzBO0lZ703Oq"
 effects: []
 sort: 0
 ownership:
@@ -365,11 +365,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!HLuISHxbd4CUHcdZ'
-
+_key: "!actors!HLuISHxbd4CUHcdZ"

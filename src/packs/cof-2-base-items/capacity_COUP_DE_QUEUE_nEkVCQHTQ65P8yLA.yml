@@ -5,13 +5,13 @@ img: icons/svg/combat.svg
 system:
   description: >-
     <p>Chaque fois qu’un adversaire attaque le dragon dans le dos, il subit une
-    attaque de queue<br />gratuite équivalant à une attaque avec des DM divisés
+    attaque de queue gratuite équivalant à une attaque avec des DM divisés
     par deux.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: coup-de-queue
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: f
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Item.KGGVAYLFnfiqj1R8
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,9 +41,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '+14'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "+14"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: (1d12+8)/2
           target:
@@ -59,7 +59,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742109454559
@@ -67,5 +67,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: nEkVCQHTQ65P8yLA
 sort: 4400000
-_key: '!items!nEkVCQHTQ65P8yLA'
-
+_key: "!items!nEkVCQHTQ65P8yLA"

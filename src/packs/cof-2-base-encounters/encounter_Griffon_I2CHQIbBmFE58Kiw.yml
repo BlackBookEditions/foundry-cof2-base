@@ -115,31 +115,31 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
         <p style="text-align: justify;">Le griffon est une puissante
-        cr&eacute;ature au corps de lion pourvue de la t&ecirc;te et des ailes
-        d&rsquo;un aigle.<br>Ce m&eacute;lange ne manque pas de majest&eacute;
-        et cet animal fantastique est parfois utilis&eacute; comme monture par
-        les chevaliers. La cr&eacute;ature p&egrave;se environ 300 kg pour une
-        envergure de 7 m. Un griffon est plus intelligent qu&rsquo;un simple
-        animal et, m&ecirc;me s&rsquo;il ne parle pas, il peut apprendre
-        &agrave; comprendre une langue s&rsquo;il y est habitu&eacute;
-        tr&egrave;s t&ocirc;t.</p>
+        créature au corps de lion pourvue de la tête et des ailes
+        d’un aigle.<br>Ce mélange ne manque pas de majesté
+        et cet animal fantastique est parfois utilisé comme monture par
+        les chevaliers. La créature pèse environ 300&nbsp;kg pour une
+        envergure de 7&nbsp;m. Un griffon est plus intelligent qu’un simple
+        animal et, même s’il ne parle pas, il peut apprendre
+        à comprendre une langue s’il y est habitué
+        très tôt.</p>
     languages: []
     properties: >-
-      <p>Un oeuf de griffon viable est un bien tr&egrave;s pr&eacute;cieux, il
+      <p>Un oeuf de griffon viable est un bien très précieux, il
       vaut 3 000 pa, un tout jeune animal<br>se vend autour de 5 000 pa. Les
       dresseurs professionnels demandent 1 000 pa pour<br>apprivoiser ou
-      entra&icirc;ner un griffon&nbsp;</p>
+      entraîner un griffon&nbsp;.</p>
 prototypeToken:
   name: Griffon
   displayName: 0
@@ -158,7 +158,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -222,9 +222,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures-et-griffes
       subtype: melee
       learned: true
@@ -237,8 +237,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -252,9 +252,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+8'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+8"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+8
               target:
@@ -272,7 +272,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -280,7 +280,7 @@ items:
       lastModifiedBy: null
     _id: AdqXKvo5SqKRVUG2
     sort: 300000
-    _key: '!actors.items!I2CHQIbBmFE58Kiw.AdqXKvo5SqKRVUG2'
+    _key: "!actors.items!I2CHQIbBmFE58Kiw.AdqXKvo5SqKRVUG2"
   - folder: Jc9oocmI3B4cVSRG
     name: VOL RAPIDE
     type: capacity
@@ -288,13 +288,13 @@ items:
     system:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
-        lorsqu’elle est en<br />vol. Au premier round de combat, la créature
+        lorsqu’elle est en vol. Au premier round de combat, la créature
         obtient un dé bonus en attaque et +1d4 aux DM si elle est en vol et
         attaque une créature au sol.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vol-rapide
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -315,7 +315,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -323,7 +323,7 @@ items:
       lastModifiedBy: null
     _id: 8ve2iK3JG7Fx1Ttr
     sort: 1200000
-    _key: '!actors.items!I2CHQIbBmFE58Kiw.8ve2iK3JG7Fx1Ttr'
+    _key: "!actors.items!I2CHQIbBmFE58Kiw.8ve2iK3JG7Fx1Ttr"
   - folder: uVNfyNGbfZsNuFix
     name: AGRIPPER
     type: capacity
@@ -331,18 +331,18 @@ items:
     _id: 10Aj99l1ODXD3hKP
     system:
       description: >-
-        <p style="text-align:justify">Sur un résultat de 15‑20 au d20 en
-        attaque, la créature agrippe sa proie et ne la lâche plus.<br />Elle
+        <p>Sur un résultat de 15-20 au d20 en
+        attaque, la créature agrippe sa proie et ne la lâche plus. Elle
         obtient un bonus de<strong> +5 en attaque et inflige +1d4 aux DM contre
-        la cible</strong> qu’elle agrippe et celle‑ci est <strong>immobilisée
+        la cible</strong> qu’elle agrippe et celle-ci est <strong>immobilisée
         </strong>si elle est de taille inférieure. Une fois par round, la
         victime peut essayer de se libérer au prix d’une action de mouvement en
-        réussissant un <strong>test</strong><br /><strong>de FOR difficulté
+        réussissant un <strong>test</strong> <strong>de FOR difficulté
         16</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: agripper
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -356,8 +356,8 @@ items:
       actions:
         - source: Actor.I2CHQIbBmFE58Kiw.Item.10Aj99l1ODXD3hKP
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -373,14 +373,14 @@ items:
               source: Actor.I2CHQIbBmFE58Kiw.Item.10Aj99l1ODXD3hKP
               subtype: combat
               target: melee
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
             - type: capacity
               source: Actor.I2CHQIbBmFE58Kiw.Item.10Aj99l1ODXD3hKP
               subtype: combat
               target: dam
               value: +1d4
-              additionalInfos: ''
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -392,13 +392,13 @@ items:
     _stats:
       compendiumSource: Item.W3P9VDLcfitv8jWW
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!I2CHQIbBmFE58Kiw.10Aj99l1ODXD3hKP'
+    _key: "!actors.items!I2CHQIbBmFE58Kiw.10Aj99l1ODXD3hKP"
 effects: []
 sort: 0
 ownership:
@@ -408,11 +408,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!I2CHQIbBmFE58Kiw'
-
+_key: "!actors!I2CHQIbBmFE58Kiw"

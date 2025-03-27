@@ -10,11 +10,11 @@ system:
     peut être utilisée avec Tir rapide ou Flèche de mort par exemple.
     Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM
     au lieu de 2d4°.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: dans-le-mille
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,11 +41,11 @@ system:
       resolvers:
         - type: ranged
           skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atd"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@arme.dmg + 2d4°'
+            formula: "@arme.dmg + 2d4°"
           target:
             type: none
             number: 0
@@ -64,11 +64,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740823246131
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!qQRRYzPlyq9JHoIq'
-
+_key: "!items!qQRRYzPlyq9JHoIq"

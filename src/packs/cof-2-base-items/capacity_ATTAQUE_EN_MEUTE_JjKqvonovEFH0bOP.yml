@@ -7,11 +7,11 @@ system:
     <p>Lorsque au moins 2 gobelins attaquent la même cible en même temps, ils
     bénéficient d’un bonus de +2 en attaque (bonus qui peut s’ajouter à une
     éventuelle attaque groupée).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: attaque-en-meute
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Item.VN5p3ZgYHQqLqV6p
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -43,14 +43,14 @@ system:
           source: Item.VN5p3ZgYHQqLqV6p
           subtype: combat
           target: melee
-          value: '+2'
-          additionalInfos: ''
+          value: "+2"
+          additionalInfos: ""
         - type: capacity
           source: Item.VN5p3ZgYHQqLqV6p
           subtype: combat
           target: ranged
-          value: '+2'
-          additionalInfos: ''
+          value: "+2"
+          additionalInfos: ""
       resolvers: []
 effects: []
 ownership:
@@ -60,7 +60,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742187044178
@@ -68,5 +68,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: JjKqvonovEFH0bOP
 sort: 1600000
-_key: '!items!JjKqvonovEFH0bOP'
-
+_key: "!items!JjKqvonovEFH0bOP"

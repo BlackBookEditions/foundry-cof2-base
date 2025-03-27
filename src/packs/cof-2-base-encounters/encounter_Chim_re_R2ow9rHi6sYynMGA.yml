@@ -115,27 +115,27 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>La chim&egrave;re est un monstre improbable, m&eacute;lange de trois
-        cr&eacute;atures. On pourrait la comparer &agrave; un lion pourvu de
-        deux t&ecirc;tes suppl&eacute;mentaires, &agrave; gauche une t&ecirc;te
-        de ch&egrave;vre et &agrave; droite une t&ecirc;te d&rsquo;aigle, tandis
-        que sa queue est un long serpent aux crocs d&eacute;goulinants de
-        poison. Des ailes se d&eacute;ploient dans son dos et les mots peinent
-        &agrave; d&eacute;crire une cr&eacute;ature issue des pires cauchemars.
-        La chim&egrave;re fait la taille d&rsquo;un &eacute;norme taureau, elle
+        <p>La chimère est un monstre improbable, mélange de trois
+        créatures. On pourrait la comparer à un lion pourvu de
+        deux têtes supplémentaires, à gauche une tête
+        de chèvre et à droite une tête d’aigle, tandis
+        que sa queue est un long serpent aux crocs dégoulinants de
+        poison. Des ailes se déploient dans son dos et les mots peinent
+        à décrire une créature issue des pires cauchemars.
+        La chimère fait la taille d’un énorme taureau, elle
         voit dans le noir et comprend le noir parler.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Chimère
   displayName: 0
@@ -154,7 +154,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -218,9 +218,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures-bec-ou-cornes-3attaques
       subtype: melee
       learned: true
@@ -234,7 +234,7 @@ items:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
           label: attaque contact
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -248,9 +248,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+6
               target:
@@ -268,7 +268,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -276,15 +276,15 @@ items:
       lastModifiedBy: null
     _id: 3f98QhQgcpQ8tg2U
     sort: 300000
-    _key: '!actors.items!R2ow9rHi6sYynMGA.3f98QhQgcpQ8tg2U'
+    _key: "!actors.items!R2ow9rHi6sYynMGA.3f98QhQgcpQ8tg2U"
   - folder: eRnLMLNnqgpvpmpq
     name: Morsure de serpent
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure-de-serpent
       subtype: melee
       learned: true
@@ -297,8 +297,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -312,9 +312,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4 + 3
               target:
@@ -332,7 +332,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -340,21 +340,21 @@ items:
       lastModifiedBy: null
     _id: cWOTco5FIuzzrfyb
     sort: 300000
-    _key: '!actors.items!R2ow9rHi6sYynMGA.cWOTco5FIuzzrfyb'
+    _key: "!actors.items!R2ow9rHi6sYynMGA.cWOTco5FIuzzrfyb"
   - folder: Jc9oocmI3B4cVSRG
     name: POISON
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p>La victime subit <strong>1d6 DM de poison</strong> et elle doit faire
-        un<strong> test de CON difficulté 16</strong>. En cas<br />d’échec, elle
-        subit <strong>1d6 DM supplémentaires par round pendant 5
+        <p>La victime subit <strong>1d6&nbsp;DM de poison</strong> et elle doit faire
+        un<strong> test de CON difficulté 16</strong>. En cas d’échec, elle
+        subit <strong>1d6&nbsp;DM supplémentaires par round pendant 5
         rounds</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: poison
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -375,7 +375,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.o87m7rEVh3RkF97R
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -383,7 +383,7 @@ items:
       lastModifiedBy: null
     _id: oq8tQx2nh7M3PBHx
     sort: 200000
-    _key: '!actors.items!R2ow9rHi6sYynMGA.oq8tQx2nh7M3PBHx'
+    _key: "!actors.items!R2ow9rHi6sYynMGA.oq8tQx2nh7M3PBHx"
   - folder: uVNfyNGbfZsNuFix
     name: RIPOSTE SOURNOISE
     type: capacity
@@ -393,11 +393,11 @@ items:
       description: >-
         <p>Si une créature attaque la chimère de dos, la chimère obtient une
         attaque supplémentaire de serpent contre cet attaquant en plus de ces
-        attaques normales à ce tour</p>
-      source: ''
-      origin: ''
+        attaques normales à ce tour.</p>
+      source: ""
+      origin: ""
       slug: riposte-sournoise
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -419,13 +419,13 @@ items:
     _stats:
       compendiumSource: Item.QC82haiy8XVRpXJc
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!R2ow9rHi6sYynMGA.S4q0iNKBoxmDXgNS'
+    _key: "!actors.items!R2ow9rHi6sYynMGA.S4q0iNKBoxmDXgNS"
   - folder: uVNfyNGbfZsNuFix
     name: VOL RAPIDE
     type: capacity
@@ -434,13 +434,13 @@ items:
     system:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
-        lorsqu’elle est en<br />vol. Au premier round de combat, la créature
+        lorsqu’elle est en vol. Au premier round de combat, la créature
         obtient un<strong> dé bonus en attaque</strong> et <strong>+1d6 aux
         DM</strong> si elle est en vol et attaque une créature au sol.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vol-rapide
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -462,13 +462,13 @@ items:
     _stats:
       compendiumSource: Item.M9PzNcPmRuPbLXQx
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!R2ow9rHi6sYynMGA.rNbwaMFqAr3e5kXp'
+    _key: "!actors.items!R2ow9rHi6sYynMGA.rNbwaMFqAr3e5kXp"
 effects: []
 sort: 0
 ownership:
@@ -478,11 +478,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!R2ow9rHi6sYynMGA'
-
+_key: "!actors!R2ow9rHi6sYynMGA"

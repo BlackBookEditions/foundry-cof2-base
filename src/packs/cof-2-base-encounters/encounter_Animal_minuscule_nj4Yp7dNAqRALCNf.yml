@@ -114,18 +114,18 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: tiny
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Animal minuscule
@@ -145,7 +145,7 @@ prototypeToken:
     scaleX: 0.5
     scaleY: 0.5
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -210,9 +210,9 @@ items:
     img: icons/svg/sword.svg
     _id: S8JgcJ5dK6G0ojLU
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure
       subtype: melee
       learned: true
@@ -225,8 +225,8 @@ items:
       actions:
         - source: Item.D5MDV6PxYU7TbXA0
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -242,11 +242,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '1'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "1"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
-                formula: '0'
+                formula: "0"
               target:
                 type: none
                 number: 0
@@ -261,13 +261,13 @@ items:
     _stats:
       compendiumSource: Item.D5MDV6PxYU7TbXA0
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!nj4Yp7dNAqRALCNf.S8JgcJ5dK6G0ojLU'
+    _key: "!actors.items!nj4Yp7dNAqRALCNf.S8JgcJ5dK6G0ojLU"
   - folder: uVNfyNGbfZsNuFix
     name: MINUSCULE
     type: capacity
@@ -276,11 +276,11 @@ items:
     system:
       description: >-
         <p>La créature obtient un bonus de +10 aux tests d’escalade et de
-        discrétion</p>
-      source: ''
-      origin: ''
+        discrétion.</p>
+      source: ""
+      origin: ""
       slug: minuscule
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -294,7 +294,7 @@ items:
         - source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
           indice: 0
           label: Escalade et Discrétion
-          chatFlavor: ''
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -308,14 +308,14 @@ items:
               source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
               subtype: skill
               target: agi
-              value: '10'
-              additionalInfos: ''
+              value: "10"
+              additionalInfos: ""
             - type: capacity
               source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
               subtype: skill
               target: for
-              value: '10'
-              additionalInfos: ''
+              value: "10"
+              additionalInfos: ""
           conditions: []
           resolvers: []
       manaCost: -1
@@ -329,13 +329,13 @@ items:
     _stats:
       compendiumSource: Item.5yvmTMalbtRWE9Pf
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!nj4Yp7dNAqRALCNf.FhlOlD1QfCJaQRfi'
+    _key: "!actors.items!nj4Yp7dNAqRALCNf.FhlOlD1QfCJaQRfi"
   - folder: uVNfyNGbfZsNuFix
     name: ATTAQUES RIDICULES
     type: capacity
@@ -345,10 +345,10 @@ items:
       description: >-
         <p>La créature n’inflige pas de DM sauf sur une réussite critique (1
         DM).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: attaques-ridicules
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -370,13 +370,13 @@ items:
     _stats:
       compendiumSource: Item.NGnVduSgTucGkuke
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!nj4Yp7dNAqRALCNf.RI3xny6LGQnjOvwb'
+    _key: "!actors.items!nj4Yp7dNAqRALCNf.RI3xny6LGQnjOvwb"
 effects: []
 sort: 0
 ownership:
@@ -386,11 +386,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!nj4Yp7dNAqRALCNf'
-
+_key: "!actors!nj4Yp7dNAqRALCNf"

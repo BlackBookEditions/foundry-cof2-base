@@ -115,32 +115,32 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
         <p style="text-align: justify;">Le skrambler est une horrible
-        cr&eacute;ature souterraine qui ressemble &agrave; une &eacute;norme
-        mante religieuse.<br>Son corps est muni d&rsquo;une &eacute;paisse
-        carapace de chitine et de huit pattes. Ses pattes ant&eacute;rieures
-        sont similaires &agrave; des faux g&eacute;antes et sont charg&eacute;es
-        de saisir et d&eacute;couper ses proies. Le skrambler est capable de se
-        d&eacute;placer sous terre gr&acirc;ce &agrave; un c&ocirc;ne
-        d&rsquo;onde vibratoire qui fracture la roche. Il n&rsquo;a alors plus
-        qu&rsquo;&agrave; se d&eacute;gager un passage &agrave; l&rsquo;aide de
-        ses terribles pattes avant. Il mesure environ 3 m pour 400 kg</p>
+        créature souterraine qui ressemble à une énorme
+        mante religieuse.<br>Son corps est muni d’une épaisse
+        carapace de chitine et de huit pattes. Ses pattes antérieures
+        sont similaires à des faux géantes et sont chargées
+        de saisir et découper ses proies. Le skrambler est capable de se
+        déplacer sous terre grâce à un cône
+        d’onde vibratoire qui fracture la roche. Il n’a alors plus
+        qu’à se dégager un passage à l’aide de
+        ses terribles pattes avant. Il mesure environ 3&nbsp;m pour 400&nbsp;kg.</p>
     languages: []
     properties: >-
-      <p><strong>CREUSER (L) : </strong>Au prix d&rsquo;une action
-      limit&eacute;e, le skrambler est capable de creuser sur une profondeur de
-      10 m par round. Le tunnel s&rsquo;effondre derri&egrave;re lui. Il peut
-      utiliser sa capacit&eacute;<br>Embuscade pour surgir du sol et
+      <p><strong>CREUSER (L)&nbsp;:</strong>Au prix d’une action
+      limitée, le skrambler est capable de creuser sur une profondeur de
+      10&nbsp;m par round. Le tunnel s’effondre derrière lui. Il peut
+      utiliser sa capacité<br>Embuscade pour surgir du sol et
       attaquer.</p>
 prototypeToken:
   name: Skrambler
@@ -160,7 +160,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -224,9 +224,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: pattes
       subtype: melee
       learned: true
@@ -240,7 +240,7 @@ items:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
           label: attaque contact
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -254,9 +254,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+8'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+8"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+6
               target:
@@ -274,7 +274,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -282,7 +282,7 @@ items:
       lastModifiedBy: null
     _id: bl9GdceLLvuSvdmY
     sort: 300000
-    _key: '!actors.items!utFdV9t0wkgNYA83.bl9GdceLLvuSvdmY'
+    _key: "!actors.items!utFdV9t0wkgNYA83.bl9GdceLLvuSvdmY"
   - folder: Jc9oocmI3B4cVSRG
     name: EMBUSCADE
     type: capacity
@@ -290,18 +290,18 @@ items:
     system:
       description: >-
         <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire<br />un test de<strong> PER difficulté
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
         16</strong> ou être surprise.</p>
 
         <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
+        <strong>+1d4&nbsp;DM </strong>et toute créature dont la <strong>FOR est
         inférieure à la sienne est renversée</strong>. La créature obtient un
         bonus de <strong>+5 à tous les tests de discrétion et en
         init</strong></p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: embuscade
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -314,8 +314,8 @@ items:
       actions:
         - source: Actor.utFdV9t0wkgNYA83.Item.RflqIQr621KFr72C
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -331,14 +331,14 @@ items:
               source: Actor.utFdV9t0wkgNYA83.Item.RflqIQr621KFr72C
               subtype: skill
               target: agi
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
             - type: capacity
               source: Actor.utFdV9t0wkgNYA83.Item.RflqIQr621KFr72C
               subtype: combat
               target: init
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
           resolvers: []
       manaCost: -1
       frequency: none
@@ -350,7 +350,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -358,7 +358,7 @@ items:
       lastModifiedBy: null
     _id: RflqIQr621KFr72C
     sort: 100000
-    _key: '!actors.items!utFdV9t0wkgNYA83.RflqIQr621KFr72C'
+    _key: "!actors.items!utFdV9t0wkgNYA83.RflqIQr621KFr72C"
   - folder: uVNfyNGbfZsNuFix
     name: ONDE DÉVASTATRICE
     type: capacity
@@ -366,14 +366,14 @@ items:
     _id: mGkLU9wxvRMiTSxZ
     system:
       description: >-
-        <p>Cette onde fracture la roche dans un cône de 10 m de long pour 3 m de
+        <p>Cette onde fracture la roche dans un cône de 10&nbsp;m de long pour 3&nbsp;m de
         large. Une créature dans la zone d’effet (même s’il n’y a pas de roche
-        !) subit <strong>5d6 DM</strong> et peut faire un <strong>test de CON
+        &nbsp;!) subit <strong>5d6&nbsp;DM</strong> et peut faire un <strong>test de CON
         difficulté 15 pour diviser les DM par deux.</strong></p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: onde-devastatrice
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -387,8 +387,8 @@ items:
       actions:
         - source: Actor.utFdV9t0wkgNYA83.Item.mGkLU9wxvRMiTSxZ
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -402,9 +402,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '19'
-                crit: '0'
-                difficulty: '0'
+                formula: "19"
+                crit: "0"
+                difficulty: "0"
               dmg:
                 formula: 5d6
               target:
@@ -424,13 +424,13 @@ items:
     _stats:
       compendiumSource: Item.6OyijyrIqU1tr2Kt
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!utFdV9t0wkgNYA83.mGkLU9wxvRMiTSxZ'
+    _key: "!actors.items!utFdV9t0wkgNYA83.mGkLU9wxvRMiTSxZ"
 effects: []
 sort: 0
 ownership:
@@ -440,11 +440,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!utFdV9t0wkgNYA83'
-
+_key: "!actors!utFdV9t0wkgNYA83"

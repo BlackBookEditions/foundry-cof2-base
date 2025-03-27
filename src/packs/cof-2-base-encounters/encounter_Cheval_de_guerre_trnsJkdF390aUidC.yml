@@ -113,18 +113,18 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Cheval de selle
@@ -144,7 +144,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -209,9 +209,9 @@ items:
     img: icons/svg/sword.svg
     _id: KOX0Tcf32BT8FVaK
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: ruade
       subtype: melee
       learned: true
@@ -239,9 +239,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4+5
               target:
@@ -260,13 +260,13 @@ items:
     _stats:
       compendiumSource: Item.QDUQvqfQhJngG1D0
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!trnsJkdF390aUidC.KOX0Tcf32BT8FVaK'
+    _key: "!actors.items!trnsJkdF390aUidC.KOX0Tcf32BT8FVaK"
   - folder: uVNfyNGbfZsNuFix
     name: MONTURE
     type: capacity
@@ -274,22 +274,22 @@ items:
     _id: HheZC5rkNJDhynpq
     system:
       description: >-
-        <p style="text-align:justify">La créature double sa FOR pour porter une
-        charge.<br />Un cheval de guerre est apte à porter une barde, un
-        ensemble de protections pour lui.<br />Un caparaçon de maille augmente
+        <p>La créature double sa FOR pour porter une
+        charge. Un cheval de guerre est apte à porter une barde, un
+        ensemble de protections pour lui. Un caparaçon de maille augmente
         la DEF du cheval de +2 pour un prix de 100 pa. Une barde de plaques de
         métal apporte un bonus de +4 en DEF pour un prix de 400 pa. Les bardes
         font subir au cheval et à son cavalier un malus en Init. égal au bonus
-        de DEF.<br />La DEF de la fidèle monture du chevalier (Voie du cavalier,
-        rang 1), tient déjà compte du bonus de DEF d’une éventuelle barde. En
+        de DEF. La DEF de la fidèle monture du chevalier (Voie du cavalier,
+        rang&nbsp;1), tient déjà compte du bonus de DEF d’une éventuelle barde. En
         revanche, le MJ peut toujours décider de lui permettre de trouver une
-        barde magique pour améliorer sa DEF.<br />En tant que PNJ, un cheval de
-        guerre lourd pour un cavalier de haut niveau pourrait<br />bénéficier
+        barde magique pour améliorer sa DEF. En tant que PNJ, un cheval de
+        guerre lourd pour un cavalier de haut niveau pourrait bénéficier
         d’un ou plusieurs rangs de boss.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: monture
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -311,13 +311,13 @@ items:
     _stats:
       compendiumSource: Item.XNJh11OIeX2a6jIb
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!trnsJkdF390aUidC.HheZC5rkNJDhynpq'
+    _key: "!actors.items!trnsJkdF390aUidC.HheZC5rkNJDhynpq"
 effects: []
 sort: 0
 ownership:
@@ -327,12 +327,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.QforvighOK6Sc4GY
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: trnsJkdF390aUidC
-_key: '!actors!trnsJkdF390aUidC'
-
+_key: "!actors!trnsJkdF390aUidC"

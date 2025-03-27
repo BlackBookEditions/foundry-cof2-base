@@ -5,15 +5,15 @@ img: icons/svg/combat.svg
 _id: 55EVhAN31ANrcjvn
 system:
   description: >-
-    <p>Le sorcier doit réussir un test d’attaque magique (portée 10 m) contre
+    <p>Le sorcier doit réussir un test d’attaque magique (portée 10&nbsp;m) contre
     une difficulté de [10 + CON de la cible]. Du sang s’écoule de la bouche, du
-    nez, des oreilles et même des yeux de la victime, qui subit 1d4° DM par
+    nez, des oreilles et même des yeux de la victime, qui subit 1d4°&nbsp;DM par
     round pendant INT rounds.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: saignements
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.55EVhAN31ANrcjvn
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -40,8 +40,8 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
+            formula: "@atm"
+            crit: ""
             difficulty: 10 + @cible.con
           dmg:
             formula: 1d4°
@@ -63,11 +63,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828463013
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!55EVhAN31ANrcjvn'
-
+_key: "!items!55EVhAN31ANrcjvn"

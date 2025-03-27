@@ -6,20 +6,20 @@ _id: ldishTeIsT6PjmAQ
 system:
   description: >-
     <p>Un humain obtient un bonus de +3 aux tests de deux domaines associés à
-    son origine géographique ou sociale (voir ci‑dessous). De plus, il gagne 1
+    son origine géographique ou sociale (voir ci-dessous). De plus, il gagne 1
     PC supplémentaire.</p>
 
-    <p>Origine géographique ou sociale (choisissez ou lancez un d6) :<br />1
-    Montagnard (escalade et résistance au froid).<br />2 Citadin (commerce et
-    résistance aux maladies).<br />3 Campagnard (météorologie et équitation).<br
-    />4 Riverain (natation et navigation).<br />5 Sauvage (chasser et
-    pister).<br />6 Nomade (orientation et résistance à la chaleur ou au
+    <p>Origine géographique ou sociale (choisissez ou lancez un d6)&nbsp;: 1
+    Montagnard (escalade et résistance au froid). 2 Citadin (commerce et
+    résistance aux maladies). 3 Campagnard (météorologie et équitation).<br
+    />4 Riverain (natation et navigation). 5 Sauvage (chasser et
+    pister). 6 Nomade (orientation et résistance à la chaleur ou au
     froid).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: diversite
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 0
-      label: 'Montagnard : escalade resist au froid'
-      chatFlavor: 'Montagnard : escalade resist au froid'
+      label: "Montagnard&nbsp;: escalade resist au froid"
+      chatFlavor: "Montagnard&nbsp;: escalade resist au froid"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -46,18 +46,18 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 1
-      label: 'Citadin : commerce et resistance aux maladies'
-      chatFlavor: 'Citadin : commerce et resistance aux maladies'
+      label: "Citadin&nbsp;: commerce et resistance aux maladies"
+      chatFlavor: "Citadin&nbsp;: commerce et resistance aux maladies"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -70,18 +70,18 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: cha
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 2
-      label: 'Campagnard : equitation et meteorologie'
-      chatFlavor: 'Campagnard : equitation et meteorologie'
+      label: "Campagnard&nbsp;: equitation et meteorologie"
+      chatFlavor: "Campagnard&nbsp;: equitation et meteorologie"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -94,18 +94,18 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: agi
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 3
-      label: 'Riverain : natation, navigation'
-      chatFlavor: 'Riverain : natation, navigation'
+      label: "Riverain&nbsp;: natation, navigation"
+      chatFlavor: "Riverain&nbsp;: natation, navigation"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -118,23 +118,23 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: int
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: int
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 4
-      label: 'Sauvage : chasser et pister'
-      chatFlavor: 'Sauvage : chasser et pister'
+      label: "Sauvage&nbsp;: chasser et pister"
+      chatFlavor: "Sauvage&nbsp;: chasser et pister"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -147,13 +147,13 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 5
-      label: 'Nomade : orientation et resist chaud ou froid'
-      chatFlavor: 'Nomade : orientation et resist chaud ou froid'
+      label: "Nomade&nbsp;: orientation et resist chaud ou froid"
+      chatFlavor: "Nomade&nbsp;: orientation et resist chaud ou froid"
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -166,18 +166,18 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          value: '3'
+          value: "3"
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 6
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -192,7 +192,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: resource
           target: fp
-          value: '1'
+          value: "1"
       resolvers: []
   cost: -1
 effects: []
@@ -207,11 +207,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740820977417
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!ldishTeIsT6PjmAQ'
-
+_key: "!items!ldishTeIsT6PjmAQ"

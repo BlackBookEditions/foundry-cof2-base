@@ -6,18 +6,18 @@ _id: FqPNfQBhj7qEz7rC
 system:
   description: >-
     <p>Il faut 1 min à l’arquebusier pour installer un piège qui explose dans un
-    rayon de 5 m en infligeant ${5d4° + @int}$ DM de feu (test d’AGI difficulté
+    rayon de 5&nbsp;m en infligeant ${5d4° + @int}$ DM de feu (test d’AGI difficulté
     15 pour ne subir que la moitié des DM). Le piège est déclenché à l’intrusion
     de toute créature dans une zone d’un à deux mètres autour du piège. Une
     créature peut détecter le piège avec un test d’INT difficulté ${15 + @int}$
     avant de le déclencher.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: piege-explosif
   tags: []
   subtype: consumable
   martialCategory: paddedClothFur
-  damagetype: ''
+  damagetype: ""
   quantity:
     current: 1
     max: 1
@@ -31,7 +31,7 @@ system:
     unit: kg
   price:
     value: 0
-    unit: ''
+    unit: ""
   rarity: precious
   equipped: false
   properties:
@@ -44,8 +44,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.FqPNfQBhj7qEz7rC
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -56,9 +56,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 4d4° + @int
           target:
@@ -79,11 +79,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1741115546464
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!FqPNfQBhj7qEz7rC'
-
+_key: "!items!FqPNfQBhj7qEz7rC"

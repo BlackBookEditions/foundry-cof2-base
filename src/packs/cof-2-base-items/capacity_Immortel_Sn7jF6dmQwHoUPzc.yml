@@ -8,11 +8,11 @@ system:
     <p>L’elfe n’a besoin que de la moitié du repos, de la nourriture ou de la
     boisson d’un humain normal pour être en pleine forme. Il est immunisé aux
     effets des poisons et des maladies.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: immortel
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Sn7jF6dmQwHoUPzc
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,12 +41,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.Sn7jF6dmQwHoUPzc
           subtype: state
           target: poisonimmunity
-          value: '0'
+          value: "0"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Sn7jF6dmQwHoUPzc
           subtype: state
           target: diseaseimmunity
-          value: '0'
+          value: "0"
       resolvers: []
   cost: -1
 effects: []
@@ -61,11 +61,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740820102421
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!Sn7jF6dmQwHoUPzc'
-
+_key: "!items!Sn7jF6dmQwHoUPzc"

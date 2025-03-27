@@ -114,25 +114,25 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Les pr&ecirc;tres kobolds v&eacute;n&egrave;rent les dragons qui les
-        ont cr&eacute;&eacute;s (c&rsquo;est ce qu&rsquo;ils pensent, mais rien
-        ne le prouve&hellip;). Les pr&ecirc;tres sont choisis parmi ceux dont la
-        couleur des &eacute;cailles correspond &agrave; la couleur du dragon
-        qu&rsquo;ils v&eacute;n&egrave;rent et ils utilisent une magie
-        &eacute;l&eacute;mentaire qui correspond &agrave; cette couleur (par
+        <p>Les prêtres kobolds vénèrent les dragons qui les
+        ont créés (c’est ce qu’ils pensent, mais rien
+        ne le prouve…). Les prêtres sont choisis parmi ceux dont la
+        couleur des écailles correspond à la couleur du dragon
+        qu’ils vénèrent et ils utilisent une magie
+        élémentaire qui correspond à cette couleur (par
         exemple, un sort de feu si sa peau est rouge).</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Kobold
   displayName: 0
@@ -151,7 +151,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -215,9 +215,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: dague
       subtype: melee
       learned: true
@@ -230,8 +230,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -245,9 +245,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4-1
               target:
@@ -265,7 +265,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -273,21 +273,21 @@ items:
       lastModifiedBy: null
     _id: cbmP4c6aN9suIgAd
     sort: 300000
-    _key: '!actors.items!35LV9Ul76yovFUpC.cbmP4c6aN9suIgAd'
+    _key: "!actors.items!35LV9Ul76yovFUpC.cbmP4c6aN9suIgAd"
   - folder: Jc9oocmI3B4cVSRG
     name: IMPARABLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si la créature obtient 15‑20 au d20 d’un
-        test d’attaque, elle inflige +2d4 DM supplémentaire et l’attaque est
+        <p>Si la créature obtient 15-20 au d20 d’un
+        test d’attaque, elle inflige +2d4&nbsp;DM supplémentaire et l’attaque est
         automatiquement réussie (quelle que soit la DEF de son adversaire). Les
-        dés bonus ne sont pas multipliés en cas de critique</p>
-      source: ''
-      origin: ''
+        dés bonus ne sont pas multipliés en cas de critique.</p>
+      source: ""
+      origin: ""
       slug: imparable
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -308,7 +308,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -316,15 +316,15 @@ items:
       lastModifiedBy: null
     _id: BtSveHafAVEo7S93
     sort: 2800000
-    _key: '!actors.items!35LV9Ul76yovFUpC.BtSveHafAVEo7S93'
+    _key: "!actors.items!35LV9Ul76yovFUpC.BtSveHafAVEo7S93"
   - folder: eRnLMLNnqgpvpmpq
     name: attaque magique (élémentaire)
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: attaque-magique-elementaire
       subtype: magic
       learned: true
@@ -337,8 +337,8 @@ items:
       actions:
         - source: Item.G6UydTG623qmFF2z
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: magical
           img: icons/svg/d20-highlight.svg
           properties:
@@ -352,9 +352,9 @@ items:
           resolvers:
             - type: magical
               skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+6"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 3d6
               target:
@@ -372,7 +372,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.FTO6uP2r3X5xAzSj
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -380,7 +380,7 @@ items:
       lastModifiedBy: null
     _id: 5C68b32UNG1C9LTU
     sort: 200000
-    _key: '!actors.items!35LV9Ul76yovFUpC.5C68b32UNG1C9LTU'
+    _key: "!actors.items!35LV9Ul76yovFUpC.5C68b32UNG1C9LTU"
 effects: []
 sort: 0
 ownership:
@@ -390,12 +390,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.z8nnLGoQiNdbLOpv
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: 35LV9Ul76yovFUpC
-_key: '!actors!35LV9Ul76yovFUpC'
-
+_key: "!actors!35LV9Ul76yovFUpC"

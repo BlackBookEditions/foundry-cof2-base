@@ -114,28 +114,28 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p style="text-align: justify;">La momie est un mort‑vivant couvert de
-        bandelettes, un cadavre anim&eacute; par une magie antique qui permet
-        &agrave; un humano&iuml;de une parodie de vie apr&egrave;s la mort. La
-        momie doit rester &eacute;ternellement immobile au fond de son
-        sarcophage et elle ne peut que rarement trouver l&rsquo;&eacute;nergie
-        de s&rsquo;en extraire. Toutefois, lorsque cela arrive, elle fait preuve
-        d&rsquo;une haine des vivants qui d&eacute;rangent son sommeil et
-        d&rsquo;une force impie qui d&eacute;fie les lois de la physique.</p>
+        <p style="text-align: justify;">La momie est un mort-vivant couvert de
+        bandelettes, un cadavre animé par une magie antique qui permet
+        à un humanoïde une parodie de vie après la mort. La
+        momie doit rester éternellement immobile au fond de son
+        sarcophage et elle ne peut que rarement trouver l’énergie
+        de s’en extraire. Toutefois, lorsque cela arrive, elle fait preuve
+        d’une haine des vivants qui dérangent son sommeil et
+        d’une force impie qui défie les lois de la physique.</p>
     languages: []
     properties: |-
-      <p>R&eacute;sistance 5 sauf feu.</p>
-      <p>Putr&eacute;faction si le coup blesse</p>
+      <p>Résistance 5 sauf feu.</p>
+      <p>Putréfaction si le coup blesse.</p>
 prototypeToken:
   name: Momie
   displayName: 0
@@ -154,7 +154,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -218,9 +218,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: coup-2-attaques
       subtype: melee
       learned: true
@@ -233,8 +233,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -248,9 +248,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+16'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+16"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+8
               target:
@@ -268,7 +268,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -276,7 +276,7 @@ items:
       lastModifiedBy: null
     _id: 9DVJYvsUFhuEAsLr
     sort: 300000
-    _key: '!actors.items!mY6EJBPbyga9fyv1.9DVJYvsUFhuEAsLr'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.9DVJYvsUFhuEAsLr"
   - folder: Jc9oocmI3B4cVSRG
     name: RÉSISTANCE AUX DM
     type: capacity
@@ -285,10 +285,10 @@ items:
       description: >-
         <p>La momie <strong>réduit de 5 tous les DM subis</strong>, sauf par le
         feu.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: resistance-aux-dm
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -302,8 +302,8 @@ items:
       actions:
         - source: Actor.DlaY7gZ2ZvgM7Ay0.Item.P3WEOb4CaGCpkB4z
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -319,7 +319,7 @@ items:
               source: Actor.DlaY7gZ2ZvgM7Ay0.Item.P3WEOb4CaGCpkB4z
               subtype: combat
               target: dr
-              value: '5'
+              value: "5"
               additionalInfos: sauf feu
           resolvers: []
       frequency: none
@@ -331,7 +331,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OwwRCR7KWvWEXNLn
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -339,7 +339,7 @@ items:
       lastModifiedBy: null
     _id: P3WEOb4CaGCpkB4z
     sort: 0
-    _key: '!actors.items!mY6EJBPbyga9fyv1.P3WEOb4CaGCpkB4z'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.P3WEOb4CaGCpkB4z"
   - folder: uVNfyNGbfZsNuFix
     name: PUTRÉFACTION
     type: capacity
@@ -347,18 +347,18 @@ items:
     _id: 0MBhXOPz3GSB1QZ7
     system:
       description: >-
-        <p style="text-align:justify">Toute créature blessée par une momie doit
+        <p>Toute créature blessée par une momie doit
         réussir un<strong> test de CON difficulté 15</strong> ou contracter une
         horrible maladie qui occasionne le pourrissement rapide de ses chairs,
-        une sorte de lèpre fulgurante. La victime subit <strong>1d10 DM par
+        une sorte de lèpre fulgurante. La victime subit <strong>1d10&nbsp;DM par
         round pendant 5 rounds</strong>. Tant qu’elle est sous l’effet de la
         putréfaction, il n’est pas nécessaire de réaliser un nouveau test de CON
         lorsque la victime est la cible d’une attaque de la momie. L’utilisation
         de la capacité de prêtre Délivrance permet de soigner cette maladie.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: putrefaction
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -380,29 +380,29 @@ items:
     _stats:
       compendiumSource: Item.QYEWtlXjasMAQnKA
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.0MBhXOPz3GSB1QZ7'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.0MBhXOPz3GSB1QZ7"
   - folder: Jc9oocmI3B4cVSRG
     name: INJONCTION MORTELLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p>Une cible située à une distance maximum de 30 m doit réussir
-        un<strong> test de CON difficulté</strong><br /><strong>15</strong> ou
+        <p>Une cible située à une distance maximum de 30&nbsp;m doit réussir
+        un<strong> test de CON difficulté</strong> <strong>15</strong> ou
         tomber à 0 PV (et mourir immédiatement s’il s’agit d’un PNJ). En cas de
-        succès,<br />la cible subit tout de même <strong>2d8+10 DM</strong>. Ce
-        pouvoir ne peut prendre une même créature<br />pour cible qu’une seule
-        fois par combat</p>
-      source: ''
-      origin: ''
+        succès, la cible subit tout de même <strong>2d8+10&nbsp;DM</strong>. Ce
+        pouvoir ne peut prendre une même créature pour cible qu’une seule
+        fois par combat.</p>
+      source: ""
+      origin: ""
       slug: injonction-mortelle
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -423,7 +423,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -431,7 +431,7 @@ items:
       lastModifiedBy: null
     _id: PDFUoQAIdFIly6Zj
     sort: 2300000
-    _key: '!actors.items!mY6EJBPbyga9fyv1.PDFUoQAIdFIly6Zj'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.PDFUoQAIdFIly6Zj"
   - folder: GGe86yLIgBeAfJNv
     name: Lumière
     type: capacity
@@ -439,16 +439,16 @@ items:
     _id: i5rheUNpnlRRPwIE
     system:
       description: >-
-        <p style="text-align:justify">Le magicien désigne un objet à moins de 10
-        m.<br />Celui‑ci produit de la lumière dans un rayon de 10 m pendant INT
+        <p>Le magicien désigne un objet à moins de 10
+        m. Celui-ci produit de la lumière dans un rayon de 10&nbsp;m pendant INT
         heures. Cette source de lumière n’émet pas de chaleur. Une fois par
         combat, le magicien peut lancer ce sort sur les yeux d’une créature dont
         le NC ne dépasse pas le rang atteint dans la voie. S’il réussit un test
         opposé d’attaque magique, elle est aveuglée pendant 1 round.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: lumiere
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -460,8 +460,8 @@ items:
       actions:
         - source: Actor.mY6EJBPbyga9fyv1.Item.i5rheUNpnlRRPwIE
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: magical
           img: icons/svg/d20-highlight.svg
           properties:
@@ -475,11 +475,11 @@ items:
           resolvers:
             - type: magical
               skill:
-                formula: '@atm'
-                crit: ''
-                difficulty: '@oppose.mag'
+                formula: "@atm"
+                crit: ""
+                difficulty: "@oppose.mag"
               dmg:
-                formula: '0'
+                formula: "0"
               target:
                 type: none
                 number: 0
@@ -502,13 +502,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PYIrQiE4y8ONxUqs
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.i5rheUNpnlRRPwIE'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.i5rheUNpnlRRPwIE"
   - folder: GGe86yLIgBeAfJNv
     name: Familier
     type: capacity
@@ -516,20 +516,20 @@ items:
     _id: qnWO7ggcm2Jvu7NU
     system:
       description: >-
-        <p style="text-align:justify">Le magicien choisit un petit animal
+        <p>Le magicien choisit un petit animal
         (écureuil, corbeau, chat, dragonnet). Il peut utiliser les sens de son
         familier (voir par ses yeux, entendre ce qu’il entend, etc.) et
         communiquer avec lui à distance illimitée. Il gagne +2 en Initiative et
-        en DEF lorsque son familier est en vue.<br />S’il est réduit à 0 PV, le
-        familier disparaît dans un nuage de fumée et le personnage perd 1d4° PV
+        en DEF lorsque son familier est en vue. S’il est réduit à 0 PV, le
+        familier disparaît dans un nuage de fumée et le personnage peRD&nbsp;1d4° PV
         en contrecoup. Toutefois, le maître pourra à nouveau invoquer son
         familier dès qu’il aura terminé une récupération complète (c’est
         toujours le même animal qui apparaît). Le familier récupère tous les PV
         perdus après une récupération rapide.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: familier
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -541,8 +541,8 @@ items:
       actions:
         - source: Actor.mY6EJBPbyga9fyv1.Item.qnWO7ggcm2Jvu7NU
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -558,14 +558,14 @@ items:
               source: Actor.mY6EJBPbyga9fyv1.Item.qnWO7ggcm2Jvu7NU
               subtype: combat
               target: init
-              value: '2'
-              additionalInfos: ''
+              value: "2"
+              additionalInfos: ""
             - type: capacity
               source: Actor.mY6EJBPbyga9fyv1.Item.qnWO7ggcm2Jvu7NU
               subtype: combat
               target: def
-              value: '2'
-              additionalInfos: ''
+              value: "2"
+              additionalInfos: ""
           resolvers: []
       cost: -1
       manaCost: -1
@@ -582,13 +582,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.qnWO7ggcm2Jvu7NU'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.qnWO7ggcm2Jvu7NU"
   - folder: GGe86yLIgBeAfJNv
     name: Invisibilité
     type: capacity
@@ -597,14 +597,14 @@ items:
     system:
       description: >-
         <p>Le magicien se rend invisible pendant [1d4°+INT] minutes. Une fois
-        invisible, personne<br />ne peut plus détecter sa présence ou lui porter
-        d’attaque directe. Si le magicien attaque,<br />il redevient visible. À
-        partir du rang 5, le magicien peut lancer ce sort sur un allié au prix
+        invisible, personne ne peut plus détecter sa présence ou lui porter
+        d’attaque directe. Si le magicien attaque, il redevient visible. À
+        partir du rang&nbsp;5, le magicien peut lancer ce sort sur un allié au prix
         d’une action limitée.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: invisibilite
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -629,13 +629,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.DVqBUq31qDsseNZj
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.Po9k5oGnSl9VFYuq'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.Po9k5oGnSl9VFYuq"
   - folder: GGe86yLIgBeAfJNv
     name: Vol
     type: capacity
@@ -645,11 +645,11 @@ items:
       description: >-
         <p>Le magicien peut voler pendant [2d4°+INT] minutes. Sa vitesse de
         déplacement est la même qu’au sol. Il peut rester en vol stationnaire
-        s’il le désire et cela est une action gratuite</p>
-      source: ''
-      origin: ''
+        s’il le désire et cela est une action gratuite.</p>
+      source: ""
+      origin: ""
       slug: vol
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -674,13 +674,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mNVTynlPa8XlUoJv
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.Tu9oKCGRKO0V6KTw'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.Tu9oKCGRKO0V6KTw"
   - folder: GGe86yLIgBeAfJNv
     name: Téléportation
     type: capacity
@@ -688,16 +688,16 @@ items:
     _id: XTkRfNGsq52lFjca
     system:
       description: >-
-        <p style="text-align:justify">Une fois par jour, le magicien disparaît
+        <p>Une fois par jour, le magicien disparaît
         et réapparaît à un autre endroit situé à moins de (niveau x INT)
         kilomètres. Le lieu d’arrivée doit être soit en vue, soit parfaitement
         connu par le magicien. Le magicien peut emmener avec lui un allié à
         partir du niveau 10, un deuxième au niveau 13, un troisième au niveau 16
         et enfin un quatrième au niveau 19.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: teleportation
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -722,13 +722,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.36WLiHFr84XGrYj2
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!mY6EJBPbyga9fyv1.XTkRfNGsq52lFjca'
+    _key: "!actors.items!mY6EJBPbyga9fyv1.XTkRfNGsq52lFjca"
 effects: []
 sort: 0
 ownership:
@@ -738,12 +738,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.DlaY7gZ2ZvgM7Ay0
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: mY6EJBPbyga9fyv1
-_key: '!actors!mY6EJBPbyga9fyv1'
-
+_key: "!actors!mY6EJBPbyga9fyv1"

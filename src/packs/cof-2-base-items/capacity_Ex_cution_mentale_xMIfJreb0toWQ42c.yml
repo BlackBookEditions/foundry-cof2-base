@@ -5,20 +5,20 @@ img: icons/svg/combat.svg
 _id: xMIfJreb0toWQ42c
 system:
   description: >-
-    <p style="text-align:justify">Ce sort invoque les pires terreurs d’une
+    <p>Ce sort invoque les pires terreurs d’une
     créature humanoïde vivante et lui fait croire à sa propre mort.
     L’ensorceleur doit faire un test opposé d’attaque magique contre sa cible
-    (portée 20 m). En cas de succès la victime tombe à 0 PV ou si la cible est
-    de niveau supérieur ou égal à l’ensorceleur, elle est étourdie (‑5 DEF et
+    (portée 20&nbsp;m). En cas de succès la victime tombe à 0 PV ou si la cible est
+    de niveau supérieur ou égal à l’ensorceleur, elle est étourdie (-5 DEF et
     pas d’action) pendant 1 round. Une créature ne peut être la cible de ce sort
-    qu’une fois par jour.<br />Les créatures sans esprit (créatures
-    artificielles, certaines plantes et certains morts‑vivants) sont immunisées
+    qu’une fois par jour. Les créatures sans esprit (créatures
+    artificielles, certaines plantes et certains morts-vivants) sont immunisées
     à ce sort.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: execution-mentale
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -31,8 +31,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.xMIfJreb0toWQ42c
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -45,11 +45,11 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: none
             number: 0
@@ -68,11 +68,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740827697710
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!xMIfJreb0toWQ42c'
-
+_key: "!items!xMIfJreb0toWQ42c"

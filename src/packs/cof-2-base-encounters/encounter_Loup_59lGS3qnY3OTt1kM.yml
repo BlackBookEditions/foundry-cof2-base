@@ -115,22 +115,22 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Ce profil correspond &agrave; un loup d&rsquo;une cinquantaine de
+        <p>Ce profil correspond à un loup d’une cinquantaine de
         kilogrammes.</p>
     languages: []
     properties: >-
-      <p><strong>CHIEN :</strong><br>Vous pouvez aussi utiliser le profil du
-      loup pour les gros chiens en retirant de 2 &agrave; 4 PV.</p>
+      <p><strong>CHIEN&nbsp;:</strong><br>Vous pouvez aussi utiliser le profil du
+      loup pour les gros chiens en retirant de 2 à 4 PV.</p>
 prototypeToken:
   name: Loup
   displayName: 0
@@ -149,7 +149,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -213,9 +213,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures
       subtype: melee
       learned: true
@@ -229,7 +229,7 @@ items:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
           label: Morsure
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -243,9 +243,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+1
               target:
@@ -263,7 +263,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -271,7 +271,7 @@ items:
       lastModifiedBy: null
     _id: vhBkjfvbbKcROREh
     sort: 300000
-    _key: '!actors.items!59lGS3qnY3OTt1kM.vhBkjfvbbKcROREh'
+    _key: "!actors.items!59lGS3qnY3OTt1kM.vhBkjfvbbKcROREh"
   - folder: uVNfyNGbfZsNuFix
     name: INTERCHANGEABLES
     type: capacity
@@ -286,10 +286,10 @@ items:
         créature au hasard, le personnage ne sait jamais laquelle il blesse.
         Seul, le loup n’a pas usage de la capacité interchangeable et son NC
         passe à ½.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: interchangeables
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -303,8 +303,8 @@ items:
       actions:
         - source: Actor.59lGS3qnY3OTt1kM.Item.4637pRuKTj4equLm
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -320,8 +320,8 @@ items:
               source: Actor.59lGS3qnY3OTt1kM.Item.4637pRuKTj4equLm
               subtype: combat
               target: def
-              value: '3'
-              additionalInfos: ''
+              value: "3"
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -333,13 +333,13 @@ items:
     _stats:
       compendiumSource: Item.Hj7BtzUxnI01zC7v
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!59lGS3qnY3OTt1kM.4637pRuKTj4equLm'
+    _key: "!actors.items!59lGS3qnY3OTt1kM.4637pRuKTj4equLm"
 effects: []
 sort: 0
 ownership:
@@ -349,11 +349,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!59lGS3qnY3OTt1kM'
-
+_key: "!actors!59lGS3qnY3OTt1kM"

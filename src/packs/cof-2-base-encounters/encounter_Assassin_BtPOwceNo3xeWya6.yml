@@ -115,22 +115,22 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
         <p>Ce professionnel du meurtre est un adversaire redoutable, mais il ne
-        s&rsquo;amuse jamais &agrave; attaquer un groupe de PJ de front. Il
-        attaque par surprise et de pr&eacute;f&eacute;rence un PJ solitaire
-        avant de dispara&icirc;tre<br>dans les ombres.</p>
+        s’amuse jamais à attaquer un groupe de PJ de front. Il
+        attaque par surprise et de préférence un PJ solitaire
+        avant de disparaître<br>dans les ombres.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Assassin
   displayName: 0
@@ -149,7 +149,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -213,9 +213,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-courte-2-attaques
       subtype: melee
       learned: true
@@ -228,8 +228,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -243,9 +243,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+7'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+7"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+3
               target:
@@ -263,7 +263,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -271,17 +271,17 @@ items:
       lastModifiedBy: null
     _id: WfWREtUduSBfodc8
     sort: 300000
-    _key: '!actors.items!BtPOwceNo3xeWya6.WfWREtUduSBfodc8'
+    _key: "!actors.items!BtPOwceNo3xeWya6.WfWREtUduSBfodc8"
   - folder: Jc9oocmI3B4cVSRG
     name: ATTAQUE MORTELLE
     type: capacity
     img: icons/svg/combat.svg
     system:
-      description: "<p>Une attaque qui doit être exécutée de dos ou par surprise. L’assassin obtient un dé bonus en attaque et ajoute\_<strong>+4d6 aux DM</strong> de sa première attaque (il fait ensuite sa seconde attaque dans des conditions normales).</p>"
-      source: ''
-      origin: ''
+      description: "<p>Une attaque qui doit être exécutée de dos ou par surprise. L’assassin obtient un dé bonus en attaque et ajoute <strong>+4d6 aux DM</strong> de sa première attaque (il fait ensuite sa seconde attaque dans des conditions normales).</p>"
+      source: ""
+      origin: ""
       slug: attaque-mortelle
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -295,8 +295,8 @@ items:
       actions:
         - source: Actor.BtPOwceNo3xeWya6.Item.TsAvRcXx0kmqZKSG
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -312,9 +312,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: true
               skill:
-                formula: '+7'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "+7"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+3 +4d6
               target:
@@ -331,7 +331,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.DJz0t2RXLUM0R956
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -339,7 +339,7 @@ items:
       lastModifiedBy: null
     _id: TsAvRcXx0kmqZKSG
     sort: 300000
-    _key: '!actors.items!BtPOwceNo3xeWya6.TsAvRcXx0kmqZKSG'
+    _key: "!actors.items!BtPOwceNo3xeWya6.TsAvRcXx0kmqZKSG"
   - folder: uVNfyNGbfZsNuFix
     name: ASSASSINAT
     type: capacity
@@ -350,10 +350,10 @@ items:
         <p>Au premier round de combat, si la cible est Surprise, une Attaque
         mortelle réussie l’oblige à réussir un<strong> test de CON difficulté 13
         ou tomber à 0 PV.</strong></p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: assassinat
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -375,13 +375,13 @@ items:
     _stats:
       compendiumSource: Item.8dIxJXOwPkrKG6Qj
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!BtPOwceNo3xeWya6.yxfFMygSOV1rSg96'
+    _key: "!actors.items!BtPOwceNo3xeWya6.yxfFMygSOV1rSg96"
   - folder: uVNfyNGbfZsNuFix
     name: DISPARITION
     type: capacity
@@ -390,14 +390,14 @@ items:
     system:
       description: >-
         <p>L’assassin devient invisible (passage dans les ombres, cape magique,
-        sort, etc.) et peut se<br />déplacer de 20 m. Il réapparaît à son
+        sort, etc.) et peut se déplacer de 20&nbsp;m. Il réapparaît à son
         prochain tour et s’il emporte un <strong>test opposé d’AGI</strong>
         (discrétion +5) contre la PER (vigilance) de sa cible, il peut effectuer
-        une Attaque mortelle</p>
-      source: ''
-      origin: ''
+        une Attaque mortelle.</p>
+      source: ""
+      origin: ""
       slug: disparition
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -411,8 +411,8 @@ items:
       actions:
         - source: Actor.BtPOwceNo3xeWya6.Item.NN2p7VC85K8J9XwN
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -428,11 +428,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '@agi + 5'
-                crit: ''
-                difficulty: '@oppose.agi'
+                formula: "@agi + 5"
+                crit: ""
+                difficulty: "@oppose.agi"
               dmg:
-                formula: '0'
+                formula: "0"
               target:
                 type: none
                 number: 0
@@ -448,13 +448,13 @@ items:
     _stats:
       compendiumSource: Item.unaizUgGEhfv3qiz
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!BtPOwceNo3xeWya6.NN2p7VC85K8J9XwN'
+    _key: "!actors.items!BtPOwceNo3xeWya6.NN2p7VC85K8J9XwN"
 effects: []
 sort: 0
 ownership:
@@ -464,11 +464,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454182007
   modifiedTime: 1742454182007
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!BtPOwceNo3xeWya6'
-
+_key: "!actors!BtPOwceNo3xeWya6"

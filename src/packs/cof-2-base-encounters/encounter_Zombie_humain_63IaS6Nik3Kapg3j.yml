@@ -115,27 +115,27 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Un zombie est un mort‑vivant anim&eacute; &agrave; partir d&rsquo;un
-        cadavre r&eacute;cent. Les chairs peuvent &ecirc;tre &agrave; un stade
-        plus ou moins avanc&eacute; de putr&eacute;faction, mais le corps doit
-        &ecirc;tre globalement complet. Le zombie est une cr&eacute;ature
-        stupide qui suit les ordres de son cr&eacute;ateur ou erre sans but et
-        attaque toute cr&eacute;ature vivante &agrave; port&eacute;e.<br>Pour
-        obtenir un zombie, vous pouvez partir de n&rsquo;importe quelle
-        cr&eacute;ature, qui acquiert le type non‑vivante (ce qui inclus une RD
-        de 5 contre le froid). Ajoutez les capacit&eacute;s suivantes.</p>
+        <p>Un zombie est un mort-vivant animé à partir d’un
+        cadavre récent. Les chairs peuvent être à un stade
+        plus ou moins avancé de putréfaction, mais le corps doit
+        être globalement complet. Le zombie est une créature
+        stupide qui suit les ordres de son créateur ou erre sans but et
+        attaque toute créature vivante à portée.<br>Pour
+        obtenir un zombie, vous pouvez partir de n’importe quelle
+        créature, qui acquiert le type non-vivante (ce qui inclus une RD
+        de 5 contre le froid). Ajoutez les capacités suivantes.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Zombie
   displayName: 0
@@ -154,7 +154,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -218,9 +218,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: arme
       subtype: melee
       learned: true
@@ -233,8 +233,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -248,9 +248,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+3
               target:
@@ -268,7 +268,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -276,7 +276,7 @@ items:
       lastModifiedBy: null
     _id: H7AF2ToMTV4gI5ky
     sort: 300000
-    _key: '!actors.items!63IaS6Nik3Kapg3j.H7AF2ToMTV4gI5ky'
+    _key: "!actors.items!63IaS6Nik3Kapg3j.H7AF2ToMTV4gI5ky"
   - folder: uVNfyNGbfZsNuFix
     name: RESISTANCE AUX DM ZOMBIE
     type: capacity
@@ -285,11 +285,11 @@ items:
     system:
       description: >-
         <p>Divisez par deux tous les DM infligés au zombie par des armes, sauf
-        s’il s’agit d’armes<br />tranchantes.</p>
-      source: ''
-      origin: ''
+        s’il s’agit d’armes tranchantes.</p>
+      source: ""
+      origin: ""
       slug: resistance-uax-dm-zombie
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -311,13 +311,13 @@ items:
     _stats:
       compendiumSource: Item.p5645mDEcaMMTqBF
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!63IaS6Nik3Kapg3j.WPv5nu5ZJP8AiFVP'
+    _key: "!actors.items!63IaS6Nik3Kapg3j.WPv5nu5ZJP8AiFVP"
   - folder: uVNfyNGbfZsNuFix
     name: SANS ESPRIT
     type: capacity
@@ -326,12 +326,12 @@ items:
     system:
       description: >-
         <p>Aucune âme n’habite la carcasse morte, le zombie est immunisé à tous
-        les sorts qui affectent l’esprit. L’INT et le CHA passent à ‑4, la VOL à
+        les sorts qui affectent l’esprit. L’INT et le CHA passent à -4, la VOL à
         +6.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: sans-esprit
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -353,13 +353,13 @@ items:
     _stats:
       compendiumSource: Item.tHiZ1hd3FoBtlzV9
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!63IaS6Nik3Kapg3j.xCV76FziO8EeJWKf'
+    _key: "!actors.items!63IaS6Nik3Kapg3j.xCV76FziO8EeJWKf"
   - folder: uVNfyNGbfZsNuFix
     name: LENTEUR
     type: capacity
@@ -367,12 +367,12 @@ items:
     _id: R1YU9ZHDS2Cl4L8x
     system:
       description: >-
-        <p>Le zombie voit son AGI réduite à ‑1 et sa PER à ‑2, et il ne se
-        déplace que de 5 m par action<br />de mouvement.</p>
-      source: ''
-      origin: ''
+        <p>Le zombie voit son AGI réduite à -1 et sa PER à -2, et il ne se
+        déplace que de 5&nbsp;m par action de mouvement.</p>
+      source: ""
+      origin: ""
       slug: lenteur
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -394,13 +394,13 @@ items:
     _stats:
       compendiumSource: Item.CUjiWpVpomxgBd8b
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!63IaS6Nik3Kapg3j.R1YU9ZHDS2Cl4L8x'
+    _key: "!actors.items!63IaS6Nik3Kapg3j.R1YU9ZHDS2Cl4L8x"
   - folder: uVNfyNGbfZsNuFix
     name: INSENSIBLE À LA DOULEUR
     type: capacity
@@ -410,11 +410,11 @@ items:
       description: >-
         <p>Ajoutez 3 x NC aux PV et retranchez 5 à la DEF. La créature peut
         encore faire une action (attaque ou mouvement) après avoir été réduite à
-        0 PV</p>
-      source: ''
-      origin: ''
+        0 PV.</p>
+      source: ""
+      origin: ""
       slug: insensible-a-la-douleur
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -436,13 +436,13 @@ items:
     _stats:
       compendiumSource: Item.Q3t9kptHYS2wZiPj
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!63IaS6Nik3Kapg3j.SXkYzsWMPKZHqfhS'
+    _key: "!actors.items!63IaS6Nik3Kapg3j.SXkYzsWMPKZHqfhS"
 effects: []
 sort: 0
 ownership:
@@ -452,11 +452,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!63IaS6Nik3Kapg3j'
-
+_key: "!actors!63IaS6Nik3Kapg3j"

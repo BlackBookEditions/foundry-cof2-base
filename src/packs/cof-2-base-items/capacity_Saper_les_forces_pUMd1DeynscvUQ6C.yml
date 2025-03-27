@@ -5,16 +5,16 @@ img: icons/svg/combat.svg
 _id: pUMd1DeynscvUQ6C
 system:
   description: >-
-    <p style="text-align:justify">Le magicien choisit une cible vivante située à
-    une distance maximum de 10 m. S’il réussit un test opposé d’attaque magique,
-    la cible subit un malus de ‑2 à ses tests de FOR, d’attaque au contact et
-    aux DM, jusqu’à la fin du combat.<br />Le sort n’est pas cumulable plusieurs
+    <p>Le magicien choisit une cible vivante située à
+    une distance maximum de 10&nbsp;m. S’il réussit un test opposé d’attaque magique,
+    la cible subit un malus de -2 à ses tests de FOR, d’attaque au contact et
+    aux DM, jusqu’à la fin du combat. Le sort n’est pas cumulable plusieurs
     fois sur la même cible.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: saper-les-forces
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,11 +41,11 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: none
             number: 0
@@ -64,11 +64,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828111774
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!pUMd1DeynscvUQ6C'
-
+_key: "!items!pUMd1DeynscvUQ6C"

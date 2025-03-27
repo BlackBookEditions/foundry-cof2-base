@@ -5,15 +5,15 @@ img: icons/svg/combat.svg
 _id: Dpw63Cy26XSMij1j
 system:
   description: >-
-    <p>Le magicien choisit un point situé à moins de 30 m. Toutes les créatures
-    (y compris le magicien et ses compagnons) se trouvant dans un rayon de 5 m
+    <p>Le magicien choisit un point situé à moins de 30&nbsp;m. Toutes les créatures
+    (y compris le magicien et ses compagnons) se trouvant dans un rayon de 5&nbsp;m
     autour de ce point subissent [4d4°+INT] DM et peuvent effectuer un test
     d’AGI difficulté [10 + INT] pour ne subir que la moitié des DM.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: explosion-de-feu
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Dpw63Cy26XSMij1j
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -40,9 +40,9 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '0'
+            formula: "@atm"
+            crit: ""
+            difficulty: "0"
           dmg:
             formula: 4d4°+@int
           target:
@@ -63,11 +63,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828093689
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!Dpw63Cy26XSMij1j'
-
+_key: "!items!Dpw63Cy26XSMij1j"

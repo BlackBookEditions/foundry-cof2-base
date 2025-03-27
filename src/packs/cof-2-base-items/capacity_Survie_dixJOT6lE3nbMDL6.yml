@@ -7,14 +7,14 @@ system:
   description: >-
     <p>Le rôdeur ajoute son rang + 2 à tous les tests d’escalade et de survie en
     milieu naturel (s’orienter, trouver un abri et de la nourriture, etc.) dont
-    les tests de récupération effectués chaque nuit.<br />Lorsqu’il dort en
+    les tests de récupération effectués chaque nuit. Lorsqu’il dort en
     milieu naturel, s’il dépense 1 dé de récupération (DR), il guérit 1d4° PV
     supplémentaire (en plus de [DR max + ½ niveau]).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: survie
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -43,17 +43,17 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: for
-          value: '2'
+          value: "2"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: per
-          value: '2'
+          value: "2"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: vol
-          value: '2'
+          value: "2"
       resolvers: []
   cost: -1
 effects: []
@@ -68,11 +68,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740823896991
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!dixJOT6lE3nbMDL6'
-
+_key: "!items!dixJOT6lE3nbMDL6"

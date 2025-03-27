@@ -5,17 +5,17 @@ img: icons/svg/combat.svg
 _id: BnFmpK5F3uQQ3KzM
 system:
   description: >-
-    <p style="text-align:justify">Le sorcier effectue un test opposé d’attaque
-    magique contre une cible à moins de 20 m. En cas de succès, si l’incantation
+    <p>Le sorcier effectue un test opposé d’attaque
+    magique contre une cible à moins de 20&nbsp;m. En cas de succès, si l’incantation
     était une action de mouvement (M), la victime subit un dé malus à son
     prochain test. Si l’incantation était une action limitée (L), le dé malus
     s’applique à ses 3 prochains tests. Dans tous les cas, la cible ne peut
     subir les effets de ce sort qu’une fois par combat.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: malediction
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -28,8 +28,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.BnFmpK5F3uQQ3KzM
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -42,11 +42,11 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: none
             number: 0
@@ -65,11 +65,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828308799
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!BnFmpK5F3uQQ3KzM'
-
+_key: "!items!BnFmpK5F3uQQ3KzM"

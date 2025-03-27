@@ -115,21 +115,21 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Ce rongeur de la taille d&rsquo;un chien est beaucoup plus agressif
-        qu&rsquo;un rat ordinaire. Il pue autant qu&rsquo;il est laid. Et il est
-        particuli&egrave;rement laid.</p>
+        <p>Ce rongeur de la taille d’un chien est beaucoup plus agressif
+        qu’un rat ordinaire. Il pue autant qu’il est laid. Et il est
+        particulièrement laid.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Rat géant
   displayName: 0
@@ -148,7 +148,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -212,9 +212,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure
       subtype: melee
       learned: true
@@ -227,8 +227,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -242,9 +242,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4 +1
               target:
@@ -262,7 +262,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -270,18 +270,18 @@ items:
       lastModifiedBy: null
     _id: TDyCoxUJl3IDk8p0
     sort: 300000
-    _key: '!actors.items!Xb8HkbW1Op7MNCz2.TDyCoxUJl3IDk8p0'
+    _key: "!actors.items!Xb8HkbW1Op7MNCz2.TDyCoxUJl3IDk8p0"
   - folder: uVNfyNGbfZsNuFix
     name: MALADIE
     type: capacity
     img: icons/svg/combat.svg
     _id: JixgLUeF4RzMWVHA
     system:
-      description: "<p style=\"text-align:justify\">Chaque créature mordue par un rat doit faire un <strong>test de CON difficulté 10</strong> à la fin du combat. En cas\_d’échec, elle contracte une maladie dont les symptômes se manifestent après 2d6 h. La victime est affaiblie et perd 1d4 PV toutes les 24 h, qui ne peuvent pas être soignés par le repos. Réalisez un nouveau <strong>test de CON difficulté 15 chaque jour</strong> pour tenter de mettre fin à la maladie. Les PV perdus sont alors récupérés au rythme de 1 par jour de repos.</p>"
-      source: ''
-      origin: ''
+      description: "<p>Chaque créature mordue par un rat doit faire un <strong>test de CON difficulté 10</strong> à la fin du combat. En cas d’échec, elle contracte une maladie dont les symptômes se manifestent après 2d6 h. La victime est affaiblie et peRD&nbsp;1d4 PV toutes les 24 h, qui ne peuvent pas être soignés par le repos. Réalisez un nouveau <strong>test de CON difficulté 15 chaque jour</strong> pour tenter de mettre fin à la maladie. Les PV perdus sont alors récupérés au rythme de 1 par jour de repos.</p>"
+      source: ""
+      origin: ""
       slug: maladie
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -303,13 +303,13 @@ items:
     _stats:
       compendiumSource: Item.9vQHGsNLQ1kd8yJN
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!Xb8HkbW1Op7MNCz2.JixgLUeF4RzMWVHA'
+    _key: "!actors.items!Xb8HkbW1Op7MNCz2.JixgLUeF4RzMWVHA"
 effects: []
 sort: 0
 ownership:
@@ -319,11 +319,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!Xb8HkbW1Op7MNCz2'
-
+_key: "!actors!Xb8HkbW1Op7MNCz2"

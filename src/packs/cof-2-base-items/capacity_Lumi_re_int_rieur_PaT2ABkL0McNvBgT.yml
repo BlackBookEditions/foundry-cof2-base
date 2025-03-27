@@ -6,13 +6,13 @@ _id: PaT2ABkL0McNvBgT
 system:
   description: >-
     <p>Pour un elfe, l’obscurité de la nuit sous la lumière des étoiles est
-    considérée comme de la pénombre.<br />De plus, il gagne un bonus de +3 à
+    considérée comme de la pénombre. De plus, il gagne un bonus de +3 à
     tous les tests d’érudition (INT) et artistiques (CHA).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: lumiere-interieur
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,17 +41,17 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: int
-          value: '3'
+          value: "3"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: cha
-          value: '3'
+          value: "3"
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -66,7 +66,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: state
           target: darkvision
-          value: '0'
+          value: "0"
       resolvers: []
   cost: -1
 effects: []
@@ -81,11 +81,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740819977922
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!PaT2ABkL0McNvBgT'
-
+_key: "!items!PaT2ABkL0McNvBgT"

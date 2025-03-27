@@ -5,14 +5,14 @@ img: icons/svg/combat.svg
 system:
   description: >-
     <p>Un troll récupère <strong>5 PV par tour</strong>, sauf si les DM subis
-    sont de feu ou d’acide. Même à 0 PV, il<br />continue à régénérer les tissus
-    morts à moins qu’on ne brûle son corps ou si un PJ utilise<br />une action
+    sont de feu ou d’acide. Même à 0 PV, il continue à régénérer les tissus
+    morts à moins qu’on ne brûle son corps ou si un PJ utilise une action
     limitée pour achever la créature (par exemple, en séparant la tête du
     corps).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: vitalite-surnaturelle
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Item.4imcR1mAgh7znOu7
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,7 +41,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: '5'
+            formula: "5"
           target:
             type: self
             number: 0
@@ -57,7 +57,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742416443806
@@ -65,5 +65,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: mU5FltDzGWs2bske
 sort: 1300000
-_key: '!items!mU5FltDzGWs2bske'
-
+_key: "!items!mU5FltDzGWs2bske"

@@ -113,18 +113,18 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Animal minuscule
@@ -144,7 +144,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -209,9 +209,9 @@ items:
     img: icons/svg/sword.svg
     _id: S8JgcJ5dK6G0ojLU
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure
       subtype: melee
       learned: true
@@ -224,8 +224,8 @@ items:
       actions:
         - source: Item.D5MDV6PxYU7TbXA0
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -241,9 +241,9 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6-2
               target:
@@ -260,13 +260,13 @@ items:
     _stats:
       compendiumSource: Item.D5MDV6PxYU7TbXA0
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!0NOadv5qnk0lZqAq.S8JgcJ5dK6G0ojLU'
+    _key: "!actors.items!0NOadv5qnk0lZqAq.S8JgcJ5dK6G0ojLU"
   - folder: uVNfyNGbfZsNuFix
     name: TRES PETIT
     type: capacity
@@ -274,11 +274,11 @@ items:
     system:
       description: >-
         <p>La créature obtient un bonus de +10 aux tests d’escalade et de
-        discrétion</p>
-      source: ''
-      origin: ''
+        discrétion.</p>
+      source: ""
+      origin: ""
       slug: tres-petit
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -292,7 +292,7 @@ items:
         - source: Actor.0NOadv5qnk0lZqAq.Item.YUwIsvdo5PYAooAb
           indice: 0
           label: Escalade et Discrétion
-          chatFlavor: ''
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -306,14 +306,14 @@ items:
               source: Actor.0NOadv5qnk0lZqAq.Item.YUwIsvdo5PYAooAb
               subtype: skill
               target: agi
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
             - type: capacity
               source: Actor.0NOadv5qnk0lZqAq.Item.YUwIsvdo5PYAooAb
               subtype: skill
               target: for
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
           conditions: []
           resolvers: []
       manaCost: -1
@@ -327,14 +327,14 @@ items:
     _stats:
       compendiumSource: Item.d9qAXhqiJ247KVRk
       duplicateSource: Item.5yvmTMalbtRWE9Pf
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
     _id: YUwIsvdo5PYAooAb
-    _key: '!actors.items!0NOadv5qnk0lZqAq.YUwIsvdo5PYAooAb'
+    _key: "!actors.items!0NOadv5qnk0lZqAq.YUwIsvdo5PYAooAb"
 effects: []
 sort: 0
 ownership:
@@ -344,12 +344,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.nj4Yp7dNAqRALCNf
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: 0NOadv5qnk0lZqAq
-_key: '!actors!0NOadv5qnk0lZqAq'
-
+_key: "!actors!0NOadv5qnk0lZqAq"

@@ -6,17 +6,17 @@ _id: 0gjyPBj5KURSdFTy
 system:
   description: >-
     <p>conçue pour être utilisée uniquement à cheval, la lance de cavalerie
-    mesure environ 3 m de long. Il faut prendre de l’élan pour l’utiliser à son
-    plein potentiel.<br />L’attaque doit donc avoir lieu après un déplacement
-    pour obtenir les DM indiqués.<br />Sinon, en combat au contact classique, le
+    mesure environ 3&nbsp;m de long. Il faut prendre de l’élan pour l’utiliser à son
+    plein potentiel. L’attaque doit donc avoir lieu après un déplacement
+    pour obtenir les DM indiqués. Sinon, en combat au contact classique, le
     cavalier subit un dé malus.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: lance-de-cavalerie
   tags: []
   subtype: armor
   martialCategory: paddedClothFur
-  damagetype: ''
+  damagetype: ""
   quantity:
     current: 1
     max: 1
@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 0
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -43,8 +43,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.0gjyPBj5KURSdFTy
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -55,9 +55,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 2d6 + @for
           target:
@@ -79,11 +79,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!0gjyPBj5KURSdFTy'
-
+_key: "!items!0gjyPBj5KURSdFTy"

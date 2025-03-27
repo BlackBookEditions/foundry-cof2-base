@@ -115,28 +115,28 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p style="text-align: justify;">La momie est un mort‑vivant couvert de
-        bandelettes, un cadavre anim&eacute; par une magie antique qui permet
-        &agrave; un humano&iuml;de une parodie de vie apr&egrave;s la mort. La
-        momie doit rester &eacute;ternellement immobile au fond de son
-        sarcophage et elle ne peut que rarement trouver l&rsquo;&eacute;nergie
-        de s&rsquo;en extraire. Toutefois, lorsque cela arrive, elle fait preuve
-        d&rsquo;une haine des vivants qui d&eacute;rangent son sommeil et
-        d&rsquo;une force impie qui d&eacute;fie les lois de la physique.</p>
+        <p style="text-align: justify;">La momie est un mort-vivant couvert de
+        bandelettes, un cadavre animé par une magie antique qui permet
+        à un humanoïde une parodie de vie après la mort. La
+        momie doit rester éternellement immobile au fond de son
+        sarcophage et elle ne peut que rarement trouver l’énergie
+        de s’en extraire. Toutefois, lorsque cela arrive, elle fait preuve
+        d’une haine des vivants qui dérangent son sommeil et
+        d’une force impie qui défie les lois de la physique.</p>
     languages: []
     properties: |-
-      <p>R&eacute;sistance 5 sauf feu.</p>
-      <p>Putr&eacute;faction si le coup blesse</p>
+      <p>Résistance 5 sauf feu.</p>
+      <p>Putréfaction si le coup blesse.</p>
 prototypeToken:
   name: Momie
   displayName: 0
@@ -155,7 +155,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -219,9 +219,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: coup-2-attaques
       subtype: melee
       learned: true
@@ -234,8 +234,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -249,9 +249,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+5
               target:
@@ -269,7 +269,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -277,7 +277,7 @@ items:
       lastModifiedBy: null
     _id: 9DVJYvsUFhuEAsLr
     sort: 300000
-    _key: '!actors.items!DlaY7gZ2ZvgM7Ay0.9DVJYvsUFhuEAsLr'
+    _key: "!actors.items!DlaY7gZ2ZvgM7Ay0.9DVJYvsUFhuEAsLr"
   - folder: Jc9oocmI3B4cVSRG
     name: RÉSISTANCE AUX DM
     type: capacity
@@ -286,10 +286,10 @@ items:
       description: >-
         <p>La momie <strong>réduit de 5 tous les DM subis</strong>, sauf par le
         feu.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: resistance-aux-dm
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -303,8 +303,8 @@ items:
       actions:
         - source: Actor.DlaY7gZ2ZvgM7Ay0.Item.P3WEOb4CaGCpkB4z
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -320,7 +320,7 @@ items:
               source: Actor.DlaY7gZ2ZvgM7Ay0.Item.P3WEOb4CaGCpkB4z
               subtype: combat
               target: dr
-              value: '5'
+              value: "5"
               additionalInfos: sauf feu
           resolvers: []
       frequency: none
@@ -332,7 +332,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OwwRCR7KWvWEXNLn
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -340,7 +340,7 @@ items:
       lastModifiedBy: null
     _id: P3WEOb4CaGCpkB4z
     sort: 0
-    _key: '!actors.items!DlaY7gZ2ZvgM7Ay0.P3WEOb4CaGCpkB4z'
+    _key: "!actors.items!DlaY7gZ2ZvgM7Ay0.P3WEOb4CaGCpkB4z"
   - folder: uVNfyNGbfZsNuFix
     name: PUTRÉFACTION
     type: capacity
@@ -348,18 +348,18 @@ items:
     _id: 0MBhXOPz3GSB1QZ7
     system:
       description: >-
-        <p style="text-align:justify">Toute créature blessée par une momie doit
+        <p>Toute créature blessée par une momie doit
         réussir un<strong> test de CON difficulté 15</strong> ou contracter une
         horrible maladie qui occasionne le pourrissement rapide de ses chairs,
-        une sorte de lèpre fulgurante. La victime subit <strong>1d6 DM par round
+        une sorte de lèpre fulgurante. La victime subit <strong>1d6&nbsp;DM par round
         pendant 5 rounds</strong>. Tant qu’elle est sous l’effet de la
         putréfaction, il n’est pas nécessaire de réaliser un nouveau test de CON
         lorsque la victime est la cible d’une attaque de la momie. L’utilisation
         de la capacité de prêtre Délivrance permet de soigner cette maladie.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: putrefaction
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -381,13 +381,13 @@ items:
     _stats:
       compendiumSource: Item.QYEWtlXjasMAQnKA
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!DlaY7gZ2ZvgM7Ay0.0MBhXOPz3GSB1QZ7'
+    _key: "!actors.items!DlaY7gZ2ZvgM7Ay0.0MBhXOPz3GSB1QZ7"
 effects: []
 sort: 0
 ownership:
@@ -397,11 +397,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!DlaY7gZ2ZvgM7Ay0'
-
+_key: "!actors!DlaY7gZ2ZvgM7Ay0"

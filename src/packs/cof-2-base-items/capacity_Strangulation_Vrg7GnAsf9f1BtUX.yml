@@ -5,17 +5,17 @@ img: icons/svg/combat.svg
 _id: Vrg7GnAsf9f1BtUX
 system:
   description: >-
-    <p style="text-align:justify">En réussissant un test opposé d’attaque
-    magique (portée 20 m), le sorcier étouffe une créature vivante. La victime
+    <p>En réussissant un test opposé d’attaque
+    magique (portée 20&nbsp;m), le sorcier étouffe une créature vivante. La victime
     subit un dé malus à tous ses tests et [1d4°+INT] DM par round tant que le
     sorcier maintient sa concentration par une action de mouvement et la dépense
     de 1 PM par round. Si la victime sort de la portée du sort, il prend
     fin.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: strangulation
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -28,8 +28,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -42,9 +42,9 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
             formula: 1d4°+@int
           target:
@@ -65,11 +65,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828480449
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!Vrg7GnAsf9f1BtUX'
-
+_key: "!items!Vrg7GnAsf9f1BtUX"

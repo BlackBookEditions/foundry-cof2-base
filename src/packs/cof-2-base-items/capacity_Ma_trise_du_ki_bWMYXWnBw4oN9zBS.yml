@@ -5,14 +5,14 @@ img: icons/svg/combat.svg
 _id: bWMYXWnBw4oN9zBS
 system:
   description: >-
-    <p style="text-align:justify">Le moine utilise sa force mentale pour
+    <p>Le moine utilise sa force mentale pour
     augmenter son efficacité en combat. Il ajoute sa VOL à son Initiative et à
-    ses PV. De plus, il gagne +2 en DEF (ce bonus passe à +3 au rang 5).</p>
-  source: ''
-  origin: ''
+    ses PV. De plus, il gagne +2 en DEF (ce bonus passe à +3 au rang&nbsp;5).</p>
+  source: ""
+  origin: ""
   slug: maitrise-du-ki
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -39,17 +39,17 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: init
-          value: '@vol'
+          value: "@vol"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: attribute
           target: hp
-          value: '@vol'
+          value: "@vol"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: def
-          value: '@allrank[2,0,0,0,1]'
+          value: "@allrank[2,0,0,0,1]"
       conditions: []
       resolvers: []
   cost: -1
@@ -65,11 +65,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828904740
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!bWMYXWnBw4oN9zBS'
-
+_key: "!items!bWMYXWnBw4oN9zBS"

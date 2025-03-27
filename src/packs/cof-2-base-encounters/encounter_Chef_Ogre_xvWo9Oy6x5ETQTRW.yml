@@ -114,33 +114,33 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>L&rsquo;ogre est une brute &eacute;paisse mesurant plus de 2,50 m
-        (pour 300 kg). Cette cr&eacute;ature mal&eacute;fique a un penchant pour
-        les armes d&eacute;mesur&eacute;es et la boucherie gratuite. C&rsquo;est
-        un adversaire formidable et un combat contre un ogre n&rsquo;est jamais
+        <p>L’ogre est une brute épaisse mesurant plus de 2,50&nbsp;m
+        (pour 300&nbsp;kg). Cette créature maléfique a un penchant pour
+        les armes démesurées et la boucherie gratuite. C’est
+        un adversaire formidable et un combat contre un ogre n’est jamais
         sans risque. Il parle le noir parler et parfois le commun.<br>Un chef
-        ogre accompagn&eacute; de 5 ogres est une rencontre ordinaire de niveau
+        ogre accompagné de 5 ogres est une rencontre ordinaire de niveau
         10.</p>
     languages: []
     properties: >-
-      <p>1 capacit&eacute; au choix entre Tap dur et Imparable</p>
+      <p>1 capacité au choix entre Tap dur et Imparable.</p>
 
-      <p><strong>NOTE DE CONCEPTION</strong> : Attention, m&ecirc;me &agrave;
-      haut niveau des ogres dot&eacute;s de la capacit&eacute; Tape dur en grand
-      nombre sont des adversaires redoutables, si vous n&rsquo;utilisez pas la
-      r&egrave;gle de l&rsquo;attaque group&eacute;e, les chances sont grandes
-      que leur victime passe plus de<br>temps &eacute;tourdie que dans la
-      capacit&eacute; d&rsquo;agir&hellip;</p>
+      <p><strong>NOTE DE CONCEPTION</strong>&nbsp;: Attention, même à
+      haut niveau des ogres dotés de la capacité Tape dur en grand
+      nombre sont des adversaires redoutables, si vous n’utilisez pas la
+      règle de l’attaque groupée, les chances sont grandes
+      que leur victime passe plus de<br>temps étourdie que dans la
+      capacité d’agir…</p>
 prototypeToken:
   name: Ogre
   displayName: 0
@@ -159,7 +159,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -223,9 +223,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: hachoir
       subtype: melee
       learned: true
@@ -238,8 +238,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -253,9 +253,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+12'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+12"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+6
               target:
@@ -273,7 +273,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -281,23 +281,23 @@ items:
       lastModifiedBy: null
     _id: XptR9OrYbUdYeVXK
     sort: 300000
-    _key: '!actors.items!xvWo9Oy6x5ETQTRW.XptR9OrYbUdYeVXK'
+    _key: "!actors.items!xvWo9Oy6x5ETQTRW.XptR9OrYbUdYeVXK"
   - folder: Jc9oocmI3B4cVSRG
     name: IMPARABLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">L’ogre réalise une attaque avec un dé
-        bonus et garde le meilleur résultat. Si la créature obtient 15‑20 au d20
-        d’un test d’attaque (même sans utiliser imparable), elle inflige +1d6 DM
+        <p>L’ogre réalise une attaque avec un dé
+        bonus et garde le meilleur résultat. Si la créature obtient 15-20 au d20
+        d’un test d’attaque (même sans utiliser imparable), elle inflige +1d6&nbsp;DM
         supplémentaire et l’attaque est automatiquement réussie (quelle que soit
         la DEF de son adversaire). Les dés bonus ne sont pas multipliés en cas
-        de critique</p>
-      source: ''
-      origin: ''
+        de critique.</p>
+      source: ""
+      origin: ""
       slug: imparable
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -318,7 +318,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -326,21 +326,21 @@ items:
       lastModifiedBy: null
     _id: oc67oPcWDLikOrzd
     sort: 2800000
-    _key: '!actors.items!xvWo9Oy6x5ETQTRW.oc67oPcWDLikOrzd'
+    _key: "!actors.items!xvWo9Oy6x5ETQTRW.oc67oPcWDLikOrzd"
   - folder: Jc9oocmI3B4cVSRG
     name: TAPE DUR
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si la créature obtient 15 à 20 au dé du
+        <p>Si la créature obtient 15 à 20 au dé du
         test d’attaque, l’attaque est automatiquement réussie. De surcroît, la
         victime doit réussir un<strong> test de CON difficulté 16</strong> ou
         être <strong>étourdie </strong>pendant 1 round.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: tape-dur
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -361,7 +361,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -369,18 +369,18 @@ items:
       lastModifiedBy: null
     _id: ozvUmiyG24X56DYG
     sort: 1500000
-    _key: '!actors.items!xvWo9Oy6x5ETQTRW.ozvUmiyG24X56DYG'
+    _key: "!actors.items!xvWo9Oy6x5ETQTRW.ozvUmiyG24X56DYG"
   - folder: uVNfyNGbfZsNuFix
     name: TEIGNEUSE
     type: capacity
     img: icons/svg/combat.svg
     _id: v1CnE1pTh3S6tbUF
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: teigneuse
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -394,8 +394,8 @@ items:
       actions:
         - source: Actor.xvWo9Oy6x5ETQTRW.Item.v1CnE1pTh3S6tbUF
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -412,7 +412,7 @@ items:
               subtype: combat
               target: dam
               value: +2d6
-              additionalInfos: ''
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -424,13 +424,13 @@ items:
     _stats:
       compendiumSource: Item.VDOblCRCAvqEMiTg
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!xvWo9Oy6x5ETQTRW.v1CnE1pTh3S6tbUF'
+    _key: "!actors.items!xvWo9Oy6x5ETQTRW.v1CnE1pTh3S6tbUF"
   - folder: Jc9oocmI3B4cVSRG
     name: ENRAGE
     type: capacity
@@ -438,13 +438,13 @@ items:
     system:
       description: >-
         <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée.
-        Elle ignore les pénalités de<br />douleur ou la peur, augmente de +3 sa
-        valeur d’attaque au contact et ses DM de +1d6. Elle<br />peut encore
+        Elle ignore les pénalités de douleur ou la peur, augmente de +3 sa
+        valeur d’attaque au contact et ses DM de +1d6. Elle peut encore
         agir un tour complet après avoir atteint 0 PV.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: enrage
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -458,8 +458,8 @@ items:
       actions:
         - source: Actor.xvWo9Oy6x5ETQTRW.Item.Sf7gEuaAt9G4Xb4d
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -475,14 +475,14 @@ items:
               source: Actor.xvWo9Oy6x5ETQTRW.Item.Sf7gEuaAt9G4Xb4d
               subtype: combat
               target: melee
-              value: '3'
-              additionalInfos: ''
+              value: "3"
+              additionalInfos: ""
             - type: capacity
               source: Actor.xvWo9Oy6x5ETQTRW.Item.Sf7gEuaAt9G4Xb4d
               subtype: combat
               target: dam
               value: +1d6
-              additionalInfos: ''
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -493,7 +493,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -501,7 +501,7 @@ items:
       lastModifiedBy: null
     _id: Sf7gEuaAt9G4Xb4d
     sort: 1300000
-    _key: '!actors.items!xvWo9Oy6x5ETQTRW.Sf7gEuaAt9G4Xb4d'
+    _key: "!actors.items!xvWo9Oy6x5ETQTRW.Sf7gEuaAt9G4Xb4d"
 effects: []
 sort: 0
 ownership:
@@ -511,12 +511,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.XNjdl6hZF7BXEv2F
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: xvWo9Oy6x5ETQTRW
-_key: '!actors!xvWo9Oy6x5ETQTRW'
-
+_key: "!actors!xvWo9Oy6x5ETQTRW"

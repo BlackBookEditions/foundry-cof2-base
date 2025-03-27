@@ -114,21 +114,21 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Avec des mensurations moyennes de 500 kg pour 3 m le grand ours
-        polaire m&acirc;le est le plus gros pr&eacute;dateur terrestre avec
-        l&rsquo;ours Kodiak (encore un peu plus gros).</p>
+        <p>Avec des mensurations moyennes de 500&nbsp;kg pour 3&nbsp;m le grand ours
+        polaire mâle est le plus gros prédateur terrestre avec
+        l’ours Kodiak (encore un peu plus gros).</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Ours noir
   displayName: 0
@@ -147,7 +147,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -211,9 +211,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure-et-griffes
       subtype: melee
       learned: true
@@ -226,8 +226,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -241,9 +241,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '12'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "12"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d8+10
               target:
@@ -261,7 +261,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -269,23 +269,23 @@ items:
       lastModifiedBy: null
     _id: cii8ZwQt0eDvvHWn
     sort: 300000
-    _key: '!actors.items!ZDuA5nP6BjYA4apo.cii8ZwQt0eDvvHWn'
+    _key: "!actors.items!ZDuA5nP6BjYA4apo.cii8ZwQt0eDvvHWn"
   - folder: Jc9oocmI3B4cVSRG
     name: CHARGE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">La créature parcourt une distance maximale
-        de 20 m et réalise une attaque avec un dé<br />bonus. Si l’attaque est
+        <p>La créature parcourt une distance maximale
+        de 20&nbsp;m et réalise une attaque avec un dé bonus. Si l’attaque est
         réussie, en plus des DM normaux, une victime de taille inférieure ou<br
         />égale à la créature, doit faire un test de FOR difficulté 16 ou être
         renversée. Dans ce cas, la créature piétine (ou embroche) sa victime et
         les DM sont doublés.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: charge
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -298,8 +298,8 @@ items:
       actions:
         - source: Actor.xSuPAlysJg3bP4TE.Item.CE0csNdFYl8HI6X2
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -313,9 +313,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+6
               target:
@@ -335,7 +335,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.CdrS1wtCU4Ujuaa6
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -343,7 +343,7 @@ items:
       lastModifiedBy: null
     _id: CE0csNdFYl8HI6X2
     sort: 1800000
-    _key: '!actors.items!ZDuA5nP6BjYA4apo.CE0csNdFYl8HI6X2'
+    _key: "!actors.items!ZDuA5nP6BjYA4apo.CE0csNdFYl8HI6X2"
   - folder: Jc9oocmI3B4cVSRG
     name: ENRAGE
     type: capacity
@@ -351,13 +351,13 @@ items:
     system:
       description: >-
         <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée.
-        Elle ignore les pénalités de<br />douleur ou la peur, augmente de +3 sa
-        valeur d’attaque au contact et ses DM de +1d4. Elle<br />peut encore
+        Elle ignore les pénalités de douleur ou la peur, augmente de +3 sa
+        valeur d’attaque au contact et ses DM de +1d4. Elle peut encore
         agir un tour complet après avoir atteint 0 PV.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: enrage
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -371,8 +371,8 @@ items:
       actions:
         - source: Actor.ZDuA5nP6BjYA4apo.Item.qwLbxNTvVwqnH1L9
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -388,14 +388,14 @@ items:
               source: Actor.ZDuA5nP6BjYA4apo.Item.qwLbxNTvVwqnH1L9
               subtype: combat
               target: melee
-              value: '3'
-              additionalInfos: ''
+              value: "3"
+              additionalInfos: ""
             - type: capacity
               source: Actor.ZDuA5nP6BjYA4apo.Item.qwLbxNTvVwqnH1L9
               subtype: combat
               target: dam
               value: +1d4
-              additionalInfos: ''
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -406,7 +406,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -414,20 +414,20 @@ items:
       lastModifiedBy: null
     _id: qwLbxNTvVwqnH1L9
     sort: 0
-    _key: '!actors.items!ZDuA5nP6BjYA4apo.qwLbxNTvVwqnH1L9'
+    _key: "!actors.items!ZDuA5nP6BjYA4apo.qwLbxNTvVwqnH1L9"
   - folder: Jc9oocmI3B4cVSRG
     name: DEVORER
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au
+        <p>Lorsque la créature réussit une attaque avec un résultat de 15-20 au
         d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige
-        immédiatement une attaque gratuite supplémentaire</p>
-      source: ''
-      origin: ''
+        immédiatement une attaque gratuite supplémentaire.</p>
+      source: ""
+      origin: ""
       slug: devorer
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -448,7 +448,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -456,7 +456,7 @@ items:
       lastModifiedBy: null
     _id: hOYGjdECzUlbLBDj
     sort: 1700000
-    _key: '!actors.items!ZDuA5nP6BjYA4apo.hOYGjdECzUlbLBDj'
+    _key: "!actors.items!ZDuA5nP6BjYA4apo.hOYGjdECzUlbLBDj"
 effects: []
 sort: 0
 ownership:
@@ -466,12 +466,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.xSuPAlysJg3bP4TE
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: ZDuA5nP6BjYA4apo
-_key: '!actors!ZDuA5nP6BjYA4apo'
-
+_key: "!actors!ZDuA5nP6BjYA4apo"

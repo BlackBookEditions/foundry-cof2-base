@@ -5,14 +5,14 @@ img: icons/svg/combat.svg
 _id: V9yR9KzgR9xsXtaO
 system:
   description: >-
-    <p style="text-align:justify">Ce sort nécessite la réussite d’un test opposé
-    d’attaque magique (portée 30 m). La victime subit [2d4°+INT] DM et le
+    <p>Ce sort nécessite la réussite d’un test opposé
+    d’attaque magique (portée 30&nbsp;m). La victime subit [2d4°+INT] DM et le
     sorcier récupère autant de PV (sans dépasser son maximum de PV).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: baiser-du-vampire
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -39,9 +39,9 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
             formula: 2d4° + @int
           target:
@@ -62,11 +62,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828367093
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!V9yR9KzgR9xsXtaO'
-
+_key: "!items!V9yR9KzgR9xsXtaO"

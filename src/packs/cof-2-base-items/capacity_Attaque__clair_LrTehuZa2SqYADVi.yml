@@ -6,13 +6,13 @@ _id: LrTehuZa2SqYADVi
 system:
   description: >-
     <p>Le rôdeur peut effectuer une attaque au contact très rapide. Il ajoute
-    son AGI en attaque et aux DM pour cette attaque. À partir du rang 5, cette
-    attaque peut être associée à 10 m de déplacement</p>
-  source: ''
-  origin: ''
+    son AGI en attaque et aux DM pour cette attaque. À partir du rang&nbsp;5, cette
+    attaque peut être associée à 10&nbsp;m de déplacement.</p>
+  source: ""
+  origin: ""
   slug: attaque-eclair
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -25,8 +25,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.LrTehuZa2SqYADVi
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -39,11 +39,11 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc + @agi'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc + @agi"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@arme.dmg + @agi'
+            formula: "@arme.dmg + @agi"
           target:
             type: none
             number: 0
@@ -62,11 +62,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740823972483
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!LrTehuZa2SqYADVi'
-
+_key: "!items!LrTehuZa2SqYADVi"

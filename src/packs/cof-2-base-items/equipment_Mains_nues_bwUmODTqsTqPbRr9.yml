@@ -6,9 +6,9 @@ _id: bwUmODTqsTqPbRr9
 system:
   description: >-
     <p>Dans le cas du combat à mains nues, les DM sont généralement temporaires,
-    sauf pour les moines</p>
-  source: ''
-  origin: ''
+    sauf pour les moines.</p>
+  source: ""
+  origin: ""
   slug: mains-nues
   tags: []
   subtype: weapon
@@ -26,7 +26,7 @@ system:
     unit: kg
   price:
     value: 0
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -39,8 +39,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -51,9 +51,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d3 + @for
           target:
@@ -76,16 +76,15 @@ flags:
   exportSource:
     world: cov2-dev
     system: co
-    coreVersion: '12.331'
+    coreVersion: "12.331"
     systemVersion: 12.331.0
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!bwUmODTqsTqPbRr9'
-
+_key: "!items!bwUmODTqsTqPbRr9"

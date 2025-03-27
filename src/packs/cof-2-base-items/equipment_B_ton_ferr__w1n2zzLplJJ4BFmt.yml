@@ -7,11 +7,11 @@ system:
   description: >-
     <p>tous les personnages qui savent manier le bâton ferré savent aussi manier
     le bâton. Un bâton est un simple morceau de bois, un bâton ferré est adapté
-    au combat, plus lourd<br />et généralement couvert de métal aux extrémités
+    au combat, plus lourd et généralement couvert de métal aux extrémités
     (bien que les druides utilisent des bâtons de bois noueux avec le même
     effet).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: baton-ferre
   tags: []
   subtype: weapon
@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 2
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -43,8 +43,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.w1n2zzLplJJ4BFmt
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -55,9 +55,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6 + @for
           target:
@@ -79,11 +79,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!w1n2zzLplJJ4BFmt'
-
+_key: "!items!w1n2zzLplJJ4BFmt"

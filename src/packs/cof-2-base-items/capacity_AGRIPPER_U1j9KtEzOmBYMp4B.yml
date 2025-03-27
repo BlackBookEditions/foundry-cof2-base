@@ -4,18 +4,18 @@ type: capacity
 img: icons/svg/combat.svg
 system:
   description: >-
-    <p style="text-align:justify">Sur un résultat de 15‑20 au d20 en attaque, la
-    créature agrippe sa proie et ne la lâche plus.<br />Elle obtient un bonus
+    <p>Sur un résultat de 15-20 au d20 en attaque, la
+    créature agrippe sa proie et ne la lâche plus. Elle obtient un bonus
     de<strong> +5 en attaque et inflige +1d4 aux DM contre la cible</strong>
-    qu’elle agrippe et celle‑ci est <strong>immobilisée </strong>si elle est de
+    qu’elle agrippe et celle-ci est <strong>immobilisée </strong>si elle est de
     taille inférieure. Une fois par round, la victime peut essayer de se libérer
     au prix d’une action de mouvement en réussissant un <strong>test</strong><br
     /><strong>de FOR difficulté 16</strong>.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: agripper
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -30,8 +30,8 @@ system:
   actions:
     - source: Item.W3P9VDLcfitv8jWW
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -47,14 +47,14 @@ system:
           source: Item.W3P9VDLcfitv8jWW
           subtype: combat
           target: melee
-          value: '5'
-          additionalInfos: ''
+          value: "5"
+          additionalInfos: ""
         - type: capacity
           source: Item.W3P9VDLcfitv8jWW
           subtype: combat
           target: dam
           value: +1d4
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
 effects: []
 ownership:
@@ -64,7 +64,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742189598522
@@ -72,5 +72,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: U1j9KtEzOmBYMp4B
 sort: 1500000
-_key: '!items!U1j9KtEzOmBYMp4B'
-
+_key: "!items!U1j9KtEzOmBYMp4B"

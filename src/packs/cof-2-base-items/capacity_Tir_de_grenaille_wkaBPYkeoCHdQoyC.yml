@@ -6,18 +6,18 @@ _id: wkaBPYkeoCHdQoyC
 system:
   description: >-
     <p>L’arquebusier sait réaliser un mélange de poudre et de grenaille. Quand
-    il charge une arme<br />à poudre, il peut choisir d’utiliser ce mélange à la
+    il charge une arme à poudre, il peut choisir d’utiliser ce mélange à la
     place d’une munition normale (il doit l’annoncer au moment où il charge).
     Lorsqu’il tire cette munition (L), il fait un seul test d’attaque contre
-    toutes les cibles lui faisant face dans un cône de 10 m de long et sur 5 m
+    toutes les cibles lui faisant face dans un cône de 10&nbsp;m de long et sur 5&nbsp;m
     de large. Toutes les cibles dont il atteint la DEF subissent la moitié des
     DM habituels. De plus, le personnage ajoute son rang + 2 à tous les tests
     d’artificier (par exemple pour fabriquer et tirer des feux d’artifice).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: tir-de-grenaille
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -44,11 +44,11 @@ system:
       resolvers:
         - type: ranged
           skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atd"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@arme.dmg / 2'
+            formula: "@arme.dmg / 2"
           target:
             type: none
             number: 0
@@ -70,12 +70,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: int
-          value: '2'
+          value: "2"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: agi
-          value: '2'
+          value: "2"
       conditions: []
       resolvers: []
   cost: -1
@@ -91,11 +91,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740773828309
   lastModifiedBy: eB70hIW5CxiKgFZL
-_key: '!items!wkaBPYkeoCHdQoyC'
-
+_key: "!items!wkaBPYkeoCHdQoyC"

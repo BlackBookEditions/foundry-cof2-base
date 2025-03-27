@@ -4,12 +4,12 @@ type: capacity
 img: icons/svg/combat.svg
 _id: GIuYPoQI7vRyWbpL
 system:
-  description: "<p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que de les esquiver.\_<br />Il peut choisir de remplacer son AGI par sa CON pour calculer sa DEF (la limitation du bonus maximal en fonction de l’armure portée s’applique toujours, mais cette fois elle s’applique à la CON).<br />Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en DEF et ce bonus passe à +2 au rang 4.</p>"
-  source: ''
-  origin: ''
+  description: "<p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que de les esquiver.  Il peut choisir de remplacer son AGI par sa CON pour calculer sa DEF (la limitation du bonus maximal en fonction de l’armure portée s’applique toujours, mais cette fois elle s’applique à la CON). Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en DEF et ce bonus passe à +2 au rang&nbsp;4.</p>"
+  source: ""
+  origin: ""
   slug: peau-de-pierre
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.GIuYPoQI7vRyWbpL
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -38,7 +38,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.GIuYPoQI7vRyWbpL
           subtype: combat
           target: def
-          value: '@rang[1,0,0,1,0]'
+          value: "@rang[1,0,0,1,0]"
       resolvers: []
   cost: -1
 effects: []
@@ -53,11 +53,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740824990660
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!GIuYPoQI7vRyWbpL'
-
+_key: "!items!GIuYPoQI7vRyWbpL"

@@ -115,37 +115,37 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
         <p style="text-align: justify;">Un golem de chair ressemble
-        approximativement au monstre de Frankenstein. Il fait preuve d&rsquo;une
-        force inhumaine. Cr&eacute;ature &agrave; la fois pitoyable et
-        effrayante, le golem est une cr&eacute;ature<br>imposante mesurant
-        presque 2,50 m constitu&eacute;e de l&rsquo;assemblage grossier de
+        approximativement au monstre de Frankenstein. Il fait preuve d’une
+        force inhumaine. Créature à la fois pitoyable et
+        effrayante, le golem est une créature<br>imposante mesurant
+        presque 2,50&nbsp;m constituée de l’assemblage grossier de
         divers cadavres.</p>
     languages: []
     properties: >-
-      <p><strong>R&eacute;sistance</strong></p>
+      <p><strong>Résistance</strong></p>
 
-      <p>Le golem divise par 2 tous les DM &eacute;l&eacute;mentaires (feu,
-      froid, acide) ainsi que les DM contondants.<br>Il est immunis&eacute; au
+      <p>Le golem divise par 2 tous les DM élémentaires (feu,
+      froid, acide) ainsi que les DM contondants.<br>Il est immunisé au
       poison.</p>
 
-      <p><strong>ABSORBER L&rsquo;&Eacute;LECTRICIT&Eacute;</strong></p>
+      <p><strong>ABSORBER L’éLECTRICITé</strong></p>
 
-      <p>Non seulement le golem de chair est immunis&eacute; &agrave;
-      l&rsquo;&eacute;lectricit&eacute;, mais en plus les DM de ce type lui
-      permettent de gu&eacute;rir de ses blessures. Il
-      r&eacute;g&eacute;n&egrave;re 1 PV pour 3 points de DM
-      d&rsquo;&eacute;lectricit&eacute; qui lui sont inflig&eacute;s.</p>
+      <p>Non seulement le golem de chair est immunisé à
+      l’électricité, mais en plus les DM de ce type lui
+      permettent de guérir de ses blessures. Il
+      régénère 1 PV pour 3 points de DM
+      d’électricité qui lui sont infligés.</p>
 prototypeToken:
   name: Golem de chair
   displayName: 0
@@ -164,7 +164,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -228,9 +228,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: poings-2-attaques
       subtype: melee
       learned: true
@@ -243,8 +243,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -258,9 +258,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+11'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+11"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d10+6
               target:
@@ -278,7 +278,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -286,7 +286,7 @@ items:
       lastModifiedBy: null
     _id: ddmteaQCzSv3l1R6
     sort: 300000
-    _key: '!actors.items!RFjzHpwUck8Llnz5.ddmteaQCzSv3l1R6'
+    _key: "!actors.items!RFjzHpwUck8Llnz5.ddmteaQCzSv3l1R6"
   - folder: uVNfyNGbfZsNuFix
     name: UNE PETITE DERNIÈRE
     type: capacity
@@ -297,10 +297,10 @@ items:
         <p>Si un adversaire au contact tente de s’éloigner de la créature
         (généralement pour fuir), elle obtient une attaque de contact gratuite
         contre lui.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: une-petite-derniere
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -322,27 +322,27 @@ items:
     _stats:
       compendiumSource: Item.3rn6YAKWX0eYFIJc
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!RFjzHpwUck8Llnz5.JGW4i1qZII2lTY6t'
+    _key: "!actors.items!RFjzHpwUck8Llnz5.JGW4i1qZII2lTY6t"
   - folder: Jc9oocmI3B4cVSRG
     name: TAPE DUR
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si la créature obtient <strong>17 à 20 au
+        <p>Si la créature obtient <strong>17 à 20 au
         dé du test d’attaque</strong>, l’attaque est automatiquement réussie. De
         surcroît, la victime doit réussir un <strong>test de CON difficulté 16
         ou</strong> être <strong>étourdie</strong> pendant 1 round.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: tape-dur
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -363,7 +363,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -371,7 +371,7 @@ items:
       lastModifiedBy: null
     _id: KC4oYoMbMoDTHVD7
     sort: 1500000
-    _key: '!actors.items!RFjzHpwUck8Llnz5.KC4oYoMbMoDTHVD7'
+    _key: "!actors.items!RFjzHpwUck8Llnz5.KC4oYoMbMoDTHVD7"
   - folder: Jc9oocmI3B4cVSRG
     name: ENRAGE
     type: capacity
@@ -379,13 +379,13 @@ items:
     system:
       description: >-
         <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée.
-        Elle ignore les pénalités de<br />douleur ou la peur, augmente de
+        Elle ignore les pénalités de douleur ou la peur, augmente de
         <strong>+3 sa valeur d’attaque au contact et ses DM de +1d6</strong>.
-        Elle<br />peut encore agir un tour complet après avoir atteint 0 PV.</p>
-      source: ''
-      origin: ''
+        Elle peut encore agir un tour complet après avoir atteint 0 PV.</p>
+      source: ""
+      origin: ""
       slug: enrage
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -399,8 +399,8 @@ items:
       actions:
         - source: Actor.RFjzHpwUck8Llnz5.Item.cw0vnlAEIoEW6ncw
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -416,14 +416,14 @@ items:
               source: Actor.RFjzHpwUck8Llnz5.Item.cw0vnlAEIoEW6ncw
               subtype: combat
               target: melee
-              value: '3'
-              additionalInfos: ''
+              value: "3"
+              additionalInfos: ""
             - type: capacity
               source: Actor.RFjzHpwUck8Llnz5.Item.cw0vnlAEIoEW6ncw
               subtype: combat
               target: dam
               value: +1d6
-              additionalInfos: ''
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -434,7 +434,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -442,7 +442,7 @@ items:
       lastModifiedBy: null
     _id: cw0vnlAEIoEW6ncw
     sort: 1300000
-    _key: '!actors.items!RFjzHpwUck8Llnz5.cw0vnlAEIoEW6ncw'
+    _key: "!actors.items!RFjzHpwUck8Llnz5.cw0vnlAEIoEW6ncw"
   - folder: Jc9oocmI3B4cVSRG
     name: RÉSISTANCE
     type: capacity
@@ -450,11 +450,11 @@ items:
     system:
       description: >-
         <p>Le golem divise par 2 tous les DM élémentaires (feu, froid, acide)
-        ainsi que les DM contondants.<br />Il est immunisé au poison.</p>
-      source: ''
-      origin: ''
+        ainsi que les DM contondants. Il est immunisé au poison.</p>
+      source: ""
+      origin: ""
       slug: resistance
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -475,7 +475,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OwwRCR7KWvWEXNLn
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -483,7 +483,7 @@ items:
       lastModifiedBy: null
     _id: WIqN9lQwoIA0aDxy
     sort: 0
-    _key: '!actors.items!RFjzHpwUck8Llnz5.WIqN9lQwoIA0aDxy'
+    _key: "!actors.items!RFjzHpwUck8Llnz5.WIqN9lQwoIA0aDxy"
 effects: []
 sort: 0
 ownership:
@@ -493,11 +493,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!RFjzHpwUck8Llnz5'
-
+_key: "!actors!RFjzHpwUck8Llnz5"

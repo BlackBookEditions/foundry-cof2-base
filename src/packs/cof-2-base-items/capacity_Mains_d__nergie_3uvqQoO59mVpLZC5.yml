@@ -5,17 +5,17 @@ img: icons/svg/combat.svg
 _id: 3uvqQoO59mVpLZC5
 system:
   description: >-
-    <p style="text-align:justify">Par un effort de concentration, le moine peut
+    <p>Par un effort de concentration, le moine peut
     rendre ses mains intangibles. Au prix d’une action limitée, à son tour, il
     peut faire une attaque à mains nues avec un bonus en attaque égal au rang +
     2. De plus, même lorsqu’il n’utilise pas Mains d’énergie, toutes les<br
     />attaques à mains nues du moine sont considérées comme magiques et il peut
-    choisir de<br />remplacer sa FOR aux DM par sa VOL</p>
-  source: ''
-  origin: ''
+    choisir de remplacer sa FOR aux DM par sa VOL.</p>
+  source: ""
+  origin: ""
   slug: mains-denergie
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -28,8 +28,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.3uvqQoO59mVpLZC5
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -42,9 +42,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc + 2 + @rang'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc + 2 + @rang"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d3 + @for
           target:
@@ -65,11 +65,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828882356
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!3uvqQoO59mVpLZC5'
-
+_key: "!items!3uvqQoO59mVpLZC5"

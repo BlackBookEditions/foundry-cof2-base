@@ -5,19 +5,19 @@ img: icons/svg/combat.svg
 _id: ETp4bRHt24C5rQvh
 system:
   description: >-
-    <p style="text-align:justify">Le magicien fait apparaître une protection
+    <p>Le magicien fait apparaître une protection
     magique chatoyante qui recouvre son corps et produit des étincelles à chaque
-    fois qu’il encaisse un coup. Pendant INT minutes, la DEF<br />du magicien
+    fois qu’il encaisse un coup. Pendant INT minutes, la DEF du magicien
     augmente de +3. Cette valeur passe à +4 lorsque le personnage atteint le
-    rang 3 dans la voie et augmente de +1 supplémentaire chaque fois que le
-    personnage atteint le rang 5 dans une voie de magicien (ou dans la voie du
+    rang&nbsp;3 dans la voie et augmente de +1 supplémentaire chaque fois que le
+    personnage atteint le rang&nbsp;5 dans une voie de magicien (ou dans la voie du
     mage). Ce sort ne se cumule jamais à une armure (il est considéré comme une
     armure).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: armure-de-mana
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -30,8 +30,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ETp4bRHt24C5rQvh
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -46,7 +46,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ETp4bRHt24C5rQvh
           subtype: combat
           target: def
-          value: '@rang[3,0,0,1,0] + @allrank[5]'
+          value: "@rang[3,0,0,1,0] + @allrank[5]"
       resolvers: []
   cost: -1
 effects: []
@@ -61,11 +61,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828288127
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!ETp4bRHt24C5rQvh'
-
+_key: "!items!ETp4bRHt24C5rQvh"

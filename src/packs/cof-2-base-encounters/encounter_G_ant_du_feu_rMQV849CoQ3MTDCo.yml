@@ -115,25 +115,25 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: huge
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Les g&eacute;ants du feu sont de grande cr&eacute;ature &agrave; la
-        peau charbonneuse, aux cheveux et &agrave; la barbe de feu. Le front des
-        m&acirc;les est orn&eacute; de cornes recourb&eacute;es, plus ou moins
-        longues selon leur &acirc;ge.<br>Ils aiment arborer des tatouages et des
-        d&eacute;corations en or.</p>
+        <p>Les géants du feu sont de grande créature à la
+        peau charbonneuse, aux cheveux et à la barbe de feu. Le front des
+        mâles est orné de cornes recourbées, plus ou moins
+        longues selon leur âge.<br>Ils aiment arborer des tatouages et des
+        décorations en or.</p>
     languages: []
     properties: |-
-      <p><strong>IMMUNIS&Eacute; AU FEU :</strong></p>
-      <p>Le g&eacute;ant du feu est immunis&eacute; aux DM de feu</p>
+      <p><strong>IMMUNISé AU FEU&nbsp;:</strong></p>
+      <p>Le géant du feu est immunisé aux DM de feu.</p>
 prototypeToken:
   name: Géant du feu
   displayName: 0
@@ -152,7 +152,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -216,9 +216,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: marteau-de-guerre
       subtype: melee
       learned: true
@@ -231,8 +231,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -246,9 +246,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 4d8+12
               target:
@@ -266,7 +266,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -274,15 +274,15 @@ items:
       lastModifiedBy: null
     _id: pQD5cjuvLw8xg7Q1
     sort: 300000
-    _key: '!actors.items!rMQV849CoQ3MTDCo.pQD5cjuvLw8xg7Q1'
+    _key: "!actors.items!rMQV849CoQ3MTDCo.pQD5cjuvLw8xg7Q1"
   - folder: eRnLMLNnqgpvpmpq
     name: Lancer de rocher
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: lancer-de-rocher
       subtype: ranged
       learned: true
@@ -295,8 +295,8 @@ items:
       actions:
         - source: Item.Kkq7VvDKKjrdECbA
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -310,9 +310,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d8+12
               target:
@@ -330,7 +330,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOLmg7GCgT9dAjzV
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -338,17 +338,17 @@ items:
       lastModifiedBy: null
     _id: wkPGzgFX31s9BPaq
     sort: 100000
-    _key: '!actors.items!rMQV849CoQ3MTDCo.wkPGzgFX31s9BPaq'
+    _key: "!actors.items!rMQV849CoQ3MTDCo.wkPGzgFX31s9BPaq"
   - folder: Jc9oocmI3B4cVSRG
     name: FAUCHAGE
     type: capacity
     img: icons/svg/combat.svg
     system:
-      description: "<p>Sur <strong>15 à 20 au test d’attaque</strong>, si l’attaque est réussie, la victime doit réussir au choix un<br /><strong>test de FOR ou d’AGI difficulté 20 ou être renversée</strong>.\_</p>"
-      source: ''
-      origin: ''
+      description: "<p>Sur <strong>15 à 20 au test d’attaque</strong>, si l’attaque est réussie, la victime doit réussir au choix un <strong>test de FOR ou d’AGI difficulté 20 ou être renversée</strong>.</p>"
+      source: ""
+      origin: ""
       slug: fauchage
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -369,7 +369,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -377,7 +377,7 @@ items:
       lastModifiedBy: null
     _id: mRLkRQY2XsmIFqTh
     sort: 2900000
-    _key: '!actors.items!rMQV849CoQ3MTDCo.mRLkRQY2XsmIFqTh'
+    _key: "!actors.items!rMQV849CoQ3MTDCo.mRLkRQY2XsmIFqTh"
   - folder: uVNfyNGbfZsNuFix
     name: BALAYAGE
     type: capacity
@@ -385,15 +385,15 @@ items:
     _id: sZUItGnfmtjL96e2
     system:
       description: >-
-        <p style="text-align:justify">La créature utilise sa grande taille pour
-        affecter deux créatures à son contact d’un seul coup<br />de patte/arme.
-        Faites un seul test et comparez‑le à la DEF des deux cibles. Si les deux
+        <p>La créature utilise sa grande taille pour
+        affecter deux créatures à son contact d’un seul coup de patte/arme.
+        Faites un seul test et comparez-le à la DEF des deux cibles. Si les deux
         cibles sont touchées, la cible secondaire (désignée par le MJ) subit la
         moitié des DM.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: balayage
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -407,8 +407,8 @@ items:
       actions:
         - source: Actor.rMQV849CoQ3MTDCo.Item.sZUItGnfmtjL96e2
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -422,9 +422,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: 4d8+16
               target:
@@ -444,13 +444,13 @@ items:
     _stats:
       compendiumSource: Item.zCeR5RGGFQeYnQSR
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!rMQV849CoQ3MTDCo.sZUItGnfmtjL96e2'
+    _key: "!actors.items!rMQV849CoQ3MTDCo.sZUItGnfmtjL96e2"
 effects: []
 sort: 0
 ownership:
@@ -460,11 +460,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!rMQV849CoQ3MTDCo'
-
+_key: "!actors!rMQV849CoQ3MTDCo"

@@ -4,9 +4,9 @@ type: equipment
 img: icons/svg/item-bag.svg
 _id: SK30DhUebEq1qQLC
 system:
-  description: "<p>Un baton entre les mains d'un forgesort de la voie des artefacts :</p>\n<p>\_</p>\n<p>Lorsqu’il utilise son bâton, le forgesort inflige [1d4°+INT] DM magiques. À partir du rang 3, au prix d’une action limitée, il peut utiliser sa valeur d’attaque magique pour une attaque au contact et il inflige [2d4°+INT] DM dans un éclair d’énergie ! Si le forgesort fait l’acquisition d’un bâton magique, les bonus de celui‑ci s’ajouteront normalement à l’attaque et aux DM (de même pour le bonus de feu de la voie du métal).</p>"
-  source: ''
-  origin: ''
+  description: "<p>Un baton entre les mains d'un forgesort de la voie des artefacts&nbsp;:.</p><p>Lorsqu’il utilise son bâton, le forgesort inflige [1d4°+INT] DM magiques. À partir du rang&nbsp;3, au prix d’une action limitée, il peut utiliser sa valeur d’attaque magique pour une attaque au contact et il inflige [2d4°+INT] DM dans un éclair d’énergie&nbsp;! Si le forgesort fait l’acquisition d’un bâton magique, les bonus de celui-ci s’ajouteront normalement à l’attaque et aux DM (de même pour le bonus de feu de la voie du métal).</p>"
+  source: ""
+  origin: ""
   slug: baton-de-forgesort
   tags: []
   subtype: weapon
@@ -25,7 +25,7 @@ system:
     unit: kg
   price:
     value: 0
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -52,9 +52,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '10'
+            formula: "@atc"
+            crit: ""
+            difficulty: "10"
           dmg:
             formula: 1d4° + @int
           target:
@@ -78,9 +78,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '10'
+            formula: "@atm"
+            crit: ""
+            difficulty: "10"
           dmg:
             formula: 2d4° + @int
           target:
@@ -100,11 +100,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!SK30DhUebEq1qQLC'
-
+_key: "!items!SK30DhUebEq1qQLC"

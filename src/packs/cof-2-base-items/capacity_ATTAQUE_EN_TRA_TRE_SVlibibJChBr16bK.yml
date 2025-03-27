@@ -5,12 +5,12 @@ img: icons/svg/combat.svg
 system:
   description: >-
     <p>Si le worg attaque en même temps qu’un autre worg, de dos ou par
-    surprise, il réalise<br />une attaque sournoise avec un dé bonus et +2d4
+    surprise, il réalise une attaque sournoise avec un dé bonus et +2d4
     DM.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: attaque-en-traitre
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -24,8 +24,8 @@ system:
   actions:
     - source: Item.YwUB1gnluSnTTFBu
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -39,9 +39,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '+7'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "+7"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6+5 + 2d4
           target:
@@ -58,7 +58,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742418304515
@@ -66,5 +66,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: SVlibibJChBr16bK
 sort: 200000
-_key: '!items!SVlibibJChBr16bK'
-
+_key: "!items!SVlibibJChBr16bK"

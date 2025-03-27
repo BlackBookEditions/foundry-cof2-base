@@ -115,18 +115,18 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Troll
   displayName: 0
@@ -145,7 +145,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -209,9 +209,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: griffes-et-gourdin-2-attaques
       subtype: melee
       learned: true
@@ -224,8 +224,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -239,9 +239,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+6
               target:
@@ -259,7 +259,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -267,15 +267,15 @@ items:
       lastModifiedBy: null
     _id: PFTpYytCIhs7KCXp
     sort: 300000
-    _key: '!actors.items!ZXQKmRyQpqhzIdtl.PFTpYytCIhs7KCXp'
+    _key: "!actors.items!ZXQKmRyQpqhzIdtl.PFTpYytCIhs7KCXp"
   - folder: eRnLMLNnqgpvpmpq
     name: Lancer de rocher
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: lancer-de-rocher
       subtype: ranged
       learned: true
@@ -288,8 +288,8 @@ items:
       actions:
         - source: Item.Kkq7VvDKKjrdECbA
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -303,9 +303,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6 + 6
               target:
@@ -323,7 +323,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOLmg7GCgT9dAjzV
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -331,7 +331,7 @@ items:
       lastModifiedBy: null
     _id: PnrDl2F3AWeNXDue
     sort: 100000
-    _key: '!actors.items!ZXQKmRyQpqhzIdtl.PnrDl2F3AWeNXDue'
+    _key: "!actors.items!ZXQKmRyQpqhzIdtl.PnrDl2F3AWeNXDue"
   - folder: Jc9oocmI3B4cVSRG
     name: FAUCHAGE
     type: capacity
@@ -339,13 +339,13 @@ items:
     system:
       description: >-
         <p>Sur 17 à 20 au test d’attaque, si l’attaque est réussie, la victime
-        doit réussir au choix un<br /><strong>test de FOR ou d’AGI difficulté 16
-        ou être renversée</strong>. La créature retranche 3 à tous les<br />DM
-        subis (RD 3).</p>
-      source: ''
-      origin: ''
+        doit réussir au choix un <strong>test de FOR ou d’AGI difficulté 16
+        ou être renversée</strong>. La créature retranche 3 à tous les DM
+        subis (RD&nbsp;3).</p>
+      source: ""
+      origin: ""
       slug: fauchage
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -366,7 +366,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -374,7 +374,7 @@ items:
       lastModifiedBy: null
     _id: OCN3L82ZBLOczWWu
     sort: 5200000
-    _key: '!actors.items!ZXQKmRyQpqhzIdtl.OCN3L82ZBLOczWWu'
+    _key: "!actors.items!ZXQKmRyQpqhzIdtl.OCN3L82ZBLOczWWu"
   - folder: uVNfyNGbfZsNuFix
     name: VITALITÉ SURNATURELLE
     type: capacity
@@ -383,14 +383,14 @@ items:
     system:
       description: >-
         <p>Un troll récupère <strong>5 PV par tour</strong>, sauf si les DM
-        subis sont de feu ou d’acide. Même à 0 PV, il<br />continue à régénérer
+        subis sont de feu ou d’acide. Même à 0 PV, il continue à régénérer
         les tissus morts à moins qu’on ne brûle son corps ou si un PJ utilise<br
         />une action limitée pour achever la créature (par exemple, en séparant
         la tête du corps).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vitalite-surnaturelle
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -404,8 +404,8 @@ items:
       actions:
         - source: Actor.ZXQKmRyQpqhzIdtl.Item.XJP6pJ9t5OPqQ22v
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: heal
           img: icons/svg/d20-highlight.svg
           properties:
@@ -419,7 +419,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: '5'
+                formula: "5"
               target:
                 type: self
                 number: 0
@@ -438,13 +438,13 @@ items:
     _stats:
       compendiumSource: Item.4imcR1mAgh7znOu7
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ZXQKmRyQpqhzIdtl.XJP6pJ9t5OPqQ22v'
+    _key: "!actors.items!ZXQKmRyQpqhzIdtl.XJP6pJ9t5OPqQ22v"
 effects: []
 sort: 0
 ownership:
@@ -454,11 +454,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!ZXQKmRyQpqhzIdtl'
-
+_key: "!actors!ZXQKmRyQpqhzIdtl"

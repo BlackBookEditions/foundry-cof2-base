@@ -5,16 +5,16 @@ img: icons/svg/combat.svg
 _id: sDxj4cifWOeZMlkg
 system:
   description: >-
-    <p style="text-align:justify">Le sorcier acquiert une beauté fascinante pour
+    <p>Le sorcier acquiert une beauté fascinante pour
     INT minutes. Il gagne un dé bonus aux tests de CHA ainsi qu’une attaque de
     contact nécessitant un test d’attaque magique (contre DEF, action
     d’attaque), qui inflige [1d4°+INT] DM. Le sorcier récupère autant de PV
-    (sans dépasser son maximum de PV) que la cible en a perdu</p>
-  source: ''
-  origin: ''
+    (sans dépasser son maximum de PV) que la cible en a perdu.</p>
+  source: ""
+  origin: ""
   slug: beaute-de-la-succube
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -43,12 +43,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
           subtype: bonusDice
           target: cha
-          value: '0'
+          value: "0"
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -61,9 +61,9 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4° + @int
           target:
@@ -84,11 +84,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828308252
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!sDxj4cifWOeZMlkg'
-
+_key: "!items!sDxj4cifWOeZMlkg"

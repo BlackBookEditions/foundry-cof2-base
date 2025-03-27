@@ -114,18 +114,18 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Garde de la ville
@@ -145,7 +145,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -210,9 +210,9 @@ items:
     img: icons/svg/sword.svg
     _id: 63RmDRK7ooPJEeJm
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       subtype: melee
       learned: true
@@ -226,7 +226,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -240,9 +240,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+2
               target:
@@ -261,22 +261,22 @@ items:
     _stats:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ayVEbVXzg1p5RWI4.63RmDRK7ooPJEeJm'
+    _key: "!actors.items!ayVEbVXzg1p5RWI4.63RmDRK7ooPJEeJm"
   - folder: eRnLMLNnqgpvpmpq
     name: Arbalète
     type: attack
     img: icons/svg/sword.svg
     _id: skJIl7p8nmx9PP7C
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: arbalete
       subtype: ranged
       learned: true
@@ -290,7 +290,7 @@ items:
         - source: Item.Kkq7VvDKKjrdECbA
           indice: 0
           label: Arbalète
-          chatFlavor: ''
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -304,9 +304,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6
               target:
@@ -325,22 +325,22 @@ items:
     _stats:
       compendiumSource: Item.Kkq7VvDKKjrdECbA
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ayVEbVXzg1p5RWI4.skJIl7p8nmx9PP7C'
+    _key: "!actors.items!ayVEbVXzg1p5RWI4.skJIl7p8nmx9PP7C"
   - folder: E0IHxlFlZyFSfQGY
     name: Arbalète légère
     type: equipment
     img: icons/svg/item-bag.svg
     _id: iJ3aFguB4Yg42nIh
     system:
-      description: <p>Nécessite une action de mouvement pour être rechargée</p>
-      source: ''
-      origin: ''
+      description: <p>Nécessite une action de mouvement pour être rechargée.</p>
+      source: ""
+      origin: ""
       slug: arbalete-legere
       tags: []
       subtype: weapon
@@ -359,7 +359,7 @@ items:
         unit: kg
       price:
         value: 10
-        unit: ''
+        unit: ""
       rarity: common
       equipped: false
       properties:
@@ -385,9 +385,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '@ran'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "@ran"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d4
               target:
@@ -421,22 +421,22 @@ items:
     _stats:
       compendiumSource: Item.acGjjV3uAZpTT30J
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ayVEbVXzg1p5RWI4.iJ3aFguB4Yg42nIh'
+    _key: "!actors.items!ayVEbVXzg1p5RWI4.iJ3aFguB4Yg42nIh"
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
     img: icons/svg/item-bag.svg
     _id: uhwi3FDrCpAqymYD
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       tags: []
       subtype: weapon
@@ -455,7 +455,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ''
+        unit: ""
       rarity: common
       equipped: false
       properties:
@@ -481,9 +481,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8
               target:
@@ -517,13 +517,13 @@ items:
     _stats:
       compendiumSource: Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ayVEbVXzg1p5RWI4.uhwi3FDrCpAqymYD'
+    _key: "!actors.items!ayVEbVXzg1p5RWI4.uhwi3FDrCpAqymYD"
 effects: []
 sort: 0
 ownership:
@@ -533,11 +533,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454182007
   modifiedTime: 1742454182007
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!ayVEbVXzg1p5RWI4'
-
+_key: "!actors!ayVEbVXzg1p5RWI4"

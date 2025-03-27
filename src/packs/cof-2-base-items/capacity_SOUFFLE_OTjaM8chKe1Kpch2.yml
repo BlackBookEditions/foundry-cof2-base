@@ -4,18 +4,18 @@ type: capacity
 img: icons/svg/combat.svg
 system:
   description: >-
-    <p style="text-align:justify">Le souffle est une attaque de zone affectant
-    toutes les créatures dans un cône de 10 m de<br />long sur 10 m de large.
+    <p>Le souffle est une attaque de zone affectant
+    toutes les créatures dans un cône de 10&nbsp;m de long sur 10&nbsp;m de large.
     L’attaque inflige automatiquement (pas de test d’attaque) <strong>6d6+9
-    DM</strong>.<br />Les DM sont divisés par deux si la victime réussit un test
+    DM</strong>. Les DM sont divisés par deux si la victime réussit un test
     de <strong>AGI difficulté 15</strong>. La créature doit attendre <strong>2d4
     rounds</strong> avant d’utiliser à nouveau son souffle après chaque
-    utilisation</p>
-  source: ''
-  origin: ''
+    utilisation.</p>
+  source: ""
+  origin: ""
   slug: souffle
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -30,8 +30,8 @@ system:
   actions:
     - source: Item.sbyiB9c6VtXllJl6
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -45,9 +45,9 @@ system:
       resolvers:
         - type: ranged
           skill:
-            formula: '20'
-            crit: '0'
-            difficulty: '0'
+            formula: "20"
+            crit: "0"
+            difficulty: "0"
           dmg:
             formula: 6d6+9
           target:
@@ -63,7 +63,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742109888495
@@ -71,5 +71,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: OTjaM8chKe1Kpch2
 sort: 4200000
-_key: '!items!OTjaM8chKe1Kpch2'
-
+_key: "!items!OTjaM8chKe1Kpch2"

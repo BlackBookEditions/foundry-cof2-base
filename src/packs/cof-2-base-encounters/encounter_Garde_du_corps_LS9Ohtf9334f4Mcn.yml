@@ -114,20 +114,20 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
     properties: >-
-      <p><strong>Immunis&eacute; &agrave; : </strong>Surpris, Immobilis&eacute;,
-      Renvers&eacute; et d&eacute;sarm&eacute;</p>
+      <p><strong>Immunisé à&nbsp;:</strong>Surpris, Immobilisé,
+      Renversé et désarmé.</p>
   magic: 0
 prototypeToken:
   name: Garde du corps
@@ -147,7 +147,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -212,9 +212,9 @@ items:
     img: icons/svg/sword.svg
     _id: 9DuUuSnPA4giy7IV
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       subtype: melee
       learned: true
@@ -228,7 +228,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -242,9 +242,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+6"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+3
               target:
@@ -263,13 +263,13 @@ items:
     _stats:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!LS9Ohtf9334f4Mcn.9DuUuSnPA4giy7IV'
+    _key: "!actors.items!LS9Ohtf9334f4Mcn.9DuUuSnPA4giy7IV"
   - folder: uVNfyNGbfZsNuFix
     name: Garde du corps
     type: capacity
@@ -280,11 +280,11 @@ items:
         <p>La créature peut désigner gratuitement une cible à son contact chaque
         round (ce peut être une créature, mais aussi un objet). Elle réduit tous
         les DM que la cible subit de 5 points. Elle ne peut pas se désigner
-        elle‑même.</p>
-      source: ''
-      origin: ''
+        elle-même.</p>
+      source: ""
+      origin: ""
       slug: garde-du-corps
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -306,13 +306,13 @@ items:
     _stats:
       compendiumSource: Item.QPQqgsA5dysFcc9S
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!LS9Ohtf9334f4Mcn.EYELAebkZOBoBt7Q'
+    _key: "!actors.items!LS9Ohtf9334f4Mcn.EYELAebkZOBoBt7Q"
   - folder: uVNfyNGbfZsNuFix
     name: Inamovible
     type: capacity
@@ -320,14 +320,14 @@ items:
     _id: bxMUNGp8TGg2ihU6
     system:
       description: >-
-        <p>La créature est immunisée aux états préjudiciables suivants :
+        <p>La créature est immunisée aux états préjudiciables suivants&nbsp;:
         Surpris, Immobilisé, Renversé et elle ne peut être désarmée. De plus,
         elle ne subit aucun DM de la capacité Attaque sournoise du voleur ou
         d’autres capacités similaires.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: inamovible
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -341,7 +341,7 @@ items:
         - source: Actor.LS9Ohtf9334f4Mcn.Item.bxMUNGp8TGg2ihU6
           indice: 0
           label: Inamovible
-          chatFlavor: ''
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -355,8 +355,8 @@ items:
               source: Actor.LS9Ohtf9334f4Mcn.Item.bxMUNGp8TGg2ihU6
               subtype: state
               target: movementImpairment
-              value: '0'
-              additionalInfos: ''
+              value: "0"
+              additionalInfos: ""
           conditions: []
           resolvers: []
       manaCost: -1
@@ -370,13 +370,13 @@ items:
     _stats:
       compendiumSource: Item.KX3GNQ1I4tzdRc6o
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!LS9Ohtf9334f4Mcn.bxMUNGp8TGg2ihU6'
+    _key: "!actors.items!LS9Ohtf9334f4Mcn.bxMUNGp8TGg2ihU6"
 effects: []
 sort: 0
 ownership:
@@ -386,11 +386,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454182007
   modifiedTime: 1742454182007
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!LS9Ohtf9334f4Mcn'
-
+_key: "!actors!LS9Ohtf9334f4Mcn"

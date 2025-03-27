@@ -115,23 +115,23 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Le gobelin &laquo; peau verte &raquo; est une petite cr&eacute;ature
-        &agrave; la peau gris&acirc;tre d&rsquo;environ un m&egrave;tre
+        <p>Le gobelin &laquo; peau verte &raquo; est une petite créature
+        à la peau grisâtre d’environ un mètre
         de<br>haut, cruelle, vicieuse et qui attaque en bande.<br>Les gobelins
-        sont g&eacute;n&eacute;ralement couards : bless&eacute;s ou en
-        sous‑nombre, ils s&rsquo;enfuient la plupart du temps.</p>
+        sont généralement couards&nbsp;: blessés ou en
+        sous-nombre, ils s’enfuient la plupart du temps.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Gobelin de base
   displayName: 0
@@ -150,7 +150,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -214,9 +214,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: attaque-contact
       subtype: melee
       learned: true
@@ -230,7 +230,7 @@ items:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
           label: attaque contact
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -244,9 +244,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4-1
               target:
@@ -264,7 +264,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -272,7 +272,7 @@ items:
       lastModifiedBy: null
     _id: QS9gQAO6yGsXIVVi
     sort: 300000
-    _key: '!actors.items!zJaeLMHah6w9qgF6.QS9gQAO6yGsXIVVi'
+    _key: "!actors.items!zJaeLMHah6w9qgF6.QS9gQAO6yGsXIVVi"
   - folder: uVNfyNGbfZsNuFix
     name: ATTAQUE EN MEUTE
     type: capacity
@@ -283,10 +283,10 @@ items:
         <p>Lorsque au moins 2 gobelins attaquent la même cible en même temps,
         ils bénéficient d’un bonus de +2 en attaque (bonus qui peut s’ajouter à
         une éventuelle attaque groupée).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: attaque-en-meute
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -300,8 +300,8 @@ items:
       actions:
         - source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -317,14 +317,14 @@ items:
               source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
               subtype: combat
               target: melee
-              value: '+2'
-              additionalInfos: ''
+              value: "+2"
+              additionalInfos: ""
             - type: capacity
               source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
               subtype: combat
               target: ranged
-              value: '+2'
-              additionalInfos: ''
+              value: "+2"
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -336,13 +336,13 @@ items:
     _stats:
       compendiumSource: Item.VN5p3ZgYHQqLqV6p
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!zJaeLMHah6w9qgF6.xxQ9JUNtCPAXlmyo'
+    _key: "!actors.items!zJaeLMHah6w9qgF6.xxQ9JUNtCPAXlmyo"
 effects: []
 sort: 0
 ownership:
@@ -352,11 +352,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!zJaeLMHah6w9qgF6'
-
+_key: "!actors!zJaeLMHah6w9qgF6"

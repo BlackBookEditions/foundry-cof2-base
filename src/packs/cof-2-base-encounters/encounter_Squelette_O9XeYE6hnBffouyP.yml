@@ -115,26 +115,26 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>En animant par magie les ossements d&rsquo;une cr&eacute;ature
-        d&eacute;funte, on obtient un mort‑vivant assez fragile appel&eacute; le
-        squelette. Un squelette est une cr&eacute;ature sans cervelle
-        immunis&eacute;e &agrave; toute forme d&rsquo;attaque mentale. Et non,
-        il ne parle pas !</p>
+        <p>En animant par magie les ossements d’une créature
+        défunte, on obtient un mort-vivant assez fragile appelé le
+        squelette. Un squelette est une créature sans cervelle
+        immunisée à toute forme d’attaque mentale. Et non,
+        il ne parle pas&nbsp;!.</p>
     languages: []
     properties: >-
-      <p><strong>SANS ESPRIT :</strong> Aucune &acirc;me n&rsquo;habite la
-      carcasse morte, le squelette est immunis&eacute; &agrave; tous les sorts
-      qui affectent l&rsquo;esprit.</p>
+      <p><strong>SANS ESPRIT&nbsp;:</strong> Aucune âme n’habite la
+      carcasse morte, le squelette est immunisé à tous les sorts
+      qui affectent l’esprit.</p>
 prototypeToken:
   name: Squelette
   displayName: 0
@@ -153,7 +153,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -217,9 +217,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-ou-autre
       subtype: melee
       learned: true
@@ -232,8 +232,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -247,9 +247,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+1
               target:
@@ -267,7 +267,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -275,7 +275,7 @@ items:
       lastModifiedBy: null
     _id: 2bhCgC6jgCqkYTeF
     sort: 300000
-    _key: '!actors.items!O9XeYE6hnBffouyP.2bhCgC6jgCqkYTeF'
+    _key: "!actors.items!O9XeYE6hnBffouyP.2bhCgC6jgCqkYTeF"
   - folder: Jc9oocmI3B4cVSRG
     name: RÉSISTANCE AUX DM
     type: capacity
@@ -283,11 +283,11 @@ items:
     system:
       description: >-
         <p>Tous les DM infligés à un squelette avec des armes sont divisés par
-        deux, sauf si l’attaquant<br />utilise une arme contondante</p>
-      source: ''
-      origin: ''
+        deux, sauf si l’attaquant utilise une arme contondante.</p>
+      source: ""
+      origin: ""
       slug: resistance-aux-dm
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -308,7 +308,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OwwRCR7KWvWEXNLn
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -316,18 +316,18 @@ items:
       lastModifiedBy: null
     _id: R1cAQldixbyMzibC
     sort: 0
-    _key: '!actors.items!O9XeYE6hnBffouyP.R1cAQldixbyMzibC'
+    _key: "!actors.items!O9XeYE6hnBffouyP.R1cAQldixbyMzibC"
   - folder: uVNfyNGbfZsNuFix
     name: RÉDUCTION DES DM DE FROID
     type: capacity
     img: icons/svg/combat.svg
     _id: Ga46mlsAWZa4EeOp
     system:
-      description: <p>Réduit de 5 tous les DM de froid reçus</p>
-      source: ''
-      origin: ''
+      description: <p>Réduit de 5 tous les DM de froid reçus.</p>
+      source: ""
+      origin: ""
       slug: reduction-des-dm-de-froid
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -349,13 +349,13 @@ items:
     _stats:
       compendiumSource: Item.HHAX95mAsKx6hJNt
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!O9XeYE6hnBffouyP.Ga46mlsAWZa4EeOp'
+    _key: "!actors.items!O9XeYE6hnBffouyP.Ga46mlsAWZa4EeOp"
 effects: []
 sort: 0
 ownership:
@@ -365,11 +365,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!O9XeYE6hnBffouyP'
-
+_key: "!actors!O9XeYE6hnBffouyP"

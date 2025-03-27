@@ -114,31 +114,31 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
       private: >-
-        <p>Ce profil regroupe les diff&eacute;rents types de bandits et de
-        brigands crois&eacute;s sur les routes ainsi que les bandes de pillards
-        ou les soldats d&eacute;mobilis&eacute;s appel&eacute;s
-        &eacute;corcheurs. Vous trouverez &eacute;galement,dans la section des
-        PNJ, des escrimeurs qui peuvent correspondre &agrave; des profils
-        avanc&eacute;s de ce type d&rsquo;adversaires.<br>Un bandit
-        v&eacute;t&eacute;ran peut servir de chef &agrave; un groupe de petites
-        frappes (augmentez son CHA<br>de +1). Un bandit v&eacute;t&eacute;ran
-        accompagn&eacute; de 4 bandits est une rencontre assez difficile
+        <p>Ce profil regroupe les différents types de bandits et de
+        brigands croisés sur les routes ainsi que les bandes de pillards
+        ou les soldats démobilisés appelés
+        écorcheurs. Vous trouverez également,dans la section des
+        PNJ, des escrimeurs qui peuvent correspondre à des profils
+        avancés de ce type d’adversaires.<br>Un bandit
+        vétéran peut servir de chef à un groupe de petites
+        frappes (augmentez son CHA<br>de +1). Un bandit vétéran
+        accompagné de 4 bandits est une rencontre assez difficile
         (entre<br>ordinaire et difficile) pour un groupe de niveau 2.<br>Un chef
-        bandit, ses deux lieutenants (v&eacute;t&eacute;rans) et huit bandits
+        bandit, ses deux lieutenants (vétérans) et huit bandits
         forment une rencontre difficile de niveau 3 ou une rencontre ordinaire
         de niveau 4.</p>
-      public: ''
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Bandit de base
@@ -158,7 +158,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -223,9 +223,9 @@ items:
     img: icons/svg/item-bag.svg
     _id: VGrP405VJqY8DebR
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       tags: []
       subtype: weapon
@@ -244,7 +244,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ''
+        unit: ""
       rarity: common
       equipped: false
       properties:
@@ -272,9 +272,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8
               target:
@@ -306,22 +306,22 @@ items:
     _stats:
       compendiumSource: Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!fGHuCB02KGWvqmsg.VGrP405VJqY8DebR'
+    _key: "!actors.items!fGHuCB02KGWvqmsg.VGrP405VJqY8DebR"
   - folder: E0IHxlFlZyFSfQGY
     name: Arc court
     type: equipment
     img: icons/svg/item-bag.svg
     _id: E3FlOwTNERYQPKWE
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: arc-court
       tags: []
       subtype: weapon
@@ -340,7 +340,7 @@ items:
         unit: kg
       price:
         value: 4
-        unit: ''
+        unit: ""
       rarity: common
       equipped: false
       properties:
@@ -368,9 +368,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6
               target:
@@ -402,22 +402,22 @@ items:
     _stats:
       compendiumSource: Item.qTYcU22ZD6OainA8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!fGHuCB02KGWvqmsg.E3FlOwTNERYQPKWE'
+    _key: "!actors.items!fGHuCB02KGWvqmsg.E3FlOwTNERYQPKWE"
   - folder: eRnLMLNnqgpvpmpq
     name: Epée longue
     type: attack
     img: icons/svg/sword.svg
     _id: KhfKUyu0MMDpC7sy
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       subtype: melee
       learned: true
@@ -431,7 +431,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -445,9 +445,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+1
               target:
@@ -466,22 +466,22 @@ items:
     _stats:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!fGHuCB02KGWvqmsg.KhfKUyu0MMDpC7sy'
+    _key: "!actors.items!fGHuCB02KGWvqmsg.KhfKUyu0MMDpC7sy"
   - folder: eRnLMLNnqgpvpmpq
     name: Arc
     type: attack
     img: icons/svg/sword.svg
     _id: 6IZiZJcPwd2l6ZFa
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: arc
       subtype: melee
       learned: true
@@ -495,7 +495,7 @@ items:
         - source: Item.XSgPQFFuwy6FSfi4
           indice: 0
           label: Arc (30m)
-          chatFlavor: ''
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -509,9 +509,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6
               target:
@@ -530,13 +530,13 @@ items:
     _stats:
       compendiumSource: Item.XSgPQFFuwy6FSfi4
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!fGHuCB02KGWvqmsg.6IZiZJcPwd2l6ZFa'
+    _key: "!actors.items!fGHuCB02KGWvqmsg.6IZiZJcPwd2l6ZFa"
   - folder: uVNfyNGbfZsNuFix
     name: Embuscade
     type: capacity
@@ -545,12 +545,12 @@ items:
     system:
       description: >-
         <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire<br />un test de<strong> PER difficulté
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
         16</strong> ou être surprise.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: embuscade
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -564,7 +564,7 @@ items:
         - source: Actor.fGHuCB02KGWvqmsg.Item.JTf0KEtSsx3BaV0y
           indice: 0
           label: Embuscade
-          chatFlavor: ''
+          chatFlavor: ""
           type: spell
           img: icons/svg/d20-highlight.svg
           properties:
@@ -587,13 +587,13 @@ items:
     _stats:
       compendiumSource: Item.90rhvbVowzwfzz8D
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!fGHuCB02KGWvqmsg.JTf0KEtSsx3BaV0y'
+    _key: "!actors.items!fGHuCB02KGWvqmsg.JTf0KEtSsx3BaV0y"
 effects: []
 sort: 0
 ownership:
@@ -603,11 +603,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454182007
   modifiedTime: 1742454182007
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!fGHuCB02KGWvqmsg'
-
+_key: "!actors!fGHuCB02KGWvqmsg"

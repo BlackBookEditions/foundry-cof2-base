@@ -4,12 +4,12 @@ type: capacity
 img: icons/svg/combat.svg
 _id: ujhEauM4Ag87OJxH
 system:
-  description: "<p style=\"text-align:justify\">Le moine ne mange presque plus, et il peut subsister sans eau et sans sommeil pendant<br />[5 + VOL] jour. Il ne subit aucune pénalité durant cette période. De plus, le moine augmente\_sa CON de +1 et obtient un dé bonus aux tests de CON.</p>"
-  source: ''
-  origin: ''
+  description: "<p>Le moine ne mange presque plus, et il peut subsister sans eau et sans sommeil pendant [5 + VOL] jour. Il ne subit aucune pénalité durant cette période. De plus, le moine augmente sa CON de +1 et obtient un dé bonus aux tests de CON.</p>"
+  source: ""
+  origin: ""
   slug: ascetisme
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -36,12 +36,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
           subtype: ability
           target: con
-          value: '1'
+          value: "1"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
           subtype: bonusDice
           target: con
-          value: '0'
+          value: "0"
       conditions: []
       resolvers: []
   cost: -1
@@ -57,11 +57,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828849446
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!ujhEauM4Ag87OJxH'
-
+_key: "!items!ujhEauM4Ag87OJxH"

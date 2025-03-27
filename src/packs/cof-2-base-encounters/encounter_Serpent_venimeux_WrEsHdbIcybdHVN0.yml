@@ -114,20 +114,20 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: verSmall
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Ce profil correspond &agrave; un serpent d&rsquo;environ un
-        m&egrave;tre de long : crotale, vip&egrave;re, etc.</p>
+        <p>Ce profil correspond à un serpent d’environ un
+        mètre de long&nbsp;: crotale, vipère, etc.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Serpent constricteur
   displayName: 0
@@ -146,7 +146,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -210,9 +210,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure
       subtype: melee
       learned: true
@@ -225,8 +225,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -240,11 +240,11 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
-                formula: '1'
+                formula: "1"
               target:
                 type: none
                 number: 0
@@ -260,7 +260,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -268,7 +268,7 @@ items:
       lastModifiedBy: null
     _id: DijYmoAm6TnLxSHw
     sort: 300000
-    _key: '!actors.items!WrEsHdbIcybdHVN0.DijYmoAm6TnLxSHw'
+    _key: "!actors.items!WrEsHdbIcybdHVN0.DijYmoAm6TnLxSHw"
   - folder: Jc9oocmI3B4cVSRG
     name: EMBUSCADE
     type: capacity
@@ -276,17 +276,17 @@ items:
     system:
       description: >-
         <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire<br />un test de<strong> PER difficulté
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
         15</strong> ou être surprise.</p>
 
         <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d4 DM</strong> et toute créature <strong>dont la FOR est
+        <strong>+1d4&nbsp;DM</strong> et toute créature <strong>dont la FOR est
         inférieure à la sienne est renversée</strong>. La créature obtient un
         bonus de <strong>+5 à tous les tests de discrétion</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: embuscade
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -299,8 +299,8 @@ items:
       actions:
         - source: Actor.hzJvN5z8MipRMP9k.Item.WWyQHwMAiKSrI5eF
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -316,8 +316,8 @@ items:
               source: Actor.hzJvN5z8MipRMP9k.Item.WWyQHwMAiKSrI5eF
               subtype: skill
               target: agi
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
           resolvers: []
       manaCost: -1
       frequency: none
@@ -329,7 +329,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.c0W2hGJhE62p4Lf8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -337,7 +337,7 @@ items:
       lastModifiedBy: null
     _id: WWyQHwMAiKSrI5eF
     sort: 1800000
-    _key: '!actors.items!WrEsHdbIcybdHVN0.WWyQHwMAiKSrI5eF'
+    _key: "!actors.items!WrEsHdbIcybdHVN0.WWyQHwMAiKSrI5eF"
   - folder: uVNfyNGbfZsNuFix
     name: VENIN
     type: capacity
@@ -345,16 +345,16 @@ items:
     _id: sRKZwVVOUGuQwVg8
     system:
       description: >-
-        <p style="text-align:justify">La victime d’une morsure de serpent
+        <p>La victime d’une morsure de serpent
         venimeux doit faire un test de CON difficulté 15 à chaque morsure. En
-        cas d’échec la victime subit 1 DM supplémentaire par round pendant 1d6
+        cas d’échec la victime subit 1&nbsp;DM supplémentaire par round pendant 1d6
         rounds. De plus, la victime est affaiblie pour une durée similaire
         exprimée en heures. Chaque nouvelle morsure augmente la durée (mais pas
         les DM par round).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: venin
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -376,13 +376,13 @@ items:
     _stats:
       compendiumSource: Item.lbbTcaotf6GV5MDx
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!WrEsHdbIcybdHVN0.sRKZwVVOUGuQwVg8'
+    _key: "!actors.items!WrEsHdbIcybdHVN0.sRKZwVVOUGuQwVg8"
   - folder: uVNfyNGbfZsNuFix
     name: CRACHAT
     type: capacity
@@ -393,10 +393,10 @@ items:
         <p>Certains serpents crachent leur venin dans les yeux de leur
         adversaire pour l’aveugler. La victime doit réussir un test d’AGI
         difficulté 12 ou être aveuglée pour 1d6 rounds.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: crachat
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -418,13 +418,13 @@ items:
     _stats:
       compendiumSource: Item.XaYOpFyAuc8YgKOL
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!WrEsHdbIcybdHVN0.HbfQhe1z7bLYH1Ue'
+    _key: "!actors.items!WrEsHdbIcybdHVN0.HbfQhe1z7bLYH1Ue"
 effects: []
 sort: 0
 ownership:
@@ -434,12 +434,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.hzJvN5z8MipRMP9k
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: WrEsHdbIcybdHVN0
-_key: '!actors!WrEsHdbIcybdHVN0'
-
+_key: "!actors!WrEsHdbIcybdHVN0"

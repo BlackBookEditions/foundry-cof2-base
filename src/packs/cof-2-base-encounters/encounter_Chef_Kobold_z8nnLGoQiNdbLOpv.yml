@@ -114,27 +114,27 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
       private: >-
-        <p>Un chef kobold accompagn&eacute; de 5 kobolds de base est une
+        <p>Un chef kobold accompagné de 5 kobolds de base est une
         rencontre ordinaire pour un groupe de niveau 2 (difficile pour un groupe
-        de niveau 1).<br>Ajoutez un pr&ecirc;tre et vous obtiendrez une
+        de niveau 1).<br>Ajoutez un prêtre et vous obtiendrez une
         rencontre ordinaire de niveau 3.</p>
       public: >-
-        <p>Les Kobolds sont de petits humano&iuml;des reptiliens dont le
-        faci&egrave;s fait penser au crocodile.<br>Vicieux et malins, ils sont
-        pass&eacute;s ma&icirc;tres dans l&rsquo;art de tendres pi&egrave;ges et
-        embuscades. Ils mesurent moins d&rsquo;un m&egrave;tre pour une
-        vingtaine de kilos.&nbsp;</p>
+        <p>Les Kobolds sont de petits humanoïdes reptiliens dont le
+        faciès fait penser au crocodile.<br>Vicieux et malins, ils sont
+        passés maîtres dans l’art de tendres pièges et
+        embuscades. Ils mesurent moins d’un mètre pour une
+        vingtaine de kilos.&nbsp;.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Kobold
   displayName: 0
@@ -153,7 +153,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -217,9 +217,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: lance
       subtype: melee
       learned: true
@@ -232,8 +232,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -247,9 +247,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6
               target:
@@ -267,7 +267,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -275,21 +275,21 @@ items:
       lastModifiedBy: null
     _id: cbmP4c6aN9suIgAd
     sort: 300000
-    _key: '!actors.items!z8nnLGoQiNdbLOpv.cbmP4c6aN9suIgAd'
+    _key: "!actors.items!z8nnLGoQiNdbLOpv.cbmP4c6aN9suIgAd"
   - folder: Jc9oocmI3B4cVSRG
     name: IMPARABLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si la créature obtient 15‑20 au d20 d’un
-        test d’attaque, elle inflige +2d4 DM supplémentaire et l’attaque est
+        <p>Si la créature obtient 15-20 au d20 d’un
+        test d’attaque, elle inflige +2d4&nbsp;DM supplémentaire et l’attaque est
         automatiquement réussie (quelle que soit la DEF de son adversaire). Les
-        dés bonus ne sont pas multipliés en cas de critique</p>
-      source: ''
-      origin: ''
+        dés bonus ne sont pas multipliés en cas de critique.</p>
+      source: ""
+      origin: ""
       slug: imparable
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -310,7 +310,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -318,7 +318,7 @@ items:
       lastModifiedBy: null
     _id: BtSveHafAVEo7S93
     sort: 2800000
-    _key: '!actors.items!z8nnLGoQiNdbLOpv.BtSveHafAVEo7S93'
+    _key: "!actors.items!z8nnLGoQiNdbLOpv.BtSveHafAVEo7S93"
 effects: []
 sort: 0
 ownership:
@@ -328,12 +328,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.obvAZOEbY7lgpBv3
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: z8nnLGoQiNdbLOpv
-_key: '!actors!z8nnLGoQiNdbLOpv'
-
+_key: "!actors!z8nnLGoQiNdbLOpv"

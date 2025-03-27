@@ -3,12 +3,12 @@ name: GUÉRISON ACCÉLÉRÉE
 type: capacity
 img: icons/svg/combat.svg
 system:
-  description: <p>L’hydre régénère 5 PV par round sauf contre les DM de feu</p>
-  source: ''
-  origin: ''
+  description: <p>L’hydre régénère 5 PV par round sauf contre les DM de feu.</p>
+  source: ""
+  origin: ""
   slug: guerison-acceleree
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: f
   learned: false
   charges:
@@ -23,8 +23,8 @@ system:
   actions:
     - source: Item.TSKC96io5jvJH7oD
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
@@ -38,7 +38,7 @@ system:
       resolvers:
         - type: heal
           skill:
-            formula: '+5'
+            formula: "+5"
           target:
             type: self
             number: 0
@@ -53,7 +53,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742190627674
@@ -61,5 +61,4 @@ _stats:
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: JNlvJTHfooThCyro
 sort: 2500000
-_key: '!items!JNlvJTHfooThCyro'
-
+_key: "!items!JNlvJTHfooThCyro"

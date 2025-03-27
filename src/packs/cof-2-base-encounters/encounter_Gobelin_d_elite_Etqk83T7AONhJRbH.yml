@@ -114,20 +114,20 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: small
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
       private: >-
-        <p>Un gobelin d&rsquo;&eacute;lite accompagn&eacute; de huit gobelins de
+        <p>Un gobelin d’élite accompagné de huit gobelins de
         base forment une rencontre ordinaire<br>de niveau 2.</p>
-      public: ''
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Gobelin de base
   displayName: 0
@@ -146,7 +146,7 @@ prototypeToken:
     scaleX: 0.75
     scaleY: 0.75
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -210,9 +210,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: arme
       subtype: melee
       learned: true
@@ -225,8 +225,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -240,9 +240,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+4'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+4"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6
               target:
@@ -260,7 +260,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -268,7 +268,7 @@ items:
       lastModifiedBy: null
     _id: QS9gQAO6yGsXIVVi
     sort: 300000
-    _key: '!actors.items!Etqk83T7AONhJRbH.QS9gQAO6yGsXIVVi'
+    _key: "!actors.items!Etqk83T7AONhJRbH.QS9gQAO6yGsXIVVi"
   - folder: uVNfyNGbfZsNuFix
     name: ATTAQUE EN MEUTE
     type: capacity
@@ -279,10 +279,10 @@ items:
         <p>Lorsque au moins 2 gobelins attaquent la même cible en même temps,
         ils bénéficient d’un bonus de +2 en attaque (bonus qui peut s’ajouter à
         une éventuelle attaque groupée).</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: attaque-en-meute
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -296,8 +296,8 @@ items:
       actions:
         - source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -313,14 +313,14 @@ items:
               source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
               subtype: combat
               target: melee
-              value: '+2'
-              additionalInfos: ''
+              value: "+2"
+              additionalInfos: ""
             - type: capacity
               source: Actor.zJaeLMHah6w9qgF6.Item.xxQ9JUNtCPAXlmyo
               subtype: combat
               target: ranged
-              value: '+2'
-              additionalInfos: ''
+              value: "+2"
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -332,13 +332,13 @@ items:
     _stats:
       compendiumSource: Item.VN5p3ZgYHQqLqV6p
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!Etqk83T7AONhJRbH.xxQ9JUNtCPAXlmyo'
+    _key: "!actors.items!Etqk83T7AONhJRbH.xxQ9JUNtCPAXlmyo"
 effects: []
 sort: 0
 ownership:
@@ -348,12 +348,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.zJaeLMHah6w9qgF6
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: Etqk83T7AONhJRbH
-_key: '!actors!Etqk83T7AONhJRbH'
-
+_key: "!actors!Etqk83T7AONhJRbH"

@@ -115,42 +115,42 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: huge
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
       private: >-
-        <p><strong>COUPER UNE T&Ecirc;TE :</strong><br>L&rsquo;hydre est un
-        adversaire tr&egrave;s dangereux &agrave; cause de son nombre
-        &eacute;lev&eacute; d&rsquo;attaques. Pour<br>r&eacute;duire le nombre
-        de t&ecirc;tes, un personnage peut tenter de la d&eacute;capiter. Dans
-        ce cas, l&rsquo;attaque souffre d&rsquo;une p&eacute;nalit&eacute; de ‑5
-        et elle doit infliger au moins 10 DM en une seule fois. En cas de
-        r&eacute;ussite, la t&ecirc;te est coup&eacute;e et les PV du monstre
-        baissent de 10. Toutefois, la gu&eacute;rison
-        acc&eacute;l&eacute;r&eacute;e de l&rsquo;hydre fait repousser la
-        t&ecirc;te en 2 rounds (sauf DM de feu). En cas d&rsquo;&eacute;chec,
-        l&rsquo;hydre ne subit aucun DM.&nbsp;<br><strong>Ajouter des
-        t&ecirc;tes : </strong>pour chaque t&ecirc;te suppl&eacute;mentaire,
+        <p><strong>COUPER UNE TêTE&nbsp;:</strong><br>L’hydre est un
+        adversaire très dangereux à cause de son nombre
+        élevé d’attaques. Pour<br>réduire le nombre
+        de têtes, un personnage peut tenter de la décapiter. Dans
+        ce cas, l’attaque souffre d’une pénalité de -5
+        et elle doit infliger au moins 10&nbsp;DM en une seule fois. En cas de
+        réussite, la tête est coupée et les PV du monstre
+        baissent de 10. Toutefois, la guérison
+        accélérée de l’hydre fait repousser la
+        tête en 2 rounds (sauf DM de feu). En cas d’échec,
+        l’hydre ne subit aucun DM.&nbsp;<br><strong>Ajouter des
+        têtes&nbsp;:</strong>pour chaque tête supplémentaire,
         ajoutez 20 PV, +1 en attaque et<br>en DEF et une attaque
-        suppl&eacute;mentaire. Le NC augmente de +1</p>
+        supplémentaire. Le NC augmente de +1.</p>
       public: >-
-        <p>L&rsquo;hydre est une grande cr&eacute;ature reptilienne de presque 2
-        tonnes pourvue de multiples t&ecirc;tes.<br>Imaginez un petit diplodocus
-        dot&eacute; de 5 &agrave; 12 t&ecirc;tes de dragon et vous aurez une
-        id&eacute;e de l&rsquo;apparence de cet &eacute;pouvantable monstre.</p>
+        <p>L’hydre est une grande créature reptilienne de presque 2
+        tonnes pourvue de multiples têtes.<br>Imaginez un petit diplodocus
+        doté de 5 à 12 têtes de dragon et vous aurez une
+        idée de l’apparence de cet épouvantable monstre.</p>
     languages: []
     properties: >-
-      <p><strong>ATTAQUES MULTIPLES :</strong></p>
+      <p><strong>ATTAQUES MULTIPLES&nbsp;:</strong></p>
 
-      <p>L&rsquo;hydre peut effectuer un total de 5 attaques, mais pas plus de 4
-      attaques sur la m&ecirc;me cible chaque round. Utilisez la r&egrave;gle
-      des attaques group&eacute;es pour gagner du temps (par exemple, +5 pour
-      l&rsquo;attaque de deux t&ecirc;tes &agrave; la fois).</p>
+      <p>L’hydre peut effectuer un total de 5 attaques, mais pas plus de 4
+      attaques sur la même cible chaque round. Utilisez la règle
+      des attaques groupées pour gagner du temps (par exemple, +5 pour
+      l’attaque de deux têtes à la fois).</p>
 prototypeToken:
   name: Hydre
   displayName: 0
@@ -169,7 +169,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -233,9 +233,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure-1-attaque-par-tete
       subtype: melee
       learned: true
@@ -248,8 +248,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -263,9 +263,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+8'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+8"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+4
               target:
@@ -283,7 +283,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -291,18 +291,18 @@ items:
       lastModifiedBy: null
     _id: UtKT1tLFVe2iGUNR
     sort: 300000
-    _key: '!actors.items!bTAKaXk3oK2ouMKX.UtKT1tLFVe2iGUNR'
+    _key: "!actors.items!bTAKaXk3oK2ouMKX.UtKT1tLFVe2iGUNR"
   - folder: uVNfyNGbfZsNuFix
     name: GUÉRISON ACCÉLÉRÉE
     type: capacity
     img: icons/svg/combat.svg
     _id: ALfJHBVhGSt8XTiD
     system:
-      description: <p>L’hydre régénère 5 PV par round sauf contre les DM de feu</p>
-      source: ''
-      origin: ''
+      description: <p>L’hydre régénère 5 PV par round sauf contre les DM de feu.</p>
+      source: ""
+      origin: ""
       slug: guerison-acceleree
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -316,8 +316,8 @@ items:
       actions:
         - source: Actor.bTAKaXk3oK2ouMKX.Item.ALfJHBVhGSt8XTiD
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: heal
           img: icons/svg/d20-highlight.svg
           properties:
@@ -331,7 +331,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: '+5'
+                formula: "+5"
               target:
                 type: self
                 number: 0
@@ -350,13 +350,13 @@ items:
     _stats:
       compendiumSource: Item.TSKC96io5jvJH7oD
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!bTAKaXk3oK2ouMKX.ALfJHBVhGSt8XTiD'
+    _key: "!actors.items!bTAKaXk3oK2ouMKX.ALfJHBVhGSt8XTiD"
 effects: []
 sort: 0
 ownership:
@@ -366,11 +366,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!bTAKaXk3oK2ouMKX'
-
+_key: "!actors!bTAKaXk3oK2ouMKX"

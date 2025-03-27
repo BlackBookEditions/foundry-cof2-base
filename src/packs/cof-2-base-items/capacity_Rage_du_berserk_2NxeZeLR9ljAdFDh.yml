@@ -5,21 +5,21 @@ img: icons/svg/combat.svg
 _id: 2NxeZeLR9ljAdFDh
 system:
   description: >-
-    <p style="text-align:justify">Une fois par jour, le barbare entre dans une
-    rage berserk pour le reste du combat,<br />ce qui le rend particulièrement
-    dangereux. Il obtient +1d4° DM sur ses attaques au contact,<br />mais il
-    subit ‑2 en DEF et ne peut fuir de son propre gré ou attaquer à distance.
-    Enfin, il<br />obtient un dé bonus pour tous les tests de VOL.<br />S’il
+    <p>Une fois par jour, le barbare entre dans une
+    rage berserk pour le reste du combat, ce qui le rend particulièrement
+    dangereux. Il obtient +1d4°&nbsp;DM sur ses attaques au contact, mais il
+    subit -2 en DEF et ne peut fuir de son propre gré ou attaquer à distance.
+    Enfin, il obtient un dé bonus pour tous les tests de VOL. S’il
     veut stopper la rage avant d’avoir éliminé tous les ennemis sur le terrain,
-    le barbare doit<br />réussir un test de VOL difficulté 15 (un seul essai, à
+    le barbare doit réussir un test de VOL difficulté 15 (un seul essai, à
     la fin de son tour). S’il devient inconscient, la rage cesse. Le personnage
-    peut entrer en rage une fois de plus par jour pour chaque capacité de rang 4
-    qu’il atteint dans une voie de barbare</p>
-  source: ''
-  origin: ''
+    peut entrer en rage une fois de plus par jour pour chaque capacité de rang&nbsp;4
+    qu’il atteint dans une voie de barbare.</p>
+  source: ""
+  origin: ""
   slug: rage-du-berserk
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -48,7 +48,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
           subtype: combat
           target: def
-          value: '-2'
+          value: "-2"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
           subtype: combat
@@ -58,7 +58,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
           subtype: bonusDice
           target: vol
-          value: '0'
+          value: "0"
       resolvers: []
   cost: -1
 effects: []
@@ -73,11 +73,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740825054121
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!2NxeZeLR9ljAdFDh'
-
+_key: "!items!2NxeZeLR9ljAdFDh"

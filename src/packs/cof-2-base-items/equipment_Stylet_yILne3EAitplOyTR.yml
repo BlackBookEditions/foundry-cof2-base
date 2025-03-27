@@ -4,9 +4,9 @@ type: equipment
 img: icons/svg/item-bag.svg
 _id: yILne3EAitplOyTR
 system:
-  description: "<p>une arme d’assassin, dotée d’une pointe acérée sans tranchant, destinée à transpercer<br />les organes vitaux. La FOR ne s’applique pas aux DM du stylet (DM 1d3), mais en cas d’attaque sur un adversaire surpris, il inflige (1d6+AGI) DM contre les cibles de taille<br />moyenne ou petite.\_</p>\n<p>\_</p>\n<p><strong>Arme légère</strong></p>"
-  source: ''
-  origin: ''
+  description: "<p>une arme d’assassin, dotée d’une pointe acérée sans tranchant, destinée à transpercer les organes vitaux. La FOR ne s’applique pas aux DM du stylet (DM 1d3), mais en cas d’attaque sur un adversaire surpris, il inflige (1d6+AGI) DM contre les cibles de taille moyenne ou petite.</p><p><strong>Arme légère</strong></p>"
+  source: ""
+  origin: ""
   slug: stylet
   tags: []
   subtype: weapon
@@ -25,7 +25,7 @@ system:
     unit: kg
   price:
     value: 1
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -38,8 +38,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.yILne3EAitplOyTR
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -50,9 +50,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d3 + @for
           target:
@@ -74,11 +74,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!yILne3EAitplOyTR'
-
+_key: "!items!yILne3EAitplOyTR"

@@ -115,34 +115,34 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Les araign&eacute;es g&eacute;antes (arthropodes) sont des monstres
-        terrifiants : rapides, puissants et<br>capables de survivre aux pires
-        blessures. On trouve les araign&eacute;es g&eacute;antes dans les
-        for&ecirc;ts<br>sombres et recul&eacute;es, mais aussi dans les
-        souterrains, surtout les plus grosses d&rsquo;entre elles. Il en existe
+        <p>Les araignées géantes (arthropodes) sont des monstres
+        terrifiants&nbsp;: rapides, puissants et<br>capables de survivre aux pires
+        blessures. On trouve les araignées géantes dans les
+        forêts<br>sombres et reculées, mais aussi dans les
+        souterrains, surtout les plus grosses d’entre elles. Il en existe
         de nombreuses variantes, mais celle que nous vous proposons ici fait le
-        poids d&rsquo;un humain, elle est donc moins haute mais occupe un espace
-        de presque 2 m de diam&egrave;tre.</p>
+        poids d’un humain, elle est donc moins haute mais occupe un espace
+        de presque 2&nbsp;m de diamètre.</p>
     languages: []
     properties: >-
       <p><strong>VERMINE</strong></p>
 
-      <p>Une araign&eacute;e g&eacute;ante peut encore agir un round complet
-      lorsqu&rsquo;elle atteint 0 PV. Une araign&eacute;e se d&eacute;place de
-      15 m par action de mouvement</p>
+      <p>Une araignée géante peut encore agir un round complet
+      lorsqu’elle atteint 0 PV. Une araignée se déplace de
+      15&nbsp;m par action de mouvement.</p>
 
-      <p><strong>VARIANTES :</strong><br>Choisissez un type de poison et soit
-      Toile (L), soit Araign&eacute;e chasseuse.</p>
+      <p><strong>VARIANTES&nbsp;:</strong><br>Choisissez un type de poison et soit
+      Toile (L), soit Araignée chasseuse.</p>
 prototypeToken:
   name: Araignée géante
   displayName: 0
@@ -161,7 +161,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -225,9 +225,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: mandibules
       subtype: melee
       learned: true
@@ -240,8 +240,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -255,9 +255,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+6"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d4+4
               target:
@@ -275,7 +275,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -283,7 +283,7 @@ items:
       lastModifiedBy: null
     _id: Bm5TYjd4sraOBrNi
     sort: 300000
-    _key: '!actors.items!qAZEVgcmk44BNQjh.Bm5TYjd4sraOBrNi'
+    _key: "!actors.items!qAZEVgcmk44BNQjh.Bm5TYjd4sraOBrNi"
   - folder: uVNfyNGbfZsNuFix
     name: POISON MORTEL
     type: capacity
@@ -291,13 +291,13 @@ items:
     _id: 8JBNlgGjzNjKHQ5i
     system:
       description: >-
-        <p>Le poison inflige 2d6 DM supplémentaires à la victime à chaque
-        attaque. Si la victime réussit<br />un test de CON de la difficulté
+        <p>Le poison inflige 2d6&nbsp;DM supplémentaires à la victime à chaque
+        attaque. Si la victime réussit un test de CON de la difficulté
         indiquée, elle subit seulement la moitié des DM.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: poison-mortel
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -319,13 +319,13 @@ items:
     _stats:
       compendiumSource: Item.RyiogGKE7umFYMeV
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!qAZEVgcmk44BNQjh.8JBNlgGjzNjKHQ5i'
+    _key: "!actors.items!qAZEVgcmk44BNQjh.8JBNlgGjzNjKHQ5i"
   - folder: Jc9oocmI3B4cVSRG
     name: Araignée chasseuse
     type: capacity
@@ -333,17 +333,17 @@ items:
     system:
       description: >-
         <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire<br />un test de<strong> PER difficulté
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
         19</strong> ou être surprise.</p>
 
         <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d4 DM</strong> et toute créature dont la<strong> FOR est
+        <strong>+1d4&nbsp;DM</strong> et toute créature dont la<strong> FOR est
         inférieure à la sienne est renversée</strong>. La créature obtient un
         bonus de <strong>+5 à tous les tests de discrétion</strong></p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: araignee-chasseuse
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -356,8 +356,8 @@ items:
       actions:
         - source: Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -373,8 +373,8 @@ items:
               source: Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
               subtype: skill
               target: agi
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
           resolvers: []
       manaCost: -1
       frequency: none
@@ -386,7 +386,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.c0W2hGJhE62p4Lf8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -394,7 +394,7 @@ items:
       lastModifiedBy: null
     _id: oYmEF7zGBxSlKdry
     sort: 2200000
-    _key: '!actors.items!qAZEVgcmk44BNQjh.oYmEF7zGBxSlKdry'
+    _key: "!actors.items!qAZEVgcmk44BNQjh.oYmEF7zGBxSlKdry"
   - folder: uVNfyNGbfZsNuFix
     name: TOILE
     type: capacity
@@ -402,15 +402,15 @@ items:
     _id: wY8ynVPnTxFrYQuV
     system:
       description: >-
-        <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa
-        cible dans une toile<br />gluante et solide. Elle est
+        <p>Sur un test d’attaque réussi (portée 3&nbsp;m), l’araignée emprisonne sa
+        cible dans une toile gluante et solide. Elle est
         <strong>immobilisée </strong>; se libérer nécessite l’usage d’une action
-        limitée et il<br />faut réussir un<strong> test de FOR difficulté
+        limitée et il faut réussir un<strong> test de FOR difficulté
         12</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: toile
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -424,8 +424,8 @@ items:
       actions:
         - source: Actor.qAZEVgcmk44BNQjh.Item.wY8ynVPnTxFrYQuV
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -439,11 +439,11 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '+7'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+7"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
-                formula: '0'
+                formula: "0"
               target:
                 type: none
                 number: 0
@@ -461,13 +461,13 @@ items:
     _stats:
       compendiumSource: Item.mwvF2j6DhchG9LLv
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!qAZEVgcmk44BNQjh.wY8ynVPnTxFrYQuV'
+    _key: "!actors.items!qAZEVgcmk44BNQjh.wY8ynVPnTxFrYQuV"
 effects: []
 sort: 0
 ownership:
@@ -477,11 +477,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!qAZEVgcmk44BNQjh'
-
+_key: "!actors!qAZEVgcmk44BNQjh"

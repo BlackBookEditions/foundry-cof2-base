@@ -4,14 +4,14 @@ type: equipment
 img: icons/svg/item-bag.svg
 _id: Tyrkb0qGaynJ8fGi
 system:
-  description: "<p style=\"text-align:justify\">Pendant CHA minutes, l'utilisateur peut prendre l’apparence d’une créature de taille proche de la sienne (+ ou – 50 cm) qu’il voit au moment de boire la potion. Une créature qui touche\_l’ensorceleur se rend compte que quelque chose ne va pas et a le droit à un test d’INT difficulté [10 + CHA de l'utilisateur] pour voir à travers l’illusion.</p>"
-  source: ''
-  origin: ''
+  description: "<p>Pendant CHA minutes, l'utilisateur peut prendre l’apparence d’une créature de taille proche de la sienne (+ ou – 50 cm) qu’il voit au moment de boire la potion. Une créature qui touche l’ensorceleur se rend compte que quelque chose ne va pas et a le droit à un test d’INT difficulté [10 + CHA de l'utilisateur] pour voir à travers l’illusion.</p>"
+  source: ""
+  origin: ""
   slug: potion-dimitation
   tags: []
   subtype: consumable
-  martialCategory: ''
-  damagetype: ''
+  martialCategory: ""
+  damagetype: ""
   quantity:
     current: 1
     max: null
@@ -25,7 +25,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: ""
   rarity: rare
   equipped: false
   properties:
@@ -38,8 +38,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Tyrkb0qGaynJ8fGi
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
@@ -50,11 +50,11 @@ system:
       resolvers:
         - type: consumable
           skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
+            formula: ""
+            crit: ""
+            difficulty: ""
           dmg:
-            formula: ''
+            formula: ""
           target:
             type: none
             number: 0
@@ -74,11 +74,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1741115918698
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!Tyrkb0qGaynJ8fGi'
-
+_key: "!items!Tyrkb0qGaynJ8fGi"

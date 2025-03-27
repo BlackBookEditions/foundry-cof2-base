@@ -115,39 +115,39 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p style="text-align: justify;">Aussi appel&eacute; requin terrestre, le
-        geoselachis est un pr&eacute;dateur puissant et tr&egrave;s
-        dangereux<br>capable de s&rsquo;enterrer pour surprendre sa
-        proie.<br>Imaginez une taupe g&eacute;ante dot&eacute;e d&rsquo;un
-        exosquelette imp&eacute;n&eacute;trable, de la m&acirc;choire d&rsquo;un
-        grand requin et enfin de la puissance et de la capacit&eacute; &agrave;
-        encorner d&rsquo;un rhinoc&eacute;ros et vous aurez un aper&ccedil;u de
-        cette machine &agrave; tuer&hellip;<br>Les multiples dents triangulaires
-        qui constituent la m&acirc;choire du geoselachis sont autant de cristaux
-        transparents semblables &agrave; des diamants. La cr&eacute;ature
-        poss&egrave;de 50+1d60 dents r&eacute;cup&eacute;rables (les autres sont
-        en mauvais &eacute;tat), il faut environ 1 min pour retirer une dent sur
+        <p style="text-align: justify;">Aussi appelé requin terrestre, le
+        geoselachis est un prédateur puissant et très
+        dangereux<br>capable de s’enterrer pour surprendre sa
+        proie.<br>Imaginez une taupe géante dotée d’un
+        exosquelette impénétrable, de la mâchoire d’un
+        grand requin et enfin de la puissance et de la capacité à
+        encorner d’un rhinocéros et vous aurez un aper&ccedil;u de
+        cette machine à tuer…<br>Les multiples dents triangulaires
+        qui constituent la mâchoire du geoselachis sont autant de cristaux
+        transparents semblables à des diamants. La créature
+        possède 50+1d60 dents récupérables (les autres sont
+        en mauvais état), il faut environ 1 min pour retirer une dent sur
         son cadavre et chaque dent vaut environ 1 pa. Elles sont
-        utilis&eacute;es pour concevoir des outils tranchants, en particulier
-        dans les tribus du d&eacute;sert qui n&rsquo;ont pas
-        d&rsquo;acc&egrave;s &agrave; la manufacture de m&eacute;taux. Chasseur
-        de geoselachis est un des plus dangereux m&eacute;tiers du monde.</p>
+        utilisées pour concevoir des outils tranchants, en particulier
+        dans les tribus du désert qui n’ont pas
+        d’accès à la manufacture de métaux. Chasseur
+        de geoselachis est un des plus dangereux métiers du monde.</p>
     languages: []
     properties: >-
-      <p><strong>D&Eacute;PLACEMENT SOUS TERRE</strong></p>
+      <p><strong>DéPLACEMENT SOUS TERRE</strong></p>
 
-      <p>Le geoselachis est capable de parcourir 5 m par action de mouvement en
-      creusant dans un sol meuble (le tunnel s&rsquo;effondre derri&egrave;re
+      <p>Le geoselachis est capable de parcourir 5&nbsp;m par action de mouvement en
+      creusant dans un sol meuble (le tunnel s’effondre derrière
       lui).</p>
 prototypeToken:
   name: Geoselachis
@@ -167,7 +167,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -231,9 +231,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures-et-griffes-2-attaques
       subtype: melee
       learned: true
@@ -246,8 +246,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -261,9 +261,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+13'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+13"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d12+8
               target:
@@ -281,7 +281,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -289,7 +289,7 @@ items:
       lastModifiedBy: null
     _id: brnfHKk2lizxmZKx
     sort: 300000
-    _key: '!actors.items!W9frBjqPdaACUrEM.brnfHKk2lizxmZKx'
+    _key: "!actors.items!W9frBjqPdaACUrEM.brnfHKk2lizxmZKx"
   - folder: Jc9oocmI3B4cVSRG
     name: EMBUSCADE
     type: capacity
@@ -301,13 +301,13 @@ items:
         être <strong>surprise</strong>.</p>
 
         <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d6 DM </strong>et toute créature dont la <strong>FOR est
+        <strong>+1d6&nbsp;DM </strong>et toute créature dont la <strong>FOR est
         inférieure à la sienne est renversée</strong>. La créature obtient un
         bonus de <strong>+5 à tous les tests de discrétion</strong></p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: embuscade
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -320,8 +320,8 @@ items:
       actions:
         - source: Actor.W9frBjqPdaACUrEM.Item.AIkzg9IdsTnAAgzj
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -337,8 +337,8 @@ items:
               source: Actor.W9frBjqPdaACUrEM.Item.AIkzg9IdsTnAAgzj
               subtype: skill
               target: agi
-              value: '5'
-              additionalInfos: ''
+              value: "5"
+              additionalInfos: ""
           resolvers: []
       manaCost: -1
       frequency: none
@@ -350,7 +350,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -358,7 +358,7 @@ items:
       lastModifiedBy: null
     _id: AIkzg9IdsTnAAgzj
     sort: 100000
-    _key: '!actors.items!W9frBjqPdaACUrEM.AIkzg9IdsTnAAgzj'
+    _key: "!actors.items!W9frBjqPdaACUrEM.AIkzg9IdsTnAAgzj"
   - folder: uVNfyNGbfZsNuFix
     name: ENCORNER
     type: capacity
@@ -367,12 +367,12 @@ items:
     system:
       description: >-
         <p>Lorsque la créature réussit une attaque avec un <strong>résultat de
-        17‑20 au d20</strong>, elle encorne sa<br />proie et lui inflige
+        17-20 au d20</strong>, elle encorne sa proie et lui inflige
         immédiatement une attaque gratuite supplémentaire.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: encorner
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -394,13 +394,13 @@ items:
     _stats:
       compendiumSource: Item.VQbhPMSXHOjLPABg
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!W9frBjqPdaACUrEM.zyOQzr6zHmsE0L7F'
+    _key: "!actors.items!W9frBjqPdaACUrEM.zyOQzr6zHmsE0L7F"
 effects: []
 sort: 0
 ownership:
@@ -410,11 +410,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!W9frBjqPdaACUrEM'
-
+_key: "!actors!W9frBjqPdaACUrEM"

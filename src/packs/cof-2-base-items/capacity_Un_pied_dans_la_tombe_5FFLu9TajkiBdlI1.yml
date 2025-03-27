@@ -5,16 +5,16 @@ img: icons/svg/combat.svg
 _id: 5FFLu9TajkiBdlI1
 system:
   description: >-
-    <p style="text-align:justify">Le sorcier désigne une cible vivante à portée
-    (10 m) et doit réussir un test opposé d’attaque magique. En cas de succès,
+    <p>Le sorcier désigne une cible vivante à portée
+    (10&nbsp;m) et doit réussir un test opposé d’attaque magique. En cas de succès,
     la cible ressent une douleur intense à l’emplacement du coeur, elle subit
     [1d4°+INT] DM et, si elle rate un test de CON difficulté 10, l’état ralenti
     durant 1 round.</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: un-pied-dans-la-tombe
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -27,8 +27,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.5FFLu9TajkiBdlI1
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -41,9 +41,9 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
             formula: 1d4°+@int
           target:
@@ -64,11 +64,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828405846
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!5FFLu9TajkiBdlI1'
-
+_key: "!items!5FFLu9TajkiBdlI1"

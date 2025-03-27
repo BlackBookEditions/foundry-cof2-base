@@ -114,25 +114,25 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
         <p style="text-align: justify;">Les orcs noirs sont une race
-        d&rsquo;orcs d&rsquo;&eacute;lite obtenue par s&eacute;lection et
-        reproduction par de puissants ma&icirc;tres mal&eacute;fiques souhaitant
-        construire l&rsquo;arm&eacute;e ultime. Leur peau est plus sombre et
-        leur musculature plus imposante. Ils manient des armes &agrave; deux
-        mains, mais surtout, ils ne sont plus sensibles &agrave; la
-        lumi&egrave;re du jour</p>
+        d’orcs d’élite obtenue par sélection et
+        reproduction par de puissants maîtres maléfiques souhaitant
+        construire l’armée ultime. Leur peau est plus sombre et
+        leur musculature plus imposante. Ils manient des armes à deux
+        mains, mais surtout, ils ne sont plus sensibles à la
+        lumière du jour.</p>
     languages: []
-    properties: <p>Attaque magique +6</p>
+    properties: <p>Attaque magique +6.</p>
 prototypeToken:
   name: Orc
   displayName: 0
@@ -151,7 +151,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -215,9 +215,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-a-deux-mains
       subtype: melee
       learned: true
@@ -230,8 +230,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -245,9 +245,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 2d6+5
               target:
@@ -265,7 +265,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -273,22 +273,22 @@ items:
       lastModifiedBy: null
     _id: uV83V1zfk1DPF98i
     sort: 300000
-    _key: '!actors.items!dJIKbW2CWdn7Qct4.uV83V1zfk1DPF98i'
+    _key: "!actors.items!dJIKbW2CWdn7Qct4.uV83V1zfk1DPF98i"
   - folder: Jc9oocmI3B4cVSRG
     name: IMPARABLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si la créature obtient 15‑20 au d20 d’un
+        <p>Si la créature obtient 15-20 au d20 d’un
         test d’attaque (17 à 20 si la créature possède 2 attaques), elle inflige
-        +2d6 DM supplémentaire et l’attaque est automatiquement réussie (quelle
+        +2d6&nbsp;DM supplémentaire et l’attaque est automatiquement réussie (quelle
         que soit la DEF de son adversaire). Les dés bonus ne sont pas multipliés
-        en cas de critique</p>
-      source: ''
-      origin: ''
+        en cas de critique.</p>
+      source: ""
+      origin: ""
       slug: imparable
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -309,7 +309,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -317,22 +317,22 @@ items:
       lastModifiedBy: null
     _id: nBHnfc3RzXNzCuY9
     sort: 2800000
-    _key: '!actors.items!dJIKbW2CWdn7Qct4.nBHnfc3RzXNzCuY9'
+    _key: "!actors.items!dJIKbW2CWdn7Qct4.nBHnfc3RzXNzCuY9"
   - folder: Jc9oocmI3B4cVSRG
     name: BRISE-GENOU
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Si un adversaire au contact tente de
+        <p>Si un adversaire au contact tente de
         s’éloigner de la créature (généralement pour fuir), elle obtient une
         attaque de contact gratuite contre lui. Si cette attaque est réussie, en
         plus des DM habituels, la cible doit réussir un test de CON difficulté
-        15 ou diviser par deux tous ses déplacements pour le reste du combat</p>
-      source: ''
-      origin: ''
+        15 ou diviser par deux tous ses déplacements pour le reste du combat.</p>
+      source: ""
+      origin: ""
       slug: brise-genou
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -353,7 +353,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -361,7 +361,7 @@ items:
       lastModifiedBy: null
     _id: HBcUaoInF12mSdjg
     sort: 3400000
-    _key: '!actors.items!dJIKbW2CWdn7Qct4.HBcUaoInF12mSdjg'
+    _key: "!actors.items!dJIKbW2CWdn7Qct4.HBcUaoInF12mSdjg"
   - folder: Jc9oocmI3B4cVSRG
     name: CAPITAINE
     type: capacity
@@ -370,10 +370,10 @@ items:
       description: >-
         <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
         à toutes les créatures sous ses ordres à portée de vue.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: capitaine
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -394,7 +394,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -402,7 +402,7 @@ items:
       lastModifiedBy: null
     _id: uvMWEZPZKFoLe6Rs
     sort: 3100000
-    _key: '!actors.items!dJIKbW2CWdn7Qct4.uvMWEZPZKFoLe6Rs'
+    _key: "!actors.items!dJIKbW2CWdn7Qct4.uvMWEZPZKFoLe6Rs"
   - folder: uVNfyNGbfZsNuFix
     name: COMMANDANT
     type: capacity
@@ -410,13 +410,13 @@ items:
     _id: uJdSwXy168CMIpUF
     system:
       description: >-
-        <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20 m du
-        commandant, il ne<br />subit que <strong>la moitié des DM qui lui sont
+        <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20&nbsp;m du
+        commandant, il ne subit que <strong>la moitié des DM qui lui sont
         infligés</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: commandant
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -438,13 +438,13 @@ items:
     _stats:
       compendiumSource: Item.h3hOsBxrvMJ3dVKE
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!dJIKbW2CWdn7Qct4.uJdSwXy168CMIpUF'
+    _key: "!actors.items!dJIKbW2CWdn7Qct4.uJdSwXy168CMIpUF"
 effects: []
 sort: 0
 ownership:
@@ -454,12 +454,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.vWXnzxK56xLO4xAv
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: dJIKbW2CWdn7Qct4
-_key: '!actors!dJIKbW2CWdn7Qct4'
-
+_key: "!actors!dJIKbW2CWdn7Qct4"

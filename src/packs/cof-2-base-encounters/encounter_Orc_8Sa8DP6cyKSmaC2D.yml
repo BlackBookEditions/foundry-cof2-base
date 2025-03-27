@@ -115,23 +115,23 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Les orcs sont des cr&eacute;atures robustes, un peu plus grandes que
-        les humains, dot&eacute;es de<br>traits bestiaux et habituellement
-        violentes. Ils vivent en tribus sous la domination d&rsquo;un
-        chef<br>qui r&egrave;gne par la loi du plus fort. Les orcs parlent le
+        <p>Les orcs sont des créatures robustes, un peu plus grandes que
+        les humains, dotées de<br>traits bestiaux et habituellement
+        violentes. Ils vivent en tribus sous la domination d’un
+        chef<br>qui règne par la loi du plus fort. Les orcs parlent le
         noir parler.</p>
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Orc
   displayName: 0
@@ -150,7 +150,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -214,9 +214,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: hache-ou-masse
       subtype: melee
       learned: true
@@ -229,8 +229,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -244,9 +244,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+3'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+3"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+2
               target:
@@ -264,7 +264,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -272,7 +272,7 @@ items:
       lastModifiedBy: null
     _id: uV83V1zfk1DPF98i
     sort: 300000
-    _key: '!actors.items!8Sa8DP6cyKSmaC2D.uV83V1zfk1DPF98i'
+    _key: "!actors.items!8Sa8DP6cyKSmaC2D.uV83V1zfk1DPF98i"
   - folder: uVNfyNGbfZsNuFix
     name: SENSIBLE À LA LUMIÈRE
     type: capacity
@@ -281,11 +281,11 @@ items:
     system:
       description: >-
         <p>Créatures souterraines, les orcs détestent la lumière du jour. La
-        lumière du soleil leur<br />inflige un dé malus en attaque</p>
-      source: ''
-      origin: ''
+        lumière du soleil leur inflige un dé malus en attaque.</p>
+      source: ""
+      origin: ""
       slug: sensible-a-la-lumiere
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -307,13 +307,13 @@ items:
     _stats:
       compendiumSource: Item.3R9naJl7Jt5Z54gT
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!8Sa8DP6cyKSmaC2D.UpNShLrZxKNfas84'
+    _key: "!actors.items!8Sa8DP6cyKSmaC2D.UpNShLrZxKNfas84"
 effects: []
 sort: 0
 ownership:
@@ -323,11 +323,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!8Sa8DP6cyKSmaC2D'
-
+_key: "!actors!8Sa8DP6cyKSmaC2D"

@@ -115,18 +115,18 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Requin
   displayName: 0
@@ -145,7 +145,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -209,9 +209,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures
       subtype: melee
       learned: true
@@ -224,8 +224,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -239,9 +239,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+10'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+10"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+5
               target:
@@ -259,7 +259,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -267,24 +267,24 @@ items:
       lastModifiedBy: null
     _id: BUnNGuBAowcgiIaA
     sort: 300000
-    _key: '!actors.items!3PjGl9NVMtSWk8bV.BUnNGuBAowcgiIaA'
+    _key: "!actors.items!3PjGl9NVMtSWk8bV.BUnNGuBAowcgiIaA"
   - folder: Jc9oocmI3B4cVSRG
     name: DEVORER
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Lorsque la créature réussit une attaque
-        avec un résultat de 15‑20 au d20, elle saisit sa proie entre ses crocs
+        <p>Lorsque la créature réussit une attaque
+        avec un résultat de 15-20 au d20, elle saisit sa proie entre ses crocs
         ou ses griffes et lui inflige immédiatement une attaque gratuite
         supplémentaire Si la FOR de la cible est inférieure ou égale au
         prédateur, elle est de plus immobilisée. Pour se libérer, la victime
         doit réussir un test de FOR difficulté 15 lors de son tour et cela lui
         demande une action de mouvement.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: devorer
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -305,7 +305,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -313,7 +313,7 @@ items:
       lastModifiedBy: null
     _id: w1dlwNAhfWtyWtk9
     sort: 1700000
-    _key: '!actors.items!3PjGl9NVMtSWk8bV.w1dlwNAhfWtyWtk9'
+    _key: "!actors.items!3PjGl9NVMtSWk8bV.w1dlwNAhfWtyWtk9"
   - folder: uVNfyNGbfZsNuFix
     name: CRÉATURE AQUATIQUE
     type: capacity
@@ -322,11 +322,11 @@ items:
     system:
       description: >-
         <p>Le requin ne subit aucune pénalité pour attaquer et se déplacer sous
-        l’eau et il bénéficie<br />d’un bonus de +3 en initiative</p>
-      source: ''
-      origin: ''
+        l’eau et il bénéficie d’un bonus de +3 en initiative.</p>
+      source: ""
+      origin: ""
       slug: creature-aquatique
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -340,8 +340,8 @@ items:
       actions:
         - source: Actor.3PjGl9NVMtSWk8bV.Item.SdME8RvslmC9avV8
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -357,8 +357,8 @@ items:
               source: Actor.3PjGl9NVMtSWk8bV.Item.SdME8RvslmC9avV8
               subtype: combat
               target: init
-              value: '3'
-              additionalInfos: ''
+              value: "3"
+              additionalInfos: ""
           resolvers: []
       frequency: none
     effects: []
@@ -370,13 +370,13 @@ items:
     _stats:
       compendiumSource: Item.pLAwS5LBRbtatMRp
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3PjGl9NVMtSWk8bV.SdME8RvslmC9avV8'
+    _key: "!actors.items!3PjGl9NVMtSWk8bV.SdME8RvslmC9avV8"
 effects: []
 sort: 0
 ownership:
@@ -386,11 +386,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!3PjGl9NVMtSWk8bV'
-
+_key: "!actors!3PjGl9NVMtSWk8bV"

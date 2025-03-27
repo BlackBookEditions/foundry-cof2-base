@@ -114,18 +114,18 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Gnoll
   displayName: 0
@@ -144,7 +144,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -208,9 +208,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: hache
       subtype: melee
       learned: true
@@ -223,8 +223,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -238,9 +238,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+6"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+4
               target:
@@ -258,7 +258,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -266,7 +266,7 @@ items:
       lastModifiedBy: null
     _id: LhCNIcWwKhx8yNV7
     sort: 300000
-    _key: '!actors.items!ev1IpgqG4cmD1fEe.LhCNIcWwKhx8yNV7'
+    _key: "!actors.items!ev1IpgqG4cmD1fEe.LhCNIcWwKhx8yNV7"
   - folder: uVNfyNGbfZsNuFix
     name: RIRES INSUPPORTABLES
     type: capacity
@@ -276,11 +276,11 @@ items:
       description: >-
         <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
         un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
-        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
-      source: ''
-      origin: ''
+        gnolls)</strong> à son contact ou subir un dé malus en attaque.</p>
+      source: ""
+      origin: ""
       slug: rires-insupportables
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -302,13 +302,13 @@ items:
     _stats:
       compendiumSource: Item.IOW2bgp2OV3DoalG
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ev1IpgqG4cmD1fEe.FysVgiJfnLpT9DFL'
+    _key: "!actors.items!ev1IpgqG4cmD1fEe.FysVgiJfnLpT9DFL"
   - folder: uVNfyNGbfZsNuFix
     name: L’HALLALI
     type: capacity
@@ -316,16 +316,16 @@ items:
     _id: thweeuracMnneT9m
     system:
       description: >-
-        <p style="text-align:justify">Les gnolls profitent d’une erreur de leur
-        victime pour lui porter des attaques fatales.<br />Chaque fois que
+        <p>Les gnolls profitent d’une erreur de leur
+        victime pour lui porter des attaques fatales. Chaque fois que
         la<strong> victime de la meute rate une attaque ou obtient sur un test
         d’attaque un résultat au d20 allant de 1 à 5 (inclus)</strong>, elle
         déclenche la curée. Chaque gnoll à son contact bénéficie immédiatement
         et gratuitement d’une attaque contre la victime.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: lhallali
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -347,13 +347,13 @@ items:
     _stats:
       compendiumSource: Item.MOFgzzc5RvvaNfFC
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!ev1IpgqG4cmD1fEe.thweeuracMnneT9m'
+    _key: "!actors.items!ev1IpgqG4cmD1fEe.thweeuracMnneT9m"
   - folder: Jc9oocmI3B4cVSRG
     name: SERGENT
     type: capacity
@@ -362,12 +362,12 @@ items:
       description: >-
         <p>Une fois par round, le sergent peut donner une action supplémentaire
         à n’importe quel allié sous ses ordres à portée de vue (attaque ou
-        mouvement).<br />Une fois par combat, une attaque qui aurait dû amener
+        mouvement). Une fois par combat, une attaque qui aurait dû amener
         le sergent à 0 PV est ignorée.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: sergent
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -388,7 +388,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.L8b1AAMvZJLPT5zd
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -396,7 +396,7 @@ items:
       lastModifiedBy: null
     _id: 8F5YuY7bmZOEtQuV
     sort: 1700000
-    _key: '!actors.items!ev1IpgqG4cmD1fEe.8F5YuY7bmZOEtQuV'
+    _key: "!actors.items!ev1IpgqG4cmD1fEe.8F5YuY7bmZOEtQuV"
 effects: []
 sort: 0
 ownership:
@@ -406,12 +406,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.pwaPWnVmc7VX0aaL
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: ev1IpgqG4cmD1fEe
-_key: '!actors!ev1IpgqG4cmD1fEe'
-
+_key: "!actors!ev1IpgqG4cmD1fEe"

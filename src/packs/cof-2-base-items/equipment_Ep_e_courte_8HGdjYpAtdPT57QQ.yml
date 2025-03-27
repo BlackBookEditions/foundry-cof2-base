@@ -4,9 +4,9 @@ type: equipment
 img: icons/svg/item-bag.svg
 _id: 8HGdjYpAtdPT57QQ
 system:
-  description: "<p><span class=\"ILfuVd\" lang=\"fr\"><span class=\"hgKElc\"><strong>Une épée courte est une arme tranchante qui se caractérise par sa taille compacte et sa polyvalence</strong>. Contrairement aux types d'épées plus longues, l'épée courte présente une longueur de lame d'environ 30 à 60 centimètres. Cette taille permet un maniement efficace aussi bien en combat rapproché qu'en projection</span></span></p>\n<p>\_</p>\n<p><strong><span class=\"ILfuVd\" lang=\"fr\"><span class=\"hgKElc\">Arme légère</span></span></strong></p>"
-  source: ''
-  origin: ''
+  description: '<p><span class="ILfuVd" lang="fr"><span class="hgKElc"><strong>Une épée courte est une arme tranchante qui se caractérise par sa taille compacte et sa polyvalence</strong>. Contrairement aux types d''épées plus longues, l''épée courte présente une longueur de lame d''environ 30 à 60 centimètres. Cette taille permet un maniement efficace aussi bien en combat rapproché qu''en projection</span></span></p><p><strong><span class="ILfuVd" lang="fr"><span class="hgKElc">Arme légère</span></span></strong></p>'
+  source: ""
+  origin: ""
   slug: epee-courte
   tags: []
   subtype: weapon
@@ -24,7 +24,7 @@ system:
     unit: kg
   price:
     value: 5
-    unit: ''
+    unit: ""
   rarity: common
   equipped: false
   properties:
@@ -37,8 +37,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -49,9 +49,9 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d6 + @for
           target:
@@ -74,16 +74,15 @@ flags:
   exportSource:
     world: cov2-dev
     system: co
-    coreVersion: '12.331'
+    coreVersion: "12.331"
     systemVersion: 12.331.0
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
   modifiedTime: 1740760974494
   lastModifiedBy: lrkjhQ5x0RUWRHSa
-_key: '!items!8HGdjYpAtdPT57QQ'
-
+_key: "!items!8HGdjYpAtdPT57QQ"

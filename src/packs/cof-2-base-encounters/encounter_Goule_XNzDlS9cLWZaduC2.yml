@@ -115,28 +115,28 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p style="text-align: justify;">La goule est un humano&iuml;de mort
-        d&rsquo;une maladie atroce appel&eacute;e fi&egrave;vre des goules. Son
-        corps cadav&eacute;rique est d&eacute;charn&eacute;, et m&ecirc;me
-        partiellement d&eacute;compos&eacute;, des griffes noires et des dents
-        ac&eacute;r&eacute;es lui poussent tandis qu&rsquo;un app&eacute;tit
+        <p style="text-align: justify;">La goule est un humanoïde mort
+        d’une maladie atroce appelée fièvre des goules. Son
+        corps cadavérique est décharné, et même
+        partiellement décomposé, des griffes noires et des dents
+        acérées lui poussent tandis qu’un appétit
         insatiable pour la chair humaine le submerge.</p>
     languages: []
     properties: >-
-      <p><strong>DEVENIR UNE GOULE :</strong></p>
+      <p><strong>DEVENIR UNE GOULE&nbsp;:</strong></p>
 
-      <p>Une cr&eacute;ature tu&eacute;e par une goule en devient une &agrave;
-      son tour au prochain cr&eacute;puscule</p>
+      <p>Une créature tuée par une goule en devient une à
+      son tour au prochain crépuscule.</p>
 prototypeToken:
   name: Goule
   displayName: 0
@@ -155,7 +155,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -219,9 +219,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsures-et-griffes
       subtype: melee
       learned: true
@@ -234,8 +234,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -249,9 +249,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+5'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+5"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d6+2
               target:
@@ -269,7 +269,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -277,7 +277,7 @@ items:
       lastModifiedBy: null
     _id: 7HHXtW7HimuRVxPD
     sort: 300000
-    _key: '!actors.items!XNzDlS9cLWZaduC2.7HHXtW7HimuRVxPD'
+    _key: "!actors.items!XNzDlS9cLWZaduC2.7HHXtW7HimuRVxPD"
   - folder: uVNfyNGbfZsNuFix
     name: FIÈVRE DES GOULES
     type: capacity
@@ -285,20 +285,20 @@ items:
     _id: qL4aBZsci2CaRyRR
     system:
       description: >-
-        <p style="text-align:justify">À la fin du combat, si le personnage a été
+        <p>À la fin du combat, si le personnage a été
         blessé au moins une fois par la morsure d’une goule, il doit réussir un
         <strong>test de CON difficulté 15</strong> ou contracter la maladie.
-        Chaque jour, il subit <strong>1d4° DM</strong> retranchés directement à
+        Chaque jour, il subit <strong>1d4°&nbsp;DM</strong> retranchés directement à
         sa valeur de<strong> PV maximale</strong> (il ne peut plus dépasser
         cette nouvelle valeur) et doit faire un nouveau test de CON difficulté
         15 pour vaincre la maladie. Lorsqu’il arrive à 0 PV, il meurt et se
         transforme en goule. S’il guérit, les PV perdus peuvent être récupérés
-        normalement. <strong>Un sort de Délivrance (rang 3 de la voie de la
+        normalement. <strong>Un sort de Délivrance (rang&nbsp;3 de la voie de la
         spiritualité) peut mettre fin à la fièvre des goules</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: fievre-des-goules
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -320,13 +320,13 @@ items:
     _stats:
       compendiumSource: Item.eidXJxlR7UA6v3Oa
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!XNzDlS9cLWZaduC2.qL4aBZsci2CaRyRR'
+    _key: "!actors.items!XNzDlS9cLWZaduC2.qL4aBZsci2CaRyRR"
 effects: []
 sort: 0
 ownership:
@@ -336,11 +336,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!XNzDlS9cLWZaduC2'
-
+_key: "!actors!XNzDlS9cLWZaduC2"

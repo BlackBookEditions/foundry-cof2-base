@@ -114,27 +114,27 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: undead
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p>Apr&egrave;s quelques mill&eacute;naires, un vampire devient une
-        cr&eacute;ature vicieuse, calculatrice et<br>dominatrice capable de
-        contr&ocirc;ler un mortel d&rsquo;un seul regard.</p>
+        <p>Après quelques millénaires, un vampire devient une
+        créature vicieuse, calculatrice et<br>dominatrice capable de
+        contrôler un mortel d’un seul regard.</p>
     languages: []
     properties: >-
-      <p>Peux faire 2 attaques. Soit &agrave; l'&eacute;p&eacute;e longue, soit
-      avec les morusre auquel cas il b&eacute;n&eacute;ficie de "absorption
-      d'&eacute;nergie"</p>
+      <p>Peux faire 2 attaques. Soit à l'épée longue, soit
+      avec les morusre auquel cas il bénéficie de "absorption
+      d'énergie".</p>
 
-      <p><strong>PATTES D&rsquo;ARAIGN&Eacute;E : </strong>Le vampire peut se
-      d&eacute;placer de 10 m par action de mouvement sur les murs et les
+      <p><strong>PATTES D’ARAIGNéE&nbsp;:</strong>Le vampire peut se
+      déplacer de 10&nbsp;m par action de mouvement sur les murs et les
       plafonds.</p>
 prototypeToken:
   name: Vampire
@@ -154,7 +154,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -218,9 +218,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: griffes-et-morsures
       subtype: melee
       learned: true
@@ -233,8 +233,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -248,9 +248,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+8 +1d8
               target:
@@ -268,7 +268,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -276,15 +276,15 @@ items:
       lastModifiedBy: null
     _id: ATgoeeDYwmTDlt5r
     sort: 300000
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.ATgoeeDYwmTDlt5r'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.ATgoeeDYwmTDlt5r"
   - folder: eRnLMLNnqgpvpmpq
     name: Epée longue
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       subtype: melee
       learned: true
@@ -297,8 +297,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -312,9 +312,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+8 + 1d8
               target:
@@ -332,7 +332,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -340,7 +340,7 @@ items:
       lastModifiedBy: null
     _id: lPsW5ISRnckG9kOy
     sort: 300000
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.lPsW5ISRnckG9kOy'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.lPsW5ISRnckG9kOy"
   - folder: uVNfyNGbfZsNuFix
     name: ABSORPTION D’ÉNERGIE
     type: capacity
@@ -348,14 +348,14 @@ items:
     _id: eWgoZK5bCZOGOil9
     system:
       description: >-
-        <p style="text-align:justify">Le vampire <strong>récupère 5 PV</strong>
-        chaque fois qu’il blesse une créature avec ses armes naturelles.<br />Si
+        <p>Le vampire <strong>récupère 5 PV</strong>
+        chaque fois qu’il blesse une créature avec ses armes naturelles. Si
         la victime est réduite à 0 PV par une telle attaque, elle se transforme
         en vampirien au prochain crépuscule.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: absorption-denergie
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -369,8 +369,8 @@ items:
       actions:
         - source: Actor.mQXsJSedLk0Nr9uc.Item.eWgoZK5bCZOGOil9
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: heal
           img: icons/svg/d20-highlight.svg
           properties:
@@ -384,7 +384,7 @@ items:
           resolvers:
             - type: heal
               skill:
-                formula: '5'
+                formula: "5"
               target:
                 type: self
                 number: 0
@@ -403,13 +403,13 @@ items:
     _stats:
       compendiumSource: Item.b3Zm7NTsJyow9Ik9
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.eWgoZK5bCZOGOil9'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.eWgoZK5bCZOGOil9"
   - folder: uVNfyNGbfZsNuFix
     name: IMMORTEL
     type: capacity
@@ -419,14 +419,14 @@ items:
       description: >-
         <p>Lorsqu’il tombe à 0 PV, il passe automatiquement en forme gazeuse et
         se dirige vers son cercueil où il reprend forme de chair. Il se réveille
-        avec tous ses PV au prochain crépuscule.<br />Pour le tuer, il est alors
+        avec tous ses PV au prochain crépuscule. Pour le tuer, il est alors
         nécessaire de lui planter un pieu dans le coeur pendant qu’il dort pour
         l’empêcher de se réveiller et de repasser en forme gazeuse, puis de
         brûler son corps et son cercueil.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: immortel
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -448,13 +448,13 @@ items:
     _stats:
       compendiumSource: Item.4DhWE9vhQrv5oMdz
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.5VQuwjUZVzIkWQSt'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.5VQuwjUZVzIkWQSt"
   - folder: uVNfyNGbfZsNuFix
     name: FORME GAZEUSE
     type: capacity
@@ -462,15 +462,15 @@ items:
     _id: 6DRD8zcMnC46WGN4
     system:
       description: >-
-        <p style="text-align:justify">Le vampire prend la consistance d’un gaz.
-        Il se déplace au ras du sol (s’il chute, il le fait<br />au ralenti) à
-        une vitesse de 5 m par action de mouvement (M). Il peut s’introduire par
+        <p>Le vampire prend la consistance d’un gaz.
+        Il se déplace au ras du sol (s’il chute, il le fait au ralenti) à
+        une vitesse de 5&nbsp;m par action de mouvement (M). Il peut s’introduire par
         les plus petits interstices (comme sous une porte), mais ne peut
         utiliser aucune capacité ni subir de DM.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: forme-gazeuse
-      subtype: ''
+      subtype: ""
       actionType: a
       learned: true
       charges:
@@ -492,13 +492,13 @@ items:
     _stats:
       compendiumSource: Item.uUAO1aFFU253Cvs8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.6DRD8zcMnC46WGN4'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.6DRD8zcMnC46WGN4"
   - folder: uVNfyNGbfZsNuFix
     name: REGARD ENVOÛTANT
     type: capacity
@@ -511,10 +511,10 @@ items:
         son adversaire. La cible doit réussir un <strong>test de VOL difficulté
         20 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 3
         ou inférieur passent sous le contrôle du vampire.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: regard-envoutant
-      subtype: ''
+      subtype: ""
       actionType: m
       learned: true
       charges:
@@ -536,13 +536,13 @@ items:
     _stats:
       compendiumSource: Item.tLeO2X1xOVtdFpEm
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.ghbGW04NBQO19Dmb'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.ghbGW04NBQO19Dmb"
   - folder: uVNfyNGbfZsNuFix
     name: RÉSISTANCE IMPIE
     type: capacity
@@ -553,11 +553,11 @@ items:
         <p>Le vampire<strong> retranche 10 à tous les DM qu’il subit</strong>
         (magie incluse) à l’exception des blessures des <strong>armes en argent
         et du feu.</strong> Cette RD ne s’ajoute pas à celle que tous les
-        morts‑vivants<br />ont contre le froid.</p>
-      source: ''
-      origin: ''
+        morts-vivants ont contre le froid.</p>
+      source: ""
+      origin: ""
       slug: resistance-impie
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -571,8 +571,8 @@ items:
       actions:
         - source: Actor.mQXsJSedLk0Nr9uc.Item.Z8dDOHPH5fXEKD8B
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -588,7 +588,7 @@ items:
               source: Actor.mQXsJSedLk0Nr9uc.Item.Z8dDOHPH5fXEKD8B
               subtype: combat
               target: dr
-              value: '10'
+              value: "10"
               additionalInfos: sauf feu et argent
           resolvers: []
       frequency: none
@@ -601,13 +601,13 @@ items:
     _stats:
       compendiumSource: Item.wOOb2Q588SD7L3Wa
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.Z8dDOHPH5fXEKD8B'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.Z8dDOHPH5fXEKD8B"
   - folder: Jc9oocmI3B4cVSRG
     name: RIPOSTE ECLAIR
     type: capacity
@@ -615,12 +615,12 @@ items:
     system:
       description: >-
         <p>La créature peut effectuer une attaque en action gratuite contre
-        chaque adversaire<br />qui l’attaque à l’exception de celui qu’elle a
-        elle‑même choisi d’attaquer à son tour.</p>
-      source: ''
-      origin: ''
+        chaque adversaire qui l’attaque à l’exception de celui qu’elle a
+        elle-même choisi d’attaquer à son tour.</p>
+      source: ""
+      origin: ""
       slug: riposte-eclair
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -641,7 +641,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.fT21h9LtmIoERyzl
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -649,7 +649,7 @@ items:
       lastModifiedBy: null
     _id: pLmpZD9KnrJqn6XG
     sort: 2600000
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.pLmpZD9KnrJqn6XG'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.pLmpZD9KnrJqn6XG"
   - folder: uVNfyNGbfZsNuFix
     name: VULNÉRABILITÉ AU SOLEIL
     type: capacity
@@ -657,14 +657,14 @@ items:
     _id: vaCpucgMpQj3ss7O
     system:
       description: >-
-        <p>Un vampire exposé au soleil subit 2d10 DM par tour sur son maximum de
-        PV (il ne peut<br />pas le régénérer tant qu’il reste à la lumière). Si
-        son maximum de PV est réduit à 0 de cette<br />façon, il est réduit en
+        <p>Un vampire exposé au soleil subit 2d10&nbsp;DM par tour sur son maximum de
+        PV (il ne peut pas le régénérer tant qu’il reste à la lumière). Si
+        son maximum de PV est réduit à 0 de cette façon, il est réduit en
         cendre et définitivement détruit.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vulnerabilite-au-soleil
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -686,13 +686,13 @@ items:
     _stats:
       compendiumSource: Item.p89A8WT7sXo1PVA4
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.vaCpucgMpQj3ss7O'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.vaCpucgMpQj3ss7O"
   - folder: uVNfyNGbfZsNuFix
     name: ESTROPIER
     type: capacity
@@ -705,10 +705,10 @@ items:
         comptabiliser à part, car les effets des sorts et des capacités de
         guérison sont divisés par deux. De plus, il triple les DM en cas de coup
         critique au lieu de les doubler.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: estropier
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -730,13 +730,13 @@ items:
     _stats:
       compendiumSource: Item.koFAKGKQHcRJj3x3
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.YhuMkdtYp70jHZet'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.YhuMkdtYp70jHZet"
   - folder: uVNfyNGbfZsNuFix
     name: MAGICIEN
     type: capacity
@@ -745,11 +745,11 @@ items:
     system:
       description: >-
         <p>La plupart des vampires anciens sont aussi des magiciens ; choisissez
-        une voie de mage au<br />rang 5 (souvent une voie de sorcier).</p>
-      source: ''
-      origin: ''
+        une voie de mage au rang&nbsp;5 (souvent une voie de sorcier).</p>
+      source: ""
+      origin: ""
       slug: magicien
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -771,13 +771,13 @@ items:
     _stats:
       compendiumSource: Item.OKdM6IzB8hnYppP1
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!3mB4Nzpl79RFTnYX.yjP4KOLG0Eik5PPN'
+    _key: "!actors.items!3mB4Nzpl79RFTnYX.yjP4KOLG0Eik5PPN"
 effects: []
 sort: 0
 ownership:
@@ -787,12 +787,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.mQXsJSedLk0Nr9uc
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: 3mB4Nzpl79RFTnYX
-_key: '!actors!3mB4Nzpl79RFTnYX'
-
+_key: "!actors!3mB4Nzpl79RFTnYX"

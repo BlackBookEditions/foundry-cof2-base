@@ -114,18 +114,18 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
   magic: 0
 prototypeToken:
   name: Capitaine
@@ -145,7 +145,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -210,9 +210,9 @@ items:
     img: icons/svg/sword.svg
     _id: hDzw2J7X2nrzSeR1
     system:
-      description: <p>Peux faire 2 attaques</p>
-      source: ''
-      origin: ''
+      description: <p>Peux faire 2 attaques.</p>
+      source: ""
+      origin: ""
       slug: epee-longue
       subtype: melee
       learned: true
@@ -226,7 +226,7 @@ items:
         - source: Item.gYOLAy4GiiA9Wbmy
           indice: 0
           label: Epée longue
-          chatFlavor: ''
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -240,9 +240,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+6"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+3
               target:
@@ -261,13 +261,13 @@ items:
     _stats:
       compendiumSource: Item.gYOLAy4GiiA9Wbmy
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!gbjrLxI0U16dVlQo.hDzw2J7X2nrzSeR1'
+    _key: "!actors.items!gbjrLxI0U16dVlQo.hDzw2J7X2nrzSeR1"
   - folder: uVNfyNGbfZsNuFix
     name: Capitaine
     type: capacity
@@ -277,10 +277,10 @@ items:
       description: >-
         <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
         à toutes les créatures sous ses ordres à portée de vue.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: capitaine
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -302,13 +302,13 @@ items:
     _stats:
       compendiumSource: Item.ZATPikkT8qGe7YHU
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!gbjrLxI0U16dVlQo.WSf4Hygvti7q9snf'
+    _key: "!actors.items!gbjrLxI0U16dVlQo.WSf4Hygvti7q9snf"
   - folder: uVNfyNGbfZsNuFix
     name: Riposte
     type: capacity
@@ -318,11 +318,11 @@ items:
       description: >-
         <p>La créature peut effectuer une attaque en action gratuite contre
         chaque adversaire qui l’attaque à l’exception de celui qu’elle a
-        elle‑même choisi d’attaquer à son tour.</p>
-      source: ''
-      origin: ''
+        elle-même choisi d’attaquer à son tour.</p>
+      source: ""
+      origin: ""
       slug: riposte
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -344,22 +344,22 @@ items:
     _stats:
       compendiumSource: Item.sU2FNIYYazmqyJS5
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!gbjrLxI0U16dVlQo.6NmK36PG7zQVWmBT'
+    _key: "!actors.items!gbjrLxI0U16dVlQo.6NmK36PG7zQVWmBT"
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
     img: icons/svg/item-bag.svg
     _id: bz47vQnxOiYeKdic
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: epee-longue
       tags: []
       subtype: weapon
@@ -378,7 +378,7 @@ items:
         unit: kg
       price:
         value: 6
-        unit: ''
+        unit: ""
       rarity: common
       equipped: false
       properties:
@@ -404,9 +404,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "@atc"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8
               target:
@@ -440,13 +440,13 @@ items:
     _stats:
       compendiumSource: Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!gbjrLxI0U16dVlQo.bz47vQnxOiYeKdic'
+    _key: "!actors.items!gbjrLxI0U16dVlQo.bz47vQnxOiYeKdic"
 effects: []
 sort: 0
 ownership:
@@ -456,11 +456,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454182007
   modifiedTime: 1742454182007
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!gbjrLxI0U16dVlQo'
-
+_key: "!actors!gbjrLxI0U16dVlQo"

@@ -115,39 +115,39 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: huge
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
+      private: ""
       public: >-
-        <p style="text-align: justify;">&Eacute;normes cr&eacute;atures
-        reptiliennes, les dragons poss&egrave;dent quatre pattes et de grandes
-        ailes membraneuses semblables &agrave; celles des chauves‑souris. Les
-        dragons des for&ecirc;ts sont reconnaissables aux patchs de plumes qui
+        <p style="text-align: justify;">énormes créatures
+        reptiliennes, les dragons possèdent quatre pattes et de grandes
+        ailes membraneuses semblables à celles des chauves-souris. Les
+        dragons des forêts sont reconnaissables aux patchs de plumes qui
         poussent au creux de certaines de leurs articulations (cou notamment) et
-        en vieillissant leurs &eacute;cailles ressemblent &agrave; de
-        l&rsquo;&eacute;corce. Leur souffle est un nuage empoisonn&eacute; et
-        ils utilisent g&eacute;n&eacute;ralement la magie druidique. Le
-        caract&egrave;re de chaque dragon varie selon l&rsquo;individu, mais
-        tous sont orgueilleux et attir&eacute;s par les tr&eacute;sors et ceux
-        qui ont r&eacute;uni un butin fabuleux &eacute;vitent de s&rsquo;en
-        &eacute;loigner. Le profil du dragon fourni ci‑dessous, correspond
-        &agrave; une jeune femelle d&rsquo;environ un si&egrave;cle.</p>
+        en vieillissant leurs écailles ressemblent à de
+        l’écorce. Leur souffle est un nuage empoisonné et
+        ils utilisent généralement la magie druidique. Le
+        caractère de chaque dragon varie selon l’individu, mais
+        tous sont orgueilleux et attirés par les trésors et ceux
+        qui ont réuni un butin fabuleux évitent de s’en
+        éloigner. Le profil du dragon fourni ci-dessous, correspond
+        à une jeune femelle d’environ un siècle.</p>
     languages: []
     properties: >-
-      <h4>IMMUNIT&Eacute;S</h4>
+      <h4>IMMUNITéS</h4>
 
-      <p>immunis&eacute; au sommeil et &agrave; la paralysie et ne subit aucun
-      DM de poison</p>
+      <p>immunisé au sommeil et à la paralysie et ne subit aucun
+      DM de poison.</p>
 
-      <p><strong>Attaque magique</strong> : +15</p>
+      <p><strong>Attaque magique</strong>&nbsp;: +15.</p>
 
-      <p>&nbsp;</p>
+      <p>&nbsp;.</p>
 prototypeToken:
   name: Dragon des forêts
   displayName: 0
@@ -166,7 +166,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -230,9 +230,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: morsure-et-griffes-2-attaques
       subtype: melee
       learned: true
@@ -245,8 +245,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -260,9 +260,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d12+8
               target:
@@ -280,7 +280,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -288,7 +288,7 @@ items:
       lastModifiedBy: null
     _id: n8u0QCsrdabiVnf4
     sort: 300000
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.n8u0QCsrdabiVnf4'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.n8u0QCsrdabiVnf4"
   - folder: uVNfyNGbfZsNuFix
     name: COUP DE QUEUE
     type: capacity
@@ -297,12 +297,12 @@ items:
     system:
       description: >-
         <p>Chaque fois qu’un adversaire attaque le dragon dans le dos, il subit
-        une attaque de queue<br />gratuite équivalant à une attaque avec des DM
+        une attaque de queue gratuite équivalant à une attaque avec des DM
         divisés par deux.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: coup-de-queue
-      subtype: ''
+      subtype: ""
       actionType: f
       learned: true
       charges:
@@ -316,8 +316,8 @@ items:
       actions:
         - source: Actor.otKZ9pF36gL5g3Bs.Item.mh6C116T9MYkQNvA
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -331,9 +331,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+14'
-                crit: ''
-                difficulty: '@cible.def'
+                formula: "+14"
+                crit: ""
+                difficulty: "@cible.def"
               dmg:
                 formula: (1d12+8)/2
               target:
@@ -353,23 +353,23 @@ items:
     _stats:
       compendiumSource: Item.KGGVAYLFnfiqj1R8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.mh6C116T9MYkQNvA'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.mh6C116T9MYkQNvA"
   - folder: Jc9oocmI3B4cVSRG
     name: EMPORTER DANS LES AIRS
     type: capacity
     img: icons/svg/combat.svg
     system:
-      description: "<p style=\"text-align:justify\">Sur un résultat de <strong>17 à 20 au test d’attaque</strong>, le dragon peut emporter dans les airs une victime de taille inférieure à la sienne au prix\_d’une action de mouvement. Au premier round, si la victime <strong>se libère (test de FOR difficulté 18)</strong>, elle subit,<strong> 4d4° DM de chute</strong>.<br />Au round suivant, si la créature décide de prendre de l’altitude, les DM passent à 7d4° et enfin 10d4° aux rounds suivants. <strong>Le dé évolutif des DM de chute est indexé sur le niveau</strong><br /><strong>de la victime, et non sur celui de la créature</strong></p>"
-      source: ''
-      origin: ''
+      description: "<p>Sur un résultat de <strong>17 à 20 au test d’attaque</strong>, le dragon peut emporter dans les airs une victime de taille inférieure à la sienne au prix d’une action de mouvement. Au premier round, si la victime <strong>se libère (test de FOR difficulté 18)</strong>, elle subit,<strong> 4d4°&nbsp;DM de chute</strong>. Au round suivant, si la créature décide de prendre de l’altitude, les DM passent à 7d4° et enfin 10d4° aux rounds suivants. <strong>Le dé évolutif des DM de chute est indexé sur le niveau</strong> <strong>de la victime, et non sur celui de la créature</strong></p>"
+      source: ""
+      origin: ""
       slug: emporter-dans-les-airs
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -390,7 +390,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.R77hIcg4CBseqDu0
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -398,7 +398,7 @@ items:
       lastModifiedBy: null
     _id: DLDDo145NEpkiGXW
     sort: 2400000
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.DLDDo145NEpkiGXW'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.DLDDo145NEpkiGXW"
   - folder: uVNfyNGbfZsNuFix
     name: INSPIRER LA TERREUR
     type: capacity
@@ -407,15 +407,15 @@ items:
     system:
       description: >-
         <p>Lorsque le dragon attaque pour la première fois, toutes les créatures
-        à moins de 30 m doivent réussir un<strong> test d’attaque magique contre
+        à moins de 30&nbsp;m doivent réussir un<strong> test d’attaque magique contre
         25</strong> ou être submergées par la peur et subir <strong>l’état
         affaibli pendant 1d4 rounds</strong>. Si le test est raté avec une marge
         de 10 plus, la victime doit fuir aussi loin que possible pendant la même
         durée.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: inspirer-la-terreur
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -437,31 +437,31 @@ items:
     _stats:
       compendiumSource: Item.wzX9F3XiC2fTqNct
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.otgRoN2zCg6SBvYf'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.otgRoN2zCg6SBvYf"
   - folder: Jc9oocmI3B4cVSRG
     name: SOUFFLE
     type: capacity
     img: icons/svg/combat.svg
     system:
       description: >-
-        <p style="text-align:justify">Le souffle est un nuage de gaz empoisonné
-        affectant toutes les créatures dans un cône 15 m × 15 m. Retenir sa
+        <p>Le souffle est un nuage de gaz empoisonné
+        affectant toutes les créatures dans un cône 15&nbsp;m × 15&nbsp;m. Retenir sa
         respiration est inutile, le poison fonctionne par simple contact.
         L’attaque inflige automatiquement (pas de test d’attaque) <strong>6d6+18
         DM de poison</strong>. Les DM sont divisés par deux si la victime
-        réussit un test d’<strong>AGI difficulté 15</strong>.<br />La créature
+        réussit un test d’<strong>AGI difficulté 15</strong>. La créature
         doit attendre 1d4 rounds avant d’utiliser à nouveau son souffle après
         chaque utilisation.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: souffle
-      subtype: ''
+      subtype: ""
       actionType: l
       learned: true
       charges:
@@ -475,8 +475,8 @@ items:
       actions:
         - source: Actor.otKZ9pF36gL5g3Bs.Item.bS4NnDYz0E9zXU44
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: ranged
           img: icons/svg/d20-highlight.svg
           properties:
@@ -490,9 +490,9 @@ items:
           resolvers:
             - type: ranged
               skill:
-                formula: '20'
-                crit: '0'
-                difficulty: '0'
+                formula: "20"
+                crit: "0"
+                difficulty: "0"
               dmg:
                 formula: 6d6+9
               target:
@@ -511,7 +511,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.FrtXhGM6ztrT4m33
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -519,7 +519,7 @@ items:
       lastModifiedBy: null
     _id: bS4NnDYz0E9zXU44
     sort: 0
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.bS4NnDYz0E9zXU44'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.bS4NnDYz0E9zXU44"
   - folder: Jc9oocmI3B4cVSRG
     name: VOL RAPIDE
     type: capacity
@@ -527,13 +527,13 @@ items:
     system:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
-        lorsqu’elle est en<br />vol. Au premier round de combat, la créature
+        lorsqu’elle est en vol. Au premier round de combat, la créature
         obtient un <strong>dé bonus en attaque</strong> et <strong>+1d8 aux
         DM</strong> si elle est en vol et attaque une créature au sol.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: vol-rapide
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -554,7 +554,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -562,7 +562,7 @@ items:
       lastModifiedBy: null
     _id: UOCxzijrEgNI2sAY
     sort: 1200000
-    _key: '!actors.items!otKZ9pF36gL5g3Bs.UOCxzijrEgNI2sAY'
+    _key: "!actors.items!otKZ9pF36gL5g3Bs.UOCxzijrEgNI2sAY"
 effects: []
 sort: 0
 ownership:
@@ -572,11 +572,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!otKZ9pF36gL5g3Bs'
-
+_key: "!actors!otKZ9pF36gL5g3Bs"

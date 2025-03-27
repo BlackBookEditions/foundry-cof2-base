@@ -5,19 +5,19 @@ img: icons/svg/combat.svg
 _id: g5RgXEcmIt5GGo0W
 system:
   description: >-
-    <p style="text-align:justify">Le sorcier effectue un test opposé d’attaque
-    magique contre une cible (portée 20 m). S’il l’emporte, la victime fuit
+    <p>Le sorcier effectue un test opposé d’attaque
+    magique contre une cible (portée 20&nbsp;m). S’il l’emporte, la victime fuit
     aussi loin du sorcier que possible pendant INT rounds (il lui faut
-    généralement autant de temps pour revenir !). Les créatures dont le NC est
+    généralement autant de temps pour revenir&nbsp;!). Les créatures dont le NC est
     supérieur ou égal au niveau du sorcier ne fuient qu’un seul round. Le
     sorcier peut choisir de lancer ce sort en action limitée et toutes les
     créatures à son contact sont affectées (faire un test d’attaque magique par
     adversaire).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: peur
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -30,8 +30,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.g5RgXEcmIt5GGo0W
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -44,11 +44,11 @@ system:
       resolvers:
         - type: magical
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.mag'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.mag"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: none
             number: 0
@@ -67,11 +67,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740828326112
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!g5RgXEcmIt5GGo0W'
-
+_key: "!items!g5RgXEcmIt5GGo0W"

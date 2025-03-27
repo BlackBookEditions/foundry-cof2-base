@@ -114,18 +114,18 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ''
+  pasteData: ""
   details:
     category: humanoid
     size: medium
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
-    properties: ''
+    properties: ""
 prototypeToken:
   name: Gnoll
   displayName: 0
@@ -144,7 +144,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -208,9 +208,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: hache-2-attaques
       subtype: melee
       learned: true
@@ -223,8 +223,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ''
-          chatFlavor: ''
+          label: ""
+          chatFlavor: ""
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -238,9 +238,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+8'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+8"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d8+4
               target:
@@ -258,7 +258,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -266,7 +266,7 @@ items:
       lastModifiedBy: null
     _id: LhCNIcWwKhx8yNV7
     sort: 300000
-    _key: '!actors.items!hDwAVqpAIph0E8gR.LhCNIcWwKhx8yNV7'
+    _key: "!actors.items!hDwAVqpAIph0E8gR.LhCNIcWwKhx8yNV7"
   - folder: uVNfyNGbfZsNuFix
     name: RIRES INSUPPORTABLES
     type: capacity
@@ -276,11 +276,11 @@ items:
       description: >-
         <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
         un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
-        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
-      source: ''
-      origin: ''
+        gnolls)</strong> à son contact ou subir un dé malus en attaque.</p>
+      source: ""
+      origin: ""
       slug: rires-insupportables
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -302,13 +302,13 @@ items:
     _stats:
       compendiumSource: Item.IOW2bgp2OV3DoalG
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!hDwAVqpAIph0E8gR.FysVgiJfnLpT9DFL'
+    _key: "!actors.items!hDwAVqpAIph0E8gR.FysVgiJfnLpT9DFL"
   - folder: uVNfyNGbfZsNuFix
     name: L’HALLALI
     type: capacity
@@ -316,16 +316,16 @@ items:
     _id: thweeuracMnneT9m
     system:
       description: >-
-        <p style="text-align:justify">Les gnolls profitent d’une erreur de leur
-        victime pour lui porter des attaques fatales.<br />Chaque fois que
+        <p>Les gnolls profitent d’une erreur de leur
+        victime pour lui porter des attaques fatales. Chaque fois que
         la<strong> victime de la meute rate une attaque ou obtient sur un test
         d’attaque un résultat au d20 allant de 1 à 5 (inclus)</strong>, elle
         déclenche la curée. Chaque gnoll à son contact bénéficie immédiatement
         et gratuitement d’une attaque contre la victime.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: lhallali
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -347,13 +347,13 @@ items:
     _stats:
       compendiumSource: Item.MOFgzzc5RvvaNfFC
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!hDwAVqpAIph0E8gR.thweeuracMnneT9m'
+    _key: "!actors.items!hDwAVqpAIph0E8gR.thweeuracMnneT9m"
   - folder: Jc9oocmI3B4cVSRG
     name: CAPITAINE
     type: capacity
@@ -362,10 +362,10 @@ items:
       description: >-
         <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
         à toutes les créatures sous ses ordres à portée de vue.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: capitaine
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -386,7 +386,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -394,7 +394,7 @@ items:
       lastModifiedBy: null
     _id: zphOxzpeN4kyjTz0
     sort: 3100000
-    _key: '!actors.items!hDwAVqpAIph0E8gR.zphOxzpeN4kyjTz0'
+    _key: "!actors.items!hDwAVqpAIph0E8gR.zphOxzpeN4kyjTz0"
   - folder: uVNfyNGbfZsNuFix
     name: COMMANDANT
     type: capacity
@@ -402,13 +402,13 @@ items:
     _id: oBQuBK0jN5mxq7xF
     system:
       description: >-
-        <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20 m du
-        commandant, il ne<br />subit que <strong>la moitié des DM qui lui sont
+        <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20&nbsp;m du
+        commandant, il ne subit que <strong>la moitié des DM qui lui sont
         infligés</strong>.</p>
-      source: ''
-      origin: ''
+      source: ""
+      origin: ""
       slug: commandant
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -430,13 +430,13 @@ items:
     _stats:
       compendiumSource: Item.h3hOsBxrvMJ3dVKE
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!hDwAVqpAIph0E8gR.oBQuBK0jN5mxq7xF'
+    _key: "!actors.items!hDwAVqpAIph0E8gR.oBQuBK0jN5mxq7xF"
 effects: []
 sort: 0
 ownership:
@@ -446,12 +446,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.ev1IpgqG4cmD1fEe
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
   modifiedTime: 1742454184539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: hDwAVqpAIph0E8gR
-_key: '!actors!hDwAVqpAIph0E8gR'
-
+_key: "!actors!hDwAVqpAIph0E8gR"

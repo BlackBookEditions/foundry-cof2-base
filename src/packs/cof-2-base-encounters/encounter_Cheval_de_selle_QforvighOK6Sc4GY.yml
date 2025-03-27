@@ -114,20 +114,20 @@ system:
         sheet: 0
         effects: 0
       value: null
-  pasteData: ''
+  pasteData: ""
   details:
     category: living
     size: large
     description:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     notes:
-      private: ''
-      public: ''
+      private: ""
+      public: ""
     languages: []
     properties: >-
-      <p>Un cheval de selle n&rsquo;est pas apte &agrave; subir le stress du
-      combat, son cavalier subit un d&eacute;<br>malus &agrave; toutes ses
+      <p>Un cheval de selle n’est pas apte à subir le stress du
+      combat, son cavalier subit un dé<br>malus à toutes ses
       actions en selle en situation de combat.</p>
   magic: 0
 prototypeToken:
@@ -148,7 +148,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: '#ffffff'
+    tint: "#ffffff"
     alphaThreshold: 0.75
   hexagonalShape: 0
   lockRotation: false
@@ -213,9 +213,9 @@ items:
     img: icons/svg/sword.svg
     _id: KOX0Tcf32BT8FVaK
     system:
-      description: ''
-      source: ''
-      origin: ''
+      description: ""
+      source: ""
+      origin: ""
       slug: ruade
       subtype: melee
       learned: true
@@ -243,9 +243,9 @@ items:
           resolvers:
             - type: melee
               skill:
-                formula: '+2'
-                crit: '20'
-                difficulty: '@cible.def'
+                formula: "+2"
+                crit: "20"
+                difficulty: "@cible.def"
               dmg:
                 formula: 1d4+4
               target:
@@ -264,24 +264,24 @@ items:
     _stats:
       compendiumSource: Item.QDUQvqfQhJngG1D0
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!QforvighOK6Sc4GY.KOX0Tcf32BT8FVaK'
+    _key: "!actors.items!QforvighOK6Sc4GY.KOX0Tcf32BT8FVaK"
   - folder: uVNfyNGbfZsNuFix
     name: MONTURE
     type: capacity
     img: icons/svg/combat.svg
     _id: HheZC5rkNJDhynpq
     system:
-      description: <p>La créature double sa FOR pour porter une charge</p>
-      source: ''
-      origin: ''
+      description: <p>La créature double sa FOR pour porter une charge.</p>
+      source: ""
+      origin: ""
       slug: monture
-      subtype: ''
+      subtype: ""
       actionType: none
       learned: true
       charges:
@@ -303,13 +303,13 @@ items:
     _stats:
       compendiumSource: Item.XNJh11OIeX2a6jIb
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: "12.331"
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!QforvighOK6Sc4GY.HheZC5rkNJDhynpq'
+    _key: "!actors.items!QforvighOK6Sc4GY.HheZC5rkNJDhynpq"
 effects: []
 sort: 0
 ownership:
@@ -319,11 +319,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
   modifiedTime: 1742454179561
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!QforvighOK6Sc4GY'
-
+_key: "!actors!QforvighOK6Sc4GY"

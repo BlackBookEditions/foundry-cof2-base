@@ -5,15 +5,15 @@ img: icons/svg/combat.svg
 _id: iwRu57ZzR7LKyNrH
 system:
   description: >-
-    <p>Le style de combat du barde est flamboyant et surprenant :<br />Il
+    <p>Le style de combat du barde est flamboyant et surprenant&nbsp;: Il
     effectue une attaque de contact avec une arme légère et obtient un bonus
-    d’attaque et<br />de DM égal à son CHA (en plus de sa FOR ou de son
+    d’attaque et de DM égal à son CHA (en plus de sa FOR ou de son
     AGI).</p>
-  source: ''
-  origin: ''
+  source: ""
+  origin: ""
   slug: attaque-flamboyante
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.iwRu57ZzR7LKyNrH
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -38,11 +38,11 @@ system:
       resolvers:
         - type: melee
           skill:
-            formula: '@atc + @cha'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc + @cha"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@arme.dmg + @cha'
+            formula: "@arme.dmg + @cha"
           target:
             type: none
             number: 0
@@ -63,11 +63,10 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: "12.331"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1740821549120
   lastModifiedBy: T8QXSVbafGIxbHWi
-_key: '!items!iwRu57ZzR7LKyNrH'
-
+_key: "!items!iwRu57ZzR7LKyNrH"
