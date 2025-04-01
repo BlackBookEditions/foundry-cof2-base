@@ -6,10 +6,10 @@ _id: w8Zv6qsObMnWayoe
 system:
   description: >-
     <p>L’arquebusier sait préparer une poudre plus puissante, il ajoute +10 m à
-    la portée et +1 aux DM des armes à poudre. Le bonus aux DM augmente de
-    +1 à chaque fois que le personnage atteint le rang 5 dans une voie
-    d’arquebusier. De plus, sa poudre est magique et elle permet à ses
-    projectiles d’affecter les créatures immunisées aux armes non magiques</p>
+    la portée et +1 aux DM des armes à poudre. Le bonus aux DM augmente de +1 à
+    chaque fois que le personnage atteint le rang 5 dans une voie d’arquebusier.
+    De plus, sa poudre est magique et elle permet à ses projectiles d’affecter
+    les créatures immunisées aux armes non magiques</p>
   source: ''
   origin: ''
   slug: poudre-puissante
@@ -33,15 +33,17 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.w8Zv6qsObMnWayoe
           subtype: combat
           target: dam
-          value: '1'
+          value: 1 +@toutrang[5]
+          additionalInfos: projectil magique
       conditions: []
       resolvers: []
   cost: 0
@@ -61,7 +63,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773785735
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743459399527
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!w8Zv6qsObMnWayoe'
 

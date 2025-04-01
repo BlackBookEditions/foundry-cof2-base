@@ -20,7 +20,45 @@ system:
     chargeable: false
   path: null
   cost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Z00zyHwd3Q7kxkb1
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: ranged
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: successMore10
+            formula: 2d4°
+            elementType: '0'
+            statuses: ''
+            applyBuff: false
+            duration: '1'
+            unit: round
+      modifiers: []
 effects: []
 sort: 200000
 ownership:
@@ -34,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740774302617
-  modifiedTime: 1740774352236
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743461729379
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Z00zyHwd3Q7kxkb1'
 

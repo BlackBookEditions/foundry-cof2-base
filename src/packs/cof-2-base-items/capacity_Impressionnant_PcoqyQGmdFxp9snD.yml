@@ -30,6 +30,7 @@ system:
         activable: false
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
@@ -39,11 +40,13 @@ system:
           subtype: skill
           target: for
           value: '3'
+          additionalInfos: Bonus sur l'intimidation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PcoqyQGmdFxp9snD
           subtype: skill
           target: cha
           value: '3'
+          additionalInfos: Bonus sur l'intimidation
       resolvers: []
   cost: -1
 effects: []
@@ -62,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740819778700
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743346569230
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PcoqyQGmdFxp9snD'
 

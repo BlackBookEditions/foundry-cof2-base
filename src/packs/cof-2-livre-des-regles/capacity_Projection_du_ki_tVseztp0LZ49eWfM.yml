@@ -1,0 +1,72 @@
+folder: B8aQGGuHER8V7rfw
+name: Projection du ki
+type: capacity
+img: icons/svg/combat.svg
+_id: tVseztp0LZ49eWfM
+system:
+  description: >-
+    <p>Le moine projette une vague de force avec son corps et son esprit à une
+    distance maximale de 20 m. Un test d’attaque magique réussi lui permet
+    d’infliger [1d4°+ VOL] DM.<br />Les DM passent à [2d4°+ VOL] au rang 4.</p>
+  source: ''
+  origin: ''
+  slug: projection-du-ki
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.tVseztp0LZ49eWfM
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@opposite.mag'
+          dmg:
+            formula: '@rank[1,0,0,1,0]d4°+ @vol'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 150000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828851380
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!tVseztp0LZ49eWfM'
+

@@ -1,16 +1,16 @@
-folder: E0IHxlFlZyFSfQGY
+folder: JPGwgBWoecyu7tc6
 name: Boulet explosif
 type: equipment
 img: icons/svg/item-bag.svg
 _id: dnPlOorWnrfhHcy1
 system:
   description: >-
-    <p>L’arquebusier sait fabriquer et lancer de
-    petites boules de métal garnies de poudre et d’une portée de 20 m qui
-    explosent dans un rayon de 5 m en infligeant ${4d4° + @int}$ DM<br
-    />perforants, divisés par 2 pour les victimes qui réussissent un test d’AGI
-    difficulté 10. Ceux qui ratent le test sont de plus aveuglés un round par le
-    flash lumineux de l’explosion.</p>
+    <p>L’arquebusier sait fabriquer et lancer de petites boules de métal garnies
+    de poudre et d’une portée de 20 m qui explosent dans un rayon de 5 m en
+    infligeant ${4d4° + @int}$ DM<br />perforants, divisés par 2 pour les
+    victimes qui réussissent un test d’AGI difficulté 10. Ceux qui ratent le
+    test sont de plus aveuglés un round par le flash lumineux de
+    l’explosion.</p>
   source: ''
   origin: ''
   slug: boulet-explosif
@@ -46,30 +46,37 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
+      type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: ranged
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
+            difficulty: '0'
           dmg:
             formula: 4d4° + @int
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 10
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
 effects: []
-sort: -100000
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -84,7 +91,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1743459692193
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!dnPlOorWnrfhHcy1'
 

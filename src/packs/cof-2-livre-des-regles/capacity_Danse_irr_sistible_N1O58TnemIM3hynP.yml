@@ -1,0 +1,74 @@
+folder: FXP9KycKraJxMt9L
+name: Danse irrésistible
+type: capacity
+img: icons/svg/combat.svg
+_id: N1O58TnemIM3hynP
+system:
+  description: >-
+    <p>Le barde joue une gigue endiablée aux effets magiques. S’il réussit un
+    test d’attaque magique opposé contre sa cible (portée 10 m), celle‑ci se met
+    à danser pendant [1d4° + CHA] rounds, elle subit un dé malus aux tests
+    d’attaque et ‑5 en DEF.<br />Si la cible est d’un niveau (NC) supérieur ou
+    égal au barde, elle ne danse qu’un seul round.</p>
+  source: ''
+  origin: ''
+  slug: danse-irresistible
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.N1O58TnemIM3hynP
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@opposite.mag'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740821620831
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!N1O58TnemIM3hynP'
+

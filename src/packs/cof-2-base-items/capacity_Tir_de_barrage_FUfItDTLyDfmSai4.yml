@@ -5,13 +5,13 @@ img: icons/svg/combat.svg
 _id: FUfItDTLyDfmSai4
 system:
   description: >-
-    <p>L’arquebusier surveille une zone de 20 m de
+    <p style="text-align:justify">L’arquebusier surveille une zone de 20 m de
     large face à lui. Si une créature se déplace dans cette zone avant son
     prochain tour, il peut faire une attaque à distance. En cas de succès la
     victime choisit entre deux possibilités : soit elle subit le double des
     dommages, soit elle termine son tour et son déplacement à l’endroit de
-    l’attaque et ne subit pas de dommages. L’arquebusier peut effectuer un
-    tir de barrage sur plusieurs créatures durant le round, tant qu’il n’a pas
+    l’attaque et ne subit pas de dommages. L’arquebusier peut effectuer un tir
+    de barrage sur plusieurs créatures durant le round, tant qu’il n’a pas
     besoin de recharger.</p>
   source: ''
   origin: ''
@@ -35,24 +35,33 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: ranged
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atd'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: '@arme.dmg * 2'
+            formula: '@arme.dmg'
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
   cost: -1
 effects: []
@@ -71,7 +80,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773687675
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743444011710
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!FUfItDTLyDfmSai4'
 

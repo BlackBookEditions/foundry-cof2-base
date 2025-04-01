@@ -4,7 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: cyfJyGkr1kjVnuXK
 system:
-  description: "<p>L’arquebusier obtient un bonus égal à son rang + 2 aux tests d’interaction sociale dans les\_tavernes ou les auberges (renseignement, négociation, séduction, etc.) ainsi que pour résister aux effets de l’alcool.</p>\n<p>De plus, il inflige 1d4° DM à mains nues (non létal) et il divise par 2 tous les DM non létaux qu’on lui inflige.</p>"
+  description: "<p style=\"text-align:justify\">L’arquebusier obtient un bonus égal à son rang + 2 aux tests d’interaction sociale dans les\_tavernes ou les auberges (renseignement, négociation, séduction, etc.) ainsi que pour résister aux effets de l’alcool.</p>\n<p style=\"text-align:justify\">De plus, il inflige 1d4° DM à mains nues (non létal) et il divise par 2 tous les DM non létaux qu’on lui inflige.</p>"
   source: ''
   origin: ''
   slug: pilier-de-bar
@@ -27,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -38,12 +39,14 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
           subtype: skill
           target: cha
-          value: '2'
+          value: 2 + @rang
+          additionalInfos: interactions sociales
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
           subtype: skill
           target: con
-          value: '2'
+          value: 2 + @rang
+          additionalInfos: resister à l'alcool
       resolvers: []
   cost: -1
 effects: []
@@ -62,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774064823
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743460975628
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!cyfJyGkr1kjVnuXK'
 

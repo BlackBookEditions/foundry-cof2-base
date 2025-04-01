@@ -4,7 +4,13 @@ type: capacity
 img: icons/svg/combat.svg
 _id: SqF5DF1vFnwXA9LP
 system:
-  description: "<p>Le gnome possède un talent inné pour les sciences, qu’elles soient occultes ou plus ordinaires. Il gagne un bonus de +3 à tous les tests scientifiques (INT) et il choisit une capacité de\_rang 1 d’ensorceleur. S’il porte une armure, il ne peut pas utiliser ce sort plus d’une fois par jour (il doit payer le coût en PM de façon normale). Dans le noir total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>"
+  description: >-
+    <p style="text-align:justify">Le gnome possède un talent inné pour les
+    sciences, qu’elles soient occultes ou plus ordinaires. Il gagne un bonus de
+    +3 à tous les tests scientifiques (INT) et il choisit une capacité de rang 1
+    d’ensorceleur. S’il porte une armure, il ne peut pas utiliser ce sort plus
+    d’une fois par jour (il doit payer le coût en PM de façon normale). Dans le
+    noir total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>
   source: ''
   origin: ''
   slug: don-etrange
@@ -30,6 +36,7 @@ system:
         activable: false
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
@@ -38,12 +45,14 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.SqF5DF1vFnwXA9LP
           subtype: state
           target: darkvision
-          value: '0'
+          value: '10'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.SqF5DF1vFnwXA9LP
           subtype: skill
           target: int
           value: '3'
+          additionalInfos: tests scientifiques
       resolvers: []
   cost: -1
 effects: []
@@ -62,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820587773
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743347591577
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!SqF5DF1vFnwXA9LP'
 

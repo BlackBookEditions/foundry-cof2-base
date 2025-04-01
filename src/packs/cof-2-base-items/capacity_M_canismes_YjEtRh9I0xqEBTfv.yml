@@ -5,11 +5,11 @@ img: icons/svg/combat.svg
 _id: YjEtRh9I0xqEBTfv
 system:
   description: >-
-    <p>L’arquebusier ajoute son rang + 2 à tous les tests visant à réparer ou à
-    comprendre des mécanismes (cela inclut le fait de désamorcer des pièges
-    mécaniques et de manipuler des armes de siège). Il obtient un dé bonus à
-    tous les tests d’attaque avec des armes de siège (baliste, couleuvrine,
-    canon, trébuchet, catapulte, etc.).</p>
+    <p style="text-align:justify">L’arquebusier ajoute son rang + 2 à tous les
+    tests visant à réparer ou à comprendre des mécanismes (cela inclut le fait
+    de désamorcer des pièges mécaniques et de manipuler des armes de siège). Il
+    obtient un dé bonus à tous les tests d’attaque avec des armes de siège
+    (baliste, couleuvrine, canon, trébuchet, catapulte, etc.).</p>
   source: ''
   origin: ''
   slug: mecanismes
@@ -32,10 +32,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,32 +44,43 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
           subtype: skill
           target: int
-          value: '2'
+          value: 2 + @rang
+          additionalInfos: réparer/utiliser mécanismes
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
       indice: 1
-      label: 'Mécanismes : arme de siege'
-      chatFlavor: 'Mécanismes : arme de siege'
+      label: Arme de siège
+      chatFlavor: Arme de siège
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
-        activable: true
+        visible: false
         enabled: false
+        activable: true
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       resolvers:
         - type: ranged
+          bonusDiceAdd: true
+          malusDiceAdd: false
           skill:
-            formula: '[object Object]'
+            formula: '@atd'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: '[object Object]'
+            formula: '@arme.dmg'
           target:
             type: none
             number: 0
             scope: all
-      conditions: []
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
   cost: -1
 effects: []
@@ -87,7 +99,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773648402
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743443900731
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YjEtRh9I0xqEBTfv'
 

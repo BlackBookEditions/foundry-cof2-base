@@ -5,11 +5,11 @@ img: icons/svg/combat.svg
 _id: eYcX0G5HfKCVv4tX
 system:
   description: >-
-    <p>Le moine peut méditer pendant 10 min et
-    récupérer ainsi [1d4°+VOL] PV. Les soins augmentent de +1d4° chaque fois que
-    le personnage atteint le rang 4 dans une voie de moine. Il doit
-    terminer une récupération rapide avant de pouvoir à nouveau utiliser cette
-    capacité et il ne peut pas l’utiliser plus de trois fois par jour.</p>
+    <p>Le moine peut méditer pendant 10 min et récupérer ainsi [1d4°+VOL] PV.
+    Les soins augmentent de +1d4° chaque fois que le personnage atteint le rang
+    4 dans une voie de moine. Il doit terminer une récupération rapide avant de
+    pouvoir à nouveau utiliser cette capacité et il ne peut pas l’utiliser plus
+    de trois fois par jour.</p>
   source: ''
   origin: ''
   slug: transe-de-guerison
@@ -18,8 +18,8 @@ system:
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -49,6 +49,7 @@ system:
           dmg: {}
       modifiers: []
   cost: -1
+  frequency: combat
 effects: []
 sort: 50000
 ownership:
@@ -65,7 +66,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828900924
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743322414204
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!eYcX0G5HfKCVv4tX'
 

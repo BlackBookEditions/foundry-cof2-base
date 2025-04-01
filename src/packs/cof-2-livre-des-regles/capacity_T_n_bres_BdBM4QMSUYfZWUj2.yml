@@ -1,0 +1,68 @@
+folder: KbhQw1DCiX1n3Wvx
+name: Ténèbres
+type: capacity
+img: icons/svg/combat.svg
+_id: BdBM4QMSUYfZWUj2
+system:
+  description: >-
+    <p style="text-align:justify">Le sorcier invoque une zone fixe de ténèbres
+    magiques, de 10 m de diamètre, à une portée<br />de 20 m pour une durée
+    d’INT minutes. Toutes les créatures, même celles capables de voir dans le
+    noir, sont aveuglées dans cette zone. En plus de ce sort, le sorcier ajoute
+    son rang + 2 à tous les tests d’INT basés sur les savoirs sombres (démons,
+    morts‑vivants, rituels impies, etc.).</p>
+  source: ''
+  origin: ''
+  slug: tenebres
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.BdBM4QMSUYfZWUj2
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.BdBM4QMSUYfZWUj2
+          subtype: skill
+          target: int
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828452109
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!BdBM4QMSUYfZWUj2'
+

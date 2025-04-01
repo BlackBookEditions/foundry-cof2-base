@@ -1,0 +1,91 @@
+folder: Ew9DjYH5ITPhbtLZ
+name: Elixir de maitrise des éléments
+type: equipment
+img: icons/svg/item-bag.svg
+_id: 5aJ1fM7FYpOnPOYM
+system:
+  description: >-
+    <p>L'utilisateur retranche le ${@rang + 2}$ à tous les DM de feu, de froid,
+    d’électricité ou d’acide subis pendant ${@int}$ minutes.</p>
+
+    <p>De plus, pendant la durée du sort, si l'utilisateur est un magicien,
+    lorsqu’il lance un sort d’un élément, le magicien peut échanger un élément
+    contre un autre (par exemple, une explosion de froid ou une flèche
+    acide).</p>
+  source: ''
+  origin: ''
+  slug: elixir-de-maitrise-des-elements
+  tags: []
+  subtype: consumable
+  martialCategory: ''
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 200
+    unit: ''
+  rarity: medium
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.5aJ1fM7FYpOnPOYM
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
+effects: []
+sort: 475000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1741115878186
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!5aJ1fM7FYpOnPOYM'
+

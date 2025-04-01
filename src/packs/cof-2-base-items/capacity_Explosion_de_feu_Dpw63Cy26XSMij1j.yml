@@ -31,17 +31,18 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: magical
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
             difficulty: '0'
           dmg:
             formula: 4d4°+@int
@@ -49,6 +50,12 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
   cost: -1
 effects: []
@@ -67,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828093689
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743422191301
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Dpw63Cy26XSMij1j'
 

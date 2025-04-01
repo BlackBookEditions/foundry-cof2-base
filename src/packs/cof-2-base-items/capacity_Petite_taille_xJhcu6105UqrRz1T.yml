@@ -5,14 +5,14 @@ img: icons/svg/combat.svg
 _id: xJhcu6105UqrRz1T
 system:
   description: >-
-    <p>Le halfelin obtient un bonus de +1 en DEF et de +3 à tous les tests de
-    discrétion ainsi qu’à tous les tests effectués pour subtiliser quelque chose
-    (pickpocket, vol à l’étalage, etc.). En revanche, un halfelin ne peut pas
-    utiliser à une main une arme dont les DM dépassent 1d6 (épée courte, masse,
-    etc., mais pas rapière). Il lui faut utiliser les deux mains pour les armes
-    qui infligent 1d8 à 1d10 de DM (épée longue) et il lui est interdit
-    d’utiliser les armes qui infligent plus de 1d10 DM. Il ne peut pas utiliser
-    d’arc long ni d’arbalète lourde</p>
+    <p style="text-align:justify">Le halfelin obtient un bonus de +1 en DEF et
+    de +3 à tous les tests de discrétion ainsi qu’à tous les tests effectués
+    pour subtiliser quelque chose (pickpocket, vol à l’étalage, etc.). En
+    revanche, un halfelin ne peut pas utiliser à une main une arme dont les DM
+    dépassent 1d6 (épée courte, masse, etc., mais pas rapière). Il lui faut
+    utiliser les deux mains pour les armes qui infligent 1d8 à 1d10 de DM (épée
+    longue) et il lui est interdit d’utiliser les armes qui infligent plus de
+    1d10 DM. Il ne peut pas utiliser d’arc long ni d’arbalète lourde</p>
   source: ''
   origin: ''
   slug: petite-taille
@@ -38,6 +38,7 @@ system:
         activable: false
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
@@ -47,25 +48,13 @@ system:
           subtype: combat
           target: def
           value: '1'
-      resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
-      indice: 1
-      label: ''
-      chatFlavor: ''
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        activable: false
-        enabled: false
-        temporary: false
-      modifiers:
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
           subtype: skill
           target: agi
           value: '3'
-      conditions: []
+          additionalInfos: discrétion vol, etc.
       resolvers: []
   cost: -1
 effects: []
@@ -84,7 +73,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820706031
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743347739968
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xJhcu6105UqrRz1T'
 

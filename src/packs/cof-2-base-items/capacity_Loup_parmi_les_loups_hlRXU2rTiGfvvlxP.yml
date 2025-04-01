@@ -22,7 +22,29 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.hlRXU2rTiGfvvlxP
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.hlRXU2rTiGfvvlxP
+          subtype: combat
+          target: dam
+          value: 1d4°
+          additionalInfos: vs creature moyenne
+      resolvers: []
   cost: -1
 effects: []
 sort: 87500
@@ -40,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820732092
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743348174633
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!hlRXU2rTiGfvvlxP'
 

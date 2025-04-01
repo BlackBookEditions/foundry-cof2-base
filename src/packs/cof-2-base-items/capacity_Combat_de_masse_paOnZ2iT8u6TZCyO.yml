@@ -31,6 +31,7 @@ system:
         enabled: false
         temporary: false
         visible: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -39,26 +40,7 @@ system:
           subtype: combat
           target: def
           value: '1'
-      resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.paOnZ2iT8u6TZCyO
-      indice: 1
-      label: ''
-      chatFlavor: ''
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        activable: false
-        enabled: false
-        temporary: false
-        visible: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.paOnZ2iT8u6TZCyO
-          subtype: combat
-          target: def
-          value: '1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -77,7 +59,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740775115040
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743461109840
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!paOnZ2iT8u6TZCyO'
 

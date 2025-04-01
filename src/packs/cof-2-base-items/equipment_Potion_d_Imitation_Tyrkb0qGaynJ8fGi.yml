@@ -43,24 +43,29 @@ system:
       type: consumable
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
         enabled: false
         temporary: false
+        noManaCost: false
+        visible: false
+      conditions:
+        - predicate: isOwned
       resolvers:
         - type: consumable
-          skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
-          dmg:
-            formula: ''
+          bonusDiceAdd: false
+          malusDiceAdd: false
           target:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isOwned
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unite: round
+            applyBuff: false
+          skill: {}
+          dmg: {}
       modifiers: []
 effects: []
 sort: 100000
@@ -78,7 +83,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1741115918698
+  modifiedTime: 1743319239000
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Tyrkb0qGaynJ8fGi'
 

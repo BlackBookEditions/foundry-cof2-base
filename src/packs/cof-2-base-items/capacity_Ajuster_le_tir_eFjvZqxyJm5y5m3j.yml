@@ -5,10 +5,10 @@ img: icons/svg/combat.svg
 _id: eFjvZqxyJm5y5m3j
 system:
   description: >-
-    <p>Après avoir raté une attaque à distance, l’arquebusier déclare qu’il
-    s’agissait d’un tir de réglage. Il obtient +5 sur le test de sa
-    prochaine attaque à distance, si son prochain tir vise la même cible avant
-    la fin du prochain round</p>
+    <p style="text-align:justify">Après avoir raté une attaque à distance,
+    l’arquebusier déclare qu’il s’agissait d’un tir de réglage. Il obtient +5
+    sur le test de sa prochaine attaque à distance, si son prochain tir vise la
+    même cible avant la fin du prochain round</p>
   source: ''
   origin: ''
   slug: ajuster-le-tir
@@ -23,7 +23,29 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.eFjvZqxyJm5y5m3j
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.eFjvZqxyJm5y5m3j
+          subtype: combat
+          target: ranged
+          value: '5'
+          additionalInfos: si meme cible
+      resolvers: []
   cost: -1
 effects: []
 sort: 50000
@@ -41,7 +63,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774263484
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743461218634
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!eFjvZqxyJm5y5m3j'
 

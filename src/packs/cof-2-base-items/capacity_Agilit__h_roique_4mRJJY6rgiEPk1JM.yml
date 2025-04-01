@@ -25,14 +25,15 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.4mRJJY6rgiEPk1JM
       indice: 0
       label: ''
-      chatFlavor: Agilité héroique
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,11 +42,13 @@ system:
           subtype: ability
           target: agi
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.4mRJJY6rgiEPk1JM
           subtype: bonusDice
           target: agi
           value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -64,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774393832
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743461256163
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!4mRJJY6rgiEPk1JM'
 

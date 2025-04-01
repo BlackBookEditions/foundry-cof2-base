@@ -5,12 +5,12 @@ img: icons/svg/combat.svg
 _id: 85CKbM8QlqVbTewg
 system:
   description: >-
-    <p>Une fois par jour, le prêtre peut soigner une
-    créature par point de CHA. Chaque patient (éventuellement lui‑même inclus)
-    obtient les mêmes effets qu’un sort de Récupération majeure. Le sort prend
-    10 min pendant lesquelles tous les patients doivent rester au repos dans un
-    rayon de 5 m autour du prêtre qui se concentre et se nimbe de lumière
-    divine. Ce sort ne peut pas être lancé avec la règle de concentration.</p>
+    <p>Une fois par jour, le prêtre peut soigner une créature par point de CHA.
+    Chaque patient (éventuellement lui‑même inclus) obtient les mêmes effets
+    qu’un sort de Récupération majeure. Le sort prend 10 min pendant lesquelles
+    tous les patients doivent rester au repos dans un rayon de 5 m autour du
+    prêtre qui se concentre et se nimbe de lumière divine. Ce sort ne peut pas
+    être lancé avec la règle de concentration.</p>
   source: ''
   origin: ''
   slug: retablissement
@@ -36,17 +36,26 @@ system:
         activable: true
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: 3d4°+@cha + @allrank[5]d4°
+            formula: 3d4°+@cha + @toutrang[5]d4°
           target:
             type: multiple
             number: 0
             scope: allies
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unite: round
+            applyBuff: false
           dmg: {}
       modifiers: []
   cost: -1
@@ -66,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829455976
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743321117823
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!85CKbM8QlqVbTewg'
 

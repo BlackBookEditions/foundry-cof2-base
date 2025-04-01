@@ -1,0 +1,63 @@
+folder: 9G0dBnUx2PoTmJ1p
+name: Flèche sanglante
+type: capacity
+img: icons/svg/combat.svg
+_id: Hjm14NkDAjumS57a
+system:
+  description: >-
+    <p>L’elfe fait une attaque à distance qui provoque une hémorragie. En plus
+    des DM normaux, la flèche produit un effet de saignement qui inflige à la
+    victime 1d4° DM à chaque round suivant jusqu’à ce que la cible soit soignée
+    (tout effet de soins ou une action limitée utilisée à cet effet). On ne peut
+    cumuler plusieurs effets de saignement.</p>
+  source: ''
+  origin: ''
+  slug: fleche-sanglante
+  tags: []
+  subtype: ''
+  actionType: l
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.Hjm14NkDAjumS57a
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740820340559
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!Hjm14NkDAjumS57a'
+

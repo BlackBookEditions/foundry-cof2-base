@@ -1,0 +1,67 @@
+folder: ZOBCft8sYdHtOpj7
+name: Prédicateur
+type: capacity
+img: icons/svg/combat.svg
+_id: 4r510ZO92t0tvcpQ
+system:
+  description: >-
+    <p style="text-align:justify">Le prêtre ajoute son rang + 2 aux tests visant
+    à convaincre ou convertir son auditoire. De plus, une fois par jour, il
+    récupère 1 PC s’il réussit à convertir une créature (ou un groupe) à sa
+    religion ou à convaincre une créature peu encline à le faire à suivre ses
+    préceptes.</p>
+  source: ''
+  origin: ''
+  slug: predicateur
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.4r510ZO92t0tvcpQ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.4r510ZO92t0tvcpQ
+          subtype: skill
+          target: cha
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740829237076
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!4r510ZO92t0tvcpQ'
+

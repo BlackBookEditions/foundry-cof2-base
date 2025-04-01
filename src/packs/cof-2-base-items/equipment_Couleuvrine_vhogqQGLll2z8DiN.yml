@@ -1,0 +1,109 @@
+folder: E0IHxlFlZyFSfQGY
+name: Couleuvrine
+type: equipment
+img: icons/svg/item-bag.svg
+_id: vhogqQGLll2z8DiN
+system:
+  description: >-
+    <p style="text-align:justify">La couleuvrine est un petit canon portatif
+    infligeant <strong>[5d4° + INT] DM</strong> avec une portée de 100m. Il faut
+    deux rounds (L) pour la recharger ensuite.</p>
+
+    <p style="text-align:justify">C’est une arme encombrante et il est
+    impossible de transporter plus d’une couleuvrine.</p>
+  source: ''
+  origin: ''
+  slug: couleuvrine
+  subtype: weapon
+  tags: []
+  martialCategory: handCannon
+  damagetype: piercing
+  defense: null
+  magicalDefense: null
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: false
+  charges:
+    current: 1
+    max: 1
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: pa
+  rarity: unique
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: true
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: ''
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.vhogqQGLll2z8DiN
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: ranged
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 5d4° + @int
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
+      modifiers: []
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1743445861280
+  modifiedTime: 1743446280757
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!vhogqQGLll2z8DiN'
+

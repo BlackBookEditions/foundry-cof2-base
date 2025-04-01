@@ -28,21 +28,6 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.2qsNAhJnRb1A3V0a
       indice: 0
-      label: Détecter la magie
-      chatFlavor: ''
-      type: spell
-      img: icons/svg/d20-highlight.svg
-      properties:
-        activable: true
-        enabled: false
-        temporary: false
-        visible: false
-      conditions:
-        - predicate: isLearned
-      modifiers: []
-      resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.2qsNAhJnRb1A3V0a
-      indice: 1
       label: Dissipation de sort non permanent
       chatFlavor: ''
       type: magical
@@ -51,11 +36,14 @@ system:
         activable: true
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: magical
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -66,6 +54,12 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
   cost: -1
 effects: []
@@ -84,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821444765
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743348589186
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!2qsNAhJnRb1A3V0a'
 

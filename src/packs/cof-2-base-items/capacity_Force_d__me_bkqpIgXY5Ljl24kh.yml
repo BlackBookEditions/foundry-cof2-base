@@ -34,25 +34,23 @@ system:
         activable: false
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
-          subtype: skill
-          target: agi
-          value: '@rang'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: fearimmunity
           value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: sleepimmunity
           value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -71,7 +69,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820079190
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743347009843
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bkqpIgXY5Ljl24kh'
 

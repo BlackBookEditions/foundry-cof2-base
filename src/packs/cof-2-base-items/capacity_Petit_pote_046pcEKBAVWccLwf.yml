@@ -4,7 +4,11 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 046pcEKBAVWccLwf
 system:
-  description: "<p>Le gnome est un compagnon sympathique et difficile à considérer comme dangereux ou malintentionné. Il gagne +3 à tous les tests d’interaction sociale sauf pour intimider. Il gagne aussi 1\_point de chance.</p>"
+  description: >-
+    <p style="text-align:justify">Le gnome est un compagnon sympathique et
+    difficile à considérer comme dangereux ou malintentionné. Il gagne +3 à tous
+    les tests d’interaction sociale sauf pour intimider. Il gagne aussi 1 point
+    de chance.</p>
   source: ''
   origin: ''
   slug: petit-pote
@@ -30,6 +34,7 @@ system:
         activable: false
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
@@ -39,11 +44,13 @@ system:
           subtype: skill
           target: cha
           value: '3'
+          additionalInfos: interaction sociale
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.046pcEKBAVWccLwf
           subtype: resource
           target: fp
           value: '1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -62,7 +69,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820511582
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743347627257
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!046pcEKBAVWccLwf'
 

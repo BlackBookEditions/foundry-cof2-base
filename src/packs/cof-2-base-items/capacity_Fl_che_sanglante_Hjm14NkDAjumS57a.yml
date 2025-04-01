@@ -35,11 +35,34 @@ system:
         activable: true
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
+      resolvers:
+        - type: ranged
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formula: 1d4°
+            elementType: '0'
+            statuses: bleeding
+            applyBuff: false
+            duration: '10'
+            unit: round
       modifiers: []
-      resolvers: []
   cost: -1
 effects: []
 sort: 300000
@@ -57,7 +80,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820340559
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743347518848
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Hjm14NkDAjumS57a'
 

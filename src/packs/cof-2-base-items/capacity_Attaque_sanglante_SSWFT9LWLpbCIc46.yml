@@ -36,11 +36,14 @@ system:
         activable: true
         enabled: false
         temporary: false
+        noManaCost: false
         visible: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: melee
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atc'
             crit: ''
@@ -48,9 +51,18 @@ system:
           dmg:
             formula: ''
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formula: 1d4°
+            elementType: '0'
+            statuses: bleeding
+            applyBuff: false
+            duration: '10'
+            unit: round
       modifiers: []
   cost: -1
 effects: []
@@ -69,7 +81,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740819793944
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743346882539
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!SSWFT9LWLpbCIc46'
 

@@ -5,14 +5,15 @@ img: icons/svg/combat.svg
 _id: wkaBPYkeoCHdQoyC
 system:
   description: >-
-    <p>L’arquebusier sait réaliser un mélange de poudre et de grenaille. Quand
-    il charge une arme à poudre, il peut choisir d’utiliser ce mélange à la
-    place d’une munition normale (il doit l’annoncer au moment où il charge).
-    Lorsqu’il tire cette munition (L), il fait un seul test d’attaque contre
-    toutes les cibles lui faisant face dans un cône de 10 m de long et sur 5 m
-    de large. Toutes les cibles dont il atteint la DEF subissent la moitié des
-    DM habituels. De plus, le personnage ajoute son rang + 2 à tous les tests
-    d’artificier (par exemple pour fabriquer et tirer des feux d’artifice).</p>
+    <p style="text-align:justify">L’arquebusier sait réaliser un mélange de
+    poudre et de grenaille. Quand il charge une arme à poudre, il peut choisir
+    d’utiliser ce mélange à la place d’une munition normale (il doit l’annoncer
+    au moment où il charge). Lorsqu’il tire cette munition (L), il fait un seul
+    test d’attaque contre toutes les cibles lui faisant face dans un cône de 10
+    m de long et sur 5 m de large. Toutes les cibles dont il atteint la DEF
+    subissent la moitié des DM habituels. De plus, le personnage ajoute son rang
+    + 2 à tous les tests d’artificier (par exemple pour fabriquer et tirer des
+    feux d’artifice).</p>
   source: ''
   origin: ''
   slug: tir-de-grenaille
@@ -30,19 +31,22 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
       indice: 0
-      label: Tir de grenaille
-      chatFlavor: Tir de grenaille
+      label: ''
+      chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: ranged
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atd'
             crit: ''
@@ -50,9 +54,15 @@ system:
           dmg:
             formula: '@arme.dmg / 2'
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 10
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            duration: '0'
+            unit: round
+            applyBuff: false
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
       indice: 1
@@ -62,20 +72,23 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: int
-          value: '2'
+          value: 2 +@rang
+          additionalInfos: artificier
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: agi
-          value: '2'
+          value: 2 +@rang
+          additionalInfos: artificier
       conditions: []
       resolvers: []
   cost: -1
@@ -95,7 +108,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773828309
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1743459054302
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wkaBPYkeoCHdQoyC'
 
