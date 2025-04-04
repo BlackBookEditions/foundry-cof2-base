@@ -4,12 +4,14 @@ type: equipment
 img: icons/svg/item-bag.svg
 system:
   description: >-
-    <p>La couleuvrine est un petit canon portatif infligeant <strong>[5d4° + INT] DM</strong> avec une portée de 100m. Il faut
-    deux rounds (L) pour la recharger ensuite.</p>
+    <p>La couleuvrine est un petit canon portatif infligeant <strong>[5d4° +
+    INT] DM</strong> avec une portée de 100m. Il faut deux rounds (L) pour la
+    recharger ensuite.</p>
 
-    <p>C’est une arme encombrante et il est impossible de transporter plus d’une couleuvrine.</p>
-  source: ""
-  origin: ""
+    <p>C’est une arme encombrante et il est impossible de transporter plus d’une
+    couleuvrine.</p>
+  source: ''
+  origin: ''
   slug: couleuvrine
   subtype: weapon
   tags: []
@@ -44,7 +46,7 @@ system:
     base: 0
     ability: null
     details: null
-    unit: ""
+    unit: ''
     min: null
     max: null
     bonuses:
@@ -54,8 +56,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.vhogqQGLll2z8DiN
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -71,9 +73,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atd"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 5d4° + @int
           target:
@@ -83,7 +85,7 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            duration: "0"
+            duration: '0'
             unit: round
             applyBuff: false
       modifiers: []
@@ -95,12 +97,12 @@ flags:
   exportSource:
     world: cov2-dev
     system: co
-    coreVersion: "12.331"
+    coreVersion: '12.331'
     systemVersion: 12.331.0
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "12.331"
+  coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1743524824217
@@ -108,4 +110,5 @@ _stats:
   lastModifiedBy: nGVk2zFsMDgquwhH
 _id: Qd6pZiPdEsVYtyN8
 sort: 900000
-_key: "!items!Qd6pZiPdEsVYtyN8"
+_key: '!items!Qd6pZiPdEsVYtyN8'
+
