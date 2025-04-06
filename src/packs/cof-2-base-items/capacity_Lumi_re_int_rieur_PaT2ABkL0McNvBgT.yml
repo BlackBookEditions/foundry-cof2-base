@@ -30,10 +30,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,11 +43,19 @@ system:
           subtype: skill
           target: int
           value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: cha
           value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
+          subtype: state
+          target: darkvision
+          value: '10'
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
       indice: 1
@@ -55,10 +64,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -67,6 +77,7 @@ system:
           subtype: state
           target: darkvision
           value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -85,7 +96,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740819977922
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1743930365774
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PaT2ABkL0McNvBgT'
 
