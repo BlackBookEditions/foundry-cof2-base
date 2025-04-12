@@ -55,7 +55,7 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: ranged
+        - type: attack
           skill:
             formula: '@atd'
             crit: ''

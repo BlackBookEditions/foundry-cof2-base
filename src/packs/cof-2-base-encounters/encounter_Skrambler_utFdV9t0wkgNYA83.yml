@@ -250,7 +250,7 @@ items:
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: melee
+            - type: attack
               skill:
                 formula: '+8'
                 crit: '20'
@@ -398,7 +398,7 @@ items:
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: ranged
+            - type: attack
               skill:
                 formula: '19'
                 crit: '0'

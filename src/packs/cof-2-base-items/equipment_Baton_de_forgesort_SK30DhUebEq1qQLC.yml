@@ -57,7 +57,7 @@ system:
       conditions:
         - predicate: isEquipped
       resolvers:
-        - type: melee
+        - type: attack
           skill:
             formula: '@atc'
             crit: ''
@@ -83,7 +83,7 @@ system:
       conditions:
         - predicate: isEquipped
       resolvers:
-        - type: melee
+        - type: attack
           skill:
             formula: '@atm'
             crit: ''

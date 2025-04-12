@@ -77,7 +77,7 @@ system:
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: melee
+        - type: attack
           skill:
             formula: '@atc'
             crit: ''

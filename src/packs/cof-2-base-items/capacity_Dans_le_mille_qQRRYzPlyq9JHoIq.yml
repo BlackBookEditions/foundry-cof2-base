@@ -39,7 +39,7 @@ system:
       conditions:
         - predicate: isEquipped
       resolvers:
-        - type: ranged
+        - type: attack
           skill:
             formula: '@atd'
             crit: ''

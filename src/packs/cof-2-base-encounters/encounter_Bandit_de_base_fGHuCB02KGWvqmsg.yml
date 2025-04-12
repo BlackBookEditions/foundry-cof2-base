@@ -268,7 +268,7 @@ items:
           conditions:
             - predicate: isEquipped
           resolvers:
-            - type: melee
+            - type: attack
               skill:
                 formula: '+2'
                 crit: '20'
@@ -364,7 +364,7 @@ items:
           conditions:
             - predicate: isEquipped
           resolvers:
-            - type: ranged
+            - type: attack
               skill:
                 formula: '+2'
                 crit: '20'
@@ -441,7 +441,7 @@ items:
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: melee
+            - type: attack
               skill:
                 formula: '+2'
                 crit: '20'
@@ -505,7 +505,7 @@ items:
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: ranged
+            - type: attack
               skill:
                 formula: '+2'
                 crit: '20'

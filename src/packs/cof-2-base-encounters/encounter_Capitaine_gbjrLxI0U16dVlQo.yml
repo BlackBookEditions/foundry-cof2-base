@@ -238,7 +238,7 @@ items:
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: melee
+            - type: attack
               skill:
                 formula: '+6'
                 crit: '20'
@@ -402,7 +402,7 @@ items:
             temporary: false
             noManaCost: false
           resolvers:
-            - type: melee
+            - type: attack
               skill:
                 formula: '@atc'
                 crit: ''

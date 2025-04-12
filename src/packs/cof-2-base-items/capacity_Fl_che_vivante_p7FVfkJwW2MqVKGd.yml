@@ -40,7 +40,7 @@ system:
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: ranged
+        - type: attack
           skill:
             formula: '@atd'
             crit: ''

@@ -40,7 +40,7 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: ranged
+        - type: attack
           skill:
             formula: '+7'
             crit: '20'
