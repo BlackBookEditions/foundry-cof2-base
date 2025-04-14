@@ -33,16 +33,20 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OvCIsCZVmFzAtLTQ
           subtype: combat
           target: def
+          apply: self
           value: 1 + (@rang % 5)
-      conditions: []
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -61,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1744565479878
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!OvCIsCZVmFzAtLTQ'
 

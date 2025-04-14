@@ -34,15 +34,18 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
-        temporary: false
+        activable: true
+        temporary: true
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.c1v9sJxTgUmLRZj5
           subtype: combat
           target: dam
+          apply: self
           value: '1'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
@@ -62,7 +65,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827305012
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744567568863
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!c1v9sJxTgUmLRZj5'
 

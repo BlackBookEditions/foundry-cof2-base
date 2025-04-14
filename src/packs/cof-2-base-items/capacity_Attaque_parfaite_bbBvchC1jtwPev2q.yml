@@ -24,7 +24,44 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
+          subtype: combat
+          target: dam
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
+          subtype: bonusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
+          subtype: bonusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
 effects: []
 sort: 250000
@@ -42,7 +79,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827308044
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744567832930
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bbBvchC1jtwPev2q'
 

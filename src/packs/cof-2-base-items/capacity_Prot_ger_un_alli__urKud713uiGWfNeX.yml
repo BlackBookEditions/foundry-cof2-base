@@ -32,16 +32,64 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.urKud713uiGWfNeX
           subtype: ability
           target: per
+          apply: self
           value: 2 + @rang
-      conditions: []
+          additionalInfos: ''
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: allies
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
+    - source: Compendium.cof-base.cof-2-base-items.Item.urKud713uiGWfNeX
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.urKud713uiGWfNeX
+          subtype: combat
+          target: def
+          apply: others
+          value: '2'
+          additionalInfos: si non surpris
       resolvers: []
   cost: -1
 effects: []
@@ -60,7 +108,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1744566520438
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!urKud713uiGWfNeX'
 
