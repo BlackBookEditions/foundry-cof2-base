@@ -21,7 +21,30 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.7ENYPFUdLeM2RDJb
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: debuff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.7ENYPFUdLeM2RDJb
+          subtype: combat
+          target: melee
+          apply: self
+          value: '-2'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
 effects: []
 sort: 100000
@@ -39,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827263842
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744566851690
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!7ENYPFUdLeM2RDJb'
 

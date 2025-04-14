@@ -30,10 +30,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,12 +42,16 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.QIxVby70L3mFXaPh
           subtype: combat
           target: melee
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.QIxVby70L3mFXaPh
           subtype: combat
           target: dam
+          apply: self
           value: '1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -65,7 +70,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821165726
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744607594230
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!QIxVby70L3mFXaPh'
 
