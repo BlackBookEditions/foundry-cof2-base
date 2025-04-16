@@ -35,10 +35,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -46,7 +47,16 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
           subtype: combat
           target: def
+          apply: self
           value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
+          subtype: skill
+          target: agi
+          apply: self
+          value: '+3'
+          additionalInfos: Discrétion, vol...
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
       indice: 1
@@ -56,15 +66,18 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xJhcu6105UqrRz1T
           subtype: skill
           target: agi
+          apply: self
           value: '3'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
@@ -84,7 +97,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820706031
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830428853
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xJhcu6105UqrRz1T'
 

@@ -31,10 +31,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,17 +43,23 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.I0k2KBB1zLQrcMTp
           subtype: skill
           target: per
+          apply: self
           value: '3'
+          additionalInfos: passage secret,piege
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.I0k2KBB1zLQrcMTp
           subtype: skill
           target: int
+          apply: self
           value: '3'
+          additionalInfos: passage secret,piege
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.I0k2KBB1zLQrcMTp
           subtype: state
           target: darkvision
-          value: '0'
+          apply: self
+          value: '30'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -71,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821155384
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830641274
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!I0k2KBB1zLQrcMTp'
 

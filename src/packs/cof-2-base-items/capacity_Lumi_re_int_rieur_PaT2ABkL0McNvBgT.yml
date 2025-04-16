@@ -42,18 +42,21 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: int
+          apply: self
           value: '3'
-          additionalInfos: ''
+          additionalInfos: Erudition et arts
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: skill
           target: cha
+          apply: self
           value: '3'
-          additionalInfos: ''
+          additionalInfos: Erudition et arts
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: state
           target: darkvision
+          apply: self
           value: '10'
           additionalInfos: ''
       resolvers: []
@@ -76,6 +79,7 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
           subtype: state
           target: darkvision
+          apply: self
           value: '0'
           additionalInfos: ''
       resolvers: []
@@ -96,7 +100,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1743930365774
+  modifiedTime: 1744830159799
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PaT2ABkL0McNvBgT'
 

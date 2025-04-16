@@ -45,14 +45,16 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.SqF5DF1vFnwXA9LP
           subtype: state
           target: darkvision
+          apply: self
           value: '10'
           additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.SqF5DF1vFnwXA9LP
           subtype: skill
           target: int
+          apply: self
           value: '3'
-          additionalInfos: ''
+          additionalInfos: test scientifiques
       resolvers: []
   cost: -1
 effects: []
@@ -71,7 +73,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1743930397100
+  modifiedTime: 1744830329969
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!SqF5DF1vFnwXA9LP'
 
