@@ -21,7 +21,30 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.yt741gnbCb7myy8L
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.yt741gnbCb7myy8L
+          subtype: combat
+          target: magic
+          apply: self
+          value: +@rang
+          additionalInfos: test opposé
+      resolvers: []
   cost: -1
 effects: []
 sort: 50000
@@ -39,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820693686
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830470381
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!yt741gnbCb7myy8L'
 

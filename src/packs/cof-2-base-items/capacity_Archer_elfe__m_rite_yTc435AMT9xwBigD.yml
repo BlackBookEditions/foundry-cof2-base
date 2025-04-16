@@ -31,10 +31,11 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,7 +43,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.yTc435AMT9xwBigD
           subtype: combat
           target: crit
-          value: '1'
+          apply: self
+          value: '-1'
+          additionalInfos: ''
       resolvers: []
 effects: []
 sort: 200000
@@ -57,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740820173774
-  modifiedTime: 1740820260656
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830254071
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!yTc435AMT9xwBigD'
 

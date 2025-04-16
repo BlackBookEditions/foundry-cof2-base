@@ -31,10 +31,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isEquipped
       modifiers:
@@ -42,7 +43,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.W6cgT1DydvgNlX2E
           subtype: skill
           target: int
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: erudition magie
       resolvers: []
   cost: -1
 effects: []
@@ -61,7 +64,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821464467
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830692923
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!W6cgT1DydvgNlX2E'
 

@@ -33,24 +33,38 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atc'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: ''
+            formula: '@arme'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
+            statuses:
+              - bleeding
+            duration: '10'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
 effects: []
@@ -69,7 +83,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740819793944
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830135235
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!SSWFT9LWLpbCIc46'
 

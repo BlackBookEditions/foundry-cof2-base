@@ -37,20 +37,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
+          apply: self
           value: '3'
+          additionalInfos: escalade resist au froid
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
+          apply: self
           value: '3'
+          additionalInfos: escalade resist au froid
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -61,20 +66,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: cha
+          apply: self
           value: '3'
+          additionalInfos: commerce et resistance aux maladies
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
+          apply: self
           value: '3'
+          additionalInfos: commerce et resistance aux maladies
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -85,20 +95,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: agi
+          apply: self
           value: '3'
+          additionalInfos: equitation et meteorologie
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
+          apply: self
           value: '3'
+          additionalInfos: equitation et meteorologie
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -109,25 +124,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
+          apply: self
           value: '3'
+          additionalInfos: natation, navigation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: int
+          apply: self
           value: '3'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
-          subtype: skill
-          target: int
-          value: '3'
+          additionalInfos: natation, navigation
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -138,15 +153,18 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
+          apply: self
           value: '3'
+          additionalInfos: chasser et pister
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -157,20 +175,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
+          apply: self
           value: '3'
+          additionalInfos: orientation et resist chaud ou froid
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
+          apply: self
           value: '3'
+          additionalInfos: orientation et resist chaud ou froid
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
@@ -180,10 +203,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -191,7 +215,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: resource
           target: fp
+          apply: self
           value: '1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
 effects: []
@@ -210,7 +236,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820977417
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1744830564475
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ldishTeIsT6PjmAQ'
 
