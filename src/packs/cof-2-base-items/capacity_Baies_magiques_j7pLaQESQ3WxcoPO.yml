@@ -4,16 +4,10 @@ type: capacity
 img: icons/svg/combat.svg
 _id: j7pLaQESQ3WxcoPO
 system:
-  description: >-
-    <p>Le druide doit se trouver devant un buisson ou un arbre vivant. Son
-    incantation fait pousser PER fruits qu’il peut cueillir. Chaque fruit offre
-    l’équivalent d’un repas et rend [1d4°+rang] PV après 1 min à celui qui le
-    consomme. Les effets de ces fruits ne fonctionnent qu’une fois par jour et
-    par personnage. En plus de ce sort, le druide ajoute son rang + 2 à tous les
-    tests de vigilance et de discrétion en pleine nature.</p>
+  description: "<p>Le druide doit se trouver devant un buisson ou un arbre vivant. Son incantation fait pousser PER fruits qu’il peut cueillir. Chaque fruit offre l’équivalent d’un repas et rend [1d4°+rang] PV après 1 min à celui qui le consomme. Les effets de ces fruits ne fonctionnent qu’une fois par jour et par personnage. En plus de ce sort, le druide ajoute son rang + 2 à tous les tests de vigilance et de discrétion en pleine nature.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>2 actions :</p>\n<p>1 buff permanent sur les jet de discrétion et vigilance en milieu naturel</p>\n<p>1 action pour soigner de 1d4° PV les token ciblés par le joueur (max PER cible à mettre à la main dans la capacité)</p>\n</blockquote>"
   source: ''
-  origin: ''
-  slug: baies-magiques-l
+  origin: Livre des règles p116
+  slug: baies-magiques
   tags: []
   subtype: ''
   actionType: l
@@ -33,20 +27,30 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: 1d4° + @rang
           target:
-            type: single
-            scope: all
-            number: 0
+            type: multiple
+            number: 3
+            scope: allies
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
@@ -57,23 +61,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: vigilance/discrétion
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: per
+          apply: self
           value: 2 + @rang
+          additionalInfos: vigilance/discrétion
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -90,7 +100,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828672676
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745234024273
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!j7pLaQESQ3WxcoPO'
 

@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 2IDmFFKn93QJ2l5T
 system:
-  description: >-
-    <p>L’armure du chevalier est parfaitement ajustée, aussi il n’ajoute que la
-    moitié de sa DEF à la difficulté des tests pour lesquels l’armure inflige
-    une pénalité. De plus, lorsqu’il porte une armure lourde (plaque ou plaque
-    complète), il obtient un bonus de +1 en DEF à chaque fois qu’il atteint le
-    rang 5 dans une voie de chevalier</p>
+  description: "<p>L’armure du chevalier est parfaitement ajustée, aussi il n’ajoute que la moitié de sa DEF à la difficulté des tests pour lesquels l’armure inflige une pénalité. De plus, lorsqu’il porte une armure lourde (plaque ou plaque complète), il obtient un bonus de +1 en DEF à chaque fois qu’il atteint le rang 5 dans une voie de chevalier</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité ne prend en compte que le bonus de DEF de manièe permanente. Pour les tests d'agilité au MJ de gérer manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p84
   slug: armure-sur-mesure
   tags: []
   subtype: ''
@@ -33,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.2IDmFFKn93QJ2l5T
           subtype: combat
           target: def
-          value: '@allrank[5]'
+          apply: self
+          value: '@toutrang[5]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -61,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825126963
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745471096858
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!2IDmFFKn93QJ2l5T'
 

@@ -4,13 +4,10 @@ type: capacity
 img: icons/svg/combat.svg
 _id: lBzmKBilHOY6uXdL
 system:
-  description: >-
-    <p>Lorsque le chevalier réalise cette attaque au contact, si le test
-    d’attaque est un échec, il inflige tout de même ½ DM à sa cible. Un résultat
-    de 1 au d20 n’inflige aucun DM.</p>
+  description: "<p>Lorsque le chevalier réalise cette attaque au contact, si le test d’attaque est un échec, il inflige tout de même ½ DM à sa cible. Un résultat de 1 au d20 n’inflige aucun DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose une action d'attaque qui reprend les informations de l'arme équipée. Si l'attaque est un echec un effet de dégat périodique de\_ round et / dégats de l'arme est appliqué à la cible. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
-  origin: ''
-  slug: frappe-du-justicier-l
+  origin: Livre des rêgles p85
+  slug: frappe-du-justicier
   tags: []
   subtype: ''
   actionType: l
@@ -22,8 +19,48 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.lBzmKBilHOY6uXdL
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: failure
+            formulaType: damage
+            formula: '@arme.dmg/2'
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -40,7 +77,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825151615
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745471379874
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!lBzmKBilHOY6uXdL'
 

@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 3pFdnbi9giSQGz4o
 system:
-  description: >-
-    <p>Le gnome sait comment échapper aux attaques des grandes créatures comme
-    les géants. Il gagne un bonus de +2 en DEF contre les créatures de taille
-    grande ou supérieure.  Ce bonus passe à +3 au rang 5.</p>
+  description: "<p style=\"text-align:justify\">Le gnome sait comment échapper aux attaques des grandes créatures comme les géants. Il gagne un bonus de +2 en DEF contre les créatures de taille grande ou supérieure. Ce bonus passe à +3 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong><br />Action activable/désactivable en cliquant/recliquant dessus. A activer contre les créatures grande ou supérieur.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p54
   slug: insignifiant
   tags: []
   subtype: ''
@@ -30,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.3pFdnbi9giSQGz4o
           subtype: combat
           target: def
-          value: '@rang[2,0,0,0,1]'
+          apply: self
+          value: '@rang[2,2,2,2,3]'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 200000
 ownership:
@@ -60,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740820445856
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745351181915
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!3pFdnbi9giSQGz4o'
 

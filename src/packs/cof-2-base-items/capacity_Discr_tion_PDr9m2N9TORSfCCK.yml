@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: PDr9m2N9TORSfCCK
 system:
-  description: >-
-    <p>Le voleur ajoute son rang + 2 à tous les tests de discrétion, de
-    déguisement ou pour cacher une arme sur lui. Il apprend le langage
-    silencieux à base de signe des voleurs (argotien) et enfin il obtient un dé
-    bonus en attaque lorsqu’il attaque un adversaire surpris</p>
+  description: "<p>Le voleur ajoute son rang + 2 à tous les tests de discrétion, de déguisement ou pour cacher une arme sur lui. Il apprend le langage silencieux à base de signe des voleurs (argotien) et enfin il obtient un dé bonus en attaque lorsqu’il attaque un adversaire surpris</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Un bonus permanent sur les jet de discréation/déguisement est comptabilisé à partir du moment où il est appris. Le dé bonus en cas d'attaque surprise doit être géré manuellement.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p74
   slug: discretion
   tags: []
   subtype: ''
@@ -32,23 +28,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PDr9m2N9TORSfCCK
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: déguisement/discrétion
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PDr9m2N9TORSfCCK
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: déguisement/discrétion
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -65,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824832438
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745407374751
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PDr9m2N9TORSfCCK'
 

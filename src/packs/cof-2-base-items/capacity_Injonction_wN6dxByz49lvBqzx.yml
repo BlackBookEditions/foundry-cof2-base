@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: wN6dxByz49lvBqzx
 system:
-  description: >-
-    <p>L’ensorceleur donne un ordre simple (mais pas suicidaire) de deux ou
-    trois mots que la cible doit pouvoir comprendre. S’il réussit un test opposé
-    d’attaque magique contre une cible à une portée de 20 m, la victime doit
-    exécuter l’ordre pendant son prochain tour. En plus de ce sort,
-    l’ensorceleur ajoute son rang + 2 aux tests de persuasion ou de
-    séduction.</p>
+  description: "<p>L’ensorceleur donne un ordre simple (mais pas suicidaire) de deux ou trois mots que la cible doit pouvoir comprendre. S’il réussit un test opposé d’attaque magique contre une cible à une portée de 20 m, la victime doit exécuter l’ordre pendant son prochain tour. En plus de ce sort, l’ensorceleur ajoute son rang + 2 aux tests de persuasion ou de séduction.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer un effet temporaire d'un round. L'effet ne fonctionnera que si le joueur est en mode combat. Ensuite c'est au MJ d'executer l'action demandé.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p94
   slug: injonction
   tags: []
   subtype: ''
@@ -33,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -44,7 +39,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: persuasion/séduction
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
       indice: 1
@@ -53,14 +50,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -68,11 +68,22 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -89,7 +100,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827669873
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652000042
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wN6dxByz49lvBqzx'
 

@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: JaWwoXc1vhUxa2CM
 system:
-  description: >-
-    <p>Le druide peut commander à la végétation de pousser et bloquer ses
-    ennemis (mais pas ses alliés) dans une zone de 10 m de diamètre (portée 20
-    m) pendant PER minutes. Les cibles sont immobilisées. À son tour, une
-    créature peut se libérer (action d’attaque) avec un test de FOR difficulté
-    [10 + PER du druide]. En cas de réussite, elle n’est plus affectée par le
-    sort pour le reste du combat.</p>
+  description: "<p style=\"text-align:justify\">Le druide peut commander à la végétation de pousser et bloquer ses ennemis (mais pas ses alliés) dans une zone de 10 m de diamètre (portée 20 m) pendant PER minutes. Les cibles sont immobilisées. À son tour, une créature peut se libérer (action d’attaque) avec un test de FOR difficulté [10 + PER du druide]. En cas de réussite, elle n’est plus affectée par le sort pour le reste du combat.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer l'effet \"immobilisé\" aux cibles. Au MJ de proposer le test pour échaper à cet état par la suite.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p117
   slug: prison-vegetale
   tags: []
   subtype: ''
@@ -25,8 +19,47 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.JaWwoXc1vhUxa2CM
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - immobilized
+            duration: '@per * 10'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -43,7 +76,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828808624
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745224619104
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!JaWwoXc1vhUxa2CM'
 

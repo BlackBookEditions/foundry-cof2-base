@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: lFt8Ds2CoZAZ65yt
 system:
-  description: >-
-    <p>Le voleur ajoute son rang + 2 aux tests destinés à baratiner, séduire,
-    négocier, mentir ou pour trouver un objet au marché noir. De plus, il
-    devient capable d’utiliser les parchemins ou les baguettes magiques en
-    réussissant un test d’attaque magique (L) contre une difficulté de (10 + (2
-    x rang du sort inscrit)). En cas d’échec, le sort n’est pas lancé et le
-    voleur peut faire une nouvelle tentative</p>
+  description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests destinés à baratiner, séduire, négocier, mentir ou pour trouver un objet au marché noir. De plus, il devient capable d’utiliser les parchemins ou les baguettes magiques en réussissant un test d’attaque magique (L) contre une difficulté de (10 + (2 x rang du sort inscrit)). En cas d’échec, le sort n’est pas lancé et le voleur peut faire une nouvelle tentative.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le bonus aux jet pour baratiner est un bonus permanent à partir du moment où il est appris. Le reste est à gérer manuellement par\_ le MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p75
   slug: baratin
   tags: []
   subtype: ''
@@ -34,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.lFt8Ds2CoZAZ65yt
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: baratin/persuasion
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -62,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824852507
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745407681215
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!lFt8Ds2CoZAZ65yt'
 

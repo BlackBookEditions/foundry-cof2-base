@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 6JbQu8tWqwolh4nM
 system:
-  description: >-
-    <p>Le moine peut se déplacer avant et après avoir attaqué (mais il couvre
-    toujours une distance normale, il divise son mouvement en deux). De plus, il
-    gagne +3 en Initiative et son rang + 2 à tous les tests de saut, de course
-    ou d’escalade.</p>
+  description: "<p style=\"text-align:justify\">Le moine peut se déplacer avant et après avoir attaqué (mais il couvre toujours une distance normale, il divise son mouvement en deux). De plus, il gagne +3 en Initiative et son rang + 2 à tous les tests de saut, de course ou d’escalade.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p121
   slug: pas-du-vent
   tags: []
   subtype: ''
@@ -32,28 +28,36 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: combat
           target: init
+          apply: self
           value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: saut/course/escalade
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: saut/course/escalade
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -70,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829143048
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745302107735
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!6JbQu8tWqwolh4nM'
 

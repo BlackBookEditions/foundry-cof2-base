@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 22zxjVb1ZAK2dG8F
 system:
-  description: >-
-    <p>Sur un test opposé d’attaque magique réussi (portée 10 m), le forgesort
-    déforme une pièce d’équipement métallique portée par sa cible. Une arme
-    devient inutilisable et bonne pour le rebut, une armure impose l’utilisation
-    d’un dé malus à tous les tests d’attaque et d’AGI de son porteur. La victime
-    peut se débarrasser de son armure au prix d’une action limitée. Si l’objet
-    est magique, le sort ne fait effet que pendant un seul round (et ne peut pas
-    être renouvelé). Appliqué à une structure (par exemple, une porte blindée),
-    ce sort inflige 3d4° DM en divisant par deux sa RD.</p>
+  description: "<p style=\"text-align:justify\">Sur un test opposé d’attaque magique réussi (portée 10 m), le forgesort déforme une pièce d’équipement métallique portée par sa cible. Une arme devient inutilisable et bonne pour le rebut, une armure impose l’utilisation d’un dé malus à tous les tests d’attaque et d’AGI de son porteur. La victime peut se débarrasser de son armure au prix d’une action limitée. Si l’objet est magique, le sort ne fait effet que pendant un seul round (et ne peut pas être renouvelé). Appliqué à une structure (par exemple, une porte blindée), ce sort inflige 3d4° DM en divisant par deux sa RD.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">Cette capacité propose une action qui va lancer le test opposé d'attaque magique. Au MJ d'interpréter le résultat.</p>\n<p style=\"text-align:justify\">Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p99
   slug: metal-hurlant
   tags: []
   subtype: ''
@@ -35,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -50,11 +45,19 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 75000
 ownership:
@@ -71,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827884168
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745654819929
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!22zxjVb1ZAK2dG8F'
 

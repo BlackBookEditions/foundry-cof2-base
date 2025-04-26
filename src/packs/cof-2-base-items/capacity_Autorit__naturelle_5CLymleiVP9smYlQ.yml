@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 5CLymleiVP9smYlQ
 system:
-  description: >-
-    <p>Le chevalier ajoute son rang + 2 aux tests réalisés pour donner des
-    ordres ou intimider. De plus, le noble chevalier reçoit la formation
-    nécessaire au port de l’armure de plaque complète (DEF +7). Désormais, il
-    peut utiliser toutes les capacités des voies de chevalier* en portant cette
-    armure. <em>* Pour un profil hybride de combattant, cette capacité permet
-    d’augmenter le niveau d’armure d’un cran pour toutes les autres voies de
-    combattant : jusqu’à l’armure de plaque pour les voies de guerrier et
-    jusqu’à la chemise de mailles pour les voies de barbare.</em></p>
+  description: "<p>Le chevalier ajoute son rang + 2 aux tests réalisés pour donner des ordres ou intimider. De plus, le noble chevalier reçoit la formation nécessaire au port de l’armure de plaque complète (DEF +7). Désormais, il peut utiliser toutes les capacités des voies de chevalier* en portant cette armure.</p>\n<p>\_</p>\n<p><em style=\"font-family:var(--font-primary);font-size:0.875rem\">Pour un profil hybride de combattant, cette capacité permet d’augmenter le niveau d’armure d’un cran pour toutes les autres voies de combattant : jusqu’à l’armure de plaque pour les voies de guerrier et jusqu’à la chemise de mailles pour les voies de barbare.</em></p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>La capacité ne prend en charge que le bonus au jet de caractéristique</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p86
   slug: autorite-naturelle
   tags: []
   subtype: ''
@@ -36,23 +28,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: ordre/intimidation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: ordre/intimidation
       conditions: []
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -69,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825218945
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745471759331
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!5CLymleiVP9smYlQ'
 

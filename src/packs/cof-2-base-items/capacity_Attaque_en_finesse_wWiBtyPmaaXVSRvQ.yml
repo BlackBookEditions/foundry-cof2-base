@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: wWiBtyPmaaXVSRvQ
 system:
-  description: >-
-    <p>Le voleur ajoute son AGI à son Init. et peut remplacer sa FOR par son AGI
-    pour ses tests d’attaque au contact (mais pas aux DM) lorsqu’il utilise une
-    arme légère à une main (dague, épée courte ou rapière). Enfin, il obtient un
-    bonus égal à son rang + 2 aux tests d’intimidation</p>
+  description: "<p style=\"text-align:justify\">Le voleur ajoute son AGI à son Init. et peut remplacer sa FOR par son AGI pour ses tests d’attaque au contact (mais pas aux DM) lorsqu’il utilise une arme légère à une main (dague, épée courte ou rapière). Enfin, il obtient un bonus égal à son rang + 2 aux tests d’intimidation</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>L'ensemble de ces éléments consistuent un bonus permanent lorsqu'il est appris. Sauf le rempalcement de la FOR par AGI qui peux se faire directement sur la fiche de personnage en mode dévérouille.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p77
   slug: attaque-en-finesse
   tags: []
   subtype: ''
@@ -32,15 +28,32 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: init
+          apply: self
           value: '@agi'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          subtype: skill
+          target: for
+          apply: self
+          value: '@rang+2'
+          additionalInfos: intimidation
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          subtype: skill
+          target: cha
+          apply: self
+          value: '@rang + 2'
+          additionalInfos: Intimidation
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
@@ -51,23 +64,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: ''
       conditions: []
       resolvers: []
-  cost: 0
+  cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -84,7 +103,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824959331
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745421984232
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wWiBtyPmaaXVSRvQ'
 

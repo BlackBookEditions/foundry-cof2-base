@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: RMX3j0ww4oINHPlJ
 system:
-  description: >-
-    <p>Le sorcier sacrifie 1d4° PV et gagne immédiatement +INT sur le résultat
-    d’un d20 qu’il vient de lancer ou en DEF contre une attaque (avant de savoir
-    si une attaque touche). De plus, il ajoute désormais sa VOL au nombre de dés
-    de récupération (DR) qu’il possède.</p>
+  description: "<p style=\"text-align:justify\">Le sorcier sacrifie 1d4° PV et gagne immédiatement +INT sur le résultat d’un d20 qu’il vient de lancer ou en DEF contre une attaque (avant de savoir si une attaque touche). De plus, il ajoute désormais sa VOL au nombre de dés de récupération (DR) qu’il possède.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Crée 2 actions lors de l'apprentissage.</p>\n<p>1 buff permanent qui augmenteles DR de la VOL du personnage</p>\n<p>1 action cliquable qui va retirer 1d4° PV au personnage mais ne gère pas le + INT sur un test ou la DEF, à gérer à la main.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p108
   slug: pacte-demoniaque
   tags: []
   subtype: ''
@@ -20,7 +16,7 @@ system:
     current: null
     max: null
   properties:
-    spell: true
+    spell: false
     chargeable: false
   path: null
   actions:
@@ -67,6 +63,7 @@ system:
       conditions: []
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -83,7 +80,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828278553
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745221990023
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!RMX3j0ww4oINHPlJ'
 

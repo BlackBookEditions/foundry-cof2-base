@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 2qsNAhJnRb1A3V0a
 system:
-  description: >-
-    <p>Le mage peut détecter la présence de magie (y compris la présence
-    d’objets magiques) dans un rayon de 10 m. Un test d’INT difficulté [10 +
-    rang du sort] permet de déterminer la fonction générale de l’enchantement.
-    Il peut aussi tenter de dissiper un sort non permanent d’un rang maximal
-    égal à ceux qu’il est capable de lancer en emportant un test opposé
-    d’attaque magique contre l’auteur du sort.</p>
+  description: "<p style=\"text-align:justify\">Le mage peut détecter la présence de magie (y compris la présence d’objets magiques) dans un rayon de 10 m. Un test d’INT difficulté [10 + rang du sort] permet de déterminer la fonction générale de l’enchantement. Il peut aussi tenter de dissiper un sort non permanent d’un rang maximal égal à ceux qu’il est capable de lancer en emportant un test opposé d’attaque magique contre l’auteur du sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">2 actions sont proposées.</p>\n<p style=\"text-align:justify\">Une action pour détecter la magie, qui actuellement fait un test d'INT difficulté 11 comme un test d'attaque (en attendant de coder mieux) ça ne consomme pas de PM</p>\n<p style=\"text-align:justify\">Une action de test opposé en attaque magique necessitant que le joueur selectionne le token ciblé et clic sur l'action, celà fera le test en opposition et consommera des PMs.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p60
   slug: maitrise-de-la-magie
   tags: []
   subtype: ''
@@ -33,14 +27,35 @@ system:
       type: spell
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
       conditions:
         - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@int'
+            crit: ''
+            difficulty: '11'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
-      resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.2qsNAhJnRb1A3V0a
       indice: 1
       label: Dissipation de sort non permanent
@@ -48,26 +63,37 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@cible.atm'
+            difficulty: '@oppose.atm'
           dmg:
             formula: ''
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -84,7 +110,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821444765
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745341563318
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!2qsNAhJnRb1A3V0a'
 

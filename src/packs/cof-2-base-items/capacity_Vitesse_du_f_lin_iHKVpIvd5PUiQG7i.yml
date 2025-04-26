@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: iHKVpIvd5PUiQG7i
 system:
-  description: >-
-    <p>Le druide ajoute son rang + 2 aux tests de course, d’escalade ou de saut.
-    De plus, il gagne +3 en Initiative et +1 en DEF. Le bonus de DEF passe à +2
-    au rang 3 et +3 au rang 5.</p>
+  description: "<p>Le druide ajoute son rang + 2 aux tests de course, d’escalade ou de saut. De plus, il gagne +3 en Initiative et +1 en DEF. Le bonus de DEF passe à +2 au rang 3 et +3 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Il s'agit de bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p115
   slug: vitesse-du-felin
   tags: []
   subtype: ''
@@ -31,33 +28,43 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: course/escalade/saut
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: course/escalade/saut
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: init
+          apply: self
           value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.iHKVpIvd5PUiQG7i
           subtype: combat
           target: def
+          apply: self
           value: '@rang[1,0,1,0,1]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -74,7 +81,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828548148
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745224971966
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!iHKVpIvd5PUiQG7i'
 

@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: KuKVgDzEJrMblft8
 system:
-  description: >-
-    <p>Un breuvage qui guérit immédiatement 1d4° PV et permet de gagner un dé
-    bonus aux trois prochains tests effectués dans une période de 30 min. En
-    plus de cette recette, grâce à ses études, le forgesort ajoute son rang + 2
-    aux tests d’alchimie et de chimie ou pour identifier une potion (test
-    difficulté 10 + rang du sort).</p>
+  description: "<p>Un breuvage qui guérit immédiatement 1d4° PV et permet de gagner un dé bonus aux trois prochains tests effectués dans une période de 30 min. En plus de cette recette, grâce à ses études, le forgesort ajoute son rang + 2 aux tests d’alchimie et de chimie ou pour identifier une potion (test difficulté 10 + rang du sort).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique alchimie/chimie. Un système de crafting sera proposé plus tard pour la gestion des potions. Pour le moment les potions existe dans le compendium, il faut le sglisser/déposer sur la fiche du joueur</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p98
   slug: fortifiant
   tags: []
   subtype: ''
@@ -33,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.KuKVgDzEJrMblft8
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: alchimie/chimie
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -61,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827843379
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653893277
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!KuKVgDzEJrMblft8'
 

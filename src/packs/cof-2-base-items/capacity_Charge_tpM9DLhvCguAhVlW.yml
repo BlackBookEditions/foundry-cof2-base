@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: tpM9DLhvCguAhVlW
 system:
-  description: >-
-    <p>Le barbare se déplace en ligne droite entre 5 m et 10 m et effectue une
-    attaque au contact avec un dé bonus et +1d4° aux DM. Il ne peut pas lancer
-    une charge s’il est au contact d’un adversaire.</p>
+  description: "<p>Le barbare se déplace en ligne droite entre 5 m et 10 m et effectue une attaque au contact avec un dé bonus et +1d4° aux DM. Il ne peut pas lancer une charge s’il est au contact d’un adversaire.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game </strong>:\_</p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque à partir des info de l'arme équipée et appliquer les dégâts en comptant le bonus.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p81
   slug: charge
   tags: []
   subtype: ''
@@ -30,26 +27,37 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: true
+          malusDiceAdd: false
           skill:
-            formula: '@atc'
+            formula: '@arme.skill'
             crit: ''
             difficulty: '@cible.def'
           dmg:
             formula: '@arme.dmg + 1d4°'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -66,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825018390
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745425760034
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!tpM9DLhvCguAhVlW'
 

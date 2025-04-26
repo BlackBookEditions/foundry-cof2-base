@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Dpw63Cy26XSMij1j
 system:
-  description: >-
-    <p>Le magicien choisit un point situé à moins de 30 m. Toutes les créatures
-    (y compris le magicien et ses compagnons) se trouvant dans un rayon de 5 m
-    autour de ce point subissent [4d4°+INT] DM et peuvent effectuer un test
-    d’AGI difficulté [10 + INT] pour ne subir que la moitié des DM.</p>
+  description: "<p style=\"text-align:justify\">Le magicien choisit un point situé à moins de 30 m. Toutes les créatures (y compris le magicien et ses compagnons) se trouvant dans un rayon de 5 m autour de ce point subissent [4d4°+INT] DM et peuvent effectuer un test d’AGI difficulté [10 + INT] pour ne subir que la moitié des DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p104
   slug: explosion-de-feu
   tags: []
   subtype: ''
@@ -31,26 +27,35 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
             difficulty: '0'
           dmg:
             formula: 4d4°+@int
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 20
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 200000
 ownership:
@@ -67,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828093689
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218992242
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Dpw63Cy26XSMij1j'
 

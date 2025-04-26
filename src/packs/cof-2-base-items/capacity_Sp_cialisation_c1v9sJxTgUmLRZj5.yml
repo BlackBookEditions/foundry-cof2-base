@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: c1v9sJxTgUmLRZj5
 system:
-  description: >-
-    <p>Lorsque le guerrier emploie une arme de prédilection, il gagne un bonus
-    de +1 DM. Chaque fois que le personnage atteint le rang 5 dans une voie de
-    guerrier, il peut choisir une nouvelle catégorie d’arme de prédilection (il
-    gagne les avantages des rangs 1 à 3) ou décider d’augmenter de +1 le bonus
-    aux DM d’une catégorie qu’il connaît déjà (pour un maximum de +6 pour un
-    guerrier ayant atteint le rang 5 dans les cinq voies).</p>
+  description: "<p style=\"text-align:justify\">Lorsque le guerrier emploie une arme de prédilection, il gagne un bonus de +1 DM. Chaque fois que le personnage atteint le rang 5 dans une voie de guerrier, il peut choisir une nouvelle catégorie d’arme de prédilection (il gagne les avantages des rangs 1 à 3) ou décider d’augmenter de +1 le bonus aux DM d’une catégorie qu’il connaît déjà (pour un maximum de +6 pour un guerrier ayant atteint le rang 5 dans les cinq voies).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>La capacité ne fait rien. Il est proposé au MJ de rajouter le +1 DM directement sur l'arme en question pour éviter la multiplication des action</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p89
   slug: specialisation
   tags: []
   subtype: ''
@@ -25,30 +19,9 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.c1v9sJxTgUmLRZj5
-      indice: 0
-      label: ''
-      chatFlavor: ''
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        enabled: false
-        activable: true
-        temporary: true
-        noManaCost: false
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.c1v9sJxTgUmLRZj5
-          subtype: combat
-          target: dam
-          apply: self
-          value: '1'
-          additionalInfos: ''
-      conditions: []
-      resolvers: []
+  actions: []
   cost: -1
+  rank: 3
 effects: []
 sort: 200000
 ownership:
@@ -65,7 +38,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1744567568863
+  modifiedTime: 1745651043215
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!c1v9sJxTgUmLRZj5'
 

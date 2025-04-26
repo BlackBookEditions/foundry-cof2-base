@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: n9lax2HxMY59YcXN
 system:
-  description: >-
-    <p>Une fois par round, en plus de ses autres actions, le barde peut lancer
-    un couteau sur une cible à distance (portée 10 m) en réussissant un test
-    d’attaque à distance. Cette attaque occasionne [1d4 + @agi] DM. Il peut
-    exécuter cette action sans pénalité, même s’il est engagé en combat au
-    contact avec un autre adversaire. Les DM passent à [1d4° + @agi] au rang
-    5.</p>
+  description: "<p style=\"text-align:justify\">Une fois par round, en plus de ses autres actions, le barde peut lancer un couteau sur une cible à distance (portée 10 m) en réussissant un test d’attaque à distance. Cette attaque occasionne [1d4 + @agi] DM. Il peut exécuter cette action sans pénalité, même s’il est engagé en combat au contact avec un autre adversaire. Les DM passent à [1d4° + @agi] au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le test d'attaque et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p68
   slug: lanceur-de-couteau
   tags: []
   subtype: ''
@@ -33,26 +27,37 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atd'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d4 + @agi
+            formula: '@rang[1d4,1d4,1d4,1d4,1d4°] + @agi'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -69,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821711987
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745387960359
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!n9lax2HxMY59YcXN'
 

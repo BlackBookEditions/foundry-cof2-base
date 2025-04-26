@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: cRnm4LYbsPmJG3kX
 system:
-  description: >-
-    <p>Le voleur obtient un dé bonus sur tous les tests de recherche d’indice
-    (Trouver une preuve [PER], Faire une déduction [INT] et Obtenir un aveu
-    [CHA]) ainsi que pour tous les tests réalisés pour brouiller des pistes,
-    réaliser de faux indices ou de faux documents. De plus, lorsqu’il est dans
-    un lieu, s’il dépense 1 PC, le MJ devra lui donner un indice qui lui a
-    échappé jusque‑là. S’il n’y a pas d’indice, le PC n’est pas dépensé</p>
+  description: "<p style=\"text-align:justify\">Le voleur obtient un dé bonus sur tous les tests de recherche d’indice (Trouver une preuve [PER], Faire une déduction [INT] et Obtenir un aveu [CHA]) ainsi que pour tous les tests réalisés pour brouiller des pistes, réaliser de faux indices ou de faux documents. De plus, lorsqu’il est dans un lieu, s’il dépense 1 PC, le MJ devra lui donner un indice qui lui a échappé jusque‑là. S’il n’y a pas d’indice, le PC n’est pas dépensé.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose une action activable/désactivable accordant un dé bonus sur les jet de caractéristique mentionnées ci dessus. A activer si les circonstance correspondre, sinon laissé désactivé.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p76
   slug: expert-en-criminalite
   tags: []
   subtype: ''
@@ -25,8 +19,46 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          subtype: bonusDice
+          target: per
+          apply: self
+          value: '0'
+          additionalInfos: trouver une preuve
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          subtype: bonusDice
+          target: int
+          apply: self
+          value: '0'
+          additionalInfos: faire une déduction
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          subtype: bonusDice
+          target: cha
+          apply: self
+          value: '0'
+          additionalInfos: obtenir un aveu
+      resolvers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 250000
 ownership:
@@ -43,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824945445
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745421640974
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!cRnm4LYbsPmJG3kX'
 

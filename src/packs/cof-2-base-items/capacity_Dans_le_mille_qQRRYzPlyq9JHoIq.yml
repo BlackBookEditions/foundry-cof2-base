@@ -4,18 +4,13 @@ type: capacity
 img: icons/svg/combat.svg
 _id: qQRRYzPlyq9JHoIq
 system:
-  description: >-
-    <p>Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé
-    malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette capacité
-    peut être utilisée avec Tir rapide ou Flèche de mort par exemple.
-    Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM
-    au lieu de 2d4°.</p>
+  description: "<p>Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette capacité peut être utilisée avec Tir rapide ou Flèche de mort par exemple. Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de 2d4°.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose 2 actions. La première (A) avec +2d4° DM et le dé malus. La 2eme (L) avec +3d4° DM et le dé malus. Comme d'habitude il faut d'abord cibler un token.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p70
   slug: dans-le-mille
   tags: []
   subtype: ''
-  actionType: none
+  actionType: a
   learned: false
   charges:
     current: null
@@ -27,31 +22,78 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: Dans le mille (A)
+      chatFlavor: Dans le mille (A)
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isEquipped
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
           skill:
-            formula: '@atd'
+            formula: '@arme.skill'
             crit: ''
             difficulty: '@cible.def'
           dmg:
             formula: '@arme.dmg + 2d4°'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
+      indice: 1
+      label: Dans le mille (L)
+      chatFlavor: Dans le mille (L)
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 3d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -68,7 +110,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740823246131
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745389504811
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!qQRRYzPlyq9JHoIq'
 

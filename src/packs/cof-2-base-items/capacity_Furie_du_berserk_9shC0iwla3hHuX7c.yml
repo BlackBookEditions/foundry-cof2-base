@@ -4,22 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 9shC0iwla3hHuX7c
 system:
-  description: >-
-    <p>Au lieu de la Rage du berserk, le barbare peut entrer en Furie du
-    berserk, mais cela consomme deux utilisations de la rage. Cet état est
-    similaire à la rage, mais le barbare ajoute 2d4° aux DM (au lieu de 1d4°) et
-    subit ‑4 en DEF. La difficulté du test pour mettre prématurément fin à la
-    furie est égale à 20.</p>
+  description: "<p style=\"text-align:justify\">Au lieu de la Rage du berserk, le barbare peut entrer en Furie du berserk, mais cela consomme deux utilisations de la rage. Cet état est similaire à la rage, mais le barbare ajoute 2d4° aux DM (au lieu de 1d4°) et subit ‑4 en DEF. La difficulté du test pour mettre prématurément fin à la furie est égale à 20.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Les effets bonus sont pris en charge via une action activable/désactivable à activer en entrant en rage.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p82
   slug: furie-du-berserk
   tags: []
   subtype: ''
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -51,6 +46,8 @@ system:
           value: 2d4°
       resolvers: []
   cost: -1
+  rank: 5
+  frequency: daily
 effects: []
 sort: 300000
 ownership:
@@ -67,7 +64,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825054121
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745425325170
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!9shC0iwla3hHuX7c'
 

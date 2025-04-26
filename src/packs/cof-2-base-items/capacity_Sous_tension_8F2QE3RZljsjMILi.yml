@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 8F2QE3RZljsjMILi
 system:
-  description: >-
-    <p>L’ensorceleur se charge d’énergie électrique pour CHA minutes. Pendant
-    toute la durée du sort, une créature qui le blesse par une attaque de
-    contact ou le touche reçoit une décharge infligeant 1d4° DM. De plus, il
-    peut utiliser une action d’attaque à chaque round pour délivrer une décharge
-    électrique (test d’attaque magique contre DEF de la cible, portée 10 m)
-    infligeant [1d4°+CHA] DM.</p>
+  description: "<p style=\"text-align:justify\">L’ensorceleur se charge d’énergie électrique pour CHA minutes. Pendant toute la durée du sort, une créature qui le blesse par une attaque de contact ou le touche reçoit une décharge infligeant 1d4° DM. De plus, il peut utiliser une action d’attaque à chaque round pour délivrer une décharge électrique (test d’attaque magique contre DEF de la cible, portée 10 m) infligeant [1d4°+CHA] DM <a href=\"https://black-book-editions.fr/forums.php?topic_id=80411&amp;nbp=3&amp;nop=0\" target=\"_blank\" rel=\"noopener\">sans cout de mana supplémentaire</a>.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur dépense ses PM manuellement. Il peux ensuite selectionner sa cible et cliquer sur l'action pour faire une attaque magique pour la décharge électrique. Si quelqu'un le touche il faudra que le MJ fasse le 1d4° de DM car ça ce n'est pas géré actuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p93
   slug: sous-tension
   tags: []
   subtype: ''
@@ -33,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -48,11 +45,19 @@ system:
           dmg:
             formula: 1d4°+@cha
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -69,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827457754
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745651703489
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!8F2QE3RZljsjMILi'
 

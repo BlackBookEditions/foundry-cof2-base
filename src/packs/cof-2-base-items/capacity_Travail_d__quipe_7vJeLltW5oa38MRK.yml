@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 7vJeLltW5oa38MRK
 system:
-  description: >-
-    <p>Lorsque le loup et le rôdeur sont au contact, le loup obtient un dé bonus
-    en attaque et le rôdeur obtient un dé bonus aux tests effectués pour pister
-    ou pour éviter d’être surpris (Vigilance).</p>
+  description: "<p style=\"text-align:justify\">Lorsque le loup et le rôdeur sont au contact, le loup obtient un dé bonus en attaque et le rôdeur obtient un dé bonus aux tests effectués pour pister ou pour éviter d’être surpris (Vigilance).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Il s'agit ici d'une action activable/désactivable à activer si le loup est à proximité et le joueur doit faire un jet de pistage ou vigilance.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p71
   slug: travail-dequipe
   tags: []
   subtype: ''
@@ -22,8 +19,32 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
+          subtype: bonusDice
+          target: per
+          apply: self
+          value: '0'
+          additionalInfos: pister avec l'animal
+      resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -40,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740823708934
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745406837159
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!7vJeLltW5oa38MRK'
 

@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: awJEU4bEMAQnJf32
 system:
-  description: >-
-    <p>Pendant 1 min (10 rounds), tous les adversaires qui veulent attaquer le
-    prêtre doivent réussir un test d’INT difficulté [10 + CHA du prêtre]. S’ils
-    échouent, ils ne peuvent pas l’attaquer pour la durée du sort. Ceux dont le
-    niveau est inférieur à la moitié de celui du prêtre sont automatiquement
-    affectés (pas de test d’INT). Si le prêtre commet une action offensive, le
-    sort prend fin immédiatement et il ne peut plus être lancé avant de prendre
-    une récupération rapide.</p>
+  description: "<p style=\"text-align:justify\">Pendant 1 min (10 rounds), tous les adversaires qui veulent attaquer le prêtre doivent réussir un test d’INT difficulté [10 + CHA du prêtre]. S’ils échouent, ils ne peuvent pas l’attaquer pour la durée du sort. Ceux dont le niveau est inférieur à la moitié de celui du prêtre sont automatiquement affectés (pas de test d’INT). Si le prêtre commet une action offensive, le sort prend fin immédiatement et il ne peut plus être lancé avant de prendre une récupération rapide.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :\_</strong></p>\n<p style=\"text-align:justify\">Une action va permettre de lancer le sort et consommer les PM. Celà va applliquer un \"effet\" qui ne fait rien au sens propre du terme mais permet de suivre son application pendant 1 minute en combat. Si l'effet, (et l'icone de l'effet) disparaissent celà signifie que le sort à pris fin. Le reste est laissé à la charge du MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: sanctuaire
   tags: []
   subtype: ''
@@ -26,8 +19,44 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.awJEU4bEMAQnJf32
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -44,7 +73,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829353845
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745338828476
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!awJEU4bEMAQnJf32'
 

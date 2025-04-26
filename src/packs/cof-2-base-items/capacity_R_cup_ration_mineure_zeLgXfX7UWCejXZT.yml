@@ -4,23 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: zeLgXfX7UWCejXZT
 system:
-  description: >-
-    <p>Le prêtre peut apposer les mains sur un allié au contact (ou sur
-    lui‑même) pour le soigner. Le patient récupère [1d4°+CHA du prêtre] PV. Ce
-    sort peut être lancé une fois par jour par rang atteint dans la voie, plus
-    une fois supplémentaire chaque fois que le personnage atteint le rang 3 dans
-    une autre voie de prêtre. En plus de ce sort, le prêtre ajoute son rang + 2
-    à tous les tests de médecine et de premiers soins.</p>
+  description: "<p style=\"text-align:justify\">Le prêtre peut apposer les mains sur un allié au contact (ou sur lui‑même) pour le soigner. Le patient récupère [1d4°+CHA du prêtre] PV. Ce sort peut être lancé une fois par jour par rang atteint dans la voie, plus une fois supplémentaire chaque fois que le personnage atteint le rang 3 dans une autre voie de prêtre. En plus de ce sort, le prêtre ajoute son rang + 2 à tous les tests de médecine et de premiers soins.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p style=\"text-align:justify\">Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les soins. Remarque : Pour le nombre d'utilisation par jour, il est actuellement reglé sur 1/jour, vous pouvez le modifier dans l'onglet \"détails\" en mettant la valeur maximum correspondant au rang de votre prêtre. La case ne prend pas de \"formule\" mais une valeur fixe.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: recuperation-mineure
   tags: []
   subtype: ''
   actionType: a
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: true
     chargeable: false
@@ -33,20 +27,30 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: 1d4° + @cha
           target:
             type: single
             scope: all
             number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zeLgXfX7UWCejXZT
@@ -57,18 +61,23 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.zeLgXfX7UWCejXZT
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: médecine/premiers soins
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
+  frequency: daily
 effects: []
 sort: 100000
 ownership:
@@ -85,7 +94,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829439057
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745340337041
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!zeLgXfX7UWCejXZT'
 

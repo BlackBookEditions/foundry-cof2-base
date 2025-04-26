@@ -4,10 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: tVseztp0LZ49eWfM
 system:
-  description: >-
-    <p>Le moine projette une vague de force avec son corps et son esprit à une
-    distance maximale de 20 m. Un test d’attaque magique réussi lui permet
-    d’infliger [1d4°+ VOL] DM. Les DM passent à [2d4°+ VOL] au rang 4.</p>
+  description: "<p>Le moine projette une vague de force avec son corps et son esprit à une distance maximale de 20 m. Un test d’attaque magique réussi lui permet d’infliger [1d4°+ VOL] DM. Les DM passent à [2d4°+ VOL] au rang 4.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque magique contre la defense de la cible et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
   origin: ''
   slug: projection-du-ki
@@ -30,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -48,8 +48,16 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -66,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828851380
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745265034696
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!tVseztp0LZ49eWfM'
 

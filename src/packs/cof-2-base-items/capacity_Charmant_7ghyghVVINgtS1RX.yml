@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 7ghyghVVINgtS1RX
 system:
-  description: >-
-    <p>Le barde ajoute son rang + 2 aux tests effectués pour séduire,
-    convaincre, mentir ou baratiner. Désormais, il peut dépenser 1 point de
-    chance pour améliorer l’action d’un compagnon en vue, ce PC permet d’ajouter
-    [1d4° + CHA] sur le résultat du test (au lieu de +10).</p>
+  description: "<p>Le barde ajoute son rang + 2 aux tests effectués pour séduire, convaincre, mentir ou baratiner. Désormais, il peut dépenser 1 point de chance pour améliorer l’action d’un compagnon en vue, ce PC permet d’ajouter [1d4° + CHA] sur le résultat du test (au lieu de +10).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le bonus au test pour séduire est permanent à partir du moment où il est appris. La dépense d'un PC pour obtenir le 2eme effet est géré manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p68
   slug: charmant
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.7ghyghVVINgtS1RX
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: séduire, convaincre, mentir
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -61,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821824610
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385670771
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!7ghyghVVINgtS1RX'
 

@@ -4,28 +4,59 @@ type: capacity
 img: icons/svg/combat.svg
 _id: LNy16B7c5VnsmHaf
 system:
-  description: >-
-    <p>Une fois par combat, le chevalier peut donner un coup avec son armure
-    (gantelet, heaume, spallière, etc.) en action gratuite. Il inflige
-    automatiquement [1d4° + FOR] DM, et si la FOR de la cible est inférieure à
-    celle du chevalier, elle est (au choix du chevalier) renversée ou étourdie
-    pour 1 round ou recule de 3 m.</p>
+  description: "<p>Une fois par combat, le chevalier peut donner un coup avec son armure (gantelet, heaume, spallière, etc.) en action gratuite. Il inflige automatiquement [1d4° + FOR] DM, et si la FOR de la cible est inférieure à celle du chevalier, elle est (au choix du chevalier) renversée ou étourdie pour 1 round ou recule de 3 m.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>La capacité propos eune action qui va faire une attaque à réussite automatique sur la cible. Il faudra un repos partielle à minima pour réutiliser cette action.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p85
   slug: mon-armure-est-une-arme
   tags: []
   subtype: ''
   actionType: f
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.LNy16B7c5VnsmHaf
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: 1d4° + @for
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 5
+  frequency: combat
 effects: []
 sort: 300000
 ownership:
@@ -42,7 +73,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825159770
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745471488295
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LNy16B7c5VnsmHaf'
 

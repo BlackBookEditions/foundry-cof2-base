@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: WzlJ3ZBv1SiWOyNO
 system:
-  description: >-
-    <p>Le prêtre entonne un chant pour encourager ses compagnons en vue. Ses
-    alliés et lui bénéficient d’un bonus de +1 à tous leurs tests de
-    caractéristique et d’attaque pendant CHA minutes. Ce bonus passe à +2 au
-    rang 5. De plus, le prêtre obtient un bonus égal à son rang + 2 à tous les
-    tests de théologie ou de cosmologie.</p>
+  description: "<p style=\"text-align:justify\">Le prêtre entonne un chant pour encourager ses compagnons en vue. Ses alliés et lui bénéficient d’un bonus de +1 à tous leurs tests de caractéristique et d’attaque pendant CHA minutes. Ce bonus passe à +2 au rang 5. De plus, le prêtre obtient un bonus égal à son rang + 2 à tous les tests de théologie ou de cosmologie.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">2 actions</p>\n<p style=\"text-align:justify\">Une amélioration permanente pour la theologie et la cosmologie</p>\n<p style=\"text-align:justify\">Une action pour laquelle le joueur cible les cibles et lorsqu'il clic sur l'action, chaques token ciblé reçoit un bonus à tout ses jets de caractéristique et d'attaque. Utilisable uniquement en combat</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: benediction
   tags: []
   subtype: ''
@@ -33,18 +28,64 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: theologie/cosmologie
       conditions: []
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          subtype: skill
+          target: all
+          apply: both
+          value: '@rang[1,1,1,1,2]'
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -61,7 +102,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829540507
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745338562829
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!WzlJ3ZBv1SiWOyNO'
 

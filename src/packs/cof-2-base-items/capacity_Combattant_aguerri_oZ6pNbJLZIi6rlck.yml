@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: oZ6pNbJLZIi6rlck
 system:
-  description: >-
-    <p>L’arquebusier choisit une capacité de rang 1 de son choix de guerrier, de
-    voleur (armure de cuir) ou de rôdeur (armure de cuir renforcé). Il gagne
-    aussi +1 en DEF.</p>
+  description: "<p>L’arquebusier choisit une capacité de rang 1 de son choix de guerrier, de voleur (armure de cuir) ou de rôdeur (armure de cuir renforcé). Il gagne aussi +1 en DEF.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. De plus, pour la capacité gratuite, il suffit de glisser deposer la capacité choisie sous celle-ci dans la fiche de personnage</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p64
   slug: combattant-aguerri
   tags: []
   subtype: ''
@@ -44,6 +41,8 @@ system:
           value: '1'
       resolvers: []
   cost: -1
+  rank: 3
+  allowLinkedCapacity: true
 effects: []
 sort: 200000
 ownership:
@@ -60,7 +59,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774116358
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745352496076
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!oZ6pNbJLZIi6rlck'
 

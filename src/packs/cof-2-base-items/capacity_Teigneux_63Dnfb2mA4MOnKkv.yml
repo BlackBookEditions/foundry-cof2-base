@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 63Dnfb2mA4MOnKkv
 system:
-  description: >-
-    <p>Une fois par round, si une créature à votre contact tente de s’éloigner
-    de vous, vous obtenez une attaque au contact en action gratuite contre elle.
-    De plus vous ajoutez votre rang + 2 aux tests destinés à résister à l’alcool
-    et à la privation de nourriture ou de sommeil.</p>
+  description: "<p style=\"text-align:justify\">Une fois par round, si une créature à votre contact tente de s’éloigner de vous, vous obtenez une attaque au contact en action gratuite contre elle. De plus vous ajoutez votre rang + 2 aux tests destinés à résister à l’alcool et à la privation de nourriture ou de sommeil.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique pour résister à l'acool</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p90
   slug: teigneux
   tags: []
   subtype: ''
@@ -32,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.63Dnfb2mA4MOnKkv
           subtype: skill
           target: con
+          apply: self
           value: 2 + @rang
+          additionalInfos: résister alcool
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -60,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827414176
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745651189688
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!63Dnfb2mA4MOnKkv'
 

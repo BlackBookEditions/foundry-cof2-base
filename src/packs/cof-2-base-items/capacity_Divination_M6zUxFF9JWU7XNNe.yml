@@ -4,19 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: M6zUxFF9JWU7XNNe
 system:
-  description: >-
-    <p>S’il emporte un test opposé d’attaque magique contre une créature de NC
-    inférieur à son niveau (portée 10 m), l’ensorceleur devine son nom d’usage,
-    son métier et quelques autres renseignements, tous de notoriété publique (si
-    la cible agit sous couverture, ce sont les informations qui concernent la
-    couverture que l’ensorceleur apprend). Si la cible du sort est volontaire et
-    qu’il lit les lignes de sa main, il n’y a pas besoin de test et
-    l’ensorceleur peut utiliser ce sort sur une créature de NC supérieur ou égal
-    à son niveau. En plus de ce sort, l’ensorceleur gagne +1 en Init. et en DEF.
-    Ce bonus augmente de +1 au rang 3 de la voie et de +1 chaque fois que le
-    personnage atteint le rang 5 dans une voie d’ensorceleur</p>
+  description: "<p style=\"text-align:justify\">S’il emporte un test opposé d’attaque magique contre une créature de NC inférieur à son niveau (portée 10 m), l’ensorceleur devine son nom d’usage, son métier et quelques autres renseignements, tous de notoriété publique (si la cible agit sous couverture, ce sont les informations qui concernent la couverture que l’ensorceleur apprend). Si la cible du sort est volontaire et qu’il lit les lignes de sa main, il n’y a pas besoin de test et l’ensorceleur peut utiliser ce sort sur une créature de NC supérieur ou égal à son niveau. En plus de ce sort, l’ensorceleur gagne +1 en Init. et en DEF. Ce bonus augmente de +1 au rang 3 de la voie et de +1 chaque fois que le personnage atteint le rang 5 dans une voie d’ensorceleur</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>2 effets proposés :</p>\n<p>1er : Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique en opposition. Au MJ d'interpréter le résultat.</p>\n<p>2eme : un effet permanent augmentant la DEF et\_ l'init.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p93
   slug: divination
   tags: []
   subtype: ''
@@ -37,24 +27,34 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '10'
+            difficulty: '@oppose.atm'
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
       indice: 1
@@ -64,23 +64,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: true
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: init
-          value: '@rang[1,0,1,0,0] + @allrank[5]'
+          apply: self
+          value: '@rang[1,1,2,2,2] + @toutrang[5]'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: def
-          value: '@rang[1,0,1,0,0] + @allrank[5]'
+          apply: self
+          value: '@rang[1,1,2,2,2] + @toutrang[5]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -97,7 +103,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827497023
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652707056
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!M6zUxFF9JWU7XNNe'
 

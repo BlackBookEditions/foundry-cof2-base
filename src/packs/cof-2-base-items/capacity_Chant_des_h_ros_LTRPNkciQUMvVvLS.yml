@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: LTRPNkciQUMvVvLS
 system:
-  description: >-
-    <p>Le barde peut chanter et inspirer ses compagnons, tous ses alliés à
-    portée de voix et lui obtiennent un bonus de +1 à tous leurs tests pendant
-    un nombre de minutes égal à sa valeur de CHA. Pendant toute la durée du
-    sort, il fredonne (action gratuite qui ne l’empêche pas de lancer d’autres
-    sorts de barde). Le bonus passe à +2 au rang 5. En plus de ce sort, le barde
-    ajoute son rang + 2 aux tests pour jouer d’un instrument de musique ou
-    chanter.</p>
+  description: "<p style=\"text-align:justify\">Le barde peut chanter et inspirer ses compagnons, tous ses alliés à portée de voix et lui obtiennent un bonus de +1 à tous leurs tests pendant un nombre de minutes égal à sa valeur de CHA. Pendant toute la durée du sort, il fredonne (action gratuite qui ne l’empêche pas de lancer d’autres sorts de barde). Le bonus passe à +2 au rang 5. En plus de ce sort, le barde ajoute son rang + 2 aux tests pour jouer d’un instrument de musique ou chanter.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>2 effets : Un bonus poermanent pour les test pour jouer de la musique et une action pour lancer un sort.</p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action qui va automatiquement attribuer aux cibles un effet temporaire pour la durée du sort. Cet effet donne les bonus indiqués dans la description. Les points de magie sont consommé automatiquement. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p67
   slug: chant-des-heros
   tags: []
   subtype: ''
@@ -34,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: true
       conditions:
         - predicate: isLearned
       modifiers:
@@ -45,9 +39,75 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: skill
           target: cha
+          apply: self
           value: '2'
+          additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          subtype: skill
+          target: all
+          apply: both
+          value: '1'
+          additionalInfos: Chant des héros
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          subtype: combat
+          target: melee
+          apply: both
+          value: '1'
+          additionalInfos: Chant des héros
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          subtype: combat
+          target: ranged
+          apply: both
+          value: '1'
+          additionalInfos: Chant des héros
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          subtype: combat
+          target: magic
+          apply: both
+          value: '1'
+          additionalInfos: Chant des héros
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -64,7 +124,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821596360
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385993178
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LTRPNkciQUMvVvLS'
 

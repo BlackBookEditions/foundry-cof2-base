@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Pk08RaVqV25XxQdO
 system:
-  description: >-
-    <p>Le prêtre effectue une attaque de contact avec un dé bonus et ajoute son
-    CHA aux dommages. De plus, lorsqu’il utilise cette capacité, le prêtre peut
-    dépenser 1 PM pour ajouter +1d4° aux DM d’une attaque au contact qui touche.
-    Au rang 5, il peut dépenser 2 PM pour ajouter +2d4°.</p>
+  description: "<p style=\"text-align:justify\">Le prêtre effectue une attaque de contact avec un dé bonus et ajoute son CHA aux dommages. De plus, lorsqu’il utilise cette capacité, le prêtre peut dépenser 1 PM pour ajouter +1d4° aux DM d’une attaque au contact qui touche. Au rang 5, il peut dépenser 2 PM pour ajouter +2d4°.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game:</strong></p>\n<p style=\"text-align:justify\">La capacité a été décomposée en 3 actions d'attaque :\_</p>\n<p style=\"text-align:justify\">La première est une attaque de base ajoutant le CHA du prêtre aux degat</p>\n<p style=\"text-align:justify\">La deuxieme inflige en plus 1d4° (mais le joueur doit payer manuellement 1PM en plus)</p>\n<p style=\"text-align:justify\">La troisième inflige en plus 2d4° (mais le joueur doit payer manuellement 2PM en plus)</p>\n<p style=\"text-align:justify\">Remarque : On ne vérifie pas que le personnage est rang 5 pour pouvoir utilsier la dernière attaque</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: chatiment-divin
   tags: []
   subtype: ''
@@ -31,26 +27,109 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atc'
+            formula: '@arme.skill'
             crit: ''
             difficulty: '@cible.def'
           dmg:
             formula: '@arme.dmg + @cha'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.Pk08RaVqV25XxQdO
+      indice: 1
+      label: Châtiment divin +1PM
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + @cha + 1d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.Pk08RaVqV25XxQdO
+      indice: 2
+      label: Châtiment divin +2PM
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + @cha + 2d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 100000
 ownership:
@@ -67,7 +146,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829327278
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745321283955
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Pk08RaVqV25XxQdO'
 

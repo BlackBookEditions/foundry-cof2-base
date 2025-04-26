@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: LtwRc0mqBwCKCUGi
 system:
-  description: >-
-    <p>En réussissant un test d’attaque magique contre la DEF de sa cible
-    (portée 20 m), le druide libère sur celle‑ci une nuée d’insectes volants qui
-    piquent, aveuglent et la suivent pendant [3 + PER] rounds. La victime subit
-    1 DM par round et un malus de ‑2 à tous les tests. Les DM de zone détruisent
-    la nuée.</p>
+  description: "<p>En réussissant un test d’attaque magique contre la DEF de sa cible (portée 20 m), le druide libère sur celle‑ci une nuée d’insectes volants qui piquent, aveuglent et la suivent pendant [3 + PER] rounds. La victime subit 1 DM par round et un malus de ‑2 à tous les tests. Les DM de zone détruisent la nuée.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement faire le jet d'attaque et lancer les dégats. De plus un effet de dégat périodique sera appliqué à la cible en cas de succès.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p114
   slug: nuee-dinsectes
   tags: []
   subtype: ''
@@ -32,14 +27,25 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LtwRc0mqBwCKCUGi
+          subtype: skill
+          target: all
+          apply: others
+          value: '-2'
+          additionalInfos: Nuée d'insectes
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -47,11 +53,21 @@ system:
           dmg:
             formula: '1'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-      modifiers: []
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: '1'
+            elementType: ''
+            statuses: []
+            duration: 3 + @per
+            unit: round
+            successThreshold: null
   cost: -1
+  rank: 3
 effects: []
 sort: 100000
 ownership:
@@ -68,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828648126
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745224056965
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LtwRc0mqBwCKCUGi'
 

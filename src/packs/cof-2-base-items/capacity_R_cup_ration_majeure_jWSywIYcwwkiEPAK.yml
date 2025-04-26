@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: jWSywIYcwwkiEPAK
 system:
-  description: >-
-    <p>Le prêtre peut soigner une cible (ou lui‑même) à une portée de 20 m ;
-    elle récupère immédiatement [3d4°+CHA du prêtre] PV. Le montant des soins
-    prodigués augmente de 1d4° chaque fois que le personnage atteint le rang 5
-    dans une voie de prêtre</p>
+  description: "<p style=\"text-align:justify\">Le prêtre peut soigner une cible (ou lui‑même) à une portée de 20 m ; elle récupère immédiatement [3d4°+CHA du prêtre] PV. Le montant des soins prodigués augmente de 1d4° chaque fois que le personnage atteint le rang 5 dans une voie de prêtre</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les soins.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p125
   slug: recuperation-majeure
   tags: []
   subtype: ''
@@ -31,23 +27,34 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: 3d4° + @cha + @allrank[5]d4°
+            formula: 3d4° + @cha + @toutrang[5]d4°
           target:
-            type: multiple
-            number: 4
-            scope: allies
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 175000
 ownership:
@@ -64,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829538758
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745340644150
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!jWSywIYcwwkiEPAK'
 

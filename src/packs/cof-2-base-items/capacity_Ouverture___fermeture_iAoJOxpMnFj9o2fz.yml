@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: iAoJOxpMnFj9o2fz
 system:
-  description: >-
-    <p>Le forgesort peut ouvrir une porte fermée à clef en la touchant, il doit
-    réussir un test d’attaque magique contre la difficulté pour la crocheter. Il
-    peut aussi sceller une porte ou un coffre pour INT minutes. Seul un mot de
-    commande qu’il choisit permet d’ouvrir l’objet. Celui‑ci peut toujours être
-    brisé par la force, mais il bénéficie d’un bonus de +5 en solidité et en RD
-    pour toute la durée du sort. À partir du rang 4, le forgesort peut rendre ce
-    sort permanent en sacrifiant une gemme d’une valeur de 100 pa et en
-    prolongeant l’incantation par un rituel de 10 min.</p>
+  description: "<p style=\"text-align:justify\">Le forgesort peut ouvrir une porte fermée à clef en la touchant, il doit réussir un test d’attaque magique contre la difficulté pour la crocheter. Il peut aussi sceller une porte ou un coffre pour INT minutes. Seul un mot de commande qu’il choisit permet d’ouvrir l’objet. Celui‑ci peut toujours être brisé par la force, mais il bénéficie d’un bonus de +5 en solidité et en RD pour toute la durée du sort. À partir du rang 4, le forgesort peut rendre ce sort permanent en sacrifiant une gemme d’une valeur de 100 pa et en prolongeant l’incantation par un rituel de 10 min.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur dépense ses PM manuellement. Pas d'effets automatique</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p98
   slug: ouverture--fermeture
   tags: []
   subtype: ''
@@ -27,34 +19,9 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.iAoJOxpMnFj9o2fz
-      indice: 0
-      label: ''
-      chatFlavor: ''
-      type: magical
-      img: icons/svg/d20-highlight.svg
-      properties:
-        activable: true
-        enabled: false
-        temporary: false
-        visible: false
-      conditions:
-        - predicate: isLearned
-      resolvers:
-        - type: attack
-          skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '10'
-          dmg:
-            formula: '0'
-          target:
-            type: none
-            number: 0
-            scope: all
-      modifiers: []
+  actions: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -71,7 +38,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827783598
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653601825
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!iAoJOxpMnFj9o2fz'
 

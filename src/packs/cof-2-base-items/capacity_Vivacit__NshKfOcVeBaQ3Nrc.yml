@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: NshKfOcVeBaQ3Nrc
 system:
-  description: >-
-    <p>Le guerrier gagne +3 en Initiative et aux tests d’AGI ou de FOR pour
-    éviter d’être immobilisé ou renversé. De plus, une fois par combat, il
-    obtient une action de mouvement supplémentaire à son tour.</p>
+  description: "<p style=\"text-align:justify\">Le guerrier gagne +3 en Initiative et aux tests d’AGI ou de FOR pour éviter d’être immobilisé ou renversé. De plus, une fois par combat, il obtient une action de mouvement supplémentaire à son tour.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p88
   slug: vivacite
   tags: []
   subtype: ''
@@ -30,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,19 +39,26 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.NshKfOcVeBaQ3Nrc
           subtype: combat
           target: init
+          apply: self
           value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.NshKfOcVeBaQ3Nrc
           subtype: skill
           target: agi
+          apply: self
           value: '3'
+          additionalInfos: evite immobilisé ou renversé
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.NshKfOcVeBaQ3Nrc
           subtype: skill
           target: for
+          apply: self
           value: '3'
+          additionalInfos: evite immobilisé ou renversé
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -70,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827278379
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745650492037
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!NshKfOcVeBaQ3Nrc'
 

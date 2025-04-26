@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 1jvO0mM4AliQXQmp
 system:
-  description: >-
-    <p>Une fois par round, le barde peut réaliser une esquive en réussissant un
-    test d’attaque à distance contre une difficulté égale au résultat obtenu par
-    son adversaire, lors de son attaque. En cas de réussite, le barde ne subit
-    aucun DM. Si cette attaque était un critique, il subit tout de même des DM
-    normaux (il annule donc l’effet critique « dommages doublés »).</p>
+  description: "<p style=\"text-align:justify\">Une fois par round, le barde peut réaliser une esquive en réussissant un test d’attaque à distance contre une difficulté égale au résultat obtenu par son adversaire, lors de son attaque. En cas de réussite, le barde ne subit aucun DM. Si cette attaque était un critique, il subit tout de même des DM normaux (il annule donc l’effet critique « dommages doublés »).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose uen action d'attaque à distance qui ne fait pas de dégat ni n'a de difficulté au MJ de comparer le résultat avec l'attaque que le barde tente d'annuler.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p68
   slug: esquive-acrobatique
   tags: []
   subtype: ''
@@ -24,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.1jvO0mM4AliQXQmp
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: '0'
+            difficulty: '10'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 100000
 ownership:
@@ -42,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821640091
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745388136468
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!1jvO0mM4AliQXQmp'
 

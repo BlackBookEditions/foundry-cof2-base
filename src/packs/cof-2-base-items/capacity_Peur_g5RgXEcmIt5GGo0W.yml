@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: g5RgXEcmIt5GGo0W
 system:
-  description: >-
-    <p>Le sorcier effectue un test opposé d’attaque magique contre une cible
-    (portée 20 m). S’il l’emporte, la victime fuit aussi loin du sorcier que
-    possible pendant INT rounds (il lui faut généralement autant de temps pour
-    revenir !). Les créatures dont le NC est supérieur ou égal au niveau du
-    sorcier ne fuient qu’un seul round. Le sorcier peut choisir de lancer ce
-    sort en action limitée et toutes les créatures à son contact sont affectées
-    (faire un test d’attaque magique par adversaire).</p>
+  description: "<p>Le sorcier effectue un test opposé d’attaque magique contre une cible (portée 20 m). S’il l’emporte, la victime fuit aussi loin du sorcier que possible pendant INT rounds (il lui faut généralement autant de temps pour revenir !). Les créatures dont le NC est supérieur ou égal au niveau du sorcier ne fuient qu’un seul round. Le sorcier peut choisir de lancer ce sort en action limitée et toutes les créatures à son contact sont affectées (faire un test d’attaque magique par adversaire).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique. L'effet de peur est ensuite géré par le MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p109
   slug: peur
   tags: []
   subtype: ''
@@ -34,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -49,11 +45,19 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 300000
 ownership:
@@ -70,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828326112
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745220289598
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!g5RgXEcmIt5GGo0W'
 

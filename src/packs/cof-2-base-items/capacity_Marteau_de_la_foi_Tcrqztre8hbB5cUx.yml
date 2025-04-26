@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Tcrqztre8hbB5cUx
 system:
-  description: >-
-    <p>Le prêtre effectue un test d’attaque magique contre la DEF se sa cible
-    (portée de 30 m). Un projectile d’énergie de la forme de l’arme du prêtre va
-    percuter la cible, lui infligeant [2d4°+CHA] DM en cas de réussite. Si
-    l’arme du prêtre est magique, il peut ajouter son bonus au test d’attaque et
-    aux DM. Les DM du marteau de la foi augmentent de +1 chaque fois que le
-    personnage atteint le rang 4 dans une autre voie de prêtre.</p>
+  description: "<p style=\"text-align:justify\">Le prêtre effectue un test d’attaque magique contre la DEF se sa cible (portée de 30 m). Un projectile d’énergie de la forme de l’arme du prêtre va percuter la cible, lui infligeant [2d4°+CHA] DM en cas de réussite. Si l’arme du prêtre est magique, il peut ajouter son bonus au test d’attaque et aux DM. Les DM du marteau de la foi augmentent de +1 chaque fois que le personnage atteint le rang 4 dans une autre voie de prêtre.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:left\"><strong>Usage in game :\_</strong></p>\n<p style=\"text-align:left\">Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégâts.Note : Ne prend pas en comtpe les bonus d'une arme magique et on ne peux pas utiliser @arme.skill vu qu'il s'agit d'une attaque magique. Le bonus d'une arme magique sera à ajouter à la main sur la capacité dans la fiche de personnage du prêtre.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: marteau-de-la-foi
   tags: []
   subtype: ''
@@ -33,26 +27,37 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 2d4°+@cha + @allrank[4] -1
+            formula: 2d4°+@cha + @toutrang[4] -1
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 300000
 ownership:
@@ -69,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829331962
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745321510983
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Tcrqztre8hbB5cUx'
 

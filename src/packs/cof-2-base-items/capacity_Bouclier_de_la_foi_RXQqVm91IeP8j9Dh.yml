@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: RXQqVm91IeP8j9Dh
 system:
-  description: >-
-    <p>Le prêtre porte le symbole de sa foi sur son bouclier, ce qui lui confère
-    un bonus supplémentaire de +1 en DEF lorsqu’il l’utilise. Ce bonus passe à
-    +2 au rang 5. Comme pour l’arme bénie, le symbole de la foi n’est d’aucune
-    utilité si le bouclier est utilisé par quelqu’un d’autre</p>
+  description: "<p style=\"text-align:justify\">Le prêtre porte le symbole de sa foi sur son bouclier, ce qui lui confère un bonus supplémentaire de +1 en DEF lorsqu’il l’utilise. Ce bonus passe à +2 au rang 5. Comme pour l’arme bénie, le symbole de la foi n’est d’aucune utilité si le bouclier est utilisé par quelqu’un d’autre</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong>\_</p>\n<p>Il s'agit ici d'une amélioration actiable/désactivable vu la necessité d'être équipé d'un bouclier.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p123
   slug: bouclier-de-la-foi
   tags: []
   subtype: ''
@@ -32,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
-        temporary: false
+        activable: true
+        temporary: true
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.RXQqVm91IeP8j9Dh
           subtype: combat
           target: def
-          value: '@rang[1,0,0,0,1]'
+          apply: self
+          value: '@rang[1,1,1,1,2]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -60,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829276257
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745320692666
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!RXQqVm91IeP8j9Dh'
 

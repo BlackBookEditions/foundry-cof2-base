@@ -4,25 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Vum3dITCN0yYvTQW
 system:
-  description: >-
-    <p>Une fois par combat, le voleur peut feindre la mort après avoir reçu une
-    blessure (même à 0 PV). Il peut ainsi passer pour mort aussi longtemps qu’il
-    le souhaite et un test d’INT difficulté 20 est nécessaire pour révéler la
-    supercherie. Lorsqu’il décide de se relever (action gratuite), le voleur
-    récupère immédiatement 1d4° PV et s’il est au contact d’un adversaire,
-    celui‑ci est surpris. Un adversaire qui a déjà été victime de cette
-    stratégie du voleur lors d’un précédent combat ne se laisse pas surprendre
-    une seconde fois (sauf si son INT est de ‑4).</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut feindre la mort après avoir reçu une blessure (même à 0 PV). Il peut ainsi passer pour mort aussi longtemps qu’il le souhaite et un test d’INT difficulté 20 est nécessaire pour révéler la supercherie. Lorsqu’il décide de se relever (action gratuite), le voleur récupère immédiatement 1d4° PV et s’il est au contact d’un adversaire, celui‑ci est surpris. Un adversaire qui a déjà été victime de cette stratégie du voleur lors d’un précédent combat ne se laisse pas surprendre une seconde fois (sauf si son INT est de ‑4).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Seul le bonus de 1d4° PV est pris en charge en cliquant sur le bouton d'actino de cette capacité.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p76
   slug: feindre-la-mort
   tags: []
   subtype: ''
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -52,6 +44,8 @@ system:
           dmg: {}
       modifiers: []
   cost: -1
+  rank: 3
+  frequency: combat
 effects: []
 sort: 200000
 ownership:
@@ -68,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824941773
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745421531670
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Vum3dITCN0yYvTQW'
 

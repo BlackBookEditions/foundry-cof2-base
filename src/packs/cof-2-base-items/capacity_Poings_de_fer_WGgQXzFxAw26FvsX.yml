@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: WGgQXzFxAw26FvsX
 system:
-  description: >-
-    <p>Lorsqu’il combat à mains nues, le moine peut (s’il le souhaite) remplacer
-    sa FOR par son AGI pour ses tests d’attaque au contact et il inflige
-    [1d6+FOR] DM létaux (Voir « DM temporaires » page 219). Ces DM augmentent à
-    chaque rang suivant : 1d8 au rang 2, 1d10 au rang 3, 1d12 au rang 4 et enfin
-    2d6 au rang 5.</p>
+  description: "<p style=\"text-align:justify\">Lorsqu’il combat à mains nues, le moine peut (s’il le souhaite) remplacer sa FOR par son AGI pour ses tests d’attaque au contact et il inflige [1d6+FOR] DM létaux (Voir « DM temporaires » page 219). Ces DM augmentent à chaque rang suivant : 1d8 au rang 2, 1d10 au rang 3, 1d12 au rang 4 et enfin 2d6 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>Le remplacement de FOR par AGI peux se faire directement sur la fiche de personnage en la déverouillant et en changeant l'attribut de \"contact\".</p>\n<p>L'action de cette capacité sert à remplacé l'attaque à main nue. Il est aussi possible de créer un item \"Poing de fer\" et de lui appliquer la meme action puis désactiver celle ci selon les préférences du MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p121
   slug: poings-de-fer
   tags: []
   subtype: ''
@@ -24,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.WGgQXzFxAw26FvsX
+      indice: 0
+      label: Nouvelle Action 1
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[1d6,1d8,1d10,1d12,2d6] + @for'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -42,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829118783
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745301467065
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!WGgQXzFxAw26FvsX'
 

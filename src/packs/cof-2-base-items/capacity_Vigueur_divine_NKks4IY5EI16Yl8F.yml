@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: NKks4IY5EI16Yl8F
 system:
-  description: >-
-    <p>La cible au contact est guérie d’un poison ou d’une maladie. Si
-    l’infection est surnaturelle, un test d’attaque magique (éventuellement
-    opposé) peut être demandé par le MJ. De plus, le prêtre obtient un bonus
-    égal au rang + 2 aux tests effectués pour résister aux maladies et aux
-    poisons</p>
+  description: "<p style=\"text-align:justify\">La cible au contact est guérie d’un poison ou d’une maladie. Si l’infection est surnaturelle, un test d’attaque magique (éventuellement opposé) peut être demandé par le MJ. De plus, le prêtre obtient un bonus égal au rang + 2 aux tests effectués pour résister aux maladies et aux poisons</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">Le bonus résistance maladie/poisons est pris en compte sous forme de bonus permanent. La guerison du poison ou de la maldie n'est pas gérée automatiquement actuellement</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p125
   slug: vigueur-divine
   tags: []
   subtype: ''
@@ -33,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.NKks4IY5EI16Yl8F
           subtype: skill
           target: con
+          apply: self
           value: 2 + @rang
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -61,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829539095
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745340504219
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!NKks4IY5EI16Yl8F'
 

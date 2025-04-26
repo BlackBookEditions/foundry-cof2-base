@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 5FFLu9TajkiBdlI1
 system:
-  description: >-
-    <p>Le sorcier désigne une cible vivante à portée (10 m) et doit réussir un
-    test opposé d’attaque magique. En cas de succès, la cible ressent une
-    douleur intense à l’emplacement du coeur, elle subit [1d4°+INT] DM et, si
-    elle rate un test de CON difficulté 10, l’état ralenti durant 1 round.</p>
+  description: "<p>Le sorcier désigne une cible vivante à portée (10 m) et doit réussir un test opposé d’attaque magique. En cas de succès, la cible ressent une douleur intense à l’emplacement du coeur, elle subit [1d4°+INT] DM et, si elle rate un test de CON difficulté 10, l’état ralenti durant 1 round.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégâts.Attention le jet de CON qui suit n'est pas géré ni l'application de l'effet \"ralenti\"</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p109
   slug: un-pied-dans-la-tombe
   tags: []
   subtype: ''
@@ -31,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -46,11 +45,19 @@ system:
           dmg:
             formula: 1d4°+@int
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -67,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828405846
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745219336599
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!5FFLu9TajkiBdlI1'
 

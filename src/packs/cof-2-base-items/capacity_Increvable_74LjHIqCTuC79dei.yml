@@ -4,21 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 74LjHIqCTuC79dei
 system:
-  description: >-
-    <p>Une fois par combat, lorsqu’il tombe à 0PV, le rôdeur peut récupérer
-    [4d4° + CON] PV au début de son prochain tour. Lorsqu’il se relève, il
-    bénéficie d’un bonus de +5 en DEF pendant 1 round et il se débarrasse de
-    tous les états préjudiciables non permanents qui l’affectent</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, lorsqu’il tombe à 0PV, le rôdeur peut récupérer [4d4° + CON] PV au début de son prochain tour. Lorsqu’il se relève, il bénéficie d’un bonus de +5 en DEF pendant 1 round et il se débarrasse de tous les états préjudiciables non permanents qui l’affectent</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Lorsque le joueur tombe à 0 PV il doit cliquer sur cette action qui va lui rendre ses points de vie et, s'il est en combat, appliquer un effet de 1 round donnant un bonus de +5 en DEF.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p72
   slug: increvable
   tags: []
   subtype: ''
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -31,23 +27,45 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.74LjHIqCTuC79dei
+          subtype: combat
+          target: def
+          apply: self
+          value: '5'
+          additionalInfos: ''
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: 4d4° + @con
           target:
             type: self
             number: 0
             scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
           dmg: {}
-      modifiers: []
   cost: -1
+  rank: 5
+  frequency: combat
 effects: []
 sort: 300000
 ownership:
@@ -64,7 +82,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740823894386
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745406704444
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!74LjHIqCTuC79dei'
 

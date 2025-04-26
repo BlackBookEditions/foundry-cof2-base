@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: ZutLcy3SKRyQC5oo
 system:
-  description: >-
-    <p>Le voleur ajoute son rang + 2 aux tests liés à la précision manuelle
-    (crocheter une serrure, désamorcer un piège, pickpocket…) ainsi qu’aux tests
-    pour évaluer un objet précieux (joyaux, bijoux, etc.). De plus il obtient +1
-    aux DM des attaques à distance avec les dagues et couteaux. Ce bonus passe à
-    +2 au rang 3 de la voie et +3 au rang 5.</p>
+  description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests liés à la précision manuelle (crocheter une serrure, désamorcer un piège, pickpocket…) ainsi qu’aux tests pour évaluer un objet précieux (joyaux, bijoux, etc.). De plus il obtient +1 aux DM des attaques à distance avec les dagues et couteaux. Ce bonus passe à +2 au rang 3 de la voie et +3 au rang 5.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Propose 2 effets :\_</p>\n<p>Un bonus permanent pour les jet de précision manuelle</p>\n<p>Un action actvable/désactivable qui donnd es bonus au dégat. A activer si le joueur lancer des dagues ou couteaux.</p>\n<p><em>Note : Il est aussi possible de recopier le bonus proposé directement dans l'équipement du joueur et supprimer cette action pour éviter la multiplication d'actions...</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p76
   slug: doigts-agiles
   tags: []
   subtype: ''
@@ -33,23 +28,52 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: crocheter/désarmorcer
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: évaluer un objet précieux
       conditions: []
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+          subtype: combat
+          target: dam
+          apply: self
+          value: '@rang[1,1,2,2,3]'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -66,7 +90,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824938616
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745421398749
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ZutLcy3SKRyQC5oo'
 

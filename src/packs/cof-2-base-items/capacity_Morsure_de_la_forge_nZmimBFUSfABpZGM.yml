@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: nZmimBFUSfABpZGM
 system:
-  description: >-
-    <p>Au prix d’une action de mouvement, le forgesort peut enflammer son bâton
-    ou son marteau pendant INT minutes et ajoute <strong>+2 DM de feu</strong>
-    sur les attaques au contact réalisées avec cette arme. Ce bonus augmente de
-    <strong>+1 chaque fois que le personnage atteint le rang 4</strong> dans une
-    voie de forgesort. L’arme s’éteint immédiatement s’il la lâche. En plus de
-    ce sort, le forgesort ajoute son <strong>rang + 2 aux tests d’orfèvrerie ou
-    de forge</strong>.</p>
+  description: "<p style=\"text-align:justify\">Au prix d’une action de mouvement, le forgesort peut enflammer son bâton ou son marteau pendant INT minutes et ajoute <strong>+2 DM de feu</strong> sur les attaques au contact réalisées avec cette arme. Ce bonus augmente de <strong>+1 chaque fois que le personnage atteint le rang 4</strong> dans une voie de forgesort. L’arme s’éteint immédiatement s’il la lâche. En plus de ce sort, le forgesort ajoute son <strong>rang + 2 aux tests d’orfèvrerie ou de forge</strong>.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">2 effets :\_</p>\n<p style=\"text-align:justify\">1 bonus permanent pour les jet d'orfèvre/forge</p>\n<p style=\"text-align:justify\">1 action activable/désactivable pour déclencher l'effet du sort et les bonus de DM.</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p99
   slug: morsure-de-la-forge
   tags: []
   subtype: ''
@@ -34,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -45,7 +39,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM
           subtype: combat
           target: dam
-          value: 2 + @allrank[4]
+          apply: self
+          value: 2 + @toutrang[4]
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM
       indice: 1
@@ -55,28 +51,36 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: true
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: forge/orfèvre
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: forge/orfèvre
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: forge/orfèvre
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -93,7 +97,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827895673
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745654568274
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!nZmimBFUSfABpZGM'
 

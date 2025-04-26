@@ -4,26 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: EHgNa5ZLRJC5mGcr
 system:
-  description: >-
-    <p>Une fois par jour, le moine entre en méditation et projette son esprit
-    hors de son corps pendant [1d4°+VOL] minutes. Il ressemble à un ectoplasme
-    de couleur blanche qui se déplace en volant à la vitesse de 10 m par round.
-    Il peut passer au travers des murs, mais pas des êtres vivants ou des
-    barrières magiques. Le moine ne perçoit le monde que par sa projection
-    mentale, mais ressent les DM qui sont infligés à son corps. Il peut utiliser
-    cette capacité une fois de plus chaque jour par rang 5 atteint dans une
-    autre voie de moine. De plus le moine augmente définitivement de +1 la
-    valeur de sa plus faible caractéristique (choisir en cas d’égalité).</p>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le moine entre en méditation et projette son esprit hors de son corps pendant [1d4°+VOL] minutes. Il ressemble à un ectoplasme de couleur blanche qui se déplace en volant à la vitesse de 10 m par round. Il peut passer au travers des murs, mais pas des êtres vivants ou des barrières magiques. Le moine ne perçoit le monde que par sa projection mentale, mais ressent les DM qui sont infligés à son corps. Il peut utiliser cette capacité une fois de plus chaque jour par rang 5 atteint dans une autre voie de moine. De plus le moine augmente définitivement de +1 la valeur de sa plus faible caractéristique (choisir en cas d’égalité).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :\_</strong></p>\n<p style=\"text-align:justify\">Une amélioration de chaque caractéristique est proposé ici, il faut après copie sur le personnage, supprimer les caractéristiques non choisies (sinon le personnage aura +1 partout !)</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p120
   slug: projection-mentale
   tags: []
   subtype: ''
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -79,6 +70,8 @@ system:
       conditions: []
       resolvers: []
   cost: -1
+  rank: 5
+  frequency: daily
 effects: []
 sort: 100000
 ownership:
@@ -95,7 +88,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829106003
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745299193266
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EHgNa5ZLRJC5mGcr'
 

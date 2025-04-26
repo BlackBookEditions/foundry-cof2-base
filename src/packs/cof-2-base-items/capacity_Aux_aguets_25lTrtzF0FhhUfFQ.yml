@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 25lTrtzF0FhhUfFQ
 system:
-  description: >-
-    <p>Le voleur ajoute son rang + 2 aux tests effectués pour fouiller une pièce
-    à la recherche d’un trésor, détecter un piège (même magique), un passage
-    secret ou même une embuscade (Vigilance). De plus, il divise par 2 les DM
-    infligés par des pièges.</p>
+  description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests effectués pour fouiller une pièce à la recherche d’un trésor, détecter un piège (même magique), un passage secret ou même une embuscade (Vigilance). De plus, il divise par 2 les DM infligés par des pièges.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le bonus permanent aux test est pris en charge, pas la division des DM par 2 sur les pièges qui sont à traiter manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p76
   slug: aux-aguets
   tags: []
   subtype: ''
@@ -32,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.25lTrtzF0FhhUfFQ
           subtype: skill
           target: per
+          apply: self
           value: 2 + @rang
+          additionalInfos: fouiller/detecter/vigilance
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -60,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824936725
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745421463921
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!25lTrtzF0FhhUfFQ'
 

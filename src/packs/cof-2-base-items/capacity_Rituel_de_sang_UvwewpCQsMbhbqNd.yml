@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: UvwewpCQsMbhbqNd
 system:
-  description: >-
-    <p>Le sorcier s’ouvre les veines et sacrifie 1d4° PV pour cibler une
-    créature vivante (portée 20 m), la victime saigne à la moindre blessure.
-    Tous les DM infligés à la cible par des armes tranchantes ou perçantes
-    (griffes et crocs inclus) augmentent de +1d4° pendant INT rounds.</p>
+  description: "<p>Le sorcier s’ouvre les veines et sacrifie 1d4° PV pour cibler une créature vivante (portée 20 m), la victime saigne à la moindre blessure. Tous les DM infligés à la cible par des armes tranchantes ou perçantes (griffes et crocs inclus) augmentent de +1d4° pendant INT rounds.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>Le joueur clique sur l'action qui va lui faire perdre 1d4°PV. Le reste est géré à la main par le MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p111
   slug: rituel-de-sang
   tags: []
   subtype: ''
@@ -23,8 +19,42 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.UvwewpCQsMbhbqNd
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '-1d4'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 400000
 ownership:
@@ -41,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828461921
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745222894242
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!UvwewpCQsMbhbqNd'
 

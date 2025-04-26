@@ -4,23 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 85CKbM8QlqVbTewg
 system:
-  description: >-
-    <p>Une fois par jour, le prêtre peut soigner une créature par point de CHA.
-    Chaque patient (éventuellement lui‑même inclus) obtient les mêmes effets
-    qu’un sort de Récupération majeure. Le sort prend 10 min pendant lesquelles
-    tous les patients doivent rester au repos dans un rayon de 5 m autour du
-    prêtre qui se concentre et se nimbe de lumière divine. Ce sort ne peut pas
-    être lancé avec la règle de concentration.</p>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le prêtre peut soigner une créature par point de CHA. Chaque patient (éventuellement lui‑même inclus) obtient les mêmes effets qu’un sort de Récupération majeure. Le sort prend 10 min pendant lesquelles tous les patients doivent rester au repos dans un rayon de 5 m autour du prêtre qui se concentre et se nimbe de lumière divine. Ce sort ne peut pas être lancé avec la règle de concentration.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les soins. Actuellement il n'est pas possible de mettre CHA cibles, le chiffre 5 a été mis en dure à modifier par le MJ.</p>\n<p>Il faudra bien un repos complet pour réutiliser cette action. L'action est mis sur \"Limité\" pour ne pas pouvoir utiliser la concentration et ne gère pas le délais de 5-10 min de rituel.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p125
   slug: retablissement
   tags: []
   subtype: ''
-  actionType: none
+  actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: true
     chargeable: false
@@ -33,23 +27,35 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: 3d4°+@cha + @allrank[5]d4°
+            formula: 3d4°+@cha + @toutrang[5]d4°
           target:
             type: multiple
-            number: 0
+            number: 5
             scope: allies
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
   cost: -1
+  rank: 5
+  frequency: daily
 effects: []
 sort: 200000
 ownership:
@@ -66,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829455976
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745341020713
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!85CKbM8QlqVbTewg'
 

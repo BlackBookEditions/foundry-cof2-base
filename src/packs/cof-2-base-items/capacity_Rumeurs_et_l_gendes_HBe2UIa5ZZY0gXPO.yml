@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: HBe2UIa5ZZY0gXPO
 system:
-  description: >-
-    <p>À force de voyager, le barde possède une culture générale très vaste, il
-    ajoute son rang + 2 aux tests d’INT pour se « souvenir » d’une information
-    historique, politique, géographique ou occulte ou encore pour identifier un
-    objet magique difficulté (25 – (2 x niveau de magie de l’objet)).</p>
+  description: "<p>À force de voyager, le barde possède une culture générale très vaste, il ajoute son rang + 2 aux tests d’INT pour se « souvenir » d’une information historique, politique, géographique ou occulte ou encore pour identifier un objet magique difficulté (25 – (2 x niveau de magie de l’objet)).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. Le test pour identifier les objet magique est à réaliser manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p68
   slug: rumeurs-et-legendes
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.HBe2UIa5ZZY0gXPO
           subtype: skill
           target: int
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: se souvenir
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -61,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740818717614
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745388193281
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!HBe2UIa5ZZY0gXPO'
 

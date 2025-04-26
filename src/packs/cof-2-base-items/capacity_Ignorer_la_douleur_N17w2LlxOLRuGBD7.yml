@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: N17w2LlxOLRuGBD7
 system:
-  description: >-
-    <p>Une fois par combat, le chevalier peut noter à part les DM subis par une
-    attaque (mais pas un critique). Il ne subira les DM que lorsque le combat
-    sera terminé. De plus le héros gagne un bonus égal à rang + 2 pour haranguer
-    et convaincre les foules (au moins 15 individus).</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, le chevalier peut noter à part les DM subis par une attaque (mais pas un critique). Il ne subira les DM que lorsque le combat sera terminé. De plus le héros gagne un bonus égal à rang + 2 pour haranguer et convaincre les foules (au moins 15 individus).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong>\_</p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique pour arranguer et convaincre. Les DM mis de coté ce sera géré manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p85
   slug: ignorer-la-douleur
   tags: []
   subtype: ''
@@ -32,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.N17w2LlxOLRuGBD7
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: convaincre la foule
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -60,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825171178
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745561200424
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!N17w2LlxOLRuGBD7'
 

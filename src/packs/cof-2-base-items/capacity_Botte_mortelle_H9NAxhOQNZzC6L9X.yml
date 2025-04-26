@@ -4,17 +4,13 @@ type: capacity
 img: icons/svg/combat.svg
 _id: H9NAxhOQNZzC6L9X
 system:
-  description: >-
-    <p>Lors d’une attaque au contact avec une arme légère, s’il obtient un
-    résultat d’attaque supérieur ou égal à (la DEF de son adversaire + 10
-    points), le barde obtient un bonus de +2d4° aux DM de son attaque (les dés
-    bonus ne sont jamais multipliés en cas de critique).</p>
+  description: "<p style=\"text-align:justify\">Lors d’une attaque au contact avec une arme légère, s’il obtient un résultat d’attaque supérieur ou égal à (la DEF de son adversaire + 10 points), le barde obtient un bonus de +2d4° aux DM de son attaque (les dés bonus ne sont jamais multipliés en cas de critique).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le test d'attaque et appliquer les dégâts. Si la réussite est supérieur de +10 un effet de 1 round va être appliqué pour provoquer 2d4° de dégats sur la cible. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p67
   slug: botte-mortelle
   tags: []
   subtype: ''
-  actionType: none
+  actionType: a
   learned: false
   charges:
     current: null
@@ -24,7 +20,47 @@ system:
     chargeable: false
   path: null
   cost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.H9NAxhOQNZzC6L9X
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: successTreshold
+            successThreshold: 10
+            formulaType: damage
+            formula: 2d4°
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+      modifiers: []
+  rank: 5
 effects: []
 sort: 400000
 ownership:
@@ -38,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740819038640
-  modifiedTime: 1740821546101
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385593907
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!H9NAxhOQNZzC6L9X'
 

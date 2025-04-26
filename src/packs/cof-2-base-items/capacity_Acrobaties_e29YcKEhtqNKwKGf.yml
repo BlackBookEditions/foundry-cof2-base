@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: e29YcKEhtqNKwKGf
 system:
-  description: >-
-    <p>Une fois par round, si le voleur réussit un test d’AGI difficulté 15, il
-    peut effectuer une acrobatie pour franchir un obstacle (qui peut être un
-    adversaire) ou attaquer de dos un adversaire au contact. Il peut alors au
-    choix utiliser l’attaque sournoise ou infliger +1d4° DM.</p>
+  description: "<p style=\"text-align:justify\">Une fois par round, si le voleur réussit un test d’AGI difficulté 15, il peut effectuer une acrobatie pour franchir un obstacle (qui peut être un adversaire) ou attaquer de dos un adversaire au contact. Il peut alors au choix utiliser l’attaque sournoise ou infliger +1d4° DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>La capacité propose une action d'attaque utilisant l'AGI pour le jet et une difficultée fixe de 15 pour indiquer le succes du test (en attendant de coder le test de caractéristique plutot qu'une attaque)</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p76
   slug: acrobaties
   tags: []
   subtype: ''
@@ -23,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.e29YcKEhtqNKwKGf
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@agi'
+            crit: ''
+            difficulty: '15'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -41,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824924939
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745408280997
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!e29YcKEhtqNKwKGf'
 

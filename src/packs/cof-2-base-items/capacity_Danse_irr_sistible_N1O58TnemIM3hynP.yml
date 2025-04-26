@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: N1O58TnemIM3hynP
 system:
-  description: >-
-    <p>Le barde joue une gigue endiablée aux effets magiques. S’il réussit un
-    test d’attaque magique opposé contre sa cible (portée 10 m), celle‑ci se met
-    à danser pendant [1d4° + CHA] rounds, elle subit un dé malus aux tests
-    d’attaque et ‑5 en DEF. Si la cible est d’un niveau (NC) supérieur ou égal
-    au barde, elle ne danse qu’un seul round.</p>
+  description: "<p style=\"text-align:justify\">Le barde joue une gigue endiablée aux effets magiques. S’il réussit un test d’attaque magique opposé contre sa cible (portée 10 m), celle‑ci se met à danser pendant [1d4° + CHA] rounds, elle subit un dé malus aux tests d’attaque et ‑5 en DEF. Si la cible est d’un niveau (NC) supérieur ou égal au barde, elle ne danse qu’un seul round.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement faire le jet d'attaque magique en opposition. En cas de succès, la cible subit tout les malus indiqué ici pendant la durée indiquée. Ne fonctionne qu'en mode combat.<br /><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p67
   slug: danse-irresistible
   tags: []
   subtype: ''
@@ -32,14 +27,46 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.N1O58TnemIM3hynP
+          subtype: combat
+          target: def
+          apply: others
+          value: '-5'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.N1O58TnemIM3hynP
+          subtype: malusDice
+          target: melee
+          apply: others
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.N1O58TnemIM3hynP
+          subtype: malusDice
+          target: ranged
+          apply: others
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.N1O58TnemIM3hynP
+          subtype: malusDice
+          target: magic
+          apply: others
+          value: '0'
+          additionalInfos: ''
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -47,11 +74,21 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-      modifiers: []
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 1d4° + @cha
+            unit: round
+            successThreshold: null
   cost: -1
+  rank: 5
 effects: []
 sort: 200000
 ownership:
@@ -68,7 +105,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821620831
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745386388010
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!N1O58TnemIM3hynP'
 

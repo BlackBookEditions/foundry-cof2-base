@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Yzau8EYiOV5z1422
 system:
-  description: >-
-    <p>Le barde chante ou joue de la musique pendant toute la durée d’une
-    récupération rapide (30 min). Le barde et ses alliés dans un rayon de 10 m,
-    récupèrent 1d4° PV. Les soins passent à 2d4° au rang 4.</p>
+  description: "<p style=\"text-align:justify\">Le barde chante ou joue de la musique pendant toute la durée d’une récupération rapide (30 min). Le barde et ses alliés dans un rayon de 10 m, récupèrent 1d4° PV. Les soins passent à 2d4° au rang 4.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les soins sur les créatures ciblées.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p67
   slug: chant-de-reconfort
   tags: []
   subtype: ''
@@ -22,8 +19,42 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Yzau8EYiOV5z1422
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@rang[1,1,1,2,2]d4°'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -40,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821597868
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745386067805
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Yzau8EYiOV5z1422'
 

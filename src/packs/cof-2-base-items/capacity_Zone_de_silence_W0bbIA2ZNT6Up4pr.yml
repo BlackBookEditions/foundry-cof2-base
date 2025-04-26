@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: W0bbIA2ZNT6Up4pr
 system:
-  description: >-
-    <p>Le barde crée une zone de silence fixe de 5 m de diamètre, jusqu’à une
-    portée de 30 m, pendant un nombre de minutes égal à sa valeur de CHA. Tous
-    les sons émis dans cette sphère sont annulés. Dans cette zone, il faut
-    réussir un test d’INT difficulté 10 pour lancer un sort</p>
+  description: "<p style=\"text-align:justify\">Le barde crée une zone de silence fixe de 5 m de diamètre, jusqu’à une portée de 30 m, pendant un nombre de minutes égal à sa valeur de CHA. Tous les sons émis dans cette sphère sont annulés. Dans cette zone, il faut réussir un test d’INT difficulté 10 pour lancer un sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer un effet temporaire qui inflige le statut \"silence\". Ne fonctionne qu'en mode combat.</p>\n<p style=\"text-align:justify\"><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des rêgles p67
   slug: zone-de-silence
   tags: []
   subtype: ''
@@ -23,8 +19,45 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.W0bbIA2ZNT6Up4pr
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - silence
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 187500
 ownership:
@@ -41,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821603501
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745386262559
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!W0bbIA2ZNT6Up4pr'
 
