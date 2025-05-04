@@ -1,0 +1,84 @@
+folder: MxOWgyXN2R9SoduW
+name: Brise genou
+type: capacity
+img: icons/svg/combat.svg
+_id: MHhvT26RAlrVFDVq
+system:
+  description: "<p style=\"text-align:justify\">En réussissant un test d’attaque au contact, le personnage porte un coup puissant dans le genou d’une créature humanoïde. Il inflige 1d4° DM et la cible est invalide pour le reste du combat. Si la cible est d’un NC supérieur ou égal au rang atteint dans la voie, elle peut faire un test de CON difficulté [10 + rang] chaque round à la fin de son tour pour se débarrasser de cet effet (elle y est ensuite immunisée pour le reste du combat).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque de contact et appliquer les dégâts et un efffet temporaire 'invalide'. Au MJ de fiare les test ensuite</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p144
+  slug: brise-genou
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.MHhvT26RAlrVFDVq
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4°
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - invalid
+            duration: '10'
+            unit: round
+            successThreshold: null
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.MHhvT26RAlrVFDVq
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!MHhvT26RAlrVFDVq'
+

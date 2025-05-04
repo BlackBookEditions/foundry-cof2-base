@@ -1,0 +1,80 @@
+folder: OcibsmGLQxprav22
+name: Coup de crosse
+type: capacity
+img: icons/svg/combat.svg
+_id: XXwSJtXXXRujl40E
+system:
+  description: "<p style=\"text-align:justify\">Une fois par round, le personnage peut, au moment de son choix, accomplir une attaque au contact gratuite avec la crosse d’une pétoire qu’il tient en main. Il subit un dé malus pour le test d’attaque et inflige [1d4°+FOR] DM. Si ce n’est pas déjà le cas, il acquiert la maîtrise des armes à poudre.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque de l'arme en main et appliquer les dégâts.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p141-142
+  slug: coup-de-crosse
+  subtype: ''
+  actionType: f
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.XXwSJtXXXRujl40E
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4° + @for
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.XXwSJtXXXRujl40E
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!XXwSJtXXXRujl40E'
+

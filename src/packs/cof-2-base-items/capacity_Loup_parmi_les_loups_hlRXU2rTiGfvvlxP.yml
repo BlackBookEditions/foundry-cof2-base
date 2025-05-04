@@ -4,9 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: hlRXU2rTiGfvvlxP
 system:
-  description: "<p>Une fois par round, l’humain gagne +1d4° aux DM qu’il inflige lorsqu’il combat un adversaire humanoïde de taille moyenne. Ce bonus ne s’applique qu’aux DM initiaux d’une attaque, pas aux DM sur la durée.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Géré en proposant une action activable/désactivable pour appliquer le bonus lorsque les conditions sont remplies</p>\n</blockquote>"
+  description: "<p>Une fois par round, l’humain gagne +1d4° aux DM qu’il inflige lorsqu’il combat un adversaire humanoïde de taille moyenne. Ce bonus ne s’applique qu’aux DM initiaux d’une attaque, pas aux DM sur la durée.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Géré en proposant une action activable/désactivable pour appliquer le bonus lorsque les conditions sont remplies</p>\n</blockquote>"
   source: ''
-  origin: Livre des règles p57
+  origin: Livre des rêgles p57
   slug: loup-parmi-les-loups
   tags: []
   subtype: ''
@@ -38,7 +38,7 @@ system:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hlRXU2rTiGfvvlxP
           subtype: combat
-          target: damMelee
+          target: dam
           apply: self
           value: +1d4°
           additionalInfos: vs taille Moyenne

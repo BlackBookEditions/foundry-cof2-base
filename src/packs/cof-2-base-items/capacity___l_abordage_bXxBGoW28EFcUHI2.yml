@@ -1,0 +1,88 @@
+folder: OcibsmGLQxprav22
+name: À l’abordage
+type: capacity
+img: icons/svg/combat.svg
+_id: bXxBGoW28EFcUHI2
+system:
+  description: "<p style=\"text-align:justify\">Le personnage sait s’élancer vers ses ennemis et mettre du coeur dans sa première attaque au contact lors d’un combat. Cette première attaque bénéficie d’un dé bonus en attaque et de +1d4° aux DM. Il obtient aussi cet effet à chaque fois qu’il peut se précipiter sur un adversaire depuis un contre‑haut (balcon, lustre, table, etc.).</p>\n<p style=\"text-align:justify\">\_</p>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM et d'attaque.A activer sur la première attaque et à désactiver ensuite.</p>"
+  source: ''
+  origin: Livre des règles p141
+  slug: a-labordage
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.bXxBGoW28EFcUHI2
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.bXxBGoW28EFcUHI2
+          subtype: combat
+          target: dam
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Item.bXxBGoW28EFcUHI2
+          subtype: bonusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.bXxBGoW28EFcUHI2
+          subtype: bonusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.bXxBGoW28EFcUHI2
+          subtype: bonusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.bXxBGoW28EFcUHI2
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!bXxBGoW28EFcUHI2'
+

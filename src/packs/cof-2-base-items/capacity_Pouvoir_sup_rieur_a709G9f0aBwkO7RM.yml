@@ -1,0 +1,67 @@
+folder: NeidDmyAfN47yeCX
+name: Pouvoir supérieur
+type: capacity
+img: icons/svg/combat.svg
+_id: a709G9f0aBwkO7RM
+system:
+  description: "<p>Le familier confère au personnage un second pouvoir magique indiqué dans sa description,<br />ainsi qu’un bonus de +1 sur la valeur de caractéristique indiquée dans la description du familier</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux caractéristiques. A titre d'exemple celui des celeste a été mis, à modifier par le MJ ou le joueur pour remplacer par la caractéristique du famillier choisi.Pour le second pouvoir il faudra le glisser déposer sous cette capacité sur la fiche de personnage.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p133
+  slug: pouvoir-superieur
+  subtype: ''
+  actionType: none
+  learned: false
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.a709G9f0aBwkO7RM
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.a709G9f0aBwkO7RM
+          subtype: ability
+          target: cha
+          apply: self
+          value: '1'
+          additionalInfos: Celeste
+      resolvers: []
+  rank: 7
+  allowLinkedCapacity: true
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!a709G9f0aBwkO7RM'
+

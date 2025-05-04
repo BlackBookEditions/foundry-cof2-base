@@ -1,0 +1,80 @@
+folder: B68hk3Dnp7OBAJqc
+name: Flèche chercheuse
+type: capacity
+img: icons/svg/combat.svg
+_id: 11c3CSg7Lnd5Esr1
+system:
+  description: "<p style=\"text-align:justify\">Une fois par jour, l’archer arcanique peut enchanter une flèche afin qu’elle trouve sa cible<br />de façon infaillible. Pour utiliser ce pouvoir, l’archer arcanique doit avoir blessé ou vu directement la créature ciblée moins de 10 rounds (1 min) plus tôt. Il tire ensuite sa flèche en l’air et celle‑ci voyage aussi loin que nécessaire (y compris à travers les plans) pour trouver sa cible.<br />L’archer arcanique fait un test d’attaque normal et obtient un bonus de +2d4° aux DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test pour toucher et lancer les dégâts. Il faut un repos complet pour pouvoir réutiliser cette action.</p>\n<p style=\"text-align:justify\">\_</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
+  source: ''
+  origin: Livre des règles p137
+  slug: fleche-chercheuse
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 6
+  frequency: daily
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.11c3CSg7Lnd5Esr1
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 2d4°'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!11c3CSg7Lnd5Esr1'
+

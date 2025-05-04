@@ -1,0 +1,88 @@
+folder: OcibsmGLQxprav22
+name: Pas de quartier
+type: capacity
+img: icons/svg/combat.svg
+_id: jMnuppLdZw1h7iRj
+system:
+  description: "<p style=\"text-align:justify\">Pour le flibustier, il s’agit de vaincre ou mourir.<br />Sa férocité est légendaire : il peut tenter une action d’attaque gratuite contre toute créature<br />à son contact qui tente de s’éloigner de lui. Pour cette attaque, il obtient un dé bonus en attaque et +1d4° aux DM. Il obtient les mêmes bonus à toutes ses attaques lorsqu’il lui reste moins de [niveau] PV.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM et le dé bonus.A activer dans les circonstance indiquées</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p142
+  slug: pas-de-quartier
+  subtype: ''
+  actionType: f
+  learned: false
+  rank: 8
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.jMnuppLdZw1h7iRj
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.jMnuppLdZw1h7iRj
+          subtype: combat
+          target: dam
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Item.jMnuppLdZw1h7iRj
+          subtype: bonusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.jMnuppLdZw1h7iRj
+          subtype: bonusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.jMnuppLdZw1h7iRj
+          subtype: malusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.jMnuppLdZw1h7iRj
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!jMnuppLdZw1h7iRj'
+

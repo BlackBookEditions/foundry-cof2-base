@@ -1,0 +1,109 @@
+folder: r34N2H9tGiZR6a6E
+name: Ultra polyvalent
+type: capacity
+img: icons/svg/combat.svg
+_id: 4rGSHGbMvVuNKT3G
+system:
+  description: "<p>Le personnage augmente la valeur de ses deux plus faibles caractéristiques de +1. En cas d’égalité, il choisit.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>Cette capacité propose une bonus aux caractéristiques de +1. Une fois copié sur la fiche de personnage il faudra supprimer les caractéristique non choisie.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p143
+  slug: ultra-polyvalent
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 8
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.4rGSHGbMvVuNKT3G
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: agi
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: con
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: for
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: per
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: cha
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: int
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.4rGSHGbMvVuNKT3G
+          subtype: ability
+          target: vol
+          apply: self
+          value: '1'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.4rGSHGbMvVuNKT3G
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!4rGSHGbMvVuNKT3G'
+
