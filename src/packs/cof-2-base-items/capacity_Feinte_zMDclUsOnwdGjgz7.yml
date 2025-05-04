@@ -4,9 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: zMDclUsOnwdGjgz7
 system:
-  description: "<p style=\"text-align:justify\">Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l’escrime (+4 au rang 2, par exemple) sur votre première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>Le joueur cible un token puis clique sur l'action qui va faire un jet opposé CHA vs PER, en cas de réussite un effet temporaire d'1 round sera appliqué sur le joueur lui augmentant son attaque de contact de rang *2 et ses dégat de 2d4°. Ne fonctionne qu'en combat.</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l’escrime (+4 au rang 2, par exemple) sur votre première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Le joueur cible un token puis clique sur l'action qui va faire un jet opposé CHA vs PER, en cas de réussite un effet temporaire d'1 round sera appliqué sur le joueur lui augmentant son attaque de contact de rang *2 et ses dégat de 2d4°. Ne fonctionne qu'en combat.</p>\n</blockquote>"
   source: ''
-  origin: Livre des rêgles p66
+  origin: livre des règles p66
   slug: feinte
   tags: []
   subtype: ''
@@ -43,7 +43,7 @@ system:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
           subtype: combat
-          target: dam
+          target: damRanged
           apply: self
           value: 2d4°
           additionalInfos: ''

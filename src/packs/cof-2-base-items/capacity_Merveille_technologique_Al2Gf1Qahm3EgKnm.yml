@@ -4,9 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Al2Gf1Qahm3EgKnm
 system:
-  description: "<p>Le gnome sait utiliser les arbalètes (et les armes à poudre si votre MJ autorise leur usage), quel que soit son profil. Il ajoute son AGI aux DM qu’il inflige avec ces armes</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong><br />Bonus activable/désactivable en cliquant/recliquant dessus. A activer lorsque la gnome utilise les arbalètes ou armes à poudre.</p>\n</blockquote>"
+  description: "<p>Le gnome sait utiliser les arbalètes (et les armes à poudre si votre MJ autorise leur usage), quel que soit son profil. Il ajoute son AGI aux DM qu’il inflige avec ces armes</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong> Bonus activable/désactivable en cliquant/recliquant dessus. A activer lorsque la gnome utilise les arbalètes ou armes à poudre.</p>\n</blockquote>"
   source: ''
-  origin: Livre des rêgles p54
+  origin: livre des règles p54
   slug: merveille-technologique
   tags: []
   subtype: ''
@@ -38,7 +38,7 @@ system:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Al2Gf1Qahm3EgKnm
           subtype: combat
-          target: dam
+          target: damRanged
           apply: self
           value: '@agi'
           additionalInfos: arbalètes et armes à poudre

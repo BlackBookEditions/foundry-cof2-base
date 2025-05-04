@@ -4,7 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 6gkWbKg2xFFCpHyi
 system:
-  description: "<p style=\"text-align:justify\">Le personnage désigne une proie soit en la voyant, soit en étant mandaté pour la traquer. Il<br />obtient un bonus de +5 à tous les tests de compétence qu’il réalise pour la retrouver (pistage, renseignement, discrétion, etc.) et +1d4° aux DM contre elle. Le personnage doit attendre d’avoir terminé une récupération complète avant de changer de proie. Il ne peut marquer plus d’une proie à la fois.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM et aux jet d'attaque. A activer lorsque le jet concerne sa proie.</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
+  description: "<p style=\"text-align:justify\">Le personnage désigne une proie soit en la voyant, soit en étant mandaté pour la traquer. Il obtient un bonus de +5 à tous les tests de compétence qu’il réalise pour la retrouver (pistage, renseignement, discrétion, etc.) et +1d4° aux DM contre elle. Le personnage doit attendre d’avoir terminé une récupération complète avant de changer de proie. Il ne peut marquer plus d’une proie à la fois.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM et aux jet d'attaque. A activer lorsque le jet concerne sa proie.</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
   source: ''
   origin: Livre des règles p140
   slug: marque-du-chasseur
@@ -47,10 +47,17 @@ system:
         - type: capacity
           source: Item.6gkWbKg2xFFCpHyi
           subtype: combat
-          target: dam
+          target: damMelee
           apply: self
           value: 1d4°
           additionalInfos: proie
+        - type: capacity
+          source: Item.6gkWbKg2xFFCpHyi
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: 1d4°
+          additionalInfos: proie          
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
