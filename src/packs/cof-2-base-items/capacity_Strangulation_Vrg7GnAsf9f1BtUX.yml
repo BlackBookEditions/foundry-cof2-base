@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Vrg7GnAsf9f1BtUX
 system:
-  description: >-
-    <p>En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier
-    étouffe une créature vivante. La victime subit un dé malus à tous ses tests
-    et [1d4°+INT] DM par round tant que le sorcier maintient sa concentration
-    par une action de mouvement et la dépense de 1 PM par round. Si la victime
-    sort de la portée du sort, il prend fin.</p>
+  description: "<p style=\"text-align:justify\">En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier étouffe une créature vivante. La victime subit un dé malus à tous ses tests et [1d4°+INT] DM par round tant que le sorcier maintient sa concentration par une action de mouvement et la dépense de 1 PM par round. Si la victime sort de la portée du sort, il prend fin.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégâts. De plus en cas de succès un \"debuff\" sera appliqué à la cible qui infligera un dé malus à tous les test et 1d4° + int dégat périodique.</p>\n<p>A noter que si le joueur arrête de payer 1 PM par round et une action de mouvement, le MJ devra supprimer manuellement l'effet sur la cible.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des règles p111
   slug: strangulation
   tags: []
   subtype: ''
@@ -32,14 +27,25 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: malusDice
+          target: all
+          apply: others
+          value: '0'
+          additionalInfos: ''
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -47,11 +53,21 @@ system:
           dmg:
             formula: 1d4°+@int
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-      modifiers: []
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 1d4° + @int
+            elementType: ''
+            statuses: []
+            duration: '10'
+            unit: round
+            successThreshold: null
   cost: -1
+  rank: 3
 effects: []
 sort: 200000
 ownership:
@@ -68,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828480449
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745220988360
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Vrg7GnAsf9f1BtUX'
 

@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: PaT2ABkL0McNvBgT
 system:
-  description: >-
-    <p>Pour un elfe, l’obscurité de la nuit sous la lumière des étoiles est
-    considérée comme de la pénombre. De plus, il gagne un bonus de +3 à tous les
-    tests d’érudition (INT) et artistiques (CHA).</p>
+  description: "<p>Pour un elfe, l’obscurité de la nuit sous la lumière des étoiles est considérée comme de la pénombre. De plus, il gagne un bonus de +3 à tous les tests d’érudition (INT) et artistiques (CHA).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p50
   slug: lumiere-interieur
   tags: []
   subtype: ''
@@ -60,30 +57,8 @@ system:
           value: '10'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
-      indice: 1
-      label: ''
-      chatFlavor: ''
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        enabled: false
-        activable: false
-        temporary: false
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.PaT2ABkL0McNvBgT
-          subtype: state
-          target: darkvision
-          apply: self
-          value: '0'
-          additionalInfos: ''
-      resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -100,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1744830159799
+  modifiedTime: 1745341928380
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PaT2ABkL0McNvBgT'
 

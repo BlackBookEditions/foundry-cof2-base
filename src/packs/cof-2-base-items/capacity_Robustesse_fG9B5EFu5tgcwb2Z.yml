@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: fG9B5EFu5tgcwb2Z
 system:
-  description: >-
-    <p>Le guerrier augmente sa valeur maximale de PV de rang + 2. De plus, vous
-    ajoutez votre rang + 2 à tous les tests destinés à résister aux efforts
-    physiques, à la chaleur ou au froid (conditions naturelles).</p>
+  description: "<p>Le guerrier augmente sa valeur maximale de PV de rang + 2. De plus, vous ajoutez votre rang + 2 à tous les tests destinés à résister aux efforts physiques, à la chaleur ou au froid (conditions naturelles).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité gère les bonus permanent.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p89
   slug: robustesse
   tags: []
   subtype: ''
@@ -31,23 +28,30 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
           subtype: attribute
           target: hp
+          apply: self
           value: 2 + @rang
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
           subtype: skill
           target: con
+          apply: self
           value: 2 + @rang
-      conditions: []
+          additionalInfos: résistance efforts physiques
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -64,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827319870
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745561452569
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!fG9B5EFu5tgcwb2Z'
 

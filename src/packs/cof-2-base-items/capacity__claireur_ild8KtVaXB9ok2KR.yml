@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: ild8KtVaXB9ok2KR
 system:
-  description: >-
-    <p>En milieu naturel, le rôdeur ajoute son rang + 2 à ses tests de
-    discrétion et de vigilance ainsi qu’aux tests pour pister. De plus, le
-    rôdeur peut remplacer le bonus de +1 PC de la famille des aventuriers par un
-    bonus de +1 DR si le joueur le souhaite.</p>
+  description: "<p style=\"text-align:justify\">En milieu naturel, le rôdeur ajoute son rang + 2 à ses tests de discrétion et de vigilance ainsi qu’aux tests pour pister. De plus, le rôdeur peut remplacer le bonus de +1 PC de la famille des aventuriers par un bonus de +1 DR si le joueur le souhaite.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p72
   slug: eclaireur
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,14 +39,19 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
           subtype: skill
           target: per
+          apply: self
           value: 2 + @rang
+          additionalInfos: discretion/vigilance
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: discretion/vigilance
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -66,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824331546
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745407017859
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ild8KtVaXB9ok2KR'
 

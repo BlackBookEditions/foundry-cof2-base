@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 5sIcXyGT8uO766kE
 system:
-  description: >-
-    <p>Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA
-    et à ceux de ses alliés au contact pour les tests de négociation, de
-    persuasion ou d’intimidation. Allez savoir pourquoi, sa simple présence
-    donne de la force aux arguments de ses alliés…</p>
+  description: "<p style=\"text-align:justify\">Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA et à ceux de ses alliés au contact pour les tests de négociation, de persuasion ou d’intimidation. Allez savoir pourquoi, sa simple présence donne de la force aux arguments de ses alliés…</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. L'effet sur les alliés est à prendre en compte manuellement</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p79
   slug: argument-de-taille
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,14 +39,19 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.5sIcXyGT8uO766kE
           subtype: attribute
           target: hp
+          apply: self
           value: '@for'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.5sIcXyGT8uO766kE
           subtype: skill
           target: for
+          apply: self
           value: '@for'
+          additionalInfos: Intimidation
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -66,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824981671
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745424469060
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!5sIcXyGT8uO766kE'
 

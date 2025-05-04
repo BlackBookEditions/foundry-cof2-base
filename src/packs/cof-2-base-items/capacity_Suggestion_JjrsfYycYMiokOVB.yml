@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: JjrsfYycYMiokOVB
 system:
-  description: >-
-    <p>Le barde peut suggérer une action à une créature en réussissant un test
-    opposé d’attaque magique. En cas de réussite, la créature fera tout son
-    possible pour satisfaire cette demande pendant 1 heure ou jusqu’à avoir
-    réussi. Elle évitera les actions suicidaires (ce qui lui donnerait
-    immédiatement un test d’INT difficulté 10 pour échapper au sort). Le sort ne
-    peut pas affecter une créature de niveau supérieur ou égal à celui du
-    lanceur</p>
+  description: "<p style=\"text-align:justify\">Le barde peut suggérer une action à une créature en réussissant un test opposé d’attaque magique. En cas de réussite, la créature fera tout son possible pour satisfaire cette demande pendant 1 heure ou jusqu’à avoir réussi. Elle évitera les actions suicidaires (ce qui lui donnerait immédiatement un test d’INT difficulté 10 pour échapper au sort). Le sort ne peut pas affecter une créature de niveau supérieur ou égal à celui du lanceur</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour executer un test opposé. Le traitement en cas de succès est laissé au MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p68
   slug: suggestion
   tags: []
   subtype: ''
@@ -34,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -49,11 +45,19 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 200000
 ownership:
@@ -70,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821972475
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385833881
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!JjrsfYycYMiokOVB'
 

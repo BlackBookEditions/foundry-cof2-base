@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: YjEtRh9I0xqEBTfv
 system:
-  description: >-
-    <p>L’arquebusier ajoute son rang + 2 à tous les tests visant à réparer ou à
-    comprendre des mécanismes (cela inclut le fait de désamorcer des pièges
-    mécaniques et de manipuler des armes de siège). Il obtient un dé bonus à
-    tous les tests d’attaque avec des armes de siège (baliste, couleuvrine,
-    canon, trébuchet, catapulte, etc.).</p>
+  description: "<p>L’arquebusier ajoute son rang + 2 à tous les tests visant à réparer ou à comprendre des mécanismes (cela inclut le fait de désamorcer des pièges mécaniques et de manipuler des armes de siège). Il obtient un dé bonus à tous les tests d’attaque avec des armes de siège (baliste, couleuvrine, canon, trébuchet, catapulte, etc.).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>2 effets : Un bonus permanent pour les jets de caractéristiques et une action activable/désactivable pour accorder un dé bonus en attaque à distance. A activer en cas d'usage d'armes de siège.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p62
   slug: mecanismes
   tags: []
   subtype: ''
@@ -32,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,7 +39,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
           subtype: skill
           target: int
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: réparer/comprendre mecanisme
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
       indice: 1
@@ -52,25 +50,24 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: true
-        activable: true
+        visible: false
         enabled: false
-        temporary: false
-      resolvers:
-        - type: attack
-          skill:
-            formula: '[object Object]'
-            crit: ''
-            difficulty: '@cible.def'
-          dmg:
-            formula: '[object Object]'
-          target:
-            type: none
-            number: 0
-            scope: all
-      conditions: []
-      modifiers: []
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
+          subtype: bonusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -87,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773648402
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745351470966
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YjEtRh9I0xqEBTfv'
 

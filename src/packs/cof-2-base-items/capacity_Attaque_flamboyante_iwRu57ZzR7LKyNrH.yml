@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: iwRu57ZzR7LKyNrH
 system:
-  description: >-
-    <p>Le style de combat du barde est flamboyant et surprenant : Il effectue
-    une attaque de contact avec une arme légère et obtient un bonus d’attaque et
-    de DM égal à son CHA (en plus de sa FOR ou de son AGI).</p>
+  description: "<p>Le style de combat du barde est flamboyant et surprenant : Il effectue une attaque de contact avec une arme légère et obtient un bonus d’attaque et de DM égal à son CHA (en plus de sa FOR ou de son AGI).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le test d'attaque de contact et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p67
   slug: attaque-flamboyante
   tags: []
   subtype: ''
@@ -31,11 +28,16 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: true
         enabled: false
+        activable: true
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atc + @cha'
             crit: ''
@@ -43,13 +45,19 @@ system:
           dmg:
             formula: '@arme.dmg + @cha'
           target:
-            type: none
+            type: single
             number: 0
             scope: all
-      conditions:
-        - predicate: isLearned
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 350000
 ownership:
@@ -66,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821549120
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385384068
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!iwRu57ZzR7LKyNrH'
 

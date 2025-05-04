@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: yA3F88CwL36zUmFj
 system:
-  description: >-
-    <p>L’ensorceleur produit un éclair sur une ligne de 10 m. Toutes les
-    créatures sur la trajectoire subissent [4d4°+CHA] DM ou seulement la moitié
-    pour celles qui réussissent un test d’AGI difficulté [10 + CHA].</p>
+  description: "<p>L’ensorceleur produit un éclair sur une ligne de 10 m. Toutes les créatures sur la trajectoire subissent [4d4°+CHA] DM ou seulement la moitié pour celles qui réussissent un test d’AGI difficulté [10 + CHA].</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer.<br /><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p93
   slug: foudre
   tags: []
   subtype: ''
@@ -30,26 +27,35 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
             difficulty: '0'
           dmg:
             formula: 4d4°+@cha
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 10
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 350000
 ownership:
@@ -66,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827478460
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745651808139
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!yA3F88CwL36zUmFj'
 

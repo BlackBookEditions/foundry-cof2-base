@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 9Epu1x3TeKFyvuFK
 system:
-  description: >-
-    <p>Lorsqu’il est en selle, le chevalier gagne un bonus de +1 aux DM de ses
-    attaques au contact, et sa monture obtient une DEF égale à celle du
-    chevalier. Monter ou descendre de cheval est désormais une action gratuite.
-    Le bonus aux DM passe à +2 au rang 5.</p>
+  description: "<p style=\"text-align:justify\">Lorsqu’il est en selle, le chevalier gagne un bonus de +1 aux DM de ses attaques au contact, et sa monture obtient une DEF égale à celle du chevalier. Monter ou descendre de cheval est désormais une action gratuite. Le bonus aux DM passe à +2 au rang 5.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.A activer lorsque le joueur est sur sa monture.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p83
   slug: cavalier-emerite
   tags: []
   subtype: ''
@@ -23,8 +19,32 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.9Epu1x3TeKFyvuFK
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9Epu1x3TeKFyvuFK
+          subtype: combat
+          target: dam
+          apply: self
+          value: '@rang[1,0,0,0,1]'
+          additionalInfos: sur le cheval
+      resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -41,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740761026318
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1745472155834
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!9Epu1x3TeKFyvuFK'
 

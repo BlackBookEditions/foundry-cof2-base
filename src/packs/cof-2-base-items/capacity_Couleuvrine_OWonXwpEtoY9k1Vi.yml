@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: OWonXwpEtoY9k1Vi
 system:
-  description: >-
-    <p>L’arquebusier obtient une couleuvrine (un petit canon portatif). Sur un
-    test d’attaque à distance réussi (dé bonus), la couleuvrine inflige [5d4° +
-    INT] DM à une portée de 100 m. Il faut ensuite deux rounds (L) pour la
-    recharger. C’est une arme encombrante et il est impossible de transporter
-    plus d’une couleuvrine</p>
+  description: "<p style=\"text-align:justify\">L’arquebusier obtient une couleuvrine (un petit canon portatif). Sur un test d’attaque à distance réussi (dé bonus), la couleuvrine inflige [5d4° + INT] DM à une portée de 100 m. Il faut ensuite deux rounds (L) pour la recharger. C’est une arme encombrante et il est impossible de transporter plus d’une couleuvrine</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong>\_</p>\n<p>Le MJ fournira l'équipement \"Couleuvrine\" au joueur. Celle-ci est configurés telle que décrite ici.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p62
   slug: couleuvrine
   tags: []
   subtype: ''
@@ -24,34 +19,9 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.OWonXwpEtoY9k1Vi
-      indice: 0
-      label: ''
-      chatFlavor: ''
-      type: ranged
-      img: icons/svg/d20-highlight.svg
-      properties:
-        activable: false
-        enabled: false
-        temporary: false
-        visible: false
-      conditions:
-        - predicate: isLearned
-      resolvers:
-        - type: attack
-          skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
-          dmg:
-            formula: 5d4° + @int
-          target:
-            type: none
-            number: 0
-            scope: all
-      modifiers: []
+  actions: []
   cost: -1
+  rank: 5
 effects: []
 sort: 300000
 ownership:
@@ -68,7 +38,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740773706318
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745351733992
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!OWonXwpEtoY9k1Vi'
 

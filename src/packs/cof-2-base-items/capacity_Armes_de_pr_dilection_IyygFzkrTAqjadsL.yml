@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: IyygFzkrTAqjadsL
 system:
-  description: >-
-    <p>Le guerrier choisit une catégorie d’armes de prédilection parmi épées,
-    haches, masses, lances (épieu, lance, pique) et enfin armes de jet (dague de
-    lancer, javelot, etc.), et il gagne +1 en attaque lorsqu’il l’utilise une
-    arme de cette catégorie. De plus, vous ajoutez votre rang + 2 à tous les
-    tests destinés à estimer la valeur d’une arme ou la réputation martiale d’un
-    adversaire</p>
+  description: "<p>Le guerrier choisit une catégorie d’armes de prédilection parmi épées, haches, masses, lances (épieu, lance, pique) et enfin armes de jet (dague de lancer, javelot, etc.), et il gagne +1 en attaque lorsqu’il l’utilise une arme de cette catégorie. De plus, vous ajoutez votre rang + 2 à tous les tests destinés à estimer la valeur d’une arme ou la réputation martiale d’un adversaire</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>La capacité gère le bonus permanent pour estimer une arme. Il est proposé au MJ de rajouter le +1 directement sur l'arme en question pour éviter la multiplication des action.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p88
   slug: armes-de-predilection
   tags: []
   subtype: ''
@@ -34,23 +28,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: estimer valeur arme
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: per
+          apply: self
           value: 2 + @rang
+          additionalInfos: estimer valeur arme
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -67,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827300636
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745650893483
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!IyygFzkrTAqjadsL'
 

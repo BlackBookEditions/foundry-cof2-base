@@ -4,11 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: xsvWSXanWNIm0JNm
 system:
-  description: >-
-    <p>L’arquebusier inflige des critiques sur 19‑20 sur ses attaques avec une
-    arme à distance. La plage de critique passe à 18‑20 à partir du rang 5.</p>
+  description: "<p>L’arquebusier inflige des critiques sur 19‑20 sur ses attaques avec une arme à distance. La plage de critique passe à 18‑20 à partir du rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p65
   slug: tir-precis
   tags: []
   subtype: ''
@@ -29,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -40,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.xsvWSXanWNIm0JNm
           subtype: combat
           target: crit
-          value: '-1'
+          apply: self
+          value: '-1 - @rang % 5'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -59,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774488887
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745352938729
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xsvWSXanWNIm0JNm'
 

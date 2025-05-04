@@ -4,18 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: IgIicHVky4OlLxkv
 system:
-  description: >-
-    <p>Le magicien projette un rayon mortel dont la portée est de 20 m et qui
-    annule la cohésion de la matière, ne laissant derrière lui qu’un amas de
-    poussière. Un test d’attaque magique réussi contre la DEF de la cible
-    inflige [5d4°+INT] DM. Si le magicien vise un objet porté par une créature,
-    le test d’attaque subit un dé malus. Les objets magiques sont insensibles à
-    ce sort et les objets normaux (jusqu’à 100 kg) sont réduits en poussière.
-    Une créature réduite à 0 PV par ce sort est proprement désintégrée, ne
-    laissant aucun cadavre derrière elle ! (Ses objets magiques sont
-    épargnés).</p>
+  description: "<p style=\"text-align:justify\">Le magicien projette un rayon mortel dont la portée est de 20 m et qui annule la cohésion de la matière, ne laissant derrière lui qu’un amas de poussière. Un test d’attaque magique réussi contre la DEF de la cible inflige [5d4°+INT] DM. Si le magicien vise un objet porté par une créature, le test d’attaque subit un dé malus. Les objets magiques sont insensibles à ce sort et les objets normaux (jusqu’à 100 kg) sont réduits en poussière. Une créature réduite à 0 PV par ce sort est proprement désintégrée, ne laissant aucun cadavre derrière elle ! (Ses objets magiques sont épargnés).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p103
   slug: desintegration
   tags: []
   subtype: ''
@@ -36,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -51,11 +45,19 @@ system:
           dmg:
             formula: 5d4°+@int
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 300000
 ownership:
@@ -72,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828055256
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745219212199
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!IgIicHVky4OlLxkv'
 

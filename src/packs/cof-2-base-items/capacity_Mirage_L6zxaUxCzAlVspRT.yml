@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: L6zxaUxCzAlVspRT
 system:
-  description: >-
-    <p>L’ensorceleur crée une illusion visuelle et sonore immobile d’une durée
-    de CHA minutes. Le volume maximal de l’illusion est de 2 m de côté par rang
-    dans la voie (portée 50 m). À partir du rang 4, l’illusion peut être animée,
-    mais dans ce cas sa durée est exprimée en rounds. En plus de ce sort,
-    l’ensorceleur ajoute son rang + 2 aux tests de supercherie ou à tout test
-    qui lui servirait à mentir.</p>
+  description: "<p>L’ensorceleur crée une illusion visuelle et sonore immobile d’une durée de CHA minutes. Le volume maximal de l’illusion est de 2 m de côté par rang dans la voie (portée 50 m). À partir du rang 4, l’illusion peut être animée, mais dans ce cas sa durée est exprimée en rounds. En plus de ce sort, l’ensorceleur ajoute son rang + 2 aux tests de supercherie ou à tout test qui lui servirait à mentir.</p>\n<p>\_</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur dépense ses PM manuellement. Les effets sont géré par le MJ sauf le bonus permanence pour les test de supercherie/mensonge qui sont pris en charge.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p95
   slug: mirage
   tags: []
   subtype: ''
@@ -34,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: supercherie/mensonge
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -62,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827699637
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653040195
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!L6zxaUxCzAlVspRT'
 

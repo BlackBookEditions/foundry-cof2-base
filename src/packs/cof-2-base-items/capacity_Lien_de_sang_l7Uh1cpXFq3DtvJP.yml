@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: l7Uh1cpXFq3DtvJP
 system:
-  description: >-
-    <p>En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier
-    tisse un lien avec sa victime. Pendant INT minutes, la moitié des DM reçus
-    par le sorcier sont également subis par la cible (les DM infligés au sorcier
-    ne sont pas pour autant réduits) et le sorcier peut lui lancer un sort sans
-    la voir (si elle est à portée).</p>
+  description: "<p style=\"text-align:justify\">En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier tisse un lien avec sa victime. Pendant INT minutes, la moitié des DM reçus par le sorcier sont également subis par la cible (les DM infligés au sorcier ne sont pas pour autant réduits) et le sorcier peut lui lancer un sort sans la voir (si elle est à portée).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique le reste est à gérer à la main par le MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p111
   slug: lien-de-sang
   tags: []
   subtype: ''
@@ -32,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -47,11 +45,19 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 500000
 ownership:
@@ -68,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828461436
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745223002956
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!l7Uh1cpXFq3DtvJP'
 

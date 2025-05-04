@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: OmRNXgiscCq7bYTL
 system:
-  description: >-
-    <p>Le barbare possède un tatouage magique* qui améliore ses performances
-    physiques ou mentales. Au choix : Taureau (+3 aux tests de FOR), ours (+3
-    aux tests de CON), panthère (+3 aux tests d’AGI), chouette (+3 aux tests de
-    PER), loup (+3 aux tests de CHA), renard (+3 aux tests d’INT) ou serpent (+3
-    aux tests de VOL). De plus, lorsqu’il subit l’état étourdi, il est seulement
-    ralenti.</p><p> </p><p><em>* Ce bonus n’est pas un bonus de compétence, mais
-    un bonus de magie qui ne peut donc pas se cumuler à un bonus fourni par un
-    objet magique</em></p>
+  description: "<p style=\"text-align:justify\">Le barbare possède un tatouage magique* qui améliore ses performances physiques ou mentales. Au choix : Taureau (+3 aux tests de FOR), ours (+3 aux tests de CON), panthère (+3 aux tests d’AGI), chouette (+3 aux tests de PER), loup (+3 aux tests de CHA), renard (+3 aux tests d’INT) ou serpent (+3 aux tests de VOL). De plus, lorsqu’il subit l’état étourdi, il est seulement ralenti.</p>\n<p style=\"text-align:justify\">\_</p>\n<p><em>Ce bonus n’est pas un bonus de compétence, mais un bonus de magie qui ne peut donc pas se cumuler à un bonus fourni par un objet magique</em></p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :\_</strong></p>\n<p style=\"text-align:justify\">L'ensemble des tatouages ont été mis ici sous forme de \"Modifiers\". Une fois la capacité copiée sur la fiche de personnage il faudra supprimer tous les tatouage qui n'ont pas été choisi.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p80
   slug: tatouages
   tags: []
   subtype: ''
@@ -36,48 +28,64 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: agi
+          apply: self
           value: '3'
+          additionalInfos: Taureau
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: con
+          apply: self
           value: '3'
+          additionalInfos: Ours
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: for
+          apply: self
           value: '3'
+          additionalInfos: Panthère
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: per
+          apply: self
           value: '3'
+          additionalInfos: Chouette
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: cha
+          apply: self
           value: '3'
+          additionalInfos: Loup
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: int
+          apply: self
           value: '3'
+          additionalInfos: Renard
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
           subtype: ability
           target: vol
+          apply: self
           value: '3'
+          additionalInfos: Serpent
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -94,7 +102,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825003873
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745425441286
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!OmRNXgiscCq7bYTL'
 

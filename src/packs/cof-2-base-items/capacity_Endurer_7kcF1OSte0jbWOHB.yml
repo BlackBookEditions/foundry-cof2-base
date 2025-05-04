@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 7kcF1OSte0jbWOHB
 system:
-  description: >-
-    <p>Le forgesort est habitué aux travaux et à la chaleur de la forge. Il
-    divise par deux tous les DM de feu subis et augmente sa CON de +1.
-    Désormais, il obtient un dé bonus aux tests de CON. Finalement, il peut
-    ajouter sa valeur de CON au nombre de PM qu’il obtient.</p>
+  description: "<p>Le forgesort est habitué aux travaux et à la chaleur de la forge. Il divise par deux tous les DM de feu subis et augmente sa CON de +1. Désormais, il obtient un dé bonus aux tests de CON. Finalement, il peut ajouter sa valeur de CON au nombre de PM qu’il obtient.</p>\n<p>\_</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité gère les bonus permanents</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p99
   slug: endurer
   tags: []
   subtype: ''
@@ -32,23 +28,36 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.7kcF1OSte0jbWOHB
           subtype: ability
           target: con
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.7kcF1OSte0jbWOHB
           subtype: bonusDice
           target: con
+          apply: self
           value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.7kcF1OSte0jbWOHB
+          subtype: resource
+          target: mp
+          apply: self
+          value: '@con'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 500000
 ownership:
@@ -65,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827853477
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745654852352
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!7kcF1OSte0jbWOHB'
 

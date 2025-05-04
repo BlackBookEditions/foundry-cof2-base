@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: QBKI0r9WkePEXGDV
 system:
-  description: >-
-    <p><strong>Lorsqu’il s’est préparé à parer un coup</strong>, le guerrier
-    peut décider à la place d’absorber un sort. S’il réussit un test d’attaque
-    au contact (il peut remplacer la FOR par l’AGI pour ce test) opposé à un
-    test d’attaque magique du lanceur de sort, le sort est absorbé par le
-    bouclier et n’a aucun effet sur le guerrier (mais s’il s’agit d’un sort de
-    zone, les autres cibles sont affectées normalement).</p>
+  description: "<p style=\"text-align:justify\"><strong>Lorsqu’il s’est préparé à parer un coup</strong>, le guerrier peut décider à la place d’absorber un sort. S’il réussit un test d’attaque au contact (il peut remplacer la FOR par l’AGI pour ce test) opposé à un test d’attaque magique du lanceur de sort, le sort est absorbé par le bouclier et n’a aucun effet sur le guerrier (mais s’il s’agit d’un sort de zone, les autres cibles sont affectées normalement).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose une action d'attaque vs attaque magique de la cible pour déterminer la réussite ou non de l'action. Le reste est géré par le MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p88
   slug: absorber-un-sort
   tags: []
   subtype: ''
@@ -47,13 +41,13 @@ system:
           skill:
             formula: '@atc'
             crit: '21'
-            difficulty: '0'
+            difficulty: '@oppose.atm'
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
@@ -63,6 +57,7 @@ system:
             unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 0
 ownership:
@@ -79,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1744565757251
+  modifiedTime: 1745562843389
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!QBKI0r9WkePEXGDV'
 

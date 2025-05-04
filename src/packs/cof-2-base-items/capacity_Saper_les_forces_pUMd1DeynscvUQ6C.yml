@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: pUMd1DeynscvUQ6C
 system:
-  description: >-
-    <p>Le magicien choisit une cible vivante située à une distance maximum de 10
-    m. S’il réussit un test opposé d’attaque magique, la cible subit un malus de
-    ‑2 à ses tests de FOR, d’attaque au contact et aux DM, jusqu’à la fin du
-    combat. Le sort n’est pas cumulable plusieurs fois sur la même cible.</p>
+  description: "<p style=\"text-align:justify\">Le magicien choisit une cible vivante située à une distance maximum de 10 m. S’il réussit un test opposé d’attaque magique, la cible subit un malus de ‑2 à ses tests de FOR, d’attaque au contact et aux DM, jusqu’à la fin du combat. Le sort n’est pas cumulable plusieurs fois sur la même cible.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer un effet de \"debuff\" pendant la durée du sort.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p103
   slug: saper-les-forces
   tags: []
   subtype: ''
@@ -31,14 +27,39 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
+          subtype: skill
+          target: for
+          apply: others
+          value: '-2'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
+          subtype: combat
+          target: dam
+          apply: others
+          value: '-2'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
+          subtype: combat
+          target: melee
+          apply: others
+          value: '-2'
+          additionalInfos: ''
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -46,11 +67,21 @@ system:
           dmg:
             formula: ''
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-      modifiers: []
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '20'
+            unit: round
+            successThreshold: null
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -67,7 +98,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828111774
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218687579
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!pUMd1DeynscvUQ6C'
 

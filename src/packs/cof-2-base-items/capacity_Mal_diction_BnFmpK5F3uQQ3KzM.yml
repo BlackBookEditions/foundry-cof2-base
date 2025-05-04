@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: BnFmpK5F3uQQ3KzM
 system:
-  description: >-
-    <p>Le sorcier effectue un test opposé d’attaque magique contre une cible à
-    moins de 20 m. En cas de succès, si l’incantation était une action de
-    mouvement (M), la victime subit un dé malus à son prochain test. Si
-    l’incantation était une action limitée (L), le dé malus s’applique à ses 3
-    prochains tests. Dans tous les cas, la cible ne peut subir les effets de ce
-    sort qu’une fois par combat.</p>
+  description: "<p style=\"text-align:justify\">Le sorcier effectue un test opposé d’attaque magique contre une cible à moins de 20 m. En cas de succès, si l’incantation était une action de mouvement (M), la victime subit un dé malus à son prochain test. Si l’incantation était une action limitée (L), le dé malus s’applique à ses 3 prochains tests. Dans tous les cas, la cible ne peut subir les effets de ce sort qu’une fois par combat.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>2 actions sont proposées : Maledition (M) et Malediction (L) pour gérer les 2 cas.</p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action souhaitée pour lancer le sort qui va faire le test d'attaque magique et appliquer le \"debuff\" dé malus pendat 1 ou 3 round selon le choix.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p108
   slug: malediction
   tags: []
   subtype: ''
@@ -28,19 +22,30 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.BnFmpK5F3uQQ3KzM
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: Malédiction (M)
+      chatFlavor: Malédiction (M)
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.BnFmpK5F3uQQ3KzM
+          subtype: malusDice
+          target: all
+          apply: others
+          value: '0'
+          additionalInfos: ''
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -48,11 +53,67 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
-      modifiers: []
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
+    - source: Compendium.cof-base.cof-2-base-items.Item.BnFmpK5F3uQQ3KzM
+      indice: 1
+      label: Malédiction (L)
+      chatFlavor: Malédiction (L)
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.BnFmpK5F3uQQ3KzM
+          subtype: malusDice
+          target: all
+          apply: others
+          value: '0'
+          additionalInfos: ''
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '3'
+            unit: round
+            successThreshold: null
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -69,7 +130,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828308799
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745221608016
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!BnFmpK5F3uQQ3KzM'
 

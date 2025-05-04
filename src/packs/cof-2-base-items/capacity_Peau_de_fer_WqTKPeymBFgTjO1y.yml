@@ -4,9 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: WqTKPeymBFgTjO1y
 system:
-  description: >-
-    <p>Le moine gagne un bonus de +2 en DEF et il divise tous les DM temporaires
-    subis par deux. Le bonus de DEF passe à +3 au rang 5.</p>
+  description: "<p>Le moine gagne un bonus de +2 en DEF et il divise tous les DM temporaires subis par deux. Le bonus de DEF passe à +3 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Pour la DEF s'agit d'un bonus permanent à partir du moment où il est appris. Pour la division des DM temporaire par 2, c'est au MJ de le gérer.</p>\n</blockquote>"
   source: ''
   origin: ''
   slug: peau-de-fer
@@ -30,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.WqTKPeymBFgTjO1y
           subtype: combat
           target: def
+          apply: self
           value: '@rang[2,0,0,0,1]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -58,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829121843
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745302014847
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!WqTKPeymBFgTjO1y'
 

@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 5OAurc0dhI09SmNr
 system:
-  description: >-
-    <p>Des flammes jaillissent des doigts tendus du magicien. Jusqu’à 3 cibles
-    au contact subissent [1d4°+INT] DM, les cibles peuvent faire un test d’AGI
-    difficulté [10 + INT] pour ne subir que la moitié des DM. Les DM passent à
-    2d4° au rang 4.</p>
+  description: "<p>Des flammes jaillissent des doigts tendus du magicien. Jusqu’à 3 cibles au contact subissent [1d4°+INT] DM, les cibles peuvent faire un test d’AGI difficulté [10 + INT] pour ne subir que la moitié des DM. Les DM passent à 2d4° au rang 4.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne jusqu'à 3 cibles au contact puis clique sur l'action pour lancer le sort qui va va automatiquement lancer le jet de dégat et le MJ pourra leur appliquer ces dégats.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p103
   slug: arc-de-feu
   tags: []
   subtype: ''
@@ -31,26 +27,35 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
             difficulty: '0'
           dmg:
             formula: '@rang[1,0,0,1,0]d4°'
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 3
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -67,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828065522
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218580014
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!5OAurc0dhI09SmNr'
 

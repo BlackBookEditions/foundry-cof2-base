@@ -4,10 +4,7 @@ type: capacity
 img: icons/svg/combat.svg
 _id: lY2TnaBgkJ6qWI9I
 system:
-  description: >-
-    <p>Le moine peut choisir de s’imposer un dé malus sur une attaque au contact
-    et ajoute +2d4° aux DM. Cette capacité peut aussi être utilisée avec
-    Projection du ki qui est une attaque magique.</p>
+  description: "<p>Le moine peut choisir de s’imposer un dé malus sur une attaque au contact et ajoute +2d4° aux DM. Cette capacité peut aussi être utilisée avec Projection du ki qui est une attaque magique.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose une action <strong>activable/désactivable</strong> qui va appliquer un bonus de 2d4° aux dégat e imposer un dé malus aux attaque de contact et magique. Celà permet de tenir compte du bonus/malus autant sur l'attaque à main nues que sur \"projection de KI\".</p>\n</blockquote>"
   source: ''
   origin: ''
   slug: puissance-du-ki
@@ -22,8 +19,46 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+          subtype: combat
+          target: dam
+          apply: self
+          value: 2d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+          subtype: malusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+          subtype: malusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 500000
 ownership:
@@ -40,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829117101
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745302032119
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!lY2TnaBgkJ6qWI9I'
 

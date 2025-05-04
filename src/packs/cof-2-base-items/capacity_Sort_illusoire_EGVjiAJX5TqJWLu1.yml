@@ -4,18 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: EGVjiAJX5TqJWLu1
 system:
-  description: >-
-    <p>L’ensorceleur lance un sort d’attaque qui n’est qu’une illusion. Il
-    inflige [3d4°+CHA] DM contre une seule cible ou [2d4°+CHA] DM contre un
-    maximum de cibles égal au rang atteint. Le joueur peut décrire la nature du
-    sort à sa guise (une Explosion de feu, une nuée de criquets, une lance de
-    glace, etc.), son imagination demeurant sa seule limite. Chaque cible peut
-    faire un test de PER difficulté [10 + CHA de l’ensorceleur] pour ne subir
-    aucun DM. Les créatures sans esprit (créatures artificielles, certaines
-    plantes et morts‑vivants) sont immunisées à ce sort. Les PV perdus de cette
-    façon se récupèrent normalement.</p>
+  description: "<p style=\"text-align:justify\">L’ensorceleur lance un sort d’attaque qui n’est qu’une illusion. Il inflige [3d4°+CHA] DM contre une seule cible ou [2d4°+CHA] DM contre un maximum de cibles égal au rang atteint. Le joueur peut décrire la nature du sort à sa guise (une Explosion de feu, une nuée de criquets, une lance de glace, etc.), son imagination demeurant sa seule limite. Chaque cible peut faire un test de PER difficulté [10 + CHA de l’ensorceleur] pour ne subir aucun DM. Les créatures sans esprit (créatures artificielles, certaines plantes et morts‑vivants) sont immunisées à ce sort. Les PV perdus de cette façon se récupèrent normalement.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer.<br />Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action. Le nombre de cibles possible est fixé sur \"3\" actuellmement à adapter en fonction du rang du joueur.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p95
   slug: sort-illusoire
   tags: []
   subtype: ''
@@ -36,24 +27,32 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            difficulty: '0'
           dmg:
             formula: 3d4° + @cha
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 3
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EGVjiAJX5TqJWLu1
       indice: 1
@@ -62,14 +61,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -77,11 +79,19 @@ system:
           dmg:
             formula: 2d4° + @cha
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 2
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 300000
 ownership:
@@ -98,7 +108,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827697710
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653187753
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EGVjiAJX5TqJWLu1'
 

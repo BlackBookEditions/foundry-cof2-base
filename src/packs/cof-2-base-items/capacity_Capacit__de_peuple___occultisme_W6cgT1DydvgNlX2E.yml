@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: W6cgT1DydvgNlX2E
 system:
-  description: >-
-    <p>Le mage conserve sa capacité de peuple de rang 1.</p>
-
-    <p>De plus, il ajoute son rang + 2 aux tests de connaissance et d’érudition
-    en rapport avec la magie.</p>
+  description: "<p>Le mage conserve sa capacité de peuple de rang 1.</p>\n<p>De plus, il ajoute son rang + 2 aux tests de connaissance et d’érudition en rapport avec la magie.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Le bonus de rang + 2 est un buff permanent. La capacité rang 1 du peuple est à glisser-déposer en dessous de cette capacité dans l'onglet voies&amp;capacités de la fiche du personnage</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p60
   slug: capacite-de-peuple--occultisme
   tags: []
   subtype: ''
@@ -37,7 +33,7 @@ system:
         temporary: false
         noManaCost: false
       conditions:
-        - predicate: isEquipped
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.W6cgT1DydvgNlX2E
@@ -48,6 +44,8 @@ system:
           additionalInfos: erudition magie
       resolvers: []
   cost: -1
+  rank: 1
+  allowLinkedCapacity: true
 effects: []
 sort: 0
 ownership:
@@ -64,7 +62,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1744830692923
+  modifiedTime: 1745341172286
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!W6cgT1DydvgNlX2E'
 

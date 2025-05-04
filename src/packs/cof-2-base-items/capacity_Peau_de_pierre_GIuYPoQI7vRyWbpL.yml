@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: GIuYPoQI7vRyWbpL
 system:
-  description: >-
-    <p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que
-    de les esquiver.  Il peut choisir de remplacer son AGI par sa CON pour
-    calculer sa DEF (la limitation du bonus maximal en fonction de l’armure
-    portée s’applique toujours, mais cette fois elle s’applique à la CON).
-    Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en DEF
-    et ce bonus passe à +2 au rang 4.</p>
+  description: "<p>Le barbare est particulièrement endurci, il encaisse les coups plutôt que de les esquiver. Il peut choisir de remplacer son AGI par sa CON pour calculer sa DEF (la limitation du bonus maximal en fonction de l’armure portée s’applique toujours, mais cette fois elle s’applique à la CON). Autrement (si son AGI est supérieure ou égale à sa CON), il reçoit +1 en DEF et ce bonus passe à +2 au rang 4.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le bonus de DEF est codé sous la forme d'un bonus permanent à partir du moment où il est appris. Pour le remplacement de AGI par CON sur la défense, il faut le faire sur la fiche du personnage dévérouillée.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p81
   slug: peau-de-pierre
   tags: []
   subtype: ''
@@ -33,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -44,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.GIuYPoQI7vRyWbpL
           subtype: combat
           target: def
-          value: '@rang[1,0,0,1,0]'
+          apply: self
+          value: '@rang[1,1,1,2,2]'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 100000
 ownership:
@@ -63,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824990660
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745425588558
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!GIuYPoQI7vRyWbpL'
 

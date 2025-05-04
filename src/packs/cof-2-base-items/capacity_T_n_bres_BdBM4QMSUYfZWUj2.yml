@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: BdBM4QMSUYfZWUj2
 system:
-  description: >-
-    <p>Le sorcier invoque une zone fixe de ténèbres magiques, de 10 m de
-    diamètre, à une portée de 20 m pour une durée d’INT minutes. Toutes les
-    créatures, même celles capables de voir dans le noir, sont aveuglées dans
-    cette zone. En plus de ce sort, le sorcier ajoute son rang + 2 à tous les
-    tests d’INT basés sur les savoirs sombres (démons, morts‑vivants, rituels
-    impies, etc.).</p>
+  description: "<p style=\"text-align:justify\">Le sorcier invoque une zone fixe de ténèbres magiques, de 10 m de diamètre, à une portée de 20 m pour une durée d’INT minutes. Toutes les créatures, même celles capables de voir dans le noir, sont aveuglées dans cette zone. En plus de ce sort, le sorcier ajoute son rang + 2 à tous les tests d’INT basés sur les savoirs sombres (démons, morts‑vivants, rituels impies, etc.).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement leur appliquer un \"debuff\" leur mettant la condition \"aveuglé\".</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p111
   slug: tenebres
   tags: []
   subtype: ''
@@ -34,18 +28,60 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: true
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.BdBM4QMSUYfZWUj2
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: savoir sombre
       conditions: []
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.BdBM4QMSUYfZWUj2
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - blind
+            duration: '@int * 10'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -62,7 +98,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828452109
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745220748348
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!BdBM4QMSUYfZWUj2'
 

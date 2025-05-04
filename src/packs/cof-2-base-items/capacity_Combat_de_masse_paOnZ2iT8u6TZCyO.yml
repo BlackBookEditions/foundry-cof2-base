@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: paOnZ2iT8u6TZCyO
 system:
-  description: >-
-    <p>Si le combat implique au moins 10 créatures actives (en comptant
-    l’arquebusier et ses alliés), l’arquebusier obtient, au choix, une action 1
-    d’attaque ou une action de mouvement supplémentaire à son tour. De plus,
-    l’arquebusier gagne +1 en DEF.</p>
+  description: "<p style=\"text-align:justify\">Si le combat implique au moins 10 créatures actives (en comptant l’arquebusier et ses alliés), l’arquebusier obtient, au choix, une action 1 d’attaque ou une action de mouvement supplémentaire à son tour. De plus, l’arquebusier gagne +1 en DEF.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><br /><strong>Usage en jeu :\_</strong></p>\n<p>Le bonus de +1 en DEF est géré sous la forme d'un bonus permanent. Le reste est géré manuellement par le MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p64
   slug: combat-de-masse
   tags: []
   subtype: ''
@@ -35,6 +31,7 @@ system:
         enabled: false
         temporary: false
         visible: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,28 +40,11 @@ system:
           subtype: combat
           target: def
           value: '1'
-      resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.paOnZ2iT8u6TZCyO
-      indice: 1
-      label: ''
-      chatFlavor: ''
-      type: buff
-      img: icons/svg/d20-highlight.svg
-      properties:
-        activable: false
-        enabled: false
-        temporary: false
-        visible: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.paOnZ2iT8u6TZCyO
-          subtype: combat
-          target: def
-          value: '1'
+          apply: self
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 500000
 ownership:
@@ -81,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740775115040
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745352596931
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!paOnZ2iT8u6TZCyO'
 

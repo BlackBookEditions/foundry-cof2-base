@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 7LjXykuVcmv2Y0MZ
 system:
-  description: >-
-    <p>Le barde gagne son CHA en Initiative et +1 en DEF (+2 au rang 4). De
-    plus, le barde ajoute son rang + 2 aux tests de danse, de mime ou de
-    jonglerie</p>
+  description: "<p>Le barde gagne son CHA en Initiative et +1 en DEF (+2 au rang 4). De plus, le barde ajoute son rang + 2 aux tests de danse, de mime ou de jonglerie</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p68
   slug: grace-feline
   tags: []
   subtype: ''
@@ -30,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,19 +39,26 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.7LjXykuVcmv2Y0MZ
           subtype: combat
           target: init
+          apply: self
           value: '@cha'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.7LjXykuVcmv2Y0MZ
           subtype: combat
           target: def
-          value: '@rang[1,0,0,1,0]'
+          apply: self
+          value: '@rang[1,1,1,2,2]'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.7LjXykuVcmv2Y0MZ
           subtype: skill
           target: agi
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: danse/mime/jonglerie
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -70,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821778460
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745387828492
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!7LjXykuVcmv2Y0MZ'
 

@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: EfHop1iuz48rEI1m
 system:
-  description: >-
-    <p>Désormais, il suffit de 10 min au guerrier pour bénéficier des effets
-    d’une récupération rapide (au lieu de 30 min) et cela passe à 5 min au rang
-    4 de la voie. De plus, le guerrier obtient un bonus égal au rang atteint
-    dans la voie pour tous les tests destinés à résister aux états étourdi et
-    affaibli.</p>
+  description: "<p style=\"text-align:justify\">Désormais, il suffit de 10 min au guerrier pour bénéficier des effets d’une récupération rapide (au lieu de 30 min) et cela passe à 5 min au rang 4 de la voie. De plus, le guerrier obtient un bonus égal au rang atteint dans la voie pour tous les tests destinés à résister aux états étourdi et affaibli.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p90
   slug: resilient
   tags: []
   subtype: ''
@@ -33,18 +28,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.EfHop1iuz48rEI1m
           subtype: skill
           target: con
+          apply: self
           value: '@rang'
+          additionalInfos: vs étourdi/affaibli
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -61,7 +60,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827317737
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745561541462
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EfHop1iuz48rEI1m'
 

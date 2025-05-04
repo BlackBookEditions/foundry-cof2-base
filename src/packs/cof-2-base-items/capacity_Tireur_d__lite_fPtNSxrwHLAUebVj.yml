@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: fPtNSxrwHLAUebVj
 system:
-  description: >-
-    <p>L’arquebusier prend le temps d’ajuster une cible au loin (distance
-    minimum de 10 m). Il double la portée de son arme et ajoute +2d4° aux DM. Il
-    ne peut pas utiliser cette capacité s’il est au contact d’un adversaire ou
-    dans une position instable (par exemple dans un véhicule).</p>
+  description: "<p>L’arquebusier prend le temps d’ajuster une cible au loin (distance minimum de 10 m). Il double la portée de son arme et ajoute +2d4° aux DM. Il ne peut pas utiliser cette capacité s’il est au contact d’un adversaire ou dans une position instable (par exemple dans un véhicule).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur cible un token et clique sur l'action qui va faire une attaque en utilisant les informations de l'arme équipée et faire les dégats de l'arme + 2d4°.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p65
   slug: tireur-delite
   tags: []
   subtype: ''
@@ -31,26 +27,37 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atd'
+            formula: '@arme.skill'
             crit: ''
             difficulty: '@cible.def'
           dmg:
             formula: '@arme.dmg + 2d4°'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 87500
 ownership:
@@ -67,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774454087
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745353025500
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!fPtNSxrwHLAUebVj'
 

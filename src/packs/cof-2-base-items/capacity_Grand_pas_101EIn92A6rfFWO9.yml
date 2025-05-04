@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 101EIn92A6rfFWO9
 system:
-  description: >-
-    <p>En milieu naturel, le rôdeur obtient +1 en DEF (ce bonus passe à +2 au
-    rang 5) et 10 m de déplacement en action gratuite (à son tour de jeu).<br
-    />Enfin, il n’est pas gêné par les terrains difficiles naturels, mais il
-    n’obtient pas alors de déplacement supplémentaire.</p>
+  description: "<p style=\"text-align:justify\">En milieu naturel, le rôdeur obtient +1 en DEF (ce bonus passe à +2 au rang 5) et 10 m de déplacement en action gratuite (à son tour de jeu).<br />Enfin, il n’est pas gêné par les terrains difficiles naturels, mais il n’obtient pas alors de déplacement supplémentaire.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le bonus en DEF est proposé en action activable/désactivable selon le milieu ou évolue le joueur. Le reste est géré manuellement.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p72
   slug: grand-pas
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.101EIn92A6rfFWO9
           subtype: combat
           target: def
-          value: '@rang[1,0,0,0,1]'
+          apply: self
+          value: '@rang[1,1,1,1,2]'
+          additionalInfos: en milieu naturel
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 100000
 ownership:
@@ -61,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740823894386
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745406546049
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!101EIn92A6rfFWO9'
 

@@ -4,18 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: OMMJV1tt9ReX2FP4
 system:
-  description: >-
-    <p>La tenue religieuse du prêtre est bénie et le protège. Lorsqu’il ne porte
-    aucune armure (bouclier autorisé), il obtient un dé bonus à tous les tests
-    pour résister à un contrôle mental (injonction, charme, domination…) et +2
-    en DEF. Ce bonus passe à +3 au rang 3 et +4 au rang 5. Éventuellement, si le
-    prêtre prie une divinité guerrière, il peut choisir d’obtenir la maîtrise de
-    la cotte de mailles (DEF +5) et l’autorisation d’utiliser les capacités des
-    voies de prêtre avec cette armure (dans le cas d’un profil hybride, la
-    maîtrise de la chemise de mailles est un prérequis pour bénéficier de cette
-    variante).</p>
+  description: "<p style=\"text-align:justify\">La tenue religieuse du prêtre est bénie et le protège. Lorsqu’il ne porte aucune armure (bouclier autorisé), il obtient un dé bonus à tous les tests pour résister à un contrôle mental (injonction, charme, domination…) et +2 en DEF. Ce bonus passe à +3 au rang 3 et +4 au rang 5. Éventuellement, si le prêtre prie une divinité guerrière, il peut choisir d’obtenir la maîtrise de la cotte de mailles (DEF +5) et l’autorisation d’utiliser les capacités des voies de prêtre avec cette armure (dans le cas d’un profil hybride, la maîtrise de la chemise de mailles est un prérequis pour bénéficier de cette variante).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">Du fait du choix donné, 2 actions \"activable/désactivable\" ont été mise en place.\_</p>\n<p style=\"text-align:justify\">Première action : le bonus de défense. On l'activera si on utilise le vêtement sans armure.</p>\n<p style=\"text-align:justify\">Deuxième action : le dé bonus en attaque magique à n'activer que pour résister aux contrôles mentales</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p125
   slug: vetements-sacres
   tags: []
   subtype: ''
@@ -31,24 +22,52 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: 'Vêtements sacrés : Défense'
+      chatFlavor: 'Vêtements sacrés : Défense'
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
-        temporary: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
           subtype: combat
           target: def
-          value: '@rang[2,0,1,0,0,1]'
-      conditions: []
+          apply: self
+          value: '@rang[2,2,3,3,4]'
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
+      indice: 1
+      label: 'Vêtements sacrés : résistance mentale'
+      chatFlavor: 'Vêtements sacrés : résistance mentale'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
+          subtype: bonusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -65,7 +84,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829470247
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745339351447
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!OMMJV1tt9ReX2FP4'
 

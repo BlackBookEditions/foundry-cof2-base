@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: xMIfJreb0toWQ42c
 system:
-  description: >-
-    <p>Ce sort invoque les pires terreurs d’une créature humanoïde vivante et
-    lui fait croire à sa propre mort. L’ensorceleur doit faire un test opposé
-    d’attaque magique contre sa cible (portée 20 m). En cas de succès la victime
-    tombe à 0 PV ou si la cible est de niveau supérieur ou égal à l’ensorceleur,
-    elle est étourdie (‑5 DEF et pas d’action) pendant 1 round. Une créature ne
-    peut être la cible de ce sort qu’une fois par jour. Les créatures sans
-    esprit (créatures artificielles, certaines plantes et certains
-    morts‑vivants) sont immunisées à ce sort.</p>
+  description: "<p style=\"text-align:justify\">Ce sort invoque les pires terreurs d’une créature humanoïde vivante et lui fait croire à sa propre mort. L’ensorceleur doit faire un test opposé d’attaque magique contre sa cible (portée 20 m). En cas de succès la victime tombe à 0 PV ou si la cible est de niveau supérieur ou égal à l’ensorceleur, elle est étourdie (‑5 DEF et pas d’action) pendant 1 round. Une créature ne peut être la cible de ce sort qu’une fois par jour. Les créatures sans esprit (créatures artificielles, certaines plantes et certains morts‑vivants) sont immunisées à ce sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer l'effet \"<em>étourdi</em>\" pendant 1 round en cas de succès. Cet effet ne fonctionne que si le joueur est en mode combat sinon il faudra l'appliquer à la main.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p95
   slug: execution-mentale
   tags: []
   subtype: ''
@@ -35,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -50,11 +45,23 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 400000
 ownership:
@@ -71,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827697710
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653336934
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xMIfJreb0toWQ42c'
 

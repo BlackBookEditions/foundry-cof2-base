@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: QDyKxCrYDyPJjoRc
 system:
-  description: >-
-    <p>Le magicien projette des traits de foudre sur toutes les cibles de son
-    choix dans un rayon de 10 m autour de lui. Il fait un seul test d’attaque
-    magique et toutes les créatures ciblées dont il atteint la DEF subissent
-    [2d4°+INT] DM d’électricité.</p>
+  description: "<p>Le magicien projette des traits de foudre sur toutes les cibles de son choix dans un rayon de 10 m autour de lui. Il fait un seul test d’attaque magique et toutes les créatures ciblées dont il atteint la DEF subissent [2d4°+INT] DM d’électricité.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer un jet d'attaque magique à difficulté 0. Au MJ de comparer le résultat de l'attaque aux défenses des cibles et d'appliquer les dégats.\_</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p104
   slug: appel-de-la-foudre
   tags: []
   subtype: ''
@@ -31,26 +27,37 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@cible.def'
+            difficulty: '0'
           dmg:
             formula: 2d4°+@int
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 10
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 400000
 ownership:
@@ -67,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828065522
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218984447
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!QDyKxCrYDyPJjoRc'
 

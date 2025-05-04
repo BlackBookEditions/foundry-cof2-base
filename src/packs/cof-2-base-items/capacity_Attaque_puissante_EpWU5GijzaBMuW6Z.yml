@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: EpWU5GijzaBMuW6Z
 system:
-  description: >-
-    <p>Le guerrier peut choisir de s’imposer un dé malus sur une attaque au
-    contact et il ajoute +2d4° aux DM. Cette capacité peut être utilisée avec
-    Double attaque, Attaque circulaire ou Attaque parfaite (voir exemple).
-    Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM
-    au lieu de +2d4°.</p>
+  description: "<p style=\"text-align:justify\">Le guerrier peut choisir de s’imposer un dé malus sur une attaque au contact et il ajoute +2d4° aux DM. Cette capacité peut être utilisée avec Double attaque, Attaque circulaire ou Attaque parfaite (voir exemple). Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de +2d4°.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :\_</strong></p>\n<p style=\"text-align:justify\">Cette capacité propose 2 action d'attaque,la première (A) avec un dé malus et +2d4°DM et la 2eme (L) avec un dé malus et +3d4°DM.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p88
   slug: attaque-puissante
   tags: []
   subtype: ''
@@ -24,8 +19,81 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.EpWU5GijzaBMuW6Z
+      indice: 0
+      label: Attaque puissante (A)
+      chatFlavor: Attaque puissante (A)
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 2d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.EpWU5GijzaBMuW6Z
+      indice: 1
+      label: Attaque puissante (L)
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 3d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -42,7 +110,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740826112182
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745650716502
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EpWU5GijzaBMuW6Z'
 

@@ -4,19 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: wdAXVnZj6da45OBk
 system:
-  description: >-
-    <p>Le magicien peut enchanter, en la touchant, une arme au contact ou à
-    distance pour INT minutes. S’il s’agit de son arme, l’incantation est une
-    action d’attaque (A) ; si elle appartient à autrui, c’est une action limitée
-    (L). Si l’arme change de main, le sort prend fin. L’arme inflige +1d4° DM de
-    feu, de froid, d’électricité ou d’acide en plus des DM habituels. Le
-    magicien doit choisir l’élément au moment de l’incantation. Tant qu’il tient
-    l’arme élémentaire en main, les sorts basés sur cet élément lui coûtent 1 PM
-    de moins pour être lancés (par exemple, Mains brûlantes ou Explosion de feu
-    s’il a enflammé son bâton). Ce sort ne fait aucun effet sur une arme qui
-    bénéficie déjà d’un bonus élémentaire aux DM.</p>
+  description: "<p style=\"text-align:justify\">Le magicien peut enchanter, en la touchant, une arme au contact ou à distance pour INT minutes. S’il s’agit de son arme, l’incantation est une action d’attaque (A) ; si elle appartient à autrui, c’est une action limitée (L). Si l’arme change de main, le sort prend fin. L’arme inflige +1d4° DM de feu, de froid, d’électricité ou d’acide en plus des DM habituels. Le magicien doit choisir l’élément au moment de l’incantation. Tant qu’il tient l’arme élémentaire en main, les sorts basés sur cet élément lui coûtent 1 PM de moins pour être lancés (par exemple, Mains brûlantes ou Explosion de feu s’il a enflammé son bâton). Ce sort ne fait aucun effet sur une arme qui bénéficie déjà d’un bonus élémentaire aux DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur cible le personnage possédant l'arme à améliorer puis clique sur l'action pour lancer le sort qui va faire appliquer un \"bonus\" de dégat à la cible pendant la durée du sort. L'automatisation du bonus ne fonctionne qu'en combat</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p104
   slug: arme-elementaire
   tags: []
   subtype: ''
@@ -29,8 +19,51 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.wdAXVnZj6da45OBk
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.wdAXVnZj6da45OBk
+          subtype: combat
+          target: dam
+          apply: both
+          value: 1d4°
+          additionalInfos: un element au choix
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@int * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -47,7 +80,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828132024
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218341811
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wdAXVnZj6da45OBk'
 

@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: DAjPuMPo72cGJTNa
 system:
-  description: >-
-    <p>Si son arme à poudre est chargée et tenue en main, l’arquebusier peut
-    tirer avec un bonus de +5 à son Initiative. De plus, il ne subit plus de dé
-    malus lorsqu’il tire avec une arme à poudre ou une arbalète en étant engagé
-    en combat au contact (sauf avec la couleuvrine).</p>
+  description: "<p>Si son arme à poudre est chargée et tenue en main, l’arquebusier peut tirer avec un bonus de +5 à son Initiative. De plus, il ne subit plus de dé malus lorsqu’il tire avec une arme à poudre ou une arbalète en étant engagé en combat au contact (sauf avec la couleuvrine).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong>\_</p>\n<p>Le bonus d'initiative nécessitant que l'arme soit chargée, il a été représenté sous forme d'une action activable/désactivable par le joueur.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p65
   slug: plus-vite-que-son-ombre
   tags: []
   subtype: ''
@@ -31,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -42,9 +39,12 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.DAjPuMPo72cGJTNa
           subtype: combat
           target: init
+          apply: self
           value: '5'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -61,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740774374257
-  lastModifiedBy: eB70hIW5CxiKgFZL
+  modifiedTime: 1745352678919
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!DAjPuMPo72cGJTNa'
 

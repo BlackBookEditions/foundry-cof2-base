@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: YDNkr7rAPLIU4EOR
 system:
-  description: >-
-    <p>Ce sort permet d’enchanter l’arme du prêtre pour une durée de CHA
-    minutes. Elle produit de la lumière dans un rayon de 5 m et contre les
-    démons et les morts‑vivants, elle offre un dé bonus en attaque et ajoute
-    +1d4° aux DM. À partir du rang 5, le prêtre peut utiliser ce sort sur l’arme
-    d’un allié au prix d’une action limitée ou, s’il utilise le sort sur son
-    arme personnelle, infliger +2d4° DM (au lieu de 1d4°). Le sort prend
-    immédiatement fin si l’arme quitte les mains du prêtre.</p>
+  description: "<p style=\"text-align:justify\">Ce sort permet d’enchanter l’arme du prêtre pour une durée de CHA minutes. Elle produit de la lumière dans un rayon de 5 m et contre les démons et les morts‑vivants, elle offre un dé bonus en attaque et ajoute +1d4° aux DM. À partir du rang 5, le prêtre peut utiliser ce sort sur l’arme d’un allié au prix d’une action limitée ou, s’il utilise le sort sur son arme personnelle, infliger +2d4° DM (au lieu de 1d4°). Le sort prend immédiatement fin si l’arme quitte les mains du prêtre.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">2 actions :</p>\n</blockquote>\n<ul>\n<li style=\"text-align:justify\">\n<blockquote>\n<p>Une action activable/desactivable qui provoque 1Buff personnel qui augmente les degats du prêtre (sur le prêtre pas sur l'arme)</p>\n</blockquote>\n</li>\n<li style=\"text-align:justify\">\n<blockquote>Une action qui donne un effet de bonus sur une autre cible pendant cha minutes utilisable uniquement en combat</blockquote>\n</li>\n</ul>"
   source: ''
-  origin: ''
+  origin: Livre des règles p123
   slug: arme-de-lumiere
   tags: []
   subtype: ''
@@ -26,8 +19,74 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+      indice: 0
+      label: Arme de lumière (soi)
+      chatFlavor: Arme de lumière (soi)
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+          subtype: combat
+          target: dam
+          apply: self
+          value: '@rang[1d4°,1d4°,1d4°,1d4°,2d4°]'
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+      indice: 1
+      label: Arme de lumière (autres)
+      chatFlavor: Arme de lumière (autres)
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+          subtype: combat
+          target: dam
+          apply: others
+          value: 1d4°
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   cost: -1
+  rank: 3
 effects: []
 sort: 250000
 ownership:
@@ -44,7 +103,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829238857
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745302907887
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YDNkr7rAPLIU4EOR'
 

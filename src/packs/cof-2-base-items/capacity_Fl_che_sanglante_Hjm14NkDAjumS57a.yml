@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Hjm14NkDAjumS57a
 system:
-  description: >-
-    <p>L’elfe fait une attaque à distance qui provoque une hémorragie. En plus
-    des DM normaux, la flèche produit un effet de saignement qui inflige à la
-    victime 1d4° DM à chaque round suivant jusqu’à ce que la cible soit soignée
-    (tout effet de soins ou une action limitée utilisée à cet effet). On ne peut
-    cumuler plusieurs effets de saignement.</p>
+  description: "<p style=\"text-align:justify\">L’elfe fait une attaque à distance qui provoque une hémorragie. En plus des DM normaux, la flèche produit un effet de saignement qui inflige à la victime 1d4° DM à chaque round suivant jusqu’à ce que la cible soit soignée (tout effet de soins ou une action limitée utilisée à cet effet). On ne peut cumuler plusieurs effets de saignement.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour qui va faire le test d'attaque à distance avec l'arme équipée et appliquer les dégâts. De plus un effet de dégat périodique et un statut \"saignement\" sera appliqué pour la durée du combat. Pour l'arrêter il faudra le supprimer manuellement sur la fiche de la cible dévérouillée.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p52
   slug: fleche-sanglante
   tags: []
   subtype: ''
@@ -44,7 +39,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atd'
+            formula: '@arme.skill'
             crit: ''
             difficulty: '@cible.def'
           dmg:
@@ -66,6 +61,7 @@ system:
             successThreshold: null
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 300000
 ownership:
@@ -82,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1744830299487
+  modifiedTime: 1745350259733
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Hjm14NkDAjumS57a'
 

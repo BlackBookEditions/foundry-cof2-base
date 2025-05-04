@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 1fwN8nt9mKVCo7CO
 system:
-  description: >-
-    <p>Le forgesort contrôle le magnétisme autour de lui pendant INT minutes. Il
-    obtient un bonus de +2 en DEF contre les attaques des armes métalliques (au
-    contact ou à distance). De plus, il divise par deux les DM de tous les
-    projectiles à pointes métalliques (flèches, carreaux, armes de lancer,
-    etc.).</p>
+  description: "<p style=\"text-align:justify\">Le forgesort contrôle le magnétisme autour de lui pendant INT minutes. Il obtient un bonus de +2 en DEF contre les attaques des armes métalliques (au contact ou à distance). De plus, il divise par deux les DM de tous les projectiles à pointes métalliques (flèches, carreaux, armes de lancer, etc.).</p>\n<p style=\"text-align:justify\">\_</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">Cette capacité\_ propose une action \"activable/désactivable\" pour appliquer le bonus indiqué si le joueur est face à des armes métallique. A activer dans ce cas ou désactiver dans un cas contraire.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p99
   slug: magnetisme
   tags: []
   subtype: ''
@@ -24,8 +19,32 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.1fwN8nt9mKVCo7CO
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.1fwN8nt9mKVCo7CO
+          subtype: combat
+          target: def
+          apply: self
+          value: '2'
+          additionalInfos: vs arme metallique
+      resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 100000
 ownership:
@@ -42,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827876939
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745654737529
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!1fwN8nt9mKVCo7CO'
 

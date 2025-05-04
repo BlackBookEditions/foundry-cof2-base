@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: zMDclUsOnwdGjgz7
 system:
-  description: >-
-    <p>Le barde effectue une attaque fictive pour déséquilibrer son adversaire
-    et réalise ensuite une attaque mortelle.  Faites un test opposé de CHA
-    contre la PER de votre adversaire à ce round. Au round suivant, vous obtenez
-    un bonus en attaque égal au double de votre rang dans la voie de l’escrime
-    (+4 au rang 2, par exemple) sur votre première attaque au contact contre cet
-    adversaire et, si votre feinte a réussi, +2d4° aux DM.</p>
+  description: "<p style=\"text-align:justify\">Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l’escrime (+4 au rang 2, par exemple) sur votre première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Le joueur cible un token puis clique sur l'action qui va faire un jet opposé CHA vs PER, en cas de réussite un effet temporaire d'1 round sera appliqué sur le joueur lui augmentant son attaque de contact de rang *2 et ses dégat de 2d4°. Ne fonctionne qu'en combat.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p66
   slug: feinte
   tags: []
   subtype: ''
@@ -34,11 +28,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: true
         enabled: false
+        activable: true
         temporary: false
+        noManaCost: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
+          subtype: combat
+          target: melee
+          apply: self
+          value: '@rang*2'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
+          subtype: combat
+          target: dam
+          apply: self
+          value: 2d4°
+          additionalInfos: ''
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@cha'
             crit: ''
@@ -46,12 +58,22 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
       conditions: []
-      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 200000
 ownership:
@@ -68,7 +90,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740821546101
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745385282548
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!zMDclUsOnwdGjgz7'
 

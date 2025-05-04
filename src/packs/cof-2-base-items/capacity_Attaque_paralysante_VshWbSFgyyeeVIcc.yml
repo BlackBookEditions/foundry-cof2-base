@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: VshWbSFgyyeeVIcc
 system:
-  description: >-
-    <p>Une fois par combat, le voleur peut, en réussissant une attaque de
-    contact, paralyser un adversaire humanoïde de douleur. La cible ne subit
-    aucun DM, mais elle est immobilisée pendant 1d4 rounds ou, si son NC est
-    inférieur à la moitié du niveau du voleur, elle est paralysée. De plus, le
-    voleur peut désormais utiliser au choix l’attaque sournoise (s’il détient
-    cette capacité) ou infliger +1d4° DM contre tout adversaire immobilisé ou
-    paralysé.</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut, en réussissant une attaque de contact, paralyser un adversaire humanoïde de douleur. La cible ne subit aucun DM, mais elle est immobilisée pendant 1d4 rounds ou, si son NC est inférieur à la moitié du niveau du voleur, elle est paralysée. De plus, le voleur peut désormais utiliser au choix l’attaque sournoise (s’il détient cette capacité) ou infliger +1d4° DM contre tout adversaire immobilisé ou paralysé.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose une action d'attaque qui si elle réussi, applique un effet de paralysie sur la cible pendant 1d4 round. Ne fait l'effet que si le joueur est en mode combat. Note : Pas de vérification du niveau de la créature !</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p75
   slug: attaque-paralysante
   tags: []
   subtype: ''
@@ -26,8 +19,49 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.VshWbSFgyyeeVIcc
+      indice: 0
+      label: Nouvelle Action 1
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - paralysis
+            duration: 1d4
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 400000
 ownership:
@@ -44,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824846573
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745408033077
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!VshWbSFgyyeeVIcc'
 

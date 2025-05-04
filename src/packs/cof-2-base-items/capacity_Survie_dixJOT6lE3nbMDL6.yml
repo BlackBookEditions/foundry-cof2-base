@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: dixJOT6lE3nbMDL6
 system:
-  description: >-
-    <p>Le rôdeur ajoute son rang + 2 à tous les tests d’escalade et de survie en
-    milieu naturel (s’orienter, trouver un abri et de la nourriture, etc.) dont
-    les tests de récupération effectués chaque nuit. Lorsqu’il dort en milieu
-    naturel, s’il dépense 1 dé de récupération (DR), il guérit 1d4° PV
-    supplémentaire (en plus de [DR max + ½ niveau]).</p>
+  description: "<p style=\"text-align:justify\">Le rôdeur ajoute son rang + 2 à tous les tests d’escalade et de survie en milieu naturel (s’orienter, trouver un abri et de la nourriture, etc.) dont les tests de récupération effectués chaque nuit. Lorsqu’il dort en milieu naturel, s’il dépense 1 dé de récupération (DR), il guérit 1d4° PV supplémentaire (en plus de [DR max + ½ niveau]).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Pour le bonus en survie, il s'agit d'un bonus permanent à partir du moment où il est appris.</p>\n<p>Pour le bonus de PV récupéré c'est laissé géré par le MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p72
   slug: survie
   tags: []
   subtype: ''
@@ -32,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,19 +39,26 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: for
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: survie milieu naturel
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: per
-          value: '2'
+          apply: self
+          value: '@rang + 2'
+          additionalInfos: survie milieu naturel
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: vol
-          value: '2'
+          apply: self
+          value: 2 + @rang
+          additionalInfos: survie milieu naturel
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -72,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740823896991
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745406419051
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!dixJOT6lE3nbMDL6'
 

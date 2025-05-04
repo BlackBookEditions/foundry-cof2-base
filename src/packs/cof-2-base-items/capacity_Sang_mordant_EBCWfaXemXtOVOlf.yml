@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: EBCWfaXemXtOVOlf
 system:
-  description: >-
-    <p>Pendant INT minutes, le sang du sorcier se transforme en un acide qui
-    gicle lorsqu’il subit une blessure. Chaque fois qu’un ennemi au contact le
-    blesse, ce dernier subit 1d4° DM d’acide</p>
+  description: "<p>Pendant INT minutes, le sang du sorcier se transforme en un acide qui gicle lorsqu’il subit une blessure. Chaque fois qu’un ennemi au contact le blesse, ce dernier subit 1d4° DM d’acide</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Crée 2 actions lors de l'apprentissage. Sang mordant : degat et Sang mordant : activation</p>\n<p>L'activation permet d'activer le sort (et dépnser les PM) et applique un \"buff\" (qui ne fait rien) sur le personnage pendant la durée du sort.</p>\n<p>Le \"dégat\" : si une créature a fait des dégats au joueur, celui ci cible la créature et clique sur \"Sang mordant : degat\" qui va lancer les dégats d'acide.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des règles p110
   slug: sang-mordant
   tags: []
   subtype: ''
@@ -22,8 +19,78 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
+      indice: 0
+      label: 'Sang mordant : activation'
+      chatFlavor: 'Sang mordant : activation'
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@int*10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
+      indice: 1
+      label: 'Sang mordant : degat'
+      chatFlavor: 'Sang mordant : degat'
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: 1d4°
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 150000
 ownership:
@@ -40,7 +107,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828462655
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745222659258
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EBCWfaXemXtOVOlf'
 

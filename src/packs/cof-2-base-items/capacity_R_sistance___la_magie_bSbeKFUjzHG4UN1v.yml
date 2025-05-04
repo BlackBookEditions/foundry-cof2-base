@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: bSbeKFUjzHG4UN1v
 system:
-  description: >-
-    <p>Le barbare devient capable de résister à la magie. Lorsqu’il est la cible
-    d’un sort, une fois par round, il peut faire un test d’attaque magique*
-    opposé à celui du sort (si le sort n’en demande pas, faites‑en tout de même
-    un à cette occasion). En cas de réussite, il n’en subit pas les
-    effets</p><p> </p><p><em>* Si le personnage est un profil hybride est qu’il
-    est capable de faire de la magie (il possède au moins une capacité de sort),
-    il subit un dé malus sur ce test opposé. Avoir cédé à la magie le rend moins
-    apte à y résister.</em></p>
+  description: "<p>Le barbare devient capable de résister à la magie. Lorsqu’il est la cible d’un sort, une fois par round, il peut faire un test d’attaque magique* opposé à celui du sort (si le sort n’en demande pas, faites‑en tout de même un à cette occasion). En cas de réussite, il n’en subit pas les effets</p>\n<p>\_</p>\n<p><em>Si le personnage est un profil hybride est qu’il est capable de faire de la magie (il possède au moins une capacité de sort), il subit un dé malus sur ce test opposé. Avoir cédé à la magie le rend moins apte à y résister.</em></p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>La capacité propose une action cliquable pour lancer un test opposé d'attaque magique.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p81
   slug: resistance-a-la-magie
   tags: []
   subtype: ''
@@ -27,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.bSbeKFUjzHG4UN1v
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 300000
 ownership:
@@ -45,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825036933
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745426190497
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bSbeKFUjzHG4UN1v'
 

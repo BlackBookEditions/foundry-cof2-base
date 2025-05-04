@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: H8IuYaACTmuQHBCU
 system:
-  description: >-
-    <p>En réussissant un test opposé d’attaque magique contre une cible de
-    niveau ou NC inférieur au sien (portée 20 m), l’ensorceleur prend contrôle
-    de sa cible pendant CHA minutes. Son propre corps devient inactif et
-    s’écroule au sol. Si la créature meurt pendant la domination, l’ensorceleur
-    réintègre son corps et subit 1d4° DM. Si la cible est d’un niveau trop
-    élevé, il peut la forcer à faire une seule action de son choix (mouvement ou
-    attaque) ; ensuite, il est éjecté et subit 1d4° DM.</p>
+  description: "<p style=\"text-align:justify\">En réussissant un test opposé d’attaque magique contre une cible de niveau ou NC inférieur au sien (portée 20 m), l’ensorceleur prend contrôle de sa cible pendant CHA minutes. Son propre corps devient inactif et s’écroule au sol. Si la créature meurt pendant la domination, l’ensorceleur réintègre son corps et subit 1d4° DM. Si la cible est d’un niveau trop élevé, il peut la forcer à faire une seule action de son choix (mouvement ou attaque) ; ensuite, il est éjecté et subit 1d4° DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer un effet temporaire qui ne fait rien mais indique que la cible est sous un effet. Celui-ci ne fonctionne que si le joueur est en mode combat, sinon le sort se lance mais la cible n'est pas marquée.</p>\n<p><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p94
   slug: domination
   tags: []
   subtype: ''
@@ -34,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -49,11 +45,23 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - confused
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 300000
 ownership:
@@ -70,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827596922
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652367862
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!H8IuYaACTmuQHBCU'
 

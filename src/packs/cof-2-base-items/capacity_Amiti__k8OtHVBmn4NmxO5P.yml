@@ -4,17 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: k8OtHVBmn4NmxO5P
 system:
-  description: >-
-    <p>Si l’ensorceleur réussit un test opposé d’attaque magique (portée 10 m)
-    contre une cible humanoïde de niveau ou NC inférieur au sien, celle‑ci se
-    comporte comme un ami de longue date tant qu’elle n’est pas attaquée. La
-    victime peut résister au sort avec un test de VOL difficulté [10 + CHA de
-    l’ensorceleur] une fois par jour après chaque récupération complète. Si la
-    cible est d’un niveau au moins égal au niveau du lanceur de sort, ce dernier
-    obtient seulement un dé bonus à tous les tests de CHA qu’il effectue contre
-    la victime pendant 10 min.</p>
+  description: "<p style=\"text-align:justify\">Si l’ensorceleur réussit un test opposé d’attaque magique (portée 10 m) contre une cible humanoïde de niveau ou NC inférieur au sien, celle‑ci se comporte comme un ami de longue date tant qu’elle n’est pas attaquée. La victime peut résister au sort avec un test de VOL difficulté [10 + CHA de l’ensorceleur] une fois par jour après chaque récupération complète. Si la cible est d’un niveau au moins égal au niveau du lanceur de sort, ce dernier obtient seulement un dé bonus à tous les tests de CHA qu’il effectue contre la victime pendant 10 min.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer un effet temporaire qui ne fait rien mais indique que la cible est sous un effet. Celui-ci ne fonctionne que si le joueur est en mode combat, sinon le sort se lance mais la cible n'est pas marquée.</p>\n<p><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p94
   slug: amitie
   tags: []
   subtype: ''
@@ -27,8 +19,49 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.k8OtHVBmn4NmxO5P
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: ' @oppose.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - confused
+            duration: '10'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 200000
 ownership:
@@ -45,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827607147
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652287972
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!k8OtHVBmn4NmxO5P'
 

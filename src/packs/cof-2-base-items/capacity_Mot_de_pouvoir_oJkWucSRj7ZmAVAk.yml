@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: oJkWucSRj7ZmAVAk
 system:
-  description: >-
-    <p>Une fois par jour, le prêtre peut prononcer un mot avec la voix de son
-    dieu. Cela dépasse l’entendement des mortels et tous ses ennemis dans un
-    rayon de 10 m sont étourdis pendant 1 round (pas d’action et ‑5 en DEF).</p>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le prêtre peut prononcer un mot avec la voix de son dieu. Cela dépasse l’entendement des mortels et tous ses ennemis dans un rayon de 10 m sont étourdis pendant 1 round (pas d’action et ‑5 en DEF).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :\_</strong></p>\n<p style=\"text-align:justify\">La capacité propose une action d'attaque automatique qui va apliquer le statut \"Etourdi\" pendant un round aux tokens ciblés. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p124
   slug: mot-de-pouvoir
   tags: []
   subtype: ''
@@ -22,8 +19,47 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.oJkWucSRj7ZmAVAk
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 500000
 ownership:
@@ -40,7 +76,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740829270589
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745321629559
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!oJkWucSRj7ZmAVAk'
 

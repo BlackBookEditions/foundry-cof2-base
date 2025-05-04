@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: sDxj4cifWOeZMlkg
 system:
-  description: >-
-    <p>Le sorcier acquiert une beauté fascinante pour INT minutes. Il gagne un
-    dé bonus aux tests de CHA ainsi qu’une attaque de contact nécessitant un
-    test d’attaque magique (contre DEF, action d’attaque), qui inflige
-    [1d4°+INT] DM. Le sorcier récupère autant de PV (sans dépasser son maximum
-    de PV) que la cible en a perdu</p>
+  description: "<p style=\"text-align:justify\">Le sorcier acquiert une beauté fascinante pour INT minutes. Il gagne un dé bonus aux tests de CHA ainsi qu’une attaque de contact nécessitant un test d’attaque magique (contre DEF, action d’attaque), qui inflige [1d4°+INT] DM. Le sorcier récupère autant de PV (sans dépasser son maximum de PV) que la cible en a perdu</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Crée 2 actions lors de l'apprentissage.</p>\n<p>1 action activable/déséactivable pour \"lancer le sort\" et bénéficier du dé bonus en CHA</p>\n<p>1 action d'attaque à n'utiliser QUE si le sort a été lancé et pendant la durée du sort.</p>\n<p>La récupération de PV n'est pas géré il faut le faire à la main</p>\n</blockquote>\n<p>\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des règles p108
   slug: beaute-de-la-succube
   tags: []
   subtype: ''
@@ -32,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,7 +39,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
           subtype: bonusDice
           target: cha
+          apply: self
           value: '0'
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 1
@@ -52,14 +50,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -67,11 +68,19 @@ system:
           dmg:
             formula: 1d4° + @int
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -88,7 +97,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828308252
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745221810895
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!sDxj4cifWOeZMlkg'
 

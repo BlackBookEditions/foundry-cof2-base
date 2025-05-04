@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: mxexC2rQxusmFwQc
 system:
-  description: >-
-    <p>En milieu naturel, le druide ajoute son rang + 2 à tous les tests de
-    survie (s’orienter, trouver un abri et de la nourriture, éviter les dangers,
-    etc.) dont les tests de récupération effectués chaque nuit. Lorsqu’il dort
-    en milieu naturel, s’il utilise 1 DR, il guérit 1d4° PV supplémentaire.</p>
+  description: "<p style=\"text-align:justify\">En milieu naturel, le druide ajoute son rang + 2 à tous les tests de survie (s’orienter, trouver un abri et de la nourriture, éviter les dangers, etc.) dont les tests de récupération effectués chaque nuit. Lorsqu’il dort en milieu naturel, s’il utilise 1 DR, il guérit 1d4° PV supplémentaire.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p116
   slug: maitre-de-la-survie
   tags: []
   subtype: ''
@@ -32,23 +28,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
           subtype: skill
           target: per
+          apply: self
           value: 2 + @rang
+          additionalInfos: survie en milieu naturel
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
           subtype: skill
           target: vol
+          apply: self
           value: 2 + @rang
+          additionalInfos: survie en milieu naturel
       conditions: []
       resolvers: []
   cost: 0
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -65,7 +67,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828571064
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745223443158
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!mxexC2rQxusmFwQc'
 

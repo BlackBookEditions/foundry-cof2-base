@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Tzy7XEGufe3CLmkS
 system:
-  description: >-
-    <p>Une fois par jour, le sorcier peut invoquer d’innombrables squelettes qui
-    émergent du sol pour attaquer ses ennemis pendant [niveau du sorcier]
-    rounds. Tous les adversaires situés dans un rayon de 10 m autour du sorcier
-    subissent automatiquement 2d4° DM par round. Les squelettes se déplacent
-    avec le sorcier, mais tous les déplacements dans cette zone (même ceux du
-    sorcier) sont divisés par deux.</p>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le sorcier peut invoquer d’innombrables squelettes qui émergent du sol pour attaquer ses ennemis pendant [niveau du sorcier] rounds. Tous les adversaires situés dans un rayon de 10 m autour du sorcier subissent automatiquement 2d4° DM par round. Les squelettes se déplacent avec le sorcier, mais tous les déplacements dans cette zone (même ceux du sorcier) sont divisés par deux.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. De plus un effet de dégats \"périodique\" sera appliqué aux cibles pendant la durée du sort.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p110
   slug: armee-des-morts
   tags: []
   subtype: ''
@@ -25,8 +19,46 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Tzy7XEGufe3CLmkS
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 2d4°
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 2d4°
+            elementType: ''
+            statuses: []
+            duration: '@niv'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 5
 effects: []
 sort: 200000
 ownership:
@@ -43,7 +75,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828385721
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745219942244
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Tzy7XEGufe3CLmkS'
 

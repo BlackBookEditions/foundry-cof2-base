@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Bly8X6bg8d7j9IKY
 system:
-  description: >-
-    <p>Le voleur maîtrise l’art de se rendre désagréable, voire insupportable.
-    S’il emporte un test opposé de CHA contre INT d’un adversaire humanoïde à
-    moins de 10 m, il force la cible à l’attaquer à son prochain tour. À ce
-    moment‑là, si le voleur est au contact, il peut riposter par une attaque de
-    contact gratuite pour laquelle il bénéficie au choix d’une attaque sournoise
-    ou d’un bonus de 1d4° aux DM.</p>
+  description: "<p style=\"text-align:justify\">Le voleur maîtrise l’art de se rendre désagréable, voire insupportable. S’il emporte un test opposé de CHA contre INT d’un adversaire humanoïde à moins de 10 m, il force la cible à l’attaquer à son prochain tour. À ce moment‑là, si le voleur est au contact, il peut riposter par une attaque de contact gratuite pour laquelle il bénéficie au choix d’une attaque sournoise ou d’un bonus de 1d4° aux DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose une action qui va lancer une action de CHA vs INT et indiquer le résultat. Le reste est à gérer à la main. Note: A coder - lancer un test de compétence et non pas d'attaque.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p75
   slug: provocation
   tags: []
   subtype: ''
@@ -25,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Bly8X6bg8d7j9IKY
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@cha'
+            crit: ''
+            difficulty: '@oppose.int'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 100000
 ownership:
@@ -43,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824846573
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745407786883
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Bly8X6bg8d7j9IKY'
 

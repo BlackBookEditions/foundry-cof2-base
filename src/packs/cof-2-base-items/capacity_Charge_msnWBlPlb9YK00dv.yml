@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: msnWBlPlb9YK00dv
 system:
-  description: >-
-    <p>À cheval, le chevalier peut effectuer un déplacement de 10 à 20 m en
-    ligne droite et faire une attaque de contact placée au moment de son choix.
-    Le joueur obtient un dé bonus au test d’attaque et ajoute 1d4° aux DM. Si
-    une créature s’interpose pour bloquer la charge du chevalier, elle doit
-    réussir un test de FOR difficulté 20 ou être contrainte de céder le passage
-    en subissant 1d4° DM. Si elle réussit ce test, la Charge est bloquée et le
-    tour du chevalier se termine.</p>
+  description: "<p style=\"text-align:justify\">À cheval, le chevalier peut effectuer un déplacement de 10 à 20 m en ligne droite et faire une attaque de contact placée au moment de son choix. Le joueur obtient un dé bonus au test d’attaque et ajoute 1d4° aux DM. Si une créature s’interpose pour bloquer la charge du chevalier, elle doit réussir un test de FOR difficulté 20 ou être contrainte de céder le passage en subissant 1d4° DM. Si elle réussit ce test, la Charge est bloquée et le tour du chevalier se termine.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque\_ qui va faire le test d'attaque et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p84
   slug: charge
   tags: []
   subtype: ''
@@ -26,8 +19,45 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.msnWBlPlb9YK00dv
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: true
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 1d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 106250
 ownership:
@@ -44,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825114912
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745472242394
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!msnWBlPlb9YK00dv'
 

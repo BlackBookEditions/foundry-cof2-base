@@ -4,14 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: gdLR9uiG87TspbNv
 system:
-  description: >-
-    <p>Si l’ensorceleur réussit un test d’attaque magique réussi contre la DEF
-    de son adversaire situé à une portée de 20 m, il lui inflige [1d4° + CHA]
-    DM. Si la cible a un NC inférieur au rang atteint par l’ensorceleur dans la
-    voie, elle doit réussir un test de FOR difficulté 10 pour ne pas être
-    renversée.</p>
+  description: "<p style=\"text-align:justify\">Si l’ensorceleur réussit un test d’attaque magique réussi contre la DEF de son adversaire situé à une portée de 20 m, il lui inflige [1d4° + CHA] DM. Si la cible a un NC inférieur au rang atteint par l’ensorceleur dans la voie, elle doit réussir un test de FOR difficulté 10 pour ne pas être renversée.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégats. L'effet renversé est laissé à géré par le MJ.</p>\n<p><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p96
   slug: choc
   tags: []
   subtype: ''
@@ -32,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -47,11 +45,19 @@ system:
           dmg:
             formula: 1d4° + @cha
           target:
-            type: none
+            type: single
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -68,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827718657
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652443854
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!gdLR9uiG87TspbNv'
 

@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: tsJJZTTs4gxXXtpe
 system:
-  description: >-
-    <p>Si le magicien réussit un test opposé d’attaque magique (avec une portée
-    de 20 m), la créature ciblée est privée d’air. La victime étouffe
-    progressivement et subit 1d4° DM par round pendant INT rounds. Les créatures
-    qui ne respirent pas (morts‑vivants, créatures artificielles) sont
-    immunisées à ce sort. En revanche, les réductions de dommages (voie du
-    colosse, par exemple) ne s’appliquent pas.</p>
+  description: "<p style=\"text-align:justify\">Si le magicien réussit un test opposé d’attaque magique (avec une portée de 20 m), la créature ciblée est privée d’air. La victime étouffe progressivement et subit 1d4° DM par round pendant INT rounds. Les créatures qui ne respirent pas (morts‑vivants, créatures artificielles) sont immunisées à ce sort. En revanche, les réductions de dommages (voie du colosse, par exemple) ne s’appliquent pas.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer un effet de dégats périodique. L'automatisation des dégats périodiqued ne fonctionnent qu'en combat</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p104
   slug: asphyxie
   tags: []
   subtype: ''
@@ -33,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -48,11 +45,22 @@ system:
           dmg:
             formula: 1d4°
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
+            statuses: []
+            duration: '@int'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -69,7 +77,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828125284
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745218180145
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!tsJJZTTs4gxXXtpe'
 

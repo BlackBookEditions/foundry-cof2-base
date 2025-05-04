@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: prwjSpoqGm5VBBKX
 system:
-  description: >-
-    <p>Le barde obtient un bonus de +1 à tous les tests de compétence
-    (absolument tous, de se cacher dans les ombres jusqu’à forger une épée, en
-    passant par traduire une langue ancienne). Ce bonus ne peut se cumuler à
-    aucun autre bonus de compétence sauf celui du rang 1 de la voie de peuple.
-    Il augmente de +1 chaque fois qu’il atteint le rang 4 dans une voie de
-    barde</p>
+  description: "<p style=\"text-align:justify\">Le barde obtient un bonus de +1 à tous les tests de compétence (absolument tous, de se cacher dans les ombres jusqu’à forger une épée, en passant par traduire une langue ancienne). Ce bonus ne peut se cumuler à aucun autre bonus de compétence sauf celui du rang 1 de la voie de peuple. Il augmente de +1 chaque fois qu’il atteint le rang 4 dans une voie de barde</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p69
   slug: eclectique
   tags: []
   subtype: ''
@@ -33,50 +27,24 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
           subtype: skill
-          target: agi
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: con
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: for
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: per
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: cha
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: int
-          value: 1 + @allrank[4]
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.prwjSpoqGm5VBBKX
-          subtype: skill
-          target: vol
-          value: 1 + @allrank[4]
+          target: all
+          apply: self
+          value: 1 + @toutrang[4]
+          additionalInfos: toutes actions
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 0
 ownership:
@@ -93,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740818746900
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745388260472
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!prwjSpoqGm5VBBKX'
 

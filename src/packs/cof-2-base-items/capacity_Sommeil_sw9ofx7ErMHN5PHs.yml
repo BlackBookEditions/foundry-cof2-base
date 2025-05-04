@@ -4,29 +4,63 @@ type: capacity
 img: icons/svg/combat.svg
 _id: sw9ofx7ErMHN5PHs
 system:
-  description: >-
-    <p>Une fois par combat, l’ensorceleur vise une zone de 10 m de diamètre à
-    une portée maximale de 20 m. Le sort affecte jusqu’à [1d4° + CHA] créatures
-    vivantes de NC inférieur à 1. Le sort affecte les créatures de NC inférieur
-    à 2 au rang 4 puis à 3 au rang 5. Les créatures perdent conscience pendant
-    CHA minutes. Il est possible de les réveiller en les cognant violemment
-    (action d’attaque, 1 DM).</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, l’ensorceleur vise une zone de 10 m de diamètre à une portée maximale de 20 m. Le sort affecte jusqu’à [1d4° + CHA] créatures vivantes de NC inférieur à 1. Le sort affecte les créatures de NC inférieur à 2 au rang 4 puis à 3 au rang 5. Les créatures perdent conscience pendant CHA minutes. Il est possible de les réveiller en les cognant violemment (action d’attaque, 1 DM).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les effets sur celles-ci. Attention il n'y a pas de vérification de niveau, au MJ de gérer pour le moment.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p94
   slug: sommeil
   tags: []
   subtype: ''
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.sw9ofx7ErMHN5PHs
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - unconscious
+            duration: '@cha * 10'
+            unit: round
+            successThreshold: null
+      modifiers: []
   cost: -1
+  rank: 2
+  frequency: combat
 effects: []
 sort: 50000
 ownership:
@@ -43,7 +77,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827603867
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652105708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!sw9ofx7ErMHN5PHs'
 

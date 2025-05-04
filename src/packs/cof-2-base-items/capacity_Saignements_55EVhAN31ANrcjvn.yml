@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: 55EVhAN31ANrcjvn
 system:
-  description: >-
-    <p>Le sorcier doit réussir un test d’attaque magique (portée 10 m) contre
-    une difficulté de [10 + CON de la cible]. Du sang s’écoule de la bouche, du
-    nez, des oreilles et même des yeux de la victime, qui subit 1d4° DM par
-    round pendant INT rounds.</p>
+  description: "<p>Le sorcier doit réussir un test d’attaque magique (portée 10 m) contre une difficulté de [10 + CON de la cible]. Du sang s’écoule de la bouche, du nez, des oreilles et même des yeux de la victime, qui subit 1d4° DM par round pendant INT rounds.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégâts.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p110
   slug: saignements
   tags: []
   subtype: ''
@@ -31,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -49,8 +48,16 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 100000
 ownership:
@@ -67,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828463013
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745222279480
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!55EVhAN31ANrcjvn'
 

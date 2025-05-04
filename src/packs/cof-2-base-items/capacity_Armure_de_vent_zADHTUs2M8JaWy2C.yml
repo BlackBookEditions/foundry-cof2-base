@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: zADHTUs2M8JaWy2C
 system:
-  description: >-
-    <p>Lorsqu’il ne porte aucune armure, le barbare peut se relever par une
-    action de mouvement et il obtient +2 en DEF. Ce bonus passe à +3 au rang 5.
-    S’il porte une armure, il gagne seulement +1 en DEF.</p>
+  description: "<p style=\"text-align:justify\">Lorsqu’il ne porte aucune armure, le barbare peut se relever par une action de mouvement et il obtient +2 en DEF. Ce bonus passe à +3 au rang 5. S’il porte une armure, il gagne seulement +1 en DEF.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu </strong>:\_</p>\n<p>La capacité propose deux actions \"activable/désactivable\".</p>\n<p>Le premier pour bénéficier du bonus de +2 en DEF</p>\n<p>L'autre pour n'avoir que le +1 en DEF</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p81
   slug: armure-de-vent
   tags: []
   subtype: ''
@@ -25,43 +22,50 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: Armure de vent +2
+      chatFlavor: Armure de vent +2
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
-        temporary: false
+        activable: true
+        temporary: true
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
-          value: 2 + (@rang % 5)
+          apply: self
+          value: '@rang[2,2,2,2,3]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: Armure de vent +1
+      chatFlavor: Armure de vent +1
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
-        temporary: false
+        activable: true
+        temporary: true
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
+          apply: self
           value: '1'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 2
 effects: []
 sort: 50000
 ownership:
@@ -78,7 +82,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825043026
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745426074420
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!zADHTUs2M8JaWy2C'
 

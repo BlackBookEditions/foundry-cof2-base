@@ -4,13 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: TlgYKcSIas51yirK
 system:
-  description: >-
-    <p>Le forgesort frappe le sol de son bâton et provoque une onde dévastatrice
-    dans un rayon de 10 m autour de lui. Toutes les créatures dans la zone
-    subissent automatiquement [3d4°+INT] DM et doivent réussir un test de FOR
-    difficulté [10 + INT] pour ne pas être renversées.</p>
+  description: "<p style=\"text-align:justify\">Le forgesort frappe le sol de son bâton et provoque une onde dévastatrice dans un rayon de 10 m autour de lui. Toutes les créatures dans la zone subissent automatiquement [3d4°+INT] DM et doivent réussir un test de FOR difficulté [10 + INT] pour ne pas être renversées.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour éviter le renversement.<br />Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p98
   slug: frappe-des-arcanes
   tags: []
   subtype: ''
@@ -31,26 +27,35 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
             difficulty: '0'
           dmg:
             formula: 3d4° + @int
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 20
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 87500
 ownership:
@@ -67,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827799297
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745653710366
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!TlgYKcSIas51yirK'
 

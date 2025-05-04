@@ -4,22 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: eYcX0G5HfKCVv4tX
 system:
-  description: >-
-    <p>Le moine peut méditer pendant 10 min et récupérer ainsi [1d4°+VOL] PV.
-    Les soins augmentent de +1d4° chaque fois que le personnage atteint le rang
-    4 dans une voie de moine. Il doit terminer une récupération rapide avant de
-    pouvoir à nouveau utiliser cette capacité et il ne peut pas l’utiliser plus
-    de trois fois par jour.</p>
+  description: "<p style=\"text-align:justify\">Le moine peut méditer pendant 10 min et récupérer ainsi [1d4°+VOL] PV. Les soins augmentent de +1d4° chaque fois que le personnage atteint le rang 4 dans une voie de moine. Il doit terminer une récupération rapide avant de pouvoir à nouveau utiliser cette capacité et il ne peut pas l’utiliser plus de trois fois par jour.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :\_</strong></p>\n<p style=\"text-align:justify\">L'action permet de soigner le moine, elle est bien limité à 3 fois par jour (et donc nécessite un repos complet pour se recharger). Par contre ne gère pas le besoin d'un repos rapide entre chaque usage.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p120
   slug: transe-de-guerison
   tags: []
   subtype: ''
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 3
+    max: 3
   properties:
     spell: false
     chargeable: false
@@ -32,23 +27,35 @@ system:
       type: heal
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: 1d4°+@vol +@allrang[4]d4°
+            formula: 1d4°+@vol +@toutrang[4]d4°
           target:
             type: self
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
   cost: -1
+  rank: 2
+  frequency: daily
 effects: []
 sort: 50000
 ownership:
@@ -65,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828900924
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745298940201
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!eYcX0G5HfKCVv4tX'
 

@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: hSGNsiCOiFeGGoyC
 system:
-  description: >-
-    <p>Tant que le moine n’a réalisé aucune action offensive dans un combat, il
-    bénéficie d’un bonus de +5 en DEF et divise par deux tous les DM subis par
-    des attaques. De plus, il obtient un bonus égal à son rang + 2 à tous les
-    tests d’empathie (pour analyser l’état émotionnel d’un interlocuteur) ou à
-    ceux effectués pour apaiser un auditoire ou le convaincre de ne pas avoir
-    recours à la violence.</p>
+  description: "<p style=\"text-align:justify\">Tant que le moine n’a réalisé aucune action offensive dans un combat, il bénéficie d’un bonus de +5 en DEF et divise par deux tous les DM subis par des attaques. De plus, il obtient un bonus égal à son rang + 2 à tous les tests d’empathie (pour analyser l’état émotionnel d’un interlocuteur) ou à ceux effectués pour apaiser un auditoire ou le convaincre de ne pas avoir recours à la violence.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :</strong>\_</p>\n<p style=\"text-align:justify\">2 actions :\_</p>\n<p style=\"text-align:justify\">1 buff permanent pour le bonus aux jet d'empathie</p>\n<p style=\"text-align:justify\">1 action activable/désactivable pour bénéficier du +5 en DEF. A activer en debut de combat et désactiver dès que le joueur commence une action offensive.</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
   source: ''
-  origin: ''
+  origin: Livre des règles p120
   slug: pacifisme
   tags: []
   subtype: ''
@@ -34,20 +28,25 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: empathie
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: int
+          apply: self
           value: 2 + @rang
+          additionalInfos: empathie
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
@@ -58,18 +57,22 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: true
         enabled: false
+        activable: true
         temporary: true
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: combat
           target: def
+          apply: self
           value: '5'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -86,7 +89,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828891574
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745298713892
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!hSGNsiCOiFeGGoyC'
 

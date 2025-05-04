@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: bWMYXWnBw4oN9zBS
 system:
-  description: >-
-    <p>Le moine utilise sa force mentale pour augmenter son efficacité en
-    combat. Il ajoute sa VOL à son Initiative et à ses PV. De plus, il gagne +2
-    en DEF (ce bonus passe à +3 au rang 5).</p>
+  description: "<p>Le moine utilise sa force mentale pour augmenter son efficacité en combat. Il ajoute sa VOL à son Initiative et à ses PV. De plus, il gagne +2 en DEF (ce bonus passe à +3 au rang 5).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p120
   slug: maitrise-du-ki
   tags: []
   subtype: ''
@@ -31,28 +28,36 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: init
+          apply: self
           value: '@vol'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: attribute
           target: hp
+          apply: self
           value: '@vol'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: def
-          value: '@allrank[2,0,0,0,1]'
+          apply: self
+          value: '@rang[2,0,0,0,1]'
+          additionalInfos: ''
       conditions: []
       resolvers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 75000
 ownership:
@@ -69,7 +74,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828904740
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745299035609
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bWMYXWnBw4oN9zBS'
 

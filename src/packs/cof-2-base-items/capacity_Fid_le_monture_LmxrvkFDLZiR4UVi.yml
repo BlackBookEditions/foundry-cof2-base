@@ -4,16 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: LmxrvkFDLZiR4UVi
 system:
-  description: >-
-    <p>Le chevalier possède une fidèle monture (voir page suivante), un cheval
-    de guerre bien dressé qui comprend les ordres simples. À cheval, il peut
-    ajouter un déplacement de 10 m avant ou après une action normale (par
-    exemple, parcourir 10 m et réaliser une action limitée). La monture
-    n’attaque que si elle est elle‑même attaquée au contact par une créature. De
-    plus, le chevalier ajoute son rang + 2 aux tests d’équitation et de
-    dressage.</p>
+  description: "<p style=\"text-align:justify\">Le\_chevalier possède une fidèle monture (voir page suivante), un cheval de guerre bien dressé qui comprend les ordres simples. À cheval, il peut ajouter un déplacement de 10 m avant ou après une action normale (par exemple, parcourir 10 m et réaliser une action limitée). La monture n’attaque que si elle est elle‑même attaquée au contact par une créature. De plus, le chevalier ajoute son rang + 2 aux tests d’équitation et de dressage.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique. Pour la monture c'est au MJ de fournir l'acces à la créature.\_</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p83
   slug: fidele-monture
   tags: []
   subtype: ''
@@ -34,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -45,14 +39,19 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
           subtype: skill
           target: agi
+          apply: self
           value: 2 + @rang
+          additionalInfos: Equitation/dressage
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
           subtype: skill
           target: cha
+          apply: self
           value: 2 + @rang
+          additionalInfos: Equitation/dressage
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -69,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740825101591
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745472093270
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LmxrvkFDLZiR4UVi'
 

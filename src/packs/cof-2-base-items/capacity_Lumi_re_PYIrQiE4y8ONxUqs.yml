@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: PYIrQiE4y8ONxUqs
 system:
-  description: >-
-    <p>Le magicien désigne un objet à moins de 10 m. Celui‑ci produit de la
-    lumière dans un rayon de 10 m pendant INT heures. Cette source de lumière
-    n’émet pas de chaleur. Une fois par combat, le magicien peut lancer ce sort
-    sur les yeux d’une créature dont le NC ne dépasse pas le rang atteint dans
-    la voie. S’il réussit un test opposé d’attaque magique, elle est aveuglée
-    pendant 1 round.</p>
+  description: "<p>Le magicien désigne un objet à moins de 10 m. Celui‑ci produit de la lumière dans un rayon de 10 m pendant INT heures. Cette source de lumière n’émet pas de chaleur. Une fois par combat, le magicien peut lancer ce sort sur les yeux d’une créature dont le NC ne dépasse pas le rang atteint dans la voie. S’il réussit un test opposé d’attaque magique, elle est aveuglée pendant 1 round.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Pour faire simplement de la lumière, le joueur depense manuellement 1 PM</p>\n<p>Poure aveugler la cible, il doit la selectionner et utiliser l'action \"lumière\" et le test opposé se fera tout seul et en cas de succès appliquera l'état \"aveuglé\" à la cible.</p>\n<p>\_</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p106
   slug: lumiere
   tags: []
   subtype: ''
@@ -33,14 +27,17 @@ system:
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -48,11 +45,23 @@ system:
           dmg:
             formula: '0'
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - blind
+            duration: '1'
+            unit: round
+            successThreshold: null
       modifiers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -69,7 +78,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828286324
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745217732981
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PYIrQiE4y8ONxUqs'
 

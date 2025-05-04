@@ -4,12 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: yxZw90ZHt4LmjoY0
 system:
-  description: >-
-    <p>Le barbare est un athlète capable de prouesses physiques extraordinaires,
-    il ajoute son rang + 2 aux tests de course, de saut ou d’escalade. De plus,
-    il gagne 1 PV supplémentaire par rang atteint dans la voie.</p>
+  description: "<p>Le barbare est un athlète capable de prouesses physiques extraordinaires, il ajoute son rang + 2 aux tests de course, de saut ou d’escalade. De plus, il gagne 1 PV supplémentaire par rang atteint dans la voie.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p80
   slug: vigueur
   tags: []
   subtype: ''
@@ -30,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: false
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -41,14 +39,19 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
           subtype: skill
           target: for
+          apply: self
           value: 2 + @rang
+          additionalInfos: saut/escalade
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
           subtype: attribute
           target: hp
+          apply: self
           value: '@rang'
+          additionalInfos: ''
       resolvers: []
   cost: -1
+  rank: 1
 effects: []
 sort: 0
 ownership:
@@ -65,7 +68,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740910850555
-  lastModifiedBy: kQPXh9lSDRm6wjSZ
+  modifiedTime: 1745425352597
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!yxZw90ZHt4LmjoY0'
 

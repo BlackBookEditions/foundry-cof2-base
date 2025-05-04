@@ -4,22 +4,17 @@ type: capacity
 img: icons/svg/combat.svg
 _id: Z2xmbz8VXwIMlIIA
 system:
-  description: >-
-    <p>Une fois par combat, au début du round, le joueur peut décider qu’il a eu
-    une vision des différents futurs possibles. Il bénéficie d’un bonus de +10
-    en attaque, en Défense et à tous les tests de PER pour tout le round, il
-    divise tous les DM subis par 2 et il peut choisir d’agir à n’importe quel
-    moment dans le round, sans considération d’initiative.</p>
+  description: "<p style=\"text-align:justify\">Une fois par combat, au début du round, le joueur peut décider qu’il a eu une vision des différents futurs possibles. Il bénéficie d’un bonus de +10 en attaque, en Défense et à tous les tests de PER pour tout le round, il divise tous les DM subis par 2 et il peut choisir d’agir à n’importe quel moment dans le round, sans considération d’initiative.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :\_</strong></p>\n<p style=\"text-align:justify\">Le joueur clique sur l'action qui va lui attribuer les bonus pendant 1 round. La gestion des DM/2 est laissé au MJ. Pour réutiliser cette action il faudra une récupération rapide au minimum.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p94
   slug: prescience
   tags: []
   subtype: ''
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -32,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -43,29 +39,60 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.Z2xmbz8VXwIMlIIA
           subtype: combat
           target: def
+          apply: self
           value: '10'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Z2xmbz8VXwIMlIIA
           subtype: combat
           target: melee
+          apply: self
           value: '10'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Z2xmbz8VXwIMlIIA
           subtype: combat
           target: ranged
+          apply: self
           value: '10'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Z2xmbz8VXwIMlIIA
           subtype: combat
           target: magic
+          apply: self
           value: '10'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Z2xmbz8VXwIMlIIA
           subtype: skill
           target: per
+          apply: self
           value: '10'
-      resolvers: []
+          additionalInfos: Prescience
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   cost: -1
+  rank: 5
+  frequency: combat
 effects: []
 sort: 500000
 ownership:
@@ -82,7 +109,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740827495610
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745652927234
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Z2xmbz8VXwIMlIIA'
 

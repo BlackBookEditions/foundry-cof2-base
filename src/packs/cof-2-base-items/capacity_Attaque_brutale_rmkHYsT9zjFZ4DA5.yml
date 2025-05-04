@@ -4,15 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: rmkHYsT9zjFZ4DA5
 system:
-  description: >-
-    <p>Le barbare effectue une puissante attaque au contact qui inflige +1d4°
-    aux DM. À la place, il peut choisir de s’imposer un malus de ‑3 au test
-    d’attaque pour obtenir +2d4° aux DM. Sur une attaque brutale réussie, il
-    peut sacrifier 1d4° DM pour faire reculer de 3 m un adversaire de NC
-    inférieur au rang atteint dans la voie, ou sacrifier 2d4° DM pour le
-    renverser.</p>
+  description: "<p>Le barbare effectue une puissante attaque au contact qui inflige +1d4° aux DM. À la place, il peut choisir de s’imposer un malus de ‑3 au test d’attaque pour obtenir +2d4° aux DM. Sur une attaque brutale réussie, il peut sacrifier 1d4° DM pour faire reculer de 3 m un adversaire de NC inférieur au rang atteint dans la voie, ou sacrifier 2d4° DM pour le renverser.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Propose 2 actions :</p>\n<p>Une action pour faire l'attaque avec le bonus de 1d4°</p>\n<p>Une autre action nommée \"Attaque brutale -3\" qui diminue de 3 le jet d'attaque mais augmente de 2d4° les dégats</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p79
   slug: attaque-brutale
   tags: []
   subtype: ''
@@ -25,8 +19,81 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.rmkHYsT9zjFZ4DA5
+      indice: 0
+      label: Attaque brutale
+      chatFlavor: Attaque brutale
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 1d4°'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.rmkHYsT9zjFZ4DA5
+      indice: 1
+      label: Attaque brutale -3
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill -3'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 2d4°'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
+  rank: 3
 effects: []
 sort: 300000
 ownership:
@@ -43,7 +110,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740824981671
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745424754779
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!rmkHYsT9zjFZ4DA5'
 

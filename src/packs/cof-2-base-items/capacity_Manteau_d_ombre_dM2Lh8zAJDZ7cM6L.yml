@@ -4,19 +4,9 @@ type: capacity
 img: icons/svg/combat.svg
 _id: dM2Lh8zAJDZ7cM6L
 system:
-  description: >-
-    <p>Le sorcier s’enveloppe d’ombre pendant INT minutes. Il gagne un dé bonus
-    à tous les tests de discrétion et il impose un dé malus à tous les tests
-    d’attaque à distance qui le prennent pour cible. S’il tombe à 0 PV pendant
-    la durée du sort, il peut choisir de disparaître dans son ombre et de
-    réapparaître à 1d6 km dans la direction de son choix avec 1d4° PV, 1d6 min
-    plus tard (une dissipation de la magie (Maîtrise de la magie, voie du mage)
-    lancée sur la zone où le sorcier a disparu dans son ombre avant sa
-    réapparition au loin fait apparaître son corps et annule l’effet). Ceci met
-    fin au sort et interdit de le lancer de nouveau avant le prochain
-    crépuscule.</p>
+  description: "<p style=\"text-align:justify\">Le sorcier s’enveloppe d’ombre pendant INT minutes. Il gagne un dé bonus à tous les tests de discrétion et il impose un dé malus à tous les tests d’attaque à distance qui le prennent pour cible. S’il tombe à 0 PV pendant la durée du sort, il peut choisir de disparaître dans son ombre et de réapparaître à 1d6 km dans la direction de son choix avec 1d4° PV, 1d6 min plus tard (une dissipation de la magie (Maîtrise de la magie, voie du mage) lancée sur la zone où le sorcier a disparu dans son ombre avant sa réapparition au loin fait apparaître son corps et annule l’effet). Ceci met fin au sort et interdit de le lancer de nouveau avant le prochain crépuscule.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Action activable/désactivable en cliquant/recliquant dessus.</p>\n<p>Le joueur active l'action pour le lancer le sort qui va lui appliquer un \"buff\" lui attribuant un dé bonus à ses jet d'AGI pour la discrétion. Le reste des effets est à gérer manuellement avec le MJ</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p111
   slug: manteau-dombre
   tags: []
   subtype: ''
@@ -29,8 +19,32 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.dM2Lh8zAJDZ7cM6L
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.dM2Lh8zAJDZ7cM6L
+          subtype: bonusDice
+          target: agi
+          apply: self
+          value: '0'
+          additionalInfos: Discrétion
+      resolvers: []
   cost: -1
+  rank: 4
 effects: []
 sort: 300000
 ownership:
@@ -47,7 +61,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1740828480010
-  lastModifiedBy: T8QXSVbafGIxbHWi
+  modifiedTime: 1745221348414
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!dM2Lh8zAJDZ7cM6L'
 
