@@ -6,7 +6,7 @@ _id: wLEDlG3yHUZ5NRLM
 system:
   description: "<p style=\"text-align:justify\">Le barde ne met pas d’armure, cela ne sied point en société. Sa seule armure est la dentelle, sa seule défense, la rapière.</p>\n<p style=\"text-align:justify\">Lorsqu’il ne porte aucune armure, le barde ajoute son CHA en DEF (en plus de son AGI), toutefois ce bonus ne peut pas dépasser le rang atteint dans la voie</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
-  origin: Livre des règles p68
+  origin: livre des règles p68
   slug: dentelles-et-rapiere
   tags: []
   subtype: ''
@@ -40,7 +40,7 @@ system:
           subtype: combat
           target: def
           apply: self
-          value: math.min(@rang,@cha)
+          value: min(@rang,@cha)
           additionalInfos: ''
       resolvers: []
   cost: -1

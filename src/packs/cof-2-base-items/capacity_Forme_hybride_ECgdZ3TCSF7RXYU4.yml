@@ -1,0 +1,80 @@
+folder: L1nFAHHJ2DSl7t9C
+name: Forme hybride
+type: capacity
+img: icons/svg/combat.svg
+_id: ECgdZ3TCSF7RXYU4
+system:
+  description: "<p style=\"text-align:justify\">Au prix d’une action limitée, le personnage peut se transformer en forme hybride, mi‑homme, mi‑loup pendant 1 min. Il doit terminer une récupération rapide avant de pouvoir à nouveau utiliser cette capacité. Sous cette forme, il ne peut pas lancer de sort ou utiliser d’arme pour attaquer à distance, en revanche il obtient une attaque de morsure (Attaque au contact) qui inflige [1d4°+FOR] DM en action gratuite une fois par round. Il reprend immédiatement sa forme normale s’il tombe à 0 PV.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">Cette capacité propose une action \"Morsure\" à n'utiliser que sous la forme hybride. Comme d'habitude le joueur sélectionne sa cible et clique sur l'action.</p>\n</blockquote>"
+  source: ''
+  origin: livre des règles p130
+  slug: forme-hybride
+  subtype: ''
+  actionType: l
+  learned: false
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ECgdZ3TCSF7RXYU4
+      indice: 0
+      label: morsure
+      chatFlavor: morsure
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4° + @for
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  rank: 4
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!ECgdZ3TCSF7RXYU4'
+

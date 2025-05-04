@@ -1,0 +1,95 @@
+folder: L1nFAHHJ2DSl7t9C
+name: Transformation en loup
+type: capacity
+img: icons/svg/combat.svg
+_id: Q72wDgqxkkCKKCBQ
+system:
+  description: "<p>Le personnage peut prendre la forme d’un loup pendant une durée maximale de 1 h par rang chaque jour. Le personnage conserve toutes ses caractéristiques sauf celles ci‑dessous, ainsi que sa valeur d’attaque au contact habituelle.</p>\n<p>\_</p>\n<p><strong>LOUP</strong></p>\n<p>FOR + 3 AGI +1</p>\n<p>DM 1d4+3</p>\n<p>Bonus de +5 aux tests basés sur la PER. Sous cette forme, il réduit de 5 les DM qui lui sont infligés par des armes qui ne sont pas en argent, et il gagne un bonus de +5 à tous les tests de poursuite et pour pister une trace</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>La capacité propose un bouton activable/désactivable pour simuler la transformation et celle-ci donne tous els bonus indiqué ci-dessus. Pour la RD de 5 actuellement les armes en argent ne sont pas pris en compte, au MJ de rajouter 5 aux dégats subit.</p>\n</blockquote>"
+  source: ''
+  origin: livre des règles p131
+  slug: transformation-en-loup
+  subtype: ''
+  actionType: l
+  learned: false
+  frequency: daily
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.Q72wDgqxkkCKKCBQ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.Q72wDgqxkkCKKCBQ
+          subtype: ability
+          target: for
+          apply: self
+          value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.Q72wDgqxkkCKKCBQ
+          subtype: ability
+          target: agi
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.Q72wDgqxkkCKKCBQ
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4+3
+          additionalInfos: ''
+        - type: capacity
+          source: Item.Q72wDgqxkkCKKCBQ
+          subtype: skill
+          target: per
+          apply: self
+          value: '5'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.Q72wDgqxkkCKKCBQ
+          subtype: combat
+          target: dr
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers: []
+  rank: 5
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!Q72wDgqxkkCKKCBQ'
+

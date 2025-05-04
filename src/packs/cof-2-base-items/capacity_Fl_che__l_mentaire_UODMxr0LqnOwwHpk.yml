@@ -1,0 +1,67 @@
+folder: B68hk3Dnp7OBAJqc
+name: Flèche élémentaire
+type: capacity
+img: icons/svg/combat.svg
+_id: UODMxr0LqnOwwHpk
+system:
+  description: "<p style=\"text-align:justify\">Une fois par combat, le personnage enchante ses flèches et choisit une source de DM parmi poison, feu, froid, foudre et acide. Pendant tout le combat, il ajoute +1d4° aux DM de chacune des flèches qu’il tire. Ce bonus aux DM ne peut pas se cumuler à un autre bonus magique élémentaire (arc de feu, sort élémentaire, etc.).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.Il faut un repos partielle pour pouvoir la réutilsier.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p137
+  slug: fleche-elementaire
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 7
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.UODMxr0LqnOwwHpk
+      indice: 0
+      label: Nouvelle Action 1
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.UODMxr0LqnOwwHpk
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!UODMxr0LqnOwwHpk'
+

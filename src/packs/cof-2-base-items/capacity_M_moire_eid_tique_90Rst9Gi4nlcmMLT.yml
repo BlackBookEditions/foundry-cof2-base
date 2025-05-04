@@ -1,0 +1,67 @@
+folder: 67oxxNplK8ueC8UC
+name: Mémoire eidétique
+type: capacity
+img: icons/svg/combat.svg
+_id: 90Rst9Gi4nlcmMLT
+system:
+  description: "<p style=\"text-align:justify\">Le personnage a une parfaite mémoire de tout ce qu’il a vu et entendu. Si le joueur le demande, le MJ doit lui rappeler tous les détails relatifs à un lieu qu’il a visité ou à une conversation qu’il a entendue. De plus, le personnage gagne un bonus de +5 à tous ses tests de connaissance (INT) et de recherche d’indice basé sur l’INT.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p138
+  slug: memoire-eidetique
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.90Rst9Gi4nlcmMLT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.90Rst9Gi4nlcmMLT
+          subtype: ability
+          target: int
+          apply: self
+          value: '5'
+          additionalInfos: conaissance/recherche indices
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!90Rst9Gi4nlcmMLT'
+

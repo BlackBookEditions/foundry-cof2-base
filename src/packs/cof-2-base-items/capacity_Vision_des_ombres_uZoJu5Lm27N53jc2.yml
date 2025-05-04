@@ -1,0 +1,81 @@
+folder: QpnP20IXq7J5ffot
+name: Vision des ombres
+type: capacity
+img: icons/svg/combat.svg
+_id: uZoJu5Lm27N53jc2
+system:
+  description: "<p>Le personnage tisse un lien avec le demi‑plan des ombres. Ses yeux deviennent violets et, désormais, il voit dans le noir même total comme s’il s’agissait de pénombre. Lorsqu’il est dans la pénombre (mais pas dans le noir), il obtient un bonus de +5 à ses tests de discrétion et de PER basés sur la vue.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose un bonus permanent (vision dans le noir) et un bonus de +5 aux jet de PER et AGI, à sélectionner lorsque le joueur est bien dans la pénombre.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p139
+  slug: vision-des-ombres
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.uZoJu5Lm27N53jc2
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.uZoJu5Lm27N53jc2
+          subtype: state
+          target: darkvision
+          apply: self
+          value: '10'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.uZoJu5Lm27N53jc2
+          subtype: skill
+          target: per
+          apply: self
+          value: '5'
+          additionalInfos: vue dans la penombre
+        - type: capacity
+          source: Item.uZoJu5Lm27N53jc2
+          subtype: skill
+          target: agi
+          apply: self
+          value: '5'
+          additionalInfos: discrétion pénombre
+      resolvers: []
+  allowLinkedCapacity: true
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746258425937
+  modifiedTime: 1746258425937
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!uZoJu5Lm27N53jc2'
+

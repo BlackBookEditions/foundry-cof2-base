@@ -6,7 +6,7 @@ _id: ETp4bRHt24C5rQvh
 system:
   description: "<p>Le magicien fait apparaître une protection magique chatoyante qui recouvre son corps et produit des étincelles à chaque fois qu’il encaisse un coup. Pendant INT minutes, la DEF du magicien augmente de +3. Cette valeur passe à +4 lorsque le personnage atteint le rang 3 dans la voie et augmente de +1 supplémentaire chaque fois que le personnage atteint le rang 5 dans une voie de magicien (ou dans la voie du mage). Ce sort ne se cumule jamais à une armure (il est considéré comme une armure).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Le joueur clique sur l'action pour lancer le sort qui va lui appliquer un \"buff\" augmentant automatiquement sa defense et gérant la durée du sort. L'automatisation ne fonctionne qu'en combat</p>\n</blockquote>"
   source: ''
-  origin: Livre des règles p105
+  origin: livre des règles p105
   slug: armure-de-mana
   tags: []
   subtype: ''
@@ -40,7 +40,7 @@ system:
           subtype: combat
           target: def
           apply: self
-          value: '@rang[3,0,0,1,0] + @toutrang[5]'
+          value: '@rang[3,3,3,4,4] + @toutrang[5]'
           additionalInfos: ''
       resolvers:
         - type: buffDebuff
