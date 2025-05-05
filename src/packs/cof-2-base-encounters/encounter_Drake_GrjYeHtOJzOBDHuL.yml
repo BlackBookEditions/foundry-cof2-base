@@ -1,37 +1,36 @@
 folder: DckAeVIG18rHrGYa
-name: Arbre animé
+name: Drake
 type: encounter
-_id: oJMOXZ4nlh1izQB7
 img: icons/svg/eye.svg
 system:
   abilities:
     agi:
       superior: false
-      base: -2
+      base: 0
       bonuses:
         sheet: 0
         effects: 0
     con:
-      superior: false
-      base: 3
+      superior: true
+      base: 6
       bonuses:
         sheet: 0
         effects: 0
     for:
       superior: false
-      base: 3
+      base: 6
       bonuses:
         sheet: 0
         effects: 0
     per:
       superior: false
-      base: -2
+      base: 1
       bonuses:
         sheet: 0
         effects: 0
     cha:
       superior: false
-      base: -2
+      base: 0
       bonuses:
         sheet: 0
         effects: 0
@@ -43,7 +42,7 @@ system:
         effects: 0
     vol:
       superior: false
-      base: 0
+      base: 2
       bonuses:
         sheet: 0
         effects: 0
@@ -59,19 +58,19 @@ system:
       min: null
       max: null
       value: null
+    nc: 0
     hp:
-      base: 20
-      value: 20
+      base: 70
+      value: 70
       temp: null
       max: 0
       tempmax: null
       bonuses:
         sheet: 0
         effects: 0
-    nc: 0
   combat:
     init:
-      base: 8
+      base: 0
       ability: null
       details: null
       unit: null
@@ -82,7 +81,7 @@ system:
         effects: 0
       value: null
     def:
-      base: 14
+      base: 22
       ability: null
       details: null
       unit: null
@@ -114,6 +113,7 @@ system:
         sheet: 0
         effects: 0
       value: null
+  magic: 0
   pasteData: ''
   details:
     category: living
@@ -122,17 +122,23 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p>D&eacute;fense [10 + rang]<br>Points de vigueur [Niveau &times;
-        5]<br>Initiative 8<br>Attaque de contact<br>[attaque magique] &middot;
-        DM 1d4&deg;+3<br>D&eacute;placement<br>5 m par action de mouvement.</p>
+      private: ''
       public: ''
     languages: []
-    properties: ''
-  magic: 0
+    properties: >-
+      <p>Proviens de&nbsp; : Monture puisante (chevalier dragon page 148 livre
+      des r&egrave;gles)</p>
+
+      <p>A adapter : PV : 10 + niveau*6. Init : Init du pj. Attaque : attaque
+      magique du pj</p>
+
+      <p>Pour le souffle enfglamm&eacute; niv 8 : glisser deposer la
+      capacit&eacute; de monstre du meme nom</p>
+
+      <p>&nbsp;</p>
   currentEffects: []
 prototypeToken:
-  name: Arbre animé
+  name: Drake
   displayName: 0
   actorLink: false
   appendNumber: false
@@ -160,7 +166,7 @@ prototypeToken:
   bar1:
     attribute: attributes.hp
   bar2:
-    attribute: null
+    attribute: resources.mana
   light:
     negative: false
     priority: 0
@@ -209,15 +215,14 @@ prototypeToken:
   randomImg: false
 items:
   - folder: eRnLMLNnqgpvpmpq
-    name: Attaque arbre animé
+    name: attaque contact
     type: attack
     img: icons/svg/sword.svg
-    _id: ZiUuDhMnVJcrZui8
     system:
       description: ''
       source: ''
       origin: ''
-      slug: attaque-arbre-anime
+      slug: attaque-contact
       subtype: melee
       learned: true
       charges:
@@ -227,10 +232,10 @@ items:
         spell: false
         chargeable: false
       actions:
-        - source: Item.LLs2wTZWkSClIhZt
+        - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: Attaque arbre animé
-          chatFlavor: Attaque arbre animé
+          label: ''
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -246,11 +251,11 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                formula: '+6'
-                crit: ''
+                formula: '1'
+                crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d4+3
+                formula: 2d4°+6
               target:
                 type: single
                 number: 0
@@ -275,13 +280,12 @@ items:
           effects: 0
         value: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
     flags: {}
     _stats:
-      compendiumSource: Item.LLs2wTZWkSClIhZt
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
       coreVersion: '12.331'
       systemId: co
@@ -289,9 +293,10 @@ items:
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
-    _key: '!actors.items!oJMOXZ4nlh1izQB7.ZiUuDhMnVJcrZui8'
+    _id: 7aGAo3mQ7CKkaz0B
+    sort: 0
+    _key: '!actors.items!GrjYeHtOJzOBDHuL.7aGAo3mQ7CKkaz0B'
 effects: []
-sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -302,8 +307,10 @@ _stats:
   coreVersion: '12.331'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1745654451487
+  createdTime: 1746470773314
   modifiedTime: 1746470773347
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!actors!oJMOXZ4nlh1izQB7'
+_id: GrjYeHtOJzOBDHuL
+sort: 500000
+_key: '!actors!GrjYeHtOJzOBDHuL'
 
