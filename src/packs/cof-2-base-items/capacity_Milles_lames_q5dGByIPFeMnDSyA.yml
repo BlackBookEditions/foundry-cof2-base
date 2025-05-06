@@ -1,0 +1,81 @@
+folder: ajCn55TlXJDTCC7r
+name: Milles lames
+type: capacity
+img: icons/svg/combat.svg
+_id: q5dGByIPFeMnDSyA
+system:
+  description: "<p style=\"text-align:justify\">Une fois par jour, le personnage fait couler son propre sang sur son arme : il sacrifie 2d4° PV et invoque les soeurs spirituelles de son arme.<br />Pendant 5 rounds, tous les adversaires du personnage dans un rayon de 10 m autour de lui sont frappés par une arme translucide semblable à la sienne et subissent automatiquement 1d4° DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer la capacité qui va automatiquement appliquer un effet temporaire de 5 round qui feront 1d4° DM à chaque cible chaque round. La perte de PV doit être réalisée manuellement. Ne fonctionne que pendant un combat. Il faudra un repos complet pour réutiliser cette capacité.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p147
+  slug: milles-lames
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 8
+  frequency: daily
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.q5dGByIPFeMnDSyA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
+            statuses: []
+            duration: '5'
+            unit: round
+            successThreshold: null
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!q5dGByIPFeMnDSyA'
+

@@ -1,0 +1,81 @@
+folder: ajCn55TlXJDTCC7r
+name: Aura élémentaire
+type: capacity
+img: icons/svg/combat.svg
+_id: hXEngsgTZ4ZJGqIg
+system:
+  description: "<p style=\"text-align:justify\">Une fois par combat, le personnage imprègne son arme d’une aura élémentaire pendant CON minutes. Cette aura lui offre un bonus de +1d4° aux DM qui prennent la forme de feu, d’acide, de froid ou d’électricité. L’élément choisi reste toujours le même. Ce bonus aux DM ne peut pas se cumuler à un autre bonus magique élémentaire (arc de feu, sort élémentaire, etc.).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.A activer dans les circonstance indiquées. Il faudra une récupération rapide pour pouvoir réutiliser cette capacité.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p147
+  slug: aura-elementaire
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 7
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.hXEngsgTZ4ZJGqIg
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.hXEngsgTZ4ZJGqIg
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Item.hXEngsgTZ4ZJGqIg
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Item.hXEngsgTZ4ZJGqIg
+          subtype: combat
+          target: damMagic
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!hXEngsgTZ4ZJGqIg'
+

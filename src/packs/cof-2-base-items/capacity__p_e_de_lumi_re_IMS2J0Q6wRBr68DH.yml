@@ -1,0 +1,67 @@
+folder: 4asdJQNNbKEzeCAW
+name: Épée de lumière
+type: capacity
+img: icons/svg/combat.svg
+_id: IMS2J0Q6wRBr68DH
+system:
+  description: "<p style=\"text-align:justify\">L’arme du personnage brille d’une lumière magique équivalente à une torche pour le reste<br />du combat. Elle occasionne +1d4° DM supplémentaire aux morts‑vivants, aux créatures démoniaques ou aux animaux corrompus par le mal.<br />Alternativement, si cette voie est choisie par un barbare qui déteste la magie, la lame ne brille pas et les DM supplémentaires sont juste le fruit de sa hargne.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.A activer dans les circonstance indiquées. Pour un barbare du coup il est possible de le rendre permanent en decochant les case activable et temporaire.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p149
+  slug: epee-de-lumiere
+  subtype: ''
+  actionType: m
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.IMS2J0Q6wRBr68DH
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.IMS2J0Q6wRBr68DH
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!IMS2J0Q6wRBr68DH'
+
