@@ -1,0 +1,78 @@
+folder: pf050cd2no1cSiRN
+name: Souffle glacial
+type: capacity
+img: icons/svg/combat.svg
+_id: FWjkouF5JcAOVQOl
+system:
+  description: "<p style=\"text-align:justify\">Le mage ouvre la bouche et souffle un blizzard glacial et des éclats de glace tranchants.<br />Le sort affecte toutes les créatures dans un cône approximatif de 20 m de long sur 20 m de large à son extrémité. Les victimes subissent [4d4° + INT] DM et sont ralenties pour 1 round si elles ratent un test de CON difficulté [10 + INT]. Sinon, elles subissent seulement la moitié des DM et ne sont pas ralenties.</p>\n<p style=\"text-align:justify\">Pensez à remplacer @int par @cha pour un ensorceleur ou un barde</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer. L'effet de ralentissement dépendant d'un test, il doit être appliqué à la main.<br /><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p158
+  slug: souffle-glacial
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.FWjkouF5JcAOVQOl
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: 4d4° + @int
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!FWjkouF5JcAOVQOl'
+

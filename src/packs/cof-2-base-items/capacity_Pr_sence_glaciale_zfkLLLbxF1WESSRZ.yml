@@ -1,0 +1,86 @@
+folder: pf050cd2no1cSiRN
+name: Présence glaciale
+type: capacity
+img: icons/svg/combat.svg
+_id: zfkLLLbxF1WESSRZ
+system:
+  description: "<p style=\"text-align:justify\">L’ensorceleur transforme son corps en glace vivante, il gagne +4 en DEF, est immunisé au<br />froid et divise les DM de feu par deux. Les créatures qui le touchent ou l’attaquent avec<br />des armes naturelles subissent 1d4° DM.<br />Lorsqu’il marche, il gèle le sol et peut se déplacer sur l’eau en la transformant en glace. Le<br />sort a une durée de [1d6 + INT] minutes.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">Cette capacité va proposer un bonus temporaire sur le joueur pour gérer la DEF. L'immunité/la résistance au feu et le 1d4° DM si on le touche sont géré manuellement par le MJ.</p>\n<p style=\"text-align:justify\"><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p158
+  slug: presence-glaciale
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 7
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.zfkLLLbxF1WESSRZ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.zfkLLLbxF1WESSRZ
+          subtype: combat
+          target: def
+          apply: self
+          value: '+4'
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ice
+            statuses: []
+            duration: (1d6 + @int) * 10
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!zfkLLLbxF1WESSRZ'
+

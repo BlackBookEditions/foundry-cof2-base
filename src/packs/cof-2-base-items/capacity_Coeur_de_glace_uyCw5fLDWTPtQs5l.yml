@@ -1,0 +1,67 @@
+folder: pf050cd2no1cSiRN
+name: Coeur de glace
+type: capacity
+img: icons/svg/combat.svg
+_id: uyCw5fLDWTPtQs5l
+system:
+  description: "<p>Vous divisez par deux tous les DM de froid que vous subissez et vous êtes désormais immunisé à la peur.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>La capacité va afficher l'immunité à la peur sur la fiche de personnage mais c'est tout. Le reste est à gérer manuellement</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p158
+  slug: coeur-de-glace
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.uyCw5fLDWTPtQs5l
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.uyCw5fLDWTPtQs5l
+          subtype: state
+          target: fearImmunity
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!uyCw5fLDWTPtQs5l'
+

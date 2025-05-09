@@ -1,0 +1,107 @@
+folder: hgcdTohkqzo52Gdi
+name: Aura du chef de guerre
+type: capacity
+img: icons/svg/combat.svg
+_id: AJ9U4ZEfJw0JoQ6c
+system:
+  description: "<p>Tous vos alliés dans un rayon de 20 m autour de vous bénéficient d’un bonus de +1 en DEF et aux DM pendant INT minutes. À partir du niveau 16, ce bonus passe à +2.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses alliés puis clique sur l'action pour lancer le sort qui va automatiquement appliquer un effet de bonus temporaire. Ne fonctionne qu'en mode combat.<br /><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p161
+  slug: aura-du-chef-de-guerre
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.AJ9U4ZEfJw0JoQ6c
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.AJ9U4ZEfJw0JoQ6c
+          subtype: combat
+          target: def
+          apply: both
+          value: 1 + @niv % 16
+          additionalInfos: ''
+        - type: capacity
+          source: Item.AJ9U4ZEfJw0JoQ6c
+          subtype: combat
+          target: damMelee
+          apply: both
+          value: 1 + @niv % 16
+          additionalInfos: ''
+        - type: capacity
+          source: Item.AJ9U4ZEfJw0JoQ6c
+          subtype: combat
+          target: damRanged
+          apply: both
+          value: 1 + @niv % 16
+          additionalInfos: ''
+        - type: capacity
+          source: Item.AJ9U4ZEfJw0JoQ6c
+          subtype: combat
+          target: magic
+          apply: both
+          value: 1 + @niv % 16
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: multiple
+            number: 10
+            scope: allies
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '@int * 10'
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.AJ9U4ZEfJw0JoQ6c
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!AJ9U4ZEfJw0JoQ6c'
+

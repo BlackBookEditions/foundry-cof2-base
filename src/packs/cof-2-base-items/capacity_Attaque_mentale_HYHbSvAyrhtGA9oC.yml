@@ -1,0 +1,80 @@
+folder: ADLkiTdl31swqN59
+name: Attaque mentale
+type: capacity
+img: icons/svg/combat.svg
+_id: HYHbSvAyrhtGA9oC
+system:
+  description: "<p style=\"text-align:justify\">Une surcharge de stimulus sensoriels qui provoque des DM et éventuellement une perte de connaissance de la cible. Le personnage fait un test opposé d’attaque magique contre une cible à une portée de 20 m. En cas de succès, il inflige [5d4° + INT] DM et la cible doit faire un test d’INT difficulté [10 + INT]. En cas d’échec, si la cible est de niveau inférieur au mage, elle perd conscience pour 1d6 rounds, sinon elle est immobilisée (sonnée debout) pour 1 round.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et appliquer les dégats.Les effets supplémentaires sont laissé géré par le MJ.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p162
+  slug: attaque-mentale
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 7
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.HYHbSvAyrhtGA9oC
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: 5d4° + @int
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.HYHbSvAyrhtGA9oC
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!HYHbSvAyrhtGA9oC'
+
