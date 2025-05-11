@@ -1,0 +1,314 @@
+name: Scorpion ou araignée
+type: encounter
+img: icons/svg/eye.svg
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -4
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 0
+    hp:
+      base: 50
+      value: 50
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 15
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: >-
+      <p>A adapter : Def = 15&nbsp; + rang. PV = 5*niv perso. Init = init du
+      perso. Attaque = attt mag du perso</p>
+
+      <p>Au prix d&rsquo;une action limit&eacute;e, le scorpion peut attaquer
+      une fois avec ses pinces (pas de<br>poison) et une fois avec son dard
+      (avec poison).<br>L&rsquo;araign&eacute;e peut se d&eacute;placer sur les
+      surfaces verticales. D&eacute;placement rapide : les vermines se
+      d&eacute;placent de 20 m par action de mouvement.</p>
+  currentEffects: []
+prototypeToken:
+  name: Scorpion ou araignée
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: attaque contact
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: attaque-contact
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: attaque contact
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '10'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4° + 5 + 1d4°
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: 897firOmdsiZYQBs
+    sort: 0
+    _key: '!actors.items!cNzv8NkeEZaiKbGr.897firOmdsiZYQBs'
+effects: []
+folder: DckAeVIG18rHrGYa
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746964883152
+  modifiedTime: 1746964883152
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: cNzv8NkeEZaiKbGr
+sort: 0
+_key: '!actors!cNzv8NkeEZaiKbGr'
+

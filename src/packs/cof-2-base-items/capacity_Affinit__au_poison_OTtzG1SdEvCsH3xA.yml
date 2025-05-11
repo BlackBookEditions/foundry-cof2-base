@@ -1,0 +1,74 @@
+folder: xSGTLfvAjBJhf0yx
+name: Affinité au poison
+type: capacity
+img: icons/svg/combat.svg
+_id: OTtzG1SdEvCsH3xA
+system:
+  description: "<p style=\"text-align:justify\">Le personnage peut enduire une arme tranchante ou perforante de poison une fois par combat. Cette arme inflige +1d4° DM de poison. En plus des effets décrits ci‑dessus, le personnage divise par deux les DM et la durée d’effet des poisons.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.A activer dans les circonstance indiquées.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p175
+  slug: affinite-au-poison
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 7
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.OTtzG1SdEvCsH3xA
+      indice: 0
+      label: Nouvelle Action 1
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.OTtzG1SdEvCsH3xA
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: poison
+        - type: capacity
+          source: Item.OTtzG1SdEvCsH3xA
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: 1d4°
+          additionalInfos: poison
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!OTtzG1SdEvCsH3xA'
+

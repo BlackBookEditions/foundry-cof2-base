@@ -1,0 +1,80 @@
+folder: vWT5H9RDcDO3HjRj
+name: Flamme de l’été
+type: capacity
+img: icons/svg/combat.svg
+_id: pwtwyzunEphqWOGk
+system:
+  description: "<p style=\"text-align:justify\">S’il a accès à une flamme (une torche suffit), le personnage peut lancer un projectile de feu qui inflige [2d4° + PER] DM de feu à une cible à moins de 30 m sur un test d’attaque magique réussi. De plus, le personnage divise par deux tous les DM de feu subis.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire un jet d'attaque magique et en cas de réussite infliger les dégats. La réduction des DM de feu n'est pas prise en charge.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p173
+  slug: flamme-de-lete
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.pwtwyzunEphqWOGk
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d4° + @per
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!pwtwyzunEphqWOGk'
+
