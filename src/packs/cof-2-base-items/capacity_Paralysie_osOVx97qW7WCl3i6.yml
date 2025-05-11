@@ -1,0 +1,82 @@
+folder: QX7CbHS0ywnbeT1n
+name: Paralysie
+type: capacity
+img: icons/svg/combat.svg
+_id: osOVx97qW7WCl3i6
+system:
+  description: "<p style=\"text-align:justify\">Le lanceur de sort paralyse autant de créatures qu’il le peut (cf. ci‑après) dans un rayon de 10 m autour de lui pendant [1d4°+ INT] rounds. Il doit maintenir sa concentration par une action de mouvement pendant toute la durée du sort.<br />Il peut affecter autant de créatures qu’il souhaite tant que la somme de leurs NC ne dépasse<br />pas son niveau. Les créatures de NC 4 ou plus peuvent se libérer du sort en réussissant un test de CON difficulté 15, une tentative par round (G).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :\_</strong></p>\n<p style=\"text-align:justify\">Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer un effet de paralysie sur le scible. Au MJ de proposer le test pour les libération et vérifier les niveaux/NC.Ne fonctionne qu'en mode combat</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p154
+  slug: paralysie
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.osOVx97qW7WCl3i6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - paralysis
+            duration: 1d4°+@int
+            unit: round
+            successThreshold: null
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!osOVx97qW7WCl3i6'
+

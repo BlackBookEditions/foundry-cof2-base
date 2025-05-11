@@ -1,0 +1,113 @@
+folder: SZg1dyMk2fnDAxrY
+name: Armes dentelées
+type: capacity
+img: icons/svg/combat.svg
+_id: YwGn58bVZooWzRw3
+system:
+  description: "<p style=\"text-align:justify\">Les armes et les lames du personnage sont dentelées, elles possèdent des formes torturées destinées\_à provoquer des blessures sanglantes. Le personnage obtient un bonus de +5 à tous ses tests d’intimidation. De plus, lors d’une attaque réussie, il provoque un effet de saignement qui inflige 1 DM par round à la victime pour le reste du combat. Pour stopper cette hémorragie, la victime doit recevoir des soins ou prendre une action limitée et réussir<br />un test d’AGI difficulté 10. Cet effet de saignement passe à 2 DM au rang 8 de la voie. Il ne se cumule pas.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cet effet pourrais être ajoutés aux armes directement mais cette capacité propose un bouton d'action qui va récupérer les caractéristiques de l'arme équipée et remplacer leur bouton d'attaque. Si l'attaque réussi on applique un effet temporaire de dégats périodique. Cet effet ne fonctionne qu'en mode combat pour comptabilsier les round.</p>\n<p>un autre effet en parallèle donne le bonus permanent en intimidation</p>\n</blockquote>\n<p style=\"text-align:justify\">\_</p>"
+  source: ''
+  origin: Livre des règles p150
+  slug: armes-dentelees
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.YwGn58bVZooWzRw3
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: '@rang[0,0,0,1,1,1,1,2]'
+            elementType: ''
+            statuses: []
+            duration: '20'
+            unit: round
+            successThreshold: null
+      modifiers: []
+    - source: Item.YwGn58bVZooWzRw3
+      indice: 1
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.YwGn58bVZooWzRw3
+          subtype: skill
+          target: for
+          apply: self
+          value: '5'
+          additionalInfos: Intimidation
+        - type: capacity
+          source: Item.YwGn58bVZooWzRw3
+          subtype: skill
+          target: cha
+          apply: self
+          value: '5'
+          additionalInfos: Intimidation
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!YwGn58bVZooWzRw3'
+

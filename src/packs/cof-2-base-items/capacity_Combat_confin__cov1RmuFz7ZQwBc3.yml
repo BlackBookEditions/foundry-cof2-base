@@ -1,0 +1,67 @@
+folder: zuVSaKNXT3mvhlHn
+name: Combat confiné
+type: capacity
+img: icons/svg/combat.svg
+_id: cov1RmuFz7ZQwBc3
+system:
+  description: "<p style=\"text-align:justify\">Lorsque l’espace est réduit, le combattant des tunnels ne subit plus de dé malus en attaque avec une arme plus longue qu’une dague. Il peut utiliser une arme à deux mains avec un dé malus.<br />De plus, puisqu’il peut rarement esquiver, le combattant améliore ses techniques de parade,<br />il gagne +1 en DEF et ce bonus passe à +2 au rang 7, tant qu’il tient une arme en main. Ce<br />bonus s’applique même en dehors d’un combat en milieu confiné.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Cette capacité gère le bonus permanent en DEF</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p148
+  slug: combat-confine
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.cov1RmuFz7ZQwBc3
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.cov1RmuFz7ZQwBc3
+          subtype: combat
+          target: def
+          apply: self
+          value: '@rang[0,0,0,0,1,1,2,2]'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!cov1RmuFz7ZQwBc3'
+

@@ -1,0 +1,242 @@
+folder: OWwARz3ccC9VamBG
+name: Métamorphose élémentaire
+type: capacity
+img: icons/svg/combat.svg
+_id: wkNoAyERYqvA1u8X
+system:
+  description: "<p>Le personnage peut prendre une seule forme élémentaire de son choix pendant [5 + INT]<br />minutes. La forme élémentaire lui permet de retrancher 5 points à tous les DM subis (RD 5),<br />elle l’immunise aux DM de la forme choisie et lui octroie les capacités suivantes :</p>\n<ul>\n<li><strong>Feu </strong>: le personnage ajoute +2d4° DM de feu à toutes ses attaques au contact. Une créature qui s’attaque à lui avec des armes naturelles subit 1d4° DM pour chaque attaque réussie.</li>\n<li><strong>Eau </strong>: le personnage guérit toutes ses blessures au rythme de 1d4° PV par round et il<br />peut déformer son corps pour passer dans le moindre interstice.</li>\n<li><strong>Terre </strong>: le personnage obtient un bonus de +3 en FOR (+3 attaque et DM au contact<br />et +3 tests de FOR) et en DEF.</li>\n<li><strong>Air </strong>: le personnage peut voler (à une vitesse de 20 m par action de mouvement), il divise<br />par deux les DM de ses attaques physiques mais pas ceux des sorts) et sa RD passe à 10.</li>\n</ul>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :</strong></p>\n<p>Cette capacité propose 4 actions. Une par éléments. Chaque action va donner des bonus aux caractéristique indiqués ci dessus via un effet périodique sur la durée indiquée. Pour que l'effet s'active il faut être en mode combat et celui-ci démarré.</p>\n<p><strong>Note :</strong> Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n<p><strong>Note 2 :</strong> Si vous être ensorceleur ou barde pensez à remplacer les référence @int en @cha</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p157
+  slug: metamorphose-elementaire
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 8
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.wkNoAyERYqvA1u8X
+      indice: 0
+      label: 'Métamorphose élémentaire : Feu'
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: dr
+          apply: self
+          value: '5'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 2d4°
+          additionalInfos: type feu
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: fire
+            statuses: []
+            duration: (5 + @int) * 10
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+    - source: Item.wkNoAyERYqvA1u8X
+      indice: 1
+      label: 'Métamorphose élémentaire : Eau'
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: dr
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '0'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: heal
+            formula: 1d4°
+            elementType: ''
+            statuses: []
+            duration: (5 + @int) * 10
+            unit: round
+            successThreshold: null
+    - source: Item.wkNoAyERYqvA1u8X
+      indice: 2
+      label: 'Métamorphose élémentaire : Terre'
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: dr
+          apply: self
+          value: '5'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: ability
+          target: for
+          apply: self
+          value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: def
+          apply: self
+          value: '3'
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: (5 + @intà * 10
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+    - source: Item.wkNoAyERYqvA1u8X
+      indice: 3
+      label: 'Métamorphose élémentaire : Air'
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: attribute
+          target: mov
+          apply: self
+          value: '10'
+          additionalInfos: vol
+        - type: capacity
+          source: Item.wkNoAyERYqvA1u8X
+          subtype: combat
+          target: dr
+          apply: self
+          value: '10'
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: (5 + @int) * 10
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!wkNoAyERYqvA1u8X'
+

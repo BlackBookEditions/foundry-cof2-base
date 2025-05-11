@@ -1,0 +1,80 @@
+folder: ADLkiTdl31swqN59
+name: Prison mentale
+type: capacity
+img: icons/svg/combat.svg
+_id: ygO2bbbUVQSrqdCE
+system:
+  description: "<p style=\"text-align:justify\">Une fois par combat, le personnage peut faire un test opposé d’attaque magique contre une cible à une portée de 20 m. En cas de réussite, la victime est emprisonnée dans un labyrinthe extradimensionnel. La durée d’emprisonnement dépend du NC de la cible :</p>\n<p>\_</p>\n<ul>\n<li><span style=\"font-family:var(--font-primary);font-size:0.875rem\">NC 1 ou moins, valeur d’INT jours ;</span></li>\n<li><span style=\"font-family:var(--font-primary);font-size:0.875rem\">NC 2, valeur d’INT heures ;</span></li>\n<li><span style=\"font-family:var(--font-primary);font-size:0.875rem\">NC 3, valeur d’INT minutes ;</span></li>\n<li><span style=\"font-family:var(--font-primary);font-size:0.875rem\">NC 4 et +, 1d6 rounds.</span></li>\n</ul>\n<p style=\"text-align:justify\">La cible peut faire un test d’INT difficulté [10 + INT] pour diviser par deux sa durée d’emprisonnement (minimum 1 round). Dans tous les cas, si la victime possède une valeur d’INT supérieure ou égale à celle du mage, elle n’est pas affectée par le sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique. Le reste est géré manuellement.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p162
+  slug: prison-mentale
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 6
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.ygO2bbbUVQSrqdCE
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.ygO2bbbUVQSrqdCE
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!ygO2bbbUVQSrqdCE'
+

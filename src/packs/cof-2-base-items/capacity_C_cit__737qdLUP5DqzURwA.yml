@@ -1,0 +1,84 @@
+folder: j2WpnuAAuYngmPIP
+name: Cécité
+type: capacity
+img: icons/svg/combat.svg
+_id: 737qdLUP5DqzURwA
+system:
+  description: "<p>Le personnage doit emporter un test opposé d’attaque magique contre une cible à une portée de 20 m. En cas de succès la cible est aveuglée (‑5 en Init., Att et DEF, ‑10 en attaque à distance). La durée du sort est de 1d6 rounds si la cible est d’un NC inférieur au niveau personnage, sinon elle est d’un round seulement.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique. En cas de succès un effet\_ \"Aveuglement\" sera appliqué à la cible pendant la durée du sort.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p165
+  slug: cecite
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.737qdLUP5DqzURwA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: '0'
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - blind
+            duration: 1d6
+            unit: round
+            successThreshold: null
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.737qdLUP5DqzURwA
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!737qdLUP5DqzURwA'
+

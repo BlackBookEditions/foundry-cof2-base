@@ -1,0 +1,96 @@
+folder: 83Pj9NZPtyaOC5xM
+name: Armure d'or
+type: equipment
+img: icons/svg/item-bag.svg
+system:
+  description: >-
+    <p>Le personnage acquiert son armure d'or.<br />Celle‑ci se présente sous la
+    forme d’un cube de métal d’environ 50 cm d’arête pour 10 kg,<br />portant
+    son symbole. Sur un simple mot de commande (action de mouvement), l’armure
+    se<br />déploie et recouvre son corps. L’armure confère une RD égale à 7 et
+    n’inflige aucune pénalité d’encombrement.</p>
+  source: ''
+  origin: Livre des règles p166
+  slug: armure-dor
+  subtype: armor
+  tags: []
+  martialCategory: plateArmor
+  damagetype: ''
+  defense: 6
+  magicalDefense: null
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: false
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 0
+    unit: pa
+  rarity: veryRare
+  equipped: false
+  properties:
+    equipable: true
+    reloadable: false
+    stackable: false
+  usage:
+    oneHand: false
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: null
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: null
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.2397bOHXvTJqAd8h
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.2397bOHXvTJqAd8h
+          subtype: combat
+          target: dr
+          apply: self
+          value: '7'
+          additionalInfos: ''
+      resolvers: []
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746824512470
+  modifiedTime: 1746824512470
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: zNotfyvCGg2RQdCJ
+sort: 0
+_key: '!items!zNotfyvCGg2RQdCJ'
+

@@ -1,0 +1,80 @@
+folder: 3pHzu5FkMl5ch3Ao
+name: Amitié animale
+type: capacity
+img: icons/svg/combat.svg
+_id: EKa09HjpojbhcR94
+system:
+  description: "<p style=\"text-align:justify\">Le personnage cible un animal à une distance maximale de 10 m et doit faire un test opposé d’attaque magique. En cas de réussite, l’animal se met au service du personnage et le défend\_pendant PER heures. À la fin du sort, l’animal s’enfuit. La somme des NC des animaux que le personnage garde sous contrôle ne peut à aucun moment dépasser le rang atteint dans la voie. À partir du rang 6, le personnage peut cibler les animaux géants et à partir du rang 8 les animaux fantastiques (griffon, ourhible, hippogriffe, etc.).<br />Si le personnage essaie d’emmener un animal en milieu urbain, le sort prend immédiatement fin.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique en opposition. Au MJ d'interpréter le résultat.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p172
+  slug: amitie-animale
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.EKa09HjpojbhcR94
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: '0'
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!EKa09HjpojbhcR94'
+

@@ -1,0 +1,84 @@
+folder: SaGN7sdr5Ml922xX
+name: Étreinte de l’ours
+type: capacity
+img: icons/svg/combat.svg
+_id: fMtKvDaodzSUfumL
+system:
+  description: "<p style=\"text-align:justify\">Une fois par combat, le personnage peut se saisir d’un adversaire dont la FOR est inférieure à la sienne et l’écraser entre ses bras puissants. Sur un test d’attaque au contact réussi, le personnage inflige [2d4°+FOR] DM à sa cible et elle est immobilisée entre ses bras. À son tour, la victime peut tenter de se libérer avec un test de FOR en opposition ;<br />en cas d’échec, elle ne peut faire aucune action. À chacun des tours suivants, tant que l’étreinte est maintenue, le personnage inflige à nouveau des DM sans avoir à réaliser son test d’attaque. Cette capacité peut être utilisée sous forme d’ours.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'action qui va faire le test d'attaque de contact et appliquer un effet de dégats \"périodique\" sur la cible pendant 20 round. Le MJ supprime l'effet si la cible réussi son jet pour se libérer.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p152
+  slug: etreinte-de-lours
+  subtype: ''
+  actionType: l
+  learned: false
+  rank: 7
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.fMtKvDaodzSUfumL
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: 2d4°+@for
+            elementType: ''
+            statuses:
+              - immobilized
+            duration: '20'
+            unit: round
+            successThreshold: null
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.fMtKvDaodzSUfumL
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!fMtKvDaodzSUfumL'
+

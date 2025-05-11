@@ -1,0 +1,77 @@
+folder: uRmZ3QiJk6aD17ax
+name: Premiers soins
+type: capacity
+img: icons/svg/combat.svg
+_id: FyWXV3KBOGSrujH5
+system:
+  description: "<p style=\"text-align:justify\">Cette capacité s’utilise seulement sur une créature vivante à 0 PV. La cible touchée récupère immédiatement [3d4°+ CHA] PV. Un patient ne peut bénéficier de cette capacité qu’une seule fois par combat.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va appliquer les soins.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p171
+  slug: premiers-soins
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 4
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.FyWXV3KBOGSrujH5
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: 3d4° + @cha
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!FyWXV3KBOGSrujH5'
+

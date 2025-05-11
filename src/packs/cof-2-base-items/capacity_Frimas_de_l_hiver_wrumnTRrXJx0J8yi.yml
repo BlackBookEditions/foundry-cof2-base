@@ -1,0 +1,80 @@
+folder: vWT5H9RDcDO3HjRj
+name: Frimas de l’hiver
+type: capacity
+img: icons/svg/combat.svg
+_id: wrumnTRrXJx0J8yi
+system:
+  description: "<p style=\"text-align:justify\">S’il a accès à de l’eau, il peut lancer un projectile de glace qui inflige [4d4° + PER] DM de froid à une cible à moins de 30 m sur un test d’attaque magique réussi. Si la victime rate un test de CON difficulté [10 + PER], elle est ralentie à son prochain tour. De plus, le personnage divise par deux tous les DM de froid subis.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire un jet d'attaque magique et en cas de réussite infliger les dégats. La réduction des DM de froid n'est pas prise en charge.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p173
+  slug: frimas-de-lhiver
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 7
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.wrumnTRrXJx0J8yi
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 4d4°
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!wrumnTRrXJx0J8yi'
+

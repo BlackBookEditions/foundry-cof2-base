@@ -1,0 +1,78 @@
+folder: Jc9oocmI3B4cVSRG
+name: Souffle enflammé de Drake
+type: capacity
+img: icons/svg/combat.svg
+_id: ek0eEx3dNsObvEIx
+system:
+  description: "<p style=\"text-align:justify\">Le drake est désormais capable de cracher du feu au prix d’une action d’attaque une fois par combat. Toutes les cibles situées dans un cône de 10 m de long sur 10 m de large, subissent 8d4° DM de feu, ou la moitié seulement si elles réussissent un test d’AGI difficulté 12.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer l'attaque qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p148
+  slug: souffle-enflamme-de-drake
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 0
+  frequency: combat
+  charges:
+    current: 1
+    max: 1
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.ek0eEx3dNsObvEIx
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 8d4°
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746470266862
+  modifiedTime: 1746470471260
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!ek0eEx3dNsObvEIx'
+

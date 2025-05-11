@@ -1,0 +1,80 @@
+folder: uRmZ3QiJk6aD17ax
+name: Zone de vie
+type: capacity
+img: icons/svg/combat.svg
+_id: pYV4rKOL42UjoGog
+system:
+  description: "<p>Le personnage peut enchanter une zone de 10 m de rayon autour de lui pour une durée de CHA rounds. La zone se met à luire d’une lumière bienfaitrice et l’air scintille.<br />Toutes les créatures vivantes dans la zone récupèrent 2d4°PV à chaque round (à la fin de leur tour). Les morts‑vivants et les démons subissent des DM équivalents. Une fois le sort<br />lancé, la zone reste immobile.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles et appuie sur l'action. Elles recevront un efffet temporaire soignant de 2d4° PV par round. Ne fonctionne qu'en mode combat, et ne gère pas les dégats sur mort vivant.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p171-172
+  slug: zone-de-vie
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 7
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.pYV4rKOL42UjoGog
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: ''
+          target:
+            type: multiple
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: heal
+            formula: 2d4°
+            elementType: sacred
+            statuses: []
+            duration: '@cha'
+            unit: round
+            successThreshold: null
+          dmg: {}
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746965613708
+  modifiedTime: 1746965613708
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!pYV4rKOL42UjoGog'
+

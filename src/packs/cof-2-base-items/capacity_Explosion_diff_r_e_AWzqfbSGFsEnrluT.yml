@@ -1,0 +1,78 @@
+folder: hgcdTohkqzo52Gdi
+name: Explosion différée
+type: capacity
+img: icons/svg/combat.svg
+_id: AWzqfbSGFsEnrluT
+system:
+  description: "<p style=\"text-align:justify\">Le personnage invoque une bille de feu qui se positionne là où le mage lui en donne l’ordre. La trajectoire peut comporter jusqu’à deux coudes à 90° et la distance totale parcourue ne doit pas dépasser 50 m. Le magicien n’a pas besoin de voir le lieu. La bille explose immédiatement si une des conditions suivantes est remplie.</p>\n<ul>\n<li>Quelque chose ou quelqu’un touche la bille.</li>\n<li>Le magicien prononce un mot de commande (action gratuite).</li>\n<li>Le délai fixé par le magicien est terminé.</li>\n<li>Au bout d’un nombre de minutes égal à l’INT du personnage.</li>\n</ul>\n<p style=\"text-align:justify\">La bille de feu explose dans un rayon de 5 m et inflige [4d4° + INT] DM. Les créatures qui<br />réussissent un test d’AGI difficulté [10 + INT] ne subissent que la moitié des dégâts. Avant son explosion, la bille de feu produit une lumière équivalant celle d’une torche.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage in game :</strong></p>\n<p style=\"text-align:justify\">Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de proposer le test pour réduire les dégats et les appliquer. Pensez à remplacer @int par @cha pour les ensorceleur ou barde<br /><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p161
+  slug: explosion-differee
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 5
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: true
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.AWzqfbSGFsEnrluT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 4d4° + @int
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.AWzqfbSGFsEnrluT
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746822728607
+  modifiedTime: 1746822728607
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!AWzqfbSGFsEnrluT'
+

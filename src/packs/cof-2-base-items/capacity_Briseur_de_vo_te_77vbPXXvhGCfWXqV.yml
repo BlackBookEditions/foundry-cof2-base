@@ -1,0 +1,78 @@
+folder: zuVSaKNXT3mvhlHn
+name: Briseur de voûte
+type: capacity
+img: icons/svg/combat.svg
+_id: 77vbPXXvhGCfWXqV
+system:
+  description: "<p style=\"text-align:justify\">Une fois par combat, dans une cavité de moins de 6 m de hauteur, le combattant des tunnels peut frapper le sol ou un mur pour faire s’écrouler la voûte sur ses adversaires. Tous les adversaires dans une zone de 10 × 10 m face à lui subissent 4d4° DM à cause des rochers qui tombent du plafond. La zone affectée devient un terrain difficile et les créatures réduites à 0 PV sont ensevelies sous l’éboulis.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage in game :\_</strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dégats. Au MJ de les appliquer.</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p148
+  slug: briseur-de-voute
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 8
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.77vbPXXvhGCfWXqV
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: 4d4°
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1746558775691
+  modifiedTime: 1746558775691
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!77vbPXXvhGCfWXqV'
+
