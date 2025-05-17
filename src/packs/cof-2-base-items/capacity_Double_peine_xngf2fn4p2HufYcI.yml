@@ -1,10 +1,10 @@
 folder: sUVIRPIarTkO1Lsi
 name: Double peine
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/blade-tip-chipped-blood-red.webp
 _id: xngf2fn4p2HufYcI
 system:
-  description: "<p>Si les deux armes du rôdeur atteignent la même cible lors d’un même tour, le personnage obtient un effet d’enchaînement qui ajoute 1d4° DM à l’une des deux attaques de son choix.</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+  description: "<p>Si les deux armes du rôdeur atteignent la même cible lors d’un même tour, le personnage obtient un effet d’enchaînement qui ajoute 1d4° DM à l’une des deux attaques de son choix.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Quand il respecte les conditions, le personnage clique sur l'action pour effectuer le jet de DM supplémentaires</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p73
   slug: double-peine
@@ -19,7 +19,41 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.xngf2fn4p2HufYcI
+      indice: 0
+      label: DM supplémentaires
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 1d4°
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 5
 effects: []
@@ -34,11 +68,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745389083382
+  modifiedTime: 1747509007463
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xngf2fn4p2HufYcI'
 

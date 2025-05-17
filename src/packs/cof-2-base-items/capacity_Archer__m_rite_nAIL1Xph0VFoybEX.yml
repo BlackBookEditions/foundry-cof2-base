@@ -1,10 +1,10 @@
 folder: vKdU8IJB7gi57AYW
 name: Archer émérite
 type: capacity
-img: icons/svg/combat.svg
+img: icons/weapons/bows/shortbow-recurve-yellow-blue.webp
 _id: nAIL1Xph0VFoybEX
 system:
-  description: "<p>Le rôdeur ajoute sa PER aux DM qu’il inflige à l’arc et +1 par rang dans la voie en initiative. Le joueur peut souhaiter une variante de cette capacité s’appliquant aux armes de jet (dague, hachette, javelot) plutôt qu’à l’arc (rebaptisez‑la voie du lancer). Dans ce cas, le PJ ajoute sa FOR aux DM qu’il inflige et double la portée de jet (pas de bonus d’Init.). Par ailleurs, toutes les capacités de la voie qui suivent s’appliquent aux armes de jet plutôt qu’à l’arc</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité offre un bonus permanent à l'initiative, à désactiver si le joueur choisi les armes de jet. Pour le bonus de PER aux dégat, le MJ devra l'ajouter à l'arme du joueur en utilisant + @per (ou @for si on prle d'arme de jet).</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Le rôdeur ajoute sa PER aux DM qu’il inflige à l’arc et +1 par rang dans la voie en initiative. Le joueur peut souhaiter une variante de cette capacité s’appliquant aux armes de jet (dague, hachette, javelot) plutôt qu’à l’arc (rebaptisez‑la voie du lancer). Dans ce cas, le PJ ajoute sa FOR aux DM qu’il inflige et double la portée de jet (pas de bonus d’Init.). Par ailleurs, toutes les capacités de la voie qui suivent s’appliquent aux armes de jet plutôt qu’à l’arc</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose deux actions activables/désactivables. Le première à activer s'il utilise un arc, à désactiver sinon. La deuxieme fait pareil mais s'il utilise une arme de jet plutôt qu'un arc.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p70
   slug: archer-emerite
@@ -22,15 +22,15 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
       indice: 0
-      label: ''
+      label: Combat à l'arc
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
-        activable: false
-        temporary: false
+        activable: true
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -41,6 +41,36 @@ system:
           target: init
           apply: self
           value: '@rang'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: '@per'
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+      indice: 1
+      label: Combat à l'arme de jet
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+          subtype: combat
+          target: damRanged
+          apply: self
+          value: '@for'
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -57,11 +87,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745389303454
+  modifiedTime: 1747469954922
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!nAIL1Xph0VFoybEX'
 

@@ -1,10 +1,10 @@
 folder: GsA0AkzBMIfdkIZ2
 name: Démolition
 type: capacity
-img: icons/svg/combat.svg
+img: icons/weapons/thrown/dynamite-simple-brown.webp
 _id: NK8xRet9E0siOjrU
 system:
-  description: "<p>L’arquebusier peut préparer un explosif qui lui permet de démolir facilement des structures. Il lui faut 3 rounds complets pour préparer et poser son explosif. Celui‑ci inflige à la structure [3d4° + INT] DM et ignore la moitié de sa RD (et seulement 2d4° DM dans un rayon de 2 m). Chaque jour, l’arquebusier peut utiliser un nombre de charges explosives égal au rang dans la voie. Ces charges permettent indifféremment d’utiliser les capacités Démolition, Piège explosif ou Boulet explosif</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pour le moment c'est au MJ de fournir l'équipement \"charge explosive\" au joueur. A terme, un système de crafting sera mis en place pour créer automatiquement ces objets.</p>\n<p>L'équipement est utilisable en l'état par les joueurs.</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">L’arquebusier peut préparer un explosif qui lui permet de démolir facilement des structures. Il lui faut 3 rounds complets pour préparer et poser son explosif. Celui‑ci inflige à la structure [3d4° + INT] DM et ignore la moitié de sa RD (et seulement 2d4° DM dans un rayon de 2 m). Chaque jour, l’arquebusier peut utiliser un nombre de charges explosives égal au rang dans la voie. Ces charges permettent indifféremment d’utiliser les capacités Démolition, Piège explosif ou Boulet explosif</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pour le moment c'est au MJ de fournir l'équipement \"charge explosive\" au joueur. A terme, un système de crafting sera mis en place pour créer automatiquement ces objets.\_L'équipement est utilisable en l'état par les joueurs.</p>\n<p>Pour le moment une action simule son utilisation quotidienne. Il faudra penser à chaque rang suplémentaire de modifier la quantité réaliable par jour dans l'onglet détails.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p63
   slug: demolition
@@ -13,15 +13,48 @@ system:
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 2
+    max: 2
   properties:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.NK8xRet9E0siOjrU
+      indice: 0
+      label: fabrication de Charge Explosive
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 2
+  frequency: daily
 effects: []
 sort: 150000
 ownership:
@@ -34,11 +67,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745352094001
+  modifiedTime: 1747394354502
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!NK8xRet9E0siOjrU'
 

@@ -1,10 +1,10 @@
 folder: mGGQQms20fOHdOoG
 name: Fils du roc
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/earth/strike-fist-stone.webp
 _id: i3V8eJX0LIWb5JPd
 system:
-  description: "<p>Le nain réduit tous les DM subis de 2 points (mais il subit toujours au moins 1 DM par attaque reçue). La réduction passe à 3 au niveau 10. Elle est cumulable avec d’autres sources de réduction des DM comme la peau d’acier du barbare.</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Le nain réduit tous les DM subis de 2 points (mais il subit toujours au moins 1 DM par attaque reçue). La réduction passe à 3 au niveau 10. Elle est cumulable avec d’autres sources de réduction des DM comme la peau d’acier du barbare.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p59
   slug: fils-du-roc
@@ -40,7 +40,7 @@ system:
           subtype: combat
           target: dr
           apply: self
-          value: 2 + (@niv % 10)
+          value: 2 + round(@niv/10)
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -57,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745350029755
+  modifiedTime: 1747376877298
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!i3V8eJX0LIWb5JPd'
 

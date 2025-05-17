@@ -1,10 +1,10 @@
 folder: hPKgFIkvZASI3C1s
 name: Ouverture mortelle
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/death/weapon-sword-skull-purple.webp
 _id: Qh5a8Me9R2yD11aT
 system:
-  description: "<p>Une fois par combat, le voleur obtient une réussite critique automatique contre la cible de son choix. Il profite donc d’une réussite automatique, des dommages multipliés par 2 prévus dans ce cas et d’une attaque sournoise (dont les DM ne sont pas doublés).</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Une fois par combat, le voleur obtient une réussite critique automatique contre la cible de son choix. Il profite donc d’une réussite automatique, des dommages multipliés par 2 prévus dans ce cas et d’une attaque sournoise (dont les DM ne sont pas doublés).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Utiliser l'action d'attaque automatique, limitée à une utilisation entre chaque Récupération Rapide pour infliger jeter les DM de l'attaque.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p75
   slug: ouverture-mortelle
@@ -13,15 +13,50 @@ system:
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Qh5a8Me9R2yD11aT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: (@arme.dmg)*2 + (2+@toutrang[4])d4°
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 5
+  frequency: combat
 effects: []
 sort: 300000
 ownership:
@@ -34,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745407607730
+  modifiedTime: 1747509437457
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Qh5a8Me9R2yD11aT'
 

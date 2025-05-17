@@ -1,10 +1,10 @@
 folder: sUVIRPIarTkO1Lsi
 name: Parade croisée
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/swords-parry-block-blue.webp
 _id: 745DAnTy0qcqoKIw
 system:
-  description: "<p>Le rôdeur obtient un bonus de +1 en DEF lorsqu’il combat avec une arme dans chaque main. Ce bonus passe à +2 au rang 5 de la voie.</p>\n<p>Au début de son tour, s’il renonce à toute attaque de la main secondaire, il double ce bonus jusqu’à son prochain tour</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Propose 2 action \"activable/désactivable\"</p>\n<p>Si le joueur compte utiliser ses 2 armes, activez l'option \"Parade croisée : 2 attaques\".</p>\n<p>Si le joueur ne compte utiliser qu'une seule attaque, activez l'option \"Parade croisée : 1 attaque\".</p></blockquote>\n<p> </p>"
+  description: "<p>Le rôdeur obtient un bonus de +1 en DEF lorsqu’il combat avec une arme dans chaque main. Ce bonus passe à +2 au rang 5 de la voie.</p>\n<p>Au début de son tour, s’il renonce à toute attaque de la main secondaire, il double ce bonus jusqu’à son prochain tour</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Propose 2 actions \"activable/désactivable\"</p>\n<p>Si le joueur compte utiliser ses 2 armes, activez l'option \"Parade croisée : 2 attaques\".</p>\n<p>Si le joueur ne compte utiliser qu'une seule attaque, activez l'option \"Parade croisée : 1 attaque\".</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p73
   slug: parade-croisee
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
       indice: 0
-      label: 'Parade croisée : 2 attaques'
-      chatFlavor: 'Parade croisée : 2 attaques'
+      label: 2 attaques
+      chatFlavor: 2 attaques
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -45,8 +45,8 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
       indice: 1
-      label: 'Parade croisée : 1 attaque'
-      chatFlavor: 'Parade croisée : 1 attaque'
+      label: 1 attaque
+      chatFlavor: 1 attaque
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -80,11 +80,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745388892108
+  modifiedTime: 1747508704543
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!745DAnTy0qcqoKIw'
 

@@ -1,16 +1,16 @@
 folder: vKdU8IJB7gi57AYW
 name: Dans le mille
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/ranged/target-bullseye-archer-orange.webp
 _id: qQRRYzPlyq9JHoIq
 system:
-  description: "<p>Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette capacité peut être utilisée avec Tir rapide ou Flèche de mort par exemple. Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de 2d4°.</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose 2 actions. La première (A) avec +2d4° DM et le dé malus. La 2eme (L) avec +3d4° DM et le dé malus. Comme d'habitude il faut d'abord cibler un token.</p>\n</blockquote>"
+  description: "<p>Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette capacité peut être utilisée avec Tir rapide ou Flèche de mort par exemple. Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de 2d4°.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose 2 actions. La première (A) avec +2d4° DM et le dé malus. La 2eme (L) avec +3d4° DM et le dé malus. Comme d'habitude il faut d'abord cibler un token.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p70
   slug: dans-le-mille
   tags: []
   subtype: ''
-  actionType: a
+  actionType: none
   learned: false
   charges:
     current: null
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 0
-      label: Dans le mille (A)
-      chatFlavor: Dans le mille (A)
+      label: (A)
+      chatFlavor: (A)
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -33,7 +33,7 @@ system:
         temporary: false
         noManaCost: false
       conditions:
-        - predicate: isEquipped
+        - predicate: isLearned
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -58,8 +58,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 1
-      label: Dans le mille (L)
-      chatFlavor: Dans le mille (L)
+      label: (L)
+      chatFlavor: (L)
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -106,11 +106,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745389504811
+  modifiedTime: 1747470103507
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!qQRRYzPlyq9JHoIq'
 
