@@ -1,22 +1,10 @@
 folder: kdWJPzG56No9EumJ
 name: Déchaînement d’acier
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-axe-energy-pink.webp
 _id: n0whtv7eBHsWc8Mr
 system:
-  description: >-
-    <p>Le barbare parcourt 10 m en ligne droite en dépassant autant d’ennemis
-    qu’il le souhaite. Il porte une attaque avec un malus de ‑2 à chaque
-    adversaire sur son passage. Il doit traverser l’espace occupé par ceux‑ci
-    pour porter un coup, mais il ne peut terminer son déplacement à un endroit
-    occupé par un ennemi.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le barbare parcourt 10 m en ligne droite en dépassant autant d’ennemis qu’il le souhaite. Il porte une attaque avec un malus de ‑2 à chaque adversaire sur son passage. Il doit traverser l’espace occupé par ceux‑ci pour porter un coup, mais il ne peut terminer son déplacement à un endroit occupé par un ennemi.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>En activant l'action, les attaques au contact du personnage subissent la pénalité de -2</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p81
   slug: dechainement-dacier
@@ -31,7 +19,30 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.n0whtv7eBHsWc8Mr
+      indice: 0
+      label: Attaque au contact -2
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.n0whtv7eBHsWc8Mr
+          subtype: combat
+          target: melee
+          apply: self
+          value: '-2'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
   rank: 4
 effects: []
@@ -46,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745425824112
+  modifiedTime: 1747584547404
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!n0whtv7eBHsWc8Mr'
 

@@ -1,22 +1,10 @@
 folder: kdWJPzG56No9EumJ
 name: Attaque tourbillon
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/air/wind-tornado-cyclone-red-orange.webp
 _id: G609noa4NiLRTfK9
 system:
-  description: >-
-    <p>Une fois par combat, le barbare tourne sur lui‑même en assénant des
-    attaques à toutes les cibles au contact. Il inflige automatiquement des DM
-    correspondant à l’arme utilisée (plus tous les bonus habituels) à toutes les
-    cibles dans un rayon de 5 m autour de lui.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
-    l'attaque qui va automatiquement lancer les dégats. Au MJ de proposer le
-    test pour réduire les dégats et les appliquer.</p>
-
-    </blockquote>
+  description: "<p>Une fois par combat, le barbare tourne sur lui‑même en assénant des attaques à toutes les cibles au contact. Il inflige automatiquement des DM correspondant à l’arme utilisée (plus tous les bonus habituels) à toutes les cibles dans un rayon de 5 m autour de lui.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer l'attaque qui va automatiquement lancer les dommages.\_</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p81
   slug: attaque-tourbillon
@@ -56,7 +44,7 @@ system:
             formula: '@arme.dmg'
           target:
             type: multiple
-            number: 5
+            number: 15
             scope: all
           additionalEffect:
             active: false
@@ -81,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745425893256
+  modifiedTime: 1747584598471
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!G609noa4NiLRTfK9'
 

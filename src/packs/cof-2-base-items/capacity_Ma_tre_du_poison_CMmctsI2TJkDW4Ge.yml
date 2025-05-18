@@ -1,30 +1,10 @@
 folder: SEH2YcHcTVIfwxsp
 name: Maître du poison
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/ranged/arrow-flying-poisoned-green.webp
 _id: CMmctsI2TJkDW4Ge
 system:
-  description: >-
-    <p>Le voleur peut utiliser 3 doses de poison par jour sans risque de
-    s’empoisonner lui‑même. Une dose permet d’enduire une dague, une flèche ou
-    un carreau pour infliger +2d4° DM supplémentaire et demande un test de CON
-    difficulté (10 + INT du voleur) ou une cible vivante est affaiblie pour le
-    reste du combat. Alternativement, une dose peut être versée dans les
-    aliments pour une personne ; si la cible rate son test de CON, elle sombre
-    dans l’inconscience pour 2d6 min (4d6 min pour 2 doses,
-    etc.).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-    l'attaque qui va faire le test d'attaque de l'arme équipé, ainsi que ses
-    dégats et si l'attaque réussi appliqura le status "empoisonné" pour 1 round
-    ainsi que 2d4° de DM de type "Poison". Ne fonctionne qu'en mode combat</p>
-
-    <p><em>Note : On aurait aussi pu mettre un bonus activable/desactivable
-    augmentant les DM. A voir sur l'usage ce qui est le mieux.</em></p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le voleur peut utiliser 3 doses de poison par jour sans risque de s’empoisonner lui‑même. Une dose permet d’enduire une dague, une flèche ou un carreau pour infliger +2d4° DM supplémentaire et demande un test de CON difficulté (10 + INT du voleur) ou une cible vivante est affaiblie pour le reste du combat. Alternativement, une dose peut être versée dans les aliments pour une personne ; si la cible rate son test de CON, elle sombre dans l’inconscience pour 2d6 min (4d6 min pour 2 doses, etc.).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque de l'arme équipée, ainsi que ses dommages et si l'attaque réussie appliquera le statut \"empoisonné\" pour 1 round ainsi que 2d4° DM de type \"Poison\". Ne fonctionne qu'en mode combat</p>\n<p><em>Note : On aurait aussi pu mettre un bonus activable/desactivable augmentant les DM. A voir sur l'usage ce qui est le mieux.</em></p>\n</blockquote>"
   source: ''
   origin: Livre des règles p76
   slug: maitre-du-poison
@@ -33,8 +13,8 @@ system:
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 3
+    max: 3
   properties:
     spell: false
     chargeable: false
@@ -72,7 +52,7 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: 2d4° DM
+            formula: 2d4°
             elementType: poison
             statuses:
               - poison
@@ -82,6 +62,7 @@ system:
       modifiers: []
   cost: -1
   rank: 5
+  frequency: daily
 effects: []
 sort: 300000
 ownership:
@@ -94,11 +75,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745421893865
+  modifiedTime: 1747581818778
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!CMmctsI2TJkDW4Ge'
 
