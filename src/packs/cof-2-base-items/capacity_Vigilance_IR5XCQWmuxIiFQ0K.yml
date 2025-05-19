@@ -1,10 +1,10 @@
 folder: 0VDaVwz8eWnQb9ez
 name: Vigilance
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
 _id: IR5XCQWmuxIiFQ0K
 system:
-  description: "<p>Le barbare possède des sens très affûtés, il est difficile de le surprendre, il ajoute son rang + 2 à tous les tests effectués pour détecter les pièges mécaniques, magiques (ses poils se hérissent) ou les embuscades. Il devient immunisé aux Attaques sournoises d’un voleur ou à toute capacité similaire d’une créature de niveau inférieur au sien</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. Pour les attaque sournoise, à gérer manuellement.</p>\n</blockquote>"
+  description: "<p>Le barbare possède des sens très affûtés, il est difficile de le surprendre, il ajoute son rang + 2 à tous les tests effectués pour détecter les pièges mécaniques, magiques (ses poils se hérissent) ou les embuscades. Il devient immunisé aux Attaques sournoises d’un voleur ou à toute capacité similaire d’une créature de niveau inférieur au sien</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. Pour les attaques sournoises, à gérer manuellement.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p81
   slug: vigilance
@@ -41,7 +41,7 @@ system:
           target: per
           apply: self
           value: 2 + @rang
-          additionalInfos: détecter pieges/mecanisme
+          additionalInfos: détecter pièges/embuscades
       resolvers: []
   cost: -1
   rank: 3
@@ -57,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745426127401
+  modifiedTime: 1747584800270
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!IR5XCQWmuxIiFQ0K'
 

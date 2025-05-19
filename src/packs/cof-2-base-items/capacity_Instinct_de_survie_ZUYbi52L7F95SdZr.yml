@@ -1,10 +1,10 @@
 folder: Ggx3TUWZyG4OvL2R
 name: Instinct de survie
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/defensive/shield-barrier-blue.webp
 _id: ZUYbi52L7F95SdZr
 system:
-  description: "<p>Une fois par combat, lorsqu’une attaque devrait amener l’humain à 0 PV, les DM qu’elle inflige sont divisés par 2 (minimum 1). Après avoir bénéficié de cette capacité, l’humain gagne pour le reste du combat un bonus de +2 en DEF.</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Ici on propose une action activable/désactivable pour gérer le +2 en DEF. Au MJ de gérer les dégats divisés par 2.</p>\n</blockquote>"
+  description: "<p>Une fois par combat, lorsqu’une attaque devrait amener l’humain à 0 PV, les DM qu’elle inflige sont divisés par 2 (minimum 1). Après avoir bénéficié de cette capacité, l’humain gagne pour le reste du combat un bonus de +2 en DEF.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Ici on propose une action activable/désactivable pour gérer le +2 en DEF. Au MJ de gérer les dommages divisés par 2.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p57
   slug: instinct-de-survie
@@ -22,15 +22,16 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ZUYbi52L7F95SdZr
       indice: 0
-      label: ''
+      label: DEF + 2
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -38,7 +39,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ZUYbi52L7F95SdZr
           subtype: combat
           target: def
+          apply: self
           value: '2'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 2
@@ -54,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745350802749
+  modifiedTime: 1747375834005
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ZUYbi52L7F95SdZr'
 

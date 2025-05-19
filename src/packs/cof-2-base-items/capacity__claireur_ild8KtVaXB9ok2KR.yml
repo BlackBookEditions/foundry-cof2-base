@@ -1,10 +1,10 @@
 folder: QY4ycL3pNb0q1FSO
 name: Éclaireur
 type: capacity
-img: icons/svg/combat.svg
+img: icons/environment/wilderness/cave-entrance-island.webp
 _id: ild8KtVaXB9ok2KR
 system:
-  description: "<p>En milieu naturel, le rôdeur ajoute son rang + 2 à ses tests de discrétion et de vigilance ainsi qu’aux tests pour pister. De plus, le rôdeur peut remplacer le bonus de +1 PC de la famille des aventuriers par un bonus de +1 DR si le joueur le souhaite.</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+  description: "<p>En milieu naturel, le rôdeur ajoute son rang + 2 à ses tests de discrétion et de vigilance ainsi qu’aux tests pour pister. De plus, le rôdeur peut remplacer le bonus de +1 PC de la famille des aventuriers par un bonus de +1 DR si le joueur le souhaite.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose 2 améiorations :</p>\n<p>Ube pour le bonus de discrétion et vigilance. L'autre aumgnete les DR de 1 et diminue les PC de 1. Si vous ne souhaitez pas cette modification, supprimez l'action \"Remplace 1 PC par 1 DR\".</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p72
   slug: eclaireur
@@ -41,14 +41,44 @@ system:
           target: per
           apply: self
           value: 2 + @rang
-          additionalInfos: discretion/vigilance
+          additionalInfos: discretion/vigilance en milieu naturel
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
           subtype: skill
           target: agi
           apply: self
           value: 2 + @rang
-          additionalInfos: discretion/vigilance
+          additionalInfos: discretion/vigilance en milieu naturel
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
+      indice: 1
+      label: Remplace 1 PC par 1 DR
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
+          subtype: resource
+          target: rp
+          apply: self
+          value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
+          subtype: resource
+          target: fp
+          apply: self
+          value: '-1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 1
@@ -64,11 +94,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745407017859
+  modifiedTime: 1747508143808
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ild8KtVaXB9ok2KR'
 

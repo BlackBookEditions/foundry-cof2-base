@@ -1,17 +1,18 @@
 name: Boulet explosif
 type: equipment
-img: icons/svg/item-bag.svg
+img: icons/weapons/thrown/bomb-fuse-black.webp
 system:
   description: >-
-    <p>L’arquebusier sait fabriquer et lancer de petites boules de métal garnies
-    de poudre et d’une portée de 20 m qui explosent dans un rayon de 5 m en
-    infligeant ${4d4° + @int}$ DM perforants, divisés par 2 pour les victimes
-    qui réussissent un test d’AGI difficulté 10. Ceux qui ratent le test sont de
-    plus aveuglés un round par le flash lumineux de l’explosion.</p>
+    <p style="text-align:justify">L’arquebusier sait fabriquer et lancer de
+    petites boules de métal garnies de poudre et d’une portée de 20 m qui
+    explosent dans un rayon de 5 m en infligeant ${4d4° + @int}$ DM perforants,
+    divisés par 2 pour les victimes qui réussissent un test d’AGI difficulté 10.
+    Ceux qui ratent le test sont de plus aveuglés un round par le flash lumineux
+    de l’explosion.</p>
   source: ''
-  origin: ''
+  origin: Livre des règles p63
   slug: boulet-explosif
-  subtype: misc
+  subtype: consumable
   tags: []
   martialCategory: unarmed
   damagetype: piercing
@@ -36,7 +37,7 @@ system:
   properties:
     equipable: false
     reloadable: false
-    stackable: false
+    stackable: true
   usage:
     oneHand: true
     twoHand: false
@@ -54,7 +55,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.dnPlOorWnrfhHcy1
       indice: 0
-      label: ''
+      label: portée 20m - rayon 5m
       chatFlavor: ''
       type: consumable
       img: icons/svg/d20-highlight.svg
@@ -81,9 +82,10 @@ system:
           additionalEffect:
             active: false
             applyOn: success
+            successThreshold: null
+            statuses: []
             duration: '0'
             unit: round
-            applyBuff: false
       modifiers: []
 effects: []
 folder: WLZu1Fe3g8DPnkEV
@@ -99,12 +101,12 @@ flags:
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1743524908474
-  modifiedTime: 1743524908474
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1747394715531
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: pwSPNCi7Y5w0qtGc
 sort: 0
 _key: '!items!pwSPNCi7Y5w0qtGc'

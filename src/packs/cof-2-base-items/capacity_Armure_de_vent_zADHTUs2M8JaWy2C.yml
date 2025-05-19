@@ -1,10 +1,10 @@
 folder: 0VDaVwz8eWnQb9ez
 name: Armure de vent
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/air/air-smoke-casting.webp
 _id: zADHTUs2M8JaWy2C
 system:
-  description: "<p>Lorsqu’il ne porte aucune armure, le barbare peut se relever par une action de mouvement et il obtient +2 en DEF. Ce bonus passe à +3 au rang 5. S’il porte une armure, il gagne seulement +1 en DEF.</p><blockquote>\n<p><strong>Usage en jeu </strong>: </p>\n<p>La capacité propose deux actions \"activable/désactivable\".</p>\n<p>Le premier pour bénéficier du bonus de +2 en DEF</p>\n<p>L'autre pour n'avoir que le +1 en DEF</p>\n</blockquote>"
+  description: "<p>Lorsqu’il ne porte aucune armure, le barbare peut se relever par une action de mouvement et il obtient +2 en DEF. Ce bonus passe à +3 au rang 5. S’il porte une armure, il gagne seulement +1 en DEF.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu </strong>:</p>\n<p>La capacité propose deux actions \"activable/désactivable\".</p>\n<p>La première pour bénéficier du bonus de +2 en DEF</p>\n<p>L'autre pour n'avoir que le +1 en DEF</p>\n<p>lorsque l'une des amélioration est activée, l'autre doit être désactivée manuellement</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p81
   slug: armure-de-vent
@@ -22,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 0
-      label: Armure de vent +2
-      chatFlavor: Armure de vent +2
+      label: sans armure
+      chatFlavor: sans armure
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -44,8 +44,8 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 1
-      label: Armure de vent +1
-      chatFlavor: Armure de vent +1
+      label: avec armure
+      chatFlavor: avec armure
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -78,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745426074420
+  modifiedTime: 1747584735022
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!zADHTUs2M8JaWy2C'
 

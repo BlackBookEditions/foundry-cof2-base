@@ -1,7 +1,7 @@
 folder: Bj9CdYeY6fs3oPt4
 name: Potion de Forme d’arbre
 type: equipment
-img: icons/svg/item-bag.svg
+img: icons/consumables/potions/round-cork-leaf-green.webp
 _id: FO2GLnU3aZo0jwtQ
 system:
   description: >-
@@ -52,23 +52,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: true
         enabled: false
+        activable: true
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
       resolvers:
         - type: consumable
-          skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
-          dmg:
-            formula: ''
+          bonusDiceAdd: false
+          malusDiceAdd: false
           target:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isOwned
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          skill: {}
+          dmg: {}
       modifiers: []
 effects: []
 sort: 700000
@@ -82,11 +88,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1741115946067
+  modifiedTime: 1747511973216
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!FO2GLnU3aZo0jwtQ'
 

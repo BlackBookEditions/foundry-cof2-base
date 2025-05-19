@@ -1,10 +1,10 @@
 folder: hPKgFIkvZASI3C1s
 name: Attaque sournoise
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-dagger-blood-red.webp
 _id: ymAQws49u4EiIz3v
 system:
-  description: "<p>Une fois par round, quand il attaque un adversaire surpris ou de dos** avec une arme légère, le voleur inflige +2d4° DM supplémentaires. Les DM infligés par cette capacité augmentent de 1d4° à chaque fois qu’il atteint le rang 4 dans une voie de voleur (pour un maximum de 7d4°). Cette capacité nécessite l’utilisation d’une arme légère (dague, éventuellement lancée, épée courte, rapière) dans tous les autres cas, le bonus aux DM est divisé par deux (cela comprend les armes à distance).</p><p>** Attaquer de dos : lorsque le voleur attaque la même créature qu’un allié au contact de cette cible, on considère qu’il peut attaquer celle‑ci de dos (sauf si la cible peut se placer dos à un obstacle infranchissable). Il est possible de réaliser une attaque sournoise à distance, mais pas à portée longue et uniquement contre un adversaire surpris (pas avec la règle d’attaque de dos ci‑dessus).</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton activable/désactivable pour ajouter le bonus de DM aux dégat du joueur. A activer si il attaque quelqu'un par derrière.</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Une fois par round, quand il attaque un adversaire surpris ou de dos** avec une arme légère, le voleur inflige +2d4° DM supplémentaires. Les DM infligés par cette capacité augmentent de 1d4° à chaque fois qu’il atteint le rang 4 dans une voie de voleur (pour un maximum de 7d4°). Cette capacité nécessite l’utilisation d’une arme légère (dague, éventuellement lancée, épée courte, rapière) dans tous les autres cas, le bonus aux DM est divisé par deux (cela comprend les armes à distance).</p>\n<p style=\"text-align:justify\">** Attaquer de dos : lorsque le voleur attaque la même créature qu’un allié au contact de cette cible, on considère qu’il peut attaquer celle‑ci de dos (sauf si la cible peut se placer dos à un obstacle infranchissable). Il est possible de réaliser une attaque sournoise à distance, mais pas à portée longue et uniquement contre un adversaire surpris (pas avec la règle d’attaque de dos ci‑dessus).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton activable/désactivable pour ajouter le bonus de DM aux dégat du joueur. A activer si il attaque quelqu'un par derrière.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p74
   slug: attaque-sournoise
@@ -40,7 +40,7 @@ system:
           subtype: combat
           target: damMelee
           apply: self
-          value: min(2 + @toutrang[4], 7)d4°
+          value: Math.min(2 + @toutrang[4], 7)d4°
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -57,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745407469566
+  modifiedTime: 1747509196255
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ymAQws49u4EiIz3v'
 

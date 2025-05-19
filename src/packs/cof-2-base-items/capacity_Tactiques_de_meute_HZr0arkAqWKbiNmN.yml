@@ -1,0 +1,90 @@
+folder: Jc9oocmI3B4cVSRG
+name: Tactiques de meute
+type: capacity
+img: icons/creatures/abilities/wolf-howl-moon-white.webp
+_id: HZr0arkAqWKbiNmN
+system:
+  description: "<p>Lorsque le loup attaque la même cible que le rôdeur, il obtient un bonus de 1d4° aux DM. Chaque fois que le rôdeur dépense 1 PV pour soigner son loup, le loup récupère 2 PV. De plus, le rôdeur et son loup augmentent leur DEF de +1 chaque fois que le personnage atteint le rang 5 dans une voie de rôdeur (celle‑ci incluse).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose au loup un bouton a activer/desactiver pour lui donner le bonus de DM et un bonus permanent de DM. A glisser deposer sur la fiche du loup alpha lorsqu ele joueur aura appris cette capacité</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p72
+  slug: tactiques-de-meute
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+      indice: 0
+      label: Défense
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+          subtype: combat
+          target: def
+          apply: self
+          value: '1'
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+      indice: 1
+      label: Bonus DM
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747504852911
+  modifiedTime: 1747505036556
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!HZr0arkAqWKbiNmN'
+

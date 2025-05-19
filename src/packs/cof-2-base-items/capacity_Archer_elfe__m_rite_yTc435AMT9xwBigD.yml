@@ -1,10 +1,10 @@
 folder: 9G0dBnUx2PoTmJ1p
 name: Archer elfe émérite
 type: capacity
-img: icons/svg/combat.svg
+img: icons/weapons/bows/shortbow-recurve-yellow-blue.webp
 _id: yTc435AMT9xwBigD
 system:
-  description: "<p>L’elfe augmente de 1 la zone de critique lorsqu’il utilise un arc (19‑20 au d20) et ajoute +1d4° aux DM en cas de critique.</p>\n<p>Il sait utiliser les arcs courts, quel que soit son profil.</p><blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Pour le moment seul le -1 sur le seuil de critique est pris en compte,le reste A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+  description: "<p>L’elfe augmente de 1 la zone de critique lorsqu’il utilise un arc (19‑20 au d20) et ajoute +1d4° aux DM en cas de critique.</p>\n<p>Il sait utiliser les arcs courts, quel que soit son profil.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de -1 au seuil de critique. A activer si le joueur utilise un arc et non pas une arme de contact. Pour le moment seul le -1 sur le seuil de critique est pris en compte,le reste A gérer à la main par le MJ.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p52
   slug: archer-elfe-emerite
@@ -25,13 +25,13 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
+      type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
-        activable: false
-        temporary: false
+        activable: true
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -41,7 +41,7 @@ system:
           subtype: combat
           target: crit
           apply: self
-          value: '-1'
+          value: '1'
           additionalInfos: ''
       resolvers: []
   rank: 3
@@ -54,11 +54,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740820173774
-  modifiedTime: 1745350202469
+  modifiedTime: 1747374797324
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!yTc435AMT9xwBigD'
 

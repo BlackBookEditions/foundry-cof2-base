@@ -1,10 +1,22 @@
 folder: pqXN2QbaH8AFDPic
 name: Dentelles et rapière
 type: capacity
-img: icons/svg/combat.svg
+img: icons/equipment/back/cloak-layered-white.webp
 _id: wLEDlG3yHUZ5NRLM
 system:
-  description: "<p>Le barde ne met pas d’armure, cela ne sied point en société. Sa seule armure est la dentelle, sa seule défense, la rapière.</p>\n<p>Lorsqu’il ne porte aucune armure, le barde ajoute son CHA en DEF (en plus de son AGI), toutefois ce bonus ne peut pas dépasser le rang atteint dans la voie</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+  description: >-
+    <p>Le barde ne met pas d’armure, cela ne sied point en société. Sa seule
+    armure est la dentelle, sa seule défense, la rapière.</p>
+
+    <p>Lorsqu’il ne porte aucune armure, le barde ajoute son CHA en DEF (en plus
+    de son AGI), toutefois ce bonus ne peut pas dépasser le rang atteint dans la
+    voie</p><blockquote>
+
+    <p><strong>Usage en jeu : </strong></p>
+
+    <p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>
+
+    </blockquote>
   source: ''
   origin: Livre des règles p68
   slug: dentelles-et-rapiere
@@ -40,7 +52,7 @@ system:
           subtype: combat
           target: def
           apply: self
-          value: min(@rang,@cha)
+          value: Math.min(@rang,@cha)
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -57,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745385717907
+  modifiedTime: 1747469121098
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wLEDlG3yHUZ5NRLM'
 

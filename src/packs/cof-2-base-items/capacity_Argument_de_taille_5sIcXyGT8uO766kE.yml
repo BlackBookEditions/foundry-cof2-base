@@ -1,10 +1,10 @@
 folder: 4t5HuH0UUDjxchqY
 name: Argument de taille
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/mammals/bull-horned-blue.webp
 _id: 5sIcXyGT8uO766kE
 system:
-  description: "<p>Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA et à ceux de ses alliés au contact pour les tests de négociation, de persuasion ou d’intimidation. Allez savoir pourquoi, sa simple présence donne de la force aux arguments de ses alliés…</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. L'effet sur les alliés est à prendre en compte manuellement</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA et à ceux de ses alliés au contact pour les tests de négociation, de persuasion ou d’intimidation. Allez savoir pourquoi, sa simple présence donne de la force aux arguments de ses alliés…</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. L'effet sur les alliés est à prendre en compte manuellement</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p79
   slug: argument-de-taille
@@ -45,7 +45,7 @@ system:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.5sIcXyGT8uO766kE
           subtype: skill
-          target: for
+          target: cha
           apply: self
           value: '@for'
           additionalInfos: Intimidation
@@ -64,11 +64,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745424469060
+  modifiedTime: 1747582817510
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!5sIcXyGT8uO766kE'
 

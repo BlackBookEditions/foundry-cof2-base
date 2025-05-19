@@ -1,7 +1,7 @@
 folder: Ew9DjYH5ITPhbtLZ
 name: Elixir de vol
 type: equipment
-img: icons/svg/item-bag.svg
+img: icons/consumables/potions/bottle-ornate-bat-teal.webp
 _id: 8owecTRVcHAx7R6d
 system:
   description: >-
@@ -47,23 +47,29 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: true
         enabled: false
+        activable: true
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
       resolvers:
         - type: consumable
-          skill:
-            formula: ''
-            crit: ''
-            difficulty: ''
-          dmg:
-            formula: ''
+          bonusDiceAdd: false
+          malusDiceAdd: false
           target:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isOwned
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          skill: {}
+          dmg: {}
       modifiers: []
 effects: []
 sort: 300000
@@ -77,11 +83,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1741115639995
+  modifiedTime: 1747511534519
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!8owecTRVcHAx7R6d'
 

@@ -1,10 +1,10 @@
 folder: CW61eewBCGdsT7ac
 name: Esquive fatale
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/movement/ball-spinning-blue.webp
 _id: 4kNx6uKtRwxYkudx
 system:
-  description: "<p>Une fois par combat, le voleur peut esquiver une attaque et s’arranger pour que celle‑ci affecte un autre adversaire à son contact. Comparez le test d’attaque à la DEF de la nouvelle cible pour savoir si celle‑ci subit des DM. Cette capacité ne peut pas être utilisée si le voleur n’a qu’un seul adversaire au contact et jamais contre une réussite critique (un critique touche toujours sa cible).</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+  description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut esquiver une attaque et s’arranger pour que celle‑ci affecte un autre adversaire à son contact. Comparez le test d’attaque à la DEF de la nouvelle cible pour savoir si celle‑ci subit des DM. Cette capacité ne peut pas être utilisée si le voleur n’a qu’un seul adversaire au contact et jamais contre une réussite critique (un critique touche toujours sa cible).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p77
   slug: esquive-fatale
@@ -13,8 +13,8 @@ system:
   actionType: f
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -22,6 +22,7 @@ system:
   actions: []
   cost: -1
   rank: 2
+  frequency: combat
 effects: []
 sort: 100000
 ownership:
@@ -34,11 +35,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745422030152
+  modifiedTime: 1747582471567
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!4kNx6uKtRwxYkudx'
 

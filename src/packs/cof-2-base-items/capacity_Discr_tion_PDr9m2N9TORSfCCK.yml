@@ -1,10 +1,10 @@
 folder: hPKgFIkvZASI3C1s
 name: Discrétion
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/control/silhouette-aura-energy.webp
 _id: PDr9m2N9TORSfCCK
 system:
-  description: "<p>Le voleur ajoute son rang + 2 à tous les tests de discrétion, de déguisement ou pour cacher une arme sur lui. Il apprend le langage silencieux à base de signe des voleurs (argotien) et enfin il obtient un dé bonus en attaque lorsqu’il attaque un adversaire surpris</p><blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Un bonus permanent sur les jet de discréation/déguisement est comptabilisé à partir du moment où il est appris. Le dé bonus en cas d'attaque surprise doit être géré manuellement.</p>\n</blockquote>\n<p> </p>"
+  description: "<p>Le voleur ajoute son rang + 2 à tous les tests de discrétion, de déguisement ou pour cacher une arme sur lui. Il apprend le langage silencieux à base de signe des voleurs (argotien) et enfin il obtient un dé bonus en attaque lorsqu’il attaque un adversaire surpris</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Un bonus permanent sur les jet de discrétion/déguisement est comptabilisé à partir du moment où il est appris. Le dé bonus en cas d'attaque surprise doit être géré manuellement.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p74
   slug: discretion
@@ -39,14 +39,14 @@ system:
           target: agi
           apply: self
           value: 2 + @rang
-          additionalInfos: déguisement/discrétion
+          additionalInfos: déguisement/discrétion/dissimulation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.PDr9m2N9TORSfCCK
           subtype: skill
           target: cha
           apply: self
           value: 2 + @rang
-          additionalInfos: déguisement/discrétion
+          additionalInfos: /dissimulation déguisement/discrétion
       conditions: []
       resolvers: []
   cost: -1
@@ -63,11 +63,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745407374751
+  modifiedTime: 1747509098446
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PDr9m2N9TORSfCCK'
 
