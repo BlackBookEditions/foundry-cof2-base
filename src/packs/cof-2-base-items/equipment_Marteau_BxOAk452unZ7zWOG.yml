@@ -8,7 +8,8 @@ system:
   source: ''
   origin: ''
   slug: marteau
-  tags: []
+  tags:
+    - dmtemporairespossibles
   subtype: weapon
   martialCategory: hammer
   damagetype: impact
@@ -62,6 +63,8 @@ system:
       conditions:
         - predicate: isEquipped
       modifiers: []
+  range:
+    unit: ''
 effects: []
 sort: 100004
 ownership:
@@ -74,11 +77,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1747177714215
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!BxOAk452unZ7zWOG'
 

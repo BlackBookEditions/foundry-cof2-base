@@ -10,7 +10,8 @@ system:
   source: ''
   origin: ''
   slug: mains-nues
-  tags: []
+  tags:
+    - dmtemporaires
   subtype: weapon
   martialCategory: unarmed
   quantity:
@@ -30,7 +31,7 @@ system:
   rarity: common
   equipped: false
   properties:
-    equipable: false
+    equipable: true
     reloadable: false
     stackable: false
   usage:
@@ -64,6 +65,8 @@ system:
         - predicate: isEquipped
       modifiers: []
   damagetype: impact
+  range:
+    unit: ''
 effects: []
 sort: 100007
 ownership:
@@ -81,11 +84,11 @@ flags:
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740760974494
-  modifiedTime: 1740760974494
-  lastModifiedBy: lrkjhQ5x0RUWRHSa
+  modifiedTime: 1747050093089
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bwUmODTqsTqPbRr9'
 
