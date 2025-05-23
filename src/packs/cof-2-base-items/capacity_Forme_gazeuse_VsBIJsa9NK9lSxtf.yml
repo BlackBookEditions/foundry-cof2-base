@@ -1,22 +1,10 @@
 folder: o8Gv6tnDun3BMY5q
 name: Forme gazeuse
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/air/fog-gas-smoke-dense-gray.webp
 _id: VsBIJsa9NK9lSxtf
 system:
-  description: >-
-    <p>Le magicien prend la consistance d’un gaz pendant 1 min. Il se déplace au
-    ras du sol (s’il chute, il le fait au ralenti) à une vitesse de 5 m par
-    action de mouvement (M). Il peut s’introduire par les plus petits
-    interstices (comme sous une porte), mais ne peut utiliser aucune capacité.
-    Sous cette forme, les armes ordinaires ne lui infligent aucun DM, mais la
-    magie et les armes magiques l’affectent normalement.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le magicien prend la consistance d’un gaz pendant 1 min. Il se déplace au ras du sol (s’il chute, il le fait au ralenti) à une vitesse de 5 m par action de mouvement (M). Il peut s’introduire par les plus petits interstices (comme sous une porte), mais ne peut utiliser aucune capacité. Sous cette forme, les armes ordinaires ne lui infligent aucun DM, mais la magie et les armes magiques l’affectent normalement.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Activer l'action permet de dépenser les PM. Les effets sont à gérer en jeu</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p103
   slug: forme-gazeuse
@@ -31,7 +19,23 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.VsBIJsa9NK9lSxtf
+      indice: 0
+      label: Activation du sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 3
 effects: []
@@ -46,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745219119601
+  modifiedTime: 1748013151884
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!VsBIJsa9NK9lSxtf'
 

@@ -1,23 +1,10 @@
 folder: bTiXrsHGxRMuP4M5
 name: Prescience
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/perception/third-eye-blue-red.webp
 _id: Z2xmbz8VXwIMlIIA
 system:
-  description: >-
-    <p>Une fois par combat, au début du round, le joueur peut décider qu’il a eu
-    une vision des différents futurs possibles. Il bénéficie d’un bonus de +10
-    en attaque, en Défense et à tous les tests de PER pour tout le round, il
-    divise tous les DM subis par 2 et il peut choisir d’agir à n’importe quel
-    moment dans le round, sans considération d’initiative.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur clique sur l'action qui va lui attribuer les bonus pendant 1
-    round. La gestion des DM/2 est laissé au MJ. Pour réutiliser cette action il
-    faudra une récupération rapide au minimum.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Une fois par combat, au début du round, le joueur peut décider qu’il a eu une vision des différents futurs possibles. Il bénéficie d’un bonus de +10 en attaque, en Défense et à tous les tests de PER pour tout le round, il divise tous les DM subis par 2 et il peut choisir d’agir à n’importe quel moment dans le round, sans considération d’initiative.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action est activable/désactivable, une fois entre chaque récupération rapide, permet d'appliquer les bonus aux attaques, à la DEF et aux tests de PER.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p94
   slug: prescience
@@ -43,7 +30,7 @@ system:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -83,26 +70,7 @@ system:
           apply: self
           value: '10'
           additionalInfos: Prescience
-      resolvers:
-        - type: buffDebuff
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: self
-            number: 0
-            scope: all
-          additionalEffect:
-            active: true
-            applyOn: success
-            formulaType: damage
-            formula: ''
-            elementType: ''
-            statuses: []
-            duration: '1'
-            unit: round
-            successThreshold: null
-          skill: {}
-          dmg: {}
+      resolvers: []
   cost: -1
   rank: 5
   frequency: combat
@@ -118,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745652927234
+  modifiedTime: 1747895188307
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Z2xmbz8VXwIMlIIA'
 

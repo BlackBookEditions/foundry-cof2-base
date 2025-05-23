@@ -1,24 +1,10 @@
 folder: xmpS4oiFKtZCJ9hz
 name: Ouverture ‑ fermeture
 type: capacity
-img: icons/svg/combat.svg
+img: icons/sundries/misc/lock-open-yellow.webp
 _id: iAoJOxpMnFj9o2fz
 system:
-  description: >-
-    <p>Le forgesort peut ouvrir une porte fermée à clef en la touchant, il doit
-    réussir un test d’attaque magique contre la difficulté pour la crocheter. Il
-    peut aussi sceller une porte ou un coffre pour INT minutes. Seul un mot de
-    commande qu’il choisit permet d’ouvrir l’objet. Celui‑ci peut toujours être
-    brisé par la force, mais il bénéficie d’un bonus de +5 en solidité et en RD
-    pour toute la durée du sort. À partir du rang 4, le forgesort peut rendre ce
-    sort permanent en sacrifiant une gemme d’une valeur de 100 pa et en
-    prolongeant l’incantation par un rituel de 10 min.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le forgesort peut ouvrir une porte fermée à clef en la touchant, il doit réussir un test d’attaque magique contre la difficulté pour la crocheter. Il peut aussi sceller une porte ou un coffre pour INT minutes. Seul un mot de commande qu’il choisit permet d’ouvrir l’objet. Celui‑ci peut toujours être brisé par la force, mais il bénéficie d’un bonus de +5 en solidité et en RD pour toute la durée du sort. À partir du rang 4, le forgesort peut rendre ce sort permanent en sacrifiant une gemme d’une valeur de 100 pa et en prolongeant l’incantation par un rituel de 10 min.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action permet de dépenser les PM pour ouvrir une porte fermée et cela lance la test d'attaque magique. Le MJ devra comparer avec la difficulté du test de crochetage. Pour effectuer un sort de fermeture, activer l'action 1 pour dépenser les PM et annuler le test d'attaque magique</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p98
   slug: ouverture--fermeture
@@ -33,7 +19,43 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.iAoJOxpMnFj9o2fz
+      indice: 0
+      label: ouvrir
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 2
 effects: []
@@ -48,11 +70,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745653601825
+  modifiedTime: 1747933893985
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!iAoJOxpMnFj9o2fz'
 

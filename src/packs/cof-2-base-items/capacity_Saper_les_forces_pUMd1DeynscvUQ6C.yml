@@ -1,23 +1,10 @@
 folder: DRKt2nq7MNgLkhd6
 name: Saper les forces
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/light/hand-sparks-smoke-teal.webp
 _id: pUMd1DeynscvUQ6C
 system:
-  description: >-
-    <p>Le magicien choisit une cible vivante située à une distance maximum de 10
-    m. S’il réussit un test opposé d’attaque magique, la cible subit un malus de
-    ‑2 à ses tests de FOR, d’attaque au contact et aux DM, jusqu’à la fin du
-    combat. Le sort n’est pas cumulable plusieurs fois sur la même
-    cible.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
-    sort qui va faire le test d'attaque magique et appliquer un effet de
-    "debuff" pendant la durée du sort.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le magicien choisit une cible vivante située à une distance maximum de 10 m. S’il réussit un test opposé d’attaque magique, la cible subit un malus de ‑2 à ses tests de FOR, d’attaque au contact et aux DM, jusqu’à la fin du combat. Le sort n’est pas cumulable plusieurs fois sur la même cible.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique et lui appliquer un effet de \"debuff\" pendant la durée du sort.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p103
   slug: saper-les-forces
@@ -76,7 +63,7 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@oppose.mag'
+            difficulty: '@oppose.atm'
           dmg:
             formula: ''
           target:
@@ -90,7 +77,7 @@ system:
             formula: ''
             elementType: ''
             statuses: []
-            duration: '20'
+            duration: '99'
             unit: round
             successThreshold: null
   cost: -1
@@ -107,11 +94,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218687579
+  modifiedTime: 1748013577729
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!pUMd1DeynscvUQ6C'
 

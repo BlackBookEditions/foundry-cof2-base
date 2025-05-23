@@ -1,36 +1,10 @@
 folder: bWaDtsaFRmKHvNdG
 name: Rune de garde
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/light/projectile-beam-yellow.webp
 _id: TjimOzar1JuN09qJ
 system:
-  description: >-
-    <p>En réalisant un rituel de 10 min, le forgesort inscrit des runes
-    invisibles au sol. Il protège une zone allant jusqu’à 10 m de diamètre
-    pendant 12 h. À chaque fois qu’une créature (de taille au moins très petite)
-    pénètre dans la zone protégée, le sort produit un effet choisi (voir
-    ci‑après) au moment où le sort est lancé. Les créatures présentes dans la
-    zone pendant le rituel ne déclenchent pas le sort. Ce sort peut aussi être
-    utilisé sur une porte ou un coffre. Il est automatiquement lancé avec la
-    règle de concentration et coûte seulement 3 PM pour être lancé.</p><ul>
-
-    <li style="text-align:justify"><strong>Alarme </strong>: un puissant gong
-    retentit et la cible est étourdie pendant 1 round à moins de réussir un test
-    de CON difficulté 15.</li>
-
-    <li style="text-align:justify"><strong>Feu </strong>: [3d4°+INT] DM de feu
-    (un autre élément peut être choisi parmi foudre, froid, acide).</li>
-
-    </ul>
-
-    <blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">En réalisant un rituel de 10 min, le forgesort inscrit des runes invisibles au sol. Il protège une zone allant jusqu’à 10 m de diamètre pendant 12 h. À chaque fois qu’une créature (de taille au moins très petite) pénètre dans la zone protégée, le sort produit un effet choisi (voir ci‑après) au moment où le sort est lancé. Les créatures présentes dans la zone pendant le rituel ne déclenchent pas le sort. Ce sort peut aussi être utilisé sur une porte ou un coffre. Il est automatiquement lancé avec la règle de concentration et coûte seulement 3 PM pour être lancé.</p>\n<ul>\n<li style=\"text-align:justify\"><strong>Alarme </strong>: un puissant gong retentit et la cible est étourdie pendant 1 round à moins de réussir un test de CON difficulté 15.</li>\n<li style=\"text-align:justify\"><strong>Feu </strong>: [3d4°+INT] DM de feu (un autre élément peut être choisi parmi foudre, froid, acide).</li>\n</ul>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Activer l'action permet de dépenser les PM. Les effets sont à gérer en jeu</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p101
   slug: rune-de-garde
@@ -45,7 +19,23 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.TjimOzar1JuN09qJ
+      indice: 0
+      label: Activation du sort (A)
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 5
 effects: []
@@ -60,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745654220810
+  modifiedTime: 1747949453887
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!TjimOzar1JuN09qJ'
 

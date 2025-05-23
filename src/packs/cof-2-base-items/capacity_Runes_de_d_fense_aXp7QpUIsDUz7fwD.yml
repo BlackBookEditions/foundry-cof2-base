@@ -1,21 +1,10 @@
 folder: bWaDtsaFRmKHvNdG
 name: Runes de défense
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/defensive/shield-barrier-flaming-diamond-acid.webp
 _id: aXp7QpUIsDUz7fwD
 system:
-  description: >-
-    <p>Le forgesort inscrit des runes de protection sur l’ensemble de son
-    équipement et parfois jusque sur sa peau. Il obtient un bonus de +2 en DEF.
-    Ce bonus augmente de +1 au rang 3 puis au rang 5. S’il possède un golem, il
-    peut inscrire les runes sur celui‑ci avec le même effet.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Cette capacité gère le bonus permanent en DEF. Pour le golem gérer à la
-    main.</p>
-
-    </blockquote>
+  description: "<p>Le forgesort inscrit des runes de protection sur l’ensemble de son équipement et parfois jusque sur sa peau. Il obtient un bonus de +2 en DEF. Ce bonus augmente de +1 au rang 3 puis au rang 5. S’il possède un golem, il peut inscrire les runes sur celui‑ci avec le même effet.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité gère le bonus permanent en DEF. Pour le golem gérer à la main.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p101
   slug: runes-de-defense
@@ -43,6 +32,8 @@ system:
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.aXp7QpUIsDUz7fwD
@@ -51,7 +42,6 @@ system:
           apply: self
           value: '@rang[2,2,3,3,4]'
           additionalInfos: ''
-      conditions: []
       resolvers: []
   cost: -1
   rank: 1
@@ -67,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745654086138
+  modifiedTime: 1747948949156
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!aXp7QpUIsDUz7fwD'
 

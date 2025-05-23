@@ -1,22 +1,10 @@
 folder: pOVOhysR0JO1MJMJ
 name: Maîtrise des éléments
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/symbols/elements-air-earth-fire-water.webp
 _id: kY1Z8egke6zHTaxT
 system:
-  description: >-
-    <p>Le magicien retranche son rang + 2 à tous les DM de feu, de froid,
-    d’électricité ou d’acide subis pendant INT minutes. De plus, pendant la
-    durée du sort, lorsqu’il lance un sort d’un élément, le magicien peut
-    échanger un élément contre un autre (par exemple, une explosion de froid ou
-    une flèche acide).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques pour le
-    moment</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le magicien retranche son rang + 2 à tous les DM de feu, de froid, d’électricité ou d’acide subis pendant INT minutes. De plus, pendant la durée du sort, lorsqu’il lance un sort d’un élément, le magicien peut échanger un élément contre un autre (par exemple, une explosion de froid ou une flèche acide).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le PJ clique sur \"activation du sort\" pour dépenser les PM. Lorsque le Personnage est la cible de DM élémentaires, il peut activer l'action \"RD contre DM élémentaires\" et la désactiver ensuite pour les autres attaques</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p104
   slug: maitrise-des-elements
@@ -31,7 +19,46 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+      indice: 0
+      label: RD contre DM élémentaires
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+          subtype: combat
+          target: dr
+          apply: self
+          value: 2+@rang
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+      indice: 1
+      label: Activation du sort (A)
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 2
 effects: []
@@ -46,11 +73,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218215043
+  modifiedTime: 1748013923202
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!kY1Z8egke6zHTaxT'
 

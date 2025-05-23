@@ -1,25 +1,10 @@
 folder: xutq6PlRb2txgFmc
 name: Cercle de protection
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/defensive/barrier-shield-dome-deflect-teal.webp
 _id: LkBCJmZ9mikApWTH
 system:
-  description: >-
-    <p>Le magicien peut tracer un cercle sur le sol (environ 2 m de diamètre)
-    afin de se protéger et d’inclure à sa protection un nombre de personnes égal
-    à son INT. Une fois par round, lorsqu’un sort prend pour cible un personnage
-    protégé, le magicien fait un test d’attaque magique opposé avec l’auteur du
-    sort. Si le test est réussi, le sort adverse est annulé et n’a aucun effet.
-    De plus, toutes les créatures invoquées (élémentaires, démons) et les
-    morts‑vivants qui veulent attaquer une créature dans le cercle subissent un
-    dé malus en attaque. Si le magicien sort du cercle, le sort est
-    dissipé.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le magicien peut tracer un cercle sur le sol (environ 2 m de diamètre) afin de se protéger et d’inclure à sa protection un nombre de personnes égal à son INT. Une fois par round, lorsqu’un sort prend pour cible un personnage protégé, le magicien fait un test d’attaque magique opposé avec l’auteur du sort. Si le test est réussi, le sort adverse est annulé et n’a aucun effet. De plus, toutes les créatures invoquées (élémentaires, démons) et les morts‑vivants qui veulent attaquer une créature dans le cercle subissent un dé malus en attaque. Si le magicien sort du cercle, le sort est dissipé.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action \"activation du sort\" pour dépenser ses PM. Puis il clique sur l'action \"attaque magique\" qui fera le jet opposé. Le reste est interprété par le MJ.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p105
   slug: cercle-de-protection
@@ -34,7 +19,59 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.LkBCJmZ9mikApWTH
+      indice: 0
+      label: Activation du sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.LkBCJmZ9mikApWTH
+      indice: 1
+      label: Jet attaque magique opposé
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 4
 effects: []
@@ -49,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218065994
+  modifiedTime: 1748014779175
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LkBCJmZ9mikApWTH'
 

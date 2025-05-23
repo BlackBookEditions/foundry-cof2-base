@@ -1,0 +1,72 @@
+name: Armure
+type: capacity
+img: icons/equipment/chest/breastplate-leather-brown-belted.webp
+system:
+  description: "<p>Le forgesort peut améliorer son golem en choisissant une option parmi les suivantes. Le joueur peut choisir une option différente supplémentaire à chaque fois qu’il atteint le rang 5 dans une voie de forgesort.</p>\n<ul>\n<li><strong>Armure\_</strong>: +5 en DEF</li>\n</ul>"
+  source: ''
+  origin: ''
+  slug: armure
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.AXoK6P1S3Sa1Un9Z
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.AXoK6P1S3Sa1Un9Z
+          subtype: combat
+          target: def
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947404751
+  modifiedTime: 1747949066299
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: gKOfiTVBcrJkjtUk
+sort: 800000
+_key: '!items!gKOfiTVBcrJkjtUk'
+

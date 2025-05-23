@@ -1,21 +1,10 @@
 folder: xutq6PlRb2txgFmc
 name: Interruption du temps
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/light/torch-fire-orange.webp
 _id: QUOWdtjKbYKyL6aK
 system:
-  description: >-
-    <p>Après avoir lancé ce sort, le personnage bénéficie d’INT rounds complets
-    hors du temps durant lesquels il peut utiliser des sorts ou des objets
-    (potions) sur lui‑même. Il ne peut interagir avec son environnement, ni se
-    déplacer, seulement utiliser son propre équipement ou ses capacités sur
-    lui‑même.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Après avoir lancé ce sort, le personnage bénéficie d’INT rounds complets hors du temps durant lesquels il peut utiliser des sorts ou des objets (potions) sur lui‑même. Il ne peut interagir avec son environnement, ni se déplacer, seulement utiliser son propre équipement ou ses capacités sur lui‑même.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action \"actiovation du sort\" pour dépenser ses PM. Les effets sont gérés manuellement.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p105
   slug: interruption-du-temps
@@ -30,7 +19,23 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.QUOWdtjKbYKyL6aK
+      indice: 0
+      label: Activation du sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 5
 effects: []
@@ -45,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218084959
+  modifiedTime: 1748014864698
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!QUOWdtjKbYKyL6aK'
 

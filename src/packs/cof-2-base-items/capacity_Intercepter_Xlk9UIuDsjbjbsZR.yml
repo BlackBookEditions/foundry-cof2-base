@@ -1,23 +1,10 @@
 folder: Ifyem6JlARrUNmWT
 name: Intercepter
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/shield-block-bash-blue.webp
 _id: Xlk9UIuDsjbjbsZR
 system:
-  description: >-
-    <p>Une fois par round, le chevalier peut encaisser une attaque au contact ou
-    à distance à la place d’un allié à son contact. Il utilise sa DEF plutôt que
-    celle de la cible initiale et retranche son rang dans la voie aux DM (en cas
-    de synergie avec la capacité Piqûres d’insectes ou encaisser un coup, la
-    réduction des DM se cumule). Le joueur doit annoncer son intention
-    d’intercepter avant de connaître le résultat de l’attaque.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Une fois par round, le chevalier peut encaisser une attaque au contact ou à distance à la place d’un allié à son contact. Il utilise sa DEF plutôt que celle de la cible initiale et retranche son rang dans la voie aux DM (en cas de synergie avec la capacité Piqûres d’insectes ou encaisser un coup, la réduction des DM se cumule). Le joueur doit annoncer son intention d’intercepter avant de connaître le résultat de l’attaque.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action est actiivable pour appliquer un bonus à la RD égal au rang atteint dans la voie.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p85
   slug: intercepter
@@ -32,7 +19,30 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Xlk9UIuDsjbjbsZR
+      indice: 0
+      label: Nouvelle Action 1
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Xlk9UIuDsjbjbsZR
+          subtype: combat
+          target: dr
+          apply: self
+          value: '@rang'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
   rank: 2
 effects: []
@@ -47,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745559599679
+  modifiedTime: 1747857124284
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Xlk9UIuDsjbjbsZR'
 

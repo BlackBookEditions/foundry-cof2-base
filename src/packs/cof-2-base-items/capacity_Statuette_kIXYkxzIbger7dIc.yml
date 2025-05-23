@@ -1,0 +1,77 @@
+name: Statuette
+type: capacity
+img: icons/commodities/treasure/totem-wood-face-brown.webp
+system:
+  description: >-
+    <p style="text-align:justify">Le forgesort transforme son golem en statuette
+    d’une douzaine de centimètres de haut, recouverte de runes. Sous forme de
+    statuette, le golem ne peut pas agir, mais il bénéficie d’une RD 10. À tout
+    moment, le forgesort peut utiliser une action de mouvement pour jeter la
+    figurine au sol et lui rendre sa taille normale et toutes ses fonctions.</p>
+  source: ''
+  origin: Livre des règles p100
+  slug: statuette
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.2F3jh3LzgUzsSmqb
+      indice: 0
+      label: Sous forme de Statuette
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.2F3jh3LzgUzsSmqb
+          subtype: combat
+          target: dr
+          apply: self
+          value: '10'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947165438
+  modifiedTime: 1747949106452
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: kIXYkxzIbger7dIc
+sort: 700000
+_key: '!items!kIXYkxzIbger7dIc'
+

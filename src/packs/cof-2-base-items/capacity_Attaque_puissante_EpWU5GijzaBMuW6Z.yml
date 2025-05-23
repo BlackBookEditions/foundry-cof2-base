@@ -1,22 +1,10 @@
 folder: JMHjtxIQuvXayk5y
 name: Attaque puissante
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-sword-steel-yellow.webp
 _id: EpWU5GijzaBMuW6Z
 system:
-  description: >-
-    <p>Le guerrier peut choisir de s’imposer un dé malus sur une attaque au
-    contact et il ajoute +2d4° aux DM. Cette capacité peut être utilisée avec
-    Double attaque, Attaque circulaire ou Attaque parfaite (voir exemple).
-    Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM
-    au lieu de +2d4°.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Cette capacité propose 2 action d'attaque,la première (A) avec un dé
-    malus et +2d4°DM et la 2eme (L) avec un dé malus et +3d4°DM.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le guerrier peut choisir de s’imposer un dé malus sur une attaque au contact et il ajoute +2d4° aux DM. Cette capacité peut être utilisée avec Double attaque, Attaque circulaire ou Attaque parfaite (voir exemple). Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de +2d4°.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose 2 actions d'attaque, la première (A) avec un dé malus et +2d4°DM et la 2eme (L) avec un dé malus et +3d4°DM.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p88
   slug: attaque-puissante
@@ -34,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.EpWU5GijzaBMuW6Z
       indice: 0
-      label: Attaque puissante (A)
-      chatFlavor: Attaque puissante (A)
+      label: (A)
+      chatFlavor: (A)
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -70,7 +58,7 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EpWU5GijzaBMuW6Z
       indice: 1
-      label: Attaque puissante (L)
+      label: (L)
       chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
@@ -118,11 +106,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745650716502
+  modifiedTime: 1747893020620
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EpWU5GijzaBMuW6Z'
 

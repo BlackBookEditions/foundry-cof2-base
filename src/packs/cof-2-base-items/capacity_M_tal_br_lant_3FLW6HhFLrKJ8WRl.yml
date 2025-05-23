@@ -1,27 +1,10 @@
 folder: gnEAkqoWLwgvaxae
 name: Métal brûlant
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/fire/flame-burning-earth-yellow.webp
 _id: 3FLW6HhFLrKJ8WRl
 system:
-  description: >-
-    <p>Le forgesort doit réussir un test opposé d’attaque magique (portée 20 m)
-    pour faire chauffer un objet métallique porté par sa cible pendant [1d4+INT]
-    rounds. S’il s’agit d’une arme, elle inflige 1 DM par round à son porteur et
-    un malus de ‑2 aux tests d’attaque. S’il s’agit d’une armure, elle inflige
-    1d4° DM par round à son porteur (au tour du forgesort). La victime peut se
-    débarrasser précipitamment de son armure au prix d’une action limitée (elle
-    perd le bonus de DEF associé ; dans le cas d’un adversaire, le MJ devra
-    évaluer ce montant).</p><blockquote>
-
-    <p><strong>Usage en jeu :</strong></p>
-
-    <p>Cette capacité propose 2 actions d'attaque magique ne opposition. L'une
-    contre une arme l'autre contre une armure et va, en cas de réussite
-    provoquer des dégats périodique de type Feu. L'effet ne fonctionne qu'en
-    mode combat.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le forgesort doit réussir un test opposé d’attaque magique (portée 20 m) pour faire chauffer un objet métallique porté par sa cible pendant [1d4+INT] rounds. S’il s’agit d’une arme, elle inflige 1 DM par round à son porteur et un malus de ‑2 aux tests d’attaque. S’il s’agit d’une armure, elle inflige 1d4° DM par round à son porteur (au tour du forgesort). La victime peut se débarrasser précipitamment de son armure au prix d’une action limitée (elle perd le bonus de DEF associé ; dans le cas d’un adversaire, le MJ devra évaluer ce montant).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose 2 actions d'attaque magique en opposition. L'une contre une arme l'autre contre une armure et va, en cas de réussite provoquer des dommages périodique de type Feu. L'effet ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p99
   slug: metal-brulant
@@ -39,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.3FLW6HhFLrKJ8WRl
       indice: 0
-      label: Métal brûlant (M)* sur Arme
-      chatFlavor: Métal brûlant (M)* sur Arme
+      label: sur Arme
+      chatFlavor: sur Arme
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -58,7 +41,7 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@cible.def'
+            difficulty: '@oppose.atm'
           dmg:
             formula: '1'
           target:
@@ -78,8 +61,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.3FLW6HhFLrKJ8WRl
       indice: 1
-      label: Métal brûlant (M)* sur Armure
-      chatFlavor: Métal brûlant (M)* sur Armure
+      label: sur Armure
+      chatFlavor: sur Armure
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -97,7 +80,7 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@oppose.mag'
+            difficulty: '@oppose.atm'
           dmg:
             formula: 1d4°
           target:
@@ -129,11 +112,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745654663306
+  modifiedTime: 1747935202935
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!3FLW6HhFLrKJ8WRl'
 

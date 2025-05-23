@@ -1,0 +1,96 @@
+name: Forme de Félin
+type: capacity
+img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
+system:
+  description: >-
+    <p>Le forgesort peut améliorer son golem en choisissant une option parmi les
+    suivantes. Le joueur peut choisir une option différente supplémentaire à
+    chaque fois qu’il atteint le rang 5 dans une voie de forgesort.</p>
+
+    <ul>
+
+    <li><strong>Forme de félin</strong> : +3 en AGI et en DEF, dé bonus en
+    AGI</li>
+
+    </ul>
+  source: ''
+  origin: ''
+  slug: forme-de-felin
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.UvbzTFX1BFnkxuPN
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.UvbzTFX1BFnkxuPN
+          subtype: ability
+          target: agi
+          apply: self
+          value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.UvbzTFX1BFnkxuPN
+          subtype: bonusDice
+          target: agi
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.UvbzTFX1BFnkxuPN
+          subtype: combat
+          target: def
+          apply: self
+          value: '3'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947401562
+  modifiedTime: 1747949079363
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: IlkAIq7wvp7soPmJ
+sort: 900000
+_key: '!items!IlkAIq7wvp7soPmJ'
+

@@ -1,29 +1,10 @@
 folder: VbhrzBrHAAZb5crP
 name: Sort illusoire
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/lightning/bolt-strike-creature-pink.webp
 _id: EGVjiAJX5TqJWLu1
 system:
-  description: >-
-    <p>L’ensorceleur lance un sort d’attaque qui n’est qu’une illusion. Il
-    inflige [3d4°+CHA] DM contre une seule cible ou [2d4°+CHA] DM contre un
-    maximum de cibles égal au rang atteint. Le joueur peut décrire la nature du
-    sort à sa guise (une Explosion de feu, une nuée de criquets, une lance de
-    glace, etc.), son imagination demeurant sa seule limite. Chaque cible peut
-    faire un test de PER difficulté [10 + CHA de l’ensorceleur] pour ne subir
-    aucun DM. Les créatures sans esprit (créatures artificielles, certaines
-    plantes et morts‑vivants) sont immunisées à ce sort. Les PV perdus de cette
-    façon se récupèrent normalement.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
-    sort qui va automatiquement lancer les dégats. Au MJ de proposer le test
-    pour réduire les dégats et les appliquer. Note : Pour utiliser la
-    "concentration" faites SHIFT+CLIC sur l'action. Le nombre de cibles possible
-    est fixé sur "3" actuellmement à adapter en fonction du rang du joueur.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">L’ensorceleur lance un sort d’attaque qui n’est qu’une illusion. Il inflige [3d4°+CHA] DM contre une seule cible ou [2d4°+CHA] DM contre un maximum de cibles égal au rang atteint. Le joueur peut décrire la nature du sort à sa guise (une Explosion de feu, une nuée de criquets, une lance de glace, etc.), son imagination demeurant sa seule limite. Chaque cible peut faire un test de PER difficulté [10 + CHA de l’ensorceleur] pour ne subir aucun DM. Les créatures sans esprit (créatures artificielles, certaines plantes et morts‑vivants) sont immunisées à ce sort. Les PV perdus de cette façon se récupèrent normalement.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dommages. Au MJ de proposer le test pour réduire les dommages et les appliquer. Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action. Le nombre de cibles possible est fixé sur \"3\" actuellmement à adapter en fonction du rang du joueur.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p95
   slug: sort-illusoire
@@ -41,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.EGVjiAJX5TqJWLu1
       indice: 0
-      label: 'Sort illusoire (A)* : monocible'
-      chatFlavor: 'Sort illusoire (A)* : monocible'
+      label: monocible
+      chatFlavor: monocible
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -75,8 +56,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EGVjiAJX5TqJWLu1
       indice: 1
-      label: 'Sort illusoire (A)* : multicible'
-      chatFlavor: 'Sort illusoire (A)* : multicible'
+      label: multicible
+      chatFlavor: multicible
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -123,11 +104,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745653187753
+  modifiedTime: 1747929602091
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EGVjiAJX5TqJWLu1'
 

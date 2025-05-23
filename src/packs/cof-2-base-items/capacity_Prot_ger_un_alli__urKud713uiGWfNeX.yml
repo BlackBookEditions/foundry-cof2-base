@@ -1,25 +1,10 @@
 folder: yWOb0WkMiE4RTPF2
 name: Protéger un allié
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/shield-block-gray-orange.webp
 _id: urKud713uiGWfNeX
 system:
-  description: >-
-    <p>S’il n’est pas surpris, le guerrier peut accorder un bonus de DEF de +2 à
-    un allié à son contact contre une attaque par round. Il doit annoncer son
-    intention avant de connaître le résultat de l’attaque. De plus, vous ajoutez
-    votre rang + 2 à tous les tests destinés à éviter d’être
-    surpris</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Cette capacité gère le bonus permanent aux jet de caractéristique pour
-    éviter d'être surpris. Le bonus de +2 en DEF sur un alliés. De plus elle
-    propose une action qui si elle est activé après avoir ciblé un allié, va
-    appliquer un bonus de +2 en DEF pendant 1 round. Cet effet ne fonctionne
-    qu'en mode combat.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">S’il n’est pas surpris, le guerrier peut accorder un bonus de DEF de +2 à un allié à son contact contre une attaque par round. Il doit annoncer son intention avant de connaître le résultat de l’attaque. De plus, vous ajoutez votre rang + 2 à tous les tests destinés à éviter d’être surpris</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique pour éviter d'être surpris. Le bonus de +2 en DEF sur un alliés. De plus elle propose une action qui si elle est activé après avoir ciblé un allié, va appliquer un bonus de +2 en DEF pendant 1 round. Cet effet ne fonctionne qu'en mode combat.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p87
   slug: proteger-un-allie
@@ -56,7 +41,7 @@ system:
           target: per
           apply: self
           value: 2 + @rang
-          additionalInfos: eviter surprise
+          additionalInfos: éviter d'être surpris
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.urKud713uiGWfNeX
       indice: 1
@@ -90,7 +75,7 @@ system:
             number: 0
           additionalEffect:
             active: true
-            applyOn: success
+            applyOn: always
             formulaType: damage
             formula: ''
             elementType: ''
@@ -114,11 +99,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745561906242
+  modifiedTime: 1747891163024
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!urKud713uiGWfNeX'
 
