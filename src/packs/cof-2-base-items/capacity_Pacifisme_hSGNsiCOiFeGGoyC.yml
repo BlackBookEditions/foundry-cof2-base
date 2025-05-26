@@ -1,30 +1,10 @@
 folder: ZScjHcQPyF6P01Rx
 name: Pacifisme
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/holy/prayer-hands-glowing-yellow-green.webp
 _id: hSGNsiCOiFeGGoyC
 system:
-  description: >-
-    <p>Tant que le moine n’a réalisé aucune action offensive dans un combat, il
-    bénéficie d’un bonus de +5 en DEF et divise par deux tous les DM subis par
-    des attaques. De plus, il obtient un bonus égal à son rang + 2 à tous les
-    tests d’empathie (pour analyser l’état émotionnel d’un interlocuteur) ou à
-    ceux effectués pour apaiser un auditoire ou le convaincre de ne pas avoir
-    recours à la violence.</p><blockquote>
-
-    <p><strong>Usage en jeu :</strong> </p>
-
-    <p>2 actions : </p>
-
-    <p>1 buff permanent pour le bonus aux jet d'empathie</p>
-
-    <p>1 action activable/désactivable pour bénéficier du +5 en DEF. A activer
-    en debut de combat et désactiver dès que le joueur commence une action
-    offensive.</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p>Tant que le moine n’a réalisé aucune action offensive dans un combat, il bénéficie d’un bonus de +5 en DEF et divise par deux tous les DM subis par des attaques. De plus, il obtient un bonus égal à son rang + 2 à tous les tests d’empathie (pour analyser l’état émotionnel d’un interlocuteur) ou à ceux effectués pour apaiser un auditoire ou le convaincre de ne pas avoir recours à la violence.</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>2 actions :</p>\n<p>Une amélioration permanente pour le bonus aux jets d'empathie</p>\n<p>Une action activable/désactivable pour bénéficier du +5 en DEF. A activer en début de combat et désactiver dès que le joueur commence une action offensive.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p120
   slug: pacifisme
@@ -42,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 0
-      label: 'Pacifisme : Empathie'
-      chatFlavor: 'Pacifisme : Empathie'
+      label: Empathie
+      chatFlavor: Empathie
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -59,20 +39,20 @@ system:
           target: cha
           apply: self
           value: 2 + @rang
-          additionalInfos: empathie
+          additionalInfos: Analyser émotions - Apaiser un auditoire
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: skill
           target: int
           apply: self
           value: 2 + @rang
-          additionalInfos: empathie
+          additionalInfos: Analyser émotions - Apaiser un auditoire
       conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 1
-      label: 'Pacifisme : defense'
-      chatFlavor: 'Pacifisme : defense'
+      label: défense
+      chatFlavor: défense
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -105,11 +85,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745298713892
+  modifiedTime: 1748262735985
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!hSGNsiCOiFeGGoyC'
 

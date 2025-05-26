@@ -1,23 +1,10 @@
 folder: YjZHcT87vFz0S3Iq
 name: Lien de sang
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/unholy/projectiles-blood-salvo-red.webp
 _id: l7Uh1cpXFq3DtvJP
 system:
-  description: >-
-    <p>En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier
-    tisse un lien avec sa victime. Pendant INT minutes, la moitié des DM reçus
-    par le sorcier sont également subis par la cible (les DM infligés au sorcier
-    ne sont pas pour autant réduits) et le sorcier peut lui lancer un sort sans
-    la voir (si elle est à portée).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
-    sort qui va faire le test d'attaque magique le reste est à gérer à la main
-    par le MJ.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">En réussissant un test opposé d’attaque magique (portée 20 m), le sorcier tisse un lien avec sa victime. Pendant INT minutes, la moitié des DM reçus par le sorcier sont également subis par la cible (les DM infligés au sorcier ne sont pas pour autant réduits) et le sorcier peut lui lancer un sort sans la voir (si elle est à portée).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va faire le test d'attaque magique le reste est à gérer manuellement par le MJ.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p111
   slug: lien-de-sang
@@ -54,7 +41,7 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@oppose.mag'
+            difficulty: '@oppose.atm'
           dmg:
             formula: '0'
           target:
@@ -83,11 +70,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745223002956
+  modifiedTime: 1748191475113
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!l7Uh1cpXFq3DtvJP'
 

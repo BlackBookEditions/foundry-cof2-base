@@ -1,27 +1,10 @@
 folder: k5AmELUzuYNm1Cjd
 name: Langage des animaux
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/mammals/dog-husky-white-blue.webp
 _id: SSP64ci4a7ZE7ijG
 system:
-  description: >-
-    <p>Le druide sait communiquer avec les mammifères. La communication reste
-    primitive et limitée à l’intelligence de l’animal et à son point de vue
-    (prédateur, proie, etc.). De plus, il ajoute son rang + 2 à tous les tests
-    destinés à influencer un animal avec lequel il peut communiquer. Chaque fois
-    que le personnage atteint le rang 4 dans une voie de druide, il apprend à
-    communiquer avec une nouvelle catégorie d’animaux de son choix : les
-    oiseaux, les reptiles (et les amphibiens), les poissons (et les mollusques)
-    ou les arthropodes (insectes, araignées, scorpions, etc.) et enfin les
-    animaux fantastiques (griffon, pégase, etc.).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Il s'agit d'un bonus activable/desactivable à partir du moment où il est
-    appris. Au MJ de contrôler qu'il s'agit d'un animal avec lequel le druide
-    peux communiquer t de dire au joueur d'activer sa capacité</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le druide sait communiquer avec les mammifères. La communication reste primitive et limitée à l’intelligence de l’animal et à son point de vue (prédateur, proie, etc.). De plus, il ajoute son rang + 2 à tous les tests destinés à influencer un animal avec lequel il peut communiquer. Chaque fois que le personnage atteint le rang 4 dans une voie de druide, il apprend à communiquer avec une nouvelle catégorie d’animaux de son choix : les oiseaux, les reptiles (et les amphibiens), les poissons (et les mollusques) ou les arthropodes (insectes, araignées, scorpions, etc.) et enfin les animaux fantastiques (griffon, pégase, etc.).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le bonus pour influencer les animaux est permanent. Le PJ pourra le sélectionner dans la fenêtre du jet de CHA lorsqu'il communique avec le bon type d'animal. Le PJ notera les langages animaux connus sur la ligne langages de l'onglet Biographie</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p114
   slug: langage-des-animaux
@@ -46,9 +29,11 @@ system:
       properties:
         visible: false
         enabled: false
-        activable: true
-        temporary: true
+        activable: false
+        temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.SSP64ci4a7ZE7ijG
@@ -57,7 +42,6 @@ system:
           apply: self
           value: 2 + @rang
           additionalInfos: Influencer un animal
-      conditions: []
       resolvers: []
   cost: -1
   rank: 1
@@ -73,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745223805405
+  modifiedTime: 1748259077476
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!SSP64ci4a7ZE7ijG'
 

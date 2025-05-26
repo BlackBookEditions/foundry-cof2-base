@@ -1,28 +1,10 @@
 folder: 59NLi5B64imQxdoO
 name: Baies magiques
 type: capacity
-img: icons/svg/combat.svg
+img: icons/consumables/food/berries-ration-round-red.webp
 _id: j7pLaQESQ3WxcoPO
 system:
-  description: >-
-    <p>Le druide doit se trouver devant un buisson ou un arbre vivant. Son
-    incantation fait pousser PER fruits qu’il peut cueillir. Chaque fruit offre
-    l’équivalent d’un repas et rend [1d4°+rang] PV après 1 min à celui qui le
-    consomme. Les effets de ces fruits ne fonctionnent qu’une fois par jour et
-    par personnage. En plus de ce sort, le druide ajoute son rang + 2 à tous les
-    tests de vigilance et de discrétion en pleine nature.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>2 actions :</p>
-
-    <p>1 buff permanent sur les jet de discrétion et vigilance en milieu
-    naturel</p>
-
-    <p>1 action pour soigner de 1d4° PV les token ciblés par le joueur (max PER
-    cible à mettre à la main dans la capacité)</p>
-
-    </blockquote>
+  description: "<p>Le druide doit se trouver devant un buisson ou un arbre vivant. Son incantation fait pousser PER fruits qu’il peut cueillir. Chaque fruit offre l’équivalent d’un repas et rend [1d4°+rang] PV après 1 min à celui qui le consomme. Les effets de ces fruits ne fonctionnent qu’une fois par jour et par personnage. En plus de ce sort, le druide ajoute son rang + 2 à tous les tests de vigilance et de discrétion en pleine nature.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>2 actions :</p>\n<p>Une amélioration permanente sur les jets de discrétion et vigilance en milieu naturel</p>\n<p>Le MJ donne les droits au PJ de l'équipement consommable @UUID[Compendium.cof-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie magique}. Pour créer les Baies Magiques le PJ doit dépenser manuellement le PM et augmente la quantité de Baies Magiques en sa possession de PER.. Cette objet peut être donné par le personnage à ses compagnons ou à lui-même pour récupérer, une fois par jour, les PV. Le PJ devra rappeler aux possesseur de Baies Magiques de modifier la formule de Soin quand il apprend une nouvelle capacité de la Voie du Protecteur.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p116
   slug: baies-magiques
@@ -40,39 +22,6 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
       indice: 0
-      label: ''
-      chatFlavor: ''
-      type: heal
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        enabled: false
-        activable: true
-        temporary: false
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      resolvers:
-        - type: heal
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            formula: 1d4° + @rang
-          target:
-            type: multiple
-            number: 3
-            scope: allies
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          dmg: {}
-      modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
-      indice: 1
       label: Vigilance et discrétion en pleine nature
       chatFlavor: Vigilance et discrétion en pleine nature
       type: buff
@@ -114,11 +63,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745234024273
+  modifiedTime: 1748260426579
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!j7pLaQESQ3WxcoPO'
 

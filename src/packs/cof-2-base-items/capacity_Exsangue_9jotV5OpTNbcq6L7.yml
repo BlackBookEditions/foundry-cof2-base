@@ -1,22 +1,10 @@
 folder: YjZHcT87vFz0S3Iq
 name: Exsangue
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/unholy/hand-claw-glow-orange.webp
 _id: 9jotV5OpTNbcq6L7
 system:
-  description: >-
-    <p>Le corps du sorcier devient cadavérique. Il gagne +2 en DEF et ce bonus
-    passe à +3 au rang 5 (Si le personnage porte une armure autre qu’une armure
-    d’os de sorcier, le bonus est réduit de 1 point, donc +1 DEF et +2 DEF au
-    rang 5). De plus, lorsqu’il tombe à 0 PV, il peut continuer à agir, mais
-    avec un dé malus à tous ses tests. S’il subit encore au moins 1 DM, il
-    sombre dans l’inconscience.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le corps du sorcier devient cadavérique. Il gagne +2 en DEF et ce bonus passe à +3 au rang 5 (Si le personnage porte une armure autre qu’une armure d’os de sorcier, le bonus est réduit de 1 point, donc +1 DEF et +2 DEF au rang 5). De plus, lorsqu’il tombe à 0 PV, il peut continuer à agir, mais avec un dé malus à tous ses tests. S’il subit encore au moins 1 DM, il sombre dans l’inconscience.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. Le joueur devra indiquer -1 dans le deuxième Modificateur de la première action lorsqu'il porte la mauvaise armure.</p>\n<p>\"L'action activable/désactivable permet d'appliquer le dé malus à tous les tests lorsque le personnage est à 0 PV</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p110
   slug: exsangue
@@ -40,16 +28,71 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: combat
           target: def
+          apply: self
           value: '@rang[2,2,2,2,3]'
-      conditions: []
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          subtype: combat
+          target: def
+          apply: self
+          value: '0'
+          additionalInfos: appliquer -1 si mauvaise armure
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+      indice: 1
+      label: Lorsque 0 PV
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          subtype: malusDice
+          target: all
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          subtype: malusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          subtype: malusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          subtype: malusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 3
@@ -65,11 +108,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745222744430
+  modifiedTime: 1748191330117
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!9jotV5OpTNbcq6L7'
 

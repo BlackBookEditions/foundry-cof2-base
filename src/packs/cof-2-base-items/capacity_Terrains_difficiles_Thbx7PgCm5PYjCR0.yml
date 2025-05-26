@@ -1,21 +1,10 @@
 folder: dDlmKHRV7pMCI2OZ
 name: Terrains difficiles
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/root-vines-grow-brown.webp
 _id: Thbx7PgCm5PYjCR0
 system:
-  description: >-
-    <p>Le druide ne subit aucune pénalité de déplacement en terrain difficile
-    (natation, neige, boue, broussailles, pente abrupte, etc.). Il obtient un
-    bonus de +3 en initiative, et +1 en attaque et en DEF lors d’un combat dans
-    ces conditions.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Il s'agit d'un bonus activable/désactivable si le druide est dans les
-    conditions indiquées</p>
-
-    </blockquote>
+  description: "<p>Le druide ne subit aucune pénalité de déplacement en terrain difficile (natation, neige, boue, broussailles, pente abrupte, etc.). Il obtient un bonus de +3 en initiative, et +1 en attaque et en DEF lors d’un combat dans ces conditions.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus activable/désactivable si le druide est dans les conditions indiquées. Les modificateurs aux déplacements ne sont pas automatisées.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p116
   slug: terrains-difficiles
@@ -38,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -49,22 +39,37 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.Thbx7PgCm5PYjCR0
           subtype: combat
           target: melee
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Thbx7PgCm5PYjCR0
           subtype: combat
           target: def
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Thbx7PgCm5PYjCR0
           subtype: combat
           target: init
+          apply: self
           value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Thbx7PgCm5PYjCR0
           subtype: combat
           target: ranged
+          apply: self
           value: '1'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Thbx7PgCm5PYjCR0
+          subtype: combat
+          target: magic
+          apply: self
+          value: '1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 2
@@ -80,11 +85,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745223521666
+  modifiedTime: 1748259708014
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Thbx7PgCm5PYjCR0'
 

@@ -1,37 +1,16 @@
 folder: YPc1zPWaExLsjfnr
 name: Beauté de la succube
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/unholy/demon-female-succubus-orange.webp
 _id: sDxj4cifWOeZMlkg
 system:
-  description: >-
-    <p>Le sorcier acquiert une beauté fascinante pour INT minutes. Il gagne un
-    dé bonus aux tests de CHA ainsi qu’une attaque de contact nécessitant un
-    test d’attaque magique (contre DEF, action d’attaque), qui inflige
-    [1d4°+INT] DM. Le sorcier récupère autant de PV (sans dépasser son maximum
-    de PV) que la cible en a perdu</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Crée 2 actions lors de l'apprentissage.</p>
-
-    <p>1 action activable/déséactivable pour "lancer le sort" et bénéficier du
-    dé bonus en CHA</p>
-
-    <p>1 action d'attaque à n'utiliser QUE si le sort a été lancé et pendant la
-    durée du sort.</p>
-
-    <p>La récupération de PV n'est pas géré il faut le faire à la main</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p style=\"text-align:justify\">Le sorcier acquiert une beauté fascinante pour INT minutes. Il gagne un dé bonus aux tests de CHA ainsi qu’une attaque de contact nécessitant un test d’attaque magique (contre DEF, action d’attaque), qui inflige [1d4°+INT] DM. Le sorcier récupère autant de PV (sans dépasser son maximum de PV) que la cible en a perdu</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Crée 2 actions lors de l'apprentissage.</p>\n<p>1 action activable/désactivable pour \"lancer le sort\" et bénéficier du dé bonus en CHA Cette action consomme de PM.</p>\n<p>1 action d'attaque à n'utiliser QUE si le sort a été lancé et pendant la durée du sort. Cette action ne consomme pas de PM quand l'attaque est effectuée.</p>\n<p>La récupération de PV n'est pas géré il faut le faire à la main\_</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p108
   slug: beaute-de-la-succube
   tags: []
   subtype: ''
-  actionType: l
+  actionType: none
   learned: false
   charges:
     current: null
@@ -43,7 +22,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 0
-      label: ''
+      label: Activation et Dé Bonus CHA (L)
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -66,7 +45,7 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 1
-      label: ''
+      label: Attaque (A)
       chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
@@ -90,8 +69,8 @@ system:
             formula: 1d4° + @int
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
@@ -114,11 +93,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745221810895
+  modifiedTime: 1748189336845
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!sDxj4cifWOeZMlkg'
 

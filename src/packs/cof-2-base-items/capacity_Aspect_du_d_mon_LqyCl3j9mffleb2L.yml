@@ -1,20 +1,10 @@
 folder: YPc1zPWaExLsjfnr
 name: Aspect du démon
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/unholy/demon-fire-horned-mask.webp
 _id: LqyCl3j9mffleb2L
 system:
-  description: >-
-    <p>Le sorcier prend l’apparence d’un démon ailé pendant INT minutes. Il
-    gagne un dé bonus en attaque au contact et +5 en DEF et à tous les
-    tests.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Il s'agit d'un bonus activable/désactivable qui confère les bonus
-    indiqués</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le sorcier prend l’apparence d’un démon ailé pendant INT minutes. Il gagne un dé bonus en attaque au contact et +5 en DEF et à tous les tests physiques (FOR, AGI, CON), mais il ne peut pas utiliser d’arme (ni les arts martiaux). Il peut faire deux attaques de griffes à [1d4°+INT] DM à chaque tour, en action limitée (une seule en action d’attaque) et il peut voler de 10 m par action de mouvement.<br /><em>Note : Ne se cumule pas avec la Beauté de la succube.</em></p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>La première action est activable/désactivable et va consommer le mana et apporter les bonus de caractéristiques. La deuxièmes action, à utiliser 2 fois permet de faire les attaques de griffes (sasn cout de mana supplémentaires)</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p108
   slug: aspect-du-demon
@@ -37,10 +27,11 @@ system:
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -48,43 +39,56 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
           subtype: bonusDice
           target: melee
+          apply: self
           value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
           subtype: combat
           target: def
+          apply: self
           value: '5'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
           subtype: skill
           target: agi
+          apply: self
           value: '5'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
           subtype: skill
           target: con
+          apply: self
           value: '5'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
           subtype: skill
           target: for
+          apply: self
           value: '5'
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.LqyCl3j9mffleb2L
       indice: 1
-      label: ''
+      label: Deux attaques de griffes (L)
       chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
       conditions:
         - predicate: isLearned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atc'
             crit: ''
@@ -92,9 +96,16 @@ system:
           dmg:
             formula: 1d4° + @int
           target:
-            type: none
-            number: 0
+            type: single
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   cost: -1
   rank: 4
@@ -110,11 +121,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745222077545
+  modifiedTime: 1748189629944
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LqyCl3j9mffleb2L'
 

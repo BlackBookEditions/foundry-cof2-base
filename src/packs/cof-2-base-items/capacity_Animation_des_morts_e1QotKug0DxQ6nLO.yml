@@ -1,24 +1,10 @@
 folder: sldAcvtzn1e5nfOb
 name: Animation des morts
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/death/undead-zombie-grave-green.webp
 _id: e1QotKug0DxQ6nLO
 system:
-  description: >-
-    <p>Le sorcier anime le cadavre d’un humanoïde de taille moyenne, décédé
-    depuis moins d’INT jours. Le zombie comprend les ordres « Attaquer », «
-    Suivre », « Garder » et « Pas bouger ». Le sorcier peut contrôler un seul
-    zombie, plus un zombie chaque fois qu’il atteint le rang 5 dans une voie de
-    sorcier. Un zombie réduit à 0 PV tombe en poussière.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiquess. Au MJ
-    de créer un token
-    @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.Q7UD3oNlpy0ZnAxq]{Zombie}
-    et à donner des droits sur le joueur pour qu'il le contrôle.</p>
-
-    </blockquote>
+  description: "<p>Le sorcier anime le cadavre d’un humanoïde de taille moyenne, décédé depuis moins d’INT jours. Le zombie comprend les ordres « Attaquer », « Suivre », « Garder » et « Pas bouger ». Le sorcier peut contrôler un seul zombie, plus un zombie chaque fois qu’il atteint le rang 5 dans une voie de sorcier. Un zombie réduit à 0 PV tombe en poussière.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action pour acitver le sort et dépenser les PM. Au MJ de créer un token @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.Q7UD3oNlpy0ZnAxq]{Zombie} et à donner des droits sur le joueur pour qu'il le contrôle.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p109
   slug: animation-des-morts
@@ -33,7 +19,23 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.e1QotKug0DxQ6nLO
+      indice: 0
+      label: Activation du sort (A)
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 3
 effects: []
@@ -48,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1746471174504
+  modifiedTime: 1748190672601
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!e1QotKug0DxQ6nLO'
 

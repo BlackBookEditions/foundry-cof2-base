@@ -1,26 +1,10 @@
 folder: B8aQGGuHER8V7rfw
 name: Mains d’énergie
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/lightning/fist-unarmed-strike-blue-green.webp
 _id: 3uvqQoO59mVpLZC5
 system:
-  description: >-
-    <p>Par un effort de concentration, le moine peut rendre ses mains
-    intangibles. Au prix d’une action limitée, à son tour, il peut faire une
-    attaque à mains nues avec un bonus en attaque égal au rang + 2. De plus,
-    même lorsqu’il n’utilise pas Mains d’énergie, toutes les attaques à mains
-    nues du moine sont considérées comme magiques et il peut choisir de
-    remplacer sa FOR aux DM par sa VOL</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur peux cibler un token et utiliser cette action pour attaquer à
-    la place de combat à main nue. Il est aussi possible de modifier le "combat
-    à main nue" pour utiliser les mêmes éléments que cette capacité. A noter que
-    comme le dit la description il est possible de remplacer @for par @vol dans
-    la formule de dégat.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Par un effort de concentration, le moine peut rendre ses mains intangibles. Au prix d’une action limitée, à son tour, il peut faire une attaque à mains nues avec un bonus en attaque égal au rang + 2. De plus, même lorsqu’il n’utilise pas Mains d’énergie, toutes les attaques à mains nues du moine sont considérées comme magiques et il peut choisir de remplacer sa FOR aux DM par sa VOL</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p style=\"text-align:justify\">L'action peut être activée quand le personnage à l'équipement \"Mains Nues\" équipé et qu'il utilise cette capacité pour ajouter le bonus au jet d'attaque. Il devra penser à désactiver l'action ensuite. Le remplacement de la FOR par la VOL aux DM devra être faite directement sur l'équipement \"Mains Nues\" car d'autres capacités de Moines viendront modifier les caractéistiques de cet équipement tout au long du développement de personnage.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p119
   slug: mains-denergie
@@ -40,38 +24,25 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: melee
+      type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
-      resolvers:
-        - type: attack
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            formula: '@atc + 2 + @rang'
-            crit: ''
-            difficulty: '@cible.def'
-          dmg:
-            formula: 1d3 + @for
-          target:
-            type: single
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-      modifiers: []
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.3uvqQoO59mVpLZC5
+          subtype: combat
+          target: melee
+          apply: self
+          value: 2 + @rang
+          additionalInfos: ''
+      resolvers: []
   cost: -1
   rank: 1
 effects: []
@@ -86,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745262036842
+  modifiedTime: 1748261530783
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!3uvqQoO59mVpLZC5'
 

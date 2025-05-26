@@ -1,29 +1,10 @@
 folder: Efeq93uGyOmXHdsn
 name: Peau d’écorce
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/root-vines-face-glow-green.webp
 _id: 4RPKPoeJesl2LEmQ
 system:
-  description: >-
-    <p>La peau du druide prend la consistance de l’écorce. Il bénéficie d’un
-    bonus à la DEF égal à +2 pendant PER minutes. Ce bonus augmente de +1 aux
-    rangs 3 et 5. Les effets du sort ne sont pas cumulables au bonus d’une
-    armure métallique ou d’un autre sort de protection qui ajoute un bonus de
-    DEF (à l’exception du Masque du prédateur). En plus de ce sort, le druide
-    ajoute son rang + 2 aux tests pour identifier les plantes et connaître leurs
-    propriétés.</p><blockquote>
-
-    <p><strong>Usage en jeu :</strong></p>
-
-    <p>2 actions : </p>
-
-    <p>1 buff permanent qui augmente les jet pour identifier les plantes</p>
-
-    <p>1 action sur laquelle le joueur clic pour lancer le sort et s'appliquer à
-    lui même un "buff" de défense qui dure @per minutes. Ne fonctionne que
-    pendant un combat.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">La peau du druide prend la consistance de l’écorce. Il bénéficie d’un bonus à la DEF égal à +2 pendant PER minutes. Ce bonus augmente de +1 aux rangs 3 et 5. Les effets du sort ne sont pas cumulables au bonus d’une armure métallique ou d’un autre sort de protection qui ajoute un bonus de DEF (à l’exception du Masque du prédateur). En plus de ce sort, le druide ajoute son rang + 2 aux tests pour identifier les plantes et connaître leurs propriétés.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>2 actions :</p>\n<p>Une amélioration permanente qui augmente les jets pour identifier les plantes</p>\n<p>Une action activable pour lancer le sort et dépenser les PM. Elle applique le bonus de DEF sans prendre en compte la durée. Le PJ doit l'a désactiver lorsque le sort prend fin</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p117
   slug: peau-decorce
@@ -49,7 +30,7 @@ system:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -61,26 +42,7 @@ system:
           apply: self
           value: '@rang[2,2,3,3,3]'
           additionalInfos: ''
-      resolvers:
-        - type: buffDebuff
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: self
-            number: 0
-            scope: all
-          additionalEffect:
-            active: true
-            applyOn: always
-            formulaType: damage
-            formula: ''
-            elementType: ''
-            statuses: []
-            duration: '@per * 10'
-            unit: round
-            successThreshold: null
-          skill: {}
-          dmg: {}
+      resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 1
       label: ''
@@ -117,11 +79,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745224477791
+  modifiedTime: 1748260766522
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!4RPKPoeJesl2LEmQ'
 

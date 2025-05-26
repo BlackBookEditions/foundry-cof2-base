@@ -1,7 +1,7 @@
 folder: QbGU3agOtNxWKOdP
 name: Délivrance
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/life/heart-pink.webp
 _id: 0mj2HaVGeQE9KC9Y
 system:
   description: >-
@@ -11,11 +11,15 @@ system:
     paralysé, ralenti ou immobilisé), mais pas les mutilations ou les
     amputations. Si la pénalité était permanente, le MJ peut requérir un test
     d’attaque magique opposé et imposer un éventuel malus selon la force de
-    l’effet.</p><blockquote>
+    l’effet.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+    <p>L'action permet de réaliser une Attaque magique. Si une cible est
+    sélectionnée ce sera en opposition. L'action dépense les PM par contre pour
+    les pénalités de bases, le PJ dépense manuellement les PM.</p>
 
     </blockquote>
   source: ''
@@ -32,7 +36,43 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.0mj2HaVGeQE9KC9Y
+      indice: 0
+      label: contre les pénalités permanentes
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 3
 effects: []
@@ -47,11 +87,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745339466530
+  modifiedTime: 1748265407935
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!0mj2HaVGeQE9KC9Y'
 
