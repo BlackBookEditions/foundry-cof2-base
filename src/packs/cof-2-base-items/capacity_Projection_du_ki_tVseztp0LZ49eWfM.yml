@@ -1,24 +1,12 @@
 folder: B8aQGGuHER8V7rfw
 name: Projection du ki
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/lightning/bolt-strike-blue.webp
 _id: tVseztp0LZ49eWfM
 system:
-  description: >-
-    <p>Le moine projette une vague de force avec son corps et son esprit à une
-    distance maximale de 20 m. Un test d’attaque magique réussi lui permet
-    d’infliger [1d4°+ VOL] DM. Les DM passent à [2d4°+ VOL] au rang
-    4.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-    l'attaque qui va faire le test d'attaque magique contre la defense de la
-    cible et appliquer les dégâts.</p>
-
-    </blockquote>
+  description: "<p>Le moine projette une vague de force avec son corps et son esprit à une distance maximale de 20 m. Un test d’attaque magique réussi lui permet d’infliger [1d4°+ VOL] DM. Les DM passent à [2d4°+ VOL] au rang 4.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque magique contre la défense de la cible et appliquer les dommages.</p>\n</blockquote>"
   source: ''
-  origin: ''
+  origin: Livre des règles p119
   slug: projection-du-ki
   tags: []
   subtype: ''
@@ -53,11 +41,11 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '@oppose.mag'
+            difficulty: '@oppose.atm'
           dmg:
             formula: '@rang[1,1,1,2,2]d4°+ @vol'
           target:
-            type: none
+            type: single
             number: 0
             scope: all
           additionalEffect:
@@ -82,11 +70,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745265034696
+  modifiedTime: 1748261622436
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!tVseztp0LZ49eWfM'
 

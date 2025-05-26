@@ -1,24 +1,10 @@
 folder: 6kF2SRDxGbIkFQ06
 name: Armes de prédilection
 type: capacity
-img: icons/svg/combat.svg
+img: icons/weapons/swords/greatsword-guard-gem-blue.webp
 _id: IyygFzkrTAqjadsL
 system:
-  description: >-
-    <p>Le guerrier choisit une catégorie d’armes de prédilection parmi épées,
-    haches, masses, lances (épieu, lance, pique) et enfin armes de jet (dague de
-    lancer, javelot, etc.), et il gagne +1 en attaque lorsqu’il l’utilise une
-    arme de cette catégorie. De plus, vous ajoutez votre rang + 2 à tous les
-    tests destinés à estimer la valeur d’une arme ou la réputation martiale d’un
-    adversaire</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>La capacité gère le bonus permanent pour estimer une arme. Il est proposé
-    au MJ de rajouter le +1 directement sur l'arme en question pour éviter la
-    multiplication des action.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le guerrier choisit une catégorie d’armes de prédilection parmi épées, haches, masses, lances (épieu, lance, pique) et enfin armes de jet (dague de lancer, javelot, etc.), et il gagne +1 en attaque lorsqu’il l’utilise une arme de cette catégorie. De plus, vous ajoutez votre rang + 2 à tous les tests destinés à estimer la valeur d’une arme ou la réputation martiale d’un adversaire</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>\"Lorsque cette capacité est apprise, le joueur renseigne son arme de prédilection dans la Label de l'action à la place de (arme choisie). Si le joueur choisi \"Armes de jet\", il doit remplacer le Modificateur \"Attaque de contact\" par \"Attaque à distance\".</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p88
   slug: armes-de-predilection
@@ -63,6 +49,29 @@ system:
           additionalInfos: estimer valeur arme
       conditions: []
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+      indice: 1
+      label: Utilisation de (arme choisie)
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+          subtype: combat
+          target: melee
+          apply: self
+          value: '1'
+          additionalInfos: ''
+      resolvers: []
   cost: -1
   rank: 1
 effects: []
@@ -77,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745650893483
+  modifiedTime: 1747893423539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!IyygFzkrTAqjadsL'
 

@@ -1,22 +1,10 @@
 folder: 6kF2SRDxGbIkFQ06
 name: Attaque parfaite
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-sword-slashing-red.webp
 _id: bbBvchC1jtwPev2q
 system:
-  description: >-
-    <p>Vous obtenez un dé bonus en attaque au contact (ou à distance pour une
-    arme de lancer) et ajoutez +1d4° DM. Vous devez utiliser une arme de
-    prédilection. Éventuellement, le guerrier peut choisir de ne pas infliger
-    les DM de son attaque parfaite pour désarmer une cible dont le NC est
-    inférieur à son bonus de DM de spécialisation.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>La capacité propose une action activable/désactivable qui va ajouter un
-    dé bonus à l'attaque et +1d4° DM</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Vous obtenez un dé bonus en attaque au contact (ou à distance pour une arme de lancer) et ajoutez +1d4° DM. Vous devez utiliser une arme de prédilection. Éventuellement, le guerrier peut choisir de ne pas infliger les DM de son attaque parfaite pour désarmer une cible dont le NC est inférieur à son bonus de DM de spécialisation.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action permet de réaliser une attaque avec les valeurs de l'arme équipée en rajoutant un dé bonus ainsi qu'une augmentation de DM de 1d4°</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p89
   slug: attaque-parfaite
@@ -34,7 +22,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
       indice: 0
-      label: ''
+      label: utilisation de l'arme de prédilection
       chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
@@ -42,40 +30,32 @@ system:
         visible: false
         enabled: false
         activable: true
-        temporary: true
+        temporary: false
         noManaCost: false
       conditions:
         - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
-          subtype: combat
-          target: damMelee
-          apply: self
-          value: 1d4°
-          additionalInfos: ''
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
-          subtype: combat
-          target: damRanged
-          apply: self
-          value: 1d4°
-          additionalInfos: ''
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
-          subtype: bonusDice
-          target: melee
-          apply: self
-          value: '0'
-          additionalInfos: ''
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bbBvchC1jtwPev2q
-          subtype: bonusDice
-          target: ranged
-          apply: self
-          value: '0'
-          additionalInfos: ''
-      resolvers: []
+      resolvers:
+        - type: attack
+          bonusDiceAdd: true
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@arme.dmg + 1d4°'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 4
 effects: []
@@ -90,11 +70,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745651115244
+  modifiedTime: 1747893696763
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!bbBvchC1jtwPev2q'
 

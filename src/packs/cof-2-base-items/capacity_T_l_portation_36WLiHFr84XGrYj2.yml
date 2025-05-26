@@ -1,21 +1,10 @@
 folder: GGe86yLIgBeAfJNv
 name: Téléportation
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/movement/trail-streak-pink.webp
 _id: 36WLiHFr84XGrYj2
 system:
-  description: >-
-    <p>Une fois par jour, le magicien disparaît et réapparaît à un autre endroit
-    situé à moins de (niveau x INT) kilomètres. Le lieu d’arrivée doit être soit
-    en vue, soit parfaitement connu par le magicien. Le magicien peut emmener
-    avec lui un allié à partir du niveau 10, un deuxième au niveau 13, un
-    troisième au niveau 16 et enfin un quatrième au niveau 19.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le magicien disparaît et réapparaît à un autre endroit situé à moins de (niveau x INT) kilomètres. Le lieu d’arrivée doit être soit en vue, soit parfaitement connu par le magicien. Le magicien peut emmener avec lui un allié à partir du niveau 10, un deuxième au niveau 13, un troisième au niveau 16 et enfin un quatrième au niveau 19.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action \"activation du sort\" pour dépenser ses PM. Les effets sont gérés à la main</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p106
   slug: teleportation
@@ -30,7 +19,23 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.36WLiHFr84XGrYj2
+      indice: 0
+      label: Activation du sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 5
 effects: []
@@ -45,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218090829
+  modifiedTime: 1748015200841
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!36WLiHFr84XGrYj2'
 

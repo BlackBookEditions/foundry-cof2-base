@@ -1,0 +1,85 @@
+name: Baliste
+type: capacity
+img: icons/weapons/artillery/ballista-wood-green.webp
+system:
+  description: "<p>Le forgesort peut améliorer son golem en choisissant une option parmi les suivantes. Le joueur peut choisir une option différente supplémentaire à chaque fois qu’il atteint le rang 5 dans une voie de forgesort.</p>\n<ul>\n<li><strong>Baliste\_</strong>: portée 20 m, [1d4°+AGI] DM</li>\n</ul>"
+  source: ''
+  origin: ''
+  slug: baliste
+  subtype: ''
+  actionType: a
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.qDTXfteX3qNIqqQV
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: ranged
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4° +@agi
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947433768
+  modifiedTime: 1747949071021
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: fKApma8cDAsqdV02
+sort: 600000
+_key: '!items!fKApma8cDAsqdV02'
+

@@ -1,22 +1,10 @@
 folder: 4iBwDB99Hn3Aoj3o
 name: Résilient
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/life/cross-yellow-green.webp
 _id: EfHop1iuz48rEI1m
 system:
-  description: >-
-    <p>Désormais, il suffit de 10 min au guerrier pour bénéficier des effets
-    d’une récupération rapide (au lieu de 30 min) et cela passe à 5 min au rang
-    4 de la voie. De plus, le guerrier obtient un bonus égal au rang atteint
-    dans la voie pour tous les tests destinés à résister aux états étourdi et
-    affaibli.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Désormais, il suffit de 10 min au guerrier pour bénéficier des effets d’une récupération rapide (au lieu de 30 min) et cela passe à 5 min au rang 4 de la voie. De plus, le guerrier obtient un bonus égal au rang atteint dans la voie pour tous les tests destinés à résister aux états étourdi et affaibli.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le bonus au test de compétence pour résister est obtenu lorsque la capacité est apprise.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p90
   slug: resilient
@@ -51,7 +39,7 @@ system:
           target: con
           apply: self
           value: '@rang'
-          additionalInfos: vs étourdi/affaibli
+          additionalInfos: contre étourdi et affaibli
       conditions: []
       resolvers: []
   cost: -1
@@ -68,11 +56,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745561541462
+  modifiedTime: 1747893806952
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EfHop1iuz48rEI1m'
 

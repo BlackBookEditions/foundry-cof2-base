@@ -1,7 +1,7 @@
 folder: GGe86yLIgBeAfJNv
 name: Familier
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/birds/corvid-watchful-glowing-green.webp
 _id: sE5oeDW0bgTGMZ8B
 system:
   description: >-
@@ -13,12 +13,14 @@ system:
     1d4° PV en contrecoup. Toutefois, le maître pourra à nouveau invoquer son
     familier dès qu’il aura terminé une récupération complète (c’est toujours le
     même animal qui apparaît). Le familier récupère tous les PV perdus après une
-    récupération rapide.</p><blockquote>
+    récupération rapide.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu :</strong></p>
 
-    <p>Lorsque le familier est proche du joueur celui-ci "active" la capacité
-    qui lui donne alors son bonus. Si le familier s'éloigne ou est mort il faut
+    <p>Lorsque le familier est en vue du joueur celui-ci "active" la capacité
+    qui lui donne alors ses bonus. Si le familier s'éloigne ou est mort il faut
     désactiver cette capacité. Le MJ trouvera dans le compendium le
     @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.UgpkO1NHOnCogG8Q]{Familier}</p>
 
@@ -40,15 +42,16 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
       indice: 0
-      label: ''
+      label: Familier en vue
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: true
       conditions:
         - predicate: isLearned
       modifiers:
@@ -56,12 +59,16 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
           subtype: combat
           target: init
+          apply: self
           value: '2'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
           subtype: combat
           target: def
+          apply: self
           value: '2'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 2
@@ -77,11 +84,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1746470914898
+  modifiedTime: 1748015050972
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!sE5oeDW0bgTGMZ8B'
 

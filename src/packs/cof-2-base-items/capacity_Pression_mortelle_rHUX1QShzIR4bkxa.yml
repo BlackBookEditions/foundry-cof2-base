@@ -1,36 +1,16 @@
 folder: B8aQGGuHER8V7rfw
 name: Pression mortelle
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/beam-hand-leaves-green.webp
 _id: rHUX1QShzIR4bkxa
 system:
-  description: >-
-    <p>Le moine frappe les points par lesquels circule l’énergie vitale d’une
-    créature vivante. En touchant un point précis, il libère ensuite des effets
-    dévastateurs. Lorsqu’il combat à mains nues, le joueur peut choisir de ne
-    pas infliger immédiatement les DM de ses attaques, il les comptabilise à
-    part et ajoute +1d4° aux DM de chaque attaque. À tout moment dans l’heure
-    qui suit, il peut annoncer une Pression mortelle. Il doit alors réussir un
-    test d’attaque au contact contre la DEF de la cible (action limitée), ce qui
-    libère instantanément la totalité des DM infligés jusqu’alors. À partir du
-    niveau 10, le moine n’a plus besoin de toucher sa cible pour déclencher cet
-    effet ; dans ce cas, il remplace le test d’attaque au contact par un test
-    opposé d’attaque magique, mais n'a droit qu'à un seul essai.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiques pour le moment. En attente du codage des degats
-    temporaire</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p style=\"text-align:justify\">Le moine frappe les points par lesquels circule l’énergie vitale d’une créature vivante. En touchant un point précis, il libère ensuite des effets dévastateurs. Lorsqu’il combat à mains nues, le joueur peut choisir de ne pas infliger immédiatement les DM de ses attaques, il les comptabilise à part et ajoute +1d4° aux DM de chaque attaque. À tout moment dans l’heure qui suit, il peut annoncer une Pression mortelle. Il doit alors réussir un test d’attaque au contact contre la DEF de la cible (action limitée), ce qui libère instantanément la totalité des DM infligés jusqu’alors. À partir du niveau 10, le moine n’a plus besoin de toucher sa cible pour déclencher cet effet ; dans ce cas, il remplace le test d’attaque au contact par un test opposé d’attaque magique, mais n'a droit qu'à un seul essai.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p style=\"text-align:justify\">Trois actions sont configurées : La première \"Bonus aux DM\" est activable/désactivable. Elle permet d'augmenter les DM des attaques de contact de 1d4. Il faut bien vérifier que le personnage a les \"Mains Nues\" équipées.</p>\n<p style=\"text-align:justify\">La deuxième permet de réaliser l'attaque de contact avec les valeurs de l'arme équipée (soit les \"Mains Nues\") qui déclenchera l'application des DM à la cible. La troisième action est \"invisible\" lorsque la capacité est apprise. Lorsque le personnage atteint le Niveau 10, il doit supprimer la condition actuelle et appliquer la Condition \"est appris\" sur la troisième action pour qu'elle apparaisse dans la liste des actions de l'onglet Principal. Cette action permet de réaliser l'attaque magique pour l'application des DM sur la cible. Les DM ne sont pas comptabilisés automatiquement. Le MJ ou le PJ doit les noter à part et les appliquer lorsque l'attaque réussie.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p119
   slug: pression-mortelle
   tags: []
   subtype: ''
-  actionType: m
+  actionType: none
   learned: false
   charges:
     current: null
@@ -39,7 +19,103 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.rHUX1QShzIR4bkxa
+      indice: 0
+      label: Bonus aux DM (M)
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.rHUX1QShzIR4bkxa
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.rHUX1QShzIR4bkxa
+      indice: 1
+      label: Attaque déclencheuse (L)
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.rHUX1QShzIR4bkxa
+      indice: 2
+      label: Attaque magique déclencheuse (L)
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLinkedActionActivated
+          object: a remplacer par est appris au niv 10
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 4
 effects: []
@@ -54,11 +130,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745265131632
+  modifiedTime: 1748262353716
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!rHUX1QShzIR4bkxa'
 

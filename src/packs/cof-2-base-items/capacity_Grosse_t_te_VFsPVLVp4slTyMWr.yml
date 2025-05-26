@@ -1,27 +1,10 @@
 folder: yKyz7Mw2Tp54PuqT
 name: Grosse tête
 type: capacity
-img: icons/svg/combat.svg
+img: icons/sundries/scrolls/scroll-symbol-eye-brown.webp
 _id: VFsPVLVp4slTyMWr
 system:
-  description: >-
-    <p>Le forgesort remplace la force brutale par un peu de réflexion. Il peut
-    effectuer un test d’INT au lieu d’un test de FOR (par exemple, il utilise un
-    levier pour déplacer une lourde charge). De plus, au premier niveau, il peut
-    ajouter son INT à ses PV à la place de sa CON s’il le souhaite. Il ajoute
-    son rang + 2 à tous les tests de bricolage ou de science</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Cette capacité gère le bonus permanent aux jet de caractéristique de
-    bricolage et science.</p>
-
-    <p>Pour le remplacement de l'INT à la place de CON il faut le faire sur la
-    fiche de personnage dévérouillée directement.</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p style=\"text-align:justify\">Le forgesort remplace la force brutale par un peu de réflexion. Il peut effectuer un test d’INT au lieu d’un test de FOR (par exemple, il utilise un levier pour déplacer une lourde charge). De plus, au premier niveau, il peut ajouter son INT à ses PV à la place de sa CON s’il le souhaite. Il ajoute son rang + 2 à tous les tests de bricolage ou de science</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité gère le bonus permanent aux jet de caractéristique de bricolage et science.</p>\n<p>Pour le remplacement de l'INT à la place de CON il faut le faire sur la fiche de personnage dévérouillée directement.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p100
   slug: grosse-tete
@@ -56,14 +39,14 @@ system:
           target: agi
           apply: self
           value: 2 + @rang
-          additionalInfos: bricolage
+          additionalInfos: bricolage/science
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
           subtype: skill
           target: int
           apply: self
           value: 2 + @rang
-          additionalInfos: bricolage
+          additionalInfos: bricolage/science
       conditions: []
       resolvers: []
   cost: -1
@@ -80,11 +63,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745654290327
+  modifiedTime: 1747946744746
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!VFsPVLVp4slTyMWr'
 

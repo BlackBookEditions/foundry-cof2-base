@@ -1,51 +1,16 @@
 folder: ZOBCft8sYdHtOpj7
 name: Arme de lumière
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/fire/dagger-rune-enchant-flame-strong-teal.webp
 _id: YDNkr7rAPLIU4EOR
 system:
-  description: >-
-    <p>Ce sort permet d’enchanter l’arme du prêtre pour une durée de CHA
-    minutes. Elle produit de la lumière dans un rayon de 5 m et contre les
-    démons et les morts‑vivants, elle offre un dé bonus en attaque et ajoute
-    +1d4° aux DM. À partir du rang 5, le prêtre peut utiliser ce sort sur l’arme
-    d’un allié au prix d’une action limitée ou, s’il utilise le sort sur son
-    arme personnelle, infliger +2d4° DM (au lieu de 1d4°). Le sort prend
-    immédiatement fin si l’arme quitte les mains du prêtre.</p><blockquote>
-
-    <p><strong>Usage en jeu :</strong></p>
-
-    <p>2 actions :</p>
-
-    </blockquote>
-
-    <ul>
-
-    <li style="text-align:justify">
-
-    <blockquote>
-
-    <p>Une action activable/desactivable qui provoque 1Buff personnel qui
-    augmente les degats du prêtre (sur le prêtre pas sur l'arme)</p>
-
-    </blockquote>
-
-    </li>
-
-    <li style="text-align:justify">
-
-    <blockquote>Une action qui donne un effet de bonus sur une autre cible
-    pendant cha minutes utilisable uniquement en combat</blockquote>
-
-    </li>
-
-    </ul>
+  description: "<p style=\"text-align:justify\">Ce sort permet d’enchanter l’arme du prêtre pour une durée de CHA minutes. Elle produit de la lumière dans un rayon de 5 m et contre les démons et les morts‑vivants, elle offre un dé bonus en attaque et ajoute +1d4° aux DM. À partir du rang 5, le prêtre peut utiliser ce sort sur l’arme d’un allié au prix d’une action limitée ou, s’il utilise le sort sur son arme personnelle, infliger +2d4° DM (au lieu de 1d4°). Le sort prend immédiatement fin si l’arme quitte les mains du prêtre.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>2 actions :</p>\n<ul>\n<li style=\"text-align:justify\">Une action activable/désactivable qui provoque une amélioration personnelle qui augmente les DM du prêtre (sur le prêtre pas sur l'arme). Le PJ doit penser à désactiver l'amélioration quand l'effet prend fin</li>\n<li style=\"text-align:justify\">Une action qui donne un effet de bonus sur une autre cible pendant CHA minutes utilisable uniquement en combat. Arrivé au rang 5 de la voie, le PJ rajoute sur cette action la Condition \"est appris\" afin de faire apparaitre l'action sur l'onglet Principal.</li>\n</ul>\n</blockquote>"
   source: ''
   origin: Livre des règles p123
   slug: arme-de-lumiere
   tags: []
   subtype: ''
-  actionType: m
+  actionType: none
   learned: false
   charges:
     current: null
@@ -57,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
       indice: 0
-      label: Arme de lumière (soi)
-      chatFlavor: Arme de lumière (soi)
+      label: Son arme contre démons et morts-vivants (M)
+      chatFlavor: Son arme contre démons et morts-vivants (M)
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -77,11 +42,18 @@ system:
           apply: self
           value: '@rang[1d4°,1d4°,1d4°,1d4°,2d4°]'
           additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+          subtype: bonusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
       indice: 1
-      label: Arme de lumière (autres)
-      chatFlavor: Arme de lumière (autres)
+      label: Autre arme contre démons et morts-vivants (L)
+      chatFlavor: Autre arme contre démons et morts-vivants (L)
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -91,7 +63,8 @@ system:
         temporary: false
         noManaCost: false
       conditions:
-        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: a remplacer par "est appris" au rang 5
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
@@ -99,6 +72,13 @@ system:
           target: damMelee
           apply: others
           value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.YDNkr7rAPLIU4EOR
+          subtype: bonusDice
+          target: melee
+          apply: others
+          value: '0'
           additionalInfos: ''
       resolvers:
         - type: buffDebuff
@@ -110,7 +90,7 @@ system:
             number: 0
           additionalEffect:
             active: true
-            applyOn: success
+            applyOn: always
             formulaType: damage
             formula: ''
             elementType: ''
@@ -134,11 +114,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745302907887
+  modifiedTime: 1748263732690
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YDNkr7rAPLIU4EOR'
 

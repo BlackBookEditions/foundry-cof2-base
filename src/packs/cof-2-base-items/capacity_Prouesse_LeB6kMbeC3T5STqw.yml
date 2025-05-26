@@ -1,21 +1,10 @@
 folder: H1NxEJ0tQptud3eG
 name: Prouesse
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/holy/barrier-shield-winged-blue.webp
 _id: LeB6kMbeC3T5STqw
 system:
-  description: >-
-    <p>Le guerrier réussit souvent des exploits physiques hors‑norme. Une fois
-    par round, vous pouvez sacrifier 1d4° PV pour obtenir +5 sur un test de FOR
-    ou de CON. Vous pouvez annoncer l’utilisation de cette capacité après avoir
-    pris connaissance du résultat du test de caractéristique.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
-
-    </blockquote>
+  description: "<p>Le guerrier réussit souvent des exploits physiques hors‑norme. Une fois par round, vous pouvez sacrifier 1d4° PV pour obtenir +5 sur un test de FOR ou de CON. Vous pouvez annoncer l’utilisation de cette capacité après avoir pris connaissance du résultat du test de caractéristique.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>En activant l'action, le jet de Dommages est effectué et le bonus aux tests de compétences s'active. Le joueur doit désactiver l'action dès qu'il a effectué le ou les tests de compétence. Si le bonus est rajouté après avoir prit connaissance du résultat, l'action permet tout de même d'effectuer le jet de Dommages.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p90
   slug: prouesse
@@ -30,7 +19,55 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.LeB6kMbeC3T5STqw
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LeB6kMbeC3T5STqw
+          subtype: skill
+          target: for
+          apply: self
+          value: '5'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.LeB6kMbeC3T5STqw
+          subtype: skill
+          target: con
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 1d4°
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
   cost: -1
   rank: 2
 effects: []
@@ -45,11 +82,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745651217375
+  modifiedTime: 1747894094408
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!LeB6kMbeC3T5STqw'
 

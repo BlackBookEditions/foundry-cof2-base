@@ -1,26 +1,10 @@
 folder: VbhrzBrHAAZb5crP
 name: Mirage
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/tree-spirit-glow-black-yellow.webp
 _id: L6zxaUxCzAlVspRT
 system:
-  description: >-
-    <p>L’ensorceleur crée une illusion visuelle et sonore immobile d’une durée
-    de CHA minutes. Le volume maximal de l’illusion est de 2 m de côté par rang
-    dans la voie (portée 50 m). À partir du rang 4, l’illusion peut être animée,
-    mais dans ce cas sa durée est exprimée en rounds. En plus de ce sort,
-    l’ensorceleur ajoute son rang + 2 aux tests de supercherie ou à tout test
-    qui lui servirait à mentir.</p><p> </p>
-
-    <blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Les effets sont géré par le MJ
-    sauf le bonus permanence pour les test de supercherie/mensonge qui sont pris
-    en charge.</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">L’ensorceleur crée une illusion visuelle et sonore immobile d’une durée de CHA minutes. Le volume maximal de l’illusion est de 2 m de côté par rang dans la voie (portée 50 m). À partir du rang 4, l’illusion peut être animée, mais dans ce cas sa durée est exprimée en rounds. En plus de ce sort, l’ensorceleur ajoute son rang + 2 aux tests de supercherie ou à tout test qui lui servirait à mentir.</p>\n<p>\_</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Activer l'action permet de dépenser les PM. Les effets sont à gérer en jeu.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p95
   slug: mirage
@@ -58,6 +42,22 @@ system:
           additionalInfos: supercherie/mensonge
       conditions: []
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
+      indice: 1
+      label: Activer le sort (A)
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   cost: -1
   rank: 1
 effects: []
@@ -72,11 +72,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745653040195
+  modifiedTime: 1747929455249
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!L6zxaUxCzAlVspRT'
 

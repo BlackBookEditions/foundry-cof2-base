@@ -1,29 +1,10 @@
 folder: pOVOhysR0JO1MJMJ
 name: Arme élémentaire
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/fire/dagger-rune-enchant-flame-strong-purple-pink.webp
 _id: wdAXVnZj6da45OBk
 system:
-  description: >-
-    <p>Le magicien peut enchanter, en la touchant, une arme au contact ou à
-    distance pour INT minutes. S’il s’agit de son arme, l’incantation est une
-    action d’attaque (A) ; si elle appartient à autrui, c’est une action limitée
-    (L). Si l’arme change de main, le sort prend fin. L’arme inflige +1d4° DM de
-    feu, de froid, d’électricité ou d’acide en plus des DM habituels. Le
-    magicien doit choisir l’élément au moment de l’incantation. Tant qu’il tient
-    l’arme élémentaire en main, les sorts basés sur cet élément lui coûtent 1 PM
-    de moins pour être lancés (par exemple, Mains brûlantes ou Explosion de feu
-    s’il a enflammé son bâton). Ce sort ne fait aucun effet sur une arme qui
-    bénéficie déjà d’un bonus élémentaire aux DM.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur cible le personnage possédant l'arme à améliorer puis clique
-    sur l'action pour lancer le sort qui va faire appliquer un "bonus" de dégat
-    à la cible pendant la durée du sort. L'automatisation du bonus ne fonctionne
-    qu'en combat</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le magicien peut enchanter, en la touchant, une arme au contact ou à distance pour INT minutes. S’il s’agit de son arme, l’incantation est une action d’attaque (A) ; si elle appartient à autrui, c’est une action limitée (L). Si l’arme change de main, le sort prend fin. L’arme inflige +1d4° DM de feu, de froid, d’électricité ou d’acide en plus des DM habituels. Le magicien doit choisir l’élément au moment de l’incantation. Tant qu’il tient l’arme élémentaire en main, les sorts basés sur cet élément lui coûtent 1 PM de moins pour être lancés (par exemple, Mains brûlantes ou Explosion de feu s’il a enflammé son bâton). Ce sort ne fait aucun effet sur une arme qui bénéficie déjà d’un bonus élémentaire aux DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur cible le personnage possédant l'arme à améliorer puis clique sur l'action pour lancer le sort qui va faire appliquer un \"bonus\" de dégat à la cible pendant la durée du sort. L'automatisation du bonus ne fonctionne qu'en combat. La réduction en PM n'est pas automatisée</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p104
   slug: arme-elementaire
@@ -43,7 +24,7 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
+      type: spell
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -71,7 +52,7 @@ system:
             number: 0
           additionalEffect:
             active: true
-            applyOn: success
+            applyOn: always
             formulaType: damage
             formula: ''
             elementType: ''
@@ -95,11 +76,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745218341811
+  modifiedTime: 1748014050399
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wdAXVnZj6da45OBk'
 

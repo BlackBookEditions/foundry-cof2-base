@@ -1,28 +1,10 @@
 folder: ZScjHcQPyF6P01Rx
 name: Projection mentale
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/light/explosion-star-glow-silhouette.webp
 _id: EHgNa5ZLRJC5mGcr
 system:
-  description: >-
-    <p>Une fois par jour, le moine entre en méditation et projette son esprit
-    hors de son corps pendant [1d4°+VOL] minutes. Il ressemble à un ectoplasme
-    de couleur blanche qui se déplace en volant à la vitesse de 10 m par round.
-    Il peut passer au travers des murs, mais pas des êtres vivants ou des
-    barrières magiques. Le moine ne perçoit le monde que par sa projection
-    mentale, mais ressent les DM qui sont infligés à son corps. Il peut utiliser
-    cette capacité une fois de plus chaque jour par rang 5 atteint dans une
-    autre voie de moine. De plus le moine augmente définitivement de +1 la
-    valeur de sa plus faible caractéristique (choisir en cas
-    d’égalité).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Une amélioration de chaque caractéristique est proposé ici, il faut après
-    copie sur le personnage, supprimer les caractéristiques non choisies (sinon
-    le personnage aura +1 partout !)</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Une fois par jour, le moine entre en méditation et projette son esprit hors de son corps pendant [1d4°+VOL] minutes. Il ressemble à un ectoplasme de couleur blanche qui se déplace en volant à la vitesse de 10 m par round. Il peut passer au travers des murs, mais pas des êtres vivants ou des barrières magiques. Le moine ne perçoit le monde que par sa projection mentale, mais ressent les DM qui sont infligés à son corps. Il peut utiliser cette capacité une fois de plus chaque jour par rang 5 atteint dans une autre voie de moine. De plus le moine augmente définitivement de +1 la valeur de sa plus faible caractéristique (choisir en cas d’égalité).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action configurée permet d'augmenter une caractéristique du personnage. Elle est configurée de base sur AGI et le PJ devra modifier la caractéristique avec l'une des plus faibles dans la liste déroulante du Modificateur. Les effets de la projection mentale ne sont pas gérés. Le PJ peut augmenter le nombre d'utilisation quotidienne dans l'onglet Détails à chaque fois qu'il apprend un rang 5 d'une voie de Moine</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p120
   slug: projection-mentale
@@ -46,46 +28,20 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
           subtype: ability
           target: agi
+          apply: self
           value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: con
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: for
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: per
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: cha
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: int
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.EHgNa5ZLRJC5mGcr
-          subtype: ability
-          target: vol
-          value: '1'
-      conditions: []
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 5
@@ -102,11 +58,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745299193266
+  modifiedTime: 1748262846890
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EHgNa5ZLRJC5mGcr'
 

@@ -1,0 +1,67 @@
+folder: Mk150objugy9rjt4
+name: Runes de défenses
+type: capacity
+img: icons/magic/defensive/shield-barrier-flaming-diamond-acid.webp
+_id: 22sh33wQB4mZACLT
+system:
+  description: "<p>Le forgesort inscrit des runes de protection sur l’ensemble de son équipement et parfois jusque sur sa peau. Il obtient un bonus de +2 en DEF. Ce bonus augmente de +1 au rang 3 puis au rang 5. S’il possède un golem, il peut inscrire les runes sur celui‑ci avec le même effet.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité gère le bonus permanent en DEF. Elle est prévu pour le golem si le PJ lui inscrit les runes dessus mais il faut adapter le bonus de DEF à son rang</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p101
+  slug: runes-de-defenses
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.22sh33wQB4mZACLT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.22sh33wQB4mZACLT
+          subtype: combat
+          target: def
+          apply: self
+          value: '2'
+          additionalInfos: a remplacer selon rang du pj
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747948897856
+  modifiedTime: 1747949021681
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!22sh33wQB4mZACLT'
+

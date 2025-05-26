@@ -1,22 +1,10 @@
 folder: dDlmKHRV7pMCI2OZ
 name: Bâton de druide
 type: capacity
-img: icons/svg/combat.svg
+img: icons/weapons/staves/staff-vines-green.webp
 _id: StkMXorDFTc07Hhi
 system:
-  description: >-
-    <p>Le druide combat avec les deux extrémités de son bâton de bois noueux (ou
-    de son épieu). Lorsqu’il utilise cette capacité, il effectue deux attaques
-    de contact pour lesquelles il peut remplacer sa FOR par son AGI en attaque
-    s’il le souhaite. Il inflige [1d4°+FOR ou AGI au choix] DM par attaque (plus
-    d’éventuels bonus si l’arme est magique) et il gagne +2 en DEF pendant 1
-    round.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>A gérer à la main par le MJ, pour l'instant pour l'instant</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le druide combat avec les deux extrémités de son bâton de bois noueux (ou de son épieu). Lorsqu’il utilise cette capacité, il effectue deux attaques de contact pour lesquelles il peut remplacer sa FOR par son AGI en attaque s’il le souhaite. Il inflige [1d4°+FOR ou AGI au choix] DM par attaque (plus d’éventuels bonus si l’arme est magique) et il gagne +2 en DEF pendant 1 round.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">Les deux actions permettent de réaliser une attaque de contact (soit avec FOR soit avec AGI). En activant l'action, l'attaque est réalisée et un bonus de DEF s'ajoute. Pour faire la deuxième attaque, il faut cliquer pour désactiver l'action et recliquer pour l'exécuter à nouveau. Le PJ ne doit pas oublier de désactiver l'action au début de son prochain tour.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p116
   slug: baton-de-druide
@@ -31,7 +19,93 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.StkMXorDFTc07Hhi
+      indice: 0
+      label: Attaque avec FOR
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.StkMXorDFTc07Hhi
+          subtype: combat
+          target: def
+          apply: self
+          value: '2'
+          additionalInfos: ''
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4° + @for
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+    - source: Compendium.cof-base.cof-2-base-items.Item.StkMXorDFTc07Hhi
+      indice: 1
+      label: Attaque avec AGI
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.StkMXorDFTc07Hhi
+          subtype: combat
+          target: def
+          apply: self
+          value: '2'
+          additionalInfos: ''
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill -@for +@agi'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d4° + @fagi
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
   cost: -1
   rank: 3
 effects: []
@@ -46,11 +120,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745223605533
+  modifiedTime: 1748259905687
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!StkMXorDFTc07Hhi'
 

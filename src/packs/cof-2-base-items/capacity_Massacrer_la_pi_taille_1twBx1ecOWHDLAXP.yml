@@ -1,20 +1,22 @@
 folder: j9Tsmv7MRSCYWPAr
 name: Massacrer la piétaille
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/spear-tips-three-purple.webp
 _id: 1twBx1ecOWHDLAXP
 system:
   description: >-
-    <p>Le chevalier ajoute +1d4° aux DM contre la piétaille. S’il y a au moins 4
-    créatures aux statistiques semblables impliquées dans le combat, elles sont
-    assimilées à de la piétaille (même si leur nombre est par la suite réduit à
-    moins de 4 au cours du combat). Les cavaliers ne sont jamais considérés
-    comme de la piétaille</p><blockquote>
+    <p style="text-align:justify">Le chevalier ajoute +1d4° aux DM contre la
+    piétaille. S’il y a au moins 4 créatures aux statistiques semblables
+    impliquées dans le combat, elles sont assimilées à de la piétaille (même si
+    leur nombre est par la suite réduit à moins de 4 au cours du combat). Les
+    cavaliers ne sont jamais considérés comme de la piétaille</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
-    appliquer le bonus de DM.A activer contre la pietaille.</p>
+    appliquer le bonus de DM. A activer contre la pietaille.</p>
 
     </blockquote>
   source: ''
@@ -44,6 +46,8 @@ system:
         activable: true
         temporary: true
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.1twBx1ecOWHDLAXP
@@ -51,8 +55,7 @@ system:
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: Piétaille
-      conditions: []
+          additionalInfos: contre la piétaille
       resolvers: []
   cost: -1
   rank: 4
@@ -68,11 +71,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745471838279
+  modifiedTime: 1747863327760
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!1twBx1ecOWHDLAXP'
 

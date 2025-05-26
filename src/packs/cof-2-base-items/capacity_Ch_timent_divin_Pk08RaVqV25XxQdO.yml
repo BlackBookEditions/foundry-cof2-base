@@ -1,21 +1,23 @@
 folder: F7Tt7sG8uNUrJciv
 name: Châtiment divin
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/sword-winged-holy-orange.webp
 _id: Pk08RaVqV25XxQdO
 system:
   description: >-
     <p>Le prêtre effectue une attaque de contact avec un dé bonus et ajoute son
     CHA aux dommages. De plus, lorsqu’il utilise cette capacité, le prêtre peut
     dépenser 1 PM pour ajouter +1d4° aux DM d’une attaque au contact qui touche.
-    Au rang 5, il peut dépenser 2 PM pour ajouter +2d4°.</p><blockquote>
+    Au rang 5, il peut dépenser 2 PM pour ajouter +2d4°.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu:</strong></p>
 
-    <p>La capacité a été décomposée en 3 actions d'attaque : </p>
+    <p>La capacité a été décomposée en 3 actions d'attaques :</p>
 
     <p>La première est une attaque de base ajoutant le CHA du prêtre aux
-    degat</p>
+    dommages</p>
 
     <p>La deuxieme inflige en plus 1d4° (mais le joueur doit payer manuellement
     1PM en plus)</p>
@@ -23,8 +25,9 @@ system:
     <p>La troisième inflige en plus 2d4° (mais le joueur doit payer manuellement
     2PM en plus)</p>
 
-    <p>Remarque : On ne vérifie pas que le personnage est rang 5 pour pouvoir
-    utilsier la dernière attaque</p>
+    <p>Remarque : Lorsque le personnage atteint le rang 5 dans cette voie, il
+    doit remplacer la Condition actuelle par "est appris" à la troisième action
+    afin qu'elle apparaisse dans la liste de l'onglet Principal.</p>
 
     </blockquote>
   source: ''
@@ -58,7 +61,7 @@ system:
         - predicate: isLearned
       resolvers:
         - type: attack
-          bonusDiceAdd: false
+          bonusDiceAdd: true
           malusDiceAdd: false
           skill:
             formula: '@arme.skill'
@@ -94,7 +97,7 @@ system:
         - predicate: isLearned
       resolvers:
         - type: attack
-          bonusDiceAdd: false
+          bonusDiceAdd: true
           malusDiceAdd: false
           skill:
             formula: '@arme.skill'
@@ -127,10 +130,11 @@ system:
         temporary: false
         noManaCost: false
       conditions:
-        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: a remplacer pr "est appris" au rang 5
       resolvers:
         - type: attack
-          bonusDiceAdd: false
+          bonusDiceAdd: true
           malusDiceAdd: false
           skill:
             formula: '@arme.skill'
@@ -164,11 +168,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745321283955
+  modifiedTime: 1748264241576
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Pk08RaVqV25XxQdO'
 

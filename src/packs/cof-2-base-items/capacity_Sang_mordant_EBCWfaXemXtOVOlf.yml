@@ -1,29 +1,10 @@
 folder: YjZHcT87vFz0S3Iq
 name: Sang mordant
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/acid/dissolve-drip-droplet-smoke.webp
 _id: EBCWfaXemXtOVOlf
 system:
-  description: >-
-    <p>Pendant INT minutes, le sang du sorcier se transforme en un acide qui
-    gicle lorsqu’il subit une blessure. Chaque fois qu’un ennemi au contact le
-    blesse, ce dernier subit 1d4° DM d’acide</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Crée 2 actions lors de l'apprentissage. Sang mordant : degat et Sang
-    mordant : activation</p>
-
-    <p>L'activation permet d'activer le sort (et dépnser les PM) et applique un
-    "buff" (qui ne fait rien) sur le personnage pendant la durée du sort.</p>
-
-    <p>Le "dégat" : si une créature a fait des dégats au joueur, celui ci cible
-    la créature et clique sur "Sang mordant : degat" qui va lancer les dégats
-    d'acide.</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p>Pendant INT minutes, le sang du sorcier se transforme en un acide qui gicle lorsqu’il subit une blessure. Chaque fois qu’un ennemi au contact le blesse, ce dernier subit 1d4° DM d’acide</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Crée 2 actions lors de l'apprentissage.\_</p>\n<p>L'activation permet d'activer le sort, en dépensant les PM, et applique une \"Amélioration\" (qui ne fait rien) sur le personnage pendant la durée du sort.</p>\n<p>L'action \"Dommages\" permet de jeter un jet de Dommages en cliquant sur l'action. Si une créature blesse le personnage, ce dernier cible la créature et clique sur l'action \"Dommages\" qui va lancer les dommages d'acide.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p110
   slug: sang-mordant
@@ -41,8 +22,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
       indice: 0
-      label: 'Sang mordant : activation'
-      chatFlavor: 'Sang mordant : activation'
+      label: activation
+      chatFlavor: activation
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -76,8 +57,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
       indice: 1
-      label: 'Sang mordant : degat'
-      chatFlavor: 'Sang mordant : degat'
+      label: dommages
+      chatFlavor: dommages
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -122,11 +103,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745222659258
+  modifiedTime: 1748191112231
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!EBCWfaXemXtOVOlf'
 

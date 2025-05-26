@@ -1,23 +1,10 @@
 folder: 59NLi5B64imQxdoO
 name: Forme d’arbre
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/tree-animated-strike.webp
 _id: Qcw2VBJCkY2JD3XF
 system:
-  description: >-
-    <p>Le druide peut se transformer en arbre (environ 5 m de hauteur) pendant
-    PER minutes. Il prend les mêmes caractéristiques (à l’exception de l’INT, de
-    la PER et de la VOL) que l’arbre animé (voir plus loin), y compris les PV.
-    Sous cette forme, il ne peut pas parler, mais peut utiliser les sorts des
-    voies du protecteur et des végétaux. À la fin du sort, ou s’il est réduit à
-    0 PV, il reprend forme humaine et retrouve les PV que le personnage avait au
-    début du sort.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Le druide peut se transformer en arbre (environ 5 m de hauteur) pendant PER minutes. Il prend les mêmes caractéristiques (à l’exception de l’INT, de la PER et de la VOL) que l’arbre animé (voir plus loin), y compris les PV. Sous cette forme, il ne peut pas parler, mais peut utiliser les sorts des voies du protecteur et des végétaux. À la fin du sort, ou s’il est réduit à 0 PV, il reprend forme humaine et retrouve les PV que le personnage avait au début du sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action pour activer le sort et consommer ses PM. Le MJ donne les droits au Druide sur @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.oJMOXZ4nlh1izQB7]{Arbre animé} pour qu'il l'utilise lorsqu'il en prend la forme. Il utilisera sa propre feuille pour les INT, PER et VOL et les valeurs de l'Arbre Animé pour le reste. Le PJ doit noter à part ses PV au moment d'utiliser le sort afin de les rajouter lorsqu'il reprend sa forme</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p117
   slug: forme-darbre
@@ -32,7 +19,39 @@ system:
     spell: true
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Qcw2VBJCkY2JD3XF
+      indice: 0
+      label: Activer le sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 5
 effects: []
@@ -47,11 +66,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745234486131
+  modifiedTime: 1748261117689
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Qcw2VBJCkY2JD3XF'
 

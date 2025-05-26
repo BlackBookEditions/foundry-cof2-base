@@ -1,0 +1,96 @@
+name: Cerveau Amélioré
+type: capacity
+img: icons/skills/wounds/anatomy-organ-brain-pink-red.webp
+system:
+  description: >-
+    <p>Le forgesort peut améliorer son golem en choisissant une option parmi les
+    suivantes. Le joueur peut choisir une option différente supplémentaire à
+    chaque fois qu’il atteint le rang 5 dans une voie de forgesort.</p>
+
+    <ul>
+
+    <li><strong>Cerveau amélioré</strong> : +2 en INT, PER et CHA, doué de
+    parole</li>
+
+    </ul>
+  source: ''
+  origin: ''
+  slug: cerveau-ameliore
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.U3N4okkRRswWv70i
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.U3N4okkRRswWv70i
+          subtype: ability
+          target: int
+          apply: self
+          value: '2'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.U3N4okkRRswWv70i
+          subtype: ability
+          target: per
+          apply: self
+          value: '2'
+          additionalInfos: ''
+        - type: capacity
+          source: Item.U3N4okkRRswWv70i
+          subtype: ability
+          target: cha
+          apply: self
+          value: '2'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947517509
+  modifiedTime: 1747949075336
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: pbLtV4CjKiAROkMy
+sort: 300000
+_key: '!items!pbLtV4CjKiAROkMy'
+

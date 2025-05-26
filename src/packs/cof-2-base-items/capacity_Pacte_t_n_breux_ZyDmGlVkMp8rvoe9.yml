@@ -1,26 +1,10 @@
 folder: KbhQw1DCiX1n3Wvx
 name: Pacte ténébreux
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/unholy/orb-hands-pink.webp
 _id: ZyDmGlVkMp8rvoe9
 system:
-  description: >-
-    <p>Le sorcier augmente sa CON de +1. Désormais, il obtient un dé bonus aux
-    tests de CON et voit dans le noir comme s’il s’agissait de pénombre. De
-    plus, lorsqu’il lance un sort, il peut sacrifier 1d4° PV pour ajouter +2d4°
-    aux DM de ce sort. S’il s’agit d’un sort dont les DM durent de round en
-    round (comme strangulation), il peut sacrifier 1d4° PV chaque
-    round.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Seul les bonus permanent sontr géré et activé à partir du moment où il
-    est appris. Le sacrifice de PV pour augmenter les DM et A gérer à la main
-    par le MJ, pour l'instant</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p>Le sorcier augmente sa CON de +1. Désormais, il obtient un dé bonus aux tests de CON et voit dans le noir comme s’il s’agissait de pénombre. De plus, lorsqu’il lance un sort, il peut sacrifier 1d4° PV pour ajouter +2d4° aux DM de ce sort. S’il s’agit d’un sort dont les DM durent de round en round (comme strangulation), il peut sacrifier 1d4° PV chaque round.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Seul les bonus permanents sont gérés et activés à partir du moment où il est appris. Le sacrifice de PV pour augmenter les DM et a gérer à la main par le MJ, pour l'instant</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p111
   slug: pacte-tenebreux
@@ -44,26 +28,34 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ZyDmGlVkMp8rvoe9
           subtype: ability
           target: con
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ZyDmGlVkMp8rvoe9
           subtype: bonusDice
           target: con
+          apply: self
           value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ZyDmGlVkMp8rvoe9
           subtype: state
           target: darkvision
+          apply: self
           value: '1'
-      conditions: []
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 5
@@ -79,11 +71,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745221336269
+  modifiedTime: 1748191850619
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ZyDmGlVkMp8rvoe9'
 

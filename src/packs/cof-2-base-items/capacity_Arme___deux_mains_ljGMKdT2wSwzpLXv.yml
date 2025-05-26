@@ -1,0 +1,81 @@
+name: Arme à deux mains
+type: capacity
+img: icons/weapons/swords/greatsword-evil-green.webp
+system:
+  description: >-
+    <p>Le forgesort peut améliorer son golem en choisissant une option parmi les
+    suivantes. Le joueur peut choisir une option différente supplémentaire à
+    chaque fois qu’il atteint le rang 5 dans une voie de forgesort.</p>
+
+    <ul>
+
+    <li><strong>Arme à deux mains</strong> : +1d4° aux DM au contact</li>
+
+    </ul>
+  source: ''
+  origin: ''
+  slug: arme-a-deux-mains
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.B7mSEFn5fBt73kgN
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.B7mSEFn5fBt73kgN
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: +1d4°
+          additionalInfos: remplacer par le d4° de PJ
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Mk150objugy9rjt4
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags:
+  exportSource:
+    world: cof-v2-90
+    system: co
+    coreVersion: '12.331'
+    systemVersion: 12.331.0
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1747947407887
+  modifiedTime: 1747949058922
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: ljGMKdT2wSwzpLXv
+sort: 400000
+_key: '!items!ljGMKdT2wSwzpLXv'
+

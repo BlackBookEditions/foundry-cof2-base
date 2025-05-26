@@ -1,7 +1,7 @@
 folder: sldAcvtzn1e5nfOb
 name: Armure d’os
 type: capacity
-img: icons/svg/combat.svg
+img: icons/equipment/chest/robe-collared-pink.webp
 _id: hWnCExHhFmCXd3fk
 system:
   description: >-
@@ -41,18 +41,19 @@ system:
       properties:
         visible: false
         enabled: false
-        activable: false
-        temporary: false
+        activable: true
+        temporary: true
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.hWnCExHhFmCXd3fk
           subtype: combat
           target: def
           apply: self
-          value: 3 + @allrank[4]
+          value: 3 +@toutrang[4]
           additionalInfos: ''
-      conditions: []
       resolvers: []
   cost: -1
   rank: 2
@@ -68,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745219452458
+  modifiedTime: 1748190534250
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!hWnCExHhFmCXd3fk'
 

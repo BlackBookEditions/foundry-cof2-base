@@ -1,24 +1,10 @@
 folder: zdl1QLxBGJoMfz0h
 name: Passe‑muraille
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/control/silhouette-hold-change-blue.webp
 _id: 4c0fMRrXL7GYoJOS
 system:
-  description: >-
-    <p>Une fois par combat, le moine peut rendre son corps intangible le temps
-    de passer au travers d’un mur d’une épaisseur maximal de VOL mètres. Il ne
-    peut rester immatériel qu’un court instant et reprend corps dès qu’il émerge
-    du mur. Si le mur est trop épais, la capacité ne fonctionne pas. De plus le
-    moine augmente définitivement de +1 la valeur de sa plus faible
-    caractéristique (choisir en cas d’égalité).</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>La capacité propose un bonus de +1 dans toutes les caractéristique. Après
-    avoir copié cette capacité sur la fiche de personnage il faudra supprimer
-    toutes celles non choisi sinon le joueur aura +1 partout !</p>
-
-    </blockquote>
+  description: "<p style=\"text-align:justify\">Une fois par combat, le moine peut rendre son corps intangible le temps de passer au travers d’un mur d’une épaisseur maximal de VOL mètres. Il ne peut rester immatériel qu’un court instant et reprend corps dès qu’il émerge du mur. Si le mur est trop épais, la capacité ne fonctionne pas. De plus le moine augmente définitivement de +1 la valeur de sa plus faible caractéristique (choisir en cas d’égalité).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action configurée permet d'augmenter une caractéristique du personnage. Elle est configurée de base sur AGI et le PJ devra modifier la caractéristique avec l'une des plus faibles dans la liste déroulante du Modificateur. Le reste des effets est à gérer en jeu.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p121
   slug: passemuraille
@@ -27,8 +13,8 @@ system:
   actionType: l
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
@@ -42,49 +28,24 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
           subtype: ability
           target: agi
+          apply: self
           value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: con
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: for
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: per
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: cha
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: int
-          value: '1'
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4c0fMRrXL7GYoJOS
-          subtype: ability
-          target: vol
-          value: '1'
-      conditions: []
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 5
+  frequency: combat
 effects: []
 sort: 100000
 ownership:
@@ -97,11 +58,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1745302363714
+  modifiedTime: 1748263379429
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!4c0fMRrXL7GYoJOS'
 
