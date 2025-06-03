@@ -1,0 +1,70 @@
+folder: 4iBwDB99Hn3Aoj3o
+name: Robustesse
+type: capacity
+img: icons/svg/combat.svg
+_id: fG9B5EFu5tgcwb2Z
+system:
+  description: >-
+    <p>Le guerrier augmente sa valeur maximale de PV de rang + 2. De plus, vous
+    ajoutez votre<br />rang + 2 à tous les tests destinés à résister aux efforts
+    physiques, à la chaleur ou au froid (conditions naturelles).</p>
+  source: ''
+  origin: ''
+  slug: robustesse
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.fG9B5EFu5tgcwb2Z
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.fG9B5EFu5tgcwb2Z
+          subtype: attribute
+          target: hp
+          value: 2 + @rang
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.fG9B5EFu5tgcwb2Z
+          subtype: skill
+          target: con
+          value: 2 + @rang
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740827319870
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!fG9B5EFu5tgcwb2Z'
+

@@ -1,7 +1,7 @@
 folder: B68hk3Dnp7OBAJqc
 name: Flèche élémentaire
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/fire/projectile-arrow-fire-purple.webp
 _id: UODMxr0LqnOwwHpk
 system:
   description: >-
@@ -9,13 +9,15 @@ system:
     source de DM parmi poison, feu, froid, foudre et acide. Pendant tout le
     combat, il ajoute +1d4° aux DM de chacune des flèches qu’il tire. Ce bonus
     aux DM ne peut pas se cumuler à un autre bonus magique élémentaire (arc de
-    feu, sort élémentaire, etc.).</p><blockquote>
+    feu, sort élémentaire, etc.).</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
-    appliquer le bonus de DM.Il faut un repos partielle pour pouvoir la
-    réutilsier.</p>
+    appliquer le bonus de DM.Il faut un repos partiel pour pouvoir la
+    réutiliser.</p>
 
     </blockquote>
   source: ''
@@ -37,7 +39,7 @@ system:
   actions:
     - source: Item.UODMxr0LqnOwwHpk
       indice: 0
-      label: Nouvelle Action 1
+      label: ''
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -62,7 +64,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -70,11 +72,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748621482172
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!UODMxr0LqnOwwHpk'
 

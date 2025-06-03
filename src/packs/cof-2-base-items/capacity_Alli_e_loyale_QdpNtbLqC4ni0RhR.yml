@@ -1,16 +1,18 @@
 folder: ajCn55TlXJDTCC7r
 name: Alliée loyale
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-sword-steel-yellow.webp
 _id: QdpNtbLqC4ni0RhR
 system:
   description: >-
     <p>Une fois par combat, lorsqu’il obtient 1 au test d’attaque avec son arme,
-    le joueur peut le remplacer par la valeur 20.</p><blockquote>
+    le joueur peut le remplacer par la valeur 20.</p>
 
-    <p><strong> Usage en jeu </strong>: </p>
+    <blockquote>
 
-    <p>Pas d'effets automatiquess. Géré à la main.</p>
+    <p><strong> Usage en jeu </strong>:</p>
+
+    <p>Pas d'effets automatiques. Géré à la main.</p>
 
     </blockquote>
   source: ''
@@ -20,10 +22,10 @@ system:
   actionType: none
   learned: false
   rank: 5
-  frequency: none
+  frequency: combat
   charges:
-    current: 0
-    max: 0
+    current: 1
+    max: 1
   properties:
     spell: false
   path: null
@@ -34,7 +36,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -42,11 +44,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748928673442
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!QdpNtbLqC4ni0RhR'
 

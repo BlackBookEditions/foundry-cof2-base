@@ -1,0 +1,74 @@
+folder: DRKt2nq7MNgLkhd6
+name: Flèche de feu
+type: capacity
+img: icons/svg/combat.svg
+_id: j09kHOfIfA438esh
+system:
+  description: >-
+    <p>Le magicien choisit une cible située à moins de 30 m. Si son attaque
+    magique réussit (contre DEF), la cible subit [3d4°+INT] DM. Chaque round de
+    combat suivant, le feu inflige 1d6 DM supplémentaires. Sur un résultat de 1
+    ou 2, le sort prend fin. Les DM sur la durée ne sont pas cumulables si le
+    sort est lancé plusieurs fois.</p>
+  source: ''
+  origin: ''
+  slug: fleche-de-feu
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.j09kHOfIfA438esh
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@amag'
+            crit: ''
+            difficulty: '@target.def'
+          dmg:
+            formula: 3d4°+@int
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 175000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828106723
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!j09kHOfIfA438esh'
+

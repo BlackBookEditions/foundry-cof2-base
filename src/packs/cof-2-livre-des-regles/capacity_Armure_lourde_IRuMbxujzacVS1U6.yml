@@ -1,0 +1,62 @@
+folder: 4iBwDB99Hn3Aoj3o
+name: Armure lourde
+type: capacity
+img: icons/svg/combat.svg
+_id: IRuMbxujzacVS1U6
+system:
+  description: "<p style=\"text-align:justify\">Au choix le guerrier gagne +1 en DEF ou il apprend à porter l’armure de plaque (DEF +6)<br />et désormais, il peut utiliser toutes les capacités de guerrier avec cette armure*.</p>\n<p>\_</p>\n<p><em>* Dans le cas d’un profil hybride, le personnage apprend à utiliser une armure d’une catégorie au‑dessus de celles autorisées par son profil principal et il peut désormais utiliser toutes les capacités de ce profil avec cette armure. Par exemple, un barbare qui choisit cette capacité peut désormais entrer en rage en portant une chemise de mailles</em></p>"
+  source: ''
+  origin: ''
+  slug: armure-lourde
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.IRuMbxujzacVS1U6
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.IRuMbxujzacVS1U6
+          subtype: combat
+          target: def
+          value: '1'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740827317737
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!IRuMbxujzacVS1U6'
+

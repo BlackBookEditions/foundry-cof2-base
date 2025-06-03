@@ -1,19 +1,20 @@
 folder: zuVSaKNXT3mvhlHn
 name: Tueur de nuées
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/magical/humanoid-silhouette-aliens-green.webp
 _id: KGeyWc7WVjddi6s0
 system:
   description: >-
     <p>Le combattant des tunnels inflige +1d4° DM aux créatures de tailles
     Petite ou inférieures (striges, kobolds, etc.). Ce bonus s’applique aussi
-    aux DM qu’il inflige aux nuées.</p><blockquote>
+    aux DM qu’il inflige aux nuées.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
-    appliquer le bonus de DM et le dé bonus.A activer dans les circonstance
-    indiquées</p>
+    appliquer le bonus de DM.A activer dans les circonstances indiquées</p>
 
     </blockquote>
   source: ''
@@ -35,8 +36,8 @@ system:
   actions:
     - source: Item.KGeyWc7WVjddi6s0
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: contre créatures Petites et Nuées
+      chatFlavor: contre créatures Petites et Nuées
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -60,7 +61,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -68,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748951597623
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!KGeyWc7WVjddi6s0'
 

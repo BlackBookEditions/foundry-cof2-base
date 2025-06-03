@@ -1,14 +1,16 @@
 folder: L1nFAHHJ2DSl7t9C
 name: Transformation en loup
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
 _id: Q72wDgqxkkCKKCBQ
 system:
   description: >-
     <p>Le personnage peut prendre la forme d’un loup pendant une durée maximale
     de 1 h par rang chaque jour. Le personnage conserve toutes ses
     caractéristiques sauf celles ci‑dessous, ainsi que sa valeur d’attaque au
-    contact habituelle.</p><p><strong>LOUP</strong></p>
+    contact habituelle.</p>
+
+    <p><strong>LOUP</strong></p>
 
     <p>FOR + 3 AGI +1</p>
 
@@ -17,14 +19,19 @@ system:
     <p>Bonus de +5 aux tests basés sur la PER. Sous cette forme, il réduit de 5
     les DM qui lui sont infligés par des armes qui ne sont pas en argent, et il
     gagne un bonus de +5 à tous les tests de poursuite et pour pister une
-    trace</p><blockquote>
+    trace</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu :</strong></p>
 
-    <p>La capacité propose un bouton activable/désactivable pour simuler la
-    transformation et celle-ci donne tous els bonus indiqué ci-dessus. Pour la
-    RD de 5 actuellement les armes en argent ne sont pas pris en compte, au MJ
-    de rajouter 5 aux dégats subit.</p>
+    <p>Le MJ donne accès et les droits à l'acteur
+    @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE]{Loup
+    (Lycanthrope)}. Ce dernier est configuré avec les caractéristiques du loup.
+    Il faudra ajuster la valeur d'attaque au contact, des PV etc du Loup avec
+    celle du PJ. Lorsque le PJ utilise les caractéristiques du loup, il doit le
+    faire depuis la feuille du Loup. Par contre pour tous les autres tests, le
+    PJ peut utiliser sa propre feuille.</p>
 
     </blockquote>
   source: ''
@@ -99,7 +106,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 50000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -107,11 +114,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748449999921
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Q72wDgqxkkCKKCBQ'
 

@@ -1,0 +1,99 @@
+folder: 6cwGJXWnartLOyu5
+name: Éclectique
+type: capacity
+img: icons/svg/combat.svg
+_id: prwjSpoqGm5VBBKX
+system:
+  description: >-
+    <p style="text-align:justify">Le barde obtient un bonus de +1 à tous les
+    tests de compétence (absolument tous, de se cacher dans les ombres jusqu’à
+    forger une épée, en passant par traduire une langue ancienne).<br />Ce bonus
+    ne peut se cumuler à aucun autre bonus de compétence sauf celui du rang 1 de
+    la voie de peuple. Il augmente de +1 chaque fois qu’il atteint le rang 4
+    dans une voie de barde</p>
+  source: ''
+  origin: ''
+  slug: eclectique
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: agi
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: con
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: for
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: per
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: cha
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: int
+          value: 1 + @allrank[4]
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.prwjSpoqGm5VBBKX
+          subtype: skill
+          target: vol
+          value: 1 + @allrank[4]
+      resolvers: []
+  cost: -1
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740818746900
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!prwjSpoqGm5VBBKX'
+

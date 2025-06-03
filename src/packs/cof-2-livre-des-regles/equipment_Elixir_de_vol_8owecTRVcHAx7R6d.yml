@@ -1,0 +1,87 @@
+folder: Ew9DjYH5ITPhbtLZ
+name: Elixir de vol
+type: equipment
+img: icons/svg/item-bag.svg
+_id: 8owecTRVcHAx7R6d
+system:
+  description: >-
+    <p>L'utilisateur peut voler pendant ${2d4°+ @int}$ minutes. Sa vitesse de
+    déplacement est la même qu’au sol. Il peut rester en vol stationnaire s’il
+    le désire et cela est une action gratuite</p>
+  source: ''
+  origin: ''
+  slug: elixir-de-vol
+  tags: []
+  subtype: consumable
+  martialCategory: ''
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 1
+    unit: kg
+  price:
+    value: 900
+    unit: ''
+  rarity: medium
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.8owecTRVcHAx7R6d
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: true
+        enabled: false
+        temporary: false
+      resolvers:
+        - type: consumable
+          skill:
+            formula: ''
+            crit: ''
+            difficulty: ''
+          dmg:
+            formula: ''
+          target:
+            type: none
+            number: 0
+            scope: all
+      conditions:
+        - predicate: isOwned
+      modifiers: []
+effects: []
+sort: 300000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740760974494
+  modifiedTime: 1741115639995
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!items!8owecTRVcHAx7R6d'
+

@@ -1,0 +1,70 @@
+folder: QY4ycL3pNb0q1FSO
+name: Perception héroïque
+type: capacity
+img: icons/svg/combat.svg
+_id: azoGOWCerDWoH10w
+system:
+  description: >-
+    <p>Le rôdeur augmente sa valeur de PER de +1.<br />Désormais, il obtient un
+    dé bonus aux tests de PER</p>
+  source: ''
+  origin: ''
+  slug: perception-heroique
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.azoGOWCerDWoH10w
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.azoGOWCerDWoH10w
+          subtype: ability
+          target: per
+          value: '1'
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.azoGOWCerDWoH10w
+          subtype: bonusDice
+          target: per
+          value: '0'
+      resolvers: []
+  cost: -1
+effects: []
+sort: 87500
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740823942533
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!azoGOWCerDWoH10w'
+

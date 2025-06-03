@@ -1,32 +1,10 @@
 folder: SZg1dyMk2fnDAxrY
 name: Armes dentelées
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/blade-tip-smoke-green.webp
 _id: YwGn58bVZooWzRw3
 system:
-  description: >-
-    <p>Les armes et les lames du personnage sont dentelées, elles possèdent des
-    formes torturées destinées à provoquer des blessures sanglantes. Le
-    personnage obtient un bonus de +5 à tous ses tests d’intimidation. De plus,
-    lors d’une attaque réussie, il provoque un effet de saignement qui inflige 1
-    DM par round à la victime pour le reste du combat. Pour stopper cette
-    hémorragie, la victime doit recevoir des soins ou prendre une action limitée
-    et réussir un test d’AGI difficulté 10. Cet effet de saignement passe à 2 DM
-    au rang 8 de la voie. Il ne se cumule pas.</p><blockquote>
-
-    <p><strong> Usage en jeu : </strong></p>
-
-    <p>Cet effet pourrais être ajoutés aux armes directement mais cette capacité
-    propose un bouton d'action qui va récupérer les caractéristiques de l'arme
-    équipée et remplacer leur bouton d'attaque. Si l'attaque réussi on applique
-    un effet temporaire de dégats périodique. Cet effet ne fonctionne qu'en mode
-    combat pour comptabilsier les round.</p>
-
-    <p>un autre effet en parallèle donne le bonus permanent en intimidation</p>
-
-    </blockquote>
-
-    <p> </p>
+  description: "<p>Les armes et les lames du personnage sont dentelées, elles possèdent des formes torturées destinées à provoquer des blessures sanglantes. Le personnage obtient un bonus de +5 à tous ses tests d’intimidation. De plus, lors d’une attaque réussie, il provoque un effet de saignement qui inflige 1 DM par round à la victime pour le reste du combat. Pour stopper cette hémorragie, la victime doit recevoir des soins ou prendre une action limitée et réussir un test d’AGI difficulté 10. Cet effet de saignement passe à 2 DM au rang 8 de la voie. Il ne se cumule pas.</p>\n<blockquote>\n<p><strong> Usage en jeu : </strong></p>\n<p>Cet effet pourrait être ajouté aux armes directement mais cette capacité propose un bouton d'Attaque qui va récupérer les caractéristiques de l'arme équipée. Lorsque le PJ attaque avec une de ses armes, il utilisera cette action d'attaque pour appliquer les DM périodiques en cas de réussite. Cet effet ne fonctionne qu'en mode combat pour comptabiliser les rounds.<br />Une autre Action applique le bonus permanent en intimidation.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p150
   slug: armes-dentelees
@@ -78,7 +56,8 @@ system:
             formulaType: damage
             formula: '@rang[0,0,0,1,1,1,1,2]'
             elementType: ''
-            statuses: []
+            statuses:
+              - bleeding
             duration: '20'
             unit: round
             successThreshold: null
@@ -125,11 +104,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748984488263
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YwGn58bVZooWzRw3'
 
