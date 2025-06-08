@@ -1,0 +1,625 @@
+folder: tv4fRs4kcCfhJHyt
+name: Troll
+type: encounter
+img: tokenizer/npc-images/troll.Avatar.webp?1749373239808
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 5
+    hp:
+      base: 70
+      value: 70
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 19
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: humanoid
+    size: large
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    languages: []
+    properties: ''
+  currentEffects: []
+prototypeToken:
+  name: Troll
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 2
+  height: 2
+  texture:
+    src: modules/cof-base/assets/rencontres/troll.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Griffes et gourdin (2 attaques)
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: griffes-et-gourdin-2-attaques
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+10'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+6
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: PFTpYytCIhs7KCXp
+    sort: 300000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.PFTpYytCIhs7KCXp'
+  - folder: eRnLMLNnqgpvpmpq
+    name: Lancer de rocher
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: lancer-de-rocher
+      subtype: ranged
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.Kkq7VvDKKjrdECbA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: ranged
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+10'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + 6
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOLmg7GCgT9dAjzV
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: PnrDl2F3AWeNXDue
+    sort: 100000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.PnrDl2F3AWeNXDue'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: wGg7d4osxKwUgiQr
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.KdAFo51oD4vAHgB9.Item.wGg7d4osxKwUgiQr
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.KdAFo51oD4vAHgB9.Item.wGg7d4osxKwUgiQr
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.wGg7d4osxKwUgiQr'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vitalité surnaturelle
+    type: capacity
+    img: icons/magic/life/heart-cross-strong-flame-blue.webp
+    system:
+      description: >-
+        <p>Un troll récupère <strong>5 PV par tour</strong>, sauf si les DM
+        subis sont de feu ou d’acide. Même à 0 PV, il continue à régénérer les
+        tissus morts à moins qu’on ne brûle son corps ou si un PJ utilise une
+        action limitée pour achever la créature (par exemple, en séparant la
+        tête du corps).</p>
+      source: ''
+      origin: ''
+      slug: vitalite-surnaturelle
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.KdAFo51oD4vAHgB9.Item.TGIsNJDrizVF4F35
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '5'
+              target:
+                type: self
+                number: 0
+                scope: all
+              dmg: {}
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mU5FltDzGWs2bske
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: TGIsNJDrizVF4F35
+    sort: 3500000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.TGIsNJDrizVF4F35'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fauchage
+    type: capacity
+    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
+    system:
+      description: >-
+        <p>Sur <strong>17 à 20 au test d’attaque</strong>, si l’attaque est
+        réussie, la victime doit réussir au choix un <strong>test de FOR ou
+        d’AGI difficulté 16</strong> ou être <em>renversée</em>. La créature
+        retranche 3 à tous les DM subis (RD 3).</p>
+      source: ''
+      origin: ''
+      slug: fauchage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: Actor.KdAFo51oD4vAHgB9.Item.LKGTGPqt5fg5CzqP
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.KdAFo51oD4vAHgB9.Item.LKGTGPqt5fg5CzqP
+              subtype: combat
+              target: dr
+              apply: self
+              value: '3'
+              additionalInfos: ''
+          resolvers: []
+      manaCost: -1
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: LKGTGPqt5fg5CzqP
+    sort: 8800000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.LKGTGPqt5fg5CzqP'
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749373190659
+  modifiedTime: 1749373296295
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: S0bAG6q4cLwxkMJJ
+sort: 0
+_key: '!actors!S0bAG6q4cLwxkMJJ'
+

@@ -1,24 +1,10 @@
 folder: lEK0dD0bxgNpGWxf
 name: Séisme
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/earth/barrier-stone-explosion-debris.webp
 _id: MtvQQUlNhMzixQVi
 system:
-  description: >-
-    <p>Le personnage déclenche un terrible tremblement de terre qui fait
-    s’effondrer les bâtisses dans une zone de 100 m de rayon autour de lui. Les
-    maisonnettes pauvres s’écroulent automatiquement, les villas ont 4 chances
-    sur 6 de s’effondrer, les palais 2 chances sur 6 et les édifices fortifiés 1
-    chance sur 6. Toute créature présente dans un édifice qui s’effondre subit
-    4d6 DM (on considère qu’elle sort de l’édifice, sinon elle subit le double
-    de DM). Les DM sont divisés par deux si la bâtisse a résisté. Sous terre, le
-    sort inflige 4d6 DM dans toute la zone.</p><blockquote>
-
-    <p><strong> Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-    </blockquote><p> </p>
+  description: "<p>Le personnage déclenche un terrible tremblement de terre qui fait s’effondrer les bâtisses dans une zone de 100 m de rayon autour de lui. Les maisonnettes pauvres s’écroulent automatiquement, les villas ont 4 chances sur 6 de s’effondrer, les palais 2 chances sur 6 et les édifices fortifiés 1 chance sur 6. Toute créature présente dans un édifice qui s’effondre subit 4d6 DM (on considère qu’elle sort de l’édifice, sinon elle subit le double de DM). Les DM sont divisés par deux si la bâtisse a résisté. Sous terre, le sort inflige 4d6 DM dans toute la zone.</p>\n<blockquote>\n<p><strong> Usage en jeu : </strong></p>\n<p>Losqu'il lance ce sort, le PJ active l'action qui va lancer le jet de DM et dépenser les PM. La répartition des DM en fonction des cibles doit être réalisée manuellement.</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p168
   slug: seisme
@@ -35,12 +21,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.MtvQQUlNhMzixQVi
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 4d6
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -52,7 +72,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749102430472
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!MtvQQUlNhMzixQVi'
 

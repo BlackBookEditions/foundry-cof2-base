@@ -1,23 +1,24 @@
 folder: xSGTLfvAjBJhf0yx
 name: Nuées de criquets
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/invertebrates/beetle-stag-tan-brown.webp
 _id: ltUrj2iTRSDtByRZ
 system:
   description: >-
     <p>S’il réussit un test opposé d’attaque magique (portée 20 m), le
     personnage libère sur sa cible une nuée de criquets affamés qui la dévorent
     pendant [5 + CHA] rounds. La victime subit 2 DM par tour et un malus de ‑3 à
-    toutes ses actions. Les DM de zone détruisent la nuée (minimum 1
-    DM).</p><blockquote>
+    toutes ses actions. Les DM de zone détruisent la nuée (minimum 1 DM).</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
     sort qui va faire le test d'attaque magique en opposition et appliquer les
-    dégâts. en cas de succès. Un effet de dégats périodique sera appliqué sur la
-    cible faisant les dégats et un malus aux actions. L'effet ne marche qu'en
-    mode combat.</p>
+    dégâts. En cas de succès, cliquez sur la deuxieme action "Appliquer les
+    effets" qui créera un malus aux actions pour la durée prévue en description.
+    L'effet ne marche qu'en mode combat.</p>
 
     <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
     l'action</p>
@@ -42,7 +43,7 @@ system:
   actions:
     - source: Item.ltUrj2iTRSDtByRZ
       indice: 0
-      label: ''
+      label: Attaque magique
       chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
@@ -54,35 +55,6 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Item.ltUrj2iTRSDtByRZ
-          subtype: skill
-          target: all
-          apply: others
-          value: '-3'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.ltUrj2iTRSDtByRZ
-          subtype: combat
-          target: melee
-          apply: others
-          value: '-3'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.ltUrj2iTRSDtByRZ
-          subtype: combat
-          target: ranged
-          apply: others
-          value: '-3'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.ltUrj2iTRSDtByRZ
-          subtype: combat
-          target: magic
-          apply: others
-          value: '-3'
-          additionalInfos: ''
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -107,11 +79,75 @@ system:
             duration: 5 + @cha
             unit: round
             successThreshold: null
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.ltUrj2iTRSDtByRZ
+      indice: 1
+      label: Appliquer effets
+      chatFlavor: ''
+      type: debuff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ltUrj2iTRSDtByRZ
+          subtype: skill
+          target: all
+          apply: others
+          value: '-3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ltUrj2iTRSDtByRZ
+          subtype: combat
+          target: melee
+          apply: others
+          value: '-3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ltUrj2iTRSDtByRZ
+          subtype: combat
+          target: ranged
+          apply: others
+          value: '-3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.ltUrj2iTRSDtByRZ
+          subtype: combat
+          target: magic
+          apply: others
+          value: '-3'
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: 5 + @cha
+            unit: round
+            successThreshold: null
+          skill: {}
+          dmg: {}
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 50000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -123,7 +159,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749103596169
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!ltUrj2iTRSDtByRZ'
 

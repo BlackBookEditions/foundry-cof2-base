@@ -1,28 +1,10 @@
 folder: bdmPo69IPAbx6ePs
 name: Frappe concentrée
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-hammer-destructive-orange.webp
 _id: YQS7P5a4Ir5XOGGi
 system:
-  description: >-
-    <p>Le personnage se concentre pendant 1d4 rounds (le MJ garde cette durée
-    secrète et annonce au joueur lorsqu’il est prêt) pendant lesquels il ne peut
-    ni attaquer ni se déplacer, mais bénéficie d’une RD 5. Au round suivant, en
-    utilisant une action d’attaque, il peut réaliser une attaque dévastatrice :
-    il touche automatiquement et il triple ses DM. S’il cesse sa concentration
-    prématurément, le personnage ne profite d’aucun bénéfice.</p><blockquote>
-
-    <p><strong> Usage en jeu : </strong></p>
-
-    <p>Cette capacité propose deux boutons d'actions :</p>
-
-    <p>Un activable/désactivable pour appliquer le bonus de RD.A activer dans
-    les circonstance indiquées.</p>
-
-    <p>Une action d'attaque touchant automatiquement le token ciblé et triplant
-    les dégats de l'arme équipée (main nue est considéré comme une arme).</p>
-
-    </blockquote><p> </p>
+  description: "<p>Le personnage se concentre pendant 1d4 rounds (le MJ garde cette durée secrète et annonce au joueur lorsqu’il est prêt) pendant lesquels il ne peut ni attaquer ni se déplacer, mais bénéficie d’une RD 5. Au round suivant, en utilisant une action d’attaque, il peut réaliser une attaque dévastatrice : il touche automatiquement et il triple ses DM. S’il cesse sa concentration prématurément, le personnage ne profite d’aucun bénéfice.</p>\n<blockquote>\n<p><strong> Usage en jeu : </strong></p>\n<p>Cette capacité propose deux boutons d'actions :</p>\n<p>Un activable/désactivable pour appliquer le bonus de RD. A activer dans les circonstances indiquées.</p>\n<p>Une action d'attaque touchant automatiquement le token ciblé et triplant les dommages de l'arme équipée (main nue est considéré comme une arme).</p>\n</blockquote>\n<p>\_</p>"
   source: ''
   origin: Livre des règles p171
   slug: frappe-concentree
@@ -42,7 +24,7 @@ system:
   actions:
     - source: Item.YQS7P5a4Ir5XOGGi
       indice: 0
-      label: 'Frappe concentrée : RD'
+      label: RD
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -65,7 +47,7 @@ system:
       resolvers: []
     - source: Item.YQS7P5a4Ir5XOGGi
       indice: 1
-      label: 'Frappe concentrée : Frappe'
+      label: Frappe
       chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
@@ -101,7 +83,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -113,7 +95,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749100749444
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!YQS7P5a4Ir5XOGGi'
 

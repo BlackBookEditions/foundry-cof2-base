@@ -1,0 +1,691 @@
+folder: tv4fRs4kcCfhJHyt
+name: Vampirien
+type: encounter
+img: icons/svg/eye.svg
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 4
+    hp:
+      base: 35
+      value: 0
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: undead
+    size: medium
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: >-
+        <p>Le vampirien est un mort‑vivant mineur au service du vampire qui l’a
+        créé, il ressemble &agrave; un humain d’une p&acirc;leur mortelle</p>
+    languages: []
+    properties: >-
+      <p><strong>Pattes d'araign&eacute;es :</strong></p>
+
+      <p>Le vampirien peut se d&eacute;placer de 10 m par action de mouvement
+      sur les murs et les plafonds.</p>
+  currentEffects: []
+prototypeToken:
+  name: Vampirien
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Morsure et griffes (2 attaques)
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: morsure-et-griffes-2-attaques
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6+3
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: GChljyeAVLJ0IjKN
+    sort: 300000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.GChljyeAVLJ0IjKN'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: suyXt86vq7KUspcg
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.FGnlDZ49FHcpxJAa.Item.suyXt86vq7KUspcg
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.FGnlDZ49FHcpxJAa.Item.suyXt86vq7KUspcg
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!HcL7t6N6dh6aePpk.suyXt86vq7KUspcg'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Regard envoûtant
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
+    system:
+      description: >-
+        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
+        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
+        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
+        10 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 1
+        ou inférieur passent sous le contrôle du vampire.</p>
+      source: ''
+      origin: ''
+      slug: regard-envoutant
+      subtype: ''
+      actionType: m
+      learned: true
+      charges:
+        current: 3
+        max: 3
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: combat
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: cG5P5uDacTtxXRB4
+    sort: 3100000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.cG5P5uDacTtxXRB4'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Absorption d'énergie
+    type: capacity
+    img: icons/creatures/abilities/fang-tooth-blood-red.webp
+    system:
+      description: >-
+        <p>Le vampire <strong>récupère 5 PV</strong> chaque fois qu’il blesse
+        une créature avec ses armes naturelles. Si la victime est réduite à 0 PV
+        par une telle attaque, elle se transforme en vampirien au prochain
+        crépuscule.</p>
+      source: ''
+      origin: ''
+      slug: absorption-denergie
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.FGnlDZ49FHcpxJAa.Item.SkYXKxE2HbfVw2gI
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '5'
+              target:
+                type: self
+                number: 0
+                scope: all
+              dmg: {}
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NV6Bqd2sETP45NZN
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: SkYXKxE2HbfVw2gI
+    sort: 2300000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.SkYXKxE2HbfVw2gI'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Forme gazeuse
+    type: capacity
+    img: icons/magic/air/fog-gas-smoke-brown.webp
+    system:
+      description: >-
+        <p>Le vampire prend la consistance d’un gaz. Il se déplace au ras du sol
+        (s’il chute, il le fait au ralenti) à une vitesse de 5 m par action de
+        mouvement (M). Il peut s’introduire par les plus petits interstices
+        (comme sous une porte), mais ne peut utiliser aucune capacité ni subir
+        de DM.</p>
+      source: ''
+      origin: ''
+      slug: forme-gazeuse
+      subtype: ''
+      actionType: a
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iJiIugLIkA6dJArb
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: NagqxQpjIhlw8woR
+    sort: 2700000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.NagqxQpjIhlw8woR'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Résistance impie
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
+    system:
+      description: >-
+        <p>Le vampire<strong> retranche 10 à tous les DM qu’il subit</strong>
+        (magie incluse) à l’exception des blessures des <strong>armes en argent
+        et du feu.</strong> Cette RD ne s’ajoute pas à celle que tous les
+        morts‑vivants ont contre le froid.</p>
+      source: ''
+      origin: ''
+      slug: resistance-impie
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.FGnlDZ49FHcpxJAa.Item.PmqjQeJIMBFKo0QY
+          indice: 0
+          label: sauf feu et argent
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.FGnlDZ49FHcpxJAa.Item.PmqjQeJIMBFKo0QY
+              subtype: combat
+              target: dr
+              apply: self
+              value: '5'
+              additionalInfos: sauf feu et argent
+          resolvers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.uiJsqhLYGNuCuskb
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: PmqjQeJIMBFKo0QY
+    sort: 3300000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.PmqjQeJIMBFKo0QY'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vulnérabilité au soleil
+    type: capacity
+    img: icons/magic/death/skull-fire-white-yellow.webp
+    system:
+      description: >-
+        <p>Un vampire exposé au soleil subit 2d6 DM par tour sur son maximum de
+        PV (il ne peut pas le régénérer tant qu’il reste à la lumière). Si son
+        maximum de PV est réduit à 0 de cette façon, il est réduit en cendre et
+        définitivement détruit.</p>
+      source: ''
+      origin: ''
+      slug: vulnerabilite-au-soleil
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.1dzdCTT78RUfRxi1
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: xjd2bwHvU8r9uIbl
+    sort: 3600000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.xjd2bwHvU8r9uIbl'
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749373902332
+  modifiedTime: 1749373902332
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: HcL7t6N6dh6aePpk
+sort: 0
+_key: '!actors!HcL7t6N6dh6aePpk'
+

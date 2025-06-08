@@ -1,0 +1,81 @@
+folder: Jc9oocmI3B4cVSRG
+name: Sencible à la lumière
+type: capacity
+img: icons/magic/light/orb-beams-green.webp
+system:
+  description: "<p>Créatures souterraines, les orcs détestent la lumière du jour. La lumière du soleil leur inflige un dé malus en attaque</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Activr le bouton si le combat se déroule à la lumière du jour</p>\n</blockquote>"
+  source: ''
+  origin: Livre des règles p293
+  slug: sencible-a-la-lumiere
+  subtype: ''
+  actionType: none
+  learned: true
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: debuff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
+          subtype: malusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
+          subtype: malusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
+          subtype: malusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
+  frequency: none
+  rank: 0
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749371345642
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: iXXuTV4Ox0Eizldn
+sort: 700000
+_key: '!items!iXXuTV4Ox0Eizldn'
+

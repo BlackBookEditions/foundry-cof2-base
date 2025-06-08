@@ -1,7 +1,7 @@
 folder: Jc9oocmI3B4cVSRG
 name: Attaque mortelle
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-dagger-blood-red.webp
 system:
   description: >-
     <p>Une attaque qui doit être exécutée de dos ou par surprise. L’assassin
@@ -30,17 +30,17 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
+        visible: false
         enabled: false
+        activable: true
         temporary: false
         noManaCost: false
-        visible: false
       conditions:
         - predicate: isOwned
       resolvers:
         - type: attack
-          bonusDiceAdd: false
-          malusDiceAdd: true
+          bonusDiceAdd: true
+          malusDiceAdd: false
           skill:
             formula: '+7'
             crit: ''
@@ -51,6 +51,13 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   frequency: none
 effects: []
@@ -61,13 +68,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742450443128
-  modifiedTime: 1744612763545
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: DJz0t2RXLUM0R956
-sort: 300000
+sort: 2500000
 _key: '!items!DJz0t2RXLUM0R956'
 

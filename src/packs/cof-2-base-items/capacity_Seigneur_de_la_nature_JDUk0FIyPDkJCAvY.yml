@@ -1,7 +1,7 @@
 folder: 3pHzu5FkMl5ch3Ao
 name: Seigneur de la nature
 type: capacity
-img: icons/svg/combat.svg
+img: icons/environment/wilderness/carved-standing-stone.webp
 _id: JDUk0FIyPDkJCAvY
 system:
   description: >-
@@ -10,11 +10,17 @@ system:
     de prédilection, il obtient un dé bonus à tous ses tests et récupère 1d4° PV
     durant chaque récupération rapide. Milieux naturels de prédilection : forêt
     et jungle, déserts et plaines, montagnes et collines, marais et milieu
-    aquatique, grottes et profondeurs.</p><blockquote>
+    aquatique, grottes et profondeurs.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. Géré à la main.</p>
+    <p>Le PJ active l'action lorsqu'il se trouve dans un milieu naturel de
+    prédilection pour obtenir un dé bonus à tous ses tests. Le bonus au test de
+    récupération rapide n'est pas encore prit en compte. Lorsqu'il apprend cette
+    capacité et au rang 7, le PJ peut modifier la description pour renseigner le
+    milieu qu'il a choisi.</p>
 
     </blockquote>
   source: ''
@@ -33,12 +39,56 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.JDUk0FIyPDkJCAvY
+      indice: 0
+      label: en milieu naturel de prédilection
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.JDUk0FIyPDkJCAvY
+          subtype: bonusDice
+          target: all
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.JDUk0FIyPDkJCAvY
+          subtype: bonusDice
+          target: melee
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.JDUk0FIyPDkJCAvY
+          subtype: bonusDice
+          target: ranged
+          apply: self
+          value: '0'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.JDUk0FIyPDkJCAvY
+          subtype: bonusDice
+          target: magic
+          apply: self
+          value: '0'
+          additionalInfos: ''
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 150000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -50,7 +100,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749102729005
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!JDUk0FIyPDkJCAvY'
 

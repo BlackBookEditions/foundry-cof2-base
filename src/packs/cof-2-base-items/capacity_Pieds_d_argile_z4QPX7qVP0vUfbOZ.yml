@@ -16,7 +16,12 @@ system:
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiques. Géré à la main.</p>
+    <p>Cette action permet de réaliser une attaque avec les valeurs de l'arme
+    équipée (en divisant par 2 les DM infligés). Si l'attaque touche la cible,
+    elle appliquera le statut Ralenti et Affaibli à la cible pour 20 round. Le
+    MJ devra supprimer le statut Ralenti à la fin du tour de la cible. L'effet
+    Renversé est géré à la main par le MJ. Cette action fonctionne seulement en
+    Mode Combat.</p>
 
     </blockquote>
   source: ''
@@ -35,7 +40,48 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.z4QPX7qVP0vUfbOZ
+      indice: 0
+      label: contre taille Grande +
+      chatFlavor: contre taille Grande +
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: (@arme.dmg)/2
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - invalid
+              - slowed
+            duration: '20'
+            unit: round
+            successThreshold: null
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -52,7 +98,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1748987415037
+  modifiedTime: 1749016383885
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!z4QPX7qVP0vUfbOZ'
 

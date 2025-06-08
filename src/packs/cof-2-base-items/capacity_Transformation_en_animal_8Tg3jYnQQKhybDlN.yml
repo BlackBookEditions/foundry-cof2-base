@@ -1,26 +1,10 @@
 folder: f7hzf4APZjgpbQox
 name: Transformation en animal
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/invertebrates/beetle-stag-yellow-green.webp
 _id: 8Tg3jYnQQKhybDlN
 system:
-  description: >-
-    <p>Le personnage fait l’acquisition de la capacité de druide Forme animale,
-    mais il ne connaît qu’une seule catégorie d’animaux (parmi mammifère,
-    poissons, arthropodes, reptiles ou oiseaux). Si le personnage connaît déjà
-    la capacité de druide du même nom, il peut désormais rester sous forme
-    animale pour une durée égale à sa PER en heures (au lieu de minutes) et à la
-    fin de la transformation, il récupère 3d4° PV.</p><blockquote>
-
-    <p><strong> Usage en jeu : </strong></p>
-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques. Une
-    fois cette capacité copiée sur la fiche de personnage celui ci peux l'éditer
-    pour indiquer les formes qu'il maitrise. Vous pouvez de plus glisser deposer
-    la capacité Forme animale sous celle-ci dans la fiche de personnage
-    (decochez la case "autorise une capacité liée" si vous l'avez deja)</p>
-
-    </blockquote>
+  description: "<p>Le personnage fait l’acquisition de la capacité de druide Forme animale, mais il ne connaît qu’une seule catégorie d’animaux (parmi mammifère, poissons, arthropodes, reptiles ou oiseaux). Si le personnage connaît déjà la capacité de druide du même nom, il peut désormais rester sous forme animale pour une durée égale à sa PER en heures (au lieu de minutes) et à la fin de la transformation, il récupère 3d4° PV.</p>\n<blockquote>\n<p><strong> Usage en jeu : </strong></p>\n<p>Quand le PJ apprend cette capacité, il peut glisser-déposer \"Forme animale\" sous celle-ci dans la feuille de personnage (décoher la case \"autorise une capacité liée\" si \_le PJ possède déjà cette capacité). Une fois cette capacité apprise, le description peut être modifiée pour indiquer les formes que le PJ maîtrise. Lorsqu'il lance le sort, le PJ dépense les PM manuellement. A la fin de sa transformation, le PJ peut activer l'action pour récupérer les PV sans dépenser de PM.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p170
   slug: transformation-en-animal
@@ -37,12 +21,45 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.8Tg3jYnQQKhybDlN
+      indice: 0
+      label: à la fin de la transformation
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: 3d4°
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: true
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 225000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -54,7 +71,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749100624319
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!8Tg3jYnQQKhybDlN'
 

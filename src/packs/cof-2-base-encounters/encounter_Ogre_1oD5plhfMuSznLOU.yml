@@ -1,0 +1,532 @@
+folder: tv4fRs4kcCfhJHyt
+name: Ogre
+type: encounter
+img: tokenizer/npc-images/ogre.Avatar.webp?1749370960506
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: true
+      base: 6
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 3
+    hp:
+      base: 40
+      value: 40
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 10
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: humanoid
+    size: large
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: >-
+        <p>L’ogre est une brute épaisse mesurant plus de 2,50 m (pour 300 kg).
+        Cette créature maléfique a un penchant pour les armes démesurées et la
+        boucherie gratuite. C’est un adversaire formidable et un combat contre
+        un ogre n’est jamais sans risque. Il parle le noir parler et parfois le
+        commun. Un chef ogre accompagné de 5 ogres est une rencontre ordinaire
+        de niveau 10.</p>
+    languages: []
+    properties: >-
+      <p>1 capacité au choix entre Tap dur et Imparable</p>
+
+      <p><strong>NOTE DE CONCEPTION</strong> : Attention, même &agrave; haut
+      niveau des ogres dotés de la capacité Tape dur en grand nombre sont des
+      adversaires redoutables, si vous n’utilisez pas la règle de l’attaque
+      groupée, les chances sont grandes que leur victime passe plus de temps
+      étourdie que dans la capacité d’agir&hellip;</p>
+  currentEffects: []
+prototypeToken:
+  name: Ogre
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 2
+  height: 2
+  texture:
+    src: modules/cof-base/assets/rencontres/ogre.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Hachoir
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hachoir
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+7'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6+6
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: XptR9OrYbUdYeVXK
+    sort: 300000
+    _key: '!actors.items!1oD5plhfMuSznLOU.XptR9OrYbUdYeVXK'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: RFA7qUgQ7RrqGDzG
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.Aa5t6192r9uz3xIV.Item.RFA7qUgQ7RrqGDzG
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.Aa5t6192r9uz3xIV.Item.RFA7qUgQ7RrqGDzG
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!1oD5plhfMuSznLOU.RFA7qUgQ7RrqGDzG'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Imparable
+    type: capacity
+    img: icons/skills/melee/shield-damaged-broken-blue.webp
+    system:
+      description: >-
+        <p>Si la créature obtient 15‑20 au d20 d’un test d’attaque (17 à 20 si
+        la créature possède 2 attaques), elle inflige +1d6 DM supplémentaire et
+        l’attaque est automatiquement réussie (quelle que soit la DEF de son
+        adversaire).</p>
+      source: ''
+      origin: ''
+      slug: imparable
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: Actor.Aa5t6192r9uz3xIV.Item.YMGHH6BnDKxNrQWv
+          indice: 0
+          label: si 15-20 à l'attaque
+          chatFlavor: si 15-20 à l'attaque
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                difficulty: ''
+              dmg:
+                formula: 2d4
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      manaCost: -1
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: YMGHH6BnDKxNrQWv
+    sort: 8000000
+    _key: '!actors.items!1oD5plhfMuSznLOU.YMGHH6BnDKxNrQWv'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Tape dur
+    type: capacity
+    img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
+    system:
+      description: >-
+        <p>Si la créature obtient 15 à 20 au dé du test d’attaque, l’attaque est
+        automatiquement réussie. De surcroît, la victime doit réussir un test de
+        CON difficulté 16 ou être étourdie pendant 1 round.</p>
+      source: ''
+      origin: ''
+      slug: tape-dur
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: McGxzOhg7Fm1NsZO
+    sort: 6700000
+    _key: '!actors.items!1oD5plhfMuSznLOU.McGxzOhg7Fm1NsZO'
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749370912074
+  modifiedTime: 1749373046098
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: 1oD5plhfMuSznLOU
+sort: 2400000
+_key: '!actors!1oD5plhfMuSznLOU'
+

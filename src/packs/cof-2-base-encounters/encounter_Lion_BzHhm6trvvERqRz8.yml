@@ -1,0 +1,528 @@
+folder: Syos99DWKcjiQ4Wn
+name: Lion
+type: encounter
+img: icons/svg/eye.svg
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 4
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 5
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: true
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: -3
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 3
+    hp:
+      base: 30
+      value: 30
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 15
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 17
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: living
+    size: large
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: >-
+        <p>Ce profil correspond &agrave; un jeune lion ou &agrave; une lionne
+        d’environ 150 kg</p>
+    languages: []
+    properties: ''
+  currentEffects: []
+prototypeToken:
+  name: Lion
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 2
+  height: 2
+  texture:
+    src: icons/svg/eye.svg
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: 0
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Morsures et griffes
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: morsures-et-griffes
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: NMgbv6g26FKM3M9o
+    sort: 300000
+    _key: '!actors.items!BzHhm6trvvERqRz8.NMgbv6g26FKM3M9o'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: Nea6HEdH6k7qunfN
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.O3cQVYu2qPuiYtQU.Item.Nea6HEdH6k7qunfN
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.O3cQVYu2qPuiYtQU.Item.Nea6HEdH6k7qunfN
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!BzHhm6trvvERqRz8.Nea6HEdH6k7qunfN'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Embuscade
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    system:
+      description: >-
+        <p>Au premier round de combat, si l’environnement permet de se
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
+        19</strong> ou être surprise.</p>
+
+        <p>Si elle attaque avec succès une cible surprise, la créature inflige
+        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
+        inférieure à la sienne est renversée</strong>. La créature obtient un
+        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      source: ''
+      origin: ''
+      slug: embuscade
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: Actor.O3cQVYu2qPuiYtQU.Item.grF1m9IoWxTZjfnj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.O3cQVYu2qPuiYtQU.Item.grF1m9IoWxTZjfnj
+              subtype: skill
+              target: agi
+              apply: self
+              value: '5'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.O3cQVYu2qPuiYtQU.Item.grF1m9IoWxTZjfnj
+              subtype: combat
+              target: damMelee
+              apply: self
+              value: 1d4
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.O3cQVYu2qPuiYtQU.Item.grF1m9IoWxTZjfnj
+              subtype: combat
+              target: damRanged
+              apply: self
+              value: 1d4
+              additionalInfos: ''
+          resolvers: []
+      manaCost: -1
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: grF1m9IoWxTZjfnj
+    sort: 3800000
+    _key: '!actors.items!BzHhm6trvvERqRz8.grF1m9IoWxTZjfnj'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Dévorer
+    type: capacity
+    img: icons/creatures/abilities/mouth-teeth-rows-red.webp
+    system:
+      description: >-
+        <p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au
+        d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige
+        immédiatement une attaque gratuite supplémentaire</p>
+      source: ''
+      origin: ''
+      slug: devorer
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: nRDcvlpevqSVXGgM
+    sort: 6900000
+    _key: '!actors.items!BzHhm6trvvERqRz8.nRDcvlpevqSVXGgM'
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749279814875
+  modifiedTime: 1749280154550
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: BzHhm6trvvERqRz8
+sort: 900000
+_key: '!actors!BzHhm6trvvERqRz8'
+

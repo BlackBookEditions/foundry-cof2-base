@@ -1,7 +1,7 @@
 folder: uRmZ3QiJk6aD17ax
 name: Zone de vie
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/life/heart-area-circle-red-green.webp
 _id: pYV4rKOL42UjoGog
 system:
   description: >-
@@ -10,16 +10,16 @@ system:
     et l’air scintille. Toutes les créatures vivantes dans la zone récupèrent
     2d4°PV à chaque round (à la fin de leur tour). Les morts‑vivants et les
     démons subissent des DM équivalents. Une fois le sort lancé, la zone reste
-    immobile.</p><blockquote>
+    immobile.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Le joueur sélectionne ses cibles et appuie sur l'action. Elles recevront
-    un efffet temporaire soignant de 2d4° PV par round. Ne fonctionne qu'en mode
-    combat, et ne gère pas les dégats sur mort vivant.</p>
-
-    <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-    l'action</p>
+    <p>Le PJ dépense manuellement les PM lorsqu'il lance le sort. Il pourra
+    ensuite activer l'action sur une cible qui finit son tour dans la zone pour
+    lui donner les PV. L'action ne dépense pas de PM et peut donc être faite
+    plusieurs fois. L'action ne gère pas la durée de la Zone de vie</p>
 
     </blockquote>
   source: ''
@@ -50,36 +50,33 @@ system:
         enabled: false
         activable: true
         temporary: false
-        noManaCost: false
+        noManaCost: true
       conditions:
-        - predicate: isOwned
+        - predicate: isLearned
       resolvers:
         - type: heal
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: ''
+            formula: 1d4°
           target:
             type: multiple
-            number: 0
+            number: 10
             scope: all
           additionalEffect:
-            active: true
-            applyOn: always
-            formulaType: heal
-            formula: 2d4°
-            elementType: sacred
-            statuses: []
-            duration: '@cha'
-            unit: round
+            active: false
+            applyOn: success
             successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
           dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 375000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -91,7 +88,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749102609605
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!pYV4rKOL42UjoGog'
 

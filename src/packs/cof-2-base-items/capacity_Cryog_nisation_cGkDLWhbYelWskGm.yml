@@ -1,7 +1,7 @@
 folder: pf050cd2no1cSiRN
 name: Cryogénisation
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/water/barrier-ice-water-cube.webp
 _id: cGkDLWhbYelWskGm
 system:
   description: >-
@@ -25,12 +25,17 @@ system:
 
     <li>NC 6 et + : valeur d’INT en rounds</li>
 
-    </ul><p>Si la cible est volontaire, la durée du sort est la même que si elle
-    était de NC 1.</p><blockquote>
+    </ul>
+
+    <p>Si la cible est volontaire, la durée du sort est la même que si elle
+    était de NC 1.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+    <p>L'action permet de réaliser l'attaque magique opposée contre un ennemi
+    que le PJ cible avant d'activer l'action.</p>
 
     </blockquote>
   source: ''
@@ -49,12 +54,48 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.cGkDLWhbYelWskGm
+      indice: 0
+      label: attaque magique opposée
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -62,11 +103,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746822728607
-  modifiedTime: 1746822728607
+  modifiedTime: 1749066015725
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!cGkDLWhbYelWskGm'
 
