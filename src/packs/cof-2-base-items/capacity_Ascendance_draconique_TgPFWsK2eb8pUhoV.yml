@@ -1,7 +1,7 @@
 folder: MkVPELeLqHTKBooT
 name: Ascendance draconique
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/reptiles/dragon-horned-blue.webp
 _id: TgPFWsK2eb8pUhoV
 system:
   description: >-
@@ -9,14 +9,16 @@ system:
     Il obtient une <strong>réduction des DM de 5</strong> (qui passe à 10 au
     rang 8 de la voie), correspondant au type d’énergie utilisé par le souffle
     du dragon. De plus, le personnage devient capable de v<strong>oir dans le
-    noir total</strong> comme si c’était de la pénombre jusqu’à 20
-    m.</p><blockquote>
+    noir total</strong> comme si c’était de la pénombre jusqu’à 20 m.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
-    <p>Cette capacité gère l'etat : vision dans le noir. Pour le bonus de RD à
-    gérer à la main pour le moment car nous ne savons pas à ce jour distinguer
-    les types de dégat et les exception de résistance</p>
+    <p>Cette capacité gère l'état : vision dans le noir. Une action
+    activable/désactivable permet d'ajouter une RD au PJ lorsqu'il est face au
+    bon type d'élément. Dans le Label de l'action, le type d'élément doit être
+    modifié.</p>
 
     </blockquote>
   source: ''
@@ -58,6 +60,29 @@ system:
           value: '20'
           additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.TgPFWsK2eb8pUhoV
+      indice: 1
+      label: RD contre [énergie choisie]
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.TgPFWsK2eb8pUhoV
+          subtype: combat
+          target: dr
+          apply: self
+          value: '5'
+          additionalInfos: '[énergie choisie]'
+      resolvers: []
   rank: 4
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -71,11 +96,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748450561269
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!TgPFWsK2eb8pUhoV'
 

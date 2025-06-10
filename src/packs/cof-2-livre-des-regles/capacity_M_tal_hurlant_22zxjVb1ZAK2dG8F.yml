@@ -1,0 +1,78 @@
+folder: gnEAkqoWLwgvaxae
+name: Métal hurlant
+type: capacity
+img: icons/svg/combat.svg
+_id: 22zxjVb1ZAK2dG8F
+system:
+  description: >-
+    <p style="text-align:justify">Sur un test opposé d’attaque magique réussi
+    (portée 10 m), le forgesort déforme une pièce d’équipement métallique portée
+    par sa cible. Une arme devient inutilisable et bonne pour le rebut, une
+    armure impose l’utilisation d’un dé malus à tous les tests d’attaque et
+    d’AGI de son porteur.<br />La victime peut se débarrasser de son armure au
+    prix d’une action limitée. Si l’objet est magique, le sort ne fait effet que
+    pendant un seul round (et ne peut pas être renouvelé). Appliqué à une
+    structure (par exemple, une porte blindée), ce sort inflige 3d4° DM en
+    divisant par deux sa RD.</p>
+  source: ''
+  origin: ''
+  slug: metal-hurlant
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.22zxjVb1ZAK2dG8F
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@opposite.mag'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 75000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740827884168
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!22zxjVb1ZAK2dG8F'
+

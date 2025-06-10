@@ -1,24 +1,10 @@
 folder: vJTDq4oSweIgstvo
 name: Vive attaque
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/swords-parry-block-yellow.webp
 _id: pjyQoD9m5BVy9L6v
 system:
-  description: >-
-    <p>Lorsqu’il utilise une dague, une épée courte, longue ou une rapière sur
-    les attaques de sa main principale (ou encore sur une vivelame tenue à deux
-    mains), le personnage peut ajouter son AGI en attaque au contact ou aux DM
-    (au choix, mais pas les deux en même temps, sauf s’il dispose d’une autre
-    capacité qui lui permet, par exemple attaque en finesse) au lieu de sa
-    FOR.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Cette capacité propose deux boutons d'actions activables/désactivables.
-    L'un pour ajouter l'AGI en attaque de contact, l'autre pour l'ajouter aux
-    DM.</p>
-
-    </blockquote>
+  description: "<p>Lorsqu’il utilise une dague, une épée courte, longue ou une rapière sur les attaques de sa main principale (ou encore sur une vivelame tenue à deux mains), le personnage peut ajouter son AGI en attaque au contact ou aux DM (au choix, mais pas les deux en même temps, sauf s’il dispose d’une autre capacité qui lui permet, par exemple attaque en finesse) au lieu de sa FOR.</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose deux boutons d'actions activables/désactivables. L'un pour retirer FOR et\_ ajouter l'AGI en attaque de contact, l'autre pour modifier les DM. Si le PJ a déjà une capacité permettant d'utiliser AGI à la place de FOR en attaque, il peut supprimer l'action \"contact\".</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p140
   slug: vive-attaque
@@ -38,7 +24,7 @@ system:
   actions:
     - source: Item.pjyQoD9m5BVy9L6v
       indice: 0
-      label: 'Vive attaque : contact'
+      label: contact
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -56,12 +42,12 @@ system:
           subtype: combat
           target: melee
           apply: self
-          value: '@agi'
+          value: '@agi -@for'
           additionalInfos: ''
       resolvers: []
     - source: Item.pjyQoD9m5BVy9L6v
       indice: 1
-      label: 'Vive attaque : dommages'
+      label: dommages
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -79,7 +65,7 @@ system:
           subtype: combat
           target: damMelee
           apply: self
-          value: '@agi'
+          value: '@agi -@for'
           additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
@@ -94,11 +80,11 @@ flags: {}
 _stats:
   compendiumSource: Item.pjyQoD9m5BVy9L6v
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748672663727
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!pjyQoD9m5BVy9L6v'
 

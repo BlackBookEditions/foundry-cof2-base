@@ -1,7 +1,7 @@
 folder: Jc9oocmI3B4cVSRG
 name: Fauchage
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
 system:
   description: >-
     <p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit
@@ -22,7 +22,30 @@ system:
     chargeable: false
   path: null
   cost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+          subtype: combat
+          target: dr
+          apply: self
+          value: '3'
+          additionalInfos: ''
+      resolvers: []
   manaCost: -1
 effects: []
 ownership:
@@ -32,13 +55,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1741116537789
-  modifiedTime: 1744612512905
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: vpbnhge4INcjoBKF
-sort: 6600000
+sort: 8800000
 _key: '!items!vpbnhge4INcjoBKF'
 

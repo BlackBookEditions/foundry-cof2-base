@@ -1,25 +1,31 @@
 folder: MxOWgyXN2R9SoduW
 name: Ne me tourne pas le dos
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/wounds/injury-pain-body-orange.webp
 _id: hVR70cujk8iCAsMP
 system:
   description: >-
     <p>Une fois par round, si une créature quitte le contact du personnage**, le
     personnage peut lui porter une Attaque sournoise. S’il ne dispose pas de
     cette capacité, il ajoute tout de même +1d4° aux DM s’il réussit cette
-    attaque.</p><blockquote>
+    attaque.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
+    <p>Si le PJ possède la capacité "Attaque Sournoise", il peut supprimer
+    l'action de cette capacité et utiliser son Attaque Sournoise pour effectuer
+    l'attaque. Dans le cas où le PJ n'a pas la capacité "Attaque Sournoise",
+    l'action de cette capacité permet d'activer ou désactiver le bonus aux DM de
+    l'attaque.</p>
 
-    </blockquote><p><em>**Une cible peut battre en retraite prudemment, en
-    utilisant une action limitée pour ne se déplacer que de l’équivalent d’une
-    action de mouvement. Ce type de manoeuvre n’est généralement utilisé que par
-    ceux qui ont été témoins du destin de celui qui tourne le dos au
-    PJ.</em></p>
+    </blockquote>
+
+    <p><em>**Une cible peut battre en retraite prudemment, en utilisant une
+    action limitée pour ne se déplacer que de l’équivalent d’une action de
+    mouvement. Ce type de manoeuvre n’est généralement utilisé que par ceux qui
+    ont été témoins du destin de celui qui tourne le dos au PJ.</em></p>
   source: ''
   origin: Livre des règles p144
   slug: ne-me-tourne-pas-le-dos
@@ -36,12 +42,35 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.hVR70cujk8iCAsMP
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.hVR70cujk8iCAsMP
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -49,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: Item.hVR70cujk8iCAsMP
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748928400305
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!hVR70cujk8iCAsMP'
 

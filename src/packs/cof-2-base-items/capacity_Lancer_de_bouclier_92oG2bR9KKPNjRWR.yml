@@ -1,7 +1,7 @@
 folder: JRfJNbRVVDGVKSYh
 name: Lancer de bouclier
 type: capacity
-img: icons/svg/combat.svg
+img: icons/equipment/shield/round-wooden-boss-steel-yellow-blue.webp
 _id: 92oG2bR9KKPNjRWR
 system:
   description: >-
@@ -10,13 +10,15 @@ system:
     DM d’une Attaque au bouclier et la cible doit faire un test de FOR
     difficulté [10 + FOR du personnage] ou être renversée. Tant que le bouclier
     est à moins de 20 m du personnage, il peut le faire revenir à son bras (et
-    l’équiper) par une action de mouvement (M).</p><blockquote>
+    l’équiper) par une action de mouvement (M).</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer la
-    capacité qui va faire le test d'attaque à distance et appliquer les dégâts.
-    Le test de FOR est à gérer par le MJ</p>
+    capacité qui va faire le test d'attaque à distance et appliquer les
+    dommages. Le test de FOR est à gérer par le MJ</p>
 
     </blockquote>
   source: ''
@@ -53,7 +55,7 @@ system:
       resolvers:
         - type: attack
           bonusDiceAdd: false
-          malusDiceAdd: false
+          malusDiceAdd: true
           skill:
             formula: '@atd'
             crit: ''
@@ -62,8 +64,8 @@ system:
             formula: 1d4°+@for
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
@@ -76,7 +78,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -84,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: Item.92oG2bR9KKPNjRWR
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748986936407
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!92oG2bR9KKPNjRWR'
 

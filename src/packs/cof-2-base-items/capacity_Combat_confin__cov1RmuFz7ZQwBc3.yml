@@ -1,7 +1,7 @@
 folder: zuVSaKNXT3mvhlHn
 name: Combat confiné
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/hand-grip-sword-white-brown.webp
 _id: cov1RmuFz7ZQwBc3
 system:
   description: >-
@@ -10,12 +10,14 @@ system:
     une arme à deux mains avec un dé malus. De plus, puisqu’il peut rarement
     esquiver, le combattant améliore ses techniques de parade, il gagne +1 en
     DEF et ce bonus passe à +2 au rang 7, tant qu’il tient une arme en main. Ce
-    bonus s’applique même en dehors d’un combat en milieu
-    confiné.</p><blockquote>
+    bonus s’applique même en dehors d’un combat en milieu confiné.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Cette capacité gère le bonus permanent en DEF</p>
+    <p>L'action est activable/désactivable pour appliquer le bonus de DEF
+    lorsqu'il se trouve dans un espace réduit.</p>
 
     </blockquote>
   source: ''
@@ -37,15 +39,15 @@ system:
   actions:
     - source: Item.cov1RmuFz7ZQwBc3
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: dans un espace réduit
+      chatFlavor: dans un espace réduit
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
-        activable: false
-        temporary: false
+        activable: true
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -62,7 +64,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 50000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -70,11 +72,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748951515400
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!cov1RmuFz7ZQwBc3'
 

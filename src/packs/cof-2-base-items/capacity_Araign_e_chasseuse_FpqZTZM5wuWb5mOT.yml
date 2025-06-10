@@ -1,0 +1,100 @@
+folder: Jc9oocmI3B4cVSRG
+name: Araignée chasseuse
+type: capacity
+img: icons/creatures/invertebrates/tick-cross-glowing-purple.webp
+system:
+  description: >-
+    <p>Au premier round de combat, si l’environnement permet de se dissimuler,
+    la cible doit faire un test de<strong> PER difficulté 19</strong> ou être
+    surprise.</p>
+
+    <p>Si elle attaque avec succès une cible surprise, la créature inflige
+    <strong>+1d4 DM</strong> et toute créature dont la<strong> FOR est
+    inférieure à la sienne est renversée</strong>. La créature obtient un bonus
+    de <strong>+5 à tous les tests de discrétion</strong></p>
+  source: ''
+  origin: Livre des règles p275
+  slug: araignee-chasseuse
+  subtype: ''
+  actionType: none
+  learned: true
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  actions:
+    - source: Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
+          subtype: skill
+          target: agi
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers: []
+    - source: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
+      indice: 1
+      label: si surprise
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4
+          additionalInfos: ''
+      resolvers: []
+  manaCost: -1
+  frequency: none
+  rank: 0
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749280839872
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: FpqZTZM5wuWb5mOT
+sort: 1800000
+_key: '!items!FpqZTZM5wuWb5mOT'
+

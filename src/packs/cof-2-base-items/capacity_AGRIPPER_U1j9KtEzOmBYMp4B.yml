@@ -1,7 +1,7 @@
 folder: Jc9oocmI3B4cVSRG
 name: Agripper
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/claws/claw-talons-glowing-orange.webp
 system:
   description: >-
     <p>Sur un résultat de 15‑20 au d20 en attaque, la créature agrippe sa proie
@@ -30,16 +30,16 @@ system:
   actions:
     - source: Item.W3P9VDLcfitv8jWW
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: contre créature agrippée
+      chatFlavor: contre créature agrippée
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
+        visible: false
         enabled: false
+        activable: true
         temporary: true
         noManaCost: false
-        visible: false
       conditions:
         - predicate: isOwned
       modifiers:
@@ -47,12 +47,14 @@ system:
           source: Item.W3P9VDLcfitv8jWW
           subtype: combat
           target: melee
+          apply: self
           value: '5'
           additionalInfos: ''
         - type: capacity
           source: Item.W3P9VDLcfitv8jWW
           subtype: combat
           target: damMelee
+          apply: self
           value: +1d4
           additionalInfos: ''
       resolvers: []
@@ -64,13 +66,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742189598522
-  modifiedTime: 1744612391228
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: U1j9KtEzOmBYMp4B
-sort: 1500000
+sort: 3700000
 _key: '!items!U1j9KtEzOmBYMp4B'
 

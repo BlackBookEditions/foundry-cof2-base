@@ -1,0 +1,67 @@
+folder: Ly6BSDKq0mwr1SkK
+name: Morsure du serpent
+type: capacity
+img: icons/svg/combat.svg
+_id: xPKaDAZCFvbsJrcu
+system:
+  description: >-
+    <p style="text-align:justify">Lorsqu’il attaque à mains nues, le moine
+    augmente de 1 point les chances d’obtenir un critique sur les attaques au
+    contact (par exemple, 19‑20 au lieu de 20). De plus, ses coups critiques
+    portés à mains nues sont désormais si douloureux que la cible est affaiblie
+    pendant 1 round.</p>
+  source: ''
+  origin: ''
+  slug: morsure-du-serpent
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.xPKaDAZCFvbsJrcu
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.xPKaDAZCFvbsJrcu
+          subtype: combat
+          target: crit
+          value: '-1'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 75000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740828873026
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!xPKaDAZCFvbsJrcu'
+

@@ -267,11 +267,10 @@ items:
       modifiedTime: null
       lastModifiedBy: null
     _key: '!actors.items!tYiyP0A5QGmWUKpf.B2CfTCbQxXWBP27a'
-  - folder: uVNfyNGbfZsNuFix
-    name: CHARGE
+  - folder: Jc9oocmI3B4cVSRG
+    name: Charge
     type: capacity
-    img: icons/svg/combat.svg
-    _id: pNEzk3YkCBJvgVex
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
     system:
       description: >-
         <p>La créature parcourt une distance maximale de 20 m et réalise une
@@ -280,7 +279,7 @@ items:
         faire un test de FOR difficulté 14 ou être renversée. Dans ce cas, la
         créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
       source: ''
-      origin: ''
+      origin: Livre des règles p268
       slug: charge
       subtype: ''
       actionType: l
@@ -292,27 +291,69 @@ items:
         spell: false
       path: null
       cost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.tYiyP0A5QGmWUKpf.Item.7khNMGBH0gFMb56R
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: true
+              malusDiceAdd: false
+              skill:
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d4+3
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
       manaCost: -1
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
     flags: {}
     _stats:
-      compendiumSource: Item.7YIAduF7HhKKe8GZ
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '12.331'
+      coreVersion: '12.343'
       systemId: co
       systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-    _key: '!actors.items!tYiyP0A5QGmWUKpf.pNEzk3YkCBJvgVex'
+      createdTime: 1749124127070
+      modifiedTime: 1749124180875
+      lastModifiedBy: dkGm1qUrVLQeAKiY
+    _id: 7khNMGBH0gFMb56R
+    sort: 5300000
+    _key: '!actors.items!tYiyP0A5QGmWUKpf.7khNMGBH0gFMb56R'
 effects: []
-sort: 0
+sort: 1500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -320,11 +361,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.1pwQOr5AzWx0g7uQ
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454179561
-  modifiedTime: 1742454179561
+  modifiedTime: 1749280154550
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: tYiyP0A5QGmWUKpf
 _key: '!actors!tYiyP0A5QGmWUKpf'

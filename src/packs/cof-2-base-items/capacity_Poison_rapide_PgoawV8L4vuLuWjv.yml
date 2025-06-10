@@ -1,23 +1,10 @@
 folder: QRAirsqZ6YxOJFoc
 name: Poison rapide
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/blade-tip-acid-poison-green.webp
 _id: PgoawV8L4vuLuWjv
 system:
-  description: >-
-    <p>Le personnage sait fabriquer du poison « rapide » en petite quantité.
-    Avant chaque combat, ses armes (trois au maximum) sont enduites de ce
-    poison. La première attaque réussie provoque 3d4° DM supplémentaires. Si la
-    victime réussit un test de CON difficulté [10 + INT], elle ne subit que la
-    moitié des DM.</p><blockquote>
-
-    <p><strong>Usage en jeu : </strong></p>
-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-    l'attaque avec l'arme équipée auquel vont s'ajouter lers 3d4° de degats en
-    plus. Le test de réduction de dégats est laissé au MJ.</p>
-
-    </blockquote>
+  description: "<p>Le personnage sait fabriquer du poison « rapide » en petite quantité. Avant chaque combat, ses armes (trois au maximum) sont enduites de ce poison. La première attaque réussie provoque 3d4° DM supplémentaires. Si la victime réussit un test de CON difficulté [10 + INT], elle ne subit que la moitié des DM.</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque avec l'arme équipée à\_ laquelle va s'ajouter les 3d4° de dommages en plus. Le test de réduction de dommage est laissé au MJ.</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p143
   slug: poison-rapide
@@ -28,7 +15,7 @@ system:
   frequency: combat
   charges:
     current: 1
-    max: 1
+    max: 3
   properties:
     spell: false
   path: null
@@ -75,7 +62,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -83,11 +70,11 @@ flags: {}
 _stats:
   compendiumSource: Item.PgoawV8L4vuLuWjv
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748679745431
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!PgoawV8L4vuLuWjv'
 

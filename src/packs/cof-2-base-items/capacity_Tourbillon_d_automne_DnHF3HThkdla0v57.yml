@@ -1,7 +1,7 @@
 folder: vWT5H9RDcDO3HjRj
 name: Tourbillon d’automne
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/nature/leaf-glow-maple-orange.webp
 _id: DnHF3HThkdla0v57
 system:
   description: >-
@@ -9,11 +9,15 @@ system:
     tranchants de 5 m de diamètre à une portée de 10 m. À chaque round, toutes
     les créatures dans la zone subissent [3d4° + PER] DM ou la moitié sur un
     test de CON difficulté 10 réussi (durée PER rounds). Le personnage peut le
-    déplacer à chaque round de 10 m par action de mouvement.</p><blockquote>
+    déplacer à chaque round de 10 m par action de mouvement.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+    <p>Le PJ dépense ses PM manuellement lorsqu'il lance le sort. Ensuite, il
+    peut cibler les personnes présentent dans la zone et activer l'action pour
+    leur infliger les DM sans que cela ne lui coûte de PM</p>
 
     </blockquote>
   source: ''
@@ -32,12 +36,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.DnHF3HThkdla0v57
+      indice: 0
+      label: DM dans la zone
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 3d4° + @per
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 350000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -49,7 +87,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749102951160
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!DnHF3HThkdla0v57'
 

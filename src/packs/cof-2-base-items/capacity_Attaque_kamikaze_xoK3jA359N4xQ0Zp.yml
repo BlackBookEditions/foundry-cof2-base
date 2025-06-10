@@ -1,16 +1,16 @@
 folder: LwsVYckaql2yd3YS
 name: Attaque kamikaze
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/maneuver-daggers-paired-orange.webp
 _id: xoK3jA359N4xQ0Zp
 system:
   description: >-
-    <p>Le personnage saute sur sa cible et l’agrippe pour la larder de coups au
-    corps à corps. La cible doit être de taille supérieure à la sienne. Le
-    personnage réalise un test opposé d’AGI contre la créature. En cas d’échec,
-    le personnage se retrouve renversé. En cas de réussite, il est perché sur la
-    créature ce qui lui offre les bonus suivants selon la taille de la cible
-    :</p>
+    <p style="text-align:justify">Le personnage saute sur sa cible et l’agrippe
+    pour la larder de coups au corps à corps. La cible doit être de taille
+    supérieure à la sienne. Le personnage réalise un test opposé d’AGI contre la
+    créature. En cas d’échec, le personnage se retrouve renversé. En cas de
+    réussite, il est perché sur la créature ce qui lui offre les bonus suivants
+    selon la taille de la cible :</p>
 
     <ul style="text-align:justify">
 
@@ -22,12 +22,14 @@ system:
 
     </ul>
 
-    <p> Pour se débarrasser de lui, la créature doit utiliser une action
-    d’attaque et l’emporter lors d’un test opposé d’AGI.</p><blockquote>
+    <p style="text-align:justify">Pour se débarrasser de lui, la créature doit
+    utiliser une action d’attaque et l’emporter lors d’un test opposé d’AGI.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
+    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
     l'instant</p>
 
     </blockquote>
@@ -35,7 +37,7 @@ system:
   origin: Livre des règles p139
   slug: attaque-kamikaze
   subtype: ''
-  actionType: none
+  actionType: l
   learned: false
   rank: 8
   frequency: none
@@ -47,12 +49,159 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+      indice: 0
+      label: test opposé d'AGI
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@agi'
+            crit: ''
+            difficulty: '@oppose.agi'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+      indice: 1
+      label: Grande
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: melee
+          apply: self
+          value: '2'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: def
+          apply: self
+          value: '2'
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+      indice: 2
+      label: Énorme
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: melee
+          apply: self
+          value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: def
+          apply: self
+          value: '3'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+      indice: 3
+      label: Colossale
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: melee
+          apply: self
+          value: '4'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: def
+          apply: self
+          value: '4'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
+          subtype: combat
+          target: damMelee
+          apply: self
+          value: 1d4°
+          additionalInfos: ''
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -60,11 +209,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748622089331
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!xoK3jA359N4xQ0Zp'
 

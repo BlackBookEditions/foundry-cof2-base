@@ -1,7 +1,7 @@
 folder: OcibsmGLQxprav22
 name: Pas de quartier
 type: capacity
-img: icons/svg/combat.svg
+img: icons/creatures/abilities/mouth-teeth-human.webp
 _id: jMnuppLdZw1h7iRj
 system:
   description: >-
@@ -9,14 +9,16 @@ system:
     légendaire : il peut tenter une action d’attaque gratuite contre toute
     créature à son contact qui tente de s’éloigner de lui. Pour cette attaque,
     il obtient un dé bonus en attaque et +1d4° aux DM. Il obtient les mêmes
-    bonus à toutes ses attaques lorsqu’il lui reste moins de [niveau]
-    PV.</p><blockquote>
+    bonus à toutes ses attaques lorsqu’il lui reste moins de [niveau] PV.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
-    appliquer le bonus de DM et le dé bonus.A activer dans les circonstance
-    indiquées</p>
+    appliquer le bonus de DM et le dé bonus.</p>
+
+    <p>A activer dans les circonstance indiquées</p>
 
     </blockquote>
   source: ''
@@ -74,7 +76,7 @@ system:
           additionalInfos: ''
         - type: capacity
           source: Item.jMnuppLdZw1h7iRj
-          subtype: malusDice
+          subtype: bonusDice
           target: magic
           apply: self
           value: '0'
@@ -84,7 +86,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 400000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -92,11 +94,11 @@ flags: {}
 _stats:
   compendiumSource: Item.jMnuppLdZw1h7iRj
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748673420866
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!jMnuppLdZw1h7iRj'
 

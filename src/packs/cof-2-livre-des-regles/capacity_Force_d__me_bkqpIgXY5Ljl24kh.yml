@@ -1,0 +1,77 @@
+folder: I4uDxbHkmWcP8WpV
+name: Force d'âme
+type: capacity
+img: icons/svg/combat.svg
+_id: bkqpIgXY5Ljl24kh
+system:
+  description: >-
+    <p>L’elfe est immunisé à la peur et au sommeil magique.</p>
+
+    <p>De plus, il obtient un bonus égal à son rang lorsqu’il doit faire un test
+    opposé d’attaque magique pour résister à un sort.</p>
+  source: ''
+  origin: ''
+  slug: force-dame
+  tags: []
+  subtype: ''
+  actionType: f
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          subtype: skill
+          target: agi
+          value: '@rank'
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          subtype: state
+          target: fearimmunity
+          value: '0'
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.bkqpIgXY5Ljl24kh
+          subtype: state
+          target: sleepimmunity
+          value: '0'
+      resolvers: []
+  cost: -1
+effects: []
+sort: 50000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740820079190
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!bkqpIgXY5Ljl24kh'
+

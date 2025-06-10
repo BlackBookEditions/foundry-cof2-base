@@ -1,7 +1,7 @@
 folder: bdmPo69IPAbx6ePs
 name: Paume mortelle
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/unholy/hand-claw-fire-green.webp
 _id: U4sV3hXHfP6tvOPT
 system:
   description: >-
@@ -9,12 +9,15 @@ system:
     capable de tuer net un adversaire. Le personnage doit être au contact est
     réussir un test opposé d’attaque magique contre sa cible. En cas de
     réussite, la victime meurt sur le coup. Si elle est d’un niveau supérieur ou
-    égal au personnage, elle est seulement paralysée pour 1
-    round.</p><blockquote>
+    égal au personnage, elle est seulement paralysée pour 1 round.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. Géré à la main.</p>
+    <p>L'action activable permet de réaliser l'attaque magique opposée contre
+    une cible. Le résultat est à gérer manuellement par MJ en fonction du NC de
+    la cible.</p>
 
     </blockquote>
   source: ''
@@ -33,12 +36,48 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.U4sV3hXHfP6tvOPT
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
+          dmg:
+            formula: ''
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 275000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -50,7 +89,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749100817421
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!U4sV3hXHfP6tvOPT'
 

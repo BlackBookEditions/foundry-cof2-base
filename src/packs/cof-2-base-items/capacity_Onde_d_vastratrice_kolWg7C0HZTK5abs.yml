@@ -1,7 +1,7 @@
 folder: Jc9oocmI3B4cVSRG
 name: Onde dévastratrice
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/earth/barrier-stone-explosion-debris.webp
 system:
   description: >-
     <p>Cette onde fracture la roche dans un cône de 10 m de long pour 3 m de
@@ -10,7 +10,7 @@ system:
     difficulté 15 pour diviser les DM par deux.</strong></p>
   source: ''
   origin: ''
-  slug: onde-devastatrice
+  slug: onde-devastratrice
   subtype: ''
   actionType: a
   learned: false
@@ -30,25 +30,32 @@ system:
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
+        visible: false
         enabled: false
+        activable: true
         temporary: false
         noManaCost: false
-        visible: false
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: attack
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '19'
-            crit: '0'
-            difficulty: '0'
+            difficulty: ''
           dmg:
             formula: 5d6
           target:
-            type: none
-            number: 0
+            type: multiple
+            number: 20
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   frequency: none
 effects: []
@@ -59,13 +66,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742415112197
-  modifiedTime: 1744613183555
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: kolWg7C0HZTK5abs
-sort: 3700000
+sort: 5900000
 _key: '!items!kolWg7C0HZTK5abs'
 

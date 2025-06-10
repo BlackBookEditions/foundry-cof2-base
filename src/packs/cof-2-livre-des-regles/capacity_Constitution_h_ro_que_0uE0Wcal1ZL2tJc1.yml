@@ -1,0 +1,65 @@
+folder: dDlmKHRV7pMCI2OZ
+name: Constitution héroïque
+type: capacity
+img: icons/svg/combat.svg
+_id: 0uE0Wcal1ZL2tJc1
+system:
+  description: ''
+  source: ''
+  origin: ''
+  slug: constitution-heroique
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  cost: -1
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.0uE0Wcal1ZL2tJc1
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.0uE0Wcal1ZL2tJc1
+          subtype: ability
+          target: con
+          value: '1'
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.0uE0Wcal1ZL2tJc1
+          subtype: bonusDice
+          target: con
+          value: '0'
+      resolvers: []
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  T8QXSVbafGIxbHWi: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740828594231
+  modifiedTime: 1740828652253
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!0uE0Wcal1ZL2tJc1'
+

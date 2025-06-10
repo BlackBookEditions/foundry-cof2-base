@@ -1,7 +1,7 @@
 folder: SZg1dyMk2fnDAxrY
 name: Armure à pointes
 type: capacity
-img: icons/svg/combat.svg
+img: icons/equipment/shoulder/pauldron-spiked-bone.webp
 _id: Lip8iklzd8jIUukp
 system:
   description: >-
@@ -9,11 +9,15 @@ system:
     afin de blesser les créatures qui l’attaquent. À chaque fois qu’une créature
     attaque au contact le personnage avec des armes naturelles (mains nues,
     griffes crocs) et qu’elle touche au moins une Défense de 10, elle subit 1d4
-    DM. Ces DM passent à 1d4° au rang 7.</p><blockquote>
+    DM. Ces DM passent à 1d4° au rang 7.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. Géré à la main.</p>
+    <p>Cette capacité propose une action à utiliser sur une cible siles
+    conditions ci dessus sont vérifiée, pour faire des dégats à la créature qui
+    a attaqué le joueur.</p>
 
     </blockquote>
   source: ''
@@ -32,7 +36,41 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Lip8iklzd8jIUukp
+      indice: 0
+      label: si attaqué par arme naturelle
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[0, 0,0,0,1d4,1d4,1d4°,1d4°]'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -45,11 +83,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748984746596
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Lip8iklzd8jIUukp'
 

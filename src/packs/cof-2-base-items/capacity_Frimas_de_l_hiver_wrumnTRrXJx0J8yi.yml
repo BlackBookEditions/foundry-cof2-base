@@ -1,7 +1,7 @@
 folder: vWT5H9RDcDO3HjRj
 name: Frimas de l’hiver
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/water/projectile-icecicle-glowing.webp
 _id: wrumnTRrXJx0J8yi
 system:
   description: >-
@@ -9,14 +9,17 @@ system:
     inflige [4d4° + PER] DM de froid à une cible à moins de 30 m sur un test
     d’attaque magique réussi. Si la victime rate un test de CON difficulté [10 +
     PER], elle est ralentie à son prochain tour. De plus, le personnage divise
-    par deux tous les DM de froid subis.</p><blockquote>
+    par deux tous les DM de froid subis.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
     l'attaque qui va faire un jet d'attaque magique et en cas de réussite
-    infliger les dégats. La réduction des DM de froid n'est pas prise en
-    charge.</p>
+    infliger les dommages. La réduction des DM de froid n'est pas prise en
+    charge. Le test de CON pour appliquer ou non l'effet affaibli est géré
+    manuellement par le MJ.</p>
 
     </blockquote>
   source: ''
@@ -59,11 +62,11 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 4d4°
+            formula: 4d4° + @per
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
@@ -76,7 +79,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 400000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -88,7 +91,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749103007470
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!wrumnTRrXJx0J8yi'
 

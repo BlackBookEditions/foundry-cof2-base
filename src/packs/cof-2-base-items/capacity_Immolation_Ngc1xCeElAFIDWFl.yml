@@ -1,18 +1,23 @@
 folder: DRlAanDIMVDSbbwP
 name: Immolation
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/fire/flame-burning-fist-strike.webp
 _id: Ngc1xCeElAFIDWFl
 system:
   description: >-
     <p>Le personnage s’immole dans une aura de flammes vives pendant CHA
     minutes. Il est immunisé aux DM de feu et inflige 1d4° DM de feu à tout
     attaquant qui réussit à le blesser avec une arme, 2d4° s’il s’agit d’une
-    arme naturelle.</p><blockquote>
+    arme naturelle.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+    <p>Le PJ dépense ses PM manuellement. Lorsque des cibles le touche au
+    contact, le PJ active l'action pour lancer le jet de DM qui peut être
+    appliquer aux cibles. Les DM seront doublés contre des attaques avec des
+    armes naturelles</p>
 
     </blockquote>
   source: ''
@@ -31,12 +36,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Ngc1xCeElAFIDWFl
+      indice: 0
+      label: DM sur attaquant
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 1d4°
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -48,7 +87,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749102292606
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!Ngc1xCeElAFIDWFl'
 

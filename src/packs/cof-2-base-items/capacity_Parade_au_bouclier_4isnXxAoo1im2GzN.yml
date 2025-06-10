@@ -1,18 +1,19 @@
 folder: JRfJNbRVVDGVKSYh
 name: Parade au bouclier
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/melee/shield-block-bash-yellow.webp
 _id: 4isnXxAoo1im2GzN
 system:
   description: >-
     <p>Une fois par combat, le personnage peut parer une attaque au contact ou à
     distance qui le touche avec son bouclier (action gratuite). Il ne subit
-    aucun DM sauf s’il s’agit d’un critique (il ne peut pas le
-    parer).</p><blockquote>
+    aucun DM sauf s’il s’agit d’un critique (il ne peut pas le parer).</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. Géré à la main.</p>
+    <p>Pas d'effets automatiques. Géré à la main.</p>
 
     </blockquote>
   source: ''
@@ -22,10 +23,10 @@ system:
   actionType: f
   learned: false
   rank: 4
-  frequency: none
+  frequency: combat
   charges:
-    current: 0
-    max: 0
+    current: 1
+    max: 1
   properties:
     spell: false
   path: null
@@ -44,11 +45,11 @@ flags: {}
 _stats:
   compendiumSource: Item.4isnXxAoo1im2GzN
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746558775691
-  modifiedTime: 1746558775691
+  modifiedTime: 1748986776230
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!4isnXxAoo1im2GzN'
 

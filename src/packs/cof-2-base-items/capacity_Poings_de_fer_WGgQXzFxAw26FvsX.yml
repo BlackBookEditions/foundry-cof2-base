@@ -43,6 +43,44 @@ system:
           value: '-@for+@agi'
           additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.WGgQXzFxAw26FvsX
+      indice: 1
+      label: Frappe
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: Attaque avec AGI
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '@rang[1d6,1d8,1d10,1d12,2d6]'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   cost: -1
   rank: 1
 effects: []
@@ -61,7 +99,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
-  modifiedTime: 1748262992715
+  modifiedTime: 1748450242772
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!WGgQXzFxAw26FvsX'
 

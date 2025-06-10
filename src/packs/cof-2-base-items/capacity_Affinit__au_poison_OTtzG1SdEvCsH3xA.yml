@@ -1,19 +1,22 @@
 folder: xSGTLfvAjBJhf0yx
 name: Affinité au poison
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/toxins/poison-bottle-open-fire-purple.webp
 _id: OTtzG1SdEvCsH3xA
 system:
   description: >-
     <p>Le personnage peut enduire une arme tranchante ou perforante de poison
     une fois par combat. Cette arme inflige +1d4° DM de poison. En plus des
     effets décrits ci‑dessus, le personnage divise par deux les DM et la durée
-    d’effet des poisons.</p><blockquote>
+    d’effet des poisons.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
-    appliquer le bonus de DM.A activer dans les circonstance indiquées.</p>
+    appliquer le bonus de DM. A activer dans les circonstances indiquées. La
+    résistance aux poisons n'est pas encore prise en charge.</p>
 
     </blockquote>
   source: ''
@@ -35,7 +38,7 @@ system:
   actions:
     - source: Item.OTtzG1SdEvCsH3xA
       indice: 0
-      label: Nouvelle Action 1
+      label: attaque avec poison
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -67,7 +70,7 @@ system:
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -79,7 +82,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749103642539
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!OTtzG1SdEvCsH3xA'
 

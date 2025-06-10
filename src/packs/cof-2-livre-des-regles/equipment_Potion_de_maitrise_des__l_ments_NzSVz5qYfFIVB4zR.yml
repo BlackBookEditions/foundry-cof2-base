@@ -1,0 +1,86 @@
+folder: 8DZlr3ptfsd78d8T
+name: Potion de maitrise des éléments
+type: equipment
+img: icons/svg/item-bag.svg
+system:
+  description: >-
+    <p>L'utilisateur retranche le Rang + 2 à tous les DM de feu, de froid,
+    d’électricité ou d’acide subis pendant INT minutes.</p>
+
+    <p>De plus, pendant la durée du sort, si l'utilisateur est un magicien,
+    lorsqu’il lance un sort d’un élément, le magicien peut échanger un élément
+    contre un autre (par exemple, une explosion de froid ou une flèche
+    acide).</p>
+  source: ''
+  origin: ''
+  slug: potion-de-maitrise-des-elements
+  tags: []
+  subtype: consumable
+  martialCategory: ''
+  damagetype: ''
+  quantity:
+    current: 1
+    max: null
+    destroyIfEmpty: true
+  charges:
+    current: null
+    max: null
+    destroyIfEmpty: false
+  weight:
+    value: 0
+    unit: kg
+  price:
+    value: 1250
+    unit: ''
+  rarity: common
+  equipped: false
+  properties:
+    equipable: false
+    reloadable: false
+    stackable: true
+  usage:
+    oneHand: false
+    twoHand: false
+  actions:
+    - source: Item.W0NBkIVE7p6PhLkl
+      indice: 0
+      label: Potion de maitrise des éléments
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: consumable
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  defense: null
+  magicalDefense: null
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1741116329139
+  modifiedTime: 1741116349566
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: NzSVz5qYfFIVB4zR
+sort: 200000
+_key: '!items!NzSVz5qYfFIVB4zR'
+

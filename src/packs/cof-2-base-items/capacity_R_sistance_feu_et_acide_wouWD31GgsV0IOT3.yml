@@ -1,0 +1,67 @@
+name: Résistance feu et acide
+type: capacity
+img: icons/magic/fire/flame-burning-fist-strike.webp
+system:
+  description: ''
+  source: ''
+  origin: ''
+  slug: resistance-feu-et-acide
+  subtype: ''
+  actionType: none
+  learned: false
+  rank: 0
+  frequency: none
+  charges:
+    current: 0
+    max: 0
+  properties:
+    spell: false
+  path: null
+  cost: -1
+  manaCost: -1
+  actions:
+    - source: Item.UcOKRGYDTuPjgKuA
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: true
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.UcOKRGYDTuPjgKuA
+          subtype: combat
+          target: dr
+          apply: self
+          value: '10'
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+folder: Jc9oocmI3B4cVSRG
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749281923410
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: wouWD31GgsV0IOT3
+sort: 2100000
+_key: '!items!wouWD31GgsV0IOT3'
+

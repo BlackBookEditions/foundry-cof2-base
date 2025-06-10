@@ -1,0 +1,76 @@
+folder: pqXN2QbaH8AFDPic
+name: Suggestion
+type: capacity
+img: icons/svg/combat.svg
+_id: JjrsfYycYMiokOVB
+system:
+  description: >-
+    <p>Le barde peut suggérer une action à une créature en réussissant un test
+    opposé d’attaque<br />magique. En cas de réussite, la créature fera tout son
+    possible pour satisfaire cette demande pendant 1 heure ou jusqu’à avoir
+    réussi. Elle évitera les actions suicidaires (ce qui lui donnerait
+    immédiatement un test d’INT difficulté 10 pour échapper au sort). Le sort ne
+    peut pas affecter une créature de niveau supérieur ou égal à celui du
+    lanceur</p>
+  source: ''
+  origin: ''
+  slug: suggestion
+  tags: []
+  subtype: ''
+  actionType: a
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: true
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.JjrsfYycYMiokOVB
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: magical
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@opposite.atm'
+          dmg:
+            formula: '0'
+          target:
+            type: none
+            number: 0
+            scope: all
+      modifiers: []
+  cost: -1
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740821972475
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!JjrsfYycYMiokOVB'
+

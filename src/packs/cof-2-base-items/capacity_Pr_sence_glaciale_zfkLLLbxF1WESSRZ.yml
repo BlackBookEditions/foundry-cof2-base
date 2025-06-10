@@ -1,7 +1,7 @@
 folder: pf050cd2no1cSiRN
 name: Présence glaciale
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/water/elemental-water.webp
 _id: zfkLLLbxF1WESSRZ
 system:
   description: >-
@@ -9,14 +9,16 @@ system:
     est immunisé au froid et divise les DM de feu par deux. Les créatures qui le
     touchent ou l’attaquent avec des armes naturelles subissent 1d4° DM.
     Lorsqu’il marche, il gèle le sol et peut se déplacer sur l’eau en la
-    transformant en glace. Le sort a une durée de [1d6 + INT]
-    minutes.</p><blockquote>
+    transformant en glace. Le sort a une durée de [1d6 + INT] minutes.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu :</strong></p>
 
     <p>Cette capacité va proposer un bonus temporaire sur le joueur pour gérer
-    la DEF. L'immunité/la résistance au feu et le 1d4° DM si on le touche sont
-    géré manuellement par le MJ.</p>
+    la DEF. Le PJ active l'action lorsqu'il utilise le sort et doit penser à la
+    désactiver à la fin. L'immunité/la résistance au feu et le 1d4° DM si on le
+    touche sont géré manuellement par le MJ.</p>
 
     <p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
     l'action</em></p>
@@ -49,7 +51,7 @@ system:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -61,31 +63,12 @@ system:
           apply: self
           value: '+4'
           additionalInfos: ''
-      resolvers:
-        - type: buffDebuff
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: self
-            number: 0
-            scope: all
-          additionalEffect:
-            active: true
-            applyOn: always
-            formulaType: damage
-            formula: ''
-            elementType: ice
-            statuses: []
-            duration: (1d6 + @int) * 10
-            unit: round
-            successThreshold: null
-          skill: {}
-          dmg: {}
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 250000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -93,11 +76,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746822728607
-  modifiedTime: 1746822728607
+  modifiedTime: 1749065889932
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!zfkLLLbxF1WESSRZ'
 

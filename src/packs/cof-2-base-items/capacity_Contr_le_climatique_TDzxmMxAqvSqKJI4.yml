@@ -1,7 +1,7 @@
 folder: vWT5H9RDcDO3HjRj
 name: Contrôle climatique
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/lightning/bolts-salvo-clouds-sky.webp
 _id: TDzxmMxAqvSqKJI4
 system:
   description: >-
@@ -13,17 +13,21 @@ system:
     en kilomètres (éventuellement moins). À la fin du sort, la météo reprend son
     cours normal.</p>
 
-    <p> 1 Ciel bleu 2 Nuageux 3 Pluie fine et vent faible 4 Pluie dense et vent
+    <p>1 Ciel bleu 2 Nuageux 3 Pluie fine et vent faible 4 Pluie dense et vent
     moyen 5 Pluie intense et vent fort 6 Tempête (trombes d’eau et vent
     violent)</p>
 
-    <p> Au dernier palier, le personnage peut appeler la foudre sur une cible en
+    <p>Au dernier palier, le personnage peut appeler la foudre sur une cible en
     vue par une action gratuite une fois par round. L’éclair inflige 4d4°
-    DM.</p><blockquote>
+    DM.</p>
+
+    <blockquote>
 
     <p><strong> Usage en jeu : </strong></p>
 
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+    <p>Le PJ dépense ses PM manuellement. Si la météo atteint le palier 6
+    Tempête, le PJ peut activer l'action sur une cible pour lui infliger les DM
+    de l'éclair sans dépense de PM.</p>
 
     </blockquote>
   source: ''
@@ -42,12 +46,48 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.TDzxmMxAqvSqKJI4
+      indice: 0
+      label: Foudre dans la Tempête
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 4d4°
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 600000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -59,7 +99,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746965613708
-  modifiedTime: 1746965613708
+  modifiedTime: 1749103089076
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!TDzxmMxAqvSqKJI4'
 

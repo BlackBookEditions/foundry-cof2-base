@@ -1,0 +1,66 @@
+folder: zo4SAJZAmqUPPd8T
+name: Combattant aguerri
+type: capacity
+img: icons/svg/combat.svg
+_id: oZ6pNbJLZIi6rlck
+system:
+  description: >-
+    <p>L’arquebusier choisit une capacité de rang 1 de son choix de guerrier, de
+    voleur (armure de<br />cuir) ou de rôdeur (armure de cuir renforcé).<br />Il
+    gagne aussi +1 en DEF.</p>
+  source: ''
+  origin: ''
+  slug: combattant-aguerri
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.oZ6pNbJLZIi6rlck
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: false
+        enabled: false
+        temporary: false
+        visible: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.oZ6pNbJLZIi6rlck
+          subtype: combat
+          target: def
+          value: '1'
+      resolvers: []
+  cost: -1
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740774116358
+  lastModifiedBy: eB70hIW5CxiKgFZL
+_key: '!items!oZ6pNbJLZIi6rlck'
+

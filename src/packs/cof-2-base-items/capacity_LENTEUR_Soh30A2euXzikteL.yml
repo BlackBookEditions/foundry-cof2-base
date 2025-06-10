@@ -1,7 +1,7 @@
 folder: Jc9oocmI3B4cVSRG
 name: Lenteur
 type: capacity
-img: icons/svg/combat.svg
+img: icons/magic/time/clock-stopwatch-white-blue.webp
 system:
   description: >-
     <p>Le zombie voit son AGI réduite à ‑1 et sa PER à ‑2, et il ne se déplace
@@ -20,7 +20,44 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: debuff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
+          subtype: ability
+          target: agi
+          apply: self
+          value: '-1'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
+          subtype: ability
+          target: per
+          apply: self
+          value: '-2'
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
+          subtype: attribute
+          target: mov
+          apply: self
+          value: '-5'
+          additionalInfos: ''
+      resolvers: []
   frequency: none
 effects: []
 ownership:
@@ -30,13 +67,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742418733890
-  modifiedTime: 1744613130591
-  lastModifiedBy: nGVk2zFsMDgquwhH
+  modifiedTime: 1749373027605
+  lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: Soh30A2euXzikteL
-sort: 800000
+sort: 3000000
 _key: '!items!Soh30A2euXzikteL'
 

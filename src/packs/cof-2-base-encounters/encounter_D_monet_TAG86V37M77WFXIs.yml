@@ -1,0 +1,793 @@
+folder: tv4fRs4kcCfhJHyt
+name: Démonet
+type: encounter
+img: tokenizer/npc-images/d_monet.Avatar.webp?1749282467022
+system:
+  abilities:
+    agi:
+      superior: true
+      base: 3
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: true
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: -2
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: true
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: -1
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    nc: 2
+    hp:
+      base: 15
+      value: 15
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    tempDm: 0
+  combat:
+    init:
+      base: 15
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    def:
+      base: 15
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    dr:
+      base: 5
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+    crit:
+      base: 0
+      ability: null
+      details: null
+      unit: null
+      min: null
+      max: null
+      bonuses:
+        sheet: 0
+        effects: 0
+      value: null
+  magic: 0
+  pasteData: ''
+  details:
+    category: humanoid
+    size: verSmall
+    description:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: >-
+        <p>Le démonet représente l’image d’épinal d’un démon miniature, de celui
+        qui se perche sur votre épaule pour vous suggérer des actions
+        maléfiques. Il possède une tête humaine, des ailes de chauve‑souris, des
+        cornes et une queue reptilienne fourchue &agrave; son extrémité.</p>
+    languages: []
+    properties: >-
+      <p><strong>Vol:</strong> Un d&eacute;monet peut se d&eacute;placer en vol
+      de 10 m par action de mouvement</p>
+
+      <p><strong>D&eacute;mon:</strong> Les d&eacute;mons ne sont pas
+      consid&eacute;r&eacute;s comme des cr&eacute;atures non vivantes.
+      Toutefois, ils partagent avec celles‑ci de nombreux traits. Ils ne
+      respirent pas, ne dorment jamais, ne connaissent pas la fatigue et sont
+      immunis&eacute;s au poison et aux maladies non magiques. Ils n&rsquo;ont
+      pas besoin de se sustenter, du moins pas de nourritures terrestres.</p>
+
+      <p><strong>T&eacute;l&eacute;pathie:</strong> Les d&eacute;mons peuvent
+      communiquer avec toutes les cr&eacute;atures par t&eacute;l&eacute;pathie
+      &agrave; une distance de 50 m sans avoir besoin de partager une langue
+      commune. Ils parlent l&rsquo;abyssal</p>
+
+      <p><strong>T&eacute;l&eacute;portation (L) :</strong>Le d&eacute;monet
+      peut se t&eacute;l&eacute;porter &agrave; n&rsquo;importe quel endroit
+      qu&rsquo;il voit ou qu&rsquo;il conna&icirc;t &agrave; une distance
+      maximale de 200 m jusqu&rsquo;&agrave; 3 fois par combat</p>
+
+      <p><strong>Tentation du mal :</strong> Les d&eacute;mons aiment corrompre
+      les mortels en leur offrant le pouvoir. Un d&eacute;mon peut donner un
+      d&eacute; bonus &agrave; toutes les actions d&rsquo;un mortel durant 24 h
+      (ce mortel doit avoir un niveau inf&eacute;rieur au NC du d&eacute;mon).
+      &Agrave; la fin de cette p&eacute;riode, le mortel est affaibli pendant
+      une semaine, ce qui le pousse g&eacute;n&eacute;ralement &agrave;
+      n&eacute;gocier un nouveau don de pouvoir. Ce que le d&eacute;mon fait
+      payer de plus en plus cher, jusqu&rsquo;&agrave; obtenir l&rsquo;&acirc;me
+      de sa proie. Apr&egrave;s chaque nouvelle p&eacute;riode de 24 h, la
+      p&eacute;riode d&rsquo;affaiblissement augmente d&rsquo;une semaine.</p>
+
+      <p><strong>Vision dnas le noir :</strong> Tous les d&eacute;mons voient
+      dans le noir comme en plein jour &agrave; une distance de 30 m.</p>
+
+      <p><strong>T&eacute;n&egrave;bres (L)* :&nbsp;</strong>Tous les
+      d&eacute;mons peuvent invoquer &agrave; volont&eacute; une zone fixe de
+      t&eacute;n&egrave;bres magiques de 10 m de diam&egrave;tre, &agrave; une
+      port&eacute;e de 20 m pour une dur&eacute;e de 1 min. M&ecirc;me les
+      cr&eacute;atures capables de voir dans le noir sont aveugl&eacute;es dans
+      cette zone. Il ne peut maintenir plus d&rsquo;une zone de
+      t&eacute;n&egrave;bres &agrave; la fois</p>
+  currentEffects: []
+prototypeToken:
+  name: Démonet
+  displayName: 0
+  actorLink: false
+  appendNumber: false
+  prependAdjective: false
+  width: 0.5
+  height: 0.5
+  texture:
+    src: modules/cof-base/assets/rencontres/demonet.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: -1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: false
+    range: 0
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: eRnLMLNnqgpvpmpq
+    name: Griffes et morsures
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: griffes-et-morsures
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+4'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: hVZANnYAVwaeRQZf
+    sort: 300000
+    _key: '!actors.items!TAG86V37M77WFXIs.hVZANnYAVwaeRQZf'
+  - folder: eRnLMLNnqgpvpmpq
+    name: Queue fourchue
+    type: attack
+    img: icons/svg/sword.svg
+    system:
+      description: >-
+        <p><strong>VENIN :</strong> La victime doit réussir un <strong>test de
+        CON difficulté 10</strong> ou être affaiblie pendant 1d6 min.</p>
+      source: ''
+      origin: ''
+      slug: queue-fourchue
+      subtype: melee
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+        chargeable: false
+      actions:
+        - source: Item.fxnguHLs7MQ6s3TS
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+            visible: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              skill:
+                formula: '+4'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: '1'
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: DfVnuE9PWIRUrGWP
+    sort: 300000
+    _key: '!actors.items!TAG86V37M77WFXIs.DfVnuE9PWIRUrGWP'
+  - folder: uVNfyNGbfZsNuFix
+    name: INVISIBILITÉ
+    type: capacity
+    img: icons/magic/control/silhouette-hold-change-blue.webp
+    _id: b7P16Uodbq6uwox2
+    system:
+      description: >-
+        <p>Le démon se rend invisible pendant 1d4 min. Une fois invisible,
+        personne ne peut plus détecter sa présence ou lui porter d’attaque
+        directe. S’il attaque, il redevient visible.</p>
+      source: ''
+      origin: ''
+      slug: invisibilite
+      subtype: ''
+      actionType: a
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Item.lnFteOr9PiFbOVUv
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!TAG86V37M77WFXIs.b7P16Uodbq6uwox2'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: FGvgQlLaUx6kTDVl
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.rC3E3yvLLqieqpqo.Item.FGvgQlLaUx6kTDVl
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.rC3E3yvLLqieqpqo.Item.FGvgQlLaUx6kTDVl
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!TAG86V37M77WFXIs.FGvgQlLaUx6kTDVl'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Venin
+    type: capacity
+    img: icons/creatures/abilities/fang-tooth-poison-green.webp
+    system:
+      description: >-
+        <p>La victime doit réussir un test de CON difficulté 10 ou être
+        affaiblie pendant 1d6 min.</p>
+      source: ''
+      origin: ''
+      slug: venin
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: b4Zamu62N7DsED5h
+    sort: 4700000
+    _key: '!actors.items!TAG86V37M77WFXIs.b4Zamu62N7DsED5h'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Transformation
+    type: capacity
+    img: icons/creatures/unholy/demon-hairy-winged-pink.webp
+    system:
+      description: >-
+        <p>Le démonet peut se transformer en n’importe quel animal de taille
+        très petite (chien, chat, rat, corbeau, etc.) aussi longtemps qu’il le
+        souhaite.</p>
+      source: ''
+      origin: ''
+      slug: transformation
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ngeYyyHMF8mHWI1T
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: pexw1a7DdG4EfkwV
+    sort: 4300000
+    _key: '!actors.items!TAG86V37M77WFXIs.pexw1a7DdG4EfkwV'
+  - name: Résistance feu et acide
+    type: capacity
+    img: icons/magic/fire/flame-burning-fist-strike.webp
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: resistance-feu-et-acide
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.rC3E3yvLLqieqpqo.Item.10U4RomkALJW0bmF
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.rC3E3yvLLqieqpqo.Item.10U4RomkALJW0bmF
+              subtype: combat
+              target: dr
+              apply: self
+              value: '10'
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    folder: Jc9oocmI3B4cVSRG
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.wouWD31GgsV0IOT3
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: 10U4RomkALJW0bmF
+    sort: 0
+    _key: '!actors.items!TAG86V37M77WFXIs.10U4RomkALJW0bmF'
+  - name: Résistance aux armes
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
+    system:
+      description: >-
+        <p>Le démonet possède une RD 5 sur les armes non magiques. Si les PJ ne
+        sont pas équipés<br />des armes appropriées, le NC des démons augmente
+        de 1.</p>
+      source: ''
+      origin: Livre des règles p278
+      slug: resistance-aux-armes
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: Actor.rC3E3yvLLqieqpqo.Item.D3pzCBOYoXqNCpNO
+          indice: 0
+          label: contra arme non magique
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.rC3E3yvLLqieqpqo.Item.D3pzCBOYoXqNCpNO
+              subtype: combat
+              target: dr
+              apply: self
+              value: '5'
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    folder: Jc9oocmI3B4cVSRG
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _id: D3pzCBOYoXqNCpNO
+    sort: 0
+    _key: '!actors.items!TAG86V37M77WFXIs.D3pzCBOYoXqNCpNO'
+effects: []
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749282189109
+  modifiedTime: 1749373046098
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: TAG86V37M77WFXIs
+sort: 3700000
+_key: '!actors!TAG86V37M77WFXIs'
+

@@ -1,0 +1,67 @@
+folder: 4iBwDB99Hn3Aoj3o
+name: Résilient
+type: capacity
+img: icons/svg/combat.svg
+_id: EfHop1iuz48rEI1m
+system:
+  description: >-
+    <p>Désormais, il suffit de 10 min au guerrier pour bénéficier des effets
+    d’une récupération rapide (au lieu de 30 min) et cela passe à 5 min au rang
+    4 de la voie. De plus, le guerrier obtient un bonus égal au rang atteint
+    dans la voie pour tous les tests destinés à résister aux états étourdi et
+    affaibli.</p>
+  source: ''
+  origin: ''
+  slug: resilient
+  tags: []
+  subtype: ''
+  actionType: none
+  learned: false
+  charges:
+    current: null
+    max: null
+  properties:
+    spell: false
+    chargeable: false
+  path: null
+  actions:
+    - source: Compendium.cof-base.cof-2-livre-des-regles.Item.EfHop1iuz48rEI1m
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        activable: false
+        enabled: false
+        temporary: false
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-livre-des-regles.Item.EfHop1iuz48rEI1m
+          subtype: skill
+          target: con
+          value: '@rang'
+      conditions: []
+      resolvers: []
+  cost: -1
+effects: []
+sort: 100000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+  jIzGuOO5YsHUKjek: 3
+  NtWLwYh2n5cs6XtB: 3
+  lrkjhQ5x0RUWRHSa: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1740761026318
+  modifiedTime: 1740827317737
+  lastModifiedBy: T8QXSVbafGIxbHWi
+_key: '!items!EfHop1iuz48rEI1m'
+

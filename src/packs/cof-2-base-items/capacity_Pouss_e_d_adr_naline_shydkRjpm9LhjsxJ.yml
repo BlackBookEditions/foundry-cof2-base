@@ -1,17 +1,19 @@
 folder: LwsVYckaql2yd3YS
 name: Poussée d’adrénaline
 type: capacity
-img: icons/svg/combat.svg
+img: icons/skills/movement/feet-winged-boots-brown.webp
 _id: shydkRjpm9LhjsxJ
 system:
   description: >-
     <p>Une fois par round, en dépensant 1d4 PV, le personnage gagne une action
-    de mouvement supplémentaire à son tour.</p><blockquote>
+    de mouvement supplémentaire à son tour.</p>
+
+    <blockquote>
 
     <p><strong>Usage en jeu : </strong></p>
 
-    <p>Pas d'effets automatiquess. A gérer à la main par le MJ, pour
-    l'instant</p>
+    <p>Activer l'action permet une perte automatique sur le PJ de 1d4° PV.
+    L'action de mouvement supplémentaire est à gérer manuellement.</p>
 
     </blockquote>
   source: ''
@@ -30,12 +32,45 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.shydkRjpm9LhjsxJ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: debuff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '-1d4°'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
 effects: []
-sort: 0
+sort: 87500
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -43,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.331'
+  coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
-  modifiedTime: 1746258425937
+  modifiedTime: 1748621784006
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _key: '!items!shydkRjpm9LhjsxJ'
 
