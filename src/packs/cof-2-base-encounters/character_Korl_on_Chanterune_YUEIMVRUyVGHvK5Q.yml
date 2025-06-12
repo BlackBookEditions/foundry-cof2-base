@@ -1,0 +1,4187 @@
+folder: okUDUfxGnTlJtyYG
+name: Korléon Chanterune
+type: character
+_id: YUEIMVRUyVGHvK5Q
+img: tokenizer/pc-images/korl_on_chanterune.Avatar.webp?1749762094559
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    level: 1
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 0
+      value: 9
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ''
+    tempDm: 0
+  combat:
+    init:
+      base: 0
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    def:
+      base: 0
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    melee:
+      base: 0
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    ranged:
+      base: 0
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    magic:
+      base: 0
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    crit:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    dr:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+  resources:
+    fortune:
+      base: 0
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 5
+    recovery:
+      base: 0
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 3
+    mana:
+      base: 0
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 3
+  details:
+    biography:
+      private: ''
+      public: ''
+    appearance:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    size: medium
+    languages:
+      - ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 7
+    cp:
+      value: 0
+  currentEffects: []
+  otherCapacitiesPointsSpent: 0
+prototypeToken:
+  name: Korléon Chanterune
+  displayName: 0
+  actorLink: true
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: modules/cof-base/assets/pretires/korleon.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 30
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: '#6f9be2'
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: BHbn2gP9Z2mczP4c
+    name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: cVTVU6HftJ3lIFC4
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: ''
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.cVTVU6HftJ3lIFC4
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 100007
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags:
+      exportSource:
+        world: cov2-dev
+        system: co
+        coreVersion: '12.331'
+        systemVersion: 12.331.0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.cVTVU6HftJ3lIFC4'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: PWeIPYJf4o5hbE4G
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.PWeIPYJf4o5hbE4G
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.PWeIPYJf4o5hbE4G
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.PWeIPYJf4o5hbE4G'
+  - folder: pClI1itDE2etUmdy
+    name: Nain
+    type: feature
+    img: modules/cof-base/assets/peuples/peuple_nain.webp
+    _id: GAbJuoL5yBubhs9Y
+    system:
+      description: >-
+        <p>Le nain est petit mais robuste. Célèbre pour sa barbe, il aime les
+        profondeurs de la terre, dont il extrait des métaux et des pierres
+        précieuses. Isolé, il est généralement ouvert et chaleureux, mais la
+        société naine peut paraître sévère, car le travail et l’entraînement
+        militaire y sont des obligations.</p>
+
+        <h2> Dans les Terres d’Osgild.</h2>
+
+        <p>La principale nation des nains est située dans les monts Argentés,
+        dans la vallée de Kaerimbor, mais on trouve aussi de fortes
+        concentrations du peuple du roc à Xélys (au sud des marches du Piémont)
+        et à Fort Colline, une ville minière entourée de collines d’où l’on
+        extrait tout le fer de la principauté d’Arly. Kaer Glimmerstern est une
+        vaste citée souterraine construite autour d’un joyau de feu légendaire
+        dans le nord des monts Ethernos (au sud‑est). Enfin, de petites
+        communautés de nains, appelées clans, sont aussi disséminées un peu
+        partout dans le monde, dès que des montagnes et des mines sont
+        accessibles.</p>
+
+        <h2> Interpréter un nain</h2>
+
+        <p> Vous pouvez être taciturne ou braillard, mais vous ne faites pas les
+        choses à moitié, et quand vous donnez votre avis, il est franc et
+        massif, tant is si cela froisse quelque susceptibilité. Vous êtes
+        méfiant de prime abord, mais chaleureux une fois la glace rompue et vous
+        savez entretenir l’amitié autour d’une bière ou deux… ou plus. La
+        demi‑mesure n’est pas votre fort. Votre parole est solide comme le roc
+        et vos griefs durs comme l’acier. Vous êtes coriace, courageux,
+        opiniâtre, et un combat ne vous fera jamais reculer. Oui, c’est vrai,
+        vous aimez les joyaux et les métaux précieux, mais surtout parce qu’ils
+        permettent de produire cet artisanat raffiné qui fait la fierté du
+        peuple nain. Dans les Terres d’Osgild, les nains éprouvent une nostalgie
+        viscérale à la simple évocation de Kaer‑Undün, leur ancien royaume
+        souterrain des serres du Monde, abandonné aux ténèbres à la suite d’une
+        terrible guerre contre les orcs et les géants, deux peuples qu’ils
+        détestent. Ils entretiennent avec les elfes une relation paradoxale,
+        faite de respect pour un peuple ancien, d’un esprit de compétition entre
+        les deux antiques civilisations et d’une rancoeur tenace et si ancienne
+        que tous semblent avoir à peu près oublié son origine, bien qu’elle soit
+        d’une façon ou d’une autre liée à la période à laquelle Kaer‑Undün fut
+        perdu.</p>
+
+        <h2> Noms typiques</h2>
+
+        <p>Les nains ont des prénoms courts et percutants, les principales
+        terminaisons sont en ‑in, ‑un, ‑ik, ou ‑ir, mais il en existe d’autres.
+        Suit généralement le nom de leur clan, qu’ils traduisent en langue
+        commune pour mettre en avant l’idée qu’il véhicule. Chez les femmes, la
+        terminaison en ‑hild ou ‑id est la plus courante.</p><p>
+        <strong>Masculin</strong>. Gloin Mâchefer, Krorin Briseroc, Thorin
+        Forgefer, Buldur Tranchetroll, Trorin Cassegranit, Orik Briselame, Durok
+        Écu‑de‑chêne, Guerann Marteleur, Korik Peau‑de‑pierre, etc.
+        <strong>Féminin</strong>. Astrid, Arnhild, Berthild, Brynild, Eldrid,
+        Ermenhild, Frida, Gerda, Grimhild, Gudrun, Helga, Hilda, Ingrid,
+        Klothild, Sigrid, Strida etc.</p>
+
+        <h2> Repères</h2>
+
+        <p><strong>Âge de départ :</strong> 40+ <strong>Espérance de vie
+        :</strong> 250 ans <strong>Taille :</strong> 1,15 m à 1,35 m
+        <strong>Poids </strong>: 50 à 100 kg</p><p><strong>Traits :</strong>
+        robuste et trapu. Pilosité très développée, tresses dans les cheveux et
+        la barbe, bijoux et piercing. Non, les naines n’ont pas de barbe, tout
+        juste un fin duvet avec l’âge.</p><p> </p>
+
+        <h2>Caractéristiques</h2>
+
+        <p>+1 en CON ou VOL, ‑1 en AGI</p>
+      source: ''
+      origin: ''
+      slug: nain
+      subtype: people
+      modifiers:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.GAbJuoL5yBubhs9Y
+          type: feature
+          subtype: ability
+          target: vol
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.GAbJuoL5yBubhs9Y
+          type: feature
+          subtype: ability
+          target: agi
+          value: '-1'
+          apply: self
+          additionalInfos: ''
+      paths:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      capacities: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OFhNnwqqK0OjWaiO
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.GAbJuoL5yBubhs9Y'
+  - folder: aMNRFAA7Ui4jg6IV
+    name: Voie du nain
+    type: path
+    img: modules/cof-base/assets/peuples/peuple_nain.webp
+    _id: fv7ob7xSOvSQLWZ3
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-nain
+      subtype: people
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.Xt1ubX7lKQ8EHKXB
+        - Actor.YUEIMVRUyVGHvK5Q.Item.wGUkFPSQcmQrqyOM
+        - Actor.YUEIMVRUyVGHvK5Q.Item.F2U67LEYLY5gTmBs
+        - Actor.YUEIMVRUyVGHvK5Q.Item.fJSMYmUtfX2MV1Ro
+        - Actor.YUEIMVRUyVGHvK5Q.Item.pfeMeopghv8ZccUa
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.fv7ob7xSOvSQLWZ3'
+  - folder: mGGQQms20fOHdOoG
+    name: Habitant des tunnels
+    type: capacity
+    img: icons/environment/wilderness/mine-interior-dungeon-door.webp
+    _id: Xt1ubX7lKQ8EHKXB
+    system:
+      description: "<p style=\"text-align:justify\">Dans le noir total, le nain voit comme dans la pénombre jusqu’à 30 m. De plus, il obtient un bonus de +3 à tous les tests en rapport avec la pierre, l’architecture ou les mines ainsi qu’avec les passages secrets et les pièges dans les murs et les parois rocheuses.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p59
+      slug: habitant-des-tunnels
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.Xt1ubX7lKQ8EHKXB
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.Xt1ubX7lKQ8EHKXB
+              subtype: skill
+              target: per
+              apply: self
+              value: '3'
+              additionalInfos: passage secret,piege
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.Xt1ubX7lKQ8EHKXB
+              subtype: skill
+              target: int
+              apply: self
+              value: '3'
+              additionalInfos: pierre, architecture, mines
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.Xt1ubX7lKQ8EHKXB
+              subtype: state
+              target: darkvision
+              apply: self
+              value: '30'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.Xt1ubX7lKQ8EHKXB'
+  - folder: mGGQQms20fOHdOoG
+    name: Haches et marteaux
+    type: capacity
+    img: icons/weapons/axes/axe-broad-engraved-chipped-blue.webp
+    _id: wGUkFPSQcmQrqyOM
+    system:
+      description: "<p>Le nain gagne un bonus de +1 en attaque et aux DM lorsqu’il utilise une hache ou un marteau de guerre. Il sait utiliser ces armes, quel que soit son profil.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus activable/désactivable à activer si le nain utilise une hache ou un marteau. La Maîtrise des armes doit être cochée sur le profil.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p59
+      slug: haches-et-marteaux
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.wGUkFPSQcmQrqyOM
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.wGUkFPSQcmQrqyOM
+              subtype: combat
+              target: melee
+              apply: self
+              value: '1'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.wGUkFPSQcmQrqyOM
+              subtype: combat
+              target: damMelee
+              apply: self
+              value: '1'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.wGUkFPSQcmQrqyOM'
+  - folder: mGGQQms20fOHdOoG
+    name: Résistance à la magie
+    type: capacity
+    img: icons/magic/defensive/barrier-shield-dome-deflect-teal.webp
+    _id: F2U67LEYLY5gTmBs
+    system:
+      description: "<p>Une fois par jour, le nain peut choisir d’ignorer les effets d’un sort qui le prend pour cible (mais pas un sort de zone). Les créatures dont le niveau (NC) est au moins égal au double du nain ignorent cette capacité.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Ajoute une action consommable pour tenir compte de l'utilisation ou non de la capacité dnas la journée. Il faudra une récupération complète pour la réinitialiser.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p59
+      slug: resistance-a-la-magie
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.F2U67LEYLY5gTmBs
+          indice: 0
+          label: Inorer les effets d’un sort
+          chatFlavor: ''
+          type: consumable
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: consumable
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              skill: {}
+              dmg: {}
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: daily
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 250000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.F2U67LEYLY5gTmBs'
+  - folder: mGGQQms20fOHdOoG
+    name: Fils du roc
+    type: capacity
+    img: icons/magic/earth/strike-fist-stone.webp
+    _id: fJSMYmUtfX2MV1Ro
+    system:
+      description: "<p style=\"text-align:justify\">Le nain réduit tous les DM subis de 2 points (mais il subit toujours au moins 1 DM par attaque reçue). La réduction passe à 3 au niveau 10. Elle est cumulable avec d’autres sources de réduction des DM comme la peau d’acier du barbare.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p59
+      slug: fils-du-roc
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.fJSMYmUtfX2MV1Ro
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.fJSMYmUtfX2MV1Ro
+              subtype: combat
+              target: dr
+              apply: self
+              value: 2 + round(@niv/10)
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 275000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.fJSMYmUtfX2MV1Ro'
+  - folder: mGGQQms20fOHdOoG
+    name: Ténacité
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    _id: pfeMeopghv8ZccUa
+    system:
+      description: "<p>Le nain augmente ses valeurs de CON et de VOL de +1.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p60
+      slug: tenacite
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.fv7ob7xSOvSQLWZ3
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.pfeMeopghv8ZccUa
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: false
+            enabled: false
+            temporary: false
+            visible: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.pfeMeopghv8ZccUa
+              subtype: ability
+              target: con
+              value: '1'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.pfeMeopghv8ZccUa
+              subtype: ability
+              target: vol
+              value: '1'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.pfeMeopghv8ZccUa'
+  - folder: QwpgtLSDXmthRfl7
+    name: Barde
+    type: profile
+    img: modules/cof-base/assets/profils/profil_aventurier_barde.webp
+    _id: zeqnDquxXC0zoxwx
+    system:
+      description: >-
+        <p><strong>Points de vigueur :</strong> 4 par niveau</p>
+
+        <p> Le barde est un personnage polyvalent qui utilise la magie et le
+        spectacle pour divertir et parvenir à ses fins. Il est aussi habitué aux
+        ruses qu’à la diplomatie. Ses capacités sont globalement moins tournées
+        vers le combat et davantage vers les interactions douces.</p>
+
+        <h2> Dans les Terres d’Osgild</h2>
+
+        <p>toutes les nations civilisées des Terres d’Osgild, à l’exception du
+        Protectorat de fer, accueillent des bardes. Les elfes ont un grand amour
+        des arts, de la musique, du chant et de la danse, bien qu’ils pratiquent
+        parfois un art si conceptuel que les humains ont du mal à l’apprécier.
+        Il se dit même que les chants elfiques dont la beauté touche le coeur
+        des hommes ne sont en réalité que des comptines pour enfant… Dans la
+        principauté d’Arly, Benastir, Valastir et surtout Ferrance sont des
+        cités particulièrement versées dans la culture. Le prince Thomar d’Arly
+        est un ami des lettres et des arts. Il entretient de nombreux artistes
+        et finance d’incroyables festivals dans la ville portuaire. Les nains
+        quant à eux sont des spécialistes du tambour et de la cornemuse, mais il
+        est assez rare que leurs scaldes se produisent en dehors des cités
+        naines. Malgré tout, ce sont les hauts elfes du royaume de Hautesylve
+        qui comptent le plus de bardes dans leur population.</p>
+
+        <h2> Armes &amp; armures maîtrisées</h2>
+
+        <p> Le barde sait manier les armes à une main. Les voies de barde
+        limitent l’armure au cuir renforcé et interdisent l’utilisation du
+        bouclier. Il est nécessaire d’avoir une main libre pour utiliser les
+        capacités de bardes (ni arme secondaire ni bouclier).</p>
+
+        <h2> Équipement de départ</h2>
+
+        <p> Rapière (DM 1d6, Crit 19‑20), dague (DM 1d4), instrument de musique,
+        armure de cuir (DEF +2).</p>
+      source: ''
+      origin: ''
+      slug: barde
+      modifiers: []
+      proficiencies: []
+      paths:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+        - Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+        - Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+        - Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+        - Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: false
+        dagger: true
+        greatSword: false
+        bastardSword: false
+        shortSword: true
+        longSword: true
+        spear: false
+        flail: true
+        greatFlail: false
+        club: true
+        axe: true
+        greatAxe: false
+        lance: false
+        cavalryLance: false
+        hammer: true
+        mace: true
+        pike: false
+        rapier: true
+        stiletto: true
+        swiftblade: false
+        handCrossbow: false
+        lightCrossbow: false
+        heavyCrossbow: false
+        shortBow: false
+        longBow: false
+        throwingKnife: true
+        throwingDagger: true
+        sling: false
+        throwingAxe: true
+        javelin: false
+        throwingSpear: false
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: true
+        leather: true
+        studdedLeather: true
+        chainShirt: false
+        chainMail: false
+        plateArmor: false
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: false
+        largeShield: false
+      family: aventurier
+      maxDefenseArmor: 3
+      mainProfile: true
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags:
+      co: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ZPGVnVaU2UkabnK9
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.zeqnDquxXC0zoxwx'
+  - folder: z1G2LQ9hRPgb6BHk
+    name: Voie de l'escrime
+    type: path
+    img: modules/cof-base/assets/voies/barde_escrime.webp
+    _id: XqQ1DBv10lVLpm9M
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-de-lescrime
+      subtype: profile
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.yaU0DEAHzQkYiAyC
+        - Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+        - Actor.YUEIMVRUyVGHvK5Q.Item.rlLZblGGvqJcJdFV
+        - Actor.YUEIMVRUyVGHvK5Q.Item.QHQPMjVS9fxul0hA
+        - Actor.YUEIMVRUyVGHvK5Q.Item.SkMRSDfCLh5u4xcu
+      rank: 0
+      maxDefenseArmor: 3
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.XqQ1DBv10lVLpm9M'
+  - folder: HXpvVRgPA8nZkLGS
+    name: Précision
+    type: capacity
+    img: icons/skills/melee/strike-dagger-white-orange.webp
+    _id: yaU0DEAHzQkYiAyC
+    system:
+      description: "<p>Le barde peut remplacer sa FOR par son AGI pour ses tests d’attaque au contact (mais pas aux DM) lorsqu’il emploie une arme légère à une main (les armes légères sont la dague, l’épée courte et la rapière).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le remplacement de la FOR par l'AGI sur les attaques de contact.A activer si le joueur utilise une arme légère et qu'il le souhaite.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p66
+      slug: precision
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.yaU0DEAHzQkYiAyC
+          indice: 0
+          label: utilisation d'une arme légère
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.yaU0DEAHzQkYiAyC
+              subtype: combat
+              target: melee
+              apply: self
+              value: '-@for +@agi'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.yaU0DEAHzQkYiAyC'
+  - folder: HXpvVRgPA8nZkLGS
+    name: Feinte
+    type: capacity
+    img: icons/skills/melee/sword-twirl-orange.webp
+    _id: CFXsl9dYGRnRkPIl
+    system:
+      description: "<p style=\"text-align:justify\">Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l’escrime (+4 au rang 2, par exemple) sur votre première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose 3 actions : une d'attaque, une activable désactivable pour donner ou pas le pour toucher et enfin une autre activable désactivable pour donner le bonus aux dégats (si l'attaque était réussi)</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p66
+      slug: feinte
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+          indice: 0
+          label: Attaque
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@cha'
+                crit: ''
+                difficulty: '@oppose.per'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions: []
+          modifiers: []
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+          indice: 1
+          label: Bonus d attaque
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+              subtype: combat
+              target: melee
+              apply: self
+              value: '@rang * 2'
+              additionalInfos: ''
+          resolvers: []
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+          indice: 2
+          label: Bonus dégats
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.CFXsl9dYGRnRkPIl
+              subtype: combat
+              target: damMelee
+              apply: self
+              value: 2d4°
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.CFXsl9dYGRnRkPIl'
+  - folder: HXpvVRgPA8nZkLGS
+    name: Intelligence du combat
+    type: capacity
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
+    _id: rlLZblGGvqJcJdFV
+    system:
+      description: "<p>Une fois par combat, le barde peut au choix désarmer, renverser ou aveugler pour une durée de 1 round un adversaire dont le NC est inférieur au sien en emportant un test opposé d’INT. S’il a réussi une feinte contre cet adversaire à son tour précédent, il bénéficie d’un bonus de +5 au test d’INT.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose 2 actions réalisant un test d'INT opposé. L'une des actions est sans feinte l'autre avec et bénéficie alors du +5. Au MJ d'appliquer léeffet demandé par le joueur en cas de réussite.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: intelligence-du-combat
+      subtype: ''
+      actionType: m
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.rlLZblGGvqJcJdFV
+          indice: 0
+          label: test int
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@int'
+                crit: ''
+                difficulty: '@oppose.int'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.rlLZblGGvqJcJdFV
+          indice: 1
+          label: Test int avec feinte
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@int + 5'
+                crit: ''
+                difficulty: '@oppose.int'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.rlLZblGGvqJcJdFV'
+  - folder: HXpvVRgPA8nZkLGS
+    name: Attaque flamboyante
+    type: capacity
+    img: icons/skills/melee/strike-sword-steel-yellow.webp
+    _id: QHQPMjVS9fxul0hA
+    system:
+      description: "<p style=\"text-align:justify\">Le style de combat du barde est flamboyant et surprenant : Il effectue une attaque de contact avec une arme légère et obtient un bonus d’attaque et de DM égal à son CHA (en plus de sa FOR ou de son AGI).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le test d'attaque de contact et appliquer les dommages.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: attaque-flamboyante
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.QHQPMjVS9fxul0hA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc + @cha'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '@arme.dmg + @cha'
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 350000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.QHQPMjVS9fxul0hA'
+  - folder: HXpvVRgPA8nZkLGS
+    name: Botte mortelle
+    type: capacity
+    img: icons/skills/melee/maneuver-daggers-paired-orange.webp
+    _id: SkMRSDfCLh5u4xcu
+    system:
+      description: "<p style=\"text-align:justify\">Lors d’une attaque au contact avec une arme légère, s’il obtient un résultat d’attaque supérieur ou égal à (la DEF de son adversaire + 10 points), le barde obtient un bonus de +2d4° aux DM de son attaque (les dés bonus ne sont jamais multipliés en cas de critique).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le test d'attaque et appliquer les dégâts. Si la réussite est supérieur de +10 un effet de 1 round va être appliqué pour provoquer 2d4° de dégats sur la cible. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: botte-mortelle
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.XqQ1DBv10lVLpm9M
+      cost: -1
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.SkMRSDfCLh5u4xcu
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@arme.skill'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '@arme.dmg'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: successTreshold
+                successThreshold: 10
+                formulaType: damage
+                formula: 2d4°
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+          modifiers: []
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 400000
+    ownership:
+      default: 0
+      T8QXSVbafGIxbHWi: 3
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.SkMRSDfCLh5u4xcu'
+  - folder: z1G2LQ9hRPgb6BHk
+    name: Voie de la séduction
+    type: path
+    img: modules/cof-base/assets/voies/barde_s%c3%a9duction.webp
+    _id: MqX9a8TkTgM7oqnk
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-de-la-seduction
+      subtype: profile
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.VRYCdj4TS1rzKu45
+        - Actor.YUEIMVRUyVGHvK5Q.Item.hSR3nRGmfQUEEmu1
+        - Actor.YUEIMVRUyVGHvK5Q.Item.hhI9zfVsME3hThxz
+        - Actor.YUEIMVRUyVGHvK5Q.Item.oMmMWRZrfJBXop6u
+        - Actor.YUEIMVRUyVGHvK5Q.Item.2u22XwmkraZ59ZPA
+      rank: 0
+      maxDefenseArmor: 3
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.MqX9a8TkTgM7oqnk'
+  - folder: pqXN2QbaH8AFDPic
+    name: Charmant
+    type: capacity
+    img: icons/magic/control/mouth-smile-deception-purple.webp
+    _id: VRYCdj4TS1rzKu45
+    system:
+      description: >-
+        <p>Le barde ajoute son rang + 2 aux tests effectués pour séduire,
+        convaincre, mentir ou baratiner. Désormais, il peut dépenser 1 point de
+        chance pour améliorer l’action d’un compagnon en vue, ce PC permet
+        d’ajouter [1d4° + CHA] sur le résultat du test (au lieu de
+        +10).</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Le bonus au test pour séduire est permanent à partir du moment où il
+        est appris. La dépense d'un PC pour obtenir le 2eme effet est géré
+        manuellement.</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p68
+      slug: charmant
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.VRYCdj4TS1rzKu45
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.VRYCdj4TS1rzKu45
+              subtype: skill
+              target: cha
+              apply: self
+              value: 2 + @rang
+              additionalInfos: séduire, convaincre, mentir
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.VRYCdj4TS1rzKu45'
+  - folder: pqXN2QbaH8AFDPic
+    name: Dentelles et rapière
+    type: capacity
+    img: icons/equipment/back/cloak-layered-white.webp
+    _id: hSR3nRGmfQUEEmu1
+    system:
+      description: >-
+        <p>Le barde ne met pas d’armure, cela ne sied point en société. Sa seule
+        armure est la dentelle, sa seule défense, la rapière.</p>
+
+        <p>Lorsqu’il ne porte aucune armure, le barde ajoute son CHA en DEF (en
+        plus de son AGI), toutefois ce bonus ne peut pas dépasser le rang
+        atteint dans la voie</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p68
+      slug: dentelles-et-rapiere
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.hSR3nRGmfQUEEmu1
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.hSR3nRGmfQUEEmu1
+              subtype: combat
+              target: def
+              apply: self
+              value: Math.min(@rang,@cha)
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.hSR3nRGmfQUEEmu1'
+  - folder: pqXN2QbaH8AFDPic
+    name: Baratineur de génie
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
+    _id: hhI9zfVsME3hThxz
+    system:
+      description: "<p style=\"text-align:justify\">Si le barde peut passer 10 minutes avec un humanoïde dont le niveau est inférieur ou égal à 1 (NC 1), il peut dépenser un 1 PC pour le charmer. La cible répond favorablement à vos requêtes dans la limite de ce que ferait un ami et ce lien peut se renforcer avec le temps. Si vous ne partagez pas une langue commune, cela vous coûte 2 PC.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p68
+      slug: baratineur-de-genie
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+      actions: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 175000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.hhI9zfVsME3hThxz'
+  - folder: pqXN2QbaH8AFDPic
+    name: Charisme héroïque
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    _id: oMmMWRZrfJBXop6u
+    system:
+      description: "<p>Le barde augmente sa valeur de CHA de +1. Désormais, il obtient un dé bonus aux tests de CHA. De plus, le barde peut désormais utiliser son CHA au lieu de sa VOL pour calculer le nombre de PM dont il dispose</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris. La caractéristique pour le calcul des PM peut être modifiée dans le panneau latéral de la feuille de personnage</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p68 et p125
+      slug: charisme-heroique
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.oMmMWRZrfJBXop6u
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: false
+            enabled: false
+            temporary: false
+            visible: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.oMmMWRZrfJBXop6u
+              subtype: ability
+              target: cha
+              value: '1'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.oMmMWRZrfJBXop6u
+              subtype: bonusDice
+              target: cha
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 187500
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.oMmMWRZrfJBXop6u'
+  - folder: pqXN2QbaH8AFDPic
+    name: Suggestion
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-eye.webp
+    _id: 2u22XwmkraZ59ZPA
+    system:
+      description: "<p style=\"text-align:justify\">Le barde peut suggérer une action à une créature en réussissant un test opposé d’attaque magique. En cas de réussite, la créature fera tout son possible pour satisfaire cette demande pendant 1 heure ou jusqu’à avoir réussi. Elle évitera les actions suicidaires (ce qui lui donnerait immédiatement un test d’INT difficulté 10 pour échapper au sort). Le sort ne peut pas affecter une créature de niveau supérieur ou égal à celui du lanceur</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter un test opposé. Le traitement en cas de succès est laissé au MJ.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p68
+      slug: suggestion
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.MqX9a8TkTgM7oqnk
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.2u22XwmkraZ59ZPA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: magical
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atm'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.2u22XwmkraZ59ZPA'
+  - folder: z1G2LQ9hRPgb6BHk
+    name: Voie du musicien
+    type: path
+    img: modules/cof-base/assets/voies/barde_musicien.webp
+    _id: inW4lwsdecxzhVAm
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-musicien
+      subtype: profile
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+        - Actor.YUEIMVRUyVGHvK5Q.Item.lIwLhvp3wwJOl6Sd
+        - Actor.YUEIMVRUyVGHvK5Q.Item.XtAypdgac8QK9hUd
+        - Actor.YUEIMVRUyVGHvK5Q.Item.lTMwn96Aqn9BF8sU
+        - Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+      rank: 1
+      maxDefenseArmor: 3
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.inW4lwsdecxzhVAm'
+  - folder: FXP9KycKraJxMt9L
+    name: Chant des héros
+    type: capacity
+    img: icons/skills/trades/music-singing-voice-blue.webp
+    _id: UMdjxZOcoNzYBSOB
+    system:
+      description: "<p style=\"text-align:justify\">Le barde peut chanter et inspirer ses compagnons, tous ses alliés à portée de voix et lui obtiennent un bonus de +1 à tous leurs tests pendant un nombre de minutes égal à sa valeur de CHA. Pendant toute la durée du sort, il fredonne (action gratuite qui ne l’empêche pas de lancer d’autres sorts de barde). Le bonus passe à +2 au rang 5. En plus de ce sort, le barde ajoute son rang + 2 aux tests pour jouer d’un instrument de musique ou chanter.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>2 effets : Un bonus poermanent pour les tests pour jouer de la musique et une action pour lancer un sort.</p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action qui va automatiquement attribuer aux cibles un effet temporaire pour la durée du sort. Cet effet donne les bonus indiqués dans la description. Les points de magie sont consommés automatiquement. Ne fonctionne qu'en mode combat.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: chant-des-heros
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: true
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+              subtype: skill
+              target: cha
+              apply: self
+              value: '2'
+              additionalInfos: jouer d’un instrument de musique ou chanter
+          resolvers: []
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+          indice: 1
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+              subtype: skill
+              target: all
+              apply: both
+              value: '@rang[1,1,1,1,2]'
+              additionalInfos: Chant des héros
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+              subtype: combat
+              target: melee
+              apply: both
+              value: '@rang[1,1,1,1,2]'
+              additionalInfos: Chant des héros
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+              subtype: combat
+              target: ranged
+              apply: both
+              value: '@rang[1,1,1,1,2]'
+              additionalInfos: Chant des héros
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.UMdjxZOcoNzYBSOB
+              subtype: combat
+              target: magic
+              apply: both
+              value: '@rang[1,1,1,1,2]'
+              additionalInfos: Chant des héros
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '@cha * 10'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.UMdjxZOcoNzYBSOB'
+  - folder: FXP9KycKraJxMt9L
+    name: Chant de réconfort
+    type: capacity
+    img: icons/tools/instruments/harp-yellow-teal.webp
+    _id: lIwLhvp3wwJOl6Sd
+    system:
+      description: >-
+        <p>Le barde chante ou joue de la musique pendant toute la durée d’une
+        récupération rapide (30 min). Le barde et ses alliés dans un rayon de 10
+        m, récupèrent 1d4° PV. Les soins passent à 2d4° au rang
+        4.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
+        le sort qui va automatiquement appliquer les soins sur les créatures
+        ciblées.</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p67
+      slug: chant-de-reconfort
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.lIwLhvp3wwJOl6Sd
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@rang[1,1,1,2,2]d4°'
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              dmg: {}
+          modifiers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.lIwLhvp3wwJOl6Sd'
+  - folder: FXP9KycKraJxMt9L
+    name: Attaque sonore
+    type: capacity
+    img: icons/magic/sonic/scream-wail-shout-teal.webp
+    _id: XtAypdgac8QK9hUd
+    system:
+      description: "<p style=\"text-align:justify\">Le barde pousse un cri dont les effets sont dévastateurs (ou produit un son avec un instrument à cette même fin). Il inflige [2d4° + CHA] DM à toutes les cibles dans un cône de 10 m (de long et de large). Les cibles peuvent diviser les DM par 2 si elles réussissent un test de CON difficulté [10 + CHA du barde].</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement lancer les dommages. Au MJ de proposer le test pour réduire les dégats et les appliquer.</p>\n<p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: attaque-sonore
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.XtAypdgac8QK9hUd
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: magical
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: auto
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                difficulty: '0'
+              dmg:
+                formula: 2d4° + @cha
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 175000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.XtAypdgac8QK9hUd'
+  - folder: FXP9KycKraJxMt9L
+    name: Zone de silence
+    type: capacity
+    img: icons/magic/unholy/barrier-shield-glowing-pink.webp
+    _id: lTMwn96Aqn9BF8sU
+    system:
+      description: >-
+        <p>Le barde crée une zone de silence fixe de 5 m de diamètre, jusqu’à
+        une portée de 30 m, pendant un nombre de minutes égal à sa valeur de
+        CHA. Tous les sons émis dans cette sphère sont annulés. Dans cette zone,
+        il faut réussir un test d’INT difficulté 10 pour lancer un sort.</p>
+
+        <blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatique. Au
+        MJ d'appliquer le statut "Silence" aux acteurs dans al zone</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p67
+      slug: zone-de-silence
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+      actions: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 187500
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.lTMwn96Aqn9BF8sU'
+  - folder: FXP9KycKraJxMt9L
+    name: Danse irrésistible
+    type: capacity
+    img: icons/skills/trades/music-notes-sound-blue.webp
+    _id: AohzRrYNccCMC4Zx
+    system:
+      description: "<p style=\"text-align:justify\">Le barde joue une gigue endiablée aux effets magiques. S’il réussit un test d’attaque magique opposé contre sa cible (portée 10 m), celle‑ci se met à danser pendant [1d4° + CHA] rounds, elle subit un dé malus aux tests d’attaque et ‑5 en DEF. Si la cible est d’un niveau (NC) supérieur ou égal au barde, elle ne danse qu’un seul round.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement faire le jet d'attaque magique en opposition. En cas de succès, la cible subit tous les malus indiqués ici pendant la durée indiquée. Ne fonctionne qu'en mode combat.</p>\n<p><em>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</em></p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: danse-irresistible
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.inW4lwsdecxzhVAm
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: magical
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+              subtype: combat
+              target: def
+              apply: others
+              value: '-5'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+              subtype: malusDice
+              target: melee
+              apply: others
+              value: '0'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+              subtype: malusDice
+              target: ranged
+              apply: others
+              value: '0'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.AohzRrYNccCMC4Zx
+              subtype: malusDice
+              target: magic
+              apply: others
+              value: '0'
+              additionalInfos: ''
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atm'
+                crit: ''
+                difficulty: '@oppose.mag'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: 1d4° + @cha
+                unit: round
+                successThreshold: null
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.AohzRrYNccCMC4Zx'
+  - folder: z1G2LQ9hRPgb6BHk
+    name: Voie du saltimbanque
+    type: path
+    img: modules/cof-base/assets/voies/barde_saltimbanque.webp
+    _id: AJcON7cTZCpOf3PK
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-saltimbanque
+      subtype: profile
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.R45fIPagBRUwyHwx
+        - Actor.YUEIMVRUyVGHvK5Q.Item.rIENZvjpSe6UrDzo
+        - Actor.YUEIMVRUyVGHvK5Q.Item.f09YCrqyjtFWo8Gl
+        - Actor.YUEIMVRUyVGHvK5Q.Item.I0Ey0Zxgk3iwmKqt
+        - Actor.YUEIMVRUyVGHvK5Q.Item.EqhGap6em0vQ4nuz
+      rank: 0
+      maxDefenseArmor: 3
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.AJcON7cTZCpOf3PK'
+  - folder: fXr2kA5HeRgGfLqv
+    name: Acrobate
+    type: capacity
+    img: icons/creatures/mammals/rabbit-movement-glowing-green.webp
+    _id: R45fIPagBRUwyHwx
+    system:
+      description: >-
+        <p>Le barde ajoute son rang + 2 à tous les tests qu’il effectue pour
+        réaliser des acrobaties, tenir en équilibre, faire des sauts ou de
+        l’escalade</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p67
+      slug: acrobate
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.R45fIPagBRUwyHwx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.R45fIPagBRUwyHwx
+              subtype: skill
+              target: agi
+              apply: self
+              value: '@rang + 2'
+              additionalInfos: acrobaties
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.R45fIPagBRUwyHwx'
+  - folder: fXr2kA5HeRgGfLqv
+    name: Grâce féline
+    type: capacity
+    img: icons/creatures/abilities/paw-glowing-yellow.webp
+    _id: rIENZvjpSe6UrDzo
+    system:
+      description: >-
+        <p>Le barde gagne son CHA en Initiative et +1 en DEF (+2 au rang 4). De
+        plus, le barde ajoute son rang + 2 aux tests de danse, de mime ou de
+        jonglerie</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p68
+      slug: grace-feline
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.rIENZvjpSe6UrDzo
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.rIENZvjpSe6UrDzo
+              subtype: combat
+              target: init
+              apply: self
+              value: '@cha'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.rIENZvjpSe6UrDzo
+              subtype: combat
+              target: def
+              apply: self
+              value: '@rang[1,1,1,2,2]'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.rIENZvjpSe6UrDzo
+              subtype: skill
+              target: agi
+              apply: self
+              value: 2 + @rang
+              additionalInfos: danse/mime/jonglerie
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.rIENZvjpSe6UrDzo'
+  - folder: fXr2kA5HeRgGfLqv
+    name: Lanceur de couteau
+    type: capacity
+    img: icons/skills/ranged/dagger-thrown-jeweled-purple.webp
+    _id: f09YCrqyjtFWo8Gl
+    system:
+      description: >-
+        <p>Une fois par round, en plus de ses autres actions, le barde peut
+        lancer un couteau sur une cible à distance (portée 10 m) en réussissant
+        un test d’attaque à distance. Cette attaque occasionne [1d4 + @agi] DM.
+        Il peut exécuter cette action sans pénalité, même s’il est engagé en
+        combat au contact avec un autre adversaire. Les DM passent à [1d4° +
+        @agi] au rang 5.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Le joueur sélectionne sa cible puis clique sur l'action pour faire le
+        test d'attaque et appliquer les dégâts.</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p68
+      slug: lanceur-de-couteau
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.f09YCrqyjtFWo8Gl
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: ranged
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '@rang[1d4,1d4,1d4,1d4,1d4°] + @agi'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 75000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.f09YCrqyjtFWo8Gl'
+  - folder: fXr2kA5HeRgGfLqv
+    name: Liberté d’action
+    type: capacity
+    img: icons/skills/movement/feet-winged-boots-brown.webp
+    _id: I0Ey0Zxgk3iwmKqt
+    system:
+      description: >-
+        <p>Le barde est immunisé à la peur et à tous les sorts qui asservissent
+        l’esprit (possession, charme), il est immunisé aux états ralenti et
+        immobilisé.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p68
+      slug: liberte-daction
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.I0Ey0Zxgk3iwmKqt
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: false
+            enabled: false
+            temporary: false
+            visible: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.I0Ey0Zxgk3iwmKqt
+              subtype: state
+              target: fearImmunity
+              value: '0'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.I0Ey0Zxgk3iwmKqt
+              subtype: state
+              target: enslavementImmunity
+              value: '0'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.I0Ey0Zxgk3iwmKqt
+              subtype: state
+              target: movemenAlterationImmunity
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 87500
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.I0Ey0Zxgk3iwmKqt'
+  - folder: fXr2kA5HeRgGfLqv
+    name: Esquive acrobatique
+    type: capacity
+    img: icons/skills/ranged/projectile-spiral-gray.webp
+    _id: EqhGap6em0vQ4nuz
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par round, le barde peut réaliser une esquive en réussissant un test d’attaque à distance contre une difficulté égale au résultat obtenu par son adversaire, lors de son attaque. En cas de réussite, le barde ne subit aucun DM. Si cette attaque était un critique, il subit tout de même des DM normaux (il annule donc l’effet critique « dommages doublés »).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose une action d'attaque à distance qui ne fait pas de dommage ni n'a de difficulté. Au MJ de comparer le résultat avec l'attaque que le barde tente d'annuler.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p68
+      slug: esquive-acrobatique
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.AJcON7cTZCpOf3PK
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.EqhGap6em0vQ4nuz
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: ranged
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: '0'
+                difficulty: ''
+              dmg:
+                formula: '0'
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.EqhGap6em0vQ4nuz'
+  - folder: z1G2LQ9hRPgb6BHk
+    name: Voie du vagabond
+    type: path
+    img: modules/cof-base/assets/voies/barde_vagabond.webp
+    _id: q47CjZtASz20REIq
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-vagabond
+      subtype: profile
+      capacities:
+        - Actor.YUEIMVRUyVGHvK5Q.Item.6MhMZgkVrcFosYM9
+        - Actor.YUEIMVRUyVGHvK5Q.Item.JSfMcXtS5i99f4mW
+        - Actor.YUEIMVRUyVGHvK5Q.Item.UhYa0GlBs2Cd4WYT
+        - Actor.YUEIMVRUyVGHvK5Q.Item.eOuWIwfwhHUtGed6
+        - Actor.YUEIMVRUyVGHvK5Q.Item.41MkLzmrvrrdew9p
+      rank: 1
+      maxDefenseArmor: 3
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.q47CjZtASz20REIq'
+  - folder: 6cwGJXWnartLOyu5
+    name: Rumeurs et légendes
+    type: capacity
+    img: icons/environment/settlement/palast.webp
+    _id: 6MhMZgkVrcFosYM9
+    system:
+      description: "<p>À force de voyager, le barde possède une culture générale très vaste, il ajoute son rang + 2 aux tests d’INT pour se « souvenir » d’une information historique, politique, géographique ou occulte ou encore pour identifier un objet magique difficulté (25 – (2 x niveau de magie de l’objet)).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris.</p>\n<p>Le test pour identifier les objets magiques est à réaliser manuellement.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p68
+      slug: rumeurs-et-legendes
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.6MhMZgkVrcFosYM9
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.6MhMZgkVrcFosYM9
+              subtype: skill
+              target: int
+              apply: self
+              value: 2 + @rang
+              additionalInfos: se souvenir
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.6MhMZgkVrcFosYM9'
+  - folder: 6cwGJXWnartLOyu5
+    name: Éclectique
+    type: capacity
+    img: icons/environment/settlement/watchtower-city.webp
+    _id: JSfMcXtS5i99f4mW
+    system:
+      description: "<p style=\"text-align:justify\">Le barde obtient un bonus de +1 à tous les tests de compétence (absolument tous, de se cacher dans les ombres jusqu’à forger une épée, en passant par traduire une langue ancienne). Ce bonus ne peut se cumuler à aucun autre bonus de compétence sauf celui du rang 1 de la voie de peuple. Il augmente de +1 chaque fois qu’il atteint le rang 4 dans une voie de barde</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p69
+      slug: eclectique
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.JSfMcXtS5i99f4mW
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.YUEIMVRUyVGHvK5Q.Item.JSfMcXtS5i99f4mW
+              subtype: skill
+              target: all
+              apply: self
+              value: 1 + @toutrang[4]
+              additionalInfos: toutes actions (bonus exclusif)
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.JSfMcXtS5i99f4mW'
+  - folder: 6cwGJXWnartLOyu5
+    name: Attirail
+    type: capacity
+    img: icons/tools/fasteners/nails-steel-blue.webp
+    _id: UhYa0GlBs2Cd4WYT
+    system:
+      description: "<p style=\"text-align:justify\">Le barde possède toutes sortes de choses dans son sac ou ses poches. En dépensant 1 PC, il peut sortir un objet improbable qu’il avait sur lui, mais qui n’est pas inscrit sur sa fiche de PJ, par exemple un livre de poésie, une bouteille d’un excellent vin, un jouet pour enfant, un os pour le chien, une lettre de recommandation, etc. (pour une valeur maximale de 10 pa). Il peut aussi bricoler un objet avec trois bouts de ficelles et un clou (système D).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p67
+      slug: attirail
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      actions: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.UhYa0GlBs2Cd4WYT'
+  - folder: 6cwGJXWnartLOyu5
+    name: Compréhension des langues
+    type: capacity
+    img: icons/sundries/documents/document-letter-formal-tan.webp
+    _id: eOuWIwfwhHUtGed6
+    system:
+      description: "<p style=\"text-align:justify\">Ce sort permet au barde de lire, écrire et parler une langue vivante étrangère. Le sort a une durée maximale de CHA heures, mais il peut aussi être lancé sur un allié au contact et dans ce cas, il ne dure que CHA minutes. À partir du rang 5, il peut aussi déchiffrer une inscription dans une langue morte.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p69
+      slug: comprehension-des-langues
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      actions: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.eOuWIwfwhHUtGed6'
+  - folder: 6cwGJXWnartLOyu5
+    name: Déguisement
+    type: capacity
+    img: icons/environment/people/cleric-grey.webp
+    _id: 41MkLzmrvrrdew9p
+    system:
+      description: >-
+        <p>Ce sort permet au barde de prendre l’apparence de n’importe quelle
+        humanoïde de taille à peu près équivalente (avec une marge d’environ 50
+        cm). S’il veut imiter une personne en particulier, il lui faudra réussir
+        un test de CHA difficulté 15 (20 s’il ne la connaît pas mais l’a
+        seulement vue, 10 s’il la connaît très bien). Le sort a une durée
+        maximale de CHA heures, mais il peut aussi être lancé sur un allié au
+        contact et dans ce cas, il ne dure que CHA minutes.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p69
+      slug: deguisement
+      subtype: ''
+      actionType: a
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: Actor.YUEIMVRUyVGHvK5Q.Item.q47CjZtASz20REIq
+      actions: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.41MkLzmrvrrdew9p'
+  - folder: vF1ugDhEx97jpuSd
+    name: Cuir simple
+    type: equipment
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    _id: IuOfoDo3ZGAeLCXh
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.IuOfoDo3ZGAeLCXh'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: TRucGtBDzZPbwjS3
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags: []
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.TRucGtBDzZPbwjS3
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.TRucGtBDzZPbwjS3'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée longue
+    type: equipment
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: MC55r6uSijOdExTY
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 6
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Actor.YUEIMVRUyVGHvK5Q.Item.MC55r6uSijOdExTY
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 103125
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.MC55r6uSijOdExTY'
+  - folder: Um3g0UnqzSidTvlT
+    name: Sac à dos
+    type: equipment
+    img: icons/containers/bags/pack-leather-red.webp
+    _id: 1wAJLLjZEVj0CKyS
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: sac-a-dos
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 2000000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.1wAJLLjZEVj0CKyS'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: azs3nypnIdNxwgVm
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.azs3nypnIdNxwgVm'
+  - folder: Um3g0UnqzSidTvlT
+    name: Briquet à silex
+    type: equipment
+    img: icons/commodities/stone/geode-raw-black.webp
+    _id: Nqjn9bb9woIs8oVB
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: briquet-a-silex
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.Nqjn9bb9woIs8oVB'
+  - folder: Um3g0UnqzSidTvlT
+    name: Torche
+    type: equipment
+    img: icons/sundries/lights/torch-brown.webp
+    _id: tkqD0A6DbXJgYpxF
+    system:
+      description: >-
+        <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
+        h pour une torche ou 6 h pour une lanterne (1 dose d’huile).</p>
+      source: ''
+      origin: ''
+      slug: torche
+      tags: []
+      subtype: misc
+      martialCategory: paddedClothFur
+      damagetype: ''
+      quantity:
+        current: 3
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 2100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.tkqD0A6DbXJgYpxF'
+  - folder: Um3g0UnqzSidTvlT
+    name: Violon
+    type: equipment
+    img: icons/tools/instruments/lute-gold-brown.webp
+    _id: NnnYZBd2nvee3YNa
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: violon
+      subtype: misc
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.BBlfweje5UdbnahE
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.NnnYZBd2nvee3YNa'
+  - folder: Um3g0UnqzSidTvlT
+    name: Gamelle
+    type: equipment
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
+    _id: STZsn2Aa5PGkNzTa
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: gamelle
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.STZsn2Aa5PGkNzTa'
+  - folder: Um3g0UnqzSidTvlT
+    name: Outre
+    type: equipment
+    img: icons/sundries/survival/wetskin-leather-purple.webp
+    _id: HMmtmQJGZfHWaX7F
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: outre
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!YUEIMVRUyVGHvK5Q.HMmtmQJGZfHWaX7F'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749761930942
+  modifiedTime: 1749762101936
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!actors!YUEIMVRUyVGHvK5Q'
+
