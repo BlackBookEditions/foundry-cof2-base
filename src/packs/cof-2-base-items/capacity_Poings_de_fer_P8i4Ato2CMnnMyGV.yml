@@ -2,25 +2,26 @@ folder: xhC7BVb9asc7k0Zr
 name: Poings de fer
 type: capacity
 img: icons/skills/melee/unarmed-punch-fist-yellow-red.webp
-_id: WGgQXzFxAw26FvsX
 system:
-  description: "<p style=\"text-align:justify\">Lorsqu’il combat à mains nues, le moine peut (s’il le souhaite) remplacer sa FOR par son AGI pour ses tests d’attaque au contact et il inflige [1d6+FOR] DM létaux (Voir « DM temporaires » page 219). Ces DM augmentent à chaque rang suivant : 1d8 au rang 2, 1d10 au rang 3, 1d12 au rang 4 et enfin 2d6 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p style=\"text-align:justify\">Comme de nombreuses capacités du Moine modifient les valeurs de ses attaques avec l'équipement \"Mains Nues\", il est préférable de mofifier directement l'équipement quand cette capacité est apprise. Le PJ peut modifier les Dommages dans la résolutions de l'action \"Mains Nues\" par @rang[1d6,1d8,1d10,1d12,2d6] + @for. La deuxième action permet de substituer AGI à FOR pour le calcul de l'attaque de contact lorsqu'il le souhaite (vérifier l'utilisation d'attaque à Mains Nues)</p>\n</blockquote>"
+  description: "<p>Lorsqu’il combat à mains nues, le moine peut (s’il le souhaite) remplacer sa FOR par son AGI pour ses tests d’attaque au contact et il inflige [1d6+FOR] DM létaux (Voir « DM temporaires » page 219). Ces DM augmentent à chaque rang suivant : 1d8 au rang 2, 1d10 au rang 3, 1d12 au rang 4 et enfin 2d6 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Comme de nombreuses capacités du Moine modifient les valeurs de ses attaques avec l'équipement \"Mains Nues\", il est préférable de mofifier directement l'équipement quand cette capacité est apprise. Le PJ peut modifier les Dommages dans la résolutions de l'action \"Mains Nues\" par @rang[1d6,1d8,1d10,1d12,2d6] + @for. La deuxième action permet de substituer AGI à FOR pour le calcul de l'attaque de contact lorsqu'il le souhaite (vérifier l'utilisation d'attaque à Mains Nues)</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p121
   slug: poings-de-fer
-  tags: []
   subtype: ''
   actionType: none
   learned: false
+  rank: 1
+  frequency: none
   charges:
-    current: null
-    max: null
+    current: 0
+    max: 0
   properties:
     spell: false
-    chargeable: false
   path: null
+  cost: -1
+  manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.WGgQXzFxAw26FvsX
+    - source: Item.7tp8x2AK5WgEl1fU
       indice: 0
       label: Attaque avec AGI
       chatFlavor: ''
@@ -36,14 +37,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WGgQXzFxAw26FvsX
+          source: Item.7tp8x2AK5WgEl1fU
           subtype: combat
           target: melee
           apply: self
-          value: '-@for+@agi'
+          value: '@agi - @for'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.WGgQXzFxAw26FvsX
+    - source: Item.7tp8x2AK5WgEl1fU
       indice: 1
       label: Frappe
       chatFlavor: ''
@@ -58,7 +59,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: Attaque avec AGI
+          object: '0'
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -81,16 +82,13 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  cost: -1
-  rank: 1
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
 effects: []
-sort: 0
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -98,8 +96,10 @@ _stats:
   coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740761026318
-  modifiedTime: 1748450242772
+  createdTime: 1749760360438
+  modifiedTime: 1749760360438
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!WGgQXzFxAw26FvsX'
+_id: P8i4Ato2CMnnMyGV
+sort: 0
+_key: '!items!P8i4Ato2CMnnMyGV'
 

@@ -1,16 +1,16 @@
-folder: B8aQGGuHER8V7rfw
 name: Ascétisme
 type: capacity
 img: icons/skills/movement/arrows-up-trio-red.webp
-_id: ujhEauM4Ag87OJxH
 system:
   description: >-
     <p>Le moine ne mange presque plus, et il peut subsister sans eau et sans
     sommeil pendant [5 + VOL] jour. Il ne subit aucune pénalité durant cette
     période. De plus, le moine augmente sa CON de +1 et obtient un dé bonus aux
-    tests de CON.</p><blockquote>
+    tests de CON.</p>
 
-    <p><strong>Usage en jeu : </strong></p>
+    <blockquote>
+
+    <p><strong>Usage en jeu :</strong></p>
 
     <p>Il s'agit d'un bonus permanent de CON à partir du moment où il est
     appris</p>
@@ -19,19 +19,21 @@ system:
   source: ''
   origin: Livre des règles p119
   slug: ascetisme
-  tags: []
   subtype: ''
   actionType: none
   learned: false
+  rank: 5
+  frequency: none
   charges:
-    current: null
-    max: null
+    current: 0
+    max: 0
   properties:
     spell: false
-    chargeable: false
   path: null
+  cost: -1
+  manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
+    - source: Item.oBFZpqNnJA6gCtof
       indice: 0
       label: ''
       chatFlavor: ''
@@ -39,32 +41,36 @@ system:
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
+          source: Item.oBFZpqNnJA6gCtof
           subtype: ability
           target: con
+          apply: self
           value: '1'
+          additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ujhEauM4Ag87OJxH
+          source: Item.oBFZpqNnJA6gCtof
           subtype: bonusDice
           target: con
+          apply: self
           value: '0'
-      conditions: []
+          additionalInfos: ''
       resolvers: []
-  cost: -1
-  rank: 5
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
 effects: []
-sort: 500000
+folder: B8aQGGuHER8V7rfw
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -72,8 +78,10 @@ _stats:
   coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740761026318
-  modifiedTime: 1748262368728
+  createdTime: 1749759904969
+  modifiedTime: 1749759904969
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!ujhEauM4Ag87OJxH'
+_id: CkjN20zaK9Qqv7wB
+sort: 0
+_key: '!items!CkjN20zaK9Qqv7wB'
 

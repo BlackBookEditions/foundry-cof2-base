@@ -2,25 +2,26 @@ folder: xhC7BVb9asc7k0Zr
 name: Puissance du ki
 type: capacity
 img: icons/magic/sonic/explosion-impact-shock-wave.webp
-_id: lY2TnaBgkJ6qWI9I
 system:
-  description: "<p>Le moine peut choisir de s’imposer un dé malus sur une attaque au contact et ajoute +2d4° aux DM. Cette capacité peut aussi être utilisée avec Projection du ki qui est une attaque magique.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose une action activable/désactivable qui va appliquer un bonus de 2d4° aux DM et imposer un dé malus aux attaques de contact et magiques. Cela permet de tenir compte du bonus/malus autant sur l'attaque à mains nues que sur \"projection de Ki\".</p>\n</blockquote>"
+  description: "<p>Le moine peut choisir de s’imposer un dé malus sur une attaque au contact et ajoute +2d4° aux DM. Cette capacité peut aussi être utilisée avec Projection du ki qui est une attaque magique.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose une action activable/désactivable qui va appliquer un bonus de 2d4° aux DM et imposer un dé malus aux attaques de contact et magiques. Cela permet de tenir compte du bonus/malus autant sur l'attaque à mains nues que sur \"projection de Ki\".</p>\n</blockquote>"
   source: ''
   origin: Livre des règles p121
   slug: puissance-du-ki
-  tags: []
   subtype: ''
   actionType: none
   learned: false
+  rank: 5
+  frequency: none
   charges:
-    current: null
-    max: null
+    current: 0
+    max: 0
   properties:
     spell: false
-    chargeable: false
   path: null
+  cost: -1
+  manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+    - source: Item.Ua3XNrP03GsXgTwG
       indice: 0
       label: ''
       chatFlavor: ''
@@ -36,37 +37,34 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
+          source: Item.Ua3XNrP03GsXgTwG
           subtype: combat
           target: damMelee
           apply: self
           value: 2d4°
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
-          subtype: malusDice
+          source: Item.Ua3XNrP03GsXgTwG
+          subtype: bonusDice
           target: melee
           apply: self
           value: '0'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.lY2TnaBgkJ6qWI9I
-          subtype: malusDice
-          target: magic
+          source: Item.Ua3XNrP03GsXgTwG
+          subtype: bonusDice
+          target: ranged
           apply: self
           value: '0'
           additionalInfos: ''
       resolvers: []
-  cost: -1
-  rank: 5
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
 effects: []
-sort: 500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -74,8 +72,10 @@ _stats:
   coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740761026318
-  modifiedTime: 1748263161194
+  createdTime: 1749760617044
+  modifiedTime: 1749760617044
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!lY2TnaBgkJ6qWI9I'
+_id: qtJ9SrHYKgNDtnTj
+sort: 0
+_key: '!items!qtJ9SrHYKgNDtnTj'
 

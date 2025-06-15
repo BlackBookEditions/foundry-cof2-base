@@ -2,7 +2,6 @@ folder: F7Tt7sG8uNUrJciv
 name: Châtiment divin
 type: capacity
 img: icons/skills/melee/sword-winged-holy-orange.webp
-_id: Pk08RaVqV25XxQdO
 system:
   description: >-
     <p>Le prêtre effectue une attaque de contact avec un dé bonus et ajoute son
@@ -33,19 +32,21 @@ system:
   source: ''
   origin: Livre des règles p124
   slug: chatiment-divin
-  tags: []
   subtype: ''
-  actionType: l
+  actionType: none
   learned: false
+  rank: 3
+  frequency: none
   charges:
-    current: null
-    max: null
+    current: 0
+    max: 0
   properties:
     spell: false
-    chargeable: false
   path: null
+  cost: -1
+  manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.Pk08RaVqV25XxQdO
+    - source: Item.4Zu2DuX52u7MqY8f
       indice: 0
       label: ''
       chatFlavor: ''
@@ -81,7 +82,7 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.Pk08RaVqV25XxQdO
+    - source: Item.4Zu2DuX52u7MqY8f
       indice: 1
       label: Châtiment divin +1PM
       chatFlavor: ''
@@ -117,7 +118,7 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.Pk08RaVqV25XxQdO
+    - source: Item.4Zu2DuX52u7MqY8f
       indice: 2
       label: Châtiment divin +2PM
       chatFlavor: ''
@@ -126,12 +127,11 @@ system:
       properties:
         visible: false
         enabled: false
-        activable: true
+        activable: false
         temporary: false
         noManaCost: false
       conditions:
-        - predicate: isLinkedActionActivated
-          object: a remplacer pr "est appris" au rang 5
+        - predicate: isLearned
       resolvers:
         - type: attack
           bonusDiceAdd: true
@@ -144,8 +144,8 @@ system:
             formula: '@arme.dmg + @cha + 2d4°'
           target:
             type: single
-            scope: all
             number: 0
+            scope: all
           additionalEffect:
             active: false
             applyOn: success
@@ -154,16 +154,13 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  cost: -1
-  rank: 3
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
 effects: []
-sort: 100000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
-  jIzGuOO5YsHUKjek: 3
-  NtWLwYh2n5cs6XtB: 3
-  lrkjhQ5x0RUWRHSa: 3
 flags: {}
 _stats:
   compendiumSource: null
@@ -171,8 +168,10 @@ _stats:
   coreVersion: '12.343'
   systemId: co
   systemVersion: 12.331.0
-  createdTime: 1740761026318
-  modifiedTime: 1748264241576
+  createdTime: 1749761640608
+  modifiedTime: 1749761643142
   lastModifiedBy: dkGm1qUrVLQeAKiY
-_key: '!items!Pk08RaVqV25XxQdO'
+_id: 9guRj1F5ZYCi2iKz
+sort: 175000
+_key: '!items!9guRj1F5ZYCi2iKz'
 

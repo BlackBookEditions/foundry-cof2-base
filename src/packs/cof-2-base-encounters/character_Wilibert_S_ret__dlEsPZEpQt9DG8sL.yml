@@ -1,0 +1,3970 @@
+folder: okUDUfxGnTlJtyYG
+name: Wilibert Sûreté
+type: character
+_id: dlEsPZEpQt9DG8sL
+img: tokenizer/pc-images/wilibert_s_ret_.Avatar.webp?1749762152717
+system:
+  abilities:
+    agi:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    con:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    for:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    per:
+      superior: false
+      base: 1
+      bonuses:
+        sheet: 0
+        effects: 0
+    cha:
+      superior: false
+      base: 2
+      bonuses:
+        sheet: 0
+        effects: 0
+    int:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+    vol:
+      superior: false
+      base: 0
+      bonuses:
+        sheet: 0
+        effects: 0
+  attributes:
+    movement:
+      base: 10
+      unit: m
+      bonuses:
+        sheet: 0
+        effects: 0
+      ability: null
+      details: null
+      min: null
+      max: null
+      value: null
+    level: 1
+    encumbrance:
+      value: 0
+      encumbered: false
+    hp:
+      base: 0
+      value: 9
+      temp: null
+      max: 0
+      tempmax: null
+      bonuses:
+        sheet: 0
+        effects: 0
+    xp:
+      max: 0
+    recovery:
+      dice: ''
+    tempDm: 0
+  combat:
+    init:
+      base: 0
+      ability: per
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    def:
+      base: 0
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    melee:
+      base: 0
+      ability: for
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    ranged:
+      base: 0
+      ability: agi
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    magic:
+      base: 0
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    crit:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+    dr:
+      base: 0
+      ability: ''
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+  resources:
+    fortune:
+      base: 0
+      ability: cha
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 5
+    recovery:
+      base: 0
+      ability: con
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: 3
+    mana:
+      base: 0
+      ability: vol
+      bonuses:
+        sheet: 0
+        effects: 0
+      details: null
+      unit: null
+      min: null
+      max: null
+      value: null
+  details:
+    biography:
+      private: ''
+      public: ''
+    appearance:
+      private: ''
+      public: ''
+    notes:
+      private: ''
+      public: ''
+    size: medium
+    languages:
+      - ''
+  wealth:
+    gp:
+      value: 0
+    sp:
+      value: 7
+    cp:
+      value: 0
+  currentEffects: []
+  otherCapacitiesPointsSpent: 0
+prototypeToken:
+  name: Wilibert Sûreté
+  displayName: 0
+  actorLink: true
+  appendNumber: false
+  prependAdjective: false
+  width: 1
+  height: 1
+  texture:
+    src: modules/cof-base/assets/pretires/wilibert.webp
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    scaleX: 1
+    scaleY: 1
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  hexagonalShape: 0
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  disposition: 1
+  displayBars: 0
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: resources.mana
+  light:
+    negative: false
+    priority: 0
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    color: null
+    coloration: 1
+    dim: 0
+    attenuation: 0.5
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      type: null
+      speed: 5
+      intensity: 5
+      reverse: false
+    darkness:
+      min: 0
+      max: 1
+  sight:
+    enabled: true
+    range: 10
+    angle: 360
+    visionMode: darkvision
+    color: null
+    attenuation: 0.1
+    brightness: 0
+    saturation: -1
+    contrast: 0
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: '#6f9be2'
+      background: null
+    effects: 0
+    subject:
+      scale: 1
+      texture: null
+  flags: {}
+  randomImg: false
+items:
+  - folder: BHbn2gP9Z2mczP4c
+    name: Mains nues
+    type: equipment
+    img: icons/skills/melee/unarmed-punch-fist.webp
+    _id: 9rx4OhHPJfs2NY3G
+    system:
+      description: >-
+        <p>Dans le cas du combat à mains nues, les DM sont généralement
+        temporaires, sauf pour les moines</p>
+      source: ''
+      origin: ''
+      slug: mains-nues
+      tags:
+        - dmtemporaires
+      subtype: weapon
+      martialCategory: unarmed
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.9rx4OhHPJfs2NY3G
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d3 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      damagetype: impact
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 100007
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags:
+      exportSource:
+        world: cov2-dev
+        system: co
+        coreVersion: '12.331'
+        systemVersion: 12.331.0
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.9rx4OhHPJfs2NY3G'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: FcYPJPiev9rejmKA
+    system:
+      description: "<p style=\"text-align:justify\">Sacrifiez toutes vos actions pour donner +5 en attaque au contact à un allié lors de sa prochaine attaque contre la créature désignée. Pour soutenir, vous devez être au contact de la créature désignée et cela compte comme une action offensive. Le bonus ne dure pas plus d’un round (jusqu’au tour du personnage, au round suivant).</p>\n<p>\_</p>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un effet temporaire de +5 en attaque de contact pour 1 round.</p>"
+      source: ''
+      origin: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.FcYPJPiev9rejmKA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.FcYPJPiev9rejmKA
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.FcYPJPiev9rejmKA'
+  - folder: pClI1itDE2etUmdy
+    name: Gnome
+    type: feature
+    img: modules/cof-base/assets/peuples/peuple_gnome.webp
+    _id: kPqUwGcCkjlMmS2a
+    system:
+      description: >-
+        <p>Le gnome est une créature de petite taille pourvue d’un gros nez,
+        d’une bonne nature et d’une curiosité insatiable pour la magie et les
+        sciences. C’est un compagnon souvent agréable, bien qu’un peu original.
+        Les nains et les halfelins l’apprécient, tandis que les « grandes »
+        personnes se montrent plutôt indifférentes à leur égard.</p><p> </p>
+
+        <h2>Dans les Terres d’Osgild</h2>
+
+        <p>Ce peuple industrieux réside majoritairement dans la principauté
+        d’Arly. La région de Wyks ou le Bois dormant sont de bonnes origines
+        géographiques pour un personnage gnome. Des gnomes sont également
+        installés tout le long des frontières de Hautesylve. De nombreux gnomes
+        ont colonisé les Hauts de Hurleroche (entre Hautesylve et le désert des
+        Morteroches) où se situe leur capitale, une étonnante cité souterraine
+        nommée Hurlevent. Mais l’existence de cette cité est une information
+        assez peu connue des autres peuples, à l’exception des elfes de
+        Hautesylve. Enfin, il existerait au sein de la forêt de Luir‑An‑Doral
+        des tribus de gnomes belliqueux à la peau sombre et aux coutumes
+        anthropophages qui s’intéresseraient davantage à la nécromancie qu’aux
+        illusions, et plus aux poisons qu’aux sciences.</p>
+
+        <h2> Interpréter un gnome</h2>
+
+        <p>Vous êtes généralement joyeux, optimiste et enthousiaste et cet état
+        d’esprit positif fait de vous un agréable compagnon. Mais il faut bien
+        cela pour vous supporter, car vous êtes aussi très original, et jamais à
+        court d’idée ou de plans farfelus. De plus, vous avez tendance à n’en
+        faire qu’à votre tête… Essayez de trouver une passion originale, un
+        sujet d’étude improbable ou une collection étrange. Par exemple, un
+        gnome pourrait avoir une passion pour la composition de la terre de
+        surface, et le projet de sa vie pourrait être de recenser tous les
+        terroirs des Terres d’Osgild au sein d’une classification basée sur leur
+        goût en bouche… Vos affinités avec les nains et les halfelins sont très
+        fortes. Vous vous entendez bien avec les elfes et, bien que ceux‑ci vous
+        considèrent avec condescendance, vous ne leur en tenez pas rigueur. Car
+        globalement, les gnomes ont très bon caractère et il en faut vraiment
+        beaucoup pour mettre un gnome en colère. D’ailleurs, il se dit que si un
+        gnome devait se venger de son pire ennemi, il le ferait sans doute en
+        blaguant.</p><p> </p>
+
+        <h2>Noms typiques</h2>
+
+        <p>Les gnomes aiment les prénoms que les humains jugent désuets. Ils ont
+        aussi un nom de famille compliqué et long, qu’ils accolent toujours à ce
+        prénom. Un habitant de notre monde pourrait trouver que ces noms ont des
+        consonances germaniques et étranges.</p><p> <strong>Masculin</strong>.
+        Albert Blumdenplick, Eustache Dimtigballen, Firmin Vondemacht, Isidore
+        Kolerbiltag, Nestor Wurmenship, etc. <strong>Féminin</strong>. Thérèse
+        Aliserwilp, Huguette Uhldimmerstelp, Rose Molkenpulp, Eugénie
+        Bimpbelinedor, etc.</p>
+
+        <h2> Repères</h2>
+
+        <p><strong>Âge de départ : </strong>40+ <strong>Espérance de vie
+        :</strong> 250 ans <strong>Taille : </strong>1 m à 1,20 m <strong>Poids
+        :</strong> 30 à 50 kg <strong>Traits :</strong> Petit et rondouillard,
+        gros nez. Moustaches et rouflaquettes pour les gnomes, couettes pour les
+        gnomettes. Oreilles un peu pointues ou grandes et rondes.</p><p> </p>
+
+        <h2>Caractéristiques</h2>
+
+        <p>+1 en INT ou PER, ‑1 en FOR</p>
+      source: ''
+      origin: ''
+      slug: gnome
+      subtype: people
+      modifiers:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.kPqUwGcCkjlMmS2a
+          type: feature
+          subtype: ability
+          target: per
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.kPqUwGcCkjlMmS2a
+          type: feature
+          subtype: ability
+          target: for
+          value: '-1'
+          apply: self
+          additionalInfos: ''
+      paths:
+        - Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      capacities: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.18FasattJI9iCZ1t
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.kPqUwGcCkjlMmS2a'
+  - folder: aMNRFAA7Ui4jg6IV
+    name: Voie du gnome
+    type: path
+    img: modules/cof-base/assets/peuples/peuple_gnome.webp
+    _id: 3sixNgtKWSLBj6vy
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-gnome
+      subtype: people
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.RwFBZjH1WXFekiqx
+        - Actor.dlEsPZEpQt9DG8sL.Item.93mllaLCzudiAWUj
+        - Actor.dlEsPZEpQt9DG8sL.Item.dOLNQ4j9ZXLCHtsd
+        - Actor.dlEsPZEpQt9DG8sL.Item.CntteJBGslu4afLv
+        - Actor.dlEsPZEpQt9DG8sL.Item.lxin2oteoEAszwaL
+      rank: 1
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 600000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.3sixNgtKWSLBj6vy'
+  - folder: FzeaG6TAmwhJHagA
+    name: Don étrange
+    type: capacity
+    img: icons/tools/laboratory/vials-blue-pink.webp
+    _id: RwFBZjH1WXFekiqx
+    system:
+      description: "<p style=\"text-align:justify\">Le gnome possède un talent inné pour les sciences, qu’elles soient occultes ou plus ordinaires. Il gagne un bonus de +3 à tous les tests scientifiques (INT) et il choisit une capacité de rang 1 d’ensorceleur. S’il porte une armure, il ne peut pas utiliser ce sort plus d’une fois par jour (il doit payer le coût en PM de façon normale). Dans le noir total, le gnome voit comme dans la pénombre jusqu’à 10 m.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité contient une amélioration permanente sur la vision dans le noir et le bonus aux jets de caractéristique. Pour la capacité d'ensorceleur, il suffit de glisser deposer la capacité choisie sous celle-ci dans la fiche de personnage</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p53
+      slug: don-etrange
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.RwFBZjH1WXFekiqx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.RwFBZjH1WXFekiqx
+              subtype: state
+              target: darkvision
+              apply: self
+              value: '10'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.RwFBZjH1WXFekiqx
+              subtype: skill
+              target: int
+              apply: self
+              value: '3'
+              additionalInfos: test scientifiques
+          resolvers: []
+      cost: -1
+      rank: 1
+      allowLinkedCapacity: true
+      frequency: none
+      manaCost: -1
+      linkedCapacity: Actor.dlEsPZEpQt9DG8sL.Item.qUIoqBkryYYqimFi
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.RwFBZjH1WXFekiqx'
+  - folder: FzeaG6TAmwhJHagA
+    name: Petit pote
+    type: capacity
+    img: icons/skills/social/thumbsup-approval-like.webp
+    _id: 93mllaLCzudiAWUj
+    system:
+      description: >-
+        <p>Le gnome est un compagnon sympathique et difficile à considérer comme
+        dangereux ou malintentionné. Il gagne +3 à tous les tests d’interaction
+        sociale sauf pour intimider. Il gagne aussi 1 point de
+        chance.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p54
+      slug: petit-pote
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.93mllaLCzudiAWUj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.93mllaLCzudiAWUj
+              subtype: skill
+              target: cha
+              apply: self
+              value: '3'
+              additionalInfos: interaction sociale
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.93mllaLCzudiAWUj
+              subtype: resource
+              target: fp
+              apply: self
+              value: '1'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.93mllaLCzudiAWUj'
+  - folder: FzeaG6TAmwhJHagA
+    name: Insignifiant
+    type: capacity
+    img: icons/magic/movement/chevrons-down-yellow.webp
+    _id: dOLNQ4j9ZXLCHtsd
+    system:
+      description: "<p style=\"text-align:justify\">Le gnome sait comment échapper aux attaques des grandes créatures comme les géants. Il gagne un bonus de +2 en DEF contre les créatures de taille grande ou supérieure. Ce bonus passe à +3 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong>\_Action activable/désactivable en cliquant/recliquant dessus. A activer contre les créatures grandes ou supérieures.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p54
+      slug: insignifiant
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.dOLNQ4j9ZXLCHtsd
+          indice: 0
+          label: contre créatures grandes ou plus
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.dOLNQ4j9ZXLCHtsd
+              subtype: combat
+              target: def
+              apply: self
+              value: '@rang[2,2,2,2,3]'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.dOLNQ4j9ZXLCHtsd'
+  - folder: FzeaG6TAmwhJHagA
+    name: Merveille technologique
+    type: capacity
+    img: icons/weapons/crossbows/crossbow-loaded-black.webp
+    _id: CntteJBGslu4afLv
+    system:
+      description: "<p>Le gnome sait utiliser les arbalètes (et les armes à poudre si votre MJ autorise leur usage), quel que soit son profil. Il ajoute son AGI aux DM qu’il inflige avec ces armes</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong> Bonus activable/désactivable en cliquant/recliquant dessus. A activer lorsque la gnome utilise les arbalètes ou armes à poudre.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p54
+      slug: merveille-technologique
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.CntteJBGslu4afLv
+          indice: 0
+          label: avec arbalètes ou armes à poudre
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.CntteJBGslu4afLv
+              subtype: combat
+              target: damRanged
+              apply: self
+              value: '@agi'
+              additionalInfos: arbalètes et armes à poudre
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 250000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.CntteJBGslu4afLv'
+  - folder: FzeaG6TAmwhJHagA
+    name: Bonne nature
+    type: capacity
+    img: icons/skills/social/peace-luck-insult.webp
+    _id: lxin2oteoEAszwaL
+    system:
+      description: >-
+        <p>Le gnome augmente ses valeurs de CON et de CHA de +1.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p54
+      slug: bonne-nature
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.3sixNgtKWSLBj6vy
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.lxin2oteoEAszwaL
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            activable: false
+            enabled: false
+            temporary: false
+            visible: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.lxin2oteoEAszwaL
+              subtype: ability
+              target: con
+              value: '1'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.lxin2oteoEAszwaL
+              subtype: ability
+              target: cha
+              value: '1'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.lxin2oteoEAszwaL'
+  - folder: QwpgtLSDXmthRfl7
+    name: Voleur
+    type: profile
+    img: modules/cof-base/assets/profils/profil_aventurier_voleur.webp
+    _id: CokC5h7pN68rwtiA
+    system:
+      description: >-
+        <p>Le voleur crochète les portes, détecte les pièges et préfère piller
+        les cadavres des ennemis que se salir les mains pendant le combat.
+        Toutefois, s’il doit combattre, il possède un répertoire impressionnant
+        de coups tordus qui font de lui un redoutable adversaire.</p>
+
+        <h2> Dans les Terres d’Osgild :</h2>
+
+        <p>les voleurs sont très courants partout, ils sont toutefois plus
+        fréquents là où les concentrations de richesses et la misère sont plus
+        importantes, c’est‑à‑dire dans les grandes villes. Dans la principauté
+        d’Arly, Benastir, Valastir ou Ferrance font l’affaire. Si les aventures
+        débutent loin d’une agglomération, il vous faut alors déterminer
+        pourquoi le jeune délinquant a quitté la cité. Peut‑être sa vie
+        était‑elle en danger : pour avoir volé la mauvaise personne, parce
+        qu’une puissante organisation du crime a des comptes à régler avec lui ?
+        Il existe en effet des guildes de voleurs très organisées dans certaines
+        cités et il ne fait pas bon empiéter sur leurs plates‑bandes. Une épine
+        de plus dans le pied du voleur indépendant qui doit déjà échapper aux
+        forces de l’ordre. C’est pourquoi les tire‑laines et autres
+        monte‑en‑l’air épris de liberté choisissent en général la vie
+        d’aventurier, elle leur permet de changer fréquemment de terrain de
+        chasse sans laisser le temps aux guildes locales de s’intéresser de trop
+        près à leurs activités.</p>
+
+        <h2> Armes &amp; armures maîtrisées</h2>
+
+        <p> Le voleur sait manier les armes de contact à une main et toutes les
+        armes à distance. Les voies de voleur limitent l’armure au cuir simple
+        et interdisent l’utilisation du bouclier.</p>
+
+        <h2> Équipement de départ</h2>
+
+        <p> Rapière (DM 1d6, Crit 19‑20), 5 dagues (DM 1d4, portée 5 m), outils
+        de crochetage, armure de cuir (DEF +2), une corde de 10 m.</p>
+      source: ''
+      origin: ''
+      slug: voleur
+      modifiers: []
+      proficiencies: []
+      paths:
+        - Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+        - Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+        - Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+        - Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+        - Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      martialTrainingsWeapons:
+        unarmed: true
+        staff: true
+        ironStaff: true
+        dagger: true
+        greatSword: false
+        bastardSword: false
+        shortSword: true
+        longSword: true
+        spear: false
+        flail: true
+        greatFlail: false
+        club: true
+        axe: true
+        greatAxe: false
+        lance: false
+        cavalryLance: false
+        hammer: true
+        mace: true
+        pike: false
+        rapier: true
+        stiletto: true
+        swiftblade: false
+        handCrossbow: true
+        lightCrossbow: true
+        heavyCrossbow: true
+        shortBow: true
+        longBow: true
+        throwingKnife: true
+        throwingDagger: true
+        sling: true
+        throwingAxe: true
+        javelin: false
+        throwingSpear: false
+        handCannon: false
+        musket: false
+      martialTrainingsArmors:
+        paddedClothFur: true
+        leather: true
+        studdedLeather: false
+        chainShirt: false
+        chainMail: false
+        plateArmor: false
+        fullPlate: false
+      martialTrainingsShields:
+        smallShield: false
+        largeShield: false
+      family: aventurier
+      maxDefenseArmor: 2
+      mainProfile: true
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags:
+      co: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.gnKQ9yiEZugczEzn
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.CokC5h7pN68rwtiA'
+  - folder: jYZdnFRvUIkY5NnK
+    name: Voie de l'assassin
+    type: path
+    img: modules/cof-base/assets/voies/voleur_assassin.webp
+    _id: qmhUFAMH0kIcwqbd
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-de-lassassin
+      subtype: profile
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.0p2mLyNTBbPxSXOD
+        - Actor.dlEsPZEpQt9DG8sL.Item.0t2ZObutXSvbpMoa
+        - Actor.dlEsPZEpQt9DG8sL.Item.dw3kf1PSzYCSQHd8
+        - Actor.dlEsPZEpQt9DG8sL.Item.ccluSqAgtQ3Es4uM
+        - Actor.dlEsPZEpQt9DG8sL.Item.HCcZ8Y86yi7eiGyO
+      rank: 1
+      maxDefenseArmor: 2
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.qmhUFAMH0kIcwqbd'
+  - folder: hPKgFIkvZASI3C1s
+    name: Discrétion
+    type: capacity
+    img: icons/magic/control/silhouette-aura-energy.webp
+    _id: 0p2mLyNTBbPxSXOD
+    system:
+      description: "<p>Le voleur ajoute son rang + 2 à tous les tests de discrétion, de déguisement ou pour cacher une arme sur lui. Il apprend le langage silencieux à base de signe des voleurs (argotien) et enfin il obtient un dé bonus en attaque lorsqu’il attaque un adversaire surpris</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Un bonus permanent sur les jet de discrétion/déguisement est comptabilisé à partir du moment où il est appris. Le dé bonus en cas d'attaque surprise doit être géré manuellement.</p>\n</blockquote>\n<p>\_</p>"
+      source: ''
+      origin: Livre des règles p74
+      slug: discretion
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.0p2mLyNTBbPxSXOD
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.0p2mLyNTBbPxSXOD
+              subtype: skill
+              target: agi
+              apply: self
+              value: 2 + @rang
+              additionalInfos: déguisement/discrétion/dissimulation
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.0p2mLyNTBbPxSXOD
+              subtype: skill
+              target: cha
+              apply: self
+              value: 2 + @rang
+              additionalInfos: /dissimulation déguisement/discrétion
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.0p2mLyNTBbPxSXOD'
+  - folder: hPKgFIkvZASI3C1s
+    name: Attaque sournoise
+    type: capacity
+    img: icons/skills/melee/strike-dagger-blood-red.webp
+    _id: 0t2ZObutXSvbpMoa
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par round, quand il attaque un adversaire surpris ou de dos** avec une arme légère, le voleur inflige +2d4° DM supplémentaires. Les DM infligés par cette capacité augmentent de 1d4° à chaque fois qu’il atteint le rang 4 dans une voie de voleur (pour un maximum de 7d4°). Cette capacité nécessite l’utilisation d’une arme légère (dague, éventuellement lancée, épée courte, rapière) dans tous les autres cas, le bonus aux DM est divisé par deux (cela comprend les armes à distance).</p>\n<p style=\"text-align:justify\">** Attaquer de dos : lorsque le voleur attaque la même créature qu’un allié au contact de cette cible, on considère qu’il peut attaquer celle‑ci de dos (sauf si la cible peut se placer dos à un obstacle infranchissable). Il est possible de réaliser une attaque sournoise à distance, mais pas à portée longue et uniquement contre un adversaire surpris (pas avec la règle d’attaque de dos ci‑dessus).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton activable/désactivable pour ajouter le bonus de DM aux dégat du joueur. A activer si il attaque quelqu'un par derrière.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p74
+      slug: attaque-sournoise
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.0t2ZObutXSvbpMoa
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.0t2ZObutXSvbpMoa
+              subtype: combat
+              target: damMelee
+              apply: self
+              value: Math.min(2 + @toutrang[4], 7)d4°
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.0t2ZObutXSvbpMoa'
+  - folder: hPKgFIkvZASI3C1s
+    name: Attaque par surprise
+    type: capacity
+    img: icons/skills/melee/strike-sword-blood-red.webp
+    _id: dw3kf1PSzYCSQHd8
+    system:
+      description: "<p>Contre un adversaire surpris, le voleur peut réaliser une attaque sournoise en utilisant une action d’attaque plutôt qu’une action limitée et il augmente les DM de son attaque sournoise de 2d4°.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton activable/désactivable pour ajouter le bonus de DM aux dégat du joueur. A activer si il attaque quelqu'un par \"surprise\"</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: attaque-par-surprise
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.dw3kf1PSzYCSQHd8
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.dw3kf1PSzYCSQHd8
+              subtype: combat
+              target: damMelee
+              apply: self
+              value: 2d4°
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 75000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.dw3kf1PSzYCSQHd8'
+  - folder: hPKgFIkvZASI3C1s
+    name: Disparition
+    type: capacity
+    img: icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp
+    _id: ccluSqAgtQ3Es4uM
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut disparaître dans un flash lumineux et un nuage de fumée. Aucun adversaire ne peut l’attaquer pendant qu’il a disparu, mais il peut subir des DM de zone. Il ne réapparaît qu’au début de son prochain tour à une distance maximale de 20 m de sa position initiale. À ce moment, si le voleur a l’initiative, il peut réaliser une attaque sournoise.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: disparition
+      subtype: ''
+      actionType: m
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+      actions: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.ccluSqAgtQ3Es4uM'
+  - folder: hPKgFIkvZASI3C1s
+    name: Ouverture mortelle
+    type: capacity
+    img: icons/magic/death/weapon-sword-skull-purple.webp
+    _id: HCcZ8Y86yi7eiGyO
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par combat, le voleur obtient une réussite critique automatique contre la cible de son choix. Il profite donc d’une réussite automatique, des dommages multipliés par 2 prévus dans ce cas et d’une attaque sournoise (dont les DM ne sont pas doublés).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Utiliser l'action d'attaque automatique, limitée à une utilisation entre chaque Récupération Rapide pour infliger jeter les DM de l'attaque.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: ouverture-mortelle
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.qmhUFAMH0kIcwqbd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.HCcZ8Y86yi7eiGyO
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: auto
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                difficulty: ''
+              dmg:
+                formula: (@arme.dmg)*2 + (2+@toutrang[4])d4°
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: combat
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.HCcZ8Y86yi7eiGyO'
+  - folder: jYZdnFRvUIkY5NnK
+    name: Voie de l'aventurier
+    type: path
+    img: modules/cof-base/assets/voies/voleur_aventurier.webp
+    _id: k3oEt7rzcIXgreQ9
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-de-laventurier
+      subtype: profile
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.6pErccAzYbuj8eUs
+        - Actor.dlEsPZEpQt9DG8sL.Item.b5G5IkmAhK8z81sE
+        - Actor.dlEsPZEpQt9DG8sL.Item.CDT8iBmEntglbB0f
+        - Actor.dlEsPZEpQt9DG8sL.Item.Y6p95O88wpyaEq75
+        - Actor.dlEsPZEpQt9DG8sL.Item.KCBL9KCbK16W1xap
+      rank: 0
+      maxDefenseArmor: 2
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.k3oEt7rzcIXgreQ9'
+  - folder: 7pl999isgEbTsXUl
+    name: Baratin
+    type: capacity
+    img: icons/tools/instruments/flute-simple-wood.webp
+    _id: 6pErccAzYbuj8eUs
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests destinés à baratiner, séduire, négocier, mentir ou pour trouver un objet au marché noir. De plus, il devient capable d’utiliser les parchemins ou les baguettes magiques en réussissant un test d’attaque magique (L) contre une difficulté de (10 + (2 x rang du sort inscrit)). En cas d’échec, le sort n’est pas lancé et le voleur peut faire une nouvelle tentative.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le bonus aux jet pour baratiner est un bonus permanent à partir du moment où il est appris. L'action d'attaque magique permet au personnage de tester d'utiliser un parchemin ou une baguette magique. Reste au MJ de comparer avec la Difficulté.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: baratin
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.6pErccAzYbuj8eUs
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.6pErccAzYbuj8eUs
+              subtype: skill
+              target: cha
+              apply: self
+              value: 2 + @rang
+              additionalInfos: baratin/persuasion
+          conditions: []
+          resolvers: []
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.6pErccAzYbuj8eUs
+          indice: 1
+          label: Utilisation parchemins et baguettes magiques
+          chatFlavor: ''
+          type: magical
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atm'
+                crit: ''
+                difficulty: ''
+              dmg:
+                formula: ''
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.6pErccAzYbuj8eUs'
+  - folder: 7pl999isgEbTsXUl
+    name: Provocation
+    type: capacity
+    img: icons/creatures/magical/construct-face-stone-pink.webp
+    _id: b5G5IkmAhK8z81sE
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur maîtrise l’art de se rendre désagréable, voire insupportable. S’il emporte un test opposé de CHA contre INT d’un adversaire humanoïde à moins de 10 m, il force la cible à l’attaquer à son prochain tour. À ce moment‑là, si le voleur est au contact, il peut riposter par une attaque de contact gratuite pour laquelle il bénéficie au choix d’une attaque sournoise ou d’un bonus de 1d4° aux DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose une action qui va lancer une action de CHA vs INT et indiquer le résultat. Le reste est à gérer à la main. Note: A coder - lancer un test de compétence et non pas d'attaque.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: provocation
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.b5G5IkmAhK8z81sE
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@cha'
+                crit: ''
+                difficulty: '@oppose.int'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.b5G5IkmAhK8z81sE'
+  - folder: 7pl999isgEbTsXUl
+    name: Souplesse du félin
+    type: capacity
+    img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
+    _id: CDT8iBmEntglbB0f
+    system:
+      description: >-
+        <p>Le voleur possède une démarche et une façon de se déplacer à la fois
+        élégante, féline et souple. Il ajoute +2 en DEF et en Initiative. Ce
+        bonus passe à +3 au rang 5. Il lui faut seulement une action de
+        mouvement pour se relever.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p75
+      slug: souplesse-du-felin
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.CDT8iBmEntglbB0f
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.CDT8iBmEntglbB0f
+              subtype: combat
+              target: init
+              apply: self
+              value: '@rang[2,2,2,2,3]'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.CDT8iBmEntglbB0f
+              subtype: combat
+              target: def
+              apply: self
+              value: '@rang[2,2,2,2,3]'
+              additionalInfos: ''
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.CDT8iBmEntglbB0f'
+  - folder: 7pl999isgEbTsXUl
+    name: Charisme héroïque
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    _id: Y6p95O88wpyaEq75
+    system:
+      description: "<p>Le voleur augmente sa valeur de CHA de +1. Désormais, il obtient un dé bonus aux tests de CHA.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: charisme-heroique
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.Y6p95O88wpyaEq75
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: false
+            enabled: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.Y6p95O88wpyaEq75
+              subtype: ability
+              target: cha
+              value: '1'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.Y6p95O88wpyaEq75
+              subtype: bonusDice
+              target: cha
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.Y6p95O88wpyaEq75'
+  - folder: 7pl999isgEbTsXUl
+    name: Attaque paralysante
+    type: capacity
+    img: icons/skills/wounds/injury-face-impact-orange.webp
+    _id: KCBL9KCbK16W1xap
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut, en réussissant une attaque de contact, paralyser un adversaire humanoïde de douleur. La cible ne subit aucun DM, mais elle est immobilisée pendant 1d4 rounds ou, si son NC est inférieur à la moitié du niveau du voleur, elle est paralysée. De plus, le voleur peut désormais utiliser au choix l’attaque sournoise (s’il détient cette capacité) ou infliger +1d4° DM contre tout adversaire immobilisé ou paralysé.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose une action d'attaque qui si elle réussi, applique un effet de paralysie sur la cible pendant 1d4 round. Ne fait l'effet que si le joueur est en mode combat. Note : Pas de vérification du niveau de la créature !</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: attaque-paralysante
+      subtype: ''
+      actionType: l
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.k3oEt7rzcIXgreQ9
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.KCBL9KCbK16W1xap
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - paralysis
+                duration: 1d4
+                unit: round
+                successThreshold: null
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 400000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.KCBL9KCbK16W1xap'
+  - folder: jYZdnFRvUIkY5NnK
+    name: Voie du déplacement
+    type: path
+    img: modules/cof-base/assets/voies/voleur_deplacement.webp
+    _id: azYZNZpiei5KH0a0
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-deplacement
+      subtype: profile
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.An8Wcg3ihkK7VtsF
+        - Actor.dlEsPZEpQt9DG8sL.Item.YAfbKGpeTaQopKlY
+        - Actor.dlEsPZEpQt9DG8sL.Item.VABsWVD1lX6WjyOO
+        - Actor.dlEsPZEpQt9DG8sL.Item.oI6YCKHaIY3SpJxj
+        - Actor.dlEsPZEpQt9DG8sL.Item.B0Mj7ZRiW5UOHKjB
+      rank: 0
+      maxDefenseArmor: 2
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.azYZNZpiei5KH0a0'
+  - folder: FmcALzGrBzrDMP7r
+    name: Agile
+    type: capacity
+    img: icons/skills/movement/feet-winged-sandals-tan.webp
+    _id: An8Wcg3ihkK7VtsF
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 à tous tests liés à un déplacement (esquive, saut, course, équilibre, escalade, se glisser entre des barreaux ou échapper à une créature qui l’agrippe). De plus, il bénéficie d’un bonus de +1 en DEF et en Initiative. Ce bonus passe à +2 au rang 3 et +3 au rang 5.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Il s'agit d'un bonus permanent à partir du moment où il est appris</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p75
+      slug: agile
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.An8Wcg3ihkK7VtsF
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.An8Wcg3ihkK7VtsF
+              subtype: skill
+              target: agi
+              apply: self
+              value: 2 + @rang
+              additionalInfos: tout déplacement
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.An8Wcg3ihkK7VtsF
+              subtype: combat
+              target: def
+              apply: self
+              value: '@rang[1,1,2,2,3]'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.An8Wcg3ihkK7VtsF
+              subtype: combat
+              target: init
+              apply: self
+              value: '@rang[1,1,2,2,3]'
+              additionalInfos: ''
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.An8Wcg3ihkK7VtsF'
+  - folder: FmcALzGrBzrDMP7r
+    name: Réflexes félins
+    type: capacity
+    img: icons/magic/sonic/projectile-shock-wave-blue.webp
+    _id: YAfbKGpeTaQopKlY
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur divise par 2 tous les DM de chute. De plus, une fois par combat, il obtient une action de mouvement supplémentaire à son tour. Au rang 5, il peut réaliser cet exploit 2 fois par combat (mais pas plus d’une fois par round).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques=s. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: reflexes-felins
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+      actions: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.YAfbKGpeTaQopKlY'
+  - folder: FmcALzGrBzrDMP7r
+    name: Acrobaties
+    type: capacity
+    img: icons/magic/movement/abstract-ribbons-red-orange.webp
+    _id: VABsWVD1lX6WjyOO
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par round, si le voleur réussit un test d’AGI difficulté 15, il peut effectuer une acrobatie pour franchir un obstacle (qui peut être un adversaire) ou attaquer de dos un adversaire au contact. Il peut alors au choix utiliser l’attaque sournoise ou infliger +1d4° DM.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>La capacité propose une action d'attaque utilisant l'AGI pour le jet et une difficultée fixe de 15 pour indiquer le succes du test (en attendant de coder le test de caractéristique plutot qu'une attaque)</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: acrobaties
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.VABsWVD1lX6WjyOO
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@agi'
+                crit: ''
+                difficulty: '15'
+              dmg:
+                formula: '0'
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 75000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.VABsWVD1lX6WjyOO'
+  - folder: FmcALzGrBzrDMP7r
+    name: Agilité héroïque
+    type: capacity
+    img: icons/skills/movement/arrows-up-trio-red.webp
+    _id: oI6YCKHaIY3SpJxj
+    system:
+      description: >-
+        <p>Le voleur augmente sa valeur d’AGI de +1. Désormais, il obtient un dé
+        bonus aux tests d’AGI.</p><blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p76
+      slug: agilite-heroique
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.oI6YCKHaIY3SpJxj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: false
+            enabled: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.oI6YCKHaIY3SpJxj
+              subtype: ability
+              target: agi
+              value: '1'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.oI6YCKHaIY3SpJxj
+              subtype: bonusDice
+              target: agi
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 87500
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.oI6YCKHaIY3SpJxj'
+  - folder: FmcALzGrBzrDMP7r
+    name: Esquive de la magie
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
+    _id: B0Mj7ZRiW5UOHKjB
+    system:
+      description: "<p>Une fois par round, lorsqu’un sort qui inflige des DM physiques (feu, froid, projectile magique, etc.) le prend pour cible (y compris un sort de zone ou l’affectant en plus de la personne visée), le voleur peut effectuer un test d’attaque à distance opposé à un test d’attaque magique du lanceur sort. S’il réussit, il échappe au sort. S’il échoue, il subit les DM normaux.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>La capacité propose une action sur laquelle cliquer qui va lancer le jet d'attaque à distance face à un jet opposé d'attaque magique d'une cible. Le résultat reste à interpréter ensuite par le MJ</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: esquive-de-la-magie
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.azYZNZpiei5KH0a0
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.B0Mj7ZRiW5UOHKjB
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: ranged
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@oppose.atm'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.B0Mj7ZRiW5UOHKjB'
+  - folder: jYZdnFRvUIkY5NnK
+    name: Voie du roublard
+    type: path
+    img: modules/cof-base/assets/voies/voleur_roublard.webp
+    _id: vFtNSYRAut1i86Zd
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-roublard
+      subtype: profile
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+        - Actor.dlEsPZEpQt9DG8sL.Item.6zSU8t6JRpoTs9nC
+        - Actor.dlEsPZEpQt9DG8sL.Item.DNv8iprV77tJdSlW
+        - Actor.dlEsPZEpQt9DG8sL.Item.F56JN8UkgasfpKRU
+        - Actor.dlEsPZEpQt9DG8sL.Item.i1aVftTr8wd77ewe
+      rank: 1
+      maxDefenseArmor: 2
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.vFtNSYRAut1i86Zd'
+  - folder: SEH2YcHcTVIfwxsp
+    name: Doigts agiles
+    type: capacity
+    img: icons/skills/ranged/daggers-thrown-salvo-orange.webp
+    _id: vTRVGaXbAA6gfidm
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests liés à la précision manuelle (crocheter une serrure, désamorcer un piège, pickpocket…) ainsi qu’aux tests pour évaluer un objet précieux (joyaux, bijoux, etc.). De plus il obtient +1 aux DM des attaques à distance avec les dagues et couteaux. Ce bonus passe à +2 au rang 3 de la voie et +3 au rang 5.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Propose 2 effets :</p>\n<p>Un bonus permanent pour les jets de précision manuelle et d'estimation</p>\n<p>Un action actvable/désactivable qui donne des bonus aux dommages. A activer si le joueur lance des dagues ou couteaux.</p>\n<p><em>Note : Il est aussi possible de recopier le bonus proposé directement dans l'équipement du joueur et supprimer cette action pour éviter la multiplication d'actions...</em></p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: doigts-agiles
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+              subtype: skill
+              target: agi
+              apply: self
+              value: 2 + @rang
+              additionalInfos: crocheter/désarmorcer
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+              subtype: skill
+              target: int
+              apply: self
+              value: 2 + @rang
+              additionalInfos: évaluer un objet précieux
+          conditions: []
+          resolvers: []
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+          indice: 1
+          label: attaques à distance avec dagues et couteaux
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.vTRVGaXbAA6gfidm
+              subtype: combat
+              target: damRanged
+              apply: self
+              value: '@rang[1,1,2,2,3]'
+              additionalInfos: Avec dagues et couteaux
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.vTRVGaXbAA6gfidm'
+  - folder: SEH2YcHcTVIfwxsp
+    name: Aux aguets
+    type: capacity
+    img: icons/magic/perception/eye-slit-orange.webp
+    _id: 6zSU8t6JRpoTs9nC
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur ajoute son rang + 2 aux tests effectués pour fouiller une pièce à la recherche d’un trésor, détecter un piège (même magique), un passage secret ou même une embuscade (Vigilance). De plus, il divise par 2 les DM infligés par des pièges.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le bonus permanent aux tests est pris en charge, pas la division des DM par 2 sur les pièges qui sont à traiter manuellement.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: aux-aguets
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.6zSU8t6JRpoTs9nC
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.6zSU8t6JRpoTs9nC
+              subtype: skill
+              target: per
+              apply: self
+              value: 2 + @rang
+              additionalInfos: fouiller/détecter/vigilance
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 2
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.6zSU8t6JRpoTs9nC'
+  - folder: SEH2YcHcTVIfwxsp
+    name: Feindre la mort
+    type: capacity
+    img: icons/magic/death/grave-tombstone-glow-teal.webp
+    _id: DNv8iprV77tJdSlW
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut feindre la mort après avoir reçu une blessure (même à 0 PV). Il peut ainsi passer pour mort aussi longtemps qu’il le souhaite et un test d’INT difficulté 20 est nécessaire pour révéler la supercherie. Lorsqu’il décide de se relever (action gratuite), le voleur récupère immédiatement 1d4° PV et s’il est au contact d’un adversaire, celui‑ci est surpris. Un adversaire qui a déjà été victime de cette stratégie du voleur lors d’un précédent combat ne se laisse pas surprendre une seconde fois (sauf si son INT est de ‑4).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Seul le bonus de 1d4° PV est pris en charge en cliquant sur le bouton d'action de cette capacité.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: feindre-la-mort
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.DNv8iprV77tJdSlW
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: 1d4°
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              dmg: {}
+          modifiers: []
+      cost: -1
+      rank: 3
+      frequency: combat
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.DNv8iprV77tJdSlW'
+  - folder: SEH2YcHcTVIfwxsp
+    name: Expert en criminalité
+    type: capacity
+    img: icons/sundries/documents/document-symbol-eye.webp
+    _id: F56JN8UkgasfpKRU
+    system:
+      description: >-
+        <p>Le voleur obtient un dé bonus sur tous les tests de recherche
+        d’indice (Trouver une preuve [PER], Faire une déduction [INT] et Obtenir
+        un aveu [CHA]) ainsi que pour tous les tests réalisés pour brouiller des
+        pistes, réaliser de faux indices ou de faux documents. De plus,
+        lorsqu’il est dans un lieu, s’il dépense 1 PC, le MJ devra lui donner un
+        indice qui lui a échappé jusque‑là. S’il n’y a pas d’indice, le PC n’est
+        pas dépensé.</p>
+
+        <blockquote>
+
+        <p><strong>Usage en jeu : </strong></p>
+
+        <p>Cette capacité propose une action activable/désactivable accordant un
+        dé bonus sur les jets de caractéristiques mentionnées ci-dessus. A
+        activer si les circonstances correspondent, sinon laisser désactivé.</p>
+
+        </blockquote>
+      source: ''
+      origin: Livre des règles p76
+      slug: expert-en-criminalite
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.F56JN8UkgasfpKRU
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.F56JN8UkgasfpKRU
+              subtype: bonusDice
+              target: per
+              apply: self
+              value: '0'
+              additionalInfos: trouver une preuve
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.F56JN8UkgasfpKRU
+              subtype: bonusDice
+              target: int
+              apply: self
+              value: '0'
+              additionalInfos: faire une déduction
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.F56JN8UkgasfpKRU
+              subtype: bonusDice
+              target: cha
+              apply: self
+              value: '0'
+              additionalInfos: obtenir un aveu
+          resolvers: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 250000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.F56JN8UkgasfpKRU'
+  - folder: SEH2YcHcTVIfwxsp
+    name: Maître du poison
+    type: capacity
+    img: icons/skills/ranged/arrow-flying-poisoned-green.webp
+    _id: i1aVftTr8wd77ewe
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur peut utiliser 3 doses de poison par jour sans risque de s’empoisonner lui‑même. Une dose permet d’enduire une dague, une flèche ou un carreau pour infliger +2d4° DM supplémentaire et demande un test de CON difficulté (10 + INT du voleur) ou une cible vivante est affaiblie pour le reste du combat. Alternativement, une dose peut être versée dans les aliments pour une personne ; si la cible rate son test de CON, elle sombre dans l’inconscience pour 2d6 min (4d6 min pour 2 doses, etc.).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer l'attaque qui va faire le test d'attaque de l'arme équipée, ainsi que ses dommages et si l'attaque réussie appliquera le statut \"empoisonné\" pour 1 round ainsi que 2d4° DM de type \"Poison\". Ne fonctionne qu'en mode combat</p>\n<p><em>Note : On aurait aussi pu mettre un bonus activable/desactivable augmentant les DM. A voir sur l'usage ce qui est le mieux.</em></p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p76
+      slug: maitre-du-poison
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: 3
+        max: 3
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.vFtNSYRAut1i86Zd
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.i1aVftTr8wd77ewe
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@arme.skill'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: '@arme.dmg'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: 2d4°
+                elementType: poison
+                statuses:
+                  - poison
+                duration: '1'
+                unit: round
+                successThreshold: null
+          modifiers: []
+      cost: -1
+      rank: 5
+      frequency: daily
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.i1aVftTr8wd77ewe'
+  - folder: jYZdnFRvUIkY5NnK
+    name: Voie du spadassin
+    type: path
+    img: modules/cof-base/assets/voies/voleur_spadassin.webp
+    _id: 7GsUpAg5u8zz0wEJ
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: voie-du-spadassin
+      subtype: profile
+      capacities:
+        - Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+        - Actor.dlEsPZEpQt9DG8sL.Item.pwlXUeOkDZO53Ui4
+        - Actor.dlEsPZEpQt9DG8sL.Item.62FFg4LPG0roOVJO
+        - Actor.dlEsPZEpQt9DG8sL.Item.MAik4MSscacn0MmZ
+        - Actor.dlEsPZEpQt9DG8sL.Item.O7zIh3cM2jumirzs
+      rank: 0
+      maxDefenseArmor: 2
+      pvByLevel: 0
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.7GsUpAg5u8zz0wEJ'
+  - folder: CW61eewBCGdsT7ac
+    name: Attaque en finesse
+    type: capacity
+    img: icons/weapons/swords/swords-short.webp
+    _id: 4E4LPNJM5daA28wa
+    system:
+      description: "<p style=\"text-align:justify\">Le voleur ajoute son AGI à son Init. et peut remplacer sa FOR par son AGI pour ses tests d’attaque au contact (mais pas aux DM) lorsqu’il utilise une arme légère à une main (dague, épée courte ou rapière). Enfin, il obtient un bonus égal à son rang + 2 aux tests d’intimidation</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité est constitué de 2 actions. La première est un bonus permanent sur l'intimidation, la deuxième est un bouton actiavable/désactivable augmentant l'initiative et remplaçant la FOR par AGI lorsque le bouton est activé. A désactiver si le joueur n'utilise pas une arme légère.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p77
+      slug: attaque-en-finesse
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+              subtype: skill
+              target: for
+              apply: self
+              value: '@rang+2'
+              additionalInfos: intimidation
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+              subtype: skill
+              target: cha
+              apply: self
+              value: '@rang + 2'
+              additionalInfos: Intimidation
+          conditions: []
+          resolvers: []
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+          indice: 1
+          label: Utilise une arme légère
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+              subtype: combat
+              target: init
+              apply: self
+              value: '@agi'
+              additionalInfos: ''
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.4E4LPNJM5daA28wa
+              subtype: combat
+              target: melee
+              apply: self
+              value: '-@for +@agi'
+              additionalInfos: a supprimer si veux pas
+          conditions: []
+          resolvers: []
+      cost: -1
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.4E4LPNJM5daA28wa'
+  - folder: CW61eewBCGdsT7ac
+    name: Esquive fatale
+    type: capacity
+    img: icons/skills/movement/ball-spinning-blue.webp
+    _id: pwlXUeOkDZO53Ui4
+    system:
+      description: "<p style=\"text-align:justify\">Une fois par combat, le voleur peut esquiver une attaque et s’arranger pour que celle‑ci affecte un autre adversaire à son contact. Comparez le test d’attaque à la DEF de la nouvelle cible pour savoir si celle‑ci subit des DM. Cette capacité ne peut pas être utilisée si le voleur n’a qu’un seul adversaire au contact et jamais contre une réussite critique (un critique touche toujours sa cible).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p77
+      slug: esquive-fatale
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      actions: []
+      cost: -1
+      rank: 2
+      frequency: combat
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.pwlXUeOkDZO53Ui4'
+  - folder: CW61eewBCGdsT7ac
+    name: Frappe chirurgicale
+    type: capacity
+    img: icons/skills/melee/strike-sword-dagger-runes-red.webp
+    _id: 62FFg4LPG0roOVJO
+    system:
+      description: "<p style=\"text-align:justify\">Par sa science de l’escrime (et de la fourberie), le voleur augmente ses chances de faire des coups critiques avec une arme légère de 2 points (ainsi, au lieu de 20, le critique standard est obtenu entre 18 et 20). Toutefois, la valeur minimale requise pour obtenir un critique ne peut être inférieure à 16 (voir page 213).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Cette capacité propose un bouton activable/désactivable pour appliquer le bonus au seuil de critique. A activer si le joueur utilise une arme légère.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p77
+      slug: frappe-chirurgicale
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.62FFg4LPG0roOVJO
+          indice: 0
+          label: Utilisation d'une arme légère
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.62FFg4LPG0roOVJO
+              subtype: combat
+              target: crit
+              apply: self
+              value: '2'
+              additionalInfos: ''
+          resolvers: []
+      cost: -1
+      rank: 3
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.62FFg4LPG0roOVJO'
+  - folder: CW61eewBCGdsT7ac
+    name: Ambidextrie
+    type: capacity
+    img: icons/skills/melee/blade-tips-double-blue.webp
+    _id: MAik4MSscacn0MmZ
+    system:
+      description: "<p style=\"text-align:justify\">Avec sa main gauche, le voleur peut effectuer une attaque au contact gratuite avec une dague ou une épée courte à chaque round. Cette attaque ne peut pas bénéficier des avantages d’une attaque sournoise.</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p77
+      slug: ambidextrie
+      subtype: ''
+      actionType: f
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      actions: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 400000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.MAik4MSscacn0MmZ'
+  - folder: CW61eewBCGdsT7ac
+    name: Botte secrète
+    type: capacity
+    img: icons/skills/melee/strike-axe-red.webp
+    _id: O7zIh3cM2jumirzs
+    system:
+      description: "<p style=\"text-align:justify\">Lorsque le voleur obtient un critique sur le dé d’une attaque au contact de sa main principale avec une arme légère (mais pas sur une ouverture mortelle), il inflige à sa cible un état préjudiciable au choix parmi affaibli, aveuglé, étourdi, immobilisé ou ralenti pendant 1 round. Vous ne pouvez infliger chaque état préjudiciable qu’une seule fois par combat. Alternativement, le voleur peut choisir que l’attaque devienne une attaque sournoise dont les DM s’ajoutent au critique (au lieu d’infliger un état préjudiciable).</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Pas d'effets automatiques. A gérer à la main par le MJ, pour l'instant</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p77
+      slug: botte-secrete
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: Actor.dlEsPZEpQt9DG8sL.Item.7GsUpAg5u8zz0wEJ
+      actions: []
+      cost: -1
+      rank: 5
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 500000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.O7zIh3cM2jumirzs'
+  - folder: VbhrzBrHAAZb5crP
+    name: Mirage
+    type: capacity
+    img: icons/magic/nature/tree-spirit-glow-black-yellow.webp
+    _id: qUIoqBkryYYqimFi
+    system:
+      description: "<p style=\"text-align:justify\">L’ensorceleur crée une illusion visuelle et sonore immobile d’une durée de CHA minutes. Le volume maximal de l’illusion est de 2 m de côté par rang dans la voie (portée 50 m). À partir du rang 4, l’illusion peut être animée, mais dans ce cas sa durée est exprimée en rounds. En plus de ce sort, l’ensorceleur ajoute son rang + 2 aux tests de supercherie ou à tout test qui lui servirait à mentir.</p>\n<p>\_</p>\n<p>\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Activer l'action permet de dépenser les PM. Les effets sont à gérer en jeu.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p95
+      slug: mirage
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: true
+      path: null
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.qUIoqBkryYYqimFi
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          modifiers:
+            - type: capacity
+              source: Actor.dlEsPZEpQt9DG8sL.Item.qUIoqBkryYYqimFi
+              subtype: skill
+              target: cha
+              apply: self
+              value: 2 + @rang
+              additionalInfos: supercherie/mensonge
+          conditions: []
+          resolvers: []
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.qUIoqBkryYYqimFi
+          indice: 1
+          label: Activer le sort (A)
+          chatFlavor: ''
+          type: spell
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+      cost: 0
+      rank: 1
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: Actor.dlEsPZEpQt9DG8sL.Item.RwFBZjH1WXFekiqx
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.qUIoqBkryYYqimFi'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée courte
+    type: equipment
+    img: icons/weapons/swords/shortsword-guard-brass.webp
+    _id: IJ0RP7tPEk4O7cXU
+    system:
+      description: >-
+        <p><span class="ILfuVd" lang="fr"><span class="hgKElc"><strong>Une épée
+        courte est une arme tranchante qui se caractérise par sa taille compacte
+        et sa polyvalence</strong>. Contrairement aux types d'épées plus
+        longues, l'épée courte présente une longueur de lame d'environ 30 à 60
+        centimètres. Cette taille permet un maniement efficace aussi bien en
+        combat rapproché qu'en projection</span></span></p><p>
+        </p><p><strong><span class="ILfuVd" lang="fr"><span class="hgKElc">Arme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: epee-courte
+      tags: []
+      subtype: weapon
+      martialCategory: shortSword
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 5
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.IJ0RP7tPEk4O7cXU
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: melee
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      damagetype: slashing
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 106250
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags:
+      exportSource:
+        world: cov2-dev
+        system: co
+        coreVersion: '12.331'
+        systemVersion: 12.331.0
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.IJ0RP7tPEk4O7cXU'
+  - folder: E0IHxlFlZyFSfQGY
+    name: Couteaux de lancer
+    type: equipment
+    img: icons/weapons/daggers/dagger-bone-black.webp
+    _id: ttWTZC0DnAc4X2oY
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couteaux-de-lancer
+      tags: []
+      subtype: weapon
+      martialCategory: throwingKnife
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 3
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Actor.dlEsPZEpQt9DG8sL.Item.ttWTZC0DnAc4X2oY
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: ranged
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: true
+            enabled: false
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4
+              target:
+                type: none
+                number: 0
+                scope: all
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions:
+            - predicate: isEquipped
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      defense: null
+      magicalDefense: null
+    effects: []
+    sort: 600000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.ttWTZC0DnAc4X2oY'
+  - folder: vF1ugDhEx97jpuSd
+    name: Cuir simple
+    type: equipment
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    _id: tsaByEe9l3Ghudox
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: ''
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.tsaByEe9l3Ghudox'
+  - folder: Um3g0UnqzSidTvlT
+    name: Sac à dos
+    type: equipment
+    img: icons/containers/bags/pack-leather-red.webp
+    _id: 69r2C3JtVnkAlhRS
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: sac-a-dos
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 2000000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.69r2C3JtVnkAlhRS'
+  - folder: Um3g0UnqzSidTvlT
+    name: Briquet à silex
+    type: equipment
+    img: icons/commodities/stone/geode-raw-black.webp
+    _id: 4q8bfT3BdR3VIAy8
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: briquet-a-silex
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.4q8bfT3BdR3VIAy8'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: 7WWoawHR1nNwfktw
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: null
+      magicalDefense: null
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.7WWoawHR1nNwfktw'
+  - folder: Um3g0UnqzSidTvlT
+    name: Outre
+    type: equipment
+    img: icons/sundries/survival/wetskin-leather-purple.webp
+    _id: BF99DhUsyXgKhENY
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: outre
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.BF99DhUsyXgKhENY'
+  - folder: Um3g0UnqzSidTvlT
+    name: Gamelle
+    type: equipment
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
+    _id: 8uj0mDFrfAAah9fR
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: gamelle
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
+      duplicateSource: null
+      coreVersion: '12.343'
+      systemId: co
+      systemVersion: 12.331.0
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+    _key: '!actors.items!dlEsPZEpQt9DG8sL.8uj0mDFrfAAah9fR'
+effects: []
+sort: 0
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.343'
+  systemId: co
+  systemVersion: 12.331.0
+  createdTime: 1749761930942
+  modifiedTime: 1749762158067
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_key: '!actors!dlEsPZEpQt9DG8sL'
+
