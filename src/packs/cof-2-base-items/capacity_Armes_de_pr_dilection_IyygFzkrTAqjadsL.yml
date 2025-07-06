@@ -37,15 +37,15 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: int
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: estimer valeur arme
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: per
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: estimer valeur arme
       conditions: []
       resolvers: []
@@ -53,13 +53,13 @@ system:
       indice: 1
       label: Utilisation de (arme choisie)
       chatFlavor: ''
-      type: melee
+      type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -68,8 +68,8 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: combat
           target: melee
-          apply: self
           value: '1'
+          apply: self
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -86,11 +86,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.343'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747893423539
+  modifiedTime: 1751813558254
   lastModifiedBy: dkGm1qUrVLQeAKiY
+  exportSource: null
 _key: '!items!IyygFzkrTAqjadsL'
 
