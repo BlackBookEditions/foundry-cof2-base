@@ -150,9 +150,8 @@ Hooks.once("ready", async () => {
 /*
 /* Render Journal Sheet Hook to style the Journal Entry
  */
-Hooks.on("renderJournalSheet", (app, html, context) => {
-  if (app.document.getFlag("cof-base", "isJournalCOF") === true) {
-    html = html[0]
-    html.classList.add("journal-cof-base")
+Hooks.on("renderJournalEntrySheet", (application, element, context, options) => {
+  if (application.document.getFlag("cof-base", "isJournalCOF") === true) {
+    element.classList.add("journal-cof-base")
   }
 })

@@ -4,8 +4,9 @@
   "description": "Livre de règles de la deuxième édition de Chroniques Oubliées Fantasy",
   "version": "#{VERSION}#",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "maximum": "13",
+    "verified": "13"
   },
   "relationships": {
     "systems": [
@@ -19,13 +20,13 @@
   },
   "authors": [
     {
-      "name": "Carter"
-    },
-    {
       "name": "kristov"
     },
     {
       "name": "Caloup"
+    },
+    {
+      "name": "L'alchimiste"
     }
   ],
 
@@ -95,7 +96,7 @@
   "flags": {
     "hotReload": {
       "extensions": ["css", "html", "hbs", "json", "mjs"],
-      "path": ["css", "templates", "lang", "module"]
+      "path": [".","css", "templates", "lang", "module"]
     }
   },
   "socket": false,
