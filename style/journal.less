@@ -114,14 +114,29 @@
             p {
               font-size: 1rem;
               font-family: "Hypatia";
-              text-indent: 0.2cm;
+              text-indent: 1em;
               text-align: justify;
             }
 
-            li {
-              font-size: 1rem;
-              font-family: "Hypatia";
-              text-align: justify;
+            ul {
+              list-style: none;
+              padding-left: 1rem;
+
+              li {
+                margin-left: 5px;
+                font-size: 1rem;
+                font-family: "Hypatia";
+                text-indent: 1em;
+                text-align: justify;
+              }
+
+              li::marker {
+                content: "\00AF"; /* U+00AF → octet 0xAF dans Wingdings 2 → rhombopen */
+                font-family: "Wingdings 2";
+                font-size: 1rem;
+                color: #ba9442;
+                font-weight: bold;
+              }
             }
 
             p.alinea::first-letter {
@@ -129,7 +144,7 @@
             }
 
             p.alinea::after {
-              content: "\A\A";
+              content: "\A";
               white-space: pre;
             }
 
@@ -392,6 +407,15 @@
             }
           }
         }
+      }
+
+      .icon-v1a {
+        color: #cbad70;
+        font-family: "BBECOF2ICons", serif;
+        font-size: calc(var(--font-size-standard) * 0.6);
+        font-style: normal;
+        font-weight: normal;
+        margin: 0 5px 0 5px;
       }
     }
   }

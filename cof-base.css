@@ -32,15 +32,15 @@
 }
 @font-face {
   font-family: "Wingdings";
-  src: url("./fonts/wingdings.ttf");
+  src: url("./fonts/wingdings.ttf") format('truetype');
 }
 @font-face {
   font-family: "Wingdings2";
-  src: url("./fonts/wingdings2.ttf");
+  src: url("./fonts/wingdings2.ttf") format('truetype');
 }
 @font-face {
   font-family: "Wingdings3";
-  src: url("./fonts/wingdings3.ttf");
+  src: url("./fonts/wingdings3.ttf") format('truetype');
 }
 @font-face {
   font-family: "D6Black";
@@ -171,19 +171,33 @@
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p {
   font-size: 1rem;
   font-family: "Hypatia";
-  text-indent: 0.2cm;
+  text-indent: 1em;
   text-align: justify;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base li {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul li {
+  margin-left: 5px;
   font-size: 1rem;
   font-family: "Hypatia";
+  text-indent: 1em;
   text-align: justify;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul li::marker {
+  content: "\00AF";
+  /* U+00AF → octet 0xAF dans Wingdings 2 → rhombopen */
+  font-family: "Wingdings 2";
+  font-size: 1rem;
+  color: #ba9442;
+  font-weight: bold;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::first-letter {
   text-transform: uppercase;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::after {
-  content: "\A\A";
+  content: "\A";
   white-space: pre;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .italique {
@@ -406,4 +420,12 @@
   font-variant: normal;
   font-weight: normal;
   margin: 0 10px 10px 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .icon-v1a {
+  color: #cbad70;
+  font-family: "BBECOF2ICons", serif;
+  font-size: calc(var(--font-size-standard) * 0.6);
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 5px 0 5px;
 }
