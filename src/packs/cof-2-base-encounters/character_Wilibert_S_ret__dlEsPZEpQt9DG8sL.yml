@@ -231,7 +231,6 @@ prototypeToken:
     rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
-  hexagonalShape: 0
   lockRotation: false
   rotation: 0
   alpha: 1
@@ -287,6 +286,12 @@ prototypeToken:
       texture: null
   flags: {}
   randomImg: false
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
 items:
   - folder: BHbn2gP9Z2mczP4c
     name: Mains nues
@@ -386,21 +391,22 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
-    flags:
-      exportSource:
-        world: cov2-dev
-        system: co
-        coreVersion: '12.331'
-        systemVersion: 12.331.0
+    flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co
+        systemVersion: 12.331.0
     _key: '!actors.items!dlEsPZEpQt9DG8sL.9rx4OhHPJfs2NY3G'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
@@ -480,12 +486,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.FcYPJPiev9rejmKA'
   - folder: pClI1itDE2etUmdy
     name: Gnome
@@ -590,12 +597,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.18FasattJI9iCZ1t
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.kPqUwGcCkjlMmS2a'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie du gnome
@@ -629,12 +637,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.3sixNgtKWSLBj6vy'
   - folder: FzeaG6TAmwhJHagA
     name: Don étrange
@@ -705,12 +714,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.RwFBZjH1WXFekiqx'
   - folder: FzeaG6TAmwhJHagA
     name: Petit pote
@@ -792,12 +802,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.93mllaLCzudiAWUj'
   - folder: FzeaG6TAmwhJHagA
     name: Insignifiant
@@ -861,12 +872,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.dOLNQ4j9ZXLCHtsd'
   - folder: FzeaG6TAmwhJHagA
     name: Merveille technologique
@@ -930,12 +942,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.CntteJBGslu4afLv'
   - folder: FzeaG6TAmwhJHagA
     name: Bonne nature
@@ -1014,12 +1027,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.lxin2oteoEAszwaL'
   - folder: QwpgtLSDXmthRfl7
     name: Voleur
@@ -1136,12 +1150,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.gnKQ9yiEZugczEzn
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.CokC5h7pN68rwtiA'
   - folder: jYZdnFRvUIkY5NnK
     name: Voie de l'assassin
@@ -1175,12 +1190,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.qmhUFAMH0kIcwqbd'
   - folder: hPKgFIkvZASI3C1s
     name: Discrétion
@@ -1250,12 +1266,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.0p2mLyNTBbPxSXOD'
   - folder: hPKgFIkvZASI3C1s
     name: Attaque sournoise
@@ -1319,12 +1336,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.0t2ZObutXSvbpMoa'
   - folder: hPKgFIkvZASI3C1s
     name: Attaque par surprise
@@ -1388,12 +1406,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.dw3kf1PSzYCSQHd8'
   - folder: hPKgFIkvZASI3C1s
     name: Disparition
@@ -1434,12 +1453,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.ccluSqAgtQ3Es4uM'
   - folder: hPKgFIkvZASI3C1s
     name: Ouverture mortelle
@@ -1514,12 +1534,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.HCcZ8Y86yi7eiGyO'
   - folder: jYZdnFRvUIkY5NnK
     name: Voie de l'aventurier
@@ -1553,12 +1574,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.k3oEt7rzcIXgreQ9'
   - folder: 7pl999isgEbTsXUl
     name: Baratin
@@ -1657,12 +1679,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.6pErccAzYbuj8eUs'
   - folder: 7pl999isgEbTsXUl
     name: Provocation
@@ -1739,12 +1762,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.b5G5IkmAhK8z81sE'
   - folder: 7pl999isgEbTsXUl
     name: Souplesse du félin
@@ -1825,12 +1849,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.CDT8iBmEntglbB0f'
   - folder: 7pl999isgEbTsXUl
     name: Charisme héroïque
@@ -1900,12 +1925,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.Y6p95O88wpyaEq75'
   - folder: 7pl999isgEbTsXUl
     name: Attaque paralysante
@@ -1986,12 +2012,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.KCBL9KCbK16W1xap'
   - folder: jYZdnFRvUIkY5NnK
     name: Voie du déplacement
@@ -2025,12 +2052,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.azYZNZpiei5KH0a0'
   - folder: FmcALzGrBzrDMP7r
     name: Agile
@@ -2107,12 +2135,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.An8Wcg3ihkK7VtsF'
   - folder: FmcALzGrBzrDMP7r
     name: Réflexes félins
@@ -2153,12 +2182,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.YAfbKGpeTaQopKlY'
   - folder: FmcALzGrBzrDMP7r
     name: Acrobaties
@@ -2235,12 +2265,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.VABsWVD1lX6WjyOO'
   - folder: FmcALzGrBzrDMP7r
     name: Agilité héroïque
@@ -2319,12 +2350,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.oI6YCKHaIY3SpJxj'
   - folder: FmcALzGrBzrDMP7r
     name: Esquive de la magie
@@ -2401,12 +2433,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.B0Mj7ZRiW5UOHKjB'
   - folder: jYZdnFRvUIkY5NnK
     name: Voie du roublard
@@ -2440,12 +2473,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.vFtNSYRAut1i86Zd'
   - folder: SEH2YcHcTVIfwxsp
     name: Doigts agiles
@@ -2538,12 +2572,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.vTRVGaXbAA6gfidm'
   - folder: SEH2YcHcTVIfwxsp
     name: Aux aguets
@@ -2606,12 +2641,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.6zSU8t6JRpoTs9nC'
   - folder: SEH2YcHcTVIfwxsp
     name: Feindre la mort
@@ -2685,12 +2721,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.DNv8iprV77tJdSlW'
   - folder: SEH2YcHcTVIfwxsp
     name: Expert en criminalité
@@ -2785,12 +2822,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.F56JN8UkgasfpKRU'
   - folder: SEH2YcHcTVIfwxsp
     name: Maître du poison
@@ -2871,12 +2909,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.i1aVftTr8wd77ewe'
   - folder: jYZdnFRvUIkY5NnK
     name: Voie du spadassin
@@ -2910,12 +2949,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.7GsUpAg5u8zz0wEJ'
   - folder: CW61eewBCGdsT7ac
     name: Attaque en finesse
@@ -3014,12 +3054,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.4E4LPNJM5daA28wa'
   - folder: CW61eewBCGdsT7ac
     name: Esquive fatale
@@ -3060,12 +3101,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.pwlXUeOkDZO53Ui4'
   - folder: CW61eewBCGdsT7ac
     name: Frappe chirurgicale
@@ -3129,12 +3171,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.62FFg4LPG0roOVJO'
   - folder: CW61eewBCGdsT7ac
     name: Ambidextrie
@@ -3175,12 +3218,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.MAik4MSscacn0MmZ'
   - folder: CW61eewBCGdsT7ac
     name: Botte secrète
@@ -3221,12 +3265,13 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.O7zIh3cM2jumirzs'
   - folder: VbhrzBrHAAZb5crP
     name: Mirage
@@ -3305,12 +3350,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.qUIoqBkryYYqimFi'
   - folder: BHbn2gP9Z2mczP4c
     name: Epée courte
@@ -3415,21 +3461,22 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
-    flags:
-      exportSource:
-        world: cov2-dev
-        system: co
-        coreVersion: '12.331'
-        systemVersion: 12.331.0
+    flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co
+        systemVersion: 12.331.0
     _key: '!actors.items!dlEsPZEpQt9DG8sL.IJ0RP7tPEk4O7cXU'
   - folder: E0IHxlFlZyFSfQGY
     name: Couteaux de lancer
@@ -3530,12 +3577,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.ttWTZC0DnAc4X2oY'
   - folder: vF1ugDhEx97jpuSd
     name: Cuir simple
@@ -3600,12 +3648,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.tsaByEe9l3Ghudox'
   - folder: Um3g0UnqzSidTvlT
     name: Sac à dos
@@ -3670,12 +3719,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.69r2C3JtVnkAlhRS'
   - folder: Um3g0UnqzSidTvlT
     name: Briquet à silex
@@ -3740,12 +3790,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.4q8bfT3BdR3VIAy8'
   - folder: Um3g0UnqzSidTvlT
     name: Couverture
@@ -3810,12 +3861,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.7WWoawHR1nNwfktw'
   - folder: Um3g0UnqzSidTvlT
     name: Outre
@@ -3877,12 +3929,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.BF99DhUsyXgKhENY'
   - folder: Um3g0UnqzSidTvlT
     name: Gamelle
@@ -3944,12 +3997,13 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
       duplicateSource: null
-      coreVersion: '12.343'
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
+      exportSource: null
     _key: '!actors.items!dlEsPZEpQt9DG8sL.8uj0mDFrfAAah9fR'
 effects: []
 sort: 0
@@ -3960,11 +4014,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.343'
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749761930942
   modifiedTime: 1749762158067
   lastModifiedBy: dkGm1qUrVLQeAKiY
+  exportSource: null
 _key: '!actors!dlEsPZEpQt9DG8sL'
 

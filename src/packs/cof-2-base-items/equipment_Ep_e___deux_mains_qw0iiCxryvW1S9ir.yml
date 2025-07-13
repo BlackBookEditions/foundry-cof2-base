@@ -47,12 +47,17 @@ system:
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
         activable: true
-        enabled: false
         temporary: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atc'
             crit: ''
@@ -63,11 +68,16 @@ system:
             type: none
             number: 0
             scope: all
-      conditions:
-        - predicate: isEquipped
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   range:
     unit: ''
+    value: null
 effects: []
 sort: 125000
 ownership:
@@ -80,11 +90,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '12.343'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740760974494
-  modifiedTime: 1747509863247
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1751926898770
+  lastModifiedBy: BRXzj6OpBPwcAu1T
+  exportSource: null
 _key: '!items!qw0iiCxryvW1S9ir'
 
