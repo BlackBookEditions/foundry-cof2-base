@@ -116,6 +116,15 @@
               font-family: "Hypatia";
               text-indent: 1em;
               text-align: justify;
+              &.dialogues {
+                color: #a88452;
+                font-family: "Hypatia Sans Pro", sans-serif;
+                font-style: italic;
+                font-variant: normal;
+                font-weight: normal;
+                line-height: 1.1;
+                margin: 10px 20px 10px 20px;
+              }
             }
 
             ul {
@@ -128,14 +137,24 @@
                 font-family: "Hypatia";
                 text-indent: 1em;
                 text-align: justify;
-              }
 
-              li::marker {
-                content: "\00AF"; /* U+00AF → octet 0xAF dans Wingdings 2 → rhombopen */
-                font-family: "Wingdings 2";
-                font-size: 1rem;
-                color: #ba9442;
-                font-weight: bold;
+                &::marker {
+                  content: "\00AF"; /* U+00AF → octet 0xAF dans Wingdings 2 → rhombopen */
+                  font-family: "Wingdings 2";
+                  font-size: 1rem;
+                  color: #ba9442;
+                  font-weight: bold;
+                }
+
+                &.puce-noire {
+                  &::marker {
+                    content: "\0075";
+                    font-family: "Wingdings";
+                    font-size: 0.8rem;
+                    color: black;
+                    font-weight: bold;
+                  }
+                }
               }
             }
 
@@ -315,8 +334,8 @@
               border-color: #12120d;
               border-style: none;
               border-width: 0px;
-              margin: 20px 0 30px 30px;
-              width: 95%;
+              margin: 20px 0 30px 60px;
+              width: 90%;
 
               tr {
                 border-bottom-color: #ba9442;
@@ -416,7 +435,7 @@
         font-style: normal;
         font-weight: normal;
         margin: 0 5px 0 5px;
-        &.large{
+        &.large {
           font-size: calc(var(--font-size-standard) * 1.4);
         }
       }
