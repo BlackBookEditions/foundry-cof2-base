@@ -92,7 +92,7 @@
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-header h1 {
   color: #ba9442;
   font-family: "Mendl Serif Dusk", serif;
-  font-size: calc(var(--font-size-standard) * 2.2);
+  font-size: calc(var(--font-size-standard) * 2);
   font-style: normal;
   font-variant: normal;
   font-weight: bold;
@@ -119,7 +119,7 @@
   border-width: 0;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2 {
-  font-size: calc(var(--font-size-standard) * 1.8);
+  font-size: calc(var(--font-size-standard) * 1.6);
   font-family: "Mendel Semibold", sans-serif;
   text-align: left;
   text-transform: uppercase;
@@ -127,6 +127,20 @@
   color: #555756;
   margin: 0 0 10px 10px;
   padding-top: 10px;
+  /* 1) Définir une bordure solide, mais uniquement sur le bas */
+  border-style: solid;
+  border-width: 0 0 4px 0;
+  /* top right bottom left */
+  /* 2) Indiquer le dégradé à utiliser comme source */
+  border-image-source: linear-gradient(to right, /* sens du dégradé */ #b99442, /* couleur de départ */ #f0eeeb /* couleur d’arrivée */);
+  /* 3) Découper le “9-patch” du gradient : 
+        top 0, right 0, bottom 100%, left 0 */
+  border-image-slice: 0 0 100% 0;
+  /* 4) Appliquer la largeur de bordure (en bas) à partir de la tranche */
+  border-image-width: 0 0 4px 0;
+  /* 5) Empêcher tout décalage ou répétition */
+  border-image-outset: 0;
+  border-image-repeat: stretch;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h3 {
   font-size: calc(var(--font-size-standard) * 1.6);
@@ -209,6 +223,85 @@
   color: black;
   font-weight: bold;
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire {
+  font-size: calc(var(--font-size-standard));
+  padding: 5px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire p {
+  font-size: 1rem;
+  margin: 0 10px 0 10px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire hr {
+  margin: 10px;
+  height: 2px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-titre {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ceb279;
+  color: #ffffff;
+  font-family: "Mendl Serif Dusk SemiBold", serif;
+  font-variant: normal;
+  margin: 10px 0 0 20px;
+  padding: 5px;
+  align-items: center;
+  text-transform: uppercase;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-titre p {
+  font-size: calc(var(--font-size-standard) * 1.2);
+  text-align: center;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-titre .bestiaire-niveau {
+  color: #ffffff;
+  font-family: "Mendl Serif Dusk SemiBold", serif;
+  font-size: calc(var(--font-size-standard) * 1.2);
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-onglet {
+  width: 50%;
+  margin: 10px 0 0 50px;
+  background-color: #ede2cc;
+  color: #12120d;
+  font-family: "Mendl Serif Dusk SemiBold", serif;
+  font-style: normal;
+  font-variant: normal;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-transform: uppercase;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-carac {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  font-size: calc(var(--font-size-standard) * 1.1);
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-combat {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+  font-size: calc(var(--font-size-standard) * 1.1);
+  color: #12120d;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-combat span {
+  margin-right: 5px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-combat div {
+  display: flex;
+  justify-items: center;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire .bestiaire-capacite {
+  border-top: #b99442 solid 1px;
+  border-bottom: #b99442 solid 1px;
+  text-transform: uppercase;
+  color: black;
+  margin: 10px;
+  align-items: center;
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p.alinea::first-letter {
   text-transform: uppercase;
 }
@@ -243,6 +336,20 @@
   text-transform: capitalize;
   font-weight: bold;
   color: #b99442;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .titre-fond-blanc {
+  font-size: calc(var(--font-size-standard) * 1.2);
+  font-family: "Mendel Semibold", sans-serif;
+  text-align: left;
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0 10px 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #b99442;
+  background-color: #ffffff;
+  border: solid 1px #b99442;
+  text-transform: uppercase;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .lettrine {
   font-size: calc(var(--font-size-standard) * 3.5);
@@ -302,6 +409,48 @@
   background-size: contain;
   /* Ou "cover" selon le rendu désiré */
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart-clair {
+  border: 3px solid #b99442;
+  font-size: calc(var(--font-size-standard));
+  font-family: "Hypatia";
+  text-indent: 0.2cm;
+  text-align: justify;
+  margin: 20px;
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart-clair .titre {
+  font-size: calc(var(--font-size-standard) * 1.5);
+  font-family: "Mendel Semibold", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ba9442;
+  background-color: #cac3af;
+  margin: 0;
+  padding: 0 0 5px 0;
+  height: 40px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart-clair.fiche {
+  width: 50%;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .encart-clair.fiche .gris {
+  color: lightgrey;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .indications-mj {
+  padding: 10px;
+  margin: 10px;
+  border-top: 1px solid #b99442;
+  border-bottom: 1px solid #b99442;
+  font-size: calc(var(--font-size-standard));
+  font-family: "Hypatia";
+  text-indent: 0.2cm;
+  text-align: justify;
+  margin: 20px;
+  position: relative;
+  background-color: #f1e8d6;
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base blockquote {
   font-size: calc(var(--font-size-standard));
   font-family: "Hypatia";
@@ -327,6 +476,7 @@
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .alinea {
   margin-left: 3px;
+  margin-top: 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exemple {
   font-style: italic;
@@ -349,6 +499,12 @@
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul.exemple li {
   margin-left: 15px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul.exemple li:first-of-type {
+  margin-top: 0px;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul.exemple li:last-of-type {
+  margin-bottom: 0px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .exposant {
   font-size: 58%;
@@ -398,6 +554,11 @@
   font-weight: 600;
   text-transform: none;
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base span.pipe {
+  color: #dcc79e;
+  font-style: normal;
+  font-weight: bold;
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2.voie {
   color: #555756;
   font-family: "Mendl Serif Dusk Medium", serif;
@@ -446,5 +607,9 @@
   margin: 0 5px 0 5px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .cof2-icons.large {
-  font-size: calc(var(--font-size-standard) * 1.4);
+  font-size: calc(var(--font-size-standard) * 1.6);
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages img.small {
+  width: 150px;
+  height: 150px;
 }

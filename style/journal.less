@@ -15,15 +15,12 @@
       background-image: url("/modules/cof-base/assets/artwork/background.webp");
 
       .journal-entry-page {
-        //background-repeat: repeat-y, no-repeat;
-        //background-position: left top, 80px top;
-        //background-size: auto, auto;
 
         .journal-page-header {
           h1 {
             color: #ba9442;
             font-family: "Mendl Serif Dusk", serif;
-            font-size: calc(var(--font-size-standard) * 2.2);
+            font-size: calc(var(--font-size-standard) * 2);
             font-style: normal;
             font-variant: normal;
             font-weight: bold;
@@ -55,7 +52,7 @@
             }
 
             h2 {
-              font-size: calc(var(--font-size-standard) * 1.8);
+              font-size: calc(var(--font-size-standard) * 1.6);
               font-family: "Mendel Semibold", sans-serif;
               text-align: left;
               text-transform: uppercase;
@@ -63,6 +60,23 @@
               color: #555756;
               margin: 0 0 10px 10px;
               padding-top: 10px;
+              /* 1) Définir une bordure solide, mais uniquement sur le bas */
+              border-style: solid;
+              border-width: 0 0 4px 0; /* top right bottom left */
+
+              /* 2) Indiquer le dégradé à utiliser comme source */
+              border-image-source: linear-gradient(to right, /* sens du dégradé */ #b99442, /* couleur de départ */ #f0eeeb /* couleur d’arrivée */);
+
+              /* 3) Découper le “9-patch” du gradient : 
+        top 0, right 0, bottom 100%, left 0 */
+              border-image-slice: 0 0 100% 0;
+
+              /* 4) Appliquer la largeur de bordure (en bas) à partir de la tranche */
+              border-image-width: 0 0 4px 0;
+
+              /* 5) Empêcher tout décalage ou répétition */
+              border-image-outset: 0;
+              border-image-repeat: stretch;
             }
 
             h3 {
@@ -158,6 +172,86 @@
               }
             }
 
+            .bestiaire {
+              font-size: calc(var(--font-size-standard));
+              padding: 5px;
+              p {
+                font-size: 1rem;
+                margin: 0 10px 0 10px;
+              }
+              hr {
+                margin: 10px;
+                height: 2px;
+              }
+              .bestiaire-titre {
+                display: flex;
+                justify-content: space-between;
+                background-color: #ceb279;
+                color: #ffffff;
+                font-family: "Mendl Serif Dusk SemiBold", serif;
+                font-variant: normal;
+                margin: 10px 0 0 20px;
+                padding: 5px;
+                align-items: center;
+                text-transform: uppercase;
+                p {
+                  font-size: calc(var(--font-size-standard) * 1.2);
+                  text-align: center;
+                }
+                .bestiaire-niveau {
+                  color: #ffffff;
+                  font-family: "Mendl Serif Dusk SemiBold", serif;
+                  font-size: calc(var(--font-size-standard) * 1.2);
+                  font-style: normal;
+                  font-variant: normal;
+                  font-weight: 600;
+                  text-transform: none;
+                  letter-spacing: 2px;
+                }
+              }
+              .bestiaire-onglet {
+                width: 50%;
+                margin: 10px 0 0 50px;
+                background-color: #ede2cc;
+                color: #12120d;
+                font-family: "Mendl Serif Dusk SemiBold", serif;
+                font-style: normal;
+                font-variant: normal;
+                text-align: left;
+                text-decoration: none;
+                text-indent: 0;
+                text-transform: uppercase;
+              }
+              .bestiaire-carac {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 20px 0 20px;
+                font-size: calc(var(--font-size-standard) * 1.1);
+              }
+              .bestiaire-combat {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 20px 0 20px;
+                font-size: calc(var(--font-size-standard) * 1.1);
+                color: #12120d;
+                span {
+                  margin-right: 5px;
+                }
+                div {
+                  display: flex;
+                  justify-items: center;
+                }
+              }
+              .bestiaire-capacite {
+                border-top: #b99442 solid 1px;
+                border-bottom: #b99442 solid 1px;
+                text-transform: uppercase;
+                color: black;
+                margin: 10px;
+                align-items: center;
+              }
+            }
+
             p.alinea::first-letter {
               text-transform: uppercase;
             }
@@ -201,6 +295,21 @@
               color: #b99442;
             }
 
+            .titre-fond-blanc {
+              font-size: calc(var(--font-size-standard) * 1.2);
+              font-family: "Mendel Semibold", sans-serif;
+              text-align: left;
+              padding: 10px;
+              width: 80%;
+              margin: 10px 0 10px 30px;
+              text-transform: capitalize;
+              font-weight: bold;
+              color: #b99442;
+              background-color: #ffffff;
+              border: solid 1px #b99442;
+              text-transform: uppercase;
+            }
+
             .lettrine {
               font-size: calc(var(--font-size-standard) * 3.5);
               font-family: "Mendel Semibold", sans-serif;
@@ -219,7 +328,6 @@
 
             .encart {
               border: 3px solid #b99442;
-              //              border-bottom: none;
               font-size: calc(var(--font-size-standard));
               font-family: "Hypatia";
               text-indent: 0.2cm;
@@ -267,6 +375,52 @@
               }
             }
 
+            .encart-clair {
+              border: 3px solid #b99442;
+              font-size: calc(var(--font-size-standard));
+              font-family: "Hypatia";
+              text-indent: 0.2cm;
+              text-align: justify;
+              margin: 20px;
+              position: relative;
+              background-color: #ffffff;
+              padding-bottom: 20px;
+
+              .titre {
+                font-size: calc(var(--font-size-standard) * 1.5);
+                font-family: "Mendel Semibold", sans-serif;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: #ba9442;
+                background-color: #cac3af;
+                margin: 0;
+                padding: 0 0 5px 0;
+                height: 40px;
+              }
+
+              &.fiche {
+                width: 50%;
+                .gris {
+                  color: lightgrey;
+                }
+              }
+            }
+
+            .indications-mj {
+              padding: 10px;
+              margin: 10px;
+              border-top: 1px solid #b99442;
+              border-bottom: 1px solid #b99442;
+              font-size: calc(var(--font-size-standard));
+              font-family: "Hypatia";
+              text-indent: 0.2cm;
+              text-align: justify;
+              margin: 20px;
+              position: relative;
+              background-color: #f1e8d6;
+            }
+
             blockquote {
               font-size: calc(var(--font-size-standard));
               font-family: "Hypatia";
@@ -296,6 +450,7 @@
 
             .alinea {
               margin-left: 3px;
+              margin-top: 10px;
             }
 
             .exemple {
@@ -320,6 +475,13 @@
               padding: 0 10px 0 10px;
               li {
                 margin-left: 15px;
+                 &:first-of-type {
+                  margin-top: 0px;
+                }
+
+                &:last-of-type {
+                  margin-bottom: 0px;
+                }
               }
             }
 
@@ -381,6 +543,14 @@
               text-transform: none;
             }
 
+            span {
+              &.pipe {
+                color: #dcc79e;
+                font-style: normal;
+                font-weight: bold;
+              }
+            }
+
             // Voies
             h2.voie {
               color: #555756;
@@ -436,8 +606,13 @@
         font-weight: normal;
         margin: 0 5px 0 5px;
         &.large {
-          font-size: calc(var(--font-size-standard) * 1.4);
+          font-size: calc(var(--font-size-standard) * 1.6);
         }
+      }
+
+      img.small {
+        width: 150px;
+        height: 150px;
       }
     }
   }

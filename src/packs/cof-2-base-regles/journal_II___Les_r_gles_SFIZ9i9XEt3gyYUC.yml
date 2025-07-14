@@ -590,7 +590,7 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1746972743081
-      modifiedTime: 1752365476363
+      modifiedTime: 1752509159932
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
@@ -891,7 +891,7 @@ pages:
             <tbody><tr class="tableau-titre">
               <td colspan="3">Modificateurs d’attaque selon la situation</td>
             </tr>
-            <tr class="entete">
+            <tr class="tableau-entete">
               <td>Situation</td>
               <td>Modificateur</td>
               <td>Commentaire</td>
@@ -1551,30 +1551,36 @@ pages:
               Lhagva et Ionas débusquent quatre gobelins au détour d’un bosquet. Valentine, la MJ, estime que la rencontre débute à une distance de 10 m. Comme les PJ savent que les
               gobelins ont tué plusieurs fermiers des environs, ils ne sont pas décidés à négocier et de toute façon, les gobelins non plus…C’est parti !
             </p>
-            <p><span class="italique">Les gobelins ont le profil techniqu</span>e suivant :</p>
-            <ul>
-              <li class="COF2--Bestiaire-Titre-2--alt---Blanc-">
-                Gobelin
-                <p>NC 0 Créature humanoïde Taille Petite</p>
-                <p>
-                  |<span class="gras"> </span><span class="Emphasis--Technique-">AGI</span><span class="gras"> </span>+2*<span class="COF2---Technique-pipe--Puce"> </span><span class="COF2---Technique-pipe--Puce">|</span><span class="COF2---Technique-pipe--Puce"> </span><span class="Emphasis--Technique-">CON</span><span class="gras"> </span>-1<span class="COF2---Technique-pipe--Puce"> </span><span class="COF2---Technique-pipe--Puce">|</span><span class="COF2---Technique-pipe--Puce"> </span><span class="Emphasis--Technique-">FOR</span><span class="gras"> </span>-1<span class="COF2---Technique-pipe--Puce">
-                  </span><span class="COF2---Technique-pipe--Puce">|</span> PER +0* |
-                </p>
-                <p class="COF2--Bestiaire-Technique--Diviseur--Bas-">
-                  |<span class="COF2---Technique-pipe--Puce"> </span><span class="Emphasis--Technique-">CHA</span><span class="gras"> </span>-2<span class="COF2---Technique-pipe--Puce">
-                  </span><span class="COF2---Technique-pipe--Puce">|</span><span class="COF2---Technique-pipe--Puce"> </span><span class="Emphasis--Technique-">INT</span><span class="gras"> </span>-2<span class="COF2---Technique-pipe--Puce"> </span>| VOL -2 |
-                </p>
-                <p class="COF2--Bestiaire-Technique--Icons-"><span class="cof2-icons large">S</span> Défense 12</p>
-                <p class="COF2--Bestiaire-Technique--Icons-"><span class="cof2-icons large">V</span> <span class="gras">Points de vigueur</span> 3</p>
-                <p class="COF2--Bestiaire-Technique--Icons-"><span class="cof2-icons large">I</span> <span class="gras">Initiative</span> 13</p>
-                <p><span class="gras">Arme</span>+2<span class="gras"> · DM</span> 1d4-1</p>
-                <p><span class="gras">Attaque en meute :</span></p>
-                <p>
-                  lorsque au moins 2 gobelins attaquent la même cible en même temps, ils bénéficient d’un bonus de +2 en attaque (bonus qui peut s’ajouter à une éventuelle attaque
-                  groupée).
-                </p>
-              </li>
-            </ul>
+            <p><span class="italique">Les gobelins ont le profil technique suivant</span> :</p>
+            <div class="bestiaire">
+              <div class="bestiaire-titre">
+                <p>Gobelin</p>
+                <div class="bestiaire-niveau">| NC 0</div>
+              </div>
+              <p class="alinea">
+                Petites créatures humanoïdes malveillantes et vicieuses, les gobelins sont souvent organisés en tribus dirigées par un chef plus fort. Ils préfèrent attaquer en groupe pour
+                compenser leur faiblesse individuelle.
+              </p>
+              <p class="bestiaire-onglet">créature humanoïde · taille petite</p>
+              <hr />
+              <div class="bestiaire-carac">
+                <span class="gras">AGI</span> +2* <span class="gras">CON</span> -1 <span class="gras">FOR</span> -1 <span class="gras">PER</span> +0* <span class="gras">CHA</span> -2
+                <span class="gras">INT</span> -2 <span class="gras">VOL</span> -2
+              </div>
+              <hr />
+              <div class="bestiaire-combat">
+                <div><span class="cof2-icons large">S</span> <span class="gras">Défense</span> 12</div>
+                <div><span class="cof2-icons large">V</span> <span class="gras">Points de vigueur</span> 3</div>
+                <div><span class="cof2-icons large">I</span> <span class="gras">Initiative</span> 13</div>
+              </div>
+              <hr />
+              <p><span class="gras">Arme</span> +2 · <span class="gras">DM</span> 1d4-1</p>
+              <p class="bestiaire-capacite">Attaque en meute :</p>
+              <p>
+                Lorsque au moins 2 gobelins attaquent la même cible en même temps, ils bénéficient d'un bonus de +2 en attaque (bonus qui peut s'ajouter à une éventuelle attaque groupée).
+              </p>
+              <p class="notes-asterisque">*Le gobelin obtient un <span class="italique">dé bonus</span> sur ses tests marqués d'un astérisque.</p>
+            </div>
             <h5>Initiative</h5>
             <p>La MJ commence par consulter l’Initiative des joueurs et des PNJ pour déterminer l’ordre des tours : Lhagva 14, gobelins 13 et Ionas 11.</p>
             <h5>Lhagva attaque</h5>
@@ -1681,7 +1687,7 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1746972769573
-      modifiedTime: 1752365476381
+      modifiedTime: 1752509159940
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
@@ -1869,7 +1875,7 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1746972801376
-      modifiedTime: 1752365476399
+      modifiedTime: 1752509159951
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
