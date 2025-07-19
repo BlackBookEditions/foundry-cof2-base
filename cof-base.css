@@ -168,6 +168,11 @@
   color: #474846;
   margin: 10px 0 10px 10px;
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .image-centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .image-large {
   border: none;
   padding: 20px;
@@ -175,12 +180,12 @@
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .image-moyenne {
   border: none;
   padding: 20px;
-  width: 70%;
+  width: 60%;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .image-petite {
   border: none;
   padding: 20px;
-  width: 40%;
+  width: 20%;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base p {
   font-size: 1rem;
@@ -352,7 +357,7 @@
   text-transform: uppercase;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .lettrine {
-  font-size: calc(var(--font-size-standard) * 3.5);
+  font-size: calc(var(--font-size-standard) * 2.5);
   font-family: "Mendel Semibold", sans-serif;
   text-align: center;
   text-transform: capitalize;
@@ -473,6 +478,7 @@
   color: #12120d;
   font-family: "Hypatia Sans Pro", sans-serif;
   font-size: calc(var(--font-size-standard));
+  margin: 0 10px 0 10px;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .alinea {
   margin-left: 3px;
@@ -585,7 +591,7 @@
   font-size: calc(var(--font-size-standard) * 1.2);
   font-style: normal;
   font-variant: normal;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
   padding: 5px;
 }

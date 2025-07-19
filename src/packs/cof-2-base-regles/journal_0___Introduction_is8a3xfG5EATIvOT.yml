@@ -14,7 +14,7 @@ pages:
       content: |-
         <div class="journal-page-cof-base">
           <p class="credits-texte"><span class="gras">Directeur de la publication :</span> David Burckle</p>
-          <p class="credits-texte"><span class="gras">Responsable d’édition</span> Marc Sautriot</p>
+          <p class="credits-texte"><span class="gras">Responsable d’édition :</span> Marc Sautriot</p>
           <p class="credits-texte"><span class="gras">Auteur :</span> Laurent Bernasconi</p>
           <p class="credits-texte"><span class="gras">Édition et textes additionnels :</span> Marc Sautriot</p>
           <p class="credits-texte"><span class="gras">Relecture et corrections </span>Olivier Larue et Marc Sautriot</p>
@@ -30,12 +30,15 @@ pages:
           <p class="credits-texte"><span class="gras">Design de la maquette </span>Amélie Bortuzzo, Laura Hoffmann et Frédéric Lipari</p>
           <p class="credits-texte"><span class="gras">Maquette :</span> Valentin Debret, Laura Hoffmann et Frédéric Lipari</p>
           <br />
-          <p class="credits-texte"><span class="gras">L’équipe de Black Book</span> Éditions :</p>
+          <p class="credits-texte"><span class="gras">Adaptation Foundry VTT :</span> Christophe Laudon</p><p>
+          <br />
+          </p><p class="credits-texte"><span class="gras">L’équipe de Black Book</span> Éditions :</p>
           <p class="credits-texte"><span class="gras">Pôle administratif :</span> David Burckle, Marie Ferreira, Laura Hoffmann et Thierry Przybyla</p>
           <p class="credits-texte"><span class="gras">Pôle boutique :</span> Éric Bernard, Camille Bourgoin, Julien Collas, Jonathan Duvic, Julien Gaillet et Olivier Morgon</p>
           <p class="credits-texte"><span class="gras">Pôle communication :</span> Anthony Bruno et Steve Luga</p>
           <p class="credits-texte"><span class="gras">Pôle édition :</span> Marianne Bergeonneau, Frédéric Lipari, Sélène Meynier, Aurélie Pesséas, Marc Sautriot et Julija Valkuniene</p>
           <p class="credits-texte"><span class="gras">Pôle technique :</span> Alexandre Nizoux et Emmanuel Personne</p>
+          <br />
           <p class="credits-texte"><span class="gras">Dépôt légal :</span> Juillet 2024. Imprimé en UE.</p>
           <p class="credits-texte"><span class="gras">ISBN (souple) :</span> 978-2-38227-656-3</p>
           <p class="credits-texte"><span class="gras">ISBN (deluxe) :</span> 978-2-38227-485-9</p>
@@ -77,7 +80,7 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1741180418599
-      modifiedTime: 1752481467603
+      modifiedTime: 1752958392068
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
@@ -121,8 +124,8 @@ pages:
           <p class="alinea">
             Le jeu de rôle se joue à plusieurs, autour d’une table. Vous n’avez besoin ni de déguisement, ni d’armes en plastique, ni d’ordinateur, ni d’aucun accessoire compliqué.
             Seulement d’une dose de bonne humeur et d’imagination, de quelques dés, de feuilles de personnage, de crayons et de gommes ! C’est pour ces différentes raisons que chez les
-            Anglo-saxons, on qualifie parfois le JdR de « jeu de rôle sur table » <span class="italique">(tabletop roleplaying game</span>)ou encore de « jeu
-            de rôle avec crayons et papier » (<span class="italique">pen and </span>paper rpg).
+            Anglo-saxons, on qualifie parfois le JdR de « jeu de rôle sur table » <span class="italique">(tabletop roleplaying game</span>)ou encore de « jeu de rôle avec crayons et papier
+            » (<span class="italique">pen and </span>paper rpg).
           </p>
           <p class="alinea">
             Si vous ne savez pas comment se déroule un jeu de rôle, vous pouvez retrouver une partie filmée en vidéo sur la chaîne YouTube de
@@ -131,7 +134,7 @@ pages:
           </p>
           <p class="alinea">Retrouvez toutes ces liens et informations ici :</p>
           <p class="gras centre"><a href="www.black-book-editions.fr/COF2">www.black-book-editions.fr/COF2</a></p>
-          <p class="centre"><img class="small" src="modules/cof-base/assets/artwork/qr_code.webp" /></p>
+          <div class="image-centre"><img class="image-petite" src="modules/cof-base/assets/artwork/qr_code.webp" /></div>
           <h3>Des joueurs et un meneur de jeu</h3>
           <p class="alinea">
             Le jeu de rôle est un jeu de société qui se pratique au minimum à deux. Idéalement, une partie regroupera quatre à six joueurs (idéalement cinq). Comme nous venons de le voir,
@@ -190,8 +193,8 @@ pages:
             <p>
               Un test consiste à lancer un dé, à ajouter au nombre obtenu un modificateur (qui est une valeur provenant d’une caractéristique et éventuellement d’une capacité du
               personnage), et à comparer le résultat à une valeur fixe appelée difficulté. Si le résultat du test est supérieur ou égal à la difficulté, l’action entreprise réussit. En
-              revanche, si le résultat est inférieur à la difficulté, elle échoue ou est modérée par un événement négatif (voir la partie II, chapitre « Les règles de base », page 199,
-              pour plus de détail).
+              revanche, si le résultat est inférieur à la difficulté, elle échoue ou est modérée par un événement négatif (voir la partie
+              II,@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC]{II - Les règles}, pour plus de détail).
             </p>
             <p>
               <span class="gras">Par exemple :</span> Marmor le guerrier saute d’un balcon pour atterrir dans un chariot de paille qui passe en contrebas. Pour savoir s’il y parvient, il
@@ -234,8 +237,10 @@ pages:
           <ul>
             <li>d’un <span class="gras">meneur de jeu</span> (ou MJ) ;</li>
             <li>d’un groupe de <span class="gras">joueurs</span> (un à cinq, idéalement quatre pour débuter) ;</li>
-            <li>de personnages (voir le chapitre « Création de personnage », page 20) ;</li>
-            <li>des règles du jeu (voir le chapitre « Les règles », p. 198) ;</li>
+            <li>
+              de personnages (voir @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w]{Chapitre 1 : Création du personnage}) ;
+            </li>
+            <li>des règles du jeu (voir @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC]{II - Les règles}) ;</li>
             <li>d’un scénario d’aventure ;</li>
             <li>de dés, de crayons à papier, de gommes, d’une table et de chaises, pour être bien installés.</li>
           </ul>
@@ -259,12 +264,14 @@ pages:
           </p>
           <p class="alinea">
             Le profil détermine le rôle du personnage, sa fonction dans le groupe, ce dont il est capable ainsi que les compétences et les capacités qu’il va acquérir avec l’expérience.
-            Les profils sont répartis en quatre familles (aventuriers, combattants, mages et mystiques) que vous retrouverez dans la première partie de cet ouvrage, à partir de @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w#2-·-profil]{2 · Profil}.
+            Les profils sont répartis en quatre familles (aventuriers, combattants, mages et mystiques) que vous retrouverez dans la première partie de cet ouvrage, à partir de
+            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w#2-·-profil]{Profil}.
           </p>
           <h4>Voies</h4>
           <p class="alinea">
             Pour chaque profil de personnage, il existe cinq voies, qui définissent en quelque sorte les compétences, pouvoirs et autres spécificités qui lui sont propres. Vous les
-            trouverez dans le chapitre consacré à la famille à laquelle il appartient (voir page <a><span class="Page-Number">29</span></a> et suivantes).
+            trouverez dans le chapitre consacré à la famille à laquelle il appartient (voir
+            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w#5-·-voies-et-capacites]{Voies et capacités}).
           </p>
           <p class="alinea">Chaque voie est composée de cinq <span class="gras">capacités</span>, dont le rang indique la puissance (par ordre croissant).</p>
           <h4>Capacités</h4>
@@ -275,7 +282,7 @@ pages:
           </p>
           <p class="alinea">Les capacités signalées par le symbole * accolé à leur nom sont des sorts (par exemple, Télékinésie*).</p>
           <p class="alinea">
-            F<span class="gras">réquence des capacités. </span>Sauf mention contraire, les capacités peuvent être utilisées aussi souvent que le joueur le souhaite. Les deux exceptions les
+            <span class="gras">Fréquence des capacités. </span>Sauf mention contraire, les capacités peuvent être utilisées aussi souvent que le joueur le souhaite. Les deux exceptions les
             plus fréquentes sont les suivantes :
           </p>
           <ul>
@@ -291,7 +298,7 @@ pages:
           <p class="alinea">
             Tous les personnages possèdent des points de vigueur (<span class="gras">PV</span>). Ce nombre représente leur énergie, leur capacité à éviter les dangers. Le nombre de PV
             varie pour représenter l’état de santé et de fatigue du personnage, mais aussi l’énergie qu’il lui reste pour éviter encore les coups. Plus les PV baissent, plus vous êtes en
-            danger (voir le chapitre « Le combat », page <a>208</a>).
+            danger (voir @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.Dw9Ze41hgZ5MdKg2]{Chapitre 2 : Le combat}).
           </p>
           <p class="alinea">
             Une haute valeur de PV correspond à un combattant expérimenté. Ainsi pour un personnage qui possède 40 PV, un coup d’épée qui fait perdre 8 PV représente un coup qui a été en
@@ -304,25 +311,26 @@ pages:
           </p>
           <h4>Dé de récupération</h4>
           <p class="alinea">
-            Les dés de récupération (<span class="gras">DR</span>) constituent la capacité du personnage à récupérer, à reprendre son souffle (voir le chapitre « Le combat », page
-            <a>30</a>).
+            Les dés de récupération (<span class="gras">DR</span>) constituent la capacité du personnage à récupérer, à reprendre son souffle (voir
+            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w#7-·-de-de-recuperation-(dr)]{7 · Dé de récupération (DR)}).
           </p>
           <h4>Points de chance</h4>
           <p class="alinea">
             Les points de chance (<span class="gras">PC</span>) indiquent bien sûr à quel point un personnage est chanceux, mais peuvent aussi signifier à quel point il bénéficie de la
-            faveur des dieux ou du destin (voir le chapitre « Les règles de base », page <a>198</a>).
+            faveur des dieux ou du destin (voir @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC]{II - Les règles}).
           </p>
           <h4>Points de mana</h4>
           <p class="alinea">
             Le mana est une énergie particulière inscrite dans le tissu même du monde et de l’univers. C’est grâce au mana que certains personnages peuvent lancer des sorts, qu’ils soient
-            magiciens, sorciers, prêtres ou druides. Les points de mana (<span class="gras">PM</span>) représentent la capacité des PJ à lancer des sorts (voir le chapitre « Magie et sorts
-            », page <a>227</a>).
+            magiciens, sorciers, prêtres ou druides. Les points de mana (<span class="gras">PM</span>) représentent la capacité des PJ à lancer des sorts (voir le chapitre
+            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.kwCupG08YIs47TOP]{Chapitre 3 : Magie et sorts}).
           </p>
           <h4>Initiative, valeur d’attaque, Défense</h4>
           <p class="alinea">
             Lorsque survient un combat (ce qui arrive malheureusement trop souvent dans la vie d’un héros), l’Initiative (<span class="gras">Init</span>.) permet de déterminer la vitesse
             de réaction et le moment où un personnage agit. La valeur d’attaque et la Défense (<span class="gras">DEF</span>), quant à elles, représentent bien sûr sa capacité à porter des
-            attaques contre un ennemi et à résister aux siennes (voir le chapitre « Le combat », page <a>208</a>).
+            attaques contre un ennemi et à résister aux siennes (voir @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.Dw9Ze41hgZ5MdKg2]{Chapitre
+            2 : Le combat}).
           </p>
           <h3>Les dés</h3>
           <p class="alinea">
@@ -342,17 +350,21 @@ pages:
             De plus, vous trouverez parfois dans <span class="italique">COF</span> la mention à un <span class="gras">d3</span>. Il s’agit là en réalité d’un d6 dont on divise le résultat
             par deux, en arrondissant le résultat à l’entier supérieur. Plus simplement, considérez qu’un résultat de 1 ou 2 vaut 1, 3 ou 4 vaut 2 et 5 ou 6 vaut 3.
           </p>
-          <img class="centre" src="modules/cof-base/assets/artwork/des.webp" />
+          <div class="image-centre"><img src="modules/cof-base/assets/artwork/des.webp" /></div>
 
           <div class="encart">
             <h3>Utiliser les dés</h3>
             <p>Dans les règles, on vous demandera parfois de lancer 1d8+2. Dans ce cas, lancez un dé à 8 faces, lisez le résultat obtenu et ajoutez-y 2.</p>
-            <p class="exemple"><span class="normal"><span class="gras">Exemple : </span>vous obtenez 5 au dé, le résultat final est de 7.</span></p>
+            <p class="exemple">
+              <span class="normal"><span class="gras">Exemple : </span>vous obtenez 5 au dé, le résultat final est de 7.</span>
+            </p>
             <p>
               Si vous lisez 3d6+4, lancez trois fois le dé à 6 faces (ou simultanément trois dés à 6 faces si vous en possédez suffisamment), faites la somme des résultats obtenus et
               ajoutez-y 4.
             </p>
-            <p class="exemple"><span class="normal"><span class="gras">Exemple : </span>si vous obtenez successivement 3, 5 et 2 aux dés, le résultat final est de 14.</span></p>
+            <p class="exemple">
+              <span class="normal"><span class="gras">Exemple : </span>si vous obtenez successivement 3, 5 et 2 aux dés, le résultat final est de 14.</span>
+            </p>
           </div>
 
           <p class="alinea">
@@ -389,7 +401,7 @@ pages:
             table et n’a donc rien à voir non plus avec un jeu vidéo massivement multijoueur (MMORPG).
           </p>
 
-          <img class="small centre" src="modules/cof-base/assets/artwork/de20.webp" />
+          <div class="image-centre"><img class="image-petite" src="modules/cof-base/assets/artwork/de20.webp" /></div>
 
           <div class="encart">
             <h3>Petit lexique rôliste</h3>
@@ -549,6 +561,8 @@ pages:
           </ul>
           <p>Mais assez bavardé, il est grand temps d’aller regarder tout cela de plus près.</p>
 
+          <br />
+          <br />
           <p class="citation">Bonne lecture et bon jeu !</p>
         </div>
     video:
@@ -566,13 +580,13 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1741180441892
-      modifiedTime: 1752481467629
+      modifiedTime: 1752958392091
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
     _key: '!journal.pages!is8a3xfG5EATIvOT.N6Z3waLDOQhjnTcW'
   - sort: 150000
-    name: Avant propos
+    name: Avant-propos
     type: text
     _id: ZSafvVW1OnL7FTGx
     system: {}
@@ -585,12 +599,12 @@ pages:
       content: |-
         <div class="journal-page-cof-base">
           <p class="alinea">
-            <span class="lettrine">I</span>l y a tout juste dix ans, en juillet 2014, sortait la première édition de <span class="italique">Chroniques Oubliées Fantasy </span>(<span class="italique">COF</span>). Ce jeu
-            de rôle faisait suite au jeu d’initiation sorti en boîte cinq ans auparavant, puis à une publication des règles complètes sous forme de feuilleton dans les numéros 1 à 3 du
-            magazine <span class="italique">Casus Belli</span>. Depuis, des milliers de joueurs s’en sont emparés, ont usé les pages de leurs manuels, et surtout, ont joué des centaines
-            d’heures durant, parcourant les Terres d’Osgild avec des campagnes telles <span class="italique">Les Disparus de Clairval</span>, <span class="italique">Anathazerï</span> ou
-            encore <span class="italique">Invincible</span>. L’une des forces de <span class="italique">Chroniques Oubliées Fantasy</span> est aussi d’être utilisable avec n’importe quel
-            univers médiéval fantastique, et nul doute que, collectivement, vous avez joué encore plus dans une grande diversité de mondes. C’est là la véritable magie du jeu de rôle !
+            <span class="lettrine">I</span>l y a tout juste dix ans, en juillet 2014, sortait la première édition de <span class="italique">Chroniques Oubliées Fantasy </span>(<span class="italique">COF</span>). Ce jeu de rôle faisait suite au jeu d’initiation sorti en boîte cinq ans auparavant, puis à une publication des règles complètes sous forme de feuilleton dans les numéros 1
+            à 3 du magazine <span class="italique">Casus Belli</span>. Depuis, des milliers de joueurs s’en sont emparés, ont usé les pages de leurs manuels, et surtout, ont joué des
+            centaines d’heures durant, parcourant les Terres d’Osgild avec des campagnes telles <span class="italique">Les Disparus de Clairval</span>,
+            <span class="italique">Anathazerï</span> ou encore <span class="italique">Invincible</span>. L’une des forces de <span class="italique">Chroniques Oubliées Fantasy</span> est
+            aussi d’être utilisable avec n’importe quel univers médiéval fantastique, et nul doute que, collectivement, vous avez joué encore plus dans une grande diversité de mondes.
+            C’est là la véritable magie du jeu de rôle !
           </p>
           <p class="alinea">
             Depuis plus de dix années donc, les rôlistes ont pu largement pousser le jeu dans ses retranchements, soulever des questionnements, pointer du doigt des manques, et surtout,
@@ -609,7 +623,8 @@ pages:
             qu’il s’agisse de points de règles ou d’ergonomie du jeu. Ce jeu est désormais le vôtre. Un nouveau chapitre des <span class="italique">Chroniques Oubliées</span> peut
             s’ouvrir. Nous vous souhaitons de longues heures d’aventures palpitantes. Bon jeu !
           </p>
-          <p>L<span class="italique">’équipe Black Book Éditions</span>, mars 2024</p>
+          <br />
+          <p style="text-align:right">L’<span class="italique">équipe Black Book Éditions</span>, mars 2024</p>
         </div>
     video:
       controls: true
@@ -626,7 +641,7 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1741187348290
-      modifiedTime: 1752481467614
+      modifiedTime: 1752958392076
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
@@ -648,41 +663,35 @@ pages:
           <p>@UUID[.ZSafvVW1OnL7FTGx]{Avant propos}</p>
           <p>@UUID[.9YYpa4Iq8oBhMOXA]{Sommaire}</p>
           <p>@UUID[.N6Z3waLDOQhjnTcW]{Introduction}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w]{Le personnage - Chapitre 1 : Création du personnage}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.l1xTW1wF3CtflOlA]{Le personnage - Chapitre 2 : Progression &amp; niveaux}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.dzsuFs38PgG6QNuC]{Le personnage - Chapitre 3 : Peuples}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.9gzHgOE0EgYf0ooe]{Le personnage - Chapitre 4 : Famille des aventuriers}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.K78sg4SZjZBuBcOk]{Le personnage - Chapitre 5 : Famille des combattants}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.cl4ScYi0IaIDLMJ0]{Le personnage - Chapitre 6 : Famille des mages}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.rSa3sYA73vpBHNtm]{Le personnage - Chapitre 7 : Famille des mystiques}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.3e6HLmyaIDQ4DdPN]{Le personnage - Chapitre 8 : Voies de prestige}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.1lWZUPGyYMWZAjHa]{Le personnage - Chapitre 9 : Profils hybrides}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.zM1QAkzi1an40c7h]{Le personnage - Chapitre 10 : Équipement}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.G9WZaIv48TGYYM1V]{Les règles - Chapitre 1 : Les règles de base}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.Dw9Ze41hgZ5MdKg2]{Les règles - Chapitre 2 : Le combat}</p>
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.kwCupG08YIs47TOP]{Les règles - Chapitre 3 : Magie et sorts}</p>
-          <p>
-            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.HfQkb43CUKN6EUIr]{Mener des parties de jeu de rôle - Chapitre 1 : Les règles de
-            l'aventure}
-          </p>
 
-          <p>
-            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.AnLhalcoTGGMEn1w]{Mener des parties de jeu de rôle - Chapitre 2 : Objets magiques}
-          </p>
+          <h3>Partie I : Le personnage</h3>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.2G4QQMTOFpqrpl7w]{Chapitre 1 : Création du personnage}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.l1xTW1wF3CtflOlA]{Chapitre 2 : Progression &amp; niveaux}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.dzsuFs38PgG6QNuC]{Chapitre 3 : Peuples}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.9gzHgOE0EgYf0ooe]{Chapitre 4 : Famille des aventuriers}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.K78sg4SZjZBuBcOk]{Chapitre 5 : Famille des combattants}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.cl4ScYi0IaIDLMJ0]{Chapitre 6 : Famille des mages}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.rSa3sYA73vpBHNtm]{Chapitre 7 : Famille des mystiques}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.3e6HLmyaIDQ4DdPN]{Chapitre 8 : Voies de prestige}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.1lWZUPGyYMWZAjHa]{Chapitre 9 : Profils hybrides}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.aZtrDhRNMzVtBp84.JournalEntryPage.zM1QAkzi1an40c7h]{Chapitre 10 : Équipement}</p>
 
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.pCavELlzm9JlbpRT]{Mener des parties de jeu de rôle - Chapitre 3 : Opposition}</p>
+          <h3>Partie II : Les règles</h3>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.G9WZaIv48TGYYM1V]{Chapitre 1 : Les règles de base}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.Dw9Ze41hgZ5MdKg2]{Chapitre 2 : Le combat}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.kwCupG08YIs47TOP]{Chapitre 3 : Magie et sorts}</p>
 
-          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.m0dIAu77QCo5g0Ob]{Mener des parties de jeu de rôle - Chapitre 4 : Devenir MJ}</p>
+          <h3>Partie III : Mener des parties de jeu de rôle</h3>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.HfQkb43CUKN6EUIr]{Chapitre 1 : Les règles de l'aventure}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.AnLhalcoTGGMEn1w]{Chapitre 2 : Objets magiques}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.pCavELlzm9JlbpRT]{Chapitre 3 : Opposition}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.m0dIAu77QCo5g0Ob]{Chapitre 4 : Devenir MJ}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.yRaAoXtZr2m2NZD2]{Chapitre 5 : Scénario La Tour errante}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.O7ZcGVdFD4vm590T]{Chapitre 6 : Scénario Requiem pour Clairval}</p>
 
-          <p>
-            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.yRaAoXtZr2m2NZD2]{Mener des parties de jeu de rôle - Chapitre 5 : Scénario La Tour
-            errante}
-          </p>
-
-          <p>
-            @UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.gKBkD8f28NlLwsZA.JournalEntryPage.O7ZcGVdFD4vm590T]{Mener des parties de jeu de rôle - Chapitre 6 : Scénario Requiem
-            pour Clairval}
-          </p>
+          <h3>Annexes</h3>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.efPBj7rabVosxjcK.JournalEntryPage.Gzj0fwCzwWYmZCoO]{Index des sorts par rang}</p>
+          <p>@UUID[Compendium.cof-base.cof-2-base-regles.JournalEntry.efPBj7rabVosxjcK.JournalEntryPage.DUP48U7dQuA0uyXd]{Index des personnages prétirés}</p>
         </div>
     video:
       controls: true
@@ -699,11 +708,76 @@ pages:
       systemId: co
       systemVersion: 12.331.0
       createdTime: 1742805053056
-      modifiedTime: 1752481467620
+      modifiedTime: 1752958392083
       lastModifiedBy: BRXzj6OpBPwcAu1T
       exportSource: null
     category: null
     _key: '!journal.pages!is8a3xfG5EATIvOT.9YYpa4Iq8oBhMOXA'
+  - sort: 0
+    name: Chroniques Oubliées Fantasy
+    type: text
+    _id: yLgtzWasiKKcYUaV
+    system: {}
+    title:
+      show: true
+      level: 1
+    image: {}
+    text:
+      format: 1
+      content: |-
+        <div class="journal-page-cof-base">
+          <div class="image-centre"><img src="modules/cof-base/assets/couverture_livre_regles.webp" /></div>
+          <br /><br />
+          <h2>Que l’appel de l’aventure résonne !</h2>
+          <p class="alinea">
+             <span class="lettrine">H</span>éros de tout âge, habitants des terres lointaines ! Des ruines abandonnées jusqu’aux métropoles florissantes, des cryptes les plus profondes aux tours les plus hautes, des
+            quartiers nobles aux rues malfamées, il est temps d’écrire votre épopée !
+          </p>
+          <p class="alinea">
+            Dans Chroniques Oubliées Fantasy, vous allez pouvoir incarner un héros Dans Chroniques Oubliées Fantasy, glissez-vous dans la peau d’un druide farouche, d’une guerrière
+            audacieuse, d’un magicien flamboyant ou encore d’une barde malicieuse. Partez sur les routes des Terres d’Osgild, explorez des lieux mystérieux et combattez les sbires d’un
+            sorcier assoiffé de pouvoir !
+          </p>
+          <p class="alinea">
+            Ce jeu de rôle médiéval-fantastique utilise une mécanique de jeu simple et éprouvée, basée sur un dé à 20 faces, une poignée de caractéristiques, et les emblématiques voies de
+            personnage.
+          </p>
+
+          <p class="alinea">
+            <span class="italique">Chroniques Oubliées Fantasy</span> s’adresse à tous les niveaux de pratique du jeu de rôle, des débutants aux rôlistes chevronnés. Cet ouvrage contient :
+          </p>
+
+          <ul>
+            <li>les règles de création de personnage ;</li>
+            <li>des conseils pour aider les meneurs de jeu novice à maîtriser leur première partie;</li>
+            <li>des règles complémentaires pour le meneur de jeu ;</li>
+
+            <li>un bestiaire présentant plusieurs créatures que les joueurs pourront rencontrer lors de leurs aventures ;</li>
+            <li>deux scénarios pour commencer à jouer.</li>
+          </ul>
+
+          <p class="alinea">Pour jouer à Chroniques Oubliées Fantasy, vous avez uniquement besoin de ce livre, d’un set de dés de jeu de rôle, de feuilles de papier, de crayons et d’une gomme.</p>
+        </div>
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    category: null
+    ownership:
+      default: -1
+      BRXzj6OpBPwcAu1T: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.346'
+      systemId: co
+      systemVersion: 13.344.0
+      createdTime: 1752936829390
+      modifiedTime: 1752958392064
+      lastModifiedBy: BRXzj6OpBPwcAu1T
+    _key: '!journal.pages!is8a3xfG5EATIvOT.yLgtzWasiKKcYUaV'
 folder: null
 ownership:
   default: 0
