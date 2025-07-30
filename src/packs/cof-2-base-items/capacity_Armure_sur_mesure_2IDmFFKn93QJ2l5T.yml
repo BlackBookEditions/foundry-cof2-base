@@ -24,23 +24,24 @@ system:
       indice: 0
       label: utilisation d'une armure lourde
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: true
         temporary: true
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.2IDmFFKn93QJ2l5T
           subtype: combat
           target: def
-          apply: self
           value: '@toutrang[5]'
+          apply: self
           additionalInfos: ''
-      conditions: []
       resolvers: []
   cost: -1
   rank: 1
@@ -56,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747845715139
+  modifiedTime: 1753893261030
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!2IDmFFKn93QJ2l5T'

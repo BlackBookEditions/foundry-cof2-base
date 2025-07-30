@@ -39,10 +39,10 @@ system:
   actions:
     - source: Item.q5dGByIPFeMnDSyA
       indice: 0
-      label: scrifie PV
+      label: sacrifice de PV
       chatFlavor: scrifie PV
-      type: debuff
       img: icons/svg/d20-highlight.svg
+      type: debuff
       properties:
         visible: false
         enabled: false
@@ -64,7 +64,6 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -74,8 +73,8 @@ system:
       indice: 1
       label: Dommages
       chatFlavor: Dommages
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
       properties:
         visible: false
         enabled: false
@@ -99,7 +98,6 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -116,11 +114,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1746558775691
-  modifiedTime: 1748931089543
+  modifiedTime: 1753893691396
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!q5dGByIPFeMnDSyA'

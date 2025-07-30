@@ -24,15 +24,16 @@ system:
       indice: 0
       label: Activer le sort (A)
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
       properties:
         visible: false
         enabled: false
         activable: true
         temporary: false
         noManaCost: false
-      conditions: []
+      conditions:
+        - predicate: isLearned
       modifiers: []
       resolvers: []
   cost: -1
@@ -49,11 +50,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1748191589700
+  modifiedTime: 1753893565487
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!ap9Utq8XxLfoloXI'

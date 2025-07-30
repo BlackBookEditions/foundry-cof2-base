@@ -22,16 +22,18 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 0
-      label: Attaque
+      label: Attaque initiale
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
       properties:
         visible: false
         enabled: false
         activable: true
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       resolvers:
         - type: attack
           bonusDiceAdd: false
@@ -49,18 +51,16 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
-      conditions: []
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 1
-      label: Bonus d attaque
+      label: Bonus d'attaque après une feinte
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
@@ -74,16 +74,16 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
           subtype: combat
           target: melee
-          apply: self
           value: '@rang * 2'
+          apply: self
           additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 2
-      label: Bonus dégats
+      label: Bonus DM si feinte réussie
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
@@ -97,8 +97,8 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
           subtype: combat
           target: damMelee
-          apply: self
           value: 2d4°
+          apply: self
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -115,11 +115,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747465921807
+  modifiedTime: 1753892291613
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!zMDclUsOnwdGjgz7'

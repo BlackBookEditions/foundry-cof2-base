@@ -24,30 +24,31 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.lFt8Ds2CoZAZ65yt
           subtype: skill
           target: cha
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: baratin/persuasion
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.lFt8Ds2CoZAZ65yt
       indice: 1
       label: Utilisation parchemins et baguettes magiques
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
       properties:
         visible: false
         enabled: false
@@ -73,7 +74,6 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -92,11 +92,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747580803259
+  modifiedTime: 1753893067789
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!lFt8Ds2CoZAZ65yt'

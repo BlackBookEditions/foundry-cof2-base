@@ -22,10 +22,10 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.zscvMLedomUvkjuy
       indice: 0
-      label: Inorer les effets d’un sort
+      label: Ignorer les effets d’un sort
       chatFlavor: ''
-      type: consumable
       img: icons/svg/d20-highlight.svg
+      type: consumable
       properties:
         visible: false
         enabled: false
@@ -45,7 +45,6 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -67,11 +66,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747376603082
+  modifiedTime: 1753891831760
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!zscvMLedomUvkjuy'
