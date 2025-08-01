@@ -22,10 +22,10 @@ system:
   actions:
     - source: Item.g5LbdcdHJ4p8AZb5
       indice: 0
-      label: Nouvelle Action 1
+      label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
@@ -39,8 +39,8 @@ system:
           source: Item.g5LbdcdHJ4p8AZb5
           subtype: combat
           target: melee
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
@@ -55,11 +55,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1749759427405
-  modifiedTime: 1749759427405
+  modifiedTime: 1753892687245
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _id: Az2O4raNwYJZbBAh

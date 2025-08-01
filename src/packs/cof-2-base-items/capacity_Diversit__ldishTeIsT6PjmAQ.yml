@@ -24,175 +24,181 @@ system:
       indice: 0
       label: 'Montagnard : escalade resist au froid'
       chatFlavor: 'Montagnard : escalade resist au froid'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: escalade resist au froid
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: escalade resist au froid
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 1
       label: 'Citadin : commerce et resistance aux maladies'
       chatFlavor: 'Citadin : commerce et resistance aux maladies'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: cha
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: commerce et resistance aux maladies
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: commerce et resistance aux maladies
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 2
       label: 'Campagnard : equitation et meteorologie'
       chatFlavor: 'Campagnard : equitation et meteorologie'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: agi
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: equitation et meteorologie
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: equitation et meteorologie
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 3
       label: 'Riverain : natation, navigation'
       chatFlavor: 'Riverain : natation, navigation'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: for
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: natation, navigation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: int
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: natation, navigation
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 4
       label: 'Sauvage : chasser et pister'
       chatFlavor: 'Sauvage : chasser et pister'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: chasser et pister
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 5
       label: 'Nomade : orientation et resist chaud ou froid'
       chatFlavor: 'Nomade : orientation et resist chaud ou froid'
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: orientation et resist chaud ou froid
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: orientation et resist chaud ou froid
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 6
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
@@ -206,8 +212,8 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: resource
           target: fp
-          apply: self
           value: '1'
+          apply: self
           additionalInfos: ''
       resolvers: []
   cost: -1
@@ -224,11 +230,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747375405351
+  modifiedTime: 1753892959037
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!ldishTeIsT6PjmAQ'

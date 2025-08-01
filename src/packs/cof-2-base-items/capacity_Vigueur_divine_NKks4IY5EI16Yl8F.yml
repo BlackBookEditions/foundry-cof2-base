@@ -24,30 +24,31 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.NKks4IY5EI16Yl8F
           subtype: skill
           target: con
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: ''
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.NKks4IY5EI16Yl8F
       indice: 1
       label: contre infection surnaturelle
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
       properties:
         visible: false
         enabled: false
@@ -68,12 +69,11 @@ system:
             formula: ''
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -92,11 +92,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1748265000685
+  modifiedTime: 1753892878898
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!NKks4IY5EI16Yl8F'

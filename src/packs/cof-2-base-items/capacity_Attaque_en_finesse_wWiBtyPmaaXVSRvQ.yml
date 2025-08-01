@@ -24,59 +24,61 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: for
-          apply: self
           value: '@rang+2'
+          apply: self
           additionalInfos: intimidation
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: cha
-          apply: self
           value: '@rang + 2'
+          apply: self
           additionalInfos: Intimidation
-      conditions: []
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
       indice: 1
       label: Utilise une arme légère
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: true
         temporary: true
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: init
-          apply: self
           value: '@agi'
+          apply: self
           additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: melee
-          apply: self
           value: '-@for +@agi'
+          apply: self
           additionalInfos: a supprimer si veux pas
-      conditions: []
       resolvers: []
   cost: -1
   rank: 1
@@ -92,11 +94,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747582423622
+  modifiedTime: 1753893140402
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!wWiBtyPmaaXVSRvQ'

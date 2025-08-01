@@ -24,37 +24,38 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
         enabled: false
         activable: false
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: skill
           target: agi
-          apply: self
           value: 2 + @rang
+          apply: self
           additionalInfos: tout déplacement
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: combat
           target: def
-          apply: self
           value: '@rang[1,1,2,2,3]'
+          apply: self
           additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fiw0JVeV8mQN5EQT
           subtype: combat
           target: init
-          apply: self
           value: '@rang[1,1,2,2,3]'
+          apply: self
           additionalInfos: ''
-      conditions: []
       resolvers: []
   cost: -1
   rank: 1
@@ -70,11 +71,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747581109561
+  modifiedTime: 1753893099850
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!fiw0JVeV8mQN5EQT'

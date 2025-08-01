@@ -32,25 +32,31 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
       properties:
         visible: false
-        activable: false
         enabled: false
+        activable: false
         temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Jtems9RtfzQE9601
           subtype: ability
           target: vol
           value: '1'
+          apply: self
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Jtems9RtfzQE9601
           subtype: bonusDice
           target: vol
           value: '0'
-      conditions: []
+          apply: self
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 4
@@ -66,11 +72,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.346'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1748262782313
+  modifiedTime: 1753892704703
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!Jtems9RtfzQE9601'
