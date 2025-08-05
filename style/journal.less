@@ -58,13 +58,17 @@
               font-weight: bold;
               color: #555756;
               margin: 0 0 10px 10px;
-              padding-top: 10px;
+              padding-top: 25px;
               /* 1) Définir une bordure solide, mais uniquement sur le bas */
               border-style: solid;
               border-width: 0 0 4px 0; /* top right bottom left */
 
               /* 2) Indiquer le dégradé à utiliser comme source */
-              border-image-source: linear-gradient(to right, /* sens du dégradé */ #b99442, /* couleur de départ */ #f0eeeb /* couleur d’arrivée */);
+              border-image-source: linear-gradient(
+                to right,
+                /* sens du dégradé */ #b99442,
+                /* couleur de départ */ transparent /* couleur d’arrivée */
+              );
 
               /* 3) Découper le “9-patch” du gradient : 
         top 0, right 0, bottom 100%, left 0 */
@@ -85,7 +89,7 @@
               font-weight: bold;
               color: #b99442;
               margin: 0 0 10px 10px;
-              padding-top: 10px;
+              padding-top: 20px;
             }
 
             h4 {
@@ -94,17 +98,18 @@
               text-align: left;
               font-weight: bold;
               color: #474846;
-              margin: 0 0 10px 10px;
-              padding-top: 10px;
+              margin: 0 0 10px 20px;
+              padding-top: 15px;
             }
 
             h5 {
-              font-size: calc(var(--font-size-standard) * 1.2);
+              font-size: calc(var(--font-size-standard) * 1.1);
               font-family: "Mendel Semibold", sans-serif;
               text-align: left;
               font-weight: bold;
               color: #474846;
-              margin: 10px 0 10px 10px;
+              margin: 10px 0 10px 20px;
+              font-style: italic;
             }
 
             .image-centre {
@@ -135,6 +140,7 @@
               font-family: "Hypatia";
               text-indent: 1em;
               text-align: justify;
+              margin-left: 8px;
               &.dialogues {
                 color: #a88452;
                 font-family: "Hypatia Sans Pro", sans-serif;
@@ -148,14 +154,16 @@
 
             ul {
               list-style: none;
-              padding-left: 1rem;
+              padding-left: 2rem;
 
               li {
-                margin-left: 5px;
                 font-size: 1rem;
                 font-family: "Hypatia";
-                text-indent: 1em;
                 text-align: justify;
+                padding-left: 10px;
+                p {
+                  text-indent: 0;
+                }
 
                 &::marker {
                   content: "\00AF"; /* U+00AF → octet 0xAF dans Wingdings 2 → rhombopen */
@@ -314,14 +322,20 @@
               border: solid 1px #b99442;
               text-transform: uppercase;
             }
-
             .lettrine {
-              font-size: calc(var(--font-size-standard) * 2.5);
+              text-indent: 0;
+              margin: 15px 0 0 20px;
+            }
+
+            .lettrine::first-letter {
+              font-size: calc(var(--font-size-standard) * 2.8);
               font-family: "Mendel Semibold", sans-serif;
               text-align: center;
               text-transform: capitalize;
               font-weight: bold;
               color: #b99442;
+              float: left;
+              margin-top: -16px;
             }
 
             .dice {
@@ -375,7 +389,8 @@
                 left: 0;
                 width: 100%;
                 height: 20px; /* Ajustez cette valeur selon la hauteur de votre image */
-                background: url("./assets/artwork/tableau-bord-inferieur.webp") no-repeat center bottom;
+                background: url("./assets/artwork/tableau-bord-inferieur.webp")
+                  no-repeat center bottom;
                 background-size: contain; /* Ou "cover" selon le rendu désiré */
               }
             }
@@ -455,7 +470,6 @@
             }
 
             .alinea {
-              margin-left: 3px;
               margin-top: 10px;
             }
 
@@ -599,6 +613,20 @@
               font-variant: normal;
               font-weight: normal;
               margin: 0 10px 10px 10px;
+            }
+            // les liens
+            .content-link,
+            i {
+              border: none;
+              margin: 0;
+              padding: 0;
+              color: #a88452;
+              font-weight: bold;
+              text-indent: 0;
+              background: none;
+              i {
+                padding-right: 5px;
+              }
             }
           }
         }
