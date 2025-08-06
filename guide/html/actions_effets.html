@@ -1,9 +1,1165 @@
 <div class="journal-page-cof-base">
-    <h2>Compréhension du concept</h2>
-    <h2>Informations initiales</h2>
-    <h2>Les variables</h2>
-    <h2>Conditions</h2>
-    <h2>Modificateurs</h2>
-    <h2>Résolutions</h2>
-    <h2>Exemples d'actions et d'effets</h2>
+  <h2>Compréhension du concept</h2>
+  <h2>Informations initiales</h2>
+  <h2>Les variables</h2>
+  <h2>Conditions</h2>
+  <h2>Modificateurs</h2>
+  <h2>Résolutions</h2>
+  <h2>Exemples d'actions et d'effets</h2>
 </div>
+
+<p>
+  Les Objets se divisent en 6 types que vous choisissez au moment de créer un
+  nouvel Objet : Attaque (de Rencontre), Capacité, Équipement, Profil, Trait et
+  Voie.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Image et Nom :</span></strong
+    ></span
+  >
+  Tous les Objets, quelque soit leur type, possèdent une image et un nom. Il est
+  possible de les modifier en cliquant dessus.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Type :</span></strong
+    ></span
+  >
+  le type de l'Objet est rappelé dans un rectangle en haut à droite de la
+  fenêtre de l'Objet.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Description :</span></strong
+    ></span
+  >
+  Tous les Objets, quelque soit leur type, possèdent un onglet "Description" qui
+  permet de renseigner toutes les informations écrites pour détailler l'Objet.
+  De la même manière que les journaux, le bloc de texte permet de rajouter des
+  images, des listes, des tableaux, des titres…
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Verrouillage / Déverrouillage :</span
+      ></strong
+    ></span
+  >
+  chaque Objet, quelque soit son type, possède une icone de cadenas en haut à
+  droite de sa fiche permettant de verrouiller ou de déverrouiller la fiche.
+  Déverrouiller une fiche aura un intéret pour certains types d'Objets afin de
+  modifier certaines variables.
+</p>
+<h1><strong>Onglet Détails</strong></h1>
+<p>
+  Les deux premières informations marquées dans l'onglet Détail de tous les
+  types d'Objets sont :
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">ID :</span></strong
+        ></span
+      >
+      l'Identification de l'Objet est un code qui permet de faire appelle à
+      l'Objet et de le rendre unique par rapport à un Objet de même type
+      possédant le même nom. Pour l'exemple, si deux personnages possèdent
+      l'équipement "Mains Nues", leurs ID seront différentes permettant de
+      distinguer l'attaque à Mains Nues de chaque personnage.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Clé :</span></strong
+        ></span
+      >
+      c'est également une identification de l'Objet mais contrairement à l'ID,
+      la clé est similaire pour les objets ayant le même nom. La clé n'est pas
+      modifiable (sans changer le nom de l'objet) car il permet au système de
+      résoudre des fonctions de type : "si le personnage possède [nom de clé]
+      alors [événement].
+    </p>
+  </li>
+</ul>
+<p></p>
+<h2>Attaque (de rencontre)</h2>
+<p>
+  Le type d'Objet "Attaque (de rencontre)" permet de configurer facilement des
+  attaques pour les rencontres (monstres, PNJ…).
+</p>
+<p>
+  Dans l'onglet Détails, il est seulement possible de choisr quel est le type de
+  l'attaque : Attaque de Contact, Attaque à Distance ou Attaque Magique.
+</p>
+<h2>Capacité</h2>
+<p>
+  Comme son nom l'indique, le type d'Objet "Capacité" permet de créer une
+  nouvelle Capacité qu'il serap possible d'intégrer ensuite dans une voie puis
+  un profil ou de la laisser indépendante pour les capacités Hors Voies, par
+  exemple.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Voie :</span></strong
+    ></span
+  >
+  Si la Capacité fait partie d'une Voie, elle sera renseignée sur cette ligne.
+  Ce n'est pas modifiable directement depuis la fiche de la Capacité.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Appris :</span></strong
+    ></span
+  >
+  cette case à cocher permet de définir si la Capacité est apprise ou non par le
+  Personnage lorsque la capacité est déjà sur une feuille. A la cration de la
+  capacité si la case est cochée, la capacité sera apprise de base lorsqu'elle
+  sera Glissée / Déposée sur une feuille.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Coùt en Points de Capacité :</span
+      ></strong
+    ></span
+  >
+  De base, configuré à "-1", cette ligne est modifable seulement lorsque la
+  fiche est déverrouillée. En laissant à "-1" le coût en Points de Capacité sera
+  automatiquement calculé en fonction du rang de la Capacité (1 point pour les
+  rangs 1 et 2 et 2 points pour les rangs 3, 4 et 5). Il est toutefois possible
+  de modifier cette valeur pour créer des capacités qui ne coûtent aucun point
+  de capacités ou au contraire d'augmenter leur coût par rapport aux règles du
+  livre de base.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Coùt en Mana :</span></strong
+    ></span
+  >
+  Cette information n'est utile QUE pour les capacités définie comme "Sorts". De
+  base, configuré à "-1", cette ligne est modifiable seulement lorsque la fiche
+  est déverrouillée. En laissant à "-1", le coût en PM de la capacité sera
+  calculé automatiquement en fonction du rang de la capacité. Il est toutefois
+  possible de modifier cette valeur pour créer des capacités ayant des coût en
+  Points de Magie qui ne respecte pas cette règle.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Type d'Action :</span></strong
+    ></span
+  >
+  choisir dans cette liste déroulante le Type d'Action de la capacité entre "Pas
+  d'action", "Action Limité", "Action de Mouvement", "Action d'Attaque" et
+  "Action Gratuite". Cela permet d'afficher une lettre (L, A, M ou G) sur la
+  ligne de la capacité.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Fréquence d'Utilisation :</span
+      ></strong
+    ></span
+  >
+  Si le nombre d'utilisation de la capacité est limité, il est possible de le
+  renseigner sur cette ligne. Cela aura un impact sur la liste d'Actions du
+  Personnage dans son onglet "Principal". Si la capacité n'a pas de Fréquence
+  d'Utilisation, elle pourra être utilisé autant de fois que voulue. Si la
+  fréquence est définie par "Combat", il faudra réaliser une Récupération Rapide
+  pour récupérer les utilisations de la capacité. Si la fréquence est définie
+  par "Qotidien", il faudra réaliser une Récupération Complète pour récupérer
+  les utilisations de la capacité.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Nombre d'Utilisation :</span
+      ></strong
+    ></span
+  >
+  permet de définir le nombre maximum et actuel d'utilisation de la capacité par
+  le personnage.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Sort :</strong> cette case permet de définir si la capacité
+          est un sort ou non et ainsi diminuer les Points de Magie du Personnage
+          lorsqu'il utilise la capacité.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p></p>
+<h2>Profil</h2>
+<p>
+  Ce type d'Objet permet de créer des Profils et de renseigner ses
+  caractéristqiues et ses voies associées.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Famille :</span></strong
+        ></span
+      >
+      permet de choisir parmis les 4 familles de Profil "Aventurier",
+      "Combattant", "Mage" ou "Mystique"
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Point de Vigueur par Niveau :</span
+          ></strong
+        ></span
+      >
+      cette valeur n'est pas modifiable. Elle est complétée lors du choix de la
+      famille du Profil.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Dé de Récupération :</span
+          ></strong
+        ></span
+      >
+      cette valeur n'est pas modifiable. Elle est complétée lors du choix de la
+      famille du Profil.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Défense maximale de l'armure :</span
+          ></strong
+        ></span
+      >
+      indiquer ici la valeur maximale de l'armure que peut porté le Personnage
+      ayant ce profil pour utiliser les capacités apprise dans les Voies de ce
+      Profil.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Profil principal :</span
+          ></strong
+        ></span
+      >
+      cette case permet de déterminer si ce Profil est le profil principal du
+      Personnage ou non lorsque l'on crée des Profil Hybrides par exemple.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Modificateurs :</span
+          ></strong
+        ></span
+      >
+      en cliquant sur le bouton "+", il est possible d'ajouter des modificateurs
+      spécifiques pour le Profil. Que ce soit un bonus ou un malus de
+      caractéristique, une vision dans le noir, une immunité quelconque, une
+      augmentation ou diminution des Points de Magie… on peut ajouter autant de
+      Modificateurs que nécessaire.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Formations Martiales :</span
+          ></strong
+        ></span
+      >
+      seulement modifiable lorsque la fiche est déverrouillée, cette section
+      permet de sélectionner les Armes, Armures et Boucliers maîtrisés par le
+      Profil.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Voies :</span></strong
+        ></span
+      >
+      en Glissant / Déposant des Voies depuis la barre latérale de FoundryVTT,
+      il est possible de rajouter les 5 voies (ou moins, ou plus) du Profil.
+      Même si cela n'a que peut d'impact, les Voies sont triées dans l'ordre où
+      elles sont glissées sur la fiche du Profil.
+    </p>
+  </li>
+</ul>
+<p></p>
+<h2>Trait</h2>
+<p>
+  Le type d'Objet "Trait" peut être créé pour tous les types d'éléments n'étant
+  ni un Profil ni une Voie ni une Capacité mais pouvant rajouter au Personnage
+  des modificateurs, des Voies ou des Capacités.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Sous-type :</span></strong
+        ></span
+      >
+      permet de choisir le type de Trait parmis "Peuple" ou "Trait"
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Modificateurs :</span
+          ></strong
+        ></span
+      >
+      en cliquant sur le bouton "+", il est possible d'ajouter des modificateurs
+      spécifiques pour le Profil. Que ce soit un bonus ou un malus de
+      caractéristique, une vision dans le noir, une immunité quelconque, une
+      augmentation ou diminution des Points de Magie… on peut ajouter autant de
+      Modificateurs que nécessaire.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Voies :</span></strong
+        ></span
+      >
+      en Glissant / Déposant des Voies depuis la barre latérale de FoundryVTT,
+      il est possible de rajouter une ou plusieurs Voies au Trait. Même si cela
+      n'a que peut d'impact, les Voies sont triées dans l'ordre où elles sont
+      glissées sur la fiche du Trait.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Capacités :</span></strong
+        ></span
+      >
+      en Glissant / Déposant des Capacités depuis la barre latérale de
+      FoundryVTT, il est possible de rajouter une ou plusieurs Capacités au
+      Trait. Même si cela n'a que peut d'impact car il n'y a pas de notion de
+      Rang sur un Trait, les Capacités sont triées dans l'ordre où elles sont
+      glissées sur la fiche du Trait.
+    </p>
+  </li>
+</ul>
+<p></p>
+<h2>Voie</h2>
+<p>
+  Le type d'Objet "Voie" permet de créé et de définir les caratéristiques d'une
+  Voie.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Sous-type :</span></strong
+        ></span
+      >
+      permet de choisir le type de oie parmis les 5 types disponibles "Profil",
+      "Peuple", "Trait", "Prestige" ou "Créature"
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Rang :</span></strong
+        ></span
+      >
+      Cette valeur n'est pas modifiable. Elle permet de connaitre le Rang de la
+      plus haute capacité apprise par le Personnage qui possède cette Voie.
+      Cette valeur est utile pour de nombreux calculs de capacité ("gagner 2 +
+      rang en discrétion, par exemple).
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Défense maximale de l'armure :</span
+          ></strong
+        ></span
+      >
+      indiquer ici la valeur maximale de l'armure que peut porté le Personnage
+      ayant cette Voie pour utiliser les capacités apprises dans la Voie.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Capacités :</span></strong
+        ></span
+      >
+      en Glissant / Déposant des Capacités depuis la barre latérale de
+      FoundryVTT, il est possible de rajouter une ou plusieurs Capacités à la
+      Voie. Les Capacités seront triées dans l'ordre où elles sont glissées sur
+      la fiche de la Voie. Cela est particulièrement important à respecter pour
+      que chaque capacité soit à sa place dans la Voie..
+    </p>
+  </li>
+</ul>
+<p></p>
+<h2>Équipement</h2>
+<p>
+  Le type d'Objet "Équipement" permet de créer un grand nombre d'éléments
+  différents qui seront listés dans l'onglet "Inventaire" de la feuille de
+  Personnage.
+</p>
+<h3>Sous-Type :</h3>
+<p>
+  En fonction du Sous-type choisi, les options suivantes seront différentes afin
+  de configurer l'Équipement correctement.
+</p>
+<blockquote>
+  <p><strong>Armure</strong></p>
+</blockquote>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Catégorie martiale :</span
+          ></strong
+        ></span
+      >
+      permet de choisir le type d'armure parmis "Tissus matelassés, Fourrures",
+      "Cuir Simple", Cuir renforcé, broigne", "chemise de maille", "cotte de
+      mailles", "Armure de plaque" ou "Plaque complète". Cette distinction est
+      importante pour savoir si le personnage est formé à l'utilisation de
+      l'armure ou non.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Défense :</span></strong
+        ></span
+      >
+      renseigné ici le bonus de Défense obtroyé par l'armure
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Défense magique :</span
+          ></strong
+        ></span
+      >
+      renseigné ici le binus de Défense magique obtroyé par l'armure. Ce bonus
+      n'est pas prit en compte dans le calcul de l'encombrement ni pour les
+      restriction maximale d'armure des Profils ou des Voies.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Équipable :</strong> cette case permet de définir si
+          l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la
+          feuille de Personnage.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p></p>
+<blockquote>
+  <p><strong>Bouclier</strong></p>
+</blockquote>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Catégorie martiale :</span
+          ></strong
+        ></span
+      >
+      permet de choisir le type de Bouclier parmis "Petit bouclier" ou "Grand
+      bouclier". Cette distinction est importante pour savoir si le personnage
+      est formé à l'utilisation du Bouclier ou non.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Défense :</span></strong
+        ></span
+      >
+      renseigné ici le bonus de Défense obtroyé par le Bouclier
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Défense magique :</span
+          ></strong
+        ></span
+      >
+      renseigné ici le binus de Défense magique obtroyé par le Bouclier. Ce
+      bonus n'est pas prit en compte dans le calcul de l'encombrement ni pour
+      les restriction maximale d'armure des Profils ou des Voies.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Équipable :</strong> cette case permet de définir si
+          l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la
+          feuille de Personnage.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p></p>
+<blockquote>
+  <p><strong>Arme</strong></p>
+</blockquote>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Catégorie martiale :</span
+          ></strong
+        ></span
+      >
+      permet de choisir le type d'arme parmis tous les types d'arme du Livre de
+      Base. Cette distinction est importante pour savoir si le personnage est
+      formé à l'utilisation de l'arme ou non.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Type de Dommages :</span
+          ></strong
+        ></span
+      >
+      permet de choisir le type de Dommages infligés par l'arme parmis
+      "Tranchants", "Contondants", "Perforants" ou "Magiques"
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Équipable :</strong> cette case permet de définir si
+          l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la
+          feuille de Personnage.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Rechargeable :</strong> permet de définir si l'arme est
+          rechargeable pour les arbalètes, les arcs…
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Empilable :</strong> si cette case est cochée, l'arme pourra
+          avoir une quantité supérieure à 1 dans l'onglet "Inventaire" de la
+          feuille du Personnage. Cela est pratique pour les couteaux de lancer
+          par exemple afin d'éviter d'avoir une ligne disctincte pour chaque
+          couteau de lancer possédé par le Personnage. Si la case est cochée,
+          une nouvelle option apparait plus bas "Détruire si vide". Elle permet
+          de choisir si vous souhaitez que l'arme soit supprimée de l'Inventaire
+          lorsque le Personnage n'en a plus ou si vous souhaitez que l'arme
+          reste dans l'Inventaire avec une quantité notée à "0".
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Une main et Deux mains :</strong> ces deux cases permettent de
+          définir si l'arme peut être utiliser à une seule main, à seulement
+          deux mains ousoit à une main soit à deux mains.
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Portée :</span></strong
+        ></span
+      >
+      Le premier champs permet de renseigner la distance pour la portée de
+      l'arme. Seul un nombre peut être noté dans ce champs. Le deuxième champs
+      permet de noter l'unité de la portée (mètre, cases…).
+    </p>
+  </li>
+</ul>
+<p></p>
+<blockquote>
+  <p><strong>Consommable et Divers</strong></p>
+</blockquote>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Empilable :</strong> si cette case est cochée, l'arme pourra
+          avoir une quantité supérieure à 1 dans l'onglet "Inventaire" de la
+          feuille du Personnage. Cela est pratique pour les couteaux de lancer
+          par exemple afin d'éviter d'avoir une ligne disctincte pour chaque
+          couteau de lancer possédé par le Personnage. Si la case est cochée,
+          une nouvelle option apparait plus bas "Détruire si vide". Elle permet
+          de choisir si vous souhaitez que l'arme soit supprimée de l'Inventaire
+          lorsque le Personnage n'en a plus ou si vous souhaitez que l'arme
+          reste dans l'Inventaire avec une quantité notée à "0".
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p></p>
+<h3>Autres Caractéristqiues</h3>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Poids :</span></strong
+    ></span
+  >
+  permet de renseigner la valeur du poids de l'objet dans le premier champs
+  (valeur numérique seulement) et l'unité du poids dans le second champs (défini
+  de base en "kg")
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Prix :</span></strong
+    ></span
+  >
+  permet de renseigner la valeur du prix de l'Objet dans le premier champs
+  (valeur numérique seulement) et l'unité du prix dans le second champs (défini
+  de base en "pa")
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Rareté :</span></strong
+    ></span
+  >
+  permet de choisir la rareté de l'Objet parmis "Ordinaire", "Précieux",
+  "Exotique", "Rare", "Très rare" ou "Unique"
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Quantité :</span></strong
+    ></span
+  >
+  permet de définir la quantité de base obtenue lorsque l'on Glisse / dépose
+  l'objet depuis la barre latérale de FoundryVTT vers une feuille de Personnage.
+  Par exemple, un "carquois de flèches" aura une quantité de base définie à
+  "20". Ensuite lorsque le Personnage consommera, vendra, utilisera… l'Objet, il
+  pourra modifier cette valeur en fonction.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Détruire si vide :</span
+      ></strong
+    ></span
+  >
+  cette case permet de choisir si vous souhaitez que l'Objet soit supprimé de
+  l'Inventaire lorsque le Personnage n'en a plus ou si vous souhaitez que
+  l'Objet reste dans l'Inventaire avec une quantité notée à "0".
+</p>
+<p></p>
+<h1><strong>Onglet Actions / Effets</strong></h1>
+<p>
+  C'est sans aucun doute l'onglet le plus important pour l'automatisation du
+  système et la facilité d'utilisation des règles par les Joueurs et le Maître
+  du Jeu. Il est identique pour tous les types d'Objets créés.
+</p>
+<h2>Compréhesion de la logique</h2>
+<p>
+  Le bouton "+ Ajouter" permet d'ajouter à l'Objet une nouvelle "Action". Il est
+  possible d'ajouter autant d'Actions que nécessaire pour chaque Objet. Chaque
+  Action permet de configurer de multiples éléments pour ajouter des choses que
+  le Personnage pourra faire, des bonus ou des malus qu'il pourra activés, des
+  améliorations passives…
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Prenons l'exemple de la Capacité "Dans le Mille"</span
+      ></strong
+    ></span
+  >
+  (rang 2 de la Voie de l'Archer - Profil du Rodeur) :
+</p>
+<blockquote>
+  <p>
+    <span style="font-family: Roboto, sans-serif"
+      ><em
+        >Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé
+        malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette
+        capacité peut être utilisée avec Tir rapide ou Flèche de mort par
+        exemple. Transformez cette capacité en action limitée (L) pour obtenir
+        +3d4° aux DM au lieu de 2d4°</em
+      ></span
+    >
+  </p>
+</blockquote>
+<p>
+  Dans l'Onglet Actions / Effets, deux Actions seront ajoutées. La première pour
+  définir l'attaque à distance qui impose un dé malus et rajoute 2d4° aux DM et
+  la deuxième pour définir l'Attaque à distance en action limité avec également
+  un dé malus mais +3d4° au DM.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Pour l'arme Épieu :</span
+      ></strong
+    ></span
+  >
+</p>
+<p>
+  Cette arme, par exemple, peut être utilisée à une main, à deux mains ou à
+  distance. Ainsi, trois Actions seront ajoutées dans l'Onglet Actions / Effets
+  pour chaque type d'attaque avec les bonne valeurs d'attaque, de Dommages…
+</p>
+<h2>Les Actions</h2>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Label :</span></strong
+        ></span
+      >
+      Permet de donner un nom à l'action pour la distinguer des autres. Si le
+      champs est laissé vide, le nom de l'Objet sera utilisé seulement (dans le
+      cas où il n'y aurait qu'une seule action). Dans l'Onglet "Principal" de la
+      feuille de Personnage, le label sera visible après le nom de l'Objet
+      ("Épieu - attaque à deux mains", par exemple).
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Message Chat :</span
+          ></strong
+        ></span
+      >
+      permet de donner un nom spécifique à l'action qui appraitra dans la
+      fenètre de dialogue du chat lorsque l'action sera réalisée, si vous
+      souhaitez qu'il soit différent du Label.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >L'icone de "Poubelle" :</span
+          ></strong
+        ></span
+      >
+      permet de supprimer l'Action ajoutée.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Type :</span></strong
+        ></span
+      >
+      permet de définir le Type d'Action parmis "Sort", "Attaque de Contact",
+      Attaque à Distance", "Attaque Magique", "Soin", "Amélioration",
+      "Affaiblissement" ou "Consommable". Cela aura pour effet principal de
+      changer l'apparence de l'icone de l'action dans l'Onglet "Principal" de la
+      feuille du Personnage.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Image :</span></strong
+        ></span
+      >
+      pemret de définir une image pour cette action spécifique afin de la
+      reconnaitre facilement parmis les actions réalisables par le Personnage.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Propriétés :</span></strong
+        ></span
+      >
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Activable :</strong> Ne cocher pas cette case si l'action est
+          un Effet passif permanent. Dans ce cas là, l'Effet apparaitra dans
+          l'Onglet "Effets" de la feuille de Personnage dans la section
+          Passif(s) La case devra être cochée si l'Action est activable par le
+          Personnage (une action d'attaque, un effet qui s'active dans certaines
+          circonstances, un consommable qu'il faudra activer pour l'utiliser…).
+          Dans ce cas là, l'Action ou l'Effet apparaitra dans l'Onglet
+          "Principal" dans la section Actions.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Temporaire :</strong> Cocher cette case si l'Action est
+          activable ou désactivable par le Personnage en fonction de
+          l'environnement ou de la situation (par exemple, un bonus qui
+          intervient seulement lorsque le Personnage est en forêt, surpris,
+          réalise un test de séduction…). Si la case n'est pas cochée, les
+          Modificateurs définis ensuite seront tout le temps actifs.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Sans coût de mana :</strong> uniquement utile dans le cas des
+          Sorts. Si la case est cochée, l'action en question ne coûtera pas de
+          PM lorsqu'elle sera faite ou activée.
+        </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<h3>Conditions</h3>
+<p>
+  permet de définir une condition pour que l'Action soit réalisable ou que les
+  Modificateurs soient actifs pour le Personnage.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">"Est équipé</span></strong
+        ></span
+      >" est utile pour les actions provenant d'un équipement équipable. S'il
+      n'est pas équipé, l'action ne sera pas possible et les modificateurs ne
+      seront pas pris en compte.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">"Est appris"</span></strong
+        ></span
+      >
+      est utile pour les actions provenant d'une Capacité. Si la capacité n'est
+      pas apprise par le Personnage, l'action ne sera pas possible et les
+      modificateurs ne seront aps pris en compte.
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">"Est possédé"</span></strong
+        ></span
+      >
+      est utile pour les actions provenant d'un équipement ou d'une Attaque (de
+      rencontre) qui n'a pas besoin d'être équipé pour faire effet. A partir du
+      moment où le Personnage possède l'Objet avec cet Action, il bénéficiera
+      des Modificateurs et des Actions associées.
+    </p>
+  </li>
+</ul>
+<p></p>
+<h3>Modificateurs</h3>
+<p>
+  Ce cadre permet de rajouter autant d'Effet que nécessaire à l'Action. Il y a
+  un grand nombre de Statistiques qui peuvent être modifiée dans les
+  Modificateurs.
+</p>
+<ul>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Type et Cible :</span
+          ></strong
+        ></span
+      >
+      permet de choisir la Statistique qui sera modifiée.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Carcactéristique :</strong> Toutes, Agilité, Constitution,
+          Force, Perception, Charisme, Intelligence ou Volonté
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Combat :</strong> Attaque de Contact, Attaque à Distance,
+          Attaque Magique, Initiative, Défense, Critique, Dommages ou Réduction
+          de Dégâts
+        </p>
+      </li>
+      <li>
+        <p><strong>Attribut :</strong> Points de Vigueur ou Déplacement</p>
+      </li>
+      <li>
+        <p>
+          <strong>Ressource :</strong> Point de Récupération, Point de Chance,
+          Point de Mana
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Jet de Compétence :</strong> Toutes, Agilité, Constitution,
+          Force, Perception, Charisme, Intelligence ou Volonté
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>État :</strong> Vision dans le noir, immunisé à la peur
+          magique, Immunisé au sommeil magique, Immunisé aux poisons, Immunisé
+          aux maladies, Immunisé aux asservissement ou Immunisé aux altérations
+          de mouvement
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Dé bonus :</strong> Toutes, Agilité, Constitution, Force,
+          Perception, Charisme, Intelligence, Volonté, Attaque de Contact,
+          Attaque à Distance ou Attaque Magique
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Dé malus :</strong> Toutes, Agilité, Constitution, Force,
+          Perception, Charisme, Intelligence, Volonté, Attaque de Contact,
+          Attaque à Distance ou Attaque Magique
+        </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline">Valeur :</span></strong
+        ></span
+      >
+      permet de renseigner la valeur du modificateur. Les valeurs doivent être
+      des nombres positifs ou négatifs. Lorsque la cible n'appelle pas un
+      modificateur numérique (vision dans le noir, dé bonus, dé malus…), laissez
+      la valeur "0".
+    </p>
+  </li>
+  <li>
+    <p>
+      <span style="text-decoration: underline"
+        ><strong
+          ><span style="text-decoration: underline"
+            >Informations complémentaires :</span
+          ></strong
+        ></span
+      >
+      un champs de texte permettant d'écrire une description simplifiée du
+      modificateur ou la situation dans laquelle il s'applique (par exemple,
+      "pour les tests de forge", "pour résister à un sort de manipulation
+      mentale"…). Ce champs 'Informations complémentaires" apparaitra dans la
+      fenètre des Jets de Compétence lorsqu'il faudra choisir si vous appliquez
+      le modificateur ou non, en fonction de la situation.
+    </p>
+  </li>
+</ul>
+<p></p>
+<h3>Résolutions</h3>
+<p>Ce cadre permet de rajouter des jets de dés à l'Action de l'Objet.</p>
+<p>
+  Si l'Action correspond à un Attaque de Contact spécifique ou une formule de
+  jet de Soin, il faudra rajouter une ou plusieurs Résolution dans ce cadre.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Attaque Automatique :</span
+      ></strong
+    ></span
+  >
+  permet de réaliser une Attaque qui touche automatiquement et de définir la
+  formule de Dommages infligés.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Attaques de Contact, à Distance ou Magique :</span
+      ></strong
+    ></span
+  >
+  permet de réaliser une attaque, avec ou sans dé bonus ou dé malus et de
+  définir, la formule du Jet d'Attaque, la plage de Critique (si elle est
+  différente), la Difficulté de l'attaque et la formule de Dommages.
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Soin :</span></strong
+    ></span
+  >
+  permet de définir la formule de soin ainsi que la cible (soi-même, unique,
+  multiple ou aucune et si le soin cible indifféremment les alliés et les
+  ennemis ou soit l'un soit l'autre catégorie).
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Amélioration :</span></strong
+    ></span
+  >
+  ??
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Affaiblissement :</span></strong
+    ></span
+  >
+  ??
+</p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline">Consommable :</span></strong
+    ></span
+  >
+  ce type doit être rajouté après une autre résolution. Il permet de définir si
+  la Résolution "consomme" l'Équipement. Par exemple, pour une potion de soin,
+  il faudra définir une Résolution de type "Soin" en indiquant la formule de
+  soin et la cible "Soi-même" ET une résolution de type "Consommable" pour que
+  la quantité de potion possédée par le Personnage diminue de 1 à chaque fois
+  que l'Action est réalisée.
+</p>
+<p></p>
+<p>
+  <span style="text-decoration: underline"
+    ><strong
+      ><span style="text-decoration: underline"
+        >Effets supplémentaires</span
+      ></strong
+    ></span
+  >
+  : ????? pas encore arrivé en 0.8.0 ?????
+</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
