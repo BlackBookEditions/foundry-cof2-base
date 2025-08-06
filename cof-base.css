@@ -118,6 +118,16 @@
   padding: 0;
   border-width: 0;
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base i.fa-solid,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base i.fa-regular {
+  color: var(--color-text-primary);
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base i.fa-regular {
+  font-weight: normal;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base a i.fa-solid {
+  color: #a88452;
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base h2 {
   font-size: calc(var(--font-size-standard) * 1.6);
   font-family: "Mendel Semibold", sans-serif;
@@ -325,6 +335,10 @@
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .gras {
   text-align: justify;
   font-weight: bold;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .underline {
+  text-transform: uppercase;
+  text-decoration: underline 2px dashed grey;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .droite {
   text-align: right;
