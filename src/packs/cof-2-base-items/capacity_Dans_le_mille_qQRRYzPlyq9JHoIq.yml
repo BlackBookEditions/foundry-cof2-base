@@ -22,10 +22,11 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 0
-      label: (A)
-      chatFlavor: (A)
-      type: ranged
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
       properties:
         visible: false
         enabled: false
@@ -51,17 +52,17 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq
       indice: 1
-      label: (L)
-      chatFlavor: (L)
-      type: ranged
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: l
       properties:
         visible: false
         enabled: false
@@ -87,7 +88,6 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -106,11 +106,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.347'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747470103507
+  modifiedTime: 1754773872987
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!qQRRYzPlyq9JHoIq'

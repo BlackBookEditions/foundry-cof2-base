@@ -58,8 +58,9 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: a
       properties:
         visible: false
         enabled: false
@@ -80,14 +81,14 @@ system:
             formula: 5d4° + @int
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
+            statuses: []
             duration: '0'
             unit: round
-            applyBuff: false
       modifiers: []
 effects: []
 ownership:
@@ -97,11 +98,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.347'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1743524824217
-  modifiedTime: 1747510744761
+  modifiedTime: 1754773096506
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource:
     worldId: cov2-dev
