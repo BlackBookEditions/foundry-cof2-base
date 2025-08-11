@@ -242,6 +242,9 @@
   color: black;
   font-weight: bold;
 }
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base ul li.sans-puce::marker {
+  content: "";
+}
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base .bestiaire {
   font-size: calc(var(--font-size-standard));
   padding: 5px;
@@ -539,7 +542,8 @@
   font-size: 58%;
   vertical-align: super;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables {
   font-family: "Hypatia", sans-serif;
   border-collapse: collapse;
   border-color: #12120d;
@@ -548,30 +552,55 @@
   margin: 20px 0 30px 60px;
   width: 90%;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr {
   border-bottom-color: #ba9442;
   border-bottom-width: 1px;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau td {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau td,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables td {
   text-align: center;
   vertical-align: middle;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-titre {
   background-color: #cbad70;
   color: #ffffff;
   font-size: 1.1rem;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre td {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-titre td,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-titre td {
   text-align: left;
   padding: 10px;
   letter-spacing: 2px;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-entete {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-entete,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-entete {
   font-weight: bold;
   background-color: #eaddc3;
 }
-.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-note {
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau tr.tableau-note,
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-note {
   font-size: 0.8rem;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-entete {
+  font-size: 1.2rem;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.tableau-entete td {
+  text-align: center;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables tr.exemple {
+  font-style: italic;
+  border-left: solid 2px #b99442;
+  border-right: solid 2px #b99442;
+  color: #835d0c;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables td {
+  text-align: left;
+}
+.journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.variables td.variable {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 .journal-cof-base .journal-entry-content .journal-entry-pages .journal-entry-page .journal-page-content .journal-page-cof-base table.tableau-simple {
   margin: 10px;

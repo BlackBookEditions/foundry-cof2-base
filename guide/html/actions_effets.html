@@ -1,767 +1,1116 @@
 <div class="journal-page-cof-base">
+  <h2>Introduction</h2>
+  <p class="lettrine">
+    C'est sans aucun doute l'onglet le plus important pour l'automatisation du système et la facilité d'utilisation des règles par les Joueurs et le Maître du Jeu. Il est possible
+    de configurer des Actions/Effets sur trois type d'Objet : les Capacités, les Équipements et les Attaques de Rencontre. Le procédé est identique pour tous les 3 types d'Objets
+    créés. Ce sont les mêmes mécaniques et le même résultat.
+  </p>
+  <p class="alinea">
+    Comme abordé dans la @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-attaque-(de-rencontre)]{Feuille
+    Attaque (de rencontre)}, seulement une seule action peut être définie pour une attaque de rencontre. La
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-equipement]{Feuille Equipement} et la
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-equipement]{Feuille Equipement} peuvent recevoir autant
+    d'Actions/Effets que nécessaire.
+  </p>
   <h2>Compréhension du concept</h2>
-  <h2>Informations initiales</h2>
-  <h2>Les variables</h2>
-  <h2>Conditions</h2>
-  <h2>Modificateurs</h2>
-  <h2>Résolutions</h2>
-  <h2>Exemples d'actions et d'effets</h2>
-</div>
+  <p class="alinea">
+    Le bouton <span class="gras">+ Ajouter</span> permet d'ajouter à l'Objet une nouvelle <span class="gras">Action/Effet</span>. Il est possible d'ajouter autant d'Actions que
+    nécessaire sur une @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-capacite]{Feuille Capacité} et une
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-equipement]{Feuille Equipement}. Par contre, vous ne
+    pouvez ajouter s'une seule Action/Effet sur une
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-attaque-(de-rencontre)]{Feuille Attaque (de
+    rencontre)}. Chaque Action permet de configurer de multiples éléments pour ajouter des choses que le Personnage pourra faire, des bonus ou des malus qu'il pourra activer, des
+    améliorations passives…
+  </p>
+  <br />
+  <p class="exemple">
+    <span class="gras">Prenons l'exemple de la Capacité <span class="normal">@UUID[Compendium.cof-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq]{Dans le mille}</span></span>
+    (rang 2 de la Voie de l'Archer - Profil du Rodeur) :
+  </p>
 
-<p>Les Objets se divisent en 6 types que vous choisissez au moment de créer un nouvel Objet : Attaque (de Rencontre), Capacité, Équipement, Profil, Trait et Voie.</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Image et Nom :</span></strong></span
-  >
-  Tous les Objets, quelque soit leur type, possèdent une image et un nom. Il est possible de les modifier en cliquant dessus.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Type :</span></strong></span
-  >
-  le type de l'Objet est rappelé dans un rectangle en haut à droite de la fenêtre de l'Objet.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Description :</span></strong></span
-  >
-  Tous les Objets, quelque soit leur type, possèdent un onglet "Description" qui permet de renseigner toutes les informations écrites pour détailler l'Objet. De la même manière que
-  les journaux, le bloc de texte permet de rajouter des images, des listes, des tableaux, des titres…
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Verrouillage / Déverrouillage :</span></strong></span
-  >
-  chaque Objet, quelque soit son type, possède une icone de cadenas en haut à droite de sa fiche permettant de verrouiller ou de déverrouiller la fiche. Déverrouiller une fiche
-  aura un intéret pour certains types d'Objets afin de modifier certaines variables.
-</p>
-<h1><strong>Onglet Détails</strong></h1>
-<p>Les deux premières informations marquées dans l'onglet Détail de tous les types d'Objets sont :</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">ID :</span></strong></span
-      >
-      l'Identification de l'Objet est un code qui permet de faire appelle à l'Objet et de le rendre unique par rapport à un Objet de même type possédant le même nom. Pour
-      l'exemple, si deux personnages possèdent l'équipement "Mains Nues", leurs ID seront différentes permettant de distinguer l'attaque à Mains Nues de chaque personnage.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Clé :</span></strong></span
-      >
-      c'est également une identification de l'Objet mais contrairement à l'ID, la clé est similaire pour les objets ayant le même nom. La clé n'est pas modifiable (sans changer le
-      nom de l'objet) car il permet au système de résoudre des fonctions de type : "si le personnage possède [nom de clé] alors [événement].
-    </p>
-  </li>
-</ul>
-<p></p>
-<h2>Attaque (de rencontre)</h2>
-<p>Le type d'Objet "Attaque (de rencontre)" permet de configurer facilement des attaques pour les rencontres (monstres, PNJ…).</p>
-<p>Dans l'onglet Détails, il est seulement possible de choisr quel est le type de l'attaque : Attaque de Contact, Attaque à Distance ou Attaque Magique.</p>
-<h2>Capacité</h2>
-<p>
-  Comme son nom l'indique, le type d'Objet "Capacité" permet de créer une nouvelle Capacité qu'il serap possible d'intégrer ensuite dans une voie puis un profil ou de la laisser
-  indépendante pour les capacités Hors Voies, par exemple.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Voie :</span></strong></span
-  >
-  Si la Capacité fait partie d'une Voie, elle sera renseignée sur cette ligne. Ce n'est pas modifiable directement depuis la fiche de la Capacité.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Appris :</span></strong></span
-  >
-  cette case à cocher permet de définir si la Capacité est apprise ou non par le Personnage lorsque la capacité est déjà sur une feuille. A la cration de la capacité si la case est
-  cochée, la capacité sera apprise de base lorsqu'elle sera Glissée / Déposée sur une feuille.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Coùt en Points de Capacité :</span></strong></span
-  >
-  De base, configuré à "-1", cette ligne est modifable seulement lorsque la fiche est déverrouillée. En laissant à "-1" le coût en Points de Capacité sera automatiquement calculé
-  en fonction du rang de la Capacité (1 point pour les rangs 1 et 2 et 2 points pour les rangs 3, 4 et 5). Il est toutefois possible de modifier cette valeur pour créer des
-  capacités qui ne coûtent aucun point de capacités ou au contraire d'augmenter leur coût par rapport aux règles du livre de base.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Coùt en Mana :</span></strong></span
-  >
-  Cette information n'est utile QUE pour les capacités définie comme "Sorts". De base, configuré à "-1", cette ligne est modifiable seulement lorsque la fiche est déverrouillée. En
-  laissant à "-1", le coût en PM de la capacité sera calculé automatiquement en fonction du rang de la capacité. Il est toutefois possible de modifier cette valeur pour créer des
-  capacités ayant des coût en Points de Magie qui ne respecte pas cette règle.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Type d'Action :</span></strong></span
-  >
-  choisir dans cette liste déroulante le Type d'Action de la capacité entre "Pas d'action", "Action Limité", "Action de Mouvement", "Action d'Attaque" et "Action Gratuite". Cela
-  permet d'afficher une lettre (L, A, M ou G) sur la ligne de la capacité.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Fréquence d'Utilisation :</span></strong></span
-  >
-  Si le nombre d'utilisation de la capacité est limité, il est possible de le renseigner sur cette ligne. Cela aura un impact sur la liste d'Actions du Personnage dans son onglet
-  "Principal". Si la capacité n'a pas de Fréquence d'Utilisation, elle pourra être utilisé autant de fois que voulue. Si la fréquence est définie par "Combat", il faudra réaliser
-  une Récupération Rapide pour récupérer les utilisations de la capacité. Si la fréquence est définie par "Qotidien", il faudra réaliser une Récupération Complète pour récupérer
-  les utilisations de la capacité.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Nombre d'Utilisation :</span></strong></span
-  >
-  permet de définir le nombre maximum et actuel d'utilisation de la capacité par le personnage.
-</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p>
-          <strong>Sort :</strong> cette case permet de définir si la capacité est un sort ou non et ainsi diminuer les Points de Magie du Personnage lorsqu'il utilise la capacité.
-        </p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<p></p>
-<h2>Profil</h2>
-<p>Ce type d'Objet permet de créer des Profils et de renseigner ses caractéristqiues et ses voies associées.</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Famille :</span></strong></span
-      >
-      permet de choisir parmis les 4 familles de Profil "Aventurier", "Combattant", "Mage" ou "Mystique"
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Point de Vigueur par Niveau :</span></strong></span
-      >
-      cette valeur n'est pas modifiable. Elle est complétée lors du choix de la famille du Profil.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Dé de Récupération :</span></strong></span
-      >
-      cette valeur n'est pas modifiable. Elle est complétée lors du choix de la famille du Profil.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense maximale de l'armure :</span></strong></span
-      >
-      indiquer ici la valeur maximale de l'armure que peut porté le Personnage ayant ce profil pour utiliser les capacités apprise dans les Voies de ce Profil.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Profil principal :</span></strong></span
-      >
-      cette case permet de déterminer si ce Profil est le profil principal du Personnage ou non lorsque l'on crée des Profil Hybrides par exemple.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Modificateurs :</span></strong></span
-      >
-      en cliquant sur le bouton "+", il est possible d'ajouter des modificateurs spécifiques pour le Profil. Que ce soit un bonus ou un malus de caractéristique, une vision dans le
-      noir, une immunité quelconque, une augmentation ou diminution des Points de Magie… on peut ajouter autant de Modificateurs que nécessaire.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Formations Martiales :</span></strong></span
-      >
-      seulement modifiable lorsque la fiche est déverrouillée, cette section permet de sélectionner les Armes, Armures et Boucliers maîtrisés par le Profil.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Voies :</span></strong></span
-      >
-      en Glissant / Déposant des Voies depuis la barre latérale de FoundryVTT, il est possible de rajouter les 5 voies (ou moins, ou plus) du Profil. Même si cela n'a que peut
-      d'impact, les Voies sont triées dans l'ordre où elles sont glissées sur la fiche du Profil.
-    </p>
-  </li>
-</ul>
-<p></p>
-<h2>Trait</h2>
-<p>
-  Le type d'Objet "Trait" peut être créé pour tous les types d'éléments n'étant ni un Profil ni une Voie ni une Capacité mais pouvant rajouter au Personnage des modificateurs, des
-  Voies ou des Capacités.
-</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Sous-type :</span></strong></span
-      >
-      permet de choisir le type de Trait parmis "Peuple" ou "Trait"
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Modificateurs :</span></strong></span
-      >
-      en cliquant sur le bouton "+", il est possible d'ajouter des modificateurs spécifiques pour le Profil. Que ce soit un bonus ou un malus de caractéristique, une vision dans le
-      noir, une immunité quelconque, une augmentation ou diminution des Points de Magie… on peut ajouter autant de Modificateurs que nécessaire.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Voies :</span></strong></span
-      >
-      en Glissant / Déposant des Voies depuis la barre latérale de FoundryVTT, il est possible de rajouter une ou plusieurs Voies au Trait. Même si cela n'a que peut d'impact, les
-      Voies sont triées dans l'ordre où elles sont glissées sur la fiche du Trait.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Capacités :</span></strong></span
-      >
-      en Glissant / Déposant des Capacités depuis la barre latérale de FoundryVTT, il est possible de rajouter une ou plusieurs Capacités au Trait. Même si cela n'a que peut
-      d'impact car il n'y a pas de notion de Rang sur un Trait, les Capacités sont triées dans l'ordre où elles sont glissées sur la fiche du Trait.
-    </p>
-  </li>
-</ul>
-<p></p>
-<h2>Voie</h2>
-<p>Le type d'Objet "Voie" permet de créé et de définir les caratéristiques d'une Voie.</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Sous-type :</span></strong></span
-      >
-      permet de choisir le type de oie parmis les 5 types disponibles "Profil", "Peuple", "Trait", "Prestige" ou "Créature"
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Rang :</span></strong></span
-      >
-      Cette valeur n'est pas modifiable. Elle permet de connaitre le Rang de la plus haute capacité apprise par le Personnage qui possède cette Voie. Cette valeur est utile pour de
-      nombreux calculs de capacité ("gagner 2 + rang en discrétion, par exemple).
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense maximale de l'armure :</span></strong></span
-      >
-      indiquer ici la valeur maximale de l'armure que peut porté le Personnage ayant cette Voie pour utiliser les capacités apprises dans la Voie.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Capacités :</span></strong></span
-      >
-      en Glissant / Déposant des Capacités depuis la barre latérale de FoundryVTT, il est possible de rajouter une ou plusieurs Capacités à la Voie. Les Capacités seront triées
-      dans l'ordre où elles sont glissées sur la fiche de la Voie. Cela est particulièrement important à respecter pour que chaque capacité soit à sa place dans la Voie..
-    </p>
-  </li>
-</ul>
-<p></p>
-<h2>Équipement</h2>
-<p>Le type d'Objet "Équipement" permet de créer un grand nombre d'éléments différents qui seront listés dans l'onglet "Inventaire" de la feuille de Personnage.</p>
-<h3>Sous-Type :</h3>
-<p>En fonction du Sous-type choisi, les options suivantes seront différentes afin de configurer l'Équipement correctement.</p>
-<blockquote>
-  <p><strong>Armure</strong></p>
-</blockquote>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Catégorie martiale :</span></strong></span
-      >
-      permet de choisir le type d'armure parmis "Tissus matelassés, Fourrures", "Cuir Simple", Cuir renforcé, broigne", "chemise de maille", "cotte de mailles", "Armure de plaque"
-      ou "Plaque complète". Cette distinction est importante pour savoir si le personnage est formé à l'utilisation de l'armure ou non.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense :</span></strong></span
-      >
-      renseigné ici le bonus de Défense obtroyé par l'armure
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense magique :</span></strong></span
-      >
-      renseigné ici le binus de Défense magique obtroyé par l'armure. Ce bonus n'est pas prit en compte dans le calcul de l'encombrement ni pour les restriction maximale d'armure
-      des Profils ou des Voies.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p><strong>Équipable :</strong> cette case permet de définir si l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la feuille de Personnage.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<p></p>
-<blockquote>
-  <p><strong>Bouclier</strong></p>
-</blockquote>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Catégorie martiale :</span></strong></span
-      >
-      permet de choisir le type de Bouclier parmis "Petit bouclier" ou "Grand bouclier". Cette distinction est importante pour savoir si le personnage est formé à l'utilisation du
-      Bouclier ou non.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense :</span></strong></span
-      >
-      renseigné ici le bonus de Défense obtroyé par le Bouclier
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Défense magique :</span></strong></span
-      >
-      renseigné ici le binus de Défense magique obtroyé par le Bouclier. Ce bonus n'est pas prit en compte dans le calcul de l'encombrement ni pour les restriction maximale
-      d'armure des Profils ou des Voies.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p><strong>Équipable :</strong> cette case permet de définir si l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la feuille de Personnage.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<p></p>
-<blockquote>
-  <p><strong>Arme</strong></p>
-</blockquote>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Catégorie martiale :</span></strong></span
-      >
-      permet de choisir le type d'arme parmis tous les types d'arme du Livre de Base. Cette distinction est importante pour savoir si le personnage est formé à l'utilisation de
-      l'arme ou non.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Type de Dommages :</span></strong></span
-      >
-      permet de choisir le type de Dommages infligés par l'arme parmis "Tranchants", "Contondants", "Perforants" ou "Magiques"
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p><strong>Équipable :</strong> cette case permet de définir si l'Équipement peut être équipé ou non depuis l'Onglet Inventaire de la feuille de Personnage.</p>
-      </li>
-      <li>
-        <p><strong>Rechargeable :</strong> permet de définir si l'arme est rechargeable pour les arbalètes, les arcs…</p>
-      </li>
-      <li>
-        <p>
-          <strong>Empilable :</strong> si cette case est cochée, l'arme pourra avoir une quantité supérieure à 1 dans l'onglet "Inventaire" de la feuille du Personnage. Cela est
-          pratique pour les couteaux de lancer par exemple afin d'éviter d'avoir une ligne disctincte pour chaque couteau de lancer possédé par le Personnage. Si la case est
-          cochée, une nouvelle option apparait plus bas "Détruire si vide". Elle permet de choisir si vous souhaitez que l'arme soit supprimée de l'Inventaire lorsque le Personnage
-          n'en a plus ou si vous souhaitez que l'arme reste dans l'Inventaire avec une quantité notée à "0".
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Une main et Deux mains :</strong> ces deux cases permettent de définir si l'arme peut être utiliser à une seule main, à seulement deux mains ousoit à une main
-          soit à deux mains.
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Portée :</span></strong></span
-      >
-      Le premier champs permet de renseigner la distance pour la portée de l'arme. Seul un nombre peut être noté dans ce champs. Le deuxième champs permet de noter l'unité de la
-      portée (mètre, cases…).
-    </p>
-  </li>
-</ul>
-<p></p>
-<blockquote>
-  <p><strong>Consommable et Divers</strong></p>
-</blockquote>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p>
-          <strong>Empilable :</strong> si cette case est cochée, l'arme pourra avoir une quantité supérieure à 1 dans l'onglet "Inventaire" de la feuille du Personnage. Cela est
-          pratique pour les couteaux de lancer par exemple afin d'éviter d'avoir une ligne disctincte pour chaque couteau de lancer possédé par le Personnage. Si la case est
-          cochée, une nouvelle option apparait plus bas "Détruire si vide". Elle permet de choisir si vous souhaitez que l'arme soit supprimée de l'Inventaire lorsque le Personnage
-          n'en a plus ou si vous souhaitez que l'arme reste dans l'Inventaire avec une quantité notée à "0".
-        </p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<p></p>
-<h3>Autres Caractéristqiues</h3>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Poids :</span></strong></span
-  >
-  permet de renseigner la valeur du poids de l'objet dans le premier champs (valeur numérique seulement) et l'unité du poids dans le second champs (défini de base en "kg")
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Prix :</span></strong></span
-  >
-  permet de renseigner la valeur du prix de l'Objet dans le premier champs (valeur numérique seulement) et l'unité du prix dans le second champs (défini de base en "pa")
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Rareté :</span></strong></span
-  >
-  permet de choisir la rareté de l'Objet parmis "Ordinaire", "Précieux", "Exotique", "Rare", "Très rare" ou "Unique"
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Quantité :</span></strong></span
-  >
-  permet de définir la quantité de base obtenue lorsque l'on Glisse / dépose l'objet depuis la barre latérale de FoundryVTT vers une feuille de Personnage. Par exemple, un
-  "carquois de flèches" aura une quantité de base définie à "20". Ensuite lorsque le Personnage consommera, vendra, utilisera… l'Objet, il pourra modifier cette valeur en fonction.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Détruire si vide :</span></strong></span
-  >
-  cette case permet de choisir si vous souhaitez que l'Objet soit supprimé de l'Inventaire lorsque le Personnage n'en a plus ou si vous souhaitez que l'Objet reste dans
-  l'Inventaire avec une quantité notée à "0".
-</p>
-<p></p>
-<h1><strong>Onglet Actions / Effets</strong></h1>
-<p>
-  C'est sans aucun doute l'onglet le plus important pour l'automatisation du système et la facilité d'utilisation des règles par les Joueurs et le Maître du Jeu. Il est identique
-  pour tous les types d'Objets créés.
-</p>
-<h2>Compréhesion de la logique</h2>
-<p>
-  Le bouton "+ Ajouter" permet d'ajouter à l'Objet une nouvelle "Action". Il est possible d'ajouter autant d'Actions que nécessaire pour chaque Objet. Chaque Action permet de
-  configurer de multiples éléments pour ajouter des choses que le Personnage pourra faire, des bonus ou des malus qu'il pourra activés, des améliorations passives…
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Prenons l'exemple de la Capacité "Dans le Mille"</span></strong></span
-  >
-  (rang 2 de la Voie de l'Archer - Profil du Rodeur) :
-</p>
-<blockquote>
+  <p class="exemple">
+    <span class="normal">Texte de la Capacité :</span> Pour une attaque à distance, le rôdeur peut choisir de s'imposer un dé malus en attaque. Si elle est réussie, il ajoute 2d4°
+    aux DM. Cette capacité peut être utilisée avec Tir rapide ou Flèche de mort par exemple. Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de
+    2d4°.
+  </p>
+
+  <p class="exemple">Dans l'Onglet Actions/Effets, deux Actions seront ajoutées :</p>
+
+  <p class="exemple">
+    La première pour définir l'attaque à distance qui impose un dé malus et rajoute 2d4° aux DM et la deuxième pour définir l'Attaque à distance en action limité avec également un
+    dé malus mais +3d4° au DM.
+  </p>
+
+  <br />
+  <p class="exemple"><span class="gras">Un autre exemple pour l'arme "Épieu" :</span> une arme avec beaucoup d'options.</p>
+  <p class="exemple">
+    Cette arme, par exemple, peut être utilisée à une main, à deux mains ou à distance. Ainsi, trois Actions seront ajoutées dans l'Onglet Actions/Effets pour chaque type d'attaque
+    avec les bonnes valeurs d'attaque, de Dommages…
+  </p>
+  <p class="alinea">
+    Quand vous configurez des Actions/Effets, ils n'apparaitront pas au même endroit de votre
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-personnage]{Feuille Personnage}. En fonction des
+    paramètres choisis, une Action/Effet rajoutera une action, un effet passif, un bonus circonstanciel pour un
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique} ou un nouvel
+    état sur votre personnage.
+  </p>
+
+  <!--informations initiales-->
+  <h2>Informations initiales</h2>
+  <h3>Label</h3>
+  <p class="alinea">
+    Le label permet de donner un nom spécifique à l'action pour la distinguer des autres et synthétiser son effet rapidement. Le label sera visible dans
+    l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} à la suite du nom de la
+    Capacité ou de l'Équipement dans la liste des Actions; Si le champ est laissé vide, le nom de l'Objet sera utilisé seulement. Ainsi il sera difficile de distinguer deux actions
+    différentes l'une de l'autre. De plus, si l'action possède une caractéristique importante, vous pouvez utiliser le Label pour le signaler.
+  </p>
+  <p class="exemple">
+    Par exemple, pour la Capacité <span class="gras normal">@UUID[Compendium.cof-base.cof-2-base-items.Item.8IiUk1mWhyccCuai]{Frappe chirurgicale}</span>, vous pouvez écrire dans
+    le label la condition pour Activer l'Action "Utilisation d'une arme légère".
+  </p>
+  <p class="exemple">
+    Dans la liste des Actions il sera écrit : <span class="gras normal">"Frappe chirurgicale - Utilisation d'une arme légère"</span> et vous saurez à quel moment vous pouvez
+    activer les bonus octroyés par cette capacité.
+  </p>
+  <h3>Supprimer une Action</h3>
+  <p class="alinea">
+    L'icone <i class="fa-solid fa-trash"></i> permet de supprimer l'Action/Effet créée. Cette suppression est définitive. Aucune information n'est enregistrée donc si vous
+    supprimez par erreur une Action/Effet, il faudra la recréer de A à Z. Faites donc attention à ne pas cliquer sur cette icone par mégarde et rappelez-vous qu'elle ne permet pas
+    seulement d'effacer le Nom de l'Action.
+  </p>
+  <h3>Message Chat :</h3>
+  <p class="alinea">
+    Le champ Message Chat permet de donner un nom à l'Action/Effet qui apparaitra dans la fenêtre de dialogue du Chat lorsque l'Action/Effet sera réalisée. Si vous souhaitez que le
+    nom affiché à la vue de tous soit différent du Label, vous pourrez utiliser ce champ. Le texte écrit dans le Message Chat remplacera le nom de la Capacité ET le Label.
+  </p>
+  <p class="alinea">
+    Ce champ est particulièrement utile pour les MJ qui veulent garder du secret sur les pouvoirs et les Capacités de ses créatures. Il ne faut pas hésiter à utiliser ce champ
+    quand cela vous semble nécessaire.
+  </p>
+  <p class="exemple">
+    Au lieu, par exemple, d'afficher dans le Chat <span class="gras normal">"Baiser vampirique - Empoisonné"</span>, le MJ pourrait choisir de berner ses joueurs en notant dans le
+    Message du Chat <span class="gras normal">"Embrassade Charmante"</span>.
+  </p>
+  <h3>Image</h3>
+  <p class="alinea">
+    Pour définir une image spécifique à l'Action/Effet, vous pouvez utiliser ce champ. De base, si vous laissez ce champ vide, l'image de l'Action/Effet sera la même que celle
+    définie pour la Capacité ou l'Équipement. Si vous souhaitez changer l'image, cliquez sur l'image du D20 orange pour ouvrir l'explorateur d'image ou copiez-collez le chemin de
+    votre image directement dans le champ texte.
+  </p>
+  <p class="alinea">
+    L'image choisie remplacera l'image qui apparait dans le Cadre Action de
+    l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} de la
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-personnage]{Feuille Personnage}.
+  </p>
+  <p class="alinea">
+    Un conseil tout de même, si vous modifiez toutes les images des Actions/Effets de chaque Capacité ou Équipement, il sera difficile de retrouver une Action spécifique dans votre
+    liste d'Action lorsque votre Personnage sera de haut niveau et que cette liste sera composée de plus de 15 Actions/Effets.
+  </p>
+  <h3>Type de l'Action</h3>
   <p>
-    <span style="font-family: Roboto, sans-serif"
-      ><em
-        >Pour une attaque à distance, le rôdeur peut choisir de s’imposer un dé malus en attaque. Si elle est réussie, il ajoute 2d4° aux DM. Cette capacité peut être utilisée avec
-        Tir rapide ou Flèche de mort par exemple. Transformez cette capacité en action limitée (L) pour obtenir +3d4° aux DM au lieu de 2d4°</em
-      ></span
+    <span class="gras">Cette option est très importante</span> pour le bon fonctionnement de l'Action par la suite. En fonction de l'option que vous choisissez, certains choix ne
+    seront plus possible dans votre liste d'Actions. Il est possible de classer les types d'Action en deux catégories : les <span class="gras">Actions</span> et les
+    <span class="gras">Effets</span>.
+  </p>
+
+  <h4>Les Actions :</h4>
+  <p class="alinea">
+    Cette catégorie permet de configurer des éléments qui nécessitent un Jet et un résultat. Dans la majorité des cas ce sera une Attaque contre une difficulté (Défense de la
+    cible, jet opposé…) et un résultat sous forme de Dommages à la cible. Mais nous verrons par la suite dans les
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#resolutions]{Résolutions} que d'autres choix s'offriront à
+    vous.
+  </p>
+  <p class="alinea">
+    Pour simplifier, en choisissant l'une de ces options, une icone "Attaque" qui dépend du type d'option choisi comme indiqué dans la liste suivante et une icone "Dommages"
+    <i class="fa-regular fa-hand-fist"></i> apparaitra au bout de la ligne dans le cadre Action.
+  </p>
+
+  <ul>
+    <li><i class="fa-solid fa-sword"></i> - Attaque de contact</li>
+    <li><i class="fa-solid fa-bow-arrow"></i> - Attaque à Distance</li>
+    <li><i class="fa-solid fa-bolt"></i> - Attaque Magique</li>
+    <li><i class="fa-solid fa-hand-sparkles"></i> - Sort</li>
+  </ul>
+
+  <h4>Les Effets</h4>
+  <p class="alinea">
+    Cette catégorie permet de définir des éléments qui nécessitent un seul bouton pour être activés, désactivés ou déclenchés. Cela peut être un bonus temporaire à activer ou non
+    en fonction de la situation, la consommation d'une potion ou, encore, un Effet passif qui n'apparaitra pas dans la liste des Actions mais donnera un bonus ou un malus au
+    Personnage.
+  </p>
+  <ul>
+    <li><i class="fa-solid fa-thumbs-up"></i> - Amélioration</li>
+    <li><i class="fa-solid fa-thumbs-down"></i> - Affaiblissement</li>
+    <li><i class="fa-solid fa-hand-holding-medical"></i> - Soin</li>
+    <li><i class="fa-solid fa-flask-round-potion"></i> - Consommable</li>
+  </ul>
+
+  IMPORT IMAGE LISTE ACTION
+
+  <p class="exemple">Par exemple, sur l'image ci-dessous nous voyons ???</p>
+
+  <h3>Les Propriétés</h3>
+  <p class="alinea">Bien qu'il n'y ait pas beaucoup de propriétés, elles sont fondamentales pour configurer correctement l'Action ou l'Effet.</p>
+  <h4>Mode Debug</h4>
+  <p class="alinea">
+    Si vous avez activé le @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#mode-debug]{Mode Debug} dans les Options
+    du système, deux propriétés seront visibles en plus.
+  </p>
+  <p class="alinea">
+    Elles permettent de vérifier que votre Capacité ou Équipement est bien configurée s'il vous semble que quelque bloque. Dans la mesure du possible, il est recommandé de
+    désactiver le Mode Debug pour éviter de manipuler ces deux propriétés par mégarde.
+  </p>
+  <ul>
+    <li><span class="gras">Visible :</span> cette option permet de rendre visible l'Action si elle n'apparait pas dans la liste d'Action</li>
+    <li>
+      <span class="gras">Activée :</span> cette option permet de vérifier si une Action/Effet est activée ou non et de forcer son activation ou sa désactivation dans une situation
+      de blocage.
+    </li>
+  </ul>
+  <h4>Activable et Temporaire</h4>
+  <p class="alinea">Ces deux cases à cocher sont inséparables pour les expliquer. Elles servent à déterminer comment l'Action ou l'Effet sera "déclenché".</p>
+  <p class="alinea">Il y a <span class="gras">trois cas possibles </span>:</p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Aucune case cochée :</span> Dans cette situation, l'Action/Effet sera un Effet passif qui apportera surement un bonus, un malus, un état, un avantage…
+        permanent pour le Personnage ou la Rencontre. L'Effet ne s'affichera pas dans la Liste des Actions de
+        l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} de l'Acteur. Vous
+        pourrez retrouver sa "trace" dans l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-effets]{Onglet
+        Effets} dans le cadre "Passifs".
+      </p>
+      <p class="exemple">
+        <span class="gras"
+          >Prenons l'exemple de la capacité
+          <span class="normal">@UUID[Compendium.cof-base.cof-2-base-items.Item.PDr9m2N9TORSfCCK]{Discrétion} de la Voie de l'Assassin</span>.</span
+        >
+        Cette capacité ajoute des bonus aux
+        @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique} pour les
+        tests de discrétion, de déguisement et pour dissimuler une arme légère. Cet Effet n'est pas une Attaque qui inflige des Dommages, rien n'est consommé ou activé. Le bonus en
+        discrétion sera activé ou non lors du Jet d'Agilité. La case "Activable" et la case "Temporaire" n'ont pas besoin d'être cochées.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Activable cochée :</span> si la case "Activable" est la seule cochée, l'Action aura une Résolution immédiate. L'Action s'active au moment de cliquer sur
+        le bouton et se désactive instantanément. Cette situation est utilisée pour les attaques, les jets en opposition, la consommation de consommables, le déclenchement d'un
+        sort qui inflige des Dommages….
+      </p>
+      <p class="exemple">
+        <span class="gras">Prenons l'exemple de l'Équipement <span class="normal">@UUID[Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2]{Epée longue}</span>.</span>
+        Cette arme possède une Action qui réalise une Attaque de contact qui ouvre la fenêtre du
+        @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d&#x27;attaque} lorsque l'on clique sur
+        l'icone <i class="fa-solid fa-sword"></i>. Au moment où on clique sur l'icone, l'attaque se réalise et l'Action ne reste pas activée.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Activable ET Temporaire cochées :</span> ce cas est utile pour les Effets qui peuvent être activés et qui restent actifs tant qu'on a besoin d'utiliser
+        l'Effet. Si une capacité vous accorde un bonus au Dommages avec les armes de contact, un Équipement qui vous donne la vision dans le noir quand vous êtes dans un
+        souterrain, un Sort qui offre un dé bonus pour les tests de Charisme…, il faudra activée les deux cases (Activée et Temporaire). Ainsi, lorsque vous cliquerez sur l'icone
+        de l'Action, elle restera active tant que vous ne cliquez pas à nouveau dessus pour la désactiver.
+      </p>
+      <p class="exemple">
+        <span class="gras"
+          >Prenons l'exemple de la capacité
+          <span class="normal">@UUID[Compendium.cof-base.cof-2-base-items.Item.nZmimBFUSfABpZGM]{Morsure de la forge} de la Voie du Forgesort</span>.</span
+        >
+        En lançant ce sort, le Personnage obtient un bonus aux Dommages de son arme. Lorsque le joueur clique sur l'Effet, il dépense ses Points de Magie (ou subit une Brûlure de
+        Magie) et l'Effet reste actif tant qu'il ne clique pas à nouveau sur l'icone. Tous les
+        @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} réalisé durant cette
+        période obtiendront le bonus défini sur la Capacité.
+      </p>
+    </li>
+  </ul>
+  <p class="alinea">
+    Pour résumer, au moment de définir quelle(s) case(s) cocher, <span class="gras">prenez votre temps et analysez bien l'Action ou l'Effet que vous voulez déclencher.</span> Au
+    bout de quelques Actions ça deviendra automatique mais au début la logique est assez délicate. Il est assez courant, lors des premières créations d'Actions/Effets, de ne cocher
+    que la case "Temporaire" pour les Effets "Activables" ET "Temporaires", par exemple.
+  </p>
+
+  <h4>Sans coût de mana</h4>
+  <p class="alinea">
+    Cette propriété apparait seulement si la Capacité possède la propriété "Sort". En cochant la case "Sans coût de mana", l'action configurée ne dépensera aucun des Points de
+    Magie définie dans l'onglet "Détails" de la Capacité. C'est très pratique pour les Actions/Effets qui offrent des bonus circonstanciels car vous devrez activer et désactiver
+    plusieurs fois la capacité durant la durée du Sort.
+  </p>
+  <p class="alinea">
+    Dans ce cas, il est possible d'ajouter une Action/Effet nommée "activation du Sort" pour dépenser les PM et une autre action avec les Bonus et la propriété "Sans coût de mana".
+    Cette deuxième Action/Effet recevra au beaoin la Condition "l'action liée est activée". Consultez le prochain chapitre pour plus d'informations sur les Conditions.
+  </p>
+
+  <!--conditions-->
+  <h2>Conditions</h2>
+  <p>
+    Ce cadre détermine dans quelle situation l'Action/Effet peut fonctionner. Cette condition est souvent la même en fonction du type d'Objet créé (une Capacité avec une Condition
+    "est appris", un Équipement équipable avec la Condition "est équipé"…). Il convient de configurer correctement cette option pour que l'Action/Effet fonctionne de façon
+    optimale.
+  </p>
+  <p class="alinea">Il y a <span class="gras">cinq types de Condition :</span></p>
+
+  <h3>est équipé</h3>
+  <p class="alinea">
+    Cette option permet de conditionner l'utilisation de l'Action/Effet seulement si l'Équipement est équipé par le Personnage. Cette condition ne fonctionnera pas pour les
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-rencontre]{Feuille Rencontre} car vous ne pouvez leur
+    équiper des Objets. Une Action d'attaque apparaitra dans la liste des Actions seulement si l'arme est équipée par le Personnage, par exemple.
+  </p>
+  <p class="alinea">Attention, si vous configurez cette condition sur une Capacité ou une Attaque de Rencontre, l'Action/Effet ne fonctionnera pas.</p>
+
+  <h3>est appris</h3>
+  <p class="alinea">
+    Cette option conditionne l'utilisation de l'Action/Effet seulement si la Capacité est apprise par le Personnage. Du coup, lorsqu'un Personnage acquière une Voie avec ses 5
+    Capacités, seules celles qui sont apprises lui apporteront des Actions ou des Effets configurés. De plus, dans la mesure où les Capacités Hors-voies sont apprises
+    automatiquement lorsqu'on les glisse-dépose sur un Personnage ou une Rencontre, les Actions/Effets seront directement disponibles.
+  </p>
+  <p class="alinea">Attention, configurer une Action avec cette condition sur un Équipement ne permettra pas de l'utiliser car vous ne pouvez pas "apprendre" un Équipement.</p>
+
+  <h3>est possédé</h3>
+  <p class="alinea">
+    Si vous souhaitez que le Personnage ou la Rencontre obtienne un Effet ou une Action quand l'Équipement se trouve dans son inventaire, vous devez choisir cette condition. A
+    partir du moment où l'Acteur possède l'Équipement dans son inventaire, les Actions et les Effets seront accessibles. Cette condition est utilisée pour les Objets qui n'ont pas
+    besoin d'être équipés pour octroyer un avantage (un tatouage, un bijou, un grimoire…).
+  </p>
+
+  <h3>l'action liée est activée</h3>
+  <p class="alinea">
+    C'est la condition la plus délicate à utiliser mais elle a son utilité dans certaines circonstances. Elle sert pour une Capacité ou un Équipement qui possède plusieurs
+    Actions/Effets. Cette condition permet de rendre disponible l'Action/Effet seulement si une autre Action/Effet est activée. Comme une Attaque de Rencontre ne peut recevoir
+    qu'une seule Action/Effet, cette Condition ne pourra jamais servir pour ce type d'Objet.
+  </p>
+  <p class="alinea">De ce fait, vous ne devez pas configurer cette condition sur la première Action/Effet de l'Objet sous peine de "casser" l'Objet.</p>
+  <p class="alinea">
+    L'Action/Effet liée devra être un Effet Activable ET Temporaire. Lorsque vous sélectionnez la condition "l'action liée est activée" sur une Action/Effet, un champ numérique
+    apparait à la suite. Il faudra noter un chiffre qui correspond au "numéro" de l'Action/Effet liée. Attention : la première Action/Effet de l'Objet a le numéro 0, la deuxième le
+    numéro 1, la troisième le numéro 2…
+  </p>
+  <p class="alinea"><span class="gras">Par exemple, vous configurez un bâton magique et puissant pour le Sorcier qui affrontera vos joueurs.</span></p>
+  <ul class="exemple">
+    <li>
+      <p>
+        Le bâton offre au Sorcier, un bonus de +5 à ses Jets de Charisme tant qu'il l'a sur lui => Vous configurez
+        <span class="gras"
+          >la première Action/Effet avec une condition <span class="normal">"est possédé". Vous ne cochez aucune case de propriété car l'Effet est passif.</span></span
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        Le bâton permet de lancer un Sort transformant le bâton en Arc pendant quelques minutes => Vous configurez
+        <span class="gras"
+          >une deuxième Action avec une condition
+          <span class="normal"
+            >"est possédé". Vous cochez les propriétés "Activable" et "Temporaire" car l'Action/Effet doit resté actif tant que le bâton a la forme d'un arc.</span
+          ></span
+        >
+      </p>
+    </li>
+    <li>
+      <p>
+        Dans la mesure où l'Arc est une arme qui réalise une attaque à distance, vous configurez
+        <span class="gras"
+          >une troisième Action/Effet pour l'attaque de l'arc avec la condition <span class="normal">"l'action liée est activée" en notant "1"</span> dans le champ associé</span
+        >
+        (pour cibler la deuxième Action/Effet). Vous cochez la propriété "Activable" car il s'agit d'une action d'attaque qui s'active instantanément sans besoin de rester actif
+        sur la durée.
+      </p>
+    </li>
+    <li>
+      <p>
+        Ainsi, lorsque le Sorcier active le Sort pour transformer son bâton en Arc, une nouvelle ligne apparait dans sa liste d'Actions pour réaliser l'Attaque à distance avec son
+        Arc. Lorsqu'il désactivera le Sort, la ligne d'Action de l'Arc disparaitra.
+      </p>
+    </li>
+  </ul>
+  <h3>a le tag</h3>
+  <p class="alinea">
+    <span class="underline">Note de Version :</span> Cette Condition n'est pas développée dans la version actuelle. Dans une prochaine version, nous espérons pouvoir conditionner
+    l'activation d'une Action/Effet en fonction d'un Tag spécifique sur le Personnage ou la Rencontre.
+  </p>
+
+  <!--modificateurs-->
+  <h2>Modificateurs</h2>
+  <p class="alinea">
+    Dans cette section, il est possible d'ajouter autant de Modificateurs que nécessaire pour la Capacité, l'Équipement ou l'Attaque de Rencontre. Chaque Modificateur pourra cibler
+    un élément de l'Acteur pour lui ajouter un bonus ou un malus, lui donner une faculté ou lui augmenter ses Points de Vigueur ou de Magie, par exemple.
+  </p>
+  <p class="alinea">
+    Les modificateurs pourront cibler l'Acteur qui a accès à l'Objet mais aussi la ou les cibles d'une Attaque grâce aux Résolutions qui seront détaillées par la suite. Dans la
+    plupart des cas, les Modificateurs seront des Effets permanents ou temporaires pour l'Acteur qui utilise l'Objet.
+  </p>
+  <p class="alinea">
+    Les modificateurs sont composés d'une liste de Type et de Sous-type permettant de choisir le paramètre à modifier. Chaque élément des listes sont détaillés ci-après.
+  </p>
+  <p class="alinea">
+    La Valeur du Modificateur est un élément très important à comprendre car il va recevoir le nombre ou la formule pour augmenter ou diminuer le paramètre choisi. Le champ Valeur
+    est un champ de texte qui permet d'écrire ce que vous voulez MAIS chaque type de Modificateur aura ses limitations et ses contraintes sous peine d'entrainer des erreurs sur la
+    feuille Personnage ou la feuille Rencontre. Pour certain type de Modificateur il faudra seulement laisser le "0" inscrit initialement. Pour d'autres, vous pourrez écrire des
+    formules et de nombreuses variables pour faire évoluer le paramètre choisi.
+  </p>
+  <p class="alinea">
+    Lorsque vous prenez le système en main, nous vous conseillons de bien lire la description des Modificateurs ci-dessous et de consulter la section
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables} pour le détail des éléments
+    dynamiques qui feront évoluer les Modificateurs. Consultez également les Capacités, Équipements et Attaques de Rencontre du Compendium pour reproduire les Effets souhaités.
+  </p>
+  <p>L'option "Cible" des Modificateurs ne sera pas abordé dans ce chapitre car elle a un lien et un intérêt avec les Résolutions du prochain chapitre.</p>
+
+  <h3>Caractéristiques</h3>
+  <p class="alinea">
+    Ce type vous permet de choisir une Caractéristique ou Toutes les Caractéristiques. Notez dans le champ "Valeur" un nombre positif ou négatif ou une
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables} chiffrée. Cette valeur sera
+    ajoutée à la Caractéristique choisie.
+  </p>
+  <p class="alinea">
+    Bien entendu, il est impossible d'ajouter le bonus d'une Caractéristique à sa propre Caractéristique (ajouter le bonus de Perception à la Perception, par exemple). Si vous
+    ajoutez une valeur qui entre en conflit avec le système, vous verrez apparaitre "NaN" dans certaines valeurs du Personnage. Dans certain cas, l'erreur que vous avez faite ne
+    sera pas visible directement sur la feuille mais empêchera le fonctionnement de certaines fonctionnalités du Personnage. Ainsi, vérifiez bien que votre modificateur fonctionne
+    lorsque vous créez un Modificateur avec une valeur complexe.
+  </p>
+  <p class="exemple">Le Personnage augmente son AGI de la valeur du plus haut Rang appris de la Voie => Type : "Caractéristique", Sous-type : "Agilité", Valeur : "@rang"</p>
+
+  <h3>Combat</h3>
+  <p class="alinea">
+    Le type "Combat" permet d'influencer les valeurs qui servent lors de combat. Vous pourrez augmenter ou diminuer les scores d'attaque (contact, distance et magique), les
+    Dommages infligés, les valeurs d'initiative, de défense ou de Réduction de Dommages ainsi que d'ajuster la plage de critique de l'attaque.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Les Attaques, la Défense, l'Initiative et la Réduction de Dommages :</span> la valeur peut être un
+        <span class="gras">nombre entier positif ou négatif ou une variable chiffrée de l'Acteur ou une formule</span> combinant des nombres entiers (exemple : 2 + @agi + @rang).
+        La valeur sera ajoutée ou retranchée de la formule d'Attaque ou de vos paramètres de Combat.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Les Dommages :</span> la valeur peut être un
+        <span class="gras">nombre entier positif ou négatif, une variable chiffrée de l'Acteur ou une formule</span> de Dé (1d4, 2d8…) ou une formule combinant des nombres entiers
+        ???et des formules de Dé (exemple : 2d4°??? + @agi). La valeur sera ajoutée à la formule de Dommages infligées.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Le Critique :</span> une <span class="gras">valeur positive</span> vous donne un "bonus" pour votre plage de Critique (et donc diminue le nombre à
+        atteindre pour réaliser une critique). Un <span class="gras">nombre négatif</span>, à l'inverse, vous inflige un malus et donc rend plus dur la réalisation d'un critique.
+        Par exemple, si vous noter "1" dans la valeur du Critique, votre plage de Critique à 20 deviendra 19 à 20 lorsque vous activerez l'Effet. Il est possible de définir la
+        valeur avec une variable chiffrée de l'Acteur également.
+      </p>
+      <p>
+        Comme précisé dans les règles de Chroniques Oubliées Fantasy v2, la plage de critique ne peut pas être plus grande que 16-20 donc même si vous inscrivez "10" dans la valeur
+        de ce Modificateur, le chiffre final de Critique sera 16. De la même manière, même avec un énorme malus sur le Modificateur Critique, la valeur ne pourra pas dépasser 20 et
+        permettra de toujours réaliser un critique sur un 20 naturel au dé.
+      </p>
+    </li>
+  </ul>
+  <h3>Attribut</h3>
+  <p class="alinea">
+    Il n'y a que deux Sous-type pour cette option : <span class="gras">Points de Vigueur et Déplacement</span>. La valeur pour ces Sous-types peut être
+    <span class="gras">un nombre entier positif ou négatif ou une variable chiffrée de l'Acteur ou une formule</span> combinant des nombres entiers (exemple : 2 + @agi + @rang). La
+    valeur sera ajoutée ou retranchée de votre maximum de Points de Vigueur ou de votre distance de Déplacement.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Points de Vigueur actuels :</span> Lorsque vous activez une capacité qui augmente ou diminue le nombre de vos Points de Vigueur, votre nombre de Points
+        de Vigueur actuel n'est pas modifié en même temps. Sur un Effet temporaire, il sera utile de combiner l'augmentation temporaire des Points de Vigueur maximum avec une
+        Résolution qui "soigne" le Personnage du même nombre de PV. Consultez les
+        @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#resolutions]{Résolutions} pour plus de détails.
+      </p>
+    </li>
+  </ul>
+  <h3>Ressource</h3>
+  <p class="alinea">
+    Vous trouvez ici les Points de Magie, les Points de Chance et le Nombre de Dé de Récupération. La valeur peut être
+    <span class="gras">un nombre entier positif ou négatif ou une variable chiffrée de l'Acteur ou une formule</span> combinant des nombres entiers (exemple : 2 + @agi + @rang).
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Valeur Actuelle des Ressources :</span> comme pour les Points de Vigueur expliqués juste au-dessus, la valeur actuelle des Ressources que vous modifiez
+        ne sera pas influencée par l'augmentation ou la diminution de la valeur maximum. Pour ces trois Ressources, vous ne pouvez pas configurer une Résolution pour augmenter ou
+        diminuer la valeur actuelle. Il faudra donc le faire à la main dans la
+        @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#barre-laterale]{Barre latérale}.
+      </p>
+    </li>
+  </ul>
+  <h3>Jet de compétence</h3>
+  <p class="alinea">
+    Ce type de Modificateur ressemble beaucoup au Type "Caractéristique" abordé plus tôt mais les Valeurs indiquées sur des Modificateurs de "Jet de compétence" ne seront pas
+    actifs en permanence. Les Sous-types sont chaque Caractéristique séparée soit une option pour cibler "Toutes les Caractéristiques".
+  </p>
+  <p class="alinea">
+    <span class="gras"
+      >Le bonus ou le malus que vous indiquez ici apparaitra dans la fenêtre du
+      @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique}.</span
+    >
+    Vous pourrez le sélectionner ou non en fonction de la situation pour ajouter la Valeur du Modificateur à votre test.
+  </p>
+  <p class="alinea">
+    <span class="gras">Le champ "Notes" est très important</span> pour les Jets de compétence car il permet d'inscrire la situation ou les conditions pour sélectionner ou non le
+    Modificateur dans la fenêtre du Test de Caractéristique.
+  </p>
+  <p class="exemple">
+    Prenons l'exemple de la Capacité @UUID[Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi]{Fidèle monture} de la Voie du Cavalier. Cette capacité permet d'ajouter le
+    rang du Personnage + 2 à ses tests d'équitation et de dressage. Ainsi, vous pouvez ajouter un Modificateur => type : "Jet de compétence", Sous-type : "Agilité", Valeur : "2 +
+    @rang" et Notes : "pour réaliser des tests d'équitation". Ainsi, lorsque vous réaliserez un Test d'Agilité, le Modificateur apparaitra dans la fenêtre.
+  </p>
+  <h3>États</h3>
+  <p class="alinea">
+    La liste État permet d'ajouter au Personnage ou à la Rencontre des informations importantes. Les États seront visibles dans la
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#barre-laterale]{Barre latérale} de ma feuille Personnage ou la
+    feuille Rencontre. Ainsi, à tout moment, vous saurez si votre créature est immunisée à certaines choses et si elle possède une Vision dans le noir. Pour chaque Immunité, vous
+    pouvez laisser la valeur "0".
+  </p>
+  <p class="alinea">Pour la Vision dans le noir, le champ "Valeur" permet de noter la distance de cette vision. La valeur doit être un nombre entier positif.</p>
+  <p class="alinea"><span class="gras">Il existe 7 États :</span></p>
+  <ul>
+    <li>Vision dans le noir.</li>
+    <li>Immunisé à la peur magique</li>
+    <li>Immunisé au Sommeil magique</li>
+    <li>Immunisé aux Poisons</li>
+    <li>Immunisé aux Maladies</li>
+    <li>Immunisé à l'asservissement</li>
+    <li>Immunisé aux altérations de Mouvement</li>
+  </ul>
+
+  <h3>Dé bonus et Dé malus</h3>
+  <p class="alinea">Ces deux types sont identiques dans leur fonctionnement.</p>
+  <p class="alinea">
+    C'est le moyen d'<span class="gras">ajouter un Dé bonus ou un Dé malus à un test de Caractéristique ou d'Attaque</span>. Avec ce type de Modificateur, la valeur sera toujours
+    "0" comme indiqué de base.
+  </p>
+  <p class="alinea">
+    Si une Capacité, un Équipement ou une Attaque de rencontre ajoute un Dé bonus à un élément et qu'une autre Action/Effet ajoute un dé Malus à ce même élément, les deux seront
+    annulés et vous ferez un Jet Standard.
+  </p>
+  <p class="alinea">Vous pouvez donner un Dé bonus ou un Dé malus à :</p>
+  <ul>
+    <li>
+      <p><span class="gras">Chaque Caractéristique</span> (AGI, CON, FOR, PER, CHA, INT ou VOL)</p>
+    </li>
+    <li>
+      <p><span class="gras">Chaque Attaque</span> (Contact, Distance ou Magique)</p>
+    </li>
+  </ul>
+
+  <!--résolutions-->
+  <h2>Résolutions</h2>
+  <p class="alinea">
+    Dans cette section, nous allons détailler <span class="gras">comment réaliser des interactions entre des protagonistes.</span> Les Résolutions permettent de faire
+    <span class="gras">des Attaques contre la Défense</span> d'une cible, des <span class="gras">Tests en Oppositions</span>, des
+    <span class="gras">Attaques automatiques</span> mais aussi d'<span class="gras">appliquer des soins</span> ou des <span class="gras">Modificateurs</span> sur des cibles quelles
+    soient alliées ou ennemis.
+  </p>
+  <p class="alinea">
+    Dans ce chapitre, il sera souvent question des <span class="gras">Variables</span> que vous allez inscrire dans les champs des Résolutions. Les variables seront détaillées et
+    expliquées à la suite de ce chapitre dans la section :
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables}.
+  </p>
+  <p class="alinea">L'icone <i class="fa-solid fa-trash"></i> permet de supprimer la Résolution.</p>
+  <p class="alinea">Il existe 5 types de Résolutions :</p>
+  <h3>Attaque</h3>
+  <p class="alinea">
+    C'est la Résolution par défaut quand vous ajoutez une Résolution. Elle permet de réaliser <span class="gras">un Jet de Dé contre une Difficulté</span>. Le jet de Dé est :
+    <span class="gras"> 1d20</span> auquel on ajoute des valeurs qui peuvent être une Attaque de contact, à Distance ou Magique mais aussi un Jet de Caractéristique ou une simple
+    formule de Dé (2d6, par exemple) ou des Variables de l'Acteur. La Difficulté sera souvent la valeur de Défense de la cible mais vous pourrez comparer votre Jet avec un jet de
+    la cible pour les tests en Opposition ou simplement un nombre entier que le Jet doit dépasser. D'autres paramètres seront importants pour configurer correctement une Résolution
+    de type Attaque.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Dé bonus - Dé malus :</span> les cases à cocher permet de déterminer si la Résolution obtient un Dé bonus ou un Dé malus au D20 du Test de compétence
+        défini. Si aucune case n'est cochée (ou si les deux sont cochées pour une raison étrange), le test sera un Jet Standard.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Formule de compétence :</span> dans ce champ, vous pouvez inscrire des
+        <span class="gras">variables du Personnage, des nombres entiers positifs ou négatifs ainsi que des formules de Dé</span>. Dans tous les cas, cette formule se rajoutera au
+        D20 lancé pour "l'Attaque". Il ne faut pas noter "1d20 + @for" mais seulement "@for" si vous voulez lancer une attaque qui ajoute votre modificateur de FOR au D20. Si rien
+        n'est inscrit dans la formule de compétence, le test sera seulement de 1d20 + 0.
+      </p>
+      <p class="exemple">
+        Prenons l'exemple d'une Attaque étrange : Formule de compétence : <span class="gras">"@atc + @niv + 2d4 + @agi"</span>. En écrivant cette formule, le Jet sera 1d20 + score
+        d'attaque au contact + 2d4 + modificateur d'AGI. Avec cet exemple, vous voyez que la formule de Compétence peut être enrichie à volonté avec des Variables, des nombres ou
+        des Dés.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Critique :</span> La plupart du temps cette case sera vide car <span class="gras">la Résolution utilisera le score de Critique du Personnage</span> ou de
+        la Rencontre. Dans certaines circonstances, la plage de Critique de la Résolution sera fixe. Vous pourrez inscrire dans ce champ le nombre minimum à atteindre sur le D20
+        pour considérer le Test comme un critique.
+      </p>
+      <p>
+        Dans ce champ, <span class="gras">aucune restriction ne bloque le minimum du Score de critique à 16</span> comme préciser dans les Règles de COF v2. Si vous notez "5" dans
+        ce champ, la Résolution sera considérée comme une réussite critique si vous faites 5 ou plus sur votre D20.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Difficulté :</span> on pense de suite à la Défense de la cible (@cible.def) pour les Attaques mais ce champ peut aussi permettre de réaliser des tests en
+        Opposition ou un nombre entier positif pour les Difficultés fixes.
+      </p>
+      <ul>
+        <li class="puce-noire">
+          <p>
+            <span class="gras">Défense de la cible :</span> pour cibler la valeur de Défense, il suffi d'écrire <span class="gras">la variable @cible.def</span>. Vous ne pourrez
+            pas ajouter de nombre ou de Variable après. Le système prendra <span class="gras">seulement le premier nombre</span> traduit de ce champ.
+          </p>
+          <p class="exemple">
+            Par exemple : si vous écrivez @cible.def + 5 dans le champ Difficulté, le test se fera contre une difficulté de @cible.def alors que si vous écrivez 5 + @cible.def, le
+            test se fera contre une difficulté de 5.
+          </p>
+        </li>
+        <li class="puce-noire">
+          <p>
+            <span class="gras">Jet en Opposition :</span> certaines attaques Magiques sont réalisées contre une attaque magique de la cible et des tests de Caractéristiques opposés
+            sont parfois demandés dans les Capacités. Vous pouvez utiliser <span class="gras">la Variable @oppose.[X]</span> pour les tests en Opposition. Ce sera expliqué plus en
+            détail dans la section @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables}.
+            De la même manière que pour la Défense de la cible expliquée juste avant, il n'est pas possible d'ajouter un autre nombre à la Variable @oppose.[X] pour calculer la
+            Difficulté.
+          </p>
+        </li>
+        <li class="puce-noire">
+          <p>
+            <span class="gras">Difficulté fixe :</span> dans certaines circonstance, vous pourrez configurer une Résolution avec un Test contre une Difficulté fixe (déclencher un
+            pouvoir en réussissant un test d'INT contre une difficulté de 15, par exemple). Pour ce faire, il suffit d'<span class="gras"
+              >écrire le nombre entier dans ce champ</span
+            >. Vous ne pourrez pas ajouter au nombre une variable de votre Personnage pour la Difficulté ("10 + @for" ne fonctionnera pas) ni écrire une formule de type "5 + 10".
+          </p>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <p>
+        <span class="gras">Dommages :</span> Le champ Dommages permet de noter la formule jetée pour les Dommages de l'Attaque. Comme pour la formule de compétence de l'Attaque, ce
+        champ peut recevoir <span class="gras">des formules de Dés, des Variables, des nombres entiers, positifs ou négatifs et une combinaison</span> de tout cela.
+      </p>
+      <p class="exemple">Par exemple, si vous notez : "1d4° + @for + @agi + 5" le Jet de Dommages sera le dé évolutif du Personnage + son modificateur de FOR et d'AGI + 5.</p>
+    </li>
+
+    <li>
+      <p><span class="gras">Cible :</span> Ce paramètre permet de renseigner le nombre et le type de cible pour cette Résolution.</p>
+      <ul>
+        <li class="puce-noire"><span class="gras">Aucune</span> ne donne pas de restriction sur le nombre ou le type de cible pour cette Attaque.</li>
+        <li class="puce-noire"><span class="gras">Soi-même</span> permet de cibler l'Acteur qui réalise l'Attaque</li>
+        <li class="puce-noire">
+          <span class="gras">Unique</span> permet de détermine qu'il ne doit y avoir qu'une seule cible pour cette Attaque. La liste d'option qui apparait à la suite détermine si
+          l'Attaque ne peut cibler que des ennemis, que des alliés ou si elle peut cibler tout le monde. Si vous sélectionnez plusieurs cibles avec cette option, un message
+          d'erreur s'affichera sur FoundryVTT mais la fenêtre d'Attaque s'ouvrira quand même.
+        </li>
+        <li class="puce-noire">
+          <span class="gras">Multiple</span> permet également de déterminer qu'elle type de cible l'Attaque peut cibler mais également le nombre de cible maximum que l'Attaque peut
+          cibler. Inscrivez le nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu'un nombre entier positif. Aucune Variable ne fonctionnera.
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3>Attaque Automatique</h3>
+  <p class="alinea">
+    Cette résolution permet de configurer une Réussite automatique et de définir une formule de Dommages sur une ou plusieurs cibles. C'est assez utilisé sur les Sort de zone qui
+    touchent automatiquement les cibles. Grace à cette Résolution, vous pouvez inscrire la Formule de Dommages et ils seront lancés directement sans Jet d'Attaque. D'ailleurs si
+    cette Résolution est configurée, l'icone d'Attaque dans la liste des Actions de
+    l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} de l'Acteur n'apparaitra
+    pas. Seulement l'icone <i class="fa-regular fa-hand-fist"></i> du
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages].
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Dommages :</span> Le champ Dommages permet de noter la formule jetée pour les Dommages de l'Attaque. Ce champ peut recevoir
+        <span class="gras">des formules de Dés, des Variables, des nombres entiers, positifs ou négatifs et une combinaison</span> de tout cela.
+      </p>
+      <p class="exemple">Par exemple, si vous notez : "1d4° + @for + @agi + 5" le Jet de Dommages sera le dé évolutif du Personnage + son modificateur de FOR et d'AGI + 5.</p>
+    </li>
+
+    <li>
+      <p><span class="gras">Cible :</span> Ce paramètre permet de renseigner le nombre et le type de cible pour cette Résolution.</p>
+      <ul>
+        <li class="puce-noire"><span class="gras">Aucune</span> ne donne pas de restriction sur le nombre ou le type de cible pour cette Attaque.</li>
+        <li class="puce-noire"><span class="gras">Soi-même</span> permet de cibler l'Acteur qui réalise l'Attaque</li>
+        <li class="puce-noire">
+          <span class="gras">Unique</span> permet de détermine qu'il ne doit y avoir qu'une seule cible pour cette Attaque. La liste d'option qui apparait à la suite détermine si
+          l'Attaque ne peut cibler que des ennemis, que des alliés ou si elle peut cibler tout le monde. Si vous sélectionnez plusieurs cibles avec cette option, un message
+          d'erreur s'affichera sur FoundryVTT mais la fenêtre de Dommages s'ouvrira quand même.
+        </li>
+        <li class="puce-noire">
+          <span class="gras">Multiple</span> permet également de déterminer qu'elle type de cible l'Attaque peut cibler mais également le nombre de cible maximum que l'Attaque peut
+          cibler. Inscrivez le nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu'un nombre entier positif. Aucune Variable ne fonctionnera.
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3>Soin</h3>
+  <p class="alinea">
+    Ce type de Résolution permet d'écrire une formule qui va soigner (ou blesser) la ou les cibles. Il s'agit d'un unique champ pour noter la formule à lancer et des champs pour
+    choisir la ou les cibles.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Formule de soin :</span> Ce champ permet de noter la formule jetée pour les Soins de la Résolution. Ce champ peut recevoir
+        <span class="gras">des formules de Dés, des Variables, des nombres entiers, positifs ou négatifs et une combinaison</span> de tout cela.
+      </p>
+      <p class="exemple">Par exemple, si vous notez : "2d8 + @for + 5" le Jet de Soins sera 2d8 + son modificateur de FOR + 5.</p>
+    </li>
+    <li>
+      <p><span class="gras">Cible :</span> Ce paramètre permet de renseigner le nombre et le type de cible pour cette Résolution.</p>
+      <ul>
+        <li class="puce-noire"><span class="gras">Aucune</span> ne donne pas de restriction sur le nombre ou le type de cible pour cette Résolution.</li>
+        <li class="puce-noire"><span class="gras">Soi-même</span> permet de cibler l'Acteur qui réalise le Soin.</li>
+        <li class="puce-noire">
+          <span class="gras">Unique</span> permet de détermine qu'il ne doit y avoir qu'une seule cible pour le Soin. La liste d'option qui apparait à la suite détermine si le soin
+          ne peut cibler que des ennemis, que des alliés ou si elle peut cibler tout le monde. Si vous sélectionnez plusieurs cibles avec cette option, un message d'erreur
+          s'affichera sur FoundryVTT.
+        </li>
+        <li class="puce-noire">
+          <span class="gras">Multiple</span> permet également de déterminer qu'elle type de cible le Soin peut cibler mais également le nombre de cible maximum que le Soin peut
+          cibler. Inscrivez le nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu'un nombre entier positif. Aucune Variable ne fonctionnera.
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <h3>Buff/Debuff</h3>
+  <p class="alinea">
+    C'est surement le type de Résolution le plus difficile à appréhender. Il permet d'appliquer les Modificateurs définis sur l'Action/Effet aux cibles configurées dans le
+    Modificateur. Grace à cette option vous pouvez lister les Modificateurs négatifs qui seront appliqués aux ennemis et les effets positifs qui seront appliqués aux alliés, par
+    exemple.
+  </p>
+  <p>
+    <span class="underline">ATTENTION :</span> cette option ne fonctionne QUE avec un Effet Supplémentaire que nous verrons dans un prochain chapitre et donc seulement lorsqu'un
+    combat est déclenché.
+  </p>
+  <p class="alinea">
+    Il est possible d'ajouter seulement une Résolution Buff/Debuff avec des Effets Supplémentaires si une Capacité vous demande, par exemple, d'appliquer des Modificateurs sur des
+    cibles et/ou vous-même pendant une certaine durée.
+  </p>
+
+  <h3>Consommable</h3>
+  <p class="alinea">
+    Cette Résolution peut être ajoutée avant ou à la suite d'une autre Résolution. Dans ce cas, <span class="gras">l'Équipement qui porte l'Action sera consommé</span> (quantité
+    diminué de 1 et éventuellement détruit si la quantité atteint 0 et que la case spécifique est cochée) au moment de réaliser l'action. Cette Résolution agit seulement sur la
+    quantité de l'Équipement.
+  </p>
+  <p class="alinea">Cette Résolution peut être ajoutée à une Capacité ou une Attaque de rencontre mais cela n'aura aucun effet.</p>
+
+  <h2>Effet Supplémentaire</h2>
+  <p class="alinea">Cette section de la Résolution permet d'appliquer des Effets sur la durée quand vous êtes en Mode Combat.</p>
+  <p>
+    Grace aux Effets Supplémentaires, il est possible d'<span class="gras">appliquer des Dommages, des soins et/ou des statuts pendant un nombre défini de round</span> sur les
+    cibles en fonction d'une condition.
+  </p>
+  <p class="alinea">
+    Lorsqu'ils sont appliqués à une ou plusieurs cibles, les Effets Supplémentaires sont visibles dans
+    l'@UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-effets]{Onglet Effets} de la feuille de Personnage ou
+    de Rencontre dans <span class="gras">le cadre "Effets Personnalisés"</span>. A cet endroit, une info-bulle vous donne les informations sur les Effets. Il est aussi possible de
+    supprimer avant la fin de la durée définie les Effets Supplémentaires.
+  </p>
+  <p>
+    De plus, le Statut "Effet(s) Supplémentaire(s) s'active sur le token de l'Acteur impacté. <span class="underline">ATTENTION :</span> si vous faites un clic droit sur le Token
+    et que vous désactivez l'icone "Effet(s) Supplémentaire(s), cela n'aura pas pour conséquence de supprimer les Effets Supplémentaires. Pour cela, il faut attendre la fin de la
+    Durée ou se rendre dans l'onglet Effets et cliquer sur l'icone <i class="fa-solid fa-trash"></i>.
+  </p>
+  <h3>s'applique sur</h3>
+  <p class="alinea">Vous pouvez choisir à quel moment les Effets seront appliqués en fonction du résultat de la Résolution. Il existe <span class="gras">5 options :</span></p>
+  <p>
+    ATTENTION : Les Résolutions qui ne sont pas de type
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#attaque]{Attaque} ne peuvent fonctionner
+    <span class="gras">qu'avec l'option "s'applique toujours".</span> Seulement les Resolutions de type
+    @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#attaque]{Attaque} pourront fonctionner avec des Effets
+    Supplémentaires qui s'applique sur les autres options que "Toujours".
+  </p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras">Toujours :</span> quelque soit le résultat de la Résolution configurée, les Effets Supplémentaires seront appliqués. Que l'action soit ratée ou réussie,
+        ça applique toujours les Effets.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Sur un succès : </span>Il faut que la Résolution soit une réussite pour appliquer les Effets Supplémentaires. Cela peut être une réussite normale ou
+        critique, peu importe.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">A partir d'un succès + :</span> cette option fait apparaitre un champ pour noter un nombre entier positif. Les Effets Supplémentaires seront appliqués
+        seulement si la Résolution est réussie avec une marge de X points. Le X étant le nombre inscrit dans ce champ. Par exemple, "si le résultat de l'attaque est supérieure ou
+        égale à DEF + 5 de la cible alors elle est affaiblie" pourra être configuré avec cette option.
+      </p>
+    </li>
+    <li>
+      <p><span class="gras">Sur un succès critique :</span> les Effets Supplémentaires seront appliqués seulement si l'attaque est une réussite critique.</p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Sur un échec :</span> grâce à cette option vous pouvez définir des conséquences en cas d'échec de la Résolution. Par exemple, "l'Attaque inflige 2d4° DM
+        à la cible. En cas d'échec, la cible est tout de même étourdie."
+      </p>
+    </li>
+  </ul>
+  <h3>Dommages et Soins</h3>
+  <p>
+    Cette ligne permet de définir <span class="gras">une formule de Dommages ou de Soins périodiques appliquées</span> lorsque les Effets Supplémentaires sont appliqués à une ou
+    plusieurs cibles.
+  </p>
+  <p>
+    Dans le premier champ, choisissez s'il s'agit de <span class="gras">Dommages ou de Soins</span> à appliquer. Dans le second, inscrivez
+    <span class="gras">la formule de soins ou de Dommages</span>. Cette formule peut recevoir des nombres entiers positifs ou négatifs, des variables, des formules de dé ou une
+    combinaison de ces éléments.
+  </p>
+  <p>
+    Le troisième champ permet de définir le type de Dommages (ou de soins) infligés aux cibles. <span class="underline">Note de Version :</span> Pour le moment, le système ne prend
+    pas en compte les Résistances, vulnérabilités ou Immunités en fonction du type de Dommages. Une prochaine version aura, peut-être, cette fonctionnalité.
+  </p>
+  <p>
+    Les Dommages ou Soins définis dans la Résolution sont infligés au moment où la Résolution est activée (au round de l'Attaquant). Par contre,
+    <span class="gras">les Dommages et Soins périodiques configurés ici sont appliqués au début de chaque round de la cible</span> qui a les Effets Supplémentaires pendant la durée
+    définie. Un message dans le Chat informe des Dommages subis ou des Soins récupérés au début du Round du protagoniste qui possède les Effets Supplémentaires.
+  </p>
+  <h3>Inflige le(s) statut(s)</h3>
+  <p>
+    Si l'Équipement, la Capacité ou l'Attaque de rencontre demande d'<span class="gras">appliquer un ou plusieurs statuts aux cibles</span>, vous devrez le renseigner ici. Dans la
+    liste de Statuts, cliquez sur le ou les Statuts à appliquer selon la condition définie.
+  </p>
+  <p>
+    Lorsque vous choisissez un Statut, il s'affiche au dessus de la liste. Il vous est possible de supprimer un Statut sélectionné grâce à la croix à droite de la case du Statut.
+  </p>
+  <p>
+    <span class="underline">ATTENTION :</span> il n'y a pas possibilité de faire un choix entre plusieurs Statuts comme le stipule certaines Capacités. Ainsi, tous les Statuts
+    sélectionnés seront appliqués à la cible.
+  </p>
+
+  <h3>Durée</h3>
+  <p>Ce dernier paramètre permet de configurer <span class="gras">le nombre de Round ou de Secondes pendant lesquels les Effets Supplémentaires resteront sur les cibles</span>.</p>
+  <p>
+    Il suffit de noter <span class="gras">un nombre entier positif</span> (pas de variables) dans le champ et choisir entre Round et Seconde. Déterminer une Durée en seconde
+    devrait être exceptionnel et réservé aux MJ qui ont installé un ou plusieurs modules pour gérer le temps qui passe.
+  </p>
+  <p>
+    Certaines Actions ont une durée indéfinie comme "durant tout le combat". Pour ce genre de Durée, inscrivez un grand nombre, comme "20", afin que les Effets Supplémentaires
+    durent bien plus longtemps que la plupart des combats.
+  </p>
+
+  <h2>Les variables</h2>
+  <p>
+    En lisant les sections précédentes et en regardant des Capacités, des Équipements ou des Attaques de Rencontre dans le Compendium, vous avez déjà vu quelques Variables qui
+    reviennent régulièrement. Les Variables de COF v2 sont assez simples à comprendre et à lire mais dans la table suivante, nous allons les lister et les décrire de façon simple.
+  </p>
+  <table class="variables">
+    <tbody>
+      <tr class="tableau-titre">
+        <td colspan="2">Les Variables du Système</td>
+      </tr>
+      <tr class="tableau-entete">
+        <td colspan="2">Variables chiffrées</td>
+      </tr>
+      <tr>
+        <td class="variable">@agi</td>
+        <td>Modificateur d'Agilité</td>
+      </tr>
+      <tr>
+        <td class="variable">@con</td>
+        <td>Modificateur de Constitution</td>
+      </tr>
+      <tr>
+        <td class="variable">@for</td>
+        <td>Modificateur de Force</td>
+      </tr>
+      <tr>
+        <td class="variable">@per</td>
+        <td>Modificateur de Perception</td>
+      </tr>
+      <tr>
+        <td class="variable">@cha</td>
+        <td>Modificateur de Charisme</td>
+      </tr>
+      <tr>
+        <td class="variable">@int</td>
+        <td>Modificateur d'Intelligence</td>
+      </tr>
+      <tr>
+        <td class="variable">@vol</td>
+        <td>Modificateur de Volonté</td>
+      </tr>
+      <tr>
+        <td class="variable">@niv</td>
+        <td>Niveau du Personnage</td>
+      </tr>
+      <tr>
+        <td class="variable">@nc</td>
+        <td>Niveau de la Rencontre</td>
+      </tr>
+      <tr>
+        <td class="variable">@def</td>
+        <td>Score de Défense</td>
+      </tr>
+      <tr>
+        <td class="variable">@ini</td>
+        <td>Score d'Initiative</td>
+      </tr>
+      <tr>
+        <td class="variable">@rang</td>
+        <td>Le rang atteint dans la Voie</td>
+      </tr>
+      <tr>
+        <td class="variable">@toutrang[X]</td>
+        <td>le nombre de Voie dont le Rang X est appris. Certaines capacités notent : gagnez +1 chaque que vous atteignez le Rang 5 dans une Voie, par exemple.</td>
+      </tr>
+      <tr>
+        <td class="variable">@rang[V,W,X,Y,Z]</td>
+        <td>applique V au rang 1, W au rang 2, X au rang 3… Ainsi, vous pouvez avoir un bonus de +1 en DEF au niveau 1 et qui passe à +2 au rang 4 en notant @rang[1,1,1,2,2]</td>
+      </tr>
+      <tr>
+        <td class="variable">@rang[0,0,0,V,W,X,Y,Z]</td>
+        <td>
+          Pour les Voies de Prestige, ajoute V au rang 4; W au rang 5, X au rang 6… Il faut noter tous les niveaux à partir du rang 1 même si les Voies de prestiges commencent au
+          Rang 4.
+        </td>
+      </tr>
+      <tr class="tableau-entete">
+        <td colspan="2">Les Variables de Jets de dés</td>
+      </tr>
+      <tr>
+        <td class="variable">@atc</td>
+        <td>valeur de l'Attaque de Contact</td>
+      </tr>
+      <tr>
+        <td class="variable">@atd</td>
+        <td>Valeur de l'Attaque à Distance</td>
+      </tr>
+      <tr>
+        <td class="variable">@atm</td>
+        <td>Valeur de l'Attaque Magique</td>
+      </tr>
+      <tr>
+        <td class="variable">d4°</td>
+        <td>Valeur du dé évolutif (exemple : 2d4°)</td>
+      </tr>
+      <tr>
+        <td class="variable">2d20kh</td>
+        <td>Dé bonus au test. Deux D20 en gardant le plus grand (Keep Higher)</td>
+      </tr>
+      <tr>
+        <td class="variable">2d20kl</td>
+        <td>Dé malus au test. Deux 20 en gardant le plus bas (Keep Lower)</td>
+      </tr>
+      <tr>
+        <td class="variable">@arme.skill</td>
+        <td>La valeur d'Attaque de la première arme équipée par le Personnage.</td>
+      </tr>
+      <tr>
+        <td class="variable">@arme.dmg</td>
+        <td>Formule de Dommages de la première arme équipée par le Personnage.</td>
+      </tr>
+      <tr class="tableau-entete">
+        <td colspan="2">Les Variables des Cibles</td>
+      </tr>
+      <tr>
+        <td class="variable">@cible.(variable)</td>
+        <td>
+          permet de récupérer un variable chiffrée sur une cible. Cela fonctionne avec les valeurs chiffrées listées au début du tableau. Ne fonctionne pas avec les Variables
+          @rang.
+        </td>
+      </tr>
+      <tr class="exemple">
+        <td colspan="2">Par exemple : @cible.def renvoie la valeur de Défense de la cible. @cible.niv ou @cible.nc renvoie le Niveau d'un Personnage ou le NC d'une créature.</td>
+      </tr>
+      <tr>
+        <td class="variable">@oppose.(variable)</td>
+        <td>
+          permet de réaliser des Tests Opposés en demandant la Variables de la cible. La variable peut être une variable chiffrée ou une variable d'Attaque. Ne fonctionne pas avec
+          les variables @rang, @arme ou d4°.
+        </td>
+      </tr>
+      <tr class="exemple">
+        <td colspan="2">Par exemple : @oppose.atm demandera un test d'Attaque Magique à la cible. @oppose.cha pour s'opposer à un test de Charisme de la cible.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Avec ces Variables, il est possible de <span class="gras">faire quelques combinaisons pour agrémenter vos formules</span>. Prenons quelques exemples de combinaison de variables
+    :
+  </p>
+  <ul>
+    <li>
+      <p class="exemple">Une attaque inflige (le rang atteint dans la Voie) dé évolutif en plus du modificateur de Force => notez : <span class="gras">(@rang)d4° + @for</span></p>
+    </li>
+    <li>
+      <p class="exemple">
+        Votre Attaque à Distance augmente de 1d4 au rang 1, 1d6 au rang 3 et 1d8 au rang 5 => notez : <span class="gras">@atd + @rang[1d4,1d4,1d6,1d6,1d8]</span>
+      </p>
+    </li>
+    <li>
+      <p class="exemple">
+        Vous devez réaliser un test d'Attaque Magique opposé avec le token ciblé => notez : <span class="gras">@atm</span> en Attaque et <span class="gras">@oppose.atm</span> en
+        Difficulté. Un bouton "test Opposé" s'affichera dans le Message du Chat pour réaliser le test.
+      </p>
+    </li>
+    <li>
+      <p class="exemple">
+        Un Équipement qui inflige 1d8 DM permet de rajouter un nombre de d4 égal à votre Modificateur de Force au Dommages => notez : <span class="gras">1d8 + (@for)d4</span>
+      </p>
+    </li>
+    <li>
+      <p class="exemple">
+        Une Capacité vous demande de comparer votre test d'Attaque au Contact avec le Niveau de Créature de la cible => notez <span class="gras">@atc</span> en Attaque et
+        <span class="gras">@nc</span> en Difficulté.
+      </p>
+    </li>
+    <li>
+      <p class="exemple">
+        Une Capacité permet de rajouter 1d4° au Test d'Attaque et un bonus au Dommages égale à votre Niveau => notez : <span class="gras">@arme.skill + 1d4°</span> en Attaque et
+        <span class="gras">@arme.dmg + @niv</span> en Dommages. Cela va rajouter les bonus de la Capacité en utilisant la formule de compétence et les Dommages de la première arme
+        équipée par le Personnage.
+      </p>
+    </li>
+  </ul>
+
+  <p class="alinea">
+    <span class="underline">ATTENTION :</span> Entre la feuille Personnage et la feuille de Rencontre, <span class="gras">certaines valeurs sont différentes</span> (@niv et @nc) et
+    surtout, certaines valeurs <span class="gras">sont manquantes</span> sur la feuille Rencontre. Les Capacités des Profils du Livre de Règles présentes dans le Compendium sont
+    configurées pour être utilisées sur des feuilles Personnage.
+  </p>
+  <p class="alinea">
+    Donc, certaines capacités utilisent @arme.skill ou @arme.dmg alors que les Rencontre ne peuvent pas équiper d'armes. D'autres capacité utilisent les variables d'Attaque (@atc,
+    @atd et @atm) alors que les Rencontres ne les utilisent pas.
+  </p>
+  <p class="alinea">
+    Il faudra donc <span class="gras">veillez à modifier les Capacités que vous rajoutez à vos Rencontres</span> pour remplacer certaines variables par des nombres.
+  </p>
+
+  <h2>Exemples d'actions et d'effets</h2>
+  <p>Nous allons prendre quelques exemples tirés du Livre de Règles pour faire le point sur les Modificateurs, les Résolutions et les Effets Supplémentaires.</p>
+
+  <h4>Capacité Feinte (voie de l'escrime - Profil du Barde)</h4>
+  <p class="exemple">
+    <span class="gras">Texte de la Capacité :</span>
+    <span class="italique"
+      >Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre
+      adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l'escrime (+4 au rang 2, par exemple) sur votre
+      première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</span
     >
   </p>
-</blockquote>
-<p>
-  Dans l'Onglet Actions / Effets, deux Actions seront ajoutées. La première pour définir l'attaque à distance qui impose un dé malus et rajoute 2d4° aux DM et la deuxième pour
-  définir l'Attaque à distance en action limité avec également un dé malus mais +3d4° au DM.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Pour l'arme Épieu :</span></strong></span
-  >
-</p>
-<p>
-  Cette arme, par exemple, peut être utilisée à une main, à deux mains ou à distance. Ainsi, trois Actions seront ajoutées dans l'Onglet Actions / Effets pour chaque type d'attaque
-  avec les bonne valeurs d'attaque, de Dommages…
-</p>
-<h2>Les Actions</h2>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Label :</span></strong></span
-      >
-      Permet de donner un nom à l'action pour la distinguer des autres. Si le champs est laissé vide, le nom de l'Objet sera utilisé seulement (dans le cas où il n'y aurait qu'une
-      seule action). Dans l'Onglet "Principal" de la feuille de Personnage, le label sera visible après le nom de l'Objet ("Épieu - attaque à deux mains", par exemple).
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Message Chat :</span></strong></span
-      >
-      permet de donner un nom spécifique à l'action qui appraitra dans la fenètre de dialogue du chat lorsque l'action sera réalisée, si vous souhaitez qu'il soit différent du
-      Label.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">L'icone de "Poubelle" :</span></strong></span
-      >
-      permet de supprimer l'Action ajoutée.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Type :</span></strong></span
-      >
-      permet de définir le Type d'Action parmis "Sort", "Attaque de Contact", Attaque à Distance", "Attaque Magique", "Soin", "Amélioration", "Affaiblissement" ou "Consommable".
-      Cela aura pour effet principal de changer l'apparence de l'icone de l'action dans l'Onglet "Principal" de la feuille du Personnage.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Image :</span></strong></span
-      >
-      pemret de définir une image pour cette action spécifique afin de la reconnaitre facilement parmis les actions réalisables par le Personnage.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Propriétés :</span></strong></span
-      >
-    </p>
-    <ul>
-      <li>
-        <p>
-          <strong>Activable :</strong> Ne cocher pas cette case si l'action est un Effet passif permanent. Dans ce cas là, l'Effet apparaitra dans l'Onglet "Effets" de la feuille
-          de Personnage dans la section Passif(s) La case devra être cochée si l'Action est activable par le Personnage (une action d'attaque, un effet qui s'active dans certaines
-          circonstances, un consommable qu'il faudra activer pour l'utiliser…). Dans ce cas là, l'Action ou l'Effet apparaitra dans l'Onglet "Principal" dans la section Actions.
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Temporaire :</strong> Cocher cette case si l'Action est activable ou désactivable par le Personnage en fonction de l'environnement ou de la situation (par
-          exemple, un bonus qui intervient seulement lorsque le Personnage est en forêt, surpris, réalise un test de séduction…). Si la case n'est pas cochée, les Modificateurs
-          définis ensuite seront tout le temps actifs.
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Sans coût de mana :</strong> uniquement utile dans le cas des Sorts. Si la case est cochée, l'action en question ne coûtera pas de PM lorsqu'elle sera faite ou
-          activée.
-        </p>
-      </li>
-    </ul>
-  </li>
-</ul>
-<h3>Conditions</h3>
-<p>permet de définir une condition pour que l'Action soit réalisable ou que les Modificateurs soient actifs pour le Personnage.</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">"Est équipé</span></strong></span
-      >" est utile pour les actions provenant d'un équipement équipable. S'il n'est pas équipé, l'action ne sera pas possible et les modificateurs ne seront pas pris en compte.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">"Est appris"</span></strong></span
-      >
-      est utile pour les actions provenant d'une Capacité. Si la capacité n'est pas apprise par le Personnage, l'action ne sera pas possible et les modificateurs ne seront aps pris
-      en compte.
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">"Est possédé"</span></strong></span
-      >
-      est utile pour les actions provenant d'un équipement ou d'une Attaque (de rencontre) qui n'a pas besoin d'être équipé pour faire effet. A partir du moment où le Personnage
-      possède l'Objet avec cet Action, il bénéficiera des Modificateurs et des Actions associées.
-    </p>
-  </li>
-</ul>
-<p></p>
-<h3>Modificateurs</h3>
-<p>Ce cadre permet de rajouter autant d'Effet que nécessaire à l'Action. Il y a un grand nombre de Statistiques qui peuvent être modifiée dans les Modificateurs.</p>
-<ul>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Type et Cible :</span></strong></span
-      >
-      permet de choisir la Statistique qui sera modifiée.
-    </p>
-    <ul>
-      <li>
-        <p><strong>Carcactéristique :</strong> Toutes, Agilité, Constitution, Force, Perception, Charisme, Intelligence ou Volonté</p>
-      </li>
-      <li>
-        <p><strong>Combat :</strong> Attaque de Contact, Attaque à Distance, Attaque Magique, Initiative, Défense, Critique, Dommages ou Réduction de Dégâts</p>
-      </li>
-      <li>
-        <p><strong>Attribut :</strong> Points de Vigueur ou Déplacement</p>
-      </li>
-      <li>
-        <p><strong>Ressource :</strong> Point de Récupération, Point de Chance, Point de Mana</p>
-      </li>
-      <li>
-        <p><strong>Jet de Compétence :</strong> Toutes, Agilité, Constitution, Force, Perception, Charisme, Intelligence ou Volonté</p>
-      </li>
-      <li>
-        <p>
-          <strong>État :</strong> Vision dans le noir, immunisé à la peur magique, Immunisé au sommeil magique, Immunisé aux poisons, Immunisé aux maladies, Immunisé aux
-          asservissement ou Immunisé aux altérations de mouvement
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Dé bonus :</strong> Toutes, Agilité, Constitution, Force, Perception, Charisme, Intelligence, Volonté, Attaque de Contact, Attaque à Distance ou Attaque Magique
-        </p>
-      </li>
-      <li>
-        <p>
-          <strong>Dé malus :</strong> Toutes, Agilité, Constitution, Force, Perception, Charisme, Intelligence, Volonté, Attaque de Contact, Attaque à Distance ou Attaque Magique
-        </p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Valeur :</span></strong></span
-      >
-      permet de renseigner la valeur du modificateur. Les valeurs doivent être des nombres positifs ou négatifs. Lorsque la cible n'appelle pas un modificateur numérique (vision
-      dans le noir, dé bonus, dé malus…), laissez la valeur "0".
-    </p>
-  </li>
-  <li>
-    <p>
-      <span style="text-decoration: underline"
-        ><strong><span style="text-decoration: underline">Informations complémentaires :</span></strong></span
-      >
-      un champs de texte permettant d'écrire une description simplifiée du modificateur ou la situation dans laquelle il s'applique (par exemple, "pour les tests de forge", "pour
-      résister à un sort de manipulation mentale"…). Ce champs 'Informations complémentaires" apparaitra dans la fenètre des Jets de Compétence lorsqu'il faudra choisir si vous
-      appliquez le modificateur ou non, en fonction de la situation.
-    </p>
-  </li>
-</ul>
-<p></p>
-<h3>Résolutions</h3>
-<p>Ce cadre permet de rajouter des jets de dés à l'Action de l'Objet.</p>
-<p>Si l'Action correspond à un Attaque de Contact spécifique ou une formule de jet de Soin, il faudra rajouter une ou plusieurs Résolution dans ce cadre.</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Attaque Automatique :</span></strong></span
-  >
-  permet de réaliser une Attaque qui touche automatiquement et de définir la formule de Dommages infligés.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Attaques de Contact, à Distance ou Magique :</span></strong></span
-  >
-  permet de réaliser une attaque, avec ou sans dé bonus ou dé malus et de définir, la formule du Jet d'Attaque, la plage de Critique (si elle est différente), la Difficulté de
-  l'attaque et la formule de Dommages.
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Soin :</span></strong></span
-  >
-  permet de définir la formule de soin ainsi que la cible (soi-même, unique, multiple ou aucune et si le soin cible indifféremment les alliés et les ennemis ou soit l'un soit
-  l'autre catégorie).
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Amélioration :</span></strong></span
-  >
-  ??
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Affaiblissement :</span></strong></span
-  >
-  ??
-</p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Consommable :</span></strong></span
-  >
-  ce type doit être rajouté après une autre résolution. Il permet de définir si la Résolution "consomme" l'Équipement. Par exemple, pour une potion de soin, il faudra définir une
-  Résolution de type "Soin" en indiquant la formule de soin et la cible "Soi-même" ET une résolution de type "Consommable" pour que la quantité de potion possédée par le Personnage
-  diminue de 1 à chaque fois que l'Action est réalisée.
-</p>
-<p></p>
-<p>
-  <span style="text-decoration: underline"
-    ><strong><span style="text-decoration: underline">Effets supplémentaires</span></strong></span
-  >
-  : ????? pas encore arrivé en 0.8.0 ?????
-</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-<p></p>
+  <p class="alinea">Pour cette capacité Feinte, il y aura trois Actions/Effets :</p>
+  <ul>
+    <li><p>Une Action "Activable" pour réaliser le test Opposé de Charisme contre Perception. Résolution de Type= Attaque - formule= @cha - Difficulté= @oppose.per</p></li>
+    <li><p>Un Effet "Activable" ET "Temporaire" avec un Modificateur pour le bonus au Test d'Attaque de Contact d'une valeur de @rang * 2.</p></li>
+    <li>
+      <p>Un Effet "Activable" ET "Temporaire" avec une Condition "l'action liée est activée"= 1, un Modificateur qui ajoute le Bonus aux DM de Contact + 2d4°.</p>
+    </li>
+  </ul>
+  <p class="alinea">
+    Il est aussi possible de rendre la Première Action/Effet pour le test Opposé Temporaire afin qu'il reste activé. Dans ce cas, les deux Action/Effets auront une Condition
+    "l'action liée est activée"= 0. Dans cette variante, le Personnage n'aura qu'une seule action visible dans sa liste d'action et les deux autres Actions/Effets apparaitront
+    lorsqu'il réalisera le test Opoosé. Il faudra, par contre, penser à désactiver la première Action/Effet.
+  </p>
+
+  <h4>Armée des Morts (Voie de l'outre-tombe - Profil du Sorcier)</h4>
+  <p class="exemple">
+    <span class="gras">Texte de la Capacité :</span>
+    <span class="italique"
+      >Une fois par jour, le sorcier peut invoquer d'innombrables squelettes qui émergent du sol pour attaquer ses ennemis pendant [niveau du sorcier] rounds. Tous les adversaires
+      situés dans un rayon de 10 m autour du sorcier subissent automatiquement 2d4° DM par round. Les squelettes se déplacent avec le sorcier, mais tous les déplacements dans cette
+      zone (même ceux du sorcier) sont divisés par deux.
+    </span>
+  </p>
+  <p class="alinea">Cette Capacité possède la propriété "Sort". Pour cette Capacité, deux ACtions/Effets suffisent :</p>
+  <ul>
+    <li>
+      <p>
+        Une Action "Activable" avec une Condition "est appris" sans Modificateur ni Résolution. Cette Action permet seulement d'activer le Sort et donc de dépenser les points de
+        Magie. Notez dans le Label "Activation du Sort", par exemple.
+      </p>
+    </li>
+    <li>
+      <p>
+        Une Action "Activable" et "Sans coût de mana" avec une Résolution "Attaque Automatique" - Dommages= 2d4° - Cibles= Multiple sur Ennemis. Cette Action permet de jeter les
+        Dommages a chaque fois que nécessaire en ciblant les adversaires dans la zone.
+      </p>
+    </li>
+  </ul>
+
+  <h4>Maitre du poison (Voie du Roublard - Profil du Voleur)</h4>
+  <p class="exemple">
+    <span class="gras">Texte de la Capacité :</span>
+    <span class="italique"
+      >Le voleur peut utiliser 3 doses de poison par jour sans risque de s'empoisonner lui-même. Une dose permet d'enduire une dague, une flèche ou un carreau pour infliger +2d4°
+      DM supplémentaire et demande un test de CON difficulté (10 + INT du voleur) ou une cible vivante est affaiblie pour le reste du combat. Alternativement, une dose peut être
+      versée dans les aliments pour une personne ; si la cible rate son test de CON, elle sombre dans l'inconscience pour 2d6 min (4d6 min pour 2 doses, etc.).
+    </span>
+  </p>
+  <p class="alinea">Cette capacité reçoit une fréquence d'utilisation quotidienne de 3. Une seule Action/Effet est nécessaire :</p>
+  <ul>
+    <li>
+      <p>
+        Une Action "Activable" avec une Résolution de type Attaque. Formule= @arme.skill - Difficulté= @cible.def - Dommages= @arme.dmg + 2d4° - Cible= unique, tout le monde.
+        Ajoutez un Effet Supplémentaire qui s'applique sur "un succès" en sélectionnant le Statut "Affaibli" et noter une durée de 20 rounds (pour s'étendre jusqu'à la fin du
+        combat).
+      </p>
+    </li>
+  </ul>
+  <p class="alinea">
+    Avec ces paramètres, les Dommages supplémentaires s'appliqueront une seule fois et le Statut Affaibli sera appliqué à la cible. Si le test de CON de la cible est réussi, le MJ
+    pourra supprimer le Statut Affaibli directement de la cible.
+  </p>
+
+  <h4>Projection du Ki (Voie de l'énergie vital - Profil du Moine)</h4>
+  <p class="exemple">
+    <span class="gras">Texte de la Capacité :</span>
+    <span class="italique"
+      >Le moine projette une vague de force avec son corps et son esprit à une distance maximale de 20 m. Un test d'attaque magique réussi lui permet d'infliger [1d4°+ VOL] DM. Les
+      DM passent à [2d4°+ VOL] au rang 4.
+    </span>
+  </p>
+  <p class="alinea">Cette capacité est assez simple. Une seule Action/Effet est nécessaire :</p>
+  <ul>
+    <li>
+      <p>
+        Une Action "Activable" avec une Résolution de type Attaque. Formule= @atm - Difficulté= @cible.def - Dommages= @rang[1,1,1,2,2]d4° + @vol - Cible= unique, tout le monde.
+      </p>
+    </li>
+  </ul>
+  <p class="alinea">
+    La formule de Dommages permet de gérer la différence de la formule en fonction du Rang de la Voie. Ainsi, les DM seront de 1d4° + VOL jusqu'au rang 3 puis passeront à 2d4° +
+    VOL ensuite.
+  </p>
+  <h4>Baie magique (Équipement - Consommable)</h4>
+  <p class="exemple">
+    <span class="italique"
+      >Une baie créée par un druide. Offre l'équivalent d'un repas et rend [1d4°+@rang]PV après une minutes à celui qui la consomme. Les effets de ce fruit ne fonctionnent qu'une
+      fois par jour et par personnage. Le Druide, en lançant son sort ne soigne pas les cibles mais crée des "Équipements" qui pourront être glissé-déposé dans l'Inventaire.
+    </span>
+  </p>
+  <p class="alinea">Cette Équipement reçoit une Action/Effet :</p>
+  <ul>
+    <li><p>Une Action "Activable" avec une Résolution de type Soin. Formule= 1d4° + @rang - Cible= Soi-même.</p></li>
+  </ul>
+  <p class="alinea">
+    Il est aussi possible de créer une Capacité au lieu d'un Équipement afin de gérer la limitation de une seule Baie Magique par jour. La Capacité se retrouvera dans les capacités
+    Hors-Voies et il faudra penser à modifier le coût en Points de Capacité à 0. Dans le cas de l'Équipement vous pouvez gérer le nombre de Baies Magiques possédées par le
+    Personnage. Dans le cas d'une Capacité, vous pouvez gérer la fréquence d'utilisation des Baies Magiques.
+  </p>
+  <br />
+  <h2>conclusion</h2>
+  <p class="alinea">
+    Voici les quelques exemples de création d'Actions/Effets. Vous remarquerez très vite que des modèles d'Actions/Effets se répètent et au bout de quelques créations, le système
+    sera maîtrisé.
+  </p>
+  <p class="alinea">
+    Dans tous les cas, n'oubliez pas de tester les Objets et les Actions/Effets que vous créez avant de les glisser-déposer sur une feuille de Personnage car, autant les Rencontres
+    sont assez faciles à refaire autant vous n'aimeriez pas "cassez" le fonctionnement de la feuille d'un de vos PJ. En cas de doute, créez un Personnage ou une Rencontre et testez
+    l'Objet sur un Acteur jetable.
+  </p>
+  <p class="alinea">
+    Pour finir, comme vous avez pu le voir, la configuration d'un même Effet peut être réalisé de plusieurs façons. Modifiez les Capacités ou les Équipements du Compendium du Livre
+    de Règles si vous en sentez le besoin pour s'adapter au plus près à votre style de jeu et votre logique. N'oubliez pas que COF v2 et son adaptation sur FoundryVTT est là pour
+    passer de bons moments qui ne sauraient être gâchés par des fonctionnalités qui vous semblent trop lourdes ou complexes.
+  </p>
+  <p class="exemple">
+    Certains MJ, par exemple, utilisent très peu la gestion des Combats au tour par tour, préférant des conflits plus "cinématiques" que "stratégiques". Dans ce cas, n'hésitez pas
+    à décocher les Effets Supplémentaires dans les Résolutions et de gérer "manuellement" l'application d'effets périodiques.
+  </p>
+</div>
