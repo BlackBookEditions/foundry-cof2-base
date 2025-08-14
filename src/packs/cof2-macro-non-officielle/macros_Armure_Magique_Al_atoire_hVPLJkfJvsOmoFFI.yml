@@ -1,0 +1,89 @@
+name: Armure Magique Aléatoire
+type: script
+command: >-
+  // Macro Foundry VTT — lance 3 tables et affiche résultats avec images, sans
+  style inline
+
+  (async () => {
+    const TABLES = [
+      { name: "Déterminer une ARMURE aléatoirement",     label: "Armure" },
+      { name: "Armures Magiques : Propriétés",     label: "Propriété" },
+        ];
+
+      
+    const lines = [];
+
+    for (const { name, label } of TABLES) {
+      const table = game.tables.getName(name);
+      if (!table) {
+        ui.notifications.error(`Table introuvable : ${name}`);
+        lines.push(`<p><strong>${label}</strong> : <em>Table introuvable</em></p>`);
+        continue;
+      }
+
+      const { results = [] } = await table.roll({ recursive: true });
+
+      if (!results.length) {
+        lines.push(`<p><strong>${label}</strong> : <em>Aucun résultat</em></p>`);
+        continue;
+      }
+
+      for (const r of results) {
+        let txt = "";
+        let img = "";
+
+        // Texte enrichi officiel
+        if (typeof r.getHTML === "function") {
+          try {
+            const htmlText = await r.getHTML();
+            if (htmlText && htmlText.trim()) txt = htmlText.trim();
+          } catch (e) { console.warn("Erreur getHTML()", e); }
+        }
+
+        // fallback description
+        if (!txt && r.description && r.description.trim()) txt = r.description.trim();
+        if (!txt) txt = "(résultat vide)";
+
+        // Image associée
+        if (r.img && r.img.trim()) img = r.img.trim();
+        else if (r.data?.img && r.data.img.trim()) img = r.data.img.trim();
+
+        // Ne pas afficher l'image si c'est l'icône par défaut d20
+  const imgTag = (img && !img.includes("icons/svg/d20-black.svg")) ? `<br><img
+  src="${img}" width="50">` : "";
+
+        // Texte en gras + image sous le texte
+        lines.push(`<p>${label} :<br /> <strong>${txt}</strong>${imgTag}</p>`);
+      }
+    }
+
+    const content = `
+      <div class="macro-rolltables-results">
+        <h5 style="margin:0; margin-top:5px">Armure Magique</h5>
+        ${lines.join("")}
+      </div>`.trim();
+
+    await ChatMessage.create({ speaker: ChatMessage.getSpeaker(), content });
+  })();
+img: icons/equipment/chest/breastplate-helmet-metal.webp
+author: LEtUoNWt5mYBIjrk
+scope: global
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: co
+  systemVersion: 13.344.0
+  createdTime: 1755213997384
+  modifiedTime: 1755213997384
+  lastModifiedBy: LEtUoNWt5mYBIjrk
+_id: hVPLJkfJvsOmoFFI
+sort: 0
+ownership:
+  default: 0
+  LEtUoNWt5mYBIjrk: 3
+_key: '!macros!hVPLJkfJvsOmoFFI'
+
