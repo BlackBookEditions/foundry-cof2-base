@@ -2,7 +2,7 @@
   <h2>Introduction</h2>
   <p class="lettrine">
     C'est sans aucun doute l'onglet le plus important pour l'automatisation du système et la facilité d'utilisation des règles par les Joueurs et le Maître du Jeu. Il est possible
-    de configurer des Actions/Effets sur trois type d'Objet : les Capacités, les Équipements et les Attaques de Rencontre. Le procédé est identique pour tous les 3 types d'Objets
+    de configurer des Actions/Effets sur trois types d'Objet : les Capacités, les Équipements et les Attaques de Rencontre. Le procédé est identique pour tous les 3 types d'Objets
     créés. Ce sont les mêmes mécaniques et le même résultat.
   </p>
   <p class="alinea">
@@ -57,6 +57,7 @@
 
   <!--informations initiales-->
   <h2>Informations initiales</h2>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionInfoInitiale.webp" /></div>
   <h3>Label</h3>
   <p class="alinea">
     Le label permet de donner un nom spécifique à l'action pour la distinguer des autres et synthétiser son effet rapidement. Le label sera visible dans
@@ -145,10 +146,23 @@
     <li><i class="fa-solid fa-flask-round-potion"></i> - Consommable</li>
   </ul>
 
-  IMPORT IMAGE LISTE ACTION
-
-  <p class="exemple">Par exemple, sur l'image ci-dessous nous voyons ???</p>
-
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionListeExemple.webp" /></div>
+  <p class="exemple">Par exemple, sur l'image ci-contre, nous voyons plusieurs types d'actions :</p>
+  <p class="exemple"><br /></p>
+  <ul class="exemple">
+    <li><p>Des Action d'Amélioration activées ou activables : Soutenir et Tour de Force</p></li>
+    <li><p>Des Action d'Amélioration désactivées : Instinct de survie, Déchainement d'acier et rage du berseker</p></li>
+    <li><p>Des Action d'attaque au contact : Charge et Cimeterre</p></li>
+    <li><p>Une Action d'attaque à distance : Tir Rapide</p></li>
+    <li><p>Une Action d'attaque automatique : Attaque Tourbillon</p></li>
+    <li><p>Des Actions de Soins : Récupération Mineure et Potion de Récupération Mineure</p></li>
+    <li><p>Des Action de Consommables : Charge Explosive (deux actions sur le même Équipement)</p></li>
+  </ul>
+  <p class="exemple"><br /></p>
+  <p class="exemple">
+    Pour chaque Action, on voit l'image, le Temps de l'action (L, A, M ou G), le type d'action, le nom de l'Objet, le nom de l'Action, la quantité/fréquence, le coût en point de
+    Mana pour les sorts ainsi que la couleur de l'icône qui donne des informations sur l'utilisation de l'Action.
+  </p>
   <h3>Les Propriétés</h3>
   <p class="alinea">Bien qu'il n'y ait pas beaucoup de propriétés, elles sont fondamentales pour configurer correctement l'Action ou l'Effet.</p>
   <h4>Mode Debug</h4>
@@ -236,11 +250,12 @@
   </p>
   <p class="alinea">
     Dans ce cas, il est possible d'ajouter une Action/Effet nommée "activation du Sort" pour dépenser les PM et une autre action avec les Bonus et la propriété "Sans coût de mana".
-    Cette deuxième Action/Effet recevra au beaoin la Condition "l'action liée est activée". Consultez le prochain chapitre pour plus d'informations sur les Conditions.
+    Cette deuxième Action/Effet recevra au besoin la Condition "l'action liée est activée". Consultez le prochain chapitre pour plus d'informations sur les Conditions.
   </p>
 
   <!--conditions-->
   <h2>Conditions</h2>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionCondition.webp" /></div>
   <p>
     Ce cadre détermine dans quelle situation l'Action/Effet peut fonctionner. Cette condition est souvent la même en fonction du type d'Objet créé (une Capacité avec une Condition
     "est appris", un Équipement équipable avec la Condition "est équipé"…). Il convient de configurer correctement cette option pour que l'Action/Effet fonctionne de façon
@@ -254,7 +269,9 @@
     @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-rencontre]{Feuille Rencontre} car vous ne pouvez leur
     équiper des Objets. Une Action d'attaque apparaitra dans la liste des Actions seulement si l'arme est équipée par le Personnage, par exemple.
   </p>
-  <p class="alinea">Attention, si vous configurez cette condition sur une Capacité ou une Attaque de Rencontre, l'Action/Effet ne fonctionnera pas.</p>
+  <p class="alinea">
+    <span class="underline">Attention :</span> si vous configurez cette condition sur une Capacité ou une Attaque de Rencontre, l'Action/Effet ne fonctionnera pas.
+  </p>
 
   <h3>est appris</h3>
   <p class="alinea">
@@ -262,7 +279,10 @@
     Capacités, seules celles qui sont apprises lui apporteront des Actions ou des Effets configurés. De plus, dans la mesure où les Capacités Hors-voies sont apprises
     automatiquement lorsqu'on les glisse-dépose sur un Personnage ou une Rencontre, les Actions/Effets seront directement disponibles.
   </p>
-  <p class="alinea">Attention, configurer une Action avec cette condition sur un Équipement ne permettra pas de l'utiliser car vous ne pouvez pas "apprendre" un Équipement.</p>
+  <p class="alinea">
+    <span class="underline">Attention :</span> configurer une Action avec cette condition sur un Équipement ne permettra pas de l'utiliser car vous ne pouvez pas "apprendre" un
+    Équipement.
+  </p>
 
   <h3>est possédé</h3>
   <p class="alinea">
@@ -280,9 +300,9 @@
   <p class="alinea">De ce fait, vous ne devez pas configurer cette condition sur la première Action/Effet de l'Objet sous peine de "casser" l'Objet.</p>
   <p class="alinea">
     L'Action/Effet liée devra être un Effet Activable ET Temporaire. Lorsque vous sélectionnez la condition "l'action liée est activée" sur une Action/Effet, un champ numérique
-    apparait à la suite. Il faudra noter un chiffre qui correspond au "numéro" de l'Action/Effet liée. Attention : la première Action/Effet de l'Objet a le numéro 0, la deuxième le
-    numéro 1, la troisième le numéro 2…
+    apparait à la suite. Il faudra noter un chiffre qui correspond au "numéro" de l'Action/Effet liée.
   </p>
+  <p><span class="underline">Attention :</span> la première Action/Effet de l'Objet a le numéro 0, la deuxième le numéro 1, la troisième le numéro 2…</p>
   <p class="alinea"><span class="gras">Par exemple, vous configurez un bâton magique et puissant pour le Sorcier qui affrontera vos joueurs.</span></p>
   <ul class="exemple">
     <li>
@@ -329,6 +349,7 @@
 
   <!--modificateurs-->
   <h2>Modificateurs</h2>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionModificateur.webp" /></div>
   <p class="alinea">
     Dans cette section, il est possible d'ajouter autant de Modificateurs que nécessaire pour la Capacité, l'Équipement ou l'Attaque de Rencontre. Chaque Modificateur pourra cibler
     un élément de l'Acteur pour lui ajouter un bonus ou un malus, lui donner une faculté ou lui augmenter ses Points de Vigueur ou de Magie, par exemple.
@@ -494,6 +515,7 @@
 
   <!--résolutions-->
   <h2>Résolutions</h2>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionResolution.webp" /></div>
   <p class="alinea">
     Dans cette section, nous allons détailler <span class="gras">comment réaliser des interactions entre des protagonistes.</span> Les Résolutions permettent de faire
     <span class="gras">des Attaques contre la Défense</span> d'une cible, des <span class="gras">Tests en Oppositions</span>, des
@@ -573,7 +595,7 @@
         </li>
         <li class="puce-noire">
           <p>
-            <span class="gras">Difficulté fixe :</span> dans certaines circonstance, vous pourrez configurer une Résolution avec un Test contre une Difficulté fixe (déclencher un
+            <span class="gras">Difficulté fixe :</span> dans certaines circonstances, vous pourrez configurer une Résolution avec un Test contre une Difficulté fixe (déclencher un
             pouvoir en réussissant un test d'INT contre une difficulté de 15, par exemple). Pour ce faire, il suffit d'<span class="gras"
               >écrire le nombre entier dans ce champ</span
             >. Vous ne pourrez pas ajouter au nombre une variable de votre Personnage pour la Difficulté ("10 + @for" ne fonctionnera pas) ni écrire une formule de type "5 + 10".
@@ -608,6 +630,7 @@
     </li>
   </ul>
   <h3>Attaque Automatique</h3>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionResolutionAttAuto.webp" /></div>
   <p class="alinea">
     Cette résolution permet de configurer une Réussite automatique et de définir une formule de Dommages sur une ou plusieurs cibles. C'est assez utilisé sur les Sort de zone qui
     touchent automatiquement les cibles. Grace à cette Résolution, vous pouvez inscrire la Formule de Dommages et ils seront lancés directement sans Jet d'Attaque. D'ailleurs si
@@ -643,6 +666,7 @@
     </li>
   </ul>
   <h3>Soin</h3>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionResolutionSoin.webp" /></div>
   <p class="alinea">
     Ce type de Résolution permet d'écrire une formule qui va soigner (ou blesser) la ou les cibles. Il s'agit d'un unique champ pour noter la formule à lancer et des champs pour
     choisir la ou les cibles.
@@ -673,6 +697,7 @@
     </li>
   </ul>
   <h3>Buff/Debuff</h3>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionResolutionBuffDebuff.webp" /></div>
   <p class="alinea">
     C'est surement le type de Résolution le plus difficile à appréhender. Il permet d'appliquer les Modificateurs définis sur l'Action/Effet aux cibles configurées dans le
     Modificateur. Grace à cette option vous pouvez lister les Modificateurs négatifs qui seront appliqués aux ennemis et les effets positifs qui seront appliqués aux alliés, par
@@ -686,8 +711,28 @@
     Il est possible d'ajouter seulement une Résolution Buff/Debuff avec des Effets Supplémentaires si une Capacité vous demande, par exemple, d'appliquer des Modificateurs sur des
     cibles et/ou vous-même pendant une certaine durée.
   </p>
+  <p>
+    Au moment de configurer une Résolution de type Buff/Debuff,
+    <span class="gras">vérifiez bien que la ou les cibles configurées pour la Résolution n'est pas en conflit avec la ou les cibles définies dans les Modificateurs.</span> Si vous
+    configurez une Résolution qui cible "soi-même" et que certains Modificateurs cibles "les Autres", il y aura un conflit et les Modificateurs "les Autres" ne seront pas
+    appliqués. Dans tous les cas, <span class="gras">évitez les configurations étranges</span> avec des Modificateurs qui ciblent un coup "soi-même", un coup "les autres" et "les
+    deux". En rajoutant la cible configurée dans les Effets Supplémentaires, cela risque d'appliquer des Modificateurs aux mauvais protagonistes.
+  </p>
+  <p>
+    Dans la grande majorité des cas, une attaque ajoutera des "Malus" à la cible ou des "bonus" à l'attaquant. Il est rare d'avoir des capacités qui ajoutent des malus ou des bonus
+    à de nombreuses cibles de manière très différente.
+  </p>
+  <p>
+    Pour finir,
+    <span class="gras"
+      >vérifiez que les Tokens que vous ciblez ont une "Disposition du Token" (dans la configuration du Token avec l'icone <i class="fa-solid fa-ellipsis-vertical"></i>)
+      correctement définie.</span
+    >
+    Si le Token est neutre, les Effets Supplémentaires qui cibles les "Ennemis" risquent de ne pas fonctionner correctement.
+  </p>
 
   <h3>Consommable</h3>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionResolutionConsommable.webp" /></div>
   <p class="alinea">
     Cette Résolution peut être ajoutée avant ou à la suite d'une autre Résolution. Dans ce cas, <span class="gras">l'Équipement qui porte l'Action sera consommé</span> (quantité
     diminué de 1 et éventuellement détruit si la quantité atteint 0 et que la case spécifique est cochée) au moment de réaliser l'action. Cette Résolution agit seulement sur la
@@ -696,6 +741,7 @@
   <p class="alinea">Cette Résolution peut être ajoutée à une Capacité ou une Attaque de rencontre mais cela n'aura aucun effet.</p>
 
   <h2>Effet Supplémentaire</h2>
+  <div class="image-guide"><img src="modules\cof-base\assets\guide\ActionEffetSupp.webp" /></div>
   <p class="alinea">Cette section de la Résolution permet d'appliquer des Effets sur la durée quand vous êtes en Mode Combat.</p>
   <p>
     Grace aux Effets Supplémentaires, il est possible d'<span class="gras">appliquer des Dommages, des soins et/ou des statuts pendant un nombre défini de round</span> sur les
@@ -715,9 +761,9 @@
   <h3>s'applique sur</h3>
   <p class="alinea">Vous pouvez choisir à quel moment les Effets seront appliqués en fonction du résultat de la Résolution. Il existe <span class="gras">5 options :</span></p>
   <p>
-    ATTENTION : Les Résolutions qui ne sont pas de type
+    <span class="underline">ATTENTION :</span> Les Résolutions qui ne sont pas de type
     @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#attaque]{Attaque} ne peuvent fonctionner
-    <span class="gras">qu'avec l'option "s'applique toujours".</span> Seulement les Resolutions de type
+    <span class="gras">qu'avec l'option "s'applique toujours".</span> Seulement les Résolutions de type
     @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#attaque]{Attaque} pourront fonctionner avec des Effets
     Supplémentaires qui s'applique sur les autres options que "Toujours".
   </p>
@@ -945,7 +991,7 @@
     </li>
     <li>
       <p class="exemple">
-        Vous devez réaliser un test d'Attaque Magique opposé avec le token ciblé => notez : <span class="gras">@atm</span> en Attaque et <span class="gras">@oppose.atm</span> en
+        Vous devez réaliser un test d'Attaque Magique opposé avec le Token ciblé => notez : <span class="gras">@atm</span> en Attaque et <span class="gras">@oppose.atm</span> en
         Difficulté. Un bouton "test Opposé" s'affichera dans le Message du Chat pour réaliser le test.
       </p>
     </li>
@@ -985,7 +1031,7 @@
   <h2>Exemples d'actions et d'effets</h2>
   <p>Nous allons prendre quelques exemples tirés du Livre de Règles pour faire le point sur les Modificateurs, les Résolutions et les Effets Supplémentaires.</p>
 
-  <h4>Capacité Feinte (voie de l'escrime - Profil du Barde)</h4>
+  <h4>@UUID[Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7]{Feinte} (voie de l'escrime - Profil du Barde)</h4>
   <p class="exemple">
     <span class="gras">Texte de la Capacité :</span>
     <span class="italique"
@@ -1005,10 +1051,10 @@
   <p class="alinea">
     Il est aussi possible de rendre la Première Action/Effet pour le test Opposé Temporaire afin qu'il reste activé. Dans ce cas, les deux Action/Effets auront une Condition
     "l'action liée est activée"= 0. Dans cette variante, le Personnage n'aura qu'une seule action visible dans sa liste d'action et les deux autres Actions/Effets apparaitront
-    lorsqu'il réalisera le test Opoosé. Il faudra, par contre, penser à désactiver la première Action/Effet.
+    lorsqu'il réalisera le test Opposé. Il faudra, par contre, penser à désactiver la première Action/Effet.
   </p>
 
-  <h4>Armée des Morts (Voie de l'outre-tombe - Profil du Sorcier)</h4>
+  <h4>@UUID[Compendium.cof-base.cof-2-base-items.Item.Tzy7XEGufe3CLmkS]{Armée des morts} (Voie de l'outre-tombe - Profil du Sorcier)</h4>
   <p class="exemple">
     <span class="gras">Texte de la Capacité :</span>
     <span class="italique"
@@ -1017,7 +1063,7 @@
       zone (même ceux du sorcier) sont divisés par deux.
     </span>
   </p>
-  <p class="alinea">Cette Capacité possède la propriété "Sort". Pour cette Capacité, deux ACtions/Effets suffisent :</p>
+  <p class="alinea">Cette Capacité possède la propriété "Sort". Pour cette Capacité, deux Actions/Effets suffisent :</p>
   <ul>
     <li>
       <p>
@@ -1033,7 +1079,7 @@
     </li>
   </ul>
 
-  <h4>Maitre du poison (Voie du Roublard - Profil du Voleur)</h4>
+  <h4>@UUID[Compendium.cof-base.cof-2-base-items.Item.CMmctsI2TJkDW4Ge]{Maître du poison} (Voie du Roublard - Profil du Voleur)</h4>
   <p class="exemple">
     <span class="gras">Texte de la Capacité :</span>
     <span class="italique"
@@ -1057,7 +1103,7 @@
     pourra supprimer le Statut Affaibli directement de la cible.
   </p>
 
-  <h4>Projection du Ki (Voie de l'énergie vital - Profil du Moine)</h4>
+  <h4>@UUID[Compendium.cof-base.cof-2-base-items.Item.HBuAaAuVvXHCJ0Sc]{Projection du ki} (Voie de l'énergie vital - Profil du Moine)</h4>
   <p class="exemple">
     <span class="gras">Texte de la Capacité :</span>
     <span class="italique"
@@ -1077,7 +1123,7 @@
     La formule de Dommages permet de gérer la différence de la formule en fonction du Rang de la Voie. Ainsi, les DM seront de 1d4° + VOL jusqu'au rang 3 puis passeront à 2d4° +
     VOL ensuite.
   </p>
-  <h4>Baie magique (Équipement - Consommable)</h4>
+  <h4>@UUID[Compendium.cof-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie magique} (Équipement - Consommable)</h4>
   <p class="exemple">
     <span class="italique"
       >Une baie créée par un druide. Offre l'équivalent d'un repas et rend [1d4°+@rang]PV après une minutes à celui qui la consomme. Les effets de ce fruit ne fonctionnent qu'une
@@ -1089,7 +1135,7 @@
     <li><p>Une Action "Activable" avec une Résolution de type Soin. Formule= 1d4° + @rang - Cible= Soi-même.</p></li>
   </ul>
   <p class="alinea">
-    Il est aussi possible de créer une Capacité au lieu d'un Équipement afin de gérer la limitation de une seule Baie Magique par jour. La Capacité se retrouvera dans les capacités
+    Il est aussi possible de créer une Capacité au lieu d'un Équipement afin de gérer la limitation d'une seule Baie Magique par jour. La Capacité se retrouvera dans les capacités
     Hors-Voies et il faudra penser à modifier le coût en Points de Capacité à 0. Dans le cas de l'Équipement vous pouvez gérer le nombre de Baies Magiques possédées par le
     Personnage. Dans le cas d'une Capacité, vous pouvez gérer la fréquence d'utilisation des Baies Magiques.
   </p>
@@ -1099,15 +1145,16 @@
     Voici les quelques exemples de création d'Actions/Effets. Vous remarquerez très vite que des modèles d'Actions/Effets se répètent et au bout de quelques créations, le système
     sera maîtrisé.
   </p>
+
   <p class="alinea">
     Dans tous les cas, n'oubliez pas de tester les Objets et les Actions/Effets que vous créez avant de les glisser-déposer sur une feuille de Personnage car, autant les Rencontres
     sont assez faciles à refaire autant vous n'aimeriez pas "cassez" le fonctionnement de la feuille d'un de vos PJ. En cas de doute, créez un Personnage ou une Rencontre et testez
     l'Objet sur un Acteur jetable.
   </p>
   <p class="alinea">
-    Pour finir, comme vous avez pu le voir, la configuration d'un même Effet peut être réalisé de plusieurs façons. Modifiez les Capacités ou les Équipements du Compendium du Livre
-    de Règles si vous en sentez le besoin pour s'adapter au plus près à votre style de jeu et votre logique. N'oubliez pas que COF v2 et son adaptation sur FoundryVTT est là pour
-    passer de bons moments qui ne sauraient être gâchés par des fonctionnalités qui vous semblent trop lourdes ou complexes.
+    Pour finir, comme vous avez pu le voir, la configuration d'un même Effet peut être réalisée de plusieurs façons. Modifiez les Capacités ou les Équipements du Compendium du
+    Livre de Règles si vous en sentez le besoin pour s'adapter au plus près à votre style de jeu et votre logique. N'oubliez pas que COF v2 et son adaptation sur FoundryVTT est là
+    pour passer de bons moments qui ne sauraient être gâchés par des fonctionnalités qui vous semblent trop lourdes ou complexes.
   </p>
   <p class="exemple">
     Certains MJ, par exemple, utilisent très peu la gestion des Combats au tour par tour, préférant des conflits plus "cinématiques" que "stratégiques". Dans ce cas, n'hésitez pas

@@ -44,7 +44,7 @@
       "name": "COF2 Livre des règles",
       "sorting": "m",
       "color": "#3b2524",
-      "packs": ["cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter", "cof-2-guide-du-systeme"]
+      "packs": ["cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter", "cof-2-guide-du-systeme", "cof2-tables-aleatoires", "cof2-macro-non-officielle"]
     }
   ],
   "packs": [
@@ -91,12 +91,34 @@
         "PLAYER": "NONE",
         "ASSISTANT": "OWNER"
       }
+    },
+    {
+      "label": "COF2 Tables Aléatoires",
+      "type": "RollTable",
+      "name": "cof2-tables-aleatoires",
+      "path": "packs/cof2-tables-aleatoires",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "COF2 Macro (non officielle)",
+      "type": "Macro",
+      "name": "cof2-macro-non-officielle",
+      "path": "packs/cof2-macro-non-officielle",
+      "system": "co",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     }
   ],
   "flags": {
     "hotReload": {
       "extensions": ["css", "html", "hbs", "json", "mjs"],
-      "path": [".","css", "templates", "lang", "module"]
+      "path": [".", "css", "templates", "lang", "module"]
     }
   },
   "socket": false,
