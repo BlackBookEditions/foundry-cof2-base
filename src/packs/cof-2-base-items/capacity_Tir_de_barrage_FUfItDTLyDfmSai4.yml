@@ -13,8 +13,6 @@ system:
     l’attaque et ne subit pas de dommages. L’arquebusier peut effectuer un tir
     de barrage sur plusieurs créatures durant le round, tant qu’il n’a pas
     besoin de recharger.</p>
-
-    <p style="text-align:justify">\_</p>
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action. L'attaque
     s'excutera et en cas de succès proposera les dégats * 2. Au MJ de les
@@ -38,13 +36,14 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -60,12 +59,11 @@ system:
             formula: '@arme.dmg * 2'
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
@@ -84,11 +82,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.347'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1747393601693
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1755878394688
+  lastModifiedBy: fBTCrubkOhroUr3A
   exportSource: null
 _key: '!items!FUfItDTLyDfmSai4'
