@@ -4,7 +4,22 @@ type: capacity
 img: icons/skills/melee/weapons-crossed-swords-yellow.webp
 _id: AFAzGN7aUZcjwoSP
 system:
-  description: "<p>Une fois par combat, le personnage peut défier une cible humanoïde de son choix (portée 20 m). Il obtient +1d6 aux DM de chaque attaque au contact pour le reste du combat contre cette cible. S’il attaque une autre cible, le défi prend fin.</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Cette capacité propose un bouton d'action activable/désactivable pour appliquer le bonus de DM.</p>\n<p>A activer pendant le défi et désactiver à la fin ou si le joueur attaque une autre cible.</p>\n<p>Le bonus pouvant être active et désactive plusieurs fois, la fréquence d'une fois par combat n'a pas été configurée. A la charge du PJ de se rappeler de l'utilisation de la capacité.</p>\n</blockquote>\n<p>\_</p>"
+  description: >-
+    <p>Une fois par combat, le personnage peut défier une cible humanoïde de son
+    choix (portée 20 m). Il obtient +1d6 aux DM de chaque attaque au contact pour
+    le reste du combat contre cette cible. S’il attaque une autre cible, le défi
+    prend fin.</p>
+    <p>_</p>
+  inGame: >-
+    <p>Cette capacité propose un bouton d'action activable/désactivable pour
+    appliquer le bonus de DM.</p>
+
+    <p>A activer pendant le défi et désactiver à la fin ou si le joueur attaque
+    une autre cible.</p>
+
+    <p>Le bonus pouvant être activé et désactivé plusieurs fois, la fréquence
+    d'une fois par combat n'a pas été configurée. A la charge du PJ de se
+    rappeler de l'utilisation de la capacité.</p>
   source: ''
   origin: Livre des règles p140
   slug: defi
@@ -40,7 +55,7 @@ system:
         - type: capacity
           source: Item.AFAzGN7aUZcjwoSP
           subtype: combat
-          target: damRanged
+          target: damMelee
           apply: self
           value: 1d6
           additionalInfos: ''
