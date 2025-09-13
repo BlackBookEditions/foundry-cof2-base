@@ -9,11 +9,11 @@ system:
     ajoutez votre rang + 2 à tous les tests destinés à résister aux efforts
     physiques, à la chaleur ou au froid (conditions naturelles).</p>
   inGame: <p>Cette capacité gère les bonus permanents.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p89
   slug: robustesse
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -26,8 +26,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -45,14 +45,14 @@ system:
           target: hp
           apply: self
           value: 2 + @rang
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
           subtype: skill
           target: con
           apply: self
           value: 2 + @rang
-          additionalInfos: résistance efforts physiques
+          additionalInfos: résister efforts physiques/chaleur/froid
       resolvers: []
   cost: -1
   rank: 1
@@ -68,11 +68,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747893756483
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!fG9B5EFu5tgcwb2Z'
+_key: "!items!fG9B5EFu5tgcwb2Z"

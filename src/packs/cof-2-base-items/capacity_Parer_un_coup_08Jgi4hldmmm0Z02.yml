@@ -19,11 +19,11 @@ system:
     <p>Cette capacité va juste proposer de faire un jet d'attaque d'attaque de
     contact, soit en tenant comtpe de la FOR soit avec AGI. Le resultat sera a
     interpréter par le MJ.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p87
   slug: parer-un-coup
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -37,7 +37,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.08Jgi4hldmmm0Z02
       indice: 0
       label: Parade avec FOR
-      chatFlavor: ''
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -53,11 +53,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: '21'
-            difficulty: '0'
+            formula: "@atc"
+            crit: "20"
+            difficulty: "0"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: none
             number: 0
@@ -67,13 +67,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.08Jgi4hldmmm0Z02
       indice: 1
       label: Parade avec AGI
-      chatFlavor: ''
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -89,11 +89,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc -@for + @agi'
-            crit: '21'
-            difficulty: '0'
+            formula: "@atc -@for + @agi"
+            crit: "20"
+            difficulty: "0"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: none
             number: 0
@@ -103,7 +103,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -120,11 +120,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747891405036
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!08Jgi4hldmmm0Z02'
+_key: "!items!08Jgi4hldmmm0Z02"

@@ -12,11 +12,11 @@ system:
   inGame: >-
     <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
     apprise.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p59
   slug: fils-du-roc
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -29,8 +29,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.i3V8eJX0LIWb5JPd
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -49,7 +49,8 @@ system:
           target: dr
           value: 2 + @nivmod[10,1]
           apply: self
-          additionalInfos: ''
+          value: 2 + @nivmod[10,1]
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 4
@@ -72,5 +73,5 @@ _stats:
   modifiedTime: 1756182403384
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!i3V8eJX0LIWb5JPd'
+_key: "!items!i3V8eJX0LIWb5JPd"
 

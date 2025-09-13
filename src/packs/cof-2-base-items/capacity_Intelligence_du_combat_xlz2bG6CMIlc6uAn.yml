@@ -9,16 +9,16 @@ system:
     aveugler pour une durée de 1 round un adversaire dont le NC est inférieur au
     sien en emportant un test opposé d’INT. S’il a réussi une feinte contre cet
     adversaire à son tour précédent, il bénéficie d’un bonus de +5 au test
-    d’INT.</p><p>_</p>
+    d’INT.</p>
   inGame: >-
     <p>Cette capacité propose 2 actions réalisant un test d'INT opposé. L'une
     des actions est sans feinte l'autre avec et bénéficie alors du +5. Au MJ
     d'appliquer l'effet demandé par le joueur en cas de réussite.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p67
   slug: intelligence-du-combat
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -31,8 +31,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.xlz2bG6CMIlc6uAn
       indice: 0
-      label: test int
-      chatFlavor: ''
+      label: test INT
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       properties:
@@ -48,11 +48,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@int'
-            crit: ''
-            difficulty: '@oppose.int'
+            formula: "@int"
+            crit: ""
+            difficulty: "@oppose.int"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: single
             scope: all
@@ -61,13 +61,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.xlz2bG6CMIlc6uAn
       indice: 1
-      label: Test int avec feinte
-      chatFlavor: ''
+      label: Test INT avec feinte
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       properties:
@@ -83,11 +83,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@int + 5'
-            crit: ''
-            difficulty: '@oppose.int'
+            formula: "@int + 5"
+            crit: ""
+            difficulty: "@oppose.int"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: single
             scope: all
@@ -96,7 +96,7 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -113,11 +113,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892209197
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!xlz2bG6CMIlc6uAn'
+_key: "!items!xlz2bG6CMIlc6uAn"

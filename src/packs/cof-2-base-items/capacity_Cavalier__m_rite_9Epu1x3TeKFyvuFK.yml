@@ -8,17 +8,16 @@ system:
     <p style="text-align:justify">Lorsqu’il est en selle, le chevalier gagne un
     bonus de +1 aux DM de ses attaques au contact, et sa monture obtient une DEF
     égale à celle du chevalier. Monter ou descendre de cheval est désormais une
-    action gratuite. Le bonus aux DM passe à +2 au rang 5.</p><p
-    style="text-align:justify">_</p>
+    action gratuite. Le bonus aux DM passe à +2 au rang 5.</p>
   inGame: >-
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
     appliquer le bonus de DM. A activer lorsque le joueur est sur sa
     monture.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p83
   slug: cavalier-emerite
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -31,8 +30,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.9Epu1x3TeKFyvuFK
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: En selle
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -49,7 +48,7 @@ system:
           subtype: combat
           target: damMelee
           apply: self
-          value: '@rang[1,1,1,1,2]'
+          value: "@rang[1,1,1,1,2]"
           additionalInfos: sur le cheval
       resolvers: []
   cost: -1
@@ -66,11 +65,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747828519028
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!9Epu1x3TeKFyvuFK'
+_key: "!items!9Epu1x3TeKFyvuFK"

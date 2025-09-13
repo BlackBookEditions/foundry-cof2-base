@@ -10,16 +10,16 @@ system:
     bonus aux DM augmente de +1 à chaque fois que le personnage atteint le rang
     5 dans une voie d’arquebusier. De plus, sa poudre est magique et elle permet
     à ses projectiles d’affecter les créatures immunisées aux armes
-    non_magiques</p>
+    non-magiques</p>
   inGame: >-
     <p>Une action activable/désactivable permet de gérer le bonus de +1 au DM
     ainsi que le +1 aux DM à chaque rang 5 (pas la portée). Il suffit de
     l'activer lorsque le joueur utilisera la poudre.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p63
   slug: poudre-puissante
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.w8Zv6qsObMnWayoe
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -51,7 +51,7 @@ system:
           target: damRanged
           value: 1 + @toutrang[5]
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 3
@@ -67,11 +67,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892985998
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!w8Zv6qsObMnWayoe'
+_key: "!items!w8Zv6qsObMnWayoe"

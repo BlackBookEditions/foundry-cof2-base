@@ -19,13 +19,13 @@ system:
     <p>ATTENTION : L'ensemble des tatouages ont été mis ici sous forme de
     "Modificateurs" dans l'onglet Actions / Effets. Lorsque cette capacité est
     apprise, le PJ ou le MJ doit supprimer tous les tatouages qui n'ont pas été
-    choisis. L'effet qui remplace le statit étroudi par ralenti doit être géré
+    choisis. L'effet qui remplace le statut étourdi par ralenti doit être géré
     manuellement.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p80
   slug: tatouages
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -38,8 +38,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -53,51 +53,51 @@ system:
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: agi
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Taureau
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: con
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Ours
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: for
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Panthère
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: per
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Chouette
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: cha
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Loup
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: int
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Renard
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OmRNXgiscCq7bYTL
-          subtype: ability
+          subtype: skill
           target: vol
-          value: '3'
+          value: "3"
           apply: self
           additionalInfos: Serpent
       resolvers: []
@@ -115,11 +115,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753893188956
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!OmRNXgiscCq7bYTL'
+_key: "!items!OmRNXgiscCq7bYTL"
