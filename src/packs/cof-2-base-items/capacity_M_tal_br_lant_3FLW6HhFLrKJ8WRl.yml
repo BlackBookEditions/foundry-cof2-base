@@ -16,13 +16,13 @@ system:
   inGame: >-
     <p>Cette capacité propose 2 actions d'attaque magique en opposition. L'une
     contre une arme l'autre contre une armure et va, en cas de réussite
-    provoquer des dommages périodique de type Feu. L'effet ne fonctionne qu'en
+    provoquer des dommages périodiques de type Feu. L'effet ne fonctionne qu'en
     mode combat.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p99
   slug: metal-brulant
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -36,46 +36,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.3FLW6HhFLrKJ8WRl
       indice: 0
       label: sur Arme
-      chatFlavor: sur Arme
-      type: magical
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        enabled: false
-        activable: true
-        temporary: true
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      resolvers:
-        - type: attack
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
-          dmg:
-            formula: '1'
-          target:
-            type: single
-            scope: all
-            number: 0
-          additionalEffect:
-            active: true
-            applyOn: success
-            formulaType: damage
-            formula: '1'
-            elementType: fire
-            statuses: []
-            duration: 1d4+@int
-            unit: round
-            successThreshold: null
-      modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.3FLW6HhFLrKJ8WRl
-      indice: 1
-      label: sur Armure
-      chatFlavor: sur Armure
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -91,9 +52,48 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
+          dmg:
+            formula: "1"
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: success
+            formulaType: damage
+            formula: "1"
+            elementType: fire
+            statuses: []
+            duration: 1d4+@int
+            unit: round
+            successThreshold: null
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.3FLW6HhFLrKJ8WRl
+      indice: 1
+      label: sur Armure
+      chatFlavor: ""
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
             formula: 1d4°
           target:
@@ -125,11 +125,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747935202935
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!3FLW6HhFLrKJ8WRl'
+_key: "!items!3FLW6HhFLrKJ8WRl"

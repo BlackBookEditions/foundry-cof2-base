@@ -12,15 +12,16 @@ system:
     l’ensorceleur ajoute son rang + 2 aux tests de persuasion ou de
     séduction.</p>
   inGame: >-
-    <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
+    <p>La première action donne un bonus permanent aux tests de persuasion et de séduction.</p>
+    <p>La deuxième action gère l'attaque opposée. Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
     sort qui va faire le test d'attaque magique et appliquer un effet temporaire
     d'un round. L'effet ne fonctionnera que si le joueur est en mode combat.
-    Ensuite c'est au MJ d'executer l'action demandé.</p>
-  source: ''
+    Ensuite, c'est au MJ d'exécuter l'action demandé.</p>
+  source: ""
   origin: Livre des règles p94
   slug: injonction
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -33,8 +34,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -56,8 +57,8 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -73,11 +74,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: single
             scope: all
@@ -86,10 +87,10 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '1'
+            duration: "1"
             unit: round
             successThreshold: null
       modifiers: []
@@ -107,11 +108,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747929119421
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!wN6dxByz49lvBqzx'
+_key: "!items!wN6dxByz49lvBqzx"

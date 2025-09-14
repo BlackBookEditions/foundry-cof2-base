@@ -15,15 +15,16 @@ system:
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
     sort qui va faire le test d'attaque magique et appliquer les dommages. De
     plus en cas de succès un "affaiblissement" sera appliqué à la cible qui
-    infligera un dé malus à tous les test et 1d4° + int dommages périodique.</p>
+    infligera un dé malus à tous les test et 1d4° + INT dommages périodique.</p>
+    <p>Cet effet fonctionne uniquement en mode Combat.</p>
 
     <p>A noter que si le joueur arrête de payer 1 PM par round et une action de
     mouvement, le MJ devra supprimer manuellement l'effet sur la cible.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p111
   slug: strangulation
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -36,8 +37,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -51,19 +52,82 @@ system:
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
-          subtype: malusDice
-          target: all
-          apply: others
-          value: '0'
-          additionalInfos: ''
+          subtype: bonusDice
+          target: agi
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: con
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: for
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: per
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: int
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: vol
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: melee
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: ranged
+          value: "0"
+          apply: self
+          additionalInfos: ""
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Vrg7GnAsf9f1BtUX
+          subtype: bonusDice
+          target: magic
+          value: "0"
+          apply: self
+          additionalInfos: ""
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
             formula: 1d4°+@int
           target:
@@ -75,9 +139,9 @@ system:
             applyOn: success
             formulaType: damage
             formula: 1d4° + @int
-            elementType: ''
+            elementType: ""
             statuses: []
-            duration: '10'
+            duration: "10"
             unit: round
             successThreshold: null
   cost: -1
@@ -94,11 +158,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748191652845
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!Vrg7GnAsf9f1BtUX'
+_key: "!items!Vrg7GnAsf9f1BtUX"

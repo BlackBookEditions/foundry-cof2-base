@@ -9,20 +9,20 @@ system:
     gicle lorsqu’il subit une blessure. Chaque fois qu’un ennemi au contact le
     blesse, ce dernier subit 1d4° DM d’acide</p>
   inGame: >-
-    <p>Crée 2 actions lors de l'apprentissage.\_</p>
+    <p>Crée 2 actions lors de l'apprentissage.</p>
 
     <p>L'activation permet d'activer le sort, en dépensant les PM, et applique
-    une \"Amélioration\" (qui ne fait rien) sur le personnage pendant la durée
+    une "Amélioration" (qui ne fait rien) sur le personnage pendant la durée
     du sort.</p>
 
-    <p>L'action \"Dommages\" permet de jeter un jet de Dommages en cliquant sur
+    <p>L'action "Dommages" permet de jeter un jet de Dommages en cliquant sur
     l'action. Si une créature blesse le personnage, ce dernier cible la créature
-    et clique sur l'action \"Dommages\" qui va lancer les dommages d'acide.</p>
-  source: ''
+    et clique sur l'action "Dommages" qui va lancer les dommages d'acide.</p>
+  source: ""
   origin: Livre des règles p110
   slug: sang-mordant
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -35,8 +35,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
       indice: 0
-      label: activation
-      chatFlavor: activation
+      label: Activer le sort
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -59,10 +59,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '@int*10'
+            duration: "@int*10"
             unit: round
             successThreshold: null
           skill: {}
@@ -70,8 +70,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EBCWfaXemXtOVOlf
       indice: 1
-      label: dommages
-      chatFlavor: dommages
+      label: Dommages
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -87,7 +87,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            difficulty: '0'
+            difficulty: "0"
           dmg:
             formula: 1d4°
           target:
@@ -99,7 +99,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -116,11 +116,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748191112231
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!EBCWfaXemXtOVOlf'
+_key: "!items!EBCWfaXemXtOVOlf"
