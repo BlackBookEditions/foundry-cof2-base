@@ -13,8 +13,7 @@ system:
     préparation et autant pour faire effet) et les dés peuvent être répartis sur
     plusieurs patients</p>
   inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant</p>
+    <p>L'action permet de lancer les soins totaux. En regardant les jets de chaque dé, il est possible de répartir les soins entre plusieurs cibles.</p>
   source: ''
   origin: Livre des règles p72
   slug: nature-nourriciere
@@ -23,15 +22,49 @@ system:
   actionType: none
   learned: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
   properties:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.s5nFrXwFLpXYQ9Lp
+      indice: 0
+      label: Soigner une ou plusieurs personnes
+      chatFlavor: ''
+      type: consumable
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: @rangd4°
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 2
+  frequency: daily
 effects: []
 sort: 50000
 ownership:

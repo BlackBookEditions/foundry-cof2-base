@@ -14,14 +14,14 @@ system:
     décidé d’encaisser.</p>
   inGame: >-
     <p>Cette capacité propose une action Activable/désactivable pour donner un
-    bonus de Réduction de dégat de DEF--AGI pour représenter l'armure pour le
-    moment celà prend en compte le bouclier. Il faudra coder une nouvelle
+    bonus de Réduction de Dommages de (DEF -10 -AGI) pour représenter l'armure.</p>
+    <p>Attention : pour le moment cela prend en compte le bouclier. Il faudra coder une nouvelle
     variable pour pouvoir choisir juste l'armure ou juste le bouclier.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p85
   slug: encaisser-un-coup
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -34,8 +34,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.oqbsrwqfbJmNz4D8
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,8 +52,8 @@ system:
           subtype: combat
           target: dr
           apply: self
-          value: '@def -10 -@agi'
-          additionalInfos: ''
+          value: "@def -10 -@agi"
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 2
@@ -69,11 +69,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747845733824
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!oqbsrwqfbJmNz4D8'
+_key: "!items!oqbsrwqfbJmNz4D8"

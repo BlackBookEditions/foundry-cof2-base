@@ -14,13 +14,13 @@ system:
     DM.</p>
   inGame: >-
     <p>Cette capacité propose 3 actions : une d'attaque, une activable
-    désactivable pour donner ou pas le pour toucher et enfin une autre activable
-    désactivable pour donner le bonus aux dégats (si l'attaque était réussi)</p>
-  source: ''
+    désactivable pour donner ou pas le bonus pour toucher et enfin une autre activable
+    désactivable pour donner le bonus aux DM (si l'attaque est réussie)</p>
+  source: ""
   origin: Livre des règles p66
   slug: feinte
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -34,7 +34,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 0
       label: Attaque initiale
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: melee
       properties:
@@ -50,11 +50,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@cha'
-            crit: ''
-            difficulty: '@oppose.per'
+            formula: "@cha"
+            crit: ""
+            difficulty: "@oppose.per"
           dmg:
-            formula: '0'
+            formula: "0"
           target:
             type: single
             scope: all
@@ -63,13 +63,13 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 1
       label: Bonus d'attaque après une feinte
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -85,14 +85,14 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
           subtype: combat
           target: melee
-          value: '@rang * 2'
+          value: "@rang * 2"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7
       indice: 2
       label: Bonus DM si feinte réussie
-      chatFlavor: ''
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -110,7 +110,7 @@ system:
           target: damMelee
           value: 2d4°
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 2
@@ -126,11 +126,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892291613
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!zMDclUsOnwdGjgz7'
+_key: "!items!zMDclUsOnwdGjgz7"

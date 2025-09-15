@@ -11,13 +11,13 @@ system:
   inGame: >-
     <p>Cette capacité propose une action d'attaque qui reprend les informations
     de l'arme équipée. Si l'attaque est un echec un effet de dégat périodique de
-    round et / dégats de l'arme est appliqué à la cible. Ne fonctionne qu'en
+    round et 1/2 dégats de l'arme est appliqué à la cible. Ne fonctionne qu'en
     mode combat.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p85
   slug: frappe-du-justicier
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -30,8 +30,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.lBzmKBilHOY6uXdL
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -47,11 +47,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@arme.skill'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@arme.skill"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@arme.dmg'
+            formula: "@arme.dmg"
           target:
             type: single
             scope: all
@@ -60,10 +60,10 @@ system:
             active: true
             applyOn: failure
             formulaType: damage
-            formula: '@arme.dmg/2'
-            elementType: ''
+            formula: "@arme.dmg/2"
+            elementType: ""
             statuses: []
-            duration: '1'
+            duration: "1"
             unit: round
             successThreshold: null
       modifiers: []
@@ -81,11 +81,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747849342020
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!lBzmKBilHOY6uXdL'
+_key: "!items!lBzmKBilHOY6uXdL"

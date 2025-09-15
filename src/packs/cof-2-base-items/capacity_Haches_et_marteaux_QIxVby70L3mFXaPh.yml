@@ -12,11 +12,11 @@ system:
     <p>Il s'agit d'un bonus activable/désactivable à activer si le nain utilise
     une hache ou un marteau. La Maîtrise des armes doit être cochée sur le
     profil.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p59
   slug: haches-et-marteaux
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -29,8 +29,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.QIxVby70L3mFXaPh
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: Utiliser hache ou marteau de guerre
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -47,15 +47,15 @@ system:
           subtype: combat
           target: melee
           apply: self
-          value: '1'
-          additionalInfos: ''
+          value: "1"
+          additionalInfos: ""
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.QIxVby70L3mFXaPh
           subtype: combat
           target: damMelee
           apply: self
-          value: '1'
-          additionalInfos: ''
+          value: "1"
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 2
@@ -71,11 +71,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747376259200
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!QIxVby70L3mFXaPh'
+_key: "!items!QIxVby70L3mFXaPh"

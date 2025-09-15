@@ -18,12 +18,12 @@ system:
     </ul>
   inGame: >-
     <p>Cette capacité propose une action activable/désactivable donnant le bonus
-    de DM. A activer dans els circonstance correspondante.</p>
-  source: ''
+    de DM. A activer dans les circonstances correspondantes.</p>
+  source: ""
   origin: Livre des règles p72
   slug: chasseur-emerite
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: contre Animaux
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -55,14 +55,14 @@ system:
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: ''
+          additionalInfos: ""
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
           subtype: combat
           target: damRanged
           apply: self
           value: 1d4°
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 3
@@ -78,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747508301193
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!ePItNiGmHhZE9x8t'
+_key: "!items!ePItNiGmHhZE9x8t"
