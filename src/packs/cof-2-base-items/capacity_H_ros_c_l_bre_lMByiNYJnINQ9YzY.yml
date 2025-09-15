@@ -14,12 +14,12 @@ system:
     les dirigeants). À partir du rang 8, vous êtes à la fois le héros du peuple
     et celui du royaume !</p>
   inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant</p>
-  source: ''
+    <p>L'action activable/désactivable permet d'obtenir le dé bonus aux tests de CHA.</p>
+    <p>Le PJ inscrit son choix entre Peuple ou Royaume dans le titre de la capacité</p>
+  source: ""
   origin: Livre des règles p142
   slug: heros-celebre
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 6
@@ -32,7 +32,30 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Item.lMByiNYJnINQ9YzY
+      indice: 0
+      label: Relations sociales dans milieu
+      chatFlavor: ""
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.lMByiNYJnINQ9YzY
+          subtype: bonusDice
+          target: cha
+          value: "0"
+          apply: self
+          additionalInfos: ""
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -45,11 +68,11 @@ flags: {}
 _stats:
   compendiumSource: Item.lMByiNYJnINQ9YzY
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748679590681
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!lMByiNYJnINQ9YzY'
+_key: "!items!lMByiNYJnINQ9YzY"
