@@ -5,7 +5,7 @@
     fenêtres sont aussi le moyen de vérifier que vous avez bien activé tous les éléments de votre Personnage qui doivent vous servir dans la situation (Capacités, Équipements…).
   </p>
   <p class="alinea">
-    Chaque fois que vous faites une action, avec ou sans fenêtre intermédiaire, un Message sera affiché dans le Chat de FoundryVTT. Ces messages vous donnent beaucoup
+    Chaque fois que vous faites une action, avec ou sans fenêtre intermédiaire, un Message sera affiché dans le tchat de FoundryVTT. Ces messages vous donnent beaucoup
     d’informations sur le Jet et aussi des options pour poursuivre les Actions (appliquer les Dommages, utiliser un Point de Chance, activer ou désactiver la Capacité…).
   </p>
   <p class="alinea">Dans ce chapitre nous allons voir les éléments présents sur les fenêtres ainsi que sur les Message du Chat.</p>
@@ -28,7 +28,7 @@
   <p class="alinea">
     De la même manière,
     <span class="gras">cette option combinera une fenêtre d’Attaque et une fenêtre de Dommages si elle est activée</span>. Dans ce cas, les Dommages pourront être lancés
-    automatiquement si le Jet d’Attaque est réussi et ainsi afficher deux Messages dans le Chat directement.
+    automatiquement si le Jet d’Attaque est réussi et ainsi afficher deux Messages dans le tchat directement.
   </p>
   <h5>
     @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#afficher-les-boutons-de-dommages]{Afficher les boutons de
@@ -199,7 +199,7 @@
     est de base négatif que vous écriviez "10" ou "-10". Utilisez la molette de la souris pour modifier ces champs rapidement.
   </p>
   <p class="alinea">
-    <span class="underline">Attention </span>: les cases sont <span class="gras">modifiées par le choix de l’Option Tactique</span>, que nous verrons un peu plus bas. Si vous
+    <span class="gras italique">Attention </span>: les cases sont <span class="gras">modifiées par le choix de l’Option Tactique</span>, que nous verrons un peu plus bas. Si vous
     modifiez ces cases puis que vous changez d’option tactique, vos modifications seront annulées. Commencez toujours par choisir le Type de Jet et l’Option tactique avant de
     modifier à la main la formule ou les cases Bonus/Malus.
   </p>
@@ -232,10 +232,10 @@
     <span class="gras">info-bulle vous informe sur le nom du Token</span>.
   </p>
   <p class="alinea">
-    <span class="underline">Attention</span> : si vous sélectionnez plusieurs cibles différentes, c’est la première cible sélectionnée qui déterminera la Difficulté de l’Attaque.
+    <span class="gras italique">Attention</span> : si vous sélectionnez plusieurs cibles différentes, c’est la première cible sélectionnée qui déterminera la Difficulté de l’Attaque.
   </p>
   <p class="alinea">
-    <span class="underline">Note de Version</span> : dans de prochaines versions, chaque cible sera attaquée séparément pour le cas des attaques avec cibles multiples différentes.
+    <span class="gras italique">Note de Version</span> : dans de prochaines versions, chaque cible sera attaquée séparément pour le cas des attaques avec cibles multiples différentes.
   </p>
   <h3>Jet en opposition</h3>
   <p class="alinea">
@@ -247,7 +247,7 @@
     l’action apparaîtra.
   </p>
   <p class="alinea">
-    <span class="underline">Attention</span> :
+    <span class="gras italique">Attention</span> :
     <span class="gras">le test de la cible ne pourra pas être augmenté grâce aux Modificateurs qui influencent ces Jets de Caractéristiques</span>. Le Jet sera uniquement 1d20 +
     Modificateur de Caractéristique. Aucune fenêtre pour ce Jet en opposition ne s’affiche donc ce test ne pourra pas être modifié en fonction de la situation. Gardez cela en tête
     afin de modifier en conséquence le test de l’Attaquant pour prendre en compte d’éventuels bonus ou malus du Défenseur.
@@ -258,7 +258,7 @@
   <div class="image-guide"><img src="modules\cof-base\assets\guide\ADialogueAttaqueDommages.webp" /></div>
 
   <p class="alinea">
-    Le résultat de l’Attaque est affiché dans le Chat de FoundryVTT. Ce message
+    Le résultat de l’Attaque est affiché dans le tchat de FoundryVTT. Ce message
     <span class="gras">indique le nom de l’Équipement ou de la Capacité ainsi que le nom de l’Action utilisée</span>. Si l’action possède un Message Chat défini (voir la section
     @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets}), alors c’est ce texte qui sera affiché.
   </p>
@@ -306,7 +306,7 @@
 
   <h3>Effets supplémentaires</h3>
   <p class="alinea">
-    Afin de ne pas faire des Messages dans le Chat qui prennent toute la hauteur de la fenêtre,<span class="gras">
+    Afin de ne pas faire des Messages dans le tchat qui prennent toute la hauteur de la fenêtre,<span class="gras">
       les @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#effet-supplementaire]{Effet Supplémentaire} ne sont pas
       affichés dans le Message du Chat</span
     >. Lorsque l’Attaque est réalisée, il faudra regarder dans
@@ -314,7 +314,7 @@
     Supplémentaire a bien été appliqué. L’info-bulle vous dira les Effets appliqués.
   </p>
   <p class="alinea">
-    <span class="underline">Note de Version</span> : dans une future version, il sera possible de modifier les Effets Supplémentaires de l’Attaque dans la fenêtre de l’Attaque et
+    <span class="gras italique">Note de Version</span> : dans une future version, il sera possible de modifier les Effets Supplémentaires de l’Attaque dans la fenêtre de l’Attaque et
     aussi dans le Message du Chat. Pour le moment, il a été décidé de rester simple et de ne pas écraser les MJ et les Joueurs sous des tonnes d’informations à chaque Action.<span
     ></span>
   </p>
@@ -384,7 +384,7 @@
 
   <h4>Total de Dommages</h4>
   <p class="alinea">
-    <span class="gras">Le nombre indique le résultat du Jet de Dommages </span><span class="underline">SANS</span
+    <span class="gras">Le nombre indique le résultat du Jet de Dommages </span><span class="gras italique">SANS</span
     ><span class="gras"> prendre en compte si l’Attaque est une réussite critique ou non</span>.
   </p>
   <p class="alinea">Le total n’est pas multiplié en cas de réussite critique car certaines Capacités modifient le multiplicateur en cas de critique.</p>
@@ -487,12 +487,12 @@
     <span
       >Si vous définissez une Action avec une Résolution de type
       @UUID[Compendium.cof-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#consommable]{Consommable}, lorsque vous réalisez l’action, un
-      message sera envoyé dans le Chat pour </span
+      message sera envoyé dans le tchat pour </span
     ><span class="gras">informer que vous avez consommé quelque chose</span>.
   </p>
 
   <p class="alinea">
-    <span class="underline">Attention :</span> si vous configurez un Équipement avec <span class="gras">le Sous-type "consommable" ET avec une Résolution "consommable"</span>, à
+    <span class="gras italique">Attention :</span> si vous configurez un Équipement avec <span class="gras">le Sous-type "consommable" ET avec une Résolution "consommable"</span>, à
     chaque utilisation de l'Équipement le système vous fera consommer deux unités d'un coup mais avec une seule fois l'Effet.
   </p>
 
@@ -500,7 +500,7 @@
 
   <div class="image-guide"><img src="modules\cof-base\assets\guide\ADialogueDescriptionItem.webp" style="width: 150px" /></div>
   <p class="alinea">
-    A chaque fois que vous voyez l’icône <i class="fa-solid fa-message"></i>, cela signifie que vous pouvez envoyer des informations dans le Chat uniquement pour le MJ.
+    A chaque fois que vous voyez l’icône <i class="fa-solid fa-message"></i>, cela signifie que vous pouvez envoyer des informations dans le tchat uniquement pour le MJ.
   </p>
   <p class="alinea">Dans tous les cas, le Message affichera <span class="gras">l’image, le nom et la description de l’Objet</span>.</p>
   <p class="alinea">
@@ -508,12 +508,12 @@
     (activer ou désactiver l’Effet, Attaquer ou lancer les Dommages, utiliser l’Objet…).
   </p>
   <p class="alinea">
-    <span class="gras">La description d’un objet dans le Chat est tout le temps envoyé uniquement au MJ et au PJ qui envoie le message</span>. C’est pour cela que le fond du
+    <span class="gras">La description d’un objet dans le tchat est tout le temps envoyé uniquement au MJ et au PJ qui envoie le message</span>. C’est pour cela que le fond du
     message est de couleur rouge, comme nous le verrons juste après.
   </p>
 
   <h3>Jet secret</h3>
-  <p class="alinea">Une distinction visuelle est faite dans le Chat en fonction de la visibilité du Message.</p>
+  <p class="alinea">Une distinction visuelle est faite dans le tchat en fonction de la visibilité du Message.</p>
   <h4>Message visible de tout le monde</h4>
   <p class="alinea">Les messages visibles par tout le monde ont un fond "parchemin" en thème clair ou "noir" en thème sombre.</p>
   <h4>Message pour le MJ et moi</h4>
@@ -527,7 +527,7 @@
     <span class="gras">le fond du message est rouge également ET le contour du message devient violacé</span> en thème clair <span class="gras">ou rouge</span> en thème sombre.
   </p>
   <p class="alinea">
-    <span class="underline">Attention</span>
+    <span class="gras italique">Attention</span>
     : le MJ est prévenu que vous avez envoyé un message juste pour vous même si le résultat est remplacé par des points d’interrogation. De la même manière si vous réalisez une
     action visible uniquement du MJ, vous verrez le message mais le résultat sera remplacé par des points d’interrogation.
   </p>
