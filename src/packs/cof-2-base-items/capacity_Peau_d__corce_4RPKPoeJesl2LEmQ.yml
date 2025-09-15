@@ -21,11 +21,11 @@ system:
     <p>Une action activable pour lancer le sort et dépenser les PM. Elle
     applique le bonus de DEF sans prendre en compte la durée. Le PJ doit l'a
     désactiver lorsque le sort prend fin</p>
-  source: ''
+  source: ""
   origin: Livre des règles p117
   slug: peau-decorce
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: m
   learned: false
   charges:
@@ -38,8 +38,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -55,14 +55,14 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: combat
           target: def
-          value: '@rang[2,2,3,3,3]'
+          value: "@rang[2,2,3,3,4]"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -81,6 +81,13 @@ system:
           value: 2 + @rang
           apply: self
           additionalInfos: Identifier les plantes
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+          subtype: skill
+          target: per
+          value: 2 + @rang
+          apply: self
+          additionalInfos: Identifier les plantes
       resolvers: []
   cost: -1
   rank: 1
@@ -96,11 +103,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892646871
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!4RPKPoeJesl2LEmQ'
+_key: "!items!4RPKPoeJesl2LEmQ"

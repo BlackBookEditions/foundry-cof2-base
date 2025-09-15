@@ -15,12 +15,11 @@ system:
     directement l'équipement quand cette capacité est apprise. Le PJ peut
     modifier les Dommages dans la résolutions de l'action "Mains Nues" par
     @rang[1d6,1d8,1d10,1d12,2d6] + @for. La deuxième action permet de substituer
-    AGI à FOR pour le calcul de l'attaque de contact lorsqu'il le souhaite
-    (vérifier l'utilisation d'attaque à Mains Nues)</p>
-  source: ''
+    AGI à FOR pour le calcul de l'attaque de contact lorsqu'il le souhaite.</p>
+  source: ""
   origin: Livre des règles p121
   slug: poings-de-fer
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   rank: 1
@@ -37,7 +36,7 @@ system:
     - source: Item.7tp8x2AK5WgEl1fU
       indice: 0
       label: Attaque avec AGI
-      chatFlavor: ''
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -54,13 +53,13 @@ system:
           subtype: combat
           target: melee
           apply: self
-          value: '@agi - @for'
-          additionalInfos: ''
+          value: "@agi - @for"
+          additionalInfos: ""
       resolvers: []
     - source: Item.7tp8x2AK5WgEl1fU
       indice: 1
       label: Frappe
-      chatFlavor: ''
+      chatFlavor: ""
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -71,18 +70,16 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLearned
-        - predicate: isLinkedActionActivated
-          object: '0'
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atc"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
-            formula: '@rang[1d6,1d8,1d10,1d12,2d6]'
+            formula: "@rang[1d6,1d8,1d10,1d12,2d6]"
           target:
             type: single
             number: 0
@@ -92,7 +89,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -106,7 +103,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749760360438
@@ -115,4 +112,4 @@ _stats:
   exportSource: null
 _id: P8i4Ato2CMnnMyGV
 sort: 0
-_key: '!items!P8i4Ato2CMnnMyGV'
+_key: "!items!P8i4Ato2CMnnMyGV"

@@ -8,11 +8,13 @@ system:
     <p>Le druide augmente sa PER de +1. Désormais, il obtient un dé bonus aux
     tests de PER. De plus, il ajoute désormais sa PER pour calculer ses PM (en
     plus de sa VOL).</p>
-  source: ''
+  inGame: >-
+    <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.</p>
+  source: ""
   origin: Livre des règles p117
   slug: constitution-heroique
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -26,9 +28,9 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.0uE0Wcal1ZL2tJc1
       indice: 0
-      label: ''
-      chatFlavor: ''
-      type: melee
+      label: ""
+      chatFlavor: ""
+      type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         activable: false
@@ -42,12 +44,17 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.0uE0Wcal1ZL2tJc1
           subtype: ability
           target: con
-          value: '1'
+          value: "1"
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.0uE0Wcal1ZL2tJc1
           subtype: bonusDice
           target: con
-          value: '0'
+          value: "0"
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.0uE0Wcal1ZL2tJc1
+          subtype: resource
+          target: mp
+          value: "@per"
       resolvers: []
   rank: 4
 effects: []
@@ -59,11 +66,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740828594231
   modifiedTime: 1748265596483
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!0uE0Wcal1ZL2tJc1'
+_key: "!items!0uE0Wcal1ZL2tJc1"

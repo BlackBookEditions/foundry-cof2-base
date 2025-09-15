@@ -13,11 +13,12 @@ system:
   inGame: >-
     <p>L'action doit être activée lorsque le personnage réalise des attaques de
     contact et doit être désactivée dans les autres cas.</p>
-  source: ''
+    <p>Le statut affaibli en cas de critique n'est pas automatisé.</p>
+  source: ""
   origin: Livre des règles p119
   slug: morsure-du-serpent
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -30,8 +31,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.xPKaDAZCFvbsJrcu
       indice: 0
-      label: pour les attaques de contact
-      chatFlavor: ''
+      label: Pour les attaques de contact
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -46,8 +47,8 @@ system:
           subtype: combat
           target: crit
           apply: self
-          value: '1'
-          additionalInfos: ''
+          value: "1"
+          additionalInfos: ""
       conditions: []
       resolvers: []
   cost: -1
@@ -64,11 +65,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748262459859
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!xPKaDAZCFvbsJrcu'
+_key: "!items!xPKaDAZCFvbsJrcu"
