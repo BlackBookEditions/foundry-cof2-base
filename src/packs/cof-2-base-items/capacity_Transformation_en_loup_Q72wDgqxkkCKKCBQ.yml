@@ -28,10 +28,10 @@ system:
     celle du PJ. Lorsque le PJ utilise les caractéristiques du loup, il doit le
     faire depuis la feuille du Loup. Par contre pour tous les autres tests, le
     PJ peut utiliser sa propre feuille.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p131
   slug: transformation-en-loup
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   frequency: daily
@@ -43,58 +43,7 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions:
-    - source: Item.Q72wDgqxkkCKKCBQ
-      indice: 0
-      label: ''
-      chatFlavor: ''
-      type: melee
-      img: icons/svg/d20-highlight.svg
-      properties:
-        visible: false
-        enabled: false
-        activable: true
-        temporary: true
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Item.Q72wDgqxkkCKKCBQ
-          subtype: ability
-          target: for
-          apply: self
-          value: '3'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.Q72wDgqxkkCKKCBQ
-          subtype: ability
-          target: agi
-          apply: self
-          value: '1'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.Q72wDgqxkkCKKCBQ
-          subtype: combat
-          target: damMelee
-          apply: self
-          value: 1d4+3
-          additionalInfos: ''
-        - type: capacity
-          source: Item.Q72wDgqxkkCKKCBQ
-          subtype: skill
-          target: per
-          apply: self
-          value: '5'
-          additionalInfos: ''
-        - type: capacity
-          source: Item.Q72wDgqxkkCKKCBQ
-          subtype: combat
-          target: dr
-          apply: self
-          value: '5'
-          additionalInfos: ''
-      resolvers: []
+  actions: []
   rank: 5
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -108,11 +57,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748449999921
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!Q72wDgqxkkCKKCBQ'
+_key: "!items!Q72wDgqxkkCKKCBQ"
