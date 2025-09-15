@@ -15,9 +15,11 @@ system:
     ou de science</p>
   inGame: >-
     <p>Cette capacité gère le bonus permanent aux jet de caractéristique de
-    bricolage et science.</p><p>La deuxième action permet de remplacer CON par INT au PV.
-    Il faut supprimer l'action pour annuler ce remplacement.</p>
-  source: ""
+    bricolage et science.</p><p>Pour représenter le bonus d'INT à la place de
+    CON au niveau ou est appris la capacité nous avons mis un effet permanent
+    que vous pouvez desactiver si vous faites le choix de ne pas prendre cet
+    avantage.</p>
+  source: ''
   origin: Livre des règles p100
   slug: grosse-tete
   tags: []
@@ -38,6 +40,7 @@ system:
       chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -61,6 +64,13 @@ system:
           value: 2 + @rang
           apply: self
           additionalInfos: bricolage/science
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
+          subtype: attribute
+          target: hp
+          value: '@int - @con'
+          apply: self
+          additionalInfos: a supprimer si vous ne souhaitez pas l'activer
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
       indice: 0
@@ -99,11 +109,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.346"
+  coreVersion: '13.348'
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1753893541792
+  modifiedTime: 1757914305452
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: "!items!VFsPVLVp4slTyMWr"
+
