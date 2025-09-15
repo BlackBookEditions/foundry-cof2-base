@@ -18,12 +18,12 @@ system:
     <p>L'action activable/désactivale permet de donner le Bonus de DEF et un Dé
     Bonus en Attaque Magique. Le PJ devra désactiver cette action s'il porte une
     autre armure et s'il effectue une attaque magique ou s'oppose à une ataque
-    magique autre que pour les résistance" mentales,</p>
-  source: ''
+    magique autre que pour les résistance mentales.</p>
+  source: ""
   origin: Livre des règles p125
   slug: vetements-sacres
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
       indice: 0
-      label: Défense
-      chatFlavor: Défense
+      label: Défense et Dé bonus
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -54,15 +54,15 @@ system:
           subtype: combat
           target: def
           apply: self
-          value: '@rang[2,2,3,3,4]'
-          additionalInfos: ''
+          value: "@rang[2,2,3,3,4]"
+          additionalInfos: ""
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
           subtype: bonusDice
           target: magic
           apply: self
-          value: '0'
-          additionalInfos: ''
+          value: "0"
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 1
@@ -78,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748265307358
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!OMMJV1tt9ReX2FP4'
+_key: "!items!OMMJV1tt9ReX2FP4"

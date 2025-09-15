@@ -19,11 +19,11 @@ system:
     <p>Une action activable/désactivable pour bénéficier du +5 en DEF. A activer
     en début de combat et désactiver dès que le joueur commence une action
     offensive.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p120
   slug: pacifisme
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 0
-      label: Empathie
-      chatFlavor: Empathie
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -66,8 +66,8 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
       indice: 1
-      label: défense
-      chatFlavor: défense
+      label: Défense
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -83,9 +83,9 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.hSGNsiCOiFeGGoyC
           subtype: combat
           target: def
-          value: '5'
+          value: "5"
           apply: self
-          additionalInfos: ''
+          additionalInfos: ""
       resolvers: []
   cost: -1
   rank: 1
@@ -101,11 +101,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892739871
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!hSGNsiCOiFeGGoyC'
+_key: "!items!hSGNsiCOiFeGGoyC"

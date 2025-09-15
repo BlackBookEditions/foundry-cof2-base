@@ -18,11 +18,12 @@ system:
     <p>Remarque : Pour le nombre d'utilisation par jour, il est actuellement
     reglé sur 1/jour, vous pouvez le modifier dans l'onglet "détails" en mettant
     une valeur fixe.</p>
-  source: ''
+    <p>La deuxième action donne le bonus permanent au tests de médecine et de premiers soins.</p>
+  source: ""
   origin: Livre des règles p124
   slug: recuperation-mineure
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -35,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.zeLgXfX7UWCejXZT
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: heal
       properties:
@@ -61,14 +62,14 @@ system:
             active: false
             applyOn: success
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
           dmg: {}
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.zeLgXfX7UWCejXZT
       indice: 1
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -103,11 +104,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: "13.346"
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892895627
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!zeLgXfX7UWCejXZT'
+_key: "!items!zeLgXfX7UWCejXZT"

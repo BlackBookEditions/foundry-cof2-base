@@ -13,16 +13,17 @@ system:
     Si le prêtre commet une action offensive, le sort prend fin immédiatement et
     il ne peut plus être lancé avant de prendre une récupération rapide.</p>
   inGame: >-
-    <p>Une action va permettre de lancer le sort et consommer les PM. Celà va
-    applliquer un "effet" qui ne fait rien au sens propre du terme mais permet
+    <p>Une action va permettre de lancer le sort et consommer les PM. Cela va
+    appliquer un "effet" qui ne fait rien au sens propre du terme mais permet
     de suivre son application pendant 1 minute en combat. Si l'effet, (et
-    l'icone de l'effet) disparaissent celà signifie que le sort à pris fin. Le
-    reste est laissé à la charge du MJ</p>
-  source: ''
+    l'icone de l'effet) disparaissent cela signifie que le sort a pris fin. Le
+    reste est laissé à la charge du MJ.</p>
+    <p>L'action fonctionne uniquement en mode Combat.</p>
+  source: ""
   origin: Livre des règles p124
   slug: sanctuaire
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   charges:
@@ -35,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.awJEU4bEMAQnJf32
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -59,10 +60,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ''
-            elementType: ''
+            formula: ""
+            elementType: ""
             statuses: []
-            duration: '10'
+            duration: "10"
             unit: round
             successThreshold: null
           skill: {}
@@ -82,11 +83,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748264521643
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!awJEU4bEMAQnJf32'
+_key: "!items!awJEU4bEMAQnJf32"
