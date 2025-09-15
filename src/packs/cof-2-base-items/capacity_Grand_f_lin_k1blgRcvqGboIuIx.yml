@@ -21,7 +21,31 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.k1blgRcvqGboIuIx
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.k1blgRcvqGboIuIx
+          subtype: attribute
+          target: hp
+          value: '@int - @con'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -39,7 +63,7 @@ _stats:
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1757935374773
-  modifiedTime: 1757935379645
+  modifiedTime: 1757964082211
   lastModifiedBy: dkGm1qUrVLQeAKiY
 _id: k1blgRcvqGboIuIx
 sort: 300000
