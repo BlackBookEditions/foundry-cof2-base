@@ -10,9 +10,9 @@ system:
     (par exemple, il utilise un levier pour déplacer une lourde charge). De
     plus, <a
     href="https://black-book-editions.fr/forums.php?topic_id=80411&amp;nbp=3&amp;nop=0"
-    target="_blank" rel="noopener">au niveau où il acquiert cette capacité</a>, il peut ajouter son INT à ses PV à la place de sa
-    CON s’il le souhaite. Il ajoute son rang + 2 à tous les tests de bricolage
-    ou de science</p>
+    target="_blank" rel="noopener">au niveau où il acquiert cette capacité</a>,
+    il peut ajouter son INT à ses PV à la place de sa CON s’il le souhaite. Il
+    ajoute son rang + 2 à tous les tests de bricolage ou de science</p>
   inGame: >-
     <p>Cette capacité gère le bonus permanent aux jet de caractéristique de
     bricolage et science.</p><p>Pour représenter le bonus d'INT à la place de
@@ -23,7 +23,7 @@ system:
   origin: Livre des règles p100
   slug: grosse-tete
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   charges:
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       actionType: none
@@ -72,29 +72,6 @@ system:
           apply: self
           additionalInfos: a supprimer si vous ne souhaitez pas l'activer
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
-      indice: 0
-      label: remplacer CON par INT
-      chatFlavor: ""
-      img: icons/svg/d20-highlight.svg
-      type: buff
-      properties:
-        visible: false
-        enabled: false
-        activable: false
-        temporary: false
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
-          subtype: attribute
-          target: hp
-          value: -@con +@int
-          apply: self
-          additionalInfos: ""
-      resolvers: []
   cost: -1
   rank: 1
 effects: []
@@ -113,8 +90,8 @@ _stats:
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1757914305452
+  modifiedTime: 1757964686967
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!VFsPVLVp4slTyMWr"
+_key: '!items!VFsPVLVp4slTyMWr'
 
