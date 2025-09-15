@@ -18,11 +18,11 @@ system:
     l'amre équipée en cas de réussite. De plus, un effet de dommages périodique
     sur 1 tour va être appliqué à la cible en cas de succès de l'attaque.</p>
     <p>Les dommages périodiques sont appliqués uniquement en mode Combat.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p117
   slug: fleche-vivante
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   charges:
@@ -35,8 +35,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.p7FVfkJwW2MqVKGd
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,11 +52,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg"
+            formula: '@arme.dmg'
           target:
             type: single
             scope: all
@@ -66,9 +66,9 @@ system:
             applyOn: success
             formulaType: damage
             formula: 3d4°
-            elementType: ""
+            elementType: ''
             statuses: []
-            duration: "1"
+            duration: '1'
             unit: round
             successThreshold: null
       modifiers: []
@@ -86,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748260904361
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!p7FVfkJwW2MqVKGd"
+_key: '!items!p7FVfkJwW2MqVKGd'

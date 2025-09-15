@@ -16,10 +16,10 @@ system:
     appliquer le bonus de FOR ainsi qu'une action qui ne s'affiche qu'une fois
     le bouton activé pour faire les attaques de griffes. Il faudra une
     récupération partielle pour pouvoir réutiliser cette capacité</p>
-  source: ""
+  source: ''
   origin: Livre des règles p131
   slug: griffes-du-dragon
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   frequency: combat
@@ -35,7 +35,7 @@ system:
     - source: Item.BQCqsuAZ7uHFGpfA
       indice: 0
       label: Transformation
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,13 +52,13 @@ system:
           subtype: ability
           target: for
           apply: self
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
       resolvers: []
     - source: Item.BQCqsuAZ7uHFGpfA
       indice: 1
       label: Griffes
-      chatFlavor: ""
+      chatFlavor: ''
       type: melee
       actionType: f
       img: icons/svg/d20-highlight.svg
@@ -70,15 +70,15 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atc"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d4°+@for
           target:
@@ -90,7 +90,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   rank: 5
@@ -106,11 +106,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748497526817
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!BQCqsuAZ7uHFGpfA"
+_key: '!items!BQCqsuAZ7uHFGpfA'

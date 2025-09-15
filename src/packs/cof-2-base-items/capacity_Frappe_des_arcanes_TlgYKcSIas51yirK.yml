@@ -13,13 +13,13 @@ system:
   inGame: >-
     <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
     sort qui va automatiquement lancer les dommages. Au MJ de proposer le test
-    pour éviter le renversement.</p> 
-    <p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur l'action</em></p>
-  source: ""
+    pour éviter le renversement.</p>  <p><em>Note : Pour utiliser la
+    "concentration" faites SHIFT+CLIC sur l'action</em></p>
+  source: ''
   origin: Livre des règles p98
   slug: frappe-des-arcanes
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.TlgYKcSIas51yirK
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -49,7 +49,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            difficulty: "0"
+            difficulty: '0'
           dmg:
             formula: 3d4° + @int
           target:
@@ -61,7 +61,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   cost: -1
@@ -78,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747933951662
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!TlgYKcSIas51yirK"
+_key: '!items!TlgYKcSIas51yirK'

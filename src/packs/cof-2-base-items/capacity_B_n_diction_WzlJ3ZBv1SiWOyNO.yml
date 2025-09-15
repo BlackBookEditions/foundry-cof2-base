@@ -15,11 +15,11 @@ system:
     cosmologie</p><p>Une action pour laquelle le joueur cible les cibles et
     lorsqu'il clique sur l'action, chaque token ciblé reçoit un bonus à tous ses
     jets de caractéristique et d'attaque. Utilisable uniquement en combat.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p124
   slug: benediction
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -55,8 +55,8 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
       indice: 1
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
       properties:
@@ -72,30 +72,30 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: skill
           target: all
-          value: "@rang[1,1,1,1,2]"
+          value: '@rang[1,1,1,1,2]'
           apply: both
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: melee
-          value: "@rang[1,1,1,1,2]"
+          value: '@rang[1,1,1,1,2]'
           apply: both
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: ranged
-          value: "@rang[1,1,1,1,2]"
+          value: '@rang[1,1,1,1,2]'
           apply: both
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: magic
-          value: "@rang[1,1,1,1,2]"
+          value: '@rang[1,1,1,1,2]'
           apply: both
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers:
         - type: buffDebuff
           bonusDiceAdd: false
@@ -108,10 +108,10 @@ system:
             active: true
             applyOn: always
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
-            duration: "@cha * 10"
+            duration: '@cha * 10'
             unit: round
           skill: {}
           dmg: {}
@@ -129,11 +129,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.346"
+  coreVersion: '13.346'
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
   modifiedTime: 1753892853114
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!WzlJ3ZBv1SiWOyNO"
+_key: '!items!WzlJ3ZBv1SiWOyNO'

@@ -17,13 +17,13 @@ system:
     contre des cibles multiples et une faible DEF.</em></p>
   inGame: >-
     <p>Action activable/désactivable en cliquant/recliquant dessus. A activer
-    pour bénéficier du dé bonus et des dommages supplémentaires. A désactiver si le
-    joueur souhaite plutôt appliquer un état préjudiciable.</p>
-  source: ""
+    pour bénéficier du dé bonus et des dommages supplémentaires. A désactiver si
+    le joueur souhaite plutôt appliquer un état préjudiciable.</p>
+  source: ''
   origin: Livre des règles p70
   slug: fleche-de-mort
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -37,7 +37,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
       indice: 0
       label: Attaque améliorée
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -54,15 +54,15 @@ system:
           subtype: bonusDice
           target: ranged
           apply: self
-          value: "0"
-          additionalInfos: ""
+          value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
           subtype: combat
           target: damRanged
           apply: self
           value: 1d4°
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 5
@@ -78,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747470379328
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!IR4bOlp9VTxKhj1s"
+_key: '!items!IR4bOlp9VTxKhj1s'

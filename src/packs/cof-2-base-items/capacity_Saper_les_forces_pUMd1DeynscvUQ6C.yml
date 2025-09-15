@@ -13,13 +13,13 @@ system:
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
     sort qui va faire le test d'attaque magique et lui appliquer un effet de
-    "debuff" pendant la durée du sort.</p>
-    <p>L'effet périodique fonctionne uniquement en mode Combat.</p>
-  source: ""
+    "debuff" pendant la durée du sort.</p> <p>L'effet périodique fonctionne
+    uniquement en mode Combat.</p>
+  source: ''
   origin: Livre des règles p103
   slug: saper-les-forces
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -50,32 +50,32 @@ system:
           subtype: skill
           target: for
           apply: others
-          value: "-2"
-          additionalInfos: ""
+          value: '-2'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
           subtype: combat
           target: damMelee
           apply: others
-          value: "-2"
-          additionalInfos: ""
+          value: '-2'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.pUMd1DeynscvUQ6C
           subtype: combat
           target: melee
           apply: others
-          value: "-2"
-          additionalInfos: ""
+          value: '-2'
+          additionalInfos: ''
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atm"
-            crit: ""
-            difficulty: "@oppose.atm"
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -84,10 +84,10 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses: []
-            duration: "99"
+            duration: '99'
             unit: round
             successThreshold: null
   cost: -1
@@ -104,11 +104,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748013577729
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!pUMd1DeynscvUQ6C"
+_key: '!items!pUMd1DeynscvUQ6C'

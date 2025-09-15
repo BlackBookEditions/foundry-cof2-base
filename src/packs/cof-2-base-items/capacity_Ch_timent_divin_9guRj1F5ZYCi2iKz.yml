@@ -16,10 +16,10 @@ system:
     manuellement 2PM en plus)</p><p>Remarque : Lorsque le personnage atteint le
     rang 5 dans cette voie, il doit cocher la case "Activable" de la troisième
     action afin qu'elle apparaisse dans la liste de l'onglet Principal.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p123
   slug: chatiment-divin
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 3
@@ -35,8 +35,8 @@ system:
   actions:
     - source: Item.4Zu2DuX52u7MqY8f
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,11 +52,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg + @cha"
+            formula: '@arme.dmg + @cha'
           target:
             type: single
             scope: all
@@ -66,13 +66,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Item.4Zu2DuX52u7MqY8f
       indice: 1
       label: Châtiment divin +1PM
-      chatFlavor: ""
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -88,11 +88,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg + @cha + 1d4°"
+            formula: '@arme.dmg + @cha + 1d4°'
           target:
             type: single
             scope: all
@@ -102,13 +102,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Item.4Zu2DuX52u7MqY8f
       indice: 2
       label: Châtiment divin +2PM
-      chatFlavor: ""
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -124,11 +124,11 @@ system:
           bonusDiceAdd: true
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg + @cha + 2d4°"
+            formula: '@arme.dmg + @cha + 2d4°'
           target:
             type: single
             number: 0
@@ -138,7 +138,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -152,7 +152,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749761640608
@@ -161,4 +161,4 @@ _stats:
   exportSource: null
 _id: 9guRj1F5ZYCi2iKz
 sort: 175000
-_key: "!items!9guRj1F5ZYCi2iKz"
+_key: '!items!9guRj1F5ZYCi2iKz'

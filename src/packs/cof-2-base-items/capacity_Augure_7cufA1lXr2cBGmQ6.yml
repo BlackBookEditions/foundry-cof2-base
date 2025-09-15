@@ -11,12 +11,14 @@ system:
     difficulté 10. En cas de succès, il reçoit une réponse déterminée par le MJ
     parmi : <strong>bénéfique, incertain, risqué ou préjudiciable</strong>. Le
     MJ essaie de donner la réponse la plus utile possible au scénario.</p>
-  inGame: <p>L'action permet de réaliser le test de CHA difficulté 10 et de dépenser les PM.</p>
-  source: ""
+  inGame: >-
+    <p>L'action permet de réaliser le test de CHA difficulté 10 et de dépenser
+    les PM.</p>
+  source: ''
   origin: Livre des règles p125
   slug: augure
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -29,8 +31,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.7cufA1lXr2cBGmQ6
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: spell
       img: icons/svg/d20-highlight.svg
       properties:
@@ -46,11 +48,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@cha"
-            crit: ""
-            difficulty: "10"
+            formula: '@cha'
+            crit: ''
+            difficulty: '10'
           dmg:
-            formula: "0"
+            formula: '0'
           target:
             type: self
             number: 0
@@ -60,7 +62,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   cost: -1
@@ -77,11 +79,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748265317687
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!7cufA1lXr2cBGmQ6"
+_key: '!items!7cufA1lXr2cBGmQ6'

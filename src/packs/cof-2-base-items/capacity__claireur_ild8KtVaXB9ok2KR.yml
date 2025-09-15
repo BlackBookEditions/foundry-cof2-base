@@ -15,11 +15,11 @@ system:
     <p>Un bonus pour le bonus de discrétion et vigilance. L'autre augmente les
     DR de 1 et diminue les PC de 1. Si vous ne souhaitez pas cette modification,
     supprimez l'action "Remplace 1 PC par 1 DR".</p>
-  source: ""
+  source: ''
   origin: Livre des règles p72
   slug: eclaireur
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   charges:
@@ -32,8 +32,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -63,7 +63,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
       indice: 1
       label: Remplace 1 PC par 1 DR
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -80,15 +80,15 @@ system:
           subtype: resource
           target: rp
           apply: self
-          value: "1"
-          additionalInfos: ""
+          value: '1'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.ild8KtVaXB9ok2KR
           subtype: resource
           target: fp
           apply: self
-          value: "-1"
-          additionalInfos: ""
+          value: '-1'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 1
@@ -104,11 +104,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747508143808
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!ild8KtVaXB9ok2KR"
+_key: '!items!ild8KtVaXB9ok2KR'

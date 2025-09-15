@@ -16,15 +16,14 @@ system:
     l’effet). Ceci met fin au sort et interdit de le lancer de nouveau avant le
     prochain crépuscule.</p>
   inGame: >-
-    <p>Le PJ clique sur l'action "activer le sort" pour dépenser ses PM.
-    Pendant la durée du sort, le PJ peut activer l'action pour obtenir le dé
-    bonus en Discrétion. Le reste des effets est à gérer manuellement par le
-    MJ.</p>
-  source: ""
+    <p>Le PJ clique sur l'action "activer le sort" pour dépenser ses PM. Pendant
+    la durée du sort, le PJ peut activer l'action pour obtenir le dé bonus en
+    Discrétion. Le reste des effets est à gérer manuellement par le MJ.</p>
+  source: ''
   origin: Livre des règles p111
   slug: manteau-dombre
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -37,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.dM2Lh8zAJDZ7cM6L
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -55,13 +54,13 @@ system:
           subtype: bonusDice
           target: agi
           apply: self
-          value: "0"
+          value: '0'
           additionalInfos: Discrétion
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.dM2Lh8zAJDZ7cM6L
       indice: 1
       label: Activer le sort
-      chatFlavor: ""
+      chatFlavor: ''
       type: spell
       img: icons/svg/d20-highlight.svg
       properties:
@@ -88,11 +87,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748191792785
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!dM2Lh8zAJDZ7cM6L"
+_key: '!items!dM2Lh8zAJDZ7cM6L'

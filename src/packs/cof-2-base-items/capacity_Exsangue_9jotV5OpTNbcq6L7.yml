@@ -17,11 +17,11 @@ system:
     lorsqu'il porte la mauvaise armure.</p><p>L'action activable/désactivable
     permet d'appliquer le dé malus à tous les tests lorsque le personnage est à
     0 PV</p>
-  source: ""
+  source: ''
   origin: Livre des règles p110
   slug: exsangue
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: none
   learned: false
   charges:
@@ -34,8 +34,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,20 +52,20 @@ system:
           subtype: combat
           target: def
           apply: self
-          value: "@rang[2,2,2,2,3]"
-          additionalInfos: ""
+          value: '@rang[2,2,2,2,3]'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: combat
           target: def
           apply: self
-          value: "0"
+          value: '0'
           additionalInfos: appliquer -1 si mauvaise armure
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
       indice: 1
       label: Lorsque 0 PV
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -81,72 +81,72 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: agi
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: con
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: for
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: per
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: cha
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: int
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: vol
-          value: "0"
+          value: '0'
           apply: self
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: melee
           apply: self
-          value: "0"
-          additionalInfos: ""
+          value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: ranged
           apply: self
-          value: "0"
-          additionalInfos: ""
+          value: '0'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: magic
           apply: self
-          value: "0"
-          additionalInfos: ""
+          value: '0'
+          additionalInfos: ''
       resolvers: []
   cost: -1
   rank: 3
@@ -162,11 +162,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748191330117
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!9jotV5OpTNbcq6L7"
+_key: '!items!9jotV5OpTNbcq6L7'

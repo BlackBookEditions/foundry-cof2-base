@@ -21,11 +21,11 @@ system:
 
     <p>Les deux actions suivantes servent à lancer les jets de Dommages en cas 
     de réussite de l'Attaque Brutale pour repousser ou renverser la cible.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p79
   slug: attaque-brutale
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -39,7 +39,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.rmkHYsT9zjFZ4DA5
       indice: 0
       label: +1d4° DM
-      chatFlavor: ""
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -55,11 +55,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg + 1d4°"
+            formula: '@arme.dmg + 1d4°'
           target:
             type: single
             scope: all
@@ -69,13 +69,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.rmkHYsT9zjFZ4DA5
       indice: 1
-      label: "-3 pour +2d4° DM"
-      chatFlavor: ""
+      label: '-3 pour +2d4° DM'
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -91,11 +91,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@arme.skill -3"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill -3'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
-            formula: "@arme.dmg + 2d4°"
+            formula: '@arme.dmg + 2d4°'
           target:
             type: single
             scope: all
@@ -105,7 +105,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.rmkHYsT9zjFZ4DA5
@@ -127,7 +127,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: -1d4°
+            formula: '-1d4°'
           target:
             type: self
             number: 0
@@ -160,7 +160,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: -2d4°
+            formula: '-2d4°'
           target:
             type: self
             number: 0
@@ -188,11 +188,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747583928858
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!rmkHYsT9zjFZ4DA5"
+_key: '!items!rmkHYsT9zjFZ4DA5'

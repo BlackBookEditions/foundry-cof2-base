@@ -14,14 +14,14 @@ system:
   inGame: >-
     <p>Pour faire simplement de la lumière, le joueur depense manuellement 1
     PM</p><p>Pour aveugler la cible, il doit la selectionner et utiliser
-    l'action "Aveugler une cible" et le test opposé se fera tout seul
-    et en cas de succès appliquera l'état "aveuglé" à la cible.</p>
-    <p>L'application du statut fonctionne uniquement en mode Combat.</p>
-  source: ""
+    l'action "Aveugler une cible" et le test opposé se fera tout seul et en cas
+    de succès appliquera l'état "aveuglé" à la cible.</p> <p>L'application du
+    statut fonctionne uniquement en mode Combat.</p>
+  source: ''
   origin: Livre des règles p106
   slug: lumiere
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   charges:
@@ -35,7 +35,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.PYIrQiE4y8ONxUqs
       indice: 0
       label: Aveugler une cible
-      chatFlavor: ""
+      chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -51,11 +51,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atm"
-            crit: ""
-            difficulty: "@oppose.atm"
+            formula: '@atm'
+            crit: ''
+            difficulty: '@oppose.atm'
           dmg:
-            formula: "0"
+            formula: '0'
           target:
             type: single
             scope: all
@@ -64,11 +64,11 @@ system:
             active: true
             applyOn: success
             formulaType: damage
-            formula: ""
-            elementType: ""
+            formula: ''
+            elementType: ''
             statuses:
               - blind
-            duration: "1"
+            duration: '1'
             unit: round
             successThreshold: null
       modifiers: []
@@ -86,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748014982391
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!PYIrQiE4y8ONxUqs"
+_key: '!items!PYIrQiE4y8ONxUqs'

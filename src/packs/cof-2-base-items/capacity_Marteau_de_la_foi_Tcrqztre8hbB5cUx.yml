@@ -19,11 +19,11 @@ system:
     comtpe les bonus d'une arme magique et on ne peux pas utiliser @arme.skill
     vu qu'il s'agit d'une attaque magique. Le bonus d'une arme magique sera à
     ajouter à la main sur la capacité dans la fiche de personnage du prêtre.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p123
   slug: marteau-de-la-foi
   tags: []
-  subtype: ""
+  subtype: ''
   actionType: a
   learned: false
   charges:
@@ -36,8 +36,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Tcrqztre8hbB5cUx
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -53,9 +53,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@atm"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@atm'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 2d4°+@cha + @toutrang[4] -1
           target:
@@ -67,7 +67,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   cost: -1
@@ -84,11 +84,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748264282208
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!Tcrqztre8hbB5cUx"
+_key: '!items!Tcrqztre8hbB5cUx'
