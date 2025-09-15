@@ -72,29 +72,6 @@ system:
           apply: self
           additionalInfos: a supprimer si vous ne souhaitez pas l'activer
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
-      indice: 0
-      label: remplacer CON par INT
-      chatFlavor: ''
-      img: icons/svg/d20-highlight.svg
-      type: buff
-      properties:
-        visible: false
-        enabled: false
-        activable: false
-        temporary: false
-        noManaCost: false
-      conditions:
-        - predicate: isLearned
-      modifiers:
-        - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
-          subtype: attribute
-          target: hp
-          value: '-@con +@int'
-          apply: self
-          additionalInfos: ''
-      resolvers: []
   cost: -1
   rank: 1
 effects: []
@@ -113,7 +90,7 @@ _stats:
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740761026318
-  modifiedTime: 1757914305452
+  modifiedTime: 1757964686967
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!VFsPVLVp4slTyMWr'
