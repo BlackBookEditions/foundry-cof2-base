@@ -13,15 +13,16 @@ system:
     affecter une même cible qu’une seule fois par combat.</p>
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
-    sort qui va faire le test d'attaque magique.Les Dommages sont appliqués à la
+    sort qui va faire le test d'attaque magique. Les Dommages sont appliqués à la
     cible et le jet de Dommages est appliqué en soin au personnage. En cas
-    d'échec la moitié des dommages seront infligés à la cible sous forme de
+    d'échec, la moitié des dommages seront infligés à la cible sous forme de
     dommages périodique de 1 round.</p>
-  source: ''
+    <p>Les DM en cas d'échec fonctionnent unqiuement en mode combat.</p>
+  source: ""
   origin: Livre des règles p109
   slug: briser-les-coeurs
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -34,8 +35,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.RgltPHS4yO30DrSR
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: ""
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -51,9 +52,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@oppose.atm'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@oppose.atm"
           dmg:
             formula: 5d4°+@int
           target:
@@ -65,9 +66,9 @@ system:
             applyOn: failure
             formulaType: damage
             formula: (5d4°+@int)/2
-            elementType: ''
+            elementType: ""
             statuses: []
-            duration: '1'
+            duration: "1"
             unit: round
             successThreshold: null
       modifiers: []
@@ -85,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748190102679
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!RgltPHS4yO30DrSR'
+_key: "!items!RgltPHS4yO30DrSR"

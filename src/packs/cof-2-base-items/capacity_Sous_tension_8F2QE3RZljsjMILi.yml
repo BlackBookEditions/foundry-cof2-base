@@ -15,15 +15,15 @@ system:
     target="_blank" rel="noopener">sans cout de mana supplémentaire</a>.</p>
   inGame: >-
     <p>Le joueur clique sur la première action "Activation du sort" qui va
-    dépenser les points de mana. La deuxième action "Décharge électrique" permet
-    au Personnage de réaliser une attaque magique contre une cible. L'action 3
+    dépenser les points de mana.</p> <p>La deuxième action "Décharge électrique" permet
+    au Personnage de réaliser une attaque magique contre une cible.</p> <p>L'action 3
     "Lorsque touché" permet de cibler une cible pour lui infliger
     automatiquement 1d4° DM.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p93
   slug: sous-tension
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -36,9 +36,10 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.8F2QE3RZljsjMILi
       indice: 0
-      label: Activation du Sort (M)
-      chatFlavor: ''
+      label: Activation du Sort
+      chatFlavor: ""
       type: spell
+      actionType: m
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -52,9 +53,10 @@ system:
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.8F2QE3RZljsjMILi
       indice: 1
-      label: Décharge électrique (A)
-      chatFlavor: ''
+      label: Décharge électrique
+      chatFlavor: ""
       type: magical
+      actionType: a
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -69,9 +71,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4° + @cha
           target:
@@ -83,13 +85,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.8F2QE3RZljsjMILi
       indice: 2
       label: Lorsque touché
-      chatFlavor: ''
+      chatFlavor: ""
       type: magical
       img: icons/svg/d20-highlight.svg
       properties:
@@ -105,7 +107,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            difficulty: ''
+            difficulty: ""
           dmg:
             formula: 1d4°
           target:
@@ -117,7 +119,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -134,11 +136,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747894585685
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!8F2QE3RZljsjMILi'
+_key: "!items!8F2QE3RZljsjMILi"

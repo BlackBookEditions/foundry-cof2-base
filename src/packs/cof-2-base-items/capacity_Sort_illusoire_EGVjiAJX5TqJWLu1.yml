@@ -17,14 +17,15 @@ system:
   inGame: >-
     <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
     sort qui va automatiquement lancer les dommages. Au MJ de proposer le test
-    pour réduire les dommages et les appliquer. Note : Pour utiliser la
+    pour réduire les dommages et les appliquer.</p>
+    <p>Note : Pour utiliser la
     "concentration" faites SHIFT+CLIC sur l'action. Le nombre de cibles possible
     est fixé sur "3" actuellmement à adapter en fonction du rang du joueur.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p95
   slug: sort-illusoire
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: a
   learned: false
   charges:
@@ -54,19 +55,19 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            difficulty: '0'
+            difficulty: "0"
           dmg:
             formula: 3d4° + @cha
           target:
-            type: multiple
-            number: 3
+            type: single
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.EGVjiAJX5TqJWLu1
@@ -84,25 +85,23 @@ system:
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
+        - type: auto
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '10'
+            difficulty: "0"
           dmg:
             formula: 2d4° + @cha
           target:
             type: multiple
-            number: 2
+            number: 3
             scope: all
           additionalEffect:
             active: false
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -119,11 +118,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1747929602091
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!EGVjiAJX5TqJWLu1'
+_key: "!items!EGVjiAJX5TqJWLu1"

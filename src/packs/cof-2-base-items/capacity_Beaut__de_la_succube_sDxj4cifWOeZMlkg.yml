@@ -17,11 +17,11 @@ system:
     si le sort a été lancé et pendant la durée du sort. Cette action ne consomme
     pas de PM quand l'attaque est effectuée.</p> <p>La récupération de PV n'est
     pas gérée automatiquement.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p108
   slug: beaute-de-la-succube
   tags: []
-  subtype: ''
+  subtype: ""
   actionType: none
   learned: false
   charges:
@@ -34,9 +34,10 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 0
-      label: Activation et Dé Bonus CHA (L)
-      chatFlavor: ''
+      label: Activation et Dé Bonus CHA
+      chatFlavor: ""
       type: buff
+      actionType: l
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -52,14 +53,15 @@ system:
           subtype: bonusDice
           target: cha
           apply: self
-          value: '0'
-          additionalInfos: ''
+          value: "0"
+          additionalInfos: ""
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 1
-      label: Attaque (A)
-      chatFlavor: ''
+      label: Attaque
+      chatFlavor: ""
       type: magical
+      actionType: a
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -74,9 +76,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: ''
-            difficulty: '@cible.def'
+            formula: "@atm"
+            crit: ""
+            difficulty: "@cible.def"
           dmg:
             formula: 1d4° + @int
           target:
@@ -88,7 +90,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: '0'
+            duration: "0"
             unit: round
       modifiers: []
   cost: -1
@@ -105,11 +107,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1740761026318
   modifiedTime: 1748189336845
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!sDxj4cifWOeZMlkg'
+_key: "!items!sDxj4cifWOeZMlkg"
