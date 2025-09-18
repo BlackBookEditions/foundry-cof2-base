@@ -15,10 +15,10 @@ system:
     <p>Cette capacité propose un bouton d'action activable/désactivable pour
     appliquer le bonus de DM et aux jets de compétences. A activer lorsque le
     jet concerne sa proie.</p>
-  source: ''
+  source: ""
   origin: Livre des règles p140
   slug: marque-du-chasseur
-  subtype: ''
+  subtype: ""
   actionType: l
   learned: false
   rank: 4
@@ -34,8 +34,8 @@ system:
   actions:
     - source: Item.6gkWbKg2xFFCpHyi
       indice: 0
-      label: ''
-      chatFlavor: ''
+      label: Contre sa proie
+      chatFlavor: ""
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -52,22 +52,22 @@ system:
           subtype: skill
           target: all
           apply: self
-          value: '5'
-          additionalInfos: trouve proie
+          value: "5"
+          additionalInfos: trouver sa proie
         - type: capacity
           source: Item.6gkWbKg2xFFCpHyi
           subtype: combat
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: proie
+          additionalInfos: contre sa proie
         - type: capacity
           source: Item.6gkWbKg2xFFCpHyi
           subtype: combat
           target: damRanged
           apply: self
           value: 1d4°
-          additionalInfos: proie
+          additionalInfos: contre sa proie
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -81,11 +81,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: "13.345"
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748622154714
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!6gkWbKg2xFFCpHyi'
+_key: "!items!6gkWbKg2xFFCpHyi"
