@@ -16,8 +16,10 @@ system:
     être victime de ce sort plus d’une fois par jour.</p>
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
-    sort qui va faire le test d'attaque magique. Au MJ d'interpréter le
-    résultat.</p><p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC
+    sort qui va faire le test d'attaque magique.</p>
+    <p>Les Dommages sont notés "2d4°" pour lancer la valeur de distance. C'est 
+    au MJ de multiplier ce résultat en fonction du NC de la cible.</p>
+    <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC
     sur l'action</p>
   source: ''
   origin: Livre des règles p164
@@ -59,7 +61,7 @@ system:
             crit: '0'
             difficulty: '@oppose.atm'
           dmg:
-            formula: '0'
+            formula: '2d4°'
           target:
             type: single
             number: 0
