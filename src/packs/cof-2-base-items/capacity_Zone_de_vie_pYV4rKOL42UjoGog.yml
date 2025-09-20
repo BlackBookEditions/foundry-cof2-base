@@ -13,9 +13,10 @@ system:
     immobile.</p>
   inGame: >-
     <p>Le PJ dépense manuellement les PM lorsqu'il lance le sort. Il pourra
-    ensuite activer l'action sur une cible qui finit son tour dans la zone pour
-    lui donner les PV. L'action ne dépense pas de PM et peut donc être faite
-    plusieurs fois. L'action ne gère pas la durée de la Zone de vie</p>
+    ensuite activer la première action sur les cibles qui finissent leur tour 
+    dans la zone pour leur donner les PV ou activer la deuxième pour infliger les DM 
+    aux morts-vivants et démons.</p> <p>L'action ne dépense pas de PM et peut donc 
+    être faite plusieurs fois. L'action ne gère pas la durée de la Zone de vie</p>
   source: ''
   origin: Livre des règles p171-172
   slug: zone-de-vie
@@ -35,7 +36,7 @@ system:
   actions:
     - source: Item.pYV4rKOL42UjoGog
       indice: 0
-      label: ''
+      label: Soins dans la zone
       chatFlavor: ''
       type: heal
       img: icons/svg/d20-highlight.svg
@@ -52,7 +53,40 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: 1d4°
+            formula: 2d4°
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+          dmg: {}
+      modifiers: []
+    - source: Item.pYV4rKOL42UjoGog
+      indice: 1
+      label: DM dans la zone
+      chatFlavor: ''
+      type: heal
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: heal
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: -2d4°
           target:
             type: multiple
             number: 10
