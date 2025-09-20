@@ -12,8 +12,7 @@ system:
     au prix d’une action de mouvement à son tour, en réussissant un <strong>test
     de FOR difficulté 14</strong>.</p>
   inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant.</p>
+    <p>L'action permet d'ifliger les DM à la cible étreinte.</p>
   source: ''
   origin: ''
   slug: etreinte
@@ -30,7 +29,41 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.1Hm8mqBtQ5m9Fege
+      indice: 0
+      label: DM de l'étreinte
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: '1d4'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
 effects: []
 ownership:
   default: 0

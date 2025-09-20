@@ -24,7 +24,7 @@ system:
   actions:
     - source: Item.5yvmTMalbtRWE9Pf
       indice: 0
-      label: Escalade et Discrétion
+      label: ''
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -33,17 +33,21 @@ system:
         activable: false
         enabled: true
         temporary: false
+      conditions:
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.5yvmTMalbtRWE9Pf
           subtype: skill
           target: agi
           value: '5'
+          additionalInfos: Escalade/Discrétion
         - type: capacity
           source: Item.5yvmTMalbtRWE9Pf
           subtype: skill
           target: for
           value: '5'
+          additionalInfos: Escalade/Discrétion
       conditions: []
       resolvers: []
   manaCost: -1

@@ -26,7 +26,7 @@ system:
   actions:
     - source: Item.KX3GNQ1I4tzdRc6o
       indice: 0
-      label: Inamovible
+      label: ''
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -35,6 +35,8 @@ system:
         activable: false
         enabled: true
         temporary: false
+      conditions:
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.KX3GNQ1I4tzdRc6o

@@ -25,7 +25,7 @@ system:
   actions:
     - source: Item.wOOb2Q588SD7L3Wa
       indice: 0
-      label: ''
+      label: RD sauf feu et argent
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
@@ -36,14 +36,14 @@ system:
         noManaCost: false
         visible: false
       conditions:
-        - predicate: isLearned
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.wOOb2Q588SD7L3Wa
           subtype: combat
           target: dr
           value: '10'
-          additionalInfos: sauf feu et argent
+          additionalInfos: ''
       resolvers: []
   frequency: none
 effects: []

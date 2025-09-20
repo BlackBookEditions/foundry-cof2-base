@@ -12,6 +12,10 @@ system:
     réaliser un nouveau test de CON lorsque la victime est la cible d’une
     attaque de la momie. L’utilisation de la capacité de prêtre Délivrance
     permet de soigner cette maladie.</p>
+  inGame: >-
+    <p>Laction permet d'infliger les DM et d'aplliquer une perte périodique de 
+    DM pedant 5 rounds. Les DM périodiques fonctionnent uniquement en mode 
+    Combat</p>
   source: ''
   origin: ''
   slug: putrefaction
@@ -26,7 +30,44 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: 1d6
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: 1d6
+            elementType: ''
+            statuses: []
+            duration: '5'
+            unit: round
+            successThreshold: null
+      modifiers: []
   frequency: none
   rank: 0
   allowLinkedCapacity: false
