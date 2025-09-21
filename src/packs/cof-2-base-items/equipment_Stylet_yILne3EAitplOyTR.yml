@@ -5,7 +5,7 @@ img: icons/weapons/daggers/dagger-simple-green.webp
 _id: yILne3EAitplOyTR
 system:
   description: >-
-    <p>une arme d’assassin, dotée d’une pointe acérée sans tranchant, destinée à
+    <p>Une arme d’assassin, dotée d’une pointe acérée sans tranchant, destinée à
     transpercer les organes vitaux. La FOR ne s’applique pas aux DM du stylet
     (DM 1d3), mais en cas d’attaque sur un adversaire surpris, il inflige
     (1d6+AGI) DM contre les cibles de taille moyenne ou petite. </p><p>
@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 1
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -65,7 +65,43 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d3 + @for
+            formula: 1d3
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.yILne3EAitplOyTR
+      indice: 1
+      label: Sur cible surprise
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '1d6 + @agi'
           target:
             type: none
             number: 0

@@ -15,7 +15,7 @@ system:
   damagetype: ''
   quantity:
     current: 1
-    max: 99
+    max: null
     destroyIfEmpty: true
   charges:
     current: null
@@ -26,7 +26,7 @@ system:
     unit: kg
   price:
     value: 0
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -39,7 +39,7 @@ system:
   actions:
     - source: Item.nl16Ht6Ik9h3o9XR
       indice: 0
-      label: Elixir de chute ralentie
+      label: ''
       chatFlavor: ''
       type: consumable
       img: icons/svg/d20-highlight.svg
@@ -50,14 +50,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

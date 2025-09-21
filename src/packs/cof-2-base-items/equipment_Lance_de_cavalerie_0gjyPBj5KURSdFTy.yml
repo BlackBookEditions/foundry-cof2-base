@@ -5,7 +5,7 @@ img: icons/weapons/polearms/spear-hooked-double-engraved.webp
 _id: 0gjyPBj5KURSdFTy
 system:
   description: >-
-    <p>conçue pour être utilisée uniquement à cheval, la lance de cavalerie
+    <p>Conçue pour être utilisée uniquement à cheval, la lance de cavalerie
     mesure environ 3 m de long. Il faut prendre de l’élan pour l’utiliser à son
     plein potentiel. L’attaque doit donc avoir lieu après un déplacement pour
     obtenir les DM indiqués. Sinon, en combat au contact classique, le cavalier
@@ -14,9 +14,9 @@ system:
   origin: ''
   slug: lance-de-cavalerie
   tags: []
-  subtype: armor
-  martialCategory: paddedClothFur
-  damagetype: ''
+  subtype: weapon
+  martialCategory: pike
+  damagetype: piercing
   quantity:
     current: 1
     max: 1
@@ -26,11 +26,11 @@ system:
     max: null
     destroyIfEmpty: false
   weight:
-    value: 0
+    value: 3
     unit: kg
   price:
-    value: 0
-    unit: ''
+    value: 8
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -43,7 +43,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.0gjyPBj5KURSdFTy
       indice: 0
-      label: ''
+      label: Avec élan
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
@@ -60,6 +60,42 @@ system:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 2d6 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.0gjyPBj5KURSdFTy
+      indice: 1
+      label: Au contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
           skill:
             formula: '@atc'
             crit: ''

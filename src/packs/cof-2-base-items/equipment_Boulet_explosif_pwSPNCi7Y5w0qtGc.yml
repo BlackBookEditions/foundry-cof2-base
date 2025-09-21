@@ -12,7 +12,7 @@ system:
   source: ''
   origin: Livre des règles p63
   slug: boulet-explosif
-  subtype: consumable
+  subtype: weapon
   tags: []
   martialCategory: unarmed
   damagetype: piercing
@@ -23,7 +23,7 @@ system:
     max: 1
     destroyIfEmpty: false
   charges:
-    current: null
+    current: 1
     max: null
     destroyIfEmpty: false
   weight:
@@ -36,8 +36,8 @@ system:
   equipped: false
   properties:
     equipable: false
-    reloadable: false
-    stackable: true
+    reloadable: true
+    stackable: false
   usage:
     oneHand: true
     twoHand: false
@@ -45,19 +45,20 @@ system:
     base: 0
     ability: null
     details: null
-    unit: null
+    unit: 'm'
     min: null
     max: null
     bonuses:
       sheet: 0
       effects: 0
-    value: null
+    value: 20
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.dnPlOorWnrfhHcy1
+    - source: Compendium.cof-base.cof-2-base-items.Item.pwSPNCi7Y5w0qtGc
       indice: 0
-      label: portée 20m - rayon 5m
+      label: Rayon 5m
       chatFlavor: ''
-      type: consumable
+      type: ranged
+      actionType: l
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false

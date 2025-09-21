@@ -5,7 +5,7 @@ img: icons/consumables/potions/potion-bottle-skull-label-poison-teal.webp
 _id: UOPahJMpSxRm5xjw
 system:
   description: >-
-    <p>Pendant ${@per}$ minutes, l'utilisateur prend les traits d’un fauve ou
+    <p>Pendant @per minutes, l'utilisateur prend les traits d’un fauve ou
     d’un loup. Il gagne +2 en Initiative, en DEF, en attaque et aux DM au
     contact et peut voir dans la nuit (comme un elfe).</p>
   source: ''
@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -44,6 +44,7 @@ system:
       label: ''
       chatFlavor: ''
       type: buff
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -73,6 +74,11 @@ system:
           subtype: combat
           target: damMelee
           value: '2'
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.UOPahJMpSxRm5xjw
+          subtype: state
+          target: darkvision
+          value: '10'
       resolvers: []
 effects: []
 sort: 400000

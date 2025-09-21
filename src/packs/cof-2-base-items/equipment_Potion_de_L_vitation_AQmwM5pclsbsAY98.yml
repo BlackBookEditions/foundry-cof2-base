@@ -27,7 +27,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -40,9 +40,10 @@ system:
   actions:
     - source: Item.E0qgSqGUMOjd5Hy2
       indice: 0
-      label: Potion de Lévitation
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -51,14 +52,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

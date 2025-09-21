@@ -5,7 +5,7 @@ system:
   description: >-
     <p>L’arquebusier peut préparer un explosif qui lui permet de démolir
     facilement des structures. Il lui faut 3 rounds complets pour préparer et
-    poser son explosif. Celui‑ci inflige à la structure ${3d4° + @int}$ DM et
+    poser son explosif. Celui‑ci inflige à la structure 3d4° + @int DM et
     ignore la moitié de sa RD (et seulement 2d4° DM dans un rayon de 2 m).</p>
   source: ''
   origin: Livre des règles p63
@@ -60,7 +60,7 @@ system:
       properties:
         visible: false
         enabled: false
-        activable: false
+        activable: true
         temporary: false
         noManaCost: false
       conditions:
@@ -94,7 +94,7 @@ system:
       properties:
         visible: false
         enabled: false
-        activable: false
+        activable: true
         temporary: false
         noManaCost: false
       conditions:

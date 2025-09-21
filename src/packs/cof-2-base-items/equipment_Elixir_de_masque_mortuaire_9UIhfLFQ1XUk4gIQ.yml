@@ -5,7 +5,7 @@ img: icons/consumables/potions/flask-ornate-skull-green.webp
 _id: 9UIhfLFQ1XUk4gIQ
 system:
   description: >-
-    <p>L'utilisateur prend l’apparence de la mort pendant ${@int}$ minutes. Il
+    <p>L'utilisateur prend l’apparence de la mort pendant @int minutes. Il
     est alors considéré non‑vivant et devient immunisé à la plupart des pouvoirs
     des morts‑vivants (drain de vigueur et affaiblissement, paralysie de la
     goule, etc.). De plus, ceux‑ci le prennent pour l’un des leurs. Il divise
@@ -31,7 +31,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -56,23 +56,7 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
+      resolvers: []
       modifiers: []
 effects: []
 sort: 487500

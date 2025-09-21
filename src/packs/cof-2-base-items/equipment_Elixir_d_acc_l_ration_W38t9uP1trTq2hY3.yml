@@ -5,7 +5,7 @@ img: icons/consumables/potions/bottle-conical-corked-yellow.webp
 _id: W38t9uP1trTq2hY3
 system:
   description: >-
-    <p>L'utilisateur voit son métabolisme s’accélérer pendant {1d4°+ @int}
+    <p>L'utilisateur voit son métabolisme s’accélérer pendant 1d4°+ @int
     rounds. Il reçoit immédiatement une action de mouvement supplémentaire, puis
     une action de mouvement supplémentaire à chaque round. À son tour, il peut
     choisir de sacrifier cette action de mouvement pour obtenir au choix +3 en
@@ -33,7 +33,7 @@ system:
     unit: kg
   price:
     value: 800
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -53,19 +53,35 @@ system:
       properties:
         activable: true
         enabled: false
-        temporary: false
+        temporary: true
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.W38t9uP1trTq2hY3
+      indice: 1
+      label: DEF +3
+      chatFlavor: ''
+      type: buff
+      actiontype: m
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        visible: false
+      conditions:
+        - predicate: isOwned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.W38t9uP1trTq2hY3
+          subtype: combat
+          target: def
+          value: '3'
+      resolvers: []
 effects: []
 sort: 100000
 ownership:

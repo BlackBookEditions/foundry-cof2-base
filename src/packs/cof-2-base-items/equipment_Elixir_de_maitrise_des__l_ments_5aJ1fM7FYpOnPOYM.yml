@@ -5,8 +5,8 @@ img: icons/consumables/potions/potion-tube-corked-labeled-cyan.webp
 _id: 5aJ1fM7FYpOnPOYM
 system:
   description: >-
-    <p>L'utilisateur retranche le ${@rang + 2}$ à tous les DM de feu, de froid,
-    d’électricité ou d’acide subis pendant ${@int}$ minutes.</p>
+    <p>L'utilisateur retranche le rang (rang 2 de base) + 2 à tous les DM de feu, de froid,
+    d’électricité ou d’acide subis pendant @int minutes.</p>
 
     <p>De plus, pendant la durée du sort, si l'utilisateur est un magicien,
     lorsqu’il lance un sort d’un élément, le magicien peut échanger un élément
@@ -32,7 +32,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -45,7 +45,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.5aJ1fM7FYpOnPOYM
       indice: 0
-      label: ''
+      label: RD vs DM élémentaires
       chatFlavor: ''
       type: consumable
       img: icons/svg/d20-highlight.svg
@@ -53,28 +53,17 @@ system:
         visible: false
         enabled: false
         activable: true
-        temporary: false
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
-      modifiers: []
+      resolvers: []
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.5aJ1fM7FYpOnPOYM
+          subtype: combat
+          target: dr
+          value: '4'
 effects: []
 sort: 475000
 ownership:

@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -43,24 +43,19 @@ system:
   actions:
     - source: Item.XbsLn9g4atKqBeEu
       indice: 0
-      label: Potion de détection de l'invisible
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         activable: true
         enabled: false
         temporary: false
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
-      conditions: []
+      conditions:
+        - predicate: isOwned
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

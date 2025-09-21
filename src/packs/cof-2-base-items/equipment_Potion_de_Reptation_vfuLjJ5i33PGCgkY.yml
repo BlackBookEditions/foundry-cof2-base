@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -44,6 +44,7 @@ system:
       label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
@@ -53,23 +54,7 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
+      resolvers: []
       modifiers: []
 effects: []
 sort: 1100000

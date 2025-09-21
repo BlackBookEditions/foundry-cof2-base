@@ -26,7 +26,7 @@ system:
     unit: kg
   price:
     value: 50
-    unit: ''
+    unit: pa
   rarity: rare
   equipped: false
   properties:
@@ -39,9 +39,10 @@ system:
   actions:
     - source: Item.YgiErr1qdHr2uKjV
       indice: 0
-      label: Potion Fortifiant
+      label: ''
       chatFlavor: ''
       type: heal
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true

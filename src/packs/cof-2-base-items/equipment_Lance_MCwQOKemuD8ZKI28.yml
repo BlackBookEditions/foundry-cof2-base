@@ -5,7 +5,7 @@ img: icons/weapons/polearms/spear-hooked-simple.webp
 _id: MCwQOKemuD8ZKI28
 system:
   description: >-
-    <p>une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains
+    <p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux mains
     (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p>
   source: ''
   origin: ''
@@ -37,10 +37,21 @@ system:
   usage:
     oneHand: true
     twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
       indice: 0
-      label: Lance 1M
+      label: 1 main
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
@@ -76,7 +87,7 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
       indice: 1
-      label: Lance 2M
+      label: 2 mains
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
@@ -112,7 +123,7 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
       indice: 2
-      label: Lance à distance
+      label: A distance
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
@@ -146,8 +157,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 100025
 ownership:

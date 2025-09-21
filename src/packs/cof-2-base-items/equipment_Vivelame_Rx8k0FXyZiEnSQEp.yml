@@ -5,7 +5,7 @@ img: icons/weapons/swords/scimitar-broad.webp
 _id: Rx8k0FXyZiEnSQEp
 system:
   description: >-
-    <p>cette arme n’a pas de réalité historique, il s’agit de la version
+    <p>Cette arme n’a pas de réalité historique, il s’agit de la version
     occidentale (ou elfique) du katana, une arme à deux mains légère et très
     rapide, au tranchant aussi affûté que le fil d’un rasoir. Si le personnage
     obtient une capacité qui permet d’utiliser l’AGI au lieu de la FOR pour
@@ -32,7 +32,7 @@ system:
     unit: kg
   price:
     value: 15
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -58,6 +58,14 @@ system:
         noManaCost: false
       conditions:
         - predicate: isEquipped
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.Rx8k0FXyZiEnSQEp
+          subtype: combat
+          target: crit
+          value: '1'
+          apply: self
+          additionalInfos: ''
       resolvers:
         - type: attack
           bonusDiceAdd: false

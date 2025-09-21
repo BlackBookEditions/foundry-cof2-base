@@ -4,7 +4,7 @@ type: equipment
 img: icons/weapons/crossbows/crossbow-simple-red.webp
 _id: vju1FKWPMsmLY6Un
 system:
-  description: <p>Necesssite une action de mouvement pour être rechargé</p>
+  description: <p>Nécesssite une action de mouvement pour être rechargée.</p>
   source: ''
   origin: ''
   slug: arbalete-de-poing
@@ -17,7 +17,7 @@ system:
     max: 1
     destroyIfEmpty: false
   charges:
-    current: null
+    current: 20
     max: null
     destroyIfEmpty: false
   weight:
@@ -25,16 +25,27 @@ system:
     unit: kg
   price:
     value: 8
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
     equipable: true
-    reloadable: false
+    reloadable: true
     stackable: false
   usage:
     oneHand: true
     twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.vju1FKWPMsmLY6Un
       indice: 0
@@ -72,8 +83,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 1400000
 ownership:

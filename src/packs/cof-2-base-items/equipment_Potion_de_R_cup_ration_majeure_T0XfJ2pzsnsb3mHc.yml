@@ -24,7 +24,7 @@ system:
     unit: kg
   price:
     value: 450
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -37,9 +37,10 @@ system:
   actions:
     - source: Item.DDLJ2PwUsiaIKiTK
       indice: 0
-      label: Potion de Récupération majeure
+      label: ''
       chatFlavor: ''
       type: heal
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true

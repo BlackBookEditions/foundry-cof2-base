@@ -1,15 +1,15 @@
 folder: BHbn2gP9Z2mczP4c
-name: Baton de forgesort
+name: Bâton de forgesort
 type: equipment
 img: icons/weapons/staves/staff-ornate-jeweled-blue.webp
 _id: SK30DhUebEq1qQLC
 system:
   description: >-
-    <p>Un baton entre les mains d'un forgesort de la voie des artefacts :</p><p>
+    <p>Un bâton entre les mains d'un forgesort de la voie des artefacts :</p><p>
     </p><p>Lorsqu’il utilise son bâton, le forgesort inflige [1d4°+INT] DM
     magiques. À partir du rang 3, au prix d’une action limitée, il peut utiliser
     sa valeur d’attaque magique pour une attaque au contact et il inflige
-    [2d4°+INT] DM dans un éclair d’énergie ! Si le forgesort fait l’acquisition
+    [2d4°+INT] DM dans un éclair d’énergie !</p> <p>Si le forgesort fait l’acquisition
     d’un bâton magique, les bonus de celui‑ci s’ajouteront normalement à
     l’attaque et aux DM (de même pour le bonus de feu de la voie du métal).</p>
   source: ''
@@ -45,8 +45,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.SK30DhUebEq1qQLC
       indice: 0
-      label: Coup de baton artefact < niv 3
-      chatFlavor: Coup de baton artefact < niv 3
+      label: Attaque niv<3
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -65,7 +65,7 @@ system:
           skill:
             formula: '@atc'
             crit: ''
-            difficulty: '10'
+            difficulty: '@cible.def'
           dmg:
             formula: 1d4° + @int
           target:
@@ -81,8 +81,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.SK30DhUebEq1qQLC
       indice: 1
-      label: Coup de baton artefact >= niv 3
-      chatFlavor: Coup de baton artefact >= niv 3
+      label: Attaque niv>=3
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: l
@@ -101,7 +101,7 @@ system:
           skill:
             formula: '@atm'
             crit: ''
-            difficulty: '10'
+            difficulty: '@cible.def'
           dmg:
             formula: 2d4° + @int
           target:

@@ -31,7 +31,7 @@ system:
     unit: kg
   price:
     value: 450
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -56,23 +56,7 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
+      resolvers: []
       modifiers: []
 effects: []
 sort: 450000

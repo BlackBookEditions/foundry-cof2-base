@@ -4,7 +4,10 @@ type: equipment
 img: icons/weapons/daggers/dagger-bone-black.webp
 _id: Z5wEvqUEJ2XbCLp2
 system:
-  description: ''
+  description: >-
+    <p>Le couteau de lancer inflige seulement 1d3 DM en attaque au contact.</p> 
+    <p>Lancer trois couteaux au titre d’un seul test d’attaque est possible. 
+    Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p>
   source: ''
   origin: ''
   slug: couteaux-de-lancer
@@ -25,7 +28,7 @@ system:
     unit: kg
   price:
     value: 3
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -35,10 +38,21 @@ system:
   usage:
     oneHand: true
     twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
       indice: 0
-      label: ''
+      label: A distance
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
@@ -72,8 +86,78 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
+    - source: Compendium.cof-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+      indice: 1
+      label: Au contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d3
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.Z5wEvqUEJ2XbCLp2
+      indice: 2
+      label: 3 couteaux à distance
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: l
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atd'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: '1d4 + @agi'
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
 effects: []
 sort: 600000
 ownership:

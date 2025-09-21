@@ -16,7 +16,7 @@ system:
   damagetype: ''
   quantity:
     current: 3
-    max: 1
+    max: null
     destroyIfEmpty: false
   charges:
     current: null
@@ -27,13 +27,13 @@ system:
     unit: kg
   price:
     value: 1
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
     equipable: false
     reloadable: false
-    stackable: false
+    stackable: true
   usage:
     oneHand: false
     twoHand: false

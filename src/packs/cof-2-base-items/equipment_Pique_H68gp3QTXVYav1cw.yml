@@ -5,13 +5,14 @@ img: icons/weapons/polearms/pike-flared-red.webp
 _id: H68gp3QTXVYav1cw
 system:
   description: >-
-    <p>une très longue lance de fantassin, destinée à recevoir les charges de
+    <p>Une très longue lance de fantassin, destinée à recevoir les charges de
     cavalerie ou à attaquer depuis le second rang. La pique double ses DM contre
     une créature de grande taille qui vient de réaliser une charge ou une action
     de mouvement suivie d’une attaque contact. Elle permet aussi d’attaquer en
     se tenant derrière un allié de taille normale, avec une pénalité de ‑5. Son
     utilisateur subit un dé malus en attaque dans toutes les autres
     conditions.</p>
+    <p>Attention : 3 actions différentes en fonction de la situation.</p>
   source: ''
   origin: ''
   slug: pique
@@ -32,7 +33,7 @@ system:
     unit: kg
   price:
     value: 5
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -45,7 +46,79 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
       indice: 0
-      label: ''
+      label: Attaque normale
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: true
+          skill:
+            formula: '@atc'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d10 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+      indice: 1
+      label: Attaque derrière un allié
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: a
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isEquipped
+      resolvers:
+        - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            formula: '@atc - 5'
+            crit: ''
+            difficulty: '@cible.def'
+          dmg:
+            formula: 1d10 + @for
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+      indice: 2
+      label: vs Grande en mouvement
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
@@ -67,7 +140,7 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d10 + @for
+            formula: (1d10 x2) + @for
           target:
             type: none
             number: 0

@@ -5,7 +5,7 @@ img: icons/consumables/potions/flask-corked-blue.webp
 _id: KxAzBOx6ujKjHeuo
 system:
   description: >-
-    <p>L'utilisateur se rend invisible pendant ${1d4°+@int}$ minutes. Une fois
+    <p>L'utilisateur se rend invisible pendant 1d4°+@int minutes. Une fois
     invisible, personne ne peut plus détecter sa présence ou lui porter
     d’attaque directe. Si l'utilisateur attaque, il redevient visible. </p>
   source: ''
@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 450
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -52,14 +52,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
 effects: []
 sort: 200000

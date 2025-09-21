@@ -4,7 +4,7 @@ type: equipment
 img: icons/weapons/crossbows/crossbow-purple.webp
 _id: dBRg6mUZBm4KQ9Hb
 system:
-  description: <p>Nécessite une action de mouvement pour etre rechargée</p>
+  description: <p>Nécessite une action de mouvement pour être rechargée.</p>
   source: ''
   origin: ''
   slug: arbalete-lourde
@@ -17,7 +17,7 @@ system:
     max: 1
     destroyIfEmpty: false
   charges:
-    current: null
+    current: 20
     max: null
     destroyIfEmpty: false
   weight:
@@ -25,7 +25,7 @@ system:
     unit: kg
   price:
     value: 15
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -35,6 +35,17 @@ system:
   usage:
     oneHand: false
     twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 60
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.dBRg6mUZBm4KQ9Hb
       indice: 0
@@ -72,8 +83,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 800000
 ownership:
