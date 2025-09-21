@@ -33,12 +33,15 @@ system:
         activable: false
         enabled: true
         temporary: false
+      conditions:
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.ABqdxl2XeejXLXl6
           subtype: skill
           target: agi
           value: '5'
+          additionalInfos: En forêt
       conditions: []
       resolvers: []
   manaCost: -1

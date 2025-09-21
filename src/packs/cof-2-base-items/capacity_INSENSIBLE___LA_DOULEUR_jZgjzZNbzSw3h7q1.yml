@@ -6,6 +6,8 @@ system:
   description: >-
     <p>Ajoutez 3 x NC aux PV et retranchez 5 à la DEF. La créature peut encore
     faire une action (attaque ou mouvement) après avoir été réduite à 0 PV</p>
+  inGame: >-
+    <p>Modifier l'action pour adapter le bonus de PV au NC de la créature.</p>
   source: ''
   origin: ''
   slug: insensible-a-la-douleur
@@ -23,7 +25,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.jZgjzZNbzSw3h7q1
       indice: 0
-      label: Nouvelle Action 1
+      label: ''
       chatFlavor: ''
       type: debuff
       img: icons/svg/d20-highlight.svg

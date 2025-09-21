@@ -34,6 +34,8 @@ system:
         enabled: true
         temporary: false
         noManaCost: false
+      conditions:
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.rzDD0rBPkVGrgYbY
@@ -41,7 +43,6 @@ system:
           target: dr
           value: '3'
           additionalInfos: ''
-      conditions: []
       resolvers: []
 effects: []
 ownership:

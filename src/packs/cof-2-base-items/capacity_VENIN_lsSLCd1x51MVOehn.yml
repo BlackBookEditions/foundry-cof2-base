@@ -9,6 +9,10 @@ system:
     supplémentaire par round pendant 1d6 rounds. De plus, la victime est
     affaiblie pour une durée similaire exprimée en heures. Chaque nouvelle
     morsure augmente la durée (mais pas les DM par round).</p>
+  inGame: >-
+    <p>L'action inflige 1 DM à la cible et un effet périodique.</p>
+    <p>L'effet périodique inflige 1 DM par round et le statut Affaibli pendant
+    1d6 round. cet effet fonctionne uniquement en mode Combat.</p>
   source: ''
   origin: ''
   slug: venin
@@ -25,7 +29,45 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
+      indice: 0
+      label: En cas d'échec de la cible 
+      chatFlavor: ''
+      type: melee
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: ''
+          dmg:
+            formula: '1'
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: '1'
+            elementType: ''
+            statuses:
+              - weakened
+            duration: '1d6'
+            unit: round
+            successThreshold: null
+      modifiers: []
 effects: []
 ownership:
   default: 0

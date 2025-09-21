@@ -33,17 +33,21 @@ system:
         activable: false
         enabled: true
         temporary: false
+      conditions:
+        - predicate: isOwned
       modifiers:
         - type: capacity
           source: Item.5yvmTMalbtRWE9Pf
           subtype: skill
           target: agi
           value: '10'
+          additionalInfos: Escalade/Discrétion
         - type: capacity
           source: Item.5yvmTMalbtRWE9Pf
           subtype: skill
           target: for
           value: '10'
+          additionalInfos: Escalade/Discrétion
       conditions: []
       resolvers: []
   manaCost: -1

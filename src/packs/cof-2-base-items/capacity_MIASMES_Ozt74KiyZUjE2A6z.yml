@@ -28,7 +28,7 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.Ozt74KiyZUjE2A6z
       indice: 0
-      label: si test de CON Diff 10 raté
+      label: DM
       chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
@@ -47,22 +47,18 @@ system:
           skill:
             difficulty: ''
           dmg:
-            formula: 1s4
+            formula: 1d4
           target:
             type: single
             scope: all
             number: 0
           additionalEffect:
-            active: true
+            active: false
             applyOn: success
-            formulaType: damage
-            formula: ''
-            elementType: ''
-            statuses:
-              - weakened
-            duration: '20'
-            unit: round
             successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
 effects: []
 ownership:

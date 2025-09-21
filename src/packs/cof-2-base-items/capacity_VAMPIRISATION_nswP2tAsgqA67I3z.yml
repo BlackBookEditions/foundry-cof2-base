@@ -10,6 +10,11 @@ system:
     chaque fois qu’une créature meurt à moins de 20 mètres de lui, il siphonne
     son énergie et gagne un nombre de PV égal au double du NC de la créature qui
     vient de mourir.</p>
+  inGame: >-
+    <p>L'action permet de réaliser l'attaque. Les DM sont infligés à la cible par 
+    le MJ et appliqués en soin au sorcier.</p>
+    <p>La récupartion de PV lorsqu'une créature meurt proche du sorcier est à 
+    réaliser manuellement.</p>
   source: ''
   origin: ''
   slug: vampirisation
@@ -28,7 +33,7 @@ system:
   actions:
     - source: Item.XoRVd96FlncZh7D1
       indice: 0
-      label: VAMPIRISATION
+      label: ''
       chatFlavor: ''
       type: magical
       img: icons/svg/d20-highlight.svg
