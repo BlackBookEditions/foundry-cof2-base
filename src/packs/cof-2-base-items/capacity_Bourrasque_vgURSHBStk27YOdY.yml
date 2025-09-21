@@ -11,16 +11,21 @@ system:
     ou être renversée et repoussées en arrière à une distance qui dépend de leur
     taille.</p><ul>
 
-    <li>Très petite à moyenne : 20 m,subit 3d4° DM</li>
+    <li>- Très petite à moyenne : 20 m,subit 3d4° DM</li>
 
-    <li>Grande : 10 m, subit 2d4° DM</li>
+    <li>- Grande : 10 m, subit 2d4° DM</li>
 
-    <li>Énorme : 5 m subit 1d4° DM</li>
+    <li>- Énorme : 5 m subit 1d4° DM</li>
 
-    <li>Colossale : seulement renversée</li>
+    <li>- Colossale : seulement renversée</li>
 
     </ul>
-  inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+  inGame: >-
+    <p>La première action permet d'activer le sort et de dépenser les PM. Lorsque 
+    cette action est activée, 3 actions apparaissent.</p>
+    <p>Ces 3 actions permettent de réaliser l'attaque automatique et infliger les DM 
+    aux cibles.</p> <p>Les effets Repousser et Renverser sont gérés manuellement 
+    par le MJ.</p>
   source: ''
   origin: Livre des règles p168
   slug: bourrasque
@@ -37,7 +42,131 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+      indice: 0
+      label: Activer le sort
+      chatFlavor: ''
+      type: spell
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers: []
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+      indice: 1
+      label: vs Très Petites à Moyenne
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: "0"
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '3d4°'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+      indice: 2
+      label: vs Grandes
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: "0"
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '2d4°'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+      indice: 3
+      label: vs Énormes
+      chatFlavor: ''
+      type: magical
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: true
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: "0"
+      resolvers:
+        - type: auto
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill:
+            difficulty: '0'
+          dmg:
+            formula: '1d4°'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            successThreshold: null
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
