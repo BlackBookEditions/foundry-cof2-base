@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 450
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -43,9 +43,10 @@ system:
   actions:
     - source: Item.0VVd2VJ8Gi3AYpz0
       indice: 0
-      label: Potion de Délivrance
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -54,14 +55,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

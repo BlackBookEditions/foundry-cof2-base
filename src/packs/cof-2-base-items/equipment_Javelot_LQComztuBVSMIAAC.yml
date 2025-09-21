@@ -25,7 +25,7 @@ system:
     unit: kg
   price:
     value: 1
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -35,6 +35,17 @@ system:
   usage:
     oneHand: true
     twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 20
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.LQComztuBVSMIAAC
       indice: 0
@@ -56,7 +67,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@rang'
+            formula: '@atd'
             crit: ''
             difficulty: '@cible.def'
           dmg:
@@ -72,8 +83,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 400000
 ownership:

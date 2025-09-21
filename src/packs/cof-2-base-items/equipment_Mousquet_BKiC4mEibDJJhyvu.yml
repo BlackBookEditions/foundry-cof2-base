@@ -19,15 +19,15 @@ system:
     max: 1
     destroyIfEmpty: false
   charges:
-    current: null
-    max: null
+    current: 1
+    max: 1
     destroyIfEmpty: false
   weight:
     value: 0
     unit: kg
   price:
     value: 100
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -37,6 +37,17 @@ system:
   usage:
     oneHand: false
     twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 50
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.BKiC4mEibDJJhyvu
       indice: 0
@@ -74,8 +85,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 300000
 ownership:

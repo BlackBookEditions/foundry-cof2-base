@@ -4,7 +4,7 @@ type: equipment
 img: icons/consumables/potions/potion-tube-corked-labeled-cyan.webp
 system:
   description: >-
-    <p>L'utilisateur retranche le Rang + 2 à tous les DM de feu, de froid,
+    <p>L'utilisateur retranche le Rang (rang 2 de base) + 2 à tous les DM de feu, de froid,
     d’électricité ou d’acide subis pendant INT minutes.</p>
 
     <p>De plus, pendant la durée du sort, si l'utilisateur est un magicien,
@@ -31,7 +31,7 @@ system:
     unit: kg
   price:
     value: 1250
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -44,26 +44,34 @@ system:
   actions:
     - source: Item.W0NBkIVE7p6PhLkl
       indice: 0
-      label: Potion de maitrise des éléments
+      label: RD vs DM élémentaires
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
         - type: consumable
-          skill: {}
-          dmg: {}
+          skill:
+            formula: ''
           target:
-            type: none
+            type: self
             number: 0
             scope: all
-      modifiers: []
+          dmg: {}
+      modifiers:
+        - type: equipment
+          source: Item.W0NBkIVE7p6PhLkl
+          subtype: combat
+          target: dr
+          value: '4'
   defense: null
   magicalDefense: null
 effects: []

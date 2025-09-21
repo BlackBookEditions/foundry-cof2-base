@@ -27,7 +27,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: pa
   rarity: rare
   equipped: false
   properties:
@@ -40,17 +40,44 @@ system:
   actions:
     - source: Item.0uBWJkbYk54Jw4FR
       indice: 0
-      label: Potion du masque de prédateur
+      label: ''
       chatFlavor: ''
-      type: melee
+      type: buff
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
         enabled: false
-        temporary: false
+        temporary: true
         visible: false
       conditions:
         - predicate: isOwned
+      modifiers:
+        - type: equipment
+          source: Item.0uBWJkbYk54Jw4FR
+          subtype: combat
+          target: init
+          value: '2'
+        - type: equipment
+          source: Item.0uBWJkbYk54Jw4FR
+          subtype: combat
+          target: def
+          value: '2'
+        - type: equipment
+          source: Item.0uBWJkbYk54Jw4FR
+          subtype: combat
+          target: melee
+          value: '2'
+        - type: equipment
+          source: Item.0uBWJkbYk54Jw4FR
+          subtype: combat
+          target: damMelee
+          value: '2'
+        - type: equipment
+          source: Item.0uBWJkbYk54Jw4FR
+          subtype: state
+          target: darkvision
+          value: '10'
       resolvers:
         - type: consumable
           skill: {}
@@ -59,7 +86,6 @@ system:
             type: none
             number: 0
             scope: all
-      modifiers: []
   defense: null
   magicalDefense: null
 effects: []

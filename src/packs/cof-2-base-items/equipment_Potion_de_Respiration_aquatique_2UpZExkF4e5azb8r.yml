@@ -24,7 +24,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -37,9 +37,10 @@ system:
   actions:
     - source: Item.NxlKuMtdsiMwpggJ
       indice: 0
-      label: Potion de Respiration aquatique
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -48,14 +49,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 50
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -41,14 +41,15 @@ system:
   actions:
     - source: Item.a01esmeLttszMdBy
       indice: 0
-      label: Potion d'armure de mana
-      chatFlavor: Potion d'armure de mana
+      label: ''
+      chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
         enabled: false
-        temporary: false
+        temporary: true
         visible: false
       conditions:
         - predicate: isOwned
@@ -60,7 +61,12 @@ system:
             type: none
             number: 0
             scope: all
-      modifiers: []
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.a01esmeLttszMdBy
+          subtype: combat
+          target: def
+          value: '3'
   defense: null
   magicalDefense: null
 effects: []

@@ -33,8 +33,19 @@ system:
     reloadable: false
     stackable: false
   usage:
-    oneHand: false
-    twoHand: true
+    oneHand: true
+    twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 20
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.f8c0GK5dslvWXsr4
       indice: 0
@@ -72,8 +83,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 1000000
 ownership:

@@ -24,8 +24,8 @@ system:
     value: 0
     unit: kg
   price:
-    value: 0
-    unit: ''
+    value: 1
+    unit: pc
   rarity: common
   equipped: false
   properties:
@@ -35,11 +35,22 @@ system:
   usage:
     oneHand: true
     twoHand: false
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.U13dzhrfLA2Iwiv0
       indice: 0
-      label: Lance-pierre
-      chatFlavor: Lance-pierre
+      label: ''
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: a
@@ -72,8 +83,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 500000
 ownership:

@@ -24,7 +24,7 @@ system:
     unit: kg
   price:
     value: 50
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -37,9 +37,10 @@ system:
   actions:
     - source: Item.Ujc2YRLrptdtIoMW
       indice: 0
-      label: Potion de Récupération mineure
+      label: ''
       chatFlavor: ''
       type: heal
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true

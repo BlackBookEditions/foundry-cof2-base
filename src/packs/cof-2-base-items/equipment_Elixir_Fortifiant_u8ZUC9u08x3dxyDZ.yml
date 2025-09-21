@@ -5,8 +5,8 @@ img: icons/consumables/potions/bottle-corked-green.webp
 _id: u8ZUC9u08x3dxyDZ
 system:
   description: >-
-    <p>Un breuvage qui guérit immédiatement ${1d4°}$ PV et permet de gagner un
-    dé bonus aux trois prochains tests effectués dans une période de 30 min</p>
+    <p>Un breuvage qui guérit immédiatement 1d4° PV et permet de gagner un
+    dé bonus aux trois prochains tests effectués dans une période de 30 min.</p>
   source: ''
   origin: ''
   slug: elixir-fortifiant
@@ -27,7 +27,7 @@ system:
     unit: kg
   price:
     value: 50
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -43,6 +43,7 @@ system:
       label: ''
       chatFlavor: ''
       type: heal
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true

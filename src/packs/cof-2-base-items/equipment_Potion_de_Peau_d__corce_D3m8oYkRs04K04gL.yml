@@ -30,7 +30,7 @@ system:
     unit: kg
   price:
     value: 50
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -43,36 +43,32 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.D3m8oYkRs04K04gL
       indice: 0
-      label: ''
+      label: DEF +5
       chatFlavor: ''
-      type: consumable
+      type: buff
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
-        enabled: false
         activable: true
-        temporary: false
-        noManaCost: false
+        enabled: false
+        temporary: true
+        visible: false
       conditions:
         - predicate: isOwned
+      modifiers:
+        - type: equipment
+          source: Compendium.cof-base.cof-2-base-items.Item.D3m8oYkRs04K04gL
+          subtype: combat
+          target: def
+          value: '5'
       resolvers:
         - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
+          skill: {}
+          dmg: {}
           target:
             type: none
             number: 0
             scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
-      modifiers: []
 effects: []
 sort: 1000000
 ownership:

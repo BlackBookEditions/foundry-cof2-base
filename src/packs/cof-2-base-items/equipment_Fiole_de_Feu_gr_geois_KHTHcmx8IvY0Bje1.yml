@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 200
-    unit: ''
+    unit: pa
   rarity: rare
   equipped: false
   properties:
@@ -41,7 +41,7 @@ system:
   actions:
     - source: Item.yAftmZJxkaa8C4PJ
       indice: 0
-      label: Fiole de Feu grégeois
+      label: ''
       chatFlavor: ''
       type: ranged
       img: icons/svg/d20-highlight.svg
@@ -53,11 +53,9 @@ system:
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: attack
+        - type: auto
           skill:
-            formula: '@atd'
-            crit: '@crit'
-            difficulty: '@cible.def'
+            crit: '0'
           dmg:
             formula: 2d4°
           target:

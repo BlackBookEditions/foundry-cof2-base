@@ -29,7 +29,7 @@ system:
     unit: kg
   price:
     value: 450
-    unit: ''
+    unit: pa
   rarity: rare
   equipped: false
   properties:
@@ -42,9 +42,10 @@ system:
   actions:
     - source: Item.Fiqtmxa1s28DV59a
       indice: 0
-      label: Potion de Clairvoyance
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
@@ -53,14 +54,7 @@ system:
         visible: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
+      resolvers: []
       modifiers: []
   defense: null
   magicalDefense: null

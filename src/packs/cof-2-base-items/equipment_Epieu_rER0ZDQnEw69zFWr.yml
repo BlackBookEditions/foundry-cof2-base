@@ -1,14 +1,13 @@
 folder: BHbn2gP9Z2mczP4c
-name: Epieu
+name: Épieu
 type: equipment
 img: icons/weapons/polearms/spear-flared-blue.webp
 _id: rER0ZDQnEw69zFWr
 system:
   description: >-
-    <p><span class="BxUVEf ILfuVd" lang="fr"><span class="hgKElc">Arme formée
-    d'un bâton d'environ un mètre et demi de long, muni d'un fer large et
-    pointu. Elle peux être tenu à une ou deux main et être
-    lancée.</span></span></p>
+    <p>Arme formée d'un bâton d'environ un mètre et demi de long, 
+    muni d'un fer large et pointu. Elle peux être tenu à une ou deux 
+    main et être lancée.</p>
   source: ''
   origin: ''
   slug: epieu
@@ -29,7 +28,7 @@ system:
     unit: kg
   price:
     value: 4
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -39,11 +38,22 @@ system:
   usage:
     oneHand: true
     twoHand: true
+  range:
+    base: 0
+    ability: null
+    details: null
+    unit: 'm'
+    min: null
+    max: null
+    bonuses:
+      sheet: 0
+      effects: 0
+    value: 10
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 0
-      label: Epieu 1M
-      chatFlavor: Epieu 1M
+      label: 1 main
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -78,8 +88,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 1
-      label: Epieu 2M
-      chatFlavor: Epieu 2M
+      label: 2 mains
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
       actionType: a
@@ -114,8 +124,8 @@ system:
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       indice: 2
-      label: Epieu à distance
-      chatFlavor: Epieu à distance
+      label: A distance
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: ranged
       actionType: a
@@ -148,8 +158,6 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-  range:
-    unit: ''
 effects: []
 sort: 101563
 ownership:

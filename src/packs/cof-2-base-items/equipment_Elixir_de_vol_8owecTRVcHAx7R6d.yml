@@ -5,9 +5,9 @@ img: icons/consumables/potions/bottle-ornate-bat-teal.webp
 _id: 8owecTRVcHAx7R6d
 system:
   description: >-
-    <p>L'utilisateur peut voler pendant ${2d4°+ @int}$ minutes. Sa vitesse de
+    <p>L'utilisateur peut voler pendant 2d4°+ @int minutes. Sa vitesse de
     déplacement est la même qu’au sol. Il peut rester en vol stationnaire s’il
-    le désire et cela est une action gratuite</p>
+    le désire et cela est une action gratuite.</p>
   source: ''
   origin: ''
   slug: elixir-de-vol
@@ -28,7 +28,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: pa
   rarity: precious
   equipped: false
   properties:
@@ -53,23 +53,7 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
-          skill: {}
-          dmg: {}
+      resolvers: []
       modifiers: []
 effects: []
 sort: 300000

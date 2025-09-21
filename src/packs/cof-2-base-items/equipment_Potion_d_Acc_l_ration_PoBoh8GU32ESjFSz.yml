@@ -32,7 +32,7 @@ system:
     unit: kg
   price:
     value: 900
-    unit: ''
+    unit: pa
   rarity: common
   equipped: false
   properties:
@@ -45,14 +45,15 @@ system:
   actions:
     - source: Item.qLL0ptDGJSSMZIzR
       indice: 0
-      label: Potion d'Accélération
+      label: ''
       chatFlavor: ''
       type: consumable
+      actiontype: m
       img: icons/svg/d20-highlight.svg
       properties:
         activable: true
         enabled: false
-        temporary: false
+        temporary: true
         visible: false
       conditions:
         - predicate: isOwned
@@ -65,6 +66,29 @@ system:
             number: 0
             scope: all
       modifiers: []
+    - source: Item.qLL0ptDGJSSMZIzR
+      indice: 1
+      label: DEF +3
+      chatFlavor: ''
+      type: buff
+      actiontype: m
+      img: icons/svg/d20-highlight.svg
+      properties:
+        activable: true
+        enabled: false
+        temporary: true
+        visible: false
+      conditions:
+        - predicate: isOwned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      modifiers:
+        - type: equipment
+          source: Item.qLL0ptDGJSSMZIzR
+          subtype: combat
+          target: def
+          value: '3'
+      resolvers: []
   defense: null
   magicalDefense: null
 effects: []
