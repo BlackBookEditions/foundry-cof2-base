@@ -12,8 +12,7 @@ system:
     DEF et ce bonus passe à +2 au rang 7, tant qu’il tient une arme en main. Ce
     bonus s’applique même en dehors d’un combat en milieu confiné.</p>
   inGame: >-
-    <p>L'action est activable/désactivable pour appliquer le bonus de DEF
-    lorsqu'il se trouve dans un espace réduit.</p>
+    <p>L'action est activable/désactivable pour appliquer le bonus de DEF.</p>
   source: ''
   origin: Livre des règles p148
   slug: combat-confine
@@ -33,8 +32,8 @@ system:
   actions:
     - source: Item.cov1RmuFz7ZQwBc3
       indice: 0
-      label: dans un espace réduit
-      chatFlavor: dans un espace réduit
+      label: Avec une arme en main
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:

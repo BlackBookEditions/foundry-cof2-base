@@ -13,11 +13,11 @@ system:
     combat (ralenti et invalide).</p>
   inGame: >-
     <p>Cette action permet de réaliser une attaque avec les valeurs de l'arme
-    équipée (en divisant par 2 les DM infligés). Si l'attaque touche la cible,
+    équipée (en divisant par 2 les DM infligés).</p> <p>Si l'attaque touche la cible,
     elle appliquera le statut Ralenti et Affaibli à la cible pour 20 round. Le
     MJ devra supprimer le statut Ralenti à la fin du tour de la cible. L'effet
-    Renversé est géré à la main par le MJ. Cette action fonctionne seulement en
-    Mode Combat.</p>
+    Renversé est géré à la main par le MJ.</p> 
+    <p>Cette action fonctionne seulement en Mode Combat.</p>
   source: ''
   origin: Livre des règles p153
   slug: pieds-dargile
@@ -37,8 +37,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.z4QPX7qVP0vUfbOZ
       indice: 0
-      label: contre taille Grande +
-      chatFlavor: contre taille Grande +
+      label: vs Grande et +
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
