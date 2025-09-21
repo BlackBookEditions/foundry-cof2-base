@@ -16,7 +16,7 @@ system:
   magicalDefense: null
   quantity:
     current: 1
-    max: null
+    max: 1
     destroyIfEmpty: true
   charges:
     current: null
@@ -53,8 +53,9 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: consumable
       img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -65,8 +66,6 @@ system:
         - predicate: isOwned
       resolvers:
         - type: heal
-          bonusDiceAdd: false
-          malusDiceAdd: false
           skill:
             formula: 1d4° + 0
           target:
@@ -76,11 +75,27 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
           dmg: {}
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
 effects: []
 sort: 0
@@ -91,11 +106,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1748260167368
-  modifiedTime: 1748260401761
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758482071724
+  lastModifiedBy: fBTCrubkOhroUr3A
   exportSource: null
 _key: '!items!j6droy56LsS4STHW'
