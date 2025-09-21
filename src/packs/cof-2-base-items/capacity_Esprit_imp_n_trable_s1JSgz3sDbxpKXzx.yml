@@ -13,7 +13,10 @@ system:
     à tous les tests destinés à cacher ses émotions et ses sentiments ou pour
     résister aux sorts qui affectent l’esprit (charme, fascination, domination,
     etc.).</p>
-  inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+  inGame: >-
+    <p>La première action permet d'activer/désactiver le bonus à l'attaque magique
+    pour augmenter sa résistance lorsque le PJ est ciblé par une attaque mentale.</p>
+    <p>La deuxième donne le bonus permanent aux jets de compétences.</p>
   source: ''
   origin: Livre des règles p161
   slug: esprit-impenetrable
@@ -30,7 +33,60 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Item.s1JSgz3sDbxpKXzx
+      indice: 0
+      label: ''
+      chatFlavor: Résister aux sorts mentaux
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.s1JSgz3sDbxpKXzx
+          subtype: combat
+          target: magic
+          apply: self
+          value: '5'
+          additionalInfos: ''
+      resolvers: []
+    - source: Item.s1JSgz3sDbxpKXzx
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      type: buff
+      img: icons/svg/d20-highlight.svg
+      properties:
+        visible: false
+        enabled: false
+        activable: false
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      modifiers:
+        - type: capacity
+          source: Item.s1JSgz3sDbxpKXzx
+          subtype: skill
+          target: cha
+          apply: self
+          value: '5'
+          additionalInfos: Cacher ses émotions
+        - type: capacity
+          source: Item.s1JSgz3sDbxpKXzx
+          subtype: skill
+          target: vol
+          apply: self
+          value: '5'
+          additionalInfos: Cacher ses émotions
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
