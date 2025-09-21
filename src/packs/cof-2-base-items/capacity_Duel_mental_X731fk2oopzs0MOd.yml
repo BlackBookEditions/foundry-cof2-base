@@ -12,8 +12,8 @@ system:
     l’emporte d’au moins 10 points, c’est lui qui bénéficie d’un dé bonus en
     attaque.</p>
   inGame: >-
-    <p>L'action permet de réaliser un test opposé d'INT contre une cible. Le dé bonus 
-    sera ajouté manuellement sur la fenêtre de l'attaque.</p>
+    <p>L'action permet de réaliser un test opposé d'INT contre une cible. Le dé
+    bonus  sera ajouté manuellement sur la fenêtre de l'attaque.</p>
   source: ''
   origin: Livre des règles p141
   slug: duel-mental
@@ -33,8 +33,8 @@ system:
   actions:
     - source: Compendium.cof-base.cof-2-base-items.Item.X731fk2oopzs0MOd
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -50,11 +50,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@int"
-            crit: ""
-            difficulty: "@oppose.int"
+            formula: '@int'
+            crit: ''
+            difficulty: '@oppose.int'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -64,7 +64,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: false

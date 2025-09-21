@@ -1,20 +1,25 @@
 folder: BHbn2gP9Z2mczP4c
-name: Épieu
+name: Bâton de forgesort
 type: equipment
-img: icons/weapons/polearms/spear-flared-blue.webp
-_id: rER0ZDQnEw69zFWr
+img: icons/weapons/staves/staff-ornate-jeweled-blue.webp
+_id: SK30DhUebEq1qQLC
 system:
   description: >-
-    <p>Arme formée d'un bâton d'environ un mètre et demi de long, 
-    muni d'un fer large et pointu. Elle peux être tenu à une ou deux 
-    main et être lancée.</p>
+    <p>Un bâton entre les mains d'un forgesort de la voie des artefacts :</p><p>
+    </p><p>Lorsqu’il utilise son bâton, le forgesort inflige [1d4°+INT] DM
+    magiques. À partir du rang 3, au prix d’une action limitée, il peut utiliser
+    sa valeur d’attaque magique pour une attaque au contact et il inflige
+    [2d4°+INT] DM dans un éclair d’énergie !</p> <p>Si le forgesort fait
+    l’acquisition d’un bâton magique, les bonus de celui‑ci s’ajouteront
+    normalement à l’attaque et aux DM (de même pour le bonus de feu de la voie
+    du métal).</p>
   source: ''
   origin: ''
-  slug: epieu
+  slug: baton-de-forgesort
   tags: []
   subtype: weapon
-  martialCategory: spear
-  damagetype: piercing
+  martialCategory: staff
+  damagetype: impact
   quantity:
     current: 1
     max: 1
@@ -24,11 +29,11 @@ system:
     max: null
     destroyIfEmpty: false
   weight:
-    value: 1
+    value: 2
     unit: kg
   price:
-    value: 4
-    unit: pa
+    value: 0
+    unit: ''
   rarity: common
   equipped: false
   properties:
@@ -36,23 +41,12 @@ system:
     reloadable: false
     stackable: false
   usage:
-    oneHand: true
+    oneHand: false
     twoHand: true
-  range:
-    base: 0
-    ability: null
-    details: null
-    unit: 'm'
-    min: null
-    max: null
-    bonuses:
-      sheet: 0
-      effects: 0
-    value: 10
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
+    - source: Compendium.cof-base.cof-2-base-items.Item.SK30DhUebEq1qQLC
       indice: 0
-      label: 1 main
+      label: Attaque niv<3
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
@@ -74,7 +68,7 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d6 + @for
+            formula: 1d4° + @int
           target:
             type: none
             number: 0
@@ -86,13 +80,13 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
+    - source: Compendium.cof-base.cof-2-base-items.Item.SK30DhUebEq1qQLC
       indice: 1
-      label: 2 mains
+      label: Attaque niv>=3
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: melee
-      actionType: a
+      actionType: l
       properties:
         visible: false
         enabled: false
@@ -106,11 +100,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: '@atc'
+            formula: '@atm'
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: 1d10 + @for
+            formula: 2d4° + @int
           target:
             type: none
             number: 0
@@ -122,44 +116,10 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
-      indice: 2
-      label: A distance
-      chatFlavor: ''
-      img: icons/svg/d20-highlight.svg
-      type: ranged
-      actionType: a
-      properties:
-        visible: false
-        enabled: false
-        activable: true
-        temporary: false
-        noManaCost: false
-      conditions:
-        - predicate: isEquipped
-      resolvers:
-        - type: attack
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            formula: '@atd'
-            crit: ''
-            difficulty: '@cible.def'
-          dmg:
-            formula: 1d6
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            statuses: []
-            duration: '0'
-            unit: round
-      modifiers: []
+  range:
+    unit: ''
 effects: []
-sort: 101563
+sort: 0
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -174,7 +134,7 @@ _stats:
   systemId: co
   systemVersion: 13.344.0
   createdTime: 1740760974494
-  modifiedTime: 1754772768958
+  modifiedTime: 1754774183344
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: '!items!rER0ZDQnEw69zFWr'
+_key: '!items!SK30DhUebEq1qQLC'

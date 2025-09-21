@@ -17,16 +17,16 @@ system:
     utiliser une action d’attaque et l’emporter lors d’un test opposé d’AGI.</p>
   inGame: >-
     <p>La première action permet de réaliser le test opposé d'AGI.</p>
-    <p>L'action reste active et pemret de rendre visible les trois autres actions.</p>
-    <p>Si l'attaque opposée est réussie, laissez l'action activée sinon désactiver l'action
-    en cliquant à nouveau sur l'icône.</p>
-    <p>Les trois actions suivantes permettent d'activer les bonus en fonction
-    de la taille de la cible. Activer ou désactiver la bonne action quand les
+    <p>L'action reste active et pemret de rendre visible les trois autres
+    actions.</p> <p>Si l'attaque opposée est réussie, laissez l'action activée
+    sinon désactiver l'action en cliquant à nouveau sur l'icône.</p> <p>Les
+    trois actions suivantes permettent d'activer les bonus en fonction de la
+    taille de la cible. Activer ou désactiver la bonne action quand les
     conditions sont remplies.</p>
-  source: ""
+  source: ''
   origin: Livre des règles p139
   slug: attaque-kamikaze
-  subtype: ""
+  subtype: ''
   actionType: l
   learned: false
   rank: 8
@@ -43,7 +43,7 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
       indice: 0
       label: test opposé d'AGI
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -59,11 +59,11 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: "@agi"
-            crit: ""
-            difficulty: "@oppose.agi"
+            formula: '@agi'
+            crit: ''
+            difficulty: '@oppose.agi'
           dmg:
-            formula: ""
+            formula: ''
           target:
             type: single
             scope: all
@@ -73,13 +73,13 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
       indice: 1
       label: vs Grande
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -90,34 +90,34 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: melee
           apply: self
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: ""
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: def
           apply: self
-          value: "2"
-          additionalInfos: ""
+          value: '2'
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
       indice: 2
       label: vs Énorme
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -128,34 +128,34 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: melee
           apply: self
-          value: "3"
-          additionalInfos: ""
+          value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: def
           apply: self
-          value: "3"
-          additionalInfos: ""
+          value: '3'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
       indice: 3
       label: vs Colossale
-      chatFlavor: ""
+      chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
@@ -166,29 +166,29 @@ system:
         noManaCost: false
       conditions:
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       modifiers:
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: melee
           apply: self
-          value: "4"
-          additionalInfos: ""
+          value: '4'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: def
           apply: self
-          value: "4"
-          additionalInfos: ""
+          value: '4'
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof-base.cof-2-base-items.Item.xoK3jA359N4xQ0Zp
           subtype: combat
           target: damMelee
           apply: self
           value: 1d4°
-          additionalInfos: ""
+          additionalInfos: ''
       resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -202,11 +202,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748622089331
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!xoK3jA359N4xQ0Zp"
+_key: '!items!xoK3jA359N4xQ0Zp'

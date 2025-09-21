@@ -14,9 +14,10 @@ system:
   inGame: >-
     <p>Le PJ dépense manuellement les PM lorsqu'il lance le sort. Il pourra
     ensuite activer la première action sur les cibles qui finissent leur tour 
-    dans la zone pour leur donner les PV ou activer la deuxième pour infliger les DM 
-    aux morts-vivants et démons.</p> <p>L'action ne dépense pas de PM et peut donc 
-    être faite plusieurs fois. L'action ne gère pas la durée de la Zone de vie</p>
+    dans la zone pour leur donner les PV ou activer la deuxième pour infliger
+    les DM  aux morts-vivants et démons.</p> <p>L'action ne dépense pas de PM et
+    peut donc  être faite plusieurs fois. L'action ne gère pas la durée de la
+    Zone de vie</p>
   source: ''
   origin: Livre des règles p171-172
   slug: zone-de-vie
@@ -86,7 +87,7 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
-            formula: -2d4°
+            formula: '-2d4°'
           target:
             type: multiple
             number: 10

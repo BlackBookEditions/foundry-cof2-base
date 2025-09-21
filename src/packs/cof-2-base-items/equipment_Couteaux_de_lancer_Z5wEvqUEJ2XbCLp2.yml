@@ -4,10 +4,7 @@ type: equipment
 img: icons/weapons/daggers/dagger-bone-black.webp
 _id: Z5wEvqUEJ2XbCLp2
 system:
-  description: >-
-    <p>Le couteau de lancer inflige seulement 1d3 DM en attaque au contact.</p> 
-    <p>Lancer trois couteaux au titre d’un seul test d’attaque est possible. 
-    Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p>
+  description: "<p>Le couteau de lancer inflige seulement 1d3\_DM en attaque au contact.</p>  <p>Lancer trois couteaux au titre d’un seul test d’attaque est possible.  Il s’agit d’une action limitée qui permet l’ajout de l’AGI aux DM.</p>"
   source: ''
   origin: ''
   slug: couteaux-de-lancer
@@ -42,7 +39,7 @@ system:
     base: 0
     ability: null
     details: null
-    unit: 'm'
+    unit: m
     min: null
     max: null
     bonuses:
@@ -146,7 +143,7 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: '1d4 + @agi'
+            formula: 1d4 + @agi
           target:
             type: none
             number: 0

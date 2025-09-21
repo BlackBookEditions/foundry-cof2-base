@@ -12,13 +12,13 @@ system:
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
     l'attaque qui va faire le test d'attaque de l'arme en main avec un dé malus
-    et appliquer les dommages.</p>
-    <p>La maîtrise des armes à poudre est à ajouter sur la feuille de Profil
-    ouvrable depuis l'onglet "biographie" dans formations martiales.</p>
-  source: ""
+    et appliquer les dommages.</p> <p>La maîtrise des armes à poudre est à
+    ajouter sur la feuille de Profil ouvrable depuis l'onglet "biographie" dans
+    formations martiales.</p>
+  source: ''
   origin: Livre des règles p141-142
   slug: coup-de-crosse
-  subtype: ""
+  subtype: ''
   actionType: f
   learned: false
   rank: 5
@@ -34,8 +34,8 @@ system:
   actions:
     - source: Item.XXwSJtXXXRujl40E
       indice: 0
-      label: ""
-      chatFlavor: ""
+      label: ''
+      chatFlavor: ''
       type: melee
       img: icons/svg/d20-highlight.svg
       properties:
@@ -51,9 +51,9 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: true
           skill:
-            formula: "@arme.skill"
-            crit: ""
-            difficulty: "@cible.def"
+            formula: '@arme.skill'
+            crit: ''
+            difficulty: '@cible.def'
           dmg:
             formula: 1d4° + @for
           target:
@@ -65,7 +65,7 @@ system:
             applyOn: success
             successThreshold: null
             statuses: []
-            duration: "0"
+            duration: '0'
             unit: round
       modifiers: []
   allowLinkedCapacity: false
@@ -80,11 +80,11 @@ flags: {}
 _stats:
   compendiumSource: Item.XXwSJtXXXRujl40E
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1746258425937
   modifiedTime: 1748673301534
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
-_key: "!items!XXwSJtXXXRujl40E"
+_key: '!items!XXwSJtXXXRujl40E'

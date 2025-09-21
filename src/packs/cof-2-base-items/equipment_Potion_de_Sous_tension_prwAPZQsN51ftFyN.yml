@@ -10,10 +10,9 @@ system:
     contact ou le touche reçoit une décharge infligeant 1d4° DM. De plus, il
     peut utiliser une action d’attaque à chaque round pour délivrer une décharge
     électrique (test d’attaque magique contre DEF de la cible, portée 10 m)
-    infligeant [1d4°+CHA] DM.</p>
-    <p><em>Pour éviter de consommer la potion à chaque attaque, les deux actions 
-    sont configurées pour restées actives. Il faut donc désactiver l'action 
-    après chaque utilisation.</em></p>
+    infligeant [1d4°+CHA] DM.</p> <p><em>Pour éviter de consommer la potion à
+    chaque attaque, les deux actions  sont configurées pour restées actives. Il
+    faut donc désactiver l'action  après chaque utilisation.</em></p>
   source: ''
   origin: ''
   slug: potion-de-sous-tension
@@ -127,7 +126,7 @@ system:
             crit: ''
             difficulty: '@cible.def'
           dmg:
-            formula: '1d4° + @cha'
+            formula: 1d4° + @cha
           target:
             type: single
             number: 0

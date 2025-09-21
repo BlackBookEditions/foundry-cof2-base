@@ -21,10 +21,10 @@ system:
 
     </ul>
   inGame: >-
-    <p>La première action permet d'activer le sort et de dépenser les PM. Lorsque 
-    cette action est activée, 3 actions apparaissent.</p>
-    <p>Ces 3 actions permettent de réaliser l'attaque automatique et infliger les DM 
-    aux cibles.</p> <p>Les effets Repousser et Renverser sont gérés manuellement 
+    <p>La première action permet d'activer le sort et de dépenser les PM.
+    Lorsque  cette action est activée, 3 actions apparaissent.</p> <p>Ces 3
+    actions permettent de réaliser l'attaque automatique et infliger les DM  aux
+    cibles.</p> <p>Les effets Repousser et Renverser sont gérés manuellement 
     par le MJ.</p>
   source: ''
   origin: Livre des règles p168
@@ -74,7 +74,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: auto
           bonusDiceAdd: false
@@ -82,7 +82,7 @@ system:
           skill:
             difficulty: '0'
           dmg:
-            formula: '3d4°'
+            formula: 3d4°
           target:
             type: multiple
             number: 20
@@ -110,7 +110,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: auto
           bonusDiceAdd: false
@@ -118,7 +118,7 @@ system:
           skill:
             difficulty: '0'
           dmg:
-            formula: '2d4°'
+            formula: 2d4°
           target:
             type: multiple
             number: 20
@@ -146,7 +146,7 @@ system:
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
-          object: "0"
+          object: '0'
       resolvers:
         - type: auto
           bonusDiceAdd: false
@@ -154,7 +154,7 @@ system:
           skill:
             difficulty: '0'
           dmg:
-            formula: '1d4°'
+            formula: 1d4°
           target:
             type: multiple
             number: 20
