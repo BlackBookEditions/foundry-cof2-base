@@ -2,7 +2,7 @@ folder: DckAeVIG18rHrGYa
 name: Zombie
 type: encounter
 _id: Q7UD3oNlpy0ZnAxq
-img: icons/svg/eye.svg
+img: modules/cof-base/assets/rencontres/zombie_humain.webp
 system:
   abilities:
     agi:
@@ -141,7 +141,7 @@ prototypeToken:
   width: 1
   height: 1
   texture:
-    src: icons/svg/eye.svg
+    src: modules/cof-base/assets/rencontres/zombie_humain.webp
     anchorX: 0.5
     anchorY: 0.5
     offsetX: 0
@@ -160,7 +160,7 @@ prototypeToken:
   bar1:
     attribute: attributes.hp
   bar2:
-    attribute: null
+    attribute: resources.mana
   light:
     negative: false
     priority: 0
@@ -306,11 +306,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1745654451487
-  modifiedTime: 1748410178613
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758488529711
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!Q7UD3oNlpy0ZnAxq'
