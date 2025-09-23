@@ -46,9 +46,9 @@ system:
       indice: 0
       label: RD vs DM élémentaires
       chatFlavor: ''
-      type: consumable
-      actiontype: m
       img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -57,21 +57,30 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers:
-        - type: consumable
-          skill:
-            formula: ''
-          target:
-            type: self
-            number: 0
-            scope: all
-          dmg: {}
       modifiers:
         - type: equipment
           source: Item.W0NBkIVE7p6PhLkl
           subtype: combat
           target: dr
           value: '4'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
   defense: null
   magicalDefense: null
 effects: []
@@ -82,12 +91,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116329139
-  modifiedTime: 1747511745579
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758631072296
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: NzSVz5qYfFIVB4zR
 sort: 200000

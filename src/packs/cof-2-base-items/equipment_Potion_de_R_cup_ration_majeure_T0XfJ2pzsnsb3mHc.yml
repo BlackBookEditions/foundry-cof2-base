@@ -39,14 +39,15 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: heal
-      actiontype: m
       img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
@@ -55,9 +56,32 @@ system:
             formula: 3d4°
           target:
             type: self
-            scope: all
             number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
           dmg: {}
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   defense: null
   magicalDefense: null
@@ -69,12 +93,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116389771
-  modifiedTime: 1747511805836
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758631151729
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: T0XfJ2pzsnsb3mHc
 sort: 0

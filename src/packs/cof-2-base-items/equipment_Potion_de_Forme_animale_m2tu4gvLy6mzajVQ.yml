@@ -49,9 +49,9 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: consumable
-      actiontype: m
       img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -60,7 +60,22 @@ system:
         noManaCost: false
       conditions:
         - predicate: isOwned
-      resolvers: []
+      resolvers:
+        - type: consumable
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+          target:
+            type: none
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
 effects: []
 sort: 600000
@@ -74,11 +89,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740760974494
-  modifiedTime: 1747511965368
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758631366138
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!items!m2tu4gvLy6mzajVQ'

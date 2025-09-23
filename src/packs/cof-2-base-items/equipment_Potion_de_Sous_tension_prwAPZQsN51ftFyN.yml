@@ -48,9 +48,9 @@ system:
       indice: 0
       label: Activer la potion
       chatFlavor: ''
-      type: consumable
-      actiontype: m
       img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -63,6 +63,8 @@ system:
         - type: consumable
           bonusDiceAdd: false
           malusDiceAdd: false
+          skill: {}
+          dmg: {}
           target:
             type: none
             number: 0
@@ -70,57 +72,66 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
-          skill: {}
-          dmg: {}
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.prwAPZQsN51ftFyN
       indice: 1
       label: DM si touché
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
           object: '0'
       resolvers:
         - type: auto
-          skill:
-            crit: '0'
           dmg:
             formula: 1d4°
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
       modifiers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.prwAPZQsN51ftFyN
       indice: 2
       label: Décharge électrique
       chatFlavor: ''
-      type: magical
-      actiontype: a
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        activable: true
-        enabled: false
-        temporary: true
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isOwned
         - predicate: isLinkedActionActivated
           object: '0'
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
             formula: '@atm'
             crit: ''
@@ -129,8 +140,14 @@ system:
             formula: 1d4° + @cha
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
 effects: []
 sort: 1300000
@@ -144,11 +161,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740760974494
-  modifiedTime: 1747512092056
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758631208278
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!items!prwAPZQsN51ftFyN'
