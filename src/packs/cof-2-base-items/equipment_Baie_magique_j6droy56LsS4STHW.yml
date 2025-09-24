@@ -16,7 +16,7 @@ system:
   magicalDefense: null
   quantity:
     current: 1
-    max: 1
+    max: null
     destroyIfEmpty: true
   charges:
     current: null
@@ -81,21 +81,6 @@ system:
           bonusDiceAdd: false
           malusDiceAdd: false
           dmg: {}
-        - type: consumable
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill: {}
-          dmg: {}
-          target:
-            type: none
-            number: 0
-            scope: all
-          additionalEffect:
-            active: false
-            applyOn: success
-            statuses: []
-            duration: '0'
-            unit: round
       modifiers: []
 effects: []
 sort: 0
@@ -110,7 +95,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1748260167368
-  modifiedTime: 1758482071724
-  lastModifiedBy: fBTCrubkOhroUr3A
+  modifiedTime: 1758629850288
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!items!j6droy56LsS4STHW'
