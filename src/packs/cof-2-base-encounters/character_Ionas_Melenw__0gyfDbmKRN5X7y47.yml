@@ -179,7 +179,7 @@ system:
       max: null
       value: 3
     mana:
-      base: 4
+      base: 5
       ability: vol
       bonuses:
         sheet: 0
@@ -264,7 +264,7 @@ prototypeToken:
       max: 1
   sight:
     enabled: true
-    range: 0
+    range: 30
     angle: 360
     visionMode: basic
     color: null
@@ -278,9 +278,9 @@ prototypeToken:
   ring:
     enabled: false
     colors:
-      ring: '#6f9be2'
-      background: null
-    effects: 0
+      ring: '#00d604'
+      background: '#00d604'
+    effects: 1
     subject:
       scale: 1
       texture: null
@@ -1043,16 +1043,21 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: true
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
@@ -1063,17 +1068,12 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
           modifiers: []
       range:
         unit: ''
@@ -1100,12 +1100,12 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.w1n2zzLplJJ4BFmt
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758496609592
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!0gyfDbmKRN5X7y47.wM9R6JwyJcKfDRLv'
   - folder: BHbn2gP9Z2mczP4c
@@ -3089,7 +3089,7 @@ items:
         - Actor.0gyfDbmKRN5X7y47.Item.V7MdQJsaaYIDoVJv
         - Actor.0gyfDbmKRN5X7y47.Item.p6mmou2cxaOmBsZC
         - Actor.0gyfDbmKRN5X7y47.Item.W84J71NPpfkwGnby
-      rank: 0
+      rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
     effects: []
@@ -3104,12 +3104,12 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758497363017
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!0gyfDbmKRN5X7y47.QjNVbL9gNhhlkTKD'
   - folder: VbhrzBrHAAZb5crP
@@ -3124,7 +3124,7 @@ items:
       slug: mirage
       subtype: ''
       actionType: l
-      learned: false
+      learned: true
       charges:
         current: null
         max: null
@@ -3136,40 +3136,59 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: false
+            enabled: true
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
               source: Actor.0gyfDbmKRN5X7y47.Item.RNdDe0e0YAnIdmir
               subtype: skill
               target: cha
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: supercherie/mensonge
-          conditions: []
           resolvers: []
         - source: Actor.0gyfDbmKRN5X7y47.Item.RNdDe0e0YAnIdmir
           indice: 1
           label: Activer le sort (A)
           chatFlavor: ''
-          type: spell
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            visible: false
+            visible: true
             enabled: false
             activable: true
             temporary: false
             noManaCost: false
           conditions:
             - predicate: isLearned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '1'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
           modifiers: []
-          resolvers: []
       cost: -1
       rank: 1
       frequency: none
@@ -3189,12 +3208,12 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758497474883
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!0gyfDbmKRN5X7y47.RNdDe0e0YAnIdmir'
   - folder: VbhrzBrHAAZb5crP
@@ -5304,11 +5323,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 13.344.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
-  modifiedTime: 1752955720477
-  lastModifiedBy: BRXzj6OpBPwcAu1T
+  modifiedTime: 1758497364186
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!0gyfDbmKRN5X7y47'

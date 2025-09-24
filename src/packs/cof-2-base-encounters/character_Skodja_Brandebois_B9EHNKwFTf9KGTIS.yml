@@ -211,6 +211,7 @@ system:
       value: 0
   currentEffects: []
   otherCapacitiesPointsSpent: 0
+  oldDistanceView: 30
 prototypeToken:
   name: Skodja Branchebois
   displayName: 0
@@ -266,11 +267,11 @@ prototypeToken:
     enabled: true
     range: 30
     angle: 360
-    visionMode: darkvision
+    visionMode: basic
     color: null
     attenuation: 0.1
     brightness: 0
-    saturation: -1
+    saturation: 0
     contrast: 0
   detectionModes: []
   occludable:
@@ -278,9 +279,9 @@ prototypeToken:
   ring:
     enabled: false
     colors:
-      ring: '#6f9be2'
-      background: null
-    effects: 0
+      ring: '#00d604'
+      background: '#00d604'
+    effects: 1
     subject:
       scale: 1
       texture: null
@@ -4405,11 +4406,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.346'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
-  modifiedTime: 1754133513303
-  lastModifiedBy: aseVIJfGMqrD7bQI
+  modifiedTime: 1758492736781
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!B9EHNKwFTf9KGTIS'
