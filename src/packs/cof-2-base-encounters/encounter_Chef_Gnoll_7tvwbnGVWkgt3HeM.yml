@@ -115,18 +115,18 @@ system:
         effects: 0
       value: null
   magic: 0
-  pasteData: ""
+  pasteData: ''
   details:
     category: humanoid
     size: medium
     description:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     notes:
-      private: ""
-      public: ""
+      private: ''
+      public: ''
     languages: []
-    properties: ""
+    properties: ''
   currentEffects: []
 prototypeToken:
   name: Gnoll
@@ -146,7 +146,7 @@ prototypeToken:
     scaleX: 1
     scaleY: 1
     rotation: 0
-    tint: "#ffffff"
+    tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
   rotation: 0
@@ -195,7 +195,7 @@ prototypeToken:
   ring:
     enabled: true
     colors:
-      ring: "#a5c408"
+      ring: '#a5c408'
       background: null
     effects: 1
     subject:
@@ -215,9 +215,9 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ""
-      source: ""
-      origin: ""
+      description: ''
+      source: ''
+      origin: ''
       slug: hache-2-attaques
       subtype: melee
       learned: true
@@ -230,8 +230,8 @@ items:
       actions:
         - source: Item.fxnguHLs7MQ6s3TS
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -245,9 +245,9 @@ items:
           resolvers:
             - type: attack
               skill:
-                formula: "+8"
-                crit: "20"
-                difficulty: "@cible.def"
+                formula: '+8'
+                crit: '20'
+                difficulty: '@cible.def'
               dmg:
                 formula: 1d8+4
               target:
@@ -261,7 +261,7 @@ items:
                 applyOn: success
                 successThreshold: null
                 statuses: []
-                duration: "0"
+                duration: '0'
                 unit: round
           modifiers: []
       range:
@@ -283,7 +283,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -292,7 +292,7 @@ items:
       exportSource: null
     _id: LhCNIcWwKhx8yNV7
     sort: 300000
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.LhCNIcWwKhx8yNV7"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.LhCNIcWwKhx8yNV7'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -311,10 +311,10 @@ items:
 
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ""
+      source: ''
       origin: page 216 du livre des règles
       slug: soutenir
-      subtype: ""
+      subtype: ''
       actionType: l
       learned: true
       rank: 0
@@ -330,8 +330,8 @@ items:
       actions:
         - source: Actor.rnYSAmURY014tpsU.Item.L0k1Lmqf57SGT2AP
           indice: 0
-          label: ""
-          chatFlavor: ""
+          label: ''
+          chatFlavor: ''
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -348,8 +348,8 @@ items:
               subtype: combat
               target: melee
               apply: others
-              value: "5"
-              additionalInfos: ""
+              value: '5'
+              additionalInfos: ''
           resolvers:
             - type: buffDebuff
               bonusDiceAdd: false
@@ -362,10 +362,10 @@ items:
                 active: true
                 applyOn: always
                 formulaType: damage
-                formula: ""
-                elementType: ""
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: "1"
+                duration: '1'
                 unit: round
                 successThreshold: null
               skill: {}
@@ -382,14 +382,14 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
       modifiedTime: null
       lastModifiedBy: null
       exportSource: null
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.L0k1Lmqf57SGT2AP"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.L0k1Lmqf57SGT2AP'
   - folder: Jc9oocmI3B4cVSRG
     name: Rires insupportables
     type: capacity
@@ -399,10 +399,10 @@ items:
         <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
         un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
         gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: rires-insupportablesires-insupportables
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       charges:
@@ -427,7 +427,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -436,7 +436,7 @@ items:
       exportSource: null
     _id: ojFrtZCCURUMfcuE
     sort: 4700000
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.ojFrtZCCURUMfcuE"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.ojFrtZCCURUMfcuE'
   - folder: Jc9oocmI3B4cVSRG
     name: L’hallali
     type: capacity
@@ -449,10 +449,10 @@ items:
         de 1 à 5 (inclus)</strong>, elle déclenche la curée. Chaque gnoll à son
         contact bénéficie immédiatement et gratuitement d’une attaque contre la
         victime.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: lhallali
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       charges:
@@ -477,7 +477,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sowzGsG7MWdB83qr
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -486,7 +486,7 @@ items:
       exportSource: null
     _id: O0zOPKiCtKKDiaM6
     sort: 4200000
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.O0zOPKiCtKKDiaM6"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.O0zOPKiCtKKDiaM6'
   - folder: Jc9oocmI3B4cVSRG
     name: Commandant
     type: capacity
@@ -496,10 +496,10 @@ items:
         <p>Tant qu’au moins 4 créatures sous ses ordres sont à moins de 20 m du
         commandant, il ne subit que <strong>la moitié des DM qui lui sont
         infligés</strong>.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: commandant
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       charges:
@@ -524,7 +524,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iLYZbBo6qyQUlfYr
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -533,7 +533,7 @@ items:
       exportSource: null
     _id: iCZtJGpn82DEmAag
     sort: 3400000
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.iCZtJGpn82DEmAag"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.iCZtJGpn82DEmAag'
   - folder: Jc9oocmI3B4cVSRG
     name: Capitaine
     type: capacity
@@ -542,10 +542,10 @@ items:
       description: >-
         <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
         à toutes les créatures sous ses ordres à portée de vue.</p>
-      source: ""
-      origin: ""
+      source: ''
+      origin: ''
       slug: capitaine
-      subtype: ""
+      subtype: ''
       actionType: none
       learned: true
       charges:
@@ -570,7 +570,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
       duplicateSource: null
-      coreVersion: "13.345"
+      coreVersion: '13.345'
       systemId: co
       systemVersion: 12.331.0
       createdTime: null
@@ -579,7 +579,7 @@ items:
       exportSource: null
     _id: ofY1EOEBblII8Xie
     sort: 8300000
-    _key: "!actors.items!7tvwbnGVWkgt3HeM.ofY1EOEBblII8Xie"
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.ofY1EOEBblII8Xie'
 effects: []
 ownership:
   default: 0
@@ -588,7 +588,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: "13.345"
+  coreVersion: '13.345'
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749354791240
@@ -597,4 +597,4 @@ _stats:
   exportSource: null
 _id: 7tvwbnGVWkgt3HeM
 sort: 2900000
-_key: "!actors!7tvwbnGVWkgt3HeM"
+_key: '!actors!7tvwbnGVWkgt3HeM'
