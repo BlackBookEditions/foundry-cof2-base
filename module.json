@@ -2,6 +2,7 @@
   "id": "cof-base",
   "title": "Chroniques Oubliées Fantasy V2 - Livre des règles",
   "description": "Livre de règles de la deuxième édition de Chroniques Oubliées Fantasy",
+  "url": "#{URL}#",
   "version": "#{VERSION}#",
   "compatibility": {
     "minimum": "13",
@@ -44,7 +45,7 @@
       "name": "COF2 Livre des règles",
       "sorting": "m",
       "color": "#3b2524",
-      "packs": ["cof-2-guide-du-systeme", "cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter", "cof-2-tables-aleatoires", "cof-2-macros-non-officielles"]
+      "packs": ["cof-2-guide-du-systeme", "cof-2-base-regles", "cof-2-base-items", "cof-2-base-encounter", "cof-2-tables-aleatoires", "cof-2-macros"]
     }
   ],
   "packs": [
@@ -108,10 +109,10 @@
       }
     },
     {
-      "label": "COF2 Macros (non officielles)",
+      "label": "COF2 Macros",
       "type": "Macro",
-      "name": "cof-2-macros-non-officielles",
-      "path": "packs/cof-2-macros-non-officielles",
+      "name": "cof-2-macros",
+      "path": "packs/cof-2-macros",
       "system": "co",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -126,8 +127,6 @@
     }
   },
   "socket": false,
-  "manifest": "",
-  "url": "",
-  "download": "",
-  "protected": false
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#"
 }
