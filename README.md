@@ -20,7 +20,7 @@
 </ul>
 
 <h2>Mentions Légales</h2>
-© Black Book Éditions, 2024. Chroniques Oubliées Fantasy est une marque déposée par Black Book Éditions. Tous droits réservés.
+© Black Book Éditions, 2025. Chroniques Oubliées Fantasy est une marque déposée par Black Book Éditions. Tous droits réservés.
 Le texte et les images sont la propriété de Black Book Éditions.
 
 <h2>Communauté</h2>
