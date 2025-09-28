@@ -19,7 +19,7 @@ system:
   inGame: >-
     <p>La capacité ne prend en charge que la réduction de 1 du seuil de
     critique. La deuxième action permet de soigner les cibles sélectionnées de
-    1d4° PV une fois par journée.Le MJ peux fournir le token
+    1d4° PV une fois par journée. </p><p>Le MJ peux fournir le token
     @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.rG0MdAp2vpNxBan0]{Ecuyer}</p>
   source: ''
   origin: Livre des règles p85
@@ -40,8 +40,9 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -55,16 +56,17 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
           subtype: combat
           target: crit
-          apply: self
           value: '1'
+          apply: self
           additionalInfos: ''
       resolvers: []
     - source: Compendium.cof-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
       indice: 1
       label: soin après récupération
       chatFlavor: ''
-      type: heal
       img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -75,8 +77,6 @@ system:
         - predicate: isLearned
       resolvers:
         - type: heal
-          bonusDiceAdd: false
-          malusDiceAdd: false
           skill:
             formula: 1d4°
           target:
@@ -86,10 +86,11 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
           dmg: {}
       modifiers: []
   cost: -1
@@ -107,11 +108,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747863211335
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758913443231
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!items!VtQpLP6DALORHRCX'

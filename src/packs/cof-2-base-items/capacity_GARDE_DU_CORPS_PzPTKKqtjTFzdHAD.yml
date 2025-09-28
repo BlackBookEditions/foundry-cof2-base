@@ -23,7 +23,49 @@ system:
     chargeable: false
   path: null
   cost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.PzPTKKqtjTFzdHAD
+      indice: 0
+      label: Cible au contact
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: f
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.PzPTKKqtjTFzdHAD
+          subtype: combat
+          target: dr
+          value: '5'
+          apply: self
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
   manaCost: -1
 effects: []
 ownership:
@@ -33,12 +75,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116541309
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758844287511
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: PzPTKKqtjTFzdHAD
 sort: 8500000

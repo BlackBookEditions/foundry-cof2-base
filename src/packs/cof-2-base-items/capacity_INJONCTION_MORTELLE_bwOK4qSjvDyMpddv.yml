@@ -27,9 +27,10 @@ system:
     - source: Compendium.cof-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
       indice: 0
       label: Si injonction mortelle raté
-      chatFlavor: Si injonction mortelle raté
-      type: melee
+      chatFlavor: ''
       img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -40,10 +41,6 @@ system:
         - predicate: isOwned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
           dmg:
             formula: 2d6+5
           target:
@@ -53,10 +50,12 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
       modifiers: []
   manaCost: -1
 effects: []
@@ -67,12 +66,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116549525
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758844652968
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: bwOK4qSjvDyMpddv
 sort: 8200000

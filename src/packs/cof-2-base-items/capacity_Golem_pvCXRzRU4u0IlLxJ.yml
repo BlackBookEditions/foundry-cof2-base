@@ -10,19 +10,17 @@ system:
     est une créature humanoïde fabriquée par le forgesort pour lui servir de
     serviteur et de garde du corps. Il comprend des ordres simples, comme
     suivre, attaquer, monter la garde, mais il est incapable d’actions complexes
-    ou nécessitant une motricité fine (comme de la couture par exemple !).</p>
-
-    <h2 style="text-align:justify">PARTICULARITÉS LIÉES AU GOLEM</h2>
-
-    <p><strong>Soigner un golem</strong> : le golem ne guérit pas naturellement,
-    mais le forgesort peut le réparer au rythme de [1d6 par rang + INT] PV par
-    heure. <strong>Golem à 0 PV </strong>: si le golem est réduit à 0 PV, il
-    cesse de fonctionner, mais le forgesort peut le réparer. <strong>Mort d’un
-    golem : </strong>si le golem est détruit ou perdu, le forgesort peut en
-    construire un nouveau en 1d6 + 3 jours (+1d6 jours par amélioration de golem
-    supérieur). Un forgesort peut utiliser tous les matériaux à sa disposition
-    dans son environnement, par exemple pierre et bois s’il est dans une
-    forêt.</p>
+    ou nécessitant une motricité fine (comme de la couture par exemple
+    !).</p><h2 style="text-align:justify">PARTICULARITÉS LIÉES AU
+    GOLEM</h2><p><strong>Soigner un golem</strong> : le golem ne guérit pas
+    naturellement, mais le forgesort peut le réparer au rythme de [1d6 par rang
+    + INT] PV par heure. <strong>Golem à 0 PV </strong>: si le golem est réduit
+    à 0 PV, il cesse de fonctionner, mais le forgesort peut le réparer.
+    <strong>Mort d’un golem : </strong>si le golem est détruit ou perdu, le
+    forgesort peut en construire un nouveau en 1d6 + 3 jours (+1d6 jours par
+    amélioration de golem supérieur). Un forgesort peut utiliser tous les
+    matériaux à sa disposition dans son environnement, par exemple pierre et
+    bois s’il est dans une forêt.</p>
   inGame: >-
     <p>L'action sert à soigner le golem. Pour ce faire le PJ doit cibler son
     golem et cliquer sur l'action. Le soin sera automatiquement réalisé. Une
@@ -49,8 +47,9 @@ system:
       indice: 0
       label: Soigner le golem
       chatFlavor: ''
-      type: heal
       img: icons/svg/d20-highlight.svg
+      type: heal
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -61,8 +60,6 @@ system:
         - predicate: isLearned
       resolvers:
         - type: heal
-          bonusDiceAdd: false
-          malusDiceAdd: false
           skill:
             formula: (@rang)d6 + @int
           target:
@@ -72,10 +69,11 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
           dmg: {}
       modifiers: []
   cost: -1
@@ -92,11 +90,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747946866027
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758917550813
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!items!pvCXRzRU4u0IlLxJ'

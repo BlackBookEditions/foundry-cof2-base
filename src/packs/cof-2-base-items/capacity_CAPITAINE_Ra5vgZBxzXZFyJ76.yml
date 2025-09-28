@@ -21,8 +21,95 @@ system:
     chargeable: false
   path: null
   cost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+      indice: 0
+      label: Aux alliés sous ses ordres
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: init
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: melee
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: ranged
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: magic
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: damMelee
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: damRanged
+          value: '2'
+          apply: others
+          additionalInfos: ''
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+          subtype: combat
+          target: damMagic
+          value: '2'
+          apply: others
+          additionalInfos: ''
+      resolvers:
+        - type: buffDebuff
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses: []
+            duration: '20'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
   manaCost: -1
+  inGame: >-
+    <p>L'action permet d'appliquer les bonus aux cibles. L'effet dure 20 rounds
+    et fonctionne uniquement en mode Combat.</p>
 effects: []
 ownership:
   default: 0
@@ -31,12 +118,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116524692
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758892323090
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: Ra5vgZBxzXZFyJ76
 sort: 9000000

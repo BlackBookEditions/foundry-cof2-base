@@ -3,10 +3,7 @@ name: Fauchage
 type: capacity
 img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
 system:
-  description: >-
-    <p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit
-    réussir au choix un test de FOR ou d’AGI difficulté 20 ou être renversée. La
-    créature retranche 3 à tous les DM subis (RD 3).</p>
+  description: "<p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être renversée.\_</p><p>La créature retranche 3 à tous les\_DM subis (RD 3).</p>"
   source: ''
   origin: ''
   slug: fauchage
@@ -27,8 +24,9 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
         visible: false
         enabled: false
@@ -42,8 +40,8 @@ system:
           source: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
           subtype: combat
           target: dr
-          apply: self
           value: '3'
+          apply: self
           additionalInfos: ''
       resolvers: []
   manaCost: -1
@@ -55,12 +53,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116537789
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758847056508
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: vpbnhge4INcjoBKF
 sort: 8800000

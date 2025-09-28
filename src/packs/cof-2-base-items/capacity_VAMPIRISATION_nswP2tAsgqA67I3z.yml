@@ -35,20 +35,24 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        activable: true
-        enabled: false
-        temporary: false
         visible: false
+        enabled: false
+        activable: true
+        temporary: false
+        noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
         - type: attack
+          bonusDiceAdd: false
+          malusDiceAdd: false
           skill:
-            formula: '@atm'
-            crit: '20'
+            formula: '+6'
+            crit: ''
             difficulty: '@oppose.atm'
           dmg:
             formula: 2d8
@@ -56,6 +60,12 @@ system:
             type: none
             number: 0
             scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
       modifiers: []
   manaCost: -1
 effects: []
@@ -66,12 +76,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741116570222
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758892133203
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: nswP2tAsgqA67I3z
 sort: 7700000

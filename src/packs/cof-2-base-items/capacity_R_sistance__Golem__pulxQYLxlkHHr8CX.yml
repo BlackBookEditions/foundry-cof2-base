@@ -20,7 +20,31 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof-base.cof-2-base-items.Item.pulxQYLxlkHHr8CX
+      indice: 0
+      label: RD vs DM élémentaires
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        visible: false
+        enabled: false
+        activable: true
+        temporary: true
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof-base.cof-2-base-items.Item.pulxQYLxlkHHr8CX
+          subtype: combat
+          target: dr
+          value: '2'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
   frequency: none
   rank: 0
   allowLinkedCapacity: false
@@ -34,12 +58,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749355737052
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758849049190
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: pulxQYLxlkHHr8CX
 sort: 100000
