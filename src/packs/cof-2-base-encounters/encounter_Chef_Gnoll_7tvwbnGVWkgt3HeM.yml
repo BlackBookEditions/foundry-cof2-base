@@ -124,9 +124,11 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Le gnoll est un humanoïde puissant de plus de 2 m dont la particularité est une tête d’hyène et une fourrure jaune sale. Les gnolls combattent généralement en nombre et malgré leur force, ils sont souvent lâches préférant le harcèlement et la supériorité numérique pour affronter leurs adversaires. Il n’est pas rare de trouver des groupes de gnolls disposant des capacités supplémentaires indiquées ci‑après (NC+1) sous les ordres d’un chef plus expérimenté. Les quelques aventuriers qui ont survécu à une telle rencontre racontent une expérience traumatisante sous les rires irritants de leurs bourreaux.</p><p>Une meute de douze gnolls commandée\_par le chef gnoll équivaut à une rencontre\_ordinaire NC 7.</p>"
     languages: []
-    properties: ''
+    properties: >-
+      <p>Les capacités Interchangeable et L'hallali seulement dans le cas d'une
+      meute de Gnoll (au moins 3 gnolls par PJ).</p>
   currentEffects: []
 prototypeToken:
   name: Gnoll
@@ -293,11 +295,116 @@ items:
     _id: LhCNIcWwKhx8yNV7
     sort: 300000
     _key: '!actors.items!7tvwbnGVWkgt3HeM.LhCNIcWwKhx8yNV7'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hache
+    type: equipment
+    img: icons/weapons/axes/axe-battle-black.webp
+    _id: wqjW4JlmKZXxj5JQ
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 6
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100098
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848276400
+      modifiedTime: 1758848276400
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.wqjW4JlmKZXxj5JQ'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: L0k1Lmqf57SGT2AP
+    _id: 6ovJhzywrxiRq8vh
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -306,13 +413,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -328,12 +432,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.rnYSAmURY014tpsU.Item.L0k1Lmqf57SGT2AP
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.6ovJhzywrxiRq8vh
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -344,16 +450,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.rnYSAmURY014tpsU.Item.L0k1Lmqf57SGT2AP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.6ovJhzywrxiRq8vh
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -367,29 +472,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.L0k1Lmqf57SGT2AP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848285684
+      modifiedTime: 1758848333149
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.6ovJhzywrxiRq8vh'
   - folder: Jc9oocmI3B4cVSRG
     name: Rires insupportables
     type: capacity
@@ -414,6 +522,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -423,20 +532,100 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: ojFrtZCCURUMfcuE
-    sort: 4700000
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.ojFrtZCCURUMfcuE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848289050
+      modifiedTime: 1758848289050
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: JYToHhJ9Wn7y88SA
+    sort: 5400000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.JYToHhJ9Wn7y88SA'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Interchangeables
+    type: capacity
+    img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
+    system:
+      description: >-
+        <p>Tant que la créature et ses alliées sont plus nombreuses que la
+        cible, elles se relaient pour esquiver ses attaques et elles obtiennent
+        un bonus de +3 en DEF. Si plusieurs créatures semblables sont au contact
+        du PJ, le MJ a toute latitude pour infliger les DM d’une attaque sur une
+        créature au hasard, le personnage ne sait jamais laquelle il blesse.
+        Seul, le loup n’a pas usage de la capacité interchangeable et son NC
+        passe à ½.</p>
+      source: ''
+      origin: ''
+      slug: interchangeables
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.y2pC6gZOyKDuIzHT
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.y2pC6gZOyKDuIzHT
+              subtype: combat
+              target: def
+              value: '3'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.dSkdX9FI4LRdNIpW
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848297688
+      modifiedTime: 1758848341015
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: y2pC6gZOyKDuIzHT
+    sort: 4800000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.y2pC6gZOyKDuIzHT'
   - folder: Jc9oocmI3B4cVSRG
     name: L’hallali
     type: capacity
@@ -464,6 +653,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -473,20 +663,163 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sowzGsG7MWdB83qr
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: O0zOPKiCtKKDiaM6
-    sort: 4200000
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.O0zOPKiCtKKDiaM6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848298884
+      modifiedTime: 1758848298884
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: VITfn4eXt51qj8pT
+    sort: 4900000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.VITfn4eXt51qj8pT'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Capitaine
+    type: capacity
+    img: icons/environment/people/infantry-armored.webp
+    system:
+      description: >-
+        <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
+        à toutes les créatures sous ses ordres à portée de vue.</p>
+      source: ''
+      origin: ''
+      slug: capitaine
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+          indice: 0
+          label: Au alliés sous ses ordres
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: init
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: melee
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: ranged
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: magic
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: damMelee
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: damRanged
+              value: '2'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.hO5aE5PgWGrGKAiv
+              subtype: combat
+              target: damMagic
+              value: '2'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '20'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      manaCost: -1
+      inGame: >-
+        <p>L'action permet d'appliquer les bonus aux cibles. L'effet dure 20
+        rounds et fonctionne uniquement en mode Combat.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848308838
+      modifiedTime: 1758848355015
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: hO5aE5PgWGrGKAiv
+    sort: 9000000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.hO5aE5PgWGrGKAiv'
   - folder: Jc9oocmI3B4cVSRG
     name: Commandant
     type: capacity
@@ -512,6 +845,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -520,66 +854,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iLYZbBo6qyQUlfYr
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: iCZtJGpn82DEmAag
-    sort: 3400000
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.iCZtJGpn82DEmAag'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Capitaine
-    type: capacity
-    img: icons/environment/people/infantry-armored.webp
-    system:
-      description: >-
-        <p>Le capitaine donne un bonus de +2 en initiative, en attaque et aux DM
-        à toutes les créatures sous ses ordres à portée de vue.</p>
-      source: ''
-      origin: ''
-      slug: capitaine
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ra5vgZBxzXZFyJ76
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: ofY1EOEBblII8Xie
-    sort: 8300000
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.ofY1EOEBblII8Xie'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848311053
+      modifiedTime: 1758848311053
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: BbYkCMajJYwctorX
+    sort: 4100000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.BbYkCMajJYwctorX'
 effects: []
 ownership:
   default: 0
@@ -588,13 +877,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749354791240
-  modifiedTime: 1749373046098
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758849533588
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: 7tvwbnGVWkgt3HeM
-sort: 2900000
+sort: 1200000
 _key: '!actors!7tvwbnGVWkgt3HeM'

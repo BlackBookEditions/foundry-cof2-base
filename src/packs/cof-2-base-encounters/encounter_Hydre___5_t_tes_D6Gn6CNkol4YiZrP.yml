@@ -17,7 +17,7 @@ system:
         sheet: 0
         effects: 0
     for:
-      superior: false
+      superior: true
       base: 10
       bonuses:
         sheet: 0
@@ -123,24 +123,14 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p><strong>COUPER UNE TêTE :</strong> L’hydre est un adversaire très
-        dangereux &agrave; cause de son nombre élevé d’attaques. Pour réduire le
-        nombre de têtes, un personnage peut tenter de la décapiter. Dans ce cas,
-        l’attaque souffre d’une pénalité de ‑5 et elle doit infliger au moins 10
-        DM en une seule fois. En cas de réussite, la tête est coupée et les PV
-        du monstre baissent de 10. Toutefois, la guérison accélérée de l’hydre
-        fait repousser la tête en 2 rounds (sauf DM de feu). En cas d’échec,
-        l’hydre ne subit aucun DM.&nbsp; <strong>Ajouter des têtes :
-        </strong>pour chaque tête supplémentaire, ajoutez 20 PV, +1 en attaque
-        et en DEF et une attaque supplémentaire. Le NC augmente de +1</p>
+      private: ''
       public: >-
         <p>L’hydre est une grande créature reptilienne de presque 2 tonnes
         pourvue de multiples têtes. Imaginez un petit diplodocus doté de 5
         &agrave; 12 têtes de dragon et vous aurez une idée de l’apparence de cet
         épouvantable monstre.</p>
     languages: []
-    properties: "<p><strong>Attaques multiples :</strong></p><p>L’hydre peut effectuer un total de 5 attaques, mais pas plus de 4 attaques sur la même cible chaque round. Utilisez la règle des attaques groupées pour gagner du temps (par exemple, +5 pour l’attaque de deux têtes à la fois).</p><p><strong>Couper une tête :</strong></p><p>L’hydre est un adversaire très dangereux à cause de son nombre élevé d’attaques. Pour réduire le nombre de têtes, un personnage peut tenter de la décapiter. Dans ce cas, l’attaque souffre d’une pénalité de ‑5 et elle doit infliger au moins 10 DM en une seule fois. En cas de réussite, la tête est coupée et les PV du monstre baissent de 10. Toutefois, la guérison accélérée de l’hydre fait repousser la tête en 2 rounds (sauf DM de feu). En cas d’échec, l’hydre ne subit aucun DM.</p><p><strong>Ajouter des têtes :\_</strong></p><p>Pour chaque tête supplémentaire, ajoutez 20 PV, +1 en attaque et en DEF et une attaque supplémentaire. Le NC augmente de +1.</p>"
+    properties: "<p><strong>COUPER UNE TÊTE :</strong></p><p>L’hydre est un adversaire très dangereux à cause de son nombre élevé d’attaques. Pour réduire le nombre de têtes, un personnage peut tenter de la décapiter. Dans ce cas, l’attaque souffre d’une pénalité de ‑5 et elle doit infliger au moins 10 DM en une seule fois. En cas de réussite, la tête est coupée et les PV du monstre baissent de 10. Toutefois, la guérison accélérée de l’hydre fait repousser la tête en 2 rounds (sauf DM de feu). En cas d’échec, l’hydre ne subit aucun DM.</p><p><strong>AJOUTER DES TÊTES :\_</strong></p><p>Pour chaque tête supplémentaire, ajoutez 20 PV, +1 en attaque et en DEF et une attaque supplémentaire. Le NC augmente de +1.</p>"
   currentEffects: []
 prototypeToken:
   name: Hydre
@@ -229,7 +219,7 @@ items:
     type: attack
     img: icons/svg/sword.svg
     system:
-      description: ''
+      description: "<p><strong>Attaques multiples :\_</strong>L’hydre peut effectuer un total de 5 attaques, mais pas plus de 4 attaques sur la même cible chaque round. Utilisez la règle des attaques groupées pour gagner du temps (par exemple, +5 pour l’attaque de deux têtes à la fois).</p>"
       source: ''
       origin: ''
       slug: morsure-1-attaque-par-tete
@@ -246,18 +236,21 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+8'
                 crit: '20'
@@ -268,12 +261,9 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -297,12 +287,12 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758849780996
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: UtKT1tLFVe2iGUNR
     sort: 300000
@@ -311,7 +301,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: cWa40gSOYVkRBJm1
+    _id: jFQGMIlVHQKMxhrk
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -320,13 +310,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -342,12 +329,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.mKRIyqdHDQue1sDH.Item.cWa40gSOYVkRBJm1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.D6Gn6CNkol4YiZrP.Item.jFQGMIlVHQKMxhrk
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -358,16 +347,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.mKRIyqdHDQue1sDH.Item.cWa40gSOYVkRBJm1
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.D6Gn6CNkol4YiZrP.Item.jFQGMIlVHQKMxhrk
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -381,45 +369,41 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!D6Gn6CNkol4YiZrP.cWa40gSOYVkRBJm1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849733886
+      modifiedTime: 1758849744558
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!D6Gn6CNkol4YiZrP.jFQGMIlVHQKMxhrk'
   - folder: Jc9oocmI3B4cVSRG
     name: Guérison accélérée
     type: capacity
     img: icons/magic/life/cross-beam-green.webp
     system:
-      description: >-
-        <p>L’hydre régénère 5 PV par round sauf contre les DM de feu</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      description: <p>L’hydre régénère 5 PV par round sauf contre les DM de feu</p>
+      inGame: >-
         <p>La guerison n'est pas automatique il faut cliquer sur l'action chaque
         round pour soigner l'hydre</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p288
       slug: guerison-acceleree
@@ -435,18 +419,20 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.mKRIyqdHDQue1sDH.Item.Vx5TSax70xG78dBM
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.D6Gn6CNkol4YiZrP.Item.gCayLuOxZjMMsAtT
           indice: 0
           label: ''
           chatFlavor: ''
-          type: heal
           img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
@@ -457,16 +443,15 @@ items:
                 type: self
                 number: 0
                 scope: all
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
           modifiers: []
       rank: 0
       frequency: none
@@ -477,20 +462,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.JNlvJTHfooThCyro
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: Vx5TSax70xG78dBM
-    sort: 4000000
-    _key: '!actors.items!D6Gn6CNkol4YiZrP.Vx5TSax70xG78dBM'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849739353
+      modifiedTime: 1758849751223
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: gCayLuOxZjMMsAtT
+    sort: 4700000
+    _key: '!actors.items!D6Gn6CNkol4YiZrP.gCayLuOxZjMMsAtT'
 effects: []
 ownership:
   default: 0
@@ -503,9 +489,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749368494193
-  modifiedTime: 1758487399297
+  modifiedTime: 1758849842731
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: D6Gn6CNkol4YiZrP
-sort: 1700000
+sort: 2100000
 _key: '!actors!D6Gn6CNkol4YiZrP'

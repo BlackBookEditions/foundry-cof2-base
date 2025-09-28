@@ -125,15 +125,22 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Après quelques millénaires, un vampire devient une créature vicieuse,
-        calculatrice et dominatrice capable de contr&ocirc;ler un mortel d’un
-        seul regard.</p>
+        <p>Le vampire est un humanoïde mort‑vivant qui se nourrit du sang des
+        vivants, il peut aisément passer pour un être humain lorsqu’il vient de
+        se gaver de sang frais. Toutefois, il peut aussi prendre une apparence
+        plus ou moins cadavérique ou encore la forme d’une
+        chauve‑souris.</p><p>Après quelques millénaires, un vampire devient une
+        créature vicieuse, calculatrice et dominatrice capable de contrôler un
+        mortel d’un seul regard.</p>
     languages: []
     properties: >-
-      <p>Peux faire 2 attaques. Soit à l'épée longue, soit avec les morusre
-      auquel cas il bénéficie de "absorption d'énergie"</p><p><strong>PATTES
-      D’ARAIGNéE : </strong>Le vampire peut se déplacer de 10 m par action de
-      mouvement sur les murs et les plafonds.</p>
+      <p><strong>CAPACITÉ MAGICIEN</strong> : ajouter (par glisser-déposer)
+      toutes les capacités d'une voie de mage sur la feuille du Vampire ancien.
+      Modifiez les capacités pour les adapter à la rencontre (est possédé en
+      condition, @atc par +14…).</p><p>Peux faire 2 attaques. Soit à l'épée
+      longue, soit avec les morusre auquel cas il bénéficie de "absorption
+      d'énergie"</p><p><strong>PATTES D’ARAIGNÉE : </strong>Le vampire peut se
+      déplacer de 10 m par action de mouvement sur les murs et les plafonds.</p>
   currentEffects: []
 prototypeToken:
   name: Vampire
@@ -218,7 +225,7 @@ prototypeToken:
   movementAction: null
 items:
   - folder: eRnLMLNnqgpvpmpq
-    name: Griffes et morsures
+    name: Griffes et morsures (2 attaques)
     type: attack
     img: icons/svg/sword.svg
     system:
@@ -239,18 +246,21 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+14'
                 crit: '20'
@@ -261,12 +271,9 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -290,18 +297,18 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758909522495
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: ATgoeeDYwmTDlt5r
     sort: 300000
     _key: '!actors.items!I8tSp8P4yVELEGH0.ATgoeeDYwmTDlt5r'
   - folder: eRnLMLNnqgpvpmpq
-    name: Epée longue
+    name: Epée longue (2 attaques)
     type: attack
     img: icons/svg/sword.svg
     system:
@@ -322,18 +329,21 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+14'
                 crit: '20'
@@ -344,12 +354,9 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -373,67 +380,126 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758909545726
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: lPsW5ISRnckG9kOy
     sort: 300000
     _key: '!actors.items!I8tSp8P4yVELEGH0.lPsW5ISRnckG9kOy'
-  - folder: uVNfyNGbfZsNuFix
-    name: Magicien
-    type: capacity
-    img: icons/magic/symbols/circled-gem-pink.webp
-    _id: yjP4KOLG0Eik5PPN
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée longue
+    type: equipment
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: 7hmIrhh7YCePj4NP
     system:
-      description: >-
-        <p>La plupart des vampires anciens sont aussi des magiciens ; choisissez
-        une voie de mage au rang 5 (souvent une voie de sorcier).</p>
+      description: ''
       source: ''
       origin: ''
-      slug: magicien
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
         current: 1
         max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 6
+        unit: ''
+      rarity: common
+      equipped: false
       properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
     effects: []
-    sort: 0
+    sort: 103125
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.OKdM6IzB8hnYppP1
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!I8tSp8P4yVELEGH0.yjP4KOLG0Eik5PPN'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909560719
+      modifiedTime: 1758909560719
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!I8tSp8P4yVELEGH0.7hmIrhh7YCePj4NP'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: IkjcQxkPtJhBxlaA
+    _id: on25quZQSVZODa5V
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -442,13 +508,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -464,12 +527,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.EuUiXyXeDJTOOa7Q.Item.IkjcQxkPtJhBxlaA
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.on25quZQSVZODa5V
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -480,16 +545,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.EuUiXyXeDJTOOa7Q.Item.IkjcQxkPtJhBxlaA
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.on25quZQSVZODa5V
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -503,29 +567,116 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!I8tSp8P4yVELEGH0.IkjcQxkPtJhBxlaA'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909606005
+      modifiedTime: 1758909748281
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!I8tSp8P4yVELEGH0.on25quZQSVZODa5V'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Absorption d'énergie
+    type: capacity
+    img: icons/creatures/abilities/fang-tooth-blood-red.webp
+    system:
+      description: >-
+        <p>Le vampire <strong>récupère 5 PV</strong> chaque fois qu’il blesse
+        une créature avec ses armes naturelles. Si la victime est réduite à 0 PV
+        par une telle attaque, elle se transforme en vampirien au prochain
+        crépuscule.</p>
+      inGame: <p>L'action permet de récupérer les 5 PV.</p>
+      source: ''
+      origin: ''
+      slug: absorbsorption-denergie
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.nJt9WM3Psphg2ywJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '5'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NV6Bqd2sETP45NZN
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909613977
+      modifiedTime: 1758909753988
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: nJt9WM3Psphg2ywJ
+    sort: 2300000
+    _key: '!actors.items!I8tSp8P4yVELEGH0.nJt9WM3Psphg2ywJ'
   - folder: Jc9oocmI3B4cVSRG
     name: Immortel
     type: capacity
@@ -554,6 +705,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -562,20 +714,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.tYr04762becNLvYU
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: O5Izo23ibRwB4LyT
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909619637
+      modifiedTime: 1758909619637
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: DW8A8HmKlKv6QUE6
     sort: 2800000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.O5Izo23ibRwB4LyT'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.DW8A8HmKlKv6QUE6'
   - folder: Jc9oocmI3B4cVSRG
     name: Forme gazeuse
     type: capacity
@@ -603,6 +756,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -611,112 +765,32 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iJiIugLIkA6dJArb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 3ZGolqUHVXEyysvc
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909625209
+      modifiedTime: 1758909625209
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: FeJTwrIjRy5IZBLj
     sort: 2700000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.3ZGolqUHVXEyysvc'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Absorption d'énergie
-    type: capacity
-    img: icons/creatures/abilities/fang-tooth-blood-red.webp
-    system:
-      description: >-
-        <p>Le vampire <strong>récupère 5 PV</strong> chaque fois qu’il blesse
-        une créature avec ses armes naturelles. Si la victime est réduite à 0 PV
-        par une telle attaque, elle se transforme en vampirien au prochain
-        crépuscule.</p>
-      source: ''
-      origin: ''
-      slug: absorbsorption-denergie
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: 1
-        max: 1
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.EuUiXyXeDJTOOa7Q.Item.5f80wQKF1E0XQtYe
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: heal
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-            visible: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: heal
-              skill:
-                formula: '5'
-              target:
-                type: self
-                number: 0
-                scope: all
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NV6Bqd2sETP45NZN
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: 5f80wQKF1E0XQtYe
-    sort: 2300000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.5f80wQKF1E0XQtYe'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.FeJTwrIjRy5IZBLj'
   - folder: Jc9oocmI3B4cVSRG
     name: Regard envoûtant
     type: capacity
     img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
     system:
       description: >-
-        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
-        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
-        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
-        20 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 3
-        ou inférieur passent sous le contrôle du vampire.</p>
+        <p>Le regard du vampire sape la volonté de ses opposants. Il peut
+        utiliser une action de mouvement pour tenter d’envoûter son adversaire.
+        La cible doit réussir un <strong>test de VOL difficulté 20 ou être
+        affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 3 ou
+        inférieur passent sous le contrôle du vampire.</p>
       source: ''
       origin: ''
       slug: regard-envoutant
@@ -724,15 +798,16 @@ items:
       actionType: m
       learned: true
       charges:
-        current: 3
-        max: 3
+        current: null
+        max: null
       properties:
         spell: false
       path: null
       cost: -1
       manaCost: -1
       actions: []
-      frequency: combat
+      frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -741,20 +816,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: r737UlvM1OLuP8YR
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909634020
+      modifiedTime: 1758909821479
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 9EOnJBhbgAt5WCvr
     sort: 3100000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.r737UlvM1OLuP8YR'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.9EOnJBhbgAt5WCvr'
   - folder: Jc9oocmI3B4cVSRG
     name: Résistance impie
     type: capacity
@@ -780,30 +856,34 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.EuUiXyXeDJTOOa7Q.Item.MBRAC3pfI4EjxJg0
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.rkRT6lFprRE39s8t
           indice: 0
-          label: ''
+          label: RD sauf feu et argent
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
+            visible: false
+            enabled: false
             activable: true
-            enabled: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.EuUiXyXeDJTOOa7Q.Item.MBRAC3pfI4EjxJg0
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.rkRT6lFprRE39s8t
               subtype: combat
               target: dr
               value: '10'
-              additionalInfos: sauf feu et argent
               apply: self
+              additionalInfos: ''
           resolvers: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -812,20 +892,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.uiJsqhLYGNuCuskb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: MBRAC3pfI4EjxJg0
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909641980
+      modifiedTime: 1758909830108
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: rkRT6lFprRE39s8t
     sort: 3300000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.MBRAC3pfI4EjxJg0'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.rkRT6lFprRE39s8t'
   - folder: Jc9oocmI3B4cVSRG
     name: Riposte éclair
     type: capacity
@@ -850,6 +931,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -859,20 +941,90 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.addk9BEF9brGSohY
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: FY7VNpO21n61DTOh
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909647057
+      modifiedTime: 1758909839213
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: fxlBECCjdlnz2mYD
     sort: 8000000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.FY7VNpO21n61DTOh'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.fxlBECCjdlnz2mYD'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Transformation en chauve-souris
+    type: capacity
+    img: icons/creatures/abilities/wing-batlike-purple-blue.webp
+    _id: bykkmoiRyxRhcBtZ
+    system:
+      description: "<p>Sous cette forme, le vampire ne peut plus\_attaquer, mais il se déplace de 20 m par action\_de mouvement.</p>"
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.bykkmoiRyxRhcBtZ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.bykkmoiRyxRhcBtZ
+              subtype: attribute
+              target: mov
+              value: '10'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.15VIMmnFdCJCBaKi
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909651179
+      modifiedTime: 1758909848059
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!I8tSp8P4yVELEGH0.bykkmoiRyxRhcBtZ'
   - folder: Jc9oocmI3B4cVSRG
     name: Vulnérabilité au soleil
     type: capacity
@@ -897,8 +1049,46 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.I8tSp8P4yVELEGH0.Item.DYdLfDiLAmQ1mB9K
+          indice: 0
+          label: Jet de DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d10
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
       frequency: none
+      inGame: >-
+        <p>L'action permet de réaliser un jet de DM dans un message du tchat. Le
+        résultat doit être retiré des PV maximum du Vampire et pas seulement aux
+        PV actuels.</p>
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -907,20 +1097,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.1dzdCTT78RUfRxi1
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: zZlEg0Wdm5SwIRL5
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909655738
+      modifiedTime: 1758909861687
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: DYdLfDiLAmQ1mB9K
     sort: 3600000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.zZlEg0Wdm5SwIRL5'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.DYdLfDiLAmQ1mB9K'
   - folder: Jc9oocmI3B4cVSRG
     name: Estropier
     type: capacity
@@ -948,6 +1139,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -956,20 +1148,69 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mzPo1DasCb6HosYb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: dtMsW2bAXZDOAx10
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909704140
+      modifiedTime: 1758909704140
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: p9hLFNzTMB70jISx
     sort: 2600000
-    _key: '!actors.items!I8tSp8P4yVELEGH0.dtMsW2bAXZDOAx10'
+    _key: '!actors.items!I8tSp8P4yVELEGH0.p9hLFNzTMB70jISx'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Magicien
+    type: capacity
+    img: icons/magic/symbols/circled-gem-pink.webp
+    system:
+      description: >-
+        <p>La plupart des vampires anciens sont aussi des magiciens ; choisissez
+        une voie de mage au rang 5 (souvent une voie de sorcier).</p>
+      source: ''
+      origin: ''
+      slug: magicien
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: ''
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.9S81c05cs9qSlDMy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758909711709
+      modifiedTime: 1758909711709
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: osU1l1wjsFuWTHDQ
+    sort: 0
+    _key: '!actors.items!I8tSp8P4yVELEGH0.osU1l1wjsFuWTHDQ'
 effects: []
 ownership:
   default: 0
@@ -982,9 +1223,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749373695596
-  modifiedTime: 1758487702662
+  modifiedTime: 1758910134486
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: I8tSp8P4yVELEGH0
-sort: 50000
+sort: 3996875
 _key: '!actors!I8tSp8P4yVELEGH0'

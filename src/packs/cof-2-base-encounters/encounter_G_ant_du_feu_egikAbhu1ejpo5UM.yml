@@ -132,7 +132,7 @@ system:
         or.</p>
     languages: []
     properties: >-
-      <p><strong>IMMUNISé AU FEU :</strong></p><p>Le géant du feu est immunisé
+      <p><strong>IMMUNISÉ AU FEU :</strong></p><p>Le géant du feu est immunisé
       aux DM de feu</p>
   currentEffects: []
 prototypeToken:
@@ -239,34 +239,34 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+14'
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 4d8+12
+                formula: 4d8+16
               target:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -290,12 +290,12 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758847169625
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: pQD5cjuvLw8xg7Q1
     sort: 300000
@@ -387,7 +387,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: BxsyhNdPqpwsE20k
+    _id: fzE6sUbw1Amk0yQH
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -396,13 +396,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -418,12 +415,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.u5VcWWNeZ4iVH4OY.Item.BxsyhNdPqpwsE20k
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.egikAbhu1ejpo5UM.Item.fzE6sUbw1Amk0yQH
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -434,16 +433,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.u5VcWWNeZ4iVH4OY.Item.BxsyhNdPqpwsE20k
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.egikAbhu1ejpo5UM.Item.fzE6sUbw1Amk0yQH
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -457,29 +455,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!egikAbhu1ejpo5UM.BxsyhNdPqpwsE20k'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847198702
+      modifiedTime: 1758847235289
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!egikAbhu1ejpo5UM.fzE6sUbw1Amk0yQH'
   - folder: Jc9oocmI3B4cVSRG
     name: Fauchage
     type: capacity
@@ -501,6 +502,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -510,20 +512,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 1MeZ2qWxISxmrzek
-    sort: 8100000
-    _key: '!actors.items!egikAbhu1ejpo5UM.1MeZ2qWxISxmrzek'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847205883
+      modifiedTime: 1758847271155
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: kMw5dnALM3Jxjmeh
+    sort: 8800000
+    _key: '!actors.items!egikAbhu1ejpo5UM.kMw5dnALM3Jxjmeh'
   - folder: Jc9oocmI3B4cVSRG
     name: Balayage
     type: capacity
@@ -549,22 +552,26 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.u5VcWWNeZ4iVH4OY.Item.nHhsiFezEPIwketF
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.egikAbhu1ejpo5UM.Item.BQdXf1rvSpbp883Q
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+14'
                 crit: ''
@@ -575,16 +582,14 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -594,20 +599,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.eXiOj7ZDPVngZQL4
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: nHhsiFezEPIwketF
-    sort: 3200000
-    _key: '!actors.items!egikAbhu1ejpo5UM.nHhsiFezEPIwketF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847212836
+      modifiedTime: 1758847280540
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: BQdXf1rvSpbp883Q
+    sort: 3900000
+    _key: '!actors.items!egikAbhu1ejpo5UM.BQdXf1rvSpbp883Q'
 effects: []
 ownership:
   default: 0
@@ -620,9 +626,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749354137097
-  modifiedTime: 1758490326310
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: egikAbhu1ejpo5UM
-sort: 3400000
+sort: 800000
 _key: '!actors!egikAbhu1ejpo5UM'

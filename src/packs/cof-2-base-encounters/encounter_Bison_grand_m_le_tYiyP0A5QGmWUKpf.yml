@@ -122,7 +122,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Ce profil correspond à tous les grands herbivores à cornes (taureau, etc.). Les femelles fuient\_généralement à moins de défendre un petit.</p><p>Un grand mâle, environ 1,80 m au garrot\_pour une tonne.</p>"
     languages: []
     properties: ''
   magic: 0
@@ -280,12 +280,13 @@ items:
     system:
       description: >-
         <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 14 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
+        attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en
+        plus des DM normaux, une victime de taille inférieure ou égale à la
+        créature, doit faire un <strong>test de FOR difficulté 13</strong> ou
+        être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche)
+        sa victime et les <strong>DM sont doublés</strong>.</p>
       source: ''
-      origin: Livre des règles p268
+      origin: ''
       slug: charge
       subtype: ''
       actionType: l
@@ -299,12 +300,13 @@ items:
       cost: -1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.tYiyP0A5QGmWUKpf.Item.7khNMGBH0gFMb56R
+            Compendium.cof-base.cof-2-base-encounter.Actor.tYiyP0A5QGmWUKpf.Item.IjZM3b09dZ3bkakj
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -330,12 +332,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -345,20 +347,119 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: 1749124127070
-      modifiedTime: 1749124180875
-      lastModifiedBy: dkGm1qUrVLQeAKiY
       exportSource: null
-    _id: 7khNMGBH0gFMb56R
-    sort: 5300000
-    _key: '!actors.items!tYiyP0A5QGmWUKpf.7khNMGBH0gFMb56R'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839282320
+      modifiedTime: 1758841155945
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: IjZM3b09dZ3bkakj
+    sort: 7500000
+    _key: '!actors.items!tYiyP0A5QGmWUKpf.IjZM3b09dZ3bkakj'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: dwf33erwc8wNeG7L
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.tYiyP0A5QGmWUKpf.Item.dwf33erwc8wNeG7L
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.tYiyP0A5QGmWUKpf.Item.dwf33erwc8wNeG7L
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840298995
+      modifiedTime: 1758841220594
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!tYiyP0A5QGmWUKpf.dwf33erwc8wNeG7L'
 effects: []
 sort: 1500000
 ownership:
@@ -370,9 +471,9 @@ _stats:
   duplicateSource: Actor.1pwQOr5AzWx0g7uQ
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454179561
-  modifiedTime: 1758490673589
+  modifiedTime: 1758839323955
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: tYiyP0A5QGmWUKpf

@@ -293,121 +293,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: BHbn2gP9Z2mczP4c
-    name: Mains nues
-    type: equipment
-    img: icons/skills/melee/unarmed-punch-fist.webp
-    _id: ofU6rjl3LFLiKEHh
-    system:
-      description: >-
-        <p>Dans le cas du combat à mains nues, les DM sont généralement
-        temporaires, sauf pour les moines</p>
-      source: ''
-      origin: ''
-      slug: mains-nues
-      tags:
-        - dmtemporaires
-      subtype: weapon
-      martialCategory: unarmed
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.ofU6rjl3LFLiKEHh
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d3 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      damagetype: impact
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 100007
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource:
-        worldId: cov2-dev
-        uuid: null
-        coreVersion: '12.331'
-        systemId: co
-        systemVersion: 12.331.0
-    _key: '!actors.items!wECdhKHcCmFzhyqk.ofU6rjl3LFLiKEHh'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -508,7 +393,7 @@ items:
   - name: Elfe haut
     type: feature
     img: modules/cof-base/assets/peuples/peuple_elfehaut.webp
-    _id: FwXeaRZUOzPR60M5
+    _id: lsKyZJwNy9J3Q5Rs
     system:
       description: >-
         <p>L’elfe haut est un être féérique qui vit extrêmement longtemps et
@@ -584,14 +469,16 @@ items:
       slug: elfe-haut
       subtype: people
       modifiers:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.FwXeaRZUOzPR60M5
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.lsKyZJwNy9J3Q5Rs
           type: feature
           subtype: ability
           target: cha
           value: '1'
           apply: self
           additionalInfos: ''
-        - source: Actor.wECdhKHcCmFzhyqk.Item.FwXeaRZUOzPR60M5
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.lsKyZJwNy9J3Q5Rs
           type: feature
           subtype: ability
           target: for
@@ -599,7 +486,8 @@ items:
           apply: self
           additionalInfos: ''
       paths:
-        - Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       capacities: []
     effects: []
     folder: pClI1itDE2etUmdy
@@ -611,23 +499,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.aCJgY50A8AjqTBAh
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.FwXeaRZUOzPR60M5'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788426
+      modifiedTime: 1758926818251
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.lsKyZJwNy9J3Q5Rs'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie de l'elfe haut
     type: path
     img: modules/cof-base/assets/peuples/peuple_elfehaut.webp
-    _id: k5YwLh5noI91OQFo
+    _id: ipO8Tzf3M71sT7kZ
     system:
       description: ''
       source: ''
@@ -635,11 +524,16 @@ items:
       slug: voie-de-lelfe-haut
       subtype: people
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.6qYP1ib65PQRgcD8
-        - Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
-        - Actor.wECdhKHcCmFzhyqk.Item.VnuxmJqpIIAjRrm6
-        - Actor.wECdhKHcCmFzhyqk.Item.Stv6wlTLMVWoHwDO
-        - Actor.wECdhKHcCmFzhyqk.Item.akwVDQwz6WqVsj3l
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6Gdr2RIbSvoyN1eg
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.gyfgQhpfq5XboOTl
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.pO1pmSgtQC2dYfSc
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Mjv2f7HTGddbzSLC
       rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
@@ -651,35 +545,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.k5YwLh5noI91OQFo'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788486
+      modifiedTime: 1758926822500
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.ipO8Tzf3M71sT7kZ'
   - folder: I4uDxbHkmWcP8WpV
     name: Lumière intérieur
     type: capacity
     img: icons/magic/light/explosion-star-glow-silhouette.webp
-    _id: 6qYP1ib65PQRgcD8
+    _id: 6Gdr2RIbSvoyN1eg
     system:
       description: >-
         <p>Pour un elfe, l’obscurité de la nuit sous la lumière des étoiles est
         considérée comme de la pénombre. De plus, il gagne un bonus de +3 à tous
-        les tests d’érudition (INT) et artistiques (CHA).</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        les tests d’érudition (INT) et artistiques (CHA).</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p50
       slug: lumiere-interieur
@@ -691,9 +582,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.6qYP1ib65PQRgcD8
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6Gdr2RIbSvoyN1eg
           indice: 0
           label: ''
           chatFlavor: ''
@@ -709,27 +602,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.6qYP1ib65PQRgcD8
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6Gdr2RIbSvoyN1eg
               subtype: skill
               target: int
               apply: self
               value: '3'
               additionalInfos: Erudition et arts
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.6qYP1ib65PQRgcD8
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6Gdr2RIbSvoyN1eg
               subtype: skill
               target: cha
               apply: self
               value: '3'
               additionalInfos: Erudition et arts
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.6qYP1ib65PQRgcD8
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6Gdr2RIbSvoyN1eg
               subtype: state
               target: darkvision
               apply: self
               value: '10'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -745,38 +642,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.6qYP1ib65PQRgcD8'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788528
+      modifiedTime: 1758926822460
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.6Gdr2RIbSvoyN1eg'
   - folder: I4uDxbHkmWcP8WpV
     name: Force d'âme
     type: capacity
     img: icons/magic/holy/meditation-chi-focus-blue.webp
-    _id: 3CWgsXOSt1BsPt8J
+    _id: sDwgzMf7bZgzJg8P
     system:
       description: >-
-        <p>L’elfe est immunisé à la peur et au sommeil magique.</p>
-
-        <p>De plus, il obtient un bonus égal à son rang lorsqu’il doit faire un
-        test opposé d’attaque magique pour résister à un sort.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        <p>L’elfe est immunisé à la peur et au sommeil magique.</p><p>De plus,
+        il obtient un bonus égal à son rang lorsqu’il doit faire un test opposé
+        d’attaque magique pour résister à un sort.</p>
+      inGame: >-
         <p>2 effets : un bonus permanent pour les immunité et une action
         activable/désactivable à activer pour résister à un sort.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: force-dame
@@ -788,9 +679,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
           indice: 0
           label: Immunités
           chatFlavor: ''
@@ -806,21 +699,25 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
               subtype: state
               target: fearImmunity
               apply: self
               value: '0'
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
               subtype: state
               target: sleepimmunity
               apply: self
               value: '0'
               additionalInfos: ''
           resolvers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
           indice: 1
           label: Résister à un sort
           chatFlavor: ''
@@ -836,13 +733,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.3CWgsXOSt1BsPt8J
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.sDwgzMf7bZgzJg8P
               subtype: combat
               target: magic
               apply: self
               value: '@rang'
               additionalInfos: bonus test opposé
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -858,37 +757,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.3CWgsXOSt1BsPt8J'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788619
+      modifiedTime: 1758926788665
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.sDwgzMf7bZgzJg8P'
   - folder: I4uDxbHkmWcP8WpV
     name: Talent pour la magie
     type: capacity
     img: icons/magic/symbols/star-rising-purple.webp
-    _id: VnuxmJqpIIAjRrm6
+    _id: gyfgQhpfq5XboOTl
     system:
       description: >-
         <p>Le joueur choisit une capacité de rang 1 de n’importe quelle voie de
         magicien ou d’ensorceleur. Il peut utiliser cette capacité en armure
         sans pénalité (mais pas une capacité qui offre un bonus de DEF). À la
         place, il peut choisir une capacité de rang 2, mais ne doit alors pas
-        porter d’armure pour lancer le sort</p><blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+        porter d’armure pour lancer le sort</p>
+      inGame: >-
         <p>Il suffit de glisser déposer la capacité choisie en dessous de
         celle-ci sur la fiche de personnage.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: talent-pour-la-magie
@@ -900,7 +796,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       actions: []
       cost: -1
       rank: 3
@@ -917,35 +814,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.VnuxmJqpIIAjRrm6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788705
+      modifiedTime: 1758926788705
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.gyfgQhpfq5XboOTl'
   - folder: I4uDxbHkmWcP8WpV
     name: Immortel
     type: capacity
     img: icons/magic/life/ankh-gold-blue.webp
-    _id: Stv6wlTLMVWoHwDO
+    _id: pO1pmSgtQC2dYfSc
     system:
       description: >-
         <p>L’elfe n’a besoin que de la moitié du repos, de la nourriture ou de
         la boisson d’un humain normal pour être en pleine forme. Il est immunisé
-        aux effets des poisons et des maladies.</p><blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+        aux effets des poisons et des maladies.</p>
+      inGame: >-
         <p>Seul un effet permanent ajoutant les immunités est pris en
         compte.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: immortel
@@ -957,9 +851,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.Stv6wlTLMVWoHwDO
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.pO1pmSgtQC2dYfSc
           indice: 0
           label: ''
           chatFlavor: ''
@@ -975,20 +871,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.Stv6wlTLMVWoHwDO
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.pO1pmSgtQC2dYfSc
               subtype: state
               target: poisonImmunity
               value: '0'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.Stv6wlTLMVWoHwDO
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.pO1pmSgtQC2dYfSc
               subtype: state
               target: diseaseImmunity
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -1004,38 +903,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.Stv6wlTLMVWoHwDO'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788746
+      modifiedTime: 1758926788787
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.pO1pmSgtQC2dYfSc'
   - folder: I4uDxbHkmWcP8WpV
     name: Supériorité elfique
     type: capacity
     img: icons/sundries/flags/banner-yellow.webp
-    _id: akwVDQwz6WqVsj3l
+    _id: Mjv2f7HTGddbzSLC
     system:
       description: >-
         <p>L’elfe augmente sa valeur de VOL de +1 et sa valeur d’INT ou de CHA
         de +1.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
         Attention une fois la capacité sur la fiche de personnage il faudra
         supprimer l'attribut non choisit car les 2 possibilités ont été ajoutées
         ici !</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: superiorite-elfique
@@ -1047,9 +941,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.k5YwLh5noI91OQFo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.ipO8Tzf3M71sT7kZ
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.akwVDQwz6WqVsj3l
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Mjv2f7HTGddbzSLC
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1065,27 +961,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.akwVDQwz6WqVsj3l
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Mjv2f7HTGddbzSLC
               subtype: ability
               target: vol
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.akwVDQwz6WqVsj3l
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Mjv2f7HTGddbzSLC
               subtype: ability
               target: int
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.akwVDQwz6WqVsj3l
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Mjv2f7HTGddbzSLC
               subtype: ability
               target: cha
               value: '1'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -1101,558 +1001,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.akwVDQwz6WqVsj3l'
-  - folder: BHbn2gP9Z2mczP4c
-    name: Bâton ferré
-    type: equipment
-    img: icons/weapons/staves/staff-ornate.webp
-    _id: TBklXTmKkZLejl0a
-    system:
-      description: >-
-        <p>tous les personnages qui savent manier le bâton ferré savent aussi
-        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
-        est adapté au combat, plus lourd et généralement couvert de métal aux
-        extrémités (bien que les druides utilisent des bâtons de bois noueux
-        avec le même effet).</p>
-      source: ''
-      origin: ''
-      slug: baton-ferre
-      tags:
-        - dmtemporairespossibles
-      subtype: weapon
-      martialCategory: ironStaff
-      damagetype: impact
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 2
-        unit: kg
-      price:
-        value: 2
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.TBklXTmKkZLejl0a
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: true
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 200000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.w1n2zzLplJJ4BFmt
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.TBklXTmKkZLejl0a'
-  - folder: Um3g0UnqzSidTvlT
-    name: Sac à dos
-    type: equipment
-    img: icons/containers/bags/pack-leather-red.webp
-    _id: O9E1phuiB9NQiyMW
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: sac-a-dos
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 2000000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.O9E1phuiB9NQiyMW'
-  - folder: Um3g0UnqzSidTvlT
-    name: Outre
-    type: equipment
-    img: icons/sundries/survival/wetskin-leather-purple.webp
-    _id: uxnmdvscLLfmLxC2
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: outre
-      subtype: misc
-      tags: []
-      martialCategory: ''
-      damagetype: ''
-      defense: null
-      magicalDefense: null
-      quantity:
-        current: 1
-        max: null
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: pa
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      actions: []
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.uxnmdvscLLfmLxC2'
-  - folder: Um3g0UnqzSidTvlT
-    name: Torche
-    type: equipment
-    img: icons/sundries/lights/torch-brown.webp
-    _id: 6eH0LWM8weY9aHZp
-    system:
-      description: >-
-        <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
-        h pour une torche ou 6 h pour une lanterne (1 dose d’huile).</p>
-      source: ''
-      origin: ''
-      slug: torche
-      tags: []
-      subtype: misc
-      martialCategory: paddedClothFur
-      damagetype: ''
-      quantity:
-        current: 3
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 2100000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.6eH0LWM8weY9aHZp'
-  - folder: Um3g0UnqzSidTvlT
-    name: Couverture
-    type: equipment
-    img: icons/sundries/survival/bedroll-grey.webp
-    _id: vOgdO1hw57CpHZnj
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: couverture
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 800000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.vOgdO1hw57CpHZnj'
-  - folder: Um3g0UnqzSidTvlT
-    name: Gamelle
-    type: equipment
-    img: icons/containers/kitchenware/bowl-clay-brown.webp
-    _id: NQ5KOmDOVBOTBdoN
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: gamelle
-      subtype: misc
-      tags: []
-      martialCategory: ''
-      damagetype: ''
-      defense: null
-      magicalDefense: null
-      quantity:
-        current: 1
-        max: null
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: pa
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      actions: []
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.NQ5KOmDOVBOTBdoN'
-  - folder: Um3g0UnqzSidTvlT
-    name: Briquet à silex
-    type: equipment
-    img: icons/commodities/stone/geode-raw-black.webp
-    _id: GnmQjWNrbaybNrMC
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: briquet-a-silex
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 100000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.GnmQjWNrbaybNrMC'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926788835
+      modifiedTime: 1758926788876
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.Mjv2f7HTGddbzSLC'
   - folder: aF8rtevxjzJi9taT
     name: Prêtre
     type: profile
     img: modules/cof-base/assets/profils/profil_mystique_pretre.webp
-    _id: VpPj4GwJIYPZfNyh
+    _id: Z6WGeaRRO719jA46
     system:
       description: >-
         <p><strong>Points de vigueur : </strong>4 par niveau Le prêtre perçoit
@@ -1717,11 +1083,16 @@ items:
       modifiers: []
       proficiencies: []
       paths:
-        - Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
-        - Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
-        - Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
-        - Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
-        - Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       martialTrainingsWeapons:
         unarmed: true
         staff: true
@@ -1780,24 +1151,25 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags:
       co: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ZLSf3jG35D8OelSZ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.VpPj4GwJIYPZfNyh'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926794554
+      modifiedTime: 1758926798765
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.Z6WGeaRRO719jA46'
   - folder: BP3eEQS9sYUKkMSn
     name: Voie de la prière
     type: path
     img: modules/cof-base/assets/voies/pretre_priere.webp
-    _id: u9XvaknUhJtYFsI4
+    _id: wVoiPUWETTiXiLJA
     system:
       description: ''
       source: ''
@@ -1805,11 +1177,16 @@ items:
       slug: voie-de-la-priere
       subtype: profile
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.yCNupkNzkQITjo44
-        - Actor.wECdhKHcCmFzhyqk.Item.GqqhkUahgrVrDpDU
-        - Actor.wECdhKHcCmFzhyqk.Item.twUlNdBAYauAWZWo
-        - Actor.wECdhKHcCmFzhyqk.Item.l4qjcnSrpbuJfPjZ
-        - Actor.wECdhKHcCmFzhyqk.Item.YIpeXu58bU1gXUf2
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qHukdOnM3ZiuPRUs
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bcXKyeU95yF3OeDy
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Iu42ndOZJPto4DQB
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TYMBl8Bsub6YKHSI
       rank: 0
       maxDefenseArmor: 4
       pvByLevel: 0
@@ -1821,23 +1198,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       duplicateSource: null
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.maHFa82xlQcWR4t3
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      compendiumSource: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.u9XvaknUhJtYFsI4'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926794687
+      modifiedTime: 1758926795256
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.wVoiPUWETTiXiLJA'
   - folder: oZQRgOBUZfjXL2nE
     name: Bénédiction
     type: capacity
     img: icons/magic/holy/barrier-shield-winged-blue.webp
-    _id: yCNupkNzkQITjo44
+    _id: VgBgmjQVlHgRu5ob
     system:
       description: >-
         <p style="text-align:justify">Le prêtre entonne un chant pour encourager
@@ -1845,20 +1223,12 @@ items:
         tous leurs tests de caractéristique et d’attaque pendant CHA minutes. Ce
         bonus passe à +2 au rang 5. De plus, le prêtre obtient un bonus égal à
         son rang + 2 à tous les tests de théologie ou de cosmologie.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>2 actions</p>
-
-        <p>Une amélioration permanente pour la theologie et la cosmologie</p>
-
-        <p>Une action pour laquelle le joueur cible les cibles et lorsqu'il clic
-        sur l'action, chaque token ciblé reçoit un bonus à tous ses jets de
-        caractéristique et d'attaque. Utilisable uniquement en combat</p>
-
-        </blockquote>
+      inGame: >-
+        <p>2 actions</p><p>Une amélioration permanente pour la théologie et la
+        cosmologie</p><p>Une action pour laquelle le joueur cible les cibles et
+        lorsqu'il clique sur l'action, chaque token ciblé reçoit un bonus à tous
+        ses jets de caractéristique et d'attaque. Utilisable uniquement en
+        combat.</p>
       source: ''
       origin: Livre des règles p124
       slug: benediction
@@ -1870,36 +1240,42 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.yCNupkNzkQITjo44
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.yCNupkNzkQITjo44
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
               subtype: skill
               target: int
-              apply: self
               value: 2 + @rang
-              additionalInfos: theologie/cosmologie
-          conditions: []
+              apply: self
+              additionalInfos: théologie/cosmologie
           resolvers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.yCNupkNzkQITjo44
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
           indice: 1
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
@@ -1910,11 +1286,36 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.yCNupkNzkQITjo44
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
               subtype: skill
               target: all
-              apply: both
               value: '@rang[1,1,1,1,2]'
+              apply: both
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
+              subtype: combat
+              target: melee
+              value: '@rang[1,1,1,1,2]'
+              apply: both
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
+              subtype: combat
+              target: ranged
+              value: '@rang[1,1,1,1,2]'
+              apply: both
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VgBgmjQVlHgRu5ob
+              subtype: combat
+              target: magic
+              value: '@rang[1,1,1,1,2]'
+              apply: both
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
@@ -1933,9 +1334,9 @@ items:
                 statuses: []
                 duration: '@cha * 10'
                 unit: round
-                successThreshold: null
               skill: {}
               dmg: {}
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1951,23 +1352,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.yCNupkNzkQITjo44'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926794748
+      modifiedTime: 1758926794763
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.VgBgmjQVlHgRu5ob'
   - folder: oZQRgOBUZfjXL2nE
     name: Sanctuaire
     type: capacity
     img: icons/magic/defensive/barrier-shield-dome-pink.webp
-    _id: GqqhkUahgrVrDpDU
+    _id: qHukdOnM3ZiuPRUs
     system:
       description: >-
         <p style="text-align:justify">Pendant 1 min (10 rounds), tous les
@@ -1978,18 +1380,13 @@ items:
         d’INT). Si le prêtre commet une action offensive, le sort prend fin
         immédiatement et il ne peut plus être lancé avant de prendre une
         récupération rapide.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Une action va permettre de lancer le sort et consommer les PM. Celà
-        va applliquer un "effet" qui ne fait rien au sens propre du terme mais
+      inGame: >-
+        <p>Une action va permettre de lancer le sort et consommer les PM. Cela
+        va appliquer un "effet" qui ne fait rien au sens propre du terme mais
         permet de suivre son application pendant 1 minute en combat. Si l'effet,
-        (et l'icone de l'effet) disparaissent celà signifie que le sort à pris
-        fin. Le reste est laissé à la charge du MJ</p>
-
-        </blockquote>
+        (et l'icone de l'effet) disparaissent cela signifie que le sort a pris
+        fin. Le reste est laissé à la charge du MJ.</p> <p>L'action fonctionne
+        uniquement en mode Combat.</p>
       source: ''
       origin: Livre des règles p124
       slug: sanctuaire
@@ -2001,9 +1398,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.GqqhkUahgrVrDpDU
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qHukdOnM3ZiuPRUs
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2038,6 +1437,7 @@ items:
               skill: {}
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -2053,37 +1453,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.GqqhkUahgrVrDpDU'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926794855
+      modifiedTime: 1758926794876
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.qHukdOnM3ZiuPRUs'
   - folder: oZQRgOBUZfjXL2nE
     name: Destruction du mal
     type: capacity
     img: icons/magic/fire/barrier-wall-flame-ring-blue.webp
-    _id: twUlNdBAYauAWZWo
+    _id: bcXKyeU95yF3OeDy
     system:
       description: >-
         <p>Tous les morts‑vivants et les démons dans un rayon de 10 m autour du
         prêtre subissent automatiquement [2d4°+CHA] DM. Les DM passent à 3d4° au
         rang 5.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Le joueur cible les Mort-vivants et clique sur le bouton d'action qui
         va lancer les dommages. Le succès est automatique.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p124
       slug: destruction-du-mal
@@ -2095,9 +1490,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.twUlNdBAYauAWZWo
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bcXKyeU95yF3OeDy
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2131,6 +1528,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2146,23 +1544,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.twUlNdBAYauAWZWo'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926794963
+      modifiedTime: 1758926794978
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.bcXKyeU95yF3OeDy'
   - folder: oZQRgOBUZfjXL2nE
     name: Volonté héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: l4qjcnSrpbuJfPjZ
+    _id: Iu42ndOZJPto4DQB
     system:
       description: >-
         <p>Le prêtre augmente sa VOL de +1. Désormais,il obtient un dé bonus aux
@@ -2178,10 +1577,12 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
       cost: -1
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.l4qjcnSrpbuJfPjZ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Iu42ndOZJPto4DQB
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2197,21 +1598,25 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.l4qjcnSrpbuJfPjZ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Iu42ndOZJPto4DQB
               subtype: ability
               target: vol
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.l4qjcnSrpbuJfPjZ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Iu42ndOZJPto4DQB
               subtype: bonusDice
               target: vol
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       rank: 4
+      inGame: ''
       frequency: none
       manaCost: -1
       allowLinkedCapacity: false
@@ -2222,24 +1627,24 @@ items:
     ownership:
       default: 0
       T8QXSVbafGIxbHWi: 3
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.l4qjcnSrpbuJfPjZ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795078
+      modifiedTime: 1758926795099
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.Iu42ndOZJPto4DQB'
   - folder: oZQRgOBUZfjXL2nE
     name: Intervention divine
     type: capacity
     img: icons/magic/holy/prayer-hands-glowing-yellow.webp
-    _id: YIpeXu58bU1gXUf2
+    _id: TYMBl8Bsub6YKHSI
     system:
       description: >-
         <p style="text-align:justify">Le prêtre fait appel à son dieu pour
@@ -2248,14 +1653,7 @@ items:
         que les dés ont révélé leur résultat. Il ne peut pas modifier le
         résultat du test obtenu par une créature d’un NC supérieur à son
         niveau.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-        </blockquote>
+      inGame: <p>L'action permet de prendre en compte l'utilisation.</p>
       source: ''
       origin: Livre des règles p124
       slug: intervention-divine
@@ -2267,8 +1665,27 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.u9XvaknUhJtYFsI4
-      actions: []
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wVoiPUWETTiXiLJA
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TYMBl8Bsub6YKHSI
+          indice: 1
+          label: Activation
+          chatFlavor: ''
+          type: spell
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: combat
@@ -2284,23 +1701,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.YIpeXu58bU1gXUf2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795193
+      modifiedTime: 1758926795210
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.TYMBl8Bsub6YKHSI'
   - folder: BP3eEQS9sYUKkMSn
     name: Voie des soins
     type: path
     img: modules/cof-base/assets/voies/pretre_soins.webp
-    _id: AumAw83snpKIef0i
+    _id: k5UxqNiYnUeNsYMU
     system:
       description: ''
       source: ''
@@ -2308,11 +1726,16 @@ items:
       slug: voie-des-soins
       subtype: profile
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.KnSNevir9EwcvgOn
-        - Actor.wECdhKHcCmFzhyqk.Item.W5r5EEuZaFgcSpF6
-        - Actor.wECdhKHcCmFzhyqk.Item.7koCF4368DXBVpEQ
-        - Actor.wECdhKHcCmFzhyqk.Item.FP51CRPXkLpAcfnU
-        - Actor.wECdhKHcCmFzhyqk.Item.laAMuWxREh0aU3Pf
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TdrpBnnM3cE4Dt1Z
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.yoiHUxkmqvoqlDt0
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.AONiFvEnQXxsK5Kf
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.s2aKNmK76BzJ4WY0
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.FOnZtZoZqqW68ZfF
       rank: 1
       maxDefenseArmor: 4
       pvByLevel: 0
@@ -2324,23 +1747,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       duplicateSource: null
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.L1j2SGARni53Bn4s
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      compendiumSource: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.AumAw83snpKIef0i'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795347
+      modifiedTime: 1758926828541
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.k5UxqNiYnUeNsYMU'
   - folder: 9wusVgZFeiaMY9kN
     name: Récupération mineure
     type: capacity
     img: icons/magic/life/cross-worn-green.webp
-    _id: KnSNevir9EwcvgOn
+    _id: TdrpBnnM3cE4Dt1Z
     system:
       description: >-
         <p>Le prêtre peut apposer les mains sur un allié au contact (ou sur
@@ -2350,21 +1774,14 @@ items:
         rang 3 dans une autre voie de prêtre. En plus de ce sort, le prêtre
         ajoute son rang + 2 à tous les tests de médecine et de premiers
         soins.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
         le sort qui va automatiquement appliquer les soins.</p>
 
         <p>Remarque : Pour le nombre d'utilisation par jour, il est actuellement
         reglé sur 1/jour, vous pouvez le modifier dans l'onglet "détails" en
-        mettant la valeur maximum correspondante au rang de votre prêtre et au
-        nombre de rang 3 appris de la voie du prêtre.. La case ne prend pas de
-        "formule" mais une valeur fixe.</p>
-
-        </blockquote>
+        mettant une valeur fixe.</p> <p>La deuxième action donne le bonus
+        permanent au tests de médecine et de premiers soins.</p>
       source: ''
       origin: Livre des règles p124
       slug: recuperation-mineure
@@ -2376,14 +1793,16 @@ items:
         max: 1
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.KnSNevir9EwcvgOn
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TdrpBnnM3cE4Dt1Z
           indice: 0
           label: ''
           chatFlavor: ''
-          type: heal
           img: icons/svg/d20-highlight.svg
+          type: heal
           properties:
             visible: true
             enabled: false
@@ -2405,34 +1824,38 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
               dmg: {}
           modifiers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.KnSNevir9EwcvgOn
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TdrpBnnM3cE4Dt1Z
           indice: 1
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: true
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.KnSNevir9EwcvgOn
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.TdrpBnnM3cE4Dt1Z
               subtype: skill
               target: int
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: médecine/premiers soins
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: daily
@@ -2448,23 +1871,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.KnSNevir9EwcvgOn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795414
+      modifiedTime: 1758926828511
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.TdrpBnnM3cE4Dt1Z'
   - folder: 9wusVgZFeiaMY9kN
     name: Vigueur divine
     type: capacity
     img: icons/magic/life/heart-hand-gold-green-light.webp
-    _id: W5r5EEuZaFgcSpF6
+    _id: yoiHUxkmqvoqlDt0
     system:
       description: >-
         <p>La cible au contact est guérie d’un poison ou d’une maladie. Si
@@ -2472,18 +1896,12 @@ items:
         opposé) peut être demandé par le MJ. De plus, le prêtre obtient un bonus
         égal au rang + 2 aux tests effectués pour résister aux maladies et aux
         poisons</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Le bonus résistance maladie/poisons est pris en compte sous forme de
         bonus permanent. L'action permet de réaliser une Attaque magique. Si une
         cible est sélectionnée ce sera en opposition. L'action dépense les PM
         par contre pour des maladies et poisons naturels, le PJ dépense
         manuellement les PM.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p125
       slug: vigueur-divine
@@ -2495,36 +1913,42 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.W5r5EEuZaFgcSpF6
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.yoiHUxkmqvoqlDt0
           indice: 0
           label: ''
           chatFlavor: ''
-          type: spell
           img: icons/svg/d20-highlight.svg
+          type: spell
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.W5r5EEuZaFgcSpF6
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.yoiHUxkmqvoqlDt0
               subtype: skill
               target: con
-              apply: self
               value: 2 + @rang
-              additionalInfos: ''
-          conditions: []
+              apply: self
+              additionalInfos: Résister aux maladies/poisons
           resolvers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.W5r5EEuZaFgcSpF6
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.yoiHUxkmqvoqlDt0
           indice: 1
           label: contre infection surnaturelle
           chatFlavor: ''
-          type: spell
           img: icons/svg/d20-highlight.svg
+          type: spell
           properties:
             visible: false
             enabled: false
@@ -2545,16 +1969,16 @@ items:
                 formula: ''
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -2570,36 +1994,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.W5r5EEuZaFgcSpF6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795587
+      modifiedTime: 1758926795611
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.yoiHUxkmqvoqlDt0'
   - folder: 9wusVgZFeiaMY9kN
     name: Récupération majeure
     type: capacity
     img: icons/magic/life/cross-flared-green.webp
-    _id: 7koCF4368DXBVpEQ
+    _id: AONiFvEnQXxsK5Kf
     system:
       description: >-
         <p>Le prêtre peut soigner une cible (ou lui‑même) à une portée de 20 m ;
         elle récupère immédiatement [3d4°+CHA du prêtre] PV. Le montant des
         soins prodigués augmente de 1d4° chaque fois que le personnage atteint
-        le rang 5 dans une voie de prêtre</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        le rang 5 dans une voie de prêtre</p>
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
         le sort qui va automatiquement appliquer les soins.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p125
       slug: recuperation-majeure
@@ -2611,9 +2032,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.7koCF4368DXBVpEQ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.AONiFvEnQXxsK5Kf
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2646,6 +2069,7 @@ items:
                 unit: round
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2661,25 +2085,37 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.7koCF4368DXBVpEQ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795722
+      modifiedTime: 1758926795756
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.AONiFvEnQXxsK5Kf'
   - folder: 9wusVgZFeiaMY9kN
     name: Phénix
     type: capacity
     img: icons/magic/light/explosion-beam-impact-silhouette.webp
-    _id: FP51CRPXkLpAcfnU
+    _id: s2aKNmK76BzJ4WY0
     system:
-      description: "<p style=\"text-align:justify\">Une fois par jour, lorsque le personnage tombe à 0 PV, il se relève, nimbé d’une aura de lumière. Il produit alors une onde d’énergie positive qui restitue [2d4°+CHA du\_prêtre] PV à tous ses alliés dans un rayon de 20 m, et il récupère lui‑même le double de PV.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va automatiquement appliquer les soins. A noter que : on ne vérifie pas que le joueur ai 0 PV, et n'applique pas le double de PV sur le PJ (pas possible actuellement). Il faudra bien un repos complet pour pouvoir réutiliser cette action.</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Une fois par jour, lorsque le personnage
+        tombe à 0 PV, il se relève, nimbé d’une aura de lumière. Il produit
+        alors une onde d’énergie positive qui restitue [2d4°+CHA du prêtre] PV à
+        tous ses alliés dans un rayon de 20 m, et il récupère lui‑même le double
+        de PV.</p>
+      inGame: >-
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
+        le sort qui va automatiquement appliquer les soins. A noter que : on ne
+        vérifie pas que le joueur ai 0 PV, et n'applique pas le double de PV sur
+        le PJ (pas possible actuellement). Il faudra bien un repos complet pour
+        pouvoir réutiliser cette action.</p>
       source: ''
       origin: Livre des règles p125
       slug: phenix
@@ -2691,9 +2127,11 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.FP51CRPXkLpAcfnU
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.s2aKNmK76BzJ4WY0
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2721,11 +2159,11 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: daily
@@ -2741,23 +2179,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.FP51CRPXkLpAcfnU'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795857
+      modifiedTime: 1758926795880
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.s2aKNmK76BzJ4WY0'
   - folder: 9wusVgZFeiaMY9kN
     name: Rétablissement
     type: capacity
     img: icons/magic/life/cross-explosion-burst-green.webp
-    _id: laAMuWxREh0aU3Pf
+    _id: FOnZtZoZqqW68ZfF
     system:
       description: >-
         <p style="text-align:justify">Une fois par jour, le prêtre peut soigner
@@ -2767,11 +2206,7 @@ items:
         repos dans un rayon de 5 m autour du prêtre qui se concentre et se nimbe
         de lumière divine. Ce sort ne peut pas être lancé avec la règle de
         concentration.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
         le sort qui va automatiquement appliquer les soins. Actuellement il
         n'est pas possible de mettre CHA cibles, le chiffre 5 a été mis par
@@ -2780,8 +2215,6 @@ items:
         <p>Il faudra bien un repos complet pour réutiliser cette action.
         L'action est mis sur "Limité" pour ne pas pouvoir utiliser la
         concentration et ne gère pas le délais de 5-10 min de rituel.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p125
       slug: retablissement
@@ -2793,9 +2226,11 @@ items:
         max: 1
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.AumAw83snpKIef0i
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.k5UxqNiYnUeNsYMU
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.laAMuWxREh0aU3Pf
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.FOnZtZoZqqW68ZfF
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2828,6 +2263,7 @@ items:
                 unit: round
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: daily
@@ -2843,23 +2279,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.laAMuWxREh0aU3Pf'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926795978
+      modifiedTime: 1758926796002
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.FOnZtZoZqqW68ZfF'
   - folder: BP3eEQS9sYUKkMSn
     name: Voie de la spiritualité
     type: path
     img: modules/cof-base/assets/voies/pretre_spiritualite.webp
-    _id: yKIQhlXDceM9cP1b
+    _id: hdsukSznubDRDIKd
     system:
       description: ''
       source: ''
@@ -2867,11 +2304,16 @@ items:
       slug: voie-de-la-spiritualite
       subtype: profile
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.LgwrnsfEeykhLuZc
-        - Actor.wECdhKHcCmFzhyqk.Item.sXGeoieWDVyUMUT7
-        - Actor.wECdhKHcCmFzhyqk.Item.zgH0He8SzjH0gEq7
-        - Actor.wECdhKHcCmFzhyqk.Item.JnbQnO0jCagfBjKi
-        - Actor.wECdhKHcCmFzhyqk.Item.wphUMy1IlAs78Ckn
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.orqbRbA3sqt1RfZx
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.JpIyAH2ZBMMIyLMX
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6tN5CqqjmHd1n81v
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qQc0dKfUGBkLWERb
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.yZgrkfNv3BdQLRNN
       rank: 1
       maxDefenseArmor: 4
       pvByLevel: 0
@@ -2883,23 +2325,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       duplicateSource: null
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.g18L1xImXMuLL9SF
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      compendiumSource: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.yKIQhlXDceM9cP1b'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796155
+      modifiedTime: 1758926829809
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.hdsukSznubDRDIKd'
   - folder: QbGU3agOtNxWKOdP
     name: Vêtements sacrés
     type: capacity
     img: icons/magic/holy/barrier-shield-winged-cross.webp
-    _id: LgwrnsfEeykhLuZc
+    _id: orqbRbA3sqt1RfZx
     system:
       description: >-
         <p style="text-align:justify">La tenue religieuse du prêtre est bénie et
@@ -2912,17 +2355,11 @@ items:
         avec cette armure (dans le cas d’un profil hybride, la maîtrise de la
         chemise de mailles est un prérequis pour bénéficier de cette
         variante).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>L'action activable/désactivale permet de donner le Bonus de DEF et un
         Dé Bonus en Attaque Magique. Le PJ devra désactiver cette action s'il
         porte une autre armure et s'il effectue une attaque magique ou s'oppose
-        à une ataque magique autre que pour les résistance" mentales,</p>
-
-        </blockquote>
+        à une ataque magique autre que pour les résistance mentales.</p>
       source: ''
       origin: Livre des règles p125
       slug: vetements-sacres
@@ -2934,12 +2371,14 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.LgwrnsfEeykhLuZc
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.orqbRbA3sqt1RfZx
           indice: 0
-          label: Défense
-          chatFlavor: Défense
+          label: Défense et Dé bonus
+          chatFlavor: ''
           type: buff
           img: icons/svg/d20-highlight.svg
           properties:
@@ -2952,20 +2391,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.LgwrnsfEeykhLuZc
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.orqbRbA3sqt1RfZx
               subtype: combat
               target: def
               apply: self
               value: '@rang[2,2,3,3,4]'
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.LgwrnsfEeykhLuZc
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.orqbRbA3sqt1RfZx
               subtype: bonusDice
               target: magic
               apply: self
               value: '0'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2981,23 +2423,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.LgwrnsfEeykhLuZc'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796228
+      modifiedTime: 1758926873490
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.orqbRbA3sqt1RfZx'
   - folder: QbGU3agOtNxWKOdP
     name: Augure
     type: capacity
     img: icons/magic/perception/orb-crystal-ball-scrying-blue.webp
-    _id: sXGeoieWDVyUMUT7
+    _id: JpIyAH2ZBMMIyLMX
     system:
       description: >-
         <p>Le prêtre entre en contact avec les forces de l’au‑delà et demande un
@@ -3006,13 +2449,10 @@ items:
         difficulté 10. En cas de succès, il reçoit une réponse déterminée par le
         MJ parmi : <strong>bénéfique, incertain, risqué ou
         préjudiciable</strong>. Le MJ essaie de donner la réponse la plus utile
-        possible au scénario.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-        </blockquote>
+        possible au scénario.</p>
+      inGame: >-
+        <p>L'action permet de réaliser le test de CHA difficulté 10 et de
+        dépenser les PM.</p>
       source: ''
       origin: Livre des règles p125
       slug: augure
@@ -3024,8 +2464,47 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
-      actions: []
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.JpIyAH2ZBMMIyLMX
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: spell
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@cha'
+                crit: ''
+                difficulty: '10'
+              dmg:
+                formula: '0'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3041,23 +2520,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.sXGeoieWDVyUMUT7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796357
+      modifiedTime: 1758926796379
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.JpIyAH2ZBMMIyLMX'
   - folder: QbGU3agOtNxWKOdP
     name: Délivrance
     type: capacity
     img: icons/magic/life/heart-pink.webp
-    _id: zgH0He8SzjH0gEq7
+    _id: 6tN5CqqjmHd1n81v
     system:
       description: >-
         <p>En touchant sa cible, le prêtre annule les pénalités infligées par
@@ -3067,16 +2547,10 @@ items:
         amputations. Si la pénalité était permanente, le MJ peut requérir un
         test d’attaque magique opposé et imposer un éventuel malus selon la
         force de l’effet.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>L'action permet de réaliser une Attaque magique. Si une cible est
         sélectionnée ce sera en opposition. L'action dépense les PM par contre
         pour les pénalités de bases, le PJ dépense manuellement les PM.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p125
       slug: delivrance
@@ -3088,9 +2562,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.zgH0He8SzjH0gEq7
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.6tN5CqqjmHd1n81v
           indice: 0
           label: contre les pénalités permanentes
           chatFlavor: ''
@@ -3126,6 +2602,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -3141,23 +2618,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.zgH0He8SzjH0gEq7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796495
+      modifiedTime: 1758926796543
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.6tN5CqqjmHd1n81v'
   - folder: QbGU3agOtNxWKOdP
     name: Charisme héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: JnbQnO0jCagfBjKi
+    _id: qQc0dKfUGBkLWERb
     system:
       description: >-
         <p>Le prêtre augmente son CHA de +1. Désormais, il obtient un dé bonus
@@ -3173,10 +2651,12 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
       cost: -1
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.JnbQnO0jCagfBjKi
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qQc0dKfUGBkLWERb
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3192,20 +2672,24 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.JnbQnO0jCagfBjKi
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qQc0dKfUGBkLWERb
               subtype: ability
               target: cha
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.JnbQnO0jCagfBjKi
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qQc0dKfUGBkLWERb
               subtype: bonusDice
               target: cha
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
+      inGame: ''
       rank: 0
       frequency: none
       manaCost: -1
@@ -3217,24 +2701,24 @@ items:
     ownership:
       default: 0
       T8QXSVbafGIxbHWi: 3
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.JnbQnO0jCagfBjKi'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796673
+      modifiedTime: 1758926796703
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.qQc0dKfUGBkLWERb'
   - folder: QbGU3agOtNxWKOdP
     name: Marche des plans
     type: capacity
     img: icons/magic/movement/portal-vortex-orange.webp
-    _id: wphUMy1IlAs78Ckn
+    _id: yZgrkfNv3BdQLRNN
     system:
       description: >-
         <p>Une fois par jour, le prêtre peut passer dans une dimension entre les
@@ -3243,13 +2727,8 @@ items:
         où le paysage défile à toute vitesse. Pour chaque round de Marche des
         plans, il se déplace en réalité de 10 km. Le lieu de sortie n’est
         cependant pas très précis et le MJ doit déterminer une position au
-        hasard autour du point visé (à 1d6 km près).</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-        </blockquote>
+        hasard autour du point visé (à 1d6 km près).</p>
+      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
       source: ''
       origin: Livre des règles p125
       slug: marche-des-plans
@@ -3261,7 +2740,8 @@ items:
         max: 1
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.yKIQhlXDceM9cP1b
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hdsukSznubDRDIKd
       actions: []
       cost: -1
       rank: 5
@@ -3278,18 +2758,19 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       duplicateSource: null
       compendiumSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.wphUMy1IlAs78Ckn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796819
+      modifiedTime: 1758926796819
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.yZgrkfNv3BdQLRNN'
   - folder: BP3eEQS9sYUKkMSn
     name: Voie de la foi
     type: path
@@ -3301,11 +2782,16 @@ items:
       slug: voie-de-la-foi
       subtype: profile
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.xrGYb2QxYboAZmVo
-        - Actor.wECdhKHcCmFzhyqk.Item.XGNRgjJzbQRCg2i9
-        - Actor.wECdhKHcCmFzhyqk.Item.Fh4tI5Uwg9EiALux
-        - Actor.wECdhKHcCmFzhyqk.Item.7v2X8MxzyZjDatuJ
-        - Actor.wECdhKHcCmFzhyqk.Item.tyzNDQgm2lKBjoSe
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Yu5UUCdrJV9UGZiF
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.lff9OJVuNC9HluJX
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.SiQeF0WyoI1SF5q7
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.KUS7EMURVLr4fYwE
       rank: 0
       maxDefenseArmor: 4
       pvByLevel: 0
@@ -3313,39 +2799,37 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.YyUgBWvigOiaWl9E
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 1CkWX2EkS6fSKzu5
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926796948
+      modifiedTime: 1758926797795
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: bOi8EkMyvXOCMlJN
     sort: 0
-    _key: '!actors.items!wECdhKHcCmFzhyqk.1CkWX2EkS6fSKzu5'
+    _key: '!actors.items!wECdhKHcCmFzhyqk.bOi8EkMyvXOCMlJN'
   - folder: ZOBCft8sYdHtOpj7
     name: Prédicateur
     type: capacity
     img: icons/magic/holy/saint-glass-portrait-halo.webp
-    _id: xrGYb2QxYboAZmVo
+    _id: Yu5UUCdrJV9UGZiF
     system:
       description: >-
         <p>Le prêtre ajoute son rang + 2 aux tests visant à convaincre ou
         convertir son auditoire. De plus, une fois par jour, il récupère 1 PC
         s’il réussit à convertir une créature (ou un groupe) à sa religion ou à
         convaincre une créature peu encline à le faire à suivre ses
-        préceptes.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        préceptes.</p>
+      inGame: >-
         <p>Seul le bonus pour convaincre est pris en compte. Il s'agit d'un
-        bonus permanent à partir du moment où il est appris</p>
-
-        </blockquote>
+        bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p122
       slug: predicateur
@@ -3357,30 +2841,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.xrGYb2QxYboAZmVo
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Yu5UUCdrJV9UGZiF
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.xrGYb2QxYboAZmVo
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.Yu5UUCdrJV9UGZiF
               subtype: skill
               target: cha
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: convaincre/convertir
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -3396,23 +2885,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4r510ZO92t0tvcpQ
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.xrGYb2QxYboAZmVo'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797020
+      modifiedTime: 1758926797047
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.Yu5UUCdrJV9UGZiF'
   - folder: ZOBCft8sYdHtOpj7
     name: Miracle mineur
     type: capacity
     img: icons/magic/holy/chalice-glowing-gold-water.webp
-    _id: XGNRgjJzbQRCg2i9
+    _id: lff9OJVuNC9HluJX
     system:
       description: >-
         <p style="text-align:justify">Le prêtre réalise un petit miracle. Par
@@ -3421,16 +2911,10 @@ items:
         mineure (qui n’entraîne pas de malus) ou même une douleur majeure
         pendant un seul round, soigner une maladie bénigne (rhume, grippe,
         etc.). Ce sort permet aussi de rendre 1d4° PV à une créature à 0 PV.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
         le sort qui applique les soins sur la cible. Attention ne vérifie pas si
         la cible est à 0 PV !</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p122
       slug: miracle-mineur
@@ -3442,9 +2926,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.XGNRgjJzbQRCg2i9
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.lff9OJVuNC9HluJX
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3477,6 +2963,7 @@ items:
                 unit: round
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3492,18 +2979,19 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.FuCOTPwGp0w9qIo3
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.XGNRgjJzbQRCg2i9'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797160
+      modifiedTime: 1758926797185
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.lff9OJVuNC9HluJX'
   - folder: ZOBCft8sYdHtOpj7
     name: Arme de lumière
     type: capacity
@@ -3517,28 +3005,16 @@ items:
         l’arme d’un allié au prix d’une action limitée ou, s’il utilise le sort
         sur son arme personnelle, infliger +2d4° DM (au lieu de 1d4°). Le sort
         prend immédiatement fin si l’arme quitte les mains du prêtre.</p>
+      inGame: >-
+        <p>2 actions :</p> <p>Une action activable/désactivable qui provoque une
+        amélioration personnelle qui augmente les DM du prêtre (sur le prêtre
+        pas sur l'arme). Le PJ doit penser à désactiver l'amélioration quand
+        l'effet prend fin</p>
 
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>2 actions :</p>
-
-        <ul>
-
-        <li>Une action activable/désactivable qui provoque une amélioration
-        personnelle qui augmente les DM du prêtre (sur le prêtre pas sur
-        l'arme). Le PJ doit penser à désactiver l'amélioration quand l'effet
-        prend fin</li>
-
-        <li>Une action qui donne un effet de bonus sur une autre cible pendant
-        CHA minutes utilisable uniquement en combat. Arrivé au rang 5 de la
-        voie, le PJ rajoute sur cette action la Condition "est appris" afin de
-        faire apparaitre l'action sur l'onglet Principal.</li>
-
-        </ul>
-
-        </blockquote>
+        <p>Une action qui donne un effet de bonus sur une autre cible pendant
+        CHA minutes utilisable uniquement en mode Combat. Arrivé au rang 5 de la
+        voie, le PJ coche sur cette action la case "Activable" afin de faire
+        apparaitre l'action sur l'onglet Principal.</p>
       source: ''
       origin: Livre des règles p123
       slug: arme-de-lumiere
@@ -3552,15 +3028,18 @@ items:
         max: 0
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.Fh4tI5Uwg9EiALux
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
           indice: 0
-          label: Son arme contre démons et morts-vivants (M)
-          chatFlavor: Son arme contre démons et morts-vivants (M)
+          label: Son arme contre démons et morts-vivants
+          chatFlavor: ''
           type: buff
+          actionType: m
           img: icons/svg/d20-highlight.svg
           properties:
             visible: false
@@ -3572,20 +3051,75 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.Fh4tI5Uwg9EiALux
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
               subtype: combat
               target: damMelee
               apply: self
               value: '@rang[1d4°,1d4°,1d4°,1d4°,2d4°]'
               additionalInfos: ''
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.Fh4tI5Uwg9EiALux
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
               subtype: bonusDice
               target: melee
               apply: self
               value: '0'
               additionalInfos: ''
           resolvers: []
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
+          indice: 0
+          label: Arme d'un allié
+          chatFlavor: ''
+          type: buff
+          actionType: l
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
+              subtype: combat
+              target: damMelee
+              apply: others
+              value: '@rang[1d4°,1d4°,1d4°,1d4°,2d4°]'
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.wfxKBOICf81B4o6z
+              subtype: bonusDice
+              target: melee
+              apply: others
+              value: '0'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '@cha*10'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
@@ -3593,39 +3127,29 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PmvZ6975Z8Zz57DJ
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: Fh4tI5Uwg9EiALux
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797305
+      modifiedTime: 1758926797335
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: wfxKBOICf81B4o6z
     sort: 250000
-    _key: '!actors.items!wECdhKHcCmFzhyqk.Fh4tI5Uwg9EiALux'
+    _key: '!actors.items!wECdhKHcCmFzhyqk.wfxKBOICf81B4o6z'
   - folder: ZOBCft8sYdHtOpj7
     name: Ailes célestes
     type: capacity
     img: icons/magic/holy/angel-winged-humanoid-blue.webp
-    _id: 7v2X8MxzyZjDatuJ
+    _id: SiQeF0WyoI1SF5q7
     system:
-      description: >-
-        <p>Des ailes divines poussent dans le dos du prêtre, qui peut voler à
-        une vitesse équivalente à son déplacement normal pendant CHA minutes.<br
-        />Rester en vol stationnaire avec les ailes célestes est une action de
-        mouvement.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Pas d'effets autoamtiques.</p>
-
-        </blockquote>
+      description: "<p>Des ailes divines poussent dans le dos du prêtre, qui peut voler à une vitesse équivalente à son déplacement normal pendant CHA minutes.<br />Rester en vol stationnaire avec les ailes célestes est une action de mouvement.</p>\n<p>\_</p>"
+      inGame: <p>Pas d'effets autoamtiques.</p>
       source: ''
       origin: Livre des règles p123
       slug: ailes-celestes
@@ -3637,11 +3161,13 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.7v2X8MxzyZjDatuJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.SiQeF0WyoI1SF5q7
           indice: 0
-          label: Activer le sort (A)
+          label: Activer le sort
           chatFlavor: ''
           type: spell
           img: icons/svg/d20-highlight.svg
@@ -3671,6 +3197,7 @@ items:
               skill: {}
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -3686,25 +3213,35 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Pa9XiBPTUKPa8zeI
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.7v2X8MxzyZjDatuJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797492
+      modifiedTime: 1758926797534
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.SiQeF0WyoI1SF5q7'
   - folder: ZOBCft8sYdHtOpj7
     name: Foudres divines
     type: capacity
     img: icons/magic/lightning/bolt-forked-large-teal.webp
-    _id: tyzNDQgm2lKBjoSe
+    _id: KUS7EMURVLr4fYwE
     system:
-      description: "<p style=\"text-align:justify\">La foudre frappe toutes les créatures désignées dans un rayon de 10 m autour du prêtre et leur inflige [2d4°+CHA] DM (pas de test d’attaque requis). Ce sort est gourmand en énergie et son coût augmente de +1 PM à chaque utilisation tant que le prêtre n’a pas terminé une récupération rapide.</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>L'action permet de réaliser une attaque automatique qui inflige les DM. \_Les DM seront à appliquer manuellement sur chaque cible. Le surcoût de 1PM n'est pas automatisé, il faudra le retirer manuellement</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">La foudre frappe toutes les créatures
+        désignées dans un rayon de 10 m autour du prêtre et leur inflige
+        [2d4°+CHA] DM (pas de test d’attaque requis). Ce sort est gourmand en
+        énergie et son coût augmente de +1 PM à chaque utilisation tant que le
+        prêtre n’a pas terminé une récupération rapide.</p>
+      inGame: >-
+        <p>L'action permet de réaliser une attaque automatique qui inflige les
+        DM. Les DM seront à appliquer manuellement sur chaque cible. Le surcoût
+        de 1PM n'est pas automatisé, il faudra le retirer manuellement</p>
       source: ''
       origin: Livre des règles p123
       slug: foudres-divines
@@ -3716,9 +3253,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.1CkWX2EkS6fSKzu5
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.bOi8EkMyvXOCMlJN
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.tyzNDQgm2lKBjoSe
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.KUS7EMURVLr4fYwE
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3752,6 +3291,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -3767,18 +3307,19 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.llQ8xFoxg1ijLLpm
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.tyzNDQgm2lKBjoSe'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797694
+      modifiedTime: 1758926797727
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.KUS7EMURVLr4fYwE'
   - folder: BP3eEQS9sYUKkMSn
     name: Voie de la guerre sainte
     type: path
@@ -3790,11 +3331,16 @@ items:
       slug: voie-de-la-guerre-sainte
       subtype: profile
       capacities:
-        - Actor.wECdhKHcCmFzhyqk.Item.KjGuMSx5WIGQEUEi
-        - Actor.wECdhKHcCmFzhyqk.Item.XtgzRMkYln1urRMp
-        - Actor.wECdhKHcCmFzhyqk.Item.RHxszirA8ycB5Tzu
-        - Actor.wECdhKHcCmFzhyqk.Item.ltEvtFB0ID8PHHqJ
-        - Actor.wECdhKHcCmFzhyqk.Item.SpnBdC3q46FZ0NyX
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.hgsy1y8r745HTZmk
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VEp7TJUgCav7viAm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.1xbrwzBQu32yWnwe
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.tv9BY2lgHz8XTYNs
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.gezaGihrJv0SiQF3
       rank: 0
       maxDefenseArmor: 4
       pvByLevel: 0
@@ -3802,25 +3348,26 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8zPQI2ZQchJFeagm
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: lSappxaz3p0hAegd
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926797919
+      modifiedTime: 1758926798692
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: PfoOGSx14zyvntmX
     sort: 0
-    _key: '!actors.items!wECdhKHcCmFzhyqk.lSappxaz3p0hAegd'
+    _key: '!actors.items!wECdhKHcCmFzhyqk.PfoOGSx14zyvntmX'
   - folder: F7Tt7sG8uNUrJciv
     name: Arme bénie
     type: capacity
     img: icons/skills/melee/strike-polearm-light-orange.webp
-    _id: KjGuMSx5WIGQEUEi
+    _id: hgsy1y8r745HTZmk
     system:
       description: >-
         <p style="text-align:justify">Le prêtre effectue un court rituel et son
@@ -3828,15 +3375,9 @@ items:
         1 sur son dé de DM, il relance le dé et garde le second résultat. Les DM
         de l’arme sont considérés comme magiques. L’arme n’est plus bénie si une
         autre créature l’utilise.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant. Pensez à dépenser 1 PM à l'usage.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p123
       slug: arme-benie
@@ -3848,7 +3389,8 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       actions: []
       cost: -1
       rank: 1
@@ -3865,23 +3407,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xMKUPrC6IdEOeg4v
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.KjGuMSx5WIGQEUEi'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926798001
+      modifiedTime: 1758926798001
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.hgsy1y8r745HTZmk'
   - folder: F7Tt7sG8uNUrJciv
     name: Bouclier de la foi
     type: capacity
     img: icons/magic/defensive/shield-barrier-flaming-diamond-teal.webp
-    _id: XtgzRMkYln1urRMp
+    _id: VEp7TJUgCav7viAm
     system:
       description: >-
         <p style="text-align:justify">Le prêtre porte le symbole de sa foi sur
@@ -3889,15 +3432,9 @@ items:
         lorsqu’il l’utilise. Ce bonus passe à +2 au rang 5. Comme pour l’arme
         bénie, le symbole de la foi n’est d’aucune utilité si le bouclier est
         utilisé par quelqu’un d’autre</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Il s'agit ici d'une amélioration actiable/désactivable vu la
-        necessité d'être équipé d'un bouclier.</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit ici d'une amélioration activable/désactivable vu la
+        nécessité d'être équipé d'un bouclier.</p>
       source: ''
       origin: Livre des règles p123
       slug: bouclier-de-la-foi
@@ -3909,30 +3446,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.XtgzRMkYln1urRMp
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VEp7TJUgCav7viAm
           indice: 0
           label: avec un bouclier
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: true
             temporary: true
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.wECdhKHcCmFzhyqk.Item.XtgzRMkYln1urRMp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.VEp7TJUgCav7viAm
               subtype: combat
               target: def
-              apply: self
               value: '@rang[1,1,1,1,2]'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3948,18 +3490,19 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.RXQqVm91IeP8j9Dh
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.XtgzRMkYln1urRMp'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926798080
+      modifiedTime: 1758926798107
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.VEp7TJUgCav7viAm'
   - folder: F7Tt7sG8uNUrJciv
     name: Châtiment divin
     type: capacity
@@ -3971,32 +3514,20 @@ items:
         prêtre peut dépenser 1 PM pour ajouter +1d4° aux DM d’une attaque au
         contact qui touche. Au rang 5, il peut dépenser 2 PM pour ajouter
         +2d4°.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu:</strong></p>
-
-        <p>La capacité a été décomposée en 3 actions d'attaques :</p>
-
-        <p>La première est une attaque de base ajoutant le CHA du prêtre aux
-        dommages</p>
-
-        <p>La deuxieme inflige en plus 1d4° (mais le joueur doit payer
-        manuellement 1PM en plus)</p>
-
-        <p>La troisième inflige en plus 2d4° (mais le joueur doit payer
-        manuellement 2PM en plus)</p>
-
-        <p>Remarque : Lorsque le personnage atteint le rang 5 dans cette voie,
-        il doit remplacer la Condition actuelle par "est appris" à la troisième
-        action afin qu'elle apparaisse dans la liste de l'onglet Principal.</p>
-
-        </blockquote>
+      inGame: >-
+        <p>La capacité a été décomposée en 3 actions d'attaques :</p><p>La
+        première est une attaque de base ajoutant le CHA du prêtre aux
+        dommages</p><p>La deuxieme inflige en plus 1d4° (mais le joueur doit
+        payer manuellement 1PM en plus)</p><p>La troisième inflige en plus 2d4°
+        (mais le joueur doit payer manuellement 2PM en plus)</p><p>Remarque :
+        Lorsque le personnage atteint le rang 5 dans cette voie, il doit cocher
+        la case "Activable" de la troisième action afin qu'elle apparaisse dans
+        la liste de l'onglet Principal.</p>
       source: ''
-      origin: Livre des règles p124
+      origin: Livre des règles p123
       slug: chatiment-divin
       subtype: ''
-      actionType: none
+      actionType: l
       learned: false
       rank: 3
       frequency: none
@@ -4005,11 +3536,13 @@ items:
         max: 0
       properties:
         spell: false
-      path: Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.RHxszirA8ycB5Tzu
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.1xbrwzBQu32yWnwe
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4045,7 +3578,9 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.RHxszirA8ycB5Tzu
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.1xbrwzBQu32yWnwe
           indice: 1
           label: Châtiment divin +1PM
           chatFlavor: ''
@@ -4081,7 +3616,9 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.wECdhKHcCmFzhyqk.Item.RHxszirA8ycB5Tzu
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.1xbrwzBQu32yWnwe
           indice: 2
           label: Châtiment divin +2PM
           chatFlavor: ''
@@ -4117,6 +3654,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
@@ -4124,25 +3662,26 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.9guRj1F5ZYCi2iKz
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: RHxszirA8ycB5Tzu
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926798225
+      modifiedTime: 1758926798257
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 1xbrwzBQu32yWnwe
     sort: 175000
-    _key: '!actors.items!wECdhKHcCmFzhyqk.RHxszirA8ycB5Tzu'
+    _key: '!actors.items!wECdhKHcCmFzhyqk.1xbrwzBQu32yWnwe'
   - folder: F7Tt7sG8uNUrJciv
     name: Marteau de la foi
     type: capacity
     img: icons/skills/melee/strike-hammer-destructive-orange.webp
-    _id: ltEvtFB0ID8PHHqJ
+    _id: tv9BY2lgHz8XTYNs
     system:
       description: >-
         <p style="text-align:justify">Le prêtre effectue un test d’attaque
@@ -4152,23 +3691,16 @@ items:
         magique, il peut ajouter son bonus au test d’attaque et aux DM. Les DM
         du marteau de la foi augmentent de +1 chaque fois que le personnage
         atteint le rang 4 dans une autre voie de prêtre.</p>
-
-        <blockquote>
-
-        <p style="text-align:left"><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p style="text-align:left">Le joueur sélectionne sa cible puis clique
         sur l'action pour lancer le sort qui va faire le test d'attaque magique
-        et appliquer les dommages.</p>
-
-        <p style="text-align:left">Note : Ne prend pas en comtpe les bonus d'une
-        arme magique et on ne peux pas utiliser @arme.skill vu qu'il s'agit
-        d'une attaque magique. Le bonus d'une arme magique sera à ajouter à la
-        main sur la capacité dans la fiche de personnage du prêtre.</p>
-
-        </blockquote>
+        et appliquer les dommages.</p><p style="text-align:left">Note : Ne prend
+        pas en comtpe les bonus d'une arme magique et on ne peux pas utiliser
+        @arme.skill vu qu'il s'agit d'une attaque magique. Le bonus d'une arme
+        magique sera à ajouter à la main sur la capacité dans la fiche de
+        personnage du prêtre.</p>
       source: ''
-      origin: Livre des règles p124
+      origin: Livre des règles p123
       slug: marteau-de-la-foi
       subtype: ''
       actionType: a
@@ -4178,9 +3710,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.ltEvtFB0ID8PHHqJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.tv9BY2lgHz8XTYNs
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4216,6 +3750,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -4231,37 +3766,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tcrqztre8hbB5cUx
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.ltEvtFB0ID8PHHqJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926798379
+      modifiedTime: 1758926798408
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.tv9BY2lgHz8XTYNs'
   - folder: F7Tt7sG8uNUrJciv
     name: Mot de pouvoir
     type: capacity
     img: icons/magic/sonic/scream-wail-shout-teal.webp
-    _id: SpnBdC3q46FZ0NyX
+    _id: gezaGihrJv0SiQF3
     system:
       description: >-
         <p>Une fois par jour, le prêtre peut prononcer un mot avec la voix de
         son dieu. Cela dépasse l’entendement des mortels et tous ses ennemis
         dans un rayon de 10 m sont étourdis pendant 1 round (pas d’action et ‑5
-        en DEF).</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        en DEF).</p>
+      inGame: >-
         <p>La capacité propose une action d'attaque automatique qui va apliquer
         le statut "Etourdi" pendant un round aux tokens ciblés. Ne fonctionne
         qu'en mode combat.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p124
       slug: mot-de-pouvoir
@@ -4273,9 +3805,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.wECdhKHcCmFzhyqk.Item.lSappxaz3p0hAegd
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.PfoOGSx14zyvntmX
       actions:
-        - source: Actor.wECdhKHcCmFzhyqk.Item.SpnBdC3q46FZ0NyX
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.gezaGihrJv0SiQF3
           indice: 0
           label: ''
           chatFlavor: ''
@@ -4313,6 +3847,7 @@ items:
                 unit: round
                 successThreshold: null
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -4328,18 +3863,511 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.oJkWucSRj7ZmAVAk
+      compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wECdhKHcCmFzhyqk.SpnBdC3q46FZ0NyX'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926798593
+      modifiedTime: 1758926798625
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.gezaGihrJv0SiQF3'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Bâton ferré
+    type: equipment
+    img: icons/weapons/staves/staff-ornate.webp
+    _id: IGTWBQ8gc1sCapVj
+    system:
+      description: >-
+        <p>Tous les personnages qui savent manier le bâton ferré savent aussi
+        manier le bâton. Un bâton est un simple morceau de bois, un bâton ferré
+        est adapté au combat, plus lourd et généralement couvert de métal aux
+        extrémités (bien que les druides utilisent des bâtons de bois noueux
+        avec le même effet).</p>
+      source: ''
+      origin: ''
+      slug: baton-ferre
+      tags:
+        - dmtemporairespossibles
+      subtype: weapon
+      martialCategory: ironStaff
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 2
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.IGTWBQ8gc1sCapVj
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.w1n2zzLplJJ4BFmt
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926883609
+      modifiedTime: 1758926912103
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.IGTWBQ8gc1sCapVj'
+  - folder: Um3g0UnqzSidTvlT
+    name: Sac à dos
+    type: equipment
+    img: icons/containers/bags/pack-leather-red.webp
+    _id: jW6y8p6RUWsOenj7
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: sac-a-dos
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 2000000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926890538
+      modifiedTime: 1758926890538
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.jW6y8p6RUWsOenj7'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: ZnoAdsPduoBg4umz
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926894322
+      modifiedTime: 1758926894322
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.ZnoAdsPduoBg4umz'
+  - folder: Um3g0UnqzSidTvlT
+    name: Torche
+    type: equipment
+    img: icons/sundries/lights/torch-brown.webp
+    _id: iQfXpasVq5roWOHu
+    system:
+      description: >-
+        <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
+        h pour une torche ou 6 h pour une lanterne (1 dose d’huile).</p>
+      source: ''
+      origin: ''
+      slug: torche
+      tags: []
+      subtype: misc
+      martialCategory: paddedClothFur
+      damagetype: ''
+      quantity:
+        current: 3
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 2100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926898404
+      modifiedTime: 1758926898404
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.iQfXpasVq5roWOHu'
+  - folder: Um3g0UnqzSidTvlT
+    name: Briquet à silex
+    type: equipment
+    img: icons/commodities/stone/geode-raw-black.webp
+    _id: 9Yko3MFqnipGamZH
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: briquet-a-silex
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926902375
+      modifiedTime: 1758926902375
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.9Yko3MFqnipGamZH'
+  - folder: Um3g0UnqzSidTvlT
+    name: Outre
+    type: equipment
+    img: icons/sundries/survival/wetskin-leather-purple.webp
+    _id: Ud2nSAnRdNyhE0OQ
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: outre
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926906841
+      modifiedTime: 1758926906841
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.Ud2nSAnRdNyhE0OQ'
+  - folder: Um3g0UnqzSidTvlT
+    name: Gamelle
+    type: equipment
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
+    _id: 699e0ElxG3gEz4ED
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: gamelle
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758926908550
+      modifiedTime: 1758926908550
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wECdhKHcCmFzhyqk.699e0ElxG3gEz4ED'
 effects: []
 sort: 1400000
 ownership:

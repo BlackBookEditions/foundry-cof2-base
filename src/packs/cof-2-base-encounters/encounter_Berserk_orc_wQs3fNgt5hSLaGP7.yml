@@ -125,11 +125,23 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Les orcs noirs sont une race d’orcs d’élite obtenue par sélection et
-        reproduction par de puissants maîtres maléfiques souhaitant construire
-        l’armée ultime. Leur peau est plus sombre et leur musculature plus
-        imposante. Ils manient des armes &agrave; deux mains, mais surtout, ils
-        ne sont plus sensibles &agrave; la lumière du jour</p>
+        <p><span style="color: rgb(239, 230, 216); font-family: Signika,
+        &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style:
+        normal; font-variant-ligatures: normal; font-variant-caps: normal;
+        font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start;
+        text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px; white-space: normal; background-color:
+        rgba(11, 10, 19, 0.9); text-decoration-thickness: initial;
+        text-decoration-style: initial; text-decoration-color: initial; display:
+        inline !important; float: none">Les orcs sont des créatures robustes, un
+        peu plus grandes que les humains, dotées de traits bestiaux et
+        habituellement violentes. Ils vivent en tribus sous la domination d’un
+        chef qui règne par la loi du plus fort. Les orcs parlent le noir
+        parler.</span></p><p>Les orcs noirs sont une race d’orcs d’élite obtenue
+        par sélection et reproduction par de puissants maîtres maléfiques
+        souhaitant construire l’armée ultime. Leur peau est plus sombre et leur
+        musculature plus imposante. Ils manient des armes à deux mains, mais
+        surtout, ils ne sont plus sensibles à la lumière du jour</p>
     languages: []
     properties: ''
   currentEffects: []
@@ -298,11 +310,337 @@ items:
     _id: uV83V1zfk1DPF98i
     sort: 300000
     _key: '!actors.items!wQs3fNgt5hSLaGP7.uV83V1zfk1DPF98i'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Fléau à deux mains
+    type: equipment
+    img: icons/weapons/maces/mace-round-spiked-grey.webp
+    _id: 3THOHFxtoKRjb9eo
+    system:
+      description: >-
+        <p>Un manche prolongé par une chaîne au bout de laquelle sont suspendues
+        une ou plusieurs boules d’acier, souvent hérissées de pointes. C’est une
+        arme très difficile à parer. Une fois par combat, le fléau permet de
+        relancer le dé d’une attaque ratée contre un adversaire qui utilise un
+        bouclier ou une arme (par opposition aux armes naturelles des animaux et
+        des monstres).</p>
+      source: ''
+      origin: ''
+      slug: fleau-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatFlail
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.GfSsTxWKqA3PIdjP
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100391
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.GfSsTxWKqA3PIdjP
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891534065
+      modifiedTime: 1758891534065
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.3THOHFxtoKRjb9eo'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hache à deux mains
+    type: equipment
+    img: icons/weapons/axes/axe-double-brown.webp
+    _id: tYpMdy9qeYhrzJdi
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hache-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100049
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891535614
+      modifiedTime: 1758891535614
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.tYpMdy9qeYhrzJdi'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée à deux mains
+    type: equipment
+    img: icons/weapons/swords/greatsword-crossguard-embossed-gold.webp
+    _id: liB7ibfDbVWHCrZM
+    system:
+      description: >-
+        <p><strong>L'épée à deux mains</strong> est une arme blanche à double
+        tranchant (se distingue ainsi du sabre) constituée des parties
+        habituelles de l'épée européenne médiévale : pommeau, fusée, garde, lame
+        montée sur soie.</p>
+      source: ''
+      origin: ''
+      slug: epee-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        value: null
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 125000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891537967
+      modifiedTime: 1758891537967
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.liB7ibfDbVWHCrZM'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: ciOiTX177cH5KM1S
+    _id: cT2jxQ97P3zYCxcG
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -311,13 +649,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -333,12 +668,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.6jnxIkOejqWJ0PbS.Item.ciOiTX177cH5KM1S
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.cT2jxQ97P3zYCxcG
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -349,16 +686,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.6jnxIkOejqWJ0PbS.Item.ciOiTX177cH5KM1S
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.cT2jxQ97P3zYCxcG
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -372,112 +708,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!wQs3fNgt5hSLaGP7.ciOiTX177cH5KM1S'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Teigneuse
-    type: capacity
-    img: icons/creatures/abilities/mouth-teeth-human.webp
-    system:
-      description: >-
-        <p>Si la créature rate une attaque, sa prochaine attaque bénéficie d’un
-        dé bonus et de +2d4 DM.</p>
-      source: ''
-      origin: ''
-      slug: teigneuse
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.6jnxIkOejqWJ0PbS.Item.eNNT0BWHIMsv1o8R
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: true
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.6jnxIkOejqWJ0PbS.Item.eNNT0BWHIMsv1o8R
-              subtype: combat
-              target: damMelee
-              apply: self
-              value: +2d4
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.6jnxIkOejqWJ0PbS.Item.eNNT0BWHIMsv1o8R
-              subtype: bonusDice
-              target: melee
-              apply: self
-              value: '0'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.6jnxIkOejqWJ0PbS.Item.eNNT0BWHIMsv1o8R
-              subtype: bonusDice
-              target: ranged
-              apply: self
-              value: '0'
-              additionalInfos: ''
-          resolvers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0L8De9K7nWYrfYec
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: eNNT0BWHIMsv1o8R
-    sort: 4800000
-    _key: '!actors.items!wQs3fNgt5hSLaGP7.eNNT0BWHIMsv1o8R'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891544557
+      modifiedTime: 1758891568333
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.cT2jxQ97P3zYCxcG'
   - folder: Jc9oocmI3B4cVSRG
     name: Imparable
     type: capacity
@@ -503,12 +759,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.6jnxIkOejqWJ0PbS.Item.gN48HMYNS9yqLdF1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.APypGSHZODigKrPH
           indice: 0
           label: si 15-20 à l'attaque
-          chatFlavor: si 15-20 à l'attaque
-          type: melee
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -519,25 +777,24 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
                 formula: 2d4
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -547,20 +804,111 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: gN48HMYNS9yqLdF1
-    sort: 8000000
-    _key: '!actors.items!wQs3fNgt5hSLaGP7.gN48HMYNS9yqLdF1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891554449
+      modifiedTime: 1758891591411
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: APypGSHZODigKrPH
+    sort: 8700000
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.APypGSHZODigKrPH'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Teigneuse
+    type: capacity
+    img: icons/creatures/abilities/mouth-teeth-human.webp
+    system:
+      description: >-
+        <p>Si la créature rate une attaque, sa prochaine attaque bénéficie d’un
+        dé bonus et de +2d4 DM.</p>
+      source: ''
+      origin: ''
+      slug: teigneuse
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.Afd7K7Y0oPUoA2zu
+          indice: 0
+          label: Après attaque ratée
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.Afd7K7Y0oPUoA2zu
+              subtype: combat
+              target: damMelee
+              value: +2d4
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.Afd7K7Y0oPUoA2zu
+              subtype: bonusDice
+              target: melee
+              value: '0'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.wQs3fNgt5hSLaGP7.Item.Afd7K7Y0oPUoA2zu
+              subtype: bonusDice
+              target: ranged
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      frequency: none
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0L8De9K7nWYrfYec
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891559849
+      modifiedTime: 1758891602545
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Afd7K7Y0oPUoA2zu
+    sort: 5500000
+    _key: '!actors.items!wQs3fNgt5hSLaGP7.Afd7K7Y0oPUoA2zu'
 effects: []
 ownership:
   default: 0
@@ -571,11 +919,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749371609990
-  modifiedTime: 1758487818844
+  modifiedTime: 1758891371404
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: wQs3fNgt5hSLaGP7
-sort: 200000
+sort: 3300000
 _key: '!actors!wQs3fNgt5hSLaGP7'

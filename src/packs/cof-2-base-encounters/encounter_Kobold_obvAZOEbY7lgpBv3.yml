@@ -343,8 +343,392 @@ items:
     _id: prI7VeJyz83J0abP
     sort: 100000
     _key: '!actors.items!obvAZOEbY7lgpBv3.prI7VeJyz83J0abP'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Lance
+    type: equipment
+    img: icons/weapons/polearms/spear-hooked-simple.webp
+    _id: 0VNRpX0N68YqJRnx
+    system:
+      description: >-
+        <p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux
+        mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p>
+      source: ''
+      origin: ''
+      slug: lance
+      tags: []
+      subtype: weapon
+      martialCategory: lance
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 4
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 0
+          label: 1 main
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 1
+          label: 2 mains
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 2
+          label: A distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 100025
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850237227
+      modifiedTime: 1758850237227
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!obvAZOEbY7lgpBv3.0VNRpX0N68YqJRnx'
+  - folder: E0IHxlFlZyFSfQGY
+    name: Fronde
+    type: equipment
+    img: icons/weapons/slings/slingshot-wood.webp
+    _id: kGKQzldqftBgptZe
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: fronde
+      tags: []
+      subtype: weapon
+      martialCategory: sling
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 20
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.f8c0GK5dslvWXsr4
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 1000000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.f8c0GK5dslvWXsr4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850242509
+      modifiedTime: 1758850242509
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!obvAZOEbY7lgpBv3.kGKQzldqftBgptZe'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: MlscqcyVGNh8MiyU
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.obvAZOEbY7lgpBv3.Item.MlscqcyVGNh8MiyU
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.obvAZOEbY7lgpBv3.Item.MlscqcyVGNh8MiyU
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850338052
+      modifiedTime: 1758850340501
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!obvAZOEbY7lgpBv3.MlscqcyVGNh8MiyU'
 effects: []
-sort: 3900000
+sort: 2300000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -356,7 +740,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
-  modifiedTime: 1758487386614
+  modifiedTime: 1758850526244
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!obvAZOEbY7lgpBv3'

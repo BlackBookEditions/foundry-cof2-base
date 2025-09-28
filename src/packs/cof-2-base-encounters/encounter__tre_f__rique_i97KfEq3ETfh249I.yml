@@ -48,7 +48,7 @@ system:
         effects: 0
   attributes:
     movement:
-      base: 10
+      base: 15
       unit: m
       bonuses:
         sheet: 0
@@ -123,16 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.Rh9QwJCXhF3rsRHU]{Voie du pacte féérique} - Rang 6 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.nFQ5ROtssjUf75f7]{Compagnon féérique}</p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Le personnage a adopté (ou l’inverse ?) une fée, un farfadet ou un grig. Ce compagnon est affectueux, mais souvent blagueur et parfois irritant ! Il ne suit pas les ordres du PJ, mais il agit dans ce qu’il estime être l’intérêt du PJ et peut accepter différentes missions (messager, éclaireur, espion, etc.). Si le compagnon féérique est réduit à 0 PV, il disparaît dans le monde féérique et revient guéri au bout de 24h.</span></p>"
     languages: []
-    properties: >-
-      <p>Défense [12 + rang]<br>Points de vigueur [Niveau × 2]<br>Initiative
-      14</p><p>Attaque : attaque mag du PJ</p><p>A adapter....</p><p>Un être
-      féérique peut se rendre invisible au prix d’une action
-      limitée.<br><strong>Fée : </strong>vol 15 m par action de
-      mouvement.<br><strong>Farfadet :</strong> téléportation de 15 m en action
-      de mouvement.<br><strong>Grig</strong> (un être au corps de cricket) :
-      bonds de 15 m en action de mouvement.</p>
+    properties: "<ol><li><p>\_- Défense =\_<strong>[12 + rang]</strong><br>\_- Points de vigueur =\_<strong>[Niveau × 2]</strong><br>\_- Attaque de contact - dague =\_<strong>[attaque magique] · DM 1d4° poison</strong></p></li><li><p>\_- Attaque à distance - arc =\_<strong>[attaque magique] · DM 1d4° poison</strong><br></p></li></ol><p>Un être féérique peut se rendre invisible au prix d’une action limitée.</p><p><br>\_-\_<strong>Fée : </strong>vol 15 m par action de mouvement.<br>\_-\_<strong>Farfadet :</strong> téléportation de 15 m en action de mouvement.<br>\_-\_<strong>Grig</strong> (un être au corps de cricket) : bonds de 15 m en action de mouvement.</p>"
   currentEffects: []
 prototypeToken:
   name: être féérique
@@ -394,7 +387,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746258452526
-  modifiedTime: 1758488986153
+  modifiedTime: 1758914912972
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: i97KfEq3ETfh249I

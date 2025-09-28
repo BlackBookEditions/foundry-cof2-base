@@ -301,11 +301,191 @@ items:
     _id: cbmP4c6aN9suIgAd
     sort: 300000
     _key: '!actors.items!paOvXaKcx5AHX0Pe.cbmP4c6aN9suIgAd'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Lance
+    type: equipment
+    img: icons/weapons/polearms/spear-hooked-simple.webp
+    _id: gUt5OvPDUCF3oetY
+    system:
+      description: >-
+        <p>Une arme d’environ 1,50 m. Elle peut être utilisée à une ou à deux
+        mains (DM 1d6/1d10) ou lancée (1d6 DM à 10 m).</p>
+      source: ''
+      origin: ''
+      slug: lance
+      tags: []
+      subtype: weapon
+      martialCategory: lance
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 4
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 0
+          label: 1 main
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 1
+          label: 2 mains
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+          indice: 2
+          label: A distance
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 100025
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.MCwQOKemuD8ZKI28
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850275806
+      modifiedTime: 1758850275806
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!paOvXaKcx5AHX0Pe.gUt5OvPDUCF3oetY'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: F0LqwsJB51tYbmJ7
+    _id: IVA9IXn9SvrRq2vd
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -314,13 +494,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -336,12 +513,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.nCpBfj6XA7ItCNGM.Item.F0LqwsJB51tYbmJ7
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.paOvXaKcx5AHX0Pe.Item.IVA9IXn9SvrRq2vd
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -352,16 +531,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.nCpBfj6XA7ItCNGM.Item.F0LqwsJB51tYbmJ7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.paOvXaKcx5AHX0Pe.Item.IVA9IXn9SvrRq2vd
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -375,38 +553,41 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!paOvXaKcx5AHX0Pe.F0LqwsJB51tYbmJ7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850281088
+      modifiedTime: 1758850296827
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!paOvXaKcx5AHX0Pe.IVA9IXn9SvrRq2vd'
   - folder: Jc9oocmI3B4cVSRG
     name: Imparable
     type: capacity
     img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: >-
-        <p>Si la créature obtient 15‑20 au d20 d’un test d’attaque (17 à 20 si
-        la créature possède 2 attaques), elle inflige +2d4 DM supplémentaire et
-        l’attaque est automatiquement réussie (quelle que soit la DEF de son
+        <p>Si la créature obtient <strong>15‑20 au d20 d’un test
+        d’attaque</strong>, elle inflige <strong>+2d4 DM supplémentaire</strong>
+        et l’attaque est automatiquement réussie (quelle que soit la DEF de son
         adversaire). Les dés bonus ne sont pas multipliés en cas de critique</p>
       source: ''
       origin: ''
@@ -422,12 +603,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.nCpBfj6XA7ItCNGM.Item.maLnqOkJ4yGKxVe9
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.paOvXaKcx5AHX0Pe.Item.jJ787fxTLeA0iL0U
           indice: 0
           label: si 15-20 à l'attaque
-          chatFlavor: si 15-20 à l'attaque
-          type: melee
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -438,25 +621,24 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
                 formula: 2d4
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -466,20 +648,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: maLnqOkJ4yGKxVe9
-    sort: 8000000
-    _key: '!actors.items!paOvXaKcx5AHX0Pe.maLnqOkJ4yGKxVe9'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850290520
+      modifiedTime: 1758850325469
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: jJ787fxTLeA0iL0U
+    sort: 8700000
+    _key: '!actors.items!paOvXaKcx5AHX0Pe.jJ787fxTLeA0iL0U'
 effects: []
 ownership:
   default: 0
@@ -492,9 +675,9 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749369363678
-  modifiedTime: 1758487851864
+  modifiedTime: 1758850526244
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: paOvXaKcx5AHX0Pe
-sort: 1900000
+sort: 2400000
 _key: '!actors!paOvXaKcx5AHX0Pe'

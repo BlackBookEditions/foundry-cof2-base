@@ -279,50 +279,6 @@ items:
     _id: cbmP4c6aN9suIgAd
     sort: 300000
     _key: '!actors.items!35LV9Ul76yovFUpC.cbmP4c6aN9suIgAd'
-  - folder: Jc9oocmI3B4cVSRG
-    name: IMPARABLE
-    type: capacity
-    img: icons/svg/combat.svg
-    system:
-      description: >-
-        <p>Si la créature obtient 15‑20 au d20 d’un test d’attaque, elle inflige
-        +2d4 DM supplémentaire et l’attaque est automatiquement réussie (quelle
-        que soit la DEF de son adversaire). Les dés bonus ne sont pas multipliés
-        en cas de critique</p>
-      source: ''
-      origin: ''
-      slug: imparable
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      frequency: none
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: BtSveHafAVEo7S93
-    sort: 2800000
-    _key: '!actors.items!35LV9Ul76yovFUpC.BtSveHafAVEo7S93'
   - folder: eRnLMLNnqgpvpmpq
     name: attaque magique (élémentaire)
     type: attack
@@ -388,8 +344,220 @@ items:
     _id: 5C68b32UNG1C9LTU
     sort: 200000
     _key: '!actors.items!35LV9Ul76yovFUpC.5C68b32UNG1C9LTU'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: itjTrLmTaA9455Gz
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850372113
+      modifiedTime: 1758850372113
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!35LV9Ul76yovFUpC.itjTrLmTaA9455Gz'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: JBk3LGEjbypACVsX
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.35LV9Ul76yovFUpC.Item.JBk3LGEjbypACVsX
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.35LV9Ul76yovFUpC.Item.JBk3LGEjbypACVsX
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758850397589
+      modifiedTime: 1758850401133
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!35LV9Ul76yovFUpC.JBk3LGEjbypACVsX'
 effects: []
-sort: 4100000
+sort: 2500000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -401,7 +569,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1742454184539
-  modifiedTime: 1758487274700
+  modifiedTime: 1758850526244
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: 35LV9Ul76yovFUpC

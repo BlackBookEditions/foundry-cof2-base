@@ -49,7 +49,7 @@ system:
         effects: 0
   attributes:
     movement:
-      base: 10
+      base: 5
       unit: m
       bonuses:
         sheet: 0
@@ -116,20 +116,16 @@ system:
       value: null
   pasteData: ''
   details:
-    category: living
+    category: undead
     size: medium
     description:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p>Points de vigueur [10 + niveau]</p>
-
-        <p>Attaque au contact : [attaque magique du sorcier] &middot; DM
-        1d4&deg;+2</p>
-      public: ''
+      private: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.QTqBlV22EMR2dPkI]{Voie de l&#x27;outre tombe} - Rang 3 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.e1QotKug0DxQ6nLO]{Animation des morts}</p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Le sorcier anime le cadavre d’un humanoïde de taille moyenne, décédé depuis moins d’INT jours. Le zombie comprend les ordres « Attaquer », « Suivre », « Garder » et « Pas bouger ». Le sorcier peut contrôler un seul zombie, plus un zombie chaque fois qu’il atteint le rang 5 dans une voie de sorcier. </span></p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Un zombie réduit à 0 PV tombe en poussière.</span></p>"
     languages: []
-    properties: ''
+    properties: "<ul><li><p>\_- Points de vigueur =\_<strong>[10 + Niveau]</strong><br>\_- Attaque de contact =\_<strong>[attaque magique] · DM 1d4° +2</strong><br>\_- Déplacement = <strong>5 m par action de mouvement.</strong></p></li></ul>"
   magic: 0
   currentEffects: []
 prototypeToken:
@@ -308,9 +304,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1745654451487
-  modifiedTime: 1758488529711
+  modifiedTime: 1758921019340
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!Q7UD3oNlpy0ZnAxq'

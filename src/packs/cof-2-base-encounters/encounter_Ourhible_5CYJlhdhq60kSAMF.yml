@@ -11,7 +11,7 @@ system:
         sheet: 0
         effects: 0
     con:
-      superior: false
+      superior: true
       base: 6
       bonuses:
         sheet: 0
@@ -242,34 +242,34 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+10'
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d8+2
+                formula: 1d8+6
               target:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -293,12 +293,12 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758892420907
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: LDtTftY439OQ3vs5
     sort: 300000
@@ -307,7 +307,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: Hyr2ipqBodQG5ylB
+    _id: m3v9Wxkv3PJlP1PB
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -316,13 +316,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -338,12 +335,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.0yuA6mC38oa5tUWH.Item.Hyr2ipqBodQG5ylB
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.m3v9Wxkv3PJlP1PB
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -354,16 +353,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.0yuA6mC38oa5tUWH.Item.Hyr2ipqBodQG5ylB
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.m3v9Wxkv3PJlP1PB
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -377,40 +375,38 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!5CYJlhdhq60kSAMF.Hyr2ipqBodQG5ylB'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892433234
+      modifiedTime: 1758892447841
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!5CYJlhdhq60kSAMF.m3v9Wxkv3PJlP1PB'
   - folder: Jc9oocmI3B4cVSRG
     name: Charge
     type: capacity
     img: icons/skills/melee/maneuver-greatsword-yellow.webp
     system:
-      description: >-
-        <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 16 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
+      description: "<p>La créature parcourt une distance maximale de 20 m et réalise une attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en plus des DM normaux, une victime de taille inférieure ou égale à la créature, doit faire un <strong>test de FOR difficulté 16\_</strong>ou être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche) sa victime et les <strong>DM sont doublés</strong>.</p>"
       source: ''
       origin: ''
       slug: charge
@@ -425,12 +421,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.0yuA6mC38oa5tUWH.Item.gKQewVrN8gG654Op
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.Jai00mvxNmrdaw4W
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -444,11 +442,11 @@ items:
               bonusDiceAdd: true
               malusDiceAdd: false
               skill:
-                formula: '+6'
+                formula: '+10'
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 2d4+3
+                formula: 1d8+6
               target:
                 type: none
                 number: 0
@@ -456,12 +454,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -471,20 +469,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: gKQewVrN8gG654Op
-    sort: 6800000
-    _key: '!actors.items!5CYJlhdhq60kSAMF.gKQewVrN8gG654Op'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892437793
+      modifiedTime: 1758892504704
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Jai00mvxNmrdaw4W
+    sort: 7500000
+    _key: '!actors.items!5CYJlhdhq60kSAMF.Jai00mvxNmrdaw4W'
   - folder: Jc9oocmI3B4cVSRG
     name: Enragé
     type: capacity
@@ -510,36 +509,41 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.0yuA6mC38oa5tUWH.Item.z1Iqrc4lhhLJ4oE2
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.6Nlj891CDr13K3TH
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.0yuA6mC38oa5tUWH.Item.z1Iqrc4lhhLJ4oE2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.6Nlj891CDr13K3TH
               subtype: combat
               target: melee
               value: '3'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.0yuA6mC38oa5tUWH.Item.z1Iqrc4lhhLJ4oE2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.5CYJlhdhq60kSAMF.Item.6Nlj891CDr13K3TH
               subtype: combat
               target: damMelee
               value: +1d4
               apply: self
               additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -549,20 +553,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: z1Iqrc4lhhLJ4oE2
-    sort: 6500000
-    _key: '!actors.items!5CYJlhdhq60kSAMF.z1Iqrc4lhhLJ4oE2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892442464
+      modifiedTime: 1758892523092
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 6Nlj891CDr13K3TH
+    sort: 7200000
+    _key: '!actors.items!5CYJlhdhq60kSAMF.6Nlj891CDr13K3TH'
 effects: []
 ownership:
   default: 0
@@ -573,11 +578,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749372174234
-  modifiedTime: 1758487290913
+  modifiedTime: 1758892393291
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: 5CYJlhdhq60kSAMF
-sort: 600000
+sort: 3700000
 _key: '!actors!5CYJlhdhq60kSAMF'

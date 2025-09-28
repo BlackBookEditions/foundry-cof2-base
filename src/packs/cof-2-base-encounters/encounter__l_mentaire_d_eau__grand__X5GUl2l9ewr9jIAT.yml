@@ -302,7 +302,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 6rNEsIqOumxo3Kyj
+    _id: 3Yjvr6UwGWHHkpHH
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -311,13 +311,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -333,12 +330,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.G60MP09p46K3vJTP.Item.6rNEsIqOumxo3Kyj
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.3Yjvr6UwGWHHkpHH
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -349,16 +348,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.G60MP09p46K3vJTP.Item.6rNEsIqOumxo3Kyj
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.3Yjvr6UwGWHHkpHH
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -372,35 +370,123 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.6rNEsIqOumxo3Kyj'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846759171
+      modifiedTime: 1758846820019
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.3Yjvr6UwGWHHkpHH'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Eau de vie
+    type: capacity
+    img: icons/magic/life/heart-cross-blue.webp
+    system:
+      description: <p>L’élémentaire d’eau régénère 5 PV par round (sauf DM de feu).</p>
+      inGame: >-
+        <p>Il s'agit d'une action activable qui redonne 5 PV à la créature. A
+        faire chaque round.</p>
+      source: ''
+      origin: Livre des règles p280
+      slug: eau-de-vie
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.YR34M634KyPmdKj8
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: '5'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+          modifiers: []
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.fuMD0NSXnWNhkvpO
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846767306
+      modifiedTime: 1758846826736
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: YR34M634KyPmdKj8
+    sort: 4300000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.YR34M634KyPmdKj8'
   - folder: Jc9oocmI3B4cVSRG
     name: Fauchage
     type: capacity
     img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
     system:
-      description: "<p>Sur 17 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 16 ou être renversée.\_</p>"
+      description: >-
+        <p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime
+        doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être
+        renversée. </p>
       source: ''
       origin: ''
       slug: fauchage
@@ -416,6 +502,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -425,20 +512,93 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: Ct2DC6nYPUPMSsSr
-    sort: 8100000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.Ct2DC6nYPUPMSsSr'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846772506
+      modifiedTime: 1758846883488
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Yw5AVzRC4gIuWw3c
+    sort: 8800000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.Yw5AVzRC4gIuWw3c'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Grand
+    type: capacity
+    img: icons/magic/control/silhouette-grow-shrink-tan.webp
+    system:
+      description: <p>La créature retranche 3 à tous les DM subis (RD 3).</p>
+      inGame: <p>Il s'agit d'une amélioration permanente de RD 3.</p>
+      source: ''
+      origin: Livre des règles p280
+      slug: grand
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.73hVhMYpIhuc2uAx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: false
+            enabled: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.73hVhMYpIhuc2uAx
+              subtype: combat
+              target: dr
+              value: '3'
+              additionalInfos: ''
+              apply: self
+          resolvers: []
+          actionType: none
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.54k3DE2M9uqeJvN1
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846776489
+      modifiedTime: 1758846776505
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 73hVhMYpIhuc2uAx
+    sort: 4600000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.73hVhMYpIhuc2uAx'
   - folder: Jc9oocmI3B4cVSRG
     name: Résistance (Elémentaire)
     type: capacity
@@ -448,14 +608,7 @@ items:
         <p>Les élémentaires <strong>divisent par deux tous les DM des armes non
         magiques</strong> (de +0 à +1 au NC selon l’équipement des PJ). Les
         élémentaires d’eau sont <strong>immunisés aux DM d’acide</strong>.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>A gérer manuellement par le MJ. Pas d'automatisme</p>
-
-        </blockquote>
+      inGame: <p>Pas d'automatisation, à gérer manuellement par le MJ.</p>
       source: ''
       origin: Livre des règles p279
       slug: resistance-elementaire
@@ -480,178 +633,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OwwRCR7KWvWEXNLn
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: Mup08ZOtJmGdJh0g
-    sort: 4500000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.Mup08ZOtJmGdJh0g'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Grand
-    type: capacity
-    img: icons/magic/control/silhouette-grow-shrink-tan.webp
-    system:
-      description: |-
-        <p>La créature retranche 3 à tous les DM subis (RD 3).</p>
-        <blockquote>
-        <p><strong>Usage en jeu :</strong></p>
-        <p>Il s'agit d'une amélioration permanente de RD 3.</p>
-        </blockquote>
-      source: ''
-      origin: Livre des règles p280
-      slug: grand
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.G60MP09p46K3vJTP.Item.IXG0jiRQnHZKiQUU
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: false
-            enabled: true
-            temporary: false
-            noManaCost: false
-          modifiers:
-            - type: capacity
-              source: Actor.G60MP09p46K3vJTP.Item.IXG0jiRQnHZKiQUU
-              subtype: combat
-              target: dr
-              value: '3'
-              additionalInfos: ''
-              apply: self
-          conditions: []
-          resolvers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.54k3DE2M9uqeJvN1
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: IXG0jiRQnHZKiQUU
-    sort: 3900000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.IXG0jiRQnHZKiQUU'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Eau de vie
-    type: capacity
-    img: icons/magic/life/heart-cross-blue.webp
-    system:
-      description: >-
-        <p>L’élémentaire d’eau régénère 5 PV par round (sauf DM de feu).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu</strong></p>
-
-        <p>Il s'agit d'une action activable qui redonne5 PV à la créature. A
-        faire chaque round.</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p280
-      slug: eau-de-vie
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.G60MP09p46K3vJTP.Item.nJMC5MeGDU8674S5
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: heal
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-            visible: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: heal
-              skill:
-                formula: '5'
-              target:
-                type: self
-                number: 0
-                scope: all
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.fuMD0NSXnWNhkvpO
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: nJMC5MeGDU8674S5
-    sort: 3600000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.nJMC5MeGDU8674S5'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846797539
+      modifiedTime: 1758846797539
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: l8rpd5Dtf4bddvOy
+    sort: 5200000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.l8rpd5Dtf4bddvOy'
   - folder: Jc9oocmI3B4cVSRG
     name: Tourbillon
     type: capacity
@@ -684,6 +680,7 @@ items:
       manaCost: -1
       actions: []
       frequency: combat
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -692,20 +689,90 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.UzXs2SzVIjMrKCUc
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: LTHDON7Jl8oTFQLy
-    sort: 4900000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.LTHDON7Jl8oTFQLy'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846803777
+      modifiedTime: 1758846803777
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: gRVqG3ko5etlV24I
+    sort: 5600000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.gRVqG3ko5etlV24I'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vision dans le noir
+    type: capacity
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
+    _id: ndnop9RzgZzO6KKO
+    system:
+      description: <p>La créature voit dans le noir.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.ndnop9RzgZzO6KKO
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.ndnop9RzgZzO6KKO
+              subtype: state
+              target: darkvision
+              value: '30'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.g9fqXskbvGQCKScf
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846808746
+      modifiedTime: 1758846808765
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.ndnop9RzgZzO6KKO'
 effects: []
 ownership:
   default: 0
@@ -718,9 +785,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749353773172
-  modifiedTime: 1758488021110
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: X5GUl2l9ewr9jIAT
-sort: 3600000
+sort: 700000
 _key: '!actors!X5GUl2l9ewr9jIAT'

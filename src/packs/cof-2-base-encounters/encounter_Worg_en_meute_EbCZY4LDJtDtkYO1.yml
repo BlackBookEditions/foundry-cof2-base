@@ -125,9 +125,11 @@ system:
     notes:
       private: ''
       public: >-
-        <p>En meute d’au moins 4 individus, les worgs sont des prédateurs
-        vicieux qui s’acharnent sur une proie. Une meute de 6 worgs est une
-        rencontre ordinaire de niveau 8.</p>
+        <p>Les worgs sont des cousins maléfiques des loups, plus puissants
+        (jusqu’à 150 kg) et plus intelligents. Ils comprennent le noir parler et
+        ils servent parfois de monture aux gobelins.</p><p>En meute d’au moins 4
+        individus, les worgs sont des prédateurs vicieux qui s’acharnent sur une
+        proie. Une meute de 6 worgs est une rencontre ordinaire de niveau 8.</p>
     languages: []
     properties: ''
   currentEffects: []
@@ -300,7 +302,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: oYXggw32SVjqqKAm
+    _id: Ll2nENJCVVEmHLnV
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -309,13 +311,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -331,12 +330,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.5H9fSTryACIJFFcw.Item.oYXggw32SVjqqKAm
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.Ll2nENJCVVEmHLnV
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -347,16 +348,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.5H9fSTryACIJFFcw.Item.oYXggw32SVjqqKAm
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.Ll2nENJCVVEmHLnV
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -370,29 +370,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.oYXggw32SVjqqKAm'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910624977
+      modifiedTime: 1758910677087
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.Ll2nENJCVVEmHLnV'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
@@ -421,15 +424,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.5H9fSTryACIJFFcw.Item.44xKAtuz3zBCSCKD
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -437,28 +442,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.5H9fSTryACIJFFcw.Item.44xKAtuz3zBCSCKD
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.5H9fSTryACIJFFcw.Item.44xKAtuz3zBCSCKD
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.5H9fSTryACIJFFcw.Item.44xKAtuz3zBCSCKD
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
               subtype: combat
               target: damRanged
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -468,20 +477,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 44xKAtuz3zBCSCKD
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910654404
+      modifiedTime: 1758910690636
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 5fS1Xa2GUPOLTo2i
     sort: 6000000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.44xKAtuz3zBCSCKD'
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.5fS1Xa2GUPOLTo2i'
   - folder: Jc9oocmI3B4cVSRG
     name: Brise-genou
     type: capacity
@@ -508,6 +518,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -517,20 +528,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: LrK5Wt4tqIK35ecL
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910658328
+      modifiedTime: 1758910658328
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: f6W422ycD44y2yca
     sort: 9300000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.LrK5Wt4tqIK35ecL'
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.f6W422ycD44y2yca'
   - folder: Jc9oocmI3B4cVSRG
     name: Attaque en traître
     type: capacity
@@ -555,12 +567,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.5H9fSTryACIJFFcw.Item.7b56DUA7dVggrjZJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.IFZQHgdshgYSokMU
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -586,12 +600,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -600,32 +614,27 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SVlibibJChBr16bK
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 7b56DUA7dVggrjZJ
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910663350
+      modifiedTime: 1758910711188
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: IFZQHgdshgYSokMU
     sort: 2400000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.7b56DUA7dVggrjZJ'
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.IFZQHgdshgYSokMU'
   - folder: Jc9oocmI3B4cVSRG
     name: L’hallali
     type: capacity
     img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
     system:
-      description: >-
-        <p>Les worgs profitent d’une erreur de leur victime pour lui porter des
-        attaques fatales. Chaque fois que la<strong> victime de la meute rate
-        une attaque ou obtient sur un test d’attaque un résultat au d20 allant
-        de 1 à 5 (inclus)</strong>, elle déclenche la curée. Chaque worgs à son
-        contact bénéficie immédiatement et gratuitement d’une attaque contre la
-        victime.</p>
+      description: "<p>Les worgs profitent d’une\_erreur de leur victime pour\_lui porter des attaques\_fatales. Chaque fois que la victime de la meute rate une attaque ou\_obtient un résultat de 1 à 5 sur le d20 lors\_d’un test d’attaque, elle déclenche la curée.\_</p><p>Chaque créature dotée de cette capacité\_bénéficie immédiatement et gratuitement\_d’une attaque en traître.</p>"
       source: ''
       origin: ''
       slug: lhallali
@@ -641,6 +650,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -650,20 +660,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sowzGsG7MWdB83qr
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: GIf58h0ZcTK0Led1
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910670919
+      modifiedTime: 1758910781201
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: ZByYyAuuOhpGjgTO
     sort: 4900000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.GIf58h0ZcTK0Led1'
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.ZByYyAuuOhpGjgTO'
 effects: []
 ownership:
   default: 0
@@ -674,11 +685,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749374132331
-  modifiedTime: 1758487726817
+  modifiedTime: 1758910582972
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: EbCZY4LDJtDtkYO1
-sort: 0
+sort: 3999610
 _key: '!actors!EbCZY4LDJtDtkYO1'

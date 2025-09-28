@@ -17,7 +17,7 @@ system:
         sheet: 0
         effects: 0
     for:
-      superior: true
+      superior: false
       base: 1
       bonuses:
         sheet: 0
@@ -125,11 +125,23 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Les orcs noirs sont une race d’orcs d’élite obtenue par sélection et
-        reproduction par de puissants maîtres maléfiques souhaitant construire
-        l’armée ultime. Leur peau est plus sombre et leur musculature plus
-        imposante. Ils manient des armes &agrave; deux mains, mais surtout, ils
-        ne sont plus sensibles &agrave; la lumière du jour</p>
+        <p><span style="color: rgb(239, 230, 216); font-family: Signika,
+        &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style:
+        normal; font-variant-ligatures: normal; font-variant-caps: normal;
+        font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start;
+        text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px; white-space: normal; background-color:
+        rgba(11, 10, 19, 0.9); text-decoration-thickness: initial;
+        text-decoration-style: initial; text-decoration-color: initial; display:
+        inline !important; float: none">Les orcs sont des créatures robustes, un
+        peu plus grandes que les humains, dotées de traits bestiaux et
+        habituellement violentes. Ils vivent en tribus sous la domination d’un
+        chef qui règne par la loi du plus fort. Les orcs parlent le noir
+        parler.</span></p><p>Les orcs noirs sont une race d’orcs d’élite obtenue
+        par sélection et reproduction par de puissants maîtres maléfiques
+        souhaitant construire l’armée ultime. Leur peau est plus sombre et leur
+        musculature plus imposante. Ils manient des armes à deux mains, mais
+        surtout, ils ne sont plus sensibles à la lumière du jour</p>
     languages: []
     properties: <p>Attaque magique +6</p>
   currentEffects: []
@@ -298,11 +310,197 @@ items:
     _id: uV83V1zfk1DPF98i
     sort: 300000
     _key: '!actors.items!j175631AL1zS2xYF.uV83V1zfk1DPF98i'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: r0FTufxmtaZQxICO
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891792470
+      modifiedTime: 1758891792470
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!j175631AL1zS2xYF.r0FTufxmtaZQxICO'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.j175631AL1zS2xYF.Item.k9eq0zCdSngteTNo
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+6'
+                crit: ''
+                difficulty: '@oppose.mag'
+              dmg:
+                formula: ''
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    name: Attaque magique
+    img: icons/svg/sword.svg
+    _id: k9eq0zCdSngteTNo
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891805951
+      modifiedTime: 1758891867284
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!j175631AL1zS2xYF.k9eq0zCdSngteTNo'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: dcWr63BNFZgEbRoz
+    _id: VrN1xTtc39c5oax6
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -311,13 +509,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -333,12 +528,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.2gJTr1YiQvaPi5Nw.Item.dcWr63BNFZgEbRoz
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.j175631AL1zS2xYF.Item.VrN1xTtc39c5oax6
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -349,16 +546,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.2gJTr1YiQvaPi5Nw.Item.dcWr63BNFZgEbRoz
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.j175631AL1zS2xYF.Item.VrN1xTtc39c5oax6
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -372,29 +568,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!j175631AL1zS2xYF.dcWr63BNFZgEbRoz'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891938412
+      modifiedTime: 1758891967999
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!j175631AL1zS2xYF.VrN1xTtc39c5oax6'
   - folder: Jc9oocmI3B4cVSRG
     name: Vampirisation
     type: capacity
@@ -407,6 +606,11 @@ items:
         infligés. De plus, à chaque fois qu’une créature meurt à moins de 20
         mètres de lui, il siphonne son énergie et gagne un nombre de PV égal au
         double du NC de la créature qui vient de mourir.</p>
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque. Les DM sont infligés à la
+        cible par  le MJ et appliqués en soin au sorcier.</p> <p>La récupartion
+        de PV lorsqu'une créature meurt proche du sorcier est à  réaliser
+        manuellement.</p>
       source: ''
       origin: ''
       slug: vampirisation
@@ -421,25 +625,29 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.2gJTr1YiQvaPi5Nw.Item.j8DuO2TypjABNki1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.j175631AL1zS2xYF.Item.gofAl5ed14FfvbCj
           indice: 0
-          label: VAMPIRISATION
+          label: ''
           chatFlavor: ''
-          type: magical
           img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
           properties:
-            activable: true
-            enabled: false
-            temporary: false
             visible: false
+            enabled: false
+            activable: true
+            temporary: false
             noManaCost: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
-                formula: '@atm'
-                crit: '20'
+                formula: '+6'
+                crit: ''
                 difficulty: '@oppose.atm'
               dmg:
                 formula: 2d8
@@ -447,12 +655,9 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -467,20 +672,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.nswP2tAsgqA67I3z
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: j8DuO2TypjABNki1
-    sort: 7000000
-    _key: '!actors.items!j175631AL1zS2xYF.j8DuO2TypjABNki1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891941544
+      modifiedTime: 1758892139239
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: gofAl5ed14FfvbCj
+    sort: 7700000
+    _key: '!actors.items!j175631AL1zS2xYF.gofAl5ed14FfvbCj'
   - folder: Jc9oocmI3B4cVSRG
     name: Animer un cadavre
     type: capacity
@@ -507,6 +713,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -516,20 +723,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XgbhXTy5VRJ957hJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: uZFzoWOwoAUjZuj6
-    sort: 8500000
-    _key: '!actors.items!j175631AL1zS2xYF.uZFzoWOwoAUjZuj6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891958194
+      modifiedTime: 1758891958194
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 0DTUpF87Rx8RhFMs
+    sort: 9200000
+    _key: '!actors.items!j175631AL1zS2xYF.0DTUpF87Rx8RhFMs'
 effects: []
 ownership:
   default: 0
@@ -540,11 +748,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749371864347
-  modifiedTime: 1758487610060
+  modifiedTime: 1758891771157
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: j175631AL1zS2xYF
-sort: 400000
+sort: 3500000
 _key: '!actors!j175631AL1zS2xYF'

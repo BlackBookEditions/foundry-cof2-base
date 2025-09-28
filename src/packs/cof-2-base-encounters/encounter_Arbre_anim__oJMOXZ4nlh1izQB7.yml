@@ -49,7 +49,7 @@ system:
         effects: 0
   attributes:
     movement:
-      base: 10
+      base: 5
       unit: m
       bonuses:
         sheet: 0
@@ -122,13 +122,10 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p>D&eacute;fense [10 + rang]<br>Points de vigueur [Niveau &times;
-        5]<br>Initiative 8<br>Attaque de contact<br>[attaque magique] &middot;
-        DM 1d4&deg;+3<br>D&eacute;placement<br>5 m par action de mouvement.</p>
-      public: ''
+      private: <ul><li><p></p></li></ul>
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.BZHC3xPWQ93zyz75]{Animation d’un arbre}</p><p>Le druide peut animer un arbre en le touchant.\_</p><p>Il combat à son service pendant [niveau du druide]\_rounds. Il peut animer un seul arbre à la fois.</p>"
     languages: []
-    properties: ''
+    properties: "<ol><li><p>\_- Défense =\_<strong>[10 + rang]</strong><br>\_- Points de vigueur =\_<strong>[Niveau × 5]</strong><br>\_- Initiative =\_<strong>8</strong><br>\_- Attaque de contact =\_<strong>[attaque magique] · DM 1d4°+3</strong><br>\_- Déplacement = <strong>5 m par action de mouvement.</strong></p></li></ol>"
   magic: 0
   currentEffects: []
 prototypeToken:
@@ -307,9 +304,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1745654451487
-  modifiedTime: 1758488577656
+  modifiedTime: 1758911909941
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!oJMOXZ4nlh1izQB7'

@@ -293,121 +293,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: BHbn2gP9Z2mczP4c
-    name: Mains nues
-    type: equipment
-    img: icons/skills/melee/unarmed-punch-fist.webp
-    _id: qHRGPK8TuWPqbFTa
-    system:
-      description: >-
-        <p>Dans le cas du combat à mains nues, les DM sont généralement
-        temporaires, sauf pour les moines</p>
-      source: ''
-      origin: ''
-      slug: mains-nues
-      tags:
-        - dmtemporaires
-      subtype: weapon
-      martialCategory: unarmed
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.qHRGPK8TuWPqbFTa
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d3 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      damagetype: impact
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 100007
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource:
-        worldId: cov2-dev
-        uuid: null
-        coreVersion: '12.331'
-        systemId: co
-        systemVersion: 12.331.0
-    _key: '!actors.items!ELw0a83HARZyKiGp.qHRGPK8TuWPqbFTa'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -508,7 +393,7 @@ items:
   - name: Elfe haut
     type: feature
     img: modules/cof-base/assets/peuples/peuple_elfehaut.webp
-    _id: VktKjaYz43craXD1
+    _id: PEEFm4FIV5yDRwaN
     system:
       description: >-
         <p>L’elfe haut est un être féérique qui vit extrêmement longtemps et
@@ -584,14 +469,16 @@ items:
       slug: elfe-haut
       subtype: people
       modifiers:
-        - source: Actor.ELw0a83HARZyKiGp.Item.VktKjaYz43craXD1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PEEFm4FIV5yDRwaN
           type: feature
           subtype: ability
           target: cha
           value: '1'
           apply: self
           additionalInfos: ''
-        - source: Actor.ELw0a83HARZyKiGp.Item.VktKjaYz43craXD1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PEEFm4FIV5yDRwaN
           type: feature
           subtype: ability
           target: for
@@ -599,7 +486,8 @@ items:
           apply: self
           additionalInfos: ''
       paths:
-        - Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       capacities: []
     effects: []
     folder: pClI1itDE2etUmdy
@@ -611,23 +499,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.aCJgY50A8AjqTBAh
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.VktKjaYz43craXD1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924654644
+      modifiedTime: 1758924690358
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.PEEFm4FIV5yDRwaN'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie de l'elfe haut
     type: path
     img: modules/cof-base/assets/peuples/peuple_elfehaut.webp
-    _id: Sb6GPD9QfZPXgNPm
+    _id: soGHZcF0XvX0nP5S
     system:
       description: ''
       source: ''
@@ -635,11 +524,16 @@ items:
       slug: voie-de-lelfe-haut
       subtype: people
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.e5OpjWksCb8odnbG
-        - Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
-        - Actor.ELw0a83HARZyKiGp.Item.WSNFRhswzlzETL6o
-        - Actor.ELw0a83HARZyKiGp.Item.rkGlVFaMHtt9hseN
-        - Actor.ELw0a83HARZyKiGp.Item.jWHP5piWLDoFS7du
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.OVBcLQiwsXyHEngL
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.yxeIbWejr3QICbm3
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.hAQ4eMSFqWhz8K0o
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.e1JRaBE8rTcZS5H3
       rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
@@ -651,35 +545,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.Sb6GPD9QfZPXgNPm'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924654795
+      modifiedTime: 1758924698774
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.soGHZcF0XvX0nP5S'
   - folder: I4uDxbHkmWcP8WpV
     name: Lumière intérieur
     type: capacity
     img: icons/magic/light/explosion-star-glow-silhouette.webp
-    _id: e5OpjWksCb8odnbG
+    _id: OVBcLQiwsXyHEngL
     system:
       description: >-
         <p>Pour un elfe, l’obscurité de la nuit sous la lumière des étoiles est
         considérée comme de la pénombre. De plus, il gagne un bonus de +3 à tous
-        les tests d’érudition (INT) et artistiques (CHA).</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        les tests d’érudition (INT) et artistiques (CHA).</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p50
       slug: lumiere-interieur
@@ -691,9 +582,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.e5OpjWksCb8odnbG
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.OVBcLQiwsXyHEngL
           indice: 0
           label: ''
           chatFlavor: ''
@@ -709,27 +602,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.e5OpjWksCb8odnbG
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.OVBcLQiwsXyHEngL
               subtype: skill
               target: int
               apply: self
               value: '3'
               additionalInfos: Erudition et arts
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.e5OpjWksCb8odnbG
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.OVBcLQiwsXyHEngL
               subtype: skill
               target: cha
               apply: self
               value: '3'
               additionalInfos: Erudition et arts
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.e5OpjWksCb8odnbG
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.OVBcLQiwsXyHEngL
               subtype: state
               target: darkvision
               apply: self
               value: '10'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -745,38 +642,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.e5OpjWksCb8odnbG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924654860
+      modifiedTime: 1758924698743
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.OVBcLQiwsXyHEngL'
   - folder: I4uDxbHkmWcP8WpV
     name: Force d'âme
     type: capacity
     img: icons/magic/holy/meditation-chi-focus-blue.webp
-    _id: fjgDSxzP2oSb6HV2
+    _id: QhMILtde5nCWJ5Gm
     system:
       description: >-
-        <p>L’elfe est immunisé à la peur et au sommeil magique.</p>
-
-        <p>De plus, il obtient un bonus égal à son rang lorsqu’il doit faire un
-        test opposé d’attaque magique pour résister à un sort.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        <p>L’elfe est immunisé à la peur et au sommeil magique.</p><p>De plus,
+        il obtient un bonus égal à son rang lorsqu’il doit faire un test opposé
+        d’attaque magique pour résister à un sort.</p>
+      inGame: >-
         <p>2 effets : un bonus permanent pour les immunité et une action
         activable/désactivable à activer pour résister à un sort.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: force-dame
@@ -788,9 +679,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
           indice: 0
           label: Immunités
           chatFlavor: ''
@@ -806,21 +699,25 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
               subtype: state
               target: fearImmunity
               apply: self
               value: '0'
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
               subtype: state
               target: sleepimmunity
               apply: self
               value: '0'
               additionalInfos: ''
           resolvers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
           indice: 1
           label: Résister à un sort
           chatFlavor: ''
@@ -836,13 +733,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.fjgDSxzP2oSb6HV2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.QhMILtde5nCWJ5Gm
               subtype: combat
               target: magic
               apply: self
               value: '@rang'
               additionalInfos: bonus test opposé
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -858,37 +757,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.fjgDSxzP2oSb6HV2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924654978
+      modifiedTime: 1758924654995
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.QhMILtde5nCWJ5Gm'
   - folder: I4uDxbHkmWcP8WpV
     name: Talent pour la magie
     type: capacity
     img: icons/magic/symbols/star-rising-purple.webp
-    _id: WSNFRhswzlzETL6o
+    _id: yxeIbWejr3QICbm3
     system:
       description: >-
         <p>Le joueur choisit une capacité de rang 1 de n’importe quelle voie de
         magicien ou d’ensorceleur. Il peut utiliser cette capacité en armure
         sans pénalité (mais pas une capacité qui offre un bonus de DEF). À la
         place, il peut choisir une capacité de rang 2, mais ne doit alors pas
-        porter d’armure pour lancer le sort</p><blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+        porter d’armure pour lancer le sort</p>
+      inGame: >-
         <p>Il suffit de glisser déposer la capacité choisie en dessous de
         celle-ci sur la fiche de personnage.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: talent-pour-la-magie
@@ -900,7 +796,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       actions: []
       cost: -1
       rank: 3
@@ -917,35 +814,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.WSNFRhswzlzETL6o'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924655094
+      modifiedTime: 1758924655094
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.yxeIbWejr3QICbm3'
   - folder: I4uDxbHkmWcP8WpV
     name: Immortel
     type: capacity
     img: icons/magic/life/ankh-gold-blue.webp
-    _id: rkGlVFaMHtt9hseN
+    _id: hAQ4eMSFqWhz8K0o
     system:
       description: >-
         <p>L’elfe n’a besoin que de la moitié du repos, de la nourriture ou de
         la boisson d’un humain normal pour être en pleine forme. Il est immunisé
-        aux effets des poisons et des maladies.</p><blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+        aux effets des poisons et des maladies.</p>
+      inGame: >-
         <p>Seul un effet permanent ajoutant les immunités est pris en
         compte.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: immortel
@@ -957,9 +851,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.rkGlVFaMHtt9hseN
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.hAQ4eMSFqWhz8K0o
           indice: 0
           label: ''
           chatFlavor: ''
@@ -975,20 +871,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rkGlVFaMHtt9hseN
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.hAQ4eMSFqWhz8K0o
               subtype: state
               target: poisonImmunity
               value: '0'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rkGlVFaMHtt9hseN
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.hAQ4eMSFqWhz8K0o
               subtype: state
               target: diseaseImmunity
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -1004,38 +903,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.rkGlVFaMHtt9hseN'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924655168
+      modifiedTime: 1758924655188
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.hAQ4eMSFqWhz8K0o'
   - folder: I4uDxbHkmWcP8WpV
     name: Supériorité elfique
     type: capacity
     img: icons/sundries/flags/banner-yellow.webp
-    _id: jWHP5piWLDoFS7du
+    _id: e1JRaBE8rTcZS5H3
     system:
       description: >-
         <p>L’elfe augmente sa valeur de VOL de +1 et sa valeur d’INT ou de CHA
         de +1.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
         Attention une fois la capacité sur la fiche de personnage il faudra
         supprimer l'attribut non choisit car les 2 possibilités ont été ajoutées
         ici !</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p50
       slug: superiorite-elfique
@@ -1047,9 +941,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.Sb6GPD9QfZPXgNPm
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.soGHZcF0XvX0nP5S
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.jWHP5piWLDoFS7du
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.e1JRaBE8rTcZS5H3
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1065,27 +961,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.jWHP5piWLDoFS7du
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.e1JRaBE8rTcZS5H3
               subtype: ability
               target: vol
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.jWHP5piWLDoFS7du
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.e1JRaBE8rTcZS5H3
               subtype: ability
               target: int
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.jWHP5piWLDoFS7du
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.e1JRaBE8rTcZS5H3
               subtype: ability
               target: cha
               value: '1'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -1101,23 +1001,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.jWHP5piWLDoFS7du'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924655288
+      modifiedTime: 1758924655308
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.e1JRaBE8rTcZS5H3'
   - folder: so33z8qnqRMJva9E
     name: Guerrier
     type: profile
     img: modules/cof-base/assets/profils/profil_combattant_guerrier.webp
-    _id: 2L7KybWVn5u5kdVa
+    _id: 7pnfX4z3mhLZbJpV
     system:
       description: >-
         <p><strong>Points de vigueur :</strong> 5 par niveau</p>
@@ -1153,11 +1054,16 @@ items:
       modifiers: []
       proficiencies: []
       paths:
-        - Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
-        - Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
-        - Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
-        - Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
-        - Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       martialTrainingsWeapons:
         unarmed: true
         staff: true
@@ -1216,24 +1122,25 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags:
       co: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.zOCktgW59aQxJetj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.2L7KybWVn5u5kdVa'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665504
+      modifiedTime: 1758924669113
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.7pnfX4z3mhLZbJpV'
   - folder: CEOB5IPh3kWvA4Ag
     name: Voie du bouclier
     type: path
     img: modules/cof-base/assets/voies/guerrier_bouclier.webp
-    _id: XIhDiMJ9XycPIIi6
+    _id: Zf7J9ozZfr38YmIW
     system:
       description: ''
       source: ''
@@ -1241,11 +1148,16 @@ items:
       slug: voie-du-bouclier
       subtype: profile
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.7HQihFETZ67Ic5F2
-        - Actor.ELw0a83HARZyKiGp.Item.Pwgv4BtiOqu0lZFF
-        - Actor.ELw0a83HARZyKiGp.Item.lDZW4qevq2Wf60pk
-        - Actor.ELw0a83HARZyKiGp.Item.EBCLYMhp8US5o9Lf
-        - Actor.ELw0a83HARZyKiGp.Item.IXrXgOoUoLZJr7iQ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jf5y6IAJ602sh5vJ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.qS0IdkiemLKvtOeV
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.oxZ0isrYHJ7kv0HT
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.p66jkskHLRaizp7M
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.pDYx5EHUjh9B7Dx3
       rank: 0
       maxDefenseArmor: 5
       pvByLevel: 0
@@ -1257,23 +1169,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.XIhDiMJ9XycPIIi6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665568
+      modifiedTime: 1758924666109
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.Zf7J9ozZfr38YmIW'
   - folder: yWOb0WkMiE4RTPF2
     name: Protéger un allié
     type: capacity
     img: icons/skills/melee/shield-block-gray-orange.webp
-    _id: 7HQihFETZ67Ic5F2
+    _id: Jf5y6IAJ602sh5vJ
     system:
       description: >-
         <p style="text-align:justify">S’il n’est pas surpris, le guerrier peut
@@ -1281,18 +1194,12 @@ items:
         attaque par round. Il doit annoncer son intention avant de connaître le
         résultat de l’attaque. De plus, vous ajoutez votre rang + 2 à tous les
         tests destinés à éviter d’être surpris</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité gère le bonus permanent aux jet de caractéristique
-        pour éviter d'être surpris. Le bonus de +2 en DEF sur un alliés. De plus
-        elle propose une action qui si elle est activé après avoir ciblé un
-        allié, va appliquer un bonus de +2 en DEF pendant 1 round. Cet effet ne
-        fonctionne qu'en mode combat.</p>
-
-        </blockquote>
+        pour éviter d'être surpris.</p>  <p>De plus elle propose une action qui
+        si elle est activée après avoir ciblé un allié, va lui appliquer un
+        bonus de +2 en DEF pendant 1 round. Cet effet ne fonctionne qu'en mode
+        combat.</p>
       source: ''
       origin: Livre des règles p87
       slug: proteger-un-allie
@@ -1304,9 +1211,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.7HQihFETZ67Ic5F2
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jf5y6IAJ602sh5vJ
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1322,14 +1231,17 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.7HQihFETZ67Ic5F2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jf5y6IAJ602sh5vJ
               subtype: ability
               target: per
               apply: self
               value: 2 + @rang
               additionalInfos: éviter d'être surpris
           resolvers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.7HQihFETZ67Ic5F2
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jf5y6IAJ602sh5vJ
           indice: 1
           label: ''
           chatFlavor: ''
@@ -1345,7 +1257,8 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.7HQihFETZ67Ic5F2
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jf5y6IAJ602sh5vJ
               subtype: combat
               target: def
               apply: others
@@ -1371,6 +1284,7 @@ items:
                 successThreshold: null
               skill: {}
               dmg: {}
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1386,23 +1300,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.7HQihFETZ67Ic5F2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665639
+      modifiedTime: 1758924665660
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.Jf5y6IAJ602sh5vJ'
   - folder: yWOb0WkMiE4RTPF2
     name: Parer un coup
     type: capacity
     img: icons/skills/melee/shield-block-bash-yellow.webp
-    _id: Pwgv4BtiOqu0lZFF
+    _id: qS0IdkiemLKvtOeV
     system:
       description: >-
         <p style="text-align:justify">Le guerrier utilise une action de
@@ -1416,16 +1331,10 @@ items:
         des DM. À partir du rang 5, le guerrier peut utiliser cette capacité en
         action gratuite (toujours une fois par round), mais dans ce cas, il
         subit un dé malus au test opposé.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité va juste proposer de faire un jet d'attaque d'attaque
         de contact, soit en tenant comtpe de la FOR soit avec AGI. Le resultat
         sera a interpréter par le MJ.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p87
       slug: parer-un-coup
@@ -1437,9 +1346,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.Pwgv4BtiOqu0lZFF
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.qS0IdkiemLKvtOeV
           indice: 0
           label: Parade avec FOR
           chatFlavor: ''
@@ -1459,7 +1370,7 @@ items:
               malusDiceAdd: false
               skill:
                 formula: '@atc'
-                crit: '21'
+                crit: '20'
                 difficulty: '0'
               dmg:
                 formula: '0'
@@ -1475,7 +1386,9 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.Pwgv4BtiOqu0lZFF
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.qS0IdkiemLKvtOeV
           indice: 1
           label: Parade avec AGI
           chatFlavor: ''
@@ -1495,7 +1408,7 @@ items:
               malusDiceAdd: false
               skill:
                 formula: '@atc -@for + @agi'
-                crit: '21'
+                crit: '20'
                 difficulty: '0'
               dmg:
                 formula: '0'
@@ -1511,6 +1424,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -1526,23 +1440,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.Pwgv4BtiOqu0lZFF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665756
+      modifiedTime: 1758924665776
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.qS0IdkiemLKvtOeV'
   - folder: yWOb0WkMiE4RTPF2
     name: Défense au bouclier
     type: capacity
     img: icons/equipment/shield/heater-wooden-steel-boss.webp
-    _id: lDZW4qevq2Wf60pk
+    _id: oxZ0isrYHJ7kv0HT
     system:
       description: >-
         <p style="text-align:justify">Le guerrier obtient un bonus de +1 en DEF
@@ -1550,18 +1465,11 @@ items:
         lorsqu’il tient son bouclier en main, il retranche son rang à tous les
         DM des attaques de zone (sorts d'Explosion de feu, mains brûlantes,
         foudre, etc. et aux souffles) sauf s’il est surpris.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Cette capacité propose une action activable/désactivable pour
         appliquer un bonus de DEF comme indiqué. A activer si le joueur est
-        équipé de son bouclier.</p>
-
-        <p>Pour la réduction de DM il faudra le compter à la main.</p>
-
-        </blockquote>
+        équipé de son bouclier.</p> <p>Pour la réduction de DM, il faudra le
+        compter à la main.</p>
       source: ''
       origin: Livre des règles p88
       slug: defense-au-bouclier
@@ -1573,11 +1481,13 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.lDZW4qevq2Wf60pk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.oxZ0isrYHJ7kv0HT
           indice: 0
-          label: ''
+          label: Manier un bouclier
           chatFlavor: ''
           type: buff
           img: icons/svg/d20-highlight.svg
@@ -1591,13 +1501,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.lDZW4qevq2Wf60pk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.oxZ0isrYHJ7kv0HT
               subtype: combat
               target: def
               apply: self
               value: '@rang[1,1,1,1,2]'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -1613,42 +1525,30 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.lDZW4qevq2Wf60pk'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665863
+      modifiedTime: 1758924665879
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.oxZ0isrYHJ7kv0HT'
   - folder: yWOb0WkMiE4RTPF2
     name: Absorber un sort
     type: capacity
     img: icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp
-    _id: EBCLYMhp8US5o9Lf
+    _id: p66jkskHLRaizp7M
     system:
-      description: >-
-        <p style="text-align:justify"><strong>Lorsqu’il s’est préparé à parer un
-        coup</strong>, le guerrier peut décider à la place d’absorber un sort.
-        S’il réussit un test d’attaque au contact (il peut remplacer la FOR par
-        l’AGI pour ce test) opposé à un test d’attaque magique du lanceur de
-        sort, le sort est absorbé par le bouclier et n’a aucun effet sur le
-        guerrier (mais s’il s’agit d’un sort de zone, les autres cibles sont
-        affectées normalement).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      description: "<p style=\"text-align:justify\"><strong>Lorsqu’il s’est préparé à parer un coup</strong>, le guerrier peut décider à la place d’absorber un sort. S’il réussit un test d’attaque au contact (il peut remplacer la FOR par l’AGI pour ce test) opposé à un test d’attaque magique du lanceur de sort, le sort est absorbé par le bouclier et n’a aucun effet sur le guerrier (mais s’il s’agit d’un sort de zone, les autres cibles sont affectées normalement).</p>\n<p>\_</p>"
+      inGame: >-
         <p>Cette capacité propose une action d'attaque contre l'attaque magique
         de la cible pour déterminer la réussite ou non de l'action. Le reste est
-        géré par le MJ</p>
-
-        </blockquote>
+        géré par le MJ.</p>
       source: ''
       origin: Livre des règles p88
       slug: absorber-un-sort
@@ -1660,9 +1560,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.EBCLYMhp8US5o9Lf
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.p66jkskHLRaizp7M
           indice: 0
           label: avec FOR
           chatFlavor: ''
@@ -1682,7 +1584,7 @@ items:
               malusDiceAdd: false
               skill:
                 formula: '@atc'
-                crit: '21'
+                crit: '20'
                 difficulty: '@oppose.atm'
               dmg:
                 formula: '0'
@@ -1698,7 +1600,9 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.EBCLYMhp8US5o9Lf
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.p66jkskHLRaizp7M
           indice: 1
           label: avec AGI
           chatFlavor: ''
@@ -1718,7 +1622,7 @@ items:
               malusDiceAdd: false
               skill:
                 formula: '@atc -@for +@agi'
-                crit: '21'
+                crit: '20'
                 difficulty: '@oppose.atm'
               dmg:
                 formula: '0'
@@ -1734,6 +1638,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -1749,23 +1654,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.EBCLYMhp8US5o9Lf'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924665965
+      modifiedTime: 1758924665983
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.p66jkskHLRaizp7M'
   - folder: yWOb0WkMiE4RTPF2
     name: Renvoi de sort
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
-    _id: IXrXgOoUoLZJr7iQ
+    _id: pDYx5EHUjh9B7Dx3
     system:
       description: >-
         <p style="text-align:justify">Le guerrier peut décider de renvoyer un
@@ -1773,15 +1679,9 @@ items:
         lieu d’être annulé, le sort absorbé est immédiatement retourné contre
         son expéditeur : le lanceur du sort subit alors les effets de sa propre
         attaque ! Cet effet ne fonctionne pas contre les sorts de zone.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p88
       slug: renvoi-de-sort
@@ -1793,7 +1693,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.XIhDiMJ9XycPIIi6
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Zf7J9ozZfr38YmIW
       actions: []
       cost: -1
       rank: 5
@@ -1810,23 +1711,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.IXrXgOoUoLZJr7iQ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666073
+      modifiedTime: 1758924666073
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.pDYx5EHUjh9B7Dx3'
   - folder: CEOB5IPh3kWvA4Ag
     name: Voie du combat
     type: path
     img: modules/cof-base/assets/voies/guerrier_combat.webp
-    _id: ZDi0BvM4i2sWc0G0
+    _id: PR0MTRrS1Wz5Zzam
     system:
       description: ''
       source: ''
@@ -1834,11 +1736,16 @@ items:
       slug: voie-du-combat
       subtype: profile
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.rN87LLadJRTBSztk
-        - Actor.ELw0a83HARZyKiGp.Item.3PpGMJHzcw7wQLC0
-        - Actor.ELw0a83HARZyKiGp.Item.8hjkPBB7iDDsDSoJ
-        - Actor.ELw0a83HARZyKiGp.Item.yGOD5Wg1lkcQ0VRd
-        - Actor.ELw0a83HARZyKiGp.Item.TFRChYaoQQATSMsE
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C2cL3bTQo4gMpGGZ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.2Ne3Pqv9PRgOcpga
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jh34qYtQDt2R4vBa
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C82jDHLsaqgD2UVY
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.MXpcyMmQdPQ2cV9X
       rank: 0
       maxDefenseArmor: 5
       pvByLevel: 0
@@ -1850,38 +1757,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.ZDi0BvM4i2sWc0G0'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666239
+      modifiedTime: 1758924666789
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.PR0MTRrS1Wz5Zzam'
   - folder: JMHjtxIQuvXayk5y
     name: Vivacité
     type: capacity
     img: icons/magic/symbols/symbol-lightning-bolt.webp
-    _id: rN87LLadJRTBSztk
+    _id: C2cL3bTQo4gMpGGZ
     system:
       description: >-
         <p style="text-align:justify">Le guerrier gagne +3 en Initiative et aux
         tests d’AGI ou de FOR pour éviter d’être immobilisé ou renversé. De
         plus, une fois par combat, il obtient une action de mouvement
         supplémentaire à son tour.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité gère le bonus permanent aux jets de
         caractéristique</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p88
       slug: vivacite
@@ -1893,9 +1795,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.rN87LLadJRTBSztk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C2cL3bTQo4gMpGGZ
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1911,27 +1815,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rN87LLadJRTBSztk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C2cL3bTQo4gMpGGZ
               subtype: combat
               target: init
               apply: self
               value: '3'
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rN87LLadJRTBSztk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C2cL3bTQo4gMpGGZ
               subtype: skill
               target: agi
               apply: self
               value: '3'
               additionalInfos: contre immobiliser ou renverser
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rN87LLadJRTBSztk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C2cL3bTQo4gMpGGZ
               subtype: skill
               target: for
               apply: self
               value: '3'
               additionalInfos: contre immobiliser ou renverser
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1947,36 +1855,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.rN87LLadJRTBSztk'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666313
+      modifiedTime: 1758924666338
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.C2cL3bTQo4gMpGGZ'
   - folder: JMHjtxIQuvXayk5y
     name: Manoeuvre
     type: capacity
     img: icons/skills/melee/maneuver-sword-katana-yellow.webp
-    _id: 3PpGMJHzcw7wQLC0
+    _id: 2Ne3Pqv9PRgOcpga
     system:
       description: >-
         <p>Le guerrier obtient un dé bonus lorsqu’il exécute une manoeuvre en
         combat.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. Lors d'un test de manoeuvre, le joueur
         doit penser à sélectionner la case "dé bonus"</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p88
       slug: manoeuvre
@@ -1988,7 +1891,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
       actions: []
       cost: -1
       rank: 2
@@ -2005,23 +1909,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.3PpGMJHzcw7wQLC0'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666430
+      modifiedTime: 1758924666430
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.2Ne3Pqv9PRgOcpga'
   - folder: JMHjtxIQuvXayk5y
     name: Attaque puissante
     type: capacity
     img: icons/skills/melee/strike-sword-steel-yellow.webp
-    _id: 8hjkPBB7iDDsDSoJ
+    _id: Jh34qYtQDt2R4vBa
     system:
       description: >-
         <p style="text-align:justify">Le guerrier peut choisir de s’imposer un
@@ -2029,15 +1934,9 @@ items:
         capacité peut être utilisée avec Double attaque, Attaque circulaire ou
         Attaque parfaite (voir exemple). Transformez cette capacité en action
         limitée (L) pour obtenir +3d4° aux DM au lieu de +2d4°.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité propose 2 actions d'attaque, la première (A) avec un
         dé malus et +2d4°DM et la 2eme (L) avec un dé malus et +3d4°DM.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p88
       slug: attaque-puissante
@@ -2049,14 +1948,17 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.8hjkPBB7iDDsDSoJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jh34qYtQDt2R4vBa
           indice: 0
-          label: (A)
-          chatFlavor: (A)
-          type: melee
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: false
             enabled: false
@@ -2082,17 +1984,18 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.8hjkPBB7iDDsDSoJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Jh34qYtQDt2R4vBa
           indice: 1
-          label: (L)
+          label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: l
           properties:
             visible: false
             enabled: false
@@ -2118,7 +2021,6 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -2138,36 +2040,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.8hjkPBB7iDDsDSoJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666492
+      modifiedTime: 1758924666514
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.Jh34qYtQDt2R4vBa'
   - folder: JMHjtxIQuvXayk5y
     name: Double attaque
     type: capacity
     img: icons/skills/melee/weapons-crossed-swords-pink.webp
-    _id: yGOD5Wg1lkcQ0VRd
+    _id: C82jDHLsaqgD2UVY
     system:
       description: >-
         <p>Le guerrier fait deux attaques au contact durant son tour avec un
         malus de ‑2</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur active l'action afin d'appliquer le malus de -2 aux
         attaques de contact</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p88
       slug: double-attaque
@@ -2179,9 +2076,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.yGOD5Wg1lkcQ0VRd
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C82jDHLsaqgD2UVY
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2197,13 +2096,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.yGOD5Wg1lkcQ0VRd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C82jDHLsaqgD2UVY
               subtype: combat
               target: melee
               apply: self
               value: '-2'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -2219,23 +2120,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.yGOD5Wg1lkcQ0VRd'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666605
+      modifiedTime: 1758924666627
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.C82jDHLsaqgD2UVY'
   - folder: JMHjtxIQuvXayk5y
     name: Attaque circulaire
     type: capacity
     img: icons/skills/melee/strike-sword-blood-red.webp
-    _id: TFRChYaoQQATSMsE
+    _id: MXpcyMmQdPQ2cV9X
     system:
       description: >-
         <p style="text-align:justify">Le guerrier peut faire une attaque au
@@ -2252,15 +2154,9 @@ items:
         utiliser une action limitée pour faire une seule attaque puissante ; il
         subit un dé malus et si l’attaque est réussie, il inflige +3d4°
         DM.</em></p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur active l'action afin d'appliquer le malus de -2 aux
-        attaques de contact</p>
-
-        </blockquote>
+        attaques de contact.</p>
       source: ''
       origin: Livre des règles p88
       slug: attaque-circulaire
@@ -2272,9 +2168,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.ZDi0BvM4i2sWc0G0
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.PR0MTRrS1Wz5Zzam
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.TFRChYaoQQATSMsE
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.MXpcyMmQdPQ2cV9X
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2290,13 +2188,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.TFRChYaoQQATSMsE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.MXpcyMmQdPQ2cV9X
               subtype: combat
               target: melee
               apply: self
               value: '-2'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -2312,23 +2212,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.TFRChYaoQQATSMsE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666719
+      modifiedTime: 1758924666739
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.MXpcyMmQdPQ2cV9X'
   - folder: CEOB5IPh3kWvA4Ag
     name: Voie du maitre d'armes
     type: path
     img: modules/cof-base/assets/voies/guerrier_maitrearmes.webp
-    _id: lSYtSE5voqMgiMne
+    _id: VJkc1e4T2aR7MvLZ
     system:
       description: ''
       source: ''
@@ -2336,11 +2237,16 @@ items:
       slug: voie-du-maitre-darmes
       subtype: profile
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
-        - Actor.ELw0a83HARZyKiGp.Item.gTyQlHmorEsRFYmK
-        - Actor.ELw0a83HARZyKiGp.Item.6xQfGJpLLUzdQEQP
-        - Actor.ELw0a83HARZyKiGp.Item.wBQfLFXyltpe5lRP
-        - Actor.ELw0a83HARZyKiGp.Item.eY9rrlP0PTpEkIxT
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.IQewnyYHxZ1VgXE5
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.yZJTJSVZg0phkAsl
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.27VEYIFp18TVAypP
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.zfpbaydOzNrjokdH
       rank: 1
       maxDefenseArmor: 5
       pvByLevel: 0
@@ -2352,23 +2258,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.lSYtSE5voqMgiMne'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666880
+      modifiedTime: 1758924704772
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.VJkc1e4T2aR7MvLZ'
   - folder: 6kF2SRDxGbIkFQ06
     name: Armes de prédilection
     type: capacity
     img: icons/weapons/swords/greatsword-guard-gem-blue.webp
-    _id: Lm4P28993dbGraOp
+    _id: C5R0mwAwt7wOMVEC
     system:
       description: >-
         <p style="text-align:justify">Le guerrier choisit une catégorie d’armes
@@ -2377,17 +2284,11 @@ items:
         gagne +1 en attaque lorsqu’il l’utilise une arme de cette catégorie. De
         plus, vous ajoutez votre rang + 2 à tous les tests destinés à estimer la
         valeur d’une arme ou la réputation martiale d’un adversaire</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>"Lorsque cette capacité est apprise, le joueur renseigne son arme de
+      inGame: >-
+        <p>Lorsque cette capacité est apprise, le joueur renseigne son arme de
         prédilection dans la Label de l'action à la place de (arme choisie). Si
         le joueur choisi "Armes de jet", il doit remplacer le Modificateur
-        "Attaque de contact" par "Attaque à distance".</p>
-
-        </blockquote>
+        "Attaque de contact" par "Attaque à distance.</p>
       source: ''
       origin: Livre des règles p88
       slug: armes-de-predilection
@@ -2399,58 +2300,67 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: true
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
               subtype: skill
               target: int
-              apply: self
               value: 2 + @rang
-              additionalInfos: estimer valeur arme
+              apply: self
+              additionalInfos: estimer valeur d'une arme ou d'un adversaire
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
               subtype: skill
               target: per
-              apply: self
               value: 2 + @rang
-              additionalInfos: estimer valeur arme
-          conditions: []
+              apply: self
+              additionalInfos: estimer valeur d'une arme ou d'un adversaire
           resolvers: []
-        - source: Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
           indice: 1
-          label: Utilisation de (arme choisie)
+          label: Utilisation de épées
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: true
             enabled: false
             activable: true
-            temporary: false
+            temporary: true
             noManaCost: false
           conditions:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.Lm4P28993dbGraOp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.C5R0mwAwt7wOMVEC
               subtype: combat
               target: melee
-              apply: self
               value: '1'
+              apply: self
               additionalInfos: ''
           resolvers: []
       cost: -1
@@ -2468,37 +2378,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.Lm4P28993dbGraOp'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924666942
+      modifiedTime: 1758924730467
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.C5R0mwAwt7wOMVEC'
   - folder: 6kF2SRDxGbIkFQ06
     name: Science du critique
     type: capacity
     img: icons/skills/melee/blade-tip-chipped-blood-red.webp
-    _id: gTyQlHmorEsRFYmK
+    _id: IQewnyYHxZ1VgXE5
     system:
       description: >-
         <p style="text-align:justify">Le guerrier augmente de 1 point les
         chances d’obtenir un critique sur les attaques effectuées avec une arme
         de prédilection (par exemple, 19‑20 au lieu de 20).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Activer l'action permet d'applquer le bonus lorsque le personnage
         utilise son arme de prédilection.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p89
       slug: science-du-critique
@@ -2510,30 +2415,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.gTyQlHmorEsRFYmK
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.IQewnyYHxZ1VgXE5
           indice: 0
           label: utilisation de l'arme de prédilection
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: true
             temporary: true
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.gTyQlHmorEsRFYmK
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.IQewnyYHxZ1VgXE5
               subtype: combat
               target: crit
-              apply: self
               value: '1'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -2549,23 +2459,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.gTyQlHmorEsRFYmK'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667080
+      modifiedTime: 1758924667119
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.IQewnyYHxZ1VgXE5'
   - folder: 6kF2SRDxGbIkFQ06
     name: Spécialisation
     type: capacity
     img: icons/commodities/treasure/medal-ribbon-striped-gold-red.webp
-    _id: 6xQfGJpLLUzdQEQP
+    _id: yZJTJSVZg0phkAsl
     system:
       description: >-
         <p style="text-align:justify">Lorsque le guerrier emploie une arme de
@@ -2575,16 +2486,10 @@ items:
         rangs 1 à 3) ou décider d’augmenter de +1 le bonus aux DM d’une
         catégorie qu’il connaît déjà (pour un maximum de +6 pour un guerrier
         ayant atteint le rang 5 dans les cinq voies).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>La capacité ne fait rien. Il est proposé au MJ de rajouter le +1 DM
         directement sur l'arme en question pour éviter la multiplication des
-        action</p>
-
-        </blockquote>
+        actions.</p>
       source: ''
       origin: Livre des règles p89
       slug: specialisation
@@ -2596,7 +2501,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
       actions: []
       cost: -1
       rank: 3
@@ -2613,23 +2519,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.6xQfGJpLLUzdQEQP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667236
+      modifiedTime: 1758924667236
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.yZJTJSVZg0phkAsl'
   - folder: 6kF2SRDxGbIkFQ06
     name: Attaque parfaite
     type: capacity
     img: icons/skills/melee/strike-sword-slashing-red.webp
-    _id: wBQfLFXyltpe5lRP
+    _id: 27VEYIFp18TVAypP
     system:
       description: >-
         <p style="text-align:justify">Vous obtenez un dé bonus en attaque au
@@ -2638,16 +2545,10 @@ items:
         guerrier peut choisir de ne pas infliger les DM de son attaque parfaite
         pour désarmer une cible dont le NC est inférieur à son bonus de DM de
         spécialisation.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>L'action permet de réaliser une attaque avec les valeurs de l'arme
         équipée en rajoutant un dé bonus ainsi qu'une augmentation de DM de
         1d4°</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p89
       slug: attaque-parfaite
@@ -2659,9 +2560,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.wBQfLFXyltpe5lRP
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.27VEYIFp18TVAypP
           indice: 0
           label: utilisation de l'arme de prédilection
           chatFlavor: ''
@@ -2697,6 +2600,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -2712,23 +2616,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.wBQfLFXyltpe5lRP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667312
+      modifiedTime: 1758924667334
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.27VEYIFp18TVAypP'
   - folder: 6kF2SRDxGbIkFQ06
     name: Riposte
     type: capacity
     img: icons/skills/melee/blade-tip-energy-green.webp
-    _id: eY9rrlP0PTpEkIxT
+    _id: zfpbaydOzNrjokdH
     system:
       description: >-
         <p style="text-align:justify">Lorsqu’un adversaire rate une attaque de
@@ -2737,15 +2642,9 @@ items:
         seule attaque supplémentaire de cette façon à chaque round et si
         plusieurs adversaires le ratent, il choisit contre lequel il effectue la
         riposte.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p89
       slug: riposte
@@ -2757,7 +2656,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.lSYtSE5voqMgiMne
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.VJkc1e4T2aR7MvLZ
       actions: []
       cost: -1
       rank: 5
@@ -2774,23 +2674,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.eY9rrlP0PTpEkIxT'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667435
+      modifiedTime: 1758924667435
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.zfpbaydOzNrjokdH'
   - folder: CEOB5IPh3kWvA4Ag
     name: Voie de la résistance
     type: path
     img: modules/cof-base/assets/voies/guerrier_resistance.webp
-    _id: I1ghyzesKtUo39uU
+    _id: Qc9zNMClMPFZnQwG
     system:
       description: ''
       source: ''
@@ -2798,11 +2699,16 @@ items:
       slug: voie-de-la-resistance
       subtype: profile
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.uCOCZ89jyCSs4pAs
-        - Actor.ELw0a83HARZyKiGp.Item.hE1bS8i17FKe3b1E
-        - Actor.ELw0a83HARZyKiGp.Item.rRBRMOwVPL5Krm79
-        - Actor.ELw0a83HARZyKiGp.Item.Cqcgs2aXKtHrq6QL
-        - Actor.ELw0a83HARZyKiGp.Item.deUy3d4M3XBkGXaP
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.ayO5juEUdDUs8oE2
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.8OePzQ4gDNKtorie
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.WPIOOG4r51itdaCm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.BquqFB3Sefc8BF5Y
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.NbMeRjI7cYHGR8gh
       rank: 1
       maxDefenseArmor: 5
       pvByLevel: 0
@@ -2814,36 +2720,30 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.I1ghyzesKtUo39uU'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667561
+      modifiedTime: 1758924706619
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.Qc9zNMClMPFZnQwG'
   - folder: 4iBwDB99Hn3Aoj3o
     name: Robustesse
     type: capacity
     img: icons/skills/wounds/anatomy-organ-heart-red.webp
-    _id: uCOCZ89jyCSs4pAs
+    _id: ayO5juEUdDUs8oE2
     system:
       description: >-
         <p>Le guerrier augmente sa valeur maximale de PV de rang + 2. De plus,
         vous ajoutez votre rang + 2 à tous les tests destinés à résister aux
         efforts physiques, à la chaleur ou au froid (conditions naturelles).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Cette capacité gère les bonus permanents.</p>
-
-        </blockquote>
+      inGame: <p>Cette capacité gère les bonus permanents.</p>
       source: ''
       origin: Livre des règles p89
       slug: robustesse
@@ -2855,9 +2755,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.uCOCZ89jyCSs4pAs
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.ayO5juEUdDUs8oE2
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2873,20 +2775,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.uCOCZ89jyCSs4pAs
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.ayO5juEUdDUs8oE2
               subtype: attribute
               target: hp
               apply: self
               value: 2 + @rang
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.uCOCZ89jyCSs4pAs
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.ayO5juEUdDUs8oE2
               subtype: skill
               target: con
               apply: self
               value: 2 + @rang
-              additionalInfos: résistance efforts physiques
+              additionalInfos: résister efforts physiques/chaleur/froid
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2902,23 +2807,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.uCOCZ89jyCSs4pAs'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667630
+      modifiedTime: 1758924706589
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.ayO5juEUdDUs8oE2'
   - folder: 4iBwDB99Hn3Aoj3o
     name: Résilient
     type: capacity
     img: icons/magic/life/cross-yellow-green.webp
-    _id: hE1bS8i17FKe3b1E
+    _id: 8OePzQ4gDNKtorie
     system:
       description: >-
         <p style="text-align:justify">Désormais, il suffit de 10 min au guerrier
@@ -2926,15 +2832,9 @@ items:
         et cela passe à 5 min au rang 4 de la voie. De plus, le guerrier obtient
         un bonus égal au rang atteint dans la voie pour tous les tests destinés
         à résister aux états étourdi et affaibli.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le bonus au test de compétence pour résister est obtenu lorsque la
         capacité est apprise.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p90
       slug: resilient
@@ -2946,30 +2846,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.hE1bS8i17FKe3b1E
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.8OePzQ4gDNKtorie
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.hE1bS8i17FKe3b1E
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.8OePzQ4gDNKtorie
               subtype: skill
               target: con
-              apply: self
               value: '@rang'
+              apply: self
               additionalInfos: contre étourdi et affaibli
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -2985,23 +2890,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.hE1bS8i17FKe3b1E'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667748
+      modifiedTime: 1758924667772
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.8OePzQ4gDNKtorie'
   - folder: 4iBwDB99Hn3Aoj3o
     name: Armure lourde
     type: capacity
     img: icons/equipment/chest/breastplate-gorget-steel.webp
-    _id: rRBRMOwVPL5Krm79
+    _id: WPIOOG4r51itdaCm
     system:
       description: >-
         <p style="text-align:justify">Au choix le guerrier gagne +1 en DEF ou il
@@ -3014,18 +2920,12 @@ items:
         toutes les capacités de ce profil avec cette armure. Par exemple, un
         barbare qui choisit cette capacité peut désormais entrer en rage en
         portant une chemise de mailles</em></p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Si le joueur choisi le bonus à la def, il n'y a rien à modifier. Si
-        le joueur choisi la formation martiale de l'armure de plaque, il doit
+      inGame: >-
+        <p>Si le joueur choisi le bonus à la DEF, il n'y a rien à modifier. Si
+        le joueur choisit la formation martiale de l'armure de plaque, il doit
         supprimer l'action dans l'onglet "Actions / Effets" et cocher la case
         "Armure de plaque" dans la fiche profil du Guerrier déverrouillée, au
         niveau des Formations Martiales.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p90
       slug: armure-lourde
@@ -3037,30 +2937,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.rRBRMOwVPL5Krm79
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.WPIOOG4r51itdaCm
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.rRBRMOwVPL5Krm79
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.WPIOOG4r51itdaCm
               subtype: combat
               target: def
-              apply: self
               value: '1'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -3076,33 +2981,29 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.rRBRMOwVPL5Krm79'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667866
+      modifiedTime: 1758924667889
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.WPIOOG4r51itdaCm'
   - folder: 4iBwDB99Hn3Aoj3o
     name: Constitution héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: Cqcgs2aXKtHrq6QL
+    _id: BquqFB3Sefc8BF5Y
     system:
       description: >-
         <p>Le guerrier augmente sa CON de +1. Désormais, il obtient un dé bonus
-        aux tests de CON.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Cette capacité gère le bonus permanent aux jet de caractéristique</p>
-
-        </blockquote>
+        aux tests de CON.</p>
+      inGame: <p>Cette capacité gère le bonus permanent aux jet de caractéristique</p>
       source: ''
       origin: Livre des règles p90
       slug: constitution-heroique
@@ -3114,37 +3015,43 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.Cqcgs2aXKtHrq6QL
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.BquqFB3Sefc8BF5Y
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.Cqcgs2aXKtHrq6QL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.BquqFB3Sefc8BF5Y
               subtype: ability
               target: con
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.Cqcgs2aXKtHrq6QL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.BquqFB3Sefc8BF5Y
               subtype: bonusDice
               target: con
               value: '0'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -3160,23 +3067,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.Cqcgs2aXKtHrq6QL'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924667997
+      modifiedTime: 1758924668047
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.BquqFB3Sefc8BF5Y'
   - folder: 4iBwDB99Hn3Aoj3o
     name: Dur à cuire
     type: capacity
     img: icons/magic/control/buff-strength-muscle-damage-orange.webp
-    _id: deUy3d4M3XBkGXaP
+    _id: NbMeRjI7cYHGR8gh
     system:
       description: >-
         <p style="text-align:justify">Le guerrier gagne +1 en DEF et, une fois
@@ -3184,15 +3092,9 @@ items:
         de tomber inconscient. De plus, il ne subit plus de dé malus lorsqu’il
         est immobilisé et lorsqu’il est étourdi ; il peut encore attaquer, mais
         avec un dé malus.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité gère le bonus permanent à la DEF. Le reste des
-        avantages sont gérés manuellement par le joueur ou le M</p>
-
-        </blockquote>
+        avantages sont gérés manuellement par le joueur ou le MJ</p>
       source: ''
       origin: Livre des règles p90
       slug: dur-a-cuire
@@ -3204,30 +3106,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.I1ghyzesKtUo39uU
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.Qc9zNMClMPFZnQwG
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.deUy3d4M3XBkGXaP
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.NbMeRjI7cYHGR8gh
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.deUy3d4M3XBkGXaP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.NbMeRjI7cYHGR8gh
               subtype: combat
               target: def
               value: '1'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -3243,23 +3150,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.deUy3d4M3XBkGXaP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668183
+      modifiedTime: 1758924668226
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.NbMeRjI7cYHGR8gh'
   - folder: CEOB5IPh3kWvA4Ag
     name: Voie du soldat
     type: path
     img: modules/cof-base/assets/voies/guerrier_soldat.webp
-    _id: cYa5rqfs7m7H134w
+    _id: fxCIBV3zyUCcjNKq
     system:
       description: ''
       source: ''
@@ -3267,11 +3175,16 @@ items:
       slug: voie-du-soldat
       subtype: profile
       capacities:
-        - Actor.ELw0a83HARZyKiGp.Item.vcYFjXuE6crUIO9p
-        - Actor.ELw0a83HARZyKiGp.Item.IioU8WjSpxB67aMM
-        - Actor.ELw0a83HARZyKiGp.Item.VCza0B0lV76nkGIi
-        - Actor.ELw0a83HARZyKiGp.Item.ZweAF9HiVCxy2OSE
-        - Actor.ELw0a83HARZyKiGp.Item.aTFrOw2CqHmq7TsB
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.glYjMAj6JdbWMIxw
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.xrL27aOQ1ObDd1QB
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.5gYI85HHvmgHNeDq
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.AUmmaf3Lf8GkIo77
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.SWULKUvtB1bTQp0r
       rank: 0
       maxDefenseArmor: 5
       pvByLevel: 0
@@ -3283,23 +3196,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.cYa5rqfs7m7H134w'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668401
+      modifiedTime: 1758924669051
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.fxCIBV3zyUCcjNKq'
   - folder: H1NxEJ0tQptud3eG
     name: Teigneux
     type: capacity
     img: icons/skills/melee/hand-grip-staff-teal.webp
-    _id: vcYFjXuE6crUIO9p
+    _id: glYjMAj6JdbWMIxw
     system:
       description: >-
         <p style="text-align:justify">Une fois par round, si une créature à
@@ -3307,15 +3221,9 @@ items:
         contact en action gratuite contre elle. De plus vous ajoutez votre rang
         + 2 aux tests destinés à résister à l’alcool et à la privation de
         nourriture ou de sommeil.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité gère le bonus permanent aux jets de résistance pour
         résister à l'acool</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p90
       slug: teigneux
@@ -3327,30 +3235,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.vcYFjXuE6crUIO9p
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.glYjMAj6JdbWMIxw
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.vcYFjXuE6crUIO9p
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.glYjMAj6JdbWMIxw
               subtype: skill
               target: con
-              apply: self
               value: 2 + @rang
-              additionalInfos: résister alcool
-          conditions: []
+              apply: self
+              additionalInfos: résister alcool/privation de nourriture ou de sommeil
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -3366,23 +3279,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.vcYFjXuE6crUIO9p'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668484
+      modifiedTime: 1758924668517
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.glYjMAj6JdbWMIxw'
   - folder: H1NxEJ0tQptud3eG
     name: Prouesse
     type: capacity
     img: icons/magic/holy/barrier-shield-winged-blue.webp
-    _id: IioU8WjSpxB67aMM
+    _id: xrL27aOQ1ObDd1QB
     system:
       description: >-
         <p>Le guerrier réussit souvent des exploits physiques hors‑norme. Une
@@ -3390,18 +3304,12 @@ items:
         test de FOR ou de CON. Vous pouvez annoncer l’utilisation de cette
         capacité après avoir pris connaissance du résultat du test de
         caractéristique.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>En activant l'action, le jet de Dommages est effectué et le bonus aux
         tests de compétences s'active. Le joueur doit désactiver l'action dès
         qu'il a effectué le ou les tests de compétence. Si le bonus est rajouté
         après avoir prit connaissance du résultat, l'action permet tout de même
         d'effectuer le jet de Dommages.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p90
       slug: prouesse
@@ -3413,9 +3321,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.IioU8WjSpxB67aMM
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.xrL27aOQ1ObDd1QB
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3431,29 +3341,29 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.IioU8WjSpxB67aMM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.xrL27aOQ1ObDd1QB
               subtype: skill
               target: for
               apply: self
               value: '5'
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.IioU8WjSpxB67aMM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.xrL27aOQ1ObDd1QB
               subtype: skill
               target: con
               apply: self
               value: '5'
               additionalInfos: ''
           resolvers:
-            - type: auto
+            - type: heal
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                difficulty: ''
-              dmg:
-                formula: 1d4°
+                formula: '-1d4°'
               target:
-                type: none
+                type: self
                 number: 0
                 scope: all
               additionalEffect:
@@ -3463,6 +3373,8 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+              dmg: {}
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3478,23 +3390,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.IioU8WjSpxB67aMM'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668635
+      modifiedTime: 1758924668663
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.xrL27aOQ1ObDd1QB'
   - folder: H1NxEJ0tQptud3eG
     name: Piqûre de rappel
     type: capacity
     img: icons/skills/melee/strike-dagger-blood-red.webp
-    _id: VCza0B0lV76nkGIi
+    _id: 5gYI85HHvmgHNeDq
     system:
       description: >-
         <p style="text-align:justify">Vous n’admettez pas qu’un adversaire vous
@@ -3503,15 +3416,9 @@ items:
         contre lui. Si l’INT de cet adversaire est négative et que vous lui
         infligez des DM sur cette attaque, il vous prend automatiquement pour
         cible lors de sa prochaine attaque</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p90
       slug: piqure-de-rappel
@@ -3523,7 +3430,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       actions: []
       cost: -1
       rank: 3
@@ -3540,34 +3448,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.VCza0B0lV76nkGIi'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668772
+      modifiedTime: 1758924668772
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.5gYI85HHvmgHNeDq'
   - folder: jEad0IxOLB85LCOx
     name: Force héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: ZweAF9HiVCxy2OSE
+    _id: AUmmaf3Lf8GkIo77
     system:
       description: >-
         <p>Le chevalier augmente sa FOR de +1. Désormais, il obtient un dé bonus
-        aux tests de FOR</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        aux tests de FOR</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p>
       source: ''
       origin: Livre des règles p85 et 90
       slug: force-heroique
@@ -3579,37 +3484,43 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.ZweAF9HiVCxy2OSE
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.AUmmaf3Lf8GkIo77
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.ZweAF9HiVCxy2OSE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.AUmmaf3Lf8GkIo77
               subtype: ability
               target: for
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.ZweAF9HiVCxy2OSE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.AUmmaf3Lf8GkIo77
               subtype: bonusDice
               target: for
               value: '0'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -3625,35 +3536,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.ZweAF9HiVCxy2OSE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668801
+      modifiedTime: 1758924668860
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.AUmmaf3Lf8GkIo77'
   - folder: H1NxEJ0tQptud3eG
     name: Rempart
     type: capacity
     img: icons/skills/melee/hand-grip-staff-blue.webp
-    _id: aTFrOw2CqHmq7TsB
+    _id: SWULKUvtB1bTQp0r
     system:
       description: >-
         <p>Vous pouvez désormais utiliser Teigneux contre un nombre
         d’adversaires égal à votre AGI + 2 à chaque round. Si vous réussissez
         cette attaque, le déplacement de votre adversaire est stoppé à l’endroit
-        où vous l’avez attaqué. De plus vous gagnez +1 en DEF.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Cette capacité gère le bonus permanent en DEF</p>
-
-        </blockquote>
+        où vous l’avez attaqué. De plus vous gagnez +1 en DEF.</p>
+      inGame: <p>Cette capacité gère le bonus permanent en DEF</p>
       source: ''
       origin: Livre des règles p90
       slug: rempart
@@ -3665,30 +3572,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.ELw0a83HARZyKiGp.Item.cYa5rqfs7m7H134w
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.fxCIBV3zyUCcjNKq
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.aTFrOw2CqHmq7TsB
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.SWULKUvtB1bTQp0r
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.ELw0a83HARZyKiGp.Item.aTFrOw2CqHmq7TsB
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.SWULKUvtB1bTQp0r
               subtype: combat
               target: def
               value: '1'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -3704,26 +3616,27 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.aTFrOw2CqHmq7TsB'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924668962
+      modifiedTime: 1758924668996
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.SWULKUvtB1bTQp0r'
   - folder: BHbn2gP9Z2mczP4c
     name: Vivelame
     type: equipment
     img: icons/weapons/swords/scimitar-broad.webp
-    _id: zzncaFVsGXc0Ya7O
+    _id: L9gfQIfpFnvyyPaK
     system:
       description: >-
-        <p>cette arme n’a pas de réalité historique, il s’agit de la version
+        <p>Cette arme n’a pas de réalité historique, il s’agit de la version
         occidentale (ou elfique) du katana, une arme à deux mains légère et très
         rapide, au tranchant aussi affûté que le fil d’un rasoir. Si le
         personnage obtient une capacité qui permet d’utiliser l’AGI au lieu de
@@ -3751,7 +3664,7 @@ items:
         unit: kg
       price:
         value: 15
-        unit: ''
+        unit: pa
       rarity: common
       equipped: true
       properties:
@@ -3762,20 +3675,35 @@ items:
         oneHand: false
         twoHand: true
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.zzncaFVsGXc0Ya7O
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.L9gfQIfpFnvyyPaK
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: true
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          modifiers:
+            - type: equipment
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.L9gfQIfpFnvyyPaK
+              subtype: combat
+              target: crit
+              value: '1'
+              apply: self
+              additionalInfos: ''
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
@@ -3786,18 +3714,12 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
       range:
         unit: ''
         base: 0
@@ -3808,9 +3730,6 @@ items:
         bonuses:
           sheet: 0
           effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
     effects: []
     sort: 0
     ownership:
@@ -3819,23 +3738,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Rx8k0FXyZiEnSQEp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.zzncaFVsGXc0Ya7O'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924756416
+      modifiedTime: 1758924757927
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.L9gfQIfpFnvyyPaK'
   - folder: BHbn2gP9Z2mczP4c
     name: Dague
     type: equipment
     img: icons/weapons/daggers/dagger-double-red.webp
-    _id: ylsumgSPqDEkOdzw
+    _id: NdaMeZagthW4LeWm
     system:
       description: >-
         <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
@@ -3849,7 +3769,8 @@ items:
       source: ''
       origin: ''
       slug: dague
-      tags: []
+      tags:
+        - legere
       subtype: weapon
       martialCategory: dagger
       damagetype: piercing
@@ -3866,7 +3787,7 @@ items:
         unit: kg
       price:
         value: 3
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
@@ -3877,20 +3798,26 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.ELw0a83HARZyKiGp.Item.ylsumgSPqDEkOdzw
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ELw0a83HARZyKiGp.Item.NdaMeZagthW4LeWm
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: false
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
@@ -3901,17 +3828,12 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
           modifiers: []
       range:
         unit: ''
@@ -3923,9 +3845,6 @@ items:
         bonuses:
           sheet: 0
           effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
     effects: []
     sort: 150000
     ownership:
@@ -3934,23 +3853,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.ylsumgSPqDEkOdzw'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924764049
+      modifiedTime: 1758924764084
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.NdaMeZagthW4LeWm'
   - folder: vF1ugDhEx97jpuSd
     name: Cotte de mailles
     type: equipment
     img: icons/equipment/chest/breastplate-rivited-red.webp
-    _id: fTa3KjdsRQjLNlQ5
+    _id: N5BjPIYoV5etm9wd
     system:
       description: ''
       source: ''
@@ -3973,7 +3893,7 @@ items:
         unit: kg
       price:
         value: 25
-        unit: ''
+        unit: pa
       rarity: common
       equipped: true
       properties:
@@ -3985,18 +3905,7 @@ items:
         twoHand: false
       actions: []
       defense: 5
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 150000
     ownership:
@@ -4005,23 +3914,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.zo9lLSnxzCWeDBxh
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.fTa3KjdsRQjLNlQ5'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924770160
+      modifiedTime: 1758924771412
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.N5BjPIYoV5etm9wd'
   - folder: Um3g0UnqzSidTvlT
     name: Sac à dos
     type: equipment
     img: icons/containers/bags/pack-leather-red.webp
-    _id: uM7RqnESEyGuPlou
+    _id: DeABMs4YbEhfhWJe
     system:
       description: ''
       source: ''
@@ -4044,7 +3954,7 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
@@ -4055,19 +3965,7 @@ items:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2000000
     ownership:
@@ -4076,23 +3974,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.uM7RqnESEyGuPlou'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924781008
+      modifiedTime: 1758924781008
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.DeABMs4YbEhfhWJe'
   - folder: Um3g0UnqzSidTvlT
     name: Couverture
     type: equipment
     img: icons/sundries/survival/bedroll-grey.webp
-    _id: SFIolMTRqvcBJQA1
+    _id: 7RwyJnw2w5yQI6bQ
     system:
       description: ''
       source: ''
@@ -4104,7 +4003,7 @@ items:
       damagetype: ''
       quantity:
         current: 1
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4115,30 +4014,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 800000
     ownership:
@@ -4147,23 +4034,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.SFIolMTRqvcBJQA1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924785232
+      modifiedTime: 1758924785232
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.7RwyJnw2w5yQI6bQ'
   - folder: Um3g0UnqzSidTvlT
     name: Torche
     type: equipment
     img: icons/sundries/lights/torch-brown.webp
-    _id: RbJdGPAInDXAWGgb
+    _id: jOnobFcQrCqOqK8l
     system:
       description: >-
         <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
@@ -4177,7 +4065,7 @@ items:
       damagetype: ''
       quantity:
         current: 3
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4188,30 +4076,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2100000
     ownership:
@@ -4220,23 +4096,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.RbJdGPAInDXAWGgb'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924788585
+      modifiedTime: 1758924788585
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.jOnobFcQrCqOqK8l'
   - folder: Um3g0UnqzSidTvlT
     name: Briquet à silex
     type: equipment
     img: icons/commodities/stone/geode-raw-black.webp
-    _id: wzoVIAPJsluOgTtg
+    _id: OxI5R3W8LLA0Agc3
     system:
       description: ''
       source: ''
@@ -4248,7 +4125,7 @@ items:
       damagetype: ''
       quantity:
         current: 1
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4259,30 +4136,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 100000
     ownership:
@@ -4291,23 +4156,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.wzoVIAPJsluOgTtg'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924791726
+      modifiedTime: 1758924791726
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.OxI5R3W8LLA0Agc3'
   - folder: Um3g0UnqzSidTvlT
     name: Outre
     type: equipment
     img: icons/sundries/survival/wetskin-leather-purple.webp
-    _id: t7QilMr7DkSCbTuA
+    _id: FW3UrQT14Q8FGyev
     system:
       description: ''
       source: ''
@@ -4338,7 +4204,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4359,23 +4225,24 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.t7QilMr7DkSCbTuA'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924796307
+      modifiedTime: 1758924796307
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.FW3UrQT14Q8FGyev'
   - folder: Um3g0UnqzSidTvlT
     name: Gamelle
     type: equipment
     img: icons/containers/kitchenware/bowl-clay-brown.webp
-    _id: pYC1qOAHct62luzl
+    _id: HMs7fkXgr8BAzazX
     system:
       description: ''
       source: ''
@@ -4406,7 +4273,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4427,20 +4294,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ELw0a83HARZyKiGp.pYC1qOAHct62luzl'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924798606
+      modifiedTime: 1758924798606
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ELw0a83HARZyKiGp.HMs7fkXgr8BAzazX'
 effects: []
-sort: 700000
+sort: 180469
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -4452,7 +4320,7 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749761930942
-  modifiedTime: 1758493074956
+  modifiedTime: 1758923403510
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!ELw0a83HARZyKiGp'

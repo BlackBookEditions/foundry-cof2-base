@@ -117,14 +117,14 @@ system:
   magic: 0
   pasteData: ''
   details:
-    category: humanoid
-    size: medium
+    category: undead
+    size: large
     description:
       private: ''
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.rPR1YkfYUzITmiat]{Voie de l&#x27;invocation majeure} - Rang 8 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.dqJsNLCZ8nesXIlC]{Chasseur ailé}</p><p>Le chasseur ailé ressemble à un humain à la\_peau noire, doté d’une tête de faucon de la\_même couleur. Ses bras sont remplacés par des\_ailes et ses jambes par de puissantes serres.</p>"
     languages: []
     properties: <p>Capacités Vol rapide et enlèvement (cf capacités)</p>
   currentEffects: []
@@ -134,8 +134,8 @@ prototypeToken:
   actorLink: false
   appendNumber: false
   prependAdjective: false
-  width: 1
-  height: 1
+  width: 2
+  height: 2
   texture:
     src: icons/creatures/birds/corvid-flying-wings-purple.webp
     anchorX: 0.5
@@ -296,24 +296,11 @@ items:
   - folder: Jc9oocmI3B4cVSRG
     name: Vol rapide
     type: capacity
-    img: icons/svg/combat.svg
+    img: icons/creatures/abilities/wing-batlike-white-blue.webp
     system:
-      description: >-
-        <p>Le chasseur ailé obtient une action de mouvement supplémentaire par
-        round lorsqu’il est en vol. Au premier round de combat, la créature
-        obtient un bonus de +5 en attaque et +1d6 aux DM si elle est en vol et
-        attaque une créature au sol, elle peut tenter un
-        enlèvement.</p><blockquote>
-
-        <p><strong> Usage en jeu : </strong></p>
-
-        <p>Cette capacité propose un bouton d'action activable/désactivable pour
-        appliquer le bonus de DM et le bonus pour toucher.A activer dans les
-        circonstance indiquées.</p>
-
-        </blockquote>
+      description: "<p>Le chasseur ailé obtient une action de mouvement supplémentaire par round lorsqu’il\_est en vol. Au premier round de combat, la\_créature obtient <strong>un bonus de +5 en attaque\_et +1d6 aux DM</strong> si elle est en vol et attaque\_une créature au sol, elle peut tenter un\_enlèvement.</p>"
       source: ''
-      origin: Livre des règles p159
+      origin: ''
       slug: vol-rapide
       subtype: ''
       actionType: none
@@ -327,12 +314,13 @@ items:
       cost: -1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.k4tFT7KgRwPmZ4Jl
+            Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.2JKNNJyn9nTLg4qM
           indice: 0
-          label: ''
+          label: En vol attaque cible au sol
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -344,22 +332,23 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.k4tFT7KgRwPmZ4Jl
+                Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.2JKNNJyn9nTLg4qM
               subtype: combat
               target: melee
+              value: 1d6
               apply: self
-              value: '5'
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.k4tFT7KgRwPmZ4Jl
+                Compendium.cof-base.cof-2-base-encounter.Actor.hmXP5ThPlEBkgFF8.Item.2JKNNJyn9nTLg4qM
               subtype: combat
-              target: damMelee
+              target: melee
+              value: '5'
               apply: self
-              value: 1d6
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -369,25 +358,26 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: 1746808870302
-      modifiedTime: 1746809019887
-      lastModifiedBy: dkGm1qUrVLQeAKiY
       exportSource: null
-    _id: k4tFT7KgRwPmZ4Jl
-    sort: 4900000
-    _key: '!actors.items!hmXP5ThPlEBkgFF8.k4tFT7KgRwPmZ4Jl'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758912240577
+      modifiedTime: 1758912307453
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 2JKNNJyn9nTLg4qM
+    sort: 7100000
+    _key: '!actors.items!hmXP5ThPlEBkgFF8.2JKNNJyn9nTLg4qM'
   - folder: Jc9oocmI3B4cVSRG
     name: Enlèvement
     type: capacity
-    img: icons/svg/combat.svg
-    _id: R0sMe3HGnbItS6p4
+    img: icons/creatures/claws/claw-talons-glowing-purple.webp
+    _id: m852G8I9vpdSvjoX
     system:
       description: >-
         <p>Le chasseur ailé peut tenter d’agripper une cible de taille moyenne
@@ -416,23 +406,25 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      inGame: ''
     effects: []
-    sort: 0
+    sort: 1000000
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.y6ePkVIcv0D9zmpe
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: 1746809145346
-      modifiedTime: 1746809145346
-      lastModifiedBy: dkGm1qUrVLQeAKiY
       exportSource: null
-    _key: '!actors.items!hmXP5ThPlEBkgFF8.R0sMe3HGnbItS6p4'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758912252534
+      modifiedTime: 1758912252534
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!hmXP5ThPlEBkgFF8.m852G8I9vpdSvjoX'
 effects: []
 sort: 100000
 ownership:
@@ -446,7 +438,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746807341797
-  modifiedTime: 1758488621174
+  modifiedTime: 1758912214081
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!hmXP5ThPlEBkgFF8'

@@ -47,7 +47,7 @@ system:
         effects: 0
   attributes:
     movement:
-      base: 10
+      base: 20
       unit: m
       bonuses:
         sheet: 0
@@ -122,9 +122,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.eeBTCP4AoB6nFnQV]{Voie des vermines} - Rang 6 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.0G4CsNv3UOHjNcyK]{Compagnon vermine}</p><p>Le personnage adopte un scorpion ou une araignée géante (au choix du joueur).</p><p></p>"
     languages: []
-    properties: "<p>A adapter : Def = 15\_ + rang. PV = 5*niv perso. Init = init du perso. Attaque = attt mag du perso</p><p>Au prix d’une action limitée, le scorpion peut attaquer une fois avec ses pinces (pas de<br>poison) et une fois avec son dard (avec poison).<br>L’araignée peut se déplacer sur les surfaces verticales. Déplacement rapide : les vermines se déplacent de 20 m par action de mouvement.</p>"
+    properties: "<ol><li><p>- Points de vigueur =\_<strong>[Niveau × 5]</strong><br>\_- Défense = <strong>[15 + Rang]</strong><br>\_- Initiative = <strong>[Initiative]</strong></p></li></ol><ul><li><p>\_- Attaque au contact = <strong>[Attaque magique] - DM 1d4° +5 et 1d4° poison</strong></p></li></ul><p>Au prix d’une action limitée, le scorpion peut attaquer une fois avec ses pinces (pas de\_poison) et une fois avec son dard (avec poison).</p><p><br>L’araignée peut se déplacer sur les surfaces verticales.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Déplacement rapide :</span></strong></span> les vermines se déplacent de 20 m par action de mouvement.</p>"
   currentEffects: []
 prototypeToken:
   name: Scorpion ou araignée
@@ -209,7 +209,7 @@ prototypeToken:
   movementAction: null
 items:
   - folder: eRnLMLNnqgpvpmpq
-    name: attaque contact
+    name: Pinces (sans poison)
     type: attack
     img: icons/svg/sword.svg
     system:
@@ -230,8 +230,9 @@ items:
           indice: 0
           label: attaque contact
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -249,15 +250,14 @@ items:
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d4° + 5 + 1d4°
+                formula: 1d4° + 5
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -281,16 +281,88 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758920769394
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: 897firOmdsiZYQBs
     sort: 0
     _key: '!actors.items!cNzv8NkeEZaiKbGr.897firOmdsiZYQBs'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.cNzv8NkeEZaiKbGr.Item.oLyiXl8JCJNJc9yz
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '10'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4° +5 +1d4°
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    name: Dard (avec poison)
+    img: icons/svg/sword.svg
+    _id: oLyiXl8JCJNJc9yz
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758920644971
+      modifiedTime: 1758920781396
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!cNzv8NkeEZaiKbGr.oLyiXl8JCJNJc9yz'
 effects: []
 folder: DckAeVIG18rHrGYa
 ownership:
@@ -304,7 +376,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746964883152
-  modifiedTime: 1758489582229
+  modifiedTime: 1758920625649
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: cNzv8NkeEZaiKbGr

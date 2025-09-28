@@ -299,7 +299,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: eFze4r5RCWx5yMBq
+    _id: JBub9dcp4R4NHlTU
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -308,13 +308,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -330,12 +327,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.XVbeNx5tGYPe5ZW8.Item.eFze4r5RCWx5yMBq
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.JBub9dcp4R4NHlTU
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -346,16 +345,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.XVbeNx5tGYPe5ZW8.Item.eFze4r5RCWx5yMBq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.JBub9dcp4R4NHlTU
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -369,43 +367,38 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!Shjca31CR3xhq6EP.eFze4r5RCWx5yMBq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842124602
+      modifiedTime: 1758842211599
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!Shjca31CR3xhq6EP.JBub9dcp4R4NHlTU'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
     img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     system:
-      description: >-
-        <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire un test de<strong> PER difficulté
-        15</strong> ou être surprise.</p>
-
-        <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
-        inférieure à la sienne est renversée</strong>. La créature obtient un
-        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      description: "<p>Au premier round de combat, si l’environnement permet de se dissimuler, la cible doit faire un test de<strong> PER difficulté 15\_</strong>ou être surprise.</p><p>Si elle attaque avec succès une cible surprise, la créature inflige <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est inférieure à la sienne est renversée</strong>. La créature obtient un bonus de <strong>+5 à tous les tests de discrétion</strong></p>"
       source: ''
       origin: ''
       slug: embuscade
@@ -420,15 +413,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.XVbeNx5tGYPe5ZW8.Item.aQP0YMHtVCWfBjao
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -436,28 +431,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.XVbeNx5tGYPe5ZW8.Item.aQP0YMHtVCWfBjao
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.XVbeNx5tGYPe5ZW8.Item.aQP0YMHtVCWfBjao
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.XVbeNx5tGYPe5ZW8.Item.aQP0YMHtVCWfBjao
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
               subtype: combat
               target: damRanged
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -467,20 +466,113 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: aQP0YMHtVCWfBjao
-    sort: 3800000
-    _key: '!actors.items!Shjca31CR3xhq6EP.aQP0YMHtVCWfBjao'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842131844
+      modifiedTime: 1758842207675
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: zzydMbXqZr43doGL
+    sort: 6000000
+    _key: '!actors.items!Shjca31CR3xhq6EP.zzydMbXqZr43doGL'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Venin
+    type: capacity
+    img: icons/creatures/abilities/fang-tooth-poison-green.webp
+    system:
+      description: >-
+        <p>La victime d’une morsure de serpent venimeux doit faire un test de
+        CON difficulté 15 à chaque morsure. En cas d’échec la victime subit 1 DM
+        supplémentaire par round pendant 1d6 rounds. De plus, la victime est
+        affaiblie pour une durée similaire exprimée en heures. Chaque nouvelle
+        morsure augmente la durée (mais pas les DM par round).</p>
+      inGame: >-
+        <p>L'action inflige 1 DM à la cible et un effet périodique.</p>
+        <p>L'effet périodique inflige 1 DM par round et le statut Affaibli
+        pendant 1d6 round. cet effet fonctionne uniquement en mode Combat.</p>
+      source: ''
+      origin: ''
+      slug: venin
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.RpykasNnLwEd6fLI
+          indice: 0
+          label: En cas d'échec de la cible
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: '1'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: '1'
+                elementType: ''
+                statuses:
+                  - weakened
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842147174
+      modifiedTime: 1758842172256
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: RpykasNnLwEd6fLI
+    sort: 6900000
+    _key: '!actors.items!Shjca31CR3xhq6EP.RpykasNnLwEd6fLI'
   - folder: Jc9oocmI3B4cVSRG
     name: Crachat
     type: capacity
@@ -505,6 +597,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -514,69 +607,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.fdJUumy5HO8fmVDJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 4BzhDBezWUS0TZfM
-    sort: 4800000
-    _key: '!actors.items!Shjca31CR3xhq6EP.4BzhDBezWUS0TZfM'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Venin
-    type: capacity
-    img: icons/creatures/abilities/fang-tooth-poison-green.webp
-    system:
-      description: >-
-        <p>La victime d’une morsure de serpent venimeux doit faire un test de
-        CON difficulté 15 à chaque morsure. En cas d’échec la victime subit 1 DM
-        supplémentaire par round pendant 1d6 rounds. De plus, la victime est
-        affaiblie pour une durée similaire exprimée en heures. Chaque nouvelle
-        morsure augmente la durée (mais pas les DM par round).</p>
-      source: ''
-      origin: ''
-      slug: venin
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: nfAFlU9kPJHU6N0T
-    sort: 4700000
-    _key: '!actors.items!Shjca31CR3xhq6EP.nfAFlU9kPJHU6N0T'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842189654
+      modifiedTime: 1758842189654
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: lKJh7IUZP0IkN71R
+    sort: 7000000
+    _key: '!actors.items!Shjca31CR3xhq6EP.lKJh7IUZP0IkN71R'
 effects: []
 ownership:
   default: 0

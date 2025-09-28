@@ -123,7 +123,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>L’archétype du vil sorcier qui trafique avec la\_mort et les démons, il est forcément\_ coupable de\_toutes les horreurs dont vos PJ cherchent l’origine… ou pas.</p>"
     languages: []
     properties: ''
   magic: 0
@@ -209,11 +209,365 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: uVNfyNGbfZsNuFix
-    name: ANIMER UN CADAVRE
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.vqfWuZSMjkaXRq49
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+6'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4+2 +2d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions: []
+          modifiers: []
+    name: Dague
+    img: icons/svg/sword.svg
+    _id: vqfWuZSMjkaXRq49
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844379436
+      modifiedTime: 1758844446407
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!En4b4Q3mV1E3JylS.vqfWuZSMjkaXRq49'
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.82wLwQm34sAiz2qd
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+10'
+                crit: ''
+                difficulty: '@oppose.mag'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          conditions: []
+          modifiers: []
+    name: Attaque magique
+    img: icons/svg/sword.svg
+    _id: 82wLwQm34sAiz2qd
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844383973
+      modifiedTime: 1758844510438
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!En4b4Q3mV1E3JylS.82wLwQm34sAiz2qd'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: TiJ3bPZQPMy9vfX0
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844530979
+      modifiedTime: 1758844530979
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!En4b4Q3mV1E3JylS.TiJ3bPZQPMy9vfX0'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
     type: capacity
-    img: icons/svg/combat.svg
-    _id: C8BbDSKnazHljm6B
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: IMXKj8LeYVWkPmRJ
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.IMXKj8LeYVWkPmRJ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.IMXKj8LeYVWkPmRJ
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+          actionType: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844540944
+      modifiedTime: 1758844540962
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!En4b4Q3mV1E3JylS.IMXKj8LeYVWkPmRJ'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Animer un cadavre
+    type: capacity
+    img: icons/magic/death/hand-dirt-undead-zombie.webp
     system:
       description: >-
         <p>Ce pouvoir permet d’animer le cadavre d’une créature morte (portée 10
@@ -236,29 +590,35 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.QKAz8HYXpF22eku6
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XgbhXTy5VRJ957hJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!En4b4Q3mV1E3JylS.C8BbDSKnazHljm6B'
-  - folder: uVNfyNGbfZsNuFix
-    name: INJONCTION MORTELLE
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844549582
+      modifiedTime: 1758844549582
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: pE7srV9lajWcrLlc
+    sort: 9200000
+    _key: '!actors.items!En4b4Q3mV1E3JylS.pE7srV9lajWcrLlc'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Injonction mortelle
     type: capacity
-    img: icons/svg/combat.svg
-    _id: SkbvC1GhNjL6v89b
+    img: icons/magic/control/fear-fright-shadow-monster-purple.webp
     system:
       description: >-
         <p>Une cible située à une distance maximum de 30 m doit réussir un test
@@ -279,31 +639,71 @@ items:
         spell: false
       path: null
       cost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.8GNIhmQQEuEcK0kE
+          indice: 0
+          label: Si injonction mortelle raté
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.Ww8H0tZGrNi1spzF
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!En4b4Q3mV1E3JylS.SkbvC1GhNjL6v89b'
-  - folder: uVNfyNGbfZsNuFix
-    name: PAS DE L’OMBRE
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844556510
+      modifiedTime: 1758844592477
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 8GNIhmQQEuEcK0kE
+    sort: 8200000
+    _key: '!actors.items!En4b4Q3mV1E3JylS.8GNIhmQQEuEcK0kE'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Pas de l'ombre
     type: capacity
-    img: icons/svg/combat.svg
-    _id: mmsdqjOkVpUvZLIc
+    img: icons/skills/movement/figure-running-gray.webp
     system:
       description: >-
         <p>Le sorcier se fond dans les ombres et se téléporte à une distance
@@ -317,37 +717,43 @@ items:
       actionType: l
       learned: true
       charges:
-        current: null
-        max: null
+        current: 3
+        max: 3
       properties:
         spell: false
       path: null
       cost: -1
       actions: []
       manaCost: -1
-      frequency: none
+      frequency: combat
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.bodCtQuUIE7NejuF
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8NsZ9QtAQTjScphP
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!En4b4Q3mV1E3JylS.mmsdqjOkVpUvZLIc'
-  - folder: uVNfyNGbfZsNuFix
-    name: VAMPIRISATION
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844561183
+      modifiedTime: 1758844561183
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 9kh9iUsLaxHG6dSh
+    sort: 7900000
+    _key: '!actors.items!En4b4Q3mV1E3JylS.9kh9iUsLaxHG6dSh'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vampirisation
     type: capacity
-    img: icons/svg/combat.svg
-    _id: pResxvHZULFM948r
+    img: icons/magic/death/mouth-bite-fangs-vampire.webp
     system:
       description: >-
         <p>Le sorcier doit réussir un test opposé d’attaque magique contre une
@@ -356,6 +762,11 @@ items:
         infligés. De plus, à chaque fois qu’une créature meurt à moins de 20
         mètres de lui, il siphonne son énergie et gagne un nombre de PV égal au
         double du NC de la créature qui vient de mourir.</p>
+      inGame: >-
+        <p>L'action permet de réaliser l'attaque. Les DM sont infligés à la
+        cible par  le MJ et appliqués en soin au sorcier.</p> <p>La récupartion
+        de PV lorsqu'une créature meurt proche du sorcier est à  réaliser
+        manuellement.</p>
       source: ''
       origin: ''
       slug: vampirisation
@@ -370,22 +781,26 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.En4b4Q3mV1E3JylS.Item.pResxvHZULFM948r
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.6G0lM8gTPcTses8x
           indice: 0
-          label: VAMPIRISATION
+          label: ''
           chatFlavor: ''
-          type: magical
           img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
           properties:
-            activable: true
-            enabled: false
-            temporary: false
             visible: false
+            enabled: false
+            activable: true
+            temporary: false
             noManaCost: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atm'
                 crit: '20'
@@ -396,28 +811,38 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
       manaCost: -1
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.XoRVd96FlncZh7D1
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.nswP2tAsgqA67I3z
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!En4b4Q3mV1E3JylS.pResxvHZULFM948r'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844566177
+      modifiedTime: 1758844571426
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 6G0lM8gTPcTses8x
+    sort: 7700000
+    _key: '!actors.items!En4b4Q3mV1E3JylS.6G0lM8gTPcTses8x'
 effects: []
 sort: 0
 ownership:
@@ -429,9 +854,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758488246091
+  modifiedTime: 1758844681024
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!En4b4Q3mV1E3JylS'

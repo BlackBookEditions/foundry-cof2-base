@@ -5,7 +5,7 @@ img: icons/creatures/mammals/wolf-howl-moon-gray.webp
 system:
   abilities:
     agi:
-      superior: true
+      superior: false
       base: 1
       bonuses:
         sheet: 0
@@ -23,7 +23,7 @@ system:
         sheet: 0
         effects: 0
     per:
-      superior: false
+      superior: true
       base: 2
       bonuses:
         sheet: 0
@@ -301,7 +301,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: oohKJ9Q1LSo3YmqE
+    _id: 6wjm8ReDMZyAVFOj
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -310,13 +310,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -332,12 +329,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.PUTimUk9UGwtXpbb.Item.oohKJ9Q1LSo3YmqE
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BeKhlyOC6WAgSK3s.Item.6wjm8ReDMZyAVFOj
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -348,16 +347,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.PUTimUk9UGwtXpbb.Item.oohKJ9Q1LSo3YmqE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BeKhlyOC6WAgSK3s.Item.6wjm8ReDMZyAVFOj
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -371,29 +369,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!BeKhlyOC6WAgSK3s.oohKJ9Q1LSo3YmqE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840254719
+      modifiedTime: 1758841308147
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!BeKhlyOC6WAgSK3s.6wjm8ReDMZyAVFOj'
   - folder: Jc9oocmI3B4cVSRG
     name: Interchangeables
     type: capacity
@@ -422,29 +423,33 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.PUTimUk9UGwtXpbb.Item.cvQ3IGdBGUSc2nkH
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BeKhlyOC6WAgSK3s.Item.Twkyw5VIbGfXN9ma
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.PUTimUk9UGwtXpbb.Item.cvQ3IGdBGUSc2nkH
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BeKhlyOC6WAgSK3s.Item.Twkyw5VIbGfXN9ma
               subtype: combat
               target: def
               value: '3'
-              additionalInfos: ''
               apply: self
+              additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -454,20 +459,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.dSkdX9FI4LRdNIpW
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: cvQ3IGdBGUSc2nkH
-    sort: 2600000
-    _key: '!actors.items!BeKhlyOC6WAgSK3s.cvQ3IGdBGUSc2nkH'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840263356
+      modifiedTime: 1758841304440
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Twkyw5VIbGfXN9ma
+    sort: 4800000
+    _key: '!actors.items!BeKhlyOC6WAgSK3s.Twkyw5VIbGfXN9ma'
 effects: []
 ownership:
   default: 0
@@ -480,7 +486,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749279889245
-  modifiedTime: 1758491070471
+  modifiedTime: 1758840182872
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: BeKhlyOC6WAgSK3s

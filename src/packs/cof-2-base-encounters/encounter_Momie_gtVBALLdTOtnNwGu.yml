@@ -133,7 +133,7 @@ system:
         haine des vivants qui dérangent son sommeil et d’une force impie qui
         défie les lois de la physique.</p>
     languages: []
-    properties: <p>Résistance 5 sauf feu.</p><p>Putréfaction si le coup blesse</p>
+    properties: ''
   currentEffects: []
 prototypeToken:
   name: Momie
@@ -300,63 +300,11 @@ items:
     _id: 9DVJYvsUFhuEAsLr
     sort: 300000
     _key: '!actors.items!gtVBALLdTOtnNwGu.9DVJYvsUFhuEAsLr'
-  - folder: uVNfyNGbfZsNuFix
-    name: Putréfaction
-    type: capacity
-    img: icons/skills/wounds/illness-disease-glowing-green.webp
-    _id: 0MBhXOPz3GSB1QZ7
-    system:
-      description: >-
-        <p>Toute créature blessée par une momie doit réussir un<strong> test de
-        CON difficulté 15</strong> ou contracter une horrible maladie qui
-        occasionne le pourrissement rapide de ses chairs, une sorte de lèpre
-        fulgurante. La victime subit <strong>1d6 DM par round pendant 5
-        rounds</strong>. Tant qu’elle est sous l’effet de la putréfaction, il
-        n’est pas nécessaire de réaliser un nouveau test de CON lorsque la
-        victime est la cible d’une attaque de la momie. L’utilisation de la
-        capacité de prêtre Délivrance permet de soigner cette maladie.</p>
-      source: ''
-      origin: ''
-      slug: putrefaction
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Item.QYEWtlXjasMAQnKA
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!gtVBALLdTOtnNwGu.0MBhXOPz3GSB1QZ7'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: WDAhx0LyHvPQSTfn
+    _id: tAWcsdQSbLTjunaa
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -365,13 +313,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -387,12 +332,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.cGSPnbmqoTaMiR7l.Item.WDAhx0LyHvPQSTfn
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gtVBALLdTOtnNwGu.Item.tAWcsdQSbLTjunaa
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -403,16 +350,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.cGSPnbmqoTaMiR7l.Item.WDAhx0LyHvPQSTfn
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.gtVBALLdTOtnNwGu.Item.tAWcsdQSbLTjunaa
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -426,40 +372,41 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!gtVBALLdTOtnNwGu.WDAhx0LyHvPQSTfn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889573092
+      modifiedTime: 1758889597918
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!gtVBALLdTOtnNwGu.tAWcsdQSbLTjunaa'
   - name: Résistance aux DM
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
-      description: >-
-        <p>Le démonet possède une RD 5 sur les armes non magiques. Si les PJ ne
-        sont pas équipés<br />des armes appropriées, le NC des démons augmente
-        de 1.</p>
+      description: "<p>La momie réduit de 5 tous les DM subis, sauf\_par le feu.</p>"
+      inGame: ''
       source: ''
       origin: Livre des règles p278
-      slug: resistance-aux-dm
+      slug: resistance-aux-armes
       subtype: ''
       actionType: none
       learned: true
@@ -474,12 +421,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.cGSPnbmqoTaMiR7l.Item.H2PdlFXIvnxzbfRH
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gtVBALLdTOtnNwGu.Item.ptI40fVApnkTEojv
           indice: 0
-          label: sauf feu
+          label: RD sauf DM Feu
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -490,11 +439,12 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.cGSPnbmqoTaMiR7l.Item.H2PdlFXIvnxzbfRH
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.gtVBALLdTOtnNwGu.Item.ptI40fVApnkTEojv
               subtype: combat
               target: dr
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
@@ -505,20 +455,115 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tj7VBuGKSOAac6wq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: H2PdlFXIvnxzbfRH
-    sort: 1500000
-    _key: '!actors.items!gtVBALLdTOtnNwGu.H2PdlFXIvnxzbfRH'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889584126
+      modifiedTime: 1758889656110
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: ptI40fVApnkTEojv
+    sort: 600000
+    _key: '!actors.items!gtVBALLdTOtnNwGu.ptI40fVApnkTEojv'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Putréfaction
+    type: capacity
+    img: icons/skills/wounds/illness-disease-glowing-green.webp
+    system:
+      description: >-
+        <p>Toute créature blessée par une momie doit réussir un<strong> test de
+        CON difficulté 15</strong> ou contracter une horrible maladie qui
+        occasionne le pourrissement rapide de ses chairs, une sorte de lèpre
+        fulgurante. La victime subit <strong>1d6 DM par round pendant 5
+        rounds</strong>. Tant qu’elle est sous l’effet de la putréfaction, il
+        n’est pas nécessaire de réaliser un nouveau test de CON lorsque la
+        victime est la cible d’une attaque de la momie. L’utilisation de la
+        capacité de prêtre Délivrance permet de soigner cette maladie.</p>
+      inGame: >-
+        <p>Laction permet d'infliger les DM et d'aplliquer une perte périodique
+        de  DM pedant 5 rounds. Les DM périodiques fonctionnent uniquement en
+        mode  Combat</p>
+      source: ''
+      origin: ''
+      slug: putrefaction
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gtVBALLdTOtnNwGu.Item.ju2s2h14dIiiyoMZ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: 1d6
+                elementType: ''
+                statuses: []
+                duration: '5'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889590932
+      modifiedTime: 1758889662458
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: ju2s2h14dIiiyoMZ
+    sort: 500000
+    _key: '!actors.items!gtVBALLdTOtnNwGu.ju2s2h14dIiiyoMZ'
 effects: []
 ownership:
   default: 0
@@ -531,9 +576,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749370485496
-  modifiedTime: 1758487364202
+  modifiedTime: 1758889703351
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: gtVBALLdTOtnNwGu
-sort: 2200000
+sort: 2700000
 _key: '!actors!gtVBALLdTOtnNwGu'

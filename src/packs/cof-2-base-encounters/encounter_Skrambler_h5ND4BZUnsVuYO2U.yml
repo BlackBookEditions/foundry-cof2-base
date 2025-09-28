@@ -23,7 +23,7 @@ system:
         sheet: 0
         effects: 0
     per:
-      superior: false
+      superior: true
       base: 2
       bonuses:
         sheet: 0
@@ -125,15 +125,14 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Le skrambler est une horrible créature souterraine qui ressemble
-        &agrave; une énorme mante religieuse. Son corps est muni d’une épaisse
-        carapace de chitine et de huit pattes. Ses pattes antérieures sont
-        similaires &agrave; des faux géantes et sont chargées de saisir et
-        découper ses proies. Le skrambler est capable de se déplacer sous terre
-        gr&acirc;ce &agrave; un c&ocirc;ne d’onde vibratoire qui fracture la
-        roche. Il n’a alors plus qu’&agrave; se dégager un passage &agrave;
-        l’aide de ses terribles pattes avant. Il mesure environ 3 m pour 400
-        kg</p>
+        <p>Le skrambler est une horrible créature souterraine qui ressemble à
+        une énorme mante religieuse. Son corps est muni d’une épaisse carapace
+        de chitine et de huit pattes. Ses pattes antérieures sont similaires à
+        des faux géantes et sont chargées de saisir et découper ses proies. Le
+        skrambler est capable de se déplacer sous terre grâce à un cône d’onde
+        vibratoire qui fracture la roche. Il n’a alors plus qu’à se dégager un
+        passage à l’aide de ses terribles pattes avant. Il mesure environ 3 m
+        pour 400 kg.</p>
     languages: []
     properties: >-
       <p><strong>CREUSER (L) : </strong>Au prix d’une action limitée, le
@@ -310,7 +309,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: ksUbsWr142gtuxfS
+    _id: n1SG3euyQnZnhVq7
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -319,13 +318,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -341,12 +337,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.TvFkDFEYsQrgilES.Item.ksUbsWr142gtuxfS
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.n1SG3euyQnZnhVq7
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -357,16 +355,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.TvFkDFEYsQrgilES.Item.ksUbsWr142gtuxfS
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.n1SG3euyQnZnhVq7
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -380,111 +377,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!h5ND4BZUnsVuYO2U.ksUbsWr142gtuxfS'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Onde dévastratrice
-    type: capacity
-    img: icons/magic/earth/barrier-stone-explosion-debris.webp
-    system:
-      description: >-
-        <p>Cette onde fracture la roche dans un cône de 10 m de long pour 3 m de
-        large. Une créature dans la zone d’effet (même s’il n’y a pas de roche
-        !) subit <strong>5d6 DM</strong> et peut faire un <strong>test de CON
-        difficulté 15 pour diviser les DM par deux.</strong></p>
-      source: ''
-      origin: ''
-      slug: onde-devastratrice
-      subtype: ''
-      actionType: a
-      learned: true
-      charges:
-        current: 1
-        max: 1
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.TvFkDFEYsQrgilES.Item.ab6XL0QWIcLS33Pj
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: ranged
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
-              dmg:
-                formula: 5d6
-              target:
-                type: multiple
-                number: 20
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.kolWg7C0HZTK5abs
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: ab6XL0QWIcLS33Pj
-    sort: 5200000
-    _key: '!actors.items!h5ND4BZUnsVuYO2U.ab6XL0QWIcLS33Pj'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892681566
+      modifiedTime: 1758892725768
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!h5ND4BZUnsVuYO2U.n1SG3euyQnZnhVq7'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
@@ -513,15 +431,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.TvFkDFEYsQrgilES.Item.UT918NslKYSE3otE
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -529,28 +449,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.TvFkDFEYsQrgilES.Item.UT918NslKYSE3otE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.TvFkDFEYsQrgilES.Item.UT918NslKYSE3otE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.TvFkDFEYsQrgilES.Item.UT918NslKYSE3otE
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
               subtype: combat
               target: damRanged
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -560,20 +484,105 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: UT918NslKYSE3otE
-    sort: 5300000
-    _key: '!actors.items!h5ND4BZUnsVuYO2U.UT918NslKYSE3otE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892706688
+      modifiedTime: 1758892734726
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 5EpD3DRCCR3JXyLT
+    sort: 6000000
+    _key: '!actors.items!h5ND4BZUnsVuYO2U.5EpD3DRCCR3JXyLT'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Onde dévastratrice
+    type: capacity
+    img: icons/magic/earth/barrier-stone-explosion-debris.webp
+    system:
+      description: >-
+        <p>Cette onde fracture la roche dans un cône de 10 m de long pour 3 m de
+        large. Une créature dans la zone d’effet (même s’il n’y a pas de roche
+        !) subit <strong>5d6 DM</strong> et peut faire un <strong>test de CON
+        difficulté 15 pour diviser les DM par deux.</strong></p>
+      source: ''
+      origin: ''
+      slug: onde-devastratrice
+      subtype: ''
+      actionType: a
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.1e8SdaMlFVawVk6Z
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 5d6
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      frequency: none
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.kolWg7C0HZTK5abs
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892719602
+      modifiedTime: 1758892752075
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 1e8SdaMlFVawVk6Z
+    sort: 5900000
+    _key: '!actors.items!h5ND4BZUnsVuYO2U.1e8SdaMlFVawVk6Z'
 effects: []
 ownership:
   default: 0
@@ -584,11 +593,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749372489226
-  modifiedTime: 1758487621178
+  modifiedTime: 1758892655007
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: h5ND4BZUnsVuYO2U
-sort: 800000
+sort: 3900000
 _key: '!actors!h5ND4BZUnsVuYO2U'

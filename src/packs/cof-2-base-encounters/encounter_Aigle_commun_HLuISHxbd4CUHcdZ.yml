@@ -68,7 +68,7 @@ system:
       bonuses:
         sheet: 0
         effects: 0
-    nc: 0
+    nc: 0.5
   combat:
     init:
       base: 16
@@ -276,11 +276,10 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!HLuISHxbd4CUHcdZ.VUA2Qy4loVx61zMU'
-  - folder: uVNfyNGbfZsNuFix
-    name: VOL RAPIDE
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vol rapide
     type: capacity
-    img: icons/svg/combat.svg
-    _id: nx6DWRRBh5xflHkc
+    img: icons/creatures/abilities/wing-batlike-white-blue.webp
     system:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
@@ -300,31 +299,71 @@ items:
         spell: false
       path: null
       cost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HLuISHxbd4CUHcdZ.Item.xpqeIcOXYzCTOECO
+          indice: 0
+          label: En vol attaque cible au sol
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.HLuISHxbd4CUHcdZ.Item.xpqeIcOXYzCTOECO
+              subtype: combat
+              target: melee
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.HLuISHxbd4CUHcdZ.Item.xpqeIcOXYzCTOECO
+              subtype: bonusDice
+              target: melee
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.M9PzNcPmRuPbLXQx
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!HLuISHxbd4CUHcdZ.nx6DWRRBh5xflHkc'
-  - folder: uVNfyNGbfZsNuFix
-    name: EMPORTER DANS LES AIRS
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758838723464
+      modifiedTime: 1758841137439
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: xpqeIcOXYzCTOECO
+    sort: 7100000
+    _key: '!actors.items!HLuISHxbd4CUHcdZ.xpqeIcOXYzCTOECO'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Emporter dans les airs
     type: capacity
-    img: icons/svg/combat.svg
-    _id: 3Kt0BzBO0lZ703Oq
+    img: icons/commodities/biological/wing-insect-blue.webp
     system:
       description: >-
         <p>La créature peut emporter dans les airs une créature de taille
@@ -345,24 +384,129 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.R77hIcg4CBseqDu0
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758838735780
+      modifiedTime: 1758838735780
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: kj3dmony3yMtVp9m
+    sort: 8900000
+    _key: '!actors.items!HLuISHxbd4CUHcdZ.kj3dmony3yMtVp9m'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: sZXnE1KoA2QhFRBd
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HLuISHxbd4CUHcdZ.Item.sZXnE1KoA2QhFRBd
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.HLuISHxbd4CUHcdZ.Item.sZXnE1KoA2QhFRBd
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.lHgy3iP1nSdWrzxW
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!HLuISHxbd4CUHcdZ.3Kt0BzBO0lZ703Oq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840282133
+      modifiedTime: 1758841181315
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!HLuISHxbd4CUHcdZ.sZXnE1KoA2QhFRBd'
 effects: []
 sort: 1100000
 ownership:
@@ -374,9 +518,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454179561
-  modifiedTime: 1758490532757
+  modifiedTime: 1758838780464
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!HLuISHxbd4CUHcdZ'

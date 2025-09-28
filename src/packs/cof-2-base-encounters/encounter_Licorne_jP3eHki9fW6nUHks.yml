@@ -124,17 +124,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: >-
-        <p>La licorne ressemble &agrave; un cheval aux proportions parfaites et
-        &agrave; la robe immaculée et elle est pourvue d’une corne torsadée
-        unique. Cet animal féérique et majestueux habite seulement au sein des
-        forêts sauvages et vierges. Il est très rare de l’apercevoir tant elle
-        est discrète et prompte &agrave; s’éclipser. La corne de la licorne
-        conserve ses propriétés magiques, même si elle est sectionnée, ce qui
-        pousse souvent les créatures sans scrupule&nbsp;comme les orcs et même
-        les humains &agrave; la chasser. Les légendes disent que la licorne
-        accepte parfois de servir de monture &agrave; une jeune fille au coeur
-        pur.</p>
+      public: "<p>La licorne ressemble à un cheval aux proportions parfaites et à la robe immaculée et elle est pourvue d’une corne torsadée unique. Cet animal féérique et majestueux habite seulement au sein des forêts sauvages et vierges. Il est très rare de l’apercevoir tant elle est discrète et prompte à s’éclipser. La corne de la licorne conserve ses propriétés magiques, même si elle est sectionnée, ce qui pousse souvent les créatures sans scrupule\_comme les orcs et même les humains à la chasser. </p><p>Les légendes disent que la licorne accepte parfois de servir de monture à une jeune fille au coeur pur.</p>"
     languages: []
     properties: ''
   currentEffects: []
@@ -303,92 +293,11 @@ items:
     _id: EcYFwCI6o5hENSk0
     sort: 300000
     _key: '!actors.items!jP3eHki9fW6nUHks.EcYFwCI6o5hENSk0'
-  - folder: uVNfyNGbfZsNuFix
-    name: Corne magique
-    type: capacity
-    img: icons/creatures/mammals/unicorn-horned-white.webp
-    _id: Q9o1KUoxKijO7GJy
-    system:
-      description: >-
-        <p>Si la licorne touche une créature à 0 PV de sa corne, celle‑ci
-        <strong>récupère 2d4° PV</strong>. Si la créature est empoisonnée, elle
-        a immédiatement droit à un<strong> test de CON difficulté 10</strong>
-        pour neutraliser les effets du poison.</p>
-      source: ''
-      origin: Livre des règles p290
-      slug: corne-magique
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.j3iy5ZrdJgluDZei.Item.Q9o1KUoxKijO7GJy
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: heal
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-            visible: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: heal
-              skill:
-                formula: 2d4°
-              target:
-                type: single
-                scope: all
-                number: 0
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Item.gqsXTgJrJeUOxWMH
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!jP3eHki9fW6nUHks.Q9o1KUoxKijO7GJy'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: ky1IatQIcXvfKJqv
+    _id: YiEubH5Rcyo03uFo
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -397,13 +306,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -419,12 +325,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.63OrF4qdvIaRRYD0.Item.ky1IatQIcXvfKJqv
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.YiEubH5Rcyo03uFo
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -435,16 +343,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.63OrF4qdvIaRRYD0.Item.ky1IatQIcXvfKJqv
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.YiEubH5Rcyo03uFo
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -458,29 +365,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!jP3eHki9fW6nUHks.ky1IatQIcXvfKJqv'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889296866
+      modifiedTime: 1758889511415
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!jP3eHki9fW6nUHks.YiEubH5Rcyo03uFo'
   - folder: Jc9oocmI3B4cVSRG
     name: Célérité
     type: capacity
@@ -504,29 +414,33 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.63OrF4qdvIaRRYD0.Item.6yIjNeHZx19jyeo6
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.WoVT9AQDppfLz7vX
           indice: 0
-          label: ''
+          label: Si charge inférieure 50kg
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: false
-            enabled: true
-            temporary: false
-            noManaCost: false
             visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.63OrF4qdvIaRRYD0.Item.6yIjNeHZx19jyeo6
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.WoVT9AQDppfLz7vX
               subtype: attribute
               target: mov
               value: '5'
-              additionalInfos: ''
               apply: self
+              additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -536,20 +450,105 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tz3oKDfY2oKKx7ja
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 6yIjNeHZx19jyeo6
-    sort: 3300000
-    _key: '!actors.items!jP3eHki9fW6nUHks.6yIjNeHZx19jyeo6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889341043
+      modifiedTime: 1758889499009
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: WoVT9AQDppfLz7vX
+    sort: 4000000
+    _key: '!actors.items!jP3eHki9fW6nUHks.WoVT9AQDppfLz7vX'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Corne magique
+    type: capacity
+    img: icons/creatures/mammals/unicorn-horned-white.webp
+    system:
+      description: >-
+        <p>Si la licorne touche une créature à 0 PV de sa corne, celle‑ci
+        <strong>récupère 2d4° PV</strong>. Si la créature est empoisonnée, elle
+        a immédiatement droit à un<strong> test de CON difficulté 10</strong>
+        pour neutraliser les effets du poison.</p>
+      source: ''
+      origin: Livre des règles p290
+      slug: corne-magique
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.mac7ztWjEiJbphYw
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: 2d4°
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: ''
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.aMc6qaJ5bM4VmPMb
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889345675
+      modifiedTime: 1758889488832
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: mac7ztWjEiJbphYw
+    sort: 400000
+    _key: '!actors.items!jP3eHki9fW6nUHks.mac7ztWjEiJbphYw'
   - folder: Jc9oocmI3B4cVSRG
     name: Déplacement magique
     type: capacity
@@ -574,6 +573,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -583,28 +583,27 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.98B4ngGW9jQVTKLY
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: sdPcG8CX18tXslPC
-    sort: 3500000
-    _key: '!actors.items!jP3eHki9fW6nUHks.sdPcG8CX18tXslPC'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889349949
+      modifiedTime: 1758889349949
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: kG8l6DPOZX4ssb0M
+    sort: 4200000
+    _key: '!actors.items!jP3eHki9fW6nUHks.kG8l6DPOZX4ssb0M'
   - name: Résistance aux DM
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
-      description: >-
-        <p>Une licorne réduit de 5 les DM de toutes les armes qui ne sont pas en
-        fer froid (un alliage spécial forgé à froid et particulièrement rare).
-        En revanche, elle double les DM reçus par de telles armes.</p>
+      description: "<p>Une licorne réduit de 5 les DM de toutes les armes\_qui ne sont pas en fer froid (un alliage spécial forgé\_à froid et particulièrement rare). En revanche, elle\_double les DM reçus par de telles armes.</p>"
+      inGame: ''
       source: ''
       origin: Livre des règles p278
       slug: resistance-aux-armes
@@ -622,12 +621,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.63OrF4qdvIaRRYD0.Item.rL1OveIJgAfXTx0a
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.VN2xTVZfxHj9Qeyw
           indice: 0
-          label: sauf fer froid
+          label: Sauf Fer froid
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -638,11 +639,12 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.63OrF4qdvIaRRYD0.Item.rL1OveIJgAfXTx0a
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jP3eHki9fW6nUHks.Item.VN2xTVZfxHj9Qeyw
               subtype: combat
               target: dr
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
@@ -653,20 +655,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tj7VBuGKSOAac6wq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: rL1OveIJgAfXTx0a
-    sort: 1500000
-    _key: '!actors.items!jP3eHki9fW6nUHks.rL1OveIJgAfXTx0a'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889387662
+      modifiedTime: 1758889452064
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: VN2xTVZfxHj9Qeyw
+    sort: 600000
+    _key: '!actors.items!jP3eHki9fW6nUHks.VN2xTVZfxHj9Qeyw'
 effects: []
 ownership:
   default: 0
@@ -677,11 +680,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749369694215
-  modifiedTime: 1758487377895
+  modifiedTime: 1758889266193
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: jP3eHki9fW6nUHks
-sort: 2100000
+sort: 2600000
 _key: '!actors!jP3eHki9fW6nUHks'

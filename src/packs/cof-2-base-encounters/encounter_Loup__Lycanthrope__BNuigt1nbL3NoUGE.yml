@@ -123,12 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.svmag3cGGtTqFNzE]{Voie du lycanthrope} - Rang 5 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.Q72wDgqxkkCKKCBQ]{Transformation en loup}</p><p>Le personnage peut prendre la forme d’un loup pendant une durée maximale de 1 h par rang chaque jour. Le personnage conserve toutes ses caractéristiques sauf celles ci‑dessous, ainsi que sa valeur d’attaque au contact habituelle.</p><p>Bonus de +5 aux tests basés sur la PER. Sous cette forme, il réduit de 5 les DM qui lui sont infligés par des armes qui ne sont pas en argent, et il gagne un bonus de +5 à tous les tests de poursuite et pour pister une trace</p>"
     languages: []
-    properties: >-
-      <p>Defense : adapter 12 + rang</p><p>PV : prendre ceux du
-      personnage</p><p>CON, PER,CHA,INT,VOL : celles du personnage</p><p>Attaque
-      contact : celle du personnage (mais pas les dégats)</p>
+    properties: "<ol><li><p>\_- Défense = <strong>[12 + Rang]</strong></p></li><li><p>\_- Points de vigueur =\_<strong>[PJ]</strong><br>\_- Attaque au contact =\_<strong>[attaque contatc] · DM 1d4 +3</strong><br>\_- CON - PER - CHA - INT - VOL = <strong>[PJ]</strong></p></li></ol>"
   currentEffects: []
 prototypeToken:
   name: Loup (Lycanthrope)2
@@ -212,103 +209,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
-    type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: hI6x7PZyNFKB3jJl
-    system:
-      description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
-      subtype: ''
-      actionType: l
-      learned: true
-      rank: 0
-      frequency: none
-      charges:
-        current: 0
-        max: 0
-      properties:
-        spell: false
-      path: null
-      cost: 0
-      manaCost: -1
-      actions:
-        - source: Actor.LpMzwEi9O0hRI4QW.Item.hI6x7PZyNFKB3jJl
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.LpMzwEi9O0hRI4QW.Item.hI6x7PZyNFKB3jJl
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!BNuigt1nbL3NoUGE.hI6x7PZyNFKB3jJl'
   - type: attack
     system:
       subtype: melee
@@ -339,8 +239,9 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -358,7 +259,7 @@ items:
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d4
+                formula: 1d4+3
               target:
                 type: single
                 scope: all
@@ -366,7 +267,6 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -384,22 +284,125 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758919494989
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!BNuigt1nbL3NoUGE.wfDpXxzT61HrJDbl'
-  - name: Forme lycanthrope
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: 23CQEaO0R1FDGrlp
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.23CQEaO0R1FDGrlp
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.23CQEaO0R1FDGrlp
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758919782385
+      modifiedTime: 1758919793770
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!BNuigt1nbL3NoUGE.23CQEaO0R1FDGrlp'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Forme lycanthrope
     type: capacity
     img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
-    _id: 8XHHint46QCAlTS4
+    _id: 34SJqkSLtnVckabW
     system:
-      description: ''
+      description: >-
+        <p>Bonus de +5 aux tests basés sur la PER. Sous cette forme, il réduit
+        de 5 les DM qui lui sont<br />infligés par des armes qui ne sont pas en
+        argent, et il gagne un bonus de +5 à tous les tests de poursuite et pour
+        pister une trace.</p>
       source: ''
-      origin: ''
+      origin: Livre des règles p131
       slug: forme-lycanthrope
       subtype: ''
       actionType: none
@@ -415,12 +418,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.LpMzwEi9O0hRI4QW.Item.8XHHint46QCAlTS4
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.34SJqkSLtnVckabW
           indice: 0
-          label: Nouvelle Action 1
+          label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: true
@@ -431,41 +436,60 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.LpMzwEi9O0hRI4QW.Item.8XHHint46QCAlTS4
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.34SJqkSLtnVckabW
               subtype: skill
               target: per
-              apply: self
               value: '5'
-              additionalInfos: ''
+              apply: self
+              additionalInfos: Tous
             - type: capacity
-              source: Actor.LpMzwEi9O0hRI4QW.Item.8XHHint46QCAlTS4
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.34SJqkSLtnVckabW
               subtype: combat
               target: dr
-              apply: self
               value: '5'
-              additionalInfos: ''
+              apply: self
+              additionalInfos: sauf argent
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.34SJqkSLtnVckabW
+              subtype: skill
+              target: con
+              value: '5'
+              apply: self
+              additionalInfos: Poursuivre/pister
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.BNuigt1nbL3NoUGE.Item.34SJqkSLtnVckabW
+              subtype: skill
+              target: vol
+              value: '5'
+              apply: self
+              additionalInfos: Poursuivre/pister
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      inGame: ''
     effects: []
-    folder: null
-    sort: 0
+    sort: 1200000
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.Xjnt7aYjo3wY012a
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.CpiocnHURu9Skrha
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!BNuigt1nbL3NoUGE.8XHHint46QCAlTS4'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758919904232
+      modifiedTime: 1758919904244
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!BNuigt1nbL3NoUGE.34SJqkSLtnVckabW'
 effects: []
 folder: DckAeVIG18rHrGYa
 ownership:
@@ -479,7 +503,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1748449874514
-  modifiedTime: 1758489477149
+  modifiedTime: 1758919982183
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: BNuigt1nbL3NoUGE

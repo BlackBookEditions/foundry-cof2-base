@@ -123,13 +123,13 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p>Chaque meute de loups possède un m&acirc;le dominant plus gros que
-        ses congénères (jusqu’&agrave; 80 kg). Si les personnages rencontrent un
-        loup solitaire, il sera souvent basé sur ce profil. Un chef de meute
+      private: ''
+      public: >-
+        <p>Chaque meute de loups possède un mâle dominant plus gros que ses
+        congénères (jusqu’à 80 kg). Si les personnages rencontrent un loup
+        solitaire, il sera souvent basé sur ce profil. Un chef de meute
         accompagné de sa bande de 6 loups est une rencontre ordinaire de niveau
         5.</p>
-      public: ''
     languages: []
     properties: >-
       <p><strong>CHEF DE MEUTE :</strong> Le chef de meute donne un bonus de +2
@@ -306,7 +306,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: PuO7OGbefrgYSzDH
+    _id: GdtgmiCBvGfGTeGH
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -315,13 +315,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -337,12 +334,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.B4uvpUT7jo0N2QlY.Item.PuO7OGbefrgYSzDH
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.GdtgmiCBvGfGTeGH
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -353,16 +352,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.B4uvpUT7jo0N2QlY.Item.PuO7OGbefrgYSzDH
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.GdtgmiCBvGfGTeGH
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -376,9 +374,156 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841015235
+      modifiedTime: 1758841318104
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ch3dxXxnvLpGSKK7.GdtgmiCBvGfGTeGH'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Chef de meute
+    type: capacity
+    img: icons/creatures/abilities/wolf-howl-moon-white.webp
+    _id: 4h45hN324B7aVP5k
+    system:
+      description: "<p>Le chef de meute donne un bonus de +2 en initiative, en attaque et aux DM, à tous les loups de\_sa meute à portée de vue. De plus, s’il attaque\_en même temps qu’un autre loup, il réalise une\_attaque avec un dé bonus et +2d4\_DM.</p>"
+      source: ''
+      origin: Livre des règles p270
+      slug: ''
+      inGame: >-
+        <p>La première action permet de donner le bonus aux loups de la meute
+        qui sont ciblés. L'effet applique les modificateurs pendant 20 tours et
+        fonctionne uniquement en mode Combat.</p><p>Si un loup perd son bonus
+        donné par Chef de meute avant la fin de la durée, il faut le retirer
+        manuellement dans l'onglet Effets.</p><p>La deuxième action
+        activable/désactivable permet au Loup mâle alpha d'obtenir les bonus
+        pour une attaque avec un autre loup.</p><p></p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+          indice: 0
+          label: Bonus à la meute
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+              subtype: combat
+              target: init
+              value: '2'
+              apply: both
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+              subtype: combat
+              target: melee
+              value: '2'
+              apply: both
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+              subtype: combat
+              target: damMelee
+              value: '2'
+              apply: both
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '20'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+          indice: 1
+          label: Attaque conjointe
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+              subtype: combat
+              target: damMelee
+              value: 2d4
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ch3dxXxnvLpGSKK7.Item.4h45hN324B7aVP5k
+              subtype: bonusDice
+              target: melee
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
@@ -386,19 +531,19 @@ items:
     sort: 0
     ownership:
       default: 0
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ejy0vaOJCA7JPz8x
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ch3dxXxnvLpGSKK7.PuO7OGbefrgYSzDH'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841104929
+      modifiedTime: 1758841113347
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ch3dxXxnvLpGSKK7.4h45hN324B7aVP5k'
 effects: []
 ownership:
   default: 0
@@ -411,7 +556,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749279891728
-  modifiedTime: 1758490895167
+  modifiedTime: 1758840357021
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: ch3dxXxnvLpGSKK7

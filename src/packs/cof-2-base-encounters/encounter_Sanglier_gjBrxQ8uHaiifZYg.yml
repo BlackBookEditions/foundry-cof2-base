@@ -61,7 +61,7 @@ system:
     nc: 3
     hp:
       base: 20
-      value: 0
+      value: 20
       temp: null
       max: 0
       tempmax: null
@@ -299,7 +299,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 71A1nSfCjatfgBAM
+    _id: vvB0i18QIL4tQpho
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -308,13 +308,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -330,12 +327,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.SQhsG6GZfilBNuv0.Item.71A1nSfCjatfgBAM
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.vvB0i18QIL4tQpho
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -346,16 +345,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.SQhsG6GZfilBNuv0.Item.71A1nSfCjatfgBAM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.vvB0i18QIL4tQpho
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -369,107 +367,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!gjBrxQ8uHaiifZYg.71A1nSfCjatfgBAM'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Enragé
-    type: capacity
-    img: icons/creatures/abilities/lion-roar-yellow.webp
-    system:
-      description: >-
-        <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée.
-        Elle ignore les pénalités de douleur ou la peur, augmente de +3 sa
-        valeur d’attaque au contact et ses DM de +1d4. Elle peut encore agir un
-        tour complet après avoir atteint 0 PV.</p>
-      source: ''
-      origin: ''
-      slug: enrage
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.SQhsG6GZfilBNuv0.Item.rVonEcnvJaBFzIwW
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: true
-            enabled: false
-            temporary: true
-            noManaCost: false
-            visible: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.SQhsG6GZfilBNuv0.Item.rVonEcnvJaBFzIwW
-              subtype: combat
-              target: melee
-              value: '3'
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.SQhsG6GZfilBNuv0.Item.rVonEcnvJaBFzIwW
-              subtype: combat
-              target: damMelee
-              value: +1d4
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: rVonEcnvJaBFzIwW
-    sort: 5000000
-    _key: '!actors.items!gjBrxQ8uHaiifZYg.rVonEcnvJaBFzIwW'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841923126
+      modifiedTime: 1758841977919
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!gjBrxQ8uHaiifZYg.vvB0i18QIL4tQpho'
   - folder: Jc9oocmI3B4cVSRG
     name: Charge
     type: capacity
@@ -477,10 +400,11 @@ items:
     system:
       description: >-
         <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 13 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
+        attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en
+        plus des DM normaux, une victime de taille inférieure ou égale à la
+        créature, doit faire un <strong>test de FOR difficulté 13</strong> ou
+        être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche)
+        sa victime et les <strong>DM sont doublés</strong>.</p>
       source: ''
       origin: ''
       slug: charge
@@ -495,12 +419,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.SQhsG6GZfilBNuv0.Item.3vCfeDQgIkXwziyR
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.6rxpmjjB53x5mN3n
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -526,12 +452,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -541,29 +467,31 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 3vCfeDQgIkXwziyR
-    sort: 5300000
-    _key: '!actors.items!gjBrxQ8uHaiifZYg.3vCfeDQgIkXwziyR'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841928836
+      modifiedTime: 1758841973234
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 6rxpmjjB53x5mN3n
+    sort: 7500000
+    _key: '!actors.items!gjBrxQ8uHaiifZYg.6rxpmjjB53x5mN3n'
   - folder: Jc9oocmI3B4cVSRG
     name: Tape dur
     type: capacity
     img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
     system:
       description: >-
-        <p>Si la créature obtient 15 à 20 au dé du test d’attaque, l’attaque est
-        automatiquement réussie. De surcroît, la victime doit réussir un test de
-        CON difficulté 13 ou être étourdie pendant 1 round.</p>
+        <p>Si la créature obtient <strong>15 à 20 au dé du test
+        d’attaque</strong>, l’attaque est automatiquement réussie. De surcroît,
+        la victime doit réussir un <strong>test de CON difficulté 13</strong> ou
+        être étourdie pendant 1 round.</p>
       source: ''
       origin: ''
       slug: tape-dur
@@ -579,6 +507,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -588,20 +517,105 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: KFqMJsGu5qfp7LQR
-    sort: 5200000
-    _key: '!actors.items!gjBrxQ8uHaiifZYg.KFqMJsGu5qfp7LQR'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841952936
+      modifiedTime: 1758841952936
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: cMK0Ri4oFjpIPlWd
+    sort: 7400000
+    _key: '!actors.items!gjBrxQ8uHaiifZYg.cMK0Ri4oFjpIPlWd'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Enragé
+    type: capacity
+    img: icons/creatures/abilities/lion-roar-yellow.webp
+    system:
+      description: >-
+        <p>Lorsqu’elle reçoit un coup critique, la créature devient enragée.
+        Elle ignore les pénalités de douleur ou la peur, augmente de +3 sa
+        valeur d’attaque au contact et ses DM de +1d4. Elle peut encore agir un
+        tour complet après avoir atteint 0 PV.</p>
+      source: ''
+      origin: ''
+      slug: enrage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.62mRj3au01844Tg2
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.62mRj3au01844Tg2
+              subtype: combat
+              target: melee
+              value: '3'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.gjBrxQ8uHaiifZYg.Item.62mRj3au01844Tg2
+              subtype: combat
+              target: damMelee
+              value: +1d4
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841958816
+      modifiedTime: 1758841961796
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 62mRj3au01844Tg2
+    sort: 7200000
+    _key: '!actors.items!gjBrxQ8uHaiifZYg.62mRj3au01844Tg2'
 effects: []
 ownership:
   default: 0
@@ -610,12 +624,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749280417930
-  modifiedTime: 1749280417930
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758841911314
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: gjBrxQ8uHaiifZYg
 sort: 0

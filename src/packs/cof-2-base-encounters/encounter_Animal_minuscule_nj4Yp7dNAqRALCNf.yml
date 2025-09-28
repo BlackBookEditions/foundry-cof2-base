@@ -123,7 +123,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: '<p>Exemple : souris</p>'
     languages: []
     properties: ''
   magic: 0
@@ -274,11 +274,10 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!nj4Yp7dNAqRALCNf.S8JgcJ5dK6G0ojLU'
-  - folder: uVNfyNGbfZsNuFix
-    name: MINUSCULE
+  - folder: Jc9oocmI3B4cVSRG
+    name: Minuscule
     type: capacity
-    img: icons/svg/combat.svg
-    _id: FhlOlD1QfCJaQRfi
+    img: icons/environment/creatures/bug-beetle-gold-green.webp
     system:
       description: >-
         <p>La créature obtient un bonus de +10 aux tests d’escalade et de
@@ -297,7 +296,8 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.nj4Yp7dNAqRALCNf.Item.P1OpABRSyjqPDbMT
           indice: 0
           label: Escalade et Discrétion
           chatFlavor: ''
@@ -309,45 +309,57 @@ items:
             enabled: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nj4Yp7dNAqRALCNf.Item.P1OpABRSyjqPDbMT
               subtype: skill
               target: agi
               value: '10'
-              additionalInfos: ''
+              additionalInfos: Escalade/Discrétion
+              apply: self
             - type: capacity
-              source: Actor.nj4Yp7dNAqRALCNf.Item.FhlOlD1QfCJaQRfi
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nj4Yp7dNAqRALCNf.Item.P1OpABRSyjqPDbMT
               subtype: skill
               target: for
               value: '10'
-              additionalInfos: ''
-          conditions: []
+              additionalInfos: Escalade/Discrétion
+              apply: self
           resolvers: []
+          actionType: none
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.5yvmTMalbtRWE9Pf
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.BqJGrHhfAiXc06aP
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!nj4Yp7dNAqRALCNf.FhlOlD1QfCJaQRfi'
-  - folder: uVNfyNGbfZsNuFix
-    name: ATTAQUES RIDICULES
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758838934843
+      modifiedTime: 1758838934862
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: P1OpABRSyjqPDbMT
+    sort: 8400000
+    _key: '!actors.items!nj4Yp7dNAqRALCNf.P1OpABRSyjqPDbMT'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Attaques ridicules
     type: capacity
-    img: icons/svg/combat.svg
-    _id: RI3xny6LGQnjOvwb
+    img: icons/skills/melee/strike-club-red.webp
     system:
       description: >-
         <p>La créature n’inflige pas de DM sauf sur une réussite critique (1
@@ -367,24 +379,129 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.TBTKnJtqiJFyMv4r
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758838940302
+      modifiedTime: 1758838940302
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: vsqsQNsywkz7i0pC
+    sort: 9400000
+    _key: '!actors.items!nj4Yp7dNAqRALCNf.vsqsQNsywkz7i0pC'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: NKthrX46qYLhNZI8
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.nj4Yp7dNAqRALCNf.Item.NKthrX46qYLhNZI8
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nj4Yp7dNAqRALCNf.Item.NKthrX46qYLhNZI8
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.NGnVduSgTucGkuke
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!nj4Yp7dNAqRALCNf.RI3xny6LGQnjOvwb'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840285189
+      modifiedTime: 1758841190762
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!nj4Yp7dNAqRALCNf.NKthrX46qYLhNZI8'
 effects: []
 sort: 1200000
 ownership:
@@ -396,9 +513,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454179561
-  modifiedTime: 1758490558573
+  modifiedTime: 1758838965326
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!nj4Yp7dNAqRALCNf'

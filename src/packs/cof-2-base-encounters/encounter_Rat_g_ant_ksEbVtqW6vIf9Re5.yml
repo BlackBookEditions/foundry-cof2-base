@@ -58,7 +58,7 @@ system:
       min: null
       max: null
       value: null
-    nc: 0
+    nc: 0.5
     hp:
       base: 4
       value: 4
@@ -300,7 +300,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: N7rBoxvDFrtCqm1d
+    _id: MFbrzUEhZX2zo7Pe
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -309,13 +309,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -331,12 +328,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.eUwHe1OodTv1jXkA.Item.N7rBoxvDFrtCqm1d
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.ksEbVtqW6vIf9Re5.Item.MFbrzUEhZX2zo7Pe
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -347,16 +346,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.eUwHe1OodTv1jXkA.Item.N7rBoxvDFrtCqm1d
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.ksEbVtqW6vIf9Re5.Item.MFbrzUEhZX2zo7Pe
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -370,29 +368,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!ksEbVtqW6vIf9Re5.N7rBoxvDFrtCqm1d'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892593023
+      modifiedTime: 1758892624927
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!ksEbVtqW6vIf9Re5.MFbrzUEhZX2zo7Pe'
   - folder: Jc9oocmI3B4cVSRG
     name: Maladie
     type: capacity
@@ -402,9 +403,9 @@ items:
         <p>Chaque créature mordue par un rat doit faire un <strong>test de CON
         difficulté 10</strong> à la fin du combat. En cas d’échec, elle
         contracte une maladie dont les symptômes se manifestent après 2d6 h. La
-        victime est <em>affaiblie </em>et perd 1d4 PV toutes les 24 h, qui ne
-        peuvent pas être soignés par le repos. Réalisez un nouveau <strong>test
-        de CON difficulté 15 chaque jour</strong> pour tenter de mettre fin à la
+        victime est affaiblie et perd 1d4 PV toutes les 24 h, qui ne peuvent pas
+        être soignés par le repos. Réalisez un nouveau <strong>test de CON
+        difficulté 15 chaque jour</strong> pour tenter de mettre fin à la
         maladie. Les PV perdus sont alors récupérés au rythme de 1 par jour de
         repos.</p>
       source: ''
@@ -423,6 +424,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -431,20 +433,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.A3xbxa97aj1jAarw
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: LwYOWnv3F4vys0NZ
-    sort: 5100000
-    _key: '!actors.items!ksEbVtqW6vIf9Re5.LwYOWnv3F4vys0NZ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892597525
+      modifiedTime: 1758892597525
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: cUnVz2LKBcC4xCwv
+    sort: 5800000
+    _key: '!actors.items!ksEbVtqW6vIf9Re5.cUnVz2LKBcC4xCwv'
 effects: []
 ownership:
   default: 0
@@ -455,11 +458,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749372303915
-  modifiedTime: 1758490156142
+  modifiedTime: 1758892552404
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: ksEbVtqW6vIf9Re5
-sort: 700000
+sort: 3800000
 _key: '!actors!ksEbVtqW6vIf9Re5'

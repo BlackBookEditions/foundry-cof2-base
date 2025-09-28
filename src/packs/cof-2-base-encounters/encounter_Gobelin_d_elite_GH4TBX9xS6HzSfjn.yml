@@ -58,7 +58,7 @@ system:
       min: null
       max: null
       value: null
-    nc: 0
+    nc: 0.5
     hp:
       base: 9
       value: 9
@@ -123,10 +123,13 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
-        <p>Un gobelin d’élite accompagné de huit gobelins de base forment une
-        rencontre ordinaire de niveau 2.</p>
-      public: ''
+      private: ''
+      public: >-
+        <p>Le gobelin « peau verte » est une petite créature à la peau grisâtre
+        d’environ un mètre de haut, cruelle, vicieuse et qui attaque en bande.
+        Les gobelins sont généralement couards : blessés ou en sous‑nombre, ils
+        s’enfuient la plupart du temps.</p><p>Un gobelin d’élite accompagné de
+        huit gobelins de base forment une rencontre ordinaire de niveau 2.</p>
     languages: []
     properties: ''
   currentEffects: []
@@ -299,7 +302,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 57T7mEXTDklL3iqs
+    _id: JbBqfWoV3nNT4jgN
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -308,13 +311,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -330,12 +330,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.86fBHP6THIoGklwE.Item.57T7mEXTDklL3iqs
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.GH4TBX9xS6HzSfjn.Item.JbBqfWoV3nNT4jgN
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -346,16 +348,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.86fBHP6THIoGklwE.Item.57T7mEXTDklL3iqs
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.GH4TBX9xS6HzSfjn.Item.JbBqfWoV3nNT4jgN
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -369,29 +370,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!GH4TBX9xS6HzSfjn.57T7mEXTDklL3iqs'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848609574
+      modifiedTime: 1758848622137
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!GH4TBX9xS6HzSfjn.JbBqfWoV3nNT4jgN'
   - folder: Jc9oocmI3B4cVSRG
     name: Attaque en meute
     type: capacity
@@ -416,36 +420,41 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.86fBHP6THIoGklwE.Item.8NnyzkiIxy2Z0sle
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.GH4TBX9xS6HzSfjn.Item.00TyKO0AjsSesXwl
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.86fBHP6THIoGklwE.Item.8NnyzkiIxy2Z0sle
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.GH4TBX9xS6HzSfjn.Item.00TyKO0AjsSesXwl
               subtype: combat
               target: melee
               value: '+2'
-              additionalInfos: ''
               apply: self
+              additionalInfos: ''
             - type: capacity
-              source: Actor.86fBHP6THIoGklwE.Item.8NnyzkiIxy2Z0sle
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.GH4TBX9xS6HzSfjn.Item.00TyKO0AjsSesXwl
               subtype: combat
               target: ranged
               value: '+2'
-              additionalInfos: ''
               apply: self
+              additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -455,20 +464,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.JjKqvonovEFH0bOP
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 8NnyzkiIxy2Z0sle
-    sort: 3100000
-    _key: '!actors.items!GH4TBX9xS6HzSfjn.8NnyzkiIxy2Z0sle'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848614928
+      modifiedTime: 1758848617573
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 00TyKO0AjsSesXwl
+    sort: 3800000
+    _key: '!actors.items!GH4TBX9xS6HzSfjn.00TyKO0AjsSesXwl'
 effects: []
 ownership:
   default: 0
@@ -477,13 +487,13 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749355281108
-  modifiedTime: 1749373046098
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758849533588
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: GH4TBX9xS6HzSfjn
-sort: 2700000
+sort: 1400000
 _key: '!actors!GH4TBX9xS6HzSfjn'

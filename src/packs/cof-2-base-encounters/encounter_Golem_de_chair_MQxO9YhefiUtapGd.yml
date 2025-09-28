@@ -306,7 +306,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: nOeOhb64W1g1abLf
+    _id: fpmqKwtPhku8qPbV
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -315,13 +315,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -337,12 +334,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.cgZg5deymm950QBJ.Item.nOeOhb64W1g1abLf
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.fpmqKwtPhku8qPbV
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -353,16 +352,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.cgZg5deymm950QBJ.Item.nOeOhb64W1g1abLf
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.fpmqKwtPhku8qPbV
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -376,29 +374,131 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!MQxO9YhefiUtapGd.nOeOhb64W1g1abLf'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848865400
+      modifiedTime: 1758848910294
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!MQxO9YhefiUtapGd.fpmqKwtPhku8qPbV'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Une petite dernière
+    type: capacity
+    img: icons/skills/melee/strike-slashes-red.webp
+    system:
+      description: >-
+        <p>Si un adversaire au contact tente de s’éloigner de la créature
+        (généralement pour fuir), elle obtient une attaque de contact gratuite
+        contre lui.</p>
+      source: ''
+      origin: ''
+      slug: une-petite-derniere
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.oRRLB0OM3gtPltmo
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848868405
+      modifiedTime: 1758848868405
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: pNIRWSJvlOEJsYgh
+    sort: 5700000
+    _key: '!actors.items!MQxO9YhefiUtapGd.pNIRWSJvlOEJsYgh'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Tape dur
+    type: capacity
+    img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
+    system:
+      description: >-
+        <p>Si la créature obtient <strong>17 à 20 au dé du test
+        d’attaque</strong>, l’attaque est automatiquement réussie. De surcroît,
+        la victime doit réussir un <strong>test de CON difficulté 16</strong> ou
+        être étourdie pendant 1 round.</p>
+      source: ''
+      origin: ''
+      slug: tape-dur
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848874743
+      modifiedTime: 1758848949036
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: SZSx0zjjyB1pjDCe
+    sort: 7400000
+    _key: '!actors.items!MQxO9YhefiUtapGd.SZSx0zjjyB1pjDCe'
   - folder: Jc9oocmI3B4cVSRG
     name: Enragé
     type: capacity
@@ -424,36 +524,41 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.cgZg5deymm950QBJ.Item.joBV940NzQkhfol1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.hqGPbbSjaC6FpFHP
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.cgZg5deymm950QBJ.Item.joBV940NzQkhfol1
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.hqGPbbSjaC6FpFHP
               subtype: combat
               target: melee
               value: '3'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.cgZg5deymm950QBJ.Item.joBV940NzQkhfol1
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.hqGPbbSjaC6FpFHP
               subtype: combat
               target: damMelee
-              value: +1d4
+              value: +1d6
               apply: self
               additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -463,20 +568,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: joBV940NzQkhfol1
-    sort: 6500000
-    _key: '!actors.items!MQxO9YhefiUtapGd.joBV940NzQkhfol1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848881067
+      modifiedTime: 1758848976831
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: hqGPbbSjaC6FpFHP
+    sort: 7200000
+    _key: '!actors.items!MQxO9YhefiUtapGd.hqGPbbSjaC6FpFHP'
   - folder: Jc9oocmI3B4cVSRG
     name: Résistance (Golem)
     type: capacity
@@ -499,124 +605,58 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.tTIgn3mdid9xo7L0
+          indice: 0
+          label: RD vs DM élémentaires
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MQxO9YhefiUtapGd.Item.tTIgn3mdid9xo7L0
+              subtype: combat
+              target: dr
+              value: '2'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
       frequency: none
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      inGame: ''
     effects: []
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xjAS9204nQW8KBRm
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.pulxQYLxlkHHr8CX
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: toc7TtGhDL8oiZ4F
-    sort: 2500000
-    _key: '!actors.items!MQxO9YhefiUtapGd.toc7TtGhDL8oiZ4F'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Tape dur
-    type: capacity
-    img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
-    system:
-      description: >-
-        <p>Si la créature obtient 17 à 20 au dé du test d’attaque, l’attaque est
-        automatiquement réussie. De surcroît, la victime doit réussir un test de
-        CON difficulté 13 ou être étourdie pendant 1 round.</p>
-      source: ''
-      origin: ''
-      slug: tape-dur
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: mPhHTamXiK05NiSk
-    sort: 6700000
-    _key: '!actors.items!MQxO9YhefiUtapGd.mPhHTamXiK05NiSk'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Une petite dernière
-    type: capacity
-    img: icons/skills/melee/strike-slashes-red.webp
-    system:
-      description: >-
-        <p>Si un adversaire au contact tente de s’éloigner de la créature
-        (généralement pour fuir), elle obtient une attaque de contact gratuite
-        contre lui.</p>
-      source: ''
-      origin: ''
-      slug: une-petite-derniere
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.oRRLB0OM3gtPltmo
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: JjNNisz73WLoekCw
-    sort: 5000000
-    _key: '!actors.items!MQxO9YhefiUtapGd.JjNNisz73WLoekCw'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849057967
+      modifiedTime: 1758849060396
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: tTIgn3mdid9xo7L0
+    sort: 100000
+    _key: '!actors.items!MQxO9YhefiUtapGd.tTIgn3mdid9xo7L0'
 effects: []
 ownership:
   default: 0
@@ -629,9 +669,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749355833097
-  modifiedTime: 1758487464376
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: MQxO9YhefiUtapGd
-sort: 1300000
+sort: 1700000
 _key: '!actors!MQxO9YhefiUtapGd'

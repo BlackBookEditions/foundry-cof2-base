@@ -7,19 +7,19 @@ system:
   abilities:
     agi:
       superior: false
-      base: 0
+      base: 1
       bonuses:
         sheet: 0
         effects: 0
     con:
       superior: false
-      base: 0
+      base: 1
       bonuses:
         sheet: 0
         effects: 0
     for:
       superior: false
-      base: 0
+      base: 2
       bonuses:
         sheet: 0
         effects: 0
@@ -31,19 +31,19 @@ system:
         effects: 0
     cha:
       superior: false
-      base: 0
+      base: -1
       bonuses:
         sheet: 0
         effects: 0
     int:
       superior: false
-      base: 0
+      base: 2
       bonuses:
         sheet: 0
         effects: 0
     vol:
       superior: false
-      base: 0
+      base: 1
       bonuses:
         sheet: 0
         effects: 0
@@ -90,7 +90,7 @@ system:
       max: null
       value: null
     def:
-      base: 9
+      base: 10
       ability: agi
       bonuses:
         sheet: 0
@@ -101,7 +101,7 @@ system:
       max: null
       value: null
     melee:
-      base: 1
+      base: 3
       ability: for
       bonuses:
         sheet: 0
@@ -112,7 +112,7 @@ system:
       max: null
       value: null
     ranged:
-      base: 0
+      base: 1
       ability: agi
       bonuses:
         sheet: 0
@@ -123,7 +123,7 @@ system:
       max: null
       value: null
     magic:
-      base: 2
+      base: 3
       ability: vol
       bonuses:
         sheet: 0
@@ -157,7 +157,7 @@ system:
       value: null
   resources:
     fortune:
-      base: 2
+      base: 1
       ability: cha
       bonuses:
         sheet: 0
@@ -166,9 +166,9 @@ system:
       unit: null
       min: null
       max: null
-      value: 2
+      value: 1
     recovery:
-      base: 3
+      base: 4
       ability: con
       bonuses:
         sheet: 0
@@ -177,9 +177,9 @@ system:
       unit: null
       min: null
       max: null
-      value: 3
+      value: 4
     mana:
-      base: 3
+      base: 4
       ability: vol
       bonuses:
         sheet: 0
@@ -188,7 +188,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 3
+      value: 4
   details:
     biography:
       private: ''
@@ -206,7 +206,7 @@ system:
     gp:
       value: 0
     sp:
-      value: 0
+      value: 7
     cp:
       value: 0
   currentEffects: []
@@ -293,121 +293,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: BHbn2gP9Z2mczP4c
-    name: Mains nues
-    type: equipment
-    img: icons/skills/melee/unarmed-punch-fist.webp
-    _id: 4czeKzQYRl0cxhwo
-    system:
-      description: >-
-        <p>Dans le cas du combat à mains nues, les DM sont généralement
-        temporaires, sauf pour les moines</p>
-      source: ''
-      origin: ''
-      slug: mains-nues
-      tags:
-        - dmtemporaires
-      subtype: weapon
-      martialCategory: unarmed
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.4czeKzQYRl0cxhwo
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d3 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      damagetype: impact
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 100007
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource:
-        worldId: cov2-dev
-        uuid: null
-        coreVersion: '12.331'
-        systemId: co
-        systemVersion: 12.331.0
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.4czeKzQYRl0cxhwo'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -505,502 +390,11 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!okBtDNj2D0PUkVHJ.bAjwDcpXE6UDZy6J'
-  - folder: aMNRFAA7Ui4jg6IV
-    name: Voie du nain
-    type: path
-    img: modules/cof-base/assets/peuples/peuple_nain.webp
-    _id: q3bEB510bSYmb2vB
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: voie-du-nain
-      subtype: people
-      capacities:
-        - Actor.okBtDNj2D0PUkVHJ.Item.u9DLxltRcoVgMgRf
-        - Actor.okBtDNj2D0PUkVHJ.Item.HN1lS38K4m4UWI6M
-        - Actor.okBtDNj2D0PUkVHJ.Item.SnDylJh2QO9IDa3e
-        - Actor.okBtDNj2D0PUkVHJ.Item.4Ou71sMSqIIulpth
-        - Actor.okBtDNj2D0PUkVHJ.Item.w3jTNKnVFDUYkE3G
-      rank: 1
-      maxDefenseArmor: 0
-      pvByLevel: 0
-    effects: []
-    sort: 200000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.aa9CgV0Prjnl4jo8
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.q3bEB510bSYmb2vB'
-  - folder: mGGQQms20fOHdOoG
-    name: Habitant des tunnels
-    type: capacity
-    img: icons/environment/wilderness/mine-interior-dungeon-door.webp
-    _id: u9DLxltRcoVgMgRf
-    system:
-      description: >-
-        <p style="text-align:justify">Dans le noir total, le nain voit comme
-        dans la pénombre jusqu’à 30 m. De plus, il obtient un bonus de +3 à tous
-        les tests en rapport avec la pierre, l’architecture ou les mines ainsi
-        qu’avec les passages secrets et les pièges dans les murs et les parois
-        rocheuses.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p59
-      slug: habitant-des-tunnels
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.okBtDNj2D0PUkVHJ.Item.q3bEB510bSYmb2vB
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.u9DLxltRcoVgMgRf
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: true
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers:
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.u9DLxltRcoVgMgRf
-              subtype: skill
-              target: per
-              apply: self
-              value: '3'
-              additionalInfos: passage secret,piege
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.u9DLxltRcoVgMgRf
-              subtype: skill
-              target: int
-              apply: self
-              value: '3'
-              additionalInfos: pierre, architecture, mines
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.u9DLxltRcoVgMgRf
-              subtype: state
-              target: darkvision
-              apply: self
-              value: '30'
-              additionalInfos: ''
-          resolvers: []
-      cost: -1
-      rank: 1
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 100000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.u9DLxltRcoVgMgRf'
-  - folder: mGGQQms20fOHdOoG
-    name: Haches et marteaux
-    type: capacity
-    img: icons/weapons/axes/axe-broad-engraved-chipped-blue.webp
-    _id: HN1lS38K4m4UWI6M
-    system:
-      description: >-
-        <p>Le nain gagne un bonus de +1 en attaque et aux DM lorsqu’il utilise
-        une hache ou un marteau de guerre. Il sait utiliser ces armes, quel que
-        soit son profil.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus activable/désactivable à activer si le nain
-        utilise une hache ou un marteau. La Maîtrise des armes doit être cochée
-        sur le profil.</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p59
-      slug: haches-et-marteaux
-      subtype: ''
-      actionType: none
-      learned: false
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.okBtDNj2D0PUkVHJ.Item.q3bEB510bSYmb2vB
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.HN1lS38K4m4UWI6M
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: true
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers:
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.HN1lS38K4m4UWI6M
-              subtype: combat
-              target: melee
-              apply: self
-              value: '1'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.HN1lS38K4m4UWI6M
-              subtype: combat
-              target: damMelee
-              apply: self
-              value: '1'
-              additionalInfos: ''
-          resolvers: []
-      cost: -1
-      rank: 2
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 200000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.HN1lS38K4m4UWI6M'
-  - folder: mGGQQms20fOHdOoG
-    name: Résistance à la magie
-    type: capacity
-    img: icons/magic/defensive/barrier-shield-dome-deflect-teal.webp
-    _id: SnDylJh2QO9IDa3e
-    system:
-      description: >-
-        <p>Une fois par jour, le nain peut choisir d’ignorer les effets d’un
-        sort qui le prend pour cible (mais pas un sort de zone). Les créatures
-        dont le niveau (NC) est au moins égal au double du nain ignorent cette
-        capacité.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Ajoute une action consommable pour tenir compte de l'utilisation ou
-        non de la capacité dnas la journée. Il faudra une récupération complète
-        pour la réinitialiser.</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p59
-      slug: resistance-a-la-magie
-      subtype: ''
-      actionType: none
-      learned: false
-      charges:
-        current: 1
-        max: 1
-      properties:
-        spell: false
-      path: Actor.okBtDNj2D0PUkVHJ.Item.q3bEB510bSYmb2vB
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.SnDylJh2QO9IDa3e
-          indice: 0
-          label: Inorer les effets d’un sort
-          chatFlavor: ''
-          type: consumable
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          resolvers:
-            - type: consumable
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-              skill: {}
-              dmg: {}
-          modifiers: []
-      cost: -1
-      rank: 3
-      frequency: daily
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 250000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.SnDylJh2QO9IDa3e'
-  - folder: mGGQQms20fOHdOoG
-    name: Fils du roc
-    type: capacity
-    img: icons/magic/earth/strike-fist-stone.webp
-    _id: 4Ou71sMSqIIulpth
-    system:
-      description: >-
-        <p style="text-align:justify">Le nain réduit tous les DM subis de 2
-        points (mais il subit toujours au moins 1 DM par attaque reçue). La
-        réduction passe à 3 au niveau 10. Elle est cumulable avec d’autres
-        sources de réduction des DM comme la peau d’acier du barbare.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p59
-      slug: fils-du-roc
-      subtype: ''
-      actionType: none
-      learned: false
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.okBtDNj2D0PUkVHJ.Item.q3bEB510bSYmb2vB
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.4Ou71sMSqIIulpth
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers:
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.4Ou71sMSqIIulpth
-              subtype: combat
-              target: dr
-              apply: self
-              value: 2 + round(@niv/10)
-              additionalInfos: ''
-          resolvers: []
-      cost: -1
-      rank: 4
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 275000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.4Ou71sMSqIIulpth'
-  - folder: mGGQQms20fOHdOoG
-    name: Ténacité
-    type: capacity
-    img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: w3jTNKnVFDUYkE3G
-    system:
-      description: >-
-        <p>Le nain augmente ses valeurs de CON et de VOL de +1.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p60
-      slug: tenacite
-      subtype: ''
-      actionType: none
-      learned: false
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.okBtDNj2D0PUkVHJ.Item.q3bEB510bSYmb2vB
-      actions:
-        - source: Actor.okBtDNj2D0PUkVHJ.Item.w3jTNKnVFDUYkE3G
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: false
-            enabled: false
-            temporary: false
-            visible: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers:
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.w3jTNKnVFDUYkE3G
-              subtype: ability
-              target: con
-              value: '1'
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.okBtDNj2D0PUkVHJ.Item.w3jTNKnVFDUYkE3G
-              subtype: ability
-              target: vol
-              value: '1'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-      cost: -1
-      rank: 5
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 300000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.w3jTNKnVFDUYkE3G'
   - folder: pClI1itDE2etUmdy
     name: Nain
     type: feature
     img: modules/cof-base/assets/peuples/peuple_nain.webp
-    _id: 6SFgvCpuGHz0tplD
+    _id: CPRbxvnlx7ewmgfQ
     system:
       description: >-
         <p>Le nain est petit mais robuste. Célèbre pour sa barbe, il aime les
@@ -1077,7 +471,7 @@ items:
       subtype: people
       modifiers:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.6SFgvCpuGHz0tplD
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.CPRbxvnlx7ewmgfQ
           type: feature
           subtype: ability
           target: con
@@ -1085,7 +479,7 @@ items:
           apply: self
           additionalInfos: ''
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.6SFgvCpuGHz0tplD
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.CPRbxvnlx7ewmgfQ
           type: feature
           subtype: ability
           target: vol
@@ -1093,7 +487,7 @@ items:
           apply: self
           additionalInfos: ''
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.6SFgvCpuGHz0tplD
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.CPRbxvnlx7ewmgfQ
           type: feature
           subtype: ability
           target: agi
@@ -1102,7 +496,7 @@ items:
           additionalInfos: ''
       paths:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       capacities: []
     effects: []
     sort: 0
@@ -1121,15 +515,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266489
-      modifiedTime: 1758496267119
+      createdTime: 1758925293850
+      modifiedTime: 1758925294537
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.6SFgvCpuGHz0tplD'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.CPRbxvnlx7ewmgfQ'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie du nain
     type: path
     img: modules/cof-base/assets/peuples/peuple_nain.webp
-    _id: leqfyOi8sAljXAPU
+    _id: YdK13GcxMNM2jryS
     system:
       description: ''
       source: ''
@@ -1138,16 +532,16 @@ items:
       subtype: people
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1Dc6G7DAuAkyP6iT
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.TyZsdYzNgLJ0QWVr
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tRMchCALi4FoYWSs
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fMNg26Bre1uc4Q1L
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.UzNuGZQGklhybxvK
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.MHgHnxpi7kXjMjjf
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.EZDzbjctRodBdXDP
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.gpY0NEWsSQgbWQLb
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.FGqpsHoZlzu6l8LZ
-      rank: 0
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.56vEAy5n1hfDP9GM
+      rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
     effects: []
@@ -1167,15 +561,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266546
-      modifiedTime: 1758496267079
+      createdTime: 1758925293906
+      modifiedTime: 1758925306952
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.leqfyOi8sAljXAPU'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.YdK13GcxMNM2jryS'
   - folder: mGGQQms20fOHdOoG
     name: Habitant des tunnels
     type: capacity
     img: icons/environment/wilderness/mine-interior-dungeon-door.webp
-    _id: 1Dc6G7DAuAkyP6iT
+    _id: TyZsdYzNgLJ0QWVr
     system:
       description: >-
         <p style="text-align:justify">Dans le noir total, le nain voit comme
@@ -1191,17 +585,17 @@ items:
       slug: habitant-des-tunnels
       subtype: ''
       actionType: none
-      learned: false
+      learned: true
       charges:
         current: null
         max: null
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1Dc6G7DAuAkyP6iT
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.TyZsdYzNgLJ0QWVr
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1209,7 +603,7 @@ items:
           img: icons/svg/d20-highlight.svg
           properties:
             visible: false
-            enabled: false
+            enabled: true
             activable: false
             temporary: false
             noManaCost: false
@@ -1218,7 +612,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1Dc6G7DAuAkyP6iT
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.TyZsdYzNgLJ0QWVr
               subtype: skill
               target: per
               apply: self
@@ -1226,7 +620,7 @@ items:
               additionalInfos: passage secret,piege
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1Dc6G7DAuAkyP6iT
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.TyZsdYzNgLJ0QWVr
               subtype: skill
               target: int
               apply: self
@@ -1234,7 +628,7 @@ items:
               additionalInfos: pierre, architecture, mines
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1Dc6G7DAuAkyP6iT
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.TyZsdYzNgLJ0QWVr
               subtype: state
               target: darkvision
               apply: self
@@ -1266,15 +660,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266591
-      modifiedTime: 1758496266630
+      createdTime: 1758925293953
+      modifiedTime: 1758925306923
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.1Dc6G7DAuAkyP6iT'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.TyZsdYzNgLJ0QWVr'
   - folder: mGGQQms20fOHdOoG
     name: Haches et marteaux
     type: capacity
     img: icons/weapons/axes/axe-broad-engraved-chipped-blue.webp
-    _id: tRMchCALi4FoYWSs
+    _id: fMNg26Bre1uc4Q1L
     system:
       description: >-
         <p>Le nain gagne un bonus de +1 en attaque et aux DM lorsqu’il utilise
@@ -1296,10 +690,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tRMchCALi4FoYWSs
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fMNg26Bre1uc4Q1L
           indice: 0
           label: Utiliser hache ou marteau de guerre
           chatFlavor: ''
@@ -1316,7 +710,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tRMchCALi4FoYWSs
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fMNg26Bre1uc4Q1L
               subtype: combat
               target: melee
               apply: self
@@ -1324,7 +718,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tRMchCALi4FoYWSs
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fMNg26Bre1uc4Q1L
               subtype: combat
               target: damMelee
               apply: self
@@ -1356,15 +750,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266670
-      modifiedTime: 1758496266720
+      createdTime: 1758925294045
+      modifiedTime: 1758925294089
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.tRMchCALi4FoYWSs'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.fMNg26Bre1uc4Q1L'
   - folder: mGGQQms20fOHdOoG
     name: Résistance à la magie
     type: capacity
     img: icons/magic/defensive/barrier-shield-dome-deflect-teal.webp
-    _id: UzNuGZQGklhybxvK
+    _id: MHgHnxpi7kXjMjjf
     system:
       description: >-
         <p>Une fois par jour, le nain peut choisir d’ignorer les effets d’un
@@ -1387,10 +781,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.UzNuGZQGklhybxvK
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.MHgHnxpi7kXjMjjf
           indice: 0
           label: Ignorer les effets d’un sort
           chatFlavor: ''
@@ -1446,15 +840,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266786
-      modifiedTime: 1758496266833
+      createdTime: 1758925294135
+      modifiedTime: 1758925294177
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.UzNuGZQGklhybxvK'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.MHgHnxpi7kXjMjjf'
   - folder: mGGQQms20fOHdOoG
     name: Fils du roc
     type: capacity
     img: icons/magic/earth/strike-fist-stone.webp
-    _id: EZDzbjctRodBdXDP
+    _id: gpY0NEWsSQgbWQLb
     system:
       description: >-
         <p style="text-align:justify">Le nain réduit tous les DM subis de 2
@@ -1476,10 +870,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.EZDzbjctRodBdXDP
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.gpY0NEWsSQgbWQLb
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1497,7 +891,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.EZDzbjctRodBdXDP
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.gpY0NEWsSQgbWQLb
               subtype: combat
               target: dr
               value: 2 + @nivmod[10,1]
@@ -1528,15 +922,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266880
-      modifiedTime: 1758496266931
+      createdTime: 1758925294221
+      modifiedTime: 1758925294263
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.EZDzbjctRodBdXDP'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.gpY0NEWsSQgbWQLb'
   - folder: mGGQQms20fOHdOoG
     name: Ténacité
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: FGqpsHoZlzu6l8LZ
+    _id: 56vEAy5n1hfDP9GM
     system:
       description: <p>Le nain augmente ses valeurs de CON et de VOL de +1.</p>
       inGame: >-
@@ -1554,10 +948,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.leqfyOi8sAljXAPU
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.YdK13GcxMNM2jryS
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.FGqpsHoZlzu6l8LZ
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.56vEAy5n1hfDP9GM
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1574,7 +968,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.FGqpsHoZlzu6l8LZ
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.56vEAy5n1hfDP9GM
               subtype: ability
               target: con
               value: '1'
@@ -1582,7 +976,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.FGqpsHoZlzu6l8LZ
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.56vEAy5n1hfDP9GM
               subtype: ability
               target: vol
               value: '1'
@@ -1614,15 +1008,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496266975
-      modifiedTime: 1758496267030
+      createdTime: 1758925294314
+      modifiedTime: 1758925294385
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.FGqpsHoZlzu6l8LZ'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.56vEAy5n1hfDP9GM'
   - folder: IZHTnLbQTJgTrYv1
     name: Forgesort
     type: profile
     img: modules/cof-base/assets/profils/profil_mages_forgesort.webp
-    _id: kvTKVm7T4h0aPLvp
+    _id: LMqwxXJOVy3aFmkF
     system:
       description: >-
         <p><strong>Points de vigueur :</strong> 3 par niveau</p>
@@ -1666,15 +1060,15 @@ items:
       proficiencies: []
       paths:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       martialTrainingsWeapons:
         unarmed: true
         staff: true
@@ -1743,15 +1137,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278538
-      modifiedTime: 1758496281416
+      createdTime: 1758925297151
+      modifiedTime: 1758925299868
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.kvTKVm7T4h0aPLvp'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.LMqwxXJOVy3aFmkF'
   - folder: BwplXWWIY2bJNTlJ
     name: Voie des artefacts
     type: path
     img: modules/cof-base/assets/voies/forgesort_artefact.webp
-    _id: wrUDnV9DDkg6QeiQ
+    _id: uRfpy5eljweuWcUg
     system:
       description: ''
       source: ''
@@ -1760,15 +1154,15 @@ items:
       subtype: profile
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GwRM0NMvGb8WWDfi
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4kIIfIxqdsnF9F8z
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Li3h89QVRxG771OL
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.nRv65489zapccwAw
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tLzgtVT6r6IPkBmM
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q4GiiMP8hnlMzQSy
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.mNecjQuNyOhqGNae
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Rsy7VtfRedtG7k7y
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Wy5vfv9sPvsr1FFo
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.FUZmDAxdYOXXKaw8
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -1789,15 +1183,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278627
-      modifiedTime: 1758496279010
+      createdTime: 1758925297164
+      modifiedTime: 1758925297590
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.wrUDnV9DDkg6QeiQ'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.uRfpy5eljweuWcUg'
   - folder: xmpS4oiFKtZCJ9hz
     name: Bâton de mage
     type: capacity
     img: icons/weapons/staves/staff-ornate-jeweled-blue.webp
-    _id: GwRM0NMvGb8WWDfi
+    _id: 4kIIfIxqdsnF9F8z
     system:
       description: >-
         <p>Lorsqu’il utilise son bâton, le forgesort inflige [1d4°+INT] DM
@@ -1824,7 +1218,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
       actions: []
       cost: -1
       rank: 1
@@ -1850,15 +1244,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278687
-      modifiedTime: 1758496278687
+      createdTime: 1758925297213
+      modifiedTime: 1758925297213
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.GwRM0NMvGb8WWDfi'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.4kIIfIxqdsnF9F8z'
   - folder: xmpS4oiFKtZCJ9hz
     name: Ouverture ‑ fermeture
     type: capacity
     img: icons/sundries/misc/lock-open-yellow.webp
-    _id: Li3h89QVRxG771OL
+    _id: nRv65489zapccwAw
     system:
       description: >-
         <p style="text-align:justify">Le forgesort peut ouvrir une porte fermée
@@ -1888,10 +1282,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Li3h89QVRxG771OL
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.nRv65489zapccwAw
           indice: 0
           label: ouvrir
           chatFlavor: ''
@@ -1952,15 +1346,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278743
-      modifiedTime: 1758496278762
+      createdTime: 1758925297256
+      modifiedTime: 1758925297308
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.Li3h89QVRxG771OL'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.nRv65489zapccwAw'
   - folder: xmpS4oiFKtZCJ9hz
     name: Sac sans fond
     type: capacity
     img: icons/containers/bags/pack-engraved-leather-leaf-tan.webp
-    _id: tLzgtVT6r6IPkBmM
+    _id: q4GiiMP8hnlMzQSy
     system:
       description: >-
         <p style="text-align:justify">Le forgesort possède un sac magique dans
@@ -1988,7 +1382,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
       actions: []
       cost: -1
       rank: 3
@@ -2014,15 +1408,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278838
-      modifiedTime: 1758496278838
+      createdTime: 1758925297360
+      modifiedTime: 1758925297360
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.tLzgtVT6r6IPkBmM'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.q4GiiMP8hnlMzQSy'
   - folder: xmpS4oiFKtZCJ9hz
     name: Frappe des arcanes
     type: capacity
     img: icons/magic/lightning/bolt-strike-explosion-blue.webp
-    _id: mNecjQuNyOhqGNae
+    _id: Rsy7VtfRedtG7k7y
     system:
       description: >-
         <p style="text-align:justify">Le forgesort frappe le sol de son bâton et
@@ -2047,10 +1441,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.mNecjQuNyOhqGNae
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Rsy7VtfRedtG7k7y
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2109,15 +1503,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278890
-      modifiedTime: 1758496278910
+      createdTime: 1758925297426
+      modifiedTime: 1758925297490
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.mNecjQuNyOhqGNae'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.Rsy7VtfRedtG7k7y'
   - folder: xmpS4oiFKtZCJ9hz
     name: Artefact étrange
     type: capacity
     img: icons/magic/symbols/elements-air-earth-fire-water.webp
-    _id: Wy5vfv9sPvsr1FFo
+    _id: FUZmDAxdYOXXKaw8
     system:
       description: >-
         <p>Le forgesort crée un artefact qu’il est le seul à pouvoir utiliser et
@@ -2155,7 +1549,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.wrUDnV9DDkg6QeiQ
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.uRfpy5eljweuWcUg
       actions: []
       cost: -1
       rank: 5
@@ -2181,15 +1575,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496278988
-      modifiedTime: 1758496278988
+      createdTime: 1758925297544
+      modifiedTime: 1758925297544
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.Wy5vfv9sPvsr1FFo'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.FUZmDAxdYOXXKaw8'
   - folder: BwplXWWIY2bJNTlJ
     name: Voie des elixirs
     type: path
     img: modules/cof-base/assets/voies/forgesort_elixirs.webp
-    _id: 4khahBeSaKsbp1tH
+    _id: BLmxXxHcGnDT6zvn
     system:
       description: >-
         <p>Chaque jour, le forgesort peut créer et utiliser (sur lui‑même ou un
@@ -2215,15 +1609,15 @@ items:
       subtype: profile
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tiz0EeB1YDRiDOeQ
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Iqwo2Q9WyAsGUXX3
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Zh3omLHi9Exuxdh5
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Y2XH1xcjLTITDwLA
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.D692Ckkq7PJwHcvn
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7OXHqZx7VbY3uZwb
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HdlkuxMpWNCKTu23
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.S2ebOLRY4tD56NWi
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.W1s40WZ2phePvOw6
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.H0G9aNKTn2d76bPf
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -2244,15 +1638,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279092
-      modifiedTime: 1758496279480
+      createdTime: 1758925297638
+      modifiedTime: 1758925298046
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.4khahBeSaKsbp1tH'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.BLmxXxHcGnDT6zvn'
   - folder: A9vImKSHm41hlslb
     name: Fortifiant
     type: capacity
     img: icons/consumables/potions/bottle-corked-green.webp
-    _id: tiz0EeB1YDRiDOeQ
+    _id: Iqwo2Q9WyAsGUXX3
     system:
       description: >-
         <p>Un breuvage qui guérit immédiatement 1d4° PV et permet de gagner un
@@ -2279,10 +1673,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tiz0EeB1YDRiDOeQ
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Iqwo2Q9WyAsGUXX3
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2299,7 +1693,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.tiz0EeB1YDRiDOeQ
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Iqwo2Q9WyAsGUXX3
               subtype: skill
               target: int
               value: 2 + @rang
@@ -2331,15 +1725,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279161
-      modifiedTime: 1758496279182
+      createdTime: 1758925297687
+      modifiedTime: 1758925297737
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.tiz0EeB1YDRiDOeQ'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.Iqwo2Q9WyAsGUXX3'
   - folder: A9vImKSHm41hlslb
     name: Feu grégeois
     type: capacity
     img: icons/consumables/potions/bottle-round-label-cork-yellow.webp
-    _id: Zh3omLHi9Exuxdh5
+    _id: Y2XH1xcjLTITDwLA
     system:
       description: >-
         <p style="text-align:justify">Le forgesort lance la fiole à une distance
@@ -2364,7 +1758,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
       actions: []
       cost: -1
       rank: 2
@@ -2390,15 +1784,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279268
-      modifiedTime: 1758496279268
+      createdTime: 1758925297791
+      modifiedTime: 1758925297791
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.Zh3omLHi9Exuxdh5'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.Y2XH1xcjLTITDwLA'
   - folder: A9vImKSHm41hlslb
     name: Élixir de guérison
     type: capacity
     img: icons/consumables/potions/bottle-bulb-corked-glowing-red.webp
-    _id: D692Ckkq7PJwHcvn
+    _id: 7OXHqZx7VbY3uZwb
     system:
       description: >-
         <p>Le forgesort peut préparer un élixir qui soigne [2d4°+INT] PV au bout
@@ -2420,7 +1814,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
       actions: []
       cost: -1
       rank: 3
@@ -2446,15 +1840,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279331
-      modifiedTime: 1758496279331
+      createdTime: 1758925297877
+      modifiedTime: 1758925297877
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.D692Ckkq7PJwHcvn'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.7OXHqZx7VbY3uZwb'
   - folder: A9vImKSHm41hlslb
     name: Élixirs mineurs
     type: capacity
     img: icons/consumables/potions/potion-bottle-corked-white.webp
-    _id: HdlkuxMpWNCKTu23
+    _id: S2ebOLRY4tD56NWi
     system:
       description: >-
         <p style="text-align:justify">Le forgesort apprend à préparer des
@@ -2485,7 +1879,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
       actions: []
       cost: -1
       rank: 4
@@ -2511,15 +1905,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279392
-      modifiedTime: 1758496279392
+      createdTime: 1758925297946
+      modifiedTime: 1758925297946
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.HdlkuxMpWNCKTu23'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.S2ebOLRY4tD56NWi'
   - folder: A9vImKSHm41hlslb
     name: Élixirs majeurs
     type: capacity
     img: icons/tools/laboratory/vials-blue-pink.webp
-    _id: W1s40WZ2phePvOw6
+    _id: H0G9aNKTn2d76bPf
     system:
       description: >-
         <p>Le forgesort apprend à préparer des élixirs parmi
@@ -2552,7 +1946,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.4khahBeSaKsbp1tH
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.BLmxXxHcGnDT6zvn
       actions: []
       cost: -1
       rank: 5
@@ -2578,15 +1972,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279459
-      modifiedTime: 1758496279459
+      createdTime: 1758925297995
+      modifiedTime: 1758925297995
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.W1s40WZ2phePvOw6'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.H0G9aNKTn2d76bPf'
   - folder: BwplXWWIY2bJNTlJ
     name: Voie du métal
     type: path
     img: modules/cof-base/assets/voies/forgesort_metal.webp
-    _id: OcbCQJaQOtpIrtHK
+    _id: 1zYFe1uAUJuynAv1
     system:
       description: ''
       source: ''
@@ -2595,15 +1989,15 @@ items:
       subtype: profile
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ACveP429iVhaGuo7
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.v4AjTsAaEWD6GQuJ
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GcigRcuJzrsuj6mQ
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Tqg80mz5ZGu1yR3B
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HkWDzN1cwqTzQbYO
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.3LA1g7Byhciwlevv
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kDBQgSXGgVJK8jOS
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7d14W1AkkpEB2Spw
       rank: 2
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -2624,15 +2018,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279559
-      modifiedTime: 1758496320754
+      createdTime: 1758925298097
+      modifiedTime: 1758925319285
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.OcbCQJaQOtpIrtHK'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.1zYFe1uAUJuynAv1'
   - folder: gnEAkqoWLwgvaxae
     name: Morsure de la forge
     type: capacity
     img: icons/magic/fire/projectile-arrow-fire-orange.webp
-    _id: 63esbDLpXr2GOaqW
+    _id: ESv47UewTSIMtc2A
     system:
       description: >-
         <p style="text-align:justify">Au prix d’une action de mouvement, le
@@ -2662,10 +2056,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2682,7 +2076,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
               subtype: combat
               target: damMelee
               value: 2 + @toutrang[4]
@@ -2691,7 +2085,7 @@ items:
           resolvers: []
           actionType: none
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
           indice: 1
           label: ''
           chatFlavor: ''
@@ -2708,7 +2102,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
               subtype: skill
               target: agi
               value: 2 + @rang
@@ -2716,7 +2110,7 @@ items:
               additionalInfos: forge/orfèvre
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
               subtype: skill
               target: for
               value: 2 + @rang
@@ -2724,7 +2118,7 @@ items:
               additionalInfos: forge/orfèvre
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.63esbDLpXr2GOaqW
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ESv47UewTSIMtc2A
               subtype: skill
               target: int
               value: 2 + @rang
@@ -2756,15 +2150,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279619
-      modifiedTime: 1758496421410
+      createdTime: 1758925298151
+      modifiedTime: 1758925318843
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.63esbDLpXr2GOaqW'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.ESv47UewTSIMtc2A'
   - folder: gnEAkqoWLwgvaxae
     name: Métal brûlant
     type: capacity
     img: icons/magic/fire/flame-burning-earth-yellow.webp
-    _id: ACveP429iVhaGuo7
+    _id: v4AjTsAaEWD6GQuJ
     system:
       description: >-
         <p style="text-align:justify">Le forgesort doit réussir un test opposé
@@ -2793,10 +2187,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ACveP429iVhaGuo7
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.v4AjTsAaEWD6GQuJ
           indice: 0
           label: sur Arme
           chatFlavor: ''
@@ -2837,7 +2231,7 @@ items:
           modifiers: []
           actionType: none
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.ACveP429iVhaGuo7
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.v4AjTsAaEWD6GQuJ
           indice: 1
           label: sur Armure
           chatFlavor: ''
@@ -2901,15 +2295,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279769
-      modifiedTime: 1758496320720
+      createdTime: 1758925298254
+      modifiedTime: 1758925319257
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.ACveP429iVhaGuo7'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.v4AjTsAaEWD6GQuJ'
   - folder: gnEAkqoWLwgvaxae
     name: Magnétisme
     type: capacity
     img: icons/magic/defensive/shield-barrier-blue.webp
-    _id: GcigRcuJzrsuj6mQ
+    _id: Tqg80mz5ZGu1yR3B
     system:
       description: >-
         <p style="text-align:justify">Le forgesort contrôle le magnétisme autour
@@ -2936,10 +2330,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GcigRcuJzrsuj6mQ
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Tqg80mz5ZGu1yR3B
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2956,7 +2350,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GcigRcuJzrsuj6mQ
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Tqg80mz5ZGu1yR3B
               subtype: combat
               target: def
               apply: self
@@ -2988,15 +2382,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496279886
-      modifiedTime: 1758496279913
+      createdTime: 1758925298350
+      modifiedTime: 1758925298399
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.GcigRcuJzrsuj6mQ'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.Tqg80mz5ZGu1yR3B'
   - folder: gnEAkqoWLwgvaxae
     name: Métal hurlant
     type: capacity
     img: icons/magic/fire/flame-burning-skeleton-explosion.webp
-    _id: HkWDzN1cwqTzQbYO
+    _id: 3LA1g7Byhciwlevv
     system:
       description: >-
         <p style="text-align:justify">Sur un test opposé d’attaque magique
@@ -3024,10 +2418,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HkWDzN1cwqTzQbYO
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.3LA1g7Byhciwlevv
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3088,15 +2482,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280004
-      modifiedTime: 1758496280032
+      createdTime: 1758925298451
+      modifiedTime: 1758925298502
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.HkWDzN1cwqTzQbYO'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.3LA1g7Byhciwlevv'
   - folder: gnEAkqoWLwgvaxae
     name: Endurer
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: kDBQgSXGgVJK8jOS
+    _id: 7d14W1AkkpEB2Spw
     system:
       description: >-
         <p>Le forgesort est habitué aux travaux et à la chaleur de la forge. Il
@@ -3116,10 +2510,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.OcbCQJaQOtpIrtHK
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.1zYFe1uAUJuynAv1
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kDBQgSXGgVJK8jOS
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7d14W1AkkpEB2Spw
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3136,7 +2530,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kDBQgSXGgVJK8jOS
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7d14W1AkkpEB2Spw
               subtype: ability
               target: con
               value: '1'
@@ -3144,7 +2538,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kDBQgSXGgVJK8jOS
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7d14W1AkkpEB2Spw
               subtype: bonusDice
               target: con
               value: '0'
@@ -3152,7 +2546,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kDBQgSXGgVJK8jOS
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7d14W1AkkpEB2Spw
               subtype: resource
               target: mp
               value: '@con'
@@ -3184,15 +2578,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280122
-      modifiedTime: 1758496280147
+      createdTime: 1758925298552
+      modifiedTime: 1758925298601
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.kDBQgSXGgVJK8jOS'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.7d14W1AkkpEB2Spw'
   - folder: BwplXWWIY2bJNTlJ
     name: Voie du golem
     type: path
     img: modules/cof-base/assets/voies/forgesort_golem.webp
-    _id: 35ycixNahDHnfOo2
+    _id: NcGokNGxQxh2jx0Z
     system:
       description: >-
         <h2>PARTICULARITÉS LIÉES AU GOLEM</h2>
@@ -3212,15 +2606,15 @@ items:
       subtype: profile
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.JQz2IO1nyBCPm2WY
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q1DZ46ynWCWNlVw2
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.IlDSjv4bO3LPSFLi
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.02LLi6R253ObmTNN
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.zCLx1DL3CEPWPxN2
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.nlM0GwfhMfOZn2bK
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.mqsfsG9NnGjC4t1S
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.7Dfs0fwjmVYjf1RW
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.V3U1Rc7cSM5aJiGG
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.eG5ABtZv18TsPXPM
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -3241,15 +2635,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280280
-      modifiedTime: 1758496280737
+      createdTime: 1758925298728
+      modifiedTime: 1758925299214
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.35ycixNahDHnfOo2'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.NcGokNGxQxh2jx0Z'
   - folder: yKyz7Mw2Tp54PuqT
     name: Grosse tête
     type: capacity
     img: icons/sundries/scrolls/scroll-symbol-eye-brown.webp
-    _id: JQz2IO1nyBCPm2WY
+    _id: q1DZ46ynWCWNlVw2
     system:
       description: >-
         <p style="text-align:justify">Le forgesort remplace la force brutale par
@@ -3279,10 +2673,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.JQz2IO1nyBCPm2WY
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q1DZ46ynWCWNlVw2
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3300,7 +2694,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.JQz2IO1nyBCPm2WY
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q1DZ46ynWCWNlVw2
               subtype: skill
               target: agi
               value: 2 + @rang
@@ -3308,7 +2702,7 @@ items:
               additionalInfos: bricolage/science
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.JQz2IO1nyBCPm2WY
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q1DZ46ynWCWNlVw2
               subtype: skill
               target: int
               value: 2 + @rang
@@ -3316,7 +2710,7 @@ items:
               additionalInfos: bricolage/science
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.JQz2IO1nyBCPm2WY
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.q1DZ46ynWCWNlVw2
               subtype: attribute
               target: hp
               value: '@int - @con'
@@ -3347,15 +2741,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280348
-      modifiedTime: 1758496280376
+      createdTime: 1758925298811
+      modifiedTime: 1758925298870
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.JQz2IO1nyBCPm2WY'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.q1DZ46ynWCWNlVw2'
   - folder: yKyz7Mw2Tp54PuqT
     name: Golem
     type: capacity
     img: icons/creatures/magical/construct-stone-earth-gray.webp
-    _id: IlDSjv4bO3LPSFLi
+    _id: 02LLi6R253ObmTNN
     system:
       description: >-
         <p>Le
@@ -3364,11 +2758,8 @@ items:
         serviteur et de garde du corps. Il comprend des ordres simples, comme
         suivre, attaquer, monter la garde, mais il est incapable d’actions
         complexes ou nécessitant une motricité fine (comme de la couture par
-        exemple !).</p>
-
-        <h2 style="text-align:justify">PARTICULARITÉS LIÉES AU GOLEM</h2>
-
-        <p><strong>Soigner un golem</strong> : le golem ne guérit pas
+        exemple !).</p><h2 style="text-align:justify">PARTICULARITÉS LIÉES AU
+        GOLEM</h2><p><strong>Soigner un golem</strong> : le golem ne guérit pas
         naturellement, mais le forgesort peut le réparer au rythme de [1d6 par
         rang + INT] PV par heure. <strong>Golem à 0 PV </strong>: si le golem
         est réduit à 0 PV, il cesse de fonctionner, mais le forgesort peut le
@@ -3396,15 +2787,16 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.IlDSjv4bO3LPSFLi
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.02LLi6R253ObmTNN
           indice: 0
           label: Soigner le golem
           chatFlavor: ''
-          type: heal
           img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -3415,8 +2807,6 @@ items:
             - predicate: isLearned
           resolvers:
             - type: heal
-              bonusDiceAdd: false
-              malusDiceAdd: false
               skill:
                 formula: (@rang)d6 + @int
               target:
@@ -3426,13 +2816,13 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
               dmg: {}
           modifiers: []
-          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3457,15 +2847,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280465
-      modifiedTime: 1758496280492
+      createdTime: 1758925298923
+      modifiedTime: 1758925298984
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.IlDSjv4bO3LPSFLi'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.02LLi6R253ObmTNN'
   - folder: yKyz7Mw2Tp54PuqT
     name: Protecteur
     type: capacity
     img: icons/creatures/magical/humanoid-silhouette-glowing-pink.webp
-    _id: zCLx1DL3CEPWPxN2
+    _id: nlM0GwfhMfOZn2bK
     system:
       description: >-
         <p>Une fois par round, s’il est au contact d’un personnage, le golem
@@ -3485,7 +2875,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
       actions: []
       cost: -1
       rank: 3
@@ -3511,15 +2901,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280581
-      modifiedTime: 1758496280581
+      createdTime: 1758925299054
+      modifiedTime: 1758925299054
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.zCLx1DL3CEPWPxN2'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.nlM0GwfhMfOZn2bK'
   - folder: yKyz7Mw2Tp54PuqT
     name: Statuette
     type: capacity
     img: icons/commodities/treasure/totem-wood-face-brown.webp
-    _id: mqsfsG9NnGjC4t1S
+    _id: 7Dfs0fwjmVYjf1RW
     system:
       description: >-
         <p style="text-align:justify">Le forgesort transforme son golem en
@@ -3545,7 +2935,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
       actions: []
       cost: -1
       rank: 4
@@ -3571,15 +2961,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280647
-      modifiedTime: 1758496280647
+      createdTime: 1758925299107
+      modifiedTime: 1758925299107
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.mqsfsG9NnGjC4t1S'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.7Dfs0fwjmVYjf1RW'
   - folder: yKyz7Mw2Tp54PuqT
     name: Golem supérieur
     type: capacity
     img: icons/creatures/magical/construct-iron-stomping-yellow.webp
-    _id: V3U1Rc7cSM5aJiGG
+    _id: eG5ABtZv18TsPXPM
     system:
       description: >-
         <p>Le forgesort peut améliorer son golem en choisissant une option parmi
@@ -3631,7 +3021,7 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.35ycixNahDHnfOo2
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.NcGokNGxQxh2jx0Z
       actions: []
       cost: -1
       rank: 5
@@ -3657,15 +3047,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280709
-      modifiedTime: 1758496280709
+      createdTime: 1758925299163
+      modifiedTime: 1758925299163
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.V3U1Rc7cSM5aJiGG'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.eG5ABtZv18TsPXPM'
   - folder: BwplXWWIY2bJNTlJ
     name: Voie des runes
     type: path
     img: modules/cof-base/assets/voies/forgesort_runes.webp
-    _id: fiYW4ZtxtAVndibO
+    _id: hQBSldxD39Yzh4XN
     system:
       description: >-
         <p>Un personnage ne peut porter qu’une seule rune de chaque type sur
@@ -3694,15 +3084,15 @@ items:
       subtype: profile
       capacities:
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Vco3y5C1w6XqZKLj
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.D8adaTnPsjDtm0Jf
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.AOY8ZLzjTSC4sAHr
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.kcIw5GshW2CcXZmE
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HLay7ygQPW4jpPZs
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Tys87Ui8eRDFwqmU
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
         - >-
-          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.dplVB285nv6mStGa
+          Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.dOBf8H9ybF4H86qS
       rank: 1
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -3723,15 +3113,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280840
-      modifiedTime: 1758496314426
+      createdTime: 1758925299266
+      modifiedTime: 1758925315703
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.fiYW4ZtxtAVndibO'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.hQBSldxD39Yzh4XN'
   - folder: bWaDtsaFRmKHvNdG
     name: Runes de défense
     type: capacity
     img: icons/magic/defensive/shield-barrier-flaming-diamond-acid.webp
-    _id: Vco3y5C1w6XqZKLj
+    _id: D8adaTnPsjDtm0Jf
     system:
       description: >-
         <p>Le forgesort inscrit des runes de protection sur l’ensemble de son
@@ -3753,10 +3143,10 @@ items:
       properties:
         spell: false
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Vco3y5C1w6XqZKLj
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.D8adaTnPsjDtm0Jf
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3773,7 +3163,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.Vco3y5C1w6XqZKLj
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.D8adaTnPsjDtm0Jf
               subtype: combat
               target: def
               apply: self
@@ -3805,15 +3195,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496280916
-      modifiedTime: 1758496314394
+      createdTime: 1758925299318
+      modifiedTime: 1758925315672
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.Vco3y5C1w6XqZKLj'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.D8adaTnPsjDtm0Jf'
   - folder: bWaDtsaFRmKHvNdG
     name: Rune de puissance
     type: capacity
     img: icons/magic/symbols/runes-etched-steel-blade.webp
-    _id: AOY8ZLzjTSC4sAHr
+    _id: kcIw5GshW2CcXZmE
     system:
       description: >-
         <p style="text-align:justify">Le forgesort enchante une arme pour 24 h.
@@ -3836,7 +3226,7 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       actions: []
       cost: -1
       rank: 2
@@ -3862,15 +3252,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496281028
-      modifiedTime: 1758496281028
+      createdTime: 1758925299422
+      modifiedTime: 1758925299422
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.AOY8ZLzjTSC4sAHr'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.kcIw5GshW2CcXZmE'
   - folder: bWaDtsaFRmKHvNdG
     name: Rune de protection
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
-    _id: HLay7ygQPW4jpPZs
+    _id: Tys87Ui8eRDFwqmU
     system:
       description: >-
         <p style="text-align:justify">Le forgesort enchante une armure (ou des
@@ -3895,7 +3285,7 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       actions: []
       cost: -1
       rank: 3
@@ -3921,15 +3311,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496281091
-      modifiedTime: 1758496281091
+      createdTime: 1758925299476
+      modifiedTime: 1758925299476
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.HLay7ygQPW4jpPZs'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.Tys87Ui8eRDFwqmU'
   - folder: bWaDtsaFRmKHvNdG
     name: Rune d’énergie
     type: capacity
     img: icons/magic/symbols/runes-star-pentagon-orange.webp
-    _id: HAq40b499E11RBkC
+    _id: GjholwoITgR8g0zf
     system:
       description: >-
         <p>Le forgesort enchante un bijou pour une durée de 24 h. Une fois par
@@ -3954,10 +3344,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
           indice: 0
           label: Activer le sort
           chatFlavor: ''
@@ -3975,7 +3365,7 @@ items:
           resolvers: []
           actionType: none
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
           indice: 1
           label: Dés bonus
           chatFlavor: ''
@@ -3992,7 +3382,7 @@ items:
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: agi
               value: '0'
@@ -4000,7 +3390,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: con
               value: '0'
@@ -4008,7 +3398,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: for
               value: '0'
@@ -4016,7 +3406,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: per
               value: '0'
@@ -4024,7 +3414,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: cha
               value: '0'
@@ -4032,7 +3422,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: int
               value: '0'
@@ -4040,7 +3430,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: vol
               value: '0'
@@ -4048,7 +3438,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: melee
               value: '0'
@@ -4056,7 +3446,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: ranged
               value: '0'
@@ -4064,7 +3454,7 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.HAq40b499E11RBkC
+                Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.GjholwoITgR8g0zf
               subtype: bonusDice
               target: magic
               value: '0'
@@ -4096,15 +3486,15 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496281157
-      modifiedTime: 1758496281189
+      createdTime: 1758925299535
+      modifiedTime: 1758925299589
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.HAq40b499E11RBkC'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.GjholwoITgR8g0zf'
   - folder: bWaDtsaFRmKHvNdG
     name: Rune de garde
     type: capacity
     img: icons/magic/light/projectile-beam-yellow.webp
-    _id: dplVB285nv6mStGa
+    _id: dOBf8H9ybF4H86qS
     system:
       description: >-
         <p style="text-align:justify">En réalisant un rituel de 10 min, le
@@ -4142,10 +3532,10 @@ items:
       properties:
         spell: true
       path: >-
-        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.fiYW4ZtxtAVndibO
+        Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.hQBSldxD39Yzh4XN
       actions:
         - source: >-
-            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.dplVB285nv6mStGa
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.dOBf8H9ybF4H86qS
           indice: 0
           label: Activation du sort
           chatFlavor: ''
@@ -4186,12 +3576,674 @@ items:
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: 1758496281278
-      modifiedTime: 1758496281309
+      createdTime: 1758925299674
+      modifiedTime: 1758925299755
       lastModifiedBy: LEtUoNWt5mYBIjrk
-    _key: '!actors.items!okBtDNj2D0PUkVHJ.dplVB285nv6mStGa'
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.dOBf8H9ybF4H86qS'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Marteau
+    type: equipment
+    img: icons/weapons/hammers/hammer-double-engraved-gold.webp
+    _id: LZdET6tDVjMG4tuk
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: marteau
+      tags: []
+      subtype: weapon
+      martialCategory: hammer
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.LZdET6tDVjMG4tuk
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: true
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100004
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.BxOAk452unZ7zWOG
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925395964
+      modifiedTime: 1758925399044
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.LZdET6tDVjMG4tuk'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: odwzEbs8n0nielnh
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.okBtDNj2D0PUkVHJ.Item.odwzEbs8n0nielnh
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925398205
+      modifiedTime: 1758925398243
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.odwzEbs8n0nielnh'
+  - folder: vF1ugDhEx97jpuSd
+    name: Cuir simple
+    type: equipment
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    _id: 5G73JRZRqZMDOqVR
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925408206
+      modifiedTime: 1758925409043
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.5G73JRZRqZMDOqVR'
+  - folder: Um3g0UnqzSidTvlT
+    name: Sac à dos
+    type: equipment
+    img: icons/containers/bags/pack-leather-red.webp
+    _id: vkazdnJTpL49e9s8
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: sac-a-dos
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 2000000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925419808
+      modifiedTime: 1758925419808
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.vkazdnJTpL49e9s8'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: I23kODVGgthEdMPF
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925423882
+      modifiedTime: 1758925423882
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.I23kODVGgthEdMPF'
+  - folder: Um3g0UnqzSidTvlT
+    name: Torche
+    type: equipment
+    img: icons/sundries/lights/torch-brown.webp
+    _id: hfWxuUY3x7CwLaGT
+    system:
+      description: >-
+        <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
+        h pour une torche ou 6 h pour une lanterne (1 dose d’huile).</p>
+      source: ''
+      origin: ''
+      slug: torche
+      tags: []
+      subtype: misc
+      martialCategory: paddedClothFur
+      damagetype: ''
+      quantity:
+        current: 3
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 2100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925425781
+      modifiedTime: 1758925425781
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.hfWxuUY3x7CwLaGT'
+  - folder: Um3g0UnqzSidTvlT
+    name: Briquet à silex
+    type: equipment
+    img: icons/commodities/stone/geode-raw-black.webp
+    _id: PxoJEIwpMin3OFeK
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: briquet-a-silex
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925428976
+      modifiedTime: 1758925428976
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.PxoJEIwpMin3OFeK'
+  - folder: Um3g0UnqzSidTvlT
+    name: Outre
+    type: equipment
+    img: icons/sundries/survival/wetskin-leather-purple.webp
+    _id: D6VMftAhHC0d8GVJ
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: outre
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925432579
+      modifiedTime: 1758925432579
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.D6VMftAhHC0d8GVJ'
+  - folder: Um3g0UnqzSidTvlT
+    name: Gamelle
+    type: equipment
+    img: icons/containers/kitchenware/bowl-clay-brown.webp
+    _id: F8X2njG10jBc5Rsl
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: gamelle
+      subtype: misc
+      tags: []
+      martialCategory: ''
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925437695
+      modifiedTime: 1758925437695
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!okBtDNj2D0PUkVHJ.F8X2njG10jBc5Rsl'
 effects: []
-sort: 1300000
+sort: 393750
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -4205,7 +4257,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
-  modifiedTime: 1758496417928
+  modifiedTime: 1758925550288
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!okBtDNj2D0PUkVHJ'

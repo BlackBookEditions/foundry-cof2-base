@@ -128,20 +128,20 @@ system:
         <p>Aussi appelé requin terrestre, le geoselachis est un prédateur
         puissant et très dangereux capable de s’enterrer pour surprendre sa
         proie. Imaginez une taupe géante dotée d’un exosquelette impénétrable,
-        de la m&acirc;choire d’un grand requin et enfin de la puissance et de la
-        capacité &agrave; encorner d’un rhinocéros et vous aurez un
-        aper&ccedil;u de cette machine &agrave; tuer&hellip; Les multiples dents
-        triangulaires qui constituent la m&acirc;choire du geoselachis sont
-        autant de cristaux transparents semblables &agrave; des diamants. La
-        créature possède 50+1d60 dents récupérables (les autres sont en mauvais
-        état), il faut environ 1 min pour retirer une dent sur son cadavre et
-        chaque dent vaut environ 1 pa. Elles sont utilisées pour concevoir des
-        outils tranchants, en particulier dans les tribus du désert qui n’ont
-        pas d’accès &agrave; la manufacture de métaux. Chasseur de geoselachis
-        est un des plus dangereux métiers du monde.</p>
+        de la mâchoire d’un grand requin et enfin de la puissance et de la
+        capacité à encorner d’un rhinocéros et vous aurez un aperçu de cette
+        machine à tuer… </p><p>Les multiples dents triangulaires qui constituent
+        la mâchoire du geoselachis sont autant de cristaux transparents
+        semblables à des diamants. La créature possède 50+1d60 dents
+        récupérables (les autres sont en mauvais état), il faut environ 1 min
+        pour retirer une dent sur son cadavre et chaque dent vaut environ 1 pa.
+        Elles sont utilisées pour concevoir des outils tranchants, en
+        particulier dans les tribus du désert qui n’ont pas d’accès à la
+        manufacture de métaux. Chasseur de geoselachis est un des plus dangereux
+        métiers du monde.</p>
     languages: []
     properties: >-
-      <p><strong>DéPLACEMENT SOUS TERRE</strong></p><p>Le geoselachis est
+      <p><strong>DÉPLACEMENT SOUS TERRE</strong></p><p>Le geoselachis est
       capable de parcourir 5 m par action de mouvement en creusant dans un sol
       meuble (le tunnel s’effondre derrière lui).</p>
   currentEffects: []
@@ -314,7 +314,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: FCH2Kna3mi8cOFmb
+    _id: vvSptkBzLYHdE8IK
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -323,13 +323,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -345,12 +342,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.HywdhCoFa3G8sSDo.Item.FCH2Kna3mi8cOFmb
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.vvSptkBzLYHdE8IK
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -361,16 +360,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.HywdhCoFa3G8sSDo.Item.FCH2Kna3mi8cOFmb
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.vvSptkBzLYHdE8IK
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -384,43 +382,38 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!LnHdFSZHwjtCvJFa.FCH2Kna3mi8cOFmb'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847632051
+      modifiedTime: 1758847662170
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!LnHdFSZHwjtCvJFa.vvSptkBzLYHdE8IK'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
     img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     system:
-      description: >-
-        <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire un test de<strong> PER difficulté
-        15</strong> ou être surprise.</p>
-
-        <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d6 DM </strong>et toute créature dont la <strong>FOR est
-        inférieure à la sienne est renversée</strong>. La créature obtient un
-        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      description: "<p>Au premier round de combat, si l’environnement permet de se dissimuler, la cible doit faire un test de<strong> PER difficulté 15\_</strong>ou être surprise.</p><p>Si elle attaque avec succès une cible surprise, la créature inflige <strong>+1d6 DM </strong>et toute créature dont la <strong>FOR est inférieure à la sienne est renversée</strong>. La créature obtient un bonus de <strong>+5 à tous les tests de discrétion</strong></p>"
       source: ''
       origin: ''
       slug: embuscade
@@ -435,15 +428,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.HywdhCoFa3G8sSDo.Item.rKCRDSJVAOIuM7JM
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.YrE1GRLTAuuahcmF
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -451,28 +446,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.HywdhCoFa3G8sSDo.Item.rKCRDSJVAOIuM7JM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.YrE1GRLTAuuahcmF
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.HywdhCoFa3G8sSDo.Item.rKCRDSJVAOIuM7JM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.YrE1GRLTAuuahcmF
               subtype: combat
               target: damMelee
+              value: 1d6
               apply: self
-              value: 1d4
               additionalInfos: ''
             - type: capacity
-              source: Actor.HywdhCoFa3G8sSDo.Item.rKCRDSJVAOIuM7JM
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LnHdFSZHwjtCvJFa.Item.YrE1GRLTAuuahcmF
               subtype: combat
               target: damRanged
+              value: 1d6
               apply: self
-              value: 1d4
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -482,20 +481,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: rKCRDSJVAOIuM7JM
-    sort: 5300000
-    _key: '!actors.items!LnHdFSZHwjtCvJFa.rKCRDSJVAOIuM7JM'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847637624
+      modifiedTime: 1758847701706
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: YrE1GRLTAuuahcmF
+    sort: 6000000
+    _key: '!actors.items!LnHdFSZHwjtCvJFa.YrE1GRLTAuuahcmF'
   - folder: Jc9oocmI3B4cVSRG
     name: Encorner
     type: capacity
@@ -520,6 +520,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -529,20 +530,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.zz51XJoOzPs13PhL
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: KHjXJOJalLUWOEtW
-    sort: 3700000
-    _key: '!actors.items!LnHdFSZHwjtCvJFa.KHjXJOJalLUWOEtW'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847639451
+      modifiedTime: 1758847639451
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: O6uKG91TbAJuXLtG
+    sort: 4400000
+    _key: '!actors.items!LnHdFSZHwjtCvJFa.O6uKG91TbAJuXLtG'
 effects: []
 ownership:
   default: 0
@@ -555,9 +557,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749354229255
-  modifiedTime: 1758488041362
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: LnHdFSZHwjtCvJFa
-sort: 2500000
+sort: 900000
 _key: '!actors!LnHdFSZHwjtCvJFa'

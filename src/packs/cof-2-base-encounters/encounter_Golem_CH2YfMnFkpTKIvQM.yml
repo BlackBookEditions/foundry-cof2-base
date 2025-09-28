@@ -122,10 +122,10 @@ system:
       private: ''
       public: ''
     notes:
-      private: ''
-      public: ''
+      private: "<h4>Capacité pour le Rang 4 Statuette :</h4><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.kIXYkxzIbger7dIc]{Statuette}</p><h4>Capacités pour le Golem supérieur Rang 5 :\_</h4><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.ljGMKdT2wSwzpLXv]{Arme à deux mains}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.gKOfiTVBcrJkjtUk]{Armure}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.fKApma8cDAsqdV02]{Baliste}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.pbLtV4CjKiAROkMy]{Cerveau Amélioré}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.IlkAIq7wvp7soPmJ]{Forme de Félin}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.oudVVeasfS9dpc3L]{Grande Taille}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.ugSxkmybbWzN0sQM]{Puissant}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.22sh33wQB4mZACLT]{Runes de défenses}</p><p>@UUID[Compendium.cof-base.cof-2-base-items.Item.CAdniHmuOPNIFRgr]{Vol}</p>"
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.Ah0oxBud5khPB9eM]{Voie du golem} - Rang 2 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.pvCXRzRU4u0IlLxJ]{Golem}</p><p>Le Golem est une créature humanoïde fabriquée par le forgesort pour lui servir de serviteur et de garde du corps. Il comprend des ordres simples, comme suivre, attaquer, monter la garde, mais il est incapable d’actions complexes ou nécessitant une motricité fine (comme de la couture par exemple !).</p><h4>PARTICULARITÉS LIÉES AU GOLEM</h4><p><strong>Soigner un golem</strong> : le golem ne guérit pas naturellement, mais le forgesort peut le réparer au rythme de [1d6 par rang + INT] PV par heure. <strong>Golem à 0 PV </strong>: si le golem est réduit à 0 PV, il cesse de fonctionner, mais le forgesort peut le réparer. <strong>Mort d’un golem : </strong>si le golem est détruit ou perdu, le forgesort peut en construire un nouveau en 1d6 + 3 jours (+1d6 jours par amélioration de golem supérieur). Un forgesort peut utiliser tous les matériaux à sa disposition dans son environnement, par exemple pierre et bois s’il est dans une forêt.</p>"
     languages: []
-    properties: ''
+    properties: "<ol><li><p>\_- Défense =\_<strong>[10 + rang]</strong><br>\_- Points de vigueur =\_<strong>[Niveau x 5]</strong><br>\_- Initiative =\_<strong>[initiative]</strong></p></li><li><p>\_- Attaque = <strong>[Attaque magique] - DM 1d4° +1</strong></p></li></ol>"
   magic: 0
   currentEffects: []
 prototypeToken:
@@ -216,7 +216,7 @@ items:
     img: icons/svg/sword.svg
     _id: PMJP63I2HryFihxf
     system:
-      description: <p>Une frappe de golem (créature crée par un forgesort)</p>
+      description: ''
       source: ''
       origin: ''
       slug: frappe-de-golem
@@ -233,8 +233,9 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -260,7 +261,6 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -285,12 +285,12 @@ items:
     _stats:
       compendiumSource: Item.NnNOFHX55z4AEKTN
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758917700097
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!CH2YfMnFkpTKIvQM.PMJP63I2HryFihxf'
 effects: []
@@ -306,9 +306,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1745654451487
-  modifiedTime: 1758489290192
+  modifiedTime: 1758918098823
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!CH2YfMnFkpTKIvQM'

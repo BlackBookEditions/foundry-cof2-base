@@ -24,7 +24,7 @@ system:
         sheet: 0
         effects: 0
     per:
-      superior: false
+      superior: true
       base: 0
       bonuses:
         sheet: 0
@@ -68,7 +68,7 @@ system:
       bonuses:
         sheet: 0
         effects: 0
-    nc: 0
+    nc: 1
   combat:
     init:
       base: 13
@@ -123,7 +123,37 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: >-
+        <p><span style="box-sizing: border-box; margin: 0.5rem 0px;
+        scrollbar-width: thin; scrollbar-color: var(--color-scrollbar)
+        var(--color-scrollbar-track); color: rgb(239, 230, 216); font-family:
+        Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px;
+        font-style: normal; font-variant-ligatures: normal; font-variant-caps:
+        normal; font-weight: 400; letter-spacing: normal; orphans: 2;
+        text-align: start; text-indent: 0px; text-transform: none; widows: 2;
+        word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal;
+        background-color: rgba(11, 10, 19, 0.9); text-decoration-thickness:
+        initial; text-decoration-style: initial; text-decoration-color:
+        initial">Ce profil regroupe les différents types de bandits et de
+        brigands croisés sur les routes ainsi que les bandes de pillards ou les
+        soldats démobilisés appelés écorcheurs. Vous trouverez également,dans la
+        section des PNJ, des escrimeurs qui peuvent correspondre à des profils
+        avancés de ce type d’adversaires.</span></p><p><span style="box-sizing:
+        border-box; margin: 0.5rem 0px; scrollbar-width: thin; scrollbar-color:
+        var(--color-scrollbar) var(--color-scrollbar-track); color: rgb(239,
+        230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;,
+        sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures:
+        normal; font-variant-caps: normal; font-weight: 400; letter-spacing:
+        normal; orphans: 2; text-align: start; text-indent: 0px; text-transform:
+        none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;
+        white-space: normal; background-color: rgba(11, 10, 19, 0.9);
+        text-decoration-thickness: initial; text-decoration-style: initial;
+        text-decoration-color: initial">Un bandit vétéran peut servir de chef à
+        un groupe de petites frappes (augmentez son CHA de +1). Un bandit
+        vétéran accompagné de 4 bandits est une rencontre assez difficile (entre
+        ordinaire et difficile) pour un groupe de niveau 2. Un chef bandit, ses
+        deux lieutenants (vétérans) et huit bandits forment une rencontre
+        difficile de niveau 3 ou une rencontre ordinaire de niveau 4.</span></p>
     languages: []
     properties: ''
   magic: 0
@@ -339,54 +369,117 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!nV1pNVNNJNP36Qjn.dVoVxnmWvA8DMB9U'
-  - folder: uVNfyNGbfZsNuFix
-    name: Embuscade
-    type: capacity
-    img: icons/svg/combat.svg
-    _id: gBSh9TwWqeSkzKy1
+  - folder: E0IHxlFlZyFSfQGY
+    name: Arc court
+    type: equipment
+    img: icons/weapons/bows/shortbow-arrows-black.webp
+    _id: pr1IfsspH4eRMnwu
     system:
-      description: >-
-        <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire un test de<strong> PER difficulté
-        16</strong> ou être surprise.</p>
+      description: ''
       source: ''
       origin: ''
-      slug: embuscade
-      subtype: ''
-      actionType: none
-      learned: true
+      slug: arc-court
+      tags: []
+      subtype: weapon
+      martialCategory: shortBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
       charges:
-        current: null
+        current: 20
         max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
       properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      frequency: none
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 30
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
     effects: []
-    sort: 0
+    sort: 1200000
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.90rhvbVowzwfzz8D
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!nV1pNVNNJNP36Qjn.gBSh9TwWqeSkzKy1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842720954
+      modifiedTime: 1758842720954
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!nV1pNVNNJNP36Qjn.pr1IfsspH4eRMnwu'
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
-    img: icons/svg/item-bag.svg
-    _id: L6Za7utPWPudlwAJ
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: wfl6OuulMGgrFoOh
     system:
       description: ''
       source: ''
@@ -420,162 +513,267 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.nV1pNVNNJNP36Qjn.Item.L6Za7utPWPudlwAJ
+        - source: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
           indice: 0
-          label: Epée longue
-          chatFlavor: Epée longue
-          type: melee
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: false
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d8
+                formula: 1d8 + @for
               target:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-          conditions:
-            - predicate: isEquipped
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
-      defense: null
-      magicalDefense: null
       range:
+        unit: ''
         base: 0
         ability: null
         details: null
-        unit: null
         min: null
         max: null
         bonuses:
           sheet: 0
           effects: 0
-        value: null
     effects: []
     sort: 103125
     ownership:
-      default: 2
+      default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.QIHJs2vncOYtsEX2
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!nV1pNVNNJNP36Qjn.L6Za7utPWPudlwAJ'
-  - folder: E0IHxlFlZyFSfQGY
-    name: Arc court
-    type: equipment
-    img: icons/svg/item-bag.svg
-    _id: cXIHUu6HBWOdJhxE
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842732521
+      modifiedTime: 1758842732521
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!nV1pNVNNJNP36Qjn.wfl6OuulMGgrFoOh'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: HxbJFbjnGgYRMKdc
     system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: arc-court
-      tags: []
-      subtype: weapon
-      martialCategory: shortBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
       charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 4
-        unit: ''
-      rarity: common
-      equipped: false
+        current: 0
+        max: 0
       properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
       actions:
-        - source: Actor.nV1pNVNNJNP36Qjn.Item.cXIHUu6HBWOdJhxE
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.HxbJFbjnGgYRMKdc
           indice: 0
-          label: Arc court
-          chatFlavor: Arc court
-          type: ranged
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.HxbJFbjnGgYRMKdc
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
           resolvers:
-            - type: attack
-              skill:
-                formula: '@ran'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6
+            - type: buffDebuff
               target:
-                type: none
-                number: 0
+                type: single
                 scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
-      default: 2
+      default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.qTYcU22ZD6OainA8
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!nV1pNVNNJNP36Qjn.cXIHUu6HBWOdJhxE'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842740818
+      modifiedTime: 1758842756465
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!nV1pNVNNJNP36Qjn.HxbJFbjnGgYRMKdc'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Embuscade
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    system:
+      description: >-
+        <p>Au premier round de combat, si l’environnement permet de se
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
+        16</strong> ou être surprise.</p>
+
+        <p>Si elle attaque avec succès une cible surprise, la créature inflige
+        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
+        inférieure à la sienne est renversée</strong>. La créature obtient un
+        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      source: ''
+      origin: ''
+      slug: embuscade
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.ieOukesX5DIe2X47
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.ieOukesX5DIe2X47
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.ieOukesX5DIe2X47
+              subtype: combat
+              target: damMelee
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.nV1pNVNNJNP36Qjn.Item.ieOukesX5DIe2X47
+              subtype: combat
+              target: damRanged
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842746157
+      modifiedTime: 1758842752331
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: ieOukesX5DIe2X47
+    sort: 6000000
+    _key: '!actors.items!nV1pNVNNJNP36Qjn.ieOukesX5DIe2X47'
 effects: []
 sort: 0
 ownership:
@@ -587,9 +785,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758488165405
+  modifiedTime: 1758842790597
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!nV1pNVNNJNP36Qjn'

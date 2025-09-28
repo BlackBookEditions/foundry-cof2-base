@@ -117,7 +117,7 @@ system:
   magic: 0
   pasteData: ''
   details:
-    category: humanoid
+    category: living
     size: medium
     description:
       private: ''
@@ -126,8 +126,8 @@ system:
       private: ''
       public: >-
         <p>Les worgs sont des cousins maléfiques des loups, plus puissants
-        (jusqu’&agrave; 150 kg) et plus intelligents. Ils comprennent le noir
-        parler et ils servent parfois de monture aux gobelins</p>
+        (jusqu’à 150 kg) et plus intelligents. Ils comprennent le noir parler et
+        ils servent parfois de monture aux gobelins</p>
     languages: []
     properties: ''
   currentEffects: []
@@ -300,7 +300,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: ITBRMPo3Yta1HC8k
+    _id: uvS8BXG0LXaEIUsb
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -309,13 +309,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -331,12 +328,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.T1qTAuRGlQxdEiYf.Item.ITBRMPo3Yta1HC8k
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.uvS8BXG0LXaEIUsb
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -347,16 +346,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.T1qTAuRGlQxdEiYf.Item.ITBRMPo3Yta1HC8k
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.uvS8BXG0LXaEIUsb
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -370,29 +368,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!xoBAF4ep7SIkgBW9.ITBRMPo3Yta1HC8k'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910512552
+      modifiedTime: 1758910529206
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!xoBAF4ep7SIkgBW9.uvS8BXG0LXaEIUsb'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
@@ -421,15 +422,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.T1qTAuRGlQxdEiYf.Item.aqZZQHwdWPC97QnS
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.mqrN4UE5UvvPCsqo
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -437,28 +440,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.T1qTAuRGlQxdEiYf.Item.aqZZQHwdWPC97QnS
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.mqrN4UE5UvvPCsqo
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.T1qTAuRGlQxdEiYf.Item.aqZZQHwdWPC97QnS
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.mqrN4UE5UvvPCsqo
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.T1qTAuRGlQxdEiYf.Item.aqZZQHwdWPC97QnS
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.xoBAF4ep7SIkgBW9.Item.mqrN4UE5UvvPCsqo
               subtype: combat
               target: damRanged
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -468,20 +475,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: aqZZQHwdWPC97QnS
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910518240
+      modifiedTime: 1758910537988
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: mqrN4UE5UvvPCsqo
     sort: 6000000
-    _key: '!actors.items!xoBAF4ep7SIkgBW9.aqZZQHwdWPC97QnS'
+    _key: '!actors.items!xoBAF4ep7SIkgBW9.mqrN4UE5UvvPCsqo'
   - folder: Jc9oocmI3B4cVSRG
     name: Brise-genou
     type: capacity
@@ -508,6 +516,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -517,20 +526,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: NPpfbEcUSVxP9vcY
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910522605
+      modifiedTime: 1758910522605
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Ddkf1BlDoWIhoyVC
     sort: 9300000
-    _key: '!actors.items!xoBAF4ep7SIkgBW9.NPpfbEcUSVxP9vcY'
+    _key: '!actors.items!xoBAF4ep7SIkgBW9.Ddkf1BlDoWIhoyVC'
 effects: []
 ownership:
   default: 0
@@ -541,11 +551,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749373993602
-  modifiedTime: 1758487714615
+  modifiedTime: 1758910575699
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: xoBAF4ep7SIkgBW9
-sort: 0
+sort: 3999219
 _key: '!actors!xoBAF4ep7SIkgBW9'

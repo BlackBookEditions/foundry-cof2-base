@@ -297,92 +297,221 @@ items:
     _id: uV83V1zfk1DPF98i
     sort: 300000
     _key: '!actors.items!kQ14m8aGJzAdcAk7.uV83V1zfk1DPF98i'
-  - folder: uVNfyNGbfZsNuFix
-    name: Sencible à la lumière
-    type: capacity
-    img: icons/magic/light/orb-beams-green.webp
-    _id: UpNShLrZxKNfas84
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hache
+    type: equipment
+    img: icons/weapons/axes/axe-battle-black.webp
+    _id: AdJ5VHEK3avgkqkn
     system:
-      description: "<p>Créatures souterraines, les orcs détestent la lumière du jour. La lumière du soleil leur inflige un dé malus en attaque</p>\n<blockquote>\n<p><strong>Usage en jeu :\_</strong></p>\n<p>Activr le bouton si le combat se déroule à la lumière du jour</p>\n</blockquote>"
+      description: ''
       source: ''
-      origin: Livre des règles p293
-      slug: sencible-a-la-lumiere
-      subtype: ''
-      actionType: none
-      learned: true
+      origin: ''
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
       charges:
         current: null
         max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 6
+        unit: pa
+      rarity: common
+      equipped: false
       properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
       actions:
-        - source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
+        - source: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
           indice: 0
           label: ''
           chatFlavor: ''
-          type: debuff
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
-            temporary: true
+            temporary: false
             noManaCost: false
           conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
-              subtype: malusDice
-              target: melee
-              apply: self
-              value: '0'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
-              subtype: malusDice
-              target: ranged
-              apply: self
-              value: '0'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.kEUY2udtm80ZsmJJ.Item.UpNShLrZxKNfas84
-              subtype: malusDice
-              target: magic
-              apply: self
-              value: '0'
-              additionalInfos: ''
-          resolvers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
     effects: []
-    sort: 0
+    sort: 100098
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.3R9naJl7Jt5Z54gT
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!kQ14m8aGJzAdcAk7.UpNShLrZxKNfas84'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891408983
+      modifiedTime: 1758891408983
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!kQ14m8aGJzAdcAk7.AdJ5VHEK3avgkqkn'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Masse
+    type: equipment
+    img: icons/weapons/hammers/hammer-double-simple.webp
+    _id: NwK5KQlfmZGtGSOp
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: masse
+      tags: []
+      subtype: weapon
+      martialCategory: mace
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.yEXTX4LgPIPmeJat
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100002
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yEXTX4LgPIPmeJat
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891410661
+      modifiedTime: 1758891410661
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!kQ14m8aGJzAdcAk7.NwK5KQlfmZGtGSOp'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: RlRq17OxeL3RyGNa
+    _id: FUsd5I7AJJ6E0PZ6
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -391,13 +520,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -413,12 +539,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.kEUY2udtm80ZsmJJ.Item.RlRq17OxeL3RyGNa
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.FUsd5I7AJJ6E0PZ6
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -429,16 +557,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.kEUY2udtm80ZsmJJ.Item.RlRq17OxeL3RyGNa
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.FUsd5I7AJJ6E0PZ6
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -452,29 +579,122 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!kQ14m8aGJzAdcAk7.RlRq17OxeL3RyGNa'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891416608
+      modifiedTime: 1758891427795
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!kQ14m8aGJzAdcAk7.FUsd5I7AJJ6E0PZ6'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Sensible à la lumière
+    type: capacity
+    img: icons/magic/light/orb-beams-green.webp
+    system:
+      description: >-
+        <p>Créatures souterraines, les orcs détestent la lumière du jour. La
+        lumière du soleil leur inflige un dé malus en attaque</p>
+      inGame: <p>Activer le bouton si le combat se déroule à la lumière du jour</p>
+      source: ''
+      origin: Livre des règles p293
+      slug: sencible-a-la-lumiere
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.kQ5EdgcwWvtnM8bx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.kQ5EdgcwWvtnM8bx
+              subtype: malusDice
+              target: melee
+              value: '0'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.kQ5EdgcwWvtnM8bx
+              subtype: malusDice
+              target: ranged
+              value: '0'
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.kQ14m8aGJzAdcAk7.Item.kQ5EdgcwWvtnM8bx
+              subtype: malusDice
+              target: magic
+              value: '0'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iXXuTV4Ox0Eizldn
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891421961
+      modifiedTime: 1758891431415
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: kQ5EdgcwWvtnM8bx
+    sort: 700000
+    _key: '!actors.items!kQ14m8aGJzAdcAk7.kQ5EdgcwWvtnM8bx'
 effects: []
 ownership:
   default: 0
@@ -487,9 +707,9 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749371362186
-  modifiedTime: 1758487320095
+  modifiedTime: 1758850526244
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: kQ14m8aGJzAdcAk7
-sort: 100000
+sort: 3100000
 _key: '!actors!kQ14m8aGJzAdcAk7'

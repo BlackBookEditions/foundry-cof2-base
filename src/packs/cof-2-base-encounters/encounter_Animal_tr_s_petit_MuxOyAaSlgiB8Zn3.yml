@@ -122,7 +122,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Exemple\_: chat</p>"
     languages: []
     properties: ''
   magic: 0
@@ -273,6 +273,186 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!MuxOyAaSlgiB8Zn3.S8JgcJ5dK6G0ojLU'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Très petit
+    type: capacity
+    img: icons/creatures/mammals/rodent-rat-diseaed-gray.webp
+    system:
+      description: >-
+        <p>La créature obtient un bonus de +10 aux tests d’escalade et de
+        discrétion</p>
+      source: ''
+      origin: ''
+      slug: tres-petit
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.MuxOyAaSlgiB8Zn3.Item.41bTv6RnueByAil0
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            activable: false
+            enabled: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MuxOyAaSlgiB8Zn3.Item.41bTv6RnueByAil0
+              subtype: skill
+              target: agi
+              value: '5'
+              additionalInfos: Escalade/Discrétion
+              apply: self
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MuxOyAaSlgiB8Zn3.Item.41bTv6RnueByAil0
+              subtype: skill
+              target: for
+              value: '5'
+              additionalInfos: Escalade/Discrétion
+              apply: self
+          resolvers: []
+          actionType: none
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mvy25IMIR67VFwpc
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839150867
+      modifiedTime: 1758839150883
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 41bTv6RnueByAil0
+    sort: 7800000
+    _key: '!actors.items!MuxOyAaSlgiB8Zn3.41bTv6RnueByAil0'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: xDvM1CazawW68tvy
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.MuxOyAaSlgiB8Zn3.Item.xDvM1CazawW68tvy
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.MuxOyAaSlgiB8Zn3.Item.xDvM1CazawW68tvy
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840291694
+      modifiedTime: 1758841202958
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!MuxOyAaSlgiB8Zn3.xDvM1CazawW68tvy'
 effects: []
 sort: 1400000
 ownership:
@@ -284,9 +464,9 @@ _stats:
   duplicateSource: Actor.0NOadv5qnk0lZqAq
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454179561
-  modifiedTime: 1758490624168
+  modifiedTime: 1758839168247
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: MuxOyAaSlgiB8Zn3

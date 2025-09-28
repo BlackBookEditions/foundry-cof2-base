@@ -118,13 +118,26 @@ system:
   pasteData: ''
   details:
     category: undead
-    size: medium
+    size: large
     description:
       private: ''
       public: ''
     notes:
       private: ''
-      public: <p>Un squelette d’ogre ou de troll de presque 3 m de haut&hellip;</p>
+      public: >-
+        <p><span style="color: rgb(239, 230, 216); font-family: Signika,
+        &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style:
+        normal; font-variant-ligatures: normal; font-variant-caps: normal;
+        font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start;
+        text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px;
+        -webkit-text-stroke-width: 0px; white-space: normal; background-color:
+        rgba(11, 10, 19, 0.9); text-decoration-thickness: initial;
+        text-decoration-style: initial; text-decoration-color: initial; display:
+        inline !important; float: none">En animant par magie les ossements d’une
+        créature défunte, on obtient un mort‑vivant assez fragile appelé le
+        squelette. Un squelette est une créature sans cervelle immunisée à toute
+        forme d’attaque mentale. Et non, il ne parle pas !</span></p><p>Un
+        squelette d’ogre ou de troll de presque 3 m de haut…</p>
     languages: []
     properties: >-
       <p><strong>SANS ESPRIT :</strong> Aucune âme n’habite la carcasse morte,
@@ -136,8 +149,8 @@ prototypeToken:
   actorLink: false
   appendNumber: false
   prependAdjective: false
-  width: 1
-  height: 1
+  width: 2
+  height: 2
   texture:
     src: modules/cof-base/assets/rencontres/squelette.webp
     anchorX: 0.5
@@ -514,6 +527,112 @@ items:
     _id: 6OAXD1PqiaYvBOTk
     sort: 600000
     _key: '!actors.items!aYEiatVvUnJUKZje.6OAXD1PqiaYvBOTk'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Massue à deux mains
+    type: equipment
+    img: icons/weapons/clubs/club-simple-barbed-grey.webp
+    _id: BSmgQB5LmRIRnC4b
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: marteau
+      tags: []
+      subtype: weapon
+      martialCategory: hammer
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.BxOAk452unZ7zWOG
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+    effects: []
+    sort: 100004
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.BxOAk452unZ7zWOG
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758893068668
+      modifiedTime: 1758893107307
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!aYEiatVvUnJUKZje.BSmgQB5LmRIRnC4b'
 effects: []
 ownership:
   default: 0
@@ -526,9 +645,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749373046066
-  modifiedTime: 1758487748909
+  modifiedTime: 1758893124573
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: aYEiatVvUnJUKZje
-sort: 900000
+sort: 3975000
 _key: '!actors!aYEiatVvUnJUKZje'

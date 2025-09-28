@@ -17,7 +17,7 @@ system:
         sheet: 0
         effects: 0
     for:
-      superior: false
+      superior: true
       base: 8
       bonuses:
         sheet: 0
@@ -300,7 +300,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 7ArDGTMGAH8ch7Uv
+    _id: flRFzZJGUwhlM7tx
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -309,13 +309,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -331,12 +328,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.lS2eCtdSasqZKsNI.Item.7ArDGTMGAH8ch7Uv
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.flRFzZJGUwhlM7tx
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -347,16 +346,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.lS2eCtdSasqZKsNI.Item.7ArDGTMGAH8ch7Uv
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.flRFzZJGUwhlM7tx
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -370,29 +368,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!iOYgXmiCOXtBAVKt.7ArDGTMGAH8ch7Uv'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841504500
+      modifiedTime: 1758841531584
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!iOYgXmiCOXtBAVKt.flRFzZJGUwhlM7tx'
   - folder: Jc9oocmI3B4cVSRG
     name: Charge
     type: capacity
@@ -400,10 +401,11 @@ items:
     system:
       description: >-
         <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 16 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
+        attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en
+        plus des DM normaux, une victime de taille inférieure ou égale à la
+        créature, doit faire un <strong>test de FOR difficulté 13</strong> ou
+        être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche)
+        sa victime et les <strong>DM sont doublés</strong>.</p>
       source: ''
       origin: ''
       slug: charge
@@ -418,12 +420,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.lS2eCtdSasqZKsNI.Item.kdEkUAKNwfsPJwF3
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.G73INZa8NBD92Kfu
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -449,12 +453,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -464,20 +468,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: kdEkUAKNwfsPJwF3
-    sort: 5300000
-    _key: '!actors.items!iOYgXmiCOXtBAVKt.kdEkUAKNwfsPJwF3'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841511815
+      modifiedTime: 1758841528025
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: G73INZa8NBD92Kfu
+    sort: 7500000
+    _key: '!actors.items!iOYgXmiCOXtBAVKt.G73INZa8NBD92Kfu'
   - folder: Jc9oocmI3B4cVSRG
     name: Dévorer
     type: capacity
@@ -502,6 +507,7 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -511,20 +517,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: tPkqiGKxypf6YaaG
-    sort: 6900000
-    _key: '!actors.items!iOYgXmiCOXtBAVKt.tPkqiGKxypf6YaaG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841514720
+      modifiedTime: 1758841514720
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: qPyhbZxl3NTQL55k
+    sort: 9100000
+    _key: '!actors.items!iOYgXmiCOXtBAVKt.qPyhbZxl3NTQL55k'
   - folder: Jc9oocmI3B4cVSRG
     name: Enragé
     type: capacity
@@ -550,36 +557,41 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.lS2eCtdSasqZKsNI.Item.XWh4v87txPyPeP82
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.oEaAl2tvRiiV1UFF
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.lS2eCtdSasqZKsNI.Item.XWh4v87txPyPeP82
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.oEaAl2tvRiiV1UFF
               subtype: combat
               target: melee
               value: '3'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.lS2eCtdSasqZKsNI.Item.XWh4v87txPyPeP82
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.iOYgXmiCOXtBAVKt.Item.oEaAl2tvRiiV1UFF
               subtype: combat
               target: damMelee
               value: +1d4
               apply: self
               additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -589,20 +601,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Hm2e2yTt8qAdwRTo
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: XWh4v87txPyPeP82
-    sort: 5000000
-    _key: '!actors.items!iOYgXmiCOXtBAVKt.XWh4v87txPyPeP82'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758841518237
+      modifiedTime: 1758841520967
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: oEaAl2tvRiiV1UFF
+    sort: 7200000
+    _key: '!actors.items!iOYgXmiCOXtBAVKt.oEaAl2tvRiiV1UFF'
 effects: []
 ownership:
   default: 0
@@ -613,9 +626,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749280154523
-  modifiedTime: 1758491066199
+  modifiedTime: 1758841544921
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: iOYgXmiCOXtBAVKt

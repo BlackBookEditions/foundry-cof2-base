@@ -123,7 +123,7 @@ system:
       private: ''
       public: ''
     notes:
-      private: ''
+      private: "<p>Un œuf de griffon viable est un bien très\_précieux, il vaut 3000\_pa, un tout jeune animal\_se vend autour de 5000\_pa. Les dresseurs\_professionnels demandent 1000\_pa pour\_apprivoiser ou entraîner un griffon.</p>"
       public: >-
         <p>Le griffon est une puissante créature au corps de lion pourvue de la
         tête et des ailes d’un aigle. Ce mélange ne manque pas de majesté et cet
@@ -133,7 +133,7 @@ system:
         peut apprendre &agrave; comprendre une langue s’il y est habitué très
         t&ocirc;t.</p>
     languages: []
-    properties: "<p>Un oeuf de griffon viable est un bien très précieux, il vaut 3 000 pa, un tout jeune animal se vend autour de 5 000 pa. Les dresseurs professionnels demandent 1 000 pa pour apprivoiser ou entraîner un griffon\_</p>"
+    properties: ''
   currentEffects: []
 prototypeToken:
   name: Griffon
@@ -304,7 +304,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: YYDoM0CEcPrziI9P
+    _id: qkS9R6huRtAWR1Ra
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -313,13 +313,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -335,7 +332,8 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.NWtLgOqLYRVeaDjp.Item.YYDoM0CEcPrziI9P
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.qkS9R6huRtAWR1Ra
           indice: 0
           label: ''
           chatFlavor: ''
@@ -343,7 +341,7 @@ items:
           img: icons/svg/d20-highlight.svg
           properties:
             visible: false
-            enabled: false
+            enabled: true
             activable: true
             temporary: false
             noManaCost: false
@@ -351,7 +349,8 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.NWtLgOqLYRVeaDjp.Item.YYDoM0CEcPrziI9P
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.qkS9R6huRtAWR1Ra
               subtype: combat
               target: melee
               apply: others
@@ -377,26 +376,113 @@ items:
                 successThreshold: null
               skill: {}
               dmg: {}
+          actionType: none
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!PY4kcyYxKbyPYXHq.YYDoM0CEcPrziI9P'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849395700
+      modifiedTime: 1758849395714
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!PY4kcyYxKbyPYXHq.qkS9R6huRtAWR1Ra'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vol rapide
+    type: capacity
+    img: icons/creatures/abilities/wing-batlike-white-blue.webp
+    system:
+      description: >-
+        <p>La créature obtient une action de mouvement supplémentaire par round
+        lorsqu’elle est en vol. Au premier round de combat, la créature obtient
+        un dé bonus en attaque et +1d4 aux DM si elle est en vol et attaque une
+        créature au sol.</p>
+      source: ''
+      origin: ''
+      slug: vol-rapide
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.GJBlLk6Ol87lhtuM
+          indice: 0
+          label: En vol attaque cible au sol
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.GJBlLk6Ol87lhtuM
+              subtype: combat
+              target: melee
+              apply: self
+              value: 1d4
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.GJBlLk6Ol87lhtuM
+              subtype: bonusDice
+              target: melee
+              apply: self
+              value: '0'
+              additionalInfos: ''
+          resolvers: []
+          actionType: none
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849412932
+      modifiedTime: 1758849412945
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: GJBlLk6Ol87lhtuM
+    sort: 7100000
+    _key: '!actors.items!PY4kcyYxKbyPYXHq.GJBlLk6Ol87lhtuM'
   - folder: Jc9oocmI3B4cVSRG
     name: Agripper
     type: capacity
@@ -425,12 +511,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.NWtLgOqLYRVeaDjp.Item.YAZARnZUM84vTeCp
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.uDL0ESWMbyhPJVS0
           indice: 0
           label: contre créature agrippée
-          chatFlavor: contre créature agrippée
-          type: melee
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -441,20 +529,23 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.NWtLgOqLYRVeaDjp.Item.YAZARnZUM84vTeCp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.uDL0ESWMbyhPJVS0
               subtype: combat
               target: melee
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.NWtLgOqLYRVeaDjp.Item.YAZARnZUM84vTeCp
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.PY4kcyYxKbyPYXHq.Item.uDL0ESWMbyhPJVS0
               subtype: combat
               target: damMelee
-              apply: self
               value: +1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -464,98 +555,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.U1j9KtEzOmBYMp4B
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: YAZARnZUM84vTeCp
-    sort: 3000000
-    _key: '!actors.items!PY4kcyYxKbyPYXHq.YAZARnZUM84vTeCp'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Vol rapide
-    type: capacity
-    img: icons/creatures/abilities/wing-batlike-white-blue.webp
-    system:
-      description: >-
-        <p>La créature obtient une action de mouvement supplémentaire par round
-        lorsqu’elle est en vol. Au premier round de combat, la créature obtient
-        un dé bonus en attaque et +1d4 aux DM si elle est en vol et attaque une
-        créature au sol.</p>
-      source: ''
-      origin: ''
-      slug: vol-rapide
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: Actor.NWtLgOqLYRVeaDjp.Item.zKlN9gMdREL4bcFT
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: true
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.NWtLgOqLYRVeaDjp.Item.zKlN9gMdREL4bcFT
-              subtype: combat
-              target: melee
-              apply: self
-              value: 1d4
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.NWtLgOqLYRVeaDjp.Item.zKlN9gMdREL4bcFT
-              subtype: bonusDice
-              target: melee
-              apply: self
-              value: '0'
-              additionalInfos: ''
-          resolvers: []
-      manaCost: -1
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: zKlN9gMdREL4bcFT
-    sort: 6400000
-    _key: '!actors.items!PY4kcyYxKbyPYXHq.zKlN9gMdREL4bcFT'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849424521
+      modifiedTime: 1758849448316
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: uDL0ESWMbyhPJVS0
+    sort: 3700000
+    _key: '!actors.items!PY4kcyYxKbyPYXHq.uDL0ESWMbyhPJVS0'
 effects: []
 ownership:
   default: 0
@@ -568,9 +582,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749367829622
-  modifiedTime: 1758487412981
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: PY4kcyYxKbyPYXHq
-sort: 1600000
+sort: 2000000
 _key: '!actors!PY4kcyYxKbyPYXHq'

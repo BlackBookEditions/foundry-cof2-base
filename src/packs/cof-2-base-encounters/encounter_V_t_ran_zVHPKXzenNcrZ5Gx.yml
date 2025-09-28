@@ -123,9 +123,11 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Des villages et zones rurales aux grandes cités, il existe un éventail de personnes chargées de protéger la population et (parfois surtout) les dirigeants, avec des compétences variables. </p><p> </p><p>Un vétéran ou un garde de palais ducal a déjà connu la guerre ou fait partie d’une force d’élite, ce qui lui vaut d’être au service direct\_de son seigneur. Il peut aussi diriger une équipe\_de milicien.\_</p>"
     languages: []
-    properties: ''
+    properties: >-
+      <p>Supprimer deux capacités parmi Brise-genou / Imparable / Sergent dans
+      l'onglet Capacités.</p>
   magic: 0
 prototypeToken:
   name: test
@@ -342,10 +344,10 @@ items:
   - folder: E0IHxlFlZyFSfQGY
     name: Arbalète lourde
     type: equipment
-    img: icons/svg/item-bag.svg
-    _id: IRYf3SVbQcERmmLK
+    img: icons/weapons/crossbows/crossbow-purple.webp
+    _id: hstF1p2RbMZv1reo
     system:
-      description: <p>Nécessite une action de mouvement pour etre rechargée</p>
+      description: <p>Nécessite une action de mouvement pour être rechargée.</p>
       source: ''
       origin: ''
       slug: arbalete-lourde
@@ -358,7 +360,7 @@ items:
         max: 1
         destroyIfEmpty: false
       charges:
-        current: null
+        current: 20
         max: null
         destroyIfEmpty: false
       weight:
@@ -366,7 +368,7 @@ items:
         unit: kg
       price:
         value: 15
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
@@ -376,23 +378,39 @@ items:
       usage:
         oneHand: false
         twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 60
       actions:
-        - source: Actor.zVHPKXzenNcrZ5Gx.Item.IRYf3SVbQcERmmLK
+        - source: Compendium.cof-base.cof-2-base-items.Item.dBRg6mUZBm4KQ9Hb
           indice: 0
-          label: Arbalète lourde
-          chatFlavor: Arbalète lourde
-          type: ranged
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
           properties:
             visible: false
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
-                formula: '@ran'
+                formula: '@atd'
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
@@ -401,46 +419,39 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-          conditions:
-            - predicate: isEquipped
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
     effects: []
-    sort: 0
+    sort: 800000
     ownership:
-      default: 2
+      default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.dBRg6mUZBm4KQ9Hb
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.dBRg6mUZBm4KQ9Hb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!zVHPKXzenNcrZ5Gx.IRYf3SVbQcERmmLK'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843580782
+      modifiedTime: 1758843580782
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.hstF1p2RbMZv1reo'
   - folder: BHbn2gP9Z2mczP4c
     name: Epée longue
     type: equipment
-    img: icons/svg/item-bag.svg
-    _id: sRCCtTPyAl13jnCh
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: n2P6plStYui3eHiX
     system:
       description: ''
       source: ''
@@ -474,82 +485,187 @@ items:
         oneHand: true
         twoHand: false
       actions:
-        - source: Actor.zVHPKXzenNcrZ5Gx.Item.sRCCtTPyAl13jnCh
+        - source: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
           indice: 0
-          label: Epée longue
-          chatFlavor: Epée longue
-          type: melee
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
             visible: false
-            activable: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d8
+                formula: 1d8 + @for
               target:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-          conditions:
-            - predicate: isEquipped
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
-      defense: null
-      magicalDefense: null
       range:
+        unit: ''
         base: 0
         ability: null
         details: null
-        unit: null
         min: null
         max: null
         bonuses:
           sheet: 0
           effects: 0
-        value: null
     effects: []
     sort: 103125
     ownership:
-      default: 2
+      default: 0
       dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.QIHJs2vncOYtsEX2
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!zVHPKXzenNcrZ5Gx.sRCCtTPyAl13jnCh'
-  - folder: uVNfyNGbfZsNuFix
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843585291
+      modifiedTime: 1758843585291
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.n2P6plStYui3eHiX'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: UEOoUHMZv1uHkV22
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.zVHPKXzenNcrZ5Gx.Item.UEOoUHMZv1uHkV22
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.zVHPKXzenNcrZ5Gx.Item.UEOoUHMZv1uHkV22
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843603745
+      modifiedTime: 1758843657286
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.UEOoUHMZv1uHkV22'
+  - folder: Jc9oocmI3B4cVSRG
     name: Brise-genou
     type: capacity
-    img: icons/svg/combat.svg
-    _id: bofyiCQfEi0LgqHM
+    img: icons/skills/wounds/bone-broken-knee-beam.webp
     system:
       description: >-
         <p>Si un adversaire au contact tente de s’éloigner de la créature
         (généralement pour fuir), elle obtient une attaque de contact gratuite
         contre lui. Si cette attaque est réussie, en plus des DM habituels, la
-        cible doit réussir un test de CON difficulté 15 ou diviser par deux tous
-        ses déplacements pour le reste du combat</p>
+        cible doit réussir un <strong>test de CON difficulté 15</strong> ou
+        diviser par deux tous ses déplacements pour le reste du combat</p>
       source: ''
       origin: ''
       slug: brise-genou
       subtype: ''
-      actionType: none
+      actionType: f
       learned: true
       charges:
         current: null
@@ -560,35 +676,42 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.PQWe6UWM7OKOpo2J
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!zVHPKXzenNcrZ5Gx.bofyiCQfEi0LgqHM'
-  - folder: uVNfyNGbfZsNuFix
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843611977
+      modifiedTime: 1758843611977
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: djQB86cBMB7vLXDI
+    sort: 9300000
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.djQB86cBMB7vLXDI'
+  - folder: Jc9oocmI3B4cVSRG
     name: Imparable
     type: capacity
-    img: icons/svg/combat.svg
-    _id: ml2IGqAVAvdWph9R
+    img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: >-
-        <p>Si la créature obtient 15‑20 au d20 d’un test d’attaque (17 à 20 si
-        la créature possède 2 attaques), elle inflige +2d4 DM supplémentaire et
-        l’attaque est automatiquement réussie (quelle que soit la DEF de son
-        adversaire). Les dés bonus ne sont pas multipliés en cas de critique</p>
+        <p>Si la créature obtient <strong>15‑20 au d20 d’un test
+        d’attaque</strong> (17 à 20 si la créature possède 2 attaques), elle
+        inflige <strong>+2d4 DM supplémentaire</strong> et l’attaque est
+        automatiquement réussie (quelle que soit la DEF de son adversaire). Les
+        dés bonus ne sont pas multipliés en cas de critique</p>
       source: ''
       origin: ''
       slug: imparable
@@ -602,31 +725,71 @@ items:
         spell: false
       path: null
       cost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.zVHPKXzenNcrZ5Gx.Item.5lSD1137n3jOmye0
+          indice: 0
+          label: si 15-20 à l'attaque
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d4
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.ePHfSD3rxnXLsWFY
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!zVHPKXzenNcrZ5Gx.ml2IGqAVAvdWph9R'
-  - folder: uVNfyNGbfZsNuFix
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843618595
+      modifiedTime: 1758843640679
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 5lSD1137n3jOmye0
+    sort: 8700000
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.5lSD1137n3jOmye0'
+  - folder: Jc9oocmI3B4cVSRG
     name: Sergent
     type: capacity
-    img: icons/svg/combat.svg
-    _id: sBrdrDISflPr5wjG
+    img: icons/environment/people/cavalry.webp
     system:
       description: >-
         <p>Une fois par round, le sergent peut donner une action supplémentaire
@@ -640,32 +803,39 @@ items:
       actionType: f
       learned: true
       charges:
-        current: null
-        max: null
+        current: 1
+        max: 1
       properties:
         spell: false
       path: null
       cost: -1
       actions: []
       manaCost: -1
-      frequency: none
+      frequency: combat
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.37q2T9BQhlIQ3vLL
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.L8b1AAMvZJLPT5zd
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!zVHPKXzenNcrZ5Gx.sBrdrDISflPr5wjG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843624999
+      modifiedTime: 1758843624999
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: D9rE9h577ljpXILK
+    sort: 7600000
+    _key: '!actors.items!zVHPKXzenNcrZ5Gx.D9rE9h577ljpXILK'
 effects: []
 sort: 0
 ownership:
@@ -677,9 +847,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758489695668
+  modifiedTime: 1758843736618
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!zVHPKXzenNcrZ5Gx'

@@ -5,19 +5,19 @@ img: icons/magic/fire/elemental-fire-humanoid.webp
 system:
   abilities:
     agi:
-      superior: false
+      superior: true
       base: 3
       bonuses:
         sheet: 0
         effects: 0
     con:
-      superior: true
+      superior: false
       base: 5
       bonuses:
         sheet: 0
         effects: 0
     for:
-      superior: true
+      superior: false
       base: 5
       bonuses:
         sheet: 0
@@ -123,13 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.H6ahiiPTi53Evhd5]{Voie élémentaire du feu} - Rang 8 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.r2YL85yPxgfAM9QD]{Forme élémentaire de feu}</p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Une fois par jour, le personnage peut se transformer en élémentaire de feu (taille grand), pendant un maximum de CHA minutes. </span></p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Sous cette forme, il ne peut pas employer d’autres capacités que celles de la voie élémentaire du feu et il ne peut pas parler. S’il est réduit à 0 PV sous cette forme, il reprend sa forme initiale avec les PV qu’il avait au moment de la transformation</span></p>"
     languages: []
-    properties: >-
-      <p>A adapter : PV = niv du mystique * 4, Attaque = attaque mag du
-      mystique. Initiative : init du mystique. PER, CHA, INT,VOL du
-      mystique</p><p>La forme élémentaire de feu profite en permanence des
-      effets des capacités Insensible au feu et Immolation</p>
+    properties: "<ol><li><p>\_- Points de vigueur =\_<strong>[Niveau × 4]</strong><br>\_- Initiative =\_<strong>[mystique]</strong><br>\_- Frappe de feu =\_<strong>[attaque magique] · DM 2d4°+5 de feu</strong><br>\_- PER - CHA - INT - VOL = <strong>[mystique]</strong></p></li></ol><p>La forme élémentaire de feu profite en permanence des effets des capacités Insensible au feu et Immolation</p>"
   currentEffects: []
 prototypeToken:
   name: Rencontre
@@ -296,6 +292,144 @@ items:
     _id: oFc3mEcTNkBRVZ5S
     sort: 0
     _key: '!actors.items!4w9NBQh5NcUytYix.oFc3mEcTNkBRVZ5S'
+  - folder: DRlAanDIMVDSbbwP
+    name: Immolation
+    type: capacity
+    img: icons/magic/fire/flame-burning-fist-strike.webp
+    _id: 6zH7jy4WPxVuXAEd
+    system:
+      description: >-
+        <p>Le personnage s’immole dans une aura de flammes vives pendant CHA
+        minutes. Il est immunisé aux DM de feu et inflige 1d4° DM de feu à tout
+        attaquant qui réussit à le blesser avec une arme, 2d4° s’il s’agit d’une
+        arme naturelle.</p>
+      inGame: >-
+        <p>Le PJ dépense ses PM manuellement. Lorsque des cibles le touche au
+        contact, le PJ active l'action pour lancer le jet de DM qui peut être
+        appliquer aux cibles. Les DM seront doublés contre des attaques avec des
+        armes naturelles</p>
+      source: ''
+      origin: Livre des règles p167
+      slug: immolation
+      subtype: ''
+      actionType: a
+      learned: true
+      rank: 7
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: true
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.4w9NBQh5NcUytYix.Item.6zH7jy4WPxVuXAEd
+          indice: 0
+          label: DM sur attaquant
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: true
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d4°
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ngc1xCeElAFIDWFl
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758914412861
+      modifiedTime: 1758914420975
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!4w9NBQh5NcUytYix.6zH7jy4WPxVuXAEd'
+  - folder: DRlAanDIMVDSbbwP
+    name: Insensible au feu
+    type: capacity
+    img: icons/magic/defensive/shield-barrier-flaming-diamond-orange.webp
+    _id: iYxZSRPMYYd8k1GU
+    system:
+      description: >-
+        <p>Le personnage devient insensible aux DM de feu et il divise par deux
+        les DM de froid.</p>
+      inGame: >-
+        <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
+        l'instant.</p>
+      source: ''
+      origin: Livre des règles p167
+      slug: insensible-au-feu
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 6
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 225000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.dceDhIQbZCkqAtep
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758914414760
+      modifiedTime: 1758914414760
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!4w9NBQh5NcUytYix.iYxZSRPMYYd8k1GU'
 effects: []
 ownership:
   default: 0
@@ -308,7 +442,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746884952845
-  modifiedTime: 1758488920145
+  modifiedTime: 1758914411236
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: 4w9NBQh5NcUytYix

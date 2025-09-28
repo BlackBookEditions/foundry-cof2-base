@@ -387,7 +387,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 99LKLLIP6KDRHYBm
+    _id: fYr68Gllqg3W5n8h
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -396,13 +396,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -418,12 +415,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.zhkIfnrSxkGDNyNG.Item.99LKLLIP6KDRHYBm
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.fYr68Gllqg3W5n8h
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -434,16 +433,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.zhkIfnrSxkGDNyNG.Item.99LKLLIP6KDRHYBm
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.fYr68Gllqg3W5n8h
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -457,29 +455,81 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!JiJJNMEOqirDKx5j.99LKLLIP6KDRHYBm'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849265725
+      modifiedTime: 1758849332126
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!JiJJNMEOqirDKx5j.fYr68Gllqg3W5n8h'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Paralysie
+    type: capacity
+    img: icons/magic/control/debuff-chains-shackles-movement-purple.webp
+    system:
+      description: >-
+        <p>Une créature blessée par la morsure d’une goule doit réussir un
+        <strong>test de CON difficulté 10</strong> ou être <strong>paralysée
+        </strong>pendant 1d6 rounds.</p>
+      source: ''
+      origin: ''
+      slug: paralysie
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NoLJNKIvJ3opGTEd
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849273807
+      modifiedTime: 1758849273807
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: ldpgoFhHIm8QfmtB
+    sort: 5100000
+    _key: '!actors.items!JiJJNMEOqirDKx5j.ldpgoFhHIm8QfmtB'
   - folder: Jc9oocmI3B4cVSRG
     name: Miasmes
     type: capacity
@@ -506,15 +556,17 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.zhkIfnrSxkGDNyNG.Item.yFt5XvN5lGcc4TJt
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.7TUrVpsyWt4brTnq
           indice: 0
-          label: si test de CON Diff 10 raté
+          label: DM
           chatFlavor: ''
-          type: magical
           img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: false
             noManaCost: false
@@ -522,28 +574,23 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
-                formula: 1s4
+                formula: 1d4
               target:
                 type: single
                 scope: all
                 number: 0
               additionalEffect:
-                active: true
+                active: false
                 applyOn: success
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses:
-                  - weakened
-                duration: '20'
+                statuses: []
+                duration: '0'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -553,83 +600,27 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Ozt74KiyZUjE2A6z
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: yFt5XvN5lGcc4TJt
-    sort: 4300000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.yFt5XvN5lGcc4TJt'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Paralysie
-    type: capacity
-    img: icons/magic/control/debuff-chains-shackles-movement-purple.webp
-    system:
-      description: >-
-        <p>Une créature blessée par la morsure d’une goule doit réussir un
-        <strong>test de CON difficulté 15</strong> ou être <strong>paralysée
-        </strong>pendant 1d6 rounds.</p>
-      source: ''
-      origin: ''
-      slug: paralysie
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NoLJNKIvJ3opGTEd
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: nDhERqKKNmyHusI5
-    sort: 4400000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.nDhERqKKNmyHusI5'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849282531
+      modifiedTime: 1758849312304
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 7TUrVpsyWt4brTnq
+    sort: 5000000
+    _key: '!actors.items!JiJJNMEOqirDKx5j.7TUrVpsyWt4brTnq'
   - folder: Jc9oocmI3B4cVSRG
     name: Fièvre des goules
     type: capacity
     img: icons/magic/death/blood-corruption-vomit-red.webp
     system:
-      description: >-
-        <p>À la fin du combat, si le personnage a été blessé au moins une fois
-        par la morsure d’une goule, il doit réussir un <strong>test de CON
-        difficulté 18</strong> ou contracter la maladie. Chaque jour, il subit
-        <strong>1d4° DM</strong> retranchés directement à sa valeur de<strong>
-        PV maximale</strong> (il ne peut plus dépasser cette nouvelle valeur) et
-        doit faire un nouveau test de CON difficulté 15 pour vaincre la maladie.
-        Lorsqu’il arrive à 0 PV, il meurt et se transforme en goule. S’il
-        guérit, les PV perdus peuvent être récupérés normalement. <strong>Un
-        sort de Délivrance (rang 3 de la voie de la spiritualité) peut mettre
-        fin à la fièvre des goules</strong>.</p>
+      description: "<p>À la fin du combat, si le personnage a été blessé au moins une fois par la morsure d’une goule, il doit réussir un <strong>test de CON difficulté 18\_</strong>ou contracter la maladie. Chaque jour, il subit <strong>1d4° DM</strong> retranchés directement à sa valeur de<strong> PV maximale</strong> (il ne peut plus dépasser cette nouvelle valeur) et doit faire un nouveau test de CON difficulté 15 pour vaincre la maladie. Lorsqu’il arrive à 0 PV, il meurt et se transforme en goule. S’il guérit, les PV perdus peuvent être récupérés normalement. <strong>Un sort de Délivrance (rang 3 de la voie de la spiritualité) peut mettre fin à la fièvre des goules</strong>.</p>"
       source: ''
       origin: ''
       slug: fievre-des-goules
@@ -645,6 +636,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -654,20 +646,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bP0KFhJUPgdPwqTO
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: qewpITsTkPMs4e6v
-    sort: 3800000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.qewpITsTkPMs4e6v'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758849288352
+      modifiedTime: 1758849302863
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: hTWnYxvNvrfaf6eR
+    sort: 4500000
+    _key: '!actors.items!JiJJNMEOqirDKx5j.hTWnYxvNvrfaf6eR'
 effects: []
 ownership:
   default: 0
@@ -680,9 +673,9 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749356243971
-  modifiedTime: 1758487789960
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: JiJJNMEOqirDKx5j
-sort: 1500000
+sort: 1900000
 _key: '!actors!JiJJNMEOqirDKx5j'

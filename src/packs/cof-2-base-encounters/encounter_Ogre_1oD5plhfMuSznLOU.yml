@@ -129,13 +129,13 @@ system:
         Cette créature maléfique a un penchant pour les armes démesurées et la
         boucherie gratuite. C’est un adversaire formidable et un combat contre
         un ogre n’est jamais sans risque. Il parle le noir parler et parfois le
-        commun. Un chef ogre accompagné de 5 ogres est une rencontre ordinaire
-        de niveau 10.</p>
+        commun. </p><p>Un chef ogre accompagné de 5 ogres est une rencontre
+        ordinaire de niveau 10.</p>
     languages: []
     properties: >-
-      <p>1 capacité au choix entre Tap dur et Imparable</p><p><strong>NOTE DE
-      CONCEPTION</strong> : Attention, même à haut niveau des ogres dotés de la
-      capacité Tape dur en grand nombre sont des adversaires redoutables, si
+      <p>Une capacité à choisir entre Tape dur et Imparable</p><p><strong>NOTE
+      DE CONCEPTION</strong> : Attention, même à haut niveau des ogres dotés de
+      la capacité Tape dur en grand nombre sont des adversaires redoutables, si
       vous n’utilisez pas la règle de l’attaque groupée, les chances sont
       grandes que leur victime passe plus de temps étourdie que dans la capacité
       d’agir…</p>
@@ -305,11 +305,116 @@ items:
     _id: XptR9OrYbUdYeVXK
     sort: 300000
     _key: '!actors.items!1oD5plhfMuSznLOU.XptR9OrYbUdYeVXK'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hachoir
+    type: equipment
+    img: icons/weapons/axes/axe-double-brown.webp
+    _id: Sa92sSNNu0IpAtSD
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hache-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100049
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758890154945
+      modifiedTime: 1758890163292
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!1oD5plhfMuSznLOU.Sa92sSNNu0IpAtSD'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: RFA7qUgQ7RrqGDzG
+    _id: vaS5UTWbe7hGn0qf
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -318,13 +423,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -340,12 +442,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.Aa5t6192r9uz3xIV.Item.RFA7qUgQ7RrqGDzG
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.1oD5plhfMuSznLOU.Item.vaS5UTWbe7hGn0qf
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -356,16 +460,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.Aa5t6192r9uz3xIV.Item.RFA7qUgQ7RrqGDzG
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.1oD5plhfMuSznLOU.Item.vaS5UTWbe7hGn0qf
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -379,39 +482,43 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!1oD5plhfMuSznLOU.RFA7qUgQ7RrqGDzG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758890184343
+      modifiedTime: 1758890208428
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!1oD5plhfMuSznLOU.vaS5UTWbe7hGn0qf'
   - folder: Jc9oocmI3B4cVSRG
     name: Imparable
     type: capacity
     img: icons/skills/melee/shield-damaged-broken-blue.webp
     system:
       description: >-
-        <p>Si la créature obtient 15‑20 au d20 d’un test d’attaque (17 à 20 si
-        la créature possède 2 attaques), elle inflige +1d6 DM supplémentaire et
-        l’attaque est automatiquement réussie (quelle que soit la DEF de son
-        adversaire).</p>
+        <p>Si la créature obtient <strong>15‑20 au d20 d’un test
+        d’attaque</strong> (17 à 20 si la créature possède 2 attaques), elle
+        inflige <strong>+2d4 DM supplémentaire</strong> et l’attaque est
+        automatiquement réussie (quelle que soit la DEF de son adversaire). Les
+        dés bonus ne sont pas multipliés en cas de critique</p>
       source: ''
       origin: ''
       slug: imparable
@@ -426,12 +533,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.Aa5t6192r9uz3xIV.Item.YMGHH6BnDKxNrQWv
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.1oD5plhfMuSznLOU.Item.m8gZX5msQvPIUXtp
           indice: 0
           label: si 15-20 à l'attaque
-          chatFlavor: si 15-20 à l'attaque
-          type: melee
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -442,25 +551,24 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
                 formula: 2d4
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -470,29 +578,27 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.SsFmuckARiQAIxDS
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: YMGHH6BnDKxNrQWv
-    sort: 8000000
-    _key: '!actors.items!1oD5plhfMuSznLOU.YMGHH6BnDKxNrQWv'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758890192318
+      modifiedTime: 1758890212326
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: m8gZX5msQvPIUXtp
+    sort: 8700000
+    _key: '!actors.items!1oD5plhfMuSznLOU.m8gZX5msQvPIUXtp'
   - folder: Jc9oocmI3B4cVSRG
     name: Tape dur
     type: capacity
     img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
     system:
-      description: >-
-        <p>Si la créature obtient 15 à 20 au dé du test d’attaque, l’attaque est
-        automatiquement réussie. De surcroît, la victime doit réussir un test de
-        CON difficulté 16 ou être étourdie pendant 1 round.</p>
+      description: "<p>Si la créature obtient <strong>15 à 20 au dé du test d’attaque</strong>, l’attaque est automatiquement réussie. De surcroît, la victime doit réussir un <strong>test de CON difficulté 16\_</strong>ou être étourdie pendant 1 round.</p>"
       source: ''
       origin: ''
       slug: tape-dur
@@ -508,6 +614,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -517,20 +624,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: McGxzOhg7Fm1NsZO
-    sort: 6700000
-    _key: '!actors.items!1oD5plhfMuSznLOU.McGxzOhg7Fm1NsZO'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758890200550
+      modifiedTime: 1758890232912
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: arrHovRAYlxk6BGA
+    sort: 7400000
+    _key: '!actors.items!1oD5plhfMuSznLOU.arrHovRAYlxk6BGA'
 effects: []
 ownership:
   default: 0
@@ -543,9 +651,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749370912074
-  modifiedTime: 1758487335327
+  modifiedTime: 1758890275604
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: 1oD5plhfMuSznLOU
-sort: 2400000
+sort: 2900000
 _key: '!actors!1oD5plhfMuSznLOU'

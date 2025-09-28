@@ -123,12 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.FPpjx41U407Wv4NZ]{Voie élémentaire de l&#x27;air} - Rang 8 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.5OJsFabxPP6qz4o3]{Forme élémentaire d’air}</p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Une fois par jour, le personnage peut se transformer en élémentaire d’air (taille grand), pendant un maximum de CHA minutes. Sous cette forme, il ne peut pas employer d’autres capacités que celles de la voie élémentaire de l’air et il ne peut pas parler. S’il est réduit à 0 PV sous cette forme, il reprend sa forme initiale avec les PV qu’il avait au moment de la transformation.</span></p>"
     languages: []
-    properties: >-
-      <p>A adapter : PV = niv du mystique * 5, Attaque = attaque mag du
-      mystique. Initiative : init + 3 du mystique. PER, CHA, INT,VOL du
-      mystique</p><p>Immunité aux DM de foudre</p>
+    properties: "<ol><li><p>\_- Points de vigueur =\_<strong>[Niveau × 5]</strong><br>\_- Initiative =\_<strong>[mystique + 3]</strong><br>\_- Frappe =\_<strong>[attaque magique] · DM 2d4°+4 de foudre</strong><br>\_- PER - CHA - INT - VOL = <strong>[mystique]</strong></p><p>Immunité aux DM de foudre</p></li></ol>"
   currentEffects: []
 prototypeToken:
   name: Rencontre
@@ -295,6 +292,50 @@ items:
     _id: oFc3mEcTNkBRVZ5S
     sort: 0
     _key: '!actors.items!CVObaCfctfSsdmix.oFc3mEcTNkBRVZ5S'
+  - folder: NAEHpo5UDb0y1DOd
+    name: Voie élémentaire de l'air
+    type: path
+    img: icons/magic/air/wind-tornado-wall-blue.webp
+    _id: EzmXBVJmy6cWp2j3
+    system:
+      description: >-
+        <p>Les voies élémentaires ont tendance à changer profondément ceux qui
+        les suivent, tant physiquement que mentalement. Dans le cas de l’air,
+        les cheveux deviennent blancs et la peau très pâle, tandis que le
+        tempérament devient rêveur. Cette voie peut aussi être choisie par un
+        mage qui maîtrise au moins un sort d’air. Remplacer le Charisme par
+        l’Intelligence dans le texte des capacités.</p>
+      source: ''
+      origin: Livre des règles p168-169
+      slug: voie-elementaire-de-lair
+      subtype: prestige
+      capacities:
+        - Compendium.cof-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+        - Compendium.cof-base.cof-2-base-items.Item.bmgvAAKFqLv1cApk
+        - Compendium.cof-base.cof-2-base-items.Item.JpEJuTqN8MPpa73o
+        - Compendium.cof-base.cof-2-base-items.Item.SSPuRumQoPVWWxGM
+        - Compendium.cof-base.cof-2-base-items.Item.5OJsFabxPP6qz4o3
+      rank: 3
+      maxDefenseArmor: 0
+      pvByLevel: 0
+    effects: []
+    sort: 43750
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.FPpjx41U407Wv4NZ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758913942419
+      modifiedTime: 1758913942419
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!CVObaCfctfSsdmix.EzmXBVJmy6cWp2j3'
 effects: []
 ownership:
   default: 0
@@ -307,7 +348,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746946369796
-  modifiedTime: 1758488889715
+  modifiedTime: 1758914102644
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: CVObaCfctfSsdmix

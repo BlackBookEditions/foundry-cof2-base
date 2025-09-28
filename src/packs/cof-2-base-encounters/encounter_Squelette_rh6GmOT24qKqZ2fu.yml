@@ -299,11 +299,130 @@ items:
     _id: 2bhCgC6jgCqkYTeF
     sort: 300000
     _key: '!actors.items!rh6GmOT24qKqZ2fu.2bhCgC6jgCqkYTeF'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Épée courte
+    type: equipment
+    img: icons/weapons/swords/shortsword-guard-brass.webp
+    _id: NXV8WoftI1TUMZMy
+    system:
+      description: >-
+        <p><span class="ILfuVd" lang="fr"><span class="hgKElc"><strong>Une épée
+        courte est une arme tranchante qui se caractérise par sa taille compacte
+        et sa polyvalence</strong>. Contrairement aux types d'épées plus
+        longues, l'épée courte présente une longueur de lame d'environ 30 à 60
+        centimètres. Cette taille permet un maniement efficace aussi bien en
+        combat rapproché qu'en projection</span></span></p><p>
+        </p><p><strong><span class="ILfuVd" lang="fr"><span class="hgKElc">Arme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: epee-courte
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: shortSword
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      damagetype: slashing
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 106250
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
+      duplicateSource: null
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co
+        systemVersion: 12.331.0
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892856252
+      modifiedTime: 1758892856252
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rh6GmOT24qKqZ2fu.NXV8WoftI1TUMZMy'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: b0B71jR1XmI0Ripa
+    _id: FKj8PLbIuUjIELhb
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -312,13 +431,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -334,12 +450,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.3ZwZw44XWebuMKeN.Item.b0B71jR1XmI0Ripa
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rh6GmOT24qKqZ2fu.Item.FKj8PLbIuUjIELhb
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -350,16 +468,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.3ZwZw44XWebuMKeN.Item.b0B71jR1XmI0Ripa
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rh6GmOT24qKqZ2fu.Item.FKj8PLbIuUjIELhb
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -373,29 +490,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rh6GmOT24qKqZ2fu.b0B71jR1XmI0Ripa'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892877325
+      modifiedTime: 1758892904600
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rh6GmOT24qKqZ2fu.FKj8PLbIuUjIELhb'
   - name: Résistance aux DM
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
@@ -403,15 +523,9 @@ items:
       description: >-
         <p>Tous les DM infligés à un squelette avec des armes sont divisés par
         deux, sauf si l’attaquant utilise une arme contondante</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Aucune automatisation. Au MJ d'utiliser le bouton dommages divisé par
         2 de la fenêtre de chat lors de l'application des dommages.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p278
       slug: resistance-aux-armes
@@ -437,20 +551,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tj7VBuGKSOAac6wq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: NvDLUpIB8q0P94dx
-    sort: 1500000
-    _key: '!actors.items!rh6GmOT24qKqZ2fu.NvDLUpIB8q0P94dx'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892882514
+      modifiedTime: 1758892882514
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: VFWLAsJWGfChVd2O
+    sort: 600000
+    _key: '!actors.items!rh6GmOT24qKqZ2fu.VFWLAsJWGfChVd2O'
   - folder: Jc9oocmI3B4cVSRG
     name: Réduction des DM de froid
     type: capacity
@@ -472,12 +587,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.3ZwZw44XWebuMKeN.Item.sWxEgCmDQFebR3al
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rh6GmOT24qKqZ2fu.Item.idyFD8WVg7aqjSuL
           indice: 0
           label: Contre DM de froid
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -488,14 +605,16 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.3ZwZw44XWebuMKeN.Item.sWxEgCmDQFebR3al
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rh6GmOT24qKqZ2fu.Item.idyFD8WVg7aqjSuL
               subtype: combat
               target: dr
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -504,20 +623,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.foNKcgdHFcozdBcd
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: sWxEgCmDQFebR3al
-    sort: 4600000
-    _key: '!actors.items!rh6GmOT24qKqZ2fu.sWxEgCmDQFebR3al'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758892894547
+      modifiedTime: 1758892979710
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: idyFD8WVg7aqjSuL
+    sort: 5300000
+    _key: '!actors.items!rh6GmOT24qKqZ2fu.idyFD8WVg7aqjSuL'
 effects: []
 ownership:
   default: 0
@@ -530,9 +650,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749372663485
-  modifiedTime: 1758487635838
+  modifiedTime: 1758850531183
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: rh6GmOT24qKqZ2fu
-sort: 1000000
+sort: 3950000
 _key: '!actors!rh6GmOT24qKqZ2fu'

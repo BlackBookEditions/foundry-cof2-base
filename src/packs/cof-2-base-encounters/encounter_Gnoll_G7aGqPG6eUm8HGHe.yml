@@ -125,18 +125,19 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Le gnoll est un humano&iuml;de puissant de plus de 2 m dont la
+        <p>Le gnoll est un humanoïde puissant de plus de 2 m dont la
         particularité est une tête d’hyène et une fourrure jaune sale. Les
         gnolls combattent généralement en nombre et malgré leur force, ils sont
-        souvent l&acirc;ches préférant le harcèlement et la supériorité
-        numérique pour affronter leurs adversaires. Il n’est pas rare de trouver
-        des groupes de gnolls disposant des capacités supplémentaires indiquées
-        ci‑après (NC+1) sous les ordres d’un chef plus expérimenté. Les quelques
-        aventuriers qui ont survécu &agrave; une telle rencontre racontent une
-        expérience traumatisante sous les rires irritants de leurs
-        bourreaux.</p>
+        souvent lâches préférant le harcèlement et la supériorité numérique pour
+        affronter leurs adversaires. Il n’est pas rare de trouver des groupes de
+        gnolls disposant des capacités supplémentaires indiquées ci‑après (NC+1)
+        sous les ordres d’un chef plus expérimenté. Les quelques aventuriers qui
+        ont survécu à une telle rencontre racontent une expérience traumatisante
+        sous les rires irritants de leurs bourreaux.</p>
     languages: []
-    properties: ''
+    properties: >-
+      <p>Les capacités Interchangeable et L'hallali seulement dans le cas d'une
+      meute de Gnoll (au moins 3 gnolls par PJ).</p>
   currentEffects: []
 prototypeToken:
   name: Gnoll
@@ -303,11 +304,116 @@ items:
     _id: LhCNIcWwKhx8yNV7
     sort: 300000
     _key: '!actors.items!G7aGqPG6eUm8HGHe.LhCNIcWwKhx8yNV7'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hache
+    type: equipment
+    img: icons/weapons/axes/axe-battle-black.webp
+    _id: ZsUXLvbmwe9GZo9C
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hache
+      tags: []
+      subtype: weapon
+      martialCategory: axe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 6
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100098
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.9QwTmWqfAkPK5ITR
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847833243
+      modifiedTime: 1758847833243
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!G7aGqPG6eUm8HGHe.ZsUXLvbmwe9GZo9C'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: v3ikz3jpGIHy88OJ
+    _id: rdN3hDVyRBkVjz3v
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -316,13 +422,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -338,12 +441,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.diaQZjAq2fBdGBvk.Item.v3ikz3jpGIHy88OJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.G7aGqPG6eUm8HGHe.Item.rdN3hDVyRBkVjz3v
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -354,16 +459,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.diaQZjAq2fBdGBvk.Item.v3ikz3jpGIHy88OJ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.G7aGqPG6eUm8HGHe.Item.rdN3hDVyRBkVjz3v
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -377,29 +481,81 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!G7aGqPG6eUm8HGHe.v3ikz3jpGIHy88OJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847839177
+      modifiedTime: 1758847913245
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!G7aGqPG6eUm8HGHe.rdN3hDVyRBkVjz3v'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Rires insupportables
+    type: capacity
+    img: icons/magic/death/skull-humanoid-white-blue.webp
+    system:
+      description: >-
+        <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
+        un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
+        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
+      source: ''
+      origin: ''
+      slug: rires-insupportablesires-insupportables
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847886089
+      modifiedTime: 1758847886089
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 7PWlNaN839g4R6p7
+    sort: 5400000
+    _key: '!actors.items!G7aGqPG6eUm8HGHe.7PWlNaN839g4R6p7'
   - folder: Jc9oocmI3B4cVSRG
     name: Interchangeables
     type: capacity
@@ -410,9 +566,7 @@ items:
         cible, elles se relaient pour esquiver ses attaques et elles obtiennent
         un bonus de +3 en DEF. Si plusieurs créatures semblables sont au contact
         du PJ, le MJ a toute latitude pour infliger les DM d’une attaque sur une
-        créature au hasard, le personnage ne sait jamais laquelle il blesse.
-        Seul, le loup n’a pas usage de la capacité interchangeable et son NC
-        passe à ½.</p>
+        créature au hasard, le personnage ne sait jamais laquelle il blesse.</p>
       source: ''
       origin: ''
       slug: interchangeables
@@ -428,29 +582,33 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.diaQZjAq2fBdGBvk.Item.9jH87gF5vIm5MraQ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.G7aGqPG6eUm8HGHe.Item.94jjchtCdnc2rSiq
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: true
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.diaQZjAq2fBdGBvk.Item.9jH87gF5vIm5MraQ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.G7aGqPG6eUm8HGHe.Item.94jjchtCdnc2rSiq
               subtype: combat
               target: def
               value: '3'
-              additionalInfos: ''
               apply: self
+              additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -460,20 +618,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.dSkdX9FI4LRdNIpW
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 9jH87gF5vIm5MraQ
-    sort: 4100000
-    _key: '!actors.items!G7aGqPG6eUm8HGHe.9jH87gF5vIm5MraQ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847896895
+      modifiedTime: 1758847953715
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 94jjchtCdnc2rSiq
+    sort: 4800000
+    _key: '!actors.items!G7aGqPG6eUm8HGHe.94jjchtCdnc2rSiq'
   - folder: Jc9oocmI3B4cVSRG
     name: L’hallali
     type: capacity
@@ -501,6 +660,7 @@ items:
       cost: -1
       manaCost: -1
       actions: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -510,67 +670,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sowzGsG7MWdB83qr
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: CZ6iGfcfCJCed8O5
-    sort: 4200000
-    _key: '!actors.items!G7aGqPG6eUm8HGHe.CZ6iGfcfCJCed8O5'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Rires insupportables
-    type: capacity
-    img: icons/magic/death/skull-humanoid-white-blue.webp
-    system:
-      description: >-
-        <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
-        un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
-        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
-      source: ''
-      origin: ''
-      slug: rires-insupportablesires-insupportables
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: qWHg1UqYc2z0XxNh
-    sort: 4700000
-    _key: '!actors.items!G7aGqPG6eUm8HGHe.qWHg1UqYc2z0XxNh'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758847898424
+      modifiedTime: 1758847898424
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: RLBglA8OMr0kd0RQ
+    sort: 4900000
+    _key: '!actors.items!G7aGqPG6eUm8HGHe.RLBglA8OMr0kd0RQ'
 effects: []
 ownership:
   default: 0
@@ -581,11 +695,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749354516608
-  modifiedTime: 1758488050647
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: G7aGqPG6eUm8HGHe
-sort: 2600000
+sort: 1000000
 _key: '!actors!G7aGqPG6eUm8HGHe'

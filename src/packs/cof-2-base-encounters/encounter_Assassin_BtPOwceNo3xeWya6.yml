@@ -71,7 +71,7 @@ system:
         effects: 0
   combat:
     init:
-      base: 0
+      base: 15
       ability: null
       details: null
       unit: null
@@ -279,9 +279,9 @@ items:
     sort: 300000
     _key: '!actors.items!BtPOwceNo3xeWya6.WfWREtUduSBfodc8'
   - folder: Jc9oocmI3B4cVSRG
-    name: ATTAQUE MORTELLE
+    name: Attaque mortelle
     type: capacity
-    img: icons/svg/combat.svg
+    img: icons/skills/melee/strike-dagger-blood-red.webp
     system:
       description: >-
         <p>Une attaque qui doit être exécutée dans le dos ou par surprise.
@@ -303,24 +303,26 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.BtPOwceNo3xeWya6.Item.TsAvRcXx0kmqZKSG
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BtPOwceNo3xeWya6.Item.0scw2uEblfN00NqM
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: true
+              bonusDiceAdd: true
+              malusDiceAdd: false
               skill:
                 formula: '+7'
                 crit: ''
@@ -331,31 +333,42 @@ items:
                 type: none
                 number: 0
                 scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
       frequency: none
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.DJz0t2RXLUM0R956
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: TsAvRcXx0kmqZKSG
-    sort: 300000
-    _key: '!actors.items!BtPOwceNo3xeWya6.TsAvRcXx0kmqZKSG'
-  - folder: uVNfyNGbfZsNuFix
-    name: ASSASSINAT
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842452663
+      modifiedTime: 1758842484585
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 0scw2uEblfN00NqM
+    sort: 2500000
+    _key: '!actors.items!BtPOwceNo3xeWya6.0scw2uEblfN00NqM'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Assassinat
     type: capacity
-    img: icons/svg/combat.svg
-    _id: yxfFMygSOV1rSg96
+    img: icons/skills/melee/strike-dagger-skull-white.webp
     system:
       description: >-
         <p>Au premier round de combat, si la cible est Surprise, une Attaque
@@ -377,28 +390,34 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.8dIxJXOwPkrKG6Qj
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.hIfZ8f2RLeSOVsrG
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!BtPOwceNo3xeWya6.yxfFMygSOV1rSg96'
-  - folder: uVNfyNGbfZsNuFix
-    name: DISPARITION
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842457909
+      modifiedTime: 1758842457909
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 9GPhXK3AZ3pvt03o
+    sort: 800000
+    _key: '!actors.items!BtPOwceNo3xeWya6.9GPhXK3AZ3pvt03o'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Disparition
     type: capacity
-    img: icons/svg/combat.svg
-    _id: NN2p7VC85K8J9XwN
+    img: icons/creatures/magical/humanoid-silhouette-dashing-blue.webp
     system:
       description: >-
         <p>L’assassin devient invisible (passage dans les ombres, cape magique,
@@ -421,18 +440,20 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.BtPOwceNo3xeWya6.Item.NN2p7VC85K8J9XwN
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.BtPOwceNo3xeWya6.Item.jPeIaFlrqKOs6A67
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
@@ -449,25 +470,157 @@ items:
                 type: none
                 number: 0
                 scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
           modifiers: []
       frequency: none
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.unaizUgGEhfv3qiz
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.E2qDT3Rrhce9VQwN
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!BtPOwceNo3xeWya6.NN2p7VC85K8J9XwN'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842463862
+      modifiedTime: 1758842473561
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: jPeIaFlrqKOs6A67
+    sort: 900000
+    _key: '!actors.items!BtPOwceNo3xeWya6.jPeIaFlrqKOs6A67'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Épée courte
+    type: equipment
+    img: icons/weapons/swords/shortsword-guard-brass.webp
+    _id: oxUOmhUfakJZUmpX
+    system:
+      description: >-
+        <p><span class="ILfuVd" lang="fr"><span class="hgKElc"><strong>Une épée
+        courte est une arme tranchante qui se caractérise par sa taille compacte
+        et sa polyvalence</strong>. Contrairement aux types d'épées plus
+        longues, l'épée courte présente une longueur de lame d'environ 30 à 60
+        centimètres. Cette taille permet un maniement efficace aussi bien en
+        combat rapproché qu'en projection</span></span></p><p>
+        </p><p><strong><span class="ILfuVd" lang="fr"><span class="hgKElc">Arme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: epee-courte
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: shortSword
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      damagetype: slashing
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 106250
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8HGdjYpAtdPT57QQ
+      duplicateSource: null
+      exportSource:
+        worldId: cov2-dev
+        uuid: null
+        coreVersion: '12.331'
+        systemId: co
+        systemVersion: 12.331.0
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758842563618
+      modifiedTime: 1758842563618
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!BtPOwceNo3xeWya6.oxUOmhUfakJZUmpX'
 effects: []
 sort: 0
 ownership:
@@ -479,9 +632,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758488087422
+  modifiedTime: 1758842416371
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!BtPOwceNo3xeWya6'

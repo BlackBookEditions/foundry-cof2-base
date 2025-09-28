@@ -126,16 +126,16 @@ system:
       private: ''
       public: >-
         <p>énormes créatures reptiliennes, les dragons possèdent quatre pattes
-        et de grandes ailes membraneuses semblables &agrave; celles des
-        chauves‑souris. Les dragons des forêts sont reconnaissables aux patchs
-        de plumes qui poussent au creux de certaines de leurs articulations (cou
-        notamment) et en vieillissant leurs écailles ressemblent &agrave; de
-        l’écorce. Leur souffle est un nuage empoisonné et ils utilisent
-        généralement la magie druidique. Le caractère de chaque dragon varie
-        selon l’individu, mais tous sont orgueilleux et attirés par les trésors
-        et ceux qui ont réuni un butin fabuleux évitent de s’en éloigner. Le
-        profil du dragon fourni ci‑dessous, correspond &agrave; une jeune
-        femelle d’environ un siècle.</p>
+        et de grandes ailes membraneuses semblables à celles des chauves‑souris.
+        Les dragons des forêts sont reconnaissables aux patchs de plumes qui
+        poussent au creux de certaines de leurs articulations (cou notamment) et
+        en vieillissant leurs écailles ressemblent à de l’écorce. </p><p>Leur
+        souffle est un nuage empoisonné et ils utilisent généralement la magie
+        druidique. Le caractère de chaque dragon varie selon l’individu, mais
+        tous sont orgueilleux et attirés par les trésors et ceux qui ont réuni
+        un butin fabuleux évitent de s’en éloigner. </p><p>Le profil du dragon
+        fourni ci‑dessous, correspond à une jeune femelle d’environ un
+        siècle.</p>
     languages: []
     properties: "<h4><strong>Immunités</strong></h4><p>immunisé au sommeil et à la paralysie et ne subit aucun DM de poison</p><p><strong>Attaque magique</strong> : +15</p><p>\_</p>"
   currentEffects: []
@@ -304,11 +304,313 @@ items:
     _id: n8u0QCsrdabiVnf4
     sort: 300000
     _key: '!actors.items!dHkUtZNpDmxGr4c0.n8u0QCsrdabiVnf4'
-  - folder: uVNfyNGbfZsNuFix
-    name: INSPIRER LA TERREUR
+  - type: attack
+    system:
+      subtype: melee
+      learned: true
+      description: ''
+      source: ''
+      origin: ''
+      slug: ''
+      charges: {}
+      properties:
+        spell: false
+        reloadable: false
+      range: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.hBEZpmvlybi8xWCZ
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+15'
+                crit: ''
+                difficulty: '@oppose.mag'
+              dmg:
+                formula: ''
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    name: Attaque magique
+    img: icons/svg/sword.svg
+    _id: hBEZpmvlybi8xWCZ
+    effects: []
+    folder: null
+    sort: 0
+    ownership:
+      default: 0
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846329601
+      modifiedTime: 1758846364103
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.hBEZpmvlybi8xWCZ'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: DbyqKTVGOpKRoyze
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.DbyqKTVGOpKRoyze
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: buff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.DbyqKTVGOpKRoyze
+              subtype: combat
+              target: melee
+              apply: others
+              value: '5'
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+                successThreshold: null
+              skill: {}
+              dmg: {}
+          actionType: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846397933
+      modifiedTime: 1758846397950
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.DbyqKTVGOpKRoyze'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Coup de queue
+    type: capacity
+    img: icons/creatures/abilities/tail-swipe-green.webp
+    system:
+      description: >-
+        <p>Chaque fois qu’un adversaire attaque le dragon dans le dos, il subit
+        une attaque de queue gratuite équivalant à une attaque avec des DM
+        divisés par deux.</p>
+      source: ''
+      origin: ''
+      slug: coup-de-queue
+      subtype: ''
+      actionType: f
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.vINltsqT7fCYkbtA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+14'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: (1d12+8)/2
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.nEkVCQHTQ65P8yLA
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846407044
+      modifiedTime: 1758846672430
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: vINltsqT7fCYkbtA
+    sort: 6600000
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.vINltsqT7fCYkbtA'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Emporter dans les airs
+    type: capacity
+    img: icons/commodities/biological/wing-insect-blue.webp
+    system:
+      description: "<p>Sur un résultat de 17 à 20 au test d’attaque,\_le dragon peut emporter dans les airs une\_victime de taille inférieure à la sienne au prix\_d’une action de mouvement. Au premier\_round, si la victime se libère (test de FOR\_difficulté 18), elle subit, 4d4° DM de chute.\_</p><p>Au round suivant, si la créature décide de\_prendre de l’altitude, les DM passent à 7d4°\_et enfin 10d4° aux rounds suivants. Le dé évolutif des DM de chute est indexé sur le niveau\_de la victime, et non sur celui de la créature</p>"
+      source: ''
+      origin: ''
+      slug: emporter-dans-les-airs
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.R77hIcg4CBseqDu0
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846411974
+      modifiedTime: 1758846630739
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: dhryw0gYq9klKORZ
+    sort: 8900000
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.dhryw0gYq9klKORZ'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Inspirer la terreur
     type: capacity
     img: icons/magic/control/fear-fright-monster-grin-red-orange.webp
-    _id: otgRoN2zCg6SBvYf
     system:
       description: >-
         <p>Lorsque le dragon attaque pour la première fois, toutes les créatures
@@ -337,268 +639,32 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Item.wzX9F3XiC2fTqNct
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.otgRoN2zCg6SBvYf'
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
-    type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: RqMQofagaAH9PjlN
-    system:
-      description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
-      subtype: ''
-      actionType: l
-      learned: true
-      rank: 0
-      frequency: none
-      charges:
-        current: 0
-        max: 0
-      properties:
-        spell: false
-      path: null
-      cost: 0
-      manaCost: -1
-      actions:
-        - source: Actor.Npzix6qqc2ZFKp00.Item.RqMQofagaAH9PjlN
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.Npzix6qqc2ZFKp00.Item.RqMQofagaAH9PjlN
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.RqMQofagaAH9PjlN'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Coup de queue
-    type: capacity
-    img: icons/creatures/abilities/tail-swipe-green.webp
-    system:
-      description: >-
-        <p>Chaque fois qu’un adversaire attaque le dragon dans le dos, il subit
-        une attaque de queue gratuite équivalant à une attaque avec des DM
-        divisés par deux.</p>
-      source: ''
-      origin: ''
-      slug: coup-de-queue
-      subtype: ''
-      actionType: f
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.Npzix6qqc2ZFKp00.Item.rzqnVpPy68DBSYtg
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '+14'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: (1d12+8)/2
-              target:
-                type: single
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
+      inGame: ''
     effects: []
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.nEkVCQHTQ65P8yLA
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.IMwTgvqiudOSrN8b
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: rzqnVpPy68DBSYtg
-    sort: 4400000
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.rzqnVpPy68DBSYtg'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Emporter dans les airs
-    type: capacity
-    img: icons/commodities/biological/wing-insect-blue.webp
-    system:
-      description: >-
-        <p style="text-align:justify">Sur un résultat de 17 à 20 au test
-        d’attaque, le dragon peut emporter dans les airs une victime de taille
-        inférieure à la sienne au prix d’une action de mouvement. Au premier
-        round, si la victime se libère (test de FOR difficulté 18), elle subit,
-        4d4° DM de chute.<br />Au round suivant, si la créature décide de
-        prendre de l’altitude, les DM passent à 7d4° et enfin 10d4° aux rounds
-        suivants. Le dé évolutif des DM de chute est indexé sur le niveau<br
-        />de la victime, et non sur celui de la créature.</p>
-      source: ''
-      origin: ''
-      slug: emporter-dans-les-airs
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.R77hIcg4CBseqDu0
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: dXGoxBnespEaol6a
-    sort: 6700000
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.dXGoxBnespEaol6a'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846430479
+      modifiedTime: 1758846430479
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: WojVyaCs052Sjh49
+    sort: 1700000
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.WojVyaCs052Sjh49'
   - folder: Jc9oocmI3B4cVSRG
     name: Souffle
     type: capacity
     img: icons/creatures/abilities/dragon-ice-breath-blue.webp
     system:
-      description: >-
-        <p>Le souffle est une attaque de zone affectant toutes les créatures
-        dans un cône de 10 m de long sur 10 m de large. L’attaque inflige
-        automatiquement (pas de test d’attaque) <strong>6d6+9 DM</strong>. Les
-        DM sont divisés par deux si la victime réussit un test de <strong>AGI
-        difficulté 15</strong>. La créature doit attendre <strong>2d4
-        rounds</strong> avant d’utiliser à nouveau son souffle après chaque
-        utilisation</p>
+      description: "<p>Le souffle est un nuage de gaz empoisonné\_affectant toutes les créatures dans un\_cône 15 m × 15 m. Retenir sa respiration\_est inutile, le poison fonctionne par simple\_contact. L’attaque inflige automatiquement\_(pas de test d’attaque) 6d6+18 DM de\_poison. Les DM sont divisés par deux si la\_victime réussit un <strong>test d’AGI difficulté 15</strong>.</p><p> </p><p>La créature doit attendre 1d4 rounds avant\_d’utiliser à nouveau son souffle après chaque\_utilisation.</p>"
       source: ''
       origin: ''
       slug: souffle
@@ -614,12 +680,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.Npzix6qqc2ZFKp00.Item.lCw2qinHtlv5Avmk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.nnBqkdD8wcfOaxlo
           indice: 0
           label: ''
           chatFlavor: ''
-          type: ranged
           img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -630,12 +698,8 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
-                formula: 6d6+9
+                formula: 6d6+18
               target:
                 type: multiple
                 number: 20
@@ -643,11 +707,14 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -657,20 +724,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.OTjaM8chKe1Kpch2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: lCw2qinHtlv5Avmk
-    sort: 4200000
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.lCw2qinHtlv5Avmk'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846438734
+      modifiedTime: 1758846552068
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: nnBqkdD8wcfOaxlo
+    sort: 6400000
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.nnBqkdD8wcfOaxlo'
   - folder: Jc9oocmI3B4cVSRG
     name: Vol rapide
     type: capacity
@@ -679,7 +747,7 @@ items:
       description: >-
         <p>La créature obtient une action de mouvement supplémentaire par round
         lorsqu’elle est en vol. Au premier round de combat, la créature obtient
-        un dé bonus en attaque et +1d4 aux DM si elle est en vol et attaque une
+        un dé bonus en attaque et +1d8 aux DM si elle est en vol et attaque une
         créature au sol.</p>
       source: ''
       origin: ''
@@ -695,12 +763,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.Npzix6qqc2ZFKp00.Item.sHGoKTJquoPodoGq
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.Us1wnE9AwGRPsDeK
           indice: 0
-          label: ''
+          label: En vol attaque cible au sol
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -711,21 +781,24 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.Npzix6qqc2ZFKp00.Item.sHGoKTJquoPodoGq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.Us1wnE9AwGRPsDeK
               subtype: combat
               target: melee
+              value: 1d8
               apply: self
-              value: 1d4
               additionalInfos: ''
             - type: capacity
-              source: Actor.Npzix6qqc2ZFKp00.Item.sHGoKTJquoPodoGq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.dHkUtZNpDmxGr4c0.Item.Us1wnE9AwGRPsDeK
               subtype: bonusDice
               target: melee
-              apply: self
               value: '0'
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -735,20 +808,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: sHGoKTJquoPodoGq
-    sort: 4900000
-    _key: '!actors.items!dHkUtZNpDmxGr4c0.sHGoKTJquoPodoGq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846444101
+      modifiedTime: 1758846472106
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: Us1wnE9AwGRPsDeK
+    sort: 7100000
+    _key: '!actors.items!dHkUtZNpDmxGr4c0.Us1wnE9AwGRPsDeK'
 effects: []
 ownership:
   default: 0
@@ -761,9 +835,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749282816966
-  modifiedTime: 1758488006822
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: dHkUtZNpDmxGr4c0
-sort: 3500000
+sort: 600000
 _key: '!actors!dHkUtZNpDmxGr4c0'

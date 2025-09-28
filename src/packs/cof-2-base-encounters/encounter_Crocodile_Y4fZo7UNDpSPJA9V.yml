@@ -23,7 +23,7 @@ system:
         sheet: 0
         effects: 0
     per:
-      superior: false
+      superior: true
       base: 2
       bonuses:
         sheet: 0
@@ -42,7 +42,7 @@ system:
         effects: 0
     vol:
       superior: false
-      base: -2
+      base: 2
       bonuses:
         sheet: 0
         effects: 0
@@ -296,150 +296,6 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!Y4fZo7UNDpSPJA9V.5y9msTWxMsprl5hy'
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
-    type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: iSaAulZBL5zkuu0t
-    system:
-      description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
-      subtype: ''
-      actionType: l
-      learned: true
-      rank: 0
-      frequency: none
-      charges:
-        current: 0
-        max: 0
-      properties:
-        spell: false
-      path: null
-      cost: 0
-      manaCost: -1
-      actions:
-        - source: Actor.LRdt4ysvdDvEmAm1.Item.iSaAulZBL5zkuu0t
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.LRdt4ysvdDvEmAm1.Item.iSaAulZBL5zkuu0t
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!Y4fZo7UNDpSPJA9V.iSaAulZBL5zkuu0t'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Dévorer
-    type: capacity
-    img: icons/creatures/abilities/mouth-teeth-rows-red.webp
-    system:
-      description: >-
-        <p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au
-        d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige
-        immédiatement une attaque gratuite supplémentaire</p>
-      source: ''
-      origin: ''
-      slug: devorer
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: KtfnS70XbK1sjhlt
-    sort: 6900000
-    _key: '!actors.items!Y4fZo7UNDpSPJA9V.KtfnS70XbK1sjhlt'
   - folder: Jc9oocmI3B4cVSRG
     name: Embuscade
     type: capacity
@@ -468,15 +324,17 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.LRdt4ysvdDvEmAm1.Item.eeee0ifaWDGmdlv7
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.mPezLz2Lbn3dGh9u
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -484,28 +342,32 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.LRdt4ysvdDvEmAm1.Item.eeee0ifaWDGmdlv7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.mPezLz2Lbn3dGh9u
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.LRdt4ysvdDvEmAm1.Item.eeee0ifaWDGmdlv7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.mPezLz2Lbn3dGh9u
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.LRdt4ysvdDvEmAm1.Item.eeee0ifaWDGmdlv7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.mPezLz2Lbn3dGh9u
               subtype: combat
               target: damRanged
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -515,20 +377,168 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: eeee0ifaWDGmdlv7
-    sort: 3800000
-    _key: '!actors.items!Y4fZo7UNDpSPJA9V.eeee0ifaWDGmdlv7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839601107
+      modifiedTime: 1758841246387
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: mPezLz2Lbn3dGh9u
+    sort: 6000000
+    _key: '!actors.items!Y4fZo7UNDpSPJA9V.mPezLz2Lbn3dGh9u'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Dévorer
+    type: capacity
+    img: icons/creatures/abilities/mouth-teeth-rows-red.webp
+    system:
+      description: >-
+        <p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au
+        d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige
+        immédiatement une attaque gratuite supplémentaire</p>
+      source: ''
+      origin: ''
+      slug: devorer
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions: []
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839604197
+      modifiedTime: 1758839604197
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: kd9jqot7RVEaCPoa
+    sort: 9100000
+    _key: '!actors.items!Y4fZo7UNDpSPJA9V.kd9jqot7RVEaCPoa'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: HsmpoidkmucpRByc
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.HsmpoidkmucpRByc
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Y4fZo7UNDpSPJA9V.Item.HsmpoidkmucpRByc
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840309401
+      modifiedTime: 1758841242277
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!Y4fZo7UNDpSPJA9V.HsmpoidkmucpRByc'
 effects: []
 ownership:
   default: 0
@@ -539,9 +549,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749279569870
-  modifiedTime: 1758490800357
+  modifiedTime: 1758839570819
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: Y4fZo7UNDpSPJA9V

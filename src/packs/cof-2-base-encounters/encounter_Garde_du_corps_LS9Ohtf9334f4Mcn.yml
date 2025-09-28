@@ -123,7 +123,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Un guerrier en armure chargé de protéger un\_marchand, un politicien ou un magicien.</p>"
     languages: []
     properties: >-
       <p><strong>Immunisé à : </strong>Surpris, Immobilisé, Renversé et
@@ -276,55 +276,213 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!LS9Ohtf9334f4Mcn.9DuUuSnPA4giy7IV'
-  - folder: uVNfyNGbfZsNuFix
-    name: Garde du corps
-    type: capacity
-    img: icons/svg/combat.svg
-    _id: EYELAebkZOBoBt7Q
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée longue
+    type: equipment
+    img: icons/weapons/swords/sword-guard-brass-worn.webp
+    _id: ZwKTB7G6UrD0jUlk
     system:
-      description: >-
-        <p>La créature peut désigner gratuitement une cible à son contact chaque
-        round (ce peut être une créature, mais aussi un objet). Elle réduit tous
-        les DM que la cible subit de 5 points. Elle ne peut pas se désigner
-        elle‑même.</p>
+      description: ''
       source: ''
       origin: ''
-      slug: garde-du-corps
-      subtype: ''
-      actionType: none
-      learned: true
+      slug: epee-longue
+      tags: []
+      subtype: weapon
+      martialCategory: longSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
       charges:
         current: null
         max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 6
+        unit: ''
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d8 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 103125
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844154618
+      modifiedTime: 1758844154618
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!LS9Ohtf9334f4Mcn.ZwKTB7G6UrD0jUlk'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: 6TZVLAyjMCXLYIXN
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
       properties:
         spell: false
       path: null
-      cost: -1
-      actions: []
+      cost: 0
       manaCost: -1
-      frequency: none
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.6TZVLAyjMCXLYIXN
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.6TZVLAyjMCXLYIXN
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.QPQqgsA5dysFcc9S
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!LS9Ohtf9334f4Mcn.EYELAebkZOBoBt7Q'
-  - folder: uVNfyNGbfZsNuFix
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844164354
+      modifiedTime: 1758844308881
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!LS9Ohtf9334f4Mcn.6TZVLAyjMCXLYIXN'
+  - folder: Jc9oocmI3B4cVSRG
     name: Inamovible
     type: capacity
-    img: icons/svg/combat.svg
-    _id: bxMUNGp8TGg2ihU6
+    img: icons/magic/earth/construct-stone-long-arms.webp
     system:
       description: >-
         <p>La créature est immunisée aux états préjudiciables suivants :
@@ -345,46 +503,152 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.LS9Ohtf9334f4Mcn.Item.bxMUNGp8TGg2ihU6
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.wmkGFqYf2R4xatvm
           indice: 0
-          label: Inamovible
+          label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            activable: false
             enabled: true
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.LS9Ohtf9334f4Mcn.Item.bxMUNGp8TGg2ihU6
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.wmkGFqYf2R4xatvm
               subtype: state
               target: movemenAlterationImmunity
               value: '0'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.KX3GNQ1I4tzdRc6o
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.z27jJ0Lify5McwUg
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!LS9Ohtf9334f4Mcn.bxMUNGp8TGg2ihU6'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844180421
+      modifiedTime: 1758844192567
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: wmkGFqYf2R4xatvm
+    sort: 8600000
+    _key: '!actors.items!LS9Ohtf9334f4Mcn.wmkGFqYf2R4xatvm'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Garde du corps
+    type: capacity
+    img: icons/environment/people/commoner.webp
+    system:
+      description: >-
+        <p>La créature peut désigner gratuitement une cible à son contact chaque
+        round (ce peut être une créature, mais aussi un objet). Elle réduit tous
+        les DM que la cible subit de 5 points. Elle ne peut pas se désigner
+        elle‑même.</p>
+      source: ''
+      origin: ''
+      slug: garde-du-corps
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.BqCAqE0UWjrgKe4s
+          indice: 0
+          label: Cible au contact
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: f
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.LS9Ohtf9334f4Mcn.Item.BqCAqE0UWjrgKe4s
+              subtype: combat
+              target: dr
+              value: '5'
+              apply: self
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PzPTKKqtjTFzdHAD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758844297849
+      modifiedTime: 1758844301086
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: BqCAqE0UWjrgKe4s
+    sort: 8500000
+    _key: '!actors.items!LS9Ohtf9334f4Mcn.BqCAqE0UWjrgKe4s'
 effects: []
 sort: 0
 ownership:
@@ -398,7 +662,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758489664678
+  modifiedTime: 1758844107633
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!LS9Ohtf9334f4Mcn'

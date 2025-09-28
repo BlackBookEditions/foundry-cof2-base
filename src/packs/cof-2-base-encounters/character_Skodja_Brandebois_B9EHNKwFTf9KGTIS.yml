@@ -13,7 +13,7 @@ system:
         effects: 0
     con:
       superior: false
-      base: 1
+      base: 0
       bonuses:
         sheet: 0
         effects: 0
@@ -101,7 +101,7 @@ system:
       max: null
       value: null
     melee:
-      base: 4
+      base: 3
       ability: for
       bonuses:
         sheet: 0
@@ -192,7 +192,7 @@ system:
   details:
     biography:
       private: ''
-      public: ''
+      public: "<p>Jeune femme athlétique de haute taille (1,87 m pour 88 kg), Skodja est la fille d’une chamane orc\_et d’un soldat humain, mort il y a bien longtemps dans une guerre lointaine. Les habitants de la\_communauté humaine dans laquelle elle a grandi aux côtés de sa mère ne prêtent plus attention\_depuis longtemps à sa peau olivâtre, à ses cheveux tirant sur le vert et à sa mâchoire prognathe garnie de deux impressionnants crocs, mais il n’en va pas de même pour de nombreux étrangers. Elle\_a appris à faire avec. Elle n’a pas encore acquis tous les codes et aimerait en apprendre plus sur son\_ascendance humaine.</p><p>Vivant dans une communauté forestière, elle s’est passionnée pour les choses de la nature, et adore\_passer ses journées à courir dans les bois, grimper dans les arbres ou encore observer les animaux. Sa\_mère a commencé à lui enseigner des pouvoirs magiques. Âgée de dix-sept ans, elle n’est pas loin de\_parvenir à faire pousser des baies magiques.</p><p>Si elle a longtemps aimé la solitude, elle a fini par se lier d’amitié avec Wilibert, Ionas et Lhagva.\_Récemment, des bandes maléfiques sont apparues dans la région, et avec ses amis, Skodja s’est mise\_en tête de les combattre. Alors, quand le patriarche leur a demandé d’aller au bourg de Clairval, à\_quelques jours de marche de là, pour recevoir l’enseignement du baron Roderick et de ses fameux\_amis, elle a fait son paquetage dans l’heure…</p>"
     appearance:
       private: ''
       public: ''
@@ -294,121 +294,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: BHbn2gP9Z2mczP4c
-    name: Mains nues
-    type: equipment
-    img: icons/skills/melee/unarmed-punch-fist.webp
-    _id: xMZyZipHig4TDh6w
-    system:
-      description: >-
-        <p>Dans le cas du combat à mains nues, les DM sont généralement
-        temporaires, sauf pour les moines</p>
-      source: ''
-      origin: ''
-      slug: mains-nues
-      tags:
-        - dmtemporaires
-      subtype: weapon
-      martialCategory: unarmed
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.xMZyZipHig4TDh6w
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d3 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      damagetype: impact
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 100007
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource:
-        worldId: cov2-dev
-        uuid: null
-        coreVersion: '12.331'
-        systemId: co
-        systemVersion: 12.331.0
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.xMZyZipHig4TDh6w'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -510,7 +395,7 @@ items:
     name: Demi-orc
     type: feature
     img: modules/cof-base/assets/peuples/demi_orc.webp
-    _id: 8khiUtnESk3ssHQn
+    _id: UpLB0DVP2jXWliPA
     system:
       description: >-
         <p>Le demi‑orc est de grande taille. Il possède une force physique hors
@@ -593,14 +478,16 @@ items:
       slug: demi-orc
       subtype: people
       modifiers:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.8khiUtnESk3ssHQn
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UpLB0DVP2jXWliPA
           type: feature
           subtype: ability
-          target: for
+          target: con
           value: '1'
           apply: self
           additionalInfos: ''
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.8khiUtnESk3ssHQn
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UpLB0DVP2jXWliPA
           type: feature
           subtype: ability
           target: int
@@ -608,7 +495,8 @@ items:
           apply: self
           additionalInfos: ''
       paths:
-        - Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       capacities: []
     effects: []
     sort: 0
@@ -619,23 +507,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8F72FIIbuOar5FEq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.8khiUtnESk3ssHQn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869019
+      modifiedTime: 1758924905193
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.UpLB0DVP2jXWliPA'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie du demi-orc
     type: path
     img: modules/cof-base/assets/peuples/peuple_demiorc.webp
-    _id: tIgRY1214AboUVSn
+    _id: CX33tb7VwNrf1IbO
     system:
       description: >-
         <p>Le demi‑orc gagne un bonus de +3 à tous les tests d’intimidation. De
@@ -646,11 +535,16 @@ items:
       slug: voie-du-demi-orc
       subtype: people
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.pRRTURXjDI9Y2OZd
-        - Actor.B9EHNKwFTf9KGTIS.Item.AXIhbL59gJHUk4qU
-        - Actor.B9EHNKwFTf9KGTIS.Item.g9DXb9CCWMIu3OHN
-        - Actor.B9EHNKwFTf9KGTIS.Item.wDHmApVIXllCMbr4
-        - Actor.B9EHNKwFTf9KGTIS.Item.wOrBlmsAmj02HAFQ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.hlpcAlX337rtl7q1
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.HG0DHRzz4ny4CJWq
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ksOQ8eGzqIKRkEQp
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.5QwLQvJxtkjLCHqT
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L0hNMIOGxbGXl2bZ
       rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
@@ -662,36 +556,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.tIgRY1214AboUVSn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869180
+      modifiedTime: 1758924967636
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.CX33tb7VwNrf1IbO'
   - folder: 8lxFZWmRQS1vrWIv
     name: Impressionnant
     type: capacity
     img: icons/skills/social/intimidation-impressing.webp
-    _id: pRRTURXjDI9Y2OZd
+    _id: hlpcAlX337rtl7q1
     system:
       description: >-
         <p>Le demi‑orc gagne un bonus de +3 à tous les tests d’intimidation.</p>
 
         <p>De plus, dans le noir total, le demi‑orc voit comme dans la pénombre
-        jusqu’à 30 m.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        jusqu’à 30 m.</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p48
       slug: impressionnant
@@ -703,9 +594,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.pRRTURXjDI9Y2OZd
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.hlpcAlX337rtl7q1
           indice: 0
           label: ''
           chatFlavor: ''
@@ -721,27 +614,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.pRRTURXjDI9Y2OZd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.hlpcAlX337rtl7q1
               subtype: skill
               target: for
               apply: self
               value: '3'
               additionalInfos: Intimidation
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.pRRTURXjDI9Y2OZd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.hlpcAlX337rtl7q1
               subtype: skill
               target: cha
               apply: self
               value: '3'
               additionalInfos: Intimidation
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.pRRTURXjDI9Y2OZd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.hlpcAlX337rtl7q1
               subtype: state
               target: darkvision
               apply: self
               value: '30'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -757,34 +654,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.pRRTURXjDI9Y2OZd'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869236
+      modifiedTime: 1758924967607
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.hlpcAlX337rtl7q1'
   - folder: 8lxFZWmRQS1vrWIv
     name: Talent pour la violence
     type: capacity
     img: icons/skills/melee/unarmed-punch-fist-yellow-red.webp
-    _id: AXIhbL59gJHUk4qU
+    _id: HG0DHRzz4ny4CJWq
     system:
       description: >-
         <p>Le joueur choisit une capacité de rang 1 de n’importe quelle voie de
-        barbare ou de guerrier.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        barbare ou de guerrier.</p>
+      inGame: >-
         <p>Il suffit de glisser déposer la capacité choisie sous cell-ci sur la
         fiche de personnage. Elle sera automatiquement apprise gratuitement.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p48
       slug: talent-pour-la-violence
@@ -796,7 +690,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       actions: []
       cost: -1
       rank: 2
@@ -813,39 +708,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags:
       co: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.AXIhbL59gJHUk4qU'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869342
+      modifiedTime: 1758924869342
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.HG0DHRzz4ny4CJWq'
   - folder: 8lxFZWmRQS1vrWIv
     name: Critique brutale
     type: capacity
     img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
-    _id: g9DXb9CCWMIu3OHN
+    _id: ksOQ8eGzqIKRkEQp
     system:
       description: >-
         <p>Le demi‑orc augmente de 1 point la zone de critique sur une attaque
         au contact (19‑20 au d20) et ajoute +1d4° aux DM en cas de critique.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Cette capacité propose un bouton d'action activable/désactivable pour
         appliquer le bonus de critique .A activer si le joueur utilise une arme
         de contact et pas à distance. Le +1d4° DM lui n'est pas géré pour le
         moment à cause de la notion de critique.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p48
       slug: critique-brutale
@@ -857,12 +747,14 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       cost: -1
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.g9DXb9CCWMIu3OHN
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ksOQ8eGzqIKRkEQp
           indice: 0
-          label: ''
+          label: pour attaque de contact
           chatFlavor: ''
           type: buff
           img: icons/svg/d20-highlight.svg
@@ -876,13 +768,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.g9DXb9CCWMIu3OHN
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ksOQ8eGzqIKRkEQp
               subtype: combat
               target: crit
               apply: self
               value: '1'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       rank: 3
       frequency: none
       manaCost: -1
@@ -894,24 +788,24 @@ items:
     ownership:
       default: 0
       T8QXSVbafGIxbHWi: 3
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.g9DXb9CCWMIu3OHN'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869393
+      modifiedTime: 1758924869411
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.ksOQ8eGzqIKRkEQp'
   - folder: 8lxFZWmRQS1vrWIv
     name: Attaque sanglante
     type: capacity
     img: icons/skills/melee/strike-axe-blood-red.webp
-    _id: wDHmApVIXllCMbr4
+    _id: 5QwLQvJxtkjLCHqT
     system:
       description: >-
         <p>Le demi‑orc réalise une attaque de contact qui provoque une
@@ -921,19 +815,13 @@ items:
         cet effet).</p>
 
         <p>On ne peut pas cumuler plusieurs effets de saignement.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour qui va
         faire le test d'attaque de contact avec l'arme équipée et appliquer les
         dégâts. De plus, un effet de dommages périodiques et un statut
         "saignement" sera appliqué pour la durée du combat. Pour l'arrêter il
         faudra le supprimer manuellement sur la fiche de la cible
         dévérouillée.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p48
       slug: attaque-sanglante
@@ -945,9 +833,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.wDHmApVIXllCMbr4
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.5QwLQvJxtkjLCHqT
           indice: 0
           label: ''
           chatFlavor: ''
@@ -987,6 +877,7 @@ items:
                 unit: round
                 successThreshold: null
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -1002,35 +893,29 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.wDHmApVIXllCMbr4'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869493
+      modifiedTime: 1758924869508
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.5QwLQvJxtkjLCHqT'
   - folder: 8lxFZWmRQS1vrWIv
     name: Colosse
     type: capacity
     img: icons/magic/control/buff-strength-muscle-damage.webp
-    _id: wOrBlmsAmj02HAFQ
+    _id: L0hNMIOGxbGXl2bZ
     system:
-      description: >-
-        <p>Le demi‑orc augmente ses valeurs de FOR et de CON de +1.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      description: <p>Le demi‑orc augmente ses valeurs de FOR et de CON de +1.</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p48
       slug: colosse
@@ -1042,37 +927,43 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.tIgRY1214AboUVSn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.CX33tb7VwNrf1IbO
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.wOrBlmsAmj02HAFQ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L0hNMIOGxbGXl2bZ
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.wOrBlmsAmj02HAFQ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L0hNMIOGxbGXl2bZ
               subtype: ability
               target: for
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.wOrBlmsAmj02HAFQ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L0hNMIOGxbGXl2bZ
               subtype: ability
               target: con
               value: '1'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -1088,23 +979,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.wOrBlmsAmj02HAFQ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924869599
+      modifiedTime: 1758924869612
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.L0hNMIOGxbGXl2bZ'
   - folder: aF8rtevxjzJi9taT
     name: Druide
     type: profile
     img: modules/cof-base/assets/profils/profil_mystique_druide.webp
-    _id: Q4vBDuZljaw4vMnB
+    _id: rDpJ54lMcB1KQj6d
     system:
       description: >-
         <p><strong>Points de vigueur : </strong>4 par niveau Le druide est un
@@ -1146,11 +1038,16 @@ items:
       modifiers: []
       proficiencies: []
       paths:
-        - Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
-        - Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
-        - Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
-        - Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
-        - Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       martialTrainingsWeapons:
         unarmed: true
         staff: true
@@ -1209,24 +1106,25 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags:
       co: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.27Fegjc5ZnvmrVDT
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.Q4vBDuZljaw4vMnB'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924874868
+      modifiedTime: 1758924878335
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.rDpJ54lMcB1KQj6d'
   - folder: Nc47ZdfleFUl6KQr
     name: Voie de la nature
     type: path
     img: modules/cof-base/assets/voies/druide_nature.webp
-    _id: 20ikaI3XpAxM0FS2
+    _id: 65PUncnNMuWLlLox
     system:
       description: ''
       source: ''
@@ -1234,11 +1132,16 @@ items:
       slug: voie-de-la-nature
       subtype: profile
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.XgFnSxL6mCRqbCuc
-        - Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
-        - Actor.B9EHNKwFTf9KGTIS.Item.xefKGjTIRcmZtFdL
-        - Actor.B9EHNKwFTf9KGTIS.Item.xaJdA4evfSYexI2s
-        - Actor.B9EHNKwFTf9KGTIS.Item.h3qUnK4KekCcax05
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L3BVIu6SzcbWIiA5
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.weXnJZ8r3FBH4sxr
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.AEddeUvuLofsWIkU
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.qXORguQghkkxgR1h
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -1250,23 +1153,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.20ikaI3XpAxM0FS2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924874975
+      modifiedTime: 1758924875484
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.65PUncnNMuWLlLox'
   - folder: dDlmKHRV7pMCI2OZ
     name: Maître de la survie
     type: capacity
     img: icons/magic/nature/tree-twisted-glow-yellow.webp
-    _id: XgFnSxL6mCRqbCuc
+    _id: L3BVIu6SzcbWIiA5
     system:
       description: >-
         <p style="text-align:justify">En milieu naturel, le druide ajoute son
@@ -1274,16 +1178,10 @@ items:
         la nourriture, éviter les dangers, etc.) dont les tests de récupération
         effectués chaque nuit. Lorsqu’il dort en milieu naturel, s’il utilise 1
         DR, il guérit 1d4° PV supplémentaire.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
-        "Le bonus aux soins à l'utilisation de DR n'est pas automatisé. Le MJ
-        doit ajouter manuellement les PV supplémentaires.</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris.</p> <p>Le bonus aux soins à l'utilisation de DR n'est pas
+        automatisé. Le MJ doit ajouter manuellement les PV supplémentaires.</p>
       source: ''
       origin: Livre des règles p116
       slug: maitre-de-la-survie
@@ -1295,37 +1193,43 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.XgFnSxL6mCRqbCuc
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L3BVIu6SzcbWIiA5
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.XgFnSxL6mCRqbCuc
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L3BVIu6SzcbWIiA5
               subtype: skill
               target: per
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: survie en milieu naturel
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.XgFnSxL6mCRqbCuc
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.L3BVIu6SzcbWIiA5
               subtype: skill
               target: vol
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: survie en milieu naturel
-          conditions: []
           resolvers: []
+          actionType: none
       cost: 0
       rank: 1
       frequency: none
@@ -1341,39 +1245,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.XgFnSxL6mCRqbCuc'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875031
+      modifiedTime: 1758924875048
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.L3BVIu6SzcbWIiA5'
   - folder: dDlmKHRV7pMCI2OZ
     name: Terrains difficiles
     type: capacity
     img: icons/magic/nature/root-vines-grow-brown.webp
-    _id: Vr5jx4iNEyqz2eCX
+    _id: Ynt2CaqMQ1B61GAY
     system:
       description: >-
         <p>Le druide ne subit aucune pénalité de déplacement en terrain
         difficile (natation, neige, boue, broussailles, pente abrupte, etc.). Il
         obtient un bonus de +3 en initiative, et +1 en attaque et en DEF lors
         d’un combat dans ces conditions.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Il s'agit d'un bonus activable/désactivable si le druide est dans les
         conditions indiquées. Les modificateurs aux déplacements ne sont pas
         automatisées.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p116
       slug: terrains-difficiles
@@ -1385,9 +1284,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1403,41 +1304,47 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
               subtype: combat
               target: melee
               apply: self
               value: '1'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
               subtype: combat
               target: def
               apply: self
               value: '1'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
               subtype: combat
               target: init
               apply: self
               value: '3'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
               subtype: combat
               target: ranged
               apply: self
               value: '1'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Vr5jx4iNEyqz2eCX
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Ynt2CaqMQ1B61GAY
               subtype: combat
               target: magic
               apply: self
               value: '1'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -1453,23 +1360,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.Vr5jx4iNEyqz2eCX'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875139
+      modifiedTime: 1758924875165
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.Ynt2CaqMQ1B61GAY'
   - folder: dDlmKHRV7pMCI2OZ
     name: Bâton de druide
     type: capacity
     img: icons/weapons/staves/staff-vines-green.webp
-    _id: xefKGjTIRcmZtFdL
+    _id: weXnJZ8r3FBH4sxr
     system:
       description: >-
         <p style="text-align:justify">Le druide combat avec les deux extrémités
@@ -1478,19 +1386,13 @@ items:
         remplacer sa FOR par son AGI en attaque s’il le souhaite. Il inflige
         [1d4°+FOR ou AGI au choix] DM par attaque (plus d’éventuels bonus si
         l’arme est magique) et il gagne +2 en DEF pendant 1 round.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p style="text-align:justify">Les deux actions permettent de réaliser
-        une attaque de contact (soit avec FOR soit avec AGI). En activant
-        l'action, l'attaque est réalisée et un bonus de DEF s'ajoute. Pour faire
-        la deuxième attaque, il faut cliquer pour désactiver l'action et
-        recliquer pour l'exécuter à nouveau. Le PJ ne doit pas oublier de
-        désactiver l'action au début de son prochain tour.</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Les deux actions permettent de réaliser une attaque de contact (soit
+        avec FOR soit avec AGI). En activant l'action, l'attaque est réalisée et
+        un bonus de DEF s'ajoute. Pour faire la deuxième attaque, il faut
+        cliquer pour désactiver l'action et recliquer pour l'exécuter à nouveau.
+        Le PJ ne doit pas oublier de désactiver l'action au début de son
+        prochain tour.</p>
       source: ''
       origin: Livre des règles p116
       slug: baton-de-druide
@@ -1502,9 +1404,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.xefKGjTIRcmZtFdL
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.weXnJZ8r3FBH4sxr
           indice: 0
           label: Attaque avec FOR
           chatFlavor: ''
@@ -1520,7 +1424,8 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.xefKGjTIRcmZtFdL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.weXnJZ8r3FBH4sxr
               subtype: combat
               target: def
               apply: self
@@ -1547,7 +1452,9 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.xefKGjTIRcmZtFdL
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.weXnJZ8r3FBH4sxr
           indice: 1
           label: Attaque avec AGI
           chatFlavor: ''
@@ -1563,7 +1470,8 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.xefKGjTIRcmZtFdL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.weXnJZ8r3FBH4sxr
               subtype: combat
               target: def
               apply: self
@@ -1590,6 +1498,7 @@ items:
                 statuses: []
                 duration: '0'
                 unit: round
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -1605,28 +1514,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.xefKGjTIRcmZtFdL'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875256
+      modifiedTime: 1758924875278
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.weXnJZ8r3FBH4sxr'
   - folder: dDlmKHRV7pMCI2OZ
     name: Constitution héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: xaJdA4evfSYexI2s
+    _id: AEddeUvuLofsWIkU
     system:
       description: >-
         <p>Le druide augmente sa PER de +1. Désormais, il obtient un dé bonus
         aux tests de PER. De plus, il ajoute désormais sa PER pour calculer ses
         PM (en plus de sa VOL).</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris.</p>
       source: ''
       origin: Livre des règles p117
       slug: constitution-heroique
@@ -1638,14 +1551,16 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
       cost: -1
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.xaJdA4evfSYexI2s
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.AEddeUvuLofsWIkU
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
+          type: buff
           img: icons/svg/d20-highlight.svg
           properties:
             activable: false
@@ -1657,20 +1572,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.xaJdA4evfSYexI2s
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.AEddeUvuLofsWIkU
               subtype: ability
               target: con
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.xaJdA4evfSYexI2s
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.AEddeUvuLofsWIkU
               subtype: bonusDice
               target: con
               value: '0'
               apply: self
               additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.AEddeUvuLofsWIkU
+              subtype: resource
+              target: mp
+              value: '@per'
+              apply: self
+              additionalInfos: ''
           resolvers: []
+          actionType: none
       rank: 4
       frequency: none
       manaCost: -1
@@ -1682,38 +1608,31 @@ items:
     ownership:
       default: 0
       T8QXSVbafGIxbHWi: 3
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.xaJdA4evfSYexI2s'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875364
+      modifiedTime: 1758924875381
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.AEddeUvuLofsWIkU'
   - folder: dDlmKHRV7pMCI2OZ
     name: Résistant
     type: capacity
     img: icons/magic/nature/barrier-shield-wood-vines.webp
-    _id: h3qUnK4KekCcax05
+    _id: qXORguQghkkxgR1h
     system:
       description: >-
         <p>Le druide divise par deux tous les DM « naturels non magiques » :
         froid, feu, chutes, poisons… mais aussi les DM provoqués par les animaux
         ou les insectes (même géants). Cette protection s’étend aussi à ses
         compagnons animaux.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>A gérer manuellement par le MJ, pour l'instant.</p>
-
-        </blockquote>
+      inGame: <p>A gérer manuellement par le MJ, pour l'instant.</p>
       source: ''
       origin: Livre des règles p116
       slug: resistant
@@ -1725,7 +1644,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.20ikaI3XpAxM0FS2
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.65PUncnNMuWLlLox
       actions: []
       cost: -1
       rank: 5
@@ -1742,23 +1662,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.h3qUnK4KekCcax05'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875469
+      modifiedTime: 1758924875469
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.qXORguQghkkxgR1h'
   - folder: Nc47ZdfleFUl6KQr
     name: Voie des animaux
     type: path
     img: modules/cof-base/assets/voies/druide_animaux.webp
-    _id: ypsDkIO4xqJFbkWP
+    _id: xzJ9raDLZECd8HIS
     system:
       description: ''
       source: ''
@@ -1766,11 +1687,16 @@ items:
       slug: voie-des-animaux
       subtype: profile
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.hvsKuZliTyB8ZhHu
-        - Actor.B9EHNKwFTf9KGTIS.Item.1ppkK3RhoZP8E9mb
-        - Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
-        - Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
-        - Actor.B9EHNKwFTf9KGTIS.Item.SmNXxBZkSPBFTJhs
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.98JM7mUGcTqZt2h9
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.687nqxVpiHURqdCt
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.4TKjV9Mf5iHXamTC
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -1782,23 +1708,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.ypsDkIO4xqJFbkWP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875571
+      modifiedTime: 1758924876252
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.xzJ9raDLZECd8HIS'
   - folder: k5AmELUzuYNm1Cjd
     name: Langage des animaux
     type: capacity
     img: icons/creatures/mammals/dog-husky-white-blue.webp
-    _id: hvsKuZliTyB8ZhHu
+    _id: 98JM7mUGcTqZt2h9
     system:
       description: >-
         <p style="text-align:justify">Le druide sait communiquer avec les
@@ -1811,17 +1738,11 @@ items:
         (et les amphibiens), les poissons (et les mollusques) ou les arthropodes
         (insectes, araignées, scorpions, etc.) et enfin les animaux fantastiques
         (griffon, pégase, etc.).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le bonus pour influencer les animaux est permanent. Le PJ pourra le
         sélectionner dans la fenêtre du jet de CHA lorsqu'il communique avec le
         bon type d'animal. Le PJ notera les langages animaux connus sur la ligne
         langages de l'onglet Biographie</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p114
       slug: langage-des-animaux
@@ -1833,9 +1754,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.hvsKuZliTyB8ZhHu
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.98JM7mUGcTqZt2h9
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1851,13 +1774,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.hvsKuZliTyB8ZhHu
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.98JM7mUGcTqZt2h9
               subtype: skill
               target: cha
               apply: self
               value: 2 + @rang
               additionalInfos: Influencer un animal
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1873,25 +1798,52 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.hvsKuZliTyB8ZhHu'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875636
+      modifiedTime: 1758924875653
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.98JM7mUGcTqZt2h9'
   - folder: k5AmELUzuYNm1Cjd
     name: Petit compagnon
     type: capacity
     img: icons/creatures/mammals/rabbit-movement-glowing-green.webp
-    _id: 1ppkK3RhoZP8E9mb
+    _id: 687nqxVpiHURqdCt
     system:
-      description: "<p style=\"text-align:justify\">Le druide choisit un petit animal (écureuil, corbeau, chat). Il peut utiliser les sens de son familier (voir par ses yeux, entendre ce qu’il entend, etc.) et communiquer avec lui à distance illimitée. Il gagne +2 en DEF lorsque son familier est en vue. Le familier récupère tous les PV perdus après une récupération rapide. S’il est réduit à 0 PV, le familier prend la fuite et réapparaît auprès de son maître 24 h plus tard, complètement soigné. S’il est tué (lors d’un fait de jeu que le MJ juge inévitable), le druide perd 1d4° PV en contrecoup et pourra trouver un autre familier au prochain passage de niveau (pas forcément le même animal).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p>Note : Petit compagnon est une version non magique du Familier du magicien (voie de la magie universelle). Si un personnage décide de faire l’acquisition de ces deux capacités, le bonus de DEF ne se cumule pas.</p>\n</blockquote>\n<blockquote>\n<p style=\"text-align:justify\"><strong>Usage en jeu : </strong>\_Action activable/désactivable en cliquant/recliquant dessus lorsque le druide est proche de familier ou s'en éloigne.. Seul le bonus de DEF est pris en charge. Au MJ de fournir un token pour le @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.gsDRxIeOtgk8k6qA]{Familier (Druide)} et de donner les droits de contrôle au joueur.</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Le druide choisit un petit animal
+        (écureuil, corbeau, chat). Il peut utiliser les sens de son familier
+        (voir par ses yeux, entendre ce qu’il entend, etc.) et communiquer avec
+        lui à distance illimitée. Il gagne +2 en DEF lorsque son familier est en
+        vue. Le familier récupère tous les PV perdus après une récupération
+        rapide. S’il est réduit à 0 PV, le familier prend la fuite et réapparaît
+        auprès de son maître 24 h plus tard, complètement soigné. S’il est tué
+        (lors d’un fait de jeu que le MJ juge inévitable), le druide perd 1d4°
+        PV en contrecoup et pourra trouver un autre familier au prochain passage
+        de niveau (pas forcément le même animal).</p>
+
+        <blockquote>
+
+        <p>Note : Petit compagnon est une version non magique du Familier du
+        magicien (voie de la magie universelle). Si un personnage décide de
+        faire l’acquisition de ces deux capacités, le bonus de DEF ne se cumule
+        pas.</p>
+
+        </blockquote>
+      inGame: >-
+        <p style="text-align:justify">Action activable/désactivable en
+        cliquant/recliquant dessus lorsque le druide est proche de familier ou
+        s'en éloigne. Seul le bonus de DEF est pris en charge. Au MJ de fournir
+        un token pour le
+        @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.gsDRxIeOtgk8k6qA]{Familier
+        (Druide)} et de donner les droits de contrôle au joueur.</p>
       source: ''
       origin: Livre des règles p114
       slug: petit-compagnon
@@ -1903,9 +1855,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.1ppkK3RhoZP8E9mb
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.687nqxVpiHURqdCt
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1921,13 +1875,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.1ppkK3RhoZP8E9mb
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.687nqxVpiHURqdCt
               subtype: combat
               target: def
               value: '2'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -1943,25 +1899,37 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.1ppkK3RhoZP8E9mb'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875741
+      modifiedTime: 1758924875768
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.687nqxVpiHURqdCt'
   - folder: k5AmELUzuYNm1Cjd
     name: Nuée d’insectes
     type: capacity
     img: icons/creatures/invertebrates/wasp-swarm-movement.webp
-    _id: sKgyCtEBp7qLPZtJ
+    _id: ccjEOSgfWmklL4uG
     system:
-      description: "<p style=\"text-align:justify\">En réussissant un test d’attaque magique contre la DEF de sa cible (portée 20 m), le druide libère sur celle‑ci une nuée d’insectes volants qui piquent, aveuglent et la suivent pendant [3 + PER] rounds. La victime subit 1 DM par round et un malus de ‑2 à tous les tests. Les DM de zone détruisent la nuée.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p style=\"text-align:justify\">Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort qui va automatiquement faire le jet d'attaque et lancer les dégats. De plus un effet de dégat périodique sera appliqué à la cible en cas de succès.L'attaque ne fonctionne qu'en Mode Combat.</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">En réussissant un test d’attaque magique
+        contre la DEF de sa cible (portée 20 m), le druide libère sur celle‑ci
+        une nuée d’insectes volants qui piquent, aveuglent et la suivent pendant
+        [3 + PER] rounds. La victime subit 1 DM par round et un malus de ‑2 à
+        tous les tests. Les DM de zone détruisent la nuée.</p>
+      inGame: >-
+        <p style="text-align:justify">Le joueur sélectionne sa cible puis clique
+        sur l'action pour lancer le sort qui va automatiquement faire le jet
+        d'attaque et lancer les Dommages. De plus, un effet de DM périodiques
+        sera appliqué à la cible en cas de succès. L'attaque ne fonctionne qu'en
+        Mode Combat.</p>
       source: ''
       origin: Livre des règles p114
       slug: nuee-dinsectes
@@ -1973,9 +1941,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1991,28 +1961,32 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
               subtype: skill
               target: all
               apply: others
               value: '-2'
               additionalInfos: Nuée d'insectes
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
               subtype: combat
               target: melee
               apply: others
               value: '-2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
               subtype: combat
               target: ranged
               apply: others
               value: '-2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.sKgyCtEBp7qLPZtJ
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.ccjEOSgfWmklL4uG
               subtype: combat
               target: magic
               apply: both
@@ -2042,6 +2016,7 @@ items:
                 duration: 3 + @per
                 unit: round
                 successThreshold: null
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2057,35 +2032,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.sKgyCtEBp7qLPZtJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924875911
+      modifiedTime: 1758924875940
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.ccjEOSgfWmklL4uG'
   - folder: k5AmELUzuYNm1Cjd
     name: Masque du prédateur
     type: capacity
     img: icons/creatures/abilities/cougar-roar-rush-orange.webp
-    _id: DPaaAjv9FvK6DENL
+    _id: UPvIglq94fstSQUQ
     system:
       description: >-
         <p>Pendant PER minutes, le druide prend les traits d’un fauve ou d’un
         loup. Il gagne +2 en Initiative, en DEF, en attaque et aux DM au contact
-        et peut voir dans la nuit (comme un elfe).</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong> Action activable/désactivable en
-        cliquant/recliquant dessus. Lorsqu'elle est active la capacité donne les
-        bonus ci dessus. Mais le token du joueur ne change pas pour prendre
-        l'apparence d'un loup...</p>
-
-        </blockquote>
+        et peut voir dans la nuit (comme un elfe).</p>
+      inGame: >-
+        <p>Action activable/désactivable en cliquant/recliquant dessus.
+        Lorsqu'elle est active la capacité donne les bonus ci dessus. Mais le
+        token du joueur ne change pas pour prendre l'apparence d'un loup...</p>
       source: ''
       origin: Livre des règles p114
       slug: masque-du-predateur
@@ -2097,9 +2070,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2115,41 +2090,47 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
               subtype: combat
               target: melee
               apply: self
               value: '2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
               subtype: combat
               target: def
               apply: self
               value: '2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
               subtype: combat
               target: damMelee
               apply: self
               value: '2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
               subtype: combat
               target: init
               apply: self
               value: '2'
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.DPaaAjv9FvK6DENL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.UPvIglq94fstSQUQ
               subtype: state
               target: darkvision
               apply: self
-              value: '0'
+              value: '15'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -2165,23 +2146,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.DPaaAjv9FvK6DENL'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876035
+      modifiedTime: 1758924876057
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.UPvIglq94fstSQUQ'
   - folder: k5AmELUzuYNm1Cjd
     name: Forme animale
     type: capacity
     img: icons/creatures/birds/raptor-owl-flying-moon.webp
-    _id: SmNXxBZkSPBFTJhs
+    _id: 4TKjV9Mf5iHXamTC
     system:
       description: >-
         <p style="text-align:justify">Pendant une durée de PER minutes, le
@@ -2194,33 +2176,13 @@ items:
         poisson, etc.). Le druide ne peut ni utiliser son équipement ni ses
         propres capacités sous cette forme. Le druide peut reprendre sa forme
         humaine lorsqu’il le désire par une action de mouvement (M).</p>
-
-        <blockquote>
-
-        <p style="text-align:justify">QU’EST‑CE QU’UN ANIMAL ? Dans le cadre de
-        la forme animale du druide, tout animal qui vit sur notre planète Terre
-        est un animal. Si votre monde comporte des animaux fantastiques
-        (griffon, pégase, etc.), ils sont a priori exclus. Tout animal
-        bénéficiant d’une capacité surnaturelle est exclu aussi. Enfin, il est
-        important de se placer du point de vue du druide plutôt que de celui du
-        joueur. Un druide des forêts tempérées qui n’a jamais vu de singe ne
-        peut pas adopter cette forme. Vous trouverez une liste des profils des
-        animaux les plus courants au chapitre « Adversité ».</p>
-
-        </blockquote>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p style="text-align:justify">Le joueur clique sur l'action pour activer
         le sort et dépenser ses PM. Pas d'effets automatiques. Le MJ peut
         dupliquer certains des animaux présents dans le bestiaire et en donner
         les droits au Druide pour qu'il les utilise lorsqu'il en prend la forme.
         Il utilisera sa propre feuille pour les PV, INT et VOL et les valeurs de
         l'animal pour le reste.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p114
       slug: forme-animale
@@ -2232,9 +2194,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.ypsDkIO4xqJFbkWP
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.xzJ9raDLZECd8HIS
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.SmNXxBZkSPBFTJhs
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.4TKjV9Mf5iHXamTC
           indice: 0
           label: Activation du sort
           chatFlavor: ''
@@ -2250,6 +2214,7 @@ items:
             - predicate: isLearned
           modifiers: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -2265,23 +2230,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.SmNXxBZkSPBFTJhs'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876151
+      modifiedTime: 1758924876181
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.4TKjV9Mf5iHXamTC'
   - folder: Nc47ZdfleFUl6KQr
     name: Voie des végétaux
     type: path
     img: modules/cof-base/assets/voies/druide_vegetaux.webp
-    _id: l38ca6GWOCLlv0Ux
+    _id: TMuHySDBt4PtKqbX
     system:
       description: ''
       source: ''
@@ -2289,11 +2255,16 @@ items:
       slug: voie-des-vegetaux
       subtype: profile
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.Py0ItAWW9u7U1Thb
-        - Actor.B9EHNKwFTf9KGTIS.Item.3Ps1CsOVHimbjU83
-        - Actor.B9EHNKwFTf9KGTIS.Item.x5Vbmr94gADTx7uI
-        - Actor.B9EHNKwFTf9KGTIS.Item.kAP6IFdVM1N23oo2
-        - Actor.B9EHNKwFTf9KGTIS.Item.i84EyFHjOY3P5UQu
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Hl1B9WqvJcDhLBse
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.19S9vG926dq3f66X
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.wjEnj6hgqHQK1ym9
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.McUDRRH9aHqlasTh
       rank: 0
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -2305,23 +2276,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.l38ca6GWOCLlv0Ux'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876331
+      modifiedTime: 1758924876779
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.TMuHySDBt4PtKqbX'
   - folder: Efeq93uGyOmXHdsn
     name: Peau d’écorce
     type: capacity
     img: icons/magic/nature/root-vines-face-glow-green.webp
-    _id: Py0ItAWW9u7U1Thb
+    _id: h5QOyydfYZY3Q6v5
     system:
       description: >-
         <p style="text-align:justify">La peau du druide prend la consistance de
@@ -2331,11 +2303,7 @@ items:
         de protection qui ajoute un bonus de DEF (à l’exception du Masque du
         prédateur). En plus de ce sort, le druide ajoute son rang + 2 aux tests
         pour identifier les plantes et connaître leurs propriétés.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>2 actions :</p>
 
         <p>Une amélioration permanente qui augmente les jets pour identifier les
@@ -2344,8 +2312,6 @@ items:
         <p>Une action activable pour lancer le sort et dépenser les PM. Elle
         applique le bonus de DEF sans prendre en compte la durée. Le PJ doit l'a
         désactiver lorsque le sort prend fin</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p117
       slug: peau-decorce
@@ -2357,14 +2323,16 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.Py0ItAWW9u7U1Thb
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
@@ -2375,35 +2343,49 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Py0ItAWW9u7U1Thb
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
               subtype: combat
               target: def
+              value: '@rang[2,2,3,3,4]'
               apply: self
-              value: '@rang[2,2,3,3,3]'
               additionalInfos: ''
           resolvers: []
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.Py0ItAWW9u7U1Thb
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
           indice: 1
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: true
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.Py0ItAWW9u7U1Thb
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
               subtype: skill
               target: int
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: Identifier les plantes
-          conditions: []
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.h5QOyydfYZY3Q6v5
+              subtype: skill
+              target: per
+              value: 2 + @rang
+              apply: self
+              additionalInfos: Identifier les plantes
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2419,23 +2401,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.Py0ItAWW9u7U1Thb'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876394
+      modifiedTime: 1758924876417
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.h5QOyydfYZY3Q6v5'
   - folder: Efeq93uGyOmXHdsn
     name: Prison végétale
     type: capacity
     img: icons/magic/nature/root-vine-entangled-humanoid.webp
-    _id: 3Ps1CsOVHimbjU83
+    _id: Hl1B9WqvJcDhLBse
     system:
       description: >-
         <p>Le druide peut commander à la végétation de pousser et bloquer ses
@@ -2444,17 +2427,11 @@ items:
         créature peut se libérer (action d’attaque) avec un test de FOR
         difficulté [10 + PER du druide]. En cas de réussite, elle n’est plus
         affectée par le sort pour le reste du combat.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le PJ dépense manuellement les PM. Un cercle de 10m de diamètre peut
         être tracé sur le plan grâce à l'outil Gabarit Circulaire sur la zone
         affectée. C'est au MJ d'immobiliser les cibles qui sont dans la zone ou
         qu'y y rentrent</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p117
       slug: prison-vegetale
@@ -2466,7 +2443,8 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
       actions: []
       cost: -1
       rank: 2
@@ -2483,25 +2461,41 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.3Ps1CsOVHimbjU83'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876509
+      modifiedTime: 1758924876509
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.Hl1B9WqvJcDhLBse'
   - folder: Efeq93uGyOmXHdsn
     name: Flèche vivante
     type: capacity
     img: icons/skills/ranged/arrow-strike-glowing-teal.webp
-    _id: x5Vbmr94gADTx7uI
+    _id: 19S9vG926dq3f66X
     system:
-      description: "<p style=\"text-align:justify\">En une action, le druide enchante une flèche et la tire (il doit tenir un arc en main). Cette flèche a pour particularité de prendre racine dans la plaie et de devenir un arbuste. S’il réussit un test d’attaque à distance, il inflige les DM habituels de son attaque, et au round suivant, la flèche inflige 3d4° DM supplémentaires. Si la victime est réduite à 0 PV par ce sort, un jeune arbuste pousse sur son cadavre.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p style=\"text-align:justify\">Le joueur sélectionne sa cible puis clique sur l'action pour lancer le sort et dépenser les PM. Le test d'attaque à distance reprend les valeurs de l'arme équipée et va appliquer les DM de l'amre équipée en cas de réussite. De plus, un effet de dommages périodique sur 1 tour va être appliqué à la cible en cas de succès de l'attaque.</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">En une action, le druide enchante une
+        flèche et la tire (il doit tenir un arc en main). Cette flèche a pour
+        particularité de prendre racine dans la plaie et de devenir un arbuste.
+        S’il réussit un test d’attaque à distance, il inflige les DM habituels
+        de son attaque, et au round suivant, la flèche inflige 3d4° DM
+        supplémentaires. Si la victime est réduite à 0 PV par ce sort, un jeune
+        arbuste pousse sur son cadavre.</p>
+      inGame: >-
+        <p style="text-align:justify">Le joueur sélectionne sa cible puis clique
+        sur l'action pour lancer le sort et dépenser les PM. Le test d'attaque à
+        distance reprend les valeurs de l'arme équipée et va appliquer les DM de
+        l'amre équipée en cas de réussite. De plus, un effet de dommages
+        périodique sur 1 tour va être appliqué à la cible en cas de succès de
+        l'attaque.</p> <p>Les dommages périodiques sont appliqués uniquement en
+        mode Combat.</p>
       source: ''
       origin: Livre des règles p117
       slug: fleche-vivante
@@ -2513,9 +2507,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.x5Vbmr94gADTx7uI
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.19S9vG926dq3f66X
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2554,6 +2550,7 @@ items:
                 unit: round
                 successThreshold: null
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2569,39 +2566,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.x5Vbmr94gADTx7uI'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876575
+      modifiedTime: 1758924876596
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.19S9vG926dq3f66X'
   - folder: Efeq93uGyOmXHdsn
     name: Animation d’un arbre
     type: capacity
     img: icons/magic/nature/tree-animated-squint.webp
-    _id: kAP6IFdVM1N23oo2
+    _id: wjEnj6hgqHQK1ym9
     system:
-      description: >-
-        <p>Le druide peut animer un arbre en le touchant. Il combat à son
-        service pendant [niveau du druide] rounds. Il peut animer un seul arbre
-        à la fois.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      description: "<p>Le druide peut animer un arbre en le touchant. Il combat à son service pendant [niveau du druide] rounds. Il peut animer un seul arbre à la fois.</p>\n<p>\_</p>"
+      inGame: >-
         <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques. Au
         MJ de fournir le token
         @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.oJMOXZ4nlh1izQB7]{Arbre
         animé}</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p117
       slug: animation-dun-arbre
@@ -2613,7 +2602,8 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
       actions: []
       cost: -1
       rank: 4
@@ -2630,36 +2620,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.kAP6IFdVM1N23oo2'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876694
+      modifiedTime: 1758924876694
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.wjEnj6hgqHQK1ym9'
   - folder: Efeq93uGyOmXHdsn
     name: Porte végétale
     type: capacity
     img: icons/magic/nature/tree-spirit-black.webp
-    _id: i84EyFHjOY3P5UQu
+    _id: McUDRRH9aHqlasTh
     system:
       description: >-
         <p>Une fois par jour, le druide peut pénétrer dans le tronc d’un gros
         arbre et sortir de celui d’un autre arbre appartenant à la même forêt et
         situé à une distance maximale de PER × 10 km. À partir du niveau 10 et
         tous les 4 niveaux supplémentaires, le druide peut emmener une personne
-        avec lui.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-        </blockquote>
+        avec lui.</p>
+      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
       source: ''
       origin: Livre des règles p117
       slug: porte-vegetale
@@ -2671,7 +2657,8 @@ items:
         max: 1
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.l38ca6GWOCLlv0Ux
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
       actions: []
       cost: -1
       rank: 5
@@ -2688,23 +2675,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.i84EyFHjOY3P5UQu'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876757
+      modifiedTime: 1758924876757
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.McUDRRH9aHqlasTh'
   - folder: Nc47ZdfleFUl6KQr
     name: Voie du fauve
     type: path
     img: modules/cof-base/assets/voies/druide_faune.webp
-    _id: FCFsYfa1QbFeS9Mo
+    _id: 3WFQlZgjxgntls3Y
     system:
       description: >-
         <h3>GÉRER UN COMPAGNON ANIMAL</h3>
@@ -2728,11 +2716,16 @@ items:
       slug: voie-du-fauve
       subtype: profile
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
-        - Actor.B9EHNKwFTf9KGTIS.Item.3ZGyPyUTcptwUoML
-        - Actor.B9EHNKwFTf9KGTIS.Item.3QXCRq0G3YOZcQqH
-        - Actor.B9EHNKwFTf9KGTIS.Item.okl4A7hYMuSK4UG9
-        - Actor.B9EHNKwFTf9KGTIS.Item.3udIviK9RMsZnPgA
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.bjSZcHNKfi38Rbu1
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.zi14wGo9a4xKEJqq
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.C8xIgMbau2BO8Anz
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Vi9VUnXqhg4ENzT8
       rank: 1
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -2744,34 +2737,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.FCFsYfa1QbFeS9Mo'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876880
+      modifiedTime: 1758924976965
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.3WFQlZgjxgntls3Y'
   - folder: Ds7P089wjDiDwuRk
     name: Vitesse du félin
     type: capacity
     img: icons/skills/movement/feet-winged-boots-brown.webp
-    _id: EkjVq4h5fm2QJOJY
+    _id: 8hEIMsTvivjrL6vc
     system:
       description: >-
         <p>Le druide ajoute son rang + 2 aux tests de course, d’escalade ou de
         saut. De plus, il gagne +3 en Initiative et +1 en DEF. Le bonus de DEF
-        passe à +2 au rang 3 et +3 au rang 5.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit de bonus permanent à partir du moment où il est appris</p>
-
-        </blockquote>
+        passe à +2 au rang 3 et +3 au rang 5.</p>
+      inGame: >-
+        <p>Il s'agit de bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p115
       slug: vitesse-du-felin
@@ -2783,51 +2774,59 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: true
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
               subtype: skill
               target: agi
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: course/escalade/saut
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
               subtype: skill
               target: for
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: course/escalade/saut
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
               subtype: combat
               target: init
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.EkjVq4h5fm2QJOJY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.8hEIMsTvivjrL6vc
               subtype: combat
               target: def
-              apply: self
               value: '@rang[1,1,2,2,3]'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2843,38 +2842,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.EkjVq4h5fm2QJOJY'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924876994
+      modifiedTime: 1758924976909
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.8hEIMsTvivjrL6vc'
   - folder: Ds7P089wjDiDwuRk
     name: Panthère
     type: capacity
     img: icons/creatures/abilities/cougar-pounce-stalk-black.webp
-    _id: 3ZGyPyUTcptwUoML
+    _id: bjSZcHNKfi38Rbu1
     system:
       description: >-
         <p>Le druide apprivoise une panthère (ou un puma) qui lui obéit au doigt
         et à l’oeil.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant. Au MJ de fournir le token
         @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.vGSRR6FI1SW8oR35]{Panthère}et
         de donner les droits de contrôle au joueur.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p115
       slug: panthere
@@ -2886,7 +2880,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
       actions: []
       cost: -1
       rank: 2
@@ -2903,42 +2898,37 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.3ZGyPyUTcptwUoML'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877125
+      modifiedTime: 1758924877125
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.bjSZcHNKfi38Rbu1'
   - folder: Ds7P089wjDiDwuRk
     name: Attaque bondissante
     type: capacity
     img: icons/creatures/abilities/paw-glowing-yellow.webp
-    _id: 3QXCRq0G3YOZcQqH
+    _id: zi14wGo9a4xKEJqq
     system:
       description: >-
         <p>Le druide ou son félin parcourt de 5 à 10 m et bénéficie d’un dé
         bonus au test d’attaque et de +1d4° aux DM contre sa cible. Il ne peut
         pas effectuer d’attaque bondissante s’il est au contact d’un
         adversaire.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Si cela concerne le joueur, celui-ci sélectionne sa cible et clic sur
-        l'action "Attaque bondissante" qui prendra en compte les bonus pour
+      inGame: >-
+        <p>Si cela concerne le joueur, celui-ci sélectionne sa cible et clique
+        sur l'action "Attaque bondissante" qui prendra en compte les bonus pour
         l'attaque et l'arme tenu en main.</p>
 
         <p>Si cela concerne la panthère il faudra lui donner cette capacité pour
         en faire de même</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p115
       slug: attaque-bondissante
@@ -2950,9 +2940,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.3QXCRq0G3YOZcQqH
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.zi14wGo9a4xKEJqq
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2988,6 +2980,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -3003,87 +2996,72 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.3QXCRq0G3YOZcQqH'
-  - folder: Ds7P089wjDiDwuRk
-    name: Grand félin
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877202
+      modifiedTime: 1758924877225
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.zi14wGo9a4xKEJqq'
+  - name: Grand félin
     type: capacity
-    img: icons/creatures/abilities/bear-roar-bite-brown-green.webp
-    _id: okl4A7hYMuSK4UG9
+    img: icons/creatures/mammals/wolf-shadow-black.webp
     system:
-      description: >-
-        <p style="text-align:justify">La panthère devient un animal fabuleux ou
-        est remplacée par un félin plus grand (tigre, lion). Le grand félin peut
-        servir de monture au druide et il se déplace de 20 m par action de
-        mouvement. Le druide peut communiquer avec son félin par télépathie et
-        le guérir à distance en dépensant ses propres PV (‑1 PV au druide par PV
-        octroyé au félin).</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-        l'instant à partir de
-        @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.yOtZXSpCfWHbeep0]{Grand
-        félin}</p>
-
-        </blockquote>
+      description: "<p>La panthère devient un animal fabuleux ou est\_remplacée par un félin plus grand (tigre, lion). Le\_grand félin peut servir de monture au druide et\_il se déplace de 20 m par action de mouvement.</p><p>Le druide peut communiquer avec son félin par\_télépathie et le guérir à distance en dépensant ses\_propres PV (‑1 PV au druide par PV octroyé au félin).</p>"
       source: ''
-      origin: Livre des règles p115
-      slug: grand-felin
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>Importer la fiche de rencontre du
+        @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.yOtZXSpCfWHbeep0]
+        et donner les accès à votre joueur pour qu'il puisse le contrôler</p>
       subtype: ''
       actionType: none
       learned: false
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
-      actions: []
-      cost: -1
       rank: 4
       frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
+      cost: -1
       manaCost: -1
+      actions: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
     effects: []
-    sort: 300000
+    folder: Ds7P089wjDiDwuRk
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.okl4A7hYMuSK4UG9'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877353
+      modifiedTime: 1758924877353
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: C8xIgMbau2BO8Anz
+    sort: 300000
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.C8xIgMbau2BO8Anz'
   - folder: Ds7P089wjDiDwuRk
     name: Les sept vies du chat
     type: capacity
     img: icons/magic/life/ankh-gold-blue.webp
-    _id: 3udIviK9RMsZnPgA
+    _id: Vi9VUnXqhg4ENzT8
     system:
       description: >-
         <p style="text-align:justify">Cette capacité ne peut être utilisée que
@@ -3093,15 +3071,9 @@ items:
         mettre d’accord et trouver une raison plausible (ou pas !) pour
         expliquer la survie du personnage, et le faire réapparaître
         immédiatement ou un peu plus tard dans l’aventure si nécessaire</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p115
       slug: les-sept-vies-du-chat
@@ -3113,7 +3085,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.FCFsYfa1QbFeS9Mo
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.3WFQlZgjxgntls3Y
       actions: []
       cost: -1
       rank: 5
@@ -3130,23 +3103,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.3udIviK9RMsZnPgA'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877431
+      modifiedTime: 1758924877431
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.Vi9VUnXqhg4ENzT8'
   - folder: Nc47ZdfleFUl6KQr
     name: Voie du protecteur
     type: path
     img: modules/cof-base/assets/voies/druide_protecteur.webp
-    _id: bLDjXiFhzE8tf2TG
+    _id: dxKrLn4DQb0VNjLv
     system:
       description: ''
       source: ''
@@ -3154,11 +3128,16 @@ items:
       slug: voie-du-protecteur
       subtype: profile
       capacities:
-        - Actor.B9EHNKwFTf9KGTIS.Item.A6mBId1Hsq4viFrA
-        - Actor.B9EHNKwFTf9KGTIS.Item.u3H1SFud1ZKIdmYh
-        - Actor.B9EHNKwFTf9KGTIS.Item.6Z1g4a8a535fRtqe
-        - Actor.B9EHNKwFTf9KGTIS.Item.ZE697ESJRubbsrtw
-        - Actor.B9EHNKwFTf9KGTIS.Item.eBU5sWSB0pUDMJlb
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.9PXhYR2G7BoTVMVi
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.WcC0OcZGgFaJ4pLz
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.pWTXfO9eReQmQ0RX
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.fO9Ou76HiV6IlJOI
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.JBCTxfOsXCyBt6H7
       rank: 1
       maxDefenseArmor: 2
       pvByLevel: 0
@@ -3170,23 +3149,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.bLDjXiFhzE8tf2TG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877553
+      modifiedTime: 1758924973238
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.dxKrLn4DQb0VNjLv'
   - folder: 59NLi5B64imQxdoO
     name: Baies magiques
     type: capacity
     img: icons/consumables/food/berries-ration-round-red.webp
-    _id: A6mBId1Hsq4viFrA
+    _id: 9PXhYR2G7BoTVMVi
     system:
       description: >-
         <p>Le druide doit se trouver devant un buisson ou un arbre vivant. Son
@@ -3196,26 +3176,17 @@ items:
         par jour et par personnage. En plus de ce sort, le druide ajoute son
         rang + 2 à tous les tests de vigilance et de discrétion en pleine
         nature.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>2 actions :</p>
-
-        <p>Une amélioration permanente sur les jets de discrétion et vigilance
-        en milieu naturel</p>
-
-        <p>Le MJ donne les droits au PJ de l'équipement consommable
+      inGame: >-
+        <p>2 actions :</p><p>Une amélioration permanente sur les jets de
+        discrétion et vigilance en milieu naturel</p><p>Le MJ donne les droits
+        au PJ de l'équipement consommable
         @UUID[Compendium.cof-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie
         magique}. Pour créer les Baies Magiques le PJ doit dépenser manuellement
-        le PM et augmente la quantité de Baies Magiques en sa possession de
-        PER.. Cette objet peut être donné par le personnage à ses compagnons ou
-        à lui-même pour récupérer, une fois par jour, les PV. Le PJ devra
-        rappeler aux possesseur de Baies Magiques de modifier la formule de Soin
-        quand il apprend une nouvelle capacité de la Voie du Protecteur.</p>
-
-        </blockquote>
+        le PM et augmente la quantité de Baies Magiques en sa possession de PER.
+        Cette objet peut être donné par le personnage à ses compagnons ou à
+        lui-même pour récupérer, une fois par jour, les PV. Le PJ devra rappeler
+        aux possesseur de Baies Magiques de modifier la formule de Soin quand il
+        apprend une nouvelle capacité de la Voie du Protecteur.</p>
       source: ''
       origin: Livre des règles p116
       slug: baies-magiques
@@ -3227,37 +3198,43 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.A6mBId1Hsq4viFrA
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.9PXhYR2G7BoTVMVi
           indice: 0
-          label: Vigilance et discrétion en pleine nature
-          chatFlavor: Vigilance et discrétion en pleine nature
-          type: buff
+          label: ''
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: true
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.A6mBId1Hsq4viFrA
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.9PXhYR2G7BoTVMVi
               subtype: skill
               target: agi
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: vigilance/discrétion
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.A6mBId1Hsq4viFrA
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.9PXhYR2G7BoTVMVi
               subtype: skill
               target: per
-              apply: self
               value: 2 + @rang
+              apply: self
               additionalInfos: vigilance/discrétion
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -3273,23 +3250,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.A6mBId1Hsq4viFrA'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877620
+      modifiedTime: 1758924973208
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.9PXhYR2G7BoTVMVi'
   - folder: 59NLi5B64imQxdoO
     name: Forêt vivante
     type: capacity
     img: icons/magic/nature/tree-animated-smile.webp
-    _id: u3H1SFud1ZKIdmYh
+    _id: WcC0OcZGgFaJ4pLz
     system:
       description: >-
         <p>Après un rituel de 30 min, la forêt s’éveille dans un rayon de 1 km
@@ -3298,16 +3276,9 @@ items:
         branches et les racines. Ils divisent leur déplacement par deux et
         subissent un dé malus à tous les tests de survie, d’orientation, de
         perception ou de discrétion. Le druide peut lancer ce sort une seule
-        fois par jour.</p>
-
-        <p>Si deux druides essaient d’influencer la forêt, c’est celui dont le
-        niveau est le plus élevé qui l’emporte</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
-
-        </blockquote>
+        fois par jour.</p><p>Si deux druides essaient d’influencer la forêt,
+        c’est celui dont le niveau est le plus élevé qui l’emporte</p>
+      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
       source: ''
       origin: Livre des règles p116
       slug: foret-vivante
@@ -3319,7 +3290,8 @@ items:
         max: 1
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       actions: []
       cost: -1
       rank: 2
@@ -3336,38 +3308,35 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.u3H1SFud1ZKIdmYh'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877748
+      modifiedTime: 1758924877748
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.WcC0OcZGgFaJ4pLz'
   - folder: 59NLi5B64imQxdoO
     name: Régénération
     type: capacity
     img: icons/magic/life/heart-cross-strong-flame-green.webp
-    _id: 6Z1g4a8a535fRtqe
+    _id: pWTXfO9eReQmQ0RX
     system:
       description: >-
         <p>Une cible touchée par le druide récupère [3d4°+PER] PV par un rituel
         de 10 min (la cible et le druide doivent rester au calme). À partir du
         rang 5, ce sort permet aussi de faire repousser les membres ou les
         parties du corps amputées. Une cible peut bénéficier de ce sort
-        seulement une fois par jour.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+        seulement une fois par jour.</p>
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
         le sort qui va faire le jet de soin et appliquer les soins à la
         cible.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p116
       slug: regeneration
@@ -3379,9 +3348,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.6Z1g4a8a535fRtqe
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.pWTXfO9eReQmQ0RX
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3409,11 +3380,11 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -3429,35 +3400,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.6Z1g4a8a535fRtqe'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877825
+      modifiedTime: 1758924877855
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.pWTXfO9eReQmQ0RX'
   - folder: bTiXrsHGxRMuP4M5
     name: Perception héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: ZE697ESJRubbsrtw
+    _id: fO9Ou76HiV6IlJOI
     system:
       description: >-
         <p>L’utilisateur augmente sa valeur de PER de +1. Désormais, il obtient
         un dé bonus aux tests de PER, et il ajoute sa PER au nombre de PM dont
-        il bénéficie.</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        il bénéficie.</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p94 et 117
       slug: perception-heroique
@@ -3469,9 +3437,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.ZE697ESJRubbsrtw
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.fO9Ou76HiV6IlJOI
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3487,27 +3457,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.ZE697ESJRubbsrtw
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.fO9Ou76HiV6IlJOI
               subtype: ability
               target: per
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.ZE697ESJRubbsrtw
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.fO9Ou76HiV6IlJOI
               subtype: bonusDice
               target: per
               value: '0'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.B9EHNKwFTf9KGTIS.Item.ZE697ESJRubbsrtw
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.fO9Ou76HiV6IlJOI
               subtype: resource
               target: mp
               value: '@per'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -3523,25 +3497,42 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.ZE697ESJRubbsrtw'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924877962
+      modifiedTime: 1758924877990
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.fO9Ou76HiV6IlJOI'
   - folder: 59NLi5B64imQxdoO
     name: Forme d’arbre
     type: capacity
     img: icons/magic/nature/tree-animated-strike.webp
-    _id: eBU5sWSB0pUDMJlb
+    _id: JBCTxfOsXCyBt6H7
     system:
-      description: "<p style=\"text-align:justify\">Le druide peut se transformer en arbre (environ 5 m de hauteur) pendant PER minutes. Il prend les mêmes caractéristiques (à l’exception de l’INT, de la PER et de la VOL) que l’arbre animé (voir plus loin), y compris les PV. Sous cette forme, il ne peut pas parler, mais peut utiliser les sorts des voies du protecteur et des végétaux. À la fin du sort, ou s’il est réduit à 0 PV, il reprend forme humaine et retrouve les PV que le personnage avait au début du sort.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action pour activer le sort et consommer ses PM. Le MJ donne les droits au Druide sur @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.oJMOXZ4nlh1izQB7]{Arbre animé} pour qu'il l'utilise lorsqu'il en prend la forme. Il utilisera sa propre feuille pour les INT, PER et VOL et les valeurs de l'Arbre Animé pour le reste. Le PJ doit noter à part ses PV au moment d'utiliser le sort afin de les rajouter lorsqu'il reprend sa forme</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Le druide peut se transformer en arbre
+        (environ 5 m de hauteur) pendant PER minutes. Il prend les mêmes
+        caractéristiques (à l’exception de l’INT, de la PER et de la VOL) que
+        l’arbre animé (voir plus loin), y compris les PV. Sous cette forme, il
+        ne peut pas parler, mais peut utiliser les sorts des voies du protecteur
+        et des végétaux. À la fin du sort, ou s’il est réduit à 0 PV, il reprend
+        forme humaine et retrouve les PV que le personnage avait au début du
+        sort.</p><p style="text-align:justify">_</p>
+      inGame: >-
+        <p>Le joueur clique sur l'action pour activer le sort et consommer ses
+        PM. Le MJ donne les droits au Druide sur
+        @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.oJMOXZ4nlh1izQB7]{Arbre
+        animé} pour qu'il l'utilise lorsqu'il en prend la forme. Il utilisera sa
+        propre feuille pour les INT, PER et VOL et les valeurs de l'Arbre Animé
+        pour le reste. Le PJ doit noter à part ses PV au moment d'utiliser le
+        sort afin de les rajouter lorsqu'il reprend sa forme</p>
       source: ''
       origin: Livre des règles p117
       slug: forme-darbre
@@ -3553,9 +3544,11 @@ items:
         max: null
       properties:
         spell: true
-      path: Actor.B9EHNKwFTf9KGTIS.Item.bLDjXiFhzE8tf2TG
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dxKrLn4DQb0VNjLv
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.eBU5sWSB0pUDMJlb
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.JBCTxfOsXCyBt6H7
           indice: 0
           label: Activer le sort
           chatFlavor: ''
@@ -3587,6 +3580,7 @@ items:
               skill: {}
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -3602,136 +3596,29 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.eBU5sWSB0pUDMJlb'
-  - folder: E0IHxlFlZyFSfQGY
-    name: Arc court
-    type: equipment
-    img: icons/weapons/bows/shortbow-arrows-black.webp
-    _id: nY6oTz6uOVfTNq5T
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: arc-court
-      tags: []
-      subtype: weapon
-      martialCategory: shortBow
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 1
-        unit: kg
-      price:
-        value: 4
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: true
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: true
-      actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.nY6oTz6uOVfTNq5T
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: ranged
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atd'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 1200000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.nY6oTz6uOVfTNq5T'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924878187
+      modifiedTime: 1758924878223
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.JBCTxfOsXCyBt6H7'
   - folder: BHbn2gP9Z2mczP4c
-    name: Epieu
+    name: Épieu
     type: equipment
     img: icons/weapons/polearms/spear-flared-blue.webp
-    _id: jAGScjZGBeBVp2Tm
+    _id: XYzh7eJZEYFhIJmU
     system:
       description: >-
-        <p><span class="BxUVEf ILfuVd" lang="fr"><span class="hgKElc">Arme
-        formée d'un bâton d'environ un mètre et demi de long, muni d'un fer
-        large et pointu. Elle peux être tenu à une ou deux main et être
-        lancée.</span></span></p>
+        <p>Arme formée d'un bâton d'environ un mètre et demi de long,  muni d'un
+        fer large et pointu. Elle peux être tenu à une ou deux  main et être
+        lancée.</p>
       source: ''
       origin: ''
       slug: epieu
@@ -3752,9 +3639,9 @@ items:
         unit: kg
       price:
         value: 4
-        unit: ''
+        unit: pa
       rarity: common
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
@@ -3762,21 +3649,38 @@ items:
       usage:
         oneHand: true
         twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 10
       actions:
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.jAGScjZGBeBVp2Tm
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.XYzh7eJZEYFhIJmU
           indice: 0
-          label: Epieu 1M
-          chatFlavor: Epieu 1M
-          type: melee
+          label: 1 main
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
-            visible: false
-            activable: true
+            visible: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
@@ -3787,32 +3691,33 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
           modifiers: []
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.jAGScjZGBeBVp2Tm
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.XYzh7eJZEYFhIJmU
           indice: 1
-          label: Epieu 2M
-          chatFlavor: Epieu 2M
-          type: melee
+          label: 2 mains
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
-            visible: false
-            activable: true
+            visible: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atc'
                 crit: ''
@@ -3823,32 +3728,33 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
           modifiers: []
-        - source: Actor.B9EHNKwFTf9KGTIS.Item.jAGScjZGBeBVp2Tm
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.XYzh7eJZEYFhIJmU
           indice: 2
-          label: Epieu à distance
-          chatFlavor: Epieu à distance
-          type: ranged
+          label: A distance
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
           properties:
-            visible: false
-            activable: true
+            visible: true
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isEquipped
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '@atd'
                 crit: ''
@@ -3859,31 +3765,13 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
-          conditions:
-            - predicate: isEquipped
           modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
     effects: []
     sort: 101563
     ownership:
@@ -3892,23 +3780,131 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.rER0ZDQnEw69zFWr
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.jAGScjZGBeBVp2Tm'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925025359
+      modifiedTime: 1758925030575
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.XYzh7eJZEYFhIJmU'
+  - folder: E0IHxlFlZyFSfQGY
+    name: Arc court
+    type: equipment
+    img: icons/weapons/bows/shortbow-arrows-black.webp
+    _id: dV3Jq3FFVb2sp7YH
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: arc-court
+      tags: []
+      subtype: weapon
+      martialCategory: shortBow
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: 20
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: true
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 30
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.dV3Jq3FFVb2sp7YH
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 1200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.qTYcU22ZD6OainA8
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925033838
+      modifiedTime: 1758925033873
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.dV3Jq3FFVb2sp7YH'
   - folder: vF1ugDhEx97jpuSd
     name: Cuir simple
     type: equipment
     img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
-    _id: JUwE8vCeQfmMHmPl
+    _id: KWUyGOmaXwE4AzNN
     system:
       description: ''
       source: ''
@@ -3931,7 +3927,7 @@ items:
         unit: kg
       price:
         value: 4
-        unit: ''
+        unit: pa
       rarity: common
       equipped: true
       properties:
@@ -3943,18 +3939,7 @@ items:
         twoHand: false
       actions: []
       defense: 2
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 50000
     ownership:
@@ -3963,23 +3948,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.JUwE8vCeQfmMHmPl'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925038308
+      modifiedTime: 1758925039377
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.KWUyGOmaXwE4AzNN'
   - folder: Um3g0UnqzSidTvlT
     name: Sac à dos
     type: equipment
     img: icons/containers/bags/pack-leather-red.webp
-    _id: j33QtdgciBc5DX86
+    _id: xFP3Y6aJCSApYZRw
     system:
       description: ''
       source: ''
@@ -4002,7 +3988,7 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
@@ -4013,19 +3999,7 @@ items:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2000000
     ownership:
@@ -4034,23 +4008,84 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.j33QtdgciBc5DX86'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925048839
+      modifiedTime: 1758925048839
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.xFP3Y6aJCSApYZRw'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: By3axZI5eCOBi1pn
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925052215
+      modifiedTime: 1758925052215
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.By3axZI5eCOBi1pn'
   - folder: Um3g0UnqzSidTvlT
     name: Torche
     type: equipment
     img: icons/sundries/lights/torch-brown.webp
-    _id: 8LfGnMNO1OrVGZap
+    _id: 5mWmwg2fcIO8AWlJ
     system:
       description: >-
         <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
@@ -4064,7 +4099,7 @@ items:
       damagetype: ''
       quantity:
         current: 3
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4075,30 +4110,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2100000
     ownership:
@@ -4107,94 +4130,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.8LfGnMNO1OrVGZap'
-  - folder: Um3g0UnqzSidTvlT
-    name: Couverture
-    type: equipment
-    img: icons/sundries/survival/bedroll-grey.webp
-    _id: hlqaZpsckiZlQyWf
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: couverture
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 800000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.hlqaZpsckiZlQyWf'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925054959
+      modifiedTime: 1758925054959
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.5mWmwg2fcIO8AWlJ'
   - folder: Um3g0UnqzSidTvlT
     name: Briquet à silex
     type: equipment
     img: icons/commodities/stone/geode-raw-black.webp
-    _id: fGT1qYanIcNUGAHG
+    _id: PLbcmLDL7k58vTLn
     system:
       description: ''
       source: ''
@@ -4206,7 +4159,7 @@ items:
       damagetype: ''
       quantity:
         current: 1
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4217,30 +4170,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 100000
     ownership:
@@ -4249,23 +4190,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.fGT1qYanIcNUGAHG'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925058983
+      modifiedTime: 1758925058983
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.PLbcmLDL7k58vTLn'
   - folder: Um3g0UnqzSidTvlT
     name: Outre
     type: equipment
     img: icons/sundries/survival/wetskin-leather-purple.webp
-    _id: ie3HSVP50UTOPku3
+    _id: uWWk3sYsZOXTqajq
     system:
       description: ''
       source: ''
@@ -4296,7 +4238,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4317,23 +4259,24 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.ie3HSVP50UTOPku3'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925062948
+      modifiedTime: 1758925062948
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.uWWk3sYsZOXTqajq'
   - folder: Um3g0UnqzSidTvlT
     name: Gamelle
     type: equipment
     img: icons/containers/kitchenware/bowl-clay-brown.webp
-    _id: CdVfFlu2RV01ZinO
+    _id: EyNOXVv4LkWJsYkf
     system:
       description: ''
       source: ''
@@ -4364,7 +4307,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4385,18 +4328,122 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!B9EHNKwFTf9KGTIS.CdVfFlu2RV01ZinO'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925065111
+      modifiedTime: 1758925065111
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.EyNOXVv4LkWJsYkf'
+  - folder: gPYmtQTRwkbrRNk9
+    name: Baie magique
+    type: equipment
+    img: icons/consumables/food/berries-ration-round-red.webp
+    _id: OjvjcTVk5ABRScmf
+    system:
+      description: "<p>Une baie créée par un druide. Offre l'équivalent d'un repas et rend [1d4°+@rang]PV après une minutes à celui qui la consomme. \_Les effets de ce fruit ne fonctionnent qu’une fois par jour et par personnage</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Ajoutez le rang du druide qui a créé la baie dans la formule de soin de l'action.</p>\n</blockquote>"
+      source: ''
+      origin: Livre des règles p116
+      slug: baie-magique
+      subtype: consumable
+      tags: []
+      martialCategory: paddedClothFur
+      damagetype: ''
+      defense: null
+      magicalDefense: null
+      quantity:
+        current: 0
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 0
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: null
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.OjvjcTVk5ABRScmf
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: consumable
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: heal
+              skill:
+                formula: 1d4° + 0
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
+          modifiers: []
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.j6droy56LsS4STHW
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758925088625
+      modifiedTime: 1758925095804
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!B9EHNKwFTf9KGTIS.OjvjcTVk5ABRScmf'
 effects: []
 sort: 600000
 ownership:
@@ -4410,7 +4457,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
-  modifiedTime: 1758492736781
+  modifiedTime: 1758927350057
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!B9EHNKwFTf9KGTIS'

@@ -380,7 +380,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: ySruV3O1SK4Bd38y
+    _id: vmNM5Jy9O3mNwT02
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -389,13 +389,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -411,12 +408,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.MsIoAT8zfatr5In1.Item.ySruV3O1SK4Bd38y
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X46bl5TUjrGT0gig.Item.vmNM5Jy9O3mNwT02
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -427,16 +426,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.MsIoAT8zfatr5In1.Item.ySruV3O1SK4Bd38y
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X46bl5TUjrGT0gig.Item.vmNM5Jy9O3mNwT02
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -450,29 +448,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!X46bl5TUjrGT0gig.ySruV3O1SK4Bd38y'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758848780483
+      modifiedTime: 1758848793291
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!X46bl5TUjrGT0gig.vmNM5Jy9O3mNwT02'
   - folder: Jc9oocmI3B4cVSRG
     name: Attaque en meute
     type: capacity
@@ -497,7 +498,8 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.MsIoAT8zfatr5In1.Item.OdrwXlfzCESb6IaU
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.X46bl5TUjrGT0gig.Item.xFuE5TTbXRBMfPan
           indice: 0
           label: ''
           chatFlavor: ''
@@ -506,7 +508,7 @@ items:
           actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -514,20 +516,23 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.MsIoAT8zfatr5In1.Item.OdrwXlfzCESb6IaU
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X46bl5TUjrGT0gig.Item.xFuE5TTbXRBMfPan
               subtype: combat
               target: melee
               value: '+2'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.MsIoAT8zfatr5In1.Item.OdrwXlfzCESb6IaU
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.X46bl5TUjrGT0gig.Item.xFuE5TTbXRBMfPan
               subtype: combat
               target: ranged
               value: '+2'
               apply: self
               additionalInfos: ''
           resolvers: []
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -537,20 +542,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.JjKqvonovEFH0bOP
       duplicateSource: null
+      exportSource: null
       coreVersion: '13.348'
       systemId: co
       systemVersion: '#{VERSION}#'
-      createdTime: null
-      modifiedTime: 1758487142757
+      createdTime: 1758848783999
+      modifiedTime: 1758848789354
       lastModifiedBy: LEtUoNWt5mYBIjrk
-      exportSource: null
-    _id: OdrwXlfzCESb6IaU
-    sort: 3100000
-    _key: '!actors.items!X46bl5TUjrGT0gig.OdrwXlfzCESb6IaU'
+    _id: xFuE5TTbXRBMfPan
+    sort: 3800000
+    _key: '!actors.items!X46bl5TUjrGT0gig.xFuE5TTbXRBMfPan'
 effects: []
 ownership:
   default: 0
@@ -563,9 +569,9 @@ _stats:
   systemId: co
   systemVersion: 12.331.0
   createdTime: 1749355375364
-  modifiedTime: 1758487203470
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: X46bl5TUjrGT0gig
-sort: 1200000
+sort: 1600000
 _key: '!actors!X46bl5TUjrGT0gig'

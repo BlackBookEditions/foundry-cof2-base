@@ -123,9 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.J6IWOGwuVBF0AhoF]{Voie du chevalier dragon} - Rang 7 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.IcCw91VnG27mJy5Q]{Monture puissante}</p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Le cavalier rejoint l’ordre des chevaliers dragons avec le grade d’apprenti. Lorsqu’il porte les insignes de son ordre ou chevauche son drake, il gagne un bonus de +5 pour tous les tests de persuasion et d’intimidation. De plus, son drake obtient une réduction des DM contre le feu de 10.</span></p><p><span style=\"color: rgb(239, 230, 216); font-family: Signika, &#x27;Palatino Linotype&#x27;, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgba(0, 0, 0, 0.58); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none\">Le drake atteint sa pleine maturité et augmente ses capacités offensives.</span></p>"
     languages: []
-    properties: "<p>Proviens de\_ : Monture puisante (chevalier dragon page 148 livre des règles)</p><p>A adapter : PV : 10 + niveau*6. Init : Init du pj. Attaque : attaque magique du pj</p><p>Pour le souffle enfglammé niv 8 : glisser deposer la capacité de monstre du meme nom</p><p>\_</p>"
+    properties: "<ol><li><p>\_- Points de vigueur =\_<strong>[10 + Niv x 6]</strong><br>\_- Initiative = <strong>[initiative]</strong><br>\_- Attaque de contact =\_<strong>[attaque magique] · DM 2d4° + 6</strong></p></li></ol><p>La capacité Souffle enflammé est disponible au Rang 8.\_</p>"
   currentEffects: []
 prototypeToken:
   name: Drake
@@ -292,6 +292,94 @@ items:
     _id: 7aGAo3mQ7CKkaz0B
     sort: 0
     _key: '!actors.items!GrjYeHtOJzOBDHuL.7aGAo3mQ7CKkaz0B'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Souffle enflammé de Drake
+    type: capacity
+    img: icons/creatures/abilities/dragon-ice-breath-blue.webp
+    _id: tNJgMfohMPIdvl5t
+    system:
+      description: >-
+        <p>Le drake est désormais capable de cracher du feu au prix d’une action
+        d’attaque une fois par combat. Toutes les cibles situées dans un cône de
+        10 m de long sur 10 m de large, subissent 8d4° DM de feu, ou la moitié
+        seulement si elles réussissent un test d’AGI difficulté 12.</p>
+      inGame: >-
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
+        l'attaque qui va automatiquement lancer les dégats. Au MJ de proposer le
+        test pour réduire les dégats et les appliquer. Le PJ doit adapter le d4°
+        en fonction de son propre niveau</p>
+      source: ''
+      origin: Livre des règles p148
+      slug: souffle-enflamme-de-drake
+      subtype: ''
+      actionType: a
+      learned: true
+      rank: 0
+      frequency: combat
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.GrjYeHtOJzOBDHuL.Item.tNJgMfohMPIdvl5t
+          indice: 0
+          label: Seulement au rang 8
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 8d4°
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 1300000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ek0eEx3dNsObvEIx
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758913140256
+      modifiedTime: 1758913157932
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!GrjYeHtOJzOBDHuL.tNJgMfohMPIdvl5t'
 effects: []
 ownership:
   default: 0
@@ -304,7 +392,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1746470773314
-  modifiedTime: 1758491302278
+  modifiedTime: 1758913202234
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: GrjYeHtOJzOBDHuL

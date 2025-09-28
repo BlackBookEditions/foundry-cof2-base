@@ -61,7 +61,7 @@ system:
     nc: 4
     hp:
       base: 35
-      value: 0
+      value: 35
       temp: null
       max: 0
       tempmax: null
@@ -129,7 +129,7 @@ system:
         créé, il ressemble &agrave; un humain d’une p&acirc;leur mortelle</p>
     languages: []
     properties: >-
-      <p><strong>Pattes d'araignées :</strong></p><p>Le vampirien peut se
+      <p><strong>PATTES D'ARAIGNÉE :</strong></p><p>Le vampirien peut se
       déplacer de 10 m par action de mouvement sur les murs et les plafonds.</p>
   currentEffects: []
 prototypeToken:
@@ -301,7 +301,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: suyXt86vq7KUspcg
+    _id: tpVi5N3ulOE4qSDi
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -310,13 +310,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -332,12 +329,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.FGnlDZ49FHcpxJAa.Item.suyXt86vq7KUspcg
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.tpVi5N3ulOE4qSDi
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -348,16 +347,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.FGnlDZ49FHcpxJAa.Item.suyXt86vq7KUspcg
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.tpVi5N3ulOE4qSDi
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -371,78 +369,32 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!HcL7t6N6dh6aePpk.suyXt86vq7KUspcg'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Regard envoûtant
-    type: capacity
-    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
-    system:
-      description: >-
-        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
-        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
-        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
-        10 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 1
-        ou inférieur passent sous le contrôle du vampire.</p>
-      source: ''
-      origin: ''
-      slug: regard-envoutant
-      subtype: ''
-      actionType: m
-      learned: true
-      charges:
-        current: 3
-        max: 3
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: combat
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: cG5P5uDacTtxXRB4
-    sort: 3100000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.cG5P5uDacTtxXRB4'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910221104
+      modifiedTime: 1758910289521
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!HcL7t6N6dh6aePpk.tpVi5N3ulOE4qSDi'
   - folder: Jc9oocmI3B4cVSRG
     name: Absorption d'énergie
     type: capacity
@@ -450,12 +402,11 @@ items:
     system:
       description: >-
         <p>Le vampire <strong>récupère 5 PV</strong> chaque fois qu’il blesse
-        une créature avec ses armes naturelles. Si la victime est réduite à 0 PV
-        par une telle attaque, elle se transforme en vampirien au prochain
-        crépuscule.</p>
+        une créature avec ses armes naturelles. </p>
+      inGame: <p>L'action permet de récupérer les 5 PV.</p>
       source: ''
       origin: ''
-      slug: absorption-denergie
+      slug: absorbsorption-denergie
       subtype: ''
       actionType: none
       learned: true
@@ -468,18 +419,20 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.FGnlDZ49FHcpxJAa.Item.SkYXKxE2HbfVw2gI
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.MkNfKn5lHV3fiqBb
           indice: 0
           label: ''
           chatFlavor: ''
-          type: heal
           img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
@@ -490,16 +443,15 @@ items:
                 type: self
                 number: 0
                 scope: all
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
           modifiers: []
       frequency: none
       rank: 0
@@ -510,20 +462,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.NV6Bqd2sETP45NZN
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: SkYXKxE2HbfVw2gI
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910227287
+      modifiedTime: 1758910313938
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: MkNfKn5lHV3fiqBb
     sort: 2300000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.SkYXKxE2HbfVw2gI'
+    _key: '!actors.items!HcL7t6N6dh6aePpk.MkNfKn5lHV3fiqBb'
   - folder: Jc9oocmI3B4cVSRG
     name: Forme gazeuse
     type: capacity
@@ -551,6 +504,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -559,30 +513,76 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.iJiIugLIkA6dJArb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: NagqxQpjIhlw8woR
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910242960
+      modifiedTime: 1758910242960
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: krgBKyYolZItPwmu
     sort: 2700000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.NagqxQpjIhlw8woR'
+    _key: '!actors.items!HcL7t6N6dh6aePpk.krgBKyYolZItPwmu'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Regard envoûtant
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
+    system:
+      description: "<p>Le regard du vampire sape la volonté de ses opposants. 1 fois par combat, il peut utiliser une action de mouvement pour tenter d’envoûter son adversaire. La cible doit réussir un <strong>test de VOL difficulté 10 ou être affaiblie</strong> tant qu’elle est sous le regard\_du vampirien. </p>"
+      source: ''
+      origin: ''
+      slug: regard-envoutant
+      subtype: ''
+      actionType: m
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      frequency: combat
+      inGame: ''
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910252168
+      modifiedTime: 1758910388155
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: WxLyvL7ji8O24WgC
+    sort: 3100000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.WxLyvL7ji8O24WgC'
   - folder: Jc9oocmI3B4cVSRG
     name: Résistance impie
     type: capacity
     img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
     system:
       description: >-
-        <p>Le vampire<strong> retranche 10 à tous les DM qu’il subit</strong>
+        <p>Le vampire<strong> retranche 5 à tous les DM qu’il subit</strong>
         (magie incluse) à l’exception des blessures des <strong>armes en argent
-        et du feu.</strong> Cette RD ne s’ajoute pas à celle que tous les
-        morts‑vivants ont contre le froid.</p>
+        et du feu.</strong> </p>
       source: ''
       origin: ''
       slug: resistance-impie
@@ -598,30 +598,34 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.FGnlDZ49FHcpxJAa.Item.PmqjQeJIMBFKo0QY
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.4jdIJ3deD1DQl08Z
           indice: 0
-          label: sauf feu et argent
+          label: RD sauf feu et argent
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.FGnlDZ49FHcpxJAa.Item.PmqjQeJIMBFKo0QY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.4jdIJ3deD1DQl08Z
               subtype: combat
               target: dr
-              apply: self
               value: '5'
-              additionalInfos: sauf feu et argent
+              apply: self
+              additionalInfos: ''
           resolvers: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -630,20 +634,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.uiJsqhLYGNuCuskb
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: PmqjQeJIMBFKo0QY
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910277803
+      modifiedTime: 1758910421115
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 4jdIJ3deD1DQl08Z
     sort: 3300000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.PmqjQeJIMBFKo0QY'
+    _key: '!actors.items!HcL7t6N6dh6aePpk.4jdIJ3deD1DQl08Z'
   - folder: Jc9oocmI3B4cVSRG
     name: Vulnérabilité au soleil
     type: capacity
@@ -668,8 +673,46 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.xvAjSMuyPn8Sq0FC
+          indice: 0
+          label: Jet de DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
       frequency: none
+      inGame: >-
+        <p>L'action permet de réaliser un jet de DM dans un message du tchat. Le
+        résultat doit être retiré des PV maximum du Vampire et pas seulement aux
+        PV actuels.</p>
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -678,20 +721,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.1dzdCTT78RUfRxi1
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: xjd2bwHvU8r9uIbl
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910282721
+      modifiedTime: 1758910448174
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: xvAjSMuyPn8Sq0FC
     sort: 3600000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.xjd2bwHvU8r9uIbl'
+    _key: '!actors.items!HcL7t6N6dh6aePpk.xvAjSMuyPn8Sq0FC'
 effects: []
 ownership:
   default: 0
@@ -704,9 +748,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749373902332
-  modifiedTime: 1758490325617
+  modifiedTime: 1758910215398
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: HcL7t6N6dh6aePpk
-sort: 0
+sort: 3998438
 _key: '!actors!HcL7t6N6dh6aePpk'

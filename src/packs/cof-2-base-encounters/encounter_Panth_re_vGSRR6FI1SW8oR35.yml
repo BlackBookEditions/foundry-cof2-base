@@ -24,7 +24,7 @@ system:
         sheet: 0
         effects: 0
     per:
-      superior: false
+      superior: true
       base: 2
       bonuses:
         sheet: 0
@@ -127,9 +127,9 @@ system:
         du druide &times; 4]<br>Initiative [Init. du druide]</p>
 
         <p>[attaque magique] &middot; DM 1d4+2</p>
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.GGa1C1EwFPzEakkL]{Voie du fauve} - Rang 2 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.TtXWGsV7hZLsX5yj]{Panthère}</p><p>Le druide apprivoise une panthère (ou un puma) qui lui obéit au doigt et à l’oeil.</p><p></p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Soigner un compagnon animal :</span></strong></span> un compagnon animal peut être soigné par magie et il\_récupère les PV perdus comme un PJ. Son niveau\_est égal à celui de son maître.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Compagnon animal à 0 PV :</span></strong></span> lorsque le compagnon animal tombe à 0\_PV, s’il est en milieu\_naturel considérez qu’il s’enfuit (il revient au bout\_de 8\_h avec tous ses PV). S’il ne peut pas, il doit\_être soigné comme le serait un personnage.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Mort d’un compagnon animal :</span></strong></span> le PJ pourra\_retrouver un nouveau compagnon au\_ passage\_de niveau suivant. Joueur et MJ doivent se mettre\_d’accord du moment\_ opportun et cela peut être\_l’occasion d’une scène de jeu.</p>"
     languages: []
-    properties: ''
+    properties: "<ol><li><p>\_- Défense =\_<strong>[13 + rang]</strong><br>\_- Points de vigueur =\_<strong>[Niveau x 4]</strong><br>\_- Initiative =\_<strong>[initiative]</strong></p></li><li><p>\_- Attaque au contact = <strong>[Attaque magique] - DM 1d4 +2</strong></p></li></ol>"
   magic: 0
   currentEffects: []
 prototypeToken:
@@ -237,8 +237,9 @@ items:
           indice: 0
           label: griffes
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -256,15 +257,14 @@ items:
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d4°+2
+                formula: 1d4+2
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -289,12 +289,12 @@ items:
     _stats:
       compendiumSource: Item.K7Cu94FhimkdgWbA
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758918687198
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!vGSRR6FI1SW8oR35.BNng7YFpOimSHTaQ'
 effects: []
@@ -308,9 +308,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1745654451487
-  modifiedTime: 1758489539275
+  modifiedTime: 1758918786049
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!vGSRR6FI1SW8oR35'

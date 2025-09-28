@@ -123,9 +123,9 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>@UUID[Compendium.cof-base.cof-2-base-items.Item.VDVD6P4WASVwwS7F]{Voie du compagnon animal} - Rang 1 -\_@UUID[Compendium.cof-base.cof-2-base-items.Item.PeFhxeHiJ7JHvnR1]{Le loup}</p><p>Le rôdeur obtient un loup pour compagnon animal. En combat, le loup attaque en même temps que le rôdeur. Le loup comprend des ordres simples comme : garde, reste, apporte, attaque, etc.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Soigner un compagnon animal :</span></strong></span> un compagnon animal peut être soigné par magie et\_récupère tous les PV perdus après une récupération complète.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Compagnon animal à 0 PV :</span></strong></span> lorsque le compagnon animal tombe à 0\_PV, s’il est en milieu\_naturel considérez qu’il s’enfuit (il revient au\_bout de 8\_h avec tous ses PV). S’il\_ le peut pas, il\_doit être soigné comme le serait un personnage.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Mort d’un compagnon animal :</span></strong></span> le PJ pourra\_retrouver un nouveau compagnon au\_ passage de\_niveau suivant. Joueur et MJ doivent se mettre\_d’accord quant au moment opportun et cela\_peut faire l’objet d’une scène de jeu.</p><p><span style=\"text-decoration: underline;\"><strong><span style=\"text-decoration: underline;\">Montreur d’ours :</span></strong></span> alternativement, le MJ peut\_autoriser le joueur à adopter un autre animal et\_modifier la voie en conséquence. Par exemple, un\_montreur d’ours pourrait bénéficier des modifications suivantes\_: au rang 2, remplacer le bonus\_aux tests pour pister et de surprise par un bonus\_en intimidation et en spectacle. Retrancher 2 en\_DEF et ajouter +2 en FOR (et donc +2 aux DM)\_du compagnon.</p>"
     languages: []
-    properties: ''
+    properties: "<ol><li><p>\_- Défense =\_<strong>[12 + rang]</strong><br>\_- Points de vigueur =\_<strong>[Niveau x 4]</strong><br>\_- Initiative =\_<strong>[initiative]</strong></p></li><li><p>\_- Attaque au contact = [Attaque magique] - DM 1d4 +2</p></li></ol>"
   magic: 0
   currentEffects: []
 prototypeToken:
@@ -233,8 +233,9 @@ items:
           indice: 0
           label: Morssure
           chatFlavor: Morssure
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -250,15 +251,14 @@ items:
                 crit: '20'
                 difficulty: '@cible.def'
               dmg:
-                formula: 1d4°+2
+                formula: 1d4+2
               target:
                 type: single
-                number: 0
                 scope: all
+                number: 0
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -284,12 +284,12 @@ items:
     _stats:
       compendiumSource: Item.GxMVAJw7xOsWScnK
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758919008576
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _key: '!actors.items!mD6tnau4CWNfyCue.da9Dw23rx7hMRKp8'
 effects: []
@@ -305,9 +305,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1745654451487
-  modifiedTime: 1758489382208
+  modifiedTime: 1758919197420
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!mD6tnau4CWNfyCue'

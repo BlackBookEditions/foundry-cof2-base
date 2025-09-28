@@ -382,11 +382,157 @@ items:
     _id: DfVnuE9PWIRUrGWP
     sort: 300000
     _key: '!actors.items!TAG86V37M77WFXIs.DfVnuE9PWIRUrGWP'
-  - folder: uVNfyNGbfZsNuFix
-    name: INVISIBILITÉ
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: HAaPmgYtUtaJIXyz
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.HAaPmgYtUtaJIXyz
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.HAaPmgYtUtaJIXyz
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846031690
+      modifiedTime: 1758846197403
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!TAG86V37M77WFXIs.HAaPmgYtUtaJIXyz'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Transformation
+    type: capacity
+    img: icons/creatures/unholy/demon-hairy-winged-pink.webp
+    system:
+      description: >-
+        <p>Le démonet peut se transformer en n’importe quel animal de taille
+        très petite (chien, chat, rat, corbeau, etc.) aussi longtemps qu’il le
+        souhaite.</p>
+      source: ''
+      origin: ''
+      slug: transformation
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ngeYyyHMF8mHWI1T
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846045420
+      modifiedTime: 1758846045420
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: IRXZGfjetG0DOEDu
+    sort: 6500000
+    _key: '!actors.items!TAG86V37M77WFXIs.IRXZGfjetG0DOEDu'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Invisibilité
     type: capacity
     img: icons/magic/control/silhouette-hold-change-blue.webp
-    _id: b7P16Uodbq6uwox2
     system:
       description: >-
         <p>Le démon se rend invisible pendant 1d4 min. Une fois invisible,
@@ -412,218 +558,33 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Item.lnFteOr9PiFbOVUv
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!TAG86V37M77WFXIs.b7P16Uodbq6uwox2'
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
-    type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: FGvgQlLaUx6kTDVl
-    system:
-      description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
-      subtype: ''
-      actionType: l
-      learned: true
-      rank: 0
-      frequency: none
-      charges:
-        current: 0
-        max: 0
-      properties:
-        spell: false
-      path: null
-      cost: 0
-      manaCost: -1
-      actions:
-        - source: Actor.rC3E3yvLLqieqpqo.Item.FGvgQlLaUx6kTDVl
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.rC3E3yvLLqieqpqo.Item.FGvgQlLaUx6kTDVl
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!TAG86V37M77WFXIs.FGvgQlLaUx6kTDVl'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Venin
-    type: capacity
-    img: icons/creatures/abilities/fang-tooth-poison-green.webp
-    system:
-      description: >-
-        <p>La victime doit réussir un test de CON difficulté 10 ou être
-        affaiblie pendant 1d6 min.</p>
-      source: ''
-      origin: ''
-      slug: venin
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
+      inGame: ''
     effects: []
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.S2Dpp6uLduosoRYk
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: b4Zamu62N7DsED5h
-    sort: 4700000
-    _key: '!actors.items!TAG86V37M77WFXIs.b4Zamu62N7DsED5h'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Transformation
-    type: capacity
-    img: icons/creatures/unholy/demon-hairy-winged-pink.webp
-    system:
-      description: >-
-        <p>Le démonet peut se transformer en n’importe quel animal de taille
-        très petite (chien, chat, rat, corbeau, etc.) aussi longtemps qu’il le
-        souhaite.</p>
-      source: ''
-      origin: ''
-      slug: transformation
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ngeYyyHMF8mHWI1T
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: pexw1a7DdG4EfkwV
-    sort: 4300000
-    _key: '!actors.items!TAG86V37M77WFXIs.pexw1a7DdG4EfkwV'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846057062
+      modifiedTime: 1758846057062
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: cR2fGwEWzvJ30SJf
+    sort: 2000000
+    _key: '!actors.items!TAG86V37M77WFXIs.cR2fGwEWzvJ30SJf'
   - name: Résistance feu et acide
     type: capacity
     img: icons/magic/fire/flame-burning-fist-strike.webp
     system:
-      description: ''
+      description: >-
+        <p>La créature obtient une Réduction de Dommages de 10 contre  les DM de
+        feu et d'acide.</p>
       source: ''
       origin: ''
       slug: resistance-feu-et-acide
@@ -641,15 +602,17 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.rC3E3yvLLqieqpqo.Item.10U4RomkALJW0bmF
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.wQDyBqOsltAx0HPZ
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -657,43 +620,115 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.rC3E3yvLLqieqpqo.Item.10U4RomkALJW0bmF
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.wQDyBqOsltAx0HPZ
               subtype: combat
               target: dr
-              apply: self
               value: '10'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: ''
+    effects: []
+    folder: Jc9oocmI3B4cVSRG
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.wouWD31GgsV0IOT3
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846089809
+      modifiedTime: 1758846207963
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: wQDyBqOsltAx0HPZ
+    sort: 2100000
+    _key: '!actors.items!TAG86V37M77WFXIs.wQDyBqOsltAx0HPZ'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Vision dans le noir
+    type: capacity
+    img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
+    _id: cEBlTuWzgLdAQ57q
+    system:
+      description: <p>La créature voit dans le noir.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: ''
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.cEBlTuWzgLdAQ57q
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.cEBlTuWzgLdAQ57q
+              subtype: state
+              target: darkvision
+              value: '30'
+              apply: self
               additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
     effects: []
-    folder: Jc9oocmI3B4cVSRG
+    sort: 0
     ownership:
       default: 0
-      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.wouWD31GgsV0IOT3
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.g9fqXskbvGQCKScf
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: 10U4RomkALJW0bmF
-    sort: 0
-    _key: '!actors.items!TAG86V37M77WFXIs.10U4RomkALJW0bmF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846116685
+      modifiedTime: 1758846116701
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!TAG86V37M77WFXIs.cEBlTuWzgLdAQ57q'
   - name: Résistance aux armes
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
       description: >-
         <p>Le démonet possède une RD 5 sur les armes non magiques. Si les PJ ne
-        sont pas équipés<br />des armes appropriées, le NC des démons augmente
-        de 1.</p>
+        sont pas équipés des armes appropriées, le NC des démons augmente de
+        1.</p>
       source: ''
       origin: Livre des règles p278
       slug: resistance-aux-armes
@@ -711,12 +746,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.rC3E3yvLLqieqpqo.Item.D3pzCBOYoXqNCpNO
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.eT1Uzsd9527rBcde
           indice: 0
-          label: contra arme non magique
+          label: contre arme non magique
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -727,35 +764,38 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.rC3E3yvLLqieqpqo.Item.D3pzCBOYoXqNCpNO
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.TAG86V37M77WFXIs.Item.eT1Uzsd9527rBcde
               subtype: combat
               target: dr
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      inGame: ''
     effects: []
     folder: Jc9oocmI3B4cVSRG
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: D3pzCBOYoXqNCpNO
-    sort: 0
-    _key: '!actors.items!TAG86V37M77WFXIs.D3pzCBOYoXqNCpNO'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758846162780
+      modifiedTime: 1758846212753
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: eT1Uzsd9527rBcde
+    sort: 2200000
+    _key: '!actors.items!TAG86V37M77WFXIs.eT1Uzsd9527rBcde'
 effects: []
 ownership:
   default: 0
@@ -768,9 +808,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749282189109
-  modifiedTime: 1758487993299
+  modifiedTime: 1758849533588
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: TAG86V37M77WFXIs
-sort: 3700000
+sort: 500000
 _key: '!actors!TAG86V37M77WFXIs'

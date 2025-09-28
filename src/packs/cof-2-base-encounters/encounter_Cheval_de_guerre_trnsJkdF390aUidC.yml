@@ -122,7 +122,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Un cheval de guerre est apte à porter une\_barde, un ensemble de protections pour lui.</p><p>Un caparaçon de maille augmente la DEF du\_cheval de +2 pour un prix de 100\_pa. Une\_barde de plaques de métal apporte un bonus\_de +4 en DEF pour un prix de 400\_pa. Les\_bardes font subir au cheval et à son cavalier un\_malus en Init. égal au bonus de DEF.</p><p>La DEF de la fidèle monture du chevalier (Voie du\_cavalier, rang 1), tient déjà compte du bonus de\_DEF d’une éventuelle barde. En revanche, le MJ\_peut toujours décider de lui permettre de trouver une barde magique pour améliorer sa DEF.</p><p>En tant que PNJ, un cheval de guerre lourd\_pour un cavalier de haut niveau pourrait\_bénéficier d’un ou plusieurs rangs de boss.</p>"
     languages: []
     properties: ''
   magic: 0
@@ -273,24 +273,12 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!trnsJkdF390aUidC.KOX0Tcf32BT8FVaK'
-  - folder: uVNfyNGbfZsNuFix
-    name: MONTURE
+  - folder: Jc9oocmI3B4cVSRG
+    name: Monture
     type: capacity
-    img: icons/svg/combat.svg
-    _id: HheZC5rkNJDhynpq
+    img: icons/environment/creatures/horse-tan.webp
     system:
-      description: >-
-        <p>La créature double sa FOR pour porter une charge. Un cheval de guerre
-        est apte à porter une barde, un ensemble de protections pour lui. Un
-        caparaçon de maille augmente la DEF du cheval de +2 pour un prix de 100
-        pa. Une barde de plaques de métal apporte un bonus de +4 en DEF pour un
-        prix de 400 pa. Les bardes font subir au cheval et à son cavalier un
-        malus en Init. égal au bonus de DEF. La DEF de la fidèle monture du
-        chevalier (Voie du cavalier, rang 1), tient déjà compte du bonus de DEF
-        d’une éventuelle barde. En revanche, le MJ peut toujours décider de lui
-        permettre de trouver une barde magique pour améliorer sa DEF. En tant
-        que PNJ, un cheval de guerre lourd pour un cavalier de haut niveau
-        pourrait bénéficier d’un ou plusieurs rangs de boss.</p>
+      description: <p>La créature double sa FOR pour porter une charge</p>
       source: ''
       origin: ''
       slug: monture
@@ -306,24 +294,129 @@ items:
       cost: -1
       actions: []
       manaCost: -1
+      inGame: ''
+      rank: 0
       frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.ZWTHxf7MwVUyaDY8
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839365919
+      modifiedTime: 1758839365919
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: 9qOKP57i3vUd3vDv
+    sort: 8300000
+    _key: '!actors.items!trnsJkdF390aUidC.9qOKP57i3vUd3vDv'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: KaWq1DyuDGivcb9o
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.trnsJkdF390aUidC.Item.KaWq1DyuDGivcb9o
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.trnsJkdF390aUidC.Item.KaWq1DyuDGivcb9o
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Item.XNJh11OIeX2a6jIb
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!trnsJkdF390aUidC.HheZC5rkNJDhynpq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840302188
+      modifiedTime: 1758841231983
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!trnsJkdF390aUidC.KaWq1DyuDGivcb9o'
 effects: []
 sort: 1600000
 ownership:
@@ -335,9 +428,9 @@ _stats:
   duplicateSource: Actor.QforvighOK6Sc4GY
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454179561
-  modifiedTime: 1758490697127
+  modifiedTime: 1758839475333
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: trnsJkdF390aUidC

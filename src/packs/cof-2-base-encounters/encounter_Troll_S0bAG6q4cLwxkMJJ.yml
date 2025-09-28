@@ -124,7 +124,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Les trolls sont de grands humanoïdes de 2,70 m\_à la peau caoutchouteuse verdâtre\_ ouverte d’excroissances et de champignons. Non seulement\_les armes rebondissent sur cette épaisse peau\_élastique, mais en plus les blessures infligées se\_referment comme par magie. Aussi, le troll est un\_monstre dénué de peur, confiant en sa capacité à\_échapper à la mort et il combat férocement. </p><p>Les\_trolls parlent en général le noir parler. Ils vivent\_le plus souvent dans des endroits reculés\_: forêts\_profondes, marais nauséabonds.</p>"
     languages: []
     properties: ''
   currentEffects: []
@@ -211,7 +211,7 @@ prototypeToken:
   movementAction: null
 items:
   - folder: eRnLMLNnqgpvpmpq
-    name: Griffes et gourdin (2 attaques)
+    name: Griffes ou gourdin (2 attaques)
     type: attack
     img: icons/svg/sword.svg
     system:
@@ -232,18 +232,21 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
             - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill:
                 formula: '+10'
                 crit: '20'
@@ -254,12 +257,9 @@ items:
                 type: none
                 number: 0
                 scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -283,12 +283,12 @@ items:
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
+      systemVersion: '#{VERSION}#'
       createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
+      modifiedTime: 1758893212497
+      lastModifiedBy: LEtUoNWt5mYBIjrk
       exportSource: null
     _id: PFTpYytCIhs7KCXp
     sort: 300000
@@ -376,11 +376,116 @@ items:
     _id: PnrDl2F3AWeNXDue
     sort: 100000
     _key: '!actors.items!S0bAG6q4cLwxkMJJ.PnrDl2F3AWeNXDue'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Masse
+    type: equipment
+    img: icons/weapons/hammers/hammer-double-simple.webp
+    _id: 8OZhRwYRFfd93FbM
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: masse
+      tags: []
+      subtype: weapon
+      martialCategory: mace
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.yEXTX4LgPIPmeJat
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100002
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yEXTX4LgPIPmeJat
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758893225221
+      modifiedTime: 1758893225221
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.8OZhRwYRFfd93FbM'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: wGg7d4osxKwUgiQr
+    _id: G5OLGJEGQGlPtGOp
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -389,13 +494,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -411,12 +513,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.KdAFo51oD4vAHgB9.Item.wGg7d4osxKwUgiQr
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.G5OLGJEGQGlPtGOp
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -427,16 +531,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.KdAFo51oD4vAHgB9.Item.wGg7d4osxKwUgiQr
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.G5OLGJEGQGlPtGOp
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -450,29 +553,104 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!S0bAG6q4cLwxkMJJ.wGg7d4osxKwUgiQr'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758893241843
+      modifiedTime: 1758893261710
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.G5OLGJEGQGlPtGOp'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fauchage
+    type: capacity
+    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
+    system:
+      description: "<p>Sur 17 à 20 sur le d20 d’un test d’attaque, si\_l’attaque est réussie, la victime doit réussir au choix un <strong>test de FOR ou d’AGI\_difficulté 16</strong> ou être <em>renversée</em>.</p><p>La créature retranche 3 à tous les\_DM subis (RD 3).</p>"
+      source: ''
+      origin: ''
+      slug: fauchage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.PCsLDClSrMhw0EPf
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.PCsLDClSrMhw0EPf
+              subtype: combat
+              target: dr
+              value: '3'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758893250384
+      modifiedTime: 1758893321976
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: PCsLDClSrMhw0EPf
+    sort: 8800000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.PCsLDClSrMhw0EPf'
   - folder: Jc9oocmI3B4cVSRG
     name: Vitalité surnaturelle
     type: capacity
@@ -499,18 +677,20 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.KdAFo51oD4vAHgB9.Item.TGIsNJDrizVF4F35
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.I2HT3zObLfJrgkNW
           indice: 0
           label: ''
           chatFlavor: ''
-          type: heal
           img: icons/svg/d20-highlight.svg
+          type: heal
+          actionType: none
           properties:
-            activable: true
+            visible: false
             enabled: false
+            activable: true
             temporary: false
             noManaCost: false
-            visible: false
           conditions:
             - predicate: isOwned
           resolvers:
@@ -521,18 +701,18 @@ items:
                 type: self
                 number: 0
                 scope: all
-              dmg: {}
-              bonusDiceAdd: false
-              malusDiceAdd: false
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              dmg: {}
           modifiers: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -541,91 +721,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mU5FltDzGWs2bske
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: TGIsNJDrizVF4F35
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758893256627
+      modifiedTime: 1758893341692
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: I2HT3zObLfJrgkNW
     sort: 3500000
-    _key: '!actors.items!S0bAG6q4cLwxkMJJ.TGIsNJDrizVF4F35'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Fauchage
-    type: capacity
-    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
-    system:
-      description: >-
-        <p>Sur <strong>17 à 20 au test d’attaque</strong>, si l’attaque est
-        réussie, la victime doit réussir au choix un <strong>test de FOR ou
-        d’AGI difficulté 16</strong> ou être <em>renversée</em>. La créature
-        retranche 3 à tous les DM subis (RD 3).</p>
-      source: ''
-      origin: ''
-      slug: fauchage
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: Actor.KdAFo51oD4vAHgB9.Item.LKGTGPqt5fg5CzqP
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: true
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.KdAFo51oD4vAHgB9.Item.LKGTGPqt5fg5CzqP
-              subtype: combat
-              target: dr
-              apply: self
-              value: '3'
-              additionalInfos: ''
-          resolvers: []
-      manaCost: -1
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: LKGTGPqt5fg5CzqP
-    sort: 8800000
-    _key: '!actors.items!S0bAG6q4cLwxkMJJ.LKGTGPqt5fg5CzqP'
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.I2HT3zObLfJrgkNW'
 effects: []
 ownership:
   default: 0
@@ -636,11 +746,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749373190659
-  modifiedTime: 1758487675136
+  modifiedTime: 1758893183989
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: S0bAG6q4cLwxkMJJ
-sort: 0
+sort: 3987500
 _key: '!actors!S0bAG6q4cLwxkMJJ'

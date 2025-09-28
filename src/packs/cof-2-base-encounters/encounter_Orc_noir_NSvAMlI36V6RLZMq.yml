@@ -127,8 +127,8 @@ system:
         <p>Les orcs noirs sont une race d’orcs d’élite obtenue par sélection et
         reproduction par de puissants maîtres maléfiques souhaitant construire
         l’armée ultime. Leur peau est plus sombre et leur musculature plus
-        imposante. Ils manient des armes &agrave; deux mains, mais surtout, ils
-        ne sont plus sensibles &agrave; la lumière du jour</p>
+        imposante. Ils manient des armes à deux mains, mais surtout, ils ne sont
+        plus sensibles à la lumière du jour</p>
     languages: []
     properties: ''
 prototypeToken:
@@ -278,8 +278,334 @@ items:
     _id: uV83V1zfk1DPF98i
     sort: 300000
     _key: '!actors.items!NSvAMlI36V6RLZMq.uV83V1zfk1DPF98i'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Fléau à deux mains
+    type: equipment
+    img: icons/weapons/maces/mace-round-spiked-grey.webp
+    _id: 01aGqpmGzXNSFLAh
+    system:
+      description: >-
+        <p>Un manche prolongé par une chaîne au bout de laquelle sont suspendues
+        une ou plusieurs boules d’acier, souvent hérissées de pointes. C’est une
+        arme très difficile à parer. Une fois par combat, le fléau permet de
+        relancer le dé d’une attaque ratée contre un adversaire qui utilise un
+        bouclier ou une arme (par opposition aux armes naturelles des animaux et
+        des monstres).</p>
+      source: ''
+      origin: ''
+      slug: fleau-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatFlail
+      damagetype: impact
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 8
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.GfSsTxWKqA3PIdjP
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100391
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.GfSsTxWKqA3PIdjP
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891472750
+      modifiedTime: 1758891472750
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!NSvAMlI36V6RLZMq.01aGqpmGzXNSFLAh'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Hache à deux mains
+    type: equipment
+    img: icons/weapons/axes/axe-double-brown.webp
+    _id: BfUL22CgLRkPBF3h
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: hache-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatAxe
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100049
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891474260
+      modifiedTime: 1758891474260
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!NSvAMlI36V6RLZMq.BfUL22CgLRkPBF3h'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Epée à deux mains
+    type: equipment
+    img: icons/weapons/swords/greatsword-crossguard-embossed-gold.webp
+    _id: L9n8OtcYSNOnncvk
+    system:
+      description: >-
+        <p><strong>L'épée à deux mains</strong> est une arme blanche à double
+        tranchant (se distingue ainsi du sabre) constituée des parties
+        habituelles de l'épée européenne médiévale : pommeau, fusée, garde, lame
+        montée sur soie.</p>
+      source: ''
+      origin: ''
+      slug: epee-a-deux-mains
+      tags: []
+      subtype: weapon
+      martialCategory: greatSword
+      damagetype: slashing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 2
+        unit: kg
+      price:
+        value: 10
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d6 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        value: null
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 125000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758891483614
+      modifiedTime: 1758891483614
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!NSvAMlI36V6RLZMq.L9n8OtcYSNOnncvk'
 effects: []
-sort: 4000000
+sort: 3200000
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -289,9 +615,9 @@ _stats:
   duplicateSource: Actor.8Sa8DP6cyKSmaC2D
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454184539
-  modifiedTime: 1758487309838
+  modifiedTime: 1758891344501
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: NSvAMlI36V6RLZMq

@@ -11,7 +11,7 @@ system:
         sheet: 0
         effects: 0
     con:
-      superior: false
+      superior: true
       base: 5
       bonuses:
         sheet: 0
@@ -298,103 +298,6 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!uQwhkYtbPYBzSWTW.MC9kuphdiDcZLUX5'
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
-    type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: eXrWIGucQm0Bn9rs
-    system:
-      description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
-      subtype: ''
-      actionType: l
-      learned: true
-      rank: 0
-      frequency: none
-      charges:
-        current: 0
-        max: 0
-      properties:
-        spell: false
-      path: null
-      cost: 0
-      manaCost: -1
-      actions:
-        - source: Actor.DdWERmMzDcEcVDi9.Item.eXrWIGucQm0Bn9rs
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.DdWERmMzDcEcVDi9.Item.eXrWIGucQm0Bn9rs
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
-          resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!uQwhkYtbPYBzSWTW.eXrWIGucQm0Bn9rs'
   - folder: Jc9oocmI3B4cVSRG
     name: Charge
     type: capacity
@@ -402,12 +305,13 @@ items:
     system:
       description: >-
         <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 15 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
+        attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en
+        plus des DM normaux, une victime de taille inférieure ou égale à la
+        créature, doit faire un <strong>test de FOR difficulté 13</strong> ou
+        être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche)
+        sa victime et les <strong>DM sont doublés</strong>.</p>
       source: ''
-      origin: Livre des règles p269
+      origin: ''
       slug: charge
       subtype: ''
       actionType: l
@@ -420,12 +324,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.DdWERmMzDcEcVDi9.Item.kpxLKrXQGeUVS5F1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.uQwhkYtbPYBzSWTW.Item.S2m96B8xbc8JMaPn
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -451,12 +357,12 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -466,20 +372,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: kpxLKrXQGeUVS5F1
-    sort: 5300000
-    _key: '!actors.items!uQwhkYtbPYBzSWTW.kpxLKrXQGeUVS5F1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840041493
+      modifiedTime: 1758841273740
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: S2m96B8xbc8JMaPn
+    sort: 7500000
+    _key: '!actors.items!uQwhkYtbPYBzSWTW.S2m96B8xbc8JMaPn'
   - folder: Jc9oocmI3B4cVSRG
     name: Passage par les arbres
     type: capacity
@@ -502,7 +409,8 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.DdWERmMzDcEcVDi9.Item.FETfhxdXmhcY1Tex
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.uQwhkYtbPYBzSWTW.Item.iXQnXIX51JewuFON
           indice: 0
           label: Discrétion
           chatFlavor: ''
@@ -514,17 +422,21 @@ items:
             enabled: true
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.DdWERmMzDcEcVDi9.Item.FETfhxdXmhcY1Tex
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.uQwhkYtbPYBzSWTW.Item.iXQnXIX51JewuFON
               subtype: skill
               target: agi
               value: '5'
+              additionalInfos: En forêt
               apply: self
-              additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -534,20 +446,119 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.uNOKNT9kAhA4lsoN
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: FETfhxdXmhcY1Tex
-    sort: 5900000
-    _key: '!actors.items!uQwhkYtbPYBzSWTW.FETfhxdXmhcY1Tex'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840044834
+      modifiedTime: 1758840044846
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: iXQnXIX51JewuFON
+    sort: 8100000
+    _key: '!actors.items!uQwhkYtbPYBzSWTW.iXQnXIX51JewuFON'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: XeiSKgcSUJYN9NWA
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.uQwhkYtbPYBzSWTW.Item.XeiSKgcSUJYN9NWA
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.uQwhkYtbPYBzSWTW.Item.XeiSKgcSUJYN9NWA
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840319579
+      modifiedTime: 1758841270196
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!uQwhkYtbPYBzSWTW.XeiSKgcSUJYN9NWA'
 effects: []
 ownership:
   default: 0
@@ -556,12 +567,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749279704554
-  modifiedTime: 1749280154550
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758840015766
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: uQwhkYtbPYBzSWTW
 sort: 800000

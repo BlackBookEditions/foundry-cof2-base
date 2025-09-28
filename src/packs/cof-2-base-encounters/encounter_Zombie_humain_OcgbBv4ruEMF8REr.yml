@@ -82,7 +82,7 @@ system:
         effects: 0
       value: null
     def:
-      base: 10
+      base: 15
       ability: null
       details: null
       unit: null
@@ -125,14 +125,14 @@ system:
     notes:
       private: ''
       public: >-
-        <p>Un zombie est un mort‑vivant animé &agrave; partir d’un cadavre
-        récent. Les chairs peuvent être &agrave; un stade plus ou moins avancé
-        de putréfaction, mais le corps doit être globalement complet. Le zombie
-        est une créature stupide qui suit les ordres de son créateur ou erre
-        sans but et attaque toute créature vivante &agrave; portée. Pour obtenir
-        un zombie, vous pouvez partir de n’importe quelle créature, qui acquiert
-        le type non‑vivante (ce qui inclus une RD de 5 contre le froid). Ajoutez
-        les capacités suivantes.</p>
+        <p>Un zombie est un mort‑vivant animé à partir d’un cadavre récent. Les
+        chairs peuvent être à un stade plus ou moins avancé de putréfaction,
+        mais le corps doit être globalement complet. Le zombie est une créature
+        stupide qui suit les ordres de son créateur ou erre sans but et attaque
+        toute créature vivante à portée. </p><p>Pour obtenir un zombie, vous
+        pouvez partir de n’importe quelle créature, qui acquiert le type
+        non‑vivante (ce qui inclus une RD de 5 contre le froid). Ajoutez les
+        capacités suivantes.</p>
     languages: []
     properties: ''
   currentEffects: []
@@ -305,7 +305,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 2YJeKiMVJHkpp0sT
+    _id: rPlBvBUY3cvWeJ8k
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -314,13 +314,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -336,12 +333,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.vJ76EbOGtPdf41yj.Item.2YJeKiMVJHkpp0sT
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.rPlBvBUY3cvWeJ8k
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -352,16 +351,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.2YJeKiMVJHkpp0sT
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.rPlBvBUY3cvWeJ8k
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -375,112 +373,80 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!OcgbBv4ruEMF8REr.2YJeKiMVJHkpp0sT'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Lenteur
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910873053
+      modifiedTime: 1758910912195
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!OcgbBv4ruEMF8REr.rPlBvBUY3cvWeJ8k'
+  - name: Résistance aux DM
     type: capacity
-    img: icons/magic/time/clock-stopwatch-white-blue.webp
+    img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
-      description: >-
-        <p>Le zombie voit son AGI réduite à ‑1 et sa PER à ‑2, et il ne se
-        déplace que de 5 m par action de mouvement.</p>
+      description: "<p>Divisez par deux tous les DM infligés au\_zombie par des armes, sauf s’il s’agit d’armes\_tranchantes.</p><p></p>"
+      inGame: >-
+        <p>Aucune automatisation. Au MJ d'utiliser le bouton dommages divisé par
+        2 de la fenêtre de chat lors de l'application des dommages.</p>
       source: ''
-      origin: ''
-      slug: lenteur
+      origin: Livre des règles p278
+      slug: resistance-aux-armes
       subtype: ''
       actionType: none
       learned: true
+      rank: 0
+      frequency: none
       charges:
-        current: 1
-        max: 1
+        current: 0
+        max: 0
       properties:
         spell: false
       path: null
       cost: -1
       manaCost: -1
-      actions:
-        - source: Actor.vJ76EbOGtPdf41yj.Item.cyi8gijZcFpN2KlD
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: debuff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.cyi8gijZcFpN2KlD
-              subtype: ability
-              target: agi
-              apply: self
-              value: '-1'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.cyi8gijZcFpN2KlD
-              subtype: ability
-              target: per
-              apply: self
-              value: '-2'
-              additionalInfos: ''
-            - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.cyi8gijZcFpN2KlD
-              subtype: attribute
-              target: mov
-              apply: self
-              value: '-5'
-              additionalInfos: ''
-          resolvers: []
-      frequency: none
-      rank: 0
+      actions: []
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
     effects: []
+    folder: Jc9oocmI3B4cVSRG
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tj7VBuGKSOAac6wq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: cyi8gijZcFpN2KlD
-    sort: 3000000
-    _key: '!actors.items!OcgbBv4ruEMF8REr.cyi8gijZcFpN2KlD'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910880636
+      modifiedTime: 1758910940663
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: mReju1tXMB58cXLS
+    sort: 600000
+    _key: '!actors.items!OcgbBv4ruEMF8REr.mReju1tXMB58cXLS'
   - folder: Jc9oocmI3B4cVSRG
     name: Sans esprit
     type: capacity
@@ -506,6 +472,7 @@ items:
       manaCost: -1
       actions: []
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -514,31 +481,32 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PFvr3hQjiotisCML
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: dyx9UAtMpbX4mbMH
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910884577
+      modifiedTime: 1758910884577
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: nXxTMIcffxI1v2ka
     sort: 3400000
-    _key: '!actors.items!OcgbBv4ruEMF8REr.dyx9UAtMpbX4mbMH'
+    _key: '!actors.items!OcgbBv4ruEMF8REr.nXxTMIcffxI1v2ka'
   - folder: Jc9oocmI3B4cVSRG
-    name: Résistance (Zombie)
+    name: Lenteur
     type: capacity
-    img: icons/magic/defensive/shield-barrier-flaming-diamond-teal.webp
+    img: icons/magic/time/clock-stopwatch-white-blue.webp
     system:
       description: >-
-        <p>Divisez par deux tous les DM infligés au zombie par des armes, sauf
-        s’il s’agit d’armes tranchantes.</p>
+        <p>Le zombie voit son AGI réduite à ‑1 et sa PER à ‑2, et il ne se
+        déplace que de 5 m par action de mouvement.</p>
       source: ''
       origin: ''
-      slug: resistance-zombie
+      slug: lenteur
       subtype: ''
       actionType: none
       learned: true
@@ -550,8 +518,51 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.FmBT6jDk0viYRNiz
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          type: debuff
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.FmBT6jDk0viYRNiz
+              subtype: ability
+              target: agi
+              apply: self
+              value: '-1'
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.FmBT6jDk0viYRNiz
+              subtype: ability
+              target: per
+              apply: self
+              value: '-2'
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.FmBT6jDk0viYRNiz
+              subtype: attribute
+              target: mov
+              apply: self
+              value: '-5'
+              additionalInfos: ''
+          resolvers: []
+          actionType: none
       frequency: none
+      inGame: ''
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -560,20 +571,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xjAS9204nQW8KBRm
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Soh30A2euXzikteL
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: c9978u0sT73KXJkh
-    sort: 3200000
-    _key: '!actors.items!OcgbBv4ruEMF8REr.c9978u0sT73KXJkh'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910890243
+      modifiedTime: 1758910890257
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: FmBT6jDk0viYRNiz
+    sort: 3000000
+    _key: '!actors.items!OcgbBv4ruEMF8REr.FmBT6jDk0viYRNiz'
   - folder: Jc9oocmI3B4cVSRG
     name: Insensible à la douleur
     type: capacity
@@ -583,6 +595,9 @@ items:
         <p>Ajoutez 3 x NC aux PV et retranchez 5 à la DEF. La créature peut
         encore faire une action (attaque ou mouvement) après avoir été réduite à
         0 PV</p>
+      inGame: >-
+        <p>Modifier l'action pour adapter le bonus de PV au NC de la
+        créature.</p>
       source: ''
       origin: ''
       slug: insensible-a-la-douleur
@@ -598,15 +613,17 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.vJ76EbOGtPdf41yj.Item.RVN2TCXzn7wQynmA
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.RndP6D8WVoFcgLQh
           indice: 0
-          label: Nouvelle Action 1
+          label: ''
           chatFlavor: ''
-          type: debuff
           img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
           properties:
             visible: false
-            enabled: false
+            enabled: true
             activable: false
             temporary: false
             noManaCost: false
@@ -614,18 +631,20 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.RVN2TCXzn7wQynmA
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.RndP6D8WVoFcgLQh
               subtype: combat
               target: def
-              apply: self
               value: '-5'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.vJ76EbOGtPdf41yj.Item.RVN2TCXzn7wQynmA
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.OcgbBv4ruEMF8REr.Item.RndP6D8WVoFcgLQh
               subtype: attribute
               target: hp
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: ''
           resolvers: []
       frequency: none
@@ -637,20 +656,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.jZgjzZNbzSw3h7q1
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: RVN2TCXzn7wQynmA
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758910900754
+      modifiedTime: 1758911088104
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: RndP6D8WVoFcgLQh
     sort: 2900000
-    _key: '!actors.items!OcgbBv4ruEMF8REr.RVN2TCXzn7wQynmA'
+    _key: '!actors.items!OcgbBv4ruEMF8REr.RndP6D8WVoFcgLQh'
 effects: []
 ownership:
   default: 0
@@ -661,11 +681,11 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749374371052
-  modifiedTime: 1758487759181
+  modifiedTime: 1758911336972
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: OcgbBv4ruEMF8REr
-sort: 0
+sort: 3999805
 _key: '!actors!OcgbBv4ruEMF8REr'

@@ -308,7 +308,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: 9wnMK1D3o4XCTWN1
+    _id: VBTjiZKttG1pbho9
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -317,13 +317,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -339,12 +336,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.ZwmnN6ZxDRxHXrFj.Item.9wnMK1D3o4XCTWN1
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.VBTjiZKttG1pbho9
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -355,16 +354,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.ZwmnN6ZxDRxHXrFj.Item.9wnMK1D3o4XCTWN1
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.VBTjiZKttG1pbho9
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -378,29 +376,202 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.9wnMK1D3o4XCTWN1'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758845126006
+      modifiedTime: 1758845253073
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.VBTjiZKttG1pbho9'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Poison mortel
+    type: capacity
+    img: icons/skills/toxins/poison-skull-herbs-bottle-pink.webp
+    system:
+      description: >-
+        <p>Le poison inflige 2d6 DM supplémentaires à la victime à chaque
+        attaque. Si la victime réussit un test de CON de la difficulté indiquée,
+        elle subit seulement la moitié des DM.</p>
+      source: ''
+      origin: ''
+      slug: poison-mortel
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.KzBRlAY95jGtVL1l
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2D6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.o87m7rEVh3RkF97R
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758845134751
+      modifiedTime: 1758845248110
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: KzBRlAY95jGtVL1l
+    sort: 6800000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.KzBRlAY95jGtVL1l'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Toile
+    type: capacity
+    img: icons/creatures/webs/web-spider-glowing-purple.webp
+    system:
+      description: >-
+        <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa
+        cible dans une toile gluante et solide. Elle est <strong>immobilisée
+        </strong>; se libérer nécessite l’usage d’une action limitée et il faut
+        réussir un<strong> test de FOR difficulté 12</strong>.</p>
+      source: ''
+      origin: ''
+      slug: toile
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.XsQ1IMJREdsdmMlt
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+7'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: '0'
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      inGame: ''
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.KqFxAwUj87NMzlv4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758845190015
+      modifiedTime: 1758845244607
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: XsQ1IMJREdsdmMlt
+    sort: 6300000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.XsQ1IMJREdsdmMlt'
   - folder: Jc9oocmI3B4cVSRG
     name: Araignée chasseuse
     type: capacity
@@ -429,12 +600,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.ZwmnN6ZxDRxHXrFj.Item.BCLGjMjwueQz0GVk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.LwbJWEAQMltoDMCF
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: true
@@ -445,22 +618,25 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.ZwmnN6ZxDRxHXrFj.Item.BCLGjMjwueQz0GVk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.LwbJWEAQMltoDMCF
               subtype: skill
               target: agi
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
-        - source: Actor.ZwmnN6ZxDRxHXrFj.Item.BCLGjMjwueQz0GVk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.LwbJWEAQMltoDMCF
           indice: 1
           label: si surprise
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: true
             noManaCost: false
@@ -468,11 +644,12 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.ZwmnN6ZxDRxHXrFj.Item.BCLGjMjwueQz0GVk
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.LwbJWEAQMltoDMCF
               subtype: combat
               target: damMelee
-              apply: self
               value: 1d4
+              apply: self
               additionalInfos: ''
           resolvers: []
       manaCost: -1
@@ -481,189 +658,26 @@ items:
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      inGame: ''
     effects: []
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.FpqZTZM5wuWb5mOT
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: BCLGjMjwueQz0GVk
-    sort: 0
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.BCLGjMjwueQz0GVk'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Poison mortel
-    type: capacity
-    img: icons/skills/toxins/poison-skull-herbs-bottle-pink.webp
-    system:
-      description: >-
-        <p>Le poison inflige 2d6 DM supplémentaires à la victime à chaque
-        attaque. Si la victime réussit un test de CON de la difficulté indiquée,
-        elle subit seulement la moitié des DM.</p>
-      source: ''
-      origin: ''
-      slug: poison-mortel
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.ZwmnN6ZxDRxHXrFj.Item.ftZXvdohzFgEDmra
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
-              dmg:
-                formula: 2D6
-              target:
-                type: single
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.o87m7rEVh3RkF97R
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: ftZXvdohzFgEDmra
-    sort: 4600000
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.ftZXvdohzFgEDmra'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Toile
-    type: capacity
-    img: icons/creatures/webs/web-spider-glowing-purple.webp
-    system:
-      description: >-
-        <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa
-        cible dans une toile gluante et solide. Elle est <strong>immobilisée
-        </strong>; se libérer nécessite l’usage d’une action limitée et il faut
-        réussir un<strong> test de FOR difficulté 12</strong>.</p>
-      source: ''
-      origin: ''
-      slug: toile
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: Actor.ZwmnN6ZxDRxHXrFj.Item.GZOffGEnaRHfKE8u
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: ranged
-          img: icons/svg/d20-highlight.svg
-          properties:
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-            visible: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: attack
-              skill:
-                formula: '+7'
-                crit: '20'
-                difficulty: '@cible.def'
-              dmg:
-                formula: '0'
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.KqFxAwUj87NMzlv4
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _id: GZOffGEnaRHfKE8u
-    sort: 4100000
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.GZOffGEnaRHfKE8u'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758845224161
+      modifiedTime: 1758845237238
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: LwbJWEAQMltoDMCF
+    sort: 1800000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.LwbJWEAQMltoDMCF'
 effects: []
 ownership:
   default: 0
@@ -676,9 +690,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749280938086
-  modifiedTime: 1758490327513
+  modifiedTime: 1758845568462
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: jSxC7rKTnVTmLDNl
-sort: 3800000
+sort: 100000
 _key: '!actors!jSxC7rKTnVTmLDNl'

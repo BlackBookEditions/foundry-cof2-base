@@ -122,16 +122,13 @@ system:
       private: ''
       public: ''
     notes:
-      private: >-
+      private: ''
+      public: >-
         <p>Des villages et zones rurales aux grandes cités, il existe un
         éventail de personnes chargées de protéger la population et (parfois
-        surtout) les dirigeants, avec des compétences variables. Le milicien est
-        un simple citoyen qui a été un peu entraîné et armé pour défendre son
-        village ou patrouiller. Le garde de la ville est un garde professionnel,
-        mieux équipé et entraîné qu’un simple milicien. Un vétéran ou un garde
-        de palais ducal a déj&agrave; connu la guerre ou fait partie d’une force
-        d’élite, ce qui lui vaut d’être au service direct&nbsp;</p>
-      public: ''
+        surtout) les dirigeants, avec des compétences variables. </p><p>Le
+        milicien est un simple citoyen qui a été un peu entraîné et armé pour
+        défendre son village ou patrouiller.</p>
     languages: []
     properties: ''
   magic: 0
@@ -282,6 +279,289 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!zlx2BKnIQDDDPooL.oC9UuTXRMNuis11E'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Pique
+    type: equipment
+    img: icons/weapons/polearms/pike-flared-red.webp
+    _id: f3jqM1AYttgKcZWW
+    system:
+      description: >-
+        <p>Une très longue lance de fantassin, destinée à recevoir les charges
+        de cavalerie ou à attaquer depuis le second rang. La pique double ses DM
+        contre une créature de grande taille qui vient de réaliser une charge ou
+        une action de mouvement suivie d’une attaque contact. Elle permet aussi
+        d’attaquer en se tenant derrière un allié de taille normale, avec une
+        pénalité de ‑5. Son utilisateur subit un dé malus en attaque dans toutes
+        les autres conditions.</p> <p>Attention : 3 actions différentes en
+        fonction de la situation.</p>
+      source: ''
+      origin: ''
+      slug: pique
+      tags: []
+      subtype: weapon
+      martialCategory: pike
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 3
+        unit: kg
+      price:
+        value: 5
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: true
+      actions:
+        - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+          indice: 0
+          label: Attaque normale
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: true
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+          indice: 1
+          label: Attaque derrière un allié
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc - 5'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d10 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+        - source: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+          indice: 2
+          label: vs Grande en mouvement
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: (1d10 x2) + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 100001
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.H68gp3QTXVYav1cw
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843398409
+      modifiedTime: 1758843398409
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!zlx2BKnIQDDDPooL.f3jqM1AYttgKcZWW'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
+    type: capacity
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: Hr4iOrq4CyrL0A5J
+    system:
+      description: >-
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
+      subtype: ''
+      actionType: l
+      learned: true
+      rank: 0
+      frequency: none
+      charges:
+        current: 0
+        max: 0
+      properties:
+        spell: false
+      path: null
+      cost: 0
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.zlx2BKnIQDDDPooL.Item.Hr4iOrq4CyrL0A5J
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.zlx2BKnIQDDDPooL.Item.Hr4iOrq4CyrL0A5J
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      origin: ''
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758843406022
+      modifiedTime: 1758843409172
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!zlx2BKnIQDDDPooL.Hr4iOrq4CyrL0A5J'
 effects: []
 sort: 0
 ownership:
@@ -293,9 +573,9 @@ _stats:
   duplicateSource: null
   coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742454182007
-  modifiedTime: 1758488325542
+  modifiedTime: 1758843370215
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!zlx2BKnIQDDDPooL'

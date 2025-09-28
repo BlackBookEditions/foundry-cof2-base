@@ -35,7 +35,7 @@ system:
         sheet: 0
         effects: 0
     int:
-      superior: false
+      superior: true
       base: 3
       bonuses:
         sheet: 0
@@ -126,14 +126,14 @@ system:
       private: ''
       public: >-
         <p>La momie est un mort‑vivant couvert de bandelettes, un cadavre animé
-        par une magie antique qui permet &agrave; un humano&iuml;de une parodie
-        de vie après la mort. La momie doit rester éternellement immobile au
-        fond de son sarcophage et elle ne peut que rarement trouver l’énergie de
-        s’en extraire. Toutefois, lorsque cela arrive, elle fait preuve d’une
+        par une magie antique qui permet à un humanoïde une parodie de vie après
+        la mort. La momie doit rester éternellement immobile au fond de son
+        sarcophage et elle ne peut que rarement trouver l’énergie de s’en
+        extraire. </p><p>Toutefois, lorsque cela arrive, elle fait preuve d’une
         haine des vivants qui dérangent son sommeil et d’une force impie qui
         défie les lois de la physique.</p>
     languages: []
-    properties: <p>Résistance 5 sauf feu.</p><p>Putréfaction si le coup blesse</p>
+    properties: ''
   currentEffects: []
 prototypeToken:
   name: Momie
@@ -304,7 +304,7 @@ items:
     name: Soutenir
     type: capacity
     img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: OYWMmX0UINgX5Deq
+    _id: aRZEw6j2SLimlYRA
     system:
       description: >-
         <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
@@ -313,13 +313,10 @@ items:
         créature désignée et cela compte comme une action offensive. Le bonus ne
         dure pas plus d’un round (jusqu’au tour du personnage, au round
         suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
         effet temporaire de +5 en attaque de contact pour 1 round.</p>
-      source: ''
-      origin: page 216 du livre des règles
+      source: page 216 du livre des règles
       slug: soutenir
       subtype: ''
       actionType: l
@@ -335,12 +332,14 @@ items:
       cost: 0
       manaCost: -1
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.OYWMmX0UINgX5Deq
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.aRZEw6j2SLimlYRA
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -351,16 +350,15 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.nWkXQDxKNnY34KdU.Item.OYWMmX0UINgX5Deq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.aRZEw6j2SLimlYRA
               subtype: combat
               target: melee
-              apply: others
               value: '5'
+              apply: others
               additionalInfos: ''
           resolvers:
             - type: buffDebuff
-              bonusDiceAdd: false
-              malusDiceAdd: false
               target:
                 type: single
                 scope: all
@@ -374,37 +372,41 @@ items:
                 statuses: []
                 duration: '1'
                 unit: round
-                successThreshold: null
+              bonusDiceAdd: false
+              malusDiceAdd: false
               skill: {}
               dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
     sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.OYWMmX0UINgX5Deq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889784910
+      modifiedTime: 1758889870344
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.aRZEw6j2SLimlYRA'
   - name: Résistance aux DM
     type: capacity
     img: icons/magic/defensive/shield-barrier-deflect-teal.webp
     system:
-      description: <p>La momie réduit de 5 tous les DM subis, sauf par le feu.</p>
+      description: "<p>La momie réduit de 5 tous les DM subis, sauf\_par le feu.</p>"
+      inGame: ''
       source: ''
       origin: Livre des règles p278
-      slug: resistance-aux-dm
+      slug: resistance-aux-armes
       subtype: ''
       actionType: none
       learned: true
@@ -419,12 +421,14 @@ items:
       cost: -1
       manaCost: -1
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.m3OgoOIcrbRXv2RF
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.HG6bly5LLh2jYFRg
           indice: 0
-          label: sauf feu
+          label: RD sauf DM Feu
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -435,11 +439,12 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.nWkXQDxKNnY34KdU.Item.m3OgoOIcrbRXv2RF
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.HG6bly5LLh2jYFRg
               subtype: combat
               target: dr
-              apply: self
               value: '5'
+              apply: self
               additionalInfos: ''
           resolvers: []
       allowLinkedCapacity: false
@@ -450,20 +455,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4tSIyCtnTYOqRKiv
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Tj7VBuGKSOAac6wq
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: m3OgoOIcrbRXv2RF
-    sort: 1500000
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.m3OgoOIcrbRXv2RF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889792630
+      modifiedTime: 1758889917404
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: HG6bly5LLh2jYFRg
+    sort: 600000
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.HG6bly5LLh2jYFRg'
   - folder: Jc9oocmI3B4cVSRG
     name: Putréfaction
     type: capacity
@@ -478,6 +484,10 @@ items:
         n’est pas nécessaire de réaliser un nouveau test de CON lorsque la
         victime est la cible d’une attaque de la momie. L’utilisation de la
         capacité de prêtre Délivrance permet de soigner cette maladie.</p>
+      inGame: >-
+        <p>Laction permet d'infliger les DM et d'aplliquer une perte périodique
+        de  DM pedant 5 rounds. Les DM périodiques fonctionnent uniquement en
+        mode  Combat</p>
       source: ''
       origin: ''
       slug: putrefaction
@@ -492,7 +502,44 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.c6XGccDIqa7xX1Vn
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: 1d6
+                elementType: ''
+                statuses: []
+                duration: '5'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
       frequency: none
       rank: 0
       allowLinkedCapacity: false
@@ -502,31 +549,32 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: FL5BOkZPXa9AAbcZ
-    sort: 0
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.FL5BOkZPXa9AAbcZ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889800375
+      modifiedTime: 1758889925408
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: c6XGccDIqa7xX1Vn
+    sort: 500000
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.c6XGccDIqa7xX1Vn'
   - folder: Jc9oocmI3B4cVSRG
     name: Injonction mortelle
     type: capacity
     img: icons/magic/control/fear-fright-shadow-monster-purple.webp
     system:
       description: >-
-        <p>Une cible située à une distance maximum de 30 m doit réussir
-        <strong>un test de CON difficulté 15</strong> ou tomber à 0 PV (et
-        mourir immédiatement s’il s’agit d’un PNJ). En cas de succès, la cible
-        subit tout de même <strong>2d8+10 DM</strong>. Ce pouvoir ne peut
-        prendre une même créature pour cible qu’une seule fois par combat</p>
+        <p>Une cible située à une distance maximum de 30 m doit réussir un test
+        de CON difficulté 15 ou tomber à 0 PV (et mourir immédiatement s’il
+        s’agit d’un PNJ). En cas de succès, la cible subit tout de même 2d8+10
+        DM. Ce pouvoir ne peut prendre une même créature pour cible qu’une seule
+        fois par combat</p>
       source: ''
       origin: ''
       slug: injonction-mortelle
@@ -541,12 +589,14 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.aXKruwPmm54Zk8EA
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.TuT9GIPldpqVgea3
           indice: 0
           label: Si injonction mortelle raté
-          chatFlavor: Si injonction mortelle raté
-          type: melee
+          chatFlavor: ''
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -557,12 +607,8 @@ items:
             - predicate: isOwned
           resolvers:
             - type: auto
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                difficulty: ''
               dmg:
-                formula: 2d6+5
+                formula: 2d8+10
               target:
                 type: none
                 number: 0
@@ -570,12 +616,15 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
           modifiers: []
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -585,25 +634,26 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: aXKruwPmm54Zk8EA
-    sort: 7500000
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.aXKruwPmm54Zk8EA'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889807050
+      modifiedTime: 1758889955354
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: TuT9GIPldpqVgea3
+    sort: 8200000
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.TuT9GIPldpqVgea3'
   - folder: GGe86yLIgBeAfJNv
     name: Lumière
     type: capacity
     img: icons/magic/light/torch-fire-orange.webp
-    _id: HODm8tjlmOYavyO3
+    _id: DbVfqMdNdynZ8fDZ
     system:
       description: >-
         <p style="text-align:justify">Le magicien désigne un objet à moins de 10
@@ -612,19 +662,12 @@ items:
         combat, le magicien peut lancer ce sort sur les yeux d’une créature dont
         le NC ne dépasse pas le rang atteint dans la voie. S’il réussit un test
         opposé d’attaque magique, elle est aveuglée pendant 1 round.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Pour faire simplement de la lumière, le joueur depense manuellement 1
-        PM</p>
-
-        <p>Pour aveugler la cible, il doit la selectionner et utiliser l'action
-        "Lumière- aveugler une cible" et le test opposé se fera tout seul et en
+        PM</p><p>Pour aveugler la cible, il doit la selectionner et utiliser
+        l'action "Aveugler une cible" et le test opposé se fera tout seul et en
         cas de succès appliquera l'état "aveuglé" à la cible.</p>
-
-        </blockquote>
+        <p>L'application du statut fonctionne uniquement en mode Combat.</p>
       source: ''
       origin: Livre des règles p106
       slug: lumiere
@@ -638,12 +681,14 @@ items:
         spell: true
       path: null
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.HODm8tjlmOYavyO3
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.DbVfqMdNdynZ8fDZ
           indice: 0
           label: Aveugler une cible
           chatFlavor: ''
-          type: magical
           img: icons/svg/d20-highlight.svg
+          type: magical
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -651,7 +696,7 @@ items:
             temporary: false
             noManaCost: false
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           resolvers:
             - type: attack
               bonusDiceAdd: false
@@ -676,7 +721,6 @@ items:
                   - blind
                 duration: '1'
                 unit: round
-                successThreshold: null
           modifiers: []
       cost: -1
       rank: 1
@@ -693,23 +737,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.PYIrQiE4y8ONxUqs
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.HODm8tjlmOYavyO3'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889852446
+      modifiedTime: 1758889984260
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.DbVfqMdNdynZ8fDZ'
   - folder: GGe86yLIgBeAfJNv
     name: Familier
     type: capacity
     img: icons/creatures/birds/corvid-watchful-glowing-green.webp
-    _id: x9HPYnZFfkS6FzGB
+    _id: tOkYxMQbjkIQ7S0h
     system:
       description: >-
         <p>Le magicien choisit un petit animal (écureuil, corbeau, chat,
@@ -721,18 +766,12 @@ items:
         pourra à nouveau invoquer son familier dès qu’il aura terminé une
         récupération complète (c’est toujours le même animal qui apparaît). Le
         familier récupère tous les PV perdus après une récupération rapide.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu :</strong></p>
-
+      inGame: >-
         <p>Lorsque le familier est en vue du joueur celui-ci "active" la
         capacité qui lui donne alors ses bonus. Si le familier s'éloigne ou est
         mort il faut désactiver cette capacité. Le MJ trouvera dans le
         compendium le
         @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.UgpkO1NHOnCogG8Q]{Familier}</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p106
       slug: familier
@@ -746,12 +785,14 @@ items:
         spell: true
       path: null
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.x9HPYnZFfkS6FzGB
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.tOkYxMQbjkIQ7S0h
           indice: 0
           label: Familier en vue
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -759,21 +800,23 @@ items:
             temporary: true
             noManaCost: true
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.nWkXQDxKNnY34KdU.Item.x9HPYnZFfkS6FzGB
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.tOkYxMQbjkIQ7S0h
               subtype: combat
               target: init
-              apply: self
               value: '2'
+              apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.nWkXQDxKNnY34KdU.Item.x9HPYnZFfkS6FzGB
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.tOkYxMQbjkIQ7S0h
               subtype: combat
               target: def
-              apply: self
               value: '2'
+              apply: self
               additionalInfos: ''
           resolvers: []
       cost: -1
@@ -791,100 +834,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.x9HPYnZFfkS6FzGB'
-  - folder: GGe86yLIgBeAfJNv
-    name: Invisibilité
-    type: capacity
-    img: icons/magic/control/silhouette-hold-change-green.webp
-    _id: m8iYQbAHv4L8yCTG
-    system:
-      description: "<p style=\"text-align:justify\">Le magicien se rend invisible pendant [1d4°+INT] minutes. Une fois invisible, personne ne peut plus détecter sa présence ou lui porter d’attaque directe. Si le magicien attaque, il redevient visible. À partir du rang 5, le magicien peut lancer ce sort sur un allié au prix d’une action limitée.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Le joueur clique sur l'action \"activation du sort\" pour dépenser ses PM. Les effets sont gérés à la main</p>\n</blockquote>"
-      source: ''
-      origin: Livre des règles p106
-      slug: invisibilite
-      subtype: ''
-      actionType: a
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: true
-      path: null
-      actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.m8iYQbAHv4L8yCTG
-          indice: 0
-          label: Activation du sort
-          chatFlavor: ''
-          type: spell
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers: []
-          resolvers: []
-      cost: -1
-      rank: 3
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 75000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.DVqBUq31qDsseNZj
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.m8iYQbAHv4L8yCTG'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889853613
+      modifiedTime: 1758890007476
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.tOkYxMQbjkIQ7S0h'
   - folder: GGe86yLIgBeAfJNv
     name: Vol
     type: capacity
     img: icons/magic/holy/angel-winged-humanoid-blue.webp
-    _id: ulCZJoh83IFmHatW
+    _id: FP07KECw1PZ7Qw9P
     system:
       description: >-
         <p style="text-align:justify">Le magicien peut voler pendant [2d4°+INT]
         minutes. Sa vitesse de déplacement est la même qu’au sol. Il peut rester
         en vol stationnaire s’il le désire et cela est une action gratuite</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le joueur clique sur l'action "activation du sort" pour dépenser ses
         PM. Les effets sont gérés à la main</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p106
       slug: vol
@@ -898,12 +873,14 @@ items:
         spell: true
       path: null
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.ulCZJoh83IFmHatW
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.FP07KECw1PZ7Qw9P
           indice: 0
           label: Activation du sort
           chatFlavor: ''
-          type: spell
           img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -911,7 +888,7 @@ items:
             temporary: false
             noManaCost: false
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           modifiers: []
           resolvers: []
       cost: -1
@@ -929,25 +906,35 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.mNVTynlPa8XlUoJv
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.ulCZJoh83IFmHatW'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889855733
+      modifiedTime: 1758890020092
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.FP07KECw1PZ7Qw9P'
   - folder: GGe86yLIgBeAfJNv
     name: Téléportation
     type: capacity
     img: icons/magic/movement/trail-streak-pink.webp
-    _id: ytYqvqVF8B6BPwEk
+    _id: hXcRbktxZvA2Nol8
     system:
-      description: "<p style=\"text-align:justify\">Une fois par jour, le magicien disparaît et réapparaît à un autre endroit situé à moins de (niveau x INT) kilomètres. Le lieu d’arrivée doit être soit en vue, soit parfaitement connu par le magicien. Le magicien peut emmener avec lui un allié à partir du niveau 10, un deuxième au niveau 13, un troisième au niveau 16 et enfin un quatrième au niveau 19.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur clique sur l'action \"activation du sort\" pour dépenser ses PM. Les effets sont gérés à la main</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Une fois par jour, le magicien disparaît
+        et réapparaît à un autre endroit situé à moins de (niveau x INT)
+        kilomètres. Le lieu d’arrivée doit être soit en vue, soit parfaitement
+        connu par le magicien. Le magicien peut emmener avec lui un allié à
+        partir du niveau 10, un deuxième au niveau 13, un troisième au niveau 16
+        et enfin un quatrième au niveau 19.</p>
+      inGame: >-
+        <p>Le joueur clique sur l'action "activation du sort" pour dépenser ses
+        PM. Les effets sont gérés à la main</p>
       source: ''
       origin: Livre des règles p106
       slug: teleportation
@@ -961,12 +948,14 @@ items:
         spell: true
       path: null
       actions:
-        - source: Actor.nWkXQDxKNnY34KdU.Item.ytYqvqVF8B6BPwEk
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.hXcRbktxZvA2Nol8
           indice: 0
           label: Activation du sort
           chatFlavor: ''
-          type: spell
           img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -974,7 +963,7 @@ items:
             temporary: false
             noManaCost: false
           conditions:
-            - predicate: isLearned
+            - predicate: isOwned
           modifiers: []
           resolvers: []
       cost: -1
@@ -992,18 +981,19 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.36WLiHFr84XGrYj2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.ytYqvqVF8B6BPwEk'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758889856743
+      modifiedTime: 1758890033643
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.hXcRbktxZvA2Nol8'
 effects: []
 ownership:
   default: 0
@@ -1016,9 +1006,9 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749370714386
-  modifiedTime: 1758487352602
+  modifiedTime: 1758890046756
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: rZzHhFD6ZanSSEMk
-sort: 2300000
+sort: 2800000
 _key: '!actors!rZzHhFD6ZanSSEMk'

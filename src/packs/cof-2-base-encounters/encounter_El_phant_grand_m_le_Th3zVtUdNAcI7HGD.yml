@@ -17,7 +17,7 @@ system:
         sheet: 0
         effects: 0
     for:
-      superior: false
+      superior: true
       base: 10
       bonuses:
         sheet: 0
@@ -30,13 +30,13 @@ system:
         effects: 0
     cha:
       superior: false
-      base: 0
+      base: -2
       bonuses:
         sheet: 0
         effects: 0
     int:
       superior: false
-      base: 0
+      base: -4
       bonuses:
         sheet: 0
         effects: 0
@@ -123,7 +123,7 @@ system:
       public: ''
     notes:
       private: ''
-      public: ''
+      public: "<p>Ce profil correspond à un éléphant\_d’Afrique Grand Mâle.</p>"
     languages: []
     properties: ''
   magic: 0
@@ -293,47 +293,40 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!Th3zVtUdNAcI7HGD.X9VHh2ogySMmJo56'
-  - folder: F8KbcWx8PBfjuFhL
-    name: Soutenir
+  - folder: Jc9oocmI3B4cVSRG
+    name: Charge
     type: capacity
-    img: icons/skills/social/diplomacy-handshake-yellow.webp
-    _id: k5JPs2Z4WhRDjLkl
+    img: icons/skills/melee/maneuver-greatsword-yellow.webp
     system:
       description: >-
-        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
-        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
-        la créature désignée. Pour soutenir, vous devez être au contact de la
-        créature désignée et cela compte comme une action offensive. Le bonus ne
-        dure pas plus d’un round (jusqu’au tour du personnage, au round
-        suivant).</p>
-
-        <p><strong>Usage en jeu :</strong></p>
-
-        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
-        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+        <p>La créature parcourt une distance maximale de 20 m et réalise une
+        attaque avec <strong>un dé bonus</strong>. Si l’attaque est réussie, en
+        plus des DM normaux, une victime de taille inférieure ou égale à la
+        créature, doit faire un <strong>test de FOR difficulté 13</strong> ou
+        être <em>renversée</em>. Dans ce cas, la créature piétine (ou embroche)
+        sa victime et les <strong>DM sont doublés</strong>.</p>
       source: ''
-      origin: page 216 du livre des règles
-      slug: soutenir
+      origin: ''
+      slug: charge
       subtype: ''
       actionType: l
       learned: true
-      rank: 0
-      frequency: none
       charges:
-        current: 0
-        max: 0
+        current: null
+        max: null
       properties:
         spell: false
       path: null
-      cost: 0
-      manaCost: -1
+      cost: -1
       actions:
-        - source: Actor.DNH6tWExkJjtjfMU.Item.k5JPs2Z4WhRDjLkl
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Th3zVtUdNAcI7HGD.Item.V5PyaSL6iDaG7BzT
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
           properties:
             visible: false
             enabled: false
@@ -342,54 +335,53 @@ items:
             noManaCost: false
           conditions:
             - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: Actor.DNH6tWExkJjtjfMU.Item.k5JPs2Z4WhRDjLkl
-              subtype: combat
-              target: melee
-              apply: others
-              value: '5'
-              additionalInfos: ''
           resolvers:
-            - type: buffDebuff
-              bonusDiceAdd: false
+            - type: attack
+              bonusDiceAdd: true
               malusDiceAdd: false
+              skill:
+                formula: '+6'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: 2d4+3
               target:
-                type: single
-                scope: all
+                type: none
                 number: 0
+                scope: all
               additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: ''
-                elementType: ''
+                active: false
+                applyOn: success
                 statuses: []
-                duration: '1'
+                duration: '0'
                 unit: round
-                successThreshold: null
-              skill: {}
-              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: ''
+      rank: 0
+      frequency: none
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
     effects: []
-    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: null
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!Th3zVtUdNAcI7HGD.k5JPs2Z4WhRDjLkl'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839937302
+      modifiedTime: 1758841263929
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: V5PyaSL6iDaG7BzT
+    sort: 7500000
+    _key: '!actors.items!Th3zVtUdNAcI7HGD.V5PyaSL6iDaG7BzT'
   - folder: Jc9oocmI3B4cVSRG
     name: Fauchage
     type: capacity
@@ -413,7 +405,8 @@ items:
       path: null
       cost: -1
       actions:
-        - source: Actor.DNH6tWExkJjtjfMU.Item.hAfh3D8W7Z3ZRVGN
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Th3zVtUdNAcI7HGD.Item.SMLHsI8dGlfUJVJP
           indice: 0
           label: ''
           chatFlavor: ''
@@ -429,14 +422,17 @@ items:
             - predicate: isOwned
           modifiers:
             - type: capacity
-              source: Actor.DNH6tWExkJjtjfMU.Item.hAfh3D8W7Z3ZRVGN
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Th3zVtUdNAcI7HGD.Item.SMLHsI8dGlfUJVJP
               subtype: combat
               target: dr
               apply: self
               value: '3'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       manaCost: -1
+      inGame: ''
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -446,105 +442,119 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _id: hAfh3D8W7Z3ZRVGN
-    sort: 6600000
-    _key: '!actors.items!Th3zVtUdNAcI7HGD.hAfh3D8W7Z3ZRVGN'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Charge
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758839940103
+      modifiedTime: 1758839940115
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _id: SMLHsI8dGlfUJVJP
+    sort: 8800000
+    _key: '!actors.items!Th3zVtUdNAcI7HGD.SMLHsI8dGlfUJVJP'
+  - folder: F8KbcWx8PBfjuFhL
+    name: Soutenir
     type: capacity
-    img: icons/skills/melee/maneuver-greatsword-yellow.webp
+    img: icons/skills/social/diplomacy-handshake-yellow.webp
+    _id: KSibY7VvGdFUQJwJ
     system:
       description: >-
-        <p>La créature parcourt une distance maximale de 20 m et réalise une
-        attaque avec un dé bonus. Si l’attaque est réussie, en plus des DM
-        normaux, une victime de taille inférieure ou égale à la créature, doit
-        faire un test de FOR difficulté 20 ou être renversée. Dans ce cas, la
-        créature piétine (ou embroche) sa victime et les DM sont doublés.</p>
-      source: ''
-      origin: ''
-      slug: charge
+        <p style="text-align:justify">Sacrifiez toutes vos actions pour donner
+        +5 en attaque au contact à un allié lors de sa prochaine attaque contre
+        la créature désignée. Pour soutenir, vous devez être au contact de la
+        créature désignée et cela compte comme une action offensive. Le bonus ne
+        dure pas plus d’un round (jusqu’au tour du personnage, au round
+        suivant).</p>
+      inGame: >-
+        <p>Ciblez l'acteur désigné et cliquez sur l'action pour lui accorder un
+        effet temporaire de +5 en attaque de contact pour 1 round.</p>
+      source: page 216 du livre des règles
+      slug: soutenir
       subtype: ''
       actionType: l
       learned: true
+      rank: 0
+      frequency: none
       charges:
-        current: null
-        max: null
+        current: 0
+        max: 0
       properties:
         spell: false
       path: null
-      cost: -1
+      cost: 0
+      manaCost: -1
       actions:
-        - source: Actor.DNH6tWExkJjtjfMU.Item.3JxgSWIFFmbwibqV
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.Th3zVtUdNAcI7HGD.Item.KSibY7VvGdFUQJwJ
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
           properties:
             visible: false
-            enabled: true
+            enabled: false
             activable: true
             temporary: false
             noManaCost: false
           conditions:
             - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.Th3zVtUdNAcI7HGD.Item.KSibY7VvGdFUQJwJ
+              subtype: combat
+              target: melee
+              value: '5'
+              apply: others
+              additionalInfos: ''
           resolvers:
-            - type: attack
-              bonusDiceAdd: true
-              malusDiceAdd: false
-              skill:
-                formula: '+6'
-                crit: '20'
-                difficulty: '@cible.def'
-              dmg:
-                formula: 2d4+3
+            - type: buffDebuff
               target:
-                type: none
-                number: 0
+                type: single
                 scope: all
+                number: 0
               additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
                 statuses: []
-                duration: '0'
+                duration: '1'
                 unit: round
-          modifiers: []
-      manaCost: -1
-      rank: 0
-      frequency: none
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
       allowLinkedCapacity: false
       linkedCapacity: null
       parentCapacity: null
+      origin: ''
     effects: []
+    sort: 0
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.xWw0TTUXfKQNeELj
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: 1749144270577
-      lastModifiedBy: dkGm1qUrVLQeAKiY
       exportSource: null
-    _id: 3JxgSWIFFmbwibqV
-    sort: 5300000
-    _key: '!actors.items!Th3zVtUdNAcI7HGD.3JxgSWIFFmbwibqV'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758840316120
+      modifiedTime: 1758841259796
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!Th3zVtUdNAcI7HGD.KSibY7VvGdFUQJwJ'
 effects: []
 ownership:
   default: 0
@@ -553,12 +563,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749144180240
-  modifiedTime: 1749280154550
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1758839974391
+  lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _id: Th3zVtUdNAcI7HGD
 sort: 600000

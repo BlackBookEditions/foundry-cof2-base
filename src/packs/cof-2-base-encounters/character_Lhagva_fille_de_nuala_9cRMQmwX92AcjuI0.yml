@@ -192,7 +192,7 @@ system:
   details:
     biography:
       private: ''
-      public: ''
+      public: "<p>Au premier coup d’œil, on se dit que Lhagva n’est pas du coin : grande et costaude (1,83 m, 78\_kg), elle porte toujours des vêtements de peau et de fourrure (selon l’époque) qui viennent\_d’ailleurs, sans parler de sa longue chevelure noire et de son maquillage tribal.\_</p><p>Lhagva est arrivée dans le bois de Myrviel avec sa mère, Nuala, il y a une dizaine d’années. Elle avait\_tout juste huit ans lorsque sa mère mourut aux portes de la petite communauté qui allait devenir son\_nouveau foyer. Puissante guerrière au service du tsar des steppes, une lointaine contrée située dans\_le nord des Terres d’Osgild, Nuala avait échoué à protéger son souverain et avait dû fuir pour sauver\_Lhagva. Gravement blessée, elle était parvenue à semer ses ennemis et à traverser le continent. Au\_cœur du bois de Myrviel, elle s’était finalement éteinte, à bout de forces, et Lhagva fut adoptée par\_le patriarche.</p><p>Aujourd’hui, âgée de 18 ans, Lhagva est une jeune femme robuste, fière de ses origines, qui rêve de\_suivre les traces de sa mère en défendant la communauté qui l’a adoptée. Depuis quelque temps, elle\_s’imagine se dresser avec ses amis Wilibert, Ionas et Skodja contre les bandes maléfiques qui rôdent\_dans la région. Alors, quand le patriarche leur a demandé d’aller au bourg de Clairval, à quelques\_jours de marche de là, pour recevoir l’enseignement du baron Roderick et de ses fameux amis, elle a\_fait son paquetage dans l’heure…</p>"
     appearance:
       private: ''
       public: ''
@@ -293,121 +293,6 @@ prototypeToken:
     disposition: false
   movementAction: null
 items:
-  - folder: BHbn2gP9Z2mczP4c
-    name: Mains nues
-    type: equipment
-    img: icons/skills/melee/unarmed-punch-fist.webp
-    _id: d1TkqcMc1rxiWUej
-    system:
-      description: >-
-        <p>Dans le cas du combat à mains nues, les DM sont généralement
-        temporaires, sauf pour les moines</p>
-      source: ''
-      origin: ''
-      slug: mains-nues
-      tags:
-        - dmtemporaires
-      subtype: weapon
-      martialCategory: unarmed
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 0
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.d1TkqcMc1rxiWUej
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: melee
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@atc'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d3 + @for
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      damagetype: impact
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 100007
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource:
-        worldId: cov2-dev
-        uuid: null
-        coreVersion: '12.331'
-        systemId: co
-        systemVersion: 12.331.0
-    _key: '!actors.items!9cRMQmwX92AcjuI0.d1TkqcMc1rxiWUej'
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
     type: capacity
@@ -509,7 +394,7 @@ items:
     name: Humain
     type: feature
     img: modules/cof-base/assets/peuples/peuple_humain.webp
-    _id: Kkr5gYhRyWEWcHh9
+    _id: DRHXXrSanIF7Lc7K
     system:
       description: >-
         <p>L’humain se distingue par sa capacité d’adaptation et son instinct
@@ -581,7 +466,8 @@ items:
       slug: humain
       subtype: people
       modifiers:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.Kkr5gYhRyWEWcHh9
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DRHXXrSanIF7Lc7K
           type: feature
           subtype: ability
           target: for
@@ -589,7 +475,8 @@ items:
           apply: self
           additionalInfos: ''
       paths:
-        - Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
       capacities: []
     effects: []
     sort: 0
@@ -599,23 +486,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.4xPAgHxhSOWw4Zwh
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.Kkr5gYhRyWEWcHh9'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923792835
+      modifiedTime: 1758923837528
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.DRHXXrSanIF7Lc7K'
   - folder: aMNRFAA7Ui4jg6IV
     name: Voie de l'humain
     type: path
     img: modules/cof-base/assets/peuples/peuple_humain.webp
-    _id: 5JCrYSo0DLKAFXWF
+    _id: 6RW8HOqNw5j5ZJ90
     system:
       description: ''
       source: ''
@@ -623,11 +511,16 @@ items:
       slug: voie-de-lhumain
       subtype: people
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.d4aE6przUKSJW8jC
-        - Actor.9cRMQmwX92AcjuI0.Item.WlmU0LJHUMcKgE1z
-        - Actor.9cRMQmwX92AcjuI0.Item.ILpmZnYBPEj5gtMS
-        - Actor.9cRMQmwX92AcjuI0.Item.6StZnIH7chCXshaY
-        - Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.EtcbrBJO8MKyXd6a
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.2Xp8whm8DDrImAO5
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.qLMSoPRSiF8t8iVm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
       rank: 1
       maxDefenseArmor: 0
       pvByLevel: 0
@@ -639,25 +532,40 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.5JCrYSo0DLKAFXWF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923792941
+      modifiedTime: 1758923847062
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.6RW8HOqNw5j5ZJ90'
   - folder: Ggx3TUWZyG4OvL2R
     name: Diversité
     type: capacity
     img: icons/environment/people/group.webp
-    _id: d4aE6przUKSJW8jC
+    _id: Shyh4lRnFc5TFN4T
     system:
-      description: "<p style=\"text-align:justify\">Un humain obtient un bonus de +3 aux tests de deux domaines associés à son origine géographique ou sociale (voir ci‑dessous). De plus, il gagne 1 PC supplémentaire.</p>\n<p style=\"text-align:justify\">Origine géographique ou sociale (choisissez ou lancez un d6) : 1 Montagnard (escalade et résistance au froid). 2 Citadin (commerce et résistance aux maladies). 3 Campagnard (météorologie et équitation). 4 Riverain (natation et navigation). 5 Sauvage (chasser et pister). 6 Nomade (orientation et résistance à la chaleur ou au froid).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Chaque cas de bonus possible a été mis en place, lorsque la capacité sera sur la fiche du personnage, il faudra supprimer les cas non choisies pour les bonus aux jets de caractéristiques. Le bonus de 1 PC est, à part, et doit rester.</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Un humain obtient un bonus de +3 aux tests
+        de deux domaines associés à son origine géographique ou sociale (voir
+        ci‑dessous). De plus, il gagne 1 PC supplémentaire.</p> <p
+        style="text-align:justify">Origine géographique ou sociale (choisissez
+        ou lancez un d6) : 1 Montagnard (escalade et résistance au froid). 2
+        Citadin (commerce et résistance aux maladies). 3 Campagnard
+        (météorologie et équitation). 4 Riverain (natation et navigation). 5
+        Sauvage (chasser et pister). 6 Nomade (orientation et résistance à la
+        chaleur ou au froid).</p>
+      inGame: >-
+        <p>Chaque cas de bonus possible a été mis en place, lorsque la capacité
+        sera sur la fiche du personnage, il faudra supprimer les cas non
+        choisies pour les bonus aux jets de caractéristiques. Le bonus de 1 PC
+        est, à part, et doit rester.</p>
       source: ''
       origin: Livre des règles p57
       slug: diversite
@@ -669,36 +577,16 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.d4aE6przUKSJW8jC
-          indice: 0
-          label: 'Sauvage : chasser et pister'
-          chatFlavor: 'Sauvage : chasser et pister'
-          type: buff
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
+          indice: 2
+          label: 'Campagnard : equitation et meteorologie'
+          chatFlavor: 'Campagnard : equitation et meteorologie'
           img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: true
-            activable: false
-            temporary: false
-            noManaCost: false
-          modifiers:
-            - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.d4aE6przUKSJW8jC
-              subtype: skill
-              target: per
-              apply: self
-              value: '3'
-              additionalInfos: chasser et pister
-          conditions: []
-          resolvers: []
-        - source: Actor.9cRMQmwX92AcjuI0.Item.d4aE6przUKSJW8jC
-          indice: 1
-          label: ''
-          chatFlavor: ''
           type: buff
-          img: icons/svg/d20-highlight.svg
           properties:
             visible: false
             enabled: true
@@ -709,13 +597,49 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.d4aE6przUKSJW8jC
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
+              subtype: skill
+              target: agi
+              value: '3'
+              apply: self
+              additionalInfos: equitation et meteorologie
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
+              subtype: skill
+              target: per
+              value: '3'
+              apply: self
+              additionalInfos: equitation et meteorologie
+          resolvers: []
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
+          indice: 6
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          properties:
+            visible: false
+            enabled: true
+            activable: false
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Shyh4lRnFc5TFN4T
               subtype: resource
               target: fp
-              apply: self
               value: '1'
+              apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -731,38 +655,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.d4aE6przUKSJW8jC'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923793084
+      modifiedTime: 1758924128512
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.Shyh4lRnFc5TFN4T'
   - folder: Ggx3TUWZyG4OvL2R
     name: Instinct de survie
     type: capacity
     img: icons/magic/defensive/shield-barrier-blue.webp
-    _id: WlmU0LJHUMcKgE1z
+    _id: EtcbrBJO8MKyXd6a
     system:
       description: >-
         <p>Une fois par combat, lorsqu’une attaque devrait amener l’humain à 0
         PV, les DM qu’elle inflige sont divisés par 2 (minimum 1). Après avoir
         bénéficié de cette capacité, l’humain gagne pour le reste du combat un
         bonus de +2 en DEF.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Ici on propose une action activable/désactivable pour gérer le +2 en
         DEF. Au MJ de gérer les dommages divisés par 2.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p57
       slug: instinct-de-survie
@@ -774,9 +693,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.WlmU0LJHUMcKgE1z
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.EtcbrBJO8MKyXd6a
           indice: 0
           label: DEF + 2
           chatFlavor: ''
@@ -792,13 +713,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.WlmU0LJHUMcKgE1z
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.EtcbrBJO8MKyXd6a
               subtype: combat
               target: def
               apply: self
               value: '2'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -814,96 +737,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.WlmU0LJHUMcKgE1z'
-  - folder: Ggx3TUWZyG4OvL2R
-    name: Loup parmi les loups
-    type: capacity
-    img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
-    _id: ILpmZnYBPEj5gtMS
-    system:
-      description: >-
-        <p>Une fois par round, l’humain gagne +1d4° aux DM qu’il inflige
-        lorsqu’il combat un adversaire humanoïde de taille moyenne. Ce bonus ne
-        s’applique qu’aux DM initiaux d’une attaque, pas aux DM sur la
-        durée.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Pas d'effets automatique. Géré à la main</p>
-
-        </blockquote>
-      source: ''
-      origin: Livre des règles p57
-      slug: loup-parmi-les-loups
-      subtype: ''
-      actionType: none
-      learned: false
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
-      actions: []
-      cost: -1
-      rank: 4
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    sort: 87500
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: null
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.ILpmZnYBPEj5gtMS'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923793210
+      modifiedTime: 1758923793240
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.EtcbrBJO8MKyXd6a'
   - folder: Ggx3TUWZyG4OvL2R
     name: Touche‑à‑tout
     type: capacity
     img: icons/commodities/tech/claw-mechanical.webp
-    _id: 6StZnIH7chCXshaY
+    _id: 2Xp8whm8DDrImAO5
     system:
       description: >-
         <p>Le personnage obtient une capacité de rang 1 ou 2 de n’importe quel
         profil au choix du joueur. Si la capacité est de rang 2 ou accorde un
         bonus de DEF, il doit respecter les limitations d’armure</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il suffit de glisser deposer la capacité choisie sous celle-ci dans
+      inGame: >-
+        <p>Il suffit de glisser-déposer la capacité choisie sous celle-ci dans
         la fiche de personnage</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p57
       slug: toucheatout
@@ -915,7 +774,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
       actions: []
       cost: -1
       rank: 3
@@ -932,39 +792,88 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.6StZnIH7chCXshaY'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923793332
+      modifiedTime: 1758923793332
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.2Xp8whm8DDrImAO5'
+  - folder: Ggx3TUWZyG4OvL2R
+    name: Loup parmi les loups
+    type: capacity
+    img: icons/creatures/mammals/wolf-howl-moon-forest-blue.webp
+    _id: qLMSoPRSiF8t8iVm
+    system:
+      description: >-
+        <p>Une fois par round, l’humain gagne +1d4° aux DM qu’il inflige
+        lorsqu’il combat un adversaire humanoïde de taille moyenne. Ce bonus ne
+        s’applique qu’aux DM initiaux d’une attaque, pas aux DM sur la
+        durée.</p>
+      inGame: <p>Pas d'effets automatique. Géré à la main</p>
+      source: ''
+      origin: Livre des règles p57
+      slug: loup-parmi-les-loups
+      subtype: ''
+      actionType: none
+      learned: false
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
+      actions: []
+      cost: -1
+      rank: 4
+      frequency: none
+      manaCost: -1
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 87500
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: null
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923793392
+      modifiedTime: 1758923793392
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.qLMSoPRSiF8t8iVm'
   - folder: Ggx3TUWZyG4OvL2R
     name: Polyvalence
     type: capacity
     img: icons/commodities/tech/cog-brass.webp
-    _id: 6A8axGQWDCOEOrct
+    _id: S4TNhTkPHEOn4reu
     system:
       description: >-
         <p>Le personnage augmente sa caractéristique la plus faible de +1 et sa
         Volonté de +1</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
         Attention, toutes les caractéristiques ont été prévues ici, une fois la
         capacité copiée sur la fiche de personnage, il faudra supprimer les
         caractéristiques non choisie, sinon le bonus sera sur toutes les
         caractéristiques !</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p57
       slug: polyvalence
@@ -976,9 +885,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.5JCrYSo0DLKAFXWF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.6RW8HOqNw5j5ZJ90
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
           indice: 0
           label: ''
           chatFlavor: ''
@@ -994,55 +905,63 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: agi
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: con
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: for
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: per
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: cha
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: int
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.6A8axGQWDCOEOrct
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.S4TNhTkPHEOn4reu
               subtype: ability
               target: vol
               value: '1'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -1058,23 +977,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.6A8axGQWDCOEOrct'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923793459
+      modifiedTime: 1758923793482
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.S4TNhTkPHEOn4reu'
   - folder: so33z8qnqRMJva9E
     name: Barbare
     type: profile
     img: modules/cof-base/assets/profils/profil_combattant_barbare.webp
-    _id: OarHk7zZTHFewOFy
+    _id: XpJjU02O64Q9pC4o
     system:
       description: >-
         <p>Points de vigueur : 5 par niveau Le barbare est un combattant sauvage
@@ -1112,11 +1032,16 @@ items:
       modifiers: []
       proficiencies: []
       paths:
-        - Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
-        - Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
-        - Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
-        - Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
-        - Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       martialTrainingsWeapons:
         unarmed: true
         staff: true
@@ -1175,24 +1100,25 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags:
       co: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.YCnmLuXPtcHlHLNc
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.OarHk7zZTHFewOFy'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923800864
+      modifiedTime: 1758923805172
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.XpJjU02O64Q9pC4o'
   - folder: vWTAFkBg6MyMM8LR
     name: Voie de la brute
     type: path
     img: modules/cof-base/assets/voies/barbare_brute.webp
-    _id: dWshBmGTQzbTaY1K
+    _id: NvdCe1TzeNB6Ozse
     system:
       description: ''
       source: ''
@@ -1200,11 +1126,16 @@ items:
       slug: voie-de-la-brute
       subtype: profile
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.Ttgoi62fv8SzTEKd
-        - Actor.9cRMQmwX92AcjuI0.Item.ZwX0FWYytluecAa5
-        - Actor.9cRMQmwX92AcjuI0.Item.OVivbRpwTJH4rNKg
-        - Actor.9cRMQmwX92AcjuI0.Item.rei1O8qWVsLZkVw7
-        - Actor.9cRMQmwX92AcjuI0.Item.GtShRdywWWcCL62g
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.CTMDmy0Vryk3egBI
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.xAJo8MyrxOtSX2v2
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DbOhMX5GgRgKGos6
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ojrcu9DxDbYU06Cx
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.enjlPZfPKLHoLStc
       rank: 0
       maxDefenseArmor: 3
       pvByLevel: 0
@@ -1216,39 +1147,29 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.dWshBmGTQzbTaY1K'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923800932
+      modifiedTime: 1758923801626
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.NvdCe1TzeNB6Ozse'
   - folder: 4t5HuH0UUDjxchqY
     name: Argument de taille
     type: capacity
     img: icons/creatures/mammals/bull-horned-blue.webp
-    _id: Ttgoi62fv8SzTEKd
+    _id: CTMDmy0Vryk3egBI
     system:
-      description: >-
-        <p style="text-align:justify">Le barbare ajoute sa FOR à son maximum de
-        PV ainsi qu’à ses tests de CHA et à ceux de ses alliés au contact pour
-        les tests de négociation, de persuasion ou d’intimidation. Allez savoir
-        pourquoi, sa simple présence donne de la force aux arguments de ses
-        alliés…</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      description: "<p style=\"text-align:justify\">Le barbare ajoute sa FOR à son maximum de PV ainsi qu’à ses tests de CHA et à ceux de ses alliés au contact pour les tests de négociation, de persuasion ou d’intimidation. Allez savoir pourquoi, sa simple présence donne de la force aux arguments de ses alliés…</p>\n<p>\_</p>"
+      inGame: >-
         <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
         L'effet sur les alliés est à prendre en compte manuellement</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p79
       slug: argument-de-taille
@@ -1260,9 +1181,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.Ttgoi62fv8SzTEKd
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.CTMDmy0Vryk3egBI
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1278,20 +1201,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.Ttgoi62fv8SzTEKd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.CTMDmy0Vryk3egBI
               subtype: attribute
               target: hp
               apply: self
               value: '@for'
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.Ttgoi62fv8SzTEKd
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.CTMDmy0Vryk3egBI
               subtype: skill
               target: cha
               apply: self
               value: '@for'
-              additionalInfos: Intimidation
+              additionalInfos: Intimidation/négociation/persuasion
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1307,23 +1233,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.Ttgoi62fv8SzTEKd'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923800995
+      modifiedTime: 1758923801020
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.CTMDmy0Vryk3egBI'
   - folder: 4t5HuH0UUDjxchqY
     name: Tour de force
     type: capacity
     img: icons/magic/control/buff-strength-muscle-damage-orange.webp
-    _id: ZwX0FWYytluecAa5
+    _id: xAJo8MyrxOtSX2v2
     system:
       description: >-
         <p style="text-align:justify">Le barbare peut temporairement décupler
@@ -1333,18 +1260,12 @@ items:
         dés). Enfin, le barbare peut désormais porter une chemise de mailles et
         utiliser toutes les capacités des voies de barbare auparavant autorisées
         avec une armure de cuir renforcé</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Lorsque cette capacité est apprise, rajouter la formation martiale
         "chemise de mailles" dans le profil du Barbare (déverrouillage du profil
-        obligatoire). Lorsque le personnage active cette action, un jet de
-        dommages est effectué et le bonus de +10 aux test de FOR devient
+        obligatoire). Lorsque le personnage active cette action, un jet de soin
+        négatif est effectué et le bonus de +10 aux test de FOR devient
         disponible dans la fenêtre du test de compétence.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p79
       slug: tour-de-force
@@ -1356,9 +1277,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.ZwX0FWYytluecAa5
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.xAJo8MyrxOtSX2v2
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1374,34 +1297,32 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.ZwX0FWYytluecAa5
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.xAJo8MyrxOtSX2v2
               subtype: skill
               target: for
               apply: self
               value: '10'
               additionalInfos: Tour de force
           resolvers:
-            - type: auto
+            - type: heal
               bonusDiceAdd: false
               malusDiceAdd: false
               skill:
-                difficulty: ''
-              dmg:
-                formula: 1d4°
+                formula: '-1d4°'
               target:
                 type: self
                 number: 0
                 scope: all
               additionalEffect:
-                active: true
+                active: false
                 applyOn: success
-                formulaType: damage
-                formula: ''
-                elementType: ''
-                statuses: []
-                duration: '1'
-                unit: round
                 successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              dmg: {}
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -1417,23 +1338,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.ZwX0FWYytluecAa5'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801114
+      modifiedTime: 1758923801136
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.xAJo8MyrxOtSX2v2'
   - folder: 4t5HuH0UUDjxchqY
     name: Attaque brutale
     type: capacity
     img: icons/skills/melee/hand-grip-staff-yellow-brown.webp
-    _id: OVivbRpwTJH4rNKg
+    _id: DbOhMX5GgRgKGos6
     system:
       description: >-
         <p style="text-align:justify">Le barbare effectue une puissante attaque
@@ -1442,19 +1364,17 @@ items:
         Sur une attaque brutale réussie, il peut sacrifier 1d4° DM pour faire
         reculer de 3 m un adversaire de NC inférieur au rang atteint dans la
         voie, ou sacrifier 2d4° DM pour le renverser.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Propose 2 actions :</p>
+      inGame: >-
+        <p>Propose 4 actions :</p>
 
         <p>Une action pour faire l'attaque avec le bonus de 1d4°</p>
 
         <p>Une autre action nommée "Attaque brutale -3" qui diminue de 3 le jet
         d'attaque mais augmente de 2d4° les dégats</p>
 
-        </blockquote>
+        <p>Les deux actions suivantes servent à lancer les jets de Dommages en
+        cas  de réussite de l'Attaque Brutale pour repousser ou renverser la
+        cible.</p>
       source: ''
       origin: Livre des règles p79
       slug: attaque-brutale
@@ -1466,12 +1386,14 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.OVivbRpwTJH4rNKg
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DbOhMX5GgRgKGos6
           indice: 0
           label: +1d4° DM
-          chatFlavor: +1d4° DM
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -1504,10 +1426,12 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
-        - source: Actor.9cRMQmwX92AcjuI0.Item.OVivbRpwTJH4rNKg
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DbOhMX5GgRgKGos6
           indice: 1
           label: '-3 pour +2d4° DM'
-          chatFlavor: '-3 pour +2d4° DM'
+          chatFlavor: ''
           type: melee
           img: icons/svg/d20-highlight.svg
           properties:
@@ -1540,6 +1464,77 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DbOhMX5GgRgKGos6
+          indice: 0
+          label: DM 1d4°
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '-1d4°'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              dmg: {}
+          modifiers: []
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.DbOhMX5GgRgKGos6
+          indice: 0
+          label: DM 2d4°
+          chatFlavor: ''
+          type: heal
+          img: icons/svg/d20-highlight.svg
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: heal
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '-2d4°'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                successThreshold: null
+                statuses: []
+                duration: '0'
+                unit: round
+              dmg: {}
+          modifiers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -1555,34 +1550,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.OVivbRpwTJH4rNKg'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801233
+      modifiedTime: 1758923801258
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.DbOhMX5GgRgKGos6'
   - folder: 4t5HuH0UUDjxchqY
     name: Force héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: rei1O8qWVsLZkVw7
+    _id: ojrcu9DxDbYU06Cx
     system:
       description: >-
         <p>Le barbare augmente sa FOR de +1. Désormais, il obtient un dé bonus
-        aux tests de FOR</p><blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+        aux tests de FOR</p>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p>
       source: ''
       origin: Livre des règles p80
       slug: force-heroique
@@ -1594,9 +1586,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.rei1O8qWVsLZkVw7
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ojrcu9DxDbYU06Cx
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1612,20 +1606,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.rei1O8qWVsLZkVw7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ojrcu9DxDbYU06Cx
               subtype: ability
               target: for
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.rei1O8qWVsLZkVw7
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ojrcu9DxDbYU06Cx
               subtype: bonusDice
               target: for
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -1641,23 +1638,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.rei1O8qWVsLZkVw7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801364
+      modifiedTime: 1758923801413
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.ojrcu9DxDbYU06Cx'
   - folder: 4t5HuH0UUDjxchqY
     name: Briseur d’os
     type: capacity
     img: icons/skills/wounds/bone-broken-marrow-red.webp
-    _id: GtShRdywWWcCL62g
+    _id: enjlPZfPKLHoLStc
     system:
       description: >-
         <p style="text-align:justify">Le barbare augmente de 1 point les chances
@@ -1667,18 +1665,12 @@ items:
         barbare peut désormais porter une cotte de mailles et utiliser toutes
         les capacités des voies de barbare auparavant autorisées avec une
         chemise de mailles</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>"Lorsque cette capacité est apprise, rajouter la formation martiale
         "cotte de mailles" dans le profil du Barbare (déverrouillage du profil
         obligatoire). L'action doit être activée pour prendre en compte le bonus
         lorsque le personnage effectue une attaque de contact. L'effet lorsqu'un
         critique survient est à traiter manuellement.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p80
       slug: briseur-dos
@@ -1690,9 +1682,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.dWshBmGTQzbTaY1K
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.NvdCe1TzeNB6Ozse
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.GtShRdywWWcCL62g
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.enjlPZfPKLHoLStc
           indice: 0
           label: Attaques au contact
           chatFlavor: ''
@@ -1708,13 +1702,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.GtShRdywWWcCL62g
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.enjlPZfPKLHoLStc
               subtype: combat
               target: crit
               apply: self
               value: '1'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -1730,23 +1726,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.GtShRdywWWcCL62g'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801536
+      modifiedTime: 1758923801571
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.enjlPZfPKLHoLStc'
   - folder: vWTAFkBg6MyMM8LR
     name: Voie du pagne
     type: path
     img: modules/cof-base/assets/voies/barbare_pagne.webp
-    _id: EQNIbD2zEGoMEIi3
+    _id: mGuMc9pPd7Bh9spG
     system:
       description: ''
       source: ''
@@ -1754,11 +1751,16 @@ items:
       slug: voie-du-pagne
       subtype: profile
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.r71PVlEnGb19qbXP
-        - Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-        - Actor.9cRMQmwX92AcjuI0.Item.XKHHsTuC5DN6yLTu
-        - Actor.9cRMQmwX92AcjuI0.Item.XvlDGTQBrgm7XLIn
-        - Actor.9cRMQmwX92AcjuI0.Item.Ns9Y29OZYdkQSrjB
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Fap4qFTfmSa845tv
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ZgjX6fAZPqS2hgsl
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.jTkeOPEnYQJ03rfl
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.L9UDhWuPd2CRoWN3
       rank: 0
       maxDefenseArmor: 3
       pvByLevel: 0
@@ -1770,38 +1772,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.EQNIbD2zEGoMEIi3'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801741
+      modifiedTime: 1758923802505
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.mGuMc9pPd7Bh9spG'
   - folder: l5kSyJQbDGHrAcr5
     name: Vigueur
     type: capacity
     img: icons/creatures/abilities/bull-head-horns-glowing.webp
-    _id: r71PVlEnGb19qbXP
+    _id: Fap4qFTfmSa845tv
     system:
       description: >-
         <p style="text-align:justify">Le barbare est un athlète capable de
         prouesses physiques extraordinaires, il ajoute son rang + 2 aux tests de
         course, de saut ou d’escalade. De plus, il gagne 1 PV supplémentaire par
         rang atteint dans la voie.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p80
       slug: vigueur
@@ -1813,9 +1810,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.r71PVlEnGb19qbXP
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Fap4qFTfmSa845tv
           indice: 0
           label: ''
           chatFlavor: ''
@@ -1831,20 +1830,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.r71PVlEnGb19qbXP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Fap4qFTfmSa845tv
               subtype: skill
               target: for
               apply: self
               value: 2 + @rang
               additionalInfos: Course/Saut/Escalade
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.r71PVlEnGb19qbXP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.Fap4qFTfmSa845tv
               subtype: attribute
               target: hp
               apply: self
               value: '@rang'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -1860,23 +1862,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.r71PVlEnGb19qbXP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801817
+      modifiedTime: 1758923801848
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.Fap4qFTfmSa845tv'
   - folder: l5kSyJQbDGHrAcr5
     name: Tatouages
     type: capacity
     img: icons/creatures/reptiles/snake-fangs-bite-green-yellow.webp
-    _id: UrXpkMBbbZFBfPgZ
+    _id: IyFUckFktCivR6jm
     system:
       description: >-
         <p style="text-align:justify">Le barbare possède un tatouage magique*
@@ -1889,18 +1892,12 @@ items:
         <p style="text-align:justify"><em>Ce bonus n’est pas un bonus de
         compétence, mais un bonus de magie qui ne peut donc pas se cumuler à un
         bonus fourni par un objet magique</em></p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>ATTENTION : L'ensemble des tatouages ont été mis ici sous forme de
         "Modificateurs" dans l'onglet Actions / Effets. Lorsque cette capacité
         est apprise, le PJ ou le MJ doit supprimer tous les tatouages qui n'ont
-        pas été choisis. L'effet qui remplace le statit étroudi par ralenti doit
+        pas été choisis. L'effet qui remplace le statut étourdi par ralenti doit
         être géré manuellement.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p80
       slug: tatouages
@@ -1912,72 +1909,83 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: agi
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Taureau
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: con
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Ours
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: for
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Panthère
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: per
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Chouette
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: cha
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Loup
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: int
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Renard
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.UrXpkMBbbZFBfPgZ
-              subtype: ability
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.IyFUckFktCivR6jm
+              subtype: skill
               target: vol
-              apply: self
               value: '3'
+              apply: self
               additionalInfos: Serpent
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -1993,36 +2001,31 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.UrXpkMBbbZFBfPgZ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923801959
+      modifiedTime: 1758923801988
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.IyFUckFktCivR6jm'
   - folder: l5kSyJQbDGHrAcr5
     name: Constitution héroïque
     type: capacity
     img: icons/skills/movement/arrows-up-trio-red.webp
-    _id: XKHHsTuC5DN6yLTu
+    _id: ZgjX6fAZPqS2hgsl
     system:
       description: >-
         <p>Le barbare augmente sa valeur de CON de +1 et obtient un dé bonus aux
         tests de CON.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p80
       slug: constitution-heroique
@@ -2034,37 +2037,43 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.XKHHsTuC5DN6yLTu
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ZgjX6fAZPqS2hgsl
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.XKHHsTuC5DN6yLTu
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ZgjX6fAZPqS2hgsl
               subtype: ability
               target: con
               value: '1'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.XKHHsTuC5DN6yLTu
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ZgjX6fAZPqS2hgsl
               subtype: bonusDice
               target: con
               value: '0'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2080,23 +2089,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.XKHHsTuC5DN6yLTu'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802102
+      modifiedTime: 1758923802141
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.ZgjX6fAZPqS2hgsl'
   - folder: l5kSyJQbDGHrAcr5
     name: Peau de pierre
     type: capacity
     img: icons/magic/defensive/armor-stone-skin.webp
-    _id: XvlDGTQBrgm7XLIn
+    _id: jTkeOPEnYQJ03rfl
     system:
       description: >-
         <p style="text-align:justify">Le barbare est particulièrement endurci,
@@ -2106,17 +2116,11 @@ items:
         cette fois elle s’applique à la CON). Autrement (si son AGI est
         supérieure ou égale à sa CON), il reçoit +1 en DEF et ce bonus passe à
         +2 au rang 4.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Le bonus de DEF est codé sous la forme d'un bonus permanent à partir
         du moment où il est appris. Pour le remplacement de AGI par CON sur la
         défense, il faut le faire sur la fiche du personnage dévérouillée dans
         le panneau latéral en modifiant la caractéristique liée.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p81
       slug: peau-de-pierre
@@ -2128,9 +2132,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.XvlDGTQBrgm7XLIn
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.jTkeOPEnYQJ03rfl
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2146,13 +2152,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.XvlDGTQBrgm7XLIn
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.jTkeOPEnYQJ03rfl
               subtype: combat
               target: def
               apply: self
               value: '@rang[1,1,1,2,2]'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -2168,37 +2176,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.XvlDGTQBrgm7XLIn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802269
+      modifiedTime: 1758923802303
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.jTkeOPEnYQJ03rfl'
   - folder: l5kSyJQbDGHrAcr5
     name: Peau d’acier
     type: capacity
     img: icons/magic/earth/strike-fist-stone-gray.webp
-    _id: Ns9Y29OZYdkQSrjB
+    _id: L9UDhWuPd2CRoWN3
     system:
       description: >-
         <p>Le barbare ne sent plus la douleur et ignore les égratignures, il
         réduit tous les DM subis de 3 points (RD 3). Une attaque lui inflige
         toujours au minimum 1 DM.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p81
       slug: peau-dacier
@@ -2210,30 +2213,35 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.EQNIbD2zEGoMEIi3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mGuMc9pPd7Bh9spG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.Ns9Y29OZYdkQSrjB
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.L9UDhWuPd2CRoWN3
           indice: 0
           label: ''
           chatFlavor: ''
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
-            activable: false
             enabled: false
+            activable: false
             temporary: false
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.Ns9Y29OZYdkQSrjB
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.L9UDhWuPd2CRoWN3
               subtype: combat
               target: dr
               value: '3'
               apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -2249,23 +2257,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.Ns9Y29OZYdkQSrjB'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802418
+      modifiedTime: 1758923802445
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.L9UDhWuPd2CRoWN3'
   - folder: vWTAFkBg6MyMM8LR
     name: Voie du primitif
     type: path
     img: modules/cof-base/assets/voies/barbare_primitif.webp
-    _id: eYkUb6Tp9CDjOkFn
+    _id: LBX7DQeYvIFTkWqG
     system:
       description: ''
       source: ''
@@ -2273,11 +2282,16 @@ items:
       slug: voie-du-primitif
       subtype: profile
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.5DaUA89QoIKyTxXY
-        - Actor.9cRMQmwX92AcjuI0.Item.WUh23FhuYC3GttAq
-        - Actor.9cRMQmwX92AcjuI0.Item.2YtP5xPBm4Ta92qo
-        - Actor.9cRMQmwX92AcjuI0.Item.hYDqAu5hPjykRkHJ
-        - Actor.9cRMQmwX92AcjuI0.Item.l52RQAFxKy3tUqam
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.z4yDriQjBwBzq9Zq
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ot75JtdffO0vbd0K
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.0mTZUunvJQlJgg72
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.TzSFtiU2jovmMQXB
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.s0Swbms7PrmDIega
       rank: 0
       maxDefenseArmor: 3
       pvByLevel: 0
@@ -2289,37 +2303,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.eYkUb6Tp9CDjOkFn'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802683
+      modifiedTime: 1758923803398
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.LBX7DQeYvIFTkWqG'
   - folder: 0VDaVwz8eWnQb9ez
     name: Proche de la nature
     type: capacity
     img: icons/magic/nature/stealth-hide-eyes-green.webp
-    _id: 5DaUA89QoIKyTxXY
+    _id: z4yDriQjBwBzq9Zq
     system:
       description: >-
         <p>Le barbare ajoute son rang + 2 à ses tests de survie (dont les tests
         de récupération) et de discrétion en milieu naturel. De plus, il gagne 1
         PV supplémentaire.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p81
       slug: proche-de-la-nature
@@ -2331,9 +2340,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.5DaUA89QoIKyTxXY
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.z4yDriQjBwBzq9Zq
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2349,27 +2360,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.5DaUA89QoIKyTxXY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.z4yDriQjBwBzq9Zq
               subtype: skill
               target: agi
               apply: self
               value: 2 + @rang
               additionalInfos: discrétion/survie en milieu naturel
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.5DaUA89QoIKyTxXY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.z4yDriQjBwBzq9Zq
               subtype: skill
               target: con
               apply: self
               value: 2 + @rang
               additionalInfos: test de récupération
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.5DaUA89QoIKyTxXY
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.z4yDriQjBwBzq9Zq
               subtype: attribute
               target: hp
               apply: self
               value: '1'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2385,43 +2400,38 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.5DaUA89QoIKyTxXY'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802760
+      modifiedTime: 1758923802789
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.z4yDriQjBwBzq9Zq'
   - folder: 0VDaVwz8eWnQb9ez
     name: Armure de vent
     type: capacity
     img: icons/magic/air/air-smoke-casting.webp
-    _id: WUh23FhuYC3GttAq
+    _id: ot75JtdffO0vbd0K
     system:
       description: >-
         <p>Lorsqu’il ne porte aucune armure, le barbare peut se relever par une
         action de mouvement et il obtient +2 en DEF. Ce bonus passe à +3 au rang
         5. S’il porte une armure, il gagne seulement +1 en DEF.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu </strong>:</p>
-
+      inGame: >-
         <p>La capacité propose deux actions "activable/désactivable".</p>
 
         <p>La première pour bénéficier du bonus de +2 en DEF</p>
 
         <p>L'autre pour n'avoir que le +1 en DEF</p>
 
-        <p>lorsque l'une des amélioration est activée, l'autre doit être
-        désactivée manuellement</p>
-
-        </blockquote>
+        <p>lorsque l'une des améliorations est activée, l'autre doit être
+        désactivée manuellement.</p>
       source: ''
       origin: Livre des règles p81
       slug: armure-de-vent
@@ -2433,52 +2443,61 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.WUh23FhuYC3GttAq
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ot75JtdffO0vbd0K
           indice: 0
           label: sans armure
           chatFlavor: sans armure
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: true
             temporary: true
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.WUh23FhuYC3GttAq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ot75JtdffO0vbd0K
               subtype: combat
               target: def
-              apply: self
               value: '@rang[2,2,2,2,3]'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
-        - source: Actor.9cRMQmwX92AcjuI0.Item.WUh23FhuYC3GttAq
+          actionType: none
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ot75JtdffO0vbd0K
           indice: 1
           label: avec armure
           chatFlavor: avec armure
-          type: buff
           img: icons/svg/d20-highlight.svg
+          type: buff
           properties:
             visible: false
             enabled: false
             activable: true
             temporary: true
             noManaCost: false
+          conditions:
+            - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.WUh23FhuYC3GttAq
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ot75JtdffO0vbd0K
               subtype: combat
               target: def
-              apply: self
               value: '1'
+              apply: self
               additionalInfos: ''
-          conditions: []
           resolvers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -2494,23 +2513,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.WUh23FhuYC3GttAq'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923802898
+      modifiedTime: 1758923802937
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.ot75JtdffO0vbd0K'
   - folder: 0VDaVwz8eWnQb9ez
     name: Vigilance
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-small-teal.webp
-    _id: 2YtP5xPBm4Ta92qo
+    _id: 0mTZUunvJQlJgg72
     system:
       description: >-
         <p>Le barbare possède des sens très affûtés, il est difficile de le
@@ -2518,15 +2538,9 @@ items:
         détecter les pièges mécaniques, magiques (ses poils se hérissent) ou les
         embuscades. Il devient immunisé aux Attaques sournoises d’un voleur ou à
         toute capacité similaire d’une créature de niveau inférieur au sien</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Il s'agit d'un bonus permanent à partir du moment où il est appris.
         Pour les attaques sournoises, à gérer manuellement.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p81
       slug: vigilance
@@ -2538,9 +2552,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.2YtP5xPBm4Ta92qo
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.0mTZUunvJQlJgg72
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2556,13 +2572,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.2YtP5xPBm4Ta92qo
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.0mTZUunvJQlJgg72
               subtype: skill
               target: per
               apply: self
               value: 2 + @rang
               additionalInfos: détecter pièges/embuscades
           resolvers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: none
@@ -2578,23 +2596,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.2YtP5xPBm4Ta92qo'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803042
+      modifiedTime: 1758923803070
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.0mTZUunvJQlJgg72'
   - folder: 0VDaVwz8eWnQb9ez
     name: Résistance à la magie
     type: capacity
     img: icons/magic/defensive/shield-barrier-glowing-triangle-teal-purple.webp
-    _id: hYDqAu5hPjykRkHJ
+    _id: TzSFtiU2jovmMQXB
     system:
       description: >-
         <p style="text-align:justify">Le barbare devient capable de résister à
@@ -2607,15 +2626,9 @@ items:
         et qu’il est capable de faire de la magie (il possède au moins une
         capacité de sort), il subit un dé malus sur ce test opposé. Avoir cédé à
         la magie le rend moins apte à y résister.</em></p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>La capacité propose une action cliquable pour lancer un test opposé
         d'attaque magique.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p81
       slug: resistance-a-la-magie
@@ -2627,9 +2640,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.hYDqAu5hPjykRkHJ
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.TzSFtiU2jovmMQXB
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2665,6 +2680,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -2680,37 +2696,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.hYDqAu5hPjykRkHJ'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803179
+      modifiedTime: 1758923803208
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.TzSFtiU2jovmMQXB'
   - folder: 0VDaVwz8eWnQb9ez
     name: Vitalité débordante
     type: capacity
     img: icons/magic/life/cross-flared-green.webp
-    _id: l52RQAFxKy3tUqam
+    _id: s0Swbms7PrmDIega
     system:
       description: >-
         <p>Le barbare guérit à une vitesse presque surnaturelle. Tant que son
         niveau actuel de PV est compris entre 1 et un tiers de son maximum, il
         récupère 1d4° PV par heure, de nuit comme de jour</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>L'action permet de lancer automatiquement un test de soin pour le
         personnage</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: vitalite-debordante
@@ -2722,9 +2733,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.eYkUb6Tp9CDjOkFn
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.LBX7DQeYvIFTkWqG
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.l52RQAFxKy3tUqam
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.s0Swbms7PrmDIega
           indice: 0
           label: entre 1 et 1/3 PV - toutes les heures
           chatFlavor: ''
@@ -2757,6 +2770,7 @@ items:
                 unit: round
               dmg: {}
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: none
@@ -2772,23 +2786,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.l52RQAFxKy3tUqam'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803312
+      modifiedTime: 1758923803340
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.s0Swbms7PrmDIega'
   - folder: vWTAFkBg6MyMM8LR
     name: Voie du pourfendeur
     type: path
     img: modules/cof-base/assets/voies/barbare_pourfendeur.webp
-    _id: uYdHPE4H6U1gRlPF
+    _id: XFKg4lU51zcPz9sw
     system:
       description: ''
       source: ''
@@ -2796,11 +2811,16 @@ items:
       slug: voie-du-pourfendeur
       subtype: profile
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.O1gRuQGonHySJJnh
-        - Actor.9cRMQmwX92AcjuI0.Item.8rSBFgWBqJZaI18F
-        - Actor.9cRMQmwX92AcjuI0.Item.SNz99zVdklBreiZe
-        - Actor.9cRMQmwX92AcjuI0.Item.WoFfBLEBLv2mczOH
-        - Actor.9cRMQmwX92AcjuI0.Item.nYTPaNBNgFribQr7
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.fZIDsJZxfuz9d0L3
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.hz51zY1JAluhzzxz
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.kc0xD5IMFsSE2q4r
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ozd63GSxEDKLik0c
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mt7NqRBMTkt63KVE
       rank: 1
       maxDefenseArmor: 3
       pvByLevel: 0
@@ -2812,37 +2832,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.uYdHPE4H6U1gRlPF'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803506
+      modifiedTime: 1758923860384
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.XFKg4lU51zcPz9sw'
   - folder: kdWJPzG56No9EumJ
     name: Réflexes éclair
     type: capacity
     img: icons/magic/lightning/bolt-beam-strike-blue.webp
-    _id: O1gRuQGonHySJJnh
+    _id: fZIDsJZxfuz9d0L3
     system:
       description: >-
         <p>Le barbare ajoute son rang + 2 à tous les tests d’AGI destinés à
         esquiver (Explosion de feu, souffle, pièges, etc.). De plus, il gagne +3
         en Init. et +1 en DEF. Le bonus de DEF passe à +2 au rang 5.</p><p> </p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
-        <p>Il s'agit d'un bonus permanent à partir du moment où il est
-        appris</p>
-
-        </blockquote>
+      inGame: >-
+        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
+        apprise.</p><p></p>
       source: ''
       origin: Livre des règles p81
       slug: reflexes-eclair
@@ -2854,9 +2869,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.O1gRuQGonHySJJnh
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.fZIDsJZxfuz9d0L3
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2872,27 +2889,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.O1gRuQGonHySJJnh
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.fZIDsJZxfuz9d0L3
               subtype: skill
               target: agi
               apply: self
               value: 2 + @rang
               additionalInfos: Esquive
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.O1gRuQGonHySJJnh
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.fZIDsJZxfuz9d0L3
               subtype: combat
               target: init
               apply: self
               value: '3'
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.O1gRuQGonHySJJnh
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.fZIDsJZxfuz9d0L3
               subtype: combat
               target: def
               apply: self
               value: '@rang[1,1,1,1,2]'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: none
@@ -2908,38 +2929,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.O1gRuQGonHySJJnh'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803584
+      modifiedTime: 1758923860348
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.fZIDsJZxfuz9d0L3'
   - folder: kdWJPzG56No9EumJ
     name: Charge
     type: capacity
     img: icons/creatures/mammals/ox-bull-horned-glowing-orange.webp
-    _id: 8rSBFgWBqJZaI18F
+    _id: hz51zY1JAluhzzxz
     system:
       description: >-
         <p>Le barbare se déplace en ligne droite entre 5 m et 10 m et effectue
         une attaque au contact avec un dé bonus et +1d4° aux DM. Il ne peut pas
         lancer une charge s’il est au contact d’un adversaire.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu </strong>:</p>
-
+      inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
         l'attaque qui va faire le test d'attaque à partir des info de l'arme
         équipée et appliquer les dommages en comptant le bonus.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p81
       slug: charge
@@ -2951,9 +2967,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.8rSBFgWBqJZaI18F
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.hz51zY1JAluhzzxz
           indice: 0
           label: ''
           chatFlavor: ''
@@ -2989,6 +3007,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 2
       frequency: none
@@ -3004,23 +3023,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.8rSBFgWBqJZaI18F'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803753
+      modifiedTime: 1758923803792
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.hz51zY1JAluhzzxz'
   - folder: kdWJPzG56No9EumJ
     name: Enchaînement
     type: capacity
     img: icons/skills/melee/strikes-sword-scimitar.webp
-    _id: SNz99zVdklBreiZe
+    _id: kc0xD5IMFsSE2q4r
     system:
       description: >-
         <p style="text-align:justify">Chaque fois que le barbare réduit un
@@ -3028,15 +3048,9 @@ items:
         d’attaque gratuite sur un autre adversaire à son contact. Enchaînement
         ne peut pas être cumulé à un déchaînement d’acier ou une attaque
         tourbillon</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p81
       slug: enchainement
@@ -3048,7 +3062,8 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
       actions: []
       cost: -1
       rank: 3
@@ -3065,25 +3080,34 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.SNz99zVdklBreiZe'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923803931
+      modifiedTime: 1758923803931
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.kc0xD5IMFsSE2q4r'
   - folder: kdWJPzG56No9EumJ
     name: Déchaînement d’acier
     type: capacity
     img: icons/skills/melee/strike-axe-energy-pink.webp
-    _id: WoFfBLEBLv2mczOH
+    _id: ozd63GSxEDKLik0c
     system:
-      description: "<p style=\"text-align:justify\">Le barbare parcourt 10 m en ligne droite en dépassant autant d’ennemis qu’il le souhaite. Il porte une attaque avec un malus de ‑2 à chaque adversaire sur son passage. Il doit traverser l’espace occupé par ceux‑ci pour porter un coup, mais il ne peut terminer son déplacement à un endroit occupé par un ennemi.</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>En activant l'action, les attaques au contact du personnage subissent la pénalité de -2</p>\n</blockquote>"
+      description: >-
+        <p style="text-align:justify">Le barbare parcourt 10 m en ligne droite
+        en dépassant autant d’ennemis qu’il le souhaite. Il porte une attaque
+        avec un malus de ‑2 à chaque adversaire sur son passage. Il doit
+        traverser l’espace occupé par ceux‑ci pour porter un coup, mais il ne
+        peut terminer son déplacement à un endroit occupé par un ennemi.</p>
+      inGame: >-
+        <p>En activant l'action, les attaques au contact du personnage subissent
+        la pénalité de -2</p>
       source: ''
       origin: Livre des règles p81
       slug: dechainement-dacier
@@ -3095,9 +3119,11 @@ items:
         max: null
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.WoFfBLEBLv2mczOH
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ozd63GSxEDKLik0c
           indice: 0
           label: Attaque au contact -2
           chatFlavor: ''
@@ -3113,13 +3139,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.WoFfBLEBLv2mczOH
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.ozd63GSxEDKLik0c
               subtype: combat
               target: melee
               apply: self
               value: '-2'
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 4
       frequency: none
@@ -3135,25 +3163,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.WoFfBLEBLv2mczOH'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804016
+      modifiedTime: 1758923804052
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.ozd63GSxEDKLik0c'
   - folder: kdWJPzG56No9EumJ
     name: Attaque tourbillon
     type: capacity
     img: icons/magic/air/wind-tornado-cyclone-red-orange.webp
-    _id: nYTPaNBNgFribQr7
+    _id: mt7NqRBMTkt63KVE
     system:
-      description: "<p>Une fois par combat, le barbare tourne sur lui‑même en assénant des attaques à toutes les cibles au contact. Il inflige automatiquement des DM correspondant à l’arme utilisée (plus tous les bonus habituels) à toutes les cibles dans un rayon de 5 m autour de lui.</p>\n<blockquote>\n<p><strong>Usage en jeu : </strong></p>\n<p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer l'attaque qui va automatiquement lancer les dommages.\_</p>\n</blockquote>"
+      description: >-
+        <p>Une fois par combat, le barbare tourne sur lui‑même en assénant des
+        attaques à toutes les cibles au contact. Il inflige automatiquement des
+        DM correspondant à l’arme utilisée (plus tous les bonus habituels) à
+        toutes les cibles dans un rayon de 5 m autour de lui.</p>
+      inGame: >-
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
+        l'attaque qui va automatiquement lancer les dommages.</p>
       source: ''
       origin: Livre des règles p81
       slug: attaque-tourbillon
@@ -3165,9 +3201,11 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.uYdHPE4H6U1gRlPF
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.XFKg4lU51zcPz9sw
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.nYTPaNBNgFribQr7
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.mt7NqRBMTkt63KVE
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3201,6 +3239,7 @@ items:
                 duration: '0'
                 unit: round
           modifiers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: combat
@@ -3216,23 +3255,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.nYTPaNBNgFribQr7'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804175
+      modifiedTime: 1758923804205
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.mt7NqRBMTkt63KVE'
   - folder: vWTAFkBg6MyMM8LR
     name: Voie de la rage
     type: path
     img: modules/cof-base/assets/voies/barbare_rage.webp
-    _id: VD1GKWyjCOUCqTn3
+    _id: WlE2ufRR3m6cDfxH
     system:
       description: ''
       source: ''
@@ -3240,11 +3280,16 @@ items:
       slug: voie-de-la-rage
       subtype: profile
       capacities:
-        - Actor.9cRMQmwX92AcjuI0.Item.RV7TCHtV8HhEQNxL
-        - Actor.9cRMQmwX92AcjuI0.Item.NI3egWmx7Cx3brnr
-        - Actor.9cRMQmwX92AcjuI0.Item.jlraupCr1pU2dGhP
-        - Actor.9cRMQmwX92AcjuI0.Item.NydqoYKOpwwQJqD0
-        - Actor.9cRMQmwX92AcjuI0.Item.2P74pXyUkiQE1LGR
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.GC1WGXspCKJbKpZH
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.jrBwcsN7djxxQGFx
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.htyw7XINJuYase4v
+        - >-
+          Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.zgWwFLIb1IlaDwLv
       rank: 1
       maxDefenseArmor: 3
       pvByLevel: 0
@@ -3256,23 +3301,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.VD1GKWyjCOUCqTn3'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804381
+      modifiedTime: 1758923856151
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.WlE2ufRR3m6cDfxH'
   - folder: JM1D4cvzDf6cOTdW
     name: Cri de guerre
     type: capacity
     img: icons/creatures/abilities/lion-roar-yellow.webp
-    _id: RV7TCHtV8HhEQNxL
+    _id: GC1WGXspCKJbKpZH
     system:
       description: >-
         <p style="text-align:justify">Une fois par combat, le barbare pousse un
@@ -3281,15 +3327,9 @@ items:
         dé malus à leurs tests d’attaque au contact durant leur prochain tour.
         De plus, le barbare est sans peur, il ajoute son rang + 2 à tous les
         tests de VOL destinés à résister à la peur.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Seul le bonus à la résistance à la peur permanent est pris en compte,
         le reste doit être géré manuellement.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: cri-de-guerre
@@ -3301,9 +3341,11 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.RV7TCHtV8HhEQNxL
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.GC1WGXspCKJbKpZH
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3319,13 +3361,15 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.RV7TCHtV8HhEQNxL
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.GC1WGXspCKJbKpZH
               subtype: skill
               target: vol
               apply: self
               value: 2 + @rang
               additionalInfos: résister à la peur
           resolvers: []
+          actionType: none
       cost: -1
       rank: 1
       frequency: combat
@@ -3341,38 +3385,33 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.RV7TCHtV8HhEQNxL'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804462
+      modifiedTime: 1758923856117
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.GC1WGXspCKJbKpZH'
   - folder: JM1D4cvzDf6cOTdW
     name: Défier la mort
     type: capacity
     img: icons/magic/death/skull-flames-white-blue.webp
-    _id: NI3egWmx7Cx3brnr
+    _id: jrBwcsN7djxxQGFx
     system:
       description: >-
         <p>Une fois par combat, lorsque le barbare subit des DM d’une attaque
         qui devrait l’amener à 0 PV, il peut réaliser un test de CON difficulté
         10. En cas de réussite, il conserve 1 PV. S’il est enragé, la réussite
         est automatique.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: defier-la-mort
@@ -3384,7 +3423,8 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       actions: []
       cost: -1
       rank: 2
@@ -3401,23 +3441,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.NI3egWmx7Cx3brnr'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804606
+      modifiedTime: 1758923804606
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.jrBwcsN7djxxQGFx'
   - folder: JM1D4cvzDf6cOTdW
     name: Rage du berserk
     type: capacity
     img: icons/magic/unholy/silhouette-evil-horned-giant.webp
-    _id: jlraupCr1pU2dGhP
+    _id: etGY9Qc5duXAla1G
     system:
       description: >-
         <p style="text-align:justify">Une fois par jour, le barbare entre dans
@@ -3430,15 +3471,9 @@ items:
         seul essai, à la fin de son tour). S’il devient inconscient, la rage
         cesse. Le personnage peut entrer en rage une fois de plus par jour pour
         chaque capacité de rang 4 qu’il atteint dans une voie de barbare</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Les effets bonus sont pris en charge via une action
         activable/désactivable à activer en entrant en rage.</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: rage-du-berserk
@@ -3450,9 +3485,11 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.jlraupCr1pU2dGhP
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3468,27 +3505,31 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.jlraupCr1pU2dGhP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
               subtype: combat
               target: def
               value: '-2'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.jlraupCr1pU2dGhP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
               subtype: combat
               target: damMelee
               value: 1d4°
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.jlraupCr1pU2dGhP
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
               subtype: bonusDice
               target: vol
               value: '0'
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 3
       frequency: daily
@@ -3504,37 +3545,32 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.jlraupCr1pU2dGhP'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804687
+      modifiedTime: 1758923804725
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.etGY9Qc5duXAla1G'
   - folder: JM1D4cvzDf6cOTdW
     name: Même pas mal
     type: capacity
     img: icons/skills/melee/shield-block-gray-yellow.webp
-    _id: NydqoYKOpwwQJqD0
+    _id: htyw7XINJuYase4v
     system:
       description: >-
         <p>Une fois par combat, le barbare peut ignorer les DM d’un coup
         critique (il ne subit aucun DM) et il peut alors immédiatement entrer en
         Rage par une action gratuite</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
         l'instant</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: meme-pas-mal
@@ -3546,7 +3582,8 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       actions: []
       cost: -1
       rank: 4
@@ -3563,23 +3600,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.NydqoYKOpwwQJqD0'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804835
+      modifiedTime: 1758923804835
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.htyw7XINJuYase4v'
   - folder: JM1D4cvzDf6cOTdW
     name: Furie du berserk
     type: capacity
     img: icons/magic/unholy/silhouette-robe-evil-glow.webp
-    _id: 2P74pXyUkiQE1LGR
+    _id: zgWwFLIb1IlaDwLv
     system:
       description: >-
         <p style="text-align:justify">Au lieu de la Rage du berserk, le barbare
@@ -3587,18 +3625,12 @@ items:
         la rage. Cet état est similaire à la rage, mais le barbare ajoute 2d4°
         aux DM (au lieu de 1d4°) et subit ‑4 en DEF. La difficulté du test pour
         mettre prématurément fin à la furie est égale à 20.</p>
-
-        <blockquote>
-
-        <p><strong>Usage en jeu : </strong></p>
-
+      inGame: >-
         <p>Les effets bonus sont pris en charge via une action
         activable/désactivable à activer en entrant en furie du Berseker.
         ATTENTION: la rage du berseker ne doit pas être activée en même temps
         que Furie du Berseker sinon les effets vont se cumuler. Le personnage
         doit retirer deux utilisations de sa rage manuellement</p>
-
-        </blockquote>
       source: ''
       origin: Livre des règles p82
       slug: furie-du-berserk
@@ -3610,9 +3642,11 @@ items:
         max: 1
       properties:
         spell: false
-      path: Actor.9cRMQmwX92AcjuI0.Item.VD1GKWyjCOUCqTn3
+      path: >-
+        Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.2P74pXyUkiQE1LGR
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.zgWwFLIb1IlaDwLv
           indice: 0
           label: ''
           chatFlavor: ''
@@ -3628,20 +3662,23 @@ items:
             - predicate: isLearned
           modifiers:
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.2P74pXyUkiQE1LGR
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.zgWwFLIb1IlaDwLv
               subtype: combat
               target: def
               value: '-4'
               apply: self
               additionalInfos: ''
             - type: capacity
-              source: Actor.9cRMQmwX92AcjuI0.Item.2P74pXyUkiQE1LGR
+              source: >-
+                Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.zgWwFLIb1IlaDwLv
               subtype: combat
               target: damRanged
               value: 2d4°
               apply: self
               additionalInfos: ''
           resolvers: []
+          actionType: none
       cost: -1
       rank: 5
       frequency: daily
@@ -3657,379 +3694,24 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.2P74pXyUkiQE1LGR'
-  - folder: E0IHxlFlZyFSfQGY
-    name: Javelot
-    type: equipment
-    img: icons/weapons/polearms/javelin.webp
-    _id: yhvROCMdK7u1cRxg
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: javelot
-      tags: []
-      subtype: weapon
-      martialCategory: javelin
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.yhvROCMdK7u1cRxg
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: ranged
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@rang'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 400000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.LQComztuBVSMIAAC
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.yhvROCMdK7u1cRxg'
-  - folder: E0IHxlFlZyFSfQGY
-    name: Javelot
-    type: equipment
-    img: icons/weapons/polearms/javelin.webp
-    _id: fdf5D8GwMUEsH04u
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: javelot
-      tags: []
-      subtype: weapon
-      martialCategory: javelin
-      damagetype: piercing
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: true
-        twoHand: false
-      actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.fdf5D8GwMUEsH04u
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          type: ranged
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            activable: true
-            enabled: false
-            temporary: false
-            noManaCost: false
-          resolvers:
-            - type: attack
-              skill:
-                formula: '@rang'
-                crit: ''
-                difficulty: '@cible.def'
-              dmg:
-                formula: 1d6
-              target:
-                type: none
-                number: 0
-                scope: all
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              additionalEffect:
-                active: false
-                applyOn: success
-                successThreshold: null
-                statuses: []
-                duration: '0'
-                unit: round
-          conditions:
-            - predicate: isEquipped
-          modifiers: []
-      range:
-        unit: ''
-        base: 0
-        ability: null
-        details: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-      defense: null
-      magicalDefense: null
-    effects: []
-    sort: 400000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.LQComztuBVSMIAAC
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.fdf5D8GwMUEsH04u'
-  - folder: vF1ugDhEx97jpuSd
-    name: Cuir simple
-    type: equipment
-    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
-    _id: YXi2hjrHkL5PEOZ6
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: cuir-simple
-      tags: []
-      subtype: armor
-      martialCategory: leather
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 4
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 2
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 50000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.YXi2hjrHkL5PEOZ6'
-  - folder: vF1ugDhEx97jpuSd
-    name: Grand bouclier
-    type: equipment
-    img: icons/equipment/shield/heater-steel-boss-red.webp
-    _id: ZVJiIv2T53dAnelS
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: grand-bouclier
-      tags: []
-      subtype: shield
-      martialCategory: largeShield
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 4
-        unit: ''
-      rarity: common
-      equipped: true
-      properties:
-        equipable: true
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: 2
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 700000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.jRm6HR7QTnRpYEDg
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.ZVJiIv2T53dAnelS'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758923804937
+      modifiedTime: 1758923804998
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.zgWwFLIb1IlaDwLv'
   - folder: BHbn2gP9Z2mczP4c
     name: Cimeterre
     type: equipment
     img: icons/weapons/swords/scimitar-guard-red.webp
-    _id: ojE09PRHsaGIDo1f
+    _id: yLMjRTdzaysE2dTq
     system:
       description: ''
       source: ''
@@ -4056,7 +3738,7 @@ items:
         value: 8
         unit: pa
       rarity: common
-      equipped: false
+      equipped: true
       properties:
         equipable: true
         reloadable: false
@@ -4076,14 +3758,16 @@ items:
           effects: 0
         value: null
       actions:
-        - source: Actor.9cRMQmwX92AcjuI0.Item.ojE09PRHsaGIDo1f
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.yLMjRTdzaysE2dTq
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
           properties:
-            visible: false
+            visible: true
             enabled: false
             activable: true
             temporary: false
@@ -4107,7 +3791,6 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
@@ -4117,23 +3800,475 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.YJYWmtHU8hCdE40y
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.ojE09PRHsaGIDo1f'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924189352
+      modifiedTime: 1758924237677
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.yLMjRTdzaysE2dTq'
+  - folder: vF1ugDhEx97jpuSd
+    name: Cuir simple
+    type: equipment
+    img: icons/equipment/chest/breastplate-layered-leather-stitched.webp
+    _id: TzVSSvVCBGEa1aCM
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: cuir-simple
+      tags: []
+      subtype: armor
+      martialCategory: leather
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+    effects: []
+    sort: 50000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924207656
+      modifiedTime: 1758924208917
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.TzVSSvVCBGEa1aCM'
+  - folder: kQ688cW1y47W2tn7
+    name: Grand bouclier
+    type: equipment
+    img: icons/equipment/shield/heater-steel-boss-red.webp
+    _id: jL1r93AnSY928YYH
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: grand-bouclier
+      tags: []
+      subtype: shield
+      martialCategory: largeShield
+      damagetype: ''
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 4
+        unit: pa
+      rarity: common
+      equipped: true
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      defense: 2
+      range: null
+    effects: []
+    sort: 200000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.jRm6HR7QTnRpYEDg
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924220249
+      modifiedTime: 1758924223748
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.jL1r93AnSY928YYH'
+  - folder: E0IHxlFlZyFSfQGY
+    name: Javelot
+    type: equipment
+    img: icons/weapons/polearms/javelin.webp
+    _id: wPIzyrbYZSBa00xe
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: javelot
+      tags: []
+      subtype: weapon
+      martialCategory: javelin
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 20
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.wPIzyrbYZSBa00xe
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 400000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.LQComztuBVSMIAAC
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924232703
+      modifiedTime: 1758924232738
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.wPIzyrbYZSBa00xe'
+  - folder: E0IHxlFlZyFSfQGY
+    name: Javelot
+    type: equipment
+    img: icons/weapons/polearms/javelin.webp
+    _id: WAmCozvskdmyzFGg
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: javelot
+      tags: []
+      subtype: weapon
+      martialCategory: javelin
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      range:
+        base: 0
+        ability: null
+        details: null
+        unit: m
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+        value: 20
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WAmCozvskdmyzFGg
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atd'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d6
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+    effects: []
+    sort: 400000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.LQComztuBVSMIAAC
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924235275
+      modifiedTime: 1758924235312
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.WAmCozvskdmyzFGg'
+  - folder: BHbn2gP9Z2mczP4c
+    name: Dague
+    type: equipment
+    img: icons/weapons/daggers/dagger-double-red.webp
+    _id: AtlFTM4AfzqADByu
+    system:
+      description: >-
+        <p>Une dague <span class="BxUVEf ILfuVd" lang="fr"><span
+        class="hgKElc">est un couteau court à lame pointue utilisé comme arme de
+        perforation.</span></span></p><p><span class="BxUVEf ILfuVd"
+        lang="fr"><span class="hgKElc">Il s'agit d'une amre "légère" ce qui
+        permet à certains profils d'utiliser l'agilité à la place e la force
+        pour la manier.</span></span></p><p> </p><p><strong><span class="BxUVEf
+        ILfuVd" lang="fr"><span class="hgKElc">Arrme
+        légère</span></span></strong></p>
+      source: ''
+      origin: ''
+      slug: dague
+      tags:
+        - legere
+      subtype: weapon
+      martialCategory: dagger
+      damagetype: piercing
+      quantity:
+        current: 1
+        max: 1
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 1
+        unit: kg
+      price:
+        value: 3
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: true
+        reloadable: false
+        stackable: false
+      usage:
+        oneHand: true
+        twoHand: false
+      actions:
+        - source: >-
+            Compendium.cof-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.AtlFTM4AfzqADByu
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: a
+          properties:
+            visible: false
+            enabled: false
+            activable: true
+            temporary: false
+            noManaCost: false
+          conditions:
+            - predicate: isEquipped
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '@atc'
+                crit: ''
+                difficulty: '@cible.def'
+              dmg:
+                formula: 1d4 + @for
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+          modifiers: []
+      range:
+        unit: ''
+        base: 0
+        ability: null
+        details: null
+        min: null
+        max: null
+        bonuses:
+          sheet: 0
+          effects: 0
+    effects: []
+    sort: 150000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924244214
+      modifiedTime: 1758924244257
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.AtlFTM4AfzqADByu'
   - folder: Um3g0UnqzSidTvlT
     name: Sac à dos
     type: equipment
     img: icons/containers/bags/pack-leather-red.webp
-    _id: RE1IabUcmJfbpHfc
+    _id: FXm8oI3Pi8EmtT5S
     system:
       description: ''
       source: ''
@@ -4156,7 +4291,7 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
@@ -4167,19 +4302,7 @@ items:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2000000
     ownership:
@@ -4188,23 +4311,84 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.RE1IabUcmJfbpHfc'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924249147
+      modifiedTime: 1758924249147
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.FXm8oI3Pi8EmtT5S'
+  - folder: Um3g0UnqzSidTvlT
+    name: Couverture
+    type: equipment
+    img: icons/sundries/survival/bedroll-grey.webp
+    _id: gJtzi08sl9dvE3zA
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: couverture
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 800000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924254400
+      modifiedTime: 1758924254400
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.gJtzi08sl9dvE3zA'
   - folder: Um3g0UnqzSidTvlT
     name: Torche
     type: equipment
     img: icons/sundries/lights/torch-brown.webp
-    _id: 6LDfefu6vbfVomSw
+    _id: pMpcDSdaTxSCAu6h
     system:
       description: >-
         <p>Une torche ou une lanterne éclairent dans un rayon de 10 m pendant 1
@@ -4218,7 +4402,7 @@ items:
       damagetype: ''
       quantity:
         current: 3
-        max: 1
+        max: null
         destroyIfEmpty: false
       charges:
         current: null
@@ -4229,30 +4413,18 @@ items:
         unit: kg
       price:
         value: 1
-        unit: ''
+        unit: pa
       rarity: common
       equipped: false
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
       actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
+      range: null
     effects: []
     sort: 2100000
     ownership:
@@ -4261,23 +4433,84 @@ items:
       jIzGuOO5YsHUKjek: 3
       NtWLwYh2n5cs6XtB: 3
       lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.6LDfefu6vbfVomSw'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924257248
+      modifiedTime: 1758924257248
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.pMpcDSdaTxSCAu6h'
+  - folder: Um3g0UnqzSidTvlT
+    name: Briquet à silex
+    type: equipment
+    img: icons/commodities/stone/geode-raw-black.webp
+    _id: DPtkUOpAifr2KTB8
+    system:
+      description: ''
+      source: ''
+      origin: ''
+      slug: briquet-a-silex
+      tags: []
+      subtype: misc
+      martialCategory: ''
+      damagetype: ''
+      quantity:
+        current: 1
+        max: null
+        destroyIfEmpty: false
+      charges:
+        current: null
+        max: null
+        destroyIfEmpty: false
+      weight:
+        value: 0
+        unit: kg
+      price:
+        value: 1
+        unit: pa
+      rarity: common
+      equipped: false
+      properties:
+        equipable: false
+        reloadable: false
+        stackable: true
+      usage:
+        oneHand: false
+        twoHand: false
+      actions: []
+      range: null
+    effects: []
+    sort: 100000
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      jIzGuOO5YsHUKjek: 3
+      NtWLwYh2n5cs6XtB: 3
+      lrkjhQ5x0RUWRHSa: 3
+      LEtUoNWt5mYBIjrk: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924261090
+      modifiedTime: 1758924261090
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.DPtkUOpAifr2KTB8'
   - folder: Um3g0UnqzSidTvlT
     name: Outre
     type: equipment
     img: icons/sundries/survival/wetskin-leather-purple.webp
-    _id: nMLuIdIumjzqeUKN
+    _id: DauMHBrN6p8zAMTV
     system:
       description: ''
       source: ''
@@ -4308,7 +4541,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4329,23 +4562,24 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.nMLuIdIumjzqeUKN'
+      coreVersion: '13.348'
+      systemId: co
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924265561
+      modifiedTime: 1758924265561
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.DauMHBrN6p8zAMTV'
   - folder: Um3g0UnqzSidTvlT
     name: Gamelle
     type: equipment
     img: icons/containers/kitchenware/bowl-clay-brown.webp
-    _id: 75zwr1sItnJljL5S
+    _id: MlXCpTlmyx9ajoTE
     system:
       description: ''
       source: ''
@@ -4376,7 +4610,7 @@ items:
       properties:
         equipable: false
         reloadable: false
-        stackable: false
+        stackable: true
       usage:
         oneHand: false
         twoHand: false
@@ -4397,162 +4631,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
+      LEtUoNWt5mYBIjrk: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
       duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
       exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.75zwr1sItnJljL5S'
-  - folder: Um3g0UnqzSidTvlT
-    name: Couverture
-    type: equipment
-    img: icons/sundries/survival/bedroll-grey.webp
-    _id: 6fvafAmXwdJC5gY0
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: couverture
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 800000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
-      duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '13.348'
       systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.6fvafAmXwdJC5gY0'
-  - folder: Um3g0UnqzSidTvlT
-    name: Briquet à silex
-    type: equipment
-    img: icons/commodities/stone/geode-raw-black.webp
-    _id: VlgOg6AEfQp8Iukq
-    system:
-      description: ''
-      source: ''
-      origin: ''
-      slug: briquet-a-silex
-      tags: []
-      subtype: misc
-      martialCategory: ''
-      damagetype: ''
-      quantity:
-        current: 1
-        max: 1
-        destroyIfEmpty: false
-      charges:
-        current: null
-        max: null
-        destroyIfEmpty: false
-      weight:
-        value: 0
-        unit: kg
-      price:
-        value: 1
-        unit: ''
-      rarity: common
-      equipped: false
-      properties:
-        equipable: false
-        reloadable: false
-        stackable: false
-      usage:
-        oneHand: false
-        twoHand: false
-      actions: []
-      defense: null
-      magicalDefense: null
-      range:
-        base: 0
-        ability: null
-        details: null
-        unit: null
-        min: null
-        max: null
-        bonuses:
-          sheet: 0
-          effects: 0
-        value: null
-    effects: []
-    sort: 100000
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
-      duplicateSource: null
-      coreVersion: '13.345'
-      systemId: co
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!9cRMQmwX92AcjuI0.VlgOg6AEfQp8Iukq'
+      systemVersion: '#{VERSION}#'
+      createdTime: 1758924268740
+      modifiedTime: 1758924268740
+      lastModifiedBy: LEtUoNWt5mYBIjrk
+    _key: '!actors.items!9cRMQmwX92AcjuI0.MlXCpTlmyx9ajoTE'
 effects: []
-sort: 400000
+sort: 159375
 ownership:
   default: 0
   dkGm1qUrVLQeAKiY: 3
@@ -4564,7 +4657,7 @@ _stats:
   systemId: co
   systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
-  modifiedTime: 1758496513841
+  modifiedTime: 1758927245154
   lastModifiedBy: LEtUoNWt5mYBIjrk
   exportSource: null
 _key: '!actors!9cRMQmwX92AcjuI0'
