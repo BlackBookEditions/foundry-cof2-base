@@ -1,0 +1,90 @@
+name: Origine d'un Objet Magique
+type: script
+command: >-
+  // Macro Foundry VTT — lance 3 tables et affiche les résultats en liste
+  verticale
+
+  (async () => {
+    const TABLES = [
+      { name: "Origine objet magique : Époque",     label: "Époque" },
+      { name: "Origine objet magique : Peuple",     label: "Peuple" },
+      { name: "Origine objet magique : Provenance", label: "Provenance" }
+    ];
+
+    const lines = [];
+
+    for (const { name, label } of TABLES) {
+      const table = game.tables.getName(name);
+      if (!table) {
+        ui.notifications.error(`Table introuvable : ${name}`);
+        lines.push(`<p><strong>${label}</strong> : <em>Table introuvable</em></p>`);
+        continue;
+      }
+
+      const { results = [] } = await table.roll({ recursive: true });
+
+      if (!results.length) {
+        lines.push(`<p><strong>${label}</strong> : <em>Aucun résultat</em></p>`);
+        continue;
+      }
+
+      for (const r of results) {
+        let txt = "";
+
+        // Utiliser description si dispo
+        if (r.description && r.description.trim()) {
+          txt = r.description.trim();
+        }
+
+        // Méthode officielle pour HTML enrichi
+        if (typeof r.getHTML === "function") {
+          try {
+            const htmlText = await r.getHTML();
+            if (htmlText && htmlText.trim()) {
+              txt = htmlText.trim();
+            }
+          } catch (e) {
+            console.warn("Erreur getHTML()", e);
+          }
+        }
+
+        if (!txt) {
+          console.warn("Résultat vide détecté :", r);
+          txt = "(résultat vide)";
+        }
+
+        lines.push(`<p>${label} <br/> <strong>${txt}</strong></p>`);
+      }
+    }
+
+    const content = `
+      <div class="chat-card">
+        <header class="card-header"><h4>Origine de l'objet magique</h4></header>
+        <div class="card-content-origine">
+          ${lines.join("")}
+        </div>
+      </div>`.trim();
+
+    await ChatMessage.create({ speaker: ChatMessage.getSpeaker(), content });
+  })();
+img: icons/commodities/treasure/crystal-ball-blue-purple.webp
+_id: q4xwTxD1bySwSXHz
+author: LEtUoNWt5mYBIjrk
+scope: global
+folder: null
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.346'
+  systemId: co
+  systemVersion: 13.344.0
+  createdTime: 1755213997384
+  modifiedTime: 1755213997384
+  lastModifiedBy: LEtUoNWt5mYBIjrk
+sort: 0
+ownership:
+  default: 0
+  LEtUoNWt5mYBIjrk: 3
+_key: '!macros!q4xwTxD1bySwSXHz'
