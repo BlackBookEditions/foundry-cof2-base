@@ -1,3 +1,6 @@
+# 1.0.7
+- Correction lien image manque (issue [#33](https://github.com/BlackBookEditions/foundry-cof2-base/issues/33))
+
 # 1.0.6
 - Correctif sur les liens des compendiums
 
