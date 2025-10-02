@@ -1,3 +1,6 @@
+1.0.2
+- Release technique pour le déploiement automatique
+
 1.0.1
 - Ajout du répertoire templates lors du build
 - Ajout du déploiement automatique
