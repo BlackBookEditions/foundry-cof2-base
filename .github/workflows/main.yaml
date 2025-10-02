@@ -155,5 +155,5 @@ jobs:
           method: 'POST'
           contentType: 'application/json'
           customHeaders: '{"Authorization": "${{ secrets.FVTT_PACKAGE_RELEASE_TOKEN }}"}'
-          data: '{"id": "cof-base","dry-run":false,"release":{"version":"${{github.event.release.tag_name}}","manifest":"https://github.com/BlackBookEditions/foundry-cof2-base/releases/download/${{github.event.release.tag_name}}/module.json","notes":"https://github.com/BlackBookEditions/foundry-cof2-base/blob/main/CHANGELOG.md","compatibility":{"minimum":"13","verified":"13","maximum":"13"}}}'
+          data: '{"id": "cof2-base","dry-run":false,"release":{"version":"${{github.event.release.tag_name}}","manifest":"https://github.com/BlackBookEditions/foundry-cof2-base/releases/download/${{github.event.release.tag_name}}/module.json","notes":"https://github.com/BlackBookEditions/foundry-cof2-base/blob/main/CHANGELOG.md","compatibility":{"minimum":"13","verified":"13","maximum":"13"}}}'
 
