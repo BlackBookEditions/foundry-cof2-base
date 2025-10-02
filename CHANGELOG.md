@@ -1,5 +1,6 @@
 # 1.0.7
 - Correction lien image manque (issue [#33](https://github.com/BlackBookEditions/foundry-cof2-base/issues/33))
+- Image mal définie dans le css (issue [#34](https://github.com/BlackBookEditions/foundry-cof2-base/issues/34))
 
 # 1.0.6
 - Correctif sur les liens des compendiums
