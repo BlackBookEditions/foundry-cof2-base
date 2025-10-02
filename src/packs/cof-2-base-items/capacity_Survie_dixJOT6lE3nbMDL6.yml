@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
+    - source: Compendium.cof2-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
       indice: 0
       label: ''
       chatFlavor: ''
@@ -46,28 +46,28 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof2-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: for
           apply: self
           value: 2 + @rang
           additionalInfos: survie milieu naturel
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof2-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: per
           apply: self
           value: '@rang + 2'
           additionalInfos: survie milieu naturel
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof2-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: vol
           apply: self
           value: 2 + @rang
           additionalInfos: survie milieu naturel
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
+          source: Compendium.cof2-base.cof-2-base-items.Item.dixJOT6lE3nbMDL6
           subtype: skill
           target: con
           apply: self

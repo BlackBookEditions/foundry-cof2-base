@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+    - source: Compendium.cof2-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,21 +47,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+          source: Compendium.cof2-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: estimer valeur d'une arme ou d'un adversaire
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+          source: Compendium.cof2-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: skill
           target: per
           value: 2 + @rang
           apply: self
           additionalInfos: estimer valeur d'une arme ou d'un adversaire
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+    - source: Compendium.cof2-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
       indice: 1
       label: Utilisation de (arme choisie)
       chatFlavor: ''
@@ -77,7 +77,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
+          source: Compendium.cof2-base.cof-2-base-items.Item.IyygFzkrTAqjadsL
           subtype: combat
           target: melee
           value: '1'

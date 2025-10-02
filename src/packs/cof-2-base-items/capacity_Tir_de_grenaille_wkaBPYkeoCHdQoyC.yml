@@ -36,7 +36,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
       indice: 0
       label: cône de 10m x 5m
       chatFlavor: ''
@@ -71,7 +71,7 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
       indice: 1
       label: ''
       chatFlavor: ''
@@ -87,14 +87,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
+          source: Compendium.cof2-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: artificier
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
+          source: Compendium.cof2-base.cof-2-base-items.Item.wkaBPYkeoCHdQoyC
           subtype: skill
           target: agi
           value: 2 + @rang

@@ -32,7 +32,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 0
       label: Activation et Dé Bonus CHA
       chatFlavor: ''
@@ -49,14 +49,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
+          source: Compendium.cof2-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
           subtype: bonusDice
           target: cha
           apply: self
           value: '0'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sDxj4cifWOeZMlkg
       indice: 1
       label: Attaque
       chatFlavor: ''

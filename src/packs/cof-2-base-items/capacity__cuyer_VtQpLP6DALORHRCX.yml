@@ -20,7 +20,7 @@ system:
     <p>La capacité ne prend en charge que la réduction de 1 du seuil de
     critique. La deuxième action permet de soigner les cibles sélectionnées de
     1d4° PV une fois par journée. </p><p>Le MJ peux fournir le token
-    @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.rG0MdAp2vpNxBan0]{Ecuyer}</p>
+    @UUID[Compendium.cof2-base.cof-2-base-encounter.Actor.rG0MdAp2vpNxBan0]{Ecuyer}</p>
   source: ''
   origin: Livre des règles p85
   slug: ecuyer
@@ -36,7 +36,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
       indice: 0
       label: ''
       chatFlavor: ''
@@ -53,14 +53,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
+          source: Compendium.cof2-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
           subtype: combat
           target: crit
           value: '1'
           apply: self
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.VtQpLP6DALORHRCX
       indice: 1
       label: soin après récupération
       chatFlavor: ''

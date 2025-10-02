@@ -24,7 +24,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
+    - source: Compendium.cof2-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
       indice: 0
       label: ''
       chatFlavor: ''
@@ -40,14 +40,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
+          source: Compendium.cof2-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
           subtype: attribute
           target: hp
           apply: self
           value: 2 + @rang
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
+          source: Compendium.cof2-base.cof-2-base-items.Item.fG9B5EFu5tgcwb2Z
           subtype: skill
           target: con
           apply: self

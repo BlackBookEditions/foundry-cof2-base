@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
       indice: 0
       label: augmentation AGI
       chatFlavor: augmentation AGI
@@ -46,21 +46,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
+          source: Compendium.cof2-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
           subtype: ability
           target: agi
           apply: self
           value: '1'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
+          source: Compendium.cof2-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
           subtype: bonusDice
           target: agi
           apply: self
           value: '0'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
       indice: 1
       label: Augmentation de FOR
       chatFlavor: ''
@@ -76,7 +76,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
+          source: Compendium.cof2-base.cof-2-base-items.Item.wniXgy9DRVSttAwX
           subtype: ability
           target: for
           apply: self

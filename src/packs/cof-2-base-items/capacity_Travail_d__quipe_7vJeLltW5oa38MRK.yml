@@ -13,7 +13,7 @@ system:
     est à proximité et le joueur doit faire un jet de pistage ou vigilance.</p>
 
     <p>Pour le loup faites un glisser-déposer de
-    @UUID[Compendium.cof-base.cof-2-base-items.Item.GS5ajYZHLNhgeCzK]{Travail
+    @UUID[Compendium.cof2-base.cof-2-base-items.Item.GS5ajYZHLNhgeCzK]{Travail
     d'équipe} sur sa fiche</p>
   source: ''
   origin: Livre des règles p71
@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
+    - source: Compendium.cof2-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
       indice: 0
       label: En contact avec le loup
       chatFlavor: ''
@@ -46,7 +46,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
+          source: Compendium.cof2-base.cof-2-base-items.Item.7vJeLltW5oa38MRK
           subtype: bonusDice
           target: per
           apply: self

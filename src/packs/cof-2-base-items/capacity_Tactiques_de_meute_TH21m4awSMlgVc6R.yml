@@ -14,7 +14,7 @@ system:
     <p>Seul le bonus de DEF est pris en compte ici. Les bonus sur le loup
     doivent être glissés-déposés sur la fiche à partir de la capacité de
     rencontre :
-    @UUID[Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN]{Tactiques
+    @UUID[Compendium.cof2-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN]{Tactiques
     de meute}. Il faudra adapter le bonus de DEF de cette capacité qui ne se met
     pas à jour automatiquement</p>
   source: ''
@@ -32,7 +32,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.TH21m4awSMlgVc6R
+    - source: Compendium.cof2-base.cof-2-base-items.Item.TH21m4awSMlgVc6R
       indice: 0
       label: ''
       chatFlavor: ''
@@ -48,7 +48,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.TH21m4awSMlgVc6R
+          source: Compendium.cof2-base.cof-2-base-items.Item.TH21m4awSMlgVc6R
           subtype: combat
           target: def
           apply: self

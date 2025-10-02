@@ -32,7 +32,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+    - source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
       indice: 0
       label: ''
       chatFlavor: ''
@@ -48,21 +48,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: combat
           target: def
           apply: self
           value: '@rang[2,2,2,2,3]'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: combat
           target: def
           apply: self
           value: '0'
           additionalInfos: appliquer -1 si mauvaise armure
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+    - source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
       indice: 1
       label: Lorsque 0 PV
       chatFlavor: ''
@@ -78,70 +78,70 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: agi
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: con
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: for
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: per
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: cha
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: int
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: vol
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: melee
           apply: self
           value: '0'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: ranged
           apply: self
           value: '0'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
+          source: Compendium.cof2-base.cof-2-base-items.Item.9jotV5OpTNbcq6L7
           subtype: malusDice
           target: magic
           apply: self

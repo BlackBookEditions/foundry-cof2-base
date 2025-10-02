@@ -36,7 +36,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+    - source: Compendium.cof2-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 0
       label: ''
       chatFlavor: ''
@@ -52,14 +52,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: combat
           target: def
           value: '@rang[2,2,3,3,4]'
           apply: self
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+    - source: Compendium.cof2-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
       indice: 1
       label: ''
       chatFlavor: ''
@@ -75,14 +75,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: Identifier les plantes
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.4RPKPoeJesl2LEmQ
           subtype: skill
           target: per
           value: 2 + @rang

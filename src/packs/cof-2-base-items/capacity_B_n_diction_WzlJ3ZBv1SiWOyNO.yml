@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+    - source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
       indice: 0
       label: ''
       chatFlavor: ''
@@ -46,14 +46,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: théologie/cosmologie
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+    - source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
       indice: 1
       label: ''
       chatFlavor: ''
@@ -69,28 +69,28 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: skill
           target: all
           value: '@rang[1,1,1,1,2]'
           apply: both
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: melee
           value: '@rang[1,1,1,1,2]'
           apply: both
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: ranged
           value: '@rang[1,1,1,1,2]'
           apply: both
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
+          source: Compendium.cof2-base.cof-2-base-items.Item.WzlJ3ZBv1SiWOyNO
           subtype: combat
           target: magic
           value: '@rang[1,1,1,1,2]'

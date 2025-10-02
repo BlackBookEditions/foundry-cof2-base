@@ -29,7 +29,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
+    - source: Compendium.cof2-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
       indice: 0
       label: ''
       chatFlavor: ''
@@ -45,14 +45,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
+          source: Compendium.cof2-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: réparer/comprendre mécanismes
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
+    - source: Compendium.cof2-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
       indice: 1
       label: Utiliser arme de siège
       chatFlavor: ''
@@ -68,7 +68,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
+          source: Compendium.cof2-base.cof-2-base-items.Item.YjEtRh9I0xqEBTfv
           subtype: bonusDice
           target: ranged
           value: '0'

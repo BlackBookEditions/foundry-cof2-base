@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
+    - source: Compendium.cof2-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
       indice: 0
       label: ''
       chatFlavor: ''
@@ -46,14 +46,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
+          source: Compendium.cof2-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
           subtype: skill
           target: cha
           value: 2 + @rang
           apply: self
           additionalInfos: supercherie/mensonge
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
+    - source: Compendium.cof2-base.cof-2-base-items.Item.L6zxaUxCzAlVspRT
       indice: 1
       label: Activer le sort
       chatFlavor: ''

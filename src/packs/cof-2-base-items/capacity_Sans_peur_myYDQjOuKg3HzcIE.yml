@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
+    - source: Compendium.cof2-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
       indice: 0
       label: ''
       chatFlavor: ''
@@ -43,21 +43,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof2-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
           subtype: state
           target: fearImmunity
           value: '0'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof2-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
           subtype: skill
           target: cha
           value: '@rang + 2'
           apply: self
           additionalInfos: commander une troupe
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
+          source: Compendium.cof2-base.cof-2-base-items.Item.myYDQjOuKg3HzcIE
           subtype: skill
           target: int
           value: '@rang + 2'

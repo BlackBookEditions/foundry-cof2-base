@@ -28,7 +28,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
+    - source: Compendium.cof2-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 0
       label: sans armure
       chatFlavor: sans armure
@@ -44,14 +44,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
+          source: Compendium.cof2-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
           value: '@rang[2,2,2,2,3]'
           apply: self
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
+    - source: Compendium.cof2-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
       indice: 1
       label: avec armure
       chatFlavor: avec armure
@@ -67,7 +67,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
+          source: Compendium.cof2-base.cof-2-base-items.Item.zADHTUs2M8JaWy2C
           subtype: combat
           target: def
           value: '1'

@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
       indice: 0
       label: ''
       chatFlavor: ''
@@ -46,21 +46,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          source: Compendium.cof2-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
           subtype: bonusDice
           target: per
           apply: self
           value: '0'
           additionalInfos: trouver une preuve
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          source: Compendium.cof2-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
           subtype: bonusDice
           target: int
           apply: self
           value: '0'
           additionalInfos: faire une déduction
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
+          source: Compendium.cof2-base.cof-2-base-items.Item.cRnm4LYbsPmJG3kX
           subtype: bonusDice
           target: cha
           apply: self

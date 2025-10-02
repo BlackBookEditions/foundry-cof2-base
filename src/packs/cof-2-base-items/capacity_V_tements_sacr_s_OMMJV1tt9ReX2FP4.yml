@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
+    - source: Compendium.cof2-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
       indice: 0
       label: Défense et Dé bonus
       chatFlavor: ''
@@ -50,14 +50,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
+          source: Compendium.cof2-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
           subtype: combat
           target: def
           apply: self
           value: '@rang[2,2,3,3,4]'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
+          source: Compendium.cof2-base.cof-2-base-items.Item.OMMJV1tt9ReX2FP4
           subtype: bonusDice
           target: magic
           apply: self

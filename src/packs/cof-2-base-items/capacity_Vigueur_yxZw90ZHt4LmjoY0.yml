@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
+    - source: Compendium.cof2-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
       indice: 0
       label: ''
       chatFlavor: ''
@@ -43,14 +43,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
+          source: Compendium.cof2-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
           subtype: skill
           target: for
           apply: self
           value: 2 + @rang
           additionalInfos: Course/Saut/Escalade
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
+          source: Compendium.cof2-base.cof-2-base-items.Item.yxZw90ZHt4LmjoY0
           subtype: attribute
           target: hp
           apply: self

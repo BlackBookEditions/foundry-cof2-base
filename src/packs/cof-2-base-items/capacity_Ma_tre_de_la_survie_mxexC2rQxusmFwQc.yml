@@ -29,7 +29,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
+    - source: Compendium.cof2-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
       indice: 0
       label: ''
       chatFlavor: ''
@@ -45,14 +45,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
+          source: Compendium.cof2-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
           subtype: skill
           target: per
           value: 2 + @rang
           apply: self
           additionalInfos: survie en milieu naturel
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
+          source: Compendium.cof2-base.cof-2-base-items.Item.mxexC2rQxusmFwQc
           subtype: skill
           target: vol
           value: 2 + @rang

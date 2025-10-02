@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
+    - source: Compendium.cof2-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
       indice: 0
       label: ''
       chatFlavor: ''
@@ -43,14 +43,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
+          source: Compendium.cof2-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: histoire/géographie/héraldique
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
+          source: Compendium.cof2-base.cof-2-base-items.Item.jN0DMdAF9idTLfxL
           subtype: skill
           target: cha
           value: 2 + @rang

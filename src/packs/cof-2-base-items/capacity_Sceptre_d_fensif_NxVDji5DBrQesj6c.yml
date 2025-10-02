@@ -31,7 +31,7 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
+    - source: Compendium.cof2-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
       indice: 0
       label: avec le bâton du mage équipé
       chatFlavor: ''
@@ -47,14 +47,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
+          source: Compendium.cof2-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
           subtype: combat
           target: def
           apply: self
           value: '@rang[0,0,0,1,1,2,2,3]'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
+    - source: Compendium.cof2-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
       indice: 1
       label: Résister à un sort
       chatFlavor: ''
@@ -70,7 +70,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
+          source: Compendium.cof2-base.cof-2-base-items.Item.NxVDji5DBrQesj6c
           subtype: combat
           target: magic
           apply: self

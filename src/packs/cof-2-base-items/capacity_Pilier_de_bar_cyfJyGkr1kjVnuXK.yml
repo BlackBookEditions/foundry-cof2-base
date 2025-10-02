@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
+    - source: Compendium.cof2-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,14 +47,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
+          source: Compendium.cof2-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
           subtype: skill
           target: cha
           apply: self
           value: 2 + @rang
           additionalInfos: intéraction sociale (bar/auberge)
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
+          source: Compendium.cof2-base.cof-2-base-items.Item.cyfJyGkr1kjVnuXK
           subtype: skill
           target: con
           apply: self

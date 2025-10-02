@@ -33,7 +33,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
+    - source: Compendium.cof2-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
       indice: 0
       label: 2 attaques
       chatFlavor: 2 attaques
@@ -49,14 +49,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
+          source: Compendium.cof2-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
           subtype: combat
           target: def
           apply: self
           value: '@rang[1,1,1,1,2]'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
+    - source: Compendium.cof2-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
       indice: 1
       label: 1 attaque
       chatFlavor: 1 attaque
@@ -72,7 +72,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
+          source: Compendium.cof2-base.cof-2-base-items.Item.745DAnTy0qcqoKIw
           subtype: combat
           target: def
           apply: self

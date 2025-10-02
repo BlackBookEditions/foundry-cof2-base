@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
+    - source: Compendium.cof2-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
       indice: 0
       label: ''
       chatFlavor: ''
@@ -42,21 +42,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof2-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
           subtype: skill
           target: agi
           apply: self
           value: 2 + @rang
           additionalInfos: Esquive
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof2-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
           subtype: combat
           target: init
           apply: self
           value: '3'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
+          source: Compendium.cof2-base.cof-2-base-items.Item.8sYwesOPqjzSA0yr
           subtype: combat
           target: def
           apply: self

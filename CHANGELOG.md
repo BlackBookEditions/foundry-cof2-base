@@ -1,3 +1,6 @@
+# 1.0.6
+- Correctif sur les liens des compendiums
+
 # 1.0.5
 - Diverses corrections suite au changement d'id
 

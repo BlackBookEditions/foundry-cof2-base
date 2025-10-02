@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,21 +47,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: for
           value: '@rang+2'
           apply: self
           additionalInfos: intimidation
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: skill
           target: cha
           value: '@rang + 2'
           apply: self
           additionalInfos: Intimidation
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
       indice: 1
       label: Utilise une arme légère
       chatFlavor: ''
@@ -77,14 +77,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: init
           value: '@agi'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.wWiBtyPmaaXVSRvQ
           subtype: combat
           target: melee
           value: '-@for +@agi'

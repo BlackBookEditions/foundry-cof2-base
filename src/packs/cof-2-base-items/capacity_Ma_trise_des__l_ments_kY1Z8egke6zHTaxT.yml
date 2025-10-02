@@ -30,7 +30,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+    - source: Compendium.cof2-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
       indice: 0
       label: RD contre DM élémentaires
       chatFlavor: ''
@@ -46,14 +46,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+          source: Compendium.cof2-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
           subtype: combat
           target: dr
           apply: self
           value: 2+@rang
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
+    - source: Compendium.cof2-base.cof-2-base-items.Item.kY1Z8egke6zHTaxT
       indice: 1
       label: Activation du sort
       chatFlavor: ''

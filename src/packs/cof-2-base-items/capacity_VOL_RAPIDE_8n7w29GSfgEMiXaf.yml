@@ -24,7 +24,7 @@ system:
   path: null
   cost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
+    - source: Compendium.cof2-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
       indice: 0
       label: En vol attaque cible au sol
       chatFlavor: ''
@@ -40,14 +40,14 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
+          source: Compendium.cof2-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
           subtype: combat
           target: melee
           apply: self
           value: 1d4
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
+          source: Compendium.cof2-base.cof-2-base-items.Item.8n7w29GSfgEMiXaf
           subtype: bonusDice
           target: melee
           apply: self

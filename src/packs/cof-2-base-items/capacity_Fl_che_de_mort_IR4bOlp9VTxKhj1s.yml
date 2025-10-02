@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
+    - source: Compendium.cof2-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
       indice: 0
       label: Attaque améliorée
       chatFlavor: ''
@@ -50,14 +50,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
+          source: Compendium.cof2-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
           subtype: bonusDice
           target: ranged
           apply: self
           value: '0'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
+          source: Compendium.cof2-base.cof-2-base-items.Item.IR4bOlp9VTxKhj1s
           subtype: combat
           target: damRanged
           apply: self

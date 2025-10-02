@@ -35,7 +35,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+    - source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
       indice: 0
       label: ''
       chatFlavor: ''
@@ -51,14 +51,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: skill
           target: cha
           apply: self
           value: 2 + @rang
           additionalInfos: jouer d’un instrument de musique ou chanter
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+    - source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
       indice: 1
       label: ''
       chatFlavor: ''
@@ -74,28 +74,28 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: skill
           target: all
           apply: both
           value: '1'
           additionalInfos: Chant des héros
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: combat
           target: melee
           apply: both
           value: '1'
           additionalInfos: Chant des héros
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: combat
           target: ranged
           apply: both
           value: '1'
           additionalInfos: Chant des héros
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
+          source: Compendium.cof2-base.cof-2-base-items.Item.LTRPNkciQUMvVvLS
           subtype: combat
           target: magic
           apply: both

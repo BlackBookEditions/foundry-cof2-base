@@ -14,7 +14,7 @@ system:
     <p>Cette capacité gère le bonus permanent aux jet de caractéristique
     alchimie/chimie. Un système de crafting sera proposé plus tard pour la
     gestion des potions. Pour le moment, les potions existent dans le compendium
-    : @UUID[Compendium.cof-base.cof-2-base-items.Item.u8ZUC9u08x3dxyDZ]{Elixir
+    : @UUID[Compendium.cof2-base.cof-2-base-items.Item.u8ZUC9u08x3dxyDZ]{Elixir
     Fortifiant}, il faut les glisser/déposer sur la fiche du joueur</p>
   source: ''
   origin: Livre des règles p98
@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.KuKVgDzEJrMblft8
+    - source: Compendium.cof2-base.cof-2-base-items.Item.KuKVgDzEJrMblft8
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,7 +47,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.KuKVgDzEJrMblft8
+          source: Compendium.cof2-base.cof-2-base-items.Item.KuKVgDzEJrMblft8
           subtype: skill
           target: int
           value: 2 + @rang

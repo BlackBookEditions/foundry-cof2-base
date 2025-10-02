@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
       indice: 0
       label: Combat à l'arc
       chatFlavor: ''
@@ -47,21 +47,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+          source: Compendium.cof2-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
           subtype: combat
           target: init
           apply: self
           value: '@rang'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+          source: Compendium.cof2-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
           subtype: combat
           target: damRanged
           apply: self
           value: '@per'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+    - source: Compendium.cof2-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
       indice: 1
       label: Combat à l'arme de jet
       chatFlavor: ''
@@ -77,7 +77,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
+          source: Compendium.cof2-base.cof-2-base-items.Item.nAIL1Xph0VFoybEX
           subtype: combat
           target: damRanged
           apply: self

@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
+    - source: Compendium.cof2-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
       indice: 0
       label: Immunités
       chatFlavor: ''
@@ -42,21 +42,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof2-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: fearImmunity
           apply: self
           value: '0'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof2-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: state
           target: sleepimmunity
           apply: self
           value: '0'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
+    - source: Compendium.cof2-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
       indice: 1
       label: Résister à un sort
       chatFlavor: ''
@@ -72,7 +72,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
+          source: Compendium.cof2-base.cof-2-base-items.Item.bkqpIgXY5Ljl24kh
           subtype: combat
           target: magic
           apply: self

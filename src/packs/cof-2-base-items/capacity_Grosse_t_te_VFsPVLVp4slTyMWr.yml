@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
+    - source: Compendium.cof2-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
       indice: 0
       label: ''
       chatFlavor: ''
@@ -51,21 +51,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
+          source: Compendium.cof2-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
           subtype: skill
           target: agi
           value: 2 + @rang
           apply: self
           additionalInfos: bricolage/science
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
+          source: Compendium.cof2-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
           subtype: skill
           target: int
           value: 2 + @rang
           apply: self
           additionalInfos: bricolage/science
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
+          source: Compendium.cof2-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
           subtype: attribute
           target: hp
           value: '@int - @con'

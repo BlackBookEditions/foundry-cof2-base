@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
+    - source: Compendium.cof2-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
       indice: 0
       label: ''
       chatFlavor: ''
@@ -50,14 +50,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
           subtype: skill
           target: for
           value: 2 + @rang
           apply: self
           additionalInfos: ordre/intimidation
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
+          source: Compendium.cof2-base.cof-2-base-items.Item.5CLymleiVP9smYlQ
           subtype: skill
           target: cha
           value: 2 + @rang

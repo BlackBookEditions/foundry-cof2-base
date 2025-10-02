@@ -33,7 +33,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
       indice: 0
       label: ''
       chatFlavor: ''
@@ -49,14 +49,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
+          source: Compendium.cof2-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
           subtype: skill
           target: cha
           apply: self
           value: 2 + @rang
           additionalInfos: persuasion/séduction
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wN6dxByz49lvBqzx
       indice: 1
       label: ''
       chatFlavor: ''

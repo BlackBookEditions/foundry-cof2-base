@@ -26,7 +26,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
+    - source: Compendium.cof2-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
       indice: 0
       label: ''
       chatFlavor: ''
@@ -42,21 +42,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof2-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: init
           value: '@vol'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof2-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: attribute
           target: hp
           value: '@vol'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
+          source: Compendium.cof2-base.cof-2-base-items.Item.bWMYXWnBw4oN9zBS
           subtype: combat
           target: def
           value: '@rang[2,2,2,2,3]'

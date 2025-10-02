@@ -36,7 +36,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
+    - source: Compendium.cof2-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
       indice: 0
       label: ''
       chatFlavor: ''
@@ -71,7 +71,7 @@ system:
             duration: '0'
             unit: round
       modifiers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
+    - source: Compendium.cof2-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
       indice: 1
       label: ''
       chatFlavor: ''
@@ -87,14 +87,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
+          source: Compendium.cof2-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: init
           value: '@rang[1,1,2,2,2] + @toutrang[5]'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
+          source: Compendium.cof2-base.cof-2-base-items.Item.M6zUxFF9JWU7XNNe
           subtype: combat
           target: def
           value: '@rang[1,1,2,2,2] + @toutrang[5]'

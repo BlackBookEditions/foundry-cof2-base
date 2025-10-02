@@ -15,7 +15,7 @@ system:
     <p>2 actions :</p><p>Une amélioration permanente sur les jets de discrétion
     et vigilance en milieu naturel</p><p>Le MJ donne les droits au PJ de
     l'équipement consommable
-    @UUID[Compendium.cof-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie
+    @UUID[Compendium.cof2-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie
     magique}. Pour créer les Baies Magiques le PJ doit dépenser manuellement le
     PM et augmente la quantité de Baies Magiques en sa possession de PER. Cette
     objet peut être donné par le personnage à ses compagnons ou à lui-même pour
@@ -37,7 +37,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
+    - source: Compendium.cof2-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
       indice: 0
       label: ''
       chatFlavor: ''
@@ -53,14 +53,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
+          source: Compendium.cof2-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: agi
           value: 2 + @rang
           apply: self
           additionalInfos: vigilance/discrétion
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
+          source: Compendium.cof2-base.cof-2-base-items.Item.j7pLaQESQ3WxcoPO
           subtype: skill
           target: per
           value: 2 + @rang

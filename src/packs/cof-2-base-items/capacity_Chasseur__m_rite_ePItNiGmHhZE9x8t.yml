@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
+    - source: Compendium.cof2-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
       indice: 0
       label: contre Animaux
       chatFlavor: ''
@@ -50,14 +50,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
+          source: Compendium.cof2-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
           subtype: combat
           target: damMelee
           apply: self
           value: 1d4°
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
+          source: Compendium.cof2-base.cof-2-base-items.Item.ePItNiGmHhZE9x8t
           subtype: combat
           target: damRanged
           apply: self

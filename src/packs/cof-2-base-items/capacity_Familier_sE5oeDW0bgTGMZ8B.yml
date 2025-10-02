@@ -18,7 +18,7 @@ system:
     <p>Lorsque le familier est en vue du joueur celui-ci "active" la capacité
     qui lui donne alors ses bonus. Si le familier s'éloigne ou est mort il faut
     désactiver cette capacité. Le MJ trouvera dans le compendium le
-    @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.UgpkO1NHOnCogG8Q]{Familier}</p>
+    @UUID[Compendium.cof2-base.cof-2-base-encounter.Actor.UgpkO1NHOnCogG8Q]{Familier}</p>
   source: ''
   origin: Livre des règles p106
   slug: familier
@@ -34,7 +34,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
       indice: 0
       label: Familier en vue
       chatFlavor: ''
@@ -50,14 +50,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
+          source: Compendium.cof2-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
           subtype: combat
           target: init
           apply: self
           value: '2'
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
+          source: Compendium.cof2-base.cof-2-base-items.Item.sE5oeDW0bgTGMZ8B
           subtype: combat
           target: def
           apply: self

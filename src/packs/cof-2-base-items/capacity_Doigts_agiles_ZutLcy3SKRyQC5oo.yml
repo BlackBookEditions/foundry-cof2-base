@@ -33,7 +33,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+    - source: Compendium.cof2-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,14 +47,14 @@ system:
         noManaCost: false
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+          source: Compendium.cof2-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
           subtype: skill
           target: agi
           apply: self
           value: 2 + @rang
           additionalInfos: crocheter/désarmorcer
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+          source: Compendium.cof2-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
           subtype: skill
           target: int
           apply: self
@@ -62,7 +62,7 @@ system:
           additionalInfos: évaluer un objet précieux
       conditions: []
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+    - source: Compendium.cof2-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
       indice: 1
       label: attaques à distance avec dagues et couteaux
       chatFlavor: ''
@@ -78,7 +78,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
+          source: Compendium.cof2-base.cof-2-base-items.Item.ZutLcy3SKRyQC5oo
           subtype: combat
           target: damRanged
           apply: self

@@ -27,7 +27,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
+    - source: Compendium.cof2-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
       indice: 0
       label: ''
       chatFlavor: ''
@@ -43,21 +43,21 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
+          source: Compendium.cof2-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: combat
           target: init
           value: '3'
           apply: self
           additionalInfos: ''
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
+          source: Compendium.cof2-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: skill
           target: agi
           value: 2 + @rang
           apply: self
           additionalInfos: saut/course/escalade
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
+          source: Compendium.cof2-base.cof-2-base-items.Item.6JbQu8tWqwolh4nM
           subtype: skill
           target: for
           value: 2 + @rang

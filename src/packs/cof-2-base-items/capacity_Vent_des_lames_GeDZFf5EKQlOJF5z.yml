@@ -32,7 +32,7 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
+    - source: Compendium.cof2-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
       indice: 0
       label: AGI à l'Attaque
       chatFlavor: ''
@@ -48,14 +48,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
+          source: Compendium.cof2-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
           subtype: combat
           target: melee
           apply: self
           value: +@agi -@for
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
+    - source: Compendium.cof2-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
       indice: 1
       label: AGI aux DM
       chatFlavor: ''
@@ -71,7 +71,7 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
+          source: Compendium.cof2-base.cof-2-base-items.Item.GeDZFf5EKQlOJF5z
           subtype: combat
           target: damMelee
           apply: self

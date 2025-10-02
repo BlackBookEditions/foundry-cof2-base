@@ -14,7 +14,7 @@ system:
   inGame: >-
     <p>Cette capacité gère le bonus permanent aux jet de caractéristique. Pour
     la monture c'est au MJ de fournir l'acces à la créature
-    @UUID[Compendium.cof-base.cof-2-base-encounter.Actor.3dYEjF9wZNyzzzVW]{Fidèle
+    @UUID[Compendium.cof2-base.cof-2-base-encounter.Actor.3dYEjF9wZNyzzzVW]{Fidèle
     monture}</p>
   source: ''
   origin: Livre des règles p83
@@ -31,7 +31,7 @@ system:
     chargeable: false
   path: null
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
+    - source: Compendium.cof2-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
       indice: 0
       label: ''
       chatFlavor: ''
@@ -47,14 +47,14 @@ system:
         - predicate: isLearned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
+          source: Compendium.cof2-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
           subtype: skill
           target: agi
           apply: self
           value: 2 + @rang
           additionalInfos: Equitation/dressage
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
+          source: Compendium.cof2-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi
           subtype: skill
           target: cha
           apply: self

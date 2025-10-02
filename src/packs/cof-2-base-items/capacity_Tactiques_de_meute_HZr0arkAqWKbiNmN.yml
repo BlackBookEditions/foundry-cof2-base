@@ -32,7 +32,7 @@ system:
   cost: -1
   manaCost: -1
   actions:
-    - source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
       indice: 0
       label: Défense
       chatFlavor: ''
@@ -48,14 +48,14 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+          source: Compendium.cof2-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
           subtype: combat
           target: def
           apply: self
           value: '1'
           additionalInfos: ''
       resolvers: []
-    - source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
       indice: 1
       label: Bonus DM
       chatFlavor: ''
@@ -71,7 +71,7 @@ system:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Compendium.cof-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
+          source: Compendium.cof2-base.cof-2-base-items.Item.HZr0arkAqWKbiNmN
           subtype: combat
           target: damMelee
           apply: self
