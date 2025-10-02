@@ -14,7 +14,7 @@ async function main() {
   }
 
   // Répertoire où se trouvent les fichiers html à partir du répertoire data
-  const folderRef = "modules/cof-base/guide/html/"
+  const folderRef = "modules/cof2-base/guide/html/"
   const filesList = await foundry.applications.apps.FilePicker.implementation.browse("data", folderRef)
   console.log("Liste des fichiers", filesList)
 

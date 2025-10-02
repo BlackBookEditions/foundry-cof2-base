@@ -1,3 +1,9 @@
+# 1.0.5
+- Diverses corrections suite au changement d'id
+
+# 1.0.4
+- Correction du lien vers les images (suite changement id)
+
 # 1.0.3
 - Changement de l'id du package Foundry
 

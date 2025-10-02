@@ -165,7 +165,7 @@ Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
   //if (!element) element = html.querySelector(".co.system")
 
   if (element) {
-      const renderedHtml = await foundry.applications.handlebars.renderTemplate("modules/cof-base/templates/sidebar-menu.hbs", {
+      const renderedHtml = await foundry.applications.handlebars.renderTemplate("modules/cof2-base/templates/sidebar-menu.hbs", {
       user: game.user,
     })
 
