@@ -32,24 +32,21 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
-            formula: '@rang[1,1,1,2,2]d4°'
+            formula: '@rang[1,1,1,2,2]d4° + @int'
           target:
             type: multiple
             number: 3
@@ -57,10 +54,12 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
       modifiers: []
   cost: -1
   rank: 1
@@ -76,11 +75,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.348'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1748013471448
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1759647704680
+  lastModifiedBy: xjsMbUUhgvm4hWCT
   exportSource: null
 _key: '!items!5OAurc0dhI09SmNr'
