@@ -2,6 +2,7 @@
 - Ajoute la caractéristique INT aux dommages de l'arc de feu (issue [#41](https://github.com/BlackBookEditions/foundry-cof2-base/issues/41))
 - Corrige l'ordre des capacités de la voie du pagne
 - Correction de la Constitution héroïque de la voie de la nature du druide et harmonisation du texte
+- Problème de coût en point de compétence (issue [#46](https://github.com/BlackBookEditions/foundry-cof2-base/issues/46))
 
 # 1.0.7
 - Correction lien image manque (issue [#33](https://github.com/BlackBookEditions/foundry-cof2-base/issues/33))
