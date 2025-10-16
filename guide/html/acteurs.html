@@ -37,6 +37,23 @@
   </ul>
   <p class="alinea">La lecture de ce guide ou l’apprentissage du système vous permettra de mieux appréhender ces éléments donc nous n’en dirons pas plus pour le moment.</p>
 
+  <h3>Droits de visibilité</h3>
+  <p class="alinea">Depuis la version 1.1.0, les feuilles acteurs sont différentes en fonction du droit de visibilité paramétré.</p>
+  <ul>
+    <li>
+      <span class="gras">Propriétaire : </span>peut déverrouiller la feuille pour éditer les éléments, peut utiliser les icônes pour faire des actions, activer ou désactiver des
+      bonus, peut voir les champs "privés" dans l’onglet Biographie ou Notes.
+    </li>
+    <li>
+      <span class="gras">Observateur : </span>impossible de déverrouiller la feuille, la plupart des actions ne sont utilisables, les champs "privés" sont masqués. Par contre,
+      l’Observateur peut voir et ouvrir les éléments de l’acteur sans pouvoir les éditer.
+    </li>
+    <li>
+      <span class="gras">Limité : </span>seul l’onglet Biographie ou Notes est visible, les statistiques de la barre latérale et de l’entête sont remplacées par "??" et les
+      info-bulles sont désactivées.
+    </li>
+  </ul>
+
   <h2>Feuille Personnage</h2>
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_feuille_perso_principal.webp" /></div>
   <p class="alinea lettrine">
@@ -704,7 +721,10 @@
     Chaque champ est adaptable en hauteur ainsi le nombre de caractères et la longueur du texte ne sont pas limités. Comme pour les journaux classiques, il est possible d’ajouter
     des images, des tableaux, des listes, des titres, pour agrémenter la biographie et l’apparence Publique et Privée du Personnage.
   </p>
-  <p class="alinea"><span class="gras italique">Note de Version :</span> Pour l’instant le système ne prend pas en compte les différents droits de visibilité sur les éléments.</p>
+  <p class="alinea">
+    <span class="gras italique">Note de Version :</span> Depuis la version 1.1.0, le système prend en compte les droits de visibilité de la feuille personnage. La feuille est
+    toujours verrouillée en mode Observateur (champs privé masqué) et seul l'onglet Biographie apparaît en mode Limité.
+  </p>
   <h3>Création d’un Personnage</h3>
   <p class="alinea">En résumé, pour créer un Personnage vous devez :</p>
   <ul>
@@ -746,8 +766,8 @@
         Dans l’onglet "Voies et Capacités",
         <span class="gras">cliquez sur les coches grises <i class="fa-solid fa-check"></i> des Capacités que votre Personnage apprend</span>. Le nombre de Points de Capacité à
         dépenser est indiqué en haut de l’onglet. Si le Personnage possède des Capacités Hors-Voies, cherchez les dans le compendium COF 2 Objets dans le dossier
-        @UUID[Compendium.cof2-base.cof-2-base-items.Folder.bIBuYZXCH4B9OUNH]{Capacités}. Si elles n’existent pas, créez les directement sur la feuille de Personnage ou dans l’onglet
-        Objets du panneau de FoundryVTT.
+        @UUID[Compendium.cof2-base.cof-2-base-items.Folder.bIBuYZXCH4B9OUNH]{Capacités}. Si elles n’existent pas, créez les directement sur la feuille de Personnage ou dans
+        l’onglet Objets du panneau de FoundryVTT.
       </p>
     </li>
     <li>
@@ -1111,8 +1131,8 @@
     Ce cadre est visible uniquement par les personnes qui ont des droits Propriétaires sur cette Rencontre. Il est donc possible d’y écrire des informations sensibles ou secrètes.
   </p>
   <p class="alinea">
-    <span class="gras italique">Note de Version :</span> Pour le moment, le système ne prend pas en compte la configuration des droits offerts par FoundryVTT. Donc chaque personne
-    qui a accès à une feuille aura toutes les informations quelle que soit son niveau de visibilité.
+    <span class="gras italique">Note de Version :</span> Depuis la version 1.1.0, le système prend en compte les droits de visibilité de la feuille rencontre. La feuille est
+    toujours verrouillée en mode Observateur (champs privé masqué) et seul l'onglet Notes apparaît en mode Limité.
   </p>
   <h3>Limitations de la Feuille Rencontre</h3>
   <p class="alinea">
