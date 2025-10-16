@@ -1,3 +1,8 @@
+# 1.1.1
+- Correction ortographe arme
+- Peuple demi-elfe séparé en trois peuples selon l'origine
+- Amélioration visuelle des journaux (police et fond) par Sasmira
+
 # 1.1.0
 - Ajoute la caractéristique INT aux dommages de l'arc de feu (issue [#41](https://github.com/BlackBookEditions/foundry-cof2-base/issues/41))
 - Corrige l'ordre des capacités de la voie du pagne
