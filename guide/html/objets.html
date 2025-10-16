@@ -65,6 +65,16 @@
     </p>
   </ul>
 
+  <h3>Droits de visibilité</h3>
+  <p class="alinea">Depuis la version 1.1.0, les feuilles Objets sont différentes en fonction du droit de visibilité paramétré.</p>
+  <ul>
+    <li><span class="gras">Propriétaire : </span>peut déverrouiller la feuille pour éditer les éléments, modifier les paramètres et supprimer ou ajouter des éléments dessus.</li>
+    <li>
+      <span class="gras">Observateur : </span>impossible de déverrouiller la feuille, les champs sont bloqués et l’Observateur ne peut pas modifier les éléments de la feuille.
+    </li>
+    <li><span class="gras">Limité : </span>seul l’onglet Description est visible. Les Objets ne sont pas déverrouillables.</li>
+  </ul>
+
   <h3>Onglet Description</h3>
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_items_description.webp" /></div>
   <h4>Origine</h4>
@@ -308,6 +318,7 @@
     <span class="gras">il est possible de rajouter les 5 voies (ou moins, ou plus) du Profil.</span> Même si cela n’a que peu d’impact, les Voies sont triées dans l’ordre où elles
     sont glissées sur la fiche du Profil. Toutes les voies présentes sur le Profil seront ajoutées à la feuille Personnage lorsque le Profil sera glissé-déposé dessus.
   </p>
+  <p class="alinea">Cliquer sur l'image de la voie permet d'ouvrir la feuille de celle-ci.</p>
   <p class="alinea">
     Si un Personnage ne souhaite pas avoir toutes les voies configurés dans un Profil, il peut soit supprimer des voies dans
     l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} en
@@ -372,6 +383,7 @@
     <span class="gras">il est possible de rajouter une ou plusieurs Voies au Trait.</span> Même si cela n’a que peut d’impact, les Voies sont triées dans l’ordre où elles sont
     glissées sur la fiche du Trait. Toutes les voies présentes sur le Trait seront ajoutées à la feuille Personnage lorsque le Trait sera glissé-déposé dessus.
   </p>
+  <p class="alinea">Cliquer sur l'image de la voie permet d'ouvrir la feuille de celle-ci.</p>
   <p class="alinea">
     Si un Personnage ne souhaite pas avoir toutes les voies configurées dans un Trait, il peut soit supprimer des voies dans l’Onglet Voies et Capacités en déverrouillant sa
     feuille, soit ouvrir la feuille de son Trait et supprimer certaines voies (la feuille doit être déverrouillée). Les deux méthodes sont identiques. Utilisez l’icône
@@ -400,6 +412,7 @@
     Capacités} ou en ouvrant le feuille du Trait depuis
     l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-biographie]{Onglet Biographie}.
   </p>
+  <p class="alinea">Cliquer sur l'image de la capacité permet d'ouvrir la feuille de celle-ci.</p>
 
   <!--Feuille voie-->
   <h2>Feuille Voie</h2>
@@ -630,8 +643,8 @@
   </p>
   <p class="alinea">
     Les Capacités configurées en Sort sont repérées par une * à la suite de leur nom dans
-    l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} et dans
-    le Cadre Actions.
+    l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} et
+    dans le Cadre Actions.
   </p>
   <p class="alinea">
     <span class="gras">Le nombre de Points de Mana possédé par le Personnage est calculé automatiquement</span> en fonction du nombre de Sorts qu’il a appris et des bonus éventuels
@@ -865,8 +878,8 @@
     <li>
       <span class="gras">DM temporaires possibles : </span>Cette option permet d’indiquer que l’arme peut infliger des Dommages Temporaires ou non au choix de l’utilisateur. Avec
       ce paramètre, la case "DM Temp." présent sur la fenêtre de dialogue du Chat du
-      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} ne sera pas automatiquement
-      cochée. L’utilisateur n’aura aucun malus s’il coche la case.
+      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} ne sera pas
+      automatiquement cochée. L’utilisateur n’aura aucun malus s’il coche la case.
     </li>
     <li><span class="gras">Arme légère :</span> Certaines capacités demandent l’utilisation d’une arme légère pour fonctionner.</li>
   </ul>
