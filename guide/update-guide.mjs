@@ -2,7 +2,7 @@
 main()
 
 async function main() {
-  const compendiumName = "cof-base.cof-2-guide-du-systeme"
+  const compendiumName = "cof2-base.cof-2-guide-du-systeme"
 
   // Fait le lien entre un fichier html et l'id d'une page de journal
   const fileName_pageId = {

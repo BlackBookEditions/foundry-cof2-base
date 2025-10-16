@@ -44,10 +44,13 @@ pages:
 
           <h3>Versions</h3>
           <p class="alinea">Le système nécessite la version 13 de Foundry VTT.</p>
-          <p class="alinea">Version du système : 1.0.0</p>
-          <p class="alinea">Version du module : 1.0.0</p>
+          <p class="alinea">Version du système : 1.1.0</p>
+          <p class="alinea">Version du module : 1.1.0</p>
 
-          <p class="alinea">Vous pouvez télécharger une version pdf de ce guide utilisateur en cliquant sur ce lien : <a href="https://raw.githubusercontent.com/wiki/BlackBookEditions/foundry-cof2-base/Guide_officiel_du_système_COF2.pdf">Version pdf</a>.</p>
+          <p class="alinea">
+            Vous pouvez télécharger une version pdf de ce guide utilisateur en cliquant sur ce lien :
+            <a href="https://raw.githubusercontent.com/wiki/BlackBookEditions/foundry-cof2-base/Guide_officiel_du_système_COF2.pdf">Version pdf</a>.
+          </p>
 
           <h3>Le Système et le Module</h3>
           <p class="alinea">
@@ -67,7 +70,7 @@ pages:
             Rendez-vous sur le
             <span class="gras">forum de Black Book Edition (https://black-book-editions.fr/forums.php?topic_id=88961&amp;tid=1732201#msg1732201) ou sur le Discord Foundry français (La Fonderie
               https://discord.gg/Gx6PPmeS)</span>
-            - Salon Chroniques Oubliées).
+            - Salon Chroniques Oubliées.
           </p>
 
           <p class="alinea">
@@ -178,13 +181,18 @@ pages:
               <li class="puce-noire">
                 @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique}
               </li>
-              <li class="puce-noire">@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d'attaque}</li>
-              <li class="puce-noire">@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages}</li>
+              <li class="puce-noire">
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d'attaque}
+              </li>
+              <li class="puce-noire">
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages}
+              </li>
               <li class="puce-noire">
                 @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-en-opposition]{Jet en opposition}
               </li>
               <li class="puce-noire">
-                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-soins-et-recuperation]{Jet de soins et récupération}
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-soins-et-recuperation]{Jet de soins et
+                récupération}
               </li>
               <li class="puce-noire">
                 @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#description-dans-le-chat]{Description dans le chat}
@@ -451,8 +459,8 @@ pages:
       coreVersion: '13.348'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: fBTCrubkOhroUr3A
-      modifiedTime: 1759385284729
+      lastModifiedBy: xhULmyaSSwpIRhxx
+      modifiedTime: 1760651310377
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.Xr7GWCaNfcxZlsnY'
   - sort: 200000
     name: Les Acteurs
@@ -504,6 +512,23 @@ pages:
             </li>
           </ul>
           <p class="alinea">La lecture de ce guide ou l’apprentissage du système vous permettra de mieux appréhender ces éléments donc nous n’en dirons pas plus pour le moment.</p>
+
+          <h3>Droits de visibilité</h3>
+          <p class="alinea">Depuis la version 1.1.0, les feuilles acteurs sont différentes en fonction du droit de visibilité paramétré.</p>
+          <ul>
+            <li>
+              <span class="gras">Propriétaire : </span>peut déverrouiller la feuille pour éditer les éléments, peut utiliser les icônes pour faire des actions, activer ou désactiver des
+              bonus, peut voir les champs "privés" dans l’onglet Biographie ou Notes.
+            </li>
+            <li>
+              <span class="gras">Observateur : </span>impossible de déverrouiller la feuille, la plupart des actions ne sont utilisables, les champs "privés" sont masqués. Par contre,
+              l’Observateur peut voir et ouvrir les éléments de l’acteur sans pouvoir les éditer.
+            </li>
+            <li>
+              <span class="gras">Limité : </span>seul l’onglet Biographie ou Notes est visible, les statistiques de la barre latérale et de l’entête sont remplacées par "??" et les
+              info-bulles sont désactivées.
+            </li>
+          </ul>
 
           <h2>Feuille Personnage</h2>
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_feuille_perso_principal.webp" /></div>
@@ -1167,7 +1192,10 @@ pages:
             Chaque champ est adaptable en hauteur ainsi le nombre de caractères et la longueur du texte ne sont pas limités. Comme pour les journaux classiques, il est possible d’ajouter
             des images, des tableaux, des listes, des titres, pour agrémenter la biographie et l’apparence Publique et Privée du Personnage.
           </p>
-          <p class="alinea"><span class="gras italique">Note de Version :</span> Pour l’instant le système ne prend pas en compte les différents droits de visibilité sur les éléments.</p>
+          <p class="alinea">
+            <span class="gras italique">Note de Version :</span> Depuis la version 1.1.0, le système prend en compte les droits de visibilité de la feuille personnage. La feuille est
+            toujours verrouillée en mode Observateur (champs privé masqué) et seul l'onglet Biographie apparaît en mode Limité.
+          </p>
           <h3>Création d’un Personnage</h3>
           <p class="alinea">En résumé, pour créer un Personnage vous devez :</p>
           <ul>
@@ -1209,8 +1237,8 @@ pages:
                 Dans l’onglet "Voies et Capacités",
                 <span class="gras">cliquez sur les coches grises <i class="fa-solid fa-check"></i> des Capacités que votre Personnage apprend</span>. Le nombre de Points de Capacité à
                 dépenser est indiqué en haut de l’onglet. Si le Personnage possède des Capacités Hors-Voies, cherchez les dans le compendium COF 2 Objets dans le dossier
-                @UUID[Compendium.cof2-base.cof-2-base-items.Folder.bIBuYZXCH4B9OUNH]{Capacités}. Si elles n’existent pas, créez les directement sur la feuille de Personnage ou dans l’onglet
-                Objets du panneau de FoundryVTT.
+                @UUID[Compendium.cof2-base.cof-2-base-items.Folder.bIBuYZXCH4B9OUNH]{Capacités}. Si elles n’existent pas, créez les directement sur la feuille de Personnage ou dans
+                l’onglet Objets du panneau de FoundryVTT.
               </p>
             </li>
             <li>
@@ -1572,8 +1600,8 @@ pages:
             Ce cadre est visible uniquement par les personnes qui ont des droits Propriétaires sur cette Rencontre. Il est donc possible d’y écrire des informations sensibles ou secrètes.
           </p>
           <p class="alinea">
-            <span class="gras italique">Note de Version :</span> Pour le moment, le système ne prend pas en compte la configuration des droits offerts par FoundryVTT. Donc chaque personne
-            qui a accès à une feuille aura toutes les informations quelle que soit son niveau de visibilité.
+            <span class="gras italique">Note de Version :</span> Depuis la version 1.1.0, le système prend en compte les droits de visibilité de la feuille rencontre. La feuille est
+            toujours verrouillée en mode Observateur (champs privé masqué) et seul l'onglet Notes apparaît en mode Limité.
           </p>
           <h3>Limitations de la Feuille Rencontre</h3>
           <p class="alinea">
@@ -1685,8 +1713,8 @@ pages:
       coreVersion: '13.348'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: fBTCrubkOhroUr3A
-      modifiedTime: 1759385284585
+      lastModifiedBy: xhULmyaSSwpIRhxx
+      modifiedTime: 1760651310275
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.9Bn7F4sxyKm3TX74'
   - sort: 300000
     name: Les Objets
@@ -1765,6 +1793,16 @@ pages:
               Exemple : le Trait du <span class="gras">peuple Gnome</span> vous demande de choisir entre un bonus de +1 en Intelligence ou en Perception. Dans la feuille du Trait, les deux
               options sont configurées donc si vous ne supprimez pas l'un des deux, votre personnage obtiendra un bonus de +1 dans les deux caractéristiques.
             </p>
+          </ul>
+
+          <h3>Droits de visibilité</h3>
+          <p class="alinea">Depuis la version 1.1.0, les feuilles Objets sont différentes en fonction du droit de visibilité paramétré.</p>
+          <ul>
+            <li><span class="gras">Propriétaire : </span>peut déverrouiller la feuille pour éditer les éléments, modifier les paramètres et supprimer ou ajouter des éléments dessus.</li>
+            <li>
+              <span class="gras">Observateur : </span>impossible de déverrouiller la feuille, les champs sont bloqués et l’Observateur ne peut pas modifier les éléments de la feuille.
+            </li>
+            <li><span class="gras">Limité : </span>seul l’onglet Description est visible. Les Objets ne sont pas déverrouillables.</li>
           </ul>
 
           <h3>Onglet Description</h3>
@@ -2008,6 +2046,7 @@ pages:
             <span class="gras">il est possible de rajouter les 5 voies (ou moins, ou plus) du Profil.</span> Même si cela n’a que peu d’impact, les Voies sont triées dans l’ordre où elles
             sont glissées sur la fiche du Profil. Toutes les voies présentes sur le Profil seront ajoutées à la feuille Personnage lorsque le Profil sera glissé-déposé dessus.
           </p>
+          <p class="alinea">Cliquer sur l'image de la voie permet d'ouvrir la feuille de celle-ci.</p>
           <p class="alinea">
             Si un Personnage ne souhaite pas avoir toutes les voies configurés dans un Profil, il peut soit supprimer des voies dans
             l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} en
@@ -2072,6 +2111,7 @@ pages:
             <span class="gras">il est possible de rajouter une ou plusieurs Voies au Trait.</span> Même si cela n’a que peut d’impact, les Voies sont triées dans l’ordre où elles sont
             glissées sur la fiche du Trait. Toutes les voies présentes sur le Trait seront ajoutées à la feuille Personnage lorsque le Trait sera glissé-déposé dessus.
           </p>
+          <p class="alinea">Cliquer sur l'image de la voie permet d'ouvrir la feuille de celle-ci.</p>
           <p class="alinea">
             Si un Personnage ne souhaite pas avoir toutes les voies configurées dans un Trait, il peut soit supprimer des voies dans l’Onglet Voies et Capacités en déverrouillant sa
             feuille, soit ouvrir la feuille de son Trait et supprimer certaines voies (la feuille doit être déverrouillée). Les deux méthodes sont identiques. Utilisez l’icône
@@ -2100,6 +2140,7 @@ pages:
             Capacités} ou en ouvrant le feuille du Trait depuis
             l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-biographie]{Onglet Biographie}.
           </p>
+          <p class="alinea">Cliquer sur l'image de la capacité permet d'ouvrir la feuille de celle-ci.</p>
 
           
           <h2>Feuille Voie</h2>
@@ -2312,8 +2353,8 @@ pages:
           </p>
           <p class="alinea">
             Les Capacités configurées en Sort sont repérées par une * à la suite de leur nom dans
-            l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} et dans
-            le Cadre Actions.
+            l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-voies-et-capacites]{Onglet Voies et Capacités} et
+            dans le Cadre Actions.
           </p>
           <p class="alinea">
             <span class="gras">Le nombre de Points de Mana possédé par le Personnage est calculé automatiquement</span> en fonction du nombre de Sorts qu’il a appris et des bonus éventuels
@@ -2541,8 +2582,8 @@ pages:
             <li>
               <span class="gras">DM temporaires possibles : </span>Cette option permet d’indiquer que l’arme peut infliger des Dommages Temporaires ou non au choix de l’utilisateur. Avec
               ce paramètre, la case "DM Temp." présent sur la fenêtre de dialogue du Chat du
-              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} ne sera pas automatiquement
-              cochée. L’utilisateur n’aura aucun malus s’il coche la case.
+              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} ne sera pas
+              automatiquement cochée. L’utilisateur n’aura aucun malus s’il coche la case.
             </li>
             <li><span class="gras">Arme légère :</span> Certaines capacités demandent l’utilisation d’une arme légère pour fonctionner.</li>
           </ul>
@@ -2767,8 +2808,8 @@ pages:
       coreVersion: '13.348'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: fBTCrubkOhroUr3A
-      modifiedTime: 1759385284950
+      lastModifiedBy: xhULmyaSSwpIRhxx
+      modifiedTime: 1760651310428
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.e46m0KDmGFAP5USg'
   - sort: 400000
     name: Actions et Effets
@@ -2846,8 +2887,8 @@ pages:
           <h3>Label</h3>
           <p class="alinea">
             <span class="gras">Le label permet de donner un nom spécifique à l’action pour la distinguer des autres et lire son effet rapidement. </span>Le label sera visible dans la liste
-            des Actions de l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} à la suite
-            du nom de la Capacité ou de l’Équipement.
+            des Actions de l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} à la
+            suite du nom de la Capacité ou de l’Équipement.
           </p>
           <p class="alinea">
             Si le champ est laissé vide, c'est le nom de l’Objet qui sera utilisé. Ainsi il sera difficile de distinguer deux actions différentes l’une de l’autre. De plus, si l’action
@@ -3015,8 +3056,8 @@ pages:
                 <p class="alinea"><span class="gras">Exemple : Arme "@UUID[Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2]{Epée longue}" </span></p>
                 <p class="alinea">
                   Cette arme possède une action qui réalise une Attaque de Contact qui ouvre la fenêtre du
-                  @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d'attaque} lorsque l’on clique sur
-                  l’icône
+                  @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d'attaque} lorsque l’on clique
+                  sur l’icône
                   <i class="fa-solid fa-sword"></i>. Au moment où on clique sur l’icône l’attaque se réalise et l’Action ne reste pas activée.
                 </p>
                 <p class="alinea">L’icône <i class="fa-regular fa-hand-fist"></i> permet de lancer uniquement le jet de Dommages</p>
@@ -3230,8 +3271,8 @@ pages:
           <h3>Caractéristiques</h3>
           <p class="alinea">
             Ce type vous permet de choisir une Caractéristique ou "Toutes les Caractéristiques". Notez dans le champ "Valeur"
-            <span class="gras">un nombre positif ou négatif ou une @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{variable}
-              chiffrée</span>. Cette valeur sera ajoutée à la Caractéristique choisie.
+            <span class="gras">un nombre positif ou négatif ou une
+              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{variable} chiffrée</span>. Cette valeur sera ajoutée à la Caractéristique choisie.
           </p>
           <p class="alinea">
             Bien entendu, il est impossible d’ajouter le bonus d’une Caractéristique à sa propre Caractéristique (ajouter le bonus de Perception à la Perception, par exemple).
@@ -3308,7 +3349,8 @@ pages:
           </p>
           <ul class="exemple">
             <p class="alinea">
-              Consultez les @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#resolutions]{Résolutions} pour plus de détails.
+              Consultez les @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#resolutions]{Résolutions} pour plus de
+              détails.
             </p>
           </ul>
 
@@ -3754,7 +3796,7 @@ pages:
           </p>
           <p class="alinea">
             Dans le premier champ, choisissez s’il s’agit de Dommages ou de Soins à appliquer. Dans le second, inscrivez la formule de soins ou de Dommages. Cette formule peut recevoir
-            <span class="gras">des nombres entiers positifs ou négatifs, des variables, des formules de dé</span> ou une combinaison de ces éléments.
+            <span class="gras">des nombres entiers positifs ou négatifs, des formules de dé</span> ou une combinaison de ces éléments.
           </p>
           <p class="alinea">
             Le troisième champ permet de
@@ -4201,8 +4243,8 @@ pages:
       coreVersion: '13.348'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: fBTCrubkOhroUr3A
-      modifiedTime: 1759385284608
+      lastModifiedBy: xhULmyaSSwpIRhxx
+      modifiedTime: 1760651310328
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.a0cY3q3XV4o8Y13V'
   - sort: 500000
     name: Les Jets et les Messages
@@ -4240,14 +4282,15 @@ pages:
             informations du Message du Chat ne seront pas les mêmes également.
           </p>
           <h5>
-            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#activer-les-jets-combines-attaque-et-dommages]{Activer les jets
-            combinés Attaque et Dommages}
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#activer-les-jets-combines-attaque-et-dommages]{Activer les
+            jets combinés Attaque et Dommages}
           </h5>
           <p class="alinea">
             De la même manière,
             <span class="gras">cette option combinera une fenêtre d’Attaque et une fenêtre de Dommages si elle est activée</span>. Dans ce cas, les Dommages pourront être lancés
             automatiquement si le Jet d’Attaque est réussi et ainsi afficher deux Messages dans le tchat directement.
           </p>
+          <p class="alinea">Les options tactiques pour les attaques sont disponibles uniquement si cette option est activée.</p>
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_icones_dm.webp" /></div>
           <h5>
             @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#afficher-les-boutons-de-dommages]{Afficher les boutons de
@@ -4697,8 +4740,8 @@ pages:
 
           <p class="alinea">
             <span>Si vous définissez une Action avec une Résolution de type
-              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#consommable]{Consommable}, lorsque vous réalisez l’action, un
-              message sera envoyé dans le tchat pour </span><span class="gras">informer que vous avez consommé quelque chose</span>.
+              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#consommable]{Consommable}, lorsque vous réalisez l’action,
+              un message sera envoyé dans le tchat pour </span><span class="gras">informer que vous avez consommé quelque chose</span>.
           </p>
 
           <p class="alinea">
@@ -4803,8 +4846,8 @@ pages:
       coreVersion: '13.348'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: fBTCrubkOhroUr3A
-      modifiedTime: 1759385284823
+      lastModifiedBy: xhULmyaSSwpIRhxx
+      modifiedTime: 1760651310393
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.7BoZ8Un0GrShNPtF'
 folder: null
 categories: []
