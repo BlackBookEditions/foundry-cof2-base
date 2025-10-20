@@ -2,6 +2,7 @@
 - Correction ortographe arme
 - Peuple demi-elfe séparé en trois peuples selon l'origine
 - Amélioration visuelle des journaux (police et fond) par Sasmira
+- Frappe de golem : correction des dommages (issue [#50](https://github.com/BlackBookEditions/foundry-cof2-base/issues/50))
 
 # 1.1.0
 - Ajoute la caractéristique INT aux dommages de l'arc de feu (issue [#41](https://github.com/BlackBookEditions/foundry-cof2-base/issues/41))
