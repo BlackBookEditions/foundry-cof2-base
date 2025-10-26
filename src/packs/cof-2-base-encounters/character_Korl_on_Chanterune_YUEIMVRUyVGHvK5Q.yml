@@ -1917,7 +1917,7 @@ items:
               subtype: combat
               target: def
               apply: self
-              value: Math.min(@rang,@cha)
+              value: min(@rang,@cha)
               additionalInfos: ''
           resolvers: []
           actionType: none

@@ -58,7 +58,7 @@ system:
           subtype: combat
           target: damMelee
           apply: self
-          value: Math.min(2 + @toutrang[4], 7)d4°
+          value: min(2 + @toutrang[4], 7)d4°
           additionalInfos: ''
       resolvers: []
   cost: -1
