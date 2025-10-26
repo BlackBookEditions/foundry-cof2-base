@@ -14,10 +14,9 @@ system:
     équitation). 4 Riverain (natation et navigation). 5 Sauvage (chasser et
     pister). 6 Nomade (orientation et résistance à la chaleur ou au froid).</p>
   inGame: >-
-    <p>Chaque cas de bonus possible a été mis en place, lorsque la capacité sera
-    sur la fiche du personnage, il faudra supprimer les cas non choisies pour
-    les bonus aux jets de caractéristiques. Le bonus de 1 PC est, à part, et
-    doit rester.</p>
+    <p>Chaque cas de bonus possible a été créé. Lorsque la capacité sera
+    sur la fiche du personnage, il faudra supprimer les cas non choisis pour
+    les bonus aux jets de caractéristiques. Le bonus de 1 PC est défini à part.</p>
   source: ''
   origin: Livre des règles p57
   slug: diversite
@@ -35,7 +34,7 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 0
-      label: 'Montagnard : escalade resist au froid'
+      label: 'Montagnard : escalade et résistance au froid'
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
@@ -55,18 +54,18 @@ system:
           target: for
           value: '3'
           apply: self
-          additionalInfos: escalade resist au froid
+          additionalInfos: escalade et résistance au froid
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
           value: '3'
           apply: self
-          additionalInfos: escalade resist au froid
+          additionalInfos: escalade et résistance au froid
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 1
-      label: 'Citadin : commerce et resistance aux maladies'
+      label: 'Citadin : commerce et résistance aux maladies'
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
@@ -86,18 +85,18 @@ system:
           target: cha
           value: '3'
           apply: self
-          additionalInfos: commerce et resistance aux maladies
+          additionalInfos: commerce et résistance aux maladies
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
           value: '3'
           apply: self
-          additionalInfos: commerce et resistance aux maladies
+          additionalInfos: commerce et résistance aux maladies
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 2
-      label: 'Campagnard : equitation et meteorologie'
+      label: 'Campagnard : équitation et météorologie'
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
@@ -117,18 +116,18 @@ system:
           target: agi
           value: '3'
           apply: self
-          additionalInfos: equitation et meteorologie
+          additionalInfos: équitation et météorologie
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: per
           value: '3'
           apply: self
-          additionalInfos: equitation et meteorologie
+          additionalInfos: équitation et météorologie
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 3
-      label: 'Riverain : natation, navigation'
+      label: 'Riverain : natation et navigation'
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
@@ -148,14 +147,14 @@ system:
           target: for
           value: '3'
           apply: self
-          additionalInfos: natation, navigation
+          additionalInfos: natation et navigation
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: int
           value: '3'
           apply: self
-          additionalInfos: natation, navigation
+          additionalInfos: natation et navigation
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 4
@@ -183,7 +182,7 @@ system:
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 5
-      label: 'Nomade : orientation et resist chaud ou froid'
+      label: 'Nomade : orientation et résistance chaud ou froid'
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: buff
@@ -203,14 +202,14 @@ system:
           target: per
           value: '3'
           apply: self
-          additionalInfos: orientation et resist chaud ou froid
+          additionalInfos: orientation et résistance chaud ou froid
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
           subtype: skill
           target: con
           value: '3'
           apply: self
-          additionalInfos: orientation et resist chaud ou froid
+          additionalInfos: orientation et résistance chaud ou froid
       resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
       indice: 6
