@@ -1376,7 +1376,7 @@ items:
               subtype: combat
               target: damMelee
               apply: self
-              value: min(2 + @toutrang[4], 7)d4°
+              value: (2 + @toutrang[4])d4°
               additionalInfos: ''
           resolvers: []
       cost: -1

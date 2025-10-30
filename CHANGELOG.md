@@ -1,3 +1,6 @@
+# 1.2.1
+- Correction de la formule de l'attaque sournoise
+
 # 1.2.0
 - Capacités Attaque sournoise, Dentelles et rapières : Correction formule 
 - Capacité diversité : orthographe
