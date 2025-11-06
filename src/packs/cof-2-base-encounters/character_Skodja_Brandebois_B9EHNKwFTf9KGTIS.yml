@@ -1230,7 +1230,7 @@ items:
               additionalInfos: survie en milieu naturel
           resolvers: []
           actionType: none
-      cost: -1
+      cost: 0
       rank: 1
       frequency: none
       manaCost: -1
@@ -1538,8 +1538,8 @@ items:
         aux tests de PER. De plus, il ajoute désormais sa PER pour calculer ses
         PM (en plus de sa VOL).</p>
       inGame: >-
-        <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
-        apprise.</p>
+        <p>Il s'agit d'un bonus permanent à partir du moment où il est
+        appris.</p>
       source: ''
       origin: Livre des règles p117
       slug: constitution-heroique
@@ -2492,7 +2492,7 @@ items:
         <p style="text-align:justify">Le joueur sélectionne sa cible puis clique
         sur l'action pour lancer le sort et dépenser les PM. Le test d'attaque à
         distance reprend les valeurs de l'arme équipée et va appliquer les DM de
-        l'arme équipée en cas de réussite. De plus, un effet de dommages
+        l'amre équipée en cas de réussite. De plus, un effet de dommages
         périodique sur 1 tour va être appliqué à la cible en cas de succès de
         l'attaque.</p> <p>Les dommages périodiques sont appliqués uniquement en
         mode Combat.</p>
@@ -2585,10 +2585,7 @@ items:
     img: icons/magic/nature/tree-animated-squint.webp
     _id: wjEnj6hgqHQK1ym9
     system:
-      description: >-
-        <p>Le druide peut animer un arbre en le touchant. Il combat à son
-        service pendant [niveau du druide] rounds. Il peut animer un seul arbre
-        à la fois.</p>
+      description: "<p>Le druide peut animer un arbre en le touchant. Il combat à son service pendant [niveau du druide] rounds. Il peut animer un seul arbre à la fois.</p>\n<p>\_</p>"
       inGame: >-
         <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques. Au
         MJ de fournir le token
@@ -2648,7 +2645,7 @@ items:
         situé à une distance maximale de PER × 10 km. À partir du niveau 10 et
         tous les 4 niveaux supplémentaires, le druide peut emmener une personne
         avec lui.</p>
-      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques.</p>
+      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
       source: ''
       origin: Livre des règles p117
       slug: porte-vegetale
@@ -3076,7 +3073,7 @@ items:
         immédiatement ou un peu plus tard dans l’aventure si nécessaire</p>
       inGame: >-
         <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-        l'instant.</p>
+        l'instant</p>
       source: ''
       origin: Livre des règles p115
       slug: les-sept-vies-du-chat
@@ -3281,7 +3278,7 @@ items:
         perception ou de discrétion. Le druide peut lancer ce sort une seule
         fois par jour.</p><p>Si deux druides essaient d’influencer la forêt,
         c’est celui dont le niveau est le plus élevé qui l’emporte</p>
-      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques.</p>
+      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
       source: ''
       origin: Livre des règles p116
       slug: foret-vivante
