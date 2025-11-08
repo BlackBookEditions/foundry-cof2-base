@@ -1,5 +1,8 @@
-# 1.2.1
+# 1.3.0
 - Correction de la formule de l'attaque sournoise
+- Prétirés : Mise à jour des capacités avec les dernières versions
+- Correction sur les rencontres
+- Correction de la capacité Vampirisation
 
 # 1.2.0
 - Capacités Attaque sournoise, Dentelles et rapières : Correction formule 
