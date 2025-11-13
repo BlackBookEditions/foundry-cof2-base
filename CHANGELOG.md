@@ -1,3 +1,6 @@
+# 1.3.1
+- Modification de l'image du peuple demi-orc
+
 # 1.3.0
 - Correction de la formule de l'attaque sournoise
 - Prétirés : Mise à jour des capacités avec les dernières versions
