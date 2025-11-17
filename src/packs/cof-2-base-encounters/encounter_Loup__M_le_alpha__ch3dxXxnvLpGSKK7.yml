@@ -412,7 +412,7 @@ items:
       slug: ''
       inGame: >-
         <p>La première action permet de donner le bonus aux loups de la meute
-        qui sont ciblés. L'effet applique les modificateurs pendant 20 tours et
+        qui sont ciblés. L'effet applique les modificateurs pendant le combat et
         fonctionne uniquement en mode Combat.</p><p>Si un loup perd son bonus
         donné par Chef de meute avant la fin de la durée, il faut le retirer
         manuellement dans l'onglet Effets.</p><p>La deuxième action
@@ -484,8 +484,8 @@ items:
                 formula: ''
                 elementType: ''
                 statuses: []
-                duration: '20'
-                unit: round
+                duration: '1'
+                unit: combat
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}

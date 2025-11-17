@@ -14,8 +14,8 @@ system:
   inGame: >-
     <p>Cette action permet de réaliser une attaque avec les valeurs de l'arme
     équipée (en divisant par 2 les DM infligés).</p> <p>Si l'attaque touche la
-    cible, elle appliquera le statut Ralenti et Affaibli à la cible pour 20
-    round. Le MJ devra supprimer le statut Ralenti à la fin du tour de la cible.
+    cible, elle appliquera le statut Ralenti et Affaibli à la cible pour le
+    combat. Le MJ devra supprimer le statut Ralenti à la fin du tour de la cible.
     L'effet Renversé est géré à la main par le MJ.</p>  <p>Cette action
     fonctionne seulement en Mode Combat.</p>
   source: ''
@@ -72,8 +72,8 @@ system:
             statuses:
               - invalid
               - slowed
-            duration: '20'
-            unit: round
+            duration: '1'
+            unit: combat
             successThreshold: null
       modifiers: []
   allowLinkedCapacity: false
