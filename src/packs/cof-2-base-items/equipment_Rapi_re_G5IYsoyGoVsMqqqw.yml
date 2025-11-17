@@ -55,21 +55,13 @@ system:
         noManaCost: false
       conditions:
         - predicate: isEquipped
-      modifiers:
-        - type: equipment
-          source: Compendium.cof2-base.cof-2-base-items.Item.G5IYsoyGoVsMqqqw
-          subtype: combat
-          target: crit
-          value: '1'
-          apply: self
-          additionalInfos: ''
       resolvers:
         - type: attack
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
             formula: '@atc'
-            crit: ''
+            crit: '19'
             difficulty: '@cible.def'
           dmg:
             formula: 1d6 + @for
@@ -83,6 +75,7 @@ system:
             statuses: []
             duration: '0'
             unit: round
+      modifiers: []
   range:
     unit: ''
 effects: []
