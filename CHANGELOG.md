@@ -1,5 +1,9 @@
-# 1.3.1
-- Modification de l'image du peuple demi-orc
+# 1.4.0
+- Modification de l'image du peuple demi-orc (issue [#55](https://github.com/BlackBookEditions/foundry-cof2-base/issues/55))
+- Correction Rapière et Vivelame pour ajuster le critique (issue [#57](https://github.com/BlackBookEditions/foundry-cof2-base/issues/57))
+- Correction lance cavalerie équipable (issue [#56](https://github.com/BlackBookEditions/foundry-cof2-base/issues/56))
+- Correction de mauvais rang (issue [#53](https://github.com/BlackBookEditions/foundry-cof2-base/issues/53))
+- Modification des effets avec durée Combat
 
 # 1.3.0
 - Correction de la formule de l'attaque sournoise
