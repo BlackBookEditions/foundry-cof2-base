@@ -12,8 +12,7 @@ system:
     de son AGI), toutefois ce bonus ne peut pas dépasser le rang atteint dans la
     voie</p>
   inGame: >-
-    <p>Il s'agit d'un bonus permanent à partir du moment où la capacité est
-    apprise.<p>
+    <p>Il s'agit d'une action à activer lorsque le PJ ne porte pas d'armure.</p>
   source: ''
   origin: Livre des règles p68
   slug: dentelles-et-rapiere
@@ -31,15 +30,15 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.wLEDlG3yHUZ5NRLM
       indice: 0
-      label: ''
+      label: 'Sans armure'
       chatFlavor: ''
       type: buff
       img: icons/svg/d20-highlight.svg
       properties:
         visible: false
         enabled: false
-        activable: false
-        temporary: false
+        activable: true
+        temporary: true
         noManaCost: false
       conditions:
         - predicate: isLearned
