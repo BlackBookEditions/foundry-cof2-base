@@ -13,7 +13,7 @@ system:
     préparation et autant pour faire effet) et les dés peuvent être répartis sur
     plusieurs patients</p>
   inGame: >-
-    <p>L'action permet de lancer les soins totaux. En regardant les jets de
+    <p>L'action permet de lancer un jet de DM. En regardant le résultat de
     chaque dé, il est possible de répartir les soins entre plusieurs cibles.</p>
   source: ''
   origin: Livre des règles p72
@@ -45,10 +45,12 @@ system:
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: heal
+        - type: auto
           bonusDiceAdd: false
           malusDiceAdd: false
           skill:
+            difficulty: '0'
+          dmg:
             formula: '@rangd4°'
           target:
             type: self
