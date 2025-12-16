@@ -4,6 +4,8 @@
 - Correction lance cavalerie équipable (issue [#56](https://github.com/BlackBookEditions/foundry-cof2-base/issues/56))
 - Correction de mauvais rang (issue [#53](https://github.com/BlackBookEditions/foundry-cof2-base/issues/53))
 - Modification des effets avec durée Combat
+- Capacité Dentelles et rapière activable et temporaire (issue [#57](https://github.com/BlackBookEditions/foundry-cof2-base/issues/57))
+- Correction de la résolution de Nature nourricière (issue [#63](https://github.com/BlackBookEditions/foundry-cof2-base/issues/63))
 
 # 1.3.0
 - Correction de la formule de l'attaque sournoise
