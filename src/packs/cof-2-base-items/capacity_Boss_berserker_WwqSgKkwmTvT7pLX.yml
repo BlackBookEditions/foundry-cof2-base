@@ -1,0 +1,128 @@
+folder: GdDjl8zKwxs3mZa3
+name: Boss berserker
+type: capacity
+img: icons/svg/combat.svg
+system:
+  description: "<p>Vous pouvez ajouter plusieurs capacités \"Boss berserker\" pour ajouter de la puissance a des rencontres de bases pour représenter des individus parrticulièrement puissant.</p><p>Pour rappel il est déconseillé de mettre plus de 5 rangs de boss (tout type confondu) à une rencontre et pas plus du NC de base de la rencontre d'origine.</p><p>Le rang Boss Berserker ajoute :\_</p><ul><li><p>+4 en Attaque de contact, à distance et magic</p></li><li><p>+2d4° aux dommages</p></li><li><p>+1 PC</p></li><li><p>+1 en VOL</p></li><li><p>+1 en NC</p></li></ul>"
+  source: ''
+  origin: Bestiaire p194
+  slug: ''
+  inGame: >-
+    <p>Posez simplement cette capacité sur une rencontre, plusieurs fois au
+    besoin.</p><p>Si la capacité que vous ajouter viens après le passage au
+    niveau 10, il vous faudra manuellement diviser par 2 cles bonus d'attaque et
+    de défense</p>
+  subtype: ''
+  actionType: f
+  learned: false
+  rank: 0
+  frequency: none
+  charges: {}
+  properties:
+    spell: false
+  path: null
+  cost: 0
+  manaCost: -1
+  actions:
+    - source: Item.x61qe4HQlXzcp4WQ
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: f
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: ability
+          target: vol
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: melee
+          value: '4'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: ranged
+          value: '4'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: magic
+          value: '4'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: resource
+          target: fp
+          value: '1'
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: damMelee
+          value: 2d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: damRanged
+          value: 2d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.x61qe4HQlXzcp4WQ
+          subtype: combat
+          target: damMagic
+          value: 2d4°
+          apply: self
+          additionalInfos: ''
+        - type: capacity
+          source: Item.WwqSgKkwmTvT7pLX
+          subtype: attribute
+          target: nc
+          value: '1'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+  allowLinkedCapacity: false
+  linkedCapacity: null
+  parentCapacity: null
+effects: []
+sort: 200000
+ownership:
+  default: 0
+  dkGm1qUrVLQeAKiY: 3
+flags: {}
+_stats:
+  compendiumSource: Item.WwqSgKkwmTvT7pLX
+  duplicateSource: Item.x61qe4HQlXzcp4WQ
+  exportSource: null
+  coreVersion: '13.351'
+  systemId: co2
+  systemVersion: '#{VERSION}#'
+  createdTime: 1766667982366
+  modifiedTime: 1766667982366
+  lastModifiedBy: dkGm1qUrVLQeAKiY
+_id: WwqSgKkwmTvT7pLX
+_key: '!items!WwqSgKkwmTvT7pLX'
