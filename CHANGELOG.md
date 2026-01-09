@@ -11,6 +11,7 @@
   - Lance de cavalerie : Équipable non coché
   - Arbalète Lourde : dans la description, elle se recharge sur une Action Limité et non de mouvement.
   - Couteaux de lancer : Dans l’effet « attaque de contact », la formule de compétence doit être @atc et il manque le bonus de force aux dommages
+ - Correction Protéger un allié : Modificateur "Caractéristique" qui doit être "Jet de compétence".  
 
 # 1.3.0
 - Correction de la formule de l'attaque sournoise
