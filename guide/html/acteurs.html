@@ -248,9 +248,6 @@
     Il est possible d’ajouter ou de retirer des <span class="gras">Points de Vigueur, de Chance, de Récupération, de Mana et des Dommages Temporaires</span> en cliquant sur le
     chiffre de gauche. Il est possible d’écrire le chiffre ou d’utiliser la molette de la souris pour augmenter ou diminuer le chiffre facilement.
   </p>
-  <p class="alinea">
-    <span class="gras italique">Attention</span> : le nombre de PV, PC, PM et DR courant n’est pas limité par le nombre maximal afin de pouvoir palier à toutes les situations.
-  </p>
 
   <br />
   <p class="alinea">
@@ -302,7 +299,40 @@
   </p>
   <h4>Cadre Actions</h4>
   <p class="alinea">Le cadre Actions est évolutif en fonction des actions réalisables par le Personnage.</p>
-  <h5>4 icônes de base :</h5>
+
+  <h5>Mini-feuille</h5>
+  <ul>
+    <li>
+      <p>
+        <span class="gras"><i class="fa-solid fa-star"></i> Mini-feuille :</span><span> permet d'ouvrir la mini-feuille du personnage. Elle est détaillée page 18.</span>
+      </p>
+    </li>
+  </ul>
+
+  <h5>Trier la liste des actions</h5>
+  <p class="alinea">Les quatre icônes suivantes permettent de trier la liste des actions avec plusieurs options :</p>
+  <ul>
+    <li>
+      <p>
+        <span class="gras"><i class="fa-solid fa-arrow-down-a-z"></i> Trier par Nom :</span> la liste est triée par ordre alphabétique de A à Z.
+      </p>
+    </li>
+    <li>
+      <p>
+        <span class="gras"><i class="fa-solid fa-ranking-star"></i> Trier par Rang :</span> le trie se fait par ordre croissant des rangs. Les actions venant des équipements sont
+        au début de la liste.
+      </p>
+    </li>
+    <li>
+      <span class="gras"><i class="fa-solid fa-list"></i> Trier par Type :</span> la liste est triée dans l&apos;ordre alphabétique des types d&apos;action (amélioration,
+      consommables, attaque magique...)
+    </li>
+    <li>
+      <span class="gras"><i class="fa-solid fa-shapes"></i> Trier par Temps d&apos;action :</span> les actions sont triées en fonction du temps défini de l&apos;action dans
+      l&apos;ordre suivant : Limité (L) - Attaque (A) - Mouvement (M) - Gratuite (G) - aucun temps défini.
+    </li>
+  </ul>
+  <h5>4 actions de base</h5>
   <ul>
     <li>
       <p>
@@ -434,6 +464,7 @@
     Très utile lors des combats, la mini-feuille permet de libérer de l’espace sur l’écran. Pour le MJ, la mini-feuille permet d’afficher en même temps plusieurs feuilles de
     personnage sans qu’elles ne se chevauchent.
   </p>
+  <p class="alinea">Il est possible de trier différemment la liste des actions sur la feuille de personnage et sur la mini-feuille. Le trie est indépendant entre les deux.</p>
 
   <h3>Onglet Inventaire</h3>
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_feuille_perso_inventaire.webp" /></div>
@@ -531,6 +562,10 @@
         Il faut que la feuille soit déverrouillée, grâce au <i class="fa-solid fa-toggle-off"></i>, pour afficher toutes les capacités des Voies connues par le Personnage. Pour
         apprendre (ou désapprendre une capacité), il faut cliquer sur l’icône <i class="fa-solid fa-check"></i> au bout de la ligne. Elle devient verte quand la capacité est
         apprise, et la capacité n’apparait plus en gris.
+      </p>
+      <p class="alinea">
+        Il faut apprendre ou désapprendre les capacités dans l&apos;ordre sinon un avertissement apparaîtra. Ainsi, il n&apos;est pas possible d&apos;apprendre le rang 3 d&apos;une
+        voie sans avoir appris le rang 1 puis le 2 et il n&apos;est pas possible, non plus, de désapprendre le rang 1 d&apos;une voie si le rang 2 est appris.
       </p>
     </li>
     <li>
@@ -976,7 +1011,8 @@
     <li>
       <p>
         <span class="gras">Le type</span> sous forme d’une icône. <i class="fa-solid fa-sword"></i> pour les attaques de contact, <i class="fa-solid fa-bow-arrow"></i> pour les
-        attaques à distance et <i class="fa-solid fa-wand-magic-sparkles"></i> pour les attaques magiques.
+        attaques à distance et <i class="fa-solid fa-wand-magic-sparkles"></i> pour les attaques magiques. Un clic gauche sur cette icône permet d'ouvrir la feuille de l'attaque de
+        rencontre.
       </p>
     </li>
     <li>

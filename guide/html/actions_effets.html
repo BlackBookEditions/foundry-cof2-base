@@ -271,6 +271,12 @@
     pour les Effets "Activables" ET "Temporaires", par exemple.
   </p>
 
+  <h4>Ne consomme pas de charges</h4>
+  <p class="alinea">
+    Cette case à cocher permet d&apos;empêcher ou non la consommation d&apos;une utilisation de l&apos;objet. Si la case est cochée, lorsque l&apos;action sera activée aucune
+    utilisation de l&apos;objet sera consommée. Si elle est décochée, l&apos;activation de l&apos;action réduira de 1 le nombre d&apos;utilisation de l&apos;objet.
+  </p>
+
   <h4>Sans coût de mana</h4>
   <p class="alinea">
     <span class="gras">Cette propriété apparait seulement si la Capacité possède la propriété "Sort".</span>
@@ -773,6 +779,10 @@
       <li><span class="gras">Dé évolutif du Personnage + Modificateur de Force + Modificateur d’Agilité + 5</span></li>
     </ul>
   </ul>
+  <p class="alinea">
+    Si le champ Dommages est totalement vide, l'icône de Dommages <i class="fa-regular fa-hand-fist"></i> dans le liste des actions ne sera pas visible et aucun message de Dommages
+    ne sera envoyé dans le tchat même si l'attaque réussie.
+  </p>
   <h4>Cible</h4>
   <p class="alinea">Ce paramètre permet de <span class="gras">renseigner le nombre et le type de cible </span>pour cette Résolution.</p>
   <ul>
@@ -921,8 +931,40 @@
   <p class="alinea">Cette Résolution agit seulement sur la quantité de l’Équipement.</p>
   <p class="alinea">Cette Résolution peut être ajoutée à une Capacité ou une Attaque de rencontre mais cela n’aura aucun effet.</p>
   <p class="alinea">
-    <span class="gras italique">Attention</span> : les Équipements de type "Consommable" sont déjà configurés pour diminuer de 1 la quantité lorsqu’ils sont utilisés. Ainsi, en
-    ajoutant une Résolution "Consommable" en plus, vous utiliserez deux fois l’objet à chaque utilisation.
+    <span class="gras italique">Attention</span> : les Équipements de type Consommable ne diminuent pas la quantité de l'équipement automatiquement. Seule cette résolution permet
+    de diminuer de 1 la quantité de l'équipement lorsque l'action est utilisée.
+  </p>
+
+  <h3>Sauvegarde</h3>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\COF2_action_resolution_sauvegarde.webp" /></div>
+  <p class="alinea">La résolution de type Sauvegarde permet de réaliser un test de caractéristique contre une difficulté définie.</p>
+  <p class="alinea">
+    De nombreuses capacités demandent de réaliser &quot;un test de Caractéristique contre une difficulté de X&quot;. La résolution de type Sauvegarde permet de réaliser ce type de
+    test.
+  </p>
+  <h4>Caractéristique</h4>
+  <p class="alinea">La liste déroulante permet de choisir la caractéristique demandée à la cible parmi les 7 :</p>
+  <ul>
+    <li>Agilité</li>
+    <li>Constitution</li>
+    <li>Force</li>
+    <li>Perception</li>
+    <li>Charisme</li>
+    <li>Intelligence</li>
+    <li>Volonté</li>
+  </ul>
+  <p class="alinea">Cette caractéristique sera utilisée par la cible du jet de sauvegarde.</p>
+  <h4>Seuil de difficulté</h4>
+  <p class="alinea">
+    Dans ce champs, notez la difficulté prévue par la capacité. Cela peut être un nombre fixe (difficulté 15, par exemple), une variable (difficulté CHA, par exemple), une formule
+    (difficulté 10 + CHA, par exemple).
+  </p>
+  <p class="alinea">La variable dans le Seuil de difficulté sera le score de la personnage utilisant l&apos;action.</p>
+  <h4>Cible</h4>
+  <p class="alinea">De la même manière que certains autres type de résolution, vous pouvez définir ici le nombre et le type de cible prévue par l&apos;action.</p>
+  <h4>Effets Supplémentaires</h4>
+  <p class="alinea">
+    Avec cette résolution, vous pouvez définir les effets supplémentaires qui seront appliqués si la cible réussie le test de sauvegarde ou si elle échoue.<span></span>
   </p>
 
   <!--effets supplementaires-->
@@ -980,6 +1022,10 @@
       <span class="gras">Sur un échec</span> : grâce à cette option vous pouvez définir des conséquences en cas d’échec de la Résolution. Par exemple, "l’Attaque inflige 2d4° DM à
       la cible. En cas d’échec, la cible est tout de même étourdie."
     </li>
+    <li>
+      <span class="gras">Si succès/échec de sauvegarde</span> : cette option, visible uniquement pour les résolution de type sauvegarde, permet d'appliquer les effets
+      supplémentaire en fonction du résultat de la cible sur le test de sauvegarde.
+    </li>
   </ul>
 
   <h3>Dommages et Soins</h3>
@@ -1006,7 +1052,7 @@
       <span class="gras">Résolution : </span>Les Dommages ou Soins définis dans la Résolution sont <span class="gras">infligés au moment où la Résolution est activée</span> (au
       round de l’Attaquant).
     </li>
-    <li class="para-style-override-6">
+    <li>
       <span class="gras">Effets Supplémentaires :</span> les Dommages et Soins périodiques configurés ici sont
       <span class="gras">appliqués au début de chaque round de la cible qui subit les Effets Supplémentaires</span>
       pendant la durée définie. Un message dans le tchat informe des Dommages subis ou des Soins récupérés au début du Round du protagoniste qui possède les Effets Supplémentaires.
@@ -1035,10 +1081,16 @@
     Il suffit de noter <span class="gras">un nombre entier positif, une variable chiffrée ou une formule de jet de dés</span> dans le champ et choisir entre Round et Seconde.
     Déterminer une durée en Seconde devrait être exceptionnel et réservé aux MJ qui ont installé un ou plusieurs modules pour gérer le temps qui passe.
   </p>
-  <h5>Longue durée</h5>
+  <h5>Combat</h5>
   <p class="alinea">
-    Certaines Actions ont une durée indéfinie comme "<span class="gras">durant tout le combat</span>". Pour ce genre de Durée, inscrivez un grand nombre, comme "20", afin que les
-    Effets Supplémentaires durent bien plus longtemps que la plupart des combats.
+    Il est possible de configurer la durée sur Combat afin que l&apos;effet reste sur la cible jusqu&apos;à la fin de la rencontre active. Cela permet de gérer des Effets sans
+    durée précise, par exemple.
+  </p>
+  <h5>Illimité</h5>
+  <p class="alinea">
+    La durée Illimité a été ajoutée pour configurer des effets pouvant être utilisés hors combat. Grâce à cette option, vous pouvez appliquer un Effet Supplémentaire sur une cible
+    sans être en mode Combat. Il faudra supprimer manuellement l&apos;effet depuis l&apos;onglet Effets grâce à l&apos;icône <i class="fa-solid fa-trash"></i> en mode
+    déverrouillé.<span></span>
   </p>
   <br />
   <ul class="exemple">

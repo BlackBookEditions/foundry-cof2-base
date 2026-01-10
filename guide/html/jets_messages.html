@@ -31,7 +31,7 @@
     automatiquement si le Jet d’Attaque est réussi et ainsi afficher deux Messages dans le tchat directement.
   </p>
   <p class="alinea">Les options tactiques pour les attaques sont disponibles uniquement si cette option est activée.</p>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_icones_dm.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_dommages.webp" /></div>
   <h5>
     @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#afficher-les-boutons-de-dommages]{Afficher les boutons de
     Dommages} pour tout le monde
@@ -125,7 +125,7 @@
 
   <h3>Message du Chat</h3>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_pc.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\COF2_tchat_caracteristique.webp" /></div>
   <p class="alinea">
     Le Message du Chat pour un Jet de Caractéristique est très simple. Il affiche le nom de la caractéristique et le résultat du Jet. Si vous affichez la Difficulté, il affichera
     également la Difficulté et si le test est un échec critique, un échec, une réussite ou une réussite critique.
@@ -148,6 +148,8 @@
     Vérifier le résultat de chaque dé permet de recalculer le résultat mais surtout de rajouter des bonus si vous possédez une Capacité qui dit, par exemple, "chaque fois qu’un dé
     obtient le résultat minimal, considérez-le comme le chiffre maximal du dé".
   </p>
+  <h5>Compétence(s) utilisée(s)</h5>
+  <p class="alinea">Si vous avez sélectionné des bonus de compétence au moment de faire le jet, ils seront listés en bas du message dans le tchat.</p>
 
   <!--JET ATTAQUE-->
   <h2>Jet d'attaque</h2>
@@ -216,6 +218,8 @@
     Ce nombre est déjà modifié par les Actions/Effets que vous avez activées sur votre personnage. Notez simplement dans ce champ le chiffre minimal qu’il faut faire sur le D20
     pour obtenir une réussite critique (aucune restriction ne limite ce chiffre).
   </p>
+  <p class="alinea">Une info-bulle informe des effets qui influence la plage de critique.</p>
+
   <h4>Jet de Dommages</h4>
   <p class="alinea">
     Si vous avez activé les jets combinés Attaque et Dommages dans les
@@ -273,6 +277,7 @@
     <span class="gras">un Type de Jet différent de standard et que vous utilisez une des trois Options Tactiques alors cela sera indiqué juste en dessous</span>
     dans le Message du Chat.
   </p>
+  <p class="alinea">La cible de l'attaque sera affichée ensuite avec son image.</p>
   <p class="alinea">Ensuite le résultat de l’Attaque aura plusieurs affichages différents :</p>
   <ul>
     <li>
@@ -289,6 +294,7 @@
     </li>
   </ul>
   <h4>Difficulté et utilisation de Point de Chance</h4>
+
   <p class="alinea">
     Si vous afficher la difficulté et que votre Jet est un Échec,
     <span class="gras">une image de trèfle apparaîtra à droite de votre résultat dans le Message du Chat si vous disposez d’au moins un Point de Chance.</span>
@@ -308,6 +314,7 @@
     Vérifier le résultat de chaque dé permet de recalculer le résultat mais surtout de rajouter des bonus si vous possédez une Capacité qui dit, par exemple, "chaque fois qu’un dé
     obtient le résultat minimal, considérez-le comme le chiffre maximal du dé".
   </p>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\COF2_tchat_chance.webp" /></div>
 
   <h3>Effets supplémentaires</h3>
   <p class="alinea">
@@ -407,7 +414,7 @@
   </ul>
 
   <h4>Les îcones de Dommages</h4>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_icones_dm.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_options_boutons_dm.webp" /></div>
   <p class="alinea">Les 4 icones permettent d’appliquer les Dommages sur les cibles sélectionnées. Une info-bulle sur chaque icône permet de vérifier son effet.</p>
   <ul>
     <li>
@@ -456,6 +463,39 @@
     obtient le résultat minimal, considérez-le comme le chiffre maximal du dé".
   </p>
 
+  <!--Jet de sauvegarde-->
+  <h3>Jet de sauvegarde</h3>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\COF2_tchat_sauvegarde_initial.webp" /></div>
+  <p class="alinea">
+    Pour les tests de sauvegarde, il n&apos;y a pas de fenêtre qui s&apos;affiche pour le personnage qui réalise l&apos;action. En sélectionnant la cible et en cliquant sur
+    l&apos;action, un message sera directement envoyé dans le tchat.
+  </p>
+  <p class="alinea">Le message du tchat pour les tests de sauvegarde se déroule en deux temps, comme pour les jets opposés des jets d&apos;attaque.</p>
+  <h4>Message initial</h4>
+  <p class="alinea">
+    Au moment de réaliser l&apos;action de sauvegarde, un bouton apparaît sur le message du tchat avec noté &quot;Sauvegarde&quot; et le nom de la caractéristique demandée.
+  </p>
+  <p class="alinea">
+    La difficulté est affichée sur le message initial et visible uniquement des personnes ayant les droits en fonction des options que vous avez configurées pour le système.
+  </p>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\COF2_tchat_sauvegarde_resultat.webp" /></div>
+  <h4>Réaliser le test de sauvegarde</h4>
+  <p class="alinea">
+    Lorsque l&apos;on clique sur le bouton, une fenêtre de jet de caractéristique s&apos;ouvre pour la cible qui peut sélectionner les éventuels bonus à appliquer dans cette
+    situation.
+  </p>
+  <p class="exemple">Voir la page 80 pour les détails du jet de caractéristique.</p>
+  <p class="alinea">Au moment de valider son jet de caractéristique, le message initial est mise à jour.</p>
+  <h4>Message final</h4>
+
+  <p class="alinea">
+    Sur le message final, le résultat du test de sauvegarde s&apos;affiche avant la difficulté et en fonction de la réussite ou de l&apos;échec du test les Effets Supplémentaires
+    sont appliqués ou non sur la cible.
+  </p>
+  <p class="alinea">
+    <span class="gras italique">NOTE DE VERSION :</span> pour le moment, les message n&apos;affiche pas directement si le test est un succès ou un échec.<span></span>
+  </p>
+
   <!--Messages Divers-->
   <h2>Jet de soins et Consommable</h2>
 
@@ -472,6 +512,7 @@
     Il vous <span class="gras">informe du nombre de Points de Vigueur que vous récupérez</span>. Ces PV sont <span class="gras">ajoutés automatiquement</span> à votre personnage.
     Il n’y a donc aucune icône pour appliquer les soins dans le Message du Chat.
   </p>
+  <p class="alinea">Un deuxième message uniquement pour le MJ résumera la récupération effectuée.</p>
 
   <h3>Action de Soin</h3>
   <p class="alinea">
@@ -483,6 +524,7 @@
     Il vous <span class="gras">indique le résultat du Jet de Soin et les Points de Vigueurs sont ajoutés automatiquement</span> à votre Personnage ou à la cible sélectionnée si
     vous avez configuré la Résolution avec une cible différente de "Soi-même".
   </p>
+  <p class="alinea">Un deuxième message uniquement pour le MJ résumera le soin effectué.</p>
 
   <h3>Action Consommable</h3>
 
@@ -499,6 +541,11 @@
   <p class="alinea">
     <span class="gras italique">Attention :</span> si vous configurez un Équipement avec <span class="gras">le Sous-type "consommable" ET avec une Résolution "consommable"</span>,
     à chaque utilisation de l'Équipement le système vous fera consommer deux unités d'un coup mais avec une seule fois l'Effet.
+  </p>
+  <h3>Application d&apos;un effet</h3>
+  <p class="alinea">
+    Lorsque qu&apos;un effet est appliqué sur une cible, un message dans le tchat pour indiquer l&apos;acteur qui a réalisé l&apos;action, le nom de l&apos;effet qui est appliqué
+    et la cible de l&apos;effet.
   </p>
 
   <h2>Description dans le chat</h2>
