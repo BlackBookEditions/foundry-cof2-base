@@ -1,3 +1,7 @@
+# 1.4.1
+- Mise à jour du guide utilisateur pour la version 1.4.0
+- Correction de la formule de l'équipement Feu grégeois
+
 # 1.4.0
 - Modification de l'image du peuple demi-orc (issue [#55](https://github.com/BlackBookEditions/foundry-cof2-base/issues/55))
 - Correction Rapière et Vivelame pour ajuster le critique (issue [#57](https://github.com/BlackBookEditions/foundry-cof2-base/issues/57))
