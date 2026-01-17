@@ -565,6 +565,10 @@
     cliquant sur l’icône
     <i class="fa-solid fa-check"></i> ou en ouvrant les feuilles Capacités et en cochant cette case lorsque la feuille est déverrouillée.
   </p>
+  <p class="alinea">
+    Cette case ne peut être activée ou désactivée que par le MJ, si option Mode Debug est activée et lorsque la feuille de la capacité est déverrouillée afin d'éviter les
+    manipulations non voulues.
+  </p>
 
   <h3>Temps d’Action</h3>
   <p class="alinea">
@@ -774,6 +778,10 @@
     il faudra le déséquiper et le ré-équiper pour que les effets ou les actions de l’objet soit visibles.
   </p>
   <p class="alinea">
+    Cette case ne peut être activée ou désactivée que par le MJ, si option Mode Debug est activée et lorsque la feuille de l'équipement est déverrouillée afin d'éviter les
+    manipulations non voulues.
+  </p>
+  <p class="alinea">
     Toutes les @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets} qui ont pour condition "est
     équipé" s’activent si cette case est activée.
   </p>
@@ -786,6 +794,7 @@
       l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire}.</span
     >
   </p>
+  <p class="alinea">Modifier le sous-type d'un équipement, réinitialise toutes les propriétés et la configuration de l'équipement.</p>
 
   <h4>Armure</h4>
   <h5>Catégorie martiale</h5>
@@ -943,17 +952,16 @@
   <p class="alinea"><span class="gras">Cette option est indicative</span> mais n’apporte pas de limitation dans le système.</p>
 
   <h4>Consommable</h4>
-  <p class="alinea">Cette catégorie d’Équipement permet de créer des Objets qui se consomment après utilisation.</p>
+  <p class="alinea">Cette catégorie d&apos;Équipement permet de créer des Objets qui seront rangés dans la catégorie Consommable.</p>
   <p class="alinea">
-    La catégorie a un effet sur le système. D’un côté,
-    <span class="gras">l’utilisation d’Objets Consommables supprimera une quantité de l’Objet</span> et d’un autre côté, ça permet de ranger tous vos consommables dans le même
-    dossier de l’Inventaire.
+    La catégorie, en elle-même, n&apos;a pas d&apos;effet sur le système ou sur la quantité de l&apos;équipement lorsque vous activer une action venant d&apos;un équipement de type
+    Consommable.
   </p>
   <p class="alinea">
-    <span class="gras italique">Attention</span> : Comme nous le verrons dans le chapitre
-    @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets}, le sous-type Consommable ne doit pas être
-    cumulé avec une Résolution "Consommable".
+    <span class="grasitalique">Attention</span> : Comme nous le verrons dans le chapitre Action/Effet page 69, il faudra utiliser la Résolution Consommable dans une action pour que
+    l&apos;activation de celle-ci diminue la quantité de l&apos;équipement.
   </p>
+
   <h5>Propriétés</h5>
   <ul>
     <li>
@@ -985,6 +993,17 @@
         <li class="puce-noire">
           <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si le consommable sera conservée si la quantité possédée arrive à 0. Si la case est
           cochée, l’Équipement sera supprimé à ce moment là.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span class="gras">Rechargeable :</span> Cette propriété ajoutera une nouvelle section sur l’Équipement. Elle permet de définir le nombre de munitions ou de charges actuelles
+      et maximales pour cette arme. Il n’est pas nécessaire de renseigner la quantité maximale. Mais si la quantité actuelle n’est pas définie ou est à 0, il ne sera pas possible
+      d’utiliser l’Arme. Il est possible d’utiliser la molette pour augmenter ou diminuer les valeurs rapidement.
+      <ul>
+        <li class="puce-noire">
+          <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si l’arme sera conservée si le nombre de charges ou de munitions arrive à 0. Si la case
+          est cochée, l’Équipement sera supprimé de l’Inventaire à ce moment là.
         </li>
       </ul>
     </li>
