@@ -44,8 +44,8 @@ pages:
 
           <h3>Versions</h3>
           <p class="alinea">Le système nécessite la version 13 de Foundry VTT.</p>
-          <p class="alinea">Version du système : 1.1.0</p>
-          <p class="alinea">Version du module : 1.1.0</p>
+          <p class="alinea">Version du système : 1.4.0</p>
+          <p class="alinea">Version du module : 1.4.0</p>
 
           <p class="alinea">
             Vous pouvez télécharger une version pdf de ce guide utilisateur en cliquant sur ce lien :
@@ -286,7 +286,7 @@ pages:
           <p class="alinea">Vous ne voyez pas dans les fenêtres de dialogue du Chat que le test est réussi ou raté et les dommages d’une attaque ne sont pas lancés automatiquement.</p>
 
           <h4>Utiliser la difficulté et l'afficher pour tout le monde</h4>
-          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_difficulte.webp" /></div>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_attaque_resultat.webp" /></div>
           <p class="alinea">Cette option permet d’utiliser la difficulté et de la révéler pour les PJs.</p>
           <p class="alinea">
             Lorsqu’un PJ fera un test d’Attaque en ciblant un ennemi, il verra immédiatement la Défense de la cible et, en lançant son jet, la fenêtre de dialogue du Chat annoncera si
@@ -378,6 +378,13 @@ pages:
             </p>
           </ul>
 
+          <h3>Autoriser les joueurs à modifier les cibles</h3>
+          <p class="alinea">
+            Si la case est cochée, les joueurs pourront utiliser les boutons de Dommages dans les messages du chat pour modifier les Points de Vigueur des cibles (autres personnages,
+            rencontres, créatures...).
+          </p>
+          <p class="alinea">Si la case n'est pas cochée, les joueurs ne pourront pas utiliser les boutons de Dommages pour modifier des cibles.</p>
+
           <h3>Vérification des mains libres</h3>
           <p class="alinea">
             Grâce à l’option <span class="gras">Ne pas vérifier</span>, vous pouvez équiper une arme ou un équipement depuis la Feuille Personnage (pour les PJ, PNJ ou monstres complexes)
@@ -456,11 +463,11 @@ pages:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: xhULmyaSSwpIRhxx
-      modifiedTime: 1760651310377
+      lastModifiedBy: JN9t3byZFWBVxuBb
+      modifiedTime: 1768654163914
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.Xr7GWCaNfcxZlsnY'
   - sort: 200000
     name: Les Acteurs
@@ -724,9 +731,6 @@ pages:
             Il est possible d’ajouter ou de retirer des <span class="gras">Points de Vigueur, de Chance, de Récupération, de Mana et des Dommages Temporaires</span> en cliquant sur le
             chiffre de gauche. Il est possible d’écrire le chiffre ou d’utiliser la molette de la souris pour augmenter ou diminuer le chiffre facilement.
           </p>
-          <p class="alinea">
-            <span class="gras italique">Attention</span> : le nombre de PV, PC, PM et DR courant n’est pas limité par le nombre maximal afin de pouvoir palier à toutes les situations.
-          </p>
 
           <br />
           <p class="alinea">
@@ -778,7 +782,40 @@ pages:
           </p>
           <h4>Cadre Actions</h4>
           <p class="alinea">Le cadre Actions est évolutif en fonction des actions réalisables par le Personnage.</p>
-          <h5>4 icônes de base :</h5>
+
+          <h5>Mini-feuille</h5>
+          <ul>
+            <li>
+              <p>
+                <span class="gras"><i class="fa-solid fa-star"></i> Mini-feuille :</span><span> permet d'ouvrir la mini-feuille du personnage. Elle est détaillée page 18.</span>
+              </p>
+            </li>
+          </ul>
+
+          <h5>Trier la liste des actions</h5>
+          <p class="alinea">Les quatre icônes suivantes permettent de trier la liste des actions avec plusieurs options :</p>
+          <ul>
+            <li>
+              <p>
+                <span class="gras"><i class="fa-solid fa-arrow-down-a-z"></i> Trier par Nom :</span> la liste est triée par ordre alphabétique de A à Z.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="gras"><i class="fa-solid fa-ranking-star"></i> Trier par Rang :</span> le trie se fait par ordre croissant des rangs. Les actions venant des équipements sont
+                au début de la liste.
+              </p>
+            </li>
+            <li>
+              <span class="gras"><i class="fa-solid fa-list"></i> Trier par Type :</span> la liste est triée dans l'ordre alphabétique des types d'action (amélioration,
+              consommables, attaque magique...)
+            </li>
+            <li>
+              <span class="gras"><i class="fa-solid fa-shapes"></i> Trier par Temps d'action :</span> les actions sont triées en fonction du temps défini de l'action dans
+              l'ordre suivant : Limité (L) - Attaque (A) - Mouvement (M) - Gratuite (G) - aucun temps défini.
+            </li>
+          </ul>
+          <h5>4 actions de base</h5>
           <ul>
             <li>
               <p>
@@ -909,6 +946,7 @@ pages:
             Très utile lors des combats, la mini-feuille permet de libérer de l’espace sur l’écran. Pour le MJ, la mini-feuille permet d’afficher en même temps plusieurs feuilles de
             personnage sans qu’elles ne se chevauchent.
           </p>
+          <p class="alinea">Il est possible de trier différemment la liste des actions sur la feuille de personnage et sur la mini-feuille. Le trie est indépendant entre les deux.</p>
 
           <h3>Onglet Inventaire</h3>
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_feuille_perso_inventaire.webp" /></div>
@@ -1006,6 +1044,10 @@ pages:
                 Il faut que la feuille soit déverrouillée, grâce au <i class="fa-solid fa-toggle-off"></i>, pour afficher toutes les capacités des Voies connues par le Personnage. Pour
                 apprendre (ou désapprendre une capacité), il faut cliquer sur l’icône <i class="fa-solid fa-check"></i> au bout de la ligne. Elle devient verte quand la capacité est
                 apprise, et la capacité n’apparait plus en gris.
+              </p>
+              <p class="alinea">
+                Il faut apprendre ou désapprendre les capacités dans l'ordre sinon un avertissement apparaîtra. Ainsi, il n'est pas possible d'apprendre le rang 3 d'une
+                voie sans avoir appris le rang 1 puis le 2 et il n'est pas possible, non plus, de désapprendre le rang 1 d'une voie si le rang 2 est appris.
               </p>
             </li>
             <li>
@@ -1445,7 +1487,8 @@ pages:
             <li>
               <p>
                 <span class="gras">Le type</span> sous forme d’une icône. <i class="fa-solid fa-sword"></i> pour les attaques de contact, <i class="fa-solid fa-bow-arrow"></i> pour les
-                attaques à distance et <i class="fa-solid fa-wand-magic-sparkles"></i> pour les attaques magiques.
+                attaques à distance et <i class="fa-solid fa-wand-magic-sparkles"></i> pour les attaques magiques. Un clic gauche sur cette icône permet d'ouvrir la feuille de l'attaque de
+                rencontre.
               </p>
             </li>
             <li>
@@ -1710,11 +1753,11 @@ pages:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: xhULmyaSSwpIRhxx
-      modifiedTime: 1760651310275
+      lastModifiedBy: JN9t3byZFWBVxuBb
+      modifiedTime: 1768654163866
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.9Bn7F4sxyKm3TX74'
   - sort: 300000
     name: Les Objets
@@ -2282,6 +2325,10 @@ pages:
             cliquant sur l’icône
             <i class="fa-solid fa-check"></i> ou en ouvrant les feuilles Capacités et en cochant cette case lorsque la feuille est déverrouillée.
           </p>
+          <p class="alinea">
+            Cette case ne peut être activée ou désactivée que par le MJ, si option Mode Debug est activée et lorsque la feuille de la capacité est déverrouillée afin d'éviter les
+            manipulations non voulues.
+          </p>
 
           <h3>Temps d’Action</h3>
           <p class="alinea">
@@ -2480,6 +2527,10 @@ pages:
             il faudra le déséquiper et le ré-équiper pour que les effets ou les actions de l’objet soit visibles.
           </p>
           <p class="alinea">
+            Cette case ne peut être activée ou désactivée que par le MJ, si option Mode Debug est activée et lorsque la feuille de l'équipement est déverrouillée afin d'éviter les
+            manipulations non voulues.
+          </p>
+          <p class="alinea">
             Toutes les @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets} qui ont pour condition "est
             équipé" s’activent si cette case est activée.
           </p>
@@ -2490,6 +2541,7 @@ pages:
             <span class="gras">Le sous-type détermine également la catégorie dans laquelle l’équipement sera rangé sur la feuille Personnage dans
               l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire}.</span>
           </p>
+          <p class="alinea">Modifier le sous-type d'un équipement, réinitialise toutes les propriétés et la configuration de l'équipement.</p>
 
           <h4>Armure</h4>
           <h5>Catégorie martiale</h5>
@@ -2645,17 +2697,16 @@ pages:
           <p class="alinea"><span class="gras">Cette option est indicative</span> mais n’apporte pas de limitation dans le système.</p>
 
           <h4>Consommable</h4>
-          <p class="alinea">Cette catégorie d’Équipement permet de créer des Objets qui se consomment après utilisation.</p>
+          <p class="alinea">Cette catégorie d'Équipement permet de créer des Objets qui seront rangés dans la catégorie Consommable.</p>
           <p class="alinea">
-            La catégorie a un effet sur le système. D’un côté,
-            <span class="gras">l’utilisation d’Objets Consommables supprimera une quantité de l’Objet</span> et d’un autre côté, ça permet de ranger tous vos consommables dans le même
-            dossier de l’Inventaire.
+            La catégorie, en elle-même, n'a pas d'effet sur le système ou sur la quantité de l'équipement lorsque vous activer une action venant d'un équipement de type
+            Consommable.
           </p>
           <p class="alinea">
-            <span class="gras italique">Attention</span> : Comme nous le verrons dans le chapitre
-            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets}, le sous-type Consommable ne doit pas être
-            cumulé avec une Résolution "Consommable".
+            <span class="grasitalique">Attention</span> : Comme nous le verrons dans le chapitre Action/Effet page 69, il faudra utiliser la Résolution Consommable dans une action pour que
+            l'activation de celle-ci diminue la quantité de l'équipement.
           </p>
+
           <h5>Propriétés</h5>
           <ul>
             <li>
@@ -2687,6 +2738,17 @@ pages:
                 <li class="puce-noire">
                   <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si le consommable sera conservée si la quantité possédée arrive à 0. Si la case est
                   cochée, l’Équipement sera supprimé à ce moment là.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="gras">Rechargeable :</span> Cette propriété ajoutera une nouvelle section sur l’Équipement. Elle permet de définir le nombre de munitions ou de charges actuelles
+              et maximales pour cette arme. Il n’est pas nécessaire de renseigner la quantité maximale. Mais si la quantité actuelle n’est pas définie ou est à 0, il ne sera pas possible
+              d’utiliser l’Arme. Il est possible d’utiliser la molette pour augmenter ou diminuer les valeurs rapidement.
+              <ul>
+                <li class="puce-noire">
+                  <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si l’arme sera conservée si le nombre de charges ou de munitions arrive à 0. Si la case
+                  est cochée, l’Équipement sera supprimé de l’Inventaire à ce moment là.
                 </li>
               </ul>
             </li>
@@ -2805,11 +2867,11 @@ pages:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: xhULmyaSSwpIRhxx
-      modifiedTime: 1760651310428
+      lastModifiedBy: JN9t3byZFWBVxuBb
+      modifiedTime: 1768654164033
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.e46m0KDmGFAP5USg'
   - sort: 400000
     name: Actions et Effets
@@ -3091,6 +3153,12 @@ pages:
             <span class="gras">prenez votre temps et analysez bien l’action ou l’effet que vous voulez déclencher. </span>Au bout de quelques Actions/Effets, ça deviendra automatique mais
             <span class="gras">au début la logique est assez délicate. </span>Il est assez courant, lors des premières créations d’Actions/Effets, de ne cocher que la case "Temporaire"
             pour les Effets "Activables" ET "Temporaires", par exemple.
+          </p>
+
+          <h4>Ne consomme pas de charges</h4>
+          <p class="alinea">
+            Cette case à cocher permet d'empêcher ou non la consommation d'une utilisation de l'objet. Si la case est cochée, lorsque l'action sera activée aucune
+            utilisation de l'objet sera consommée. Si elle est décochée, l'activation de l'action réduira de 1 le nombre d'utilisation de l'objet.
           </p>
 
           <h4>Sans coût de mana</h4>
@@ -3581,6 +3649,10 @@ pages:
               <li><span class="gras">Dé évolutif du Personnage + Modificateur de Force + Modificateur d’Agilité + 5</span></li>
             </ul>
           </ul>
+          <p class="alinea">
+            Si le champ Dommages est totalement vide, l'icône de Dommages <i class="fa-regular fa-hand-fist"></i> dans le liste des actions ne sera pas visible et aucun message de Dommages
+            ne sera envoyé dans le tchat même si l'attaque réussie.
+          </p>
           <h4>Cible</h4>
           <p class="alinea">Ce paramètre permet de <span class="gras">renseigner le nombre et le type de cible </span>pour cette Résolution.</p>
           <ul>
@@ -3729,8 +3801,40 @@ pages:
           <p class="alinea">Cette Résolution agit seulement sur la quantité de l’Équipement.</p>
           <p class="alinea">Cette Résolution peut être ajoutée à une Capacité ou une Attaque de rencontre mais cela n’aura aucun effet.</p>
           <p class="alinea">
-            <span class="gras italique">Attention</span> : les Équipements de type "Consommable" sont déjà configurés pour diminuer de 1 la quantité lorsqu’ils sont utilisés. Ainsi, en
-            ajoutant une Résolution "Consommable" en plus, vous utiliserez deux fois l’objet à chaque utilisation.
+            <span class="gras italique">Attention</span> : les Équipements de type Consommable ne diminuent pas la quantité de l'équipement automatiquement. Seule cette résolution permet
+            de diminuer de 1 la quantité de l'équipement lorsque l'action est utilisée.
+          </p>
+
+          <h3>Sauvegarde</h3>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_sauvegarde.webp" /></div>
+          <p class="alinea">La résolution de type Sauvegarde permet de réaliser un test de caractéristique contre une difficulté définie.</p>
+          <p class="alinea">
+            De nombreuses capacités demandent de réaliser "un test de Caractéristique contre une difficulté de X". La résolution de type Sauvegarde permet de réaliser ce type de
+            test.
+          </p>
+          <h4>Caractéristique</h4>
+          <p class="alinea">La liste déroulante permet de choisir la caractéristique demandée à la cible parmi les 7 :</p>
+          <ul>
+            <li>Agilité</li>
+            <li>Constitution</li>
+            <li>Force</li>
+            <li>Perception</li>
+            <li>Charisme</li>
+            <li>Intelligence</li>
+            <li>Volonté</li>
+          </ul>
+          <p class="alinea">Cette caractéristique sera utilisée par la cible du jet de sauvegarde.</p>
+          <h4>Seuil de difficulté</h4>
+          <p class="alinea">
+            Dans ce champs, notez la difficulté prévue par la capacité. Cela peut être un nombre fixe (difficulté 15, par exemple), une variable (difficulté CHA, par exemple), une formule
+            (difficulté 10 + CHA, par exemple).
+          </p>
+          <p class="alinea">La variable dans le Seuil de difficulté sera le score de la personnage utilisant l'action.</p>
+          <h4>Cible</h4>
+          <p class="alinea">De la même manière que certains autres type de résolution, vous pouvez définir ici le nombre et le type de cible prévue par l'action.</p>
+          <h4>Effets Supplémentaires</h4>
+          <p class="alinea">
+            Avec cette résolution, vous pouvez définir les effets supplémentaires qui seront appliqués si la cible réussie le test de sauvegarde ou si elle échoue.<span></span>
           </p>
 
           
@@ -3786,6 +3890,10 @@ pages:
               <span class="gras">Sur un échec</span> : grâce à cette option vous pouvez définir des conséquences en cas d’échec de la Résolution. Par exemple, "l’Attaque inflige 2d4° DM à
               la cible. En cas d’échec, la cible est tout de même étourdie."
             </li>
+            <li>
+              <span class="gras">Si succès/échec de sauvegarde</span> : cette option, visible uniquement pour les résolution de type sauvegarde, permet d'appliquer les effets
+              supplémentaire en fonction du résultat de la cible sur le test de sauvegarde.
+            </li>
           </ul>
 
           <h3>Dommages et Soins</h3>
@@ -3812,7 +3920,7 @@ pages:
               <span class="gras">Résolution : </span>Les Dommages ou Soins définis dans la Résolution sont <span class="gras">infligés au moment où la Résolution est activée</span> (au
               round de l’Attaquant).
             </li>
-            <li class="para-style-override-6">
+            <li>
               <span class="gras">Effets Supplémentaires :</span> les Dommages et Soins périodiques configurés ici sont
               <span class="gras">appliqués au début de chaque round de la cible qui subit les Effets Supplémentaires</span>
               pendant la durée définie. Un message dans le tchat informe des Dommages subis ou des Soins récupérés au début du Round du protagoniste qui possède les Effets Supplémentaires.
@@ -3841,10 +3949,16 @@ pages:
             Il suffit de noter <span class="gras">un nombre entier positif, une variable chiffrée ou une formule de jet de dés</span> dans le champ et choisir entre Round et Seconde.
             Déterminer une durée en Seconde devrait être exceptionnel et réservé aux MJ qui ont installé un ou plusieurs modules pour gérer le temps qui passe.
           </p>
-          <h5>Longue durée</h5>
+          <h5>Combat</h5>
           <p class="alinea">
-            Certaines Actions ont une durée indéfinie comme "<span class="gras">durant tout le combat</span>". Pour ce genre de Durée, inscrivez un grand nombre, comme "20", afin que les
-            Effets Supplémentaires durent bien plus longtemps que la plupart des combats.
+            Il est possible de configurer la durée sur Combat afin que l'effet reste sur la cible jusqu'à la fin de la rencontre active. Cela permet de gérer des Effets sans
+            durée précise, par exemple.
+          </p>
+          <h5>Illimité</h5>
+          <p class="alinea">
+            La durée Illimité a été ajoutée pour configurer des effets pouvant être utilisés hors combat. Grâce à cette option, vous pouvez appliquer un Effet Supplémentaire sur une cible
+            sans être en mode Combat. Il faudra supprimer manuellement l'effet depuis l'onglet Effets grâce à l'icône <i class="fa-solid fa-trash"></i> en mode
+            déverrouillé.<span></span>
           </p>
           <br />
           <ul class="exemple">
@@ -4183,7 +4297,7 @@ pages:
           <br />
 
           
-          <h2>conclusion</h2>
+          <h2>Conclusion</h2>
           <p class="alinea">
             Voici les quelques exemples de création d’Actions/Effets. Vous remarquerez très vite que des modèles d’Actions/Effets se répètent et au bout de quelques créations, le système
             sera maîtrisé.
@@ -4240,11 +4354,11 @@ pages:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: xhULmyaSSwpIRhxx
-      modifiedTime: 1760651310328
+      lastModifiedBy: JN9t3byZFWBVxuBb
+      modifiedTime: 1768654163885
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.a0cY3q3XV4o8Y13V'
   - sort: 500000
     name: Les Jets et les Messages
@@ -4291,7 +4405,7 @@ pages:
             automatiquement si le Jet d’Attaque est réussi et ainsi afficher deux Messages dans le tchat directement.
           </p>
           <p class="alinea">Les options tactiques pour les attaques sont disponibles uniquement si cette option est activée.</p>
-          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_icones_dm.webp" /></div>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_dommages.webp" /></div>
           <h5>
             @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#afficher-les-boutons-de-dommages]{Afficher les boutons de
             Dommages} pour tout le monde
@@ -4381,7 +4495,7 @@ pages:
 
           <h3>Message du Chat</h3>
 
-          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_pc.webp" /></div>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_caracteristique.webp" /></div>
           <p class="alinea">
             Le Message du Chat pour un Jet de Caractéristique est très simple. Il affiche le nom de la caractéristique et le résultat du Jet. Si vous affichez la Difficulté, il affichera
             également la Difficulté et si le test est un échec critique, un échec, une réussite ou une réussite critique.
@@ -4404,6 +4518,8 @@ pages:
             Vérifier le résultat de chaque dé permet de recalculer le résultat mais surtout de rajouter des bonus si vous possédez une Capacité qui dit, par exemple, "chaque fois qu’un dé
             obtient le résultat minimal, considérez-le comme le chiffre maximal du dé".
           </p>
+          <h5>Compétence(s) utilisée(s)</h5>
+          <p class="alinea">Si vous avez sélectionné des bonus de compétence au moment de faire le jet, ils seront listés en bas du message dans le tchat.</p>
 
           
           <h2>Jet d'attaque</h2>
@@ -4472,6 +4588,8 @@ pages:
             Ce nombre est déjà modifié par les Actions/Effets que vous avez activées sur votre personnage. Notez simplement dans ce champ le chiffre minimal qu’il faut faire sur le D20
             pour obtenir une réussite critique (aucune restriction ne limite ce chiffre).
           </p>
+          <p class="alinea">Une info-bulle informe des effets qui influence la plage de critique.</p>
+
           <h4>Jet de Dommages</h4>
           <p class="alinea">
             Si vous avez activé les jets combinés Attaque et Dommages dans les
@@ -4529,6 +4647,7 @@ pages:
             <span class="gras">un Type de Jet différent de standard et que vous utilisez une des trois Options Tactiques alors cela sera indiqué juste en dessous</span>
             dans le Message du Chat.
           </p>
+          <p class="alinea">La cible de l'attaque sera affichée ensuite avec son image.</p>
           <p class="alinea">Ensuite le résultat de l’Attaque aura plusieurs affichages différents :</p>
           <ul>
             <li>
@@ -4545,6 +4664,7 @@ pages:
             </li>
           </ul>
           <h4>Difficulté et utilisation de Point de Chance</h4>
+
           <p class="alinea">
             Si vous afficher la difficulté et que votre Jet est un Échec,
             <span class="gras">une image de trèfle apparaîtra à droite de votre résultat dans le Message du Chat si vous disposez d’au moins un Point de Chance.</span>
@@ -4564,6 +4684,7 @@ pages:
             Vérifier le résultat de chaque dé permet de recalculer le résultat mais surtout de rajouter des bonus si vous possédez une Capacité qui dit, par exemple, "chaque fois qu’un dé
             obtient le résultat minimal, considérez-le comme le chiffre maximal du dé".
           </p>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof_tchat_chance.webp" /></div>
 
           <h3>Effets supplémentaires</h3>
           <p class="alinea">
@@ -4659,7 +4780,7 @@ pages:
           </ul>
 
           <h4>Les îcones de Dommages</h4>
-          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_icones_dm.webp" /></div>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_options_boutons_dm.webp" /></div>
           <p class="alinea">Les 4 icones permettent d’appliquer les Dommages sur les cibles sélectionnées. Une info-bulle sur chaque icône permet de vérifier son effet.</p>
           <ul>
             <li>
@@ -4708,6 +4829,39 @@ pages:
           </p>
 
           
+          <h3>Jet de sauvegarde</h3>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_sauvegarde_initial.webp" /></div>
+          <p class="alinea">
+            Pour les tests de sauvegarde, il n'y a pas de fenêtre qui s'affiche pour le personnage qui réalise l'action. En sélectionnant la cible et en cliquant sur
+            l'action, un message sera directement envoyé dans le tchat.
+          </p>
+          <p class="alinea">Le message du tchat pour les tests de sauvegarde se déroule en deux temps, comme pour les jets opposés des jets d'attaque.</p>
+          <h4>Message initial</h4>
+          <p class="alinea">
+            Au moment de réaliser l'action de sauvegarde, un bouton apparaît sur le message du tchat avec noté "Sauvegarde" et le nom de la caractéristique demandée.
+          </p>
+          <p class="alinea">
+            La difficulté est affichée sur le message initial et visible uniquement des personnes ayant les droits en fonction des options que vous avez configurées pour le système.
+          </p>
+          <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_sauvegarde_resultat.webp" /></div>
+          <h4>Réaliser le test de sauvegarde</h4>
+          <p class="alinea">
+            Lorsque l'on clique sur le bouton, une fenêtre de jet de caractéristique s'ouvre pour la cible qui peut sélectionner les éventuels bonus à appliquer dans cette
+            situation.
+          </p>
+          <p class="exemple">Voir la page 80 pour les détails du jet de caractéristique.</p>
+          <p class="alinea">Au moment de valider son jet de caractéristique, le message initial est mise à jour.</p>
+          <h4>Message final</h4>
+
+          <p class="alinea">
+            Sur le message final, le résultat du test de sauvegarde s'affiche avant la difficulté et en fonction de la réussite ou de l'échec du test les Effets Supplémentaires
+            sont appliqués ou non sur la cible.
+          </p>
+          <p class="alinea">
+            <span class="gras italique">NOTE DE VERSION :</span> pour le moment, les message n'affiche pas directement si le test est un succès ou un échec.<span></span>
+          </p>
+
+          
           <h2>Jet de soins et Consommable</h2>
 
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_recuperations.webp" style="width:150px" /></div>
@@ -4722,6 +4876,7 @@ pages:
             Il vous <span class="gras">informe du nombre de Points de Vigueur que vous récupérez</span>. Ces PV sont <span class="gras">ajoutés automatiquement</span> à votre personnage.
             Il n’y a donc aucune icône pour appliquer les soins dans le Message du Chat.
           </p>
+          <p class="alinea">Un deuxième message uniquement pour le MJ résumera la récupération effectuée.</p>
 
           <h3>Action de Soin</h3>
           <p class="alinea">
@@ -4733,6 +4888,7 @@ pages:
             Il vous <span class="gras">indique le résultat du Jet de Soin et les Points de Vigueurs sont ajoutés automatiquement</span> à votre Personnage ou à la cible sélectionnée si
             vous avez configuré la Résolution avec une cible différente de "Soi-même".
           </p>
+          <p class="alinea">Un deuxième message uniquement pour le MJ résumera le soin effectué.</p>
 
           <h3>Action Consommable</h3>
 
@@ -4747,6 +4903,11 @@ pages:
           <p class="alinea">
             <span class="gras italique">Attention :</span> si vous configurez un Équipement avec <span class="gras">le Sous-type "consommable" ET avec une Résolution "consommable"</span>,
             à chaque utilisation de l'Équipement le système vous fera consommer deux unités d'un coup mais avec une seule fois l'Effet.
+          </p>
+          <h3>Application d'un effet</h3>
+          <p class="alinea">
+            Lorsque qu'un effet est appliqué sur une cible, un message dans le tchat pour indiquer l'acteur qui a réalisé l'action, le nom de l'effet qui est appliqué
+            et la cible de l'effet.
           </p>
 
           <h2>Description dans le chat</h2>
@@ -4843,11 +5004,11 @@ pages:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: 13.344.0
-      lastModifiedBy: xhULmyaSSwpIRhxx
-      modifiedTime: 1760651310393
+      lastModifiedBy: JN9t3byZFWBVxuBb
+      modifiedTime: 1768654164020
     _key: '!journal.pages!Cj2L7dqSXItRSNXi.7BoZ8Un0GrShNPtF'
 folder: null
 categories: []
