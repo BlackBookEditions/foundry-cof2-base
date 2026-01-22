@@ -10,8 +10,10 @@ system:
     adversaires au contact et oblige ceux‑ci à réussir un test de FOR difficulté
     10 pour ne pas être renversés.</p>
   inGame: >-
-    <p>L'action permet de réaliser l'attaque automatique sur les cibles.</p>
-    <p>Il faudra une récupération Rapide pour utiliser à nouveau cette
+    <p>L'action permet de réaliser l'attaque automatique sur les
+    cibles.</p><p>La deuxième action permet de réaliser le test de sauvegarde et
+    d'appliquer le statut Renversé sur les cibles qui ont raté leur
+    test.</p><p>Il faudra une récupération Rapide pour utiliser à nouveau cette
     capacités.</p>
   source: ''
   origin: Livre des règles p119
@@ -32,22 +34,20 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 3d4°+ @for
           target:
@@ -57,10 +57,51 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.41M0ByNn1h70daBt
+      indice: 1
+      label: Résister au renversement
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: '10'
+          target:
+            type: multiple
+            number: 8
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            duration: '0'
+            unit: combat
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 4
@@ -77,11 +118,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1748262520071
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769036054225
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!41M0ByNn1h70daBt'

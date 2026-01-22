@@ -11,8 +11,8 @@ system:
     sans risque d’être retrouvé ou rattrapé. Si le terrain est découvert
     (désert, plaine), la difficulté passe à 15.</p>
   inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant.</p>
+    <p>Les deux actions permettent de réaliser un test de sauvegarde en fonction
+    du milieu.</p>
   source: ''
   origin: Livre des règles p73
   slug: repli
@@ -27,7 +27,77 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.3VnFeM1u4rBdbQ2M
+      indice: 0
+      label: En milieu naturel
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '10'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.3VnFeM1u4rBdbQ2M
+      indice: 1
+      label: Milieu découvert
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '15'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 5
 effects: []
@@ -42,11 +112,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747508369526
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769030236840
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!3VnFeM1u4rBdbQ2M'

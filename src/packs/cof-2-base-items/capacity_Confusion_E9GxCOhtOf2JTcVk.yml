@@ -16,10 +16,10 @@ system:
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
     sort qui va faire le test d'attaque magique et appliquer l'effet temporaire
-    de confusion.</p>
-
-    <p><em>Note : Le jet de dé de 6 n'est pas automatisé lui. Pour utiliser la
-    "concentration" faites SHIFT+CLIC sur l'action</em></p>
+    de confusion.</p><p><em>Note : Le jet de dé de 6 n'est pas automatisé lui.
+    Pour utiliser la "concentration" faites SHIFT+CLIC sur
+    l'action</em></p><p>La deuxième action permet de réaliser le test de
+    sauvegarde en ciblant l'acteur confu.</p>
   source: ''
   origin: Livre des règles p94
   slug: confusion
@@ -39,14 +39,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
@@ -69,11 +71,44 @@ system:
             formulaType: damage
             formula: ''
             elementType: ''
-            statuses:
-              - confused
+            statuses: []
             duration: '@cha'
             unit: round
-            successThreshold: null
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.E9GxCOhtOf2JTcVk
+      indice: 1
+      label: Résister au sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: vol
+          saveDifficulty: 12+@cha
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 3
@@ -89,11 +124,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747929174269
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769033057671
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!E9GxCOhtOf2JTcVk'

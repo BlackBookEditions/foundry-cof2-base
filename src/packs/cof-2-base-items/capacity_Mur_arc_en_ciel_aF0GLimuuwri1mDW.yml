@@ -17,7 +17,12 @@ system:
     comme s’il n’existait pas. Le mur stoppe toutes les attaques magiques et les
     projectiles lancés à travers disparaissent simplement (une arme magique
     réapparaît à la fin du sort à l’endroit où elle a disparu).</p>
-  inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques.</p>
+  inGame: >-
+    <p>L'action "Activer le sort" permet de dépenser les PM et de faire
+    apparaître les deux actions.</p><p>L'une d'elle permet de jeter les DM
+    automatiquement pour les acteurs de faible NC qui veulent franchir le mur et
+    l'autre permet de réaliser un test de sauvegarde sur les cibles de haut NC
+    et de leur infliger les DM s'ils rate le test.</p>
   source: ''
   origin: Livre des règles p155
   slug: mur-arcenciel
@@ -34,7 +39,101 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.aF0GLimuuwri1mDW
+      indice: 0
+      label: Si NC >= NIV
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '2'
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 10+@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 2d4°
+            elementType: ''
+            statuses: []
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.aF0GLimuuwri1mDW
+      indice: 1
+      label: Si NC < NIV
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '2'
+      resolvers:
+        - type: auto
+          dmg:
+            formula: 2d4°
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.aF0GLimuuwri1mDW
+      indice: 2
+      label: Activer le sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -47,11 +146,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746822728607
-  modifiedTime: 1749017297453
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769044759362
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!aF0GLimuuwri1mDW'

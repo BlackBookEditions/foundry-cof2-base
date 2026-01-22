@@ -18,10 +18,10 @@ system:
     sort qui va faire le test d'attaque magique et appliquer un effet temporaire
     qui ne fait rien mais indique que la cible est sous un effet. Celui-ci ne
     fonctionne que si le joueur est en mode combat, sinon le sort se lance mais
-    la cible n'est pas marquée.</p>
-
-    <p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-    l'action</em></p>
+    la cible n'est pas marquée.</p><p><em>Note : Pour utiliser la
+    "concentration" faites SHIFT+CLIC sur l'action</em></p><p>La deuxième action
+    permet de réaliser le test de sauvegarde pour résister au sort en ciblant
+    l'acteur.</p>
   source: ''
   origin: Livre des règles p94
   slug: amitie
@@ -41,14 +41,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
@@ -74,7 +76,41 @@ system:
             statuses: []
             duration: '100'
             unit: round
-            successThreshold: null
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.k8OtHVBmn4NmxO5P
+      indice: 1
+      label: Résister au sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: vol
+          saveDifficulty: 10+@cha
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 4
@@ -90,11 +126,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747929256154
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769033154296
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!k8OtHVBmn4NmxO5P'

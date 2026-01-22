@@ -12,8 +12,8 @@ system:
     parmi : <strong>bénéfique, incertain, risqué ou préjudiciable</strong>. Le
     MJ essaie de donner la réponse la plus utile possible au scénario.</p>
   inGame: >-
-    <p>L'action permet de réaliser le test de CHA difficulté 10 et de dépenser
-    les PM.</p>
+    <p>L'action permet de réaliser le test de sauvegarde de CHA difficulté 10 et
+    de dépenser les PM.</p>
   source: ''
   origin: Livre des règles p125
   slug: augure
@@ -33,26 +33,22 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: attack
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            formula: '@cha'
-            crit: ''
-            difficulty: '10'
-          dmg:
-            formula: '0'
+        - type: save
+          saveAbility: cha
+          saveDifficulty: '10'
           target:
             type: self
             number: 0
@@ -60,10 +56,13 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 2
@@ -79,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1748265317687
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769036325593
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!7cufA1lXr2cBGmQ6'

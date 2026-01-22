@@ -15,9 +15,7 @@ system:
     S’il devient inconscient, la rage cesse. Le personnage peut entrer en rage
     une fois de plus par jour pour chaque capacité de rang 4 qu’il atteint dans
     une voie de barbare</p>
-  inGame: >-
-    <p>Les effets bonus sont pris en charge via une action
-    activable/désactivable à activer en entrant en rage.</p>
+  inGame: "<p>Les effets bonus sont pris en charge via une action activable/désactivable à activer en entrant en rage.\_</p><p>Tant que la première action est activer, la deuxième action apparaît pour pouvoir effectuer le test de sauvegarde afin de sortir de la rage prématurément.</p>"
   source: ''
   origin: Livre des règles p82
   slug: rage-du-berserk
@@ -37,13 +35,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
         activable: true
-        enabled: false
         temporary: true
+        noChargesUsed: true
         visible: false
+        enabled: false
+        noManaCost: false
       conditions:
         - predicate: isLearned
       modifiers:
@@ -52,17 +53,60 @@ system:
           subtype: combat
           target: def
           value: '-2'
+          apply: self
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
           subtype: combat
           target: damMelee
           value: 1d4°
+          apply: self
+          additionalInfos: ''
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
           subtype: bonusDice
           target: vol
           value: '0'
+          apply: self
+          additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.2NxeZeLR9ljAdFDh
+      indice: 1
+      label: Sortir de rage
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      resolvers:
+        - type: save
+          saveAbility: vol
+          saveDifficulty: '15'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 3
   frequency: daily
@@ -78,11 +122,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747585167834
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769032587874
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!2NxeZeLR9ljAdFDh'

@@ -16,11 +16,12 @@ system:
   inGame: >-
     <p>Cet effet pourrait être ajouté aux armes directement mais cette capacité
     propose un bouton d'Attaque qui va récupérer les caractéristiques de l'arme
-    équipée.</p> <p>Lorsque le PJ attaque avec une de ses armes, il utilisera
+    équipée.</p><p>Lorsque le PJ attaque avec une de ses armes, il utilisera
     cette action d'attaque pour appliquer les DM périodiques en cas de réussite.
     Cet effet ne fonctionne qu'en mode combat pour comptabiliser les
-    rounds.</p>  <p>Une autre Action applique le bonus permanent en
-    intimidation.</p>
+    rounds.</p><p>Une autre Action applique le bonus permanent en
+    intimidation.</p><p>La troisième action permet de réaliser le test de
+    sauvegarde pour stopper l'hémorragie.</p>
   source: ''
   origin: Livre des règles p150
   slug: armes-dentelees
@@ -42,13 +43,15 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -72,23 +75,23 @@ system:
             formulaType: damage
             formula: '@rang[0,0,0,1,1,1,1,2]'
             elementType: ''
-            statuses:
-              - bleeding
-            duration: '1'
+            statuses: []
             unit: combat
-            successThreshold: null
+            duration: '0'
       modifiers: []
     - source: Item.YwGn58bVZooWzRw3
       indice: 1
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: false
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -97,17 +100,52 @@ system:
           source: Item.YwGn58bVZooWzRw3
           subtype: skill
           target: for
-          apply: self
           value: '5'
+          apply: self
           additionalInfos: Intimidation
         - type: capacity
           source: Item.YwGn58bVZooWzRw3
           subtype: skill
           target: cha
-          apply: self
           value: '5'
+          apply: self
           additionalInfos: Intimidation
       resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.YwGn58bVZooWzRw3
+      indice: 2
+      label: Stopper l'hémorragie (L)
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '10'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -120,11 +158,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746558775691
-  modifiedTime: 1748984488263
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769043656377
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!YwGn58bVZooWzRw3'

@@ -12,15 +12,14 @@ system:
     Le sort a une durée CHA minutes et le personnage peut déplacer la tornade de
     10 m par action de mouvement.</p>
   inGame: >-
-    <p>Le personnage dépense les PM du sort manuellement.</p> <p>Le joueur
+    <p>Le personnage dépense les PM du sort manuellement.</p><p>Le joueur
     sélectionne ses cibles puis clique sur l'action pour lancer le sort qui va
-    automatiquement lancer les DM qui seront appliqués sur les cibles  présentes
-    dans la zone.</p> <p>Au MJ de proposer le test pour savoir si elles  sont
-    renversées ou non.</p> <p>L'action ne propose pas de DM périodiques car  les
-    cibles peuvent rentrer et sortir de la zone du cyclone.</p>
-
-    <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-    l'action</p>
+    automatiquement lancer les DM qui seront appliqués sur les cibles présentes
+    dans la zone.</p><p>La deuxième action permet de réaliser le test de
+    sauvegarde et d'appliquer en cas d'échec le statut Renversé sur la
+    cible.</p><p>L'action ne propose pas de DM périodiques car les cibles
+    peuvent rentrer et sortir de la zone du cyclone.</p><p>Note : Pour utiliser
+    la "concentration" faites SHIFT+CLIC sur l'action</p>
   source: ''
   origin: Livre des règles p169
   slug: cyclone
@@ -42,22 +41,20 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: true
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 2d4°
           target:
@@ -67,10 +64,51 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.SSPuRumQoPVWWxGM
+      indice: 1
+      label: Éviter le renversement
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            unit: unlimited
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -84,11 +122,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746965613708
-  modifiedTime: 1749100974217
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769048248187
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!SSPuRumQoPVWWxGM'

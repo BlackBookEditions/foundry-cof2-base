@@ -14,7 +14,10 @@ system:
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer la
     capacité qui va faire le test d'attaque à distance et appliquer les
-    dommages. Le test de FOR est à gérer par le MJ</p>
+    dommages. </p><p>La deuxième action permet de réaliser le test de sauvegarde
+    pour résister au renversement. S'il est raté, le statut Renversé est
+    appliqué sur la cible. Si elle se relève, il faudra supprimer l'Effets
+    Personnalisé manuellement.</p>
   source: ''
   origin: Livre des règles p152
   slug: lancer-de-bouclier
@@ -36,13 +39,15 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -63,10 +68,48 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.92oG2bR9KKPNjRWR
+      indice: 1
+      label: Résister eu renversement
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: 10+@for
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -80,11 +123,11 @@ flags: {}
 _stats:
   compendiumSource: Item.92oG2bR9KKPNjRWR
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746558775691
-  modifiedTime: 1748986936407
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769044046794
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!92oG2bR9KKPNjRWR'

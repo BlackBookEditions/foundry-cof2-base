@@ -14,7 +14,9 @@ system:
     plusieurs patients</p>
   inGame: >-
     <p>L'action permet de lancer un jet de DM. En regardant le résultat de
-    chaque dé, il est possible de répartir les soins entre plusieurs cibles.</p>
+    chaque dé, il est possible de répartir les soins entre plusieurs
+    cibles.</p><p>La deuxième action permet de réaslier le test pour trouver les
+    plantes médicinales.</p>
   source: ''
   origin: Livre des règles p72
   slug: nature-nourriciere
@@ -34,22 +36,20 @@ system:
       indice: 0
       label: Soigner une ou plusieurs personnes
       chatFlavor: ''
-      type: consumable
       img: icons/svg/d20-highlight.svg
+      type: consumable
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: '@rangd4°'
           target:
@@ -59,10 +59,47 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.s5nFrXwFLpXYQ9Lp
+      indice: 1
+      label: Trouver les plantes
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: per
+          saveDifficulty: '10'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 2
@@ -79,11 +116,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747505189198
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769032692044
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!s5nFrXwFLpXYQ9Lp'
