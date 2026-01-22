@@ -14,11 +14,11 @@ system:
     (sonnée debout) pour 1 round.</p>
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
-    sort qui va faire le test d'attaque magique et appliquer les dommages. Les
-    effets supplémentaires sont laissé géré par le MJ.</p>
-
-    <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-    l'action</p>
+    sort qui va faire le test d'attaque magique et appliquer les dommages.
+    </p><p>La deuxième et la troisième action permettent de réaliser les tests
+    de sauvegarde en fonction du NC de la cible et d'appliquer le bon statut si
+    la cible rate.</p><p>Note : Pour utiliser la "concentration" faites
+    SHIFT+CLIC sur l'action</p>
   source: ''
   origin: Livre des règles p162
   slug: attaque-mentale
@@ -40,14 +40,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
@@ -62,15 +64,92 @@ system:
             formula: 5d4° + @int
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HYHbSvAyrhtGA9oC
+      indice: 1
+      label: Si NC >= NIV
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 10+@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - immobilized
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HYHbSvAyrhtGA9oC
+      indice: 2
+      label: Si NC < NIV
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 10+@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - unconscious
+            duration: 1d6
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -84,11 +163,11 @@ flags: {}
 _stats:
   compendiumSource: Item.HYHbSvAyrhtGA9oC
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746822728607
-  modifiedTime: 1749067840584
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769046584534
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!HYHbSvAyrhtGA9oC'

@@ -10,8 +10,8 @@ system:
     au rang atteint dans la voie, elle doit réussir un test de CON difficulté
     [10 + VOL] ou être étourdie pour un round.</p>
   inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant.</p>
+    <p>L'action permet de réaliser le test de sauvegarde et d'appliquer sur la
+    cible le statut Étourdi pendant 1 round en cas d'échec.</p>
   source: ''
   origin: Livre des règles p171
   slug: attaque-etourdissante
@@ -28,7 +28,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.RAw8pmuK3unIGkuU
+      indice: 0
+      label: Si NC < Rang
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: 10+@vol
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - stun
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -41,11 +80,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746965613708
-  modifiedTime: 1749100749444
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769048353560
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!RAw8pmuK3unIGkuU'

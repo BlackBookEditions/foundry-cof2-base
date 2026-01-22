@@ -14,7 +14,8 @@ system:
     supérieur ou égal à celui du lanceur</p>
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter un
-    test opposé. Le traitement en cas de succès est laissé au MJ.</p>
+    test opposé. </p><p>La deuxième action permet de réaliser le test de
+    sauvegarde en cas d'actions suicidaires.</p>
   source: ''
   origin: Livre des règles p68
   slug: suggestion
@@ -34,14 +35,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
@@ -61,10 +64,44 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.JjrsfYycYMiokOVB
+      indice: 1
+      label: Échapper au sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: '10'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 5
@@ -80,11 +117,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747469267590
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769106556409
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!JjrsfYycYMiokOVB'

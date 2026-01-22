@@ -14,7 +14,10 @@ system:
     immédiatement sa contemplation dès son adversaire vaincu ou en fuite. Le
     sort a une durée d’INT min et il n’affecte que les créatures dont le NC est
     inférieur au rang atteint dans la voie.</p>
-  inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques.</p>
+  inGame: >-
+    <p>Le joueur dépense ses PM manuellement. </p><p>L'action permet de réaliser
+    le test de sauvegarde sur chaque cible sans dépenser de PM et d'appliquer le
+    statut Asservi pendant INT*10 rounds.</p>
   source: ''
   origin: Livre des règles p165
   slug: motif-hypnotique
@@ -31,7 +34,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.aJ0uLJkexO7lxPw9
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 12+@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - enslaved
+            duration: '@int*10'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -44,11 +86,11 @@ flags: {}
 _stats:
   compendiumSource: Item.aJ0uLJkexO7lxPw9
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746822728607
-  modifiedTime: 1749068529258
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769047223742
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!aJ0uLJkexO7lxPw9'

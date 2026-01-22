@@ -13,9 +13,10 @@ system:
   inGame: >-
     <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
     l'attaque qui va faire un jet d'attaque magique et en cas de réussite
-    infliger les dommages. La réduction des DM de froid n'est pas prise en
-    charge. Le test de CON pour appliquer ou non l'effet affaibli est géré
-    manuellement par le MJ.</p>
+    infliger les dommages. </p><p>La réduction des DM de froid n'est pas prise
+    en charge. </p><p>La deuxième action permet de réaliser le test de
+    sauvegarde et d'appliquer le statut Ralenti à la cible pendant 1 round en
+    cas d'échec.</p>
   source: ''
   origin: Livre des règles p173
   slug: frimas-de-lhiver
@@ -37,14 +38,16 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
@@ -64,10 +67,48 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.wrumnTRrXJx0J8yi
+      indice: 1
+      label: Éviter d'être ralenti
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: 10+@per
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - slowed
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -81,11 +122,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746965613708
-  modifiedTime: 1749103007470
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769048593119
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!wrumnTRrXJx0J8yi'

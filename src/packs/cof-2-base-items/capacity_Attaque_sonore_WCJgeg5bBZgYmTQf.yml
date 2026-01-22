@@ -12,10 +12,9 @@ system:
     test de CON difficulté [10 + CHA du barde].</p>
   inGame: >-
     <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
-    sort qui va automatiquement lancer les dommages. Au MJ de proposer le test
-    pour réduire les dégats et les appliquer.</p>
-
-    <p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
+    sort qui va automatiquement lancer les dommages. </p><p>La deuxième action
+    permet de réaliser le test de sauveagrde pour subir la moitié des
+    DM.</p><p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
     l'action</em></p>
   source: ''
   origin: Livre des règles p67
@@ -36,22 +35,20 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 2d4° + @cha
           target:
@@ -61,10 +58,47 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.WCJgeg5bBZgYmTQf
+      indice: 1
+      label: 1/2 DM
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: 10+@cha
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 3
@@ -80,11 +114,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747468537691
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769106399506
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!WCJgeg5bBZgYmTQf'

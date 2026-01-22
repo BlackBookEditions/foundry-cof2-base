@@ -15,9 +15,9 @@ system:
     <p>Pour le moment c'est au MJ de fournir l'équipement
     @UUID[Compendium.cof2-base.cof-2-base-items.Item.BLf2dalmcwySOTBd]{Piège
     explosif} au joueur. A terme, un système de crafting sera mis en place pour
-    créer automatiquement ces objets.</p>
-
-    <p>L'équipement est utilisable en l'état par les joueurs.</p>
+    créer automatiquement ces objets.</p><p>L'équipement est utilisable en
+    l'état par les joueurs.</p><p>Les actions permettent de réaliser les jets de
+    sauvegarde de la capacité.</p>
   source: ''
   origin: Livre des règles p63
   slug: piege-explosif
@@ -32,7 +32,77 @@ system:
     spell: false
     chargeable: false
   path: null
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HqiEhtMiddsDQdlD
+      indice: 0
+      label: 1/2 DM
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.HqiEhtMiddsDQdlD
+      indice: 1
+      label: Détecter le piège
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 15+@int
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 4
 effects: []
@@ -47,11 +117,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747394516538
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769032787141
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!HqiEhtMiddsDQdlD'

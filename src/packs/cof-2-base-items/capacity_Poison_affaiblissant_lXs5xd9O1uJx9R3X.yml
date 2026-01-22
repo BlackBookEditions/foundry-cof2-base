@@ -9,9 +9,7 @@ system:
     les effets ne sont appliqués que sur la première attaque réussie avec cette
     arme. Si la victime rate un test de CON difficulté 12, elle est affaiblie
     pour le reste du combat (voir états préjudiciables).</p>
-  inGame: >-
-    <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-    l'instant.</p>
+  inGame: "<p>L'action permet de réaliser le test de sauvegarde et d'appliquer le statut Affaibli pour le reste du Combat en cas d'échec.\_</p><p>Le joueur devra retirer une utilisation de la capacité Poison rapide.</p>"
   source: ''
   origin: Livre des règles p143
   slug: poison-affaiblissant
@@ -28,7 +26,46 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.lXs5xd9O1uJx9R3X
+      indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '12'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - weakened
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -41,11 +78,11 @@ flags: {}
 _stats:
   compendiumSource: Item.lXs5xd9O1uJx9R3X
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746258425937
-  modifiedTime: 1748679763179
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769042868594
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!lXs5xd9O1uJx9R3X'

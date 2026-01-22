@@ -15,7 +15,9 @@ system:
   inGame: >-
     <p>Cette capacité propose une action "Morsure" à n'utiliser que sous la
     forme hybride. Comme d'habitude le joueur sélectionne sa cible et clique sur
-    l'action.</p>
+    l'action.</p><p>Les deux actions suivantes permettent de réaliser les jets
+    de ssauvegarde pour résister à la tranformation involontaire et pour se
+    souvenir des événements après une tranformation.</p>
   source: ''
   origin: Livre des règles p130
   slug: forme-hybride
@@ -36,14 +38,15 @@ system:
       indice: 0
       label: Morsure
       chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
       type: melee
       actionType: f
-      img: icons/svg/d20-highlight.svg
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isLearned
@@ -59,15 +62,84 @@ system:
             formula: 1d4° + @for
           target:
             type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.ECgdZ3TCSF7RXYU4
+      indice: 1
+      label: Résister à la transformation
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: vol
+          saveDifficulty: 15-@rang
+          target:
+            type: self
             number: 0
             scope: all
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.ECgdZ3TCSF7RXYU4
+      indice: 2
+      label: Se souvenir après transformation
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: '10'
+          target:
+            type: self
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   rank: 4
   allowLinkedCapacity: false
@@ -82,11 +154,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746258425937
-  modifiedTime: 1748409402957
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769041922602
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!ECgdZ3TCSF7RXYU4'

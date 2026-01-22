@@ -12,8 +12,9 @@ system:
     test d’INT difficulté [10 + CHA de l’ensorceleur] pour voir à travers
     l’illusion.</p>
   inGame: >-
-    <p>Activer l'action permet de dépenser les PM. Les effets sont à gérer en
-    jeu</p>
+    <p>Activer l'action permet de dépenser les PM. </p><p>La deuxième action
+    permet de réaliser le test de sauvegarde en ciblant l'acteur qui touche
+    l'ensorceleur.</p>
   source: ''
   origin: Livre des règles p95
   slug: imitation
@@ -33,18 +34,55 @@ system:
       indice: 0
       label: Activer le sort
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       modifiers: []
       resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.zab5rrYhYq9R9fHF
+      indice: 1
+      label: Voir au travers de l'illusion
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: int
+          saveDifficulty: 10+@cha
+          target:
+            type: single
+            number: 0
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   cost: -1
   rank: 4
 effects: []
@@ -59,11 +97,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747929658712
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769033508266
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!zab5rrYhYq9R9fHF'

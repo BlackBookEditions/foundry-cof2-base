@@ -9,23 +9,16 @@ system:
     bourrasque. Toutes les créatures face à lui dans un cône de 30 m de long et
     de large à son extrémité doivent faire un test de FOR difficulté [10 + rang]
     ou être renversée et repoussées en arrière à une distance qui dépend de leur
-    taille.</p><ul>
-
-    <li>- Très petite à moyenne : 20 m,subit 3d4° DM</li>
-
-    <li>- Grande : 10 m, subit 2d4° DM</li>
-
-    <li>- Énorme : 5 m subit 1d4° DM</li>
-
-    <li>- Colossale : seulement renversée</li>
-
-    </ul>
+    taille.</p><ul><li>Très petite à moyenne : 20 m,subit 3d4° DM</li><li>Grande
+    : 10 m, subit 2d4° DM</li><li>Énorme : 5 m subit 1d4° DM</li><li>Colossale :
+    seulement renversée</li></ul>
   inGame: >-
     <p>La première action permet d'activer le sort et de dépenser les PM.
-    Lorsque  cette action est activée, 3 actions apparaissent.</p> <p>Ces 3
-    actions permettent de réaliser l'attaque automatique et infliger les DM  aux
-    cibles.</p> <p>Les effets Repousser et Renverser sont gérés manuellement 
-    par le MJ.</p>
+    Lorsque cette action est activée, 4 actions apparaissent (elles ne coûtent
+    aucun PM).</p><p>Les 3 premières actions permettent de jeter automatiquement
+    les DM en fonction de la taille des créatures.</p><p>La dernière action
+    permet de réaliser le test de sauvegarde et d'appliquer le statut Renversé
+    jusqu'à la fin du combat en cas d'échec. </p>
   source: ''
   origin: Livre des règles p168
   slug: bourrasque
@@ -47,40 +40,40 @@ system:
       indice: 0
       label: Activer le sort
       chatFlavor: ''
-      type: spell
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: true
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
-      resolvers: []
       modifiers: []
+      resolvers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.vgURSHBStk27YOdY
       indice: 1
       label: vs Très Petites à Moyenne
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: true
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
           object: '0'
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 3d4°
           target:
@@ -90,33 +83,33 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
       modifiers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.vgURSHBStk27YOdY
       indice: 2
       label: vs Grandes
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: true
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
           object: '0'
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 2d4°
           target:
@@ -126,33 +119,33 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
       modifiers: []
     - source: Compendium.cof2-base.cof-2-base-items.Item.vgURSHBStk27YOdY
       indice: 3
       label: vs Énormes
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: true
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
         - predicate: isLinkedActionActivated
           object: '0'
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 1d4°
           target:
@@ -160,12 +153,59 @@ system:
             number: 20
             scope: all
           additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
+            active: true
+            applyOn: always
+            formulaType: damage
+            formula: 1d4°
+            elementType: ''
+            statuses:
+              - overturned
+            duration: '1'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vgURSHBStk27YOdY
+      indice: 4
+      label: Jet de sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: 10+@rang
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -179,11 +219,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746965613708
-  modifiedTime: 1749100938192
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769047994311
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!vgURSHBStk27YOdY'

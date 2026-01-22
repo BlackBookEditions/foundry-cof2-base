@@ -12,9 +12,11 @@ system:
     renversées.</p>
   inGame: >-
     <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
-    sort qui va automatiquement lancer les dommages. Au MJ de proposer le test
-    pour éviter le renversement.</p>  <p><em>Note : Pour utiliser la
-    "concentration" faites SHIFT+CLIC sur l'action</em></p>
+    sort qui va automatiquement lancer les dommages.</p><p><em>Note : Pour
+    utiliser la "concentration" faites SHIFT+CLIC sur l'action</em></p><p>La
+    deuxième action permet de réaliser le test de sauvegarde et d'appliquer le
+    statut Renversé en cas d'échec jusqu'à la fin du combat. Si la cible se
+    relève, il faut retirer l'Effet Personnalisé manuellement sur la cible.</p>
   source: ''
   origin: Livre des règles p98
   slug: frappe-des-arcanes
@@ -34,22 +36,20 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
         noManaCost: false
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: '0'
           dmg:
             formula: 3d4° + @int
           target:
@@ -59,10 +59,51 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.TlgYKcSIas51yirK
+      indice: 1
+      label: Résister au renversement
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      resolvers:
+        - type: save
+          saveAbility: for
+          saveDifficulty: 10+@int
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            duration: '0'
+            unit: combat
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   cost: -1
   rank: 4
@@ -78,11 +119,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740761026318
-  modifiedTime: 1747933951662
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769033902379
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!TlgYKcSIas51yirK'

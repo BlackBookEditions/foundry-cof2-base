@@ -13,8 +13,10 @@ system:
     les oreilles). Les victimes qui ont été réduites à 0 PV voient leurs cheveux
     blanchir définitivement.</p>
   inGame: >-
-    <p>L'action permet d'effectuer l'attaque automatique et lancer les DM. Le
-    test pour résister est géré manuellement.</p>
+    <p>L'action permet de réaliser le test de sauvegarde sur les cibles et de
+    lancer les DM si le test est raté. Tant que le mulciblage n'est pas
+    fonctionnel, il faudra dépenser les PM manuellement et faire l'action pour
+    chaque créature dans la zone.</p>
   source: ''
   origin: Livre des règles p163
   slug: cri-de-la-banshee
@@ -36,35 +38,39 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: magical
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
-        noManaCost: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
       conditions:
         - predicate: isLearned
       resolvers:
-        - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
-          dmg:
-            formula: 6d4°
+        - type: save
+          saveAbility: con
+          saveDifficulty: 10+@int
           target:
             type: multiple
             number: 20
             scope: all
           additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 6d4°
+            elementType: ''
             statuses: []
-            duration: '0'
+            duration: '1'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
@@ -78,11 +84,11 @@ flags: {}
 _stats:
   compendiumSource: Item.x1PgZvxMRTEXrlYF
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746822728607
-  modifiedTime: 1749067966764
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769047057573
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!x1PgZvxMRTEXrlYF'

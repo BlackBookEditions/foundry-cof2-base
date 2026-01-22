@@ -12,11 +12,7 @@ system:
     signifie que la créature est renversée se relever nécessite de réussir un
     nouveau test d’AGI difficulté 15 et prend un round. Ramper en dehors de la
     zone demande un round complet.</p>
-  inGame: >-
-    <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques.</p>
-
-    <p>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-    l'action</p>
+  inGame: "<p>L'action \"Activer le sort\" permet de dépenser les PM et de faire apparaître les deux actions.</p><p>Les deux actions permettent de réaliser un test de sauvegarde et d'appliquer le statut Renversé pour le reste du combat avec la bonne difficulté. Si la cible arrive à se relever, il faudra supprimer manuellement d'Effet Personnalisé sur sa feuille.\_</p><p>Note : Pour utiliser la \"concentration\" faites SHIFT+CLIC sur l'action</p>"
   source: ''
   origin: Livre des règles p158
   slug: verglas
@@ -33,7 +29,107 @@ system:
   path: null
   cost: -1
   manaCost: -1
-  actions: []
+  actions:
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sZvOdXRWJIroK7l4
+      indice: 0
+      label: Activer le sort
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: true
+        noChargesUsed: false
+        noManaCost: false
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+      modifiers: []
+      resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sZvOdXRWJIroK7l4
+      indice: 1
+      label: Rester debout
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '10'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.sZvOdXRWJIroK7l4
+      indice: 2
+      label: Se déplacer, combattre, se relever
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: true
+        noManaCost: true
+        visible: false
+        enabled: false
+      conditions:
+        - predicate: isLearned
+        - predicate: isLinkedActionActivated
+          object: '0'
+      resolvers:
+        - type: save
+          saveAbility: agi
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - overturned
+            unit: combat
+            duration: '0'
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
@@ -46,11 +142,11 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1746822728607
-  modifiedTime: 1749065510928
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769045760805
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _key: '!items!sZvOdXRWJIroK7l4'
