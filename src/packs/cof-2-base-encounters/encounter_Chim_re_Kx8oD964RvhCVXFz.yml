@@ -552,90 +552,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!Kx8oD964RvhCVXFz.az2aFq8jaaUk36Qb'
   - folder: Jc9oocmI3B4cVSRG
-    name: Poison
-    type: capacity
-    img: icons/skills/toxins/poison-bottle-corked-fire-green.webp
-    system:
-      description: >-
-        <p>La victime subit <strong>1d6 DM de poison</strong> et elle doit faire
-        un<strong> test de CON difficulté 16</strong>. En cas d’échec, elle
-        subit <strong>1d6 DM supplémentaires par round pendant 5
-        rounds</strong>.</p>
-      source: ''
-      origin: ''
-      slug: poison
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.Kx8oD964RvhCVXFz.Item.AJI7CaGfKgGCojtP
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 1d6
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-      inGame: ''
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.RDlQ1hTeAA7Wemp4
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758845693161
-      modifiedTime: 1758845718769
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: AJI7CaGfKgGCojtP
-    sort: 1900000
-    _key: '!actors.items!Kx8oD964RvhCVXFz.AJI7CaGfKgGCojtP'
-  - folder: Jc9oocmI3B4cVSRG
     name: Riposte sournoise
     type: capacity
     img: icons/skills/melee/strikes-sword-triple-gray.webp
@@ -768,6 +684,132 @@ items:
     _id: pAgo5i9bX4wOnrFH
     sort: 7100000
     _key: '!actors.items!Kx8oD964RvhCVXFz.pAgo5i9bX4wOnrFH'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Poison
+    type: capacity
+    img: icons/skills/toxins/poison-bottle-corked-fire-green.webp
+    system:
+      description: >-
+        <p>La victime subit <strong>1d6 DM de poison</strong> et elle doit faire
+        un<strong> test de CON difficulté 16</strong>. En cas d’échec, elle
+        subit <strong>1d6 DM supplémentaires par round pendant 5
+        rounds</strong>.</p>
+      source: ''
+      origin: ''
+      slug: poison
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Kx8oD964RvhCVXFz.Item.noNzq97rze1eeMlV
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Kx8oD964RvhCVXFz.Item.noNzq97rze1eeMlV
+          indice: 1
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d6
+                elementType: poison
+                statuses: []
+                duration: '5'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauveagrde et d'infliger les
+        DM pendant 5 rounds sur la cible en cas d'échec.</p>
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.RDlQ1hTeAA7Wemp4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769124541400
+      modifiedTime: 1769124541423
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: noNzq97rze1eeMlV
+    sort: 1900000
+    _key: '!actors.items!Kx8oD964RvhCVXFz.noNzq97rze1eeMlV'
 effects: []
 ownership:
   default: 0

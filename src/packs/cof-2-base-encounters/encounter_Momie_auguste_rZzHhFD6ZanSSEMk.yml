@@ -470,185 +470,6 @@ items:
     _id: HG6bly5LLh2jYFRg
     sort: 600000
     _key: '!actors.items!rZzHhFD6ZanSSEMk.HG6bly5LLh2jYFRg'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Putréfaction
-    type: capacity
-    img: icons/skills/wounds/illness-disease-glowing-green.webp
-    system:
-      description: >-
-        <p>Toute créature blessée par une momie doit réussir un<strong> test de
-        CON difficulté 15</strong> ou contracter une horrible maladie qui
-        occasionne le pourrissement rapide de ses chairs, une sorte de lèpre
-        fulgurante. La victime subit <strong>1d6 DM par round pendant 5
-        rounds</strong>. Tant qu’elle est sous l’effet de la putréfaction, il
-        n’est pas nécessaire de réaliser un nouveau test de CON lorsque la
-        victime est la cible d’une attaque de la momie. L’utilisation de la
-        capacité de prêtre Délivrance permet de soigner cette maladie.</p>
-      inGame: >-
-        <p>Laction permet d'infliger les DM et d'aplliquer une perte périodique
-        de  DM pedant 5 rounds. Les DM périodiques fonctionnent uniquement en
-        mode  Combat</p>
-      source: ''
-      origin: ''
-      slug: putrefaction
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.c6XGccDIqa7xX1Vn
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 1d6
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: true
-                applyOn: always
-                formulaType: damage
-                formula: 1d6
-                elementType: ''
-                statuses: []
-                duration: '5'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758889800375
-      modifiedTime: 1758889925408
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: c6XGccDIqa7xX1Vn
-    sort: 500000
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.c6XGccDIqa7xX1Vn'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Injonction mortelle
-    type: capacity
-    img: icons/magic/control/fear-fright-shadow-monster-purple.webp
-    system:
-      description: >-
-        <p>Une cible située à une distance maximum de 30 m doit réussir un test
-        de CON difficulté 15 ou tomber à 0 PV (et mourir immédiatement s’il
-        s’agit d’un PNJ). En cas de succès, la cible subit tout de même 2d8+10
-        DM. Ce pouvoir ne peut prendre une même créature pour cible qu’une seule
-        fois par combat</p>
-      source: ''
-      origin: ''
-      slug: injonction-mortelle
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.TuT9GIPldpqVgea3
-          indice: 0
-          label: Si injonction mortelle raté
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 2d8+10
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758889807050
-      modifiedTime: 1758889955354
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: TuT9GIPldpqVgea3
-    sort: 8200000
-    _key: '!actors.items!rZzHhFD6ZanSSEMk.TuT9GIPldpqVgea3'
   - folder: GGe86yLIgBeAfJNv
     name: Lumière
     type: capacity
@@ -994,6 +815,232 @@ items:
       modifiedTime: 1758890033643
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!rZzHhFD6ZanSSEMk.hXcRbktxZvA2Nol8'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Injonction mortelle
+    type: capacity
+    img: icons/magic/control/fear-fright-shadow-monster-purple.webp
+    system:
+      description: >-
+        <p>Une cible située à une distance maximum de 30 m doit réussir un test
+        de CON difficulté 15 ou tomber à 0 PV (et mourir immédiatement s’il
+        s’agit d’un PNJ). En cas de succès, la cible subit tout de même 2d6+5
+        DM. Ce pouvoir ne peut prendre une même créature pour cible qu’une seule
+        fois par combat</p>
+      source: ''
+      origin: ''
+      slug: injonction-mortelle
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.LsQiAHcHb6nTmmWm
+          indice: 0
+          label: Si injonction mortelle raté
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.LsQiAHcHb6nTmmWm
+          indice: 1
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - unconscious
+                duration: '0'
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>L'action test de sauvegarde permet de réaliser le test de CON et
+        d'appliquer sur la cible le statut Inconscient en Illimité en cas
+        d'échec.</p><p>L'action "Si injonction mortelle" permet de jeter les DM
+        si le test de sauvegarde a été réussie.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769119465825
+      modifiedTime: 1769119465845
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: LsQiAHcHb6nTmmWm
+    sort: 8200000
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.LsQiAHcHb6nTmmWm'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Putréfaction
+    type: capacity
+    img: icons/skills/wounds/illness-disease-glowing-green.webp
+    system:
+      description: >-
+        <p>Toute créature blessée par une momie doit réussir un<strong> test de
+        CON difficulté 15</strong> ou contracter une horrible maladie qui
+        occasionne le pourrissement rapide de ses chairs, une sorte de lèpre
+        fulgurante. La victime subit <strong>1d6 DM par round pendant 5
+        rounds</strong>. Tant qu’elle est sous l’effet de la putréfaction, il
+        n’est pas nécessaire de réaliser un nouveau test de CON lorsque la
+        victime est la cible d’une attaque de la momie. L’utilisation de la
+        capacité de prêtre Délivrance permet de soigner cette maladie.</p>
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'infliger les
+        DM pendant 5 rounds sur la cible en cas d'échec.</p><p> Les DM
+        périodiques fonctionnent uniquement en mode Combat</p>
+      source: ''
+      origin: ''
+      slug: putrefaction
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.rZzHhFD6ZanSSEMk.Item.PZhubV242LKF8HOM
+          indice: 0
+          label: Sur cible blessée
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d6
+                elementType: disease
+                statuses: []
+                duration: '5'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769130951300
+      modifiedTime: 1769130951323
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: PZhubV242LKF8HOM
+    sort: 500000
+    _key: '!actors.items!rZzHhFD6ZanSSEMk.PZhubV242LKF8HOM'
 effects: []
 ownership:
   default: 0

@@ -9,10 +9,7 @@ system:
     supplémentaire par round pendant 1d6 rounds. De plus, la victime est
     affaiblie pour une durée similaire exprimée en heures. Chaque nouvelle
     morsure augmente la durée (mais pas les DM par round).</p>
-  inGame: >-
-    <p>L'action inflige 1 DM à la cible et un effet périodique.</p> <p>L'effet
-    périodique inflige 1 DM par round et le statut Affaibli pendant 1d6 round.
-    cet effet fonctionne uniquement en mode Combat.</p>
+  inGame: "<p>L'action permet de réaliser un test de sauvegarde. En cas d'échec, la cible subit les DM et le statut Affaibli est appliqué pendant 1d6 round.</p><p>L'effet Affaibli devra être ajouter\_manuellement à la fin de l'effet.</p>"
   source: ''
   origin: ''
   slug: venin
@@ -32,33 +29,31 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
       indice: 0
-      label: En cas d'échec de la cible
+      label: Test de sauveagrde
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
-          dmg:
-            formula: '1'
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: true
-            applyOn: always
+            applyOn: saveFailure
             formulaType: damage
             formula: '1'
             elementType: ''
@@ -66,7 +61,10 @@ system:
               - weakened
             duration: 1d6
             unit: round
-            successThreshold: null
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
 effects: []
 ownership:
@@ -76,12 +74,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741712635037
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769122947281
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: lsSLCd1x51MVOehn
 sort: 6900000

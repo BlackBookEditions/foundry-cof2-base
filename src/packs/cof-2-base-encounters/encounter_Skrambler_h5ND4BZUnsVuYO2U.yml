@@ -404,7 +404,7 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!h5ND4BZUnsVuYO2U.n1SG3euyQnZnhVq7'
   - folder: Jc9oocmI3B4cVSRG
-    name: Embuscade
+    name: Embuscade (16)
     type: capacity
     img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     system:
@@ -432,33 +432,26 @@ items:
       cost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
+            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
           indice: 0
-          label: ''
+          label: FOR inférieure
           chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
             noManaCost: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
-              subtype: skill
-              target: agi
-              value: '5'
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
+                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
               subtype: combat
               target: damMelee
               value: 1d4
@@ -466,15 +459,85 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.5EpD3DRCCR3JXyLT
+                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
               subtype: combat
               target: damRanged
               value: 1d4
               apply: self
               additionalInfos: ''
           resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
+          indice: 1
+          label: Test de surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                duration: '1'
+                unit: round
+                statuses: []
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
+          indice: 2
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.LgXOM2Tce97CDtBV
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
       manaCost: -1
-      inGame: ''
+      inGame: >-
+        <p>La première action est à activer pour obtenir les DM
+        supplémentaires.</p><p>La deuxième action permet de réaliser le test de
+        PER et d'appliquer le statut Surpris s'il est raté.</p><p>La troisième
+        action permanente donne le bonus aux tests de Discrétion.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -484,21 +547,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758892706688
-      modifiedTime: 1758892734726
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: 5EpD3DRCCR3JXyLT
+      createdTime: 1769117436491
+      modifiedTime: 1769117442675
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: LgXOM2Tce97CDtBV
     sort: 6000000
-    _key: '!actors.items!h5ND4BZUnsVuYO2U.5EpD3DRCCR3JXyLT'
+    _key: '!actors.items!h5ND4BZUnsVuYO2U.LgXOM2Tce97CDtBV'
   - folder: Jc9oocmI3B4cVSRG
     name: Onde dévastratrice
     type: capacity
@@ -525,7 +588,7 @@ items:
       manaCost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.1e8SdaMlFVawVk6Z
+            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.Bi0Z4T0UbazSb2kz
           indice: 0
           label: ''
           chatFlavor: ''
@@ -533,10 +596,11 @@ items:
           type: ranged
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
             noManaCost: false
           conditions:
             - predicate: isOwned
@@ -558,8 +622,47 @@ items:
               malusDiceAdd: false
               skill: {}
           modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.h5ND4BZUnsVuYO2U.Item.Bi0Z4T0UbazSb2kz
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       frequency: none
-      inGame: ''
+      inGame: >-
+        <p>La première action permet de jeter les DM automatiquement.</p><p>La
+        deuxième action permet de réaliser le test de sauvegarde pour réduire
+        les DM de moitié.</p>
       rank: 0
       allowLinkedCapacity: false
       linkedCapacity: null
@@ -568,21 +671,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.kolWg7C0HZTK5abs
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758892719602
-      modifiedTime: 1758892752075
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: 1e8SdaMlFVawVk6Z
+      createdTime: 1769131311453
+      modifiedTime: 1769131311468
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: Bi0Z4T0UbazSb2kz
     sort: 5900000
-    _key: '!actors.items!h5ND4BZUnsVuYO2U.1e8SdaMlFVawVk6Z'
+    _key: '!actors.items!h5ND4BZUnsVuYO2U.Bi0Z4T0UbazSb2kz'
 effects: []
 ownership:
   default: 0

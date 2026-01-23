@@ -580,78 +580,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!S0bAG6q4cLwxkMJJ.G5OLGJEGQGlPtGOp'
   - folder: Jc9oocmI3B4cVSRG
-    name: Fauchage
-    type: capacity
-    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
-    system:
-      description: "<p>Sur 17 à 20 sur le d20 d’un test d’attaque, si\_l’attaque est réussie, la victime doit réussir au choix un <strong>test de FOR ou d’AGI\_difficulté 16</strong> ou être <em>renversée</em>.</p><p>La créature retranche 3 à tous les\_DM subis (RD 3).</p>"
-      source: ''
-      origin: ''
-      slug: fauchage
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.PCsLDClSrMhw0EPf
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            visible: false
-            enabled: true
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.PCsLDClSrMhw0EPf
-              subtype: combat
-              target: dr
-              value: '3'
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758893250384
-      modifiedTime: 1758893321976
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: PCsLDClSrMhw0EPf
-    sort: 8800000
-    _key: '!actors.items!S0bAG6q4cLwxkMJJ.PCsLDClSrMhw0EPf'
-  - folder: Jc9oocmI3B4cVSRG
     name: Vitalité surnaturelle
     type: capacity
     img: icons/magic/life/heart-cross-strong-flame-blue.webp
@@ -736,6 +664,164 @@ items:
     _id: I2HT3zObLfJrgkNW
     sort: 3500000
     _key: '!actors.items!S0bAG6q4cLwxkMJJ.I2HT3zObLfJrgkNW'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fauchage (16)
+    type: capacity
+    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
+    system:
+      description: "<p>Sur 17 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 16 ou être renversée.\_</p><p>La créature retranche 3 à tous les\_DM subis (RD 3).</p>"
+      source: ''
+      origin: ''
+      slug: fauchage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.JhMrdVTyIYS8Nj9t
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.JhMrdVTyIYS8Nj9t
+              subtype: combat
+              target: dr
+              value: '3'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.JhMrdVTyIYS8Nj9t
+          indice: 1
+          label: Sauvegarde de FOR
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.S0bAG6q4cLwxkMJJ.Item.JhMrdVTyIYS8Nj9t
+          indice: 2
+          label: Sauvegarde d'AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>La première action permanente donne la RD.</p><p>La deuxième et la
+        troisième action permettent de réaliser le test de sauvegarde de FOR et
+        d'AGI et appliquer le statut Renversé pendant tout le combat si le test
+        est raté. Il faudra supprimer l'Effet Personnalisé sur la feuille de la
+        cible manuellement lorsqu'elle se relève.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769121470732
+      modifiedTime: 1769121501851
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: JhMrdVTyIYS8Nj9t
+    sort: 8800000
+    _key: '!actors.items!S0bAG6q4cLwxkMJJ.JhMrdVTyIYS8Nj9t'
 effects: []
 ownership:
   default: 0

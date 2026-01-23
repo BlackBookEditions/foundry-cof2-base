@@ -616,91 +616,6 @@ items:
     sort: 9200000
     _key: '!actors.items!En4b4Q3mV1E3JylS.pE7srV9lajWcrLlc'
   - folder: Jc9oocmI3B4cVSRG
-    name: Injonction mortelle
-    type: capacity
-    img: icons/magic/control/fear-fright-shadow-monster-purple.webp
-    system:
-      description: >-
-        <p>Une cible située à une distance maximum de 30 m doit réussir un test
-        de CON difficulté 15 ou tomber à 0 PV (et mourir immédiatement s’il
-        s’agit d’un PNJ). En cas de succès, la cible subit tout de même 2d6+5
-        DM. Ce pouvoir ne peut prendre une même créature pour cible qu’une seule
-        fois par combat</p>
-      source: ''
-      origin: ''
-      slug: injonction-mortelle
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.8GNIhmQQEuEcK0kE
-          indice: 0
-          label: Si injonction mortelle raté
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: true
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 2d6+5
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758844556510
-      modifiedTime: 1758844592477
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: 8GNIhmQQEuEcK0kE
-    sort: 8200000
-    _key: '!actors.items!En4b4Q3mV1E3JylS.8GNIhmQQEuEcK0kE'
-  - folder: Jc9oocmI3B4cVSRG
     name: Pas de l'ombre
     type: capacity
     img: icons/skills/movement/figure-running-gray.webp
@@ -843,6 +758,136 @@ items:
     _id: 6G0lM8gTPcTses8x
     sort: 7700000
     _key: '!actors.items!En4b4Q3mV1E3JylS.6G0lM8gTPcTses8x'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Injonction mortelle
+    type: capacity
+    img: icons/magic/control/fear-fright-shadow-monster-purple.webp
+    system:
+      description: >-
+        <p>Une cible située à une distance maximum de 30 m doit réussir un test
+        de CON difficulté 15 ou tomber à 0 PV (et mourir immédiatement s’il
+        s’agit d’un PNJ). En cas de succès, la cible subit tout de même 2d6+5
+        DM. Ce pouvoir ne peut prendre une même créature pour cible qu’une seule
+        fois par combat</p>
+      source: ''
+      origin: ''
+      slug: injonction-mortelle
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.iTT8pCLy2usxw9hC
+          indice: 0
+          label: Si injonction mortelle raté
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6+5
+              target:
+                type: none
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.En4b4Q3mV1E3JylS.Item.iTT8pCLy2usxw9hC
+          indice: 1
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - unconscious
+                duration: '0'
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>L'action test de sauvegarde permet de réaliser le test de CON et
+        d'appliquer sur la cible le statut Inconscient en Illimité en cas
+        d'échec.</p><p>L'action "Si injonction mortelle" permet de jeter les DM
+        si le test de sauvegarde a été réussie.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769119472896
+      modifiedTime: 1769119472915
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: iTT8pCLy2usxw9hC
+    sort: 8200000
+    _key: '!actors.items!En4b4Q3mV1E3JylS.iTT8pCLy2usxw9hC'
 effects: []
 sort: 0
 ownership:

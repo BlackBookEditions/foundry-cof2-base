@@ -1,30 +1,33 @@
 folder: Jc9oocmI3B4cVSRG
-name: Assassinat
+name: Tape dur (13)
 type: capacity
-img: icons/skills/melee/strike-dagger-skull-white.webp
+img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
 system:
   description: >-
-    <p>Au premier round de combat, si la cible est Surprise, une Attaque
-    mortelle réussie l’oblige à réussir un<strong> test de CON difficulté 13 ou
-    tomber à 0 PV.</strong></p>
+    <p>Si la créature obtient <strong>15 à 20 au dé du test d’attaque</strong>,
+    l’attaque est automatiquement réussie. De surcroît, la victime doit réussir
+    un <strong>test de CON difficulté 13</strong> ou être étourdie pendant 1
+    round.</p>
   source: ''
   origin: ''
-  slug: assassinat
+  slug: tape-dur
+  tags: []
   subtype: ''
-  actionType: a
+  actionType: none
   learned: false
   charges:
-    current: 1
-    max: 1
+    current: null
+    max: null
   properties:
     spell: false
+    chargeable: false
   path: null
   cost: -1
   manaCost: -1
   actions:
-    - source: Compendium.cof2-base.cof-2-base-items.Item.hIfZ8f2RLeSOVsrG
+    - source: Compendium.cof2-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       indice: 0
-      label: ''
+      label: Test de sauvegarde
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
       type: spell
@@ -53,18 +56,17 @@ system:
             formula: ''
             elementType: ''
             statuses:
-              - unconscious
-            unit: unlimited
-            duration: '0'
+              - stun
+            duration: '1'
+            unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
           skill: {}
           dmg: {}
       modifiers: []
-  frequency: none
   inGame: >-
-    <p>L'action permet de réaliser le test de sauveagrde sur une cible et
-    d'appliquer le statut Inconscient s'il est raté.</p>
+    <p>L'action permet de réaliser le test de sauvegarde et d'appliquer sur la
+    cible le statut Étourdi pendant 1 round en cas d'échec.</p>
 effects: []
 ownership:
   default: 0
@@ -76,10 +78,10 @@ _stats:
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
-  createdTime: 1742450632514
-  modifiedTime: 1769116620844
+  createdTime: 1741697339461
+  modifiedTime: 1769122011808
   lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
-_id: hIfZ8f2RLeSOVsrG
-sort: 800000
-_key: '!items!hIfZ8f2RLeSOVsrG'
+_id: rxSgIJDkSrN4Rvg3
+sort: 7400000
+_key: '!items!rxSgIJDkSrN4Rvg3'

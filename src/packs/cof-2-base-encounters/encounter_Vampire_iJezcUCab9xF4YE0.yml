@@ -775,57 +775,6 @@ items:
     sort: 2700000
     _key: '!actors.items!iJezcUCab9xF4YE0.9wLvhQADuQ7WPFbr'
   - folder: Jc9oocmI3B4cVSRG
-    name: Regard envoûtant
-    type: capacity
-    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
-    system:
-      description: >-
-        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
-        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
-        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
-        15 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 1
-        ou inférieur passent sous le contrôle du vampire.</p>
-      source: ''
-      origin: ''
-      slug: regard-envoutant
-      subtype: ''
-      actionType: m
-      learned: true
-      charges:
-        current: 3
-        max: 3
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: combat
-      inGame: ''
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758908939470
-      modifiedTime: 1758908939470
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: z5S0PGm5o30LjXUV
-    sort: 3100000
-    _key: '!actors.items!iJezcUCab9xF4YE0.z5S0PGm5o30LjXUV'
-  - folder: Jc9oocmI3B4cVSRG
     name: Résistance impie
     type: capacity
     img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
@@ -1106,6 +1055,99 @@ items:
     _id: GVzKXrgX0WAwTrzT
     sort: 3600000
     _key: '!actors.items!iJezcUCab9xF4YE0.GVzKXrgX0WAwTrzT'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Regard envoûtant (15)
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
+    system:
+      description: >-
+        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
+        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
+        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
+        15 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 1
+        ou inférieur passent sous le contrôle du vampire.</p>
+      source: ''
+      origin: ''
+      slug: regard-envoutant
+      subtype: ''
+      actionType: m
+      learned: true
+      charges:
+        current: 3
+        max: 3
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.iJezcUCab9xF4YE0.Item.R4RuKTCg1c1e0cLL
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: vol
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - weakened
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: combat
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Affaibli sur la cible en cas d'échec.</p>
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769131470684
+      modifiedTime: 1769131519386
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: R4RuKTCg1c1e0cLL
+    sort: 3100000
+    _key: '!actors.items!iJezcUCab9xF4YE0.R4RuKTCg1c1e0cLL'
 effects: []
 ownership:
   default: 0

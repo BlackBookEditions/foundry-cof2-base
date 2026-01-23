@@ -30,13 +30,15 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
-        visible: false
-        enabled: true
         activable: false
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: true
         noManaCost: false
       conditions:
         - predicate: isOwned
@@ -45,8 +47,8 @@ system:
           source: Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
           subtype: skill
           target: agi
-          apply: self
           value: '5'
+          apply: self
           additionalInfos: ''
       resolvers: []
     - source: >-
@@ -54,13 +56,15 @@ system:
       indice: 1
       label: si surprise
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
-        visible: false
-        enabled: true
         activable: true
         temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: true
         noManaCost: false
       conditions:
         - predicate: isOwned
@@ -70,16 +74,56 @@ system:
             Compendium.cof2-base.cof-2-base-encounter.Actor.qAZEVgcmk44BNQjh.Item.oYmEF7zGBxSlKdry
           subtype: combat
           target: damMelee
-          apply: self
           value: 1d4
+          apply: self
           additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.FpqZTZM5wuWb5mOT
+      indice: 2
+      label: Test de surprise
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: per
+          saveDifficulty: '19'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - surprised
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   manaCost: -1
   frequency: none
   rank: 0
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
+  inGame: "<p>La première action permanente donne le bonus aux tests de discrétion.</p><p>La deuxième action activable/désactivable donne le bonus aux DM des attaques.</p><p>La troisième action permet de réaliser le test de sauvegarde et d'appliquer le statut Surpris sur la cible en cas d'échec.\_</p>"
 effects: []
 ownership:
   default: 0
@@ -88,12 +132,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749280839872
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769123723004
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: FpqZTZM5wuWb5mOT
 sort: 1800000

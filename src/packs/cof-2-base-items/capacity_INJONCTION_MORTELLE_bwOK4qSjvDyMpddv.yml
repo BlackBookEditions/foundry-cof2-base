@@ -32,10 +32,11 @@ system:
       type: melee
       actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
@@ -57,7 +58,51 @@ system:
           malusDiceAdd: false
           skill: {}
       modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.bwOK4qSjvDyMpddv
+      indice: 1
+      label: Test de sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - unconscious
+            duration: '0'
+            unit: unlimited
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
   manaCost: -1
+  inGame: >-
+    <p>L'action test de sauvegarde permet de réaliser le test de CON et
+    d'appliquer sur la cible le statut Inconscient en Illimité en cas
+    d'échec.</p><p>L'action "Si injonction mortelle" permet de jeter les DM si
+    le test de sauvegarde a été réussie.</p>
 effects: []
 ownership:
   default: 0
@@ -66,12 +111,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.348'
+  coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1741116549525
-  modifiedTime: 1758844652968
-  lastModifiedBy: LEtUoNWt5mYBIjrk
+  modifiedTime: 1769119394534
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: bwOK4qSjvDyMpddv
 sort: 8200000
