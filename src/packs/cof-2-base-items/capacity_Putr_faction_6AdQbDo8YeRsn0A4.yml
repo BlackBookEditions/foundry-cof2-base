@@ -13,9 +13,9 @@ system:
     attaque de la momie. L’utilisation de la capacité de prêtre Délivrance
     permet de soigner cette maladie.</p>
   inGame: >-
-    <p>Laction permet d'infliger les DM et d'aplliquer une perte périodique de 
-    DM pedant 5 rounds. Les DM périodiques fonctionnent uniquement en mode 
-    Combat</p>
+    <p>L'action permet de réaliser le test de sauvegarde et d'infliger les DM
+    pendant 5 rounds sur la cible en cas d'échec.</p><p> Les DM périodiques
+    fonctionnent uniquement en mode Combat</p>
   source: ''
   origin: ''
   slug: putrefaction
@@ -33,40 +33,41 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.6AdQbDo8YeRsn0A4
       indice: 0
-      label: ''
+      label: Sur cible blessée
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
-          dmg:
-            formula: 1d6
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: true
-            applyOn: always
+            applyOn: saveFailure
             formulaType: damage
             formula: 1d6
-            elementType: ''
+            elementType: disease
             statuses: []
             duration: '5'
             unit: round
-            successThreshold: null
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   frequency: none
   rank: 0
@@ -81,12 +82,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749370433739
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769130912645
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: 6AdQbDo8YeRsn0A4
 sort: 500000

@@ -604,57 +604,6 @@ items:
     sort: 8700000
     _key: '!actors.items!dHSPblYmpsxcS6R6.5XFZqB8h04iQYLfN'
   - folder: Jc9oocmI3B4cVSRG
-    name: Brise-genou
-    type: capacity
-    img: icons/skills/wounds/bone-broken-knee-beam.webp
-    system:
-      description: >-
-        <p>Si un adversaire au contact tente de s’éloigner de la créature
-        (généralement pour fuir), elle obtient une attaque de contact gratuite
-        contre lui. Si cette attaque est réussie, en plus des DM habituels, la
-        cible doit réussir un <strong>test de CON difficulté 15</strong> ou
-        diviser par deux tous ses déplacements pour le reste du combat</p>
-      source: ''
-      origin: ''
-      slug: brise-genou
-      subtype: ''
-      actionType: f
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758892249917
-      modifiedTime: 1758892249917
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: SJvEa4cqxuwG6rfO
-    sort: 9300000
-    _key: '!actors.items!dHSPblYmpsxcS6R6.SJvEa4cqxuwG6rfO'
-  - folder: Jc9oocmI3B4cVSRG
     name: Capitaine
     type: capacity
     img: icons/environment/people/infantry-armored.webp
@@ -845,6 +794,99 @@ items:
     _id: wm8UIxWSP6sMGbFY
     sort: 4100000
     _key: '!actors.items!dHSPblYmpsxcS6R6.wm8UIxWSP6sMGbFY'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Brise-genou (15)
+    type: capacity
+    img: icons/skills/wounds/bone-broken-knee-beam.webp
+    system:
+      description: >-
+        <p>Si un adversaire au contact tente de s’éloigner de la créature
+        (généralement pour fuir), elle obtient une attaque de contact gratuite
+        contre lui. Si cette attaque est réussie, en plus des DM habituels, la
+        cible doit réussir un <strong>test de CON difficulté 15</strong> ou
+        diviser par deux tous ses déplacements pour le reste du combat</p>
+      source: ''
+      origin: ''
+      slug: brise-genou
+      subtype: ''
+      actionType: f
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.dHSPblYmpsxcS6R6.Item.h1pj6B154zXj3BUN
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                unit: combat
+                statuses: []
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde sur une cible et
+        appliquer le statut Essoufflé (limite le déplacement à 5m) pour le reste
+        du combat.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769119062382
+      modifiedTime: 1769119094073
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: h1pj6B154zXj3BUN
+    sort: 9300000
+    _key: '!actors.items!dHSPblYmpsxcS6R6.h1pj6B154zXj3BUN'
 effects: []
 ownership:
   default: 0

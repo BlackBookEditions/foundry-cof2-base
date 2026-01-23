@@ -504,8 +504,50 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
-      inGame: ''
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.aLrU7IwqjA5L1M2g
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - paralysis
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        Statut Paralysé pendant 1d6 rounds sur la cible.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -515,21 +557,156 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.NoLJNKIvJ3opGTEd
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758849273807
-      modifiedTime: 1758849273807
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: ldpgoFhHIm8QfmtB
+      createdTime: 1769129803360
+      modifiedTime: 1769129803378
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: aLrU7IwqjA5L1M2g
     sort: 5100000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.ldpgoFhHIm8QfmtB'
+    _key: '!actors.items!JiJJNMEOqirDKx5j.aLrU7IwqjA5L1M2g'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fièvre des goules
+    type: capacity
+    img: icons/magic/death/blood-corruption-vomit-red.webp
+    system:
+      description: >-
+        <p>À la fin du combat, si le personnage a été blessé au moins une fois
+        par la morsure d’une goule, il doit réussir un <strong>test de CON
+        difficulté 15</strong> ou contracter la maladie. Chaque jour, il subit
+        <strong>1d4° DM</strong> retranchés directement à sa valeur de<strong>
+        PV maximale</strong> (il ne peut plus dépasser cette nouvelle valeur) et
+        doit faire un nouveau test de CON difficulté 15 pour vaincre la maladie.
+        Lorsqu’il arrive à 0 PV, il meurt et se transforme en goule. S’il
+        guérit, les PV perdus peuvent être récupérés normalement. <strong>Un
+        sort de Délivrance (rang 3 de la voie de la spiritualité) peut mettre
+        fin à la fièvre des goules</strong>.</p>
+      source: ''
+      origin: ''
+      slug: fievre-des-goules
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.jFfVCjOk4Nxwqwap
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - poison
+                duration: '0'
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.jFfVCjOk4Nxwqwap
+          indice: 1
+          label: DM par jour
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d4°
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      inGame: >-
+        <p>La première action permet de réaliser le test de sauvegarde et
+        d'appliquer le statut Empoisonné sur la cible pendant une durée
+        Illimitée.</p><p>La deuxième action permet de jeter les DM pour les
+        dommages journaliers des acteurs malade.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bP0KFhJUPgdPwqTO
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769130087925
+      modifiedTime: 1769130087940
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: jFfVCjOk4Nxwqwap
+    sort: 4500000
+    _key: '!actors.items!JiJJNMEOqirDKx5j.jFfVCjOk4Nxwqwap'
   - folder: Jc9oocmI3B4cVSRG
     name: Miasmes
     type: capacity
@@ -557,40 +734,49 @@ items:
       manaCost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.7TUrVpsyWt4brTnq
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JiJJNMEOqirDKx5j.Item.FSDwhOnuzJ97p3Id
           indice: 0
-          label: DM
+          label: Au contact
           chatFlavor: ''
           img: icons/svg/d20-highlight.svg
-          type: magical
+          type: spell
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
             noManaCost: false
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: auto
-              dmg:
-                formula: 1d4
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
               target:
-                type: single
+                type: multiple
+                number: 10
                 scope: all
-                number: 0
               additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d4
+                elementType: disease
+                statuses:
+                  - weakened
+                duration: '1'
                 unit: round
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
+              dmg: {}
           modifiers: []
-      inGame: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde. En cas d'échec, la
+        ou les cibles subissent les DM et le statut Affaibli est appliqué sur
+        elles pendant 1 round.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -600,67 +786,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.Ozt74KiyZUjE2A6z
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758849282531
-      modifiedTime: 1758849312304
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: 7TUrVpsyWt4brTnq
+      createdTime: 1769130329118
+      modifiedTime: 1769130329144
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: FSDwhOnuzJ97p3Id
     sort: 5000000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.7TUrVpsyWt4brTnq'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Fièvre des goules
-    type: capacity
-    img: icons/magic/death/blood-corruption-vomit-red.webp
-    system:
-      description: "<p>À la fin du combat, si le personnage a été blessé au moins une fois par la morsure d’une goule, il doit réussir un <strong>test de CON difficulté 18\_</strong>ou contracter la maladie. Chaque jour, il subit <strong>1d4° DM</strong> retranchés directement à sa valeur de<strong> PV maximale</strong> (il ne peut plus dépasser cette nouvelle valeur) et doit faire un nouveau test de CON difficulté 15 pour vaincre la maladie. Lorsqu’il arrive à 0 PV, il meurt et se transforme en goule. S’il guérit, les PV perdus peuvent être récupérés normalement. <strong>Un sort de Délivrance (rang 3 de la voie de la spiritualité) peut mettre fin à la fièvre des goules</strong>.</p>"
-      source: ''
-      origin: ''
-      slug: fievre-des-goules
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bP0KFhJUPgdPwqTO
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758849288352
-      modifiedTime: 1758849302863
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: hTWnYxvNvrfaf6eR
-    sort: 4500000
-    _key: '!actors.items!JiJJNMEOqirDKx5j.hTWnYxvNvrfaf6eR'
+    _key: '!actors.items!JiJJNMEOqirDKx5j.FSDwhOnuzJ97p3Id'
 effects: []
 ownership:
   default: 0

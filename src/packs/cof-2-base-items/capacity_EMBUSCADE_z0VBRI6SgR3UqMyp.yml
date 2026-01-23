@@ -30,42 +30,106 @@ system:
   actions:
     - source: Item.90rhvbVowzwfzz8D
       indice: 0
-      label: ''
+      label: FOR inférieure
       chatFlavor: ''
-      type: buff
       img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
       properties:
-        visible: false
-        enabled: true
         activable: true
         temporary: true
+        noChargesUsed: false
+        visible: false
+        enabled: true
         noManaCost: false
       conditions:
         - predicate: isOwned
       modifiers:
         - type: capacity
-          source: Item.90rhvbVowzwfzz8D
-          subtype: skill
-          target: agi
-          apply: self
-          value: '5'
-          additionalInfos: ''
-        - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
           subtype: combat
           target: damMelee
-          apply: self
           value: 1d4
+          apply: self
           additionalInfos: ''
         - type: capacity
           source: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
           subtype: combat
           target: damRanged
-          apply: self
           value: 1d4
+          apply: self
           additionalInfos: ''
       resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+      indice: 1
+      label: Test de surprise
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: per
+          saveDifficulty: '16'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: ''
+            elementType: ''
+            statuses:
+              - surprised
+            duration: '1'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+      indice: 2
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+          subtype: skill
+          target: agi
+          value: '5'
+          apply: self
+          additionalInfos: Discrétion
+      resolvers: []
   manaCost: -1
+  inGame: >-
+    <p>La première action est à activer pour obtenir les DM
+    supplémentaires.</p><p>La deuxième action permet de réaliser le test de PER
+    et d'appliquer le statut Surpris s'il est raté.</p><p>La troisième action
+    permanente donne le bonus aux tests de Discrétion.</p>
 effects: []
 ownership:
   default: 0
@@ -74,12 +138,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1741713354110
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769117111727
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: z0VBRI6SgR3UqMyp
 sort: 6000000

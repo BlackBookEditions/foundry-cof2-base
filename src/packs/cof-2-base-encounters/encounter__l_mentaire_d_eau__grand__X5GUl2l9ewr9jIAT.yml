@@ -479,55 +479,6 @@ items:
     sort: 4300000
     _key: '!actors.items!X5GUl2l9ewr9jIAT.YR34M634KyPmdKj8'
   - folder: Jc9oocmI3B4cVSRG
-    name: Fauchage
-    type: capacity
-    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
-    system:
-      description: >-
-        <p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime
-        doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être
-        renversée. </p>
-      source: ''
-      origin: ''
-      slug: fauchage
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758846772506
-      modifiedTime: 1758846883488
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: Yw5AVzRC4gIuWw3c
-    sort: 8800000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.Yw5AVzRC4gIuWw3c'
-  - folder: Jc9oocmI3B4cVSRG
     name: Grand
     type: capacity
     img: icons/magic/control/silhouette-grow-shrink-tan.webp
@@ -649,62 +600,6 @@ items:
     sort: 5200000
     _key: '!actors.items!X5GUl2l9ewr9jIAT.l8rpd5Dtf4bddvOy'
   - folder: Jc9oocmI3B4cVSRG
-    name: Tourbillon
-    type: capacity
-    img: icons/magic/air/wind-tornado-funnel-blue-grey.webp
-    system:
-      description: >-
-        <p>Une fois par combat, un élémentaire peut se transformer en tourbillon
-        liquide pendant 3 rounds. Sous cette forme, il peut se déplacer à
-        travers les créatures et les objets à la vitesse de 10 m par action de
-        mouvement (20 m pour les élémentaires d’air). Toute créature sur son
-        passage doit faire un <strong>test d’AGI ou de FOR au choix de
-        difficulté 16</strong>. En cas d’échec, la cible subit automatiquement
-        les <strong>DM de base de l’élémentaire</strong> (selon la taille) et
-        elle est <strong>renversée </strong>(si sa taille ne dépasse pas celle
-        de l’élémentaire). En cas de succès, elle ne subit que la moitié des DM
-        et peut rester debout.</p>
-      source: ''
-      origin: Livre des règles p280
-      slug: tourbillon
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: 1
-        max: 1
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: combat
-      inGame: ''
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.UzXs2SzVIjMrKCUc
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758846803777
-      modifiedTime: 1758846803777
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: gRVqG3ko5etlV24I
-    sort: 5600000
-    _key: '!actors.items!X5GUl2l9ewr9jIAT.gRVqG3ko5etlV24I'
-  - folder: Jc9oocmI3B4cVSRG
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
@@ -773,6 +668,276 @@ items:
       modifiedTime: 1758846808765
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!X5GUl2l9ewr9jIAT.ndnop9RzgZzO6KKO'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fauchage (16)
+    type: capacity
+    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
+    system:
+      description: "<p>Sur 17 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 16 ou être renversée.\_</p>"
+      source: ''
+      origin: ''
+      slug: fauchage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.pIEseFSr4ReuwZdM
+          indice: 0
+          label: Sauvegarde de FOR
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.pIEseFSr4ReuwZdM
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>Les deux actions permettent de réaliser le test de sauvegarde de FOR
+        et d'AGI et appliquer le statut Renversé pendant tout le combat si le
+        test est raté. Il faudra supprimer l'Effet Personnalisé sur la feuille
+        de la cible manuellement lorsqu'elle se relève.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769121081018
+      modifiedTime: 1769121237381
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: pIEseFSr4ReuwZdM
+    sort: 8800000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.pIEseFSr4ReuwZdM'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Tourbillon
+    type: capacity
+    img: icons/magic/air/wind-tornado-funnel-blue-grey.webp
+    system:
+      description: >-
+        <p>Une fois par combat, un élémentaire peut se transformer en tourbillon
+        liquide pendant 3 rounds. Sous cette forme, il peut se déplacer à
+        travers les créatures et les objets à la vitesse de 10 m par action de
+        mouvement (20 m pour les élémentaires d’air). Toute créature sur son
+        passage doit faire un <strong>test d’AGI ou de FOR au choix de
+        difficulté 16</strong>. </p><p>En cas d’échec, la cible subit
+        automatiquement les <strong>DM de base de l’élémentaire</strong> (selon
+        la taille) et elle est <strong>renversée </strong>(si sa taille ne
+        dépasse pas celle de l’élémentaire). </p><p>En cas de succès, elle ne
+        subit que la moitié des DM et peut rester debout.</p>
+      source: ''
+      origin: Livre des règles p280
+      slug: tourbillon
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: 1
+        max: 1
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.WtLVl086p6U9oc1d
+          indice: 0
+          label: Sauvegarde de FOR
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '16'
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.X5GUl2l9ewr9jIAT.Item.WtLVl086p6U9oc1d
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '16'
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                duration: '0'
+                unit: combat
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: combat
+      inGame: >-
+        <p>Les deux actions permettent de réaliser un test de sauvegarde de FOR
+        et d'AGI et d'appliquer le staut Renversé pendant tout le combat en cas
+        d'échec.</p><p>Les DM sont infligés à partir de l'attaque de
+        l'élémentaire.</p>
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.UzXs2SzVIjMrKCUc
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769125965133
+      modifiedTime: 1769125965168
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: WtLVl086p6U9oc1d
+    sort: 5600000
+    _key: '!actors.items!X5GUl2l9ewr9jIAT.WtLVl086p6U9oc1d'
 effects: []
 ownership:
   default: 0

@@ -594,7 +594,7 @@ items:
     sort: 8700000
     _key: '!actors.items!1oD5plhfMuSznLOU.m8gZX5msQvPIUXtp'
   - folder: Jc9oocmI3B4cVSRG
-    name: Tape dur
+    name: Tape dur (16)
     type: capacity
     img: icons/skills/melee/hand-grip-hammer-spiked-blue.webp
     system:
@@ -613,8 +613,50 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
-      inGame: ''
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.1oD5plhfMuSznLOU.Item.iRhylvzOEwLbgCQf
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - stun
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer sur
+        la cible le statut Étourdi pendant 1 round en cas d'échec.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -624,21 +666,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.rxSgIJDkSrN4Rvg3
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758890200550
-      modifiedTime: 1758890232912
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: arrHovRAYlxk6BGA
+      createdTime: 1769122191340
+      modifiedTime: 1769122191354
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: iRhylvzOEwLbgCQf
     sort: 7400000
-    _key: '!actors.items!1oD5plhfMuSznLOU.arrHovRAYlxk6BGA'
+    _key: '!actors.items!1oD5plhfMuSznLOU.iRhylvzOEwLbgCQf'
 effects: []
 ownership:
   default: 0

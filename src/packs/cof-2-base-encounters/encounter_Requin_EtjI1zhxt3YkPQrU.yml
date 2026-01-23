@@ -392,14 +392,11 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!EtjI1zhxt3YkPQrU.otZfJ1qg8hBUUkTV'
   - folder: Jc9oocmI3B4cVSRG
-    name: Dévorer
+    name: Dévorer avec immobilisation
     type: capacity
     img: icons/creatures/abilities/mouth-teeth-rows-red.webp
     system:
-      description: >-
-        <p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au
-        d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige
-        immédiatement une attaque gratuite supplémentaire</p>
+      description: "<p>Lorsque la créature réussit une attaque avec un résultat de 15‑20 au d20, elle saisit sa proie entre ses crocs ou ses griffes et lui inflige immédiatement une attaque gratuite supplémentaire.</p><p> Si la\_FOR de la cible est inférieure ou égale au\_prédateur, elle est de plus immobilisée. Pour\_se libérer, la victime doit réussir un test de\_FOR difficulté 15 lors de son tour et cela lui\_demande une action de mouvement.</p>"
       source: ''
       origin: ''
       slug: devorer
@@ -413,9 +410,47 @@ items:
         spell: false
       path: null
       cost: -1
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.EtjI1zhxt3YkPQrU.Item.3fY5iZTz0gOVcsae
+          indice: 0
+          label: Se libérer
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '15'
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       manaCost: -1
-      inGame: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde pour se
+        libérer.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -431,12 +466,12 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.PjlksI7o7rbZ6jiG
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758841761450
-      modifiedTime: 1758841761450
-      lastModifiedBy: LEtUoNWt5mYBIjrk
+      modifiedTime: 1769121905590
+      lastModifiedBy: oByx0z6HY26hEziz
     _id: 3fY5iZTz0gOVcsae
     sort: 9100000
     _key: '!actors.items!EtjI1zhxt3YkPQrU.3fY5iZTz0gOVcsae'

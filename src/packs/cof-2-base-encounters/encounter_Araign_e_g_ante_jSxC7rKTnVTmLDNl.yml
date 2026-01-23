@@ -403,176 +403,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!jSxC7rKTnVTmLDNl.VBTjiZKttG1pbho9'
   - folder: Jc9oocmI3B4cVSRG
-    name: Poison mortel
-    type: capacity
-    img: icons/skills/toxins/poison-skull-herbs-bottle-pink.webp
-    system:
-      description: >-
-        <p>Le poison inflige 2d6 DM supplémentaires à la victime à chaque
-        attaque. Si la victime réussit un test de CON de la difficulté indiquée,
-        elle subit seulement la moitié des DM.</p>
-      source: ''
-      origin: ''
-      slug: poison-mortel
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.KzBRlAY95jGtVL1l
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 2D6
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.o87m7rEVh3RkF97R
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758845134751
-      modifiedTime: 1758845248110
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: KzBRlAY95jGtVL1l
-    sort: 6800000
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.KzBRlAY95jGtVL1l'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Toile
-    type: capacity
-    img: icons/creatures/webs/web-spider-glowing-purple.webp
-    system:
-      description: >-
-        <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa
-        cible dans une toile gluante et solide. Elle est <strong>immobilisée
-        </strong>; se libérer nécessite l’usage d’une action limitée et il faut
-        réussir un<strong> test de FOR difficulté 12</strong>.</p>
-      source: ''
-      origin: ''
-      slug: toile
-      subtype: ''
-      actionType: l
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.XsQ1IMJREdsdmMlt
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: ranged
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '+7'
-                crit: '20'
-                difficulty: '@cible.def'
-              dmg:
-                formula: '0'
-              target:
-                type: none
-                number: 0
-                scope: all
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-          modifiers: []
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.KqFxAwUj87NMzlv4
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758845190015
-      modifiedTime: 1758845244607
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: XsQ1IMJREdsdmMlt
-    sort: 6300000
-    _key: '!actors.items!jSxC7rKTnVTmLDNl.XsQ1IMJREdsdmMlt'
-  - folder: Jc9oocmI3B4cVSRG
     name: Araignée chasseuse
     type: capacity
     img: icons/creatures/invertebrates/tick-cross-glowing-purple.webp
@@ -678,6 +508,410 @@ items:
     _id: LwbJWEAQMltoDMCF
     sort: 1800000
     _key: '!actors.items!jSxC7rKTnVTmLDNl.LwbJWEAQMltoDMCF'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Poison mortel
+    type: capacity
+    img: icons/skills/toxins/poison-skull-herbs-bottle-pink.webp
+    system:
+      description: >-
+        <p>Le poison inflige 2d6 DM supplémentaires à la victime à chaque
+        attaque. Si la victime réussit un test de CON de la difficulté indiquée,
+        elle subit seulement la moitié des DM.</p>
+      source: ''
+      origin: ''
+      slug: poison-mortel
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.In5FPSz5b8JoFnZo
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 2d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.In5FPSz5b8JoFnZo
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '12'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>La première action permet de jeter les DM du poison.</p><p>La
+        deuxième action permet de réaliser le test de sauvegarde pour réduire
+        les DM de moitié.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.o87m7rEVh3RkF97R
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769123525712
+      modifiedTime: 1769123525739
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: In5FPSz5b8JoFnZo
+    sort: 6800000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.In5FPSz5b8JoFnZo'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Araignée chasseuse
+    type: capacity
+    img: icons/creatures/invertebrates/tick-cross-glowing-purple.webp
+    system:
+      description: >-
+        <p>Au premier round de combat, si l’environnement permet de se
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
+        19</strong> ou être surprise.</p>
+
+        <p>Si elle attaque avec succès une cible surprise, la créature inflige
+        <strong>+1d4 DM</strong> et toute créature dont la<strong> FOR est
+        inférieure à la sienne est renversée</strong>. La créature obtient un
+        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      source: ''
+      origin: Livre des règles p275
+      slug: araignee-chasseuse
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.jkUMIlHSTLzGPE77
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.jkUMIlHSTLzGPE77
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.jkUMIlHSTLzGPE77
+          indice: 1
+          label: si surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.jkUMIlHSTLzGPE77
+              subtype: combat
+              target: damMelee
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.jkUMIlHSTLzGPE77
+          indice: 2
+          label: Test de surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '19'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - surprised
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: "<p>La première action permanente donne le bonus aux tests de discrétion.</p><p>La deuxième action activable/désactivable donne le bonus aux DM des attaques.</p><p>La troisième action permet de réaliser le test de sauvegarde et d'appliquer le statut Surpris sur la cible en cas d'échec.\_</p>"
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.FpqZTZM5wuWb5mOT
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769123731229
+      modifiedTime: 1769123731255
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: jkUMIlHSTLzGPE77
+    sort: 1800000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.jkUMIlHSTLzGPE77'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Toile
+    type: capacity
+    img: icons/creatures/webs/web-spider-glowing-purple.webp
+    system:
+      description: >-
+        <p>Sur un test d’attaque réussi (portée 3 m), l’araignée emprisonne sa
+        cible dans une toile gluante et solide. Elle est <strong>immobilisée
+        </strong>; se libérer nécessite l’usage d’une action limitée et il faut
+        réussir un<strong> test de FOR difficulté 12</strong>.</p>
+      source: ''
+      origin: ''
+      slug: toile
+      subtype: ''
+      actionType: l
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.PK1aJk7m3oTBlgYI
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: ranged
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: attack
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill:
+                formula: '+7'
+                crit: '20'
+                difficulty: '@cible.def'
+              dmg:
+                formula: '0'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: success
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - immobilized
+                duration: '0'
+                unit: combat
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.jSxC7rKTnVTmLDNl.Item.PK1aJk7m3oTBlgYI
+          indice: 1
+          label: Se libérer (L)
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '12'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>La première action permet de réaliser l'attaque et d'appliquer le
+        statut Immobilisé en cas dde succès.</p><p>La deuxième action permet de
+        réaliser le test de sauvegarde pour se libérer. Lorsque la cible réussi
+        se test, il faudra supprimer manuellement l'Effet Personnalisé sur se
+        feuille.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.KqFxAwUj87NMzlv4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769123932163
+      modifiedTime: 1769123932193
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: PK1aJk7m3oTBlgYI
+    sort: 6300000
+    _key: '!actors.items!jSxC7rKTnVTmLDNl.PK1aJk7m3oTBlgYI'
 effects: []
 ownership:
   default: 0

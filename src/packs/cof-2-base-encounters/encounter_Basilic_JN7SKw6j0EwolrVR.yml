@@ -133,14 +133,10 @@ system:
         les déserts ou les montagnes. Un basilic voit dans le noir</p>
     languages: []
     properties: >-
-      <p><strong>DÉTOURNER LE REGARD :</strong> Un personnage qui combat le
-      basilic sans tactique particulière, si ce n’est éviter de croiser son
-      regard doit réussir <strong>un test de CON difficulté 10 </strong>au début
-      de son tour ou être pétrifié. Il subit un dé malus en
-      attaque.</p><p><strong>FERMER LES YEUX :</strong> Le personnage est
-      <strong>aveuglé </strong>(‑5 en DEF et en attaque, pas d’attaque à
-      distance ni de sorts ciblés), mais il ne risque pas d’être pétrifié, sauf
-      échec critique en attaque (dans ce cas test de CON difficulté 10).</p>
+      <p><strong>FERMER LES YEUX :</strong> Le personnage est <strong>aveuglé
+      </strong>(‑5 en DEF et en attaque, pas d’attaque à distance ni de sorts
+      ciblés), mais il ne risque pas d’être pétrifié, sauf échec critique en
+      attaque (dans ce cas test de CON difficulté 10).</p>
   currentEffects: []
 prototypeToken:
   name: Basilic
@@ -406,59 +402,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!JN7SKw6j0EwolrVR.8VbOLLPsfiTsKzMG'
   - folder: Jc9oocmI3B4cVSRG
-    name: Regard pétrifiant
-    type: capacity
-    img: icons/creatures/eyes/lizard-single-slit-pink.webp
-    system:
-      description: >-
-        <p>Celui qui regarde le basilic et croise son regard est pétrifié. Un
-        personnage qui n’est pas conscient du danger doit réussir un test de
-        <strong>CON difficulté 15</strong> à chaque round de combat (à son tour)
-        ou être immédiatement transformé en pierre. La transformation est
-        permanente, mais <strong>un sort de Délivrance (prêtre)</strong> lancé
-        moins de 1 jour par niveau du prêtre après la pétrification peut ramener
-        la victime à la vie.</p>
-      source: ''
-      origin: ''
-      slug: regard-petrifiant
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.MQBspotULvZ8QaIp
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758845345617
-      modifiedTime: 1758845345617
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: Hv2NnYfEXgEy7vxL
-    sort: 6100000
-    _key: '!actors.items!JN7SKw6j0EwolrVR.Hv2NnYfEXgEy7vxL'
-  - folder: Jc9oocmI3B4cVSRG
     name: Vision dans le noir
     type: capacity
     img: icons/magic/perception/eye-ringed-glow-angry-teal.webp
@@ -527,6 +470,190 @@ items:
       modifiedTime: 1758845532331
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!JN7SKw6j0EwolrVR.F7nRVkmJFZt0qZ7w'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Regard pétrifiant
+    type: capacity
+    img: icons/creatures/eyes/lizard-single-slit-pink.webp
+    system:
+      description: >-
+        <p>Celui qui regarde le basilic et croise son regard est pétrifié. Un
+        personnage qui n’est pas conscient du danger doit réussir un test de
+        <strong>CON difficulté 15</strong> à chaque round de combat (à son tour)
+        ou être immédiatement transformé en pierre. La transformation est
+        permanente, mais <strong>un sort de Délivrance (prêtre)</strong> lancé
+        moins de 1 jour par niveau du prêtre après la pétrification peut ramener
+        la victime à la vie.</p>
+      source: ''
+      origin: ''
+      slug: regard-petrifiant
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JN7SKw6j0EwolrVR.Item.Hq1itvGKGm8xYImx
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - paralysis
+                unit: unlimited
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Paralysé de façon Illimité en cas d'échec.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.MQBspotULvZ8QaIp
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769124101099
+      modifiedTime: 1769124101115
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: Hq1itvGKGm8xYImx
+    sort: 6100000
+    _key: '!actors.items!JN7SKw6j0EwolrVR.Hq1itvGKGm8xYImx'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Détourner le regard
+    type: capacity
+    img: icons/creatures/eyes/humanoid-single-blue.webp
+    _id: ZyrvTVgj5k7SiWZ5
+    system:
+      description: >-
+        <p>Un personnage qui combat le basilic sans tactique particulière, si ce
+        n’est éviter de croiser son regard doit réussir <strong>un test de CON
+        difficulté 10 </strong>au début de son tour ou être pétrifié. Il subit
+        un dé malus en attaque.</p>
+      source: ''
+      origin: ''
+      slug: ''
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Paralysé durant tout le combat en cas d'échec.</p>
+      subtype: ''
+      actionType: none
+      learned: true
+      rank: 0
+      frequency: none
+      charges: {}
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.JN7SKw6j0EwolrVR.Item.ZyrvTVgj5k7SiWZ5
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - paralysis
+                duration: '0'
+                unit: combat
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    sort: 0
+    ownership:
+      default: 0
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.fqtY3zKKZE1WCEXb
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769124356305
+      modifiedTime: 1769124356323
+      lastModifiedBy: oByx0z6HY26hEziz
+    _key: '!actors.items!JN7SKw6j0EwolrVR.ZyrvTVgj5k7SiWZ5'
 effects: []
 ownership:
   default: 0
@@ -535,12 +662,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.348'
+  coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1749281204860
-  modifiedTime: 1758845568462
-  lastModifiedBy: LEtUoNWt5mYBIjrk
+  modifiedTime: 1769124362948
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: JN7SKw6j0EwolrVR
 sort: 200000

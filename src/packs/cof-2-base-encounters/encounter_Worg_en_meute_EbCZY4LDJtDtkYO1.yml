@@ -397,153 +397,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!EbCZY4LDJtDtkYO1.Ll2nENJCVVEmHLnV'
   - folder: Jc9oocmI3B4cVSRG
-    name: Embuscade
-    type: capacity
-    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
-    system:
-      description: >-
-        <p>Au premier round de combat, si l’environnement permet de se
-        dissimuler, la cible doit faire un test de<strong> PER difficulté
-        16</strong> ou être surprise.</p>
-
-        <p>Si elle attaque avec succès une cible surprise, la créature inflige
-        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
-        inférieure à la sienne est renversée</strong>. La créature obtient un
-        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
-      source: ''
-      origin: ''
-      slug: embuscade
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: buff
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: true
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          modifiers:
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
-              subtype: skill
-              target: agi
-              value: '5'
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
-              subtype: combat
-              target: damMelee
-              value: 1d4
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.5fS1Xa2GUPOLTo2i
-              subtype: combat
-              target: damRanged
-              value: 1d4
-              apply: self
-              additionalInfos: ''
-          resolvers: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758910654404
-      modifiedTime: 1758910690636
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: 5fS1Xa2GUPOLTo2i
-    sort: 6000000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.5fS1Xa2GUPOLTo2i'
-  - folder: Jc9oocmI3B4cVSRG
-    name: Brise-genou
-    type: capacity
-    img: icons/skills/wounds/bone-broken-knee-beam.webp
-    system:
-      description: >-
-        <p>Si un adversaire au contact tente de s’éloigner de la créature
-        (généralement pour fuir), elle obtient une attaque de contact gratuite
-        contre lui. Si cette attaque est réussie, en plus des DM habituels, la
-        cible doit réussir un <strong>test de CON difficulté 15</strong> ou
-        diviser par deux tous ses déplacements pour le reste du combat</p>
-      source: ''
-      origin: ''
-      slug: brise-genou
-      subtype: ''
-      actionType: f
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758910658328
-      modifiedTime: 1758910658328
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: f6W422ycD44y2yca
-    sort: 9300000
-    _key: '!actors.items!EbCZY4LDJtDtkYO1.f6W422ycD44y2yca'
-  - folder: Jc9oocmI3B4cVSRG
     name: Attaque en traître
     type: capacity
     img: icons/creatures/abilities/cougar-roar-rush-orange.webp
@@ -675,6 +528,258 @@ items:
     _id: ZByYyAuuOhpGjgTO
     sort: 4900000
     _key: '!actors.items!EbCZY4LDJtDtkYO1.ZByYyAuuOhpGjgTO'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Embuscade (16)
+    type: capacity
+    img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
+    system:
+      description: >-
+        <p>Au premier round de combat, si l’environnement permet de se
+        dissimuler, la cible doit faire un test de<strong> PER difficulté
+        16</strong> ou être surprise.</p>
+
+        <p>Si elle attaque avec succès une cible surprise, la créature inflige
+        <strong>+1d4 DM </strong>et toute créature dont la <strong>FOR est
+        inférieure à la sienne est renversée</strong>. La créature obtient un
+        bonus de <strong>+5 à tous les tests de discrétion</strong></p>
+      source: ''
+      origin: ''
+      slug: embuscade
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+          indice: 0
+          label: FOR inférieure
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+              subtype: combat
+              target: damMelee
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+              subtype: combat
+              target: damRanged
+              value: 1d4
+              apply: self
+              additionalInfos: ''
+          resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+          indice: 1
+          label: Test de surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                duration: '1'
+                unit: round
+                statuses: []
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+          indice: 2
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.HAENyQGxrOaPHj5u
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
+      manaCost: -1
+      inGame: >-
+        <p>La première action est à activer pour obtenir les DM
+        supplémentaires.</p><p>La deuxième action permet de réaliser le test de
+        PER et d'appliquer le statut Surpris s'il est raté.</p><p>La troisième
+        action permanente donne le bonus aux tests de Discrétion.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769117491706
+      modifiedTime: 1769117500073
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: HAENyQGxrOaPHj5u
+    sort: 6000000
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.HAENyQGxrOaPHj5u'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Brise-genou (15)
+    type: capacity
+    img: icons/skills/wounds/bone-broken-knee-beam.webp
+    system:
+      description: >-
+        <p>Si un adversaire au contact tente de s’éloigner de la créature
+        (généralement pour fuir), elle obtient une attaque de contact gratuite
+        contre lui. Si cette attaque est réussie, en plus des DM habituels, la
+        cible doit réussir un <strong>test de CON difficulté 15</strong> ou
+        diviser par deux tous ses déplacements pour le reste du combat</p>
+      source: ''
+      origin: ''
+      slug: brise-genou
+      subtype: ''
+      actionType: f
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.EbCZY4LDJtDtkYO1.Item.f0hswvCKucCg9yiI
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                unit: combat
+                statuses: []
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde sur une cible et
+        appliquer le statut Essoufflé (limite le déplacement à 5m) pour le reste
+        du combat.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bEtF4wraB5dZMJPD
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769118157819
+      modifiedTime: 1769118166910
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: f0hswvCKucCg9yiI
+    sort: 9300000
+    _key: '!actors.items!EbCZY4LDJtDtkYO1.f0hswvCKucCg9yiI'
 effects: []
 ownership:
   default: 0
