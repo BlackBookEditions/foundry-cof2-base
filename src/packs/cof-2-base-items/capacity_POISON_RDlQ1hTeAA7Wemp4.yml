@@ -26,41 +26,82 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: melee
       img: icons/svg/d20-highlight.svg
+      type: melee
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
           dmg:
             formula: 1d6
           target:
             type: single
-            number: 0
             scope: all
+            number: 0
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.RDlQ1hTeAA7Wemp4
+      indice: 1
+      label: Test de sauvegarde
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '16'
+          target:
+            type: single
+            scope: all
+            number: 0
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 1d6
+            elementType: poison
+            statuses: []
+            duration: '5'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   frequency: none
   rank: 0
   allowLinkedCapacity: false
   linkedCapacity: null
   parentCapacity: null
+  inGame: >-
+    <p>L'action permet de réaliser le test de sauveagrde et d'infliger les DM
+    pendant 5 rounds sur la cible en cas d'échec.</p>
 effects: []
 ownership:
   default: 0
@@ -69,12 +110,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1749281456625
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769124538848
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: RDlQ1hTeAA7Wemp4
 sort: 1900000

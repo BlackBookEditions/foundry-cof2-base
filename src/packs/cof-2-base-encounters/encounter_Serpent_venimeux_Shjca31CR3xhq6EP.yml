@@ -394,7 +394,7 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!Shjca31CR3xhq6EP.JBub9dcp4R4NHlTU'
   - folder: Jc9oocmI3B4cVSRG
-    name: Embuscade
+    name: Embuscade (15)
     type: capacity
     img: icons/magic/nature/stealth-hide-beast-eyes-green.webp
     system:
@@ -414,33 +414,26 @@ items:
       cost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
           indice: 0
-          label: ''
+          label: FOR inférieure
           chatFlavor: ''
           img: icons/svg/d20-highlight.svg
           type: buff
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
             noManaCost: false
           conditions:
             - predicate: isOwned
           modifiers:
             - type: capacity
               source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
-              subtype: skill
-              target: agi
-              value: '5'
-              apply: self
-              additionalInfos: ''
-            - type: capacity
-              source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
+                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
               subtype: combat
               target: damMelee
               value: 1d4
@@ -448,15 +441,85 @@ items:
               additionalInfos: ''
             - type: capacity
               source: >-
-                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.zzydMbXqZr43doGL
+                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
               subtype: combat
               target: damRanged
               value: 1d4
               apply: self
               additionalInfos: ''
           resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
+          indice: 1
+          label: Test de surprise
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
+          indice: 2
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
+          actionType: none
+          properties:
+            activable: false
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.p5AR41b2TSV6KrWW
+              subtype: skill
+              target: agi
+              value: '5'
+              apply: self
+              additionalInfos: Discrétion
+          resolvers: []
       manaCost: -1
-      inGame: ''
+      inGame: >-
+        <p>La première action est à activer pour obtenir les DM
+        supplémentaires.</p><p>La deuxième action permet de réaliser le test de
+        PER et d'appliquer le statut Surpris s'il est raté.</p><p>La troisième
+        action permanente donne le bonus aux tests de Discrétion.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -466,21 +529,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.z0VBRI6SgR3UqMyp
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758842131844
-      modifiedTime: 1758842207675
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: zzydMbXqZr43doGL
+      createdTime: 1769117379203
+      modifiedTime: 1769123335693
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: p5AR41b2TSV6KrWW
     sort: 6000000
-    _key: '!actors.items!Shjca31CR3xhq6EP.zzydMbXqZr43doGL'
+    _key: '!actors.items!Shjca31CR3xhq6EP.p5AR41b2TSV6KrWW'
   - folder: Jc9oocmI3B4cVSRG
     name: Venin
     type: capacity
@@ -492,10 +555,7 @@ items:
         supplémentaire par round pendant 1d6 rounds. De plus, la victime est
         affaiblie pour une durée similaire exprimée en heures. Chaque nouvelle
         morsure augmente la durée (mais pas les DM par round).</p>
-      inGame: >-
-        <p>L'action inflige 1 DM à la cible et un effet périodique.</p>
-        <p>L'effet périodique inflige 1 DM par round et le statut Affaibli
-        pendant 1d6 round. cet effet fonctionne uniquement en mode Combat.</p>
+      inGame: "<p>L'action permet de réaliser un test de sauvegarde. En cas d'échec, la cible subit les DM et le statut Affaibli est appliqué pendant 1d6 round.</p><p>L'effet Affaibli devra être ajouter\_manuellement à la fin de l'effet.</p>"
       source: ''
       origin: ''
       slug: venin
@@ -512,32 +572,33 @@ items:
       manaCost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.RpykasNnLwEd6fLI
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.PWp1Umsv8ZO6C9Sf
           indice: 0
-          label: En cas d'échec de la cible
+          label: Test de sauveagrde
           chatFlavor: ''
           img: icons/svg/d20-highlight.svg
-          type: melee
+          type: spell
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
             noManaCost: false
           conditions:
             - predicate: isOwned
           resolvers:
-            - type: auto
-              dmg:
-                formula: '1'
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
               target:
                 type: single
                 scope: all
                 number: 0
               additionalEffect:
                 active: true
-                applyOn: always
+                applyOn: saveFailure
                 formulaType: damage
                 formula: '1'
                 elementType: ''
@@ -548,6 +609,7 @@ items:
               bonusDiceAdd: false
               malusDiceAdd: false
               skill: {}
+              dmg: {}
           modifiers: []
       rank: 0
       frequency: none
@@ -558,21 +620,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.lsSLCd1x51MVOehn
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758842147174
-      modifiedTime: 1758842172256
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: RpykasNnLwEd6fLI
+      createdTime: 1769122963208
+      modifiedTime: 1769122963234
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: PWp1Umsv8ZO6C9Sf
     sort: 6900000
-    _key: '!actors.items!Shjca31CR3xhq6EP.RpykasNnLwEd6fLI'
+    _key: '!actors.items!Shjca31CR3xhq6EP.PWp1Umsv8ZO6C9Sf'
   - folder: Jc9oocmI3B4cVSRG
     name: Crachat
     type: capacity
@@ -596,8 +658,50 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
-      inGame: ''
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Shjca31CR3xhq6EP.Item.xcmOmSp4MIEqSyHc
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '12'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - blind
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde qui applique la
+        Statut Aveugle sur la cible pendant 1d6 rounds en cas d'échec.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -607,21 +711,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.fdJUumy5HO8fmVDJ
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758842189654
-      modifiedTime: 1758842189654
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: lKJh7IUZP0IkN71R
+      createdTime: 1769123318107
+      modifiedTime: 1769123318126
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: xcmOmSp4MIEqSyHc
     sort: 7000000
-    _key: '!actors.items!Shjca31CR3xhq6EP.lKJh7IUZP0IkN71R'
+    _key: '!actors.items!Shjca31CR3xhq6EP.xcmOmSp4MIEqSyHc'
 effects: []
 ownership:
   default: 0

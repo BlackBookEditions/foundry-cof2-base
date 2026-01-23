@@ -28,38 +28,47 @@ system:
   actions:
     - source: Compendium.cof2-base.cof-2-base-items.Item.Ozt74KiyZUjE2A6z
       indice: 0
-      label: DM
+      label: Au contact
       chatFlavor: ''
-      type: magical
       img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
       properties:
-        visible: false
-        enabled: true
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
-        - type: auto
+        - type: save
+          saveAbility: con
+          saveDifficulty: '10'
+          target:
+            type: multiple
+            number: 10
+            scope: all
+          additionalEffect:
+            active: true
+            applyOn: saveFailure
+            formulaType: damage
+            formula: 1d4
+            elementType: disease
+            statuses:
+              - weakened
+            duration: '1'
+            unit: round
           bonusDiceAdd: false
           malusDiceAdd: false
-          skill:
-            difficulty: ''
-          dmg:
-            formula: 1d4
-          target:
-            type: single
-            scope: all
-            number: 0
-          additionalEffect:
-            active: false
-            applyOn: success
-            successThreshold: null
-            statuses: []
-            duration: '0'
-            unit: round
+          skill: {}
+          dmg: {}
       modifiers: []
+  inGame: >-
+    <p>L'action permet de réaliser le test de sauvegarde. En cas d'échec, la ou
+    les cibles subissent les DM et le statut Affaibli est appliqué sur elles
+    pendant 1 round.</p>
 effects: []
 ownership:
   default: 0
@@ -68,12 +77,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742189224449
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769130314507
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: Ozt74KiyZUjE2A6z
 sort: 5000000

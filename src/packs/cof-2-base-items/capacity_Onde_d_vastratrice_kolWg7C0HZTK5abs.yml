@@ -27,22 +27,20 @@ system:
       indice: 0
       label: ''
       chatFlavor: ''
-      type: ranged
       img: icons/svg/d20-highlight.svg
+      type: ranged
+      actionType: none
       properties:
-        visible: false
-        enabled: false
         activable: true
         temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
         noManaCost: false
       conditions:
         - predicate: isOwned
       resolvers:
         - type: auto
-          bonusDiceAdd: false
-          malusDiceAdd: false
-          skill:
-            difficulty: ''
           dmg:
             formula: 5d6
           target:
@@ -52,12 +50,53 @@ system:
           additionalEffect:
             active: false
             applyOn: success
-            successThreshold: null
             statuses: []
             duration: '0'
             unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+      modifiers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.kolWg7C0HZTK5abs
+      indice: 1
+      label: 1/2 DM
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: spell
+      actionType: none
+      properties:
+        activable: true
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      resolvers:
+        - type: save
+          saveAbility: con
+          saveDifficulty: '15'
+          target:
+            type: multiple
+            number: 20
+            scope: all
+          additionalEffect:
+            active: false
+            applyOn: success
+            statuses: []
+            duration: '0'
+            unit: round
+          bonusDiceAdd: false
+          malusDiceAdd: false
+          skill: {}
+          dmg: {}
       modifiers: []
   frequency: none
+  inGame: >-
+    <p>La première action permet de jeter les DM automatiquement.</p><p>La
+    deuxième action permet de réaliser le test de sauvegarde pour réduire les DM
+    de moitié.</p>
 effects: []
 ownership:
   default: 0
@@ -66,12 +105,12 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '13.351'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1742415112197
-  modifiedTime: 1749373027605
-  lastModifiedBy: dkGm1qUrVLQeAKiY
+  modifiedTime: 1769131283858
+  lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
 _id: kolWg7C0HZTK5abs
 sort: 5900000

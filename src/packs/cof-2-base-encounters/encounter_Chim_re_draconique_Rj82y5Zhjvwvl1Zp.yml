@@ -549,90 +549,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!Rj82y5Zhjvwvl1Zp.p14hxuqpTPrjeJ99'
   - folder: Jc9oocmI3B4cVSRG
-    name: Poison
-    type: capacity
-    img: icons/skills/toxins/poison-bottle-corked-fire-green.webp
-    system:
-      description: >-
-        <p>La victime subit <strong>1d6 DM de poison</strong> et elle doit faire
-        un<strong> test de CON difficulté 16</strong>. En cas d’échec, elle
-        subit <strong>1d6 DM supplémentaires par round pendant 5
-        rounds</strong>.</p>
-      source: ''
-      origin: ''
-      slug: poison
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions:
-        - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.NeMx0q4MHRtWXFAN
-          indice: 0
-          label: ''
-          chatFlavor: ''
-          img: icons/svg/d20-highlight.svg
-          type: melee
-          actionType: none
-          properties:
-            visible: false
-            enabled: false
-            activable: true
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isOwned
-          resolvers:
-            - type: auto
-              dmg:
-                formula: 1d6
-              target:
-                type: single
-                scope: all
-                number: 0
-              additionalEffect:
-                active: false
-                applyOn: success
-                statuses: []
-                duration: '0'
-                unit: round
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill: {}
-          modifiers: []
-      frequency: none
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-      inGame: ''
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.RDlQ1hTeAA7Wemp4
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758845809934
-      modifiedTime: 1758845837296
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: NeMx0q4MHRtWXFAN
-    sort: 1900000
-    _key: '!actors.items!Rj82y5Zhjvwvl1Zp.NeMx0q4MHRtWXFAN'
-  - folder: Jc9oocmI3B4cVSRG
     name: Riposte sournoise
     type: capacity
     img: icons/skills/melee/strikes-sword-triple-gray.webp
@@ -766,6 +682,132 @@ items:
     sort: 7100000
     _key: '!actors.items!Rj82y5Zhjvwvl1Zp.94neeBPGb06IcXI5'
   - folder: Jc9oocmI3B4cVSRG
+    name: Poison
+    type: capacity
+    img: icons/skills/toxins/poison-bottle-corked-fire-green.webp
+    system:
+      description: >-
+        <p>La victime subit <strong>1d6 DM de poison</strong> et elle doit faire
+        un<strong> test de CON difficulté 16</strong>. En cas d’échec, elle
+        subit <strong>1d6 DM supplémentaires par round pendant 5
+        rounds</strong>.</p>
+      source: ''
+      origin: ''
+      slug: poison
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.qgCORunsEJAKxAP2
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: melee
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d6
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.qgCORunsEJAKxAP2
+          indice: 1
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '16'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d6
+                elementType: poison
+                statuses: []
+                duration: '5'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: none
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauveagrde et d'infliger les
+        DM pendant 5 rounds sur la cible en cas d'échec.</p>
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.RDlQ1hTeAA7Wemp4
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769124543956
+      modifiedTime: 1769124543982
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: qgCORunsEJAKxAP2
+    sort: 1900000
+    _key: '!actors.items!Rj82y5Zhjvwvl1Zp.qgCORunsEJAKxAP2'
+  - folder: Jc9oocmI3B4cVSRG
     name: Souffle
     type: capacity
     img: icons/creatures/abilities/dragon-ice-breath-blue.webp
@@ -794,7 +836,7 @@ items:
       manaCost: -1
       actions:
         - source: >-
-            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.hTNBI4X5jpYJ8UuF
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.Y25WniyhLN35YMc5
           indice: 0
           label: ''
           chatFlavor: ''
@@ -802,10 +844,11 @@ items:
           type: ranged
           actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
             noManaCost: false
           conditions:
             - predicate: isOwned
@@ -827,7 +870,46 @@ items:
               malusDiceAdd: false
               skill: {}
           modifiers: []
-      inGame: ''
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.Rj82y5Zhjvwvl1Zp.Item.Y25WniyhLN35YMc5
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '15'
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>La première action permet de jeter les DM autoamtiquement.</p><p>La
+        deuxième action permet de réaliser le test de sauvegarde pour réduire
+        les DM de moitié.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -837,21 +919,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.OTjaM8chKe1Kpch2
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758845822973
-      modifiedTime: 1758845826014
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: hTNBI4X5jpYJ8UuF
+      createdTime: 1769124662466
+      modifiedTime: 1769124662491
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: Y25WniyhLN35YMc5
     sort: 6400000
-    _key: '!actors.items!Rj82y5Zhjvwvl1Zp.hTNBI4X5jpYJ8UuF'
+    _key: '!actors.items!Rj82y5Zhjvwvl1Zp.Y25WniyhLN35YMc5'
 effects: []
 ownership:
   default: 0

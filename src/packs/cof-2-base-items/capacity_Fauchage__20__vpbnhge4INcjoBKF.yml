@@ -1,37 +1,52 @@
 folder: Jc9oocmI3B4cVSRG
-name: Tourbillon
+name: Fauchage (20)
 type: capacity
-img: icons/magic/air/wind-tornado-funnel-blue-grey.webp
+img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
 system:
-  description: >-
-    <p>Une fois par combat, un élémentaire peut se transformer en tourbillon
-    liquide pendant 3 rounds. Sous cette forme, il peut se déplacer à travers
-    les créatures et les objets à la vitesse de 10 m par action de mouvement (20
-    m pour les élémentaires d’air). Toute créature sur son passage doit faire un
-    <strong>test d’AGI ou de FOR au choix de difficulté 16</strong>. </p><p>En
-    cas d’échec, la cible subit automatiquement les <strong>DM de base de
-    l’élémentaire</strong> (selon la taille) et elle est <strong>renversée
-    </strong>(si sa taille ne dépasse pas celle de l’élémentaire). </p><p>En cas
-    de succès, elle ne subit que la moitié des DM et peut rester debout.</p>
+  description: "<p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être renversée.\_</p><p>La créature retranche 3 à tous les\_DM subis (RD 3).</p>"
   source: ''
-  origin: Livre des règles p280
-  slug: tourbillon
+  origin: ''
+  slug: fauchage
   tags: []
   subtype: ''
-  actionType: l
+  actionType: none
   learned: false
   charges:
-    current: 1
-    max: 1
+    current: null
+    max: null
   properties:
     spell: false
     chargeable: false
   path: null
   cost: -1
-  manaCost: -1
   actions:
-    - source: Compendium.cof2-base.cof-2-base-items.Item.UzXs2SzVIjMrKCUc
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
       indice: 0
+      label: ''
+      chatFlavor: ''
+      img: icons/svg/d20-highlight.svg
+      type: buff
+      actionType: none
+      properties:
+        activable: false
+        temporary: false
+        noChargesUsed: false
+        visible: false
+        enabled: false
+        noManaCost: false
+      conditions:
+        - predicate: isOwned
+      modifiers:
+        - type: capacity
+          source: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+          subtype: combat
+          target: dr
+          value: '3'
+          apply: self
+          additionalInfos: ''
+      resolvers: []
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      indice: 1
       label: Sauvegarde de FOR
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
@@ -49,11 +64,11 @@ system:
       resolvers:
         - type: save
           saveAbility: for
-          saveDifficulty: '16'
+          saveDifficulty: '20'
           target:
-            type: multiple
-            number: 20
+            type: single
             scope: all
+            number: 0
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -69,8 +84,8 @@ system:
           skill: {}
           dmg: {}
       modifiers: []
-    - source: Compendium.cof2-base.cof-2-base-items.Item.UzXs2SzVIjMrKCUc
-      indice: 1
+    - source: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      indice: 2
       label: Sauvegarde d'AGI
       chatFlavor: ''
       img: icons/svg/d20-highlight.svg
@@ -88,11 +103,11 @@ system:
       resolvers:
         - type: save
           saveAbility: agi
-          saveDifficulty: '16'
+          saveDifficulty: '20'
           target:
-            type: multiple
-            number: 20
+            type: single
             scope: all
+            number: 0
           additionalEffect:
             active: true
             applyOn: saveFailure
@@ -108,12 +123,13 @@ system:
           skill: {}
           dmg: {}
       modifiers: []
-  frequency: combat
+  manaCost: -1
   inGame: >-
-    <p>Les deux actions permettent de réaliser un test de sauvegarde de FOR et
-    d'AGI et d'appliquer le staut Renversé pendant tout le combat en cas
-    d'échec.</p><p>Les DM sont infligés à partir de l'attaque de
-    l'élémentaire.</p>
+    <p>La première action permanente donne la RD.</p><p>La deuxième et la
+    troisième action permettent de réaliser le test de sauvegarde de FOR et
+    d'AGI et appliquer le statut Renversé pendant tout le combat si le test est
+    raté. Il faudra supprimer l'Effet Personnalisé sur la feuille de la cible
+    manuellement lorsqu'elle se relève.</p>
 effects: []
 ownership:
   default: 0
@@ -125,10 +141,10 @@ _stats:
   coreVersion: '13.351'
   systemId: co2
   systemVersion: '#{VERSION}#'
-  createdTime: 1742110583947
-  modifiedTime: 1769125951149
+  createdTime: 1741116537789
+  modifiedTime: 1769121024971
   lastModifiedBy: oByx0z6HY26hEziz
   exportSource: null
-_id: UzXs2SzVIjMrKCUc
-sort: 5600000
-_key: '!items!UzXs2SzVIjMrKCUc'
+_id: vpbnhge4INcjoBKF
+sort: 8800000
+_key: '!items!vpbnhge4INcjoBKF'

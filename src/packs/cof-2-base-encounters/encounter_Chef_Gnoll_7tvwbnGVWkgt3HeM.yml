@@ -499,55 +499,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!7tvwbnGVWkgt3HeM.6ovJhzywrxiRq8vh'
   - folder: Jc9oocmI3B4cVSRG
-    name: Rires insupportables
-    type: capacity
-    img: icons/magic/death/skull-humanoid-white-blue.webp
-    system:
-      description: >-
-        <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
-        un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
-        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
-      source: ''
-      origin: ''
-      slug: rires-insupportablesires-insupportables
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758848289050
-      modifiedTime: 1758848289050
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: JYToHhJ9Wn7y88SA
-    sort: 5400000
-    _key: '!actors.items!7tvwbnGVWkgt3HeM.JYToHhJ9Wn7y88SA'
-  - folder: Jc9oocmI3B4cVSRG
     name: Interchangeables
     type: capacity
     img: icons/creatures/abilities/wolf-heads-swirl-purple.webp
@@ -869,6 +820,122 @@ items:
     _id: BbYkCMajJYwctorX
     sort: 4100000
     _key: '!actors.items!7tvwbnGVWkgt3HeM.BbYkCMajJYwctorX'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Rires insupportables
+    type: capacity
+    img: icons/magic/death/skull-humanoid-white-blue.webp
+    system:
+      description: >-
+        <p>À chaque round, un PJ qui combat des gnolls au contact doit réussir
+        un <strong>test de VOL difficulté </strong><strong>(5 + nombre de
+        gnolls)</strong> à son contact ou subir un dé malus en attaque</p>
+      source: ''
+      origin: ''
+      slug: rires-insupportablesires-insupportables
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.9Gn1K2NOgJMiH39p
+          indice: 0
+          label: Si sauvegarde raté
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: debuff
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          modifiers:
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.9Gn1K2NOgJMiH39p
+              subtype: malusDice
+              target: melee
+              value: '0'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.9Gn1K2NOgJMiH39p
+              subtype: malusDice
+              target: ranged
+              value: '0'
+              apply: others
+              additionalInfos: ''
+            - type: capacity
+              source: >-
+                Compendium.cof2-base.cof-2-base-encounter.Actor.7tvwbnGVWkgt3HeM.Item.9Gn1K2NOgJMiH39p
+              subtype: malusDice
+              target: magic
+              value: '0'
+              apply: others
+              additionalInfos: ''
+          resolvers:
+            - type: buffDebuff
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: always
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+      inGame: >-
+        <p>Le jet de sauvegarde doit être effectué manuellement pour pouvoir
+        adapter la difficulté en fonction du nombre de Gnoll. Cliquez sur la
+        valeur de VOL de la feuille et indiquez la difficulté à la
+        main.</p><p>Si le test est raté, l'action permet d'appliquer un effet
+        qui donne un Dé Malus aux attaques des acteurs ciblés pendant 1
+        round.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.h4P9CUwr0FMF3kay
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769126427178
+      modifiedTime: 1769126427195
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: 9Gn1K2NOgJMiH39p
+    sort: 5400000
+    _key: '!actors.items!7tvwbnGVWkgt3HeM.9Gn1K2NOgJMiH39p'
 effects: []
 ownership:
   default: 0

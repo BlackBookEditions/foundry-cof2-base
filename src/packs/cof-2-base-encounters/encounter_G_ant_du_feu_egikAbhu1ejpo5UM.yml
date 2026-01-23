@@ -482,52 +482,6 @@ items:
       lastModifiedBy: LEtUoNWt5mYBIjrk
     _key: '!actors.items!egikAbhu1ejpo5UM.fzE6sUbw1Amk0yQH'
   - folder: Jc9oocmI3B4cVSRG
-    name: Fauchage
-    type: capacity
-    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
-    system:
-      description: "<p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être renversée.\_</p>"
-      source: ''
-      origin: ''
-      slug: fauchage
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      actions: []
-      manaCost: -1
-      inGame: ''
-      rank: 0
-      frequency: none
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758847205883
-      modifiedTime: 1758847271155
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: kMw5dnALM3Jxjmeh
-    sort: 8800000
-    _key: '!actors.items!egikAbhu1ejpo5UM.kMw5dnALM3Jxjmeh'
-  - folder: Jc9oocmI3B4cVSRG
     name: Balayage
     type: capacity
     img: icons/creatures/abilities/tail-swipe-green.webp
@@ -614,6 +568,136 @@ items:
     _id: BQdXf1rvSpbp883Q
     sort: 3900000
     _key: '!actors.items!egikAbhu1ejpo5UM.BQdXf1rvSpbp883Q'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Fauchage (20)
+    type: capacity
+    img: icons/skills/melee/strike-blade-scimitar-orange-blue.webp
+    system:
+      description: "<p>Sur 15 à 20 au test d’attaque, si l’attaque est réussie, la victime doit réussir au choix un test de FOR ou d’AGI difficulté 20 ou être renversée.\_</p>"
+      source: ''
+      origin: ''
+      slug: fauchage
+      subtype: ''
+      actionType: none
+      learned: true
+      charges:
+        current: null
+        max: null
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.egikAbhu1ejpo5UM.Item.Pp2gw6yvmJVr7PJL
+          indice: 0
+          label: Sauvegarde de FOR
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '20'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.egikAbhu1ejpo5UM.Item.Pp2gw6yvmJVr7PJL
+          indice: 1
+          label: Sauvegarde d'AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '20'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - overturned
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      manaCost: -1
+      inGame: >-
+        <p>Les deux actions permettent de réaliser le test de sauvegarde de FOR
+        et d'AGI et appliquer le statut Renversé pendant tout le combat si le
+        test est raté. Il faudra supprimer l'Effet Personnalisé sur la feuille
+        de la cible manuellement lorsqu'elle se relève.</p>
+      rank: 0
+      frequency: none
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.vpbnhge4INcjoBKF
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769121267905
+      modifiedTime: 1769121316205
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: Pp2gw6yvmJVr7PJL
+    sort: 8800000
+    _key: '!actors.items!egikAbhu1ejpo5UM.Pp2gw6yvmJVr7PJL'
 effects: []
 ownership:
   default: 0

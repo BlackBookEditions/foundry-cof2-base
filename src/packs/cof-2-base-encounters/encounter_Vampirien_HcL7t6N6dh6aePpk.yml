@@ -529,52 +529,6 @@ items:
     sort: 2700000
     _key: '!actors.items!HcL7t6N6dh6aePpk.krgBKyYolZItPwmu'
   - folder: Jc9oocmI3B4cVSRG
-    name: Regard envoûtant
-    type: capacity
-    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
-    system:
-      description: "<p>Le regard du vampire sape la volonté de ses opposants. 1 fois par combat, il peut utiliser une action de mouvement pour tenter d’envoûter son adversaire. La cible doit réussir un <strong>test de VOL difficulté 10 ou être affaiblie</strong> tant qu’elle est sous le regard\_du vampirien. </p>"
-      source: ''
-      origin: ''
-      slug: regard-envoutant
-      subtype: ''
-      actionType: m
-      learned: true
-      charges:
-        current: 1
-        max: 1
-      properties:
-        spell: false
-      path: null
-      cost: -1
-      manaCost: -1
-      actions: []
-      frequency: combat
-      inGame: ''
-      rank: 0
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: null
-    effects: []
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
-      duplicateSource: null
-      exportSource: null
-      coreVersion: '13.348'
-      systemId: co2
-      systemVersion: '#{VERSION}#'
-      createdTime: 1758910252168
-      modifiedTime: 1758910388155
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: WxLyvL7ji8O24WgC
-    sort: 3100000
-    _key: '!actors.items!HcL7t6N6dh6aePpk.WxLyvL7ji8O24WgC'
-  - folder: Jc9oocmI3B4cVSRG
     name: Résistance impie
     type: capacity
     img: icons/magic/defensive/shield-barrier-glowing-triangle-magenta.webp
@@ -736,6 +690,99 @@ items:
     _id: xvAjSMuyPn8Sq0FC
     sort: 3600000
     _key: '!actors.items!HcL7t6N6dh6aePpk.xvAjSMuyPn8Sq0FC'
+  - folder: Jc9oocmI3B4cVSRG
+    name: Regard envoûtant (10)
+    type: capacity
+    img: icons/magic/control/hypnosis-mesmerism-pendulum.webp
+    system:
+      description: >-
+        <p>Le regard du vampire sape la volonté de ses opposants. 3 fois par
+        combat, il peut utiliser une action de mouvement pour tenter d’envoûter
+        son adversaire. La cible doit réussir un <strong>test de VOL difficulté
+        10 ou être affaiblie</strong> pour 1d6 rounds. Les créatures de niveau 1
+        ou inférieur passent sous le contrôle du vampire.</p>
+      source: ''
+      origin: ''
+      slug: regard-envoutant
+      subtype: ''
+      actionType: m
+      learned: true
+      charges:
+        current: 3
+        max: 3
+      properties:
+        spell: false
+      path: null
+      cost: -1
+      manaCost: -1
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.HcL7t6N6dh6aePpk.Item.Wra9GyVRzfogVugT
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: vol
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - weakened
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      frequency: combat
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        statut Affaibli sur la cible en cas d'échec.</p>
+      rank: 0
+      allowLinkedCapacity: false
+      linkedCapacity: null
+      parentCapacity: null
+    effects: []
+    ownership:
+      default: 0
+      dkGm1qUrVLQeAKiY: 3
+      oByx0z6HY26hEziz: 3
+    flags: {}
+    _stats:
+      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.B7rnfKqBFxnZLFne
+      duplicateSource: null
+      exportSource: null
+      coreVersion: '13.351'
+      systemId: co2
+      systemVersion: '#{VERSION}#'
+      createdTime: 1769131558030
+      modifiedTime: 1769131580730
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: Wra9GyVRzfogVugT
+    sort: 3100000
+    _key: '!actors.items!HcL7t6N6dh6aePpk.Wra9GyVRzfogVugT'
 effects: []
 ownership:
   default: 0

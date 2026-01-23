@@ -421,8 +421,50 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
-      inGame: ''
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.qtOCxobaeWz0y2Mu.Item.O1KX8o3xIB1L7d0h
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - paralysis
+                duration: 1d6
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+      inGame: >-
+        <p>L'action permet de réaliser le test de sauvegarde et d'appliquer le
+        Statut Paralysé pendant 1d6 rounds sur la cible.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -432,21 +474,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.NoLJNKIvJ3opGTEd
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758849169930
-      modifiedTime: 1758849169930
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: YYaVF6WccUDtN7SL
+      createdTime: 1769129817903
+      modifiedTime: 1769129817915
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: O1KX8o3xIB1L7d0h
     sort: 5100000
-    _key: '!actors.items!qtOCxobaeWz0y2Mu.YYaVF6WccUDtN7SL'
+    _key: '!actors.items!qtOCxobaeWz0y2Mu.O1KX8o3xIB1L7d0h'
   - folder: Jc9oocmI3B4cVSRG
     name: Fièvre des goules
     type: capacity
@@ -477,8 +519,87 @@ items:
       path: null
       cost: -1
       manaCost: -1
-      actions: []
-      inGame: ''
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.qtOCxobaeWz0y2Mu.Item.0WXP8iZdk3kQfnrD
+          indice: 0
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - poison
+                duration: '0'
+                unit: unlimited
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.qtOCxobaeWz0y2Mu.Item.0WXP8iZdk3kQfnrD
+          indice: 1
+          label: DM par jour
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: true
+            noManaCost: false
+          conditions:
+            - predicate: isOwned
+          resolvers:
+            - type: auto
+              dmg:
+                formula: 1d4°
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+          modifiers: []
+      inGame: >-
+        <p>La première action permet de réaliser le test de sauvegarde et
+        d'appliquer le statut Empoisonné sur la cible pendant une durée
+        Illimitée.</p><p>La deuxième action permet de jeter les DM pour les
+        dommages journaliers des acteurs malade.</p>
       rank: 0
       frequency: none
       allowLinkedCapacity: false
@@ -488,21 +609,21 @@ items:
     ownership:
       default: 0
       dkGm1qUrVLQeAKiY: 3
-      LEtUoNWt5mYBIjrk: 3
+      oByx0z6HY26hEziz: 3
     flags: {}
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bP0KFhJUPgdPwqTO
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '13.351'
       systemId: co2
       systemVersion: '#{VERSION}#'
-      createdTime: 1758849175551
-      modifiedTime: 1758849175551
-      lastModifiedBy: LEtUoNWt5mYBIjrk
-    _id: MjAS23tlJFcL3kLw
+      createdTime: 1769130077927
+      modifiedTime: 1769130077963
+      lastModifiedBy: oByx0z6HY26hEziz
+    _id: 0WXP8iZdk3kQfnrD
     sort: 4500000
-    _key: '!actors.items!qtOCxobaeWz0y2Mu.MjAS23tlJFcL3kLw'
+    _key: '!actors.items!qtOCxobaeWz0y2Mu.0WXP8iZdk3kQfnrD'
 effects: []
 ownership:
   default: 0
