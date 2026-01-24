@@ -1,3 +1,8 @@
+# 1.5.0
+- Ajout des Actions de Sauvegarde pour les profils et les voies de prestige
+- Ajout des Actions de Sauvegarde pour les capacités de rencontre et mise à jour des rencontres
+- Correction d'un lien cassé et Animal Fantastique manquant
+
 # 1.4.1
 - Mise à jour du guide utilisateur pour la version 1.4.0
 - Correction de la formule de l'équipement Feu grégeois
