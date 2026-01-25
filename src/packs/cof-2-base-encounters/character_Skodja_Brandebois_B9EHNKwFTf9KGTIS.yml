@@ -2426,10 +2426,10 @@ items:
         difficulté [10 + PER du druide]. En cas de réussite, elle n’est plus
         affectée par le sort pour le reste du combat.</p>
       inGame: >-
-        <p>Le PJ dépense manuellement les PM. Un cercle de 10m de diamètre peut
-        être tracé sur le plan grâce à l'outil Gabarit Circulaire sur la zone
-        affectée. C'est au MJ d'immobiliser les cibles qui sont dans la zone ou
-        qu'y y rentrent</p>
+        <p>La première action permet d'activer le sort et de dépenser les PM. Tant
+        qu'elle est activer la deuxième action apparaît dans la liste des
+        actions.</p><p>La deuxième action permet de réaliser le test de sauvegarde
+        pour agir librement.</p>
       source: ''
       origin: Livre des règles p117
       slug: prison-vegetale
@@ -2443,7 +2443,64 @@ items:
         spell: true
       path: >-
         Compendium.cof2-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.TMuHySDBt4PtKqbX
-      actions: []
+      actions:
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Hl1B9WqvJcDhLBse
+          indice: 0
+          label: Activer le sort
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.B9EHNKwFTf9KGTIS.Item.Hl1B9WqvJcDhLBse
+          indice: 1
+          label: Se libérer
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: 10+@per
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 2
       frequency: none

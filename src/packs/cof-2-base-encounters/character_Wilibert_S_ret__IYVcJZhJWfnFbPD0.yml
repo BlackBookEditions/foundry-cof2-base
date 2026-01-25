@@ -2130,9 +2130,8 @@ items:
         dos un adversaire au contact. Il peut alors au choix utiliser l’attaque
         sournoise ou infliger +1d4° DM.</p>
       inGame: >-
-        <p>La capacité propose une action d'attaque utilisant l'AGI pour le jet
-        et une difficultée fixe de 15 pour indiquer le succes du test (en
-        attendant de coder le test de caractéristique plutôt qu'une attaque)</p>
+        <p>La première action permet de réaliser le test de sauvegarde.</p><p>La
+        deuxième action est à activer pour obtenir le +1d4° DM de contact.</p>
       source: ''
       origin: Livre des règles p76
       slug: acrobaties
@@ -2150,39 +2149,62 @@ items:
           indice: 0
           label: ''
           chatFlavor: ''
-          type: melee
           img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
             noManaCost: false
           conditions:
             - predicate: isLearned
           resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@agi'
-                crit: ''
-                difficulty: '15'
-              dmg:
-                formula: '0'
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '15'
               target:
-                type: none
+                type: self
                 number: 0
                 scope: all
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
           modifiers: []
+        - source: Actor.IYVcJZhJWfnFbPD0.Item.dxO5y3rUiNicpGaM
+          indice: 1
+          label: DM supplémentaires
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: buff
           actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          modifiers:
+            - type: capacity
+              source: Actor.IYVcJZhJWfnFbPD0.Item.dxO5y3rUiNicpGaM
+              subtype: combat
+              target: damMelee
+              value: 1d4°
+              apply: self
+              additionalInfos: ''
+          resolvers: []
       cost: -1
       rank: 3
       frequency: none
@@ -2639,7 +2661,8 @@ items:
         seconde fois (sauf si son INT est de ‑4).</p>
       inGame: >-
         <p>Seul le bonus de 1d4° PV est pris en charge en cliquant sur le bouton
-        d'action de cette capacité.</p>
+        d'action de cette capacité.</p><p>La deuxième action permet de cibler un
+        acteur pour qu'il réalise le test de savegarde.</p>
       source: ''
       origin: Livre des règles p76
       slug: feindre-la-mort
@@ -2687,6 +2710,41 @@ items:
               dmg: {}
           modifiers: []
           actionType: none
+        - source: Actor.IYVcJZhJWfnFbPD0.Item.0JUkid6qiE2igXEQ
+          indice: 1
+          label: Révéler la supercherie
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: '20'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 3
       frequency: combat
@@ -2827,12 +2885,14 @@ items:
         l’inconscience pour 2d6 min (4d6 min pour 2 doses, etc.).</p>
       inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-        l'attaque qui va faire le test d'attaque de l'arme équipée, ainsi que
-        ses dommages et si l'attaque réussie appliquera le statut "empoisonné"
-        pour 1 round ainsi que 2d4° DM de type "Poison". Ne fonctionne qu'en
-        mode combat</p><p><em>Note : On aurait aussi pu mettre un bonus
-        activable/desactivable augmentant les DM. A voir sur l'usage ce qui est
-        le mieux.</em></p>
+        l'attaque qui va faire le test d'attaque de l'arme équipée, ainsi que ses
+        dommages et si l'attaque réussie appliquera le statut "empoisonné" pour 1
+        round ainsi que 2d4° DM de type "Poison". Ne fonctionne qu'en mode
+        combat</p><p><em>Note : On aurait aussi pu mettre un bonus
+        activable/desactivable augmentant les DM. A voir sur l'usage ce qui est le
+        mieux.</em></p><p>La deuxième action permet de réaliser le test de
+        sauvegarde et d'appliquer le statut Affaibli pour le reste du combat si la
+        cible le rate.</p>
       source: ''
       origin: Livre des règles p76
       slug: maitre-du-poison
@@ -2887,6 +2947,45 @@ items:
                 successThreshold: null
           modifiers: []
           actionType: none
+        - source: Actor.IYVcJZhJWfnFbPD0.Item.nDVwGd2NwqZfDEay
+          indice: 1
+          label: Test de sauvegarde
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: 10+@int
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: ''
+                elementType: ''
+                statuses:
+                  - weakened
+                unit: combat
+                duration: '0'
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 5
       frequency: daily

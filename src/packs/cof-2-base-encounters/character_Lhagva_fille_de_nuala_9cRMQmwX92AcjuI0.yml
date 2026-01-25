@@ -3408,8 +3408,8 @@ items:
         10. En cas de réussite, il conserve 1 PV. S’il est enragé, la réussite
         est automatique.</p>
       inGame: >-
-        <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-        l'instant</p>
+        <p>L'action permet de réaliser le test de sauvegarde et de se soigner de 1
+        PV en cas de réussite.</p>
       source: ''
       origin: Livre des règles p82
       slug: defier-la-mort
@@ -3423,7 +3423,45 @@ items:
         spell: false
       path: >-
         Compendium.cof2-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.WlE2ufRR3m6cDfxH
-      actions: []
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.jrBwcsN7djxxQGFx
+          indice: 0
+          label: ''
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: true
+                applyOn: saveSuccess
+                formulaType: heal
+                formula: '1'
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 2
       frequency: combat
@@ -3470,8 +3508,11 @@ items:
         cesse. Le personnage peut entrer en rage une fois de plus par jour pour
         chaque capacité de rang 4 qu’il atteint dans une voie de barbare</p>
       inGame: >-
-        <p>Les effets bonus sont pris en charge via une action
-        activable/désactivable à activer en entrant en rage.</p>
+        "<p>Les effets bonus sont pris en charge via une action 
+        activable/désactivable à activer en entrant en rage.\_</p>
+        <p>Tant que la première action est activer, la deuxième action apparaît 
+        pour pouvoir effectuer le test de sauvegarde afin de sortir de la rage 
+        prématurément.</p>"
       source: ''
       origin: Livre des règles p82
       slug: rage-du-berserk
@@ -3528,6 +3569,43 @@ items:
               additionalInfos: ''
           resolvers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.etGY9Qc5duXAla1G
+          indice: 1
+          label: Sortir de rage
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: vol
+              saveDifficulty: '15'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 3
       frequency: daily
@@ -3625,10 +3703,13 @@ items:
         mettre prématurément fin à la furie est égale à 20.</p>
       inGame: >-
         <p>Les effets bonus sont pris en charge via une action
-        activable/désactivable à activer en entrant en furie du Berseker.
-        ATTENTION: la rage du berseker ne doit pas être activée en même temps
-        que Furie du Berseker sinon les effets vont se cumuler. Le personnage
-        doit retirer deux utilisations de sa rage manuellement</p>
+        activable/désactivable à activer en entrant en furie du
+        Berseker.</p><p>ATTENTION : la rage du berseker ne doit pas être activée en
+        même temps que Furie du Berseker sinon les effets vont se cumuler. Le
+        personnage doit retirer deux utilisations de sa rage manuellement</p><p>Tant
+        que l'action de la furie est activée, la deuxième action apparaît. Elle
+        permet de réaliser le test de sauvegarde pour mettre fin à la furie
+        prématurément.</p>
       source: ''
       origin: Livre des règles p82
       slug: furie-du-berserk
@@ -3677,6 +3758,43 @@ items:
               additionalInfos: ''
           resolvers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9cRMQmwX92AcjuI0.Item.zgWwFLIb1IlaDwLv
+          indice: 1
+          label: Sortir de la furie
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: vol
+              saveDifficulty: '20'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 5
       frequency: daily

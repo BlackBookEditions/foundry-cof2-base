@@ -1356,7 +1356,9 @@ items:
         chevalier se termine.</p>
       inGame: >-
         <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-        l'attaque qui va faire le test d'attaque et appliquer les dommages.</p>
+        l'attaque qui va faire le test d'attaque et appliquer les dommages.</p><p>La
+        deuxiçme action permet de réaliser le test de sauvegarde en ciblant l'acteur
+        qui souhaite bloquer la charge. Cela applique les DM en cas de succès.</p>
       source: ''
       origin: Livre des règles p84
       slug: charge
@@ -1409,6 +1411,44 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.6L4Irm3wq1PT8IaT.Item.aJc3oqXrGNsXqsRs
+          indice: 1
+          label: Bloquer la charge
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '20'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: true
+                applyOn: saveFailure
+                formulaType: damage
+                formula: 1d4°
+                elementType: ''
+                statuses: []
+                duration: '1'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 3
       frequency: none
@@ -1794,8 +1834,9 @@ items:
         façon, la créature doit réussir un test d’INT difficulté 15 ou elle ne
         peut pas attaquer d’autre adversaire que lui à son prochain tour.</p>
       inGame: >-
-        <p>Gère le bonus aux DM via une action activable/désactivable. Le test
-        d'INT est géré manuellement pour le moment.</p>
+        <p>Gère le bonus aux DM via une action activable/désactivable. </p><p>La
+        deuxième action permet de réaliser le test de sauvegarde en ciblant le
+        leader blessé.</p>
       source: ''
       origin: Livre des règles p85
       slug: laissezlemoi
@@ -1836,6 +1877,41 @@ items:
               additionalInfos: contre un chef
           resolvers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.6L4Irm3wq1PT8IaT.Item.FEIKEM9GfqxmbHzr
+          indice: 1
+          label: Si leader blessé
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 3
       frequency: none

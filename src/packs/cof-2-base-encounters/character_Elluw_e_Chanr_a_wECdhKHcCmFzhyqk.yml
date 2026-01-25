@@ -1379,12 +1379,13 @@ items:
         immédiatement et il ne peut plus être lancé avant de prendre une
         récupération rapide.</p>
       inGame: >-
-        <p>Une action va permettre de lancer le sort et consommer les PM. Cela
-        va appliquer un "effet" qui ne fait rien au sens propre du terme mais
-        permet de suivre son application pendant 1 minute en combat. Si l'effet,
-        (et l'icone de l'effet) disparaissent cela signifie que le sort a pris
-        fin. Le reste est laissé à la charge du MJ.</p> <p>L'action fonctionne
-        uniquement en mode Combat.</p>
+        <p>Une action va permettre de lancer le sort et consommer les PM. Cela va
+        appliquer un "effet" qui ne fait rien au sens propre du terme mais permet de
+        suivre son application pendant 1 minute en combat. Si l'effet, (et l'icone
+        de l'effet) disparaissent cela signifie que le sort a pris fin.
+        </p><p>L'action fonctionne uniquement en mode Combat.</p><p>La deuxième
+        action permet de réaliser le test de sauvegarde pour essayer d'attaquer le
+        prêtre.</p>
       source: ''
       origin: Livre des règles p124
       slug: sanctuaire
@@ -1436,6 +1437,42 @@ items:
               dmg: {}
           modifiers: []
           actionType: none
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.wECdhKHcCmFzhyqk.Item.qHukdOnM3ZiuPRUs
+          indice: 1
+          label: Attaquer le prêtre
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: 10+@cha
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 2
       frequency: none
@@ -2449,8 +2486,8 @@ items:
         préjudiciable</strong>. Le MJ essaie de donner la réponse la plus utile
         possible au scénario.</p>
       inGame: >-
-        <p>L'action permet de réaliser le test de CHA difficulté 10 et de
-        dépenser les PM.</p>
+        <p>L'action permet de réaliser le test de sauvegarde de CHA difficulté 10 et
+        de dépenser les PM.</p>
       source: ''
       origin: Livre des règles p125
       slug: augure
@@ -2473,23 +2510,18 @@ items:
           type: spell
           img: icons/svg/d20-highlight.svg
           properties:
-            visible: false
-            enabled: false
             activable: true
             temporary: false
+            noChargesUsed: false
             noManaCost: false
+            visible: false
+            enabled: false
           conditions:
             - predicate: isLearned
           resolvers:
-            - type: attack
-              bonusDiceAdd: false
-              malusDiceAdd: false
-              skill:
-                formula: '@cha'
-                crit: ''
-                difficulty: '10'
-              dmg:
-                formula: '0'
+            - type: save
+              saveAbility: cha
+              saveDifficulty: '10'
               target:
                 type: self
                 number: 0
@@ -2497,10 +2529,13 @@ items:
               additionalEffect:
                 active: false
                 applyOn: success
-                successThreshold: null
                 statuses: []
                 duration: '0'
                 unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
           modifiers: []
           actionType: none
       cost: -1

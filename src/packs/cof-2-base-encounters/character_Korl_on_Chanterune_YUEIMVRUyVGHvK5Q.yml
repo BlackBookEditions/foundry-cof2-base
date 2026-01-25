@@ -2110,8 +2110,9 @@ items:
         difficulté 10 pour échapper au sort). Le sort ne peut pas affecter une
         créature de niveau supérieur ou égal à celui du lanceur</p>
       inGame: >-
-        <p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter
-        un test opposé. Le traitement en cas de succès est laissé au MJ.</p>
+        <p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter un
+        test opposé. </p><p>La deuxième action permet de réaliser le test de
+        sauvegarde en cas d'actions suicidaires.</p>
       source: ''
       origin: Livre des règles p68
       slug: suggestion
@@ -2164,6 +2165,41 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qAcobEHyYddBWoZY
+          indice: 1
+          label: Échapper au sort
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: '10'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 5
       frequency: none
@@ -2501,11 +2537,10 @@ items:
         m (de long et de large). Les cibles peuvent diviser les DM par 2 si
         elles réussissent un test de CON difficulté [10 + CHA du barde].</p>
       inGame: >-
-        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
-        le sort qui va automatiquement lancer les dommages. Au MJ de proposer le
-        test pour réduire les dégats et les appliquer.</p>
-
-        <p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
+        sort qui va automatiquement lancer les dommages. </p><p>La deuxième action
+        permet de réaliser le test de sauveagrde pour subir la moitié des
+        DM.</p><p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
         l'action</em></p>
       source: ''
       origin: Livre des règles p67
@@ -2557,6 +2592,41 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qmx4y05OpR2IBHqM
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: con
+              saveDifficulty: 10+@cha
+              target:
+                type: multiple
+                number: 10
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []  
       cost: -1
       rank: 3
       frequency: none
@@ -3635,7 +3705,11 @@ items:
         seulement vue, 10 s’il la connaît très bien). Le sort a une durée
         maximale de CHA heures, mais il peut aussi être lancé sur un allié au
         contact et dans ce cas, il ne dure que CHA minutes.</p>
-      inGame: <p>Le joueur dépense ses PM manuellement. Pas d'effets automatiques</p>
+      inGame: >-
+        <p>La première action permet de dépenser les PM et de faire apparaître les
+        trois actions tant qu'elle est activée.</p><p>Les trois actions permettent
+        de réaliser le test de sauvegarde en fonction de la personne à imiter
+        (connue, particulière ou seulement vue).</p>
       source: ''
       origin: Livre des règles p69
       slug: deguisement
@@ -3649,7 +3723,136 @@ items:
         spell: true
       path: >-
         Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.IbEHXh8zRwJAfkmL
-      actions: []
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+          indice: 0
+          label: Activer le sort
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: true
+            noChargesUsed: false
+            noManaCost: false
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          modifiers: []
+          resolvers: []
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+          indice: 1
+          label: Personne connue
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: cha
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+          indice: 2
+          label: Personne normale
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: cha
+              saveDifficulty: '15'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+          indice: 3
+          label: Personne seulement vue
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+            - predicate: isLinkedActionActivated
+              object: '0'
+          resolvers:
+            - type: save
+              saveAbility: cha
+              saveDifficulty: '20'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 5
       frequency: none

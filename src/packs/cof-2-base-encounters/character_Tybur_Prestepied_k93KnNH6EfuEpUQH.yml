@@ -3059,13 +3059,14 @@ items:
         Chaque personne qui creuse pour l’aider lui octroie un bonus de +2 sur
         son test (maximum +10).</p>
       inGame: >-
-        <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer
-        le sort qui va faire le test d'attaque magique et appliquer les
-        dommages. De plus un effet de dommages "périodique" sera appliqué à la
-        cible pendant la durée du sort. Il faut faire une récupération rapide
-        pour pouvoir réutiliser ce sort. Le jet pour sortir de la tombe pour la
-        cible n'est pas géré.</p> <p>L'application des DM périodiques fonctionne
-        uniquement en mode Combat.</p>
+        <p>Le joueur sélectionne sa cible puis clique sur l'action pour lancer le
+        sort qui va faire le test d'attaque magique et appliquer les dommages. De
+        plus un effet de dommages "périodique" sera appliqué à la cible pendant la
+        durée du sort. Il faut faire une récupération rapide pour pouvoir réutiliser
+        ce sort. </p><p>L'application des DM périodiques fonctionne uniquement en
+        mode Combat.</p><p>Les deux actions suivantes permettent de réaliser le test
+        de sauvegarde pour sortir de terre soit avec la FOR soit avec l'AGI en
+        ciblant les acteurs ensevellis.</p>
       source: ''
       origin: Livre des règles p110
       slug: ensevelissement
@@ -3122,6 +3123,78 @@ items:
                 successThreshold: null
           modifiers: []
           actionType: none
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.k93KnNH6EfuEpUQH.Item.lpx4uIPrwJolfGjY
+          indice: 1
+          label: Sortir avec FOR
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: for
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.k93KnNH6EfuEpUQH.Item.lpx4uIPrwJolfGjY
+          indice: 2
+          label: Sortir avec AGI
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '15'
+              target:
+                type: single
+                scope: all
+                number: 0
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 4
       frequency: combat
