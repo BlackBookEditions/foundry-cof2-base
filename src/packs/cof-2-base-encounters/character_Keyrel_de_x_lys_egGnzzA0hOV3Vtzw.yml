@@ -2258,7 +2258,9 @@ items:
       inGame: >-
         <p>Le joueur sélectionne jusqu'à 3 cibles au contact puis clique sur
         l'action pour lancer le sort qui va automatiquement lancer le jet de
-        dommages et le MJ pourra leur appliquer ces dommages.</p>
+        dommages et le MJ pourra leur appliquer ces dommages.</p><p>La deuxième
+        action permet de réaliser le test de sauvegarde pour subir la moitié des DM
+        en cas de réussite.</p>
       source: ''
       origin: Livre des règles p103
       slug: arc-de-feu
@@ -2309,6 +2311,42 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.egGnzzA0hOV3Vtzw.Item.wQynJs6p0ILLsV75
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: 10+@int
+              target:
+                type: single
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 1
       frequency: none
@@ -2576,9 +2614,10 @@ items:
         DM et peuvent effectuer un test d’AGI difficulté [10 + INT] pour ne
         subir que la moitié des DM.</p>
       inGame: >-
-        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
-        le sort qui va automatiquement lancer les dommages. Au MJ de proposer le
-        test pour réduire les dommages et les appliquer.</p>
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
+        sort qui va automatiquement lancer les dommages. </p><p>La deuxième action
+        permet de réaliser le test de sauvegarde pour subir seulement la moitié des
+        DM.</p>
       source: ''
       origin: Livre des règles p104
       slug: explosion-de-feu
@@ -2629,6 +2668,42 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.egGnzzA0hOV3Vtzw.Item.074P3Hf5i8bglCVO
+          indice: 1
+          label: 1/2 DM
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: 10+@int
+              target:
+                type: multiple
+                number: 20
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 4
       frequency: none
@@ -2898,8 +2973,9 @@ items:
         afin d’avoir le temps de lancer le sort (réussite automatique sur
         lui‑même).</p>
       inGame: >-
-        <p>Le joueur clique sur l'action pour dépenser les PM. Les effets sont
-        gérés à la main.</p>
+        <p>Le joueur clique sur l'action pour dépenser les PM. </p><p>La deuxième
+        action permet de réaliser le test de sauvegarde en cas de chte inattendue
+        pour chacun des compagnons.</p>
       source: ''
       origin: Livre des règles p105
       slug: chute-ralentie
@@ -2932,6 +3008,42 @@ items:
           modifiers: []
           resolvers: []
           actionType: none
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.egGnzzA0hOV3Vtzw.Item.p7fxrQTdh1jIavW6
+          indice: 1
+          label: Si chute inattendue
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            noManaCost: true
+            visible: false
+            enabled: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: int
+              saveDifficulty: '15'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 2
       frequency: none

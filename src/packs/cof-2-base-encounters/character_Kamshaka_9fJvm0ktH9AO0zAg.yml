@@ -2168,7 +2168,8 @@ items:
       inGame: >-
         <p>L'action permet de lancer un jet de DM. En regardant le résultat de
         chaque dé, il est possible de répartir les soins entre plusieurs
-        cibles.</p>
+        cibles.</p><p>La deuxième action permet de réaslier le test pour trouver les
+        plantes médicinales.</p>
       source: ''
       origin: Livre des règles p72
       slug: nature-nourriciere
@@ -2219,6 +2220,41 @@ items:
                 unit: round
           modifiers: []
           actionType: none
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9fJvm0ktH9AO0zAg.Item.62kj9BAMBuZBbn62
+          indice: 1
+          label: Trouver les plantes
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: true
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: per
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 2
       frequency: daily
@@ -3006,8 +3042,8 @@ items:
         caché sans risque d’être retrouvé ou rattrapé. Si le terrain est
         découvert (désert, plaine), la difficulté passe à 15.</p>
       inGame: >-
-        <p>Pas d'effets automatiques. A gérer à la main par le MJ, pour
-        l'instant</p>
+        <p>Les deux actions permettent de réaliser un test de sauvegarde en fonction
+        du milieu.</p>
       source: ''
       origin: Livre des règles p73
       slug: repli
@@ -3021,7 +3057,77 @@ items:
         spell: false
       path: >-
         Compendium.cof2-base.cof-2-base-encounter.Actor.9fJvm0ktH9AO0zAg.Item.CHAO8ZKbEFzHLJ0p
-      actions: []
+      actions:
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9fJvm0ktH9AO0zAg.Item.uepxwvQlyYUuTvw1
+          indice: 0
+          label: En milieu naturel
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '10'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
+        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.9fJvm0ktH9AO0zAg.Item.3VnFeM1u4rBdbQ2M
+          indice: 1
+          label: Milieu découvert
+          chatFlavor: ''
+          img: icons/svg/d20-highlight.svg
+          type: spell
+          actionType: none
+          properties:
+            activable: true
+            temporary: false
+            noChargesUsed: false
+            visible: false
+            enabled: false
+            noManaCost: false
+          conditions:
+            - predicate: isLearned
+          resolvers:
+            - type: save
+              saveAbility: agi
+              saveDifficulty: '15'
+              target:
+                type: self
+                number: 0
+                scope: all
+              additionalEffect:
+                active: false
+                applyOn: success
+                statuses: []
+                duration: '0'
+                unit: round
+              bonusDiceAdd: false
+              malusDiceAdd: false
+              skill: {}
+              dmg: {}
+          modifiers: []
       cost: -1
       rank: 5
       frequency: none
