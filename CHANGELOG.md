@@ -1,3 +1,7 @@
+# 1.5.1
+- Modification des prétirés : ajout des capacités avec une résolution Sauvegarde
+- Amélioration des images des rencontres (merci Sasmira)
+
 # 1.5.0
 - Ajout des Actions de Sauvegarde pour les profils et les voies de prestige
 - Ajout des Actions de Sauvegarde pour les capacités de rencontre et mise à jour des rencontres
