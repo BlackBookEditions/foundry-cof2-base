@@ -1,6 +1,7 @@
 # 1.5.1
 - Modification des prétirés : ajout des capacités avec une résolution Sauvegarde
 - Amélioration des images des rencontres (merci Sasmira)
+- Unité manquante pour le prix de l'armure de plaques, de l'épée longue et de la lance
 
 # 1.5.0
 - Ajout des Actions de Sauvegarde pour les profils et les voies de prestige
