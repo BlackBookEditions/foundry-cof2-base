@@ -1,3 +1,6 @@
+# 1.51.2
+- Changement dans les droits des compendiums : les joueurs ont la visibilité sur le guide du système, le livre des règles et les objets
+
 # 1.5.1
 - Modification des prétirés : ajout des capacités avec une résolution Sauvegarde
 - Amélioration des images des rencontres (merci Sasmira)
