@@ -151,6 +151,124 @@
   <h5>Compétence(s) utilisée(s)</h5>
   <p class="alinea">Si vous avez sélectionné des bonus de compétence au moment de faire le jet, ils seront listés en bas du message dans le tchat.</p>
 
+  <!--ENRICHER @TEST-->
+  <h3>Demande de jet dans un journal (@Test)</h3>
+  <p class="alinea">
+    L'enricher <span class="gras">@Test</span> permet d'insérer dans un journal ou une description un <span class="gras">lien cliquable pour demander un jet de caractéristique aux joueurs</span>. Lorsqu'un joueur clique sur le lien, un message apparaît dans le chat avec un bouton pour effectuer le jet.
+  </p>
+  <h4>Syntaxe</h4>
+  <p class="alinea">La syntaxe générale est la suivante :</p>
+  <p class="exemple">AROBASETest[car:CARACTERISTIQUE|paramètre1:valeur1|paramètre2:valeur2|...]</p>
+  <p class="alinea"><span class="gras italique">Note :</span> dans les exemples ci-dessous, remplacez <span class="gras">AROBASE</span> par le caractère <span class="gras">@</span> lorsque vous écrivez vos formules. Le rendu final est affiché après chaque exemple.</p>
+
+  <h4>Paramètres disponibles</h4>
+  <ul>
+    <li><span class="gras">car</span> (obligatoire) : La caractéristique à tester (for, agi, con, int, per, cha, vol)</li>
+    <li><span class="gras">diff</span> : La difficulté du test</li>
+    <li><span class="gras">comp</span> : Le nom de la ou des compétences associées</li>
+    <li><span class="gras">suc</span> : Texte décrivant les conséquences en cas de succès (visible uniquement par le MJ)</li>
+    <li><span class="gras">ech</span> : Texte décrivant les conséquences en cas d'échec (visible uniquement par le MJ)</li>
+    <li><span class="gras">sucdm</span> : Formule de dés pour les dommages en cas de succès</li>
+    <li><span class="gras">echdm</span> : Formule de dés pour les dommages en cas d'échec</li>
+    <li><span class="gras">sucstatut</span> : Statuts à appliquer en cas de succès (séparés par des virgules)</li>
+    <li><span class="gras">echstatut</span> : Statuts à appliquer en cas d'échec (séparés par des virgules)</li>
+    <li><span class="gras">options</span> : Options supplémentaires comme "secret" pour un jet visible uniquement du MJ</li>
+  </ul>
+
+  <h4>Caractéristiques</h4>
+  <p class="alinea">Les valeurs possibles pour le paramètre <span class="gras">car</span> sont :</p>
+  <ul>
+    <li><span class="gras">for</span> : Force</li>
+    <li><span class="gras">agi</span> : Agilité</li>
+    <li><span class="gras">con</span> : Constitution</li>
+    <li><span class="gras">int</span> : Intelligence</li>
+    <li><span class="gras">per</span> : Perception</li>
+    <li><span class="gras">cha</span> : Charisme</li>
+    <li><span class="gras">vol</span> : Volonté</li>
+  </ul>
+
+  <h4>Statuts disponibles</h4>
+  <p class="alinea">Les valeurs possibles pour <span class="gras">sucstatut</span> et <span class="gras">echstatut</span> sont :</p>
+  <ul>
+    <li><span class="gras">dead</span> : Mort</li>
+    <li><span class="gras">confused</span> : Confus</li>
+    <li><span class="gras">enslaved</span> : Asservi</li>
+    <li><span class="gras">stun</span> : Étourdi</li>
+    <li><span class="gras">overturned</span> : Renversé</li>
+    <li><span class="gras">blind</span> : Aveuglé</li>
+    <li><span class="gras">weakened</span> : Affaibli</li>
+    <li><span class="gras">outOfBreath</span> : Essoufflé</li>
+    <li><span class="gras">immobilized</span> : Immobilisé</li>
+    <li><span class="gras">invalid</span> : Invalide</li>
+    <li><span class="gras">paralysis</span> : Paralysé</li>
+    <li><span class="gras">slowed</span> : Ralenti</li>
+    <li><span class="gras">surprised</span> : Surpris</li>
+    <li><span class="gras">invisible</span> : Invisible</li>
+    <li><span class="gras">unconscious</span> : Inconscient</li>
+    <li><span class="gras">silence</span> : Réduit au silence</li>
+    <li><span class="gras">bleeding</span> : En train de saigner</li>
+    <li><span class="gras">poison</span> : Empoisonné</li>
+  </ul>
+
+  <h4>Exemples d'utilisation</h4>
+  <h5>Test simple</h5>
+  <p class="exemple">AROBASETest[car:for|diff:10]</p>
+  <p class="alinea">Rendu : @Test[car:for|diff:10]</p>
+  <p class="alinea">Demande un test de Force difficulté 10.</p>
+
+  <h5>Test avec compétence</h5>
+  <p class="exemple">AROBASETest[car:agi|diff:15|comp:acrobaties]</p>
+  <p class="alinea">Rendu : @Test[car:agi|diff:15|comp:acrobaties]</p>
+  <p class="alinea">Demande un test d'Agilité difficulté 15 avec la compétence Acrobaties.</p>
+
+  <h5>Test avec plusieurs compétences</h5>
+  <p class="exemple">AROBASETest[car:int|diff:12|comp:histoire, rumeurs et légendes]</p>
+  <p class="alinea">Rendu : @Test[car:int|diff:12|comp:histoire, rumeurs et légendes]</p>
+  <p class="alinea">Demande un test d'Intelligence difficulté 12 avec plusieurs compétences possibles.</p>
+
+  <h5>Test avec conséquences</h5>
+  <p class="exemple">AROBASETest[car:con|diff:10|suc:résiste au poison|ech:perd 1d6 PV et est empoisonné]</p>
+  <p class="alinea">Rendu : @Test[car:con|diff:10|suc:résiste au poison|ech:perd 1d6 PV et est empoisonné]</p>
+  <p class="alinea">Demande un test de Constitution avec des descriptions de conséquences visibles uniquement par le MJ dans le chat.</p>
+
+  <h5>Test avec dommages automatiques</h5>
+  <p class="exemple">AROBASETest[car:con|diff:12|sucdm:1d6|echdm:2d6]</p>
+  <p class="alinea">Rendu : @Test[car:con|diff:12|sucdm:1d6|echdm:2d6]</p>
+  <p class="alinea">Demande un test de Constitution. En cas de succès, un jet de 1d6 dommages est effectué. En cas d'échec, un jet de 2d6 dommages est effectué.</p>
+
+  <h5>Test avec application de statuts</h5>
+  <p class="exemple">AROBASETest[car:per|diff:15|echstatut:stun]</p>
+  <p class="alinea">Rendu : @Test[car:per|diff:15|echstatut:stun]</p>
+  <p class="alinea">Demande un test de Perception. En cas d'échec, le statut "Étourdi" est automatiquement appliqué au personnage.</p>
+
+  <h5>Test avec plusieurs statuts</h5>
+  <p class="exemple">AROBASETest[car:for|diff:18|echstatut:overturned,stun]</p>
+  <p class="alinea">Rendu : @Test[car:for|diff:18|echstatut:overturned,stun]</p>
+  <p class="alinea">Demande un test de Force. En cas d'échec, les statuts "Renversé" et "Étourdi" sont appliqués.</p>
+
+  <h5>Test secret</h5>
+  <p class="exemple">AROBASETest[car:per|diff:12|comp:perception|options:secret]</p>
+  <p class="alinea">Rendu : @Test[car:per|diff:12|comp:perception|options:secret]</p>
+  <p class="alinea">Demande un test de Perception en mode secret. Le résultat du jet n'est visible que par le MJ.</p>
+
+  <h5>Exemple complet</h5>
+  <p class="exemple">AROBASETest[car:con|diff:14|comp:résistance|suc:résiste à la maladie|ech:contracte la peste|echdm:1d8|echstatut:weakened,poison|options:secret]</p>
+  <p class="alinea">Rendu : @Test[car:con|diff:14|comp:résistance|suc:résiste à la maladie|ech:contracte la peste|echdm:1d8|echstatut:weakened,poison|options:secret]</p>
+  <p class="alinea">
+    Demande un test de Constitution difficulté 14 avec la compétence résistance. En cas de succès, le message "résiste à la maladie" apparaît. En cas d'échec, le message "contracte la peste" apparaît, 1d8 dommages sont infligés et les statuts Affaibli et Empoisonné sont appliqués. Le jet est effectué en mode secret.
+  </p>
+
+  <h4>Affichage</h4>
+  <p class="alinea">
+    Dans le journal, le lien s'affiche sous la forme d'une icône de dé suivie du nom de la caractéristique, de la compétence et de la difficulté, par exemple <span class="gras"><i class="fa-solid fa-dice-d20"></i> Constitution (résistance) Difficulté 14</span>. Les informations de succès, échec, dommages, statuts et options sont masquées mais visibles dans une info-bulle au survol du lien, uniquement pour le MJ.
+  </p>
+  <p class="alinea">
+    Lorsqu'un joueur clique sur le lien, un message de demande de jet apparaît dans le chat avec le titre du test, la difficulté (si définie), un bouton pour effectuer le jet et les conséquences succès/échec visibles uniquement par le MJ.
+  </p>
+  <p class="alinea">
+    Après le jet, le résultat apparaît. Si des dommages sont configurés, un message de dommages avec boutons d'application apparaît. Si des statuts sont configurés, ils sont automatiquement appliqués au personnage.
+  </p>
+
   <!--JET ATTAQUE-->
   <h2>Jet d'attaque</h2>
 
