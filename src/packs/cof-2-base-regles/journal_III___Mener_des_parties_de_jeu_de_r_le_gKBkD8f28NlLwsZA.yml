@@ -6730,7 +6730,7 @@ pages:
           </p>
           <p class="alinea">
             Si vous avez un PJ natif des environs, il connaît cette histoire ; et si vous avez un barde, vous pouvez lui accorder un
-            <span class="gras">test d’INT (rumeurs et légendes) difficulté 15</span> pour en avoir entendu parler. La suite n’est connue de personne…
+            <span class="gras">test @Test[car:int|diff:15|comp:rumeurs et légendes]</span> pour en avoir entendu parler. La suite n’est connue de personne…
           </p>
           <p class="alinea">
             En réalité, cette construction faisait partie d’un dispositif constitué de plusieurs tours ensorcelées conçu par un puissant nécromant (<span class="gras">Sigméus le Noir</span>) à l’époque de sa domination sur la région et visait à asservir les populations. Plusieurs siècles après la défaite du mage et la destruction des autres flèches maudites,
@@ -6790,7 +6790,7 @@ pages:
             vous arriver ».
           </p>
           <p class="alinea">
-            Demandez à chaque PJ un <span class="gras">test de CON difficulté 10</span>. Ceux qui réussissent perdent 4 PV, ceux qui ratent perdent 6 PV et sont
+            Demandez à chaque PJ un <span class="gras">test @Test[car:con|diff:10]</span>. Ceux qui réussissent perdent 4 PV, ceux qui ratent perdent 6 PV et sont
             <span class="italique">étourdis</span> (pas d’action) pendant un round. Tous sont <span class="italique">renversés</span> au sol et <span class="gras">assourdis</span>, leurs
             oreilles sifflent.
           </p>
@@ -6868,11 +6868,11 @@ pages:
             <li>
               Dans <span class="gras">la salle commune</span>, plusieurs chopes sont encore remplies de bière. Deux assiettes sales sont tombées au sol et leur contenu a disparu. Les
               chiens les ont fait tomber et ont mangé le contenu, les PJ n’ont aucun moyen de le savoir, mais les joueurs peuvent le deviner. Réussir un
-              <span class="gras">test d’INT difficulté 10</span> permet d’estimer qu’il y avait sans doute une demi-douzaine de clients attablés.
+              <span class="gras">test @Test[car:int|diff:10]</span> permet d'estimer qu'il y avait sans doute une demi-douzaine de clients attablés.
             </li>
             <li>
               À <span class="gras">la cuisine</span>, la flambée est encore chaude et le pot au feu est à moitié brûlé comme s’il avait été oublié. Un
-              <span class="gras">test d’INT difficulté 15</span> permet d’évaluer le moment où les lieux ont été abandonnés à environ 3 heures.
+              <span class="gras">test @Test[car:int|diff:15]</span> permet d'évaluer le moment où les lieux ont été abandonnés à environ 3 heures.
             </li>
             <li>
               À <span class="gras">l’étage</span>, la plupart des portes des chambres ne sont pas fermées à clé et elles sont inoccupées. Les PJ pourraient d’ailleurs décider d’y passer la
@@ -6890,8 +6890,8 @@ pages:
           <ul>
             <li>
               <span class="gras">Le coffret :</span> il est piégé et explose en infligeant 1d6 DM à celui qui l’ouvre. Si le personnage déclare qu’il cherche les pièges avant de l’ouvrir,
-              demandez-lui un <span class="gras">test de PER (détecter les pièges) difficulté 15</span> pour remarquer le piège. En cas de réussite, le PJ peut faire un
-              <span class="gras">test d’AGI (désamorcer les pièges) difficulté 10</span> pour le rendre inopérant (en cas d’échec le piège est déclenché).
+              demandez-lui un <span class="gras">test @Test[car:per|diff:15|comp:détecter les pièges]</span> pour remarquer le piège. En cas de réussite, le PJ peut faire un
+              <span class="gras">test @Test[car:agi|diff:10|comp:désamorcer les pièges]</span> pour le rendre inopérant (en cas d’échec le piège est déclenché).
             </li>
             <li>
               Le coffret contient un livre : un traité technique sur les armes à poudre. Auprès d’un artificier, ce livre peut se revendre 100 pa, mais si le coffret a explosé, il a perdu
@@ -6903,13 +6903,13 @@ pages:
           </p>
           <p class="alinea">
             Si un PJ fouille une chambre à la recherche de bien de valeurs, cela lui prend 10 min. La première contient une bourse avec 12 pa, la seconde nécessite de réussir un
-            <span class="gras">test de PER (chercher) difficulté 15</span> pour trouver 5 pièces d’or (valeur 50 pa) cousue dans l’ourlet d’une veste de cuir. La caisse de l’auberge
+            <span class="gras">test @Test[car:per|diff:15|comp:chercher]</span> pour trouver 5 pièces d'or (valeur 50 pa) cousue dans l’ourlet d’une veste de cuir. La caisse de l’auberge
             contient 18 pièces d’argent. La chambre de l’aubergiste et celle du gnome ne contiennent aucun bien de valeur. Le trésor de l’aubergiste est caché à un endroit que les PJ n’ont
             aucune chance de trouver, à l’extérieur de l’auberge.
           </p>
           <h3>Explorer l’extérieur</h3>
           <p class="alinea">
-            Il n’y a aucun indice évident à l’extérieur, mais si les PJ cherchent des traces demandez-leur un<span class="gras"> test de PER (pister) difficulté 15</span>. Comme la nuit
+            Il n’y a aucun indice évident à l’extérieur, mais si les PJ cherchent des traces demandez-leur un <span class="gras">test @Test[car:per|diff:15|comp:pister]</span>. Comme la nuit
             tombe, un PJ qui ne voit pas dans le noir, souffre d’un dé malus.
           </p>
           <ul>
@@ -6977,7 +6977,7 @@ pages:
             votre cœur se synchronisent avec lui ! »
           </p>
           <p class="alinea">
-            Chaque PJ doit faire un <span class="gras">test de VOL difficulté 15</span> pour résister à l’appel. Les PJ qui ont conservé des séquelles auditives du coup de foudre du début
+            Chaque PJ doit faire un <span class="gras">test @Test[car:vol|diff:15]</span> pour résister à l'appel. Les PJ qui ont conservé des séquelles auditives du coup de foudre du début
             de l’aventure obtiennent un <span class="gras">dé bonus</span> ! Cela constitue aussi un indice sur la façon dont il est possible de se protéger de l’appel.
           </p>
           <p class="alinea">
@@ -7002,8 +7002,8 @@ pages:
             </li>
             <li>
               La solution la plus simple consiste à boucher les oreilles de la victime. Un PJ qui approche par derrière et plaque ses deux mains de part et d’autre de la tête de sa cible
-              doit réussir <span class="gras">un test de FOR opposé</span>. En cas de succès, la victime a droit à un nouveau <span class="gras">test de VOL difficulté 10</span> pour
-              résister à l’appel et retrouver son libre arbitre. Si c’est encore raté, proposez au joueur d’utiliser <span class="gras">un point de chance</span> pour se libérer de
+              doit réussir <span class="gras">un test de FOR opposé</span>. En cas de succès, la victime a droit à un nouveau <span class="gras">test @Test[car:vol|diff:10]</span> pour
+              résister à l'appel et retrouver son libre arbitre. Si c’est encore raté, proposez au joueur d’utiliser <span class="gras">un point de chance</span> pour se libérer de
               l’envoutement, sinon plus rien n’y fait à part réduire le PJ à 0 PV pour l’assommer (voir les règles de
               @UUID[Compendium.cof2-base.cof-2-base-regles.JournalEntry.SFIZ9i9XEt3gyYUC.JournalEntryPage.Dw9Ze41hgZ5MdKg2#dommages-temporaires]{dommages temporaires}) !
             </li>
@@ -7049,16 +7049,16 @@ pages:
           <ul>
             <li>
               Si les PJ ne se sont pas bouché les oreilles, ils peuvent entendre des bruits de sanglots qui émanent d’un buisson pas très loin d’eux. S’ils sont à demi-sourd, il leur faut
-              réussir un <span class="gras">test de PER (ouïe) difficulté 10</span> pour les percevoir.
+              réussir un <span class="gras">test @Test[car:per|diff:10|comp:ouïe]</span> pour les percevoir.
             </li>
             <li>
-              Si vos PJ ratent les sanglots, par exemple parce qu’ils se sont bouchés les oreilles, demandez-leur un <span class="gras">test de PER (vigilance) difficulté 15</span>, avec
+              Si vos PJ ratent les sanglots, par exemple parce qu’ils se sont bouchés les oreilles, demandez-leur un <span class="gras">test @Test[car:per|diff:15|comp:vigilance]</span>, avec
               un <span class="italique">dé malus</span> si le PJ ne voit pas dans le noir. En cas de succès, le PJ repère le garçonnet caché dans le buisson.
             </li>
             <li>Finalement, si les PJ ne remarquent pas le petit garçon, lorsque le dernier PJ passe devant lui, Pietro se jette dans ses jambes… Surprise garantie !</li>
           </ul>
           <p class="alinea">
-            Pietro s’accroche aux PJ en pleurant. Il faut commencer par réussir à le calmer avec un <span class="gras">test de CHA difficulté 10</span> avant de tenter de communiquer avec
+            Pietro s’accroche aux PJ en pleurant. Il faut commencer par réussir à le calmer avec un <span class="gras">test @Test[car:cha|diff:10]</span> avant de tenter de communiquer avec
             lui.
           </p>
           <p class="alinea">
@@ -7094,7 +7094,7 @@ pages:
             ouverte. Cinq personnes sont dispersées devant l’entrée, debout, la tête légèrement renversée en arrière, dans une posture assez peu naturelle ».
           </p>
           <p class="alinea">
-            Un <span class="gras">test de PER difficulté 10 </span>permet de remarquer que leurs yeux sont révulsés et totalement blancs, exactement comme les chiens enragés que les PJ ont
+            Un <span class="gras">test @Test[car:per|diff:10]</span> permet de remarquer que leurs yeux sont révulsés et totalement blancs, exactement comme les chiens enragés que les PJ ont
             affrontés à leur arrivée à l’auberge.
           </p>
           <p class="alinea">
@@ -7236,16 +7236,16 @@ pages:
             Toutefois, l’un des diapasons semble être sorti de son logement et il est tombé sur le cristal ».
           </p>
           <p class="alinea">
-            Demandez aux PJ présents un <span class="gras">test de PER difficulté 10</span>. En cas de succès, ils remarquent que le cristal présente une fêlure à la suite de cet impact.
+            Demandez aux PJ présents un <span class="gras">test @Test[car:per|diff:10]</span>. En cas de succès, ils remarquent que le cristal présente une fêlure à la suite de cet impact.
           </p>
           <p class="alinea">
             Les PJ sont libres de faire ce qu’ils veulent, mais s’ils attendent un peu trop, signalez-leur que leur cœur commence à s’emballer et à se synchroniser avec le rythme des notes
-            des diapasons… Ici l’influence du son est plus puissante. S’ils persistent à procrastiner, un <span class="gras">test de VOL difficulté 10</span> pour ne pas céder à nouveau à
+            des diapasons… Ici l’influence du son est plus puissante. S’ils persistent à procrastiner, un <span class="gras">test @Test[car:vol|diff:10]</span> pour ne pas céder à nouveau à
             l’envoutement devrait les pousser à se décider à passer à l’action (rappelez-leur d’utiliser un <span class="gras">point de chance</span> si besoin !). Ici, se boucher les
             oreilles est une stratégie inutile, le son les transperce tout entier et les prend aux tripes.
           </p>
           <p class="alinea">
-            Dès que les PJ interagissent avec le cristal, que ce soit en déplaçant les diapasons (<span class="gras">test de FOR difficulté 15</span>), en frappant sur le cristal ou en
+            Dès que les PJ interagissent avec le cristal, que ce soit en déplaçant les diapasons (<span class="gras">test @Test[car:for|diff:15]</span>), en frappant sur le cristal ou en
             balançant la bombe de Perdibus dessus, le cristal explose dans une énorme déflagration.
           </p>
           <p class="alinea">
@@ -7434,7 +7434,7 @@ pages:
             produit n’a rien de naturel.
           </p>
           <p class="alinea">
-            Chaque PJ doit faire un <span class="gras">test de PER (vigilance)</span>. Les PJ qui voient dans le noir obtiennent un <span class="italique">dé bonus</span>. Donnez-leur les
+            Chaque PJ doit faire un <span class="gras">test @Test[car:per|comp:vigilance]</span>. Les PJ qui voient dans le noir obtiennent un <span class="italique">dé bonus</span>. Donnez-leur les
             informations qui correspondent, selon la difficulté atteinte :
           </p>
           <ul>
@@ -7549,11 +7549,11 @@ pages:
 
           <h3>Poursuite</h3>
           <p class="alinea">
-            Les PJ s’enfuient dans la forêt. Au départ, ils ne semblent pas poursuivis, mais assez rapidement demandez-leur <span class="gras">un test de PER</span>. Celui qui fait le plus
+            Les PJ s’enfuient dans la forêt. Au départ, ils ne semblent pas poursuivis, mais assez rapidement demandez-leur un <span class="gras">test @Test[car:per]</span>. Celui qui fait le plus
             haut résultat détecte des bruits de course qui se rapprochent.
           </p>
           <p class="alinea">
-            Les PJ peuvent tenter de semer leurs poursuivants en réussissant des<span class="gras"> tests d’AGI difficulté 10</span>. Chaque PJ subit
+            Les PJ peuvent tenter de semer leurs poursuivants en réussissant des <span class="gras">test @Test[car:agi|diff:10]</span>. Chaque PJ subit
             <span class="gras">un malus égal à la valeur de la DEF de son Armure</span>.
           </p>
           <ul>
@@ -7585,7 +7585,7 @@ pages:
             <li><span class="gras">3 tests réussis</span> pour tous les PJ (ils sont très forts !) : 3 rounds.</li>
           </ul>
           <p class="alinea">Les flots de la rivière sont tumultueux et la traverser à la nage risque d’être dangereux.</p>
-          <p class="alinea">Commencez par leur demander <span class="gras">un test de PER (survie) </span>dont la difficulté dépend du nombre de rounds avant l’arrivée des zombies :</p>
+          <p class="alinea">Commencez par leur demander un <span class="gras">test @Test[car:per|comp:survie]</span> dont la difficulté dépend du nombre de rounds avant l’arrivée des zombies :</p>
           <ul>
             <li><span class="gras">1 round :</span> difficulté 20</li>
             <li><span class="gras">2 rounds :</span> difficulté 15</li>
@@ -7606,7 +7606,7 @@ pages:
 
           <h3>À la nage</h3>
           <p class="alinea">
-            Pour traverser la rivière, il faut réussir deux <span class="gras">tests de CON (Natation) difficulté 10</span> avec un <span class="gras">malus égal à la DEF</span> de
+            Pour traverser la rivière, il faut réussir deux <span class="gras">test @Test[car:con|diff:10|comp:natation]</span> avec un <span class="gras">malus égal à la DEF</span> de
             l’armure.
           </p>
           <p class="alinea">
@@ -7626,7 +7626,7 @@ pages:
           <h3>En canot</h3>
           <ul>
             <li>
-              <span class="gras">Si deux PJ montent dans le canot</span>, il suffit que l’un d’eux réussisse un <span class="gras">test de FOR difficulté 10</span> pour accoster de l’autre
+              <span class="gras">Si deux PJ montent dans le canot</span>, il suffit que l’un d’eux réussisse un <span class="gras">test @Test[car:for|diff:10]</span> pour accoster de l'autre
               côté. En cas d’échec, le canot est simplement emporté par le courant assez loin en aval, séparant le groupe en deux. Les PJ perdent alors du temps (voir plus loin).
             </li>
             <li>
@@ -7647,12 +7647,12 @@ pages:
           <h3>Sauvés ?</h3>
           <p class="alinea">
             Lorsque les PJ arrivent de l’autre côté, ils constatent que quelques zombies se sont jetés à l’eau et ont été emportés au loin. Les autres commencent à remonter le long de la
-            rive. Chaque PJ peut faire un <span class="gras">test d’INT (géographie) difficulté 10</span>. En cas de succès, il se souvient qu’il doit y avoir un pont plus haut, que les
+            rive. Chaque PJ peut faire un <span class="gras">test @Test[car:int|diff:10|comp:géographie]</span>. En cas de succès, il se souvient qu’il doit y avoir un pont plus haut, que les
             zombies pourront emprunter. <span class="gras">Si le joueur obtient un résultat de 20 ou plus</span>, le PJ estime la distance et leur avance à une demi-heure environ.
           </p>
           <p class="alinea">
             Si des PJ ont été emportés par le courant, ceux qui ont réussi à traverser peuvent tenter de les récupérer en aval. Il faut réussir un
-            <span class="gras">test de PER (pister) difficulté 15</span> pour retrouver un PJ. En cas d’échec, c’est peine perdue et dans tous les cas, les PJ ont perdu la demi-heure
+            <span class="gras">test @Test[car:per|diff:15|comp:pister]</span> pour retrouver un PJ. En cas d’échec, c’est peine perdue et dans tous les cas, les PJ ont perdu la demi-heure
             qu’ils avaient gagnée sur les zombies…
           </p>
           <p class="alinea">
@@ -7668,13 +7668,13 @@ pages:
           </p>
           <p class="alinea">«<span class="italique"> Arrête-toi ici mon ami, prends le temps de te reposer. Tu es fatigué, tu es si </span>fatigué ! »</p>
           <p class="alinea">
-            Chaque PJ doit faire un<span class="gras"> test de Volonté difficulté 10</span>. Les PJ qui réussissent ont l’impression d’avancer dans la mélasse, au ralenti. Ceux qui ratent
+            Chaque PJ doit faire un <span class="gras">test @Test[car:vol|diff:10]</span>. Les PJ qui réussissent ont l’impression d’avancer dans la mélasse, au ralenti. Ceux qui ratent
             s’effondrent sur place, terrassés par le sommeil.
           </p>
           <ul>
             <li>
               Si tous les PJ réussissent le test, vous pouvez en remettre une couche. La voix se fait insistante : « <span class="italique">Dors, dors, je le veux…</span> ». Demandez un
-              nouveau <span class="gras">test de Volonté</span> de même difficulté (et mêmes effets), tandis que les PJ tentent désespérément de progresser au ralenti vers le château et le
+              nouveau <span class="gras">test @Test[car:vol|diff:10]</span> de même difficulté (et mêmes effets), tandis que les PJ tentent désespérément de progresser au ralenti vers le château et le
               village.
             </li>
             <li>
@@ -7684,13 +7684,13 @@ pages:
               <span class="italique">Tu es face à un énorme ourhible purulent. La créature te frappe et te renverse au sol. Son bec à l’odeur infâme s’ouvre sur les ténèbres et s’approche de ta gorge tandis
                 que tu es réduis à l’impuissance sous la grosse patte posée sur ta poitrine. Une énorme langue en sort et balaie ton visage, râpeuse et mouillée. Et puis tu réalises que
                 c’est la langue d’un énorme loup gris. Encore vaseux, tu émerges d’un sommeil surnaturel et reconnais Shade, le loup de Félindra, qui est penché au-dessus de lui, te lèche
-                et te secoue en tous sens »</span>. Le PJ aperçoit le sac qui émet la lueur violette en lévitation à quelques mètres au-dessus du sol. Il est encore temps de sauter pour l’empêcher de s’éclipser (<span class="gras">test d’AGI difficulté 10 ;</span>
-              en cas d’échec c’est le loup qui attrape le sac et le garde fermement dans sa gueule).
+                et te secoue en tous sens »</span>. Le PJ aperçoit le sac qui émet la lueur violette en lévitation à quelques mètres au-dessus du sol. Il est encore temps de sauter pour l’empêcher de s’éclipser (<span class="gras">test @Test[car:agi|diff:10]</span> ;
+              en cas d'échec c'est le loup qui attrape le sac et le garde fermement dans sa gueule).
             </li>
             <li>
               Si au moins un PJ résiste au sommeil, la voix reprend :<span class="italique"> </span>«
               <span class="italique">Ce combat n’est pas le tien, ouvre le sac et tu en seras délivré ! </span>». Si le PJ rate le nouveau
-              <span class="gras">test de VOL difficulté 15</span>, proposez-lui d’utiliser un point de chance. Si le PJ rate tout de même, il se saisit du sac et essaye de l’ouvrir, à
+              <span class="gras">test @Test[car:vol|diff:15]</span>, proposez-lui d'utiliser un point de chance. Si le PJ rate tout de même, il se saisit du sac et essaye de l’ouvrir, à
               moins qu’un autre PJ ne s’interpose (faire quelques <span class="gras">tests de FOR opposés</span>). Si le PJ possédé l’emporte (ou s’il est seul), au moment où il s’apprête
               à ouvrir le sac, Shade surgit brusquement, lui saute dessus et le renverse en lui faisant lâcher prise. Le PJ retrouve alors ses esprits.
             </li>
@@ -7726,7 +7726,7 @@ pages:
             </li>
             <li>
               Si les PJ veulent convaincre les habitants d’évacuer le village et de se réfugier au château, il faut réussir à faire venir la bourgmestre, madame Carillon, et réussir un
-              <span class="gras">test de CHA (persuasion) difficulté 15</span>, mais cela prend une unité de temps. Il faut ensuite une autre unité de temps pour évacuer le village.
+              <span class="gras">test @Test[car:cha|diff:15|comp:persuasion]</span>, mais cela prend une unité de temps. Il faut ensuite une autre unité de temps pour évacuer le village.
               Espérons qu’il est encore temps !
             </li>
             <li>
@@ -7747,7 +7747,7 @@ pages:
             pour leur ouvrir les portes.
           </p>
           <p class="alinea">
-            Laissez les joueurs raconter leur histoire et trépigner un peu, puis demandez finalement un <span class="gras">test de CHA (persuasion) difficulté 15</span> à leur
+            Laissez les joueurs raconter leur histoire et trépigner un peu, puis demandez finalement un <span class="gras">test @Test[car:cha|diff:15|comp:persuasion]</span> à leur
             porte-parole. Vous pouvez fixer une difficulté plus ou moins élevée selon les arguments des PJ (les insultes ne sont jamais de bons arguments !). En cas d’échec, ils perdent
             une unité de temps et doivent poursuivre les négociations ! Nouvelles explications et nouveau test !
           </p>
@@ -7850,7 +7850,7 @@ pages:
             palpable.
           </p>
           <p class="alinea">
-            Demandez à chaque PJ un <span class="gras">test de PER difficulté 16</span>. Ceux qui réussissent ce sentent observés. Roderick leur fait signe de se taire en posant un doigt
+            Demandez à chaque PJ un <span class="gras">test @Test[car:per|diff:16]</span>. Ceux qui réussissent ce sentent observés. Roderick leur fait signe de se taire en posant un doigt
             sur sa bouche. Maëla vient d’utiliser un sort de clairvoyance pour observer la chambre avant d’y entrer. Puis l’air ondule au centre de la pièce et la magicienne arrive, beauté
             ténébreuse vêtue d’une cuirasse noire, accompagnée d’un dragonnet mort-vivant aux os luisants.
           </p>
@@ -7868,7 +7868,7 @@ pages:
             </li>
           </ul>
           <p class="alinea">
-            Chaque fois qu’un PJ tombe au sol en feignant la mort ou l’inconscience, demandez-lui un <span class="gras">test de CHA </span>pour estimer la qualité de son
+            Chaque fois qu’un PJ tombe au sol en feignant la mort ou l’inconscience, demandez-lui un <span class="gras">test @Test[car:cha]</span> pour estimer la qualité de son
             interprétation. Finalement lorsque tous sont à terre, Maëla lève la main pour terminer le boulot, en visant celui qui a obtenu le plus faible
             résultat, mais Roderick intervient avant…
           </p>
@@ -7912,7 +7912,7 @@ pages:
             <div class="bestiaire-capacite">
               <span class="gras">Dragonnet :</span>
             </div>
-            <p>Éclair de foudre, 2d6 DM, test d'AGI difficulté 10 pour réduire les DM de moitié.</p>
+            <p>Éclair de foudre, 2d6 DM, <span class="gras">test @Test[car:agi|diff:10]</span> pour réduire les DM de moitié.</p>
           </div>
 
           <h3>Dialogue amoureux</h3>
@@ -7950,7 +7950,7 @@ pages:
           <p class="alinea">Que font les PJ ?</p>
           <p class="alinea">
             Lorsqu’ils se relèvent (action de mouvement) pour combattre, ils ont la surprise de constater que leurs armes se mettent à luire d’une lueur dorée (elles sont à présent
-            magiques). Un <span class="gras">test de PER difficulté 15</span> permet d’apercevoir le gnome Gizmo dans l’encadrement de la porte : il vient de lancer un sort à cet effet.
+            magiques). Un <span class="gras">test @Test[car:per|diff:15]</span> permet d'apercevoir le gnome Gizmo dans l’encadrement de la porte : il vient de lancer un sort à cet effet.
           </p>
           <p class="alinea">
             Il faut un round à l’esprit maudit pour terminer de prendre forme. À la fin du round, ils ont devant eux une haute silhouette de robes noires surmontée par le crâne maudit de
@@ -8012,11 +8012,11 @@ pages:
             <div class="bestiaire-capacite">
               <span class="gras">Éclair :</span>
             </div>
-            <p>Un éclair crépitant d'énergie violette qui inflige 3d6 DM (divisés par deux si la cible réussit un test d'AGI difficulté 15).</p>
+            <p>Un éclair crépitant d'énergie violette qui inflige 3d6 DM (divisés par deux si la cible réussit un <span class="gras">test @Test[car:agi|diff:15]</span>).</p>
             <div class="bestiaire-capacite">
               <span class="gras">Aura glaciale :</span>
             </div>
-            <p>Lorsqu'un PJ inflige des DM au spectre via une attaque au contact, il doit faire un test de CON difficulté 10 ou subir 1d4 DM.</p>
+            <p>Lorsqu'un PJ inflige des DM au spectre via une attaque au contact, il doit faire un <span class="gras">test @Test[car:con|diff:10]</span> ou subir 1d4 DM.</p>
             <div class="bestiaire-capacite">
               <span class="gras">Résistance aux dégâts :</span>
             </div>
