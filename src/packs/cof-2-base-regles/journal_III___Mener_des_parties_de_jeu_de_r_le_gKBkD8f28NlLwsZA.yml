@@ -6790,7 +6790,7 @@ pages:
             vous arriver ».
           </p>
           <p class="alinea">
-            Demandez à chaque PJ un <span class="gras">test @Test[car:con|diff:10]</span>. Ceux qui réussissent perdent 4 PV, ceux qui ratent perdent 6 PV et sont
+            Demandez à chaque PJ un <span class="gras">test @Test[car:con|diff:10|suc:renversé et assourdi, perd 4 PV|sucdm:4|sucstatut:overturned|ech:renversé, étourdi et assourdi,perd 6 PV, étourdi 1 round|echdm:6|echstatut:stun,overturned]</span>. Ceux qui réussissent perdent 4 PV, ceux qui ratent perdent 6 PV et sont
             <span class="italique">étourdis</span> (pas d’action) pendant un round. Tous sont <span class="italique">renversés</span> au sol et <span class="gras">assourdis</span>, leurs
             oreilles sifflent.
           </p>
@@ -7114,13 +7114,13 @@ pages:
               que les mains nues (1d3 DM).
             </li>
             <li>
-              <span class="gras">Passer en force</span>, puis se barricader en refermant la porte. Chaque PJ qui force le passage doit faire un
-              <span class="gras">test au choix de FOR </span>ou d’<span class="gras">AGI difficulté 15</span>. En cas de réussite, il subit une attaque ; en cas d’échec, il en subit deux.
+              <span class="gras">Passer en force</span>, puis se barricader en refermant la porte. Chaque PJ qui force le passage doit faire au choix un
+              <span class="gras">test @Test[car:for|diff:15]</span> ou un <span class="gras">test @Test[car:agi|diff:15]</span>. En cas de réussite, il subit une attaque ; en cas d’échec, il en subit deux.
               Voir le profil des forcenés ci-dessous.
             </li>
             <li>
               <span class="gras">Utiliser la furtivité. </span>Un PJ pourrait contourner et s’approcher de la porte en restant hors de vue en passant derrière eux. Il faut alors réussir un
-              <span class="gras">test d’AGI (discrétion) difficulté 10</span>. Si le PJ porte une armure, il subit de plus un malus égal à la valeur de DEF de celle-ci. En cas d’échec les
+              <span class="gras">test @Test[car:agi|diff:10|comp:discrétion]</span>. Si le PJ porte une armure, il subit de plus un malus égal à la valeur de DEF de celle-ci. En cas d’échec les
               forcenés attaquent et on revient à un combat ou à une tentative de passage en force.
             </li>
           </ul>
