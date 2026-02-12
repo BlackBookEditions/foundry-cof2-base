@@ -7634,7 +7634,7 @@ pages:
             </li>
             <li>
               <span class="gras">Si trois PJ montent dans le canot</span>, celui-ci tangue dangereusement et menace de couler. Chaque PJ doit réussir un
-              <span class="gras">test d’AGI difficulté (10 + somme des valeurs de FOR des PJ à bord)</span>. Si un seul PJ rate, les PJ se font une grosse frayeur mais sauvent la situation
+              <span class="gras">test @Test[car:agi]</span> difficulté (10 + somme des valeurs de FOR des PJ à bord). Si un seul PJ rate, les PJ se font une grosse frayeur mais sauvent la situation
               in extremis. Si deux PJ ratent, celui qui a obtenu le plus faible résultat tombe à l’eau (en cas d’égalité lancez un dé). Si les trois PJ ratent, le canot se retourne et tout
               le monde est à l’eau !
             </li>
@@ -7674,7 +7674,7 @@ pages:
           <ul>
             <li>
               Si tous les PJ réussissent le test, vous pouvez en remettre une couche. La voix se fait insistante : « <span class="italique">Dors, dors, je le veux…</span> ». Demandez un
-              nouveau <span class="gras">test @Test[car:vol|diff:10]</span> de même difficulté (et mêmes effets), tandis que les PJ tentent désespérément de progresser au ralenti vers le château et le
+              nouveau <span class="gras">test @Test[car:vol|diff:10]</span> (mêmes effets), tandis que les PJ tentent désespérément de progresser au ralenti vers le château et le
               village.
             </li>
             <li>
@@ -7756,8 +7756,8 @@ pages:
             que le pont levis descend avec une lenteur désespérante, décrivez la marée de zombies qui accourent dans leur direction. C’est tendu, très tendu !
           </p>
           <p class="alinea">
-            Pour gagner du temps, les PJ peuvent tenter de sauter sur le pont levis avant même que celui-ci n’arrive au sol (<span class="gras">test d’AGI (saut) difficulté 20</span>,
-            <span class="gras">15 au round</span> suivant et ainsi de suite). Dès que tous les PJ sont à bord, le pont levis commence à remonter avant même d’avoir touché le sol.
+            Pour gagner du temps, les PJ peuvent tenter de sauter sur le pont levis avant même que celui-ci n’arrive au sol (<span class="gras">test @Test[car:agi|comp:saut]</span> difficulté 20,
+            15 au round suivant et ainsi de suite). Dès que tous les PJ sont à bord, le pont levis commence à remonter avant même d’avoir touché le sol.
           </p>
           <p class="alinea">
             Si les PJ ont été bons et qu’ils ont convaincus le capitaine rapidement, les zombies sortent du bois seulement lorsque les PJ commencent à franchir le pont levis, cette fois
@@ -7864,7 +7864,7 @@ pages:
             </li>
             <li>
               Au round suivant, elle utilise un Projectile de mana (touche automatiquement et inflige 1d10+3 DM), tandis que le dragonnet attaque un autre PJ en projetant un petit éclair
-              de foudre (2d6 DM, test d’AGI difficulté 10 pour réduire les DM de moitié).
+              de foudre (2d6 DM, <span class="gras">test @Test[car:agi|diff:10]</span> pour réduire les DM de moitié).
             </li>
           </ul>
           <p class="alinea">
@@ -8032,8 +8032,8 @@ pages:
           <p class="alinea">Laissez les PJ réagir comme ils le souhaitent, par exemple en tentant de se mettre à l’abri sous le lit !</p>
           <p class="alinea">
             L’instant d’après, l’ectoplasme et le crâne explosent violemment. Des morceaux d’os et de ténèbres sont projetés en tous sens. Ils infligent 3d6 DM dans toute la pièce (réussir
-            un <span class="gras">test d’AGI difficulté 10</span> permet de diviser les DM par deux). Si un PJ s’est mis à l’abri, il subit seulement la moitié des DM ou aucun s’il réussit
-            son test d’AGI.
+            un <span class="gras">test @Test[car:agi|diff:10]</span> permet de diviser les DM par deux). Si un PJ s'est mis à l'abri, il subit seulement la moitié des DM ou aucun s'il réussit
+            son <span class="gras">test @Test[car:agi|diff:10]</span>.
           </p>
           <p class="alinea">Lorsque les PJ se redressent ou reprennent conscience (Gizmo peut leur faire boire une potion), ils découvrent la scène suivante.</p>
           <p class="dialogues">

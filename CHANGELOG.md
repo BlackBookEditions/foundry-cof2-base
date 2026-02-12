@@ -1,5 +1,8 @@
-# 1.51.2
+# 1.6.0
 - Changement dans les droits des compendiums : les joueurs ont la visibilité sur le guide du système, le livre des règles et les objets
+- Les noms de fichiers des images de Elluwe, Keyrel et Tybur sont maintenant en minuscules
+- Utilisation de l'enricher @Test pour les scénarios Tour errante et Requiem pour Clairval
+- Mise à jour du guide utilisateur par rapport à l'enricher @Test
 
 # 1.5.1
 - Modification des prétirés : ajout des capacités avec une résolution Sauvegarde
