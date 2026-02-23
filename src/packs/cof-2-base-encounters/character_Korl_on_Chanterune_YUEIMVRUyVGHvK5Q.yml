@@ -2110,8 +2110,8 @@ items:
         difficulté 10 pour échapper au sort). Le sort ne peut pas affecter une
         créature de niveau supérieur ou égal à celui du lanceur</p>
       inGame: >-
-        <p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter un
-        test opposé. </p><p>La deuxième action permet de réaliser le test de
+        <p>Le joueur sélectionne sa cible puis clique sur l'action pour exécuter
+        un test opposé. </p><p>La deuxième action permet de réaliser le test de
         sauvegarde en cas d'actions suicidaires.</p>
       source: ''
       origin: Livre des règles p68
@@ -2165,7 +2165,8 @@ items:
                 unit: round
           modifiers: []
           actionType: none
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qAcobEHyYddBWoZY
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qAcobEHyYddBWoZY
           indice: 1
           label: Échapper au sort
           chatFlavor: ''
@@ -2537,11 +2538,11 @@ items:
         m (de long et de large). Les cibles peuvent diviser les DM par 2 si
         elles réussissent un test de CON difficulté [10 + CHA du barde].</p>
       inGame: >-
-        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer le
-        sort qui va automatiquement lancer les dommages. </p><p>La deuxième action
-        permet de réaliser le test de sauveagrde pour subir la moitié des
-        DM.</p><p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC sur
-        l'action</em></p>
+        <p>Le joueur sélectionne ses cibles puis clique sur l'action pour lancer
+        le sort qui va automatiquement lancer les dommages. </p><p>La deuxième
+        action permet de réaliser le test de sauveagrde pour subir la moitié des
+        DM.</p><p><em>Note : Pour utiliser la "concentration" faites SHIFT+CLIC
+        sur l'action</em></p>
       source: ''
       origin: Livre des règles p67
       slug: attaque-sonore
@@ -2592,7 +2593,8 @@ items:
                 unit: round
           modifiers: []
           actionType: none
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qmx4y05OpR2IBHqM
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.qmx4y05OpR2IBHqM
           indice: 1
           label: 1/2 DM
           chatFlavor: ''
@@ -2626,7 +2628,7 @@ items:
               malusDiceAdd: false
               skill: {}
               dmg: {}
-          modifiers: []  
+          modifiers: []
       cost: -1
       rank: 3
       frequency: none
@@ -3706,10 +3708,10 @@ items:
         maximale de CHA heures, mais il peut aussi être lancé sur un allié au
         contact et dans ce cas, il ne dure que CHA minutes.</p>
       inGame: >-
-        <p>La première action permet de dépenser les PM et de faire apparaître les
-        trois actions tant qu'elle est activée.</p><p>Les trois actions permettent
-        de réaliser le test de sauvegarde en fonction de la personne à imiter
-        (connue, particulière ou seulement vue).</p>
+        <p>La première action permet de dépenser les PM et de faire apparaître
+        les trois actions tant qu'elle est activée.</p><p>Les trois actions
+        permettent de réaliser le test de sauvegarde en fonction de la personne
+        à imiter (connue, particulière ou seulement vue).</p>
       source: ''
       origin: Livre des règles p69
       slug: deguisement
@@ -3724,7 +3726,8 @@ items:
       path: >-
         Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.IbEHXh8zRwJAfkmL
       actions:
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
           indice: 0
           label: Activer le sort
           chatFlavor: ''
@@ -3742,7 +3745,8 @@ items:
             - predicate: isLearned
           modifiers: []
           resolvers: []
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
           indice: 1
           label: Personne connue
           chatFlavor: ''
@@ -3779,7 +3783,8 @@ items:
               skill: {}
               dmg: {}
           modifiers: []
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
           indice: 2
           label: Personne normale
           chatFlavor: ''
@@ -3816,7 +3821,8 @@ items:
               skill: {}
               dmg: {}
           modifiers: []
-        - source: Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
+        - source: >-
+            Compendium.cof2-base.cof-2-base-encounter.Actor.YUEIMVRUyVGHvK5Q.Item.xUiVWfDaUcQe5vN2
           indice: 3
           label: Personne seulement vue
           chatFlavor: ''
