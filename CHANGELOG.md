@@ -27,7 +27,7 @@
 - Capacité Dentelles et rapière activable et temporaire (issue [#57](https://github.com/BlackBookEditions/foundry-cof2-base/issues/57))
 - Correction de la résolution de Nature nourricière (issue [#63](https://github.com/BlackBookEditions/foundry-cof2-base/issues/63))
 - Corrections mineures pour les armes (issue [#70](https://github.com/BlackBookEditions/foundry-cof2-base/issues/70))
-  - Epée courte : Type de dommages actuellement Tranchants au lieu de Perforants
+  - Épée courte : Type de dommages actuellement Tranchants au lieu de Perforants
   - Lance de cavalerie : Équipable non coché
   - Arbalète Lourde : dans la description, elle se recharge sur une Action Limité et non de mouvement.
   - Couteaux de lancer : Dans l’effet « attaque de contact », la formule de compétence doit être @atc et il manque le bonus de force aux dommages
