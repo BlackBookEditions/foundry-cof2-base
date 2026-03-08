@@ -1,3 +1,8 @@
+# 1.6.2
+- Ajout de modificateurs sur la capacité Charge fantastique (issue [#77](https://github.com/BlackBookEditions/foundry-cof2-base/issues/77))
+- Correction du NC du milicien (issue [#75](https://github.com/BlackBookEditions/foundry-cof2-base/issues/75))
+- Uniformisation du terme Épée (issue [#74](https://github.com/BlackBookEditions/foundry-cof2-base/issues/74))
+
 # 1.6.1
 - Mise à jour du guide utilisateur par rapport à l'enricher @Test
 
