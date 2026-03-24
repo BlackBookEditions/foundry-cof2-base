@@ -1,3 +1,7 @@
+# 1.6.3
+- Guide utilisateur : Renommage d'une image (cof2_capacity_liee.webp)
+- Diminution de la hauteur de l'image des scènes et des compendiums
+
 # 1.6.2
 - Ajout de modificateurs sur la capacité Charge fantastique (issue [#77](https://github.com/BlackBookEditions/foundry-cof2-base/issues/77))
 - Correction du NC du milicien (issue [#75](https://github.com/BlackBookEditions/foundry-cof2-base/issues/75))
