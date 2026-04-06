@@ -10,6 +10,10 @@
   - Statuette : spell: false → spell: true
   - Grande Taille : texte inGame clarifié avec explication de la limitation @niv sur les encounters
   - Rune de garde : ajout manaCost: 3 pour forcer le coût à 3 PM au lieu de 5
+- Capacités du druide (issue [#82](https://github.com/BlackBookEditions/foundry-cof2-base/issues/82))
+  - Maître de la survie : ajouté le modificateur CON 2 + @rang pour les tests de récupération
+  - Bâton de druide : @fagi → @agi dans la formule de dégâts
+  - Nuée d'insectes : apply: both → apply: others sur le modificateur magic
 
 # 1.6.3
 - Guide utilisateur : Renommage d'une image (cof2_capacity_liee.webp)
