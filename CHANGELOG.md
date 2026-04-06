@@ -1,3 +1,11 @@
+# 1.6.5
+
+## Corrections
+- Capacités de l'ensorceleur (issue [#78](https://github.com/BlackBookEditions/foundry-cof2-base/issues/78))
+  - Amitié (Voie de l'envouteur) : espace en trop devant la formule de difficulté qui empêche le jet opposé
+  - Arme de mana (Voie de l'invocateur) : durée à @rang au lieu de 3
+  - Choc (Voie de l'invocateur) : statut "renversé" manquant
+
 # 1.6.3
 - Guide utilisateur : Renommage d'une image (cof2_capacity_liee.webp)
 - Diminution de la hauteur de l'image des scènes et des compendiums
