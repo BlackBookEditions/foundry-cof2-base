@@ -68,7 +68,7 @@ system:
           source: Compendium.cof2-base.cof-2-base-items.Item.VFsPVLVp4slTyMWr
           subtype: attribute
           target: hp
-          value: '@int - @con'
+          value: '@niv * @int - @niv * @con'
           apply: self
           additionalInfos: a supprimer si vous ne souhaitez pas l'activer
       resolvers: []

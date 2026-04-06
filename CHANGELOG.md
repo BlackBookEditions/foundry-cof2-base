@@ -5,6 +5,11 @@
   - Amitié (Voie de l'envouteur) : espace en trop devant la formule de difficulté qui empêche le jet opposé
   - Arme de mana (Voie de l'invocateur) : durée à @rang au lieu de 3
   - Choc (Voie de l'invocateur) : statut "renversé" manquant
+- Capacités du forgesort (issue [#79](https://github.com/BlackBookEditions/foundry-cof2-base/issues/79))
+  - Grosse tête : @int - @con → @niv * @int - @niv * @con
+  - Statuette : spell: false → spell: true
+  - Grande Taille : texte inGame clarifié avec explication de la limitation @niv sur les encounters
+  - Rune de garde : ajout manaCost: 3 pour forcer le coût à 3 PM au lieu de 5
 
 # 1.6.3
 - Guide utilisateur : Renommage d'une image (cof2_capacity_liee.webp)
