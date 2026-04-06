@@ -1,6 +1,7 @@
 # 1.6.5
 
 ## Corrections
+Merci Morkheer pour les avoir signalées
 - Capacités de l'ensorceleur (issue [#78](https://github.com/BlackBookEditions/foundry-cof2-base/issues/78))
   - Amitié (Voie de l'envouteur) : espace en trop devant la formule de difficulté qui empêche le jet opposé
   - Arme de mana (Voie de l'invocateur) : durée à @rang au lieu de 3
@@ -14,6 +15,8 @@
   - Maître de la survie : ajouté le modificateur CON 2 + @rang pour les tests de récupération
   - Bâton de druide : @fagi → @agi dans la formule de dégâts
   - Nuée d'insectes : apply: both → apply: others sur le modificateur magic
+- Capacités du magicien : (issue [#81](https://github.com/BlackBookEditions/foundry-cof2-base/issues/81))
+  - Ajout du familier du magicien et correction de la capacité Familier de la voie de la magie universelle
 
 # 1.6.3
 - Guide utilisateur : Renommage d'une image (cof2_capacity_liee.webp)
