@@ -1,3 +1,6 @@
+# 2.0.0
+- Compatibilité Foundry V14
+
 # 1.6.5
 
 ## Corrections
