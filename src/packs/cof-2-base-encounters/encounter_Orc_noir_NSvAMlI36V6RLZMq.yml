@@ -143,12 +143,9 @@ prototypeToken:
     src: modules/cof2-base/assets/rencontres/orc.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -192,7 +189,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -212,6 +209,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 1
 items:
   - folder: eRnLMLNnqgpvpmpq
     name: Arme à deux mains
@@ -268,7 +266,7 @@ items:
     _stats:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.4l09ZmRx0EQgiqp8
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: 12.331.0
       createdTime: null
@@ -382,7 +380,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.GfSsTxWKqA3PIdjP
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758891472750
@@ -487,7 +485,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.7NTfb6SYuy6wWx8o
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758891474260
@@ -597,7 +595,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.qw0iiCxryvW1S9ir
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758891483614
@@ -613,7 +611,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: Actor.8Sa8DP6cyKSmaC2D
-  coreVersion: '13.348'
+  coreVersion: '14.359'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1742454184539

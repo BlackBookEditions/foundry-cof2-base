@@ -177,12 +177,9 @@ prototypeToken:
     src: icons/creatures/mammals/rodent-rat-diseaed-gray.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 0.5
     scaleY: 0.5
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -226,7 +223,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -246,6 +243,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 0.5
 items: []
 effects: []
 flags:
@@ -255,7 +253,7 @@ _stats:
   compendiumSource: null
   duplicateSource: null
   exportSource: null
-  coreVersion: '13.351'
+  coreVersion: '14.359'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1775506263429

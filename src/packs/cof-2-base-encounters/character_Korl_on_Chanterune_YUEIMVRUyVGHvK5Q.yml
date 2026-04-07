@@ -223,12 +223,9 @@ prototypeToken:
     src: modules/cof2-base/assets/pretires/korleon.webp
     anchorX: 0.5
     anchorY: 0.5
-    offsetX: 0
-    offsetY: 0
     fit: contain
     scaleX: 1
     scaleY: 1
-    rotation: 0
     tint: '#ffffff'
     alphaThreshold: 0.75
   lockRotation: false
@@ -272,7 +269,7 @@ prototypeToken:
     brightness: 0
     saturation: 0
     contrast: 0
-  detectionModes: []
+  detectionModes: {}
   occludable:
     radius: 0
   ring:
@@ -292,6 +289,7 @@ prototypeToken:
     src: null
     disposition: false
   movementAction: null
+  depth: 1
 items:
   - folder: F8KbcWx8PBfjuFhL
     name: Soutenir
@@ -380,7 +378,7 @@ items:
     _stats:
       compendiumSource: null
       duplicateSource: null
-      coreVersion: '13.345'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: 12.331.0
       createdTime: null
@@ -502,7 +500,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.OFhNnwqqK0OjWaiO
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921481901
@@ -548,7 +546,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482019
@@ -647,7 +645,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482085
@@ -737,7 +735,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482195
@@ -827,7 +825,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482300
@@ -909,7 +907,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482426
@@ -995,7 +993,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921482593
@@ -1125,7 +1123,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.ZPGVnVaU2UkabnK9
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484325
@@ -1171,7 +1169,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484387
@@ -1254,7 +1252,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484451
@@ -1404,7 +1402,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484570
@@ -1536,7 +1534,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484701
@@ -1630,7 +1628,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921484873
@@ -1727,7 +1725,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485005
@@ -1773,7 +1771,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485184
@@ -1856,7 +1854,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485248
@@ -1940,7 +1938,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485365
@@ -1998,7 +1996,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485483
@@ -2088,7 +2086,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485549
@@ -2222,7 +2220,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485683
@@ -2268,7 +2266,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921485943
@@ -2427,7 +2425,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486028
@@ -2518,7 +2516,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486158
@@ -2650,7 +2648,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486301
@@ -2706,7 +2704,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486435
@@ -2842,7 +2840,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486505
@@ -2888,7 +2886,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486701
@@ -2969,7 +2967,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486828
@@ -3066,7 +3064,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921486963
@@ -3162,7 +3160,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487104
@@ -3259,7 +3257,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487242
@@ -3356,7 +3354,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487379
@@ -3402,7 +3400,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487585
@@ -3488,7 +3486,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487680
@@ -3572,7 +3570,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921487885
@@ -3631,7 +3629,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921488033
@@ -3686,7 +3684,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921488111
@@ -3880,7 +3878,7 @@ items:
       compendiumSource: null
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921488188
@@ -3941,7 +3939,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.AkaF6hw8bOIgt6ET
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921567459
@@ -4001,7 +3999,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.VOeJ6h2XU6FgImS2
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921574366
@@ -4116,7 +4114,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.bwFlCTHBg9Fqa0JI
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921583456
@@ -4222,7 +4220,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921586530
@@ -4282,7 +4280,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.J2tiPBx1DjmQAmIg
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921593001
@@ -4342,7 +4340,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.8A7yJXW7MRgIEnIy
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921595750
@@ -4411,7 +4409,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.yx74sJAB7rc5kCmc
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921598822
@@ -4480,7 +4478,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.Son0yhz6X0jSLVXA
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921609329
@@ -4542,7 +4540,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.XOR3zWTtVTmU0Ued
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921613028
@@ -4611,7 +4609,7 @@ items:
       compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.BBlfweje5UdbnahE
       duplicateSource: null
       exportSource: null
-      coreVersion: '13.348'
+      coreVersion: '14.359'
       systemId: co2
       systemVersion: '#{VERSION}#'
       createdTime: 1758921614244
@@ -4627,7 +4625,7 @@ flags: {}
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.348'
+  coreVersion: '14.359'
   systemId: co2
   systemVersion: '#{VERSION}#'
   createdTime: 1749761930942
