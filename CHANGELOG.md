@@ -1,3 +1,9 @@
+# 2.1.0
+## Guide du système
+- Mise à jour complète des sections "Options du Système", "Jet d'attaque", "Jet de dommages", "Jet de sauvegarde" et "Jet en opposition" pour refléter le nouveau système multi-cibles
+- Suppression des Notes de Version obsolètes (fonctionnalités désormais implémentées)
+- Ajout du statut "Autre" dans la documentation de l'enricher @Test
+
 # 2.0.0
 - Compatibilité Foundry V14
 
