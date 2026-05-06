@@ -1,0 +1,208 @@
+<div class="journal-page-cof-base">
+  <p class="lettrine">Le système Chroniques Oubliées Fantasy 2ème édition propose d'autres fonctionnalités et éléments pour améliorer votre expérience de jeu.</p>
+  <p class="alinea">
+    Le système et le module évoluent régulièrement. Ainsi n'hésitez pas à proposer des nouvelles fonctionnalités depuis l'onglet Chroniques Oubliées de la barre latérale de Foundry
+    en passant par le bouton "signaler un bug" ou en venant discuter sur le discord de la fonderie (https://discord.gg/Gx6PPmeS)dans le salon Chroniques Oubliées.
+  </p>
+
+  <!--ENRICHER @TEST-->
+  <h2>Demande de jet dans un journal (@Test)</h2>
+
+  <p class="alinea">
+    L'enricher <span class="gras">@Test</span> permet d'insérer dans un journal ou une description un
+    <span class="gras">lien cliquable pour demander un jet de caractéristique aux joueurs</span>. Lorsqu'un joueur clique sur le lien, un message apparaît dans le chat avec un
+    bouton pour effectuer le jet.
+  </p>
+  <p class="alinea">Ces liens fonctionnent également quand le journal est détaché de la fenêtre de Foundry VTT.</p>
+  <div class="image-centre"><img src="modules\cof2-base\assets\guide\cof2_tchat_enricher_test_journal.webp" /></div>
+  <h3>Syntaxe</h3>
+  <p class="alinea">La syntaxe générale est la suivante :</p>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:CARACTERISTIQUE|paramètre1:valeur1|paramètre2:valeur2|...]</p>
+  <p class="alinea">
+    <span class="gras italique">Note :</span> dans les exemples ci-dessous, remplacez <i class="fa-regular fa-at"></i> par le caractère <span class="gras">@</span> lorsque vous
+    écrivez vos formules. Le rendu final est affiché après chaque exemple.
+  </p>
+
+  <h3>Paramètres disponibles</h3>
+  <ul>
+    <li><span class="gras">car</span> (obligatoire) : La caractéristique à tester (for, agi, con, int, per, cha, vol)</li>
+    <li><span class="gras">diff</span> : La difficulté du test</li>
+    <li><span class="gras">comp</span> : Le nom de la ou des compétences associées</li>
+    <li><span class="gras">suc</span> : Texte décrivant les conséquences en cas de succès (visible uniquement par le MJ)</li>
+    <li><span class="gras">ech</span> : Texte décrivant les conséquences en cas d'échec (visible uniquement par le MJ)</li>
+    <li><span class="gras">sucdm</span> : Formule de dés pour les dommages en cas de succès</li>
+    <li><span class="gras">echdm</span> : Formule de dés pour les dommages en cas d'échec</li>
+    <li><span class="gras">sucstatut</span> : Statuts à appliquer en cas de succès (séparés par des virgules)</li>
+    <li><span class="gras">echstatut</span> : Statuts à appliquer en cas d'échec (séparés par des virgules)</li>
+    <li><span class="gras">options</span> : Options supplémentaires comme "secret" pour un jet visible uniquement du MJ</li>
+  </ul>
+
+  <h3>Caractéristiques</h3>
+  <p class="alinea">Les valeurs possibles pour le paramètre <span class="gras">car</span> sont :</p>
+  <ul>
+    <li><span class="gras">for</span> : Force</li>
+    <li><span class="gras">agi</span> : Agilité</li>
+    <li><span class="gras">con</span> : Constitution</li>
+    <li><span class="gras">int</span> : Intelligence</li>
+    <li><span class="gras">per</span> : Perception</li>
+    <li><span class="gras">cha</span> : Charisme</li>
+    <li><span class="gras">vol</span> : Volonté</li>
+  </ul>
+
+  <h3>Statuts disponibles</h3>
+  <p class="alinea">Les valeurs possibles pour <span class="gras">sucstatut</span> et <span class="gras">echstatut</span> sont :</p>
+  <ul>
+    <li><span class="gras">dead</span> : Mort</li>
+    <li><span class="gras">confused</span> : Confus</li>
+    <li><span class="gras">enslaved</span> : Asservi</li>
+    <li><span class="gras">stun</span> : Étourdi</li>
+    <li><span class="gras">overturned</span> : Renversé</li>
+    <li><span class="gras">blind</span> : Aveuglé</li>
+    <li><span class="gras">weakened</span> : Affaibli</li>
+    <li><span class="gras">outOfBreath</span> : Essoufflé</li>
+    <li><span class="gras">immobilized</span> : Immobilisé</li>
+    <li><span class="gras">invalid</span> : Invalide</li>
+    <li><span class="gras">paralysis</span> : Paralysé</li>
+    <li><span class="gras">slowed</span> : Ralenti</li>
+    <li><span class="gras">surprised</span> : Surpris</li>
+    <li><span class="gras">invisible</span> : Invisible</li>
+    <li><span class="gras">unconscious</span> : Inconscient</li>
+    <li><span class="gras">silence</span> : Réduit au silence</li>
+    <li><span class="gras">bleeding</span> : En train de saigner</li>
+    <li><span class="gras">poison</span> : Empoisonné</li>
+    <li><span class="gras">other</span> : Autre (état particulier non listé)</li>
+  </ul>
+
+  <h3>Exemples d'utilisation</h3>
+  <h4>Test simple</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:for|diff:10]</p>
+  <p class="alinea">Rendu : @Test[car:for|diff:10]</p>
+  <p class="alinea">Demande un test de Force difficulté 10.</p>
+
+  <h4>Test avec compétence</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:agi|diff:15|comp:acrobaties]</p>
+  <p class="alinea">Rendu : @Test[car:agi|diff:15|comp:acrobaties]</p>
+  <p class="alinea">Demande un test d'Agilité difficulté 15 avec la compétence Acrobaties.</p>
+
+  <h4>Test avec plusieurs compétences</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:int|diff:12|comp:histoire, rumeurs et légendes]</p>
+  <p class="alinea">Rendu : @Test[car:int|diff:12|comp:histoire, rumeurs et légendes]</p>
+  <p class="alinea">Demande un test d'Intelligence difficulté 12 avec plusieurs compétences possibles.</p>
+
+  <h4>Test avec conséquences</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:con|diff:10|suc:résiste au poison|ech:perd 1d6 PV et est empoisonné]</p>
+  <p class="alinea">Rendu : @Test[car:con|diff:10|suc:résiste au poison|ech:perd 1d6 PV et est empoisonné]</p>
+  <p class="alinea">Demande un test de Constitution avec des descriptions de conséquences visibles uniquement par le MJ dans le chat.</p>
+
+  <h4>Test avec dommages automatiques</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:con|diff:12|sucdm:1d6|echdm:2d6]</p>
+  <p class="alinea">Rendu : @Test[car:con|diff:12|sucdm:1d6|echdm:2d6]</p>
+  <p class="alinea">Demande un test de Constitution. En cas de succès, un jet de 1d6 dommages est effectué. En cas d'échec, un jet de 2d6 dommages est effectué.</p>
+
+  <h4>Test avec application de statuts</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:per|diff:15|echstatut:stun]</p>
+  <p class="alinea">Rendu : @Test[car:per|diff:15|echstatut:stun]</p>
+  <p class="alinea">Demande un test de Perception. En cas d'échec, le statut "Étourdi" est automatiquement appliqué au personnage.</p>
+
+  <h4>Test avec plusieurs statuts</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:for|diff:18|echstatut:overturned,stun]</p>
+  <p class="alinea">Rendu : @Test[car:for|diff:18|echstatut:overturned,stun]</p>
+  <p class="alinea">Demande un test de Force. En cas d'échec, les statuts "Renversé" et "Étourdi" sont appliqués.</p>
+
+  <h4>Test secret</h4>
+  <p class="exemple"><i class="fa-regular fa-at"></i>Test[car:per|diff:12|comp:perception|options:secret]</p>
+  <p class="alinea">Rendu : @Test[car:per|diff:12|comp:perception|options:secret]</p>
+  <p class="alinea">Demande un test de Perception en mode secret. Le résultat du jet n'est visible que par le MJ.</p>
+
+  <h4>Exemple complet</h4>
+  <p class="exemple">
+    <i class="fa-regular fa-at"></i>Test[car:con|diff:14|comp:résistance|suc:résiste à la maladie|ech:contracte la peste|echdm:1d8|echstatut:weakened,poison|options:secret]
+  </p>
+  <p class="alinea">Rendu : @Test[car:con|diff:14|comp:résistance|suc:résiste à la maladie|ech:contracte la peste|echdm:1d8|echstatut:weakened,poison|options:secret]</p>
+  <p class="alinea">
+    Demande un test de Constitution difficulté 14 avec la compétence résistance. En cas de succès, le message "résiste à la maladie" apparaît. En cas d'échec, le message "contracte
+    la peste" apparaît, 1d8 dommages sont infligés et les statuts Affaibli et Empoisonné sont appliqués. Le jet est effectué en mode secret.
+  </p>
+
+  <h3>Affichage</h3>
+  <p class="alinea">
+    Dans le journal, le lien s'affiche sous la forme d'une icône de dé suivie du nom de la caractéristique, de la compétence et de la difficulté, par exemple
+    <span class="gras"><i class="fa-solid fa-dice-d20"></i> Constitution (résistance) Difficulté 14</span>. Les informations de succès, échec, dommages, statuts et options sont
+    masquées mais visibles dans une info-bulle au survol du lien, uniquement pour le MJ.
+  </p>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_enricher_test_message.webp" /></div>
+  <p class="alinea">
+    Lorsqu'un joueur clique sur le lien, un message de demande de jet apparaît dans le chat avec le titre du test, la difficulté (si définie), un bouton pour effectuer le jet et
+    les conséquences succès/échec visibles uniquement par le MJ.
+  </p>
+  <p class="alinea">
+    Le message de demande de test de compétence est utilisable autant de fois que nécessaire par les joueurs ou le MJ. Il suffit de sélectionner le bon token pour utiliser les
+    bonnes caractéristiques et bonus lors du test.
+  </p>
+  <p class="alinea">
+    Après le jet, le résultat apparaît. Si des dommages sont configurés, un message de dommages avec boutons d'application apparaît. Si des statuts sont configurés, ils sont
+    automatiquement appliqués au personnage.
+  </p>
+  <p class="alinea">
+    Les liens @Test dans les journaux ou les descriptions fonctionnent de la même façon que les
+    @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jets de caractéristique}
+  </p>
+
+  <!--Raccourcis Hotbar-->
+  <h2>Raccourcis de la Hotbar</h2>
+
+  <p class="alinea">
+    La barre de raccourcis (hotbar) de Foundry est très pratique pour le MJ ou pour les joueurs. Elle permet de déclencher des macros mais aussi de glisser-déposer des éléments de
+    jeu dessus pour les déclencher rapidement sans avoir besoin d'ouvrir la feuille de personnage ou de rencontre, par exemple.
+  </p>
+  <div class="image-centre"><img src="modules\cof2-base\assets\guide\cof2_hotbar.webp" /></div>
+  <p class="alinea">Lorsque vous ajoutez un élément du système dans la hotbar de Foundry VTT (actions, attaque de rencontres, capacités…) vous pouvez :</p>
+  <ul>
+    <li><span class="gras">Clic : </span>déclenche l'action ou active/désactive l'action</li>
+    <li><span class="gras">Ctrl + Clic : </span>envoyer la description de l'élément dans le tchat</li>
+    <li><span class="gras">Shift + clic : </span>ouvrir la feuille de l'élément.</li>
+    <li><span class="gras">Alt + Clic : </span>pour la action d'attaque avec des dommages, permet d'activer uniquement la fenêtre de Dommages.</li>
+  </ul>
+
+  <!--Tables Aléatoires-->
+  <h2>Tables Aléatoires</h2>
+  <p class="lettrine">
+    Dans le Livre des Règles, de nombreuses tables vous permettent de déterminer des éléments pour votre scénario ou pour votre personnage lorsque l’inspiration ou le temps manque.
+    Toutes les tableaux du Livre de règles vous proposant de jeter un ou plusieurs dés pour tirer un résultat au hasard ont été ajoutées dans le compendium des tables aléatoires.
+  </p>
+
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tables_aleatoires.webp" /></div>
+
+  <h4>Création de personnage</h4>
+  <p class="alinea">Lors d’un joueur manque d’inspiration ou souhaite s’en remettre à la chance, les tables de se dossiers vont l’aider.</p>
+  <p class="alinea">
+    On y trouve des tables pour déterminer aléatoirement
+    <span class="gras">un peuple, un profil, un travers, un idéal Héroïque, un secret intime (2 tables), une origine géographique et sociale.</span>
+  </p>
+  <h4>Origine des Objets Magiques</h4>
+  <p class="alinea">
+    Les trois tables de ce dossiers permettent de déterminer <span class="gras">l’époque, le peuple et la provenance d’un objet magique</span> pour agrémenter vos scénarios et
+    donner une histoire particulière à un objet spécial.
+  </p>
+  <h4>Objets de Pouvoir et de Puissance</h4>
+  <p class="alinea">
+    Ces tables reprennent les informations du Livre de Règles pour
+    <span class="gras">trouver un bonus magique d’un objet de puissance ou le profil et le rang associé à un objet de pouvoir.</span>
+  </p>
+  <h4>Armes et Armures Aléatoires</h4>
+  <p class="alinea">
+    Ce dossier permet de <span class="gras">trouver rapidement une arme de contact, à distance ou magique et lui appliquer une propriété magique</span> et aussi pour les armures ou
+    boucliers avec les propriétés magiques associées au objets de défense.
+  </p>
+  <h5>Les sous-tables</h5>
+  <p class="alinea">
+    Les sous-tables peuvent être utilisées indépendamment pour tirer au hasard un type d’arme ou d’armure. Si vous souhaitez créer directement un concept d’objet magique en
+    utilisant les tables <span class="gras">Déterminer une Arme aléatoirement</span> et <span class="gras">Déterminer une Armure Aléatoirement</span>, vous obtenez directement
+    l’objet ET la propriété magique associée.
+  </p>
+  <h4>Potions Parchemins Baguettes Aléatoires</h4>
+  <p class="alinea"><span class="gras">Trouver rapidement une potion magique, un parchemin ou une baguette</span>, ces tables sont configurer pour ça.</p>
+  <p class="alinea">Une table vous permet également de <span class="gras">tirer un effet secondaire</span> si un des PJ abuse de la consommation de potion.</p>
+  <h4>Contretemps</h4>
+  <p class="alinea">Utilisée pour la voie de prestige de la magie du temps, cette table permet de <span class="gras">tirer au hasard un effet de contretemps.</span></p>
+</div>

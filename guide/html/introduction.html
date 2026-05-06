@@ -31,10 +31,14 @@
   </p>
 
   <h3>Versions</h3>
-  <p class="alinea">Le système nécessite la version 13 de Foundry VTT.</p>
-  <p class="alinea">Version du système : 1.4.0</p>
-  <p class="alinea">Version du module : 1.4.0</p>
+  <p class="alinea">Le système nécessite la version 13 ou 14 de Foundry VTT.</p>
+  <p class="alinea">Version du système : 2.1.0 (version maximale 1.6.5 pour rester sur la V13 de Foundry VTT)</p>
+  <p class="alinea">Version du module : 2.1.0</p>
 
+  <p class="alinea">
+    <span class="gras italique">Note de Version :</span> Le guide est mise à jour régulièrement avec les dernières fonctionnalités donc si vous êtes resté en V13 avec la version du
+    système en 1.6.5 les images et descriptions de ce guide ne seront pas semblable aux visuels et fonctionnalités de votre version.
+  </p>
   <p class="alinea">
     Vous pouvez télécharger une version pdf de ce guide utilisateur en cliquant sur ce lien :
     <a href="https://raw.githubusercontent.com/wiki/BlackBookEditions/foundry-cof2-base/Guide_officiel_du_système_COF2.pdf">Version pdf</a>.
@@ -190,6 +194,19 @@
         @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#description-dans-le-chat]{Description dans le chat}
       </li>
     </ul>
+    <li>@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS]{Autres fonctionnalités}</li>
+    <ul>
+      <li class="puce-noire">
+        @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#demande-de-jet-dans-un-journal-(@test)]{Demande de jet
+        dans un journal (@Test)}
+      </li>
+      <li class="puce-noire">
+        @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#raccourcis-de-la-hotbar]{Raccourcis de la Hotbar}
+      </li>
+      <li class="puce-noire">
+        @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#tables-aleatoires]{Tables Aléatoires}
+      </li>
+    </ul>
   </ul>
 
   <h2>Compendiums</h2>
@@ -271,38 +288,26 @@
     feuilles Rencontres.
   </p>
   <h3>Afficher la difficulté</h3>
-  <p class="alinea">Trois options sont disponibles pour modifier la façon d’utiliser la difficulté pour vos tests de compétences (caractéristiques), d’attaques ou autres.</p>
-
-  <h4>Ne pas utiliser ni afficher la difficulté</h4>
-  <p class="alinea">
-    C’est option la moins automatisée. Dans cette situation,
-    <span class="gras">le MJ et les PJ lancent leurs jets de compétences, leurs attaques, leurs jets de dommages… indépendamment des difficultés des tests</span> (Degré de
-    Difficulté ou Défense ou test Opposé). Le MJ détermine seul si le test est réussi ou raté.
-  </p>
-  <p class="alinea">Vous ne voyez pas dans les fenêtres de dialogue du Chat que le test est réussi ou raté et les dommages d’une attaque ne sont pas lancés automatiquement.</p>
-
-  <h4>Utiliser la difficulté et l'afficher pour tout le monde</h4>
+  <p class="alinea">Deux options sont disponibles pour modifier la façon d'utiliser la difficulté pour vos tests de compétences (caractéristiques), d'attaques ou autres.</p>
+  <h4>Pour tout le monde</h4>
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_tchat_attaque_resultat.webp" /></div>
-  <p class="alinea">Cette option permet d’utiliser la difficulté et de la révéler pour les PJs.</p>
+  <p class="alinea"><span class="gras">Cette option permet d'utiliser la difficulté et de la révéler pour les PJs.</span></p>
   <p class="alinea">
-    Lorsqu’un PJ fera un test d’Attaque en ciblant un ennemi, il verra immédiatement la Défense de la cible et, en lançant son jet, la fenêtre de dialogue du Chat annoncera si
-    l’attaque est réussie ou ratée. Cette option est simple d’utilisation et permet l’automatisation du jet de Dommages en cas d’attaque réussie si vous activez l’option pour
-    combiner les jets d'Attaque et de Dommages (voir ci-après).
+    Lorsqu'un PJ fera un test d'Attaque en ciblant un ennemi,
+    <span class="gras">il verra immédiatement la Défense de la cible et, en lançant son jet, la fenêtre de dialogue du tchat annoncera si l'attaque est réussie ou ratée</span>.
+    Cette option est simple d'utilisation et permet l'automatisation du jet de Dommages en cas d'attaque réussie si vous activez l'option pour combiner les jets d'Attaque et de
+    Dommages (voir ci-après).
   </p>
-  <h4>Utiliser la difficulté et l'afficher uniquement au MJ</h4>
-  <p class="alinea">Voici un mélange des deux options précédentes qui ressemble beaucoup à l’expérience vécue autour d’une table de jeu de rôles en physique.</p>
+  <h4>Uniquement au MJ</h4>
+  <p class="alinea">Voici une option qui ressemble beaucoup à l'expérience vécue autour d'une table de jeu de rôles en physique.</p>
   <ul>
     <li>
-      <p>
-        <span class="gras">Pour le MJ, les scores de difficulté sont affichés, la réussite et l’échec sont indiqués</span> dans les fenêtres de dialogue du Chat et les jets de
-        Dommages sont combinés en cas de réussite si l’option plus bas est cochée.
-      </p>
+      <span class="gras">Pour le MJ, les scores de difficulté sont affichés, la réussite et l'échec sont indiqués</span> dans les fenêtres de dialogue du tchat et les jets de
+      Dommages sont combinés en cas de réussite si l'option plus bas est cochée.
     </li>
     <li>
-      <p>
-        <span class="gras">Pour les PJ, la difficulté est masquée, la réussite ou l’échec des tests ne sont pas affichés</span> dans le tchat et les jets de Dommages ne sont pas
-        automatisés même si l’option est cochée plus bas.
-      </p>
+      <span class="gras">Pour les PJ, la difficulté est masquée, la réussite ou l'échec des tests ne sont pas affichés</span> dans le tchat et les jets de Dommages ne sont pas
+      automatisés même si l'option est cochée plus bas.
     </li>
   </ul>
   <ul class="exemple">
@@ -328,58 +333,13 @@
     </p>
   </ul>
 
-  <h3>Afficher les boutons de Dommages</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_options_boutons_dm.webp" /></div>
-  <p class="alinea">En cochant cette option, <span class="gras">6 options apparaitront</span> dans la fenêtre de dialogue du Chat pour les jets de Dommages :</p>
-  <ul>
-    <li>
-      <p><span class="gras">La case à cocher RD</span> : en cochant cette case, la Résistance aux Dommages de la cible sera appliquée pour la soustraction de Dommages.</p>
-    </li>
-    <li>
-      <p>
-        <span class="gras">La case à cocher Temp. :</span> en cochant cette case, les Dommages subis par la cible seront ajoutés aux DM temporaires. Si l’équipement est configuré
-        pour infliger des DM temporaires, la case est automatiquement cochée.
-      </p>
-    </li>
-    <li>
-      <p>
-        <span class="gras">L'icône <i class="fa-solid fa-user-minus"></i></span> : permet de réduire les PV de la cible du Total du jet de Dommages effectué (en retirant ou non la
-        RD en fonction de la case précédente).
-      </p>
-    </li>
-    <li>
-      <p>
-        <span class="gras">L'icône <i class="fa-solid fa-user-shield"></i></span> : permet de réduire les PV de la cible de la moitié du Total du jet de Dommages effectué dans les
-        cas, par exemple, où la cible a une résistance à ce type de Dommages ou si la cible réussit un test pour ne subir que la moitié des Dommages d’une attaque.
-      </p>
-    </li>
-    <li>
-      <p>
-        <span class="gras">L'icône <i class="fa-solid fa-user-injured"></i></span> : permet de réduire les PV de la cible du double du Total du jet de Dommages effectué dans le cas
-        d’un Succès Critique ou dans le cas où la cible à une vulnérabilité au type de Dommages de l’attaque, par exemple.
-      </p>
-    </li>
-    <li>
-      <p>
-        <span class="gras">L'icône <i class="fa-solid fa-user-plus"></i></span> : permet d’augmenter les PV de la cible du Total du jet de Dommages effectué. Bouton très pratique,
-        par exemple, dans le cas des Dommages «vampiriques» car vous pouvez cibler l’ennemi et lui faire perdre les PV de l’attaque puis cibler l’attaquant pour lui faire gagner
-        autant de PV que de Dommages infligés.
-      </p>
-    </li>
-  </ul>
-  <ul class="exemple">
-    <p class="alinea">
-      Consultez @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-dommages]{Jet de dommages} pour plus de
-      détails.
-    </p>
-  </ul>
-
   <h3>Autoriser les joueurs à modifier les cibles</h3>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_options_boutons_dm.webp" /></div>
   <p class="alinea">
-    Si la case est cochée, les joueurs pourront utiliser les boutons de Dommages dans les messages du chat pour modifier les Points de Vigueur des cibles (autres personnages,
-    rencontres, créatures...).
+    Si la case est cochée, les joueurs pourront utiliser les contrôles de la carte de Dommages dans les messages du chat pour modifier les Points de Vigueur des cibles (autres
+    personnages, rencontres, créatures...).
   </p>
-  <p class="alinea">Si la case n'est pas cochée, les joueurs ne pourront pas utiliser les boutons de Dommages pour modifier des cibles.</p>
+  <p class="alinea">Si la case n'est pas cochée, seul le MJ pourra appliquer les Dommages et modifier les cibles depuis les cartes de Dommages.</p>
 
   <h3>Vérification des mains libres</h3>
   <p class="alinea">
@@ -411,7 +371,7 @@
     Les éléments du système possèdent un bouton dans la partie gauche de la barre de titre de leur fenêtre. Ce bouton "On/Off" <i class="fa-solid fa-toggle-large-on"></i>
     <i class="fa-solid fa-toggle-large-off"></i> est présent sur la grande majorité des fenêtres que vous utiliserez. Dans certaines situations, il ne sera pas visible.
   </p>
-  <p>Le bouton de Verrouillage permet de gérer l'état de la feuille entre Verrouillée et Déverrouillée.</p>
+  <p class="alinea">Le bouton de Verrouillage permet de gérer l'état de la feuille entre Verrouillée et Déverrouillée.</p>
   <ul>
     <li>
       <p><span class="gras">En Mode Verrouillé,</span> vous pourrez consulter les informations de l'élément et modifier seulement quelques paramètres.</p>
@@ -447,4 +407,25 @@
   </p>
   <p class="alinea">Dans ce guide, nous avons privilégié le thème clair au cas où vous souhaiteriez imprimer certaines pages.</p>
   <div class="image-centre"><img src="modules\cof2-base\assets\guide\cof2_themes_exemples.webp" width="500px" /></div>
+  <h3>La barre latérale</h3>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_onglet_lateral.webp" /></div>
+  <p class="alinea">Grâce à l'icône Chroniques Oubliées, vous pouvez atteindre l'onglet du système et du module de la barre latérale de Foundry VTT à droite de la fenêtre.</p>
+  <p class="alinea">
+    A partir de cet onglet, vous accédez à un lien vers le discord de la Fonderie directement, un lien vers le GitHub du système et un lien pour créer rapidement un issue sur
+    GitHub
+  </p>
+  <p class="alinea">Pour le module, un bouton vous dirige également vers la page dédiée à COF2 sur le site de Black Book Éditions..</p>
+  <h4>Signaler un bug</h4>
+  <p class="alinea">
+    En cliquant sur "Signaler un bug", vous pourrez décrire et expliquer le problème rencontré. N'oubliez pas de signaler la version du système et du module que vous utilisez et de
+    bien détailler les actions réalisées et les problèmes rencontrés.
+  </p>
+  <p class="alinea">Il est beaucoup plus efficace de signaler des bugs en créant une nouvelle Issue via GitHub car ainsi ils seront traités directement dans le projet.</p>
+  <p class="alinea">Ce bouton est aussi utile si vous souhaitez proposer une amélioration du système ou du module et de nouvelles fonctionnalités.</p>
+  <h4>Groupe de joueurs</h4>
+  <p class="alinea">
+    Le bouton "Groupe de joueurs" permet d'afficher une fenêtre avec la liste des joueurs connectés et toutes les statistiques importantes de leur personnage : Caractéristiques,
+    Attaques, Initiative, Défense et les Ressources.
+  </p>
+  <div class="image-centre"><img src="modules\cof2-base\assets\guide\cof2_groupe_joueurs.webp" /></div>
 </div>

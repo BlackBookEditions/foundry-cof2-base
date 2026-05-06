@@ -657,8 +657,6 @@
   <!--résolutions-->
   <h2>Résolutions</h2>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_attaque.webp" /></div>
-
   <p class="lettrine">
     Dans cette section, nous allons détailler comment réaliser des interactions entre des protagonistes. Les Résolutions permettent de faire des Attaques contre la Défense d’une
     cible, des Tests en Opposition, des Attaques automatiques mais aussi d’appliquer des soins ou des Modificateurs sur des cibles qu'elles soient alliées ou ennemis.
@@ -674,6 +672,7 @@
   <p class="alinea">Il existe 5 types de Résolutions :</p>
 
   <h3>Attaque</h3>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_attaque.webp" /></div>
   <p class="alinea">
     C’est la Résolution par défaut quand vous ajoutez une Résolution.
     <span class="gras">Elle permet de réaliser un Jet de Dé contre une Difficulté.</span>
@@ -795,7 +794,7 @@
     </li>
     <li>
       <span class="gras">Multiple</span> permet également de déterminer quel type de cible l’Attaque peut cibler mais également le nombre de cibles maximum. Inscrivez le nombre de
-      cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif, aucune Variable ne fonctionne.
+      cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif, aucune Variable ne fonctionne. "0" signifie un nombre illimité de cible
     </li>
   </ul>
 
@@ -841,7 +840,8 @@
     </li>
     <li>
       <span class="gras">Multiple</span> permet également de déterminer quel type de cible les Dommages peuvent cibler mais également le nombre de cible maximum. Inscrivez le
-      nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif. Aucune Variable ne fonctionne.
+      nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif. Aucune Variable ne fonctionne. "0" signifie un nombre illimité de
+      cible.
     </li>
   </ul>
 
@@ -877,7 +877,8 @@
     </li>
     <li>
       <span class="gras">Multiple</span> permet également de déterminer quel type de cible l’Attaque peut cibler mais également le nombre de cible maximum que l’Attaque peut
-      cibler. Inscrivez le nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif. Aucune Variable ne fonctionnera.
+      cibler. Inscrivez le nombre de cible maximum dans le champ qui apparait. Ce champ ne peut recevoir qu’un nombre entier positif. Aucune Variable ne fonctionnera. "0" signifie
+      un nombre illimité de cible.
     </li>
   </ul>
 
@@ -960,6 +961,15 @@
     (difficulté 10 + CHA, par exemple).
   </p>
   <p class="alinea">La variable dans le Seuil de difficulté sera le score de la personnage utilisant l&apos;action.</p>
+  <h4>Dommages</h4>
+  <p class="alinea">
+    Il est possible de définir une <span class="gras">formule de Dommages</span> pour la Résolution de type Sauvegarde. Si une formule est définie, le jet de Dommages sera effectué
+    au moment de l'action et affiché dans le message du tchat.
+  </p>
+  <p class="alinea">
+    <span class="gras">L'option "Demi-DM si sauvegarde réussie"</span> permet de définir si une cible qui réussit son jet de sauvegarde subit la moitié des Dommages au lieu de ne
+    subir aucun Dommage.
+  </p>
   <h4>Cible</h4>
   <p class="alinea">De la même manière que certains autres type de résolution, vous pouvez définir ici le nombre et le type de cible prévue par l&apos;action.</p>
   <h4>Effets Supplémentaires</h4>
@@ -1068,8 +1078,8 @@
     Lorsque vous choisissez un Statut, il s’affiche au dessus de la liste. Il vous est possible de supprimer un Statut sélectionné grâce à la croix à droite de la case du Statut.
   </p>
   <p class="alinea">
-    <span class="gras italique">ATTENTION</span> : il n’y a pas possibilité de faire un choix entre plusieurs Statuts comme le stipule certaines Capacités. Ainsi, tous les Statuts
-    sélectionnés seront appliqués à la cible.
+    Pour un Effet Supplémentaire sur une résolution Attaque, si vous sélectionnez plusieurs Statuts, il sera possible de choisir celui ou ceux qui s'appliquent dans la fenêtre
+    d'Attaque.
   </p>
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_soutenir.webp" /></div>
   <h3>Durée</h3>
@@ -1092,6 +1102,9 @@
     sans être en mode Combat. Il faudra supprimer manuellement l&apos;effet depuis l&apos;onglet Effets grâce à l&apos;icône <i class="fa-solid fa-trash"></i> en mode
     déverrouillé.<span></span>
   </p>
+  <h5>Instantané</h5>
+  <p class="alinea">Cette durée permet d'appliquer immédiatement l'Effet Supplémentaire sur la cible sans avoir besoin d'être en mode Combat.</p>
+
   <br />
   <ul class="exemple">
     <p class="alinea">
