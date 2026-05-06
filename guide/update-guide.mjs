@@ -11,6 +11,7 @@ async function main() {
     objets: "e46m0KDmGFAP5USg",
     actions_effets: "a0cY3q3XV4o8Y13V",
     jets_messages: "7BoZ8Un0GrShNPtF",
+    autres_fonctionnalites: "hAcXlQLmfEHtqwSS",
   }
 
   // Répertoire où se trouvent les fichiers html à partir du répertoire data
@@ -31,7 +32,7 @@ async function main() {
       for (let journal of game.packs.get(compendiumName)) {
         let journalpage = journal.pages.get(targetId)
         if (journalpage) {
-          const fileData = await fetch(file)         
+          const fileData = await fetch(file)
           let filecontent = await fileData.text()
           journalpage.update({ "text.content": filecontent })
           console.log("Mise à jour réussie depuis le fichier :", file)

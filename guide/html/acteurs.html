@@ -110,6 +110,8 @@
     <span class="gras">A la création d’un nouveau Personnage, le choix de l’image sera également appliqué au prototype du Token.</span> Par la suite si vous modifiez l’image du
     Personnage ou du Token cela ne modifiera pas l’autre image. Ainsi, vous pouvez avoir une image d’illustration du Personnage et une autre image spécifique pour le Token
   </p>
+  <p class="alinea">La petite icône en haut à gauche de l'image permet, d'un clic, de partager l'image à tous les joueurs connectés au monde.</p>
+
   <p class="alinea">
     <span class="gras italique">Attention :</span> Vérifiez les images avec un fond transparent pour la feuille car il arrive qu’elles ne soient pas très visibles surtout si elles
     sont sombres.
@@ -124,8 +126,8 @@
   <h4>Peuple et Profils</h4>
   <p class="alinea">
     Dans l’entête apparaît également le Peuple du Personnage ainsi que son ou ses profils. Que la feuille soit verrouillée ou non, cette section est juste une indicative dans
-    l’entête. Pour pouvoir interagir avec le Peuple ou le Profil du Personnage il faut se rendre dans
-    l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-biographie]{Onglet Biographie}.
+    l’entête. Il est possible de cliquer sur le Peuple ou la Profil pour ouvrir leur feuille ou vous pouvez les retrouver dans
+    l'@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-biographie]{Onglet Biographie}.
   </p>
   <h4>Niveau du Personnage</h4>
   <p class="alinea">
@@ -234,7 +236,8 @@
     <li>
       <p>
         <span class="gras">États</span> = liste des états actifs du Personnage obtenus dans les
-        @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#modificateurs]{Modificateurs} des Actions et Effets.
+        @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#modificateurs]{Modificateurs} des Actions et Effets ainsi
+        que les statuts actifs sur le Personnage.
       </p>
     </li>
   </ul>
@@ -389,7 +392,7 @@
         <span class="gras">Le type d’action :</span>
         amélioration <i class="fa-solid fa-thumbs-up"></i>, soin <i class="fa-solid fa-hand-holding-medical"></i>, attaque au contact <i class="fa-solid fa-sword"></i>, attaque à
         distance <i class="fa-solid fa-bow-arrow"></i>, attaque magique <i class="fa-solid fa-bolt"></i>, sort <i class="fa-solid fa-hand-sparkles"></i>, consommable
-        <i class="fa-solid fa-flask-round-potion"></i> ou affaiblissement <i class="fa-solid fa-thumbs-down"></i>.
+        <i class="fa-solid fa-flask-round-potion"></i>, affaiblissement <i class="fa-solid fa-thumbs-down"></i> ou jet opposé <i class="fa-solid fa-scale-balanced"></i>.
       </p>
     </li>
     <li>
@@ -540,7 +543,13 @@
       <p>Attention : Si l’objet a été créé directement depuis la feuille de Personnage, la suppression sera définitive et irrémédiable.</p>
     </li>
   </ul>
-  <p></p>
+  <h4>Partager un Objet</h4>
+  <p class="alinea">
+    Lorsque vous glissez-déposez un objet d'une feuille d'Acteur vers une autre, toute la pile d'objet est transférée. Ainsi, si vous glissez-déposez une ligne avec 7 torches sur
+    une autre feuille d'Acteur, les 7 torches seront transférées.
+  </p>
+  <p class="alinea">Pour transférer un seul exemplaire d'un objet sur une autre feuille d'Acteur, il faut cliquer sur SHIFT lors du glissé-déposé.</p>
+
   <h3>Onglet Voies et Capacités</h3>
 
   <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_feuille_perso_voies_capacites.webp" /></div>
@@ -619,6 +628,12 @@
         <span class="gras">une ligne supplémentaire apparaîtra en dessous lorsque vous apprendrez la capacité.</span>
       </p>
       <p>Vous pouvez glisser-déposer une capacité depuis les dossiers de FoundryVTT directement à cet endroit ou définir cette capacité depuis l’onglet Détails de la Capacité.</p>
+    </li>
+    <li>
+      <p>
+        <span class="gras">Réorganiser les Voies :</span>
+        il est possible de réorganiser l'ordre des Voies avec des glissés-déposés du titre de la Voie vers l'endroit qui vous convient dans la liste.
+      </p>
     </li>
   </ul>
 
