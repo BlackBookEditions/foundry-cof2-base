@@ -1,3 +1,12 @@
+# 2.1.4
+
+- Mise à jour du guide du système par rapport au groupement par choix des modificateurs
+- Mise à jour des Peuples par rapport au groupement par choix des modificateurs
+- Correction de l'équipement Piège explosif
+- Mise àjour des rencontres par rapport à la résolution de type Sauvegarde : Araignée géante, chimère draconique, CryoHydre, Dragon des forêts, Drake givré, Skrambler
+- Mise à jour des prétirés par rapport à la résolution de type Sauvegarde : Ionas, Keyrel, Chanterune
+- Mise à jour des capacités et des prétirés: modification du nombre de cibles. Correction de Sommeil, Sort illusoire et Ecuyer. 49 capacités avec 0 pour indiquer illimité et non un chiffre élevé.
+
 # 2.1.3
 
 ## Corrections
