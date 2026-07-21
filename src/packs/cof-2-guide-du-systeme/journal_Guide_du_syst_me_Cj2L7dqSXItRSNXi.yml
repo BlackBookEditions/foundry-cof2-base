@@ -1773,7 +1773,7 @@ pages:
           <h2>Préambule sur les Objets</h2>
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_creer_objet.webp"></div>
           <p class="lettrine">
-            Dans Chroniques Oubliées Fantasy 2, il existe 6 sortes d'Objets et chacun a son utilité spécifique. Tous les Objets ont un onglet Description identique qui sera expliqué juste
+            Dans Chroniques Oubliées Fantasy 2, il existe 7 sortes d'Objets et chacun a son utilité spécifique. Tous les Objets ont un onglet Description identique qui sera expliqué juste
             après. Dans le Compendium COF2 Objets, vous pourrez trouver tous les objets présents dans le Livre des Règles de COF 2.
           </p>
           <p class="alinea">Les types d'Objet sont :</p>
@@ -1900,7 +1900,7 @@ pages:
 
           <h3>Tableau récapitulatif</h3>
           <p>
-            Le tableau ci-après résume les 6 Objets afin de synthétiser leur rôle, de savoir sur quelle Acteur vous pouvez le glisser-déposer, si l’Objet peut recevoir une Action/Effet et
+            Le tableau ci-après résume les 7 Objets afin de synthétiser leur rôle, de savoir sur quelle Acteur vous pouvez le glisser-déposer, si l’Objet peut recevoir une Action/Effet et
             où trouver l’Objet quand il se trouve sur le feuille de l’Acteur.
           </p>
 
@@ -1993,6 +1993,23 @@ pages:
                 </td>
                 <td>
                   @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire}<br>
+                  @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-butin]{Onglet Butin}
+                </td>
+              </tr>
+              <tr>
+                <td>Contenant</td>
+                <td>Aucun</td>
+                <td>
+                  Personnage<br>
+                  Rencontre
+                </td>
+                <td>OUI</td>
+                <td>
+                  Illimité<br>
+                  Un contenant ne peut pas en contenir un autre
+                </td>
+                <td>
+                  @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire} (Contenants)<br>
                   @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-butin]{Onglet Butin}
                 </td>
               </tr>
@@ -2819,6 +2836,86 @@ pages:
           </p>
 
           
+          <h2>Feuille Contenant</h2>
+
+          <p class="lettrine">
+            Le type d'Objet "Contenant" permet de créer un sac à dos, une bourse, un coffre, des fontes de cheval… bref tout ce qui sert à <span class="gras">ranger et regrouper des
+            Équipements</span>. Sur la feuille de Personnage, les Contenants sont listés dans une catégorie <span class="gras">"Contenants"</span> de
+            l'@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire}.
+          </p>
+          <p class="alinea">
+            Un Contenant peut être glissé-déposé sur une
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-personnage]{Feuille Personnage} (catégorie Contenants)
+            ou sur une @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-rencontre]{Feuille Rencontre} (Onglet Butin).
+            Il possède trois onglets : Description, Détails et Actions/Effets.
+          </p>
+          <p class="alinea">
+            <span class="gras italique">Un Contenant ne peut pas contenir un autre Contenant</span> : seul un Équipement peut y être rangé.
+          </p>
+
+          <h3>Onglet Description</h3>
+          <h4>Localisation</h4>
+          <p class="alinea">
+            Ce champ de texte libre permet d'indiquer <span class="gras">où se trouve le Contenant</span> : "à la maison", "porté", "sur la monture"… C'est une information purement
+            descriptive.
+          </p>
+          <h4>Contenu (X/Y)</h4>
+          <p class="alinea">
+            Cette section liste les Objets rangés dans le Contenant (image, nom et quantité). Le compteur affiche <span class="gras">X/Y</span> où <span class="gras">X est le nombre
+            d'Objets contenus, quantité comprise</span> (un Objet empilable de quantité 4 compte pour 4) et <span class="gras">Y le nombre d'Objets maximum</span> (voir l'onglet Détails).
+            Si le maximum vaut 0 (illimité), seul le nombre d'Objets est affiché.
+          </p>
+          <p class="alinea">Sur chaque ligne, deux boutons sont disponibles lorsque la feuille est déverrouillée :</p>
+          <ul>
+            <li><span class="gras">Retirer</span> <i class="fa-solid fa-arrow-up-from-bracket"></i> : sort l'Objet du Contenant sans le supprimer (il redevient un Objet libre de l'inventaire).</li>
+            <li><span class="gras">Supprimer</span> <i class="fa-solid fa-trash"></i> : supprime définitivement l'Objet du Contenant et du Personnage.</li>
+          </ul>
+
+          <h3>Onglet Détails</h3>
+          <h4>Poids et Valeur</h4>
+          <p class="alinea">
+            Renseignez ici le <span class="gras">poids propre</span> du Contenant (le poids du sac vide) et son <span class="gras">prix</span>. Un Contenant ne possède pas les propriétés
+            d'un Équipement (il n'est ni équipable, ni empilable, ni rechargeable).
+          </p>
+          <h4>Nombre d'Objets max</h4>
+          <p class="alinea">
+            Ce champ limite le nombre d'Objets que le Contenant peut recevoir (quantité comprise). <span class="gras">La valeur 0 signifie "illimité".</span> Lorsque la limite est
+            atteinte, l'ajout d'un nouvel Objet est refusé avec un avertissement.
+          </p>
+
+          <h3>Actions/Effets du Contenant</h3>
+          <p class="alinea">
+            Comme les autres Objets, il est possible de configurer une ou plusieurs Actions et/ou Effets sur un Contenant. Elles sont expliquées dans
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V]{Actions et Effets}.
+          </p>
+
+          <h3>Utilisation dans l'Inventaire</h3>
+          <p class="alinea">
+            Dans la catégorie "Contenants", <span class="gras">un clic sur la ligne d'un Contenant déplie ou replie son contenu</span> (affiché en léger décalé sous la ligne). Le chevron
+            indique l'état (vertical déplié, horizontal replié). Pour ouvrir la feuille du Contenant, cliquez sur son image ou sur l'icône crayon <i class="fa-solid fa-edit"></i>.
+          </p>
+          <p class="alinea">
+            <span class="gras">Glisser-déposer un Objet sur un Contenant le range à l'intérieur</span> : l'Objet appartient toujours au Personnage mais n'apparaît plus dans les autres
+            catégories de l'Inventaire (Armes, Armures…), et ses Actions ne sont plus affichées dans l'
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Actions}. Si un Objet empilable
+            identique est déjà présent dans le Contenant, sa quantité est augmentée.
+          </p>
+          <p class="alinea">
+            Le transfert d'Objets suit la même logique que <span class="gras">le transfert entre Acteurs</span> : glisser-déposer transfère l'Objet complet, tandis que
+            <span class="gras">SHIFT + glisser-déposer ne transfère qu'une seule unité</span> (pour les Objets empilables). Cela vaut pour l'entrée dans un Contenant, la sortie, et le
+            transfert d'un Contenant à un autre. <span class="gras">Glisser un Objet hors d'un Contenant</span> (vers une autre catégorie de l'Inventaire) l'en retire.
+          </p>
+          <p class="alinea">
+            <span class="gras">Supprimer un Contenant supprime aussi tout son contenu.</span> Enfin, un joueur disposant seulement du droit "Limité" sur un Contenant n'en voit pas le contenu.
+          </p>
+
+          <h3>Ajout à un Profil</h3>
+          <p class="alinea">
+            Un Contenant peut être glissé-déposé sur une
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#feuille-profil]{Feuille Profil} pour faire partie de son
+            <span class="gras">équipement de départ</span>. Lorsque le Profil est appliqué à un Personnage, le Contenant est créé <span class="gras">avec son contenu</span>.
+          </p>
+
           <h2>Feuille Attaque (de rencontre)</h2>
 
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_items_attaque_rencontre.webp"></div>

@@ -1,6 +1,6 @@
 # 2.3.0
-- Nécessite au minimum le système en version 2.3.0
 - Ajout des équipements de départ pour les profils
+- Ajout des objets bourse et sac d'aventurier, mise à jour des profils avec le sac d'aventurier, séparation de torche en torche (pour le sac d'aventurier) et torchex3
 
 # 2.1.5
 
