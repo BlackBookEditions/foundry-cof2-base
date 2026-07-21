@@ -108,6 +108,14 @@ system:
     throwingSpear: false
     handCannon: false
     musket: false
+    bola: false
+    lash: false
+    warLash: false
+    warPick: false
+    shortSaber: false
+    rightSaber: false
+    blowgun: false
+    tripleStaff: false
   martialTrainingsArmors:
     paddedClothFur: true
     leather: true
@@ -121,6 +129,11 @@ system:
     largeShield: false
   family: mystique
   maxDefenseArmor: 4
+  equipment:
+    - Compendium.cof2-base.cof-2-base-items.Item.BxOAk452unZ7zWOG
+    - Compendium.cof2-base.cof-2-base-items.Item.yEXTX4LgPIPmeJat
+    - Compendium.cof2-base.cof-2-base-items.Item.AFazTvARvVqVI4go
+    - Compendium.cof2-base.cof-2-base-items.Item.5gXapxwVfUNW0a5V
 effects: []
 sort: 300000
 ownership:
@@ -131,14 +144,16 @@ ownership:
   lrkjhQ5x0RUWRHSa: 3
 flags:
   co: {}
+  cof2-compagnon:
+    isPsionic: false
 _stats:
   compendiumSource: null
   duplicateSource: null
-  coreVersion: '13.345'
+  coreVersion: '14.361'
   systemId: co2
-  systemVersion: 12.331.0
+  systemVersion: '#{VERSION}#'
   createdTime: 1740760967990
-  modifiedTime: 1749761734809
+  modifiedTime: 1784644758480
   lastModifiedBy: dkGm1qUrVLQeAKiY
   exportSource: null
 _key: '!items!ZLSf3jG35D8OelSZ'

@@ -13,11 +13,12 @@
     "systems": [
       {
         "id": "co2",
-        "type": "system"
+        "type": "system",
+        "compatibility": {
+          "verified": "2.3.0"
+        }
       }
-    ],
-    "requires": [],
-    "optional": []
+    ]
   },
   "authors": [
     {
@@ -126,7 +127,7 @@
       "type": "setup",
       "url": "modules/cof2-base/assets/logo_cof.webp"
     }
-  ],  
+  ],
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#"
 }

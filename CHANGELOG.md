@@ -1,3 +1,7 @@
+# 2.3.0
+- Nécessite au minimum le système en version 2.3.0
+- Ajout des équipements de départ pour les profils
+
 # 2.1.5
 
 Merci Fabienmg pour l'avoir signalée (issue [#90](https://github.com/BlackBookEditions/foundry-cof2-base/issues/90))
