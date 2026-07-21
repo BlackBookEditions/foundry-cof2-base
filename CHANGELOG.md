@@ -1,3 +1,8 @@
+# 2.1.5
+
+Merci Fabienmg pour l'avoir signalée (issue [#90](https://github.com/BlackBookEditions/foundry-cof2-base/issues/90))
+- Capacité Grosse tête (Mage Forgesort, Voie du Golem) : la formule du bonus de PV (INT à la place de CON) s'appliquait à chaque niveau ; elle est désormais fixe (`@int - @con`), appliquée une seule fois comme le prévoit la règle.
+
 # 2.1.4
 
 - Mise à jour du guide du système par rapport au groupement par choix des modificateurs
