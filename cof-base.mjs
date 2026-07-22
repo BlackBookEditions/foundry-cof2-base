@@ -140,6 +140,42 @@ Hooks.once("init", () => {
     game.system.CONST.martialTrainingsShields.push({ key: "largeShield", label: "COFBASE.config.martialTrainingShield.largeShield" })
   }
 
+  // Postures défensives : manœuvre propre à COF2, absente de COC2 et de CTH, donc portée par ce module.
+  // Le statut fournit le bonus de DEF, l'entrée defenseStances le bouton de la barre d'outils des fiches.
+  if (game.system.CONST.defenseStances.length === 0) {
+    CONFIG.statusEffects.push(
+      {
+        id: "partialDef",
+        name: "COFBASE.customStatus.partialDef",
+        img: "systems/co2/ui/effects/partialdef.webp",
+        changes: [{ key: "system.combat.def.bonuses.effects", mode: 2, value: 3 }],
+        description: "COFBASE.customStatus.partialDefDescription",
+      },
+      {
+        id: "fullDef",
+        name: "COFBASE.customStatus.fullDef",
+        img: "systems/co2/ui/effects/totaldef.webp",
+        changes: [{ key: "system.combat.def.bonuses.effects", mode: 2, value: 5 }],
+        description: "COFBASE.customStatus.fullDefDescription",
+      },
+    )
+
+    game.system.CONST.defenseStances.push(
+      {
+        id: "partialDef",
+        icon: "fa-solid fa-shield-halved",
+        activateLabel: "COFBASE.customStatus.partialDefActivate",
+        deactivateLabel: "COFBASE.customStatus.partialDefDeactivate",
+      },
+      {
+        id: "fullDef",
+        icon: "fa-solid fa-shield",
+        activateLabel: "COFBASE.customStatus.fullDefActivate",
+        deactivateLabel: "COFBASE.customStatus.fullDefDeactivate",
+      },
+    )
+  }
+
   console.info("COF Livre de base | Fin de l'initialisation du module")
 })
 
