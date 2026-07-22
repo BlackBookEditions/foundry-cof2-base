@@ -176,6 +176,27 @@ Hooks.once("init", () => {
     )
   }
 
+  // Récupération rapide et complète : règles propres à COF2, absentes de COC2 et de CTH, donc portées
+  // par ce module. La mécanique reste dans le système (CharacterData#useRecovery), qui manipule des
+  // champs du modèle, recharge les capacités et émet les hooks co2.preUseRecovery / co2.postUseRecovery.
+  // Seul le déclencheur est ici : les deux boutons de la barre d'outils des fiches.
+  if (game.system.CONST.restActions.length === 0) {
+    game.system.CONST.restActions.push(
+      {
+        id: "fastRest",
+        icon: "fa-solid fa-mug-saucer",
+        label: "CO.ui.fastRest",
+        handler: (actor) => actor.system.useRecovery(false),
+      },
+      {
+        id: "fullRest",
+        icon: "fa-solid fa-bed",
+        label: "CO.ui.fullRest",
+        handler: (actor) => actor.system.useRecovery(true),
+      },
+    )
+  }
+
   console.info("COF Livre de base | Fin de l'initialisation du module")
 })
 
