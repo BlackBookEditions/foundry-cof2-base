@@ -197,6 +197,10 @@ Hooks.once("init", () => {
     )
   }
 
+  // Points de chance : règle propre à COF2, absente de COC2 et de CTH. La mécanique — relance,
+  // mise à jour des cartes de chat déjà postées, requête MJ — reste dans le système.
+  game.system.CONST.hasLuckPoints = true
+
   console.info("COF Livre de base | Fin de l'initialisation du module")
 })
 
