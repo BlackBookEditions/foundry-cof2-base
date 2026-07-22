@@ -2,6 +2,13 @@
 - Ajout des équipements de départ pour les profils
 - Ajout des objets bourse et sac d'aventurier, mise à jour des profils avec le sac d'aventurier, séparation de torche en torche (pour le sac d'aventurier) et torchex3
 
+## Refactoring
+
+- Les postures défensives (défense partielle et défense totale) sont une manœuvre propre à Chroniques Oubliées Fantasy. **Le module cof2-base est désormais nécessaire pour en disposer.**
+- Les boutons de récupération rapide et de récupération complète sont eux aussi propres à Chroniques Oubliées Fantasy . **Le module cof2-base est désormais nécessaire pour en disposer.**
+- Trois règles propres à Chroniques Oubliées Fantasy — les points de chance, les dés de récupération et les dommages temporaires sont propres à Chroniques Oubliées Fantasy. **Le module cof2-base est désormais nécessaire pour en disposer.**
+- Les trois tags d'équipement — DM temporaires, DM temporaires possibles, arme légère — sont propres à Chroniques Oubliées Fantasy. 
+
 # 2.1.5
 
 Merci Fabienmg pour l'avoir signalée (issue [#90](https://github.com/BlackBookEditions/foundry-cof2-base/issues/90))

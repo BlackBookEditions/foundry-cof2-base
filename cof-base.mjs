@@ -1,7 +1,7 @@
 Hooks.once("init", () => {
   console.info("COF Livre des règles | Initialisation du module...")
 
-  // Load Martial Training
+  // Chargement des formations martiales (armes, armures, boucliers) si elles ne sont pas déjà présentes dans le système.
   if (game.system.CONST.martialTrainingsWeapons.length == 0) {
     // Mains nues
     game.system.CONST.martialTrainingsWeapons.push({ key: "unarmed", label: "COFBASE.config.martialTrainingWeapon.unarmed" })
@@ -176,9 +176,8 @@ Hooks.once("init", () => {
     )
   }
 
-  // Récupération rapide et complète : règles propres à COF2, absentes de COC2 et de CTH, donc portées
-  // par ce module. La mécanique reste dans le système (CharacterData#useRecovery), qui manipule des
-  // champs du modèle, recharge les capacités et émet les hooks co2.preUseRecovery / co2.postUseRecovery.
+  // Récupération rapide et complète : règles propres à COF2, absentes de COC2 et de CTH, donc portées par ce module. 
+  // La mécanique reste dans le système (CharacterData#useRecovery), qui manipule des champs du modèle, recharge les capacités et émet les hooks co2.preUseRecovery / co2.postUseRecovery.
   // Seul le déclencheur est ici : les deux boutons de la barre d'outils des fiches.
   if (game.system.CONST.restActions.length === 0) {
     game.system.CONST.restActions.push(
@@ -197,9 +196,30 @@ Hooks.once("init", () => {
     )
   }
 
-  // Points de chance : règle propre à COF2, absente de COC2 et de CTH. La mécanique — relance,
-  // mise à jour des cartes de chat déjà postées, requête MJ — reste dans le système.
-  game.system.CONST.hasLuckPoints = true
+  // Objets de départ copiés sur tout nouveau personnage : Mains nues et Support sont des objets
+  // de COF2, portés par les compendiums de ce module.
+  if (game.system.CONST.baseItems.length === 0) {
+    game.system.CONST.baseItems.push(
+      "Compendium.cof2-base.cof-2-base-items.Item.bwUmODTqsTqPbRr9", // Mains nues
+      "Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ", // Support
+    )
+  }
+
+  // Tags d'équipement : les trois tags existants sont propres à COF2 et ne sont portés que par les
+  // compendiums de ce module, c'est donc lui qui les déclare. Le système ne connaît que leurs
+  // identifiants, auxquels il ne réagit que si la règle correspondante est activée.
+  if (Object.keys(game.system.CONST.EQUIPMENT_TAGS).length === 0) {
+    Object.assign(game.system.CONST.EQUIPMENT_TAGS, {
+      dmtemporaires: { id: "dmtemporaires", label: "COFBASE.equipment.tags.dmtemporaires" },
+      dmtemporairespossibles: { id: "dmtemporairespossibles", label: "COFBASE.equipment.tags.dmtemporairespossibles" },
+      legere: { id: "legere", label: "COFBASE.equipment.tags.legere" },
+    })
+  }
+
+  // Règles propres à COF2, absentes de COC2 et de CTH. Les mécaniques restent dans le système —
+  // relance des jets et mise à jour des cartes de chat, récupération, application des dommages —
+  // seule leur disponibilité est activée ici.
+  Object.assign(game.system.CONST.rules, { luckPoints: true, recoveryPoints: true, tempDamage: true })
 
   console.info("COF Livre de base | Fin de l'initialisation du module")
 })
@@ -223,10 +243,9 @@ Hooks.on("renderJournalEntrySheet", (application, element, context, options) => 
 Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
   console.log("COF Livre des règles | Ajout du menu dans la barre latérale")
   let element = html.querySelector(".co.support")
-  //if (!element) element = html.querySelector(".co.system")
 
   if (element) {
-      const renderedHtml = await foundry.applications.handlebars.renderTemplate("modules/cof2-base/templates/sidebar-menu.hbs", {
+    const renderedHtml = await foundry.applications.handlebars.renderTemplate("modules/cof2-base/templates/sidebar-menu.hbs", {
       user: game.user,
     })
 
