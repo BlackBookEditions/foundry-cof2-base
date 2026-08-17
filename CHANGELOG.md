@@ -1,3 +1,14 @@
+# 2.3.1
+
+## Corrections
+
+Merci jacaramba pour l'avoir signalé (issue [#95](https://github.com/BlackBookEditions/foundry-cof2-base/issues/95))
+- Livre des règles : les 5 liens vers les fiches des prétirés Ionas Melenwë et Wilibert Sûreté n'ouvraient plus aucun acteur du Bestiaire (chapitres « I — Le personnage » et « IV — Annexes »). Les deux fiches avaient été recréées sous un nouvel identifiant.
+
+Deux liens de même origine, relevés à cette occasion
+- Skodja Brandebois, capacité Grand félin : le lien de la note de jeu vers la fiche Animal fabuleux était mort.
+- Momie auguste, capacité Familier : le lien de la note de jeu vers la fiche Familier (Magicien) était mort.
+
 # 2.3.0
 - Ajout des équipements de départ pour les profils
 - Ajout des objets bourse et sac d'aventurier, mise à jour des profils avec le sac d'aventurier, séparation de torche en torche (pour le sac d'aventurier) et torchex3
