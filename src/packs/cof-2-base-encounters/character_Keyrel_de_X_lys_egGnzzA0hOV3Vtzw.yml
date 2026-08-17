@@ -166,7 +166,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 3
+      value: 4
     recovery:
       base: 3
       ability: con
@@ -188,7 +188,7 @@ system:
       unit: null
       min: null
       max: null
-      value: 4
+      value: 5
   details:
     biography:
       private: ''
@@ -386,105 +386,6 @@ items:
       lastModifiedBy: null
       exportSource: null
     _key: '!actors.items!egGnzzA0hOV3Vtzw.tBNxyQ99tpvdqUzG'
-  - folder: Ggx3TUWZyG4OvL2R
-    name: Diversité
-    type: capacity
-    img: icons/environment/people/group.webp
-    _id: 8eQnGIcDYrdS1NEu
-    system:
-      description: "<p style=\"text-align:justify\">Un humain obtient un bonus de +3 aux tests de deux domaines associés à son origine géographique ou sociale (voir ci‑dessous). De plus, il gagne 1 PC supplémentaire.</p>\n<p style=\"text-align:justify\">Origine géographique ou sociale (choisissez ou lancez un d6) : 1 Montagnard (escalade et résistance au froid). 2 Citadin (commerce et résistance aux maladies). 3 Campagnard (météorologie et équitation). 4 Riverain (natation et navigation). 5 Sauvage (chasser et pister). 6 Nomade (orientation et résistance à la chaleur ou au froid).</p>\n<p style=\"text-align:justify\">\_</p>\n<blockquote>\n<p><strong>Usage en jeu :</strong></p>\n<p>Chaque cas de bonus possible a été mis en place, lorsque la capacité sera sur la fiche du personnage, il faudra supprimer les cas non choisies pour les bonus aux jets de caractéristiques. Le bonus de 1 PC est, à part, et doit rester.</p>\n</blockquote>"
-      source: ''
-      origin: Livre des règles p57
-      slug: diversite
-      subtype: ''
-      actionType: none
-      learned: true
-      charges:
-        current: null
-        max: null
-      properties:
-        spell: false
-      path: null
-      actions:
-        - source: Actor.egGnzzA0hOV3Vtzw.Item.8eQnGIcDYrdS1NEu
-          indice: 0
-          label: 'Citadin : commerce et resistance aux maladies'
-          chatFlavor: 'Citadin : commerce et resistance aux maladies'
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: false
-            temporary: false
-            noManaCost: false
-          modifiers:
-            - type: capacity
-              source: Actor.egGnzzA0hOV3Vtzw.Item.8eQnGIcDYrdS1NEu
-              subtype: skill
-              target: cha
-              apply: self
-              value: '3'
-              additionalInfos: commerce et resistance aux maladies
-            - type: capacity
-              source: Actor.egGnzzA0hOV3Vtzw.Item.8eQnGIcDYrdS1NEu
-              subtype: skill
-              target: con
-              apply: self
-              value: '3'
-              additionalInfos: commerce et resistance aux maladies
-          conditions: []
-          resolvers: []
-        - source: Actor.egGnzzA0hOV3Vtzw.Item.8eQnGIcDYrdS1NEu
-          indice: 1
-          label: ''
-          chatFlavor: ''
-          type: buff
-          img: icons/svg/d20-highlight.svg
-          properties:
-            visible: false
-            enabled: false
-            activable: false
-            temporary: false
-            noManaCost: false
-          conditions:
-            - predicate: isLearned
-          modifiers:
-            - type: capacity
-              source: Actor.egGnzzA0hOV3Vtzw.Item.8eQnGIcDYrdS1NEu
-              subtype: resource
-              target: fp
-              apply: self
-              value: '1'
-              additionalInfos: ''
-          resolvers: []
-      cost: 0
-      rank: 1
-      frequency: none
-      manaCost: -1
-      allowLinkedCapacity: false
-      linkedCapacity: null
-      parentCapacity: Actor.egGnzzA0hOV3Vtzw.Item.hF56LXdQhkTM4GX4
-    effects: []
-    sort: 0
-    ownership:
-      default: 0
-      dkGm1qUrVLQeAKiY: 3
-      jIzGuOO5YsHUKjek: 3
-      NtWLwYh2n5cs6XtB: 3
-      lrkjhQ5x0RUWRHSa: 3
-    flags: {}
-    _stats:
-      compendiumSource: Compendium.cof2-base.cof-2-base-items.Item.ldishTeIsT6PjmAQ
-      duplicateSource: null
-      coreVersion: '14.359'
-      systemId: co2
-      systemVersion: 12.331.0
-      createdTime: null
-      modifiedTime: null
-      lastModifiedBy: null
-      exportSource: null
-    _key: '!actors.items!egGnzzA0hOV3Vtzw.8eQnGIcDYrdS1NEu'
   - folder: pClI1itDE2etUmdy
     name: Mage
     type: feature

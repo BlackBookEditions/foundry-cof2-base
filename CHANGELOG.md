@@ -1,4 +1,4 @@
-# 2.3.1
+# 2.3.5
 
 ## Corrections
 
@@ -8,6 +8,12 @@ Merci jacaramba pour l'avoir signalé (issue [#95](https://github.com/BlackBookE
 Deux liens de même origine, relevés à cette occasion
 - Skodja Brandebois, capacité Grand félin : le lien de la note de jeu vers la fiche Animal fabuleux était mort.
 - Momie auguste, capacité Familier : le lien de la note de jeu vers la fiche Familier (Magicien) était mort.
+
+Merci jacaramba pour l'avoir signalé (issue [#96](https://github.com/BlackBookEditions/foundry-cof2-base/issues/96))
+- Prétirés du Livre des règles : trois d'entre eux embarquaient des capacités en double, héritées d'anciennes versions. Ces doublons n'apparaissaient nulle part sur la fiche mais étaient bien pris en compte dans les calculs.
+  - Keyrel de Xélys, capacité Diversité comptée deux fois : 1 PC de trop (5 au lieu de 4). Les PC et les PM sont désormais au maximum sur la fiche.
+  - Eugénie Falkkenblitz, capacité Murmures dans le vent comptée trois fois : +2 DEF et +2 Initiative de trop (16 et 13 au lieu de 14 et 11). Les PM sont désormais au maximum.
+  - Tybur Prestepied, capacité Petite taille comptée deux fois : +1 DEF et +3 aux tests d'AGI de trop (DEF 13 au lieu de 12).
 
 # 2.3.0
 - Ajout des équipements de départ pour les profils
