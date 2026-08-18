@@ -1,1 +1,20 @@
+# Fin de ligne LF partout — dépôt et working tree, quel que soit l'OS/client git
+# (le même répertoire /mnt/c est vu par git-WSL et git-Windows : on force LF pour éviter tout churn)
+* text=auto eol=lf
+
+# Fichiers binaires : jamais convertis
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.svg   text eol=lf
+*.woff  binary
+*.woff2 binary
+*.ttf   binary
+*.eot   binary
+*.db    binary
+*.ldb   binary
+
+# Packs compilés LevelDB
 packs/** binary
