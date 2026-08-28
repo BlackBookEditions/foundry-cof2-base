@@ -1,3 +1,10 @@
+# 2.3.6
+
+## Corrections
+
+Merci jacaramba pour l'avoir signalé (issue [#97](https://github.com/BlackBookEditions/foundry-cof2-base/issues/97))
+- Prétirés du Livre des règles : leur prototype de token n'accorde plus une vision de base de 30 mètres sans source de lumière. La portée par défaut est désormais de 0, sans modifier les capacités de vision dans le noir propres aux personnages. Les anciennes distances de vision résiduelles des prétirés et des deux Chimères ont également été normalisées.
+
 # 2.3.5
 
 ## Corrections
