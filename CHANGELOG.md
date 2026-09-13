@@ -1,3 +1,9 @@
+# 2.3.9
+
+## Améliorations
+
+- Guide du système : Ajout de la partie Compagnon dans la Feuille rencontre
+
 # 2.3.7
 
 ## Corrections
