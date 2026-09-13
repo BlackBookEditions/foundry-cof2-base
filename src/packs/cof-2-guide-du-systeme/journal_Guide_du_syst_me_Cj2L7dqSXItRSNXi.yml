@@ -1671,6 +1671,54 @@ pages:
             Si vous souhaitez créer une rencontre plus complexe (évolutive, avec un peuple ou un profil, utilisant des Équipements, avec beaucoup d’Effets…), envisagez plutôt de créer une
             Feuille Personnage car elle a beaucoup plus de modularité mais elle demande plus de travail pour la configurer.
           </p>
+          <h3>Compagnon</h3>
+          <p class="alinea">
+            Une Rencontre peut être transformée en <span class="gras">Compagnon</span> : certaines de ses caractéristiques deviennent alors liées à celles d’un Personnage, son
+            <span class="gras">maître</span>. C’est la manière recommandée de représenter une monture, un familier ou tout autre allié dont la puissance doit suivre celle du Personnage
+            qu’il accompagne.
+          </p>
+          <p class="alinea">
+            <span class="gras italique">Note de Version :</span> Depuis la version 2.3.9, le système intègre nativement la notion de Compagnon.
+          </p>
+          <h4>Activer le Compagnon</h4>
+          <p class="alinea">
+            Sur une fiche de Rencontre déverrouillée, cochez la case <span class="gras">«Est un compagnon»</span> dans la Barre latérale : un onglet <span class="gras">«Compagnon»</span>
+            apparaît alors sur la fiche.
+          </p>
+          <h4>Lier un maître</h4>
+          <p class="alinea">
+            <span class="gras">Glissez-déposez un Personnage</span> sur la fiche de la Rencontre marquée Compagnon pour le désigner comme maître. Seul un Acteur de type Personnage peut
+            être déposé de cette manière ; tout autre type d’Acteur est ignoré.
+          </p>
+          <p class="alinea">
+            Le maître ainsi défini apparaît dans l’onglet Compagnon, avec son image et son nom. À l’inverse, sur la fiche du Personnage, une section
+            <span class="gras">«Maître et Compagnons»</span> apparaît dans la Barre latérale : elle liste tous les Compagnons liés à ce Personnage, sous la forme d’icônes cliquables
+            permettant d’ouvrir directement leur fiche.
+          </p>
+          <h4>Lier des valeurs au maître</h4>
+          <p class="alinea">
+            Dans l’onglet Compagnon, chaque Caractéristique, chaque valeur de Combat et les Points de Vigueur possèdent un champ <span class="gras">Formule</span> qui vaut «0» par
+            défaut (la valeur de la Rencontre reste alors indépendante). Pour lier une valeur à celle du maître, remplacez «0» par une formule contenant le mot-clef
+            <span class="gras">@master</span>.
+          </p>
+          <p class="exemple">
+            <span class="gras">@master.agi</span> reprend l’Agilité du maître, <span class="gras">@master.niv</span> son Niveau, <span class="gras">5 * @master.niv</span> cinq fois son
+            Niveau (par exemple pour des Points de Vigueur qui évoluent avec le maître).
+          </p>
+          <p class="alinea">
+            Toutes les Caractéristiques (<span class="gras">for, agi, con, per, cha, int, vol</span>), les valeurs de Combat (<span class="gras">melee, ranged, magic, init, def, crit,
+            dr…</span>) ainsi que <span class="gras">niv</span> sont disponibles derrière le mot-clef @master. La formule accepte les opérateurs mathématiques usuels
+            (<span class="gras">+, -, *, /, ( )</span>) et est réévaluée automatiquement à chaque fois que le maître change.
+          </p>
+          <h4>Délier un Compagnon</h4>
+          <p class="alinea">
+            Décocher la case <span class="gras">«Est un compagnon»</span>, ou supprimer le maître depuis l’onglet Compagnon, délie immédiatement la Rencontre : les formules configurées
+            ne sont pas effacées mais redeviennent inactives (valeur «0») tant qu’aucun maître n’est de nouveau renseigné. Le Compagnon disparaît alors automatiquement de la liste
+            «Maître et Compagnons» de l’ancien maître.
+          </p>
+          <p class="alinea">
+            <span class="gras italique">Attention :</span> seul un Personnage peut être maître d’un Compagnon ; une Rencontre ne peut pas être le Compagnon d’une autre Rencontre.
+          </p>
           <h3>Création d’une Rencontre</h3>
           <p class="alinea">Voici la manière de créer une Rencontre en prenant l’exemple d’un @UUID[Compendium.cof2-base.cof-2-base-encounter.Actor.rXSpAdbaH07zQmp9]{Chef Ogre} :</p>
           <ul>
