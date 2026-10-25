@@ -1,3 +1,8 @@
+# 2.3.10
+
+## Corrections
+- Ortographe dans la description En jeu de Vampirisation (issue [#101](https://github.com/BlackBookEditions/foundry-cof2-base/issues/101))
+
 # 2.3.9
 
 ## Améliorations
