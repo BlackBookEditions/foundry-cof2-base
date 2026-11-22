@@ -256,7 +256,7 @@ Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
 })
 
 /*
- * Armes polyvalentes (co2 2.3.15) : les actions « 1 main » et « 2 mains » de l'Épée bâtarde, de l'Épieu et de la Lance
+ * Armes polyvalentes (co2 2.4.0) : les actions « 1 main » et « 2 mains » de l'Épée bâtarde, de l'Épieu et de la Lance
  * portent désormais les conditions « est tenu à une main » et « est tenu à deux mains ». Les copies de ces armes déjà
  * présentes dans le monde (objets, acteurs, tokens non liés) reçoivent les mêmes conditions, une seule fois par monde.
  * Les actions sont reconnues par leur libellé dans le compendium, et une action qui a déjà une condition de prise en
