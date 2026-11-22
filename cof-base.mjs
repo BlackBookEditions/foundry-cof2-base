@@ -328,7 +328,7 @@ async function migrateVersatileWeapons() {
   if (worldUpdates.length > 0) await Item.implementation.updateDocuments(worldUpdates)
   count += worldUpdates.length
 
-  const actors = [...game.actors, ...game.scenes.flatMap((scene) => scene.tokens.filter((token) => !token.actorLink && token.actor).map((token) => token.actor))]
+  const actors = [...game.actors, ...game.scenes.contents.flatMap((scene) => scene.tokens.filter((token) => !token.actorLink && token.actor).map((token) => token.actor))]
   for (const actor of actors) {
     const updates = updatesFor(actor.items)
     if (updates.length > 0) await actor.updateEmbeddedDocuments("Item", updates)

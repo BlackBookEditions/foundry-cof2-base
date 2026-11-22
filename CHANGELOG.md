@@ -1,3 +1,8 @@
+# 2.4.1
+
+## Corrections
+- Script de migration des armes polyvalentes
+
 # 2.4.0
 
 ## Améliorations
