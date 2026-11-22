@@ -254,3 +254,85 @@ Hooks.on("renderCOSidebarMenu", async (application, html, context, options) => {
     }
   }
 })
+
+/*
+ * Armes polyvalentes (co2 2.3.15) : les actions « 1 main » et « 2 mains » de l'Épée bâtarde, de l'Épieu et de la Lance
+ * portent désormais les conditions « est tenu à une main » et « est tenu à deux mains ». Les copies de ces armes déjà
+ * présentes dans le monde (objets, acteurs, tokens non liés) reçoivent les mêmes conditions, une seule fois par monde.
+ * Les actions sont reconnues par leur libellé dans le compendium, et une action qui a déjà une condition de prise en
+ * main n'est pas modifiée.
+ */
+const VERSATILE_WEAPON_SLUGS = ["epee-batarde", "epieu", "lance"]
+const GRIP_PREDICATES = ["isWieldedOneHand", "isWieldedTwoHands"]
+
+Hooks.once("init", () => {
+  game.settings.register("cof2-base", "versatileGripMigration", { scope: "world", config: false, type: Boolean, default: false })
+})
+
+Hooks.once("ready", async () => {
+  if (!game.users.activeGM?.isSelf) return
+  if (game.settings.get("cof2-base", "versatileGripMigration")) return
+  // Système trop ancien pour connaître ces conditions : la migration attendra sa mise à jour
+  if (!GRIP_PREDICATES.every((predicate) => predicate in (game.system.CONST.CONDITION_PREDICATES ?? {}))) return
+  try {
+    const count = await migrateVersatileWeapons()
+    await game.settings.set("cof2-base", "versatileGripMigration", true)
+    if (count > 0) console.info(`COF Livre des règles | Armes polyvalentes : ${count} arme(s) mise(s) à jour`)
+  } catch (error) {
+    console.error("COF Livre des règles | Échec de la mise à jour des armes polyvalentes", error)
+  }
+})
+
+/**
+ * Ajoute les conditions de prise en main aux copies des armes polyvalentes du compendium présentes dans le monde.
+ * @returns {Promise<number>} Le nombre d'armes mises à jour.
+ */
+async function migrateVersatileWeapons() {
+  const pack = game.packs.get("cof2-base.cof-2-base-items")
+  if (!pack) return 0
+
+  // Pour chaque arme du compendium : libellé de l'action → condition de prise en main qu'elle porte
+  const index = await pack.getIndex({ fields: ["system.slug"] })
+  const references = new Map()
+  for (const entry of index.filter((e) => e.type === "equipment" && VERSATILE_WEAPON_SLUGS.includes(e.system?.slug))) {
+    const weapon = await pack.getDocument(entry._id)
+    const grips = new Map()
+    for (const action of weapon.system.actions) {
+      const grip = action.conditions.find((c) => GRIP_PREDICATES.includes(c.predicate))
+      if (grip) grips.set(action.label, grip.predicate)
+    }
+    if (grips.size > 0) references.set(weapon.system.slug, grips)
+  }
+  if (references.size === 0) return 0
+
+  const updatesFor = (items) => {
+    const updates = []
+    for (const item of items) {
+      const grips = item.type === "equipment" ? references.get(item.system.slug) : undefined
+      if (!grips || !item.system.usage?.oneHand || !item.system.usage?.twoHand) continue
+      const actions = item.system.toObject().actions
+      let changed = false
+      for (const action of actions) {
+        const predicate = grips.get(action.label)
+        if (!predicate || action.conditions.some((c) => GRIP_PREDICATES.includes(c.predicate))) continue
+        action.conditions.push({ predicate })
+        changed = true
+      }
+      if (changed) updates.push({ _id: item.id, "system.actions": actions })
+    }
+    return updates
+  }
+
+  let count = 0
+  const worldUpdates = updatesFor(game.items)
+  if (worldUpdates.length > 0) await Item.implementation.updateDocuments(worldUpdates)
+  count += worldUpdates.length
+
+  const actors = [...game.actors, ...game.scenes.flatMap((scene) => scene.tokens.filter((token) => !token.actorLink && token.actor).map((token) => token.actor))]
+  for (const actor of actors) {
+    const updates = updatesFor(actor.items)
+    if (updates.length > 0) await actor.updateEmbeddedDocuments("Item", updates)
+    count += updates.length
+  }
+  return count
+}

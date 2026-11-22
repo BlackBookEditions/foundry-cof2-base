@@ -407,6 +407,7 @@ items:
             noManaCost: false
           conditions:
             - predicate: isEquipped
+            - predicate: isWieldedOneHand
           resolvers:
             - type: attack
               bonusDiceAdd: false
@@ -443,6 +444,7 @@ items:
             noManaCost: false
           conditions:
             - predicate: isEquipped
+            - predicate: isWieldedTwoHands
           resolvers:
             - type: attack
               bonusDiceAdd: false
