@@ -20,7 +20,7 @@
     rencontre)}.
   </p>
   <p class="alinea">Chaque Action permet de configurer plusieurs éléments, comme des bonus ou des malus qu’il pourra activer, des améliorations passives, etc...</p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea"><span class="gras">Exemple : Arme "Épieu"</span></p>
     <p class="alinea">Une arme avec beaucoup d’options.</p>
@@ -28,8 +28,12 @@
       Cette arme, par exemple, peut être utilisée à une main, à deux mains ou à distance. Ainsi, trois Actions seront ajoutées dans l’Onglet Actions/Effets pour chaque type
       d’attaque avec les bonnes valeurs d’attaque, de Dommages…
     </p>
+    <p>
+      Les Actions à une main et à deux mains portent les Conditions "est tenu à une main" et "est tenu à deux mains" : seule celle qui correspond à la prise en main actuelle
+      est proposée. L’attaque à distance, qui n’a que la Condition "est équipé", reste toujours disponible.
+    </p>
   </ul>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea"><span class="gras">Exemple : Capacité @UUID[Compendium.cof2-base.cof-2-base-items.Item.qQRRYzPlyq9JHoIq]{Dans le mille} </span></p>
     <p>Rang 2 de la Voie de l’Archer - Profil du Rôdeur<span class="gras"></span></p>
@@ -54,10 +58,10 @@
     état sur votre personnage. Toutes ces notions seront détaillées plus loin.
   </p>
 
-  <!--informations initiales-->
+  
   <h2>Informations initiales</h2>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_info-initiales.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_info-initiales.webp"></div>
 
   <h3>Label</h3>
   <p class="alinea">
@@ -69,7 +73,7 @@
     Si le champ est laissé vide, c'est le nom de l’Objet qui sera utilisé. Ainsi il sera difficile de distinguer deux actions différentes l’une de l’autre. De plus, si l’action
     possède une caractéristique importante, vous pouvez utiliser le Label pour le signaler.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Exemple :</span> <span class="gras normal">Capacité @UUID[Compendium.cof2-base.cof-2-base-items.Item.8IiUk1mWhyccCuai]{Frappe chirurgicale}</span>
@@ -84,8 +88,7 @@
   <h3>Supprimer une Action</h3>
   <p class="alinea">
     L’icône <i class="fa-solid fa-trash"></i> permet de supprimer l’Action/Effet créée.
-    <span class="gras"
-      >Cette suppression est définitive. Aucune information n’est enregistrée donc si vous supprimez par erreur une Action/Effet, il faudra la recréer de A à Z.
+    <span class="gras">Cette suppression est définitive. Aucune information n’est enregistrée donc si vous supprimez par erreur une Action/Effet, il faudra la recréer de A à Z.
     </span>
   </p>
   <p class="alinea">Faites donc attention à ne pas cliquer sur cette icône par mégarde et rappelez-vous qu’elle ne permet pas seulement d’effacer le Nom de l’Action.</p>
@@ -115,11 +118,9 @@
     votre image directement dans le champ texte.
   </p>
   <p class="alinea">
-    <span class="gras"
-      >L’image choisie remplacera l’image qui apparait dans le Cadre Action de
+    <span class="gras">L’image choisie remplacera l’image qui apparait dans le Cadre Action de
       l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-principal]{Onglet Principal} de la
-      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-personnage]{Feuille Personnage}.</span
-    >
+      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#feuille-personnage]{Feuille Personnage}.</span>
   </p>
   <p class="alinea">
     Un conseil tout de même, si vous modifiez toutes les images des Actions/Effets de chaque Capacité ou Équipement, il sera difficile de retrouver une action spécifique dans votre
@@ -164,7 +165,7 @@
     <li><i class="fa-solid fa-flask-round-potion"></i> - Consommable</li>
   </ul>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_liste_exemple.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_liste_exemple.webp"></div>
   <ul class="exemple">
     <p class="alinea">Par exemple, sur l’image ci-contre, nous voyons plusieurs types d’actions :</p>
     <ul>
@@ -186,7 +187,7 @@
   </ul>
 
   <h3>Les Propriétés</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_proprietes.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_proprietes.webp"></div>
   <p class="alinea">Bien qu’il n’y ait pas beaucoup de propriétés, elles sont fondamentales pour configurer correctement l’Action ou l’Effet.</p>
   <h4>Mode Debug</h4>
   <p class="alinea">
@@ -234,7 +235,7 @@
         <p class="alinea"><span class="gras">Exemple : Arme "@UUID[Compendium.cof2-base.cof-2-base-items.Item.QIHJs2vncOYtsEX2]{Épée longue}" </span></p>
         <p class="alinea">
           Cette arme possède une action qui réalise une Attaque de Contact qui ouvre la fenêtre du
-          @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d&#x27;attaque} lorsque l’on clique
+          @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-dattaque]{Jet d'attaque} lorsque l’on clique
           sur l’icône
           <i class="fa-solid fa-sword"></i>. Au moment où on clique sur l’icône l’attaque se réalise et l’Action ne reste pas activée.
         </p>
@@ -273,8 +274,8 @@
 
   <h4>Ne consomme pas de charges</h4>
   <p class="alinea">
-    Cette case à cocher permet d&apos;empêcher ou non la consommation d&apos;une utilisation de l&apos;objet. Si la case est cochée, lorsque l&apos;action sera activée aucune
-    utilisation de l&apos;objet sera consommée. Si elle est décochée, l&apos;activation de l&apos;action réduira de 1 le nombre d&apos;utilisation de l&apos;objet.
+    Cette case à cocher permet d'empêcher ou non la consommation d'une utilisation de l'objet. Si la case est cochée, lorsque l'action sera activée aucune
+    utilisation de l'objet sera consommée. Si elle est décochée, l'activation de l'action réduira de 1 le nombre d'utilisation de l'objet.
   </p>
 
   <h4>Sans coût de mana</h4>
@@ -292,10 +293,10 @@
   <ul class="exemple">
     <p class="alinea">Consultez le prochain chapitre pour plus d’informations sur les Conditions.</p>
   </ul>
-  <!--conditions-->
+  
   <h2>Conditions</h2>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_conditions.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_conditions.webp"></div>
 
   <p class="lettrine">
     Ce cadre détermine dans quelle situation l’Action/Effet peut fonctionner. Cette condition est souvent la même en fonction du type d’Objet créé (une Capacité avec une Condition
@@ -316,7 +317,7 @@
     La feuille doit être déverrouillée pour pouvoir ajouter une Condition grâce à l’icône <i class="fa-solid fa-plus"></i> et supprimer une Condition avec l’icône
     <i class="fa-solid fa-trash"></i>.
   </p>
-  <p class="alinea">Il y a <span class="gras">cinq types de Condition :</span></p>
+  <p class="alinea">Il y a <span class="gras">six types de Condition :</span></p>
 
   <h3>est équipé</h3>
   <p class="alinea">
@@ -358,13 +359,28 @@
     pas besoin d’être équipés pour octroyer un avantage (un tatouage, un bijou, un grimoire…).
   </p>
 
+  <h3>est tenu à une main / est tenu à deux mains</h3>
+  <p class="alinea">
+    <span class="gras">Ces options conditionnent l’Action/Effet à la prise en main de l’Équipement</span> : la Condition est remplie si l’Équipement est tenu à une main, ou à
+    deux mains. Elles servent aux @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#arme]{armes polyvalentes},
+    tenues à deux mains quand l’autre main est libre et à une main sinon. Les armes qui ne sont pas polyvalentes ont une prise en main fixe.
+  </p>
+  <p class="alinea">
+    <span class="gras italique">Attention</span> : combinez-les avec la Condition "est équipé". Pour un Équipement qui n’est pas équipé, la prise en main est celle qu’il
+    aurait s’il était équipé maintenant.
+  </p>
+  <ul class="exemple">
+    <p class="alinea">
+      <span class="gras">Exemple : </span>sur l’Épée bâtarde, l’Action "1 main" porte les Conditions "est équipé" et "est tenu à une main", l’Action "2 mains" les Conditions
+      "est équipé" et "est tenu à deux mains". Lorsque le Personnage équipe un bouclier, l’attaque à deux mains disparaît de sa liste d’actions au profit de l’attaque à une main.
+    </p>
+  </ul>
+
   <h3>l'action liée est activée</h3>
   <p class="alinea">
     C’est la condition la plus délicate à utiliser mais elle a son utilité dans certaines circonstances.
-    <span class="gras"
-      >Elle sert pour une Capacité ou un Équipement qui possède plusieurs Actions/Effets. Cette condition permet de rendre disponible l’Action/Effet seulement si une autre
-      Action/Effet est activée.</span
-    >
+    <span class="gras">Elle sert pour une Capacité ou un Équipement qui possède plusieurs Actions/Effets. Cette condition permet de rendre disponible l’Action/Effet seulement si une autre
+      Action/Effet est activée.</span>
   </p>
   <p class="alinea">Comme une Attaque de Rencontre ne peut recevoir qu’une seule Action/Effet, cette Condition ne pourra jamais servir pour ce type d’Objet.</p>
   <p class="alinea">De ce fait, vous ne devez pas configurer cette condition sur la première Action/Effet de l’Objet sous peine de "casser" l’Objet.</p>
@@ -373,7 +389,7 @@
     Action/Effet, un champ numérique apparait à la suite. Il faudra noter un chiffre qui correspond au "numéro" de l’Action/Effet liée.
   </p>
   <p class="alinea"><span class="gras italique">Attention</span> : la première Action/Effet de l’Objet a le numéro 0, la deuxième le numéro 1, la troisième le numéro 2…</p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea"><span class="gras">Exemple pour les actions liées: </span></p>
     <p class="alinea">
@@ -415,10 +431,10 @@
     </ul>
   </ul>
 
-  <!--modificateurs-->
+  
   <h2>Modificateurs</h2>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs.webp"></div>
 
   <p class="lettrine">
     Dans cette section, il est possible d’ajouter autant de Modificateurs que nécessaires pour la Capacité, l’Équipement ou l’Attaque de rencontre. Chaque Modificateur pourra
@@ -437,8 +453,7 @@
   </p>
   <h3>Valeur du Modificateur</h3>
   <p class="alinea">
-    <span class="gras"
-      >La Valeur du Modificateur est un élément très important à comprendre car il va recevoir le nombre ou la formule pour augmenter ou diminuer le paramètre choisi.
+    <span class="gras">La Valeur du Modificateur est un élément très important à comprendre car il va recevoir le nombre ou la formule pour augmenter ou diminuer le paramètre choisi.
     </span>
   </p>
   <p class="alinea">
@@ -448,10 +463,8 @@
     nombreuses variables pour faire évoluer le paramètre choisi.
   </p>
   <p class="alinea">
-    <span class="gras"
-      >Lorsque vous prenez le système en main, nous vous conseillons de bien lire la description des Modificateurs ci-dessous et de consulter la section
-      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables}</span
-    >
+    <span class="gras">Lorsque vous prenez le système en main, nous vous conseillons de bien lire la description des Modificateurs ci-dessous et de consulter la section
+      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{Les variables}</span>
     pour le détail des éléments dynamiques qui feront évoluer les Modificateurs. Consultez également les Capacités, Équipements et Attaques de Rencontre du Compendium pour
     reproduire les effets souhaités.
   </p>
@@ -460,10 +473,8 @@
   <h3>Caractéristiques</h3>
   <p class="alinea">
     Ce type vous permet de choisir une Caractéristique ou "Toutes les Caractéristiques". Notez dans le champ "Valeur"
-    <span class="gras"
-      >un nombre positif ou négatif ou une
-      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{variable} chiffrée</span
-    >. Cette valeur sera ajoutée à la Caractéristique choisie.
+    <span class="gras">un nombre positif ou négatif ou une
+      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#les-variables]{variable} chiffrée</span>. Cette valeur sera ajoutée à la Caractéristique choisie.
   </p>
   <p class="alinea">
     Bien entendu, il est impossible d’ajouter le bonus d’une Caractéristique à sa propre Caractéristique (ajouter le bonus de Perception à la Perception, par exemple).
@@ -473,7 +484,7 @@
     Dans certain cas, l’erreur que vous avez faite ne sera pas visible directement sur la feuille mais empêchera le fonctionnement de certaines fonctionnalités du Personnage.
     Ainsi, vérifiez bien que votre modificateur fonctionne lorsque vous créez un Modificateur avec une valeur complexe.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">Le Personnage augmente son AGI de la valeur du plus haut Rang appris de la Voie</p>
     <li>Type : <span class="gras">Caractéristique</span>,</li>
@@ -512,8 +523,7 @@
       <span class="gras">Un nombre négatif, à l’inverse, vous inflige un malus</span> et donc rend plus dur la réalisation d’un critique. Il est possible de définir la valeur avec
       une variable chiffrée de l’Acteur également.
       <ul class="exemple">
-        <span class="gras">Exemple : </span
-        >si vous noter "1" dans la valeur du Critique, votre plage de Critique à 20 deviendra 19 à 20 lorsque vous activerez l’Effet. Vous pouvez noter @agi pour élargir votre
+        <span class="gras">Exemple : </span>si vous noter "1" dans la valeur du Critique, votre plage de Critique à 20 deviendra 19 à 20 lorsque vous activerez l’Effet. Vous pouvez noter @agi pour élargir votre
         plage de critique de votre modificateur d’Agilité
       </ul>
     </li>
@@ -530,8 +540,7 @@
     <li>
       <p class="alinea">
         <span class="gras">Points de Vigueur</span> et <span class="gras">Déplacement</span>. La valeur pour ces Sous-types peut être<span class="gras">
-          un nombre entier positif ou négatif ou une variable chiffrée de l’Acteur</span
-        >
+          un nombre entier positif ou négatif ou une variable chiffrée de l’Acteur</span>
         ou une formule combinant des nombres entiers. La valeur sera ajoutée ou retranchée de votre maximum de Points de Vigueur ou de votre distance de Déplacement.
       </p>
     </li>
@@ -563,9 +572,7 @@
   </ul>
   <h5>Points de Vigueur actuels</h5>
   <p class="alinea">
-    <span class="gras"
-      >Lorsque vous activez une capacité qui augmente ou diminue le nombre de vos Points de Vigueur, votre nombre de Points de Vigueur actuel n’est pas modifié</span
-    >
+    <span class="gras">Lorsque vous activez une capacité qui augmente ou diminue le nombre de vos Points de Vigueur, votre nombre de Points de Vigueur actuel n’est pas modifié</span>
     en même temps. Sur un Effet temporaire, il sera utile de combiner l’augmentation temporaire des Points de Vigueur maximum avec une Résolution qui "soigne" le Personnage du même
     nombre de PV.
   </p>
@@ -594,24 +601,22 @@
   </p>
 
   <h3>Jet de compétence</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs_competences.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs_competences.webp"></div>
   <p class="alinea">
     Ce type de Modificateur ressemble beaucoup au Type "Caractéristique" abordé plus tôt mais
     <span class="gras">les Valeurs indiquées sur des Modificateurs de "Jet de compétence" ne seront pas actifs en permanence. </span>Les Sous-types sont chaque Caractéristique
     séparée.
   </p>
   <p class="alinea">
-    <span class="gras"
-      >Le bonus ou le malus que vous indiquez ici apparaîtra dans la fenêtre du
-      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique}. </span
-    >Vous pourrez le sélectionner ou non en fonction de la situation pour ajouter la Valeur du Modificateur à votre test.
+    <span class="gras">Le bonus ou le malus que vous indiquez ici apparaîtra dans la fenêtre du
+      @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#jet-de-caracteristique]{Jet de caractéristique}. </span>Vous pourrez le sélectionner ou non en fonction de la situation pour ajouter la Valeur du Modificateur à votre test.
   </p>
   <h4>Notes</h4>
   <p class="alinea">
     <span class="gras">Le champ "Notes" est très important pour les Jets de compétence car il permet d’inscrire la situation ou les conditions</span>
     pour sélectionner ou non le Modificateur dans la fenêtre du Test de Caractéristique.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea"><span class="gras">Exemple :</span> Capacité @UUID[Compendium.cof2-base.cof-2-base-items.Item.LmxrvkFDLZiR4UVi]{Fidèle monture}</p>
     <p>Rang 1de la Voie du Cavalier - Profil du Chevalier</p>
@@ -622,7 +627,7 @@
       <li>Sous-type : <span class="gras">Agilité,</span></li>
       <li>Valeur : <span class="gras">2 + @rang</span></li>
       <li>Notes : <span class="gras">pour les tests d’équitation</span></li>
-      <br />
+      <br>
       <li>Type :<span class="gras">Jet de compétence,</span></li>
       <li>Sous-type : <span class="gras">Charisme,</span></li>
       <li>Valeur : <span class="gras">2 + @rang</span></li>
@@ -635,13 +640,11 @@
   </ul>
 
   <h3>États</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs_etats.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_modificateurs_etats.webp"></div>
   <p class="alinea">La liste États permet d’ajouter au Personnage ou à la Rencontre des informations importantes.</p>
   <p class="alinea">
-    <span class="gras"
-      >Les États seront visibles dans la @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#barre-laterale]{Barre
-      latérale} de la feuille Personnage ou la feuille Rencontre</span
-    >. Ainsi, à tout moment, vous saurez si votre créature est immunisée à certaines choses et si elle possède une Vision dans le noir.
+    <span class="gras">Les États seront visibles dans la @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#barre-laterale]{Barre
+      latérale} de la feuille Personnage ou la feuille Rencontre</span>. Ainsi, à tout moment, vous saurez si votre créature est immunisée à certaines choses et si elle possède une Vision dans le noir.
   </p>
   <p class="alinea">
     Pour chaque Immunité, vous pouvez laisser la valeur "0". Pour la Vision dans le noir, le champ "Valeur" permet de noter la distance de cette vision. La valeur doit être
@@ -682,7 +685,7 @@
     </li>
   </ul>
 
-  <!--résolutions-->
+  
   <h2>Résolutions</h2>
 
   <p class="lettrine">
@@ -700,7 +703,7 @@
   <p class="alinea">Il existe 5 types de Résolutions :</p>
 
   <h3>Attaque</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_attaque.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_attaque.webp"></div>
   <p class="alinea">
     C’est la Résolution par défaut quand vous ajoutez une Résolution.
     <span class="gras">Elle permet de réaliser un Jet de Dé contre une Difficulté.</span>
@@ -798,7 +801,7 @@
     <span class="gras">permet de noter la formule jetée pour les Dommages de l’Attaque. </span>Comme pour la formule de compétence de l’Attaque, ce champ peut recevoir
     <span class="gras">des formules de Dés, des Variables, des nombres entiers, positifs ou négatifs</span> et une combinaison de tout cela.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">Dommages : "<span class="gras">1d4° + @for + @agi + 5</span>"</p>
     <p>Le Jet de Dommages sera :</p>
@@ -828,7 +831,7 @@
 
   <h3>Attaque Automatique</h3>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_att_auto.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_att_auto.webp"></div>
 
   <p class="alinea">
     Cette résolution permet <span class="gras">de configurer une Réussite automatique et de définir une formule de Dommages sur une ou plusieurs cibles.</span>
@@ -848,7 +851,7 @@
     <span class="gras">permet de noter la formule du jet de Dommages de l’Attaque. </span>Comme pour la formule de compétence de l’Attaque, ce champ peut recevoir
     <span class="gras">des formules de Dés, des Variables, des nombres entiers, positifs ou négatifs</span> et une combinaison de tout cela.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">Dommages : "<span class="gras">1d4° + @for + @agi + 5</span>"</p>
     <p>Le Jet de Dommages sera :</p>
@@ -875,7 +878,7 @@
 
   <h3>Soin</h3>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_soin.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_soin.webp"></div>
   <p class="alinea">
     Ce type de Résolution permet d’écrire une formule qui va soigner (ou blesser) la ou les cibles. Il s’agit d’un unique champ pour noter la formule à lancer et des champs pour
     choisir la ou les cibles.
@@ -885,7 +888,7 @@
     Ce champ permet de noter la formule du jet de dés pour les Soins de la Résolution. Ce champ peut recevoir des
     <span class="gras">formules de Dés, des Variables, des nombres entiers, positifs ou négatifs</span> et une combinaison de tout cela.
   </p>
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">Soin : "<span class="gras">2d8 + @niv + 8</span>"</p>
     <p>Le Jet de Soin sera :</p>
@@ -912,7 +915,7 @@
 
   <h3>Buff/Debuff</h3>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_buff.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_buff.webp"></div>
 
   <p class="alinea">
     C’est sûrement le type de Résolution le plus difficile à appréhender. Il
@@ -921,7 +924,7 @@
   <p class="alinea">
     Grâce à cette option vous pouvez lister les Modificateurs négatifs qui seront appliqués aux ennemis et les effets positifs qui seront appliqués aux alliés, par exemple.
   </p>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_effet_supple_exemple.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_effet_supple_exemple.webp"></div>
   <p class="alinea">
     <span class="gras italique">ATTENTION</span> : cette option ne fonctionne QU'avec un
     @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#effet-supplementaire]{Effet Supplémentaire} et donc seulement
@@ -950,7 +953,7 @@
 
   <h3>Consommable</h3>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_consommable.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_consommable.webp"></div>
 
   <p class="alinea">
     Cette Résolution peut être ajoutée avant ou après une autre Résolution. Dans ce cas,
@@ -965,10 +968,10 @@
   </p>
 
   <h3>Sauvegarde</h3>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_sauvegarde.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_sauvegarde.webp"></div>
   <p class="alinea">La résolution de type Sauvegarde permet de réaliser un test de caractéristique contre une difficulté définie.</p>
   <p class="alinea">
-    De nombreuses capacités demandent de réaliser &quot;un test de Caractéristique contre une difficulté de X&quot;. La résolution de type Sauvegarde permet de réaliser ce type de
+    De nombreuses capacités demandent de réaliser "un test de Caractéristique contre une difficulté de X". La résolution de type Sauvegarde permet de réaliser ce type de
     test.
   </p>
   <h4>Caractéristique</h4>
@@ -988,7 +991,7 @@
     Dans ce champs, notez la difficulté prévue par la capacité. Cela peut être un nombre fixe (difficulté 15, par exemple), une variable (difficulté CHA, par exemple), une formule
     (difficulté 10 + CHA, par exemple).
   </p>
-  <p class="alinea">La variable dans le Seuil de difficulté sera le score de la personnage utilisant l&apos;action.</p>
+  <p class="alinea">La variable dans le Seuil de difficulté sera le score de la personnage utilisant l'action.</p>
   <h4>Dommages</h4>
   <p class="alinea">
     Il est possible de définir une <span class="gras">formule de Dommages</span> pour la Résolution de type Sauvegarde. Si une formule est définie, le jet de Dommages sera effectué
@@ -999,16 +1002,16 @@
     subir aucun Dommage.
   </p>
   <h4>Cible</h4>
-  <p class="alinea">De la même manière que certains autres type de résolution, vous pouvez définir ici le nombre et le type de cible prévue par l&apos;action.</p>
+  <p class="alinea">De la même manière que certains autres type de résolution, vous pouvez définir ici le nombre et le type de cible prévue par l'action.</p>
   <h4>Effets Supplémentaires</h4>
   <p class="alinea">
     Avec cette résolution, vous pouvez définir les effets supplémentaires qui seront appliqués si la cible réussie le test de sauvegarde ou si elle échoue.<span></span>
   </p>
 
-  <!--effets supplementaires-->
+  
   <h2>Effet Supplémentaire</h2>
 
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_effet_supple.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_resolution_effet_supple.webp"></div>
 
   <p class="alinea">Cette section de la Résolution permet d’appliquer des effets sur la durée seulement quand vous êtes en Mode Combat.</p>
   <p class="alinea">
@@ -1018,15 +1021,13 @@
   </p>
   <p class="alinea">
     Lorsqu’ils sont appliqués à une ou plusieurs cibles,
-    <span class="gras"
-      >les Effets Supplémentaires sont visibles dans
+    <span class="gras">les Effets Supplémentaires sont visibles dans
       l’@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-effets]{Onglet Effets} de la feuille de Personnage
-      ou de Rencontre dans le cadre "Effets Personnalisés".</span
-    >
+      ou de Rencontre dans le cadre "Effets Personnalisés".</span>
     A cet endroit, une info-bulle vous donne les informations sur les Effets. Il est aussi possible de supprimer avant la fin de la durée définie en utilisant l’icône
     <i class="fa-solid fa-trash"></i> lorsque la feuille est déverrouillée.
   </p>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_maitre_poison_effet.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_maitre_poison_effet.webp"></div>
   <p class="alinea">De plus, le Statut "Effet(s) Supplémentaire(s)" s’active sur le token de l’Acteur impacté.</p>
   <p class="alinea">
     <span class="gras italique">ATTENTION</span> : si vous faites un clic droit sur le Token et que vous désactivez l’icône "Effet(s) Supplémentaire(s), cela n’aura pas pour
@@ -1109,7 +1110,7 @@
     Pour un Effet Supplémentaire sur une résolution Attaque, si vous sélectionnez plusieurs Statuts, il sera possible de choisir celui ou ceux qui s'appliquent dans la fenêtre
     d'Attaque.
   </p>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_soutenir.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_soutenir.webp"></div>
   <h3>Durée</h3>
   <p class="alinea">
     Ce dernier paramètre
@@ -1121,19 +1122,19 @@
   </p>
   <h5>Combat</h5>
   <p class="alinea">
-    Il est possible de configurer la durée sur Combat afin que l&apos;effet reste sur la cible jusqu&apos;à la fin de la rencontre active. Cela permet de gérer des Effets sans
+    Il est possible de configurer la durée sur Combat afin que l'effet reste sur la cible jusqu'à la fin de la rencontre active. Cela permet de gérer des Effets sans
     durée précise, par exemple.
   </p>
   <h5>Illimité</h5>
   <p class="alinea">
     La durée Illimité a été ajoutée pour configurer des effets pouvant être utilisés hors combat. Grâce à cette option, vous pouvez appliquer un Effet Supplémentaire sur une cible
-    sans être en mode Combat. Il faudra supprimer manuellement l&apos;effet depuis l&apos;onglet Effets grâce à l&apos;icône <i class="fa-solid fa-trash"></i> en mode
+    sans être en mode Combat. Il faudra supprimer manuellement l'effet depuis l'onglet Effets grâce à l'icône <i class="fa-solid fa-trash"></i> en mode
     déverrouillé.<span></span>
   </p>
   <h5>Instantané</h5>
   <p class="alinea">Cette durée permet d'appliquer immédiatement l'Effet Supplémentaire sur la cible sans avoir besoin d'être en mode Combat.</p>
 
-  <br />
+  <br>
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Exemple ci-dessus :</span> option tactiques <span class="gras">@UUID[Compendium.cof2-base.cof-2-base-items.Item.0PawJrcH7daQ8RoJ]{Soutenir}</span>
@@ -1147,14 +1148,12 @@
       </li>
     </ul>
     <p class="alinea">
-      <span class="gras"
-        >Lorsque le Personnage cible un token et active l’action Soutenir, un effet sera appliqué sur la cible lui donnant un bonus de +5 à ces tests d’Attaque au Contact lors de
-        son prochain tout, comme défini dans le Modificateur</span
-      >
+      <span class="gras">Lorsque le Personnage cible un token et active l’action Soutenir, un effet sera appliqué sur la cible lui donnant un bonus de +5 à ces tests d’Attaque au Contact lors de
+        son prochain tout, comme défini dans le Modificateur</span>
     </p>
   </ul>
 
-  <!--les variables-->
+  
   <h2>Les variables</h2>
   <p class="lettrine">
     En lisant les sections précédentes et en regardant des Capacités, des Équipements ou des Attaques de Rencontre dans le Compendium, vous avez déjà vu quelques variables qui
@@ -1296,33 +1295,33 @@
 
   <ul class="exemple">
     <li>
-      <p class="alinea">Une attaque inflige (le rang atteint dans la Voie) dé évolutif en plus du modificateur de Force => notez : <span class="gras">(@rang)d4° + @for</span></p>
+      <p class="alinea">Une attaque inflige (le rang atteint dans la Voie) dé évolutif en plus du modificateur de Force =&gt; notez : <span class="gras">(@rang)d4° + @for</span></p>
     </li>
     <li>
       <p class="alinea">
-        Votre Attaque à Distance augmente de 1d4 au rang 1, 1d6 au rang 3 et 1d8 au rang 5 => notez : <span class="gras">@atd + @rang[1d4,1d4,1d6,1d6,1d8]</span>
+        Votre Attaque à Distance augmente de 1d4 au rang 1, 1d6 au rang 3 et 1d8 au rang 5 =&gt; notez : <span class="gras">@atd + @rang[1d4,1d4,1d6,1d6,1d8]</span>
       </p>
     </li>
     <li>
       <p class="alinea">
-        Vous devez réaliser un test d'Attaque Magique opposé avec le Token ciblé => notez : <span class="gras">@atm</span> en Attaque et <span class="gras">@oppose.atm</span> en
+        Vous devez réaliser un test d'Attaque Magique opposé avec le Token ciblé =&gt; notez : <span class="gras">@atm</span> en Attaque et <span class="gras">@oppose.atm</span> en
         Difficulté. Un bouton "test Opposé" s'affichera dans le Message du Chat pour réaliser le test.
       </p>
     </li>
     <li>
       <p class="alinea">
-        Un Équipement qui inflige 1d8 DM permet de rajouter un nombre de d4 égal à votre Modificateur de Force au Dommages => notez : <span class="gras">1d8 + (@for)d4</span>
+        Un Équipement qui inflige 1d8 DM permet de rajouter un nombre de d4 égal à votre Modificateur de Force au Dommages =&gt; notez : <span class="gras">1d8 + (@for)d4</span>
       </p>
     </li>
     <li>
       <p class="alinea">
-        Une Capacité vous demande de comparer votre test d'Attaque au Contact avec le Niveau de Créature de la cible => notez <span class="gras">@atc</span> en Attaque et
+        Une Capacité vous demande de comparer votre test d'Attaque au Contact avec le Niveau de Créature de la cible =&gt; notez <span class="gras">@atc</span> en Attaque et
         <span class="gras">@nc</span> en Difficulté.
       </p>
     </li>
     <li>
       <p class="alinea">
-        Une Capacité permet de rajouter 1d4° au Test d'Attaque et un bonus au Dommages égale à votre Niveau => notez : <span class="gras">@arme.skill + 1d4°</span> en Attaque et
+        Une Capacité permet de rajouter 1d4° au Test d'Attaque et un bonus au Dommages égale à votre Niveau =&gt; notez : <span class="gras">@arme.skill + 1d4°</span> en Attaque et
         <span class="gras">@arme.dmg + @niv</span> en Dommages. Cela va rajouter les bonus de la Capacité en utilisant la formule de compétence et les Dommages de la première arme
         équipée par le Personnage.
       </p>
@@ -1341,7 +1340,7 @@
   </p>
   <p class="alinea">Il faudra donc veillez à modifier les Capacités que vous rajoutez à vos Rencontres pour remplacer certaines variables par des nombres fixes.</p>
 
-  <!--exemple d Actions Effets-->
+  
   <h2>Exemples d'actions et d'effets</h2>
   <p class="lettrine">
     Nous allons prendre quelques exemples tirés du Livre de Règles pour faire le point sur les Modificateurs, les Résolutions et les Effets Supplémentaires. Les exemples essayent
@@ -1351,15 +1350,13 @@
   </p>
 
   <h4>@UUID[Compendium.cof2-base.cof-2-base-items.Item.zMDclUsOnwdGjgz7]{Feinte} (voie de l'escrime - Profil du Barde)</h4>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_feinte.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_feinte.webp"></div>
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Texte de la Capacité :</span>
-      <span class="italique"
-        >Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre
+      <span class="italique">Le barde effectue une attaque fictive pour déséquilibrer son adversaire et réalise ensuite une attaque mortelle. Faites un test opposé de CHA contre la PER de votre
         adversaire à ce round. Au round suivant, vous obtenez un bonus en attaque égal au double de votre rang dans la voie de l'escrime (+4 au rang 2, par exemple) sur votre
-        première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</span
-      >
+        première attaque au contact contre cet adversaire et, si votre feinte a réussi, +2d4° aux DM.</span>
     </p>
     <p class="alinea">Pour cette capacité Feinte, il y aura trois Actions/Effets :</p>
     <ul>
@@ -1381,8 +1378,7 @@
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Texte de la Capacité :</span>
-      <span class="italique"
-        >Une fois par jour, le sorcier peut invoquer d'innombrables squelettes qui émergent du sol pour attaquer ses ennemis pendant [niveau du sorcier] rounds. Tous les
+      <span class="italique">Une fois par jour, le sorcier peut invoquer d'innombrables squelettes qui émergent du sol pour attaquer ses ennemis pendant [niveau du sorcier] rounds. Tous les
         adversaires situés dans un rayon de 10 m autour du sorcier subissent automatiquement 2d4° DM par round. Les squelettes se déplacent avec le sorcier, mais tous les
         déplacements dans cette zone (même ceux du sorcier) sont divisés par deux.
       </span>
@@ -1408,8 +1404,7 @@
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Texte de la Capacité :</span>
-      <span class="italique"
-        >Le voleur peut utiliser 3 doses de poison par jour sans risque de s'empoisonner lui-même. Une dose permet d'enduire une dague, une flèche ou un carreau pour infliger +2d4°
+      <span class="italique">Le voleur peut utiliser 3 doses de poison par jour sans risque de s'empoisonner lui-même. Une dose permet d'enduire une dague, une flèche ou un carreau pour infliger +2d4°
         DM supplémentaire et demande un test de CON difficulté (10 + INT du voleur) ou une cible vivante est affaiblie pour le reste du combat. Alternativement, une dose peut être
         versée dans les aliments pour une personne ; si la cible rate son test de CON, elle sombre dans l'inconscience pour 2d6 min (4d6 min pour 2 doses, etc.).
       </span>
@@ -1435,8 +1430,7 @@
   <ul class="exemple">
     <p class="alinea">
       <span class="gras">Texte de la Capacité :</span>
-      <span class="italique"
-        >Le moine projette une vague de force avec son corps et son esprit à une distance maximale de 20 m. Un test d'attaque magique réussi lui permet d'infliger [1d4°+ VOL] DM.
+      <span class="italique">Le moine projette une vague de force avec son corps et son esprit à une distance maximale de 20 m. Un test d'attaque magique réussi lui permet d'infliger [1d4°+ VOL] DM.
         Les DM passent à [2d4°+ VOL] au rang 4.
       </span>
     </p>
@@ -1454,11 +1448,10 @@
     </p>
   </ul>
   <h4>@UUID[Compendium.cof2-base.cof-2-base-items.Item.j6droy56LsS4STHW]{Baie magique} (Équipement - Consommable)</h4>
-  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_baie_magique.webp" /></div>
+  <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_action_exemple_baie_magique.webp"></div>
   <ul class="exemple">
     <p class="alinea">
-      <span class="italique"
-        >Une baie créée par un druide. Offre l’équivalent d’un repas et rend [1d4°+@rang]PV après une minutes à celui qui la consomme. Les effets de ce fruit ne fonctionnent qu’une
+      <span class="italique">Une baie créée par un druide. Offre l’équivalent d’un repas et rend [1d4°+@rang]PV après une minutes à celui qui la consomme. Les effets de ce fruit ne fonctionnent qu’une
         fois par jour et par personnage. Le Druide, en lançant son sort ne soigne pas les cibles mais crée des "Équipements" qui pourront être glissé-déposé dans l’Inventaire.
       </span>
     </p>
@@ -1475,9 +1468,9 @@
       <li>Dans le cas d’une Capacité, vous pouvez <span class="gras">gérer la fréquence d’utilisation</span> des Baies Magiques.</li>
     </ul>
   </ul>
-  <br />
+  <br>
 
-  <!--conclusion-->
+  
   <h2>Conclusion</h2>
   <p class="alinea">
     Voici les quelques exemples de création d’Actions/Effets. Vous remarquerez très vite que des modèles d’Actions/Effets se répètent et au bout de quelques créations, le système
@@ -1500,10 +1493,8 @@
     ou complexes.
   </p>
   <p class="alinea">
-    <span
-      >Certains MJ, par exemple, utilisent très peu la gestion des Combats au tour par tour, préférant des conflits plus "cinématiques" que "stratégiques". Dans ce cas, n’hésitez
-      pas à décocher les Effets Supplémentaires dans les Résolutions et de gérer "manuellement" l’application d’effets périodiques.</span
-    >
+    <span>Certains MJ, par exemple, utilisent très peu la gestion des Combats au tour par tour, préférant des conflits plus "cinématiques" que "stratégiques". Dans ce cas, n’hésitez
+      pas à décocher les Effets Supplémentaires dans les Résolutions et de gérer "manuellement" l’application d’effets périodiques.</span>
   </p>
   <h4>Variantes et choix</h4>
   <p class="alinea">De plus, la même action peut être détaillée en plus ou moins de lignes d’action dans l’Onglet principal de la feuille Personnage ou Rencontre.</p>
