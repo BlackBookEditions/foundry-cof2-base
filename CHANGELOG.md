@@ -3,6 +3,7 @@
 ## Améliorations
 
 - Armes polyvalentes : les attaques « 1 main » et « 2 mains » de l'Épée bâtarde, de l'Épieu et de la Lance portent les conditions « est tenu à une main » et « est tenu à deux mains ». Seule l'attaque correspondant à la prise en main actuelle est proposée : deux mains quand l'autre main est libre, une main avec un bouclier ou une seconde arme. Les armes du compendium, des prétirés et des rencontres sont mises à jour, ainsi que les copies déjà présentes dans le monde, une seule fois et au premier lancement par le MJ.
+- Guide du système : armes polyvalentes (usage des Équipements, colonne Usage de l'inventaire, vérification des mains libres) et Conditions « est tenu à une main » / « est tenu à deux mains ». Le guide ne dit plus que cocher les deux cases d'usage est sans effet.
 - Nécessite le système co2 2.4.0 ou plus récent.
 
 # 2.3.10

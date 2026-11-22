@@ -356,6 +356,10 @@ pages:
             <span class="gras">d’interdire aux protagonistes d’équiper une arme ou un objet s’il n’a pas suffisamment d’emplacements de mains disponibles.</span> Par exemple, un message
             d’erreur s’affiche s’il clique sur l’icône pour équiper une arme à deux mains alors qu’il a déjà une épée d’équipée.
           </p>
+          <p class="alinea">
+            Une <span class="gras">arme polyvalente</span>, utilisable à une ou deux mains, ne compte que pour une main : elle peut être équipée avec un bouclier ou une seconde arme, et elle
+            est alors tenue à une main.
+          </p>
 
           <h4>Ignorer la contrainte :</h4>
           <p class="alinea">Pour ignorer la contrainte de mains libres, il faut maintenir appuyer la touche SHIFT lorsque l’on clique sur l’icône pour équiper l’arme ou l’objet.</p>
@@ -973,6 +977,8 @@ pages:
               <p>
                 <span class="gras">Usage :</span>
                 Le nombre de mains <i class="fa-solid fa-hand"></i> affiché renseigne sur le nombre de mains disponibles nécessaire pour utiliser l’objet.
+                Pour une arme polyvalente, la seconde main apparaît en creux <i class="fa-regular fa-hand"></i> quand l’arme est tenue à une main. Un clic sur les mains permet de la
+                tenir à une main même quand l’autre main est libre, ou de la laisser s’adapter de nouveau.
               </p>
             </li>
             <li>
@@ -2682,8 +2688,8 @@ pages:
           <h5>Usage <i class="fa-solid fa-hand"></i></h5>
           <p class="alinea">
             Usage <span class="gras">détermine le nombre de mains nécessaires pour utiliser le bouclier.</span> La première case à cocher permet de définir une utilisation à une main
-            exclusivement. La deuxième case permet de définir un usage à deux mains exclusivement. Si vous cocher les deux cases, le bouclier pourra être utilisé à une ou deux mains. Cette
-            dernière situation n’a pas d’impact dans le système. Si vous avez activé l’option <span class="gras">Vérification des mains libres</span> et que vous souhaitez équiper un
+            exclusivement. La deuxième case permet de définir un usage à deux mains exclusivement. Si vous cochez les deux cases, le bouclier est polyvalent, comme une
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#arme]{Arme} polyvalente : il ne compte que pour une main lors de la vérification des mains libres. Si vous avez activé l’option <span class="gras">Vérification des mains libres</span> et que vous souhaitez équiper un
             Équipement alors que vous ne pouvez pas à cause d’un manque de main disponible, il faudra appuyer sur SHIFT en cliquant sur l’icône <i class="fa-regular fa-shield"></i> dans
             l'@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.9Bn7F4sxyKm3TX74#onglet-inventaire]{Onglet Inventaire}.
           </p>
@@ -2766,7 +2772,21 @@ pages:
             permet de définir un usage à deux mains exclusivement.
           </p>
           <p class="alinea">
-            Si vous cocher les deux cases, l’arme pourra être utilisée à une ou deux mains. Cette dernière situation n’a pas d’impact dans le système. Si vous avez activer
+            Si vous cochez les deux cases, l’arme est <span class="gras">polyvalente</span> (Épée bâtarde, Épieu, Lance…) :
+            <span class="gras">elle est tenue à deux mains quand l’autre main est libre, et à une main dès qu’un bouclier, une seconde arme ou un objet tenu en main est équipé.</span>
+            Cette prise en main n’est jamais enregistrée : elle se déduit de ce que porte le Personnage.
+          </p>
+          <p class="alinea">
+            Pour que seule l’attaque correspondant à la prise en main soit proposée, ajoutez la Condition "est tenu à une main" à l’Action d’attaque à une main, et la Condition
+            "est tenu à deux mains" à celle à deux mains (voir @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#conditions]{Conditions}). Sans ces Conditions, toutes les attaques de l’arme restent proposées. Les armes polyvalentes du Livre des
+            Règles sont déjà configurées ainsi.
+          </p>
+          <p class="alinea">
+            Pour tenir l’arme à une main même quand l’autre main est libre, cochez la case <span class="gras">Tenir à une main</span> qui apparaît à côté des deux cases d’usage, ou
+            cliquez sur les mains de l’arme dans l’Onglet Inventaire. Les raccourcis @arme.dmg et @arme.skill reprennent les Dommages et l’attaque de la prise en main actuelle.
+          </p>
+          <p class="alinea">
+            Une arme polyvalente ne compte que pour une main lors de la vérification des mains libres. Si vous avez activé
             <span class="gras">l’option @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#verification-des-mains-libres]{Vérification des
               mains libres}</span>
             et que vous souhaitez équiper un Équipement alors que vous ne pouvez pas à cause d’un manque de main disponible, il faudra appuyer sur SHIFT en cliquant sur l’icône
@@ -2842,7 +2862,8 @@ pages:
             case permet de définir un usage à deux mains exclusivement.
           </p>
           <p class="alinea">
-            Si vous cocher les deux cases, l’Objet divers pourra être utiliser à une ou deux mains. Cette dernière situation n’a pas d’impact dans le système. Si vous avez activer
+            Si vous cochez les deux cases, l’Objet divers est polyvalent, comme une @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#arme]{Arme} polyvalente : il ne compte que pour une main lors de la vérification des mains libres. Si
+            vous avez activé
             <span class="gras">l’option @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#verification-des-mains-libres]{Vérification des
               mains libres}</span>
             et que vous souhaitez équiper un Équipement alors que vous ne pouvez pas à cause d’un manque de main disponible, il faudra appuyer sur Shift en cliquant sur l’icône
@@ -3078,6 +3099,10 @@ pages:
             <p>
               Cette arme, par exemple, peut être utilisée à une main, à deux mains ou à distance. Ainsi, trois Actions seront ajoutées dans l’Onglet Actions/Effets pour chaque type
               d’attaque avec les bonnes valeurs d’attaque, de Dommages…
+            </p>
+            <p>
+              Les Actions à une main et à deux mains portent les Conditions "est tenu à une main" et "est tenu à deux mains" : seule celle qui correspond à la prise en main actuelle
+              est proposée. L’attaque à distance, qui n’a que la Condition "est équipé", reste toujours disponible.
             </p>
           </ul>
           <br>
@@ -3364,7 +3389,7 @@ pages:
             La feuille doit être déverrouillée pour pouvoir ajouter une Condition grâce à l’icône <i class="fa-solid fa-plus"></i> et supprimer une Condition avec l’icône
             <i class="fa-solid fa-trash"></i>.
           </p>
-          <p class="alinea">Il y a <span class="gras">cinq types de Condition :</span></p>
+          <p class="alinea">Il y a <span class="gras">six types de Condition :</span></p>
 
           <h3>est équipé</h3>
           <p class="alinea">
@@ -3405,6 +3430,23 @@ pages:
             A partir du moment où l’Acteur possède l’Équipement dans son inventaire, les Actions et les Effets seront accessibles. Cette condition est utilisée pour les Objets qui n’ont
             pas besoin d’être équipés pour octroyer un avantage (un tatouage, un bijou, un grimoire…).
           </p>
+
+          <h3>est tenu à une main / est tenu à deux mains</h3>
+          <p class="alinea">
+            <span class="gras">Ces options conditionnent l’Action/Effet à la prise en main de l’Équipement</span> : la Condition est remplie si l’Équipement est tenu à une main, ou à
+            deux mains. Elles servent aux @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.e46m0KDmGFAP5USg#arme]{armes polyvalentes},
+            tenues à deux mains quand l’autre main est libre et à une main sinon. Les armes qui ne sont pas polyvalentes ont une prise en main fixe.
+          </p>
+          <p class="alinea">
+            <span class="gras italique">Attention</span> : combinez-les avec la Condition "est équipé". Pour un Équipement qui n’est pas équipé, la prise en main est celle qu’il
+            aurait s’il était équipé maintenant.
+          </p>
+          <ul class="exemple">
+            <p class="alinea">
+              <span class="gras">Exemple : </span>sur l’Épée bâtarde, l’Action "1 main" porte les Conditions "est équipé" et "est tenu à une main", l’Action "2 mains" les Conditions
+              "est équipé" et "est tenu à deux mains". Lorsque le Personnage équipe un bouclier, l’attaque à deux mains disparaît de sa liste d’actions au profit de l’attaque à une main.
+            </p>
+          </ul>
 
           <h3>l'action liée est activée</h3>
           <p class="alinea">
