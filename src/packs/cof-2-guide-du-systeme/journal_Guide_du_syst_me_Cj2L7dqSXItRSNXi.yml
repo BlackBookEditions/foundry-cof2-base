@@ -202,17 +202,20 @@ pages:
                 @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.7BoZ8Un0GrShNPtF#description-dans-le-chat]{Description dans le chat}
               </li>
             </ul>
-            <li>@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS]{Autres fonctionnalités}</li>
+            <li>@UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH]{Autres fonctionnalités}</li>
             <ul>
               <li class="puce-noire">
-                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#demande-de-jet-dans-un-journal-(@test)]{Demande de jet
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH#demande-de-jet-dans-un-journal-(@test)]{Demande de jet
                 dans un journal (@Test)}
               </li>
               <li class="puce-noire">
-                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#raccourcis-de-la-hotbar]{Raccourcis de la Hotbar}
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH#raccourcis-de-la-hotbar]{Raccourcis de la Hotbar}
               </li>
               <li class="puce-noire">
-                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.hAcXlQLmfEHtqwSS#tables-aleatoires]{Tables Aléatoires}
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH#animations-avec-automated-animations]{Animations avec Automated Animations}
+              </li>
+              <li class="puce-noire">
+                @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH#tables-aleatoires]{Tables Aléatoires}
               </li>
             </ul>
           </ul>
@@ -373,6 +376,20 @@ pages:
               de détails.
             </p>
           </ul>
+          <h3>Animations avec Automated Animations</h3>
+          <p class="alinea">
+            Cette option n'a d'effet que si le module <span class="gras">Automated Animations</span> est actif. Si la case est cochée (par défaut), le système transmet chaque action à
+            Automated Animations : les attaques avec le touché et le raté de chaque cible, les actions sans jet, et la fin des animations persistantes quand l'effet du sort prend fin.
+          </p>
+          <p class="alinea">
+            Si un module d'animation qui fait déjà ce lien est actif, le système le laisse faire et cette option n'a pas d'effet. Modifier l'option demande de recharger la session.
+          </p>
+          <ul class="exemple">
+            <p class="alinea">
+              Consultez @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.5sPEXl1C64SIyWBH#animations-avec-automated-animations]{Animations avec Automated Animations} pour plus de détails.
+            </p>
+          </ul>
+
           <h3>Verrouillage</h3>
           <div class="image-guide"><img src="modules\cof2-base\assets\guide\cof2_toggle_verrouillage.webp"></div>
           <p class="alinea">
@@ -2744,6 +2761,10 @@ pages:
               <span class="gras">Rechargeable :</span> Cette propriété ajoutera une nouvelle section sur l’Équipement. Elle permet de définir le nombre de munitions ou de charges actuelles
               et maximales pour cette arme. Il n’est pas nécessaire de renseigner la quantité maximale. Mais si la quantité actuelle n’est pas définie ou est à 0, il ne sera pas possible
               d’utiliser l’Arme. Il est possible d’utiliser la molette pour augmenter ou diminuer les valeurs rapidement.
+              <span class="gras">Chaque jet d’attaque ou de dommages consomme une munition.</span> Les autres actions de l’Équipement (amélioration, soin, effet…) consomment une charge
+              à leur activation, sauf si leur case
+              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#ne-consomme-pas-de-charges]{Ne consomme pas de charges} est cochée. Par exemple, un Bouclier d’énergie à 2 charges sur 10 passe à 1 quand
+              on active sa protection.
               <ul>
                 <li class="puce-noire">
                   <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si l’arme sera conservée si le nombre de charges ou de munitions arrive à 0. Si la case
@@ -2848,6 +2869,10 @@ pages:
               <span class="gras">Rechargeable :</span> Cette propriété ajoutera une nouvelle section sur l’Équipement. Elle permet de définir le nombre de munitions ou de charges actuelles
               et maximales pour cette arme. Il n’est pas nécessaire de renseigner la quantité maximale. Mais si la quantité actuelle n’est pas définie ou est à 0, il ne sera pas possible
               d’utiliser l’Arme. Il est possible d’utiliser la molette pour augmenter ou diminuer les valeurs rapidement.
+              <span class="gras">Chaque jet d’attaque ou de dommages consomme une munition.</span> Les autres actions de l’Équipement (amélioration, soin, effet…) consomment une charge
+              à leur activation, sauf si leur case
+              @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.a0cY3q3XV4o8Y13V#ne-consomme-pas-de-charges]{Ne consomme pas de charges} est cochée. Par exemple, un Bouclier d’énergie à 2 charges sur 10 passe à 1 quand
+              on active sa protection.
               <ul>
                 <li class="puce-noire">
                   <span class="gras">Détruire si vide :</span> Cette case à cocher permet de définir si l’arme sera conservée si le nombre de charges ou de munitions arrive à 0. Si la case
@@ -3348,6 +3373,18 @@ pages:
           <p class="alinea">
             Cette case à cocher permet d'empêcher ou non la consommation d'une utilisation de l'objet. Si la case est cochée, lorsque l'action sera activée aucune
             utilisation de l'objet sera consommée. Si elle est décochée, l'activation de l'action réduira de 1 le nombre d'utilisation de l'objet.
+          </p>
+          <p class="alinea">Elle concerne deux types d'objets :</p>
+          <ul>
+            <li><span class="gras">une Capacité avec une fréquence d'utilisation</span> : chaque activation d'une action consomme une utilisation ;</li>
+            <li>
+              <span class="gras">un Équipement Rechargeable</span> : chaque activation d'une action sans jet d'attaque ni de dommages (amélioration, soin, effet…) consomme une charge.
+              Une action cochée reste utilisable même quand l'Équipement n'a plus de charge.
+            </li>
+          </ul>
+          <p class="alinea">
+            <span class="gras">Les attaques d'un Équipement Rechargeable ne sont pas concernées</span> : chaque jet d'attaque ou de dommages consomme toujours une munition, que la case
+            soit cochée ou non.
           </p>
 
           <h4>Sans coût de mana</h4>
@@ -5402,6 +5439,76 @@ pages:
           </ul>
 
           
+          <h2>Animations avec Automated Animations</h2>
+          <p class="lettrine">
+            Le système est compatible avec le module <span class="gras">Automated Animations</span>, qui joue des animations sur la scène quand un personnage ou une créature agit :
+            coups d'épée, flèches, sorts, soins… Ce module a besoin des modules <span class="gras">Sequencer</span> et <span class="gras">socketlib</span>, et d'une bibliothèque
+            d'animations comme <span class="gras">JB2A</span> (version gratuite ou Patreon).
+          </p>
+          <p class="alinea">
+            Il suffit d'activer ces modules : l'option du système
+            @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#animations-avec-automated-animations]{Animations avec Automated Animations} est cochée par défaut.
+          </p>
+
+          <h3>Ce qui est animé</h3>
+          <ul>
+            <li>
+              <span class="gras">Les attaques</span> : l'animation part vers chaque cible. Une cible ratée voit l'animation passer à côté d'elle. Chaque attaque n'est animée qu'une fois,
+              même si les dommages sont lancés à part.
+            </li>
+            <li><span class="gras">Les dommages sans jet d'attaque</span> (action automatique), <span class="gras">les soins</span> et <span class="gras">les sauvegardes demandées</span>.</li>
+            <li>
+              <span class="gras">Les actions sans jet</span> (amélioration, malus, protection, transformation…) : l'animation se joue à l'activation, sur les cibles, ou sur le
+              personnage si l'action le vise ou si rien n'est ciblé. Équiper un objet ne déclenche pas d'animation.
+            </li>
+            <li>
+              <span class="gras">Les Capacités sans action</span> (Brouillard, Résurrection…) : l'animation se joue quand la Capacité est envoyée dans le tchat
+              <span class="gras">en mode public</span>. Envoyée au MJ seul, elle n'est pas animée, puisque l'animation serait visible de tous.
+            </li>
+          </ul>
+
+          <h3>Choisir l'animation d'un objet</h3>
+          <p class="alinea">Automated Animations ne joue rien tant qu'aucune animation n'est réglée pour l'objet. Il y a deux façons de le faire.</p>
+          <h4>La reconnaissance automatique</h4>
+          <p class="alinea">
+            Dans les réglages du module Automated Animations, le menu de reconnaissance automatique (<span class="italique">Autorec</span>) associe une animation à un nom. Une entrée
+            « Épée longue » anime <span class="gras">toutes les épées longues</span> du monde : il suffit que le nom de l'objet contienne le libellé de l'entrée.
+          </p>
+          <p class="alinea">Si le nom de l'objet ne correspond à aucune entrée, Automated Animations essaie dans l'ordre :</p>
+          <ul>
+            <li>le <span class="gras">libellé de l'action</span>, pour donner une animation différente à chaque action d'une Capacité qui en a plusieurs ;</li>
+            <li>le <span class="gras">type de l'action</span> : <span class="italique">melee</span> (contact), <span class="italique">ranged</span> (distance), <span class="italique">magical</span> ou <span class="italique">spell</span>. Une entrée « melee » sert ainsi d'animation par défaut pour toutes les attaques au contact ;</li>
+            <li>les <span class="gras">étiquettes</span> de l'objet.</li>
+          </ul>
+          <h4>Le réglage sur l'objet</h4>
+          <p class="alinea">
+            Sur la fiche d'un objet, le MJ trouve l'entrée <span class="gras">Automated Animations</span> dans le menu <i class="fa-solid fa-ellipsis-vertical"></i> en haut à droite de
+            la fenêtre. Elle permet de choisir une animation pour <span class="gras">cet objet uniquement</span>, qui passe avant la reconnaissance automatique, ou de désactiver toute
+            animation pour lui.
+          </p>
+          <p class="alinea">
+            Ce réglage est enregistré dans l'objet. Un objet réglé dans le répertoire des objets garde son animation quand on le glisse sur une fiche, puisque c'est une copie qui est
+            ajoutée. Régler l'objet sur la fiche d'un personnage ne concerne que ce personnage.
+          </p>
+
+          <h3>Animations persistantes et durée des effets</h3>
+          <p class="alinea">
+            Une animation réglée en <span class="gras">Aura</span>, ou <span class="gras">On Token</span> avec la case <span class="italique">Persistent</span> cochée, reste affichée
+            sur le jeton. Pour un sort ou une capacité avec une durée, elle <span class="gras">disparaît automatiquement quand l'effet prend fin</span> :
+          </p>
+          <ul>
+            <li>l'effet temporaire de la cible expire, est supprimé depuis sa fiche ou prend fin avec le combat ;</li>
+            <li>l'action à durée est désactivée sur la fiche ;</li>
+            <li>l'objet est supprimé de la fiche.</li>
+          </ul>
+          <p class="alinea">Relancer un sort déjà actif n'ajoute pas une deuxième aura.</p>
+
+          <h3>Avec un autre module d'animation</h3>
+          <p class="alinea">
+            Certains modules d'animation pour Chroniques Oubliées transmettent déjà les actions à Automated Animations. Si l'un d'eux est actif, le système s'efface et le laisse faire,
+            pour qu'aucune animation ne soit jouée deux fois.
+          </p>
+
           <h2>Tables Aléatoires</h2>
           <p class="lettrine">
             Dans le Livre des Règles, de nombreuses tables vous permettent de déterminer des éléments pour votre scénario ou pour votre personnage lorsque l’inspiration ou le temps manque.

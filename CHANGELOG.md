@@ -1,3 +1,15 @@
+# 2.5.0
+
+## Améliorations
+
+- Guide du système : nouvelle section « Animations avec Automated Animations » dans Autres fonctionnalités (ce qui est animé, reconnaissance automatique et noms de repli, réglage sur l'objet, animations persistantes liées à la durée des effets), et la nouvelle option du système correspondante.
+- Guide du système : un Équipement Rechargeable consomme une charge à l'activation de ses actions sans jet d'attaque ni de dommages, et la case « Ne consomme pas de charges » s'applique désormais aux Équipements.
+- Ces deux fonctionnalités nécessitent le système co2 2.5.0.
+
+## Corrections
+
+- Guide du système : les liens du sommaire vers la page Autres fonctionnalités pointaient vers une page inexistante.
+
 # 2.4.1
 
 ## Corrections

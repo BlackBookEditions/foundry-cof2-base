@@ -165,6 +165,76 @@
   </ul>
 
   
+  <h2>Animations avec Automated Animations</h2>
+  <p class="lettrine">
+    Le système est compatible avec le module <span class="gras">Automated Animations</span>, qui joue des animations sur la scène quand un personnage ou une créature agit :
+    coups d'épée, flèches, sorts, soins… Ce module a besoin des modules <span class="gras">Sequencer</span> et <span class="gras">socketlib</span>, et d'une bibliothèque
+    d'animations comme <span class="gras">JB2A</span> (version gratuite ou Patreon).
+  </p>
+  <p class="alinea">
+    Il suffit d'activer ces modules : l'option du système
+    @UUID[Compendium.cof2-base.cof-2-guide-du-systeme.JournalEntry.Cj2L7dqSXItRSNXi.JournalEntryPage.Xr7GWCaNfcxZlsnY#animations-avec-automated-animations]{Animations avec Automated Animations} est cochée par défaut.
+  </p>
+
+  <h3>Ce qui est animé</h3>
+  <ul>
+    <li>
+      <span class="gras">Les attaques</span> : l'animation part vers chaque cible. Une cible ratée voit l'animation passer à côté d'elle. Chaque attaque n'est animée qu'une fois,
+      même si les dommages sont lancés à part.
+    </li>
+    <li><span class="gras">Les dommages sans jet d'attaque</span> (action automatique), <span class="gras">les soins</span> et <span class="gras">les sauvegardes demandées</span>.</li>
+    <li>
+      <span class="gras">Les actions sans jet</span> (amélioration, malus, protection, transformation…) : l'animation se joue à l'activation, sur les cibles, ou sur le
+      personnage si l'action le vise ou si rien n'est ciblé. Équiper un objet ne déclenche pas d'animation.
+    </li>
+    <li>
+      <span class="gras">Les Capacités sans action</span> (Brouillard, Résurrection…) : l'animation se joue quand la Capacité est envoyée dans le tchat
+      <span class="gras">en mode public</span>. Envoyée au MJ seul, elle n'est pas animée, puisque l'animation serait visible de tous.
+    </li>
+  </ul>
+
+  <h3>Choisir l'animation d'un objet</h3>
+  <p class="alinea">Automated Animations ne joue rien tant qu'aucune animation n'est réglée pour l'objet. Il y a deux façons de le faire.</p>
+  <h4>La reconnaissance automatique</h4>
+  <p class="alinea">
+    Dans les réglages du module Automated Animations, le menu de reconnaissance automatique (<span class="italique">Autorec</span>) associe une animation à un nom. Une entrée
+    « Épée longue » anime <span class="gras">toutes les épées longues</span> du monde : il suffit que le nom de l'objet contienne le libellé de l'entrée.
+  </p>
+  <p class="alinea">Si le nom de l'objet ne correspond à aucune entrée, Automated Animations essaie dans l'ordre :</p>
+  <ul>
+    <li>le <span class="gras">libellé de l'action</span>, pour donner une animation différente à chaque action d'une Capacité qui en a plusieurs ;</li>
+    <li>le <span class="gras">type de l'action</span> : <span class="italique">melee</span> (contact), <span class="italique">ranged</span> (distance), <span class="italique">magical</span> ou <span class="italique">spell</span>. Une entrée « melee » sert ainsi d'animation par défaut pour toutes les attaques au contact ;</li>
+    <li>les <span class="gras">étiquettes</span> de l'objet.</li>
+  </ul>
+  <h4>Le réglage sur l'objet</h4>
+  <p class="alinea">
+    Sur la fiche d'un objet, le MJ trouve l'entrée <span class="gras">Automated Animations</span> dans le menu <i class="fa-solid fa-ellipsis-vertical"></i> en haut à droite de
+    la fenêtre. Elle permet de choisir une animation pour <span class="gras">cet objet uniquement</span>, qui passe avant la reconnaissance automatique, ou de désactiver toute
+    animation pour lui.
+  </p>
+  <p class="alinea">
+    Ce réglage est enregistré dans l'objet. Un objet réglé dans le répertoire des objets garde son animation quand on le glisse sur une fiche, puisque c'est une copie qui est
+    ajoutée. Régler l'objet sur la fiche d'un personnage ne concerne que ce personnage.
+  </p>
+
+  <h3>Animations persistantes et durée des effets</h3>
+  <p class="alinea">
+    Une animation réglée en <span class="gras">Aura</span>, ou <span class="gras">On Token</span> avec la case <span class="italique">Persistent</span> cochée, reste affichée
+    sur le jeton. Pour un sort ou une capacité avec une durée, elle <span class="gras">disparaît automatiquement quand l'effet prend fin</span> :
+  </p>
+  <ul>
+    <li>l'effet temporaire de la cible expire, est supprimé depuis sa fiche ou prend fin avec le combat ;</li>
+    <li>l'action à durée est désactivée sur la fiche ;</li>
+    <li>l'objet est supprimé de la fiche.</li>
+  </ul>
+  <p class="alinea">Relancer un sort déjà actif n'ajoute pas une deuxième aura.</p>
+
+  <h3>Avec un autre module d'animation</h3>
+  <p class="alinea">
+    Certains modules d'animation pour Chroniques Oubliées transmettent déjà les actions à Automated Animations. Si l'un d'eux est actif, le système s'efface et le laisse faire,
+    pour qu'aucune animation ne soit jouée deux fois.
+  </p>
+
   <h2>Tables Aléatoires</h2>
   <p class="lettrine">
     Dans le Livre des Règles, de nombreuses tables vous permettent de déterminer des éléments pour votre scénario ou pour votre personnage lorsque l’inspiration ou le temps manque.
